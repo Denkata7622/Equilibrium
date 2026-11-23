@@ -1,0 +1,100 @@
+{
+  "pdf": "OLI-2-Областен кръг-2000-10 кл-probs",
+  "version": 2,
+  "extraction_model": "deepseek/deepseek-r1-0528",
+  "extracted_at": "2026-11-02T16:44:57.824028",
+  "problems": [
+    {
+      "num": 1,
+      "year": 2000,
+      "grade": 10,
+      "round": "nacionalen",
+      "statement": "За кои стойности на реалния параметър a уравнението $$9^t - 4a3^t + 4 - a^2 = 0$$ има точно един корен в интервала (0, 1)?",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 1. За кои стойности на реалния параметър a уравнението $$9^t - 4a3^t + 4 - a^2 = 0$$ има точно един корен в интервала (0, 1)?",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2000-10 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 2,
+      "year": 2000,
+      "grade": 10,
+      "round": "nacionalen",
+      "statement": "В $\\triangle ABC, CH(H \\in AB)$ е височина, а $CM$ и $CN(M, N \\in AB)$ са ъглополовящи съответно на ъглите $ACH$ и $BCH$. Центърът на описаната около $\\triangle CMN$ окръжност съвпада с центъра на вписаната в $\\triangle ABC$ окръжност. Да се докаже, че $S_{\\triangle ABC} = \\frac{AN.BM}{2}$.",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 2. В $\\triangle ABC, CH(H \\in AB)$ е височина, а $CM$ и $CN(M, N \\in AB)$ са ъглополовящи съответно на ъглите $ACH$ и $BCH$. Центърът на описаната около $\\triangle CMN$ окръжност съвпада с центъра на вписаната в $\\triangle ABC$ окръжност. Да се докаже, че $S_{\\triangle ABC} = \\frac{AN.BM}{2}$.",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2000-10 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 3,
+      "year": 2000,
+      "grade": 10,
+      "round": "nacionalen",
+      "statement": "Нека $\\{a_n\\}_{n=1}^{\\infty}$ е редица, за която $a_1 = 43, a_2 = 142, a_{n+1} = 3a_n + a_{n-1}$ при $n \\ge 2$. Да се докаже, че:\na) 3a BcKaO eCTeCTBeHO YHcJIO n YHcJIaTa a n H a n+1 ca B3aHMHO IPOCTH;\n6) 3a BcKo eCTeCTBeHO YHcJIO m CbIeCTByBaT 6e3bpoHNO MHOro eCTeCTBeHH YHcJa n, TaKHBa Ye YHcJIaTa a n - 1 n a n+1 - 1 ce JeJrT Ha m.",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 3. Нека $\\{a_n\\}_{n=1}^{\\infty}$ е редица, за която $a_1 = 43, a_2 = 142, a_{n+1} = 3a_n + a_{n-1}$ при $n \\ge 2$. Да се докаже, че:\na) 3a BcKaO eCTeCTBeHO YHcJIO n YHcJIaTa a n H a n+1 ca B3aHMHO IPOCTH;\n6) 3a BcKo eCTeCTBeHO YHcJIO m CbIeCTByBaT 6e3bpoHNO MHOro eCTeCTBeHH YHcJa n, TaKHBa Ye YHcJIaTa a n - 1 n a n+1 - 1 ce JeJrT Ha m.",
+      "readability": "partial",
+      "readability_issues": [
+        "OCR грешки в кирилицата"
+      ],
+      "pdf": "OLI-2-Областен кръг-2000-10 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 4,
+      "year": 2000,
+      "grade": 10,
+      "round": "nacionalen",
+      "statement": "Даден е изпъкнал четириъгълник $ABCD$, за който $\\measuredangle BCD = \\measuredangle CDA$. Нека ъглополовящата на ъгъл $ABC$ пресича отсечката $CD$ в точка $E$. Да се докаже, че $\\measuredangle AEB = 90^\\circ$ тогава и само тогава, когато $AB = AD + BC$.",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 4. Даден е изпъкнал четириъгълник $ABCD$, за който $\\measuredangle BCD = \\measuredangle CDA$. Нека ъглополовящата на ъгъл $ABC$ пресича отсечката $CD$ в точка $E$. Да се докаже, че $\\measuredangle AEB = 90^\\circ$ тогава и само тогава, когато $AB = AD + BC$.",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2000-10 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 5,
+      "year": 2000,
+      "grade": 10,
+      "round": "nacionalen",
+      "statement": "Да се докаже, че за всеки две реални числа $a$ и $b$ съществува такова число $c \\in (0, 1)$, че $$\\left| ac + b + \\frac{1}{c+1} \\right| > \\frac{1}{24}.$$",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 5. Да се докаже, че за всеки две реални числа $a$ и $b$ съществува такова число $c \\in (0, 1)$, че $$\\left| ac + b + \\frac{1}{c+1} \\right| > \\frac{1}{24}.$$",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2000-10 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 6,
+      "year": 2000,
+      "grade": 10,
+      "round": "nacionalen",
+      "statement": "Да се намерят всички множества $S$ от четири точки в равнината със свойството: за всеки две окръжности $k_1$ и $k_2$, които имат диаметри с краища в точки от $S$, съществува точка $A \\in S \\cap k_1 \\cap k_2$.",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 6. Да се намерят всички множества $S$ от четири точки в равнината със свойството: за всеки две окръжности $k_1$ и $k_2$, които имат диаметри с краища в точки от $S$, съществува точка $A \\in S \\cap k_1 \\cap k_2$.",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2000-10 кл-probs",
+      "chunk": 1
+    }
+  ]
+}

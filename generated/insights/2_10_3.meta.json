@@ -1,0 +1,34 @@
+{
+  "key": "2.10#3",
+  "point_id": "2.10",
+  "idx": 3,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-2022-11 кл · 2022-11 · Зад. 11.2",
+  "techniques": [
+    "trigonometry",
+    "angle_chasing",
+    "properties_of_triangle"
+  ],
+  "word_count": 1690,
+  "score": 9,
+  "verdict": "approve",
+  "verdict_raw": "approve",
+  "adjudicated": false,
+  "status": "done",
+  "structure": {
+    "missing": [],
+    "has_boxed": true,
+    "why_count": 8,
+    "sec12_words": 146,
+    "ends_ok": true,
+    "fatal": [],
+    "soft": []
+  },
+  "caught_errors_in_solution": [
+    "В оценяването на втория начин е изпуснат множителят a пред cos(γ−φ). Правилното равенство е a cos(γ−φ)=(a+c)cosγ cosφ. В самото предоставено решение това равенство е записано правилно."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 118.5,
+  "generated_at": "2026-11-21T19:20:57.614472"
+}

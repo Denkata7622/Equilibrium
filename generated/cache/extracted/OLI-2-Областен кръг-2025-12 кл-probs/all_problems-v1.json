@@ -1,0 +1,78 @@
+{
+  "pdf": "OLI-2-Областен кръг-2025-12 кл-probs",
+  "extraction_model": "deepseek/deepseek-r1-0528",
+  "extracted_at": "2026-11-02T21:56:34.994832",
+  "problems": [
+    {
+      "num": 1,
+      "year": 2025,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Задача 1. Точка D лежи на страната AB на остроъгълния триъгълник ABC. Точките I_A и J_A са съответно центровете на вписаната и външновписаната окръжност за △ADC. Аналогично дефинирани I_B и J_B за △BDC. Да се докаже, че точките I_A, I_B, J_A, J_B лежат на една окръжност, когато D е средата на AB.",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "˙(cid:224)(cid:228)(cid:224)(cid:247)(cid:224) 1. (cid:210)(cid:238)(cid:247)Œ(cid:224) D º(cid:229)(cid:230)Ł (cid:237)(cid:224) æ(cid:242)(cid:240)(cid:224)(cid:237)(cid:224)(cid:242)(cid:224) AB (cid:237)(cid:224) (cid:238)æ(cid:242)(cid:240)(cid:238)œªœº(cid:229)(cid:237) (cid:242)(cid:240)Łœªœº(cid:237)ŁŒ ABC. (cid:210)(cid:238)(cid:247)ŒŁ(cid:242)(cid:229) I Ł J æœ(cid:238)(cid:242)(cid:226)(cid:229)(cid:242)(cid:237)(cid:238)æ(cid:224)(cid:246)(cid:229)(cid:237)(cid:242)œ(cid:240)œ(cid:242)(cid:237)(cid:224)(cid:226)(cid:239)Łæ(cid:224)(cid:237)(cid:224)(cid:242)(cid:224)(cid:238)Œ(cid:240)œ(cid:230)(cid:237)(cid:238)æ(cid:242)Ł(cid:246)(cid:229)(cid:237)(cid:242)œ(cid:240)œ(cid:242)(cid:237)(cid:224)(cid:226)œ(cid:237)ł(cid:237)(cid:238)(cid:226)(cid:239)Łæ(cid:224)(cid:237)(cid:224)(cid:242)(cid:224)(cid:238)Œ(cid:240)œ(cid:230)- A A",
+      "readability": "partial",
+      "readability_issues": [
+        "OCR errors in geometric terms",
+        "Missing diacritics",
+        "Broken mathematical notation"
+      ],
+      "pdf": "OLI-2-Областен кръг-2025-12 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 2,
+      "year": 2025,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Задача 2. Да се реши уравнението sin(sin x) + cos(cos x) = sin(cos x) + cos(sin x).",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "˙(cid:224)(cid:228)(cid:224)(cid:247)(cid:224) 2. ˜(cid:224) æ(cid:229) (cid:240)(cid:229)łŁ (cid:243)(cid:240)(cid:224)(cid:226)(cid:237)(cid:229)(cid:237)Ł(cid:229)(cid:242)(cid:238) sin(sinx)+cos(cosx) = sin(cosx)+cos(sinx).",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2025-12 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 3,
+      "year": 2025,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Задача 3. Нека n е естествено число. Дадено е множеството A от n естествени числа, никое от които не е точен куб. Колко най-много елемента на множеството {ab : a,b ∈ A} може да са точни кубове?",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "˙(cid:224)(cid:228)(cid:224)(cid:247)(cid:224) 3. ˝(cid:229)Œ(cid:224) n (cid:229) (cid:229)æ(cid:242)(cid:229)æ(cid:242)(cid:226)(cid:229)(cid:237)(cid:238) (cid:247)Łæº(cid:238). ˜(cid:224)(cid:228)(cid:229)(cid:237)(cid:238) (cid:229) (cid:236)(cid:237)(cid:238)(cid:230)(cid:229)æ(cid:242)(cid:226)(cid:238) A (cid:238)(cid:242) n (cid:229)æ(cid:242)(cid:229)æ(cid:242)(cid:226)(cid:229)(cid:237)Ł (cid:247)Łæº(cid:224), (cid:237)ŁŒ(cid:238)(cid:229) (cid:238)(cid:242) Œ(cid:238)Ł(cid:242)(cid:238) (cid:237)(cid:229) (cid:229) (cid:242)(cid:238)(cid:247)(cid:229)(cid:237) Œ(cid:243)Æ. ˚(cid:238)ºŒ(cid:238) (cid:237)(cid:224)Ø-(cid:236)(cid:237)(cid:238)ª(cid:238) (cid:229)º(cid:229)(cid:236)(cid:229)(cid:237)(cid:242)(cid:224) (cid:237)(cid:224) (cid:236)(cid:237)(cid:238)(cid:230)(cid:229)æ(cid:242)(cid:226)(cid:238)(cid:242)(cid:238) {ab : a,b ∈ A} (cid:236)(cid:238)(cid:230)(cid:229) (cid:228)(cid:224) æ(cid:224) (cid:242)(cid:238)(cid:247)(cid:237)Ł Œ(cid:243)Æ(cid:238)(cid:226)(cid:229)?",
+      "readability": "partial",
+      "readability_issues": [
+        "OCR errors in set notation",
+        "Missing characters in 'естествено'"
+      ],
+      "pdf": "OLI-2-Областен кръг-2025-12 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 4,
+      "year": 2025,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Задача 4. Дадени са цели числа k и n, за които 5 ≤ n < k < 2n. Да се намери броят на функциите f : N → N, такива че за произволни естествени числа x₁,x₂,...,xₙ, за които x₁! + x₂! + ... + xₙ! - k ≠ 0, да е изпълнено, че x₁! + x₂! + ... + xₙ! - k дели f(x₁)! + f(x₂)! + ... + f(xₙ)! - k.",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "˙(cid:224)(cid:228)(cid:224)(cid:247)(cid:224) 4. ˜(cid:224)(cid:228)(cid:229)(cid:237)Ł æ(cid:224) (cid:246)(cid:229)ºŁ (cid:247)Łæº(cid:224) k Ł n, (cid:231)(cid:224) Œ(cid:238)Ł(cid:242)(cid:238) 5 ≤ n < k < 2n. ˜(cid:224) æ(cid:229) (cid:237)(cid:224)(cid:236)(cid:229)(cid:240)(cid:255)(cid:242) (cid:226)æŁ(cid:247)ŒŁ (cid:244)(cid:243)(cid:237)Œ(cid:246)ŁŁ f : N → N, (cid:242)(cid:224)ŒŁ(cid:226)(cid:224) (cid:247)(cid:229) x !+x !+···+x !−k (cid:228)(cid:229)ºŁ f(x )!+f(x )!+···+f(x )!−k 1 2 n 1 2 n (cid:231)(cid:224) (cid:239)(cid:240)(cid:238)Ł(cid:231)(cid:226)(cid:238)º(cid:237)Ł (cid:229)æ(cid:242)(cid:229)æ(cid:242)(cid:226)(cid:229)(cid:237)Ł (cid:247)Łæº(cid:224) x ,x ,...,x , (cid:231)(cid:224) Œ(cid:238)Ł(cid:242)(cid:238) x !+x !+···+x !−k ̸= 0 .",
+      "readability": "partial",
+      "readability_issues": [
+        "Heavy OCR corruption in mathematical notation",
+        "Missing subscripts",
+        "Broken factorial symbols"
+      ],
+      "pdf": "OLI-2-Областен кръг-2025-12 кл-probs",
+      "chunk": 1
+    }
+  ]
+}

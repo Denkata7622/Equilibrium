@@ -1,0 +1,121 @@
+{
+  "pdf": "OLI-3-Национален кръг-1984-9-12 кл-probs",
+  "extraction_model": "deepseek/deepseek-r1-0528",
+  "extracted_at": "2026-11-02T22:16:11.562227",
+  "problems": [
+    {
+      "num": 1,
+      "year": 1984,
+      "grade": null,
+      "round": "nacionalen",
+      "statement": "Да се реши в цели неотрицателни числа уравнението $5^x \\cdot 7^y + 4 = 3^z$",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "**Задача 1.** Да се реши в цели неотрицателни числа уравнението $5^x \\cdot 7^y + 4 = 3^z$",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-3-Национален кръг-1984-9-12 кл-probs",
+      "chunk": 1,
+      "grade_range": [
+        9,
+        12
+      ]
+    },
+    {
+      "num": 2,
+      "year": 1984,
+      "grade": null,
+      "round": "nacionalen",
+      "statement": "Диагоналите на трапеца $ABCD$ с основи $AB$ и $CD$ се пресичат в точка $O$ с $\\frac{AB}{CD} = k > 1$. Ъглополовящите на ъглите $\\angle AOB$, $\\angle BOC$, $\\angle COD$ и $\\angle DOA$ пресичат страните $AB$, $BC$, $CD$ и $DA$ съответно в точките $K$, $L$, $M$ и $N$. Ако $P$ е пресечната точка на правите $KL$ и $MN$, а $Q$ - пресечната точка на правите $KN$ и $LM$, да се пресметне стойността на $k$ при условие, че лицето на трапеца $ABCD$ е равно на лицето на триъгълника $OPQ$.",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "**Задача 2.** Диагоналите на трапеца $ABCD$ с основи $AB$ и $CD$ се пресичат в точка $O$ с $\\frac{AB}{CD} = k > 1$. Ъглополовящите на ъглите $\\angle AOB$, $\\angle BOC$, $\\angle COD$ и $\\angle DOA$ пресичат страните $AB$, $BC$, $CD$ и $DA$ съответно в точките $K$, $L$, $M$ и $N$. Ако $P$ е пресечната точка на правите $KL$ и $MN$, а $Q$ - пресечната точка на правите $KN$ и $LM$, да се пресметне стойността на $k$ при условие, че лицето на трапеца $ABCD$ е равно на лицето на триъгълника $OPQ$.",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-3-Национален кръг-1984-9-12 кл-probs",
+      "chunk": 1,
+      "grade_range": [
+        9,
+        12
+      ]
+    },
+    {
+      "num": 3,
+      "year": 1984,
+      "grade": null,
+      "round": "nacionalen",
+      "statement": "В пространството са дадени такива точки $P_1, P_2, \\dots, P_n, Q (n \\geqq 4)$, че никои четири от тях не лежат в една равнина. Да се докаже, че ако за всяка тройка различни точки $P_\\alpha, P_\\beta, P_\\gamma$ съществува такава точка $P_\\delta$, че тетраедърът $P_\\alpha P_\\beta P_\\gamma P_\\delta$ съдържа точката $Q$, то $n$ е четно число.",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "**Задача 3.** В пространството са дадени такива точки $P_1, P_2, \\dots, P_n, Q (n \\geqq 4)$, че никои четири от тях не лежат в една равнина. Да се докаже, че ако за всяка тройка различни точки $P_\\alpha, P_\\beta, P_\\gamma$ съществува такава точка $P_\\delta$, че тетраедърът $P_\\alpha P_\\beta P_\\gamma P_\\delta$ съдържа точката $Q$, то $n$ е четно число.",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-3-Национален кръг-1984-9-12 кл-probs",
+      "chunk": 1,
+      "grade_range": [
+        9,
+        12
+      ]
+    },
+    {
+      "num": 4,
+      "year": 1984,
+      "grade": null,
+      "round": "nacionalen",
+      "statement": "Числата $a, b, a_2, a_3, \\dots, a_{n-2}$ са реални, $ab \\neq 0$ и такива, че всичките корени на уравнението\n\n$$ax^n - ax^{n-1} + a_2x^{n-2} + \\dots + a_{n-2}x^2 - n^2bx + b = 0$$\n\nса реални и положителни. Да се докаже, че тези корени са равни помежду си",
+      "solution": null,
+      "answer": null,
+      "page": 2,
+      "source_quote": "**Задача 4.** Числата $a, b, a_2, a_3, \\dots, a_{n-2}$ са реални, $ab \\neq 0$ и такива, че всичките корени на уравнението\n\n$$ax^n - ax^{n-1} + a_2x^{n-2} + \\dots + a_{n-2}x^2 - n^2bx + b = 0$$\n\nса реални и положителни. Да се докаже, че тези корени са равни помежду си",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-3-Национален кръг-1984-9-12 кл-probs",
+      "chunk": 1,
+      "grade_range": [
+        9,
+        12
+      ]
+    },
+    {
+      "num": 5,
+      "year": 1984,
+      "grade": null,
+      "round": "nacionalen",
+      "statement": "Дадени са реалните числа $x_1, x_2, \\dots, x_n, y_1, y_2, \\dots, y_n$, за които $0 \\leq x_i \\leq 1$, $x_i + y_i = 1$ за $i = 1, 2, \\dots, n$. Да се докаже, че\n\n$$(1 - x_1x_2 \\dots x_n)^m + (1 - y_1^m)(1 - y_2^m) \\dots (1 - y_n^m) \\geq 1$$\n\nза произволни естествени числа $m$ и $n$.",
+      "solution": null,
+      "answer": null,
+      "page": 2,
+      "source_quote": "**Задача 5.** Дадени са реалните числа $x_1, x_2, \\dots, x_n, y_1, y_2, \\dots, y_n$, за които $0 \\leq x_i \\leq 1$, $x_i + y_i = 1$ за $i = 1, 2, \\dots, n$. Да се докаже, че\n\n$$(1 - x_1x_2 \\dots x_n)^m + (1 - y_1^m)(1 - y_2^m) \\dots (1 - y_n^m) \\geq 1$$\n\nза произволни естествени числа $m$ и $n$.",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-3-Национален кръг-1984-9-12 кл-probs",
+      "chunk": 1,
+      "grade_range": [
+        9,
+        12
+      ]
+    },
+    {
+      "num": 6,
+      "year": 1984,
+      "grade": null,
+      "round": "nacionalen",
+      "statement": "Дадена е пирамидата $SABCD$, основата на която е успоредника $ABCD$. Нека $N$ е средата на отсечката $BC$. Равнина $\\lambda$ се движи по такъв начин, че пресича правите $SC$, $SA$ и $AB$ съответно в точките $P$, $Q$ и $R$, така че\n\n$$\\frac{\\overline{CP}}{\\overline{CS}} = \\frac{\\overline{SQ}}{\\overline{SA}} = \\frac{\\overline{AR}}{\\overline{AB}}.$$\n\nТочката $M$ от правата $SD$ е такава, че правата $MN$ е успоредна на равнината $\\lambda$. Да се докаже, че геометричното място на точката $M$, когато $\\lambda$ описва всички възможни положения, е отсечка с дължина $\\frac{\\sqrt{5}}{2}SD$.",
+      "solution": null,
+      "answer": null,
+      "page": 2,
+      "source_quote": "**Задача 6.** Дадена е пирамидата $SABCD$, основата на която е успоредника $ABCD$. Нека $N$ е средата на отсечката $BC$. Равнина $\\lambda$ се движи по такъв начин, че пресича правите $SC$, $SA$ и $AB$ съответно в точките $P$, $Q$ и $R$, така че\n\n$$\\frac{\\overline{CP}}{\\overline{CS}} = \\frac{\\overline{SQ}}{\\overline{SA}} = \\frac{\\overline{AR}}{\\overline{AB}}.$$\n\nТочката $M$ от правата $SD$ е такава, че правата $MN$ е успоредна на равнината $\\lambda$. Да се докаже, че геометричното място на точката $M$, когато $\\lambda$ описва всички възможни положения, е отсечка с дължина $\\frac{\\sqrt{5}}{2}SD$.",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-3-Национален кръг-1984-9-12 кл-probs",
+      "chunk": 1,
+      "grade_range": [
+        9,
+        12
+      ]
+    }
+  ]
+}

@@ -1,76 +1,96 @@
 {
   "point_id": "4.3",
-  "total": 5,
+  "total": 6,
   "by_difficulty": {
     "easy": 2,
     "medium": 3,
-    "hard": 0
+    "hard": 1
   },
   "problems": [
     {
-      "source": "OLI-2-Областен кръг-1999-10 кл · 1999-10 · Зад. 4",
+      "source": "OLI-2-Областен кръг-1999-10 кл · 1999-10 · Зад. 10.4",
       "statement": "Find all pairs $(x, y)$ of integer numbers such that $x^3 = y^3 + 2y^2 + 1$.",
-      "solution": "It is obvious that $x > y$. On the other hand $x < y + 1 \\iff (y + 1)^3 > y^3 + 2y^2 + 1 \\iff y(y + 3) > 0$. Therefore if $y > 0$ or $y < -3$ the problem has no solution. Direct verification yields all pairs $(x, y)$ which satisfy the equality $x^3 = y^3 + 2y^2 + 1$, namely $(-2, -3)$, $(1, -2)$ and $(1, 0)$.",
-      "answer": "$(x, y) \\in \\{(-2, -3), (1, -2), (1, 0)\\}$",
+      "solution": "Solution: It is obvious that $x > y$. On the other hand $x < y + 1 \\iff (y + 1)^3 > y^3 + 2y^2 + 1 \\iff y(y + 3) > 0$. Therefore if $y > 0$ or $y < -3$ the problem has no solution. Direct verification yields all pairs $(x, y)$ which satisfy the equality $x^3 = y^3 + 2y^2 + 1$, namely $(-2, -3)$, $(1, -2)$ and $(1, 0)$.",
+      "answer": "$(-2, -3)$, $(1, -2)$, $(1, 0)$",
       "difficulty": "easy",
       "techniques": [
-        "diophantine_cubic",
-        "inequality"
+        "diophantine_equations",
+        "inequalities",
+        "direct_verification"
       ],
       "confidence": "exact",
-      "reasoning": "Simple inequality bounds give few possibilities; direct verification finishes."
+      "reasoning": "Кубично уравнение, решено чрез ограничаване на възможните стойности за y и директна проверка на малките случаи."
     },
     {
-      "source": "OLI-2-Областен кръг-1999-11 кл · 1999-11 · Зад. 4",
+      "source": "OLI-2-Областен кръг-1999-12 кл · 1999-12 · Зад. 12.4",
       "statement": "Find all pairs $(x, y)$ of integer numbers such that $x^3 = y^3 + 2y^2 + 1$.",
       "solution": "It is obvious that $x > y$. On the other hand $x < y + 1 \\iff (y + 1)^3 > y^3 + 2y^2 + 1 \\iff y(y + 3) > 0$. Therefore if $y > 0$ or $y < -3$ the problem has no solution. Direct verification yields all pairs $(x, y)$ which satisfy the equality $x^3 = y^3 + 2y^2 + 1$, namely $(-2, -3)$, $(1, -2)$ and $(1, 0)$.",
-      "answer": "$(x, y) \\in \\{(-2, -3), (1, -2), (1, 0)\\}$",
+      "answer": "$(-2, -3)$, $(1, -2)$, $(1, 0)$",
       "difficulty": "easy",
       "techniques": [
-        "inequality_bounds",
-        "diophantine_cubic"
+        "diophantine_equations",
+        "direct_verification",
+        "interval_estimation"
       ],
       "confidence": "exact",
-      "reasoning": "Ограничения чрез неравенства и проверка на малък брой стойности – директно решение на кубично диофантово уравнение."
+      "reasoning": "Просто диофантово кубично уравнение, решено с оценка и директна проверка."
     },
     {
-      "source": "OLI-2-Областен кръг-1999-10 кл · 1999-10 · Зад. 1",
+      "source": "OLI-2-Областен кръг-1999-10 кл · 1999-10 · Зад. 10.1",
+      "statement": "Find all triples $(x, y, z)$ of natural numbers such that $y$ is a prime number, $y$ and 3 do not divide $z$, and $x^3 - y^3 = z^2$.",
+      "solution": "**Solution:** Since $(x - y)((x - y)^2 + 3xy)) = x^3 - y^3 = z^2$, it follows from the conditions of the problem that $x - y$ and $(x - y)^2 + 3xy$ are relatively prime. Therefore $x - y = u^2$ and $x^2 + xy + y^2 = v^2$. Thus $3y^2 = (2v - 2x - y)(2v + 2x + y)$ and since $y$ is a prime number, there are three cases to consider:\n\n1. $2v - 2x - y = y, 2v + 2x + y = 3y$. Now $x = 0$, which is impossible.\n2. $2v - 2x - y = 1, 2v + 2x + y = 3y^2$. Now $3y^2 - 1 = 2(2x + y) = 2(2u^2 + 3y)$ and it follows that 3 divides $u^2 + 1$, which is impossible.\n3. $2v - 2x - y = 3, 2v + 2x + y = y^2$. Now $y^2 - 3 = 2(2x + y) = 2(2u^2 + 3y)$ and it follows that $(y - 3)^2 - (2u)^2 = 12$. Therefore $y = 7, u = 1, x = 8, z = 13$. Direct verification shows that $(8, 7, 13)$ is a solution of the problem.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "diophantine_equations",
+        "factorization",
+        "prime_properties",
+        "case_analysis"
+      ],
+      "confidence": "exact",
+      "reasoning": "Кубично диофантово уравнение с просто число y; разлагане на разлика от кубове и разглеждане на случаи според делителите."
+    },
+    {
+      "source": "OLI-2-Областен кръг-1999-11 кл · 1999-11 · Зад. 11.1",
       "statement": "Find all triples $(x, y, z)$ of natural numbers such that $y$ is a prime number, $y$ and 3 do not divide $z$, and $x^3 - y^3 = z^2$.",
       "solution": "Since $(x - y)((x - y)^2 + 3xy)) = x^3 - y^3 = z^2$, it follows from the conditions of the problem that $x - y$ and $(x - y)^2 + 3xy$ are relatively prime. Therefore $x - y = u^2$ and $x^2 + xy + y^2 = v^2$. Thus $3y^2 = (2v - 2x - y)(2v + 2x + y)$ and since $y$ is a prime number, there are three cases to consider:\n\n1. $2v - 2x - y = y, 2v + 2x + y = 3y$. Now $x = 0$, which is impossible.\n2. $2v - 2x - y = 1, 2v + 2x + y = 3y^2$. Now $3y^2 - 1 = 2(2x + y) = 2(2u^2 + 3y)$ and it follows that 3 divides $u^2 + 1$, which is impossible.\n3. $2v - 2x - y = 3, 2v + 2x + y = y^2$. Now $y^2 - 3 = 2(2x + y) = 2(2u^2 + 3y)$ and it follows that $(y - 3)^2 - (2u)^2 = 12$. Therefore $y = 7, u = 1, x = 8, z = 13$. Direct verification shows that $(8, 7, 13)$ is a solution of the problem.",
-      "answer": "$(x, y, z) = (8, 7, 13)$",
+      "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "diophantine_cubic",
-        "factorization"
+        "diophantine_equations",
+        "factorization",
+        "prime_properties"
       ],
       "confidence": "exact",
-      "reasoning": "Factorisation of x^3‑y^3 and coprime argument; case analysis on prime y."
+      "reasoning": "Кубично диофантово уравнение с просто число; разлагане и разглеждане на случаи."
     },
     {
-      "source": "OLI-2-Областен кръг-1999-11 кл · 1999-11 · Зад. 1",
+      "source": "OLI-2-Областен кръг-1999-12 кл · 1999-12 · Зад. 12.1",
       "statement": "Find all triples $(x, y, z)$ of natural numbers such that $y$ is a prime number, $y$ and 3 do not divide $z$, and $x^3 - y^3 = z^2$.",
       "solution": "Since $(x - y)((x - y)^2 + 3xy)) = x^3 - y^3 = z^2$, it follows from the conditions of the problem that $x - y$ and $(x - y)^2 + 3xy$ are relatively prime. Therefore $x - y = u^2$ and $x^2 + xy + y^2 = v^2$. Thus $3y^2 = (2v - 2x - y)(2v + 2x + y)$ and since $y$ is a prime number, there are three cases to consider:\n\n1. $2v - 2x - y = y, 2v + 2x + y = 3y$. Now $x = 0$, which is impossible.\n2. $2v - 2x - y = 1, 2v + 2x + y = 3y^2$. Now $3y^2 - 1 = 2(2x + y) = 2(2u^2 + 3y)$ and it follows that 3 divides $u^2 + 1$, which is impossible.\n3. $2v - 2x - y = 3, 2v + 2x + y = y^2$. Now $y^2 - 3 = 2(2x + y) = 2(2u^2 + 3y)$ and it follows that $(y - 3)^2 - (2u)^2 = 12$. Therefore $y = 7, u = 1, x = 8, z = 13$. Direct verification shows that $(8, 7, 13)$ is a solution of the problem.",
-      "answer": "$(x, y, z) = (8, 7, 13)$",
+      "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "diophantine_cubic",
-        "factorization"
+        "diophantine_equations",
+        "factoring",
+        "case_analysis"
       ],
       "confidence": "exact",
-      "reasoning": "Използва се разлагане x^3‑y^3=(x‑y)((x‑y)^2+3xy) и взаимна простота → представяне като квадрати, типично за кубични диофантови уравнения."
+      "reasoning": "Диофантово кубично уравнение с просто число. Разлагане на множители и разглеждане на случаи."
     },
     {
-      "source": "OLI-2-Областен кръг-2006-11 кл · 2006-11 · Зад. 4",
-      "statement": "Да се намери най-малкото естествено число $a$, за което системата $\\begin{cases} x + y + z = a \\\\ x^3 + y^3 + z^2 = a \\end{cases}$ няма цели решения.",
-      "solution": "При $a = 1, 2, 3$ системата има решения съответно $(1, 0, 0)$, $(1, 1, 0)$ и $(1, 1, 1)$. Ще докажем, че тя няма решения при $a = 4$. Да допуснем противното. Имаме\n\n$$4 - z^2 = x^3 + y^3 = (x + y)(x^2 - xy + y^2) = (4 - z)(x^2 - xy + y^2), \\quad (1)$$\n\nкоето означава (тъй като $z = 4$ не дава цяло решение), че $\\frac{4 - z^2}{4 - z}$ е цяло число. Тъй като $\\frac{4 - z^2}{4 - z} = \\frac{-12 + 16 - z^2}{4 - z} = 4 + z + \\frac{12}{z - 4}$, заключаваме, че $z - 4$ дели 12. Следователно $z - 4 = \\pm 1, \\pm 2, \\pm 3, \\pm 4, \\pm 6, \\pm 12$ и съответно $z = -8, -2, 0, 1, 2, 3, 5, 6, 7, 8, 10$ или 16. С помощта на (1) имаме\n\n$$(x + y)^2 - 3xy = \\frac{4 - z^2}{4 - z} \\iff 3xy = (4 - z)^2 - \\frac{4 - z^2}{4 - z}$$\n\nи за $x$ и $y$ получаваме системата\n\n$$\\begin{cases} x + y = 4 - z \\\\ xy = \\frac{(4 - z)^3 + z^2 - 4}{3(4 - z)} \\end{cases}$$\n\nЛесно се проверява, че никоя от изброените по-горе стойности на $z$ не води до цяло решение за $x$ и $y$.",
-      "answer": "$a = 4$.",
-      "difficulty": "medium",
+      "source": "OLI-2-Областен кръг-2001-12 кл · 2001-12 · Зад. 12.5",
+      "statement": "Да се намерят всички тройки естествени числа $(a, b, c)$, за които числото $a^3 + b^3 + c^3$ се дели на всяко от числата $a^2b, b^2c, c^2a$.",
+      "solution": "Решение: Ако $d = \\text{НОД}(a, b, c)$, то лесно се вижда, че тройката $\\left(\\frac{a}{d}, \\frac{b}{d}, \\frac{c}{d}\\right)$ също е решение на задачата. Ето защо трябва да определим само онези тройки $(a, b, c)$, за които $\\text{НОД}(a, b, c) = 1$. Нека сега $\\text{НОД}(a, b) = s$. Да допуснем, че $s > 1$ и нека $p$ е прост делител на $s$. Тогава $p$ дели $a$; $p$ дели $b$ и $p$ дели $a^3 + b^3 + c^3$, следователно $p$ дели $c^3$, а значи $p$ дели $c$. Но това противоречи на $\\text{НОД}(a, b, c) = 1$. Следователно $\\text{НОД}(a, b) = 1$. Аналогично $\\text{НОД}(a, c) = 1 = \\text{НОД}(b, c) = 1$. Тогава от условието $a^2/(a^3 + b^3 + c^3), b^2/(a^3 + b^3 + c^3), c^2/(a^3 + b^3 + c^3)$ и от факта, че $\\text{НОД}(a^2, b^2) = \\text{НОД}(a^2, c^2) = \\text{НОД}(b^2, c^2) = 1$ следва, че числото $a^3 + b^3 + c^3$ се дели на числото $a^2b^2c^2$. В частност, оттук следва, че $a^3 + b^3 + c^3 \\ge a^2b^2c^2$. Без ограничение на общността можем да предполагаме, че $a \\le b \\le c$. Тогава $3c^3 \\ge a^3 + b^3 + c^3 \\ge a^2b^2c^2 \\Rightarrow c \\ge \\frac{a^2b^2}{3}$. Да допуснем, че $a > 1$. Тогава $\\frac{a^2b^2}{3} > b^2 \\ge b^2 + a(a - b) = a^2 - ab + b^2$, откъдето следва неравенството (1), $c > a^2 - ab + b^2$. От друга страна, понеже $b \\ge a \\ge 2$, то $b^2 \\ge 2b \\ge a + b$ и понеже $c > b^2$, то получаваме неравенството (2), $c > a + b$. Но от неравенствата (1) и (2) получаваме, че $\\frac{(a^2 - ab + b^2)(a + b)}{c^2} < 1 \\iff \\frac{a^3 + b^3}{c^2}$, което е невъзможно, понеже според условието това число трябва да е цяло. Значи остава само $a = 1$. Но тогава получаваме, че числото $1 + b^3 + c^3$ трябва да се дели на $b^2c^2$. Да разгледаме следните частни случаи:\n\nСвалено от Klasirane.com\n\n─── Стр. 4 ───\n1) npu \\(b = c\\) necho cneBa. ye \\(b = c = 1\\) . TpoKaTa (1.1.1) HauCTnHa e peHne Ha 3aHaata.\n2) npu \\(b = 1\\) noIyuaBaMe nak cbuata TpoKa.\n3) npu b = 2 noIyuaBame c = 3. TpoIkaTa (1.2.3) HauCTnHa e peHne Ha 3aHaata. Heka cera c > b \\ge  3. Toraba, noHekke 1 + b³ + c³ \\ge  b²c², to 2c³ > 1 + b³ + c³ H oTTyK 2c > b² HnH c > b²/2. Ho ot 2c > b² cIeBa 2c > b² - b + 1, toeCT cIeBa HepaBeHCTBOTo\n(3), \\(\\frac{b^2 - b + 1}{c} < 2\\). OT pyra ctpana npu \\(b \\geq 5\\) ca B cna HepaBeHCTBaTa \\(\\frac{c}{2} > \\frac{b^2}{4} > b + 1 \\Rightarrow (4)\\frac{b + 1}{c} < \\frac{1}{2}\\). YmnoXabaKn noUHeHNO (3) n (4) doCTnraMe do \\(\\frac{b^3 + 1}{c^2} < 1\\), KOeTo e HeBb3MOxHNO, noHekke TOBa YnsIO Tp8Ba da e HJIO. IpoBepKaTa NOKa3Ba, ye npu b = 3 n b = 4 He ce noIyuaBat HOBn peHHeH. 3Naun BCnKn peHHeH na 3aHaata ca TpoIKte (k, k, k) n (k, 2k, 3k) (n HeHHTe nepMytaun). 3a npoHBOJHO eCTeCTBeHO YnsIO k.",
+      "answer": null,
+      "difficulty": "hard",
       "techniques": [
-        "diophantine_cubic",
-        "divisibility"
+        "diophantine_equations",
+        "gcd",
+        "inequalities"
       ],
       "confidence": "exact",
-      "reasoning": "System involves a cubic term; solution uses divisibility arguments and case analysis typical for cubic Diophantine equations (step 4.3)."
+      "reasoning": "Диофантова задача с кубове и делимост. Решението използва НОД и анализ на неравенства. Точка 4.3 за кубични диофантови уравнения е подходяща."
     }
   ]
 }

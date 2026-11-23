@@ -1,0 +1,71 @@
+{
+  "point_id": "5.6",
+  "total": 4,
+  "by_difficulty": {
+    "easy": 0,
+    "medium": 1,
+    "hard": 3
+  },
+  "problems": [
+    {
+      "source": "OLI-2-Областен кръг-1996-12 кл · 1996-12 · Зад. 12.3",
+      "statement": "a) Find the maximal value of the function $y = |4x^3 - 3x|$ in the interval $[-1, 1]$. b) Let $a$, $b$ and $c$ be real numbers and $M$ be the maximal value of the function $y = |4x^3 + ax^2 + bx + c|$ in the interval $[-1, 1]$. Prove that $M \\\\geq 1$. For which $a$, $b$, $c$ is the equality reached?",
+      "solution": "Solution. a) Using that $∆(4x^3 - 3x)' = 12x^2 - 3 = 12(x - \f\\frac{1}{2})(x + \f\\frac{1}{2})$, we find that the function\n\n$$y = |4x^3 - 3x|$$\n\nhas a local maximums when $x = ± \f\\frac{1}{2}$. Then its maximal value in the interval $[-1, 1]$ is the biggest among the numbers $y(-1)$, $y(1)$, $y(-\f\\frac{1}{2})$ and $y(\f\\frac{1}{2})$ (Figure 3).\n\nBut $y(-1) = y(-\f\\frac{1}{2}) = y(\f\\frac{1}{2}) = y(1) = 1$, thus the maximal value is equal to 1.\n\nb) Let $f(x) = 4x^3 + ax^2 + bx + c$. Assume that there exist numbers $a$, $b$, $c$, for which the maximal value $M$ of the function $y = |f(x)|$ in $[-1, 1]$ is less than 1, i.e. $M < 1$. Then $-1 < f(x) < 1$ for all $x ∈ [-1, 1]$.\n\nConsider the function $g(x) = f(x) - (4x^3 - 3x) = ax^2 + (b + 3)x + c$. We have $g(-1) > 0$, $g(-\f\\frac{1}{2}) < 0$, $g(\f\\frac{1}{2}) > 0$ and $g(1) < 0$. Consequently $g(x)$ changes its sign at least 3 times, which means that the quadratic equation $ax^2 + (b + 3)x + c = 0$ has at least 3 different roots. This is possible only if $a = b + 3 = c = 0$, i.e. if $f(x) = 4x^3 - 3x$. According to a) the maximal value of $y = |4x^3 - 3x|$ is $\\le  1$.\n\nThe equality $M = 1$ is reached only when $a = 0$, $b = -3$ and $c = 0$.",
+      "answer": "a) 1\nb) Equality when a=0, b=-3, c=0",
+      "difficulty": "medium",
+      "techniques": [
+        "chebyshev_polynomials",
+        "derivative",
+        "proof_by_contradiction",
+        "polynomial_properties"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва полинома на Чебишев T_3(x) = 4x^3 - 3x като ключов елемент. В част а) се намира max |T_3(x)|, а в част б) се доказва, че за всеки кубичен полином, max |f(x)| ≥ max |T_3(x)| = 1, с равенство само при f(x) = T_3(x). Техниката включва производни за екстремуми (част а) и доказателство от противно със знаков анализ на разликата f(x) - T_3(x) (част б), което е типично за приложенията на полиномите на Чебишев в минимизация на нормата."
+    },
+    {
+      "source": "OLI-2-Областен кръг-1996-10 кл · 1996-10 · Зад. 10.3",
+      "statement": "a) Find the maximal value of the function $y = |4x^3 - 3x|$ in the interval $[-1, 1]$. b) Let $a$, $b$ and $c$ be real numbers and $M$ be the maximal value of the function $y = |4x^3 + ax^2 + bx + c|$ in the interval $[-1, 1]$. Prove that $M \\\\geq 1$. For which $a$, $b$, $c$ is the equality reached?",
+      "solution": "Solution. a) Using that $\\left(4x^3 - 3x\\right)' = 12x^2 - 3 = 12\\left(x - \\frac{1}{2}\\right)\\left(x + \\frac{1}{2}\\right)$, we find that the function\n\n$$y = |4x^3 - 3x|$$\n\n![img-2.jpeg](img-2.jpeg)\n\nhas a local maximums when $x = \\pm \\frac{1}{2}$. Then its maximal value in the interval $[-1, 1]$ is the biggest among the numbers $y(-1)$, $y(1)$, $y\\left(-\\frac{1}{2}\\right)$ and $y\\left(\\frac{1}{2}\\right)$ (Figure 3).\n\nBut $y(-1) = y\\left(-\\frac{1}{2}\\right) = y\\left(\\frac{1}{2}\\right) = y(1) = 1$, thus the maximal value is equal to 1.\n\nb) Let $f(x) = 4x^3 + ax^2 + bx + c$. Assume that there exist numbers $a$, $b$, $c$, for which the maximal value $M$ of the function $y = |f(x)|$ in $[-1, 1]$ is less than 1, i.e. $M < 1$. Then $-1 < f(x) < 1$ for all $x \\in [-1, 1]$.\n\nConsider the function $g(x) = f(x) - (4x^3 - 3x) = ax^2 + (b + 3)x + c$. We have $g(-1) > 0$, $g\\left(-\\frac{1}{2}\\right) < 0$, $g\\left(\\frac{1}{2}\\right) > 0$ and $g(1) < 0$. Consequently $g(x)$ changes its sign at least 3 times, which means that the quadratic equation $ax^2 + (b + 3)x + c = 0$ has at least 3 different roots. This is possible only if $a = b + 3 = c = 0$, i.e. if $f(x) = 4x^3 - 3x$. According to a) the maximal value of $y = |4x^3 - 3x|$ is $\\leq 1$.\n\nThe equality $M = 1$ is reached only when $a = 0$, $b = -3$ and $c = 0$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "derivatives",
+        "polynomials",
+        "chebyshev_polynomials"
+      ],
+      "confidence": "exact",
+      "reasoning": "Част a) директно включва полином на Чебишев. Точка 5.6 е точна. Част b) изисква допълнителни разсъждения."
+    },
+    {
+      "source": "OLI-2-Областен кръг-1996-11 кл · 1996-11 · Зад. 11.3",
+      "statement": "a) Find the maximal value of the function $y = |4x^3 - 3x|$ in the interval $[-1, 1]$. b) Let $a$, $b$ and $c$ be real numbers and $M$ be the maximal value of the function $y = |4x^3 + ax^2 + bx + c|$ in the interval $[-1, 1]$. Prove that $M \\\\geq 1$. For which $a$, $b$, $c$ is the equality reached?",
+      "solution": "Solution. a) Using that $\\\\left(4x^3 - 3x\\\\right)' = 12x^2 - 3 = 12\\\\left(x - \\\\frac{1}{2}\\\\right)\\\\left(x + \\\\frac{1}{2}\\\\right)$, we find that the function $y = |4x^3 - 3x|$ has a local maximums when $x = \\\\pm \\\\frac{1}{2}$. Then its maximal value in the interval $[-1, 1]$ is the biggest among the numbers $y(-1)$, $y(1)$, $y\\\\left(-\\\\frac{1}{2}\\\\right)$ and $y\\\\left(\\\\frac{1}{2}\\\\right)$ (Figure 3). But $y(-1) = y\\\\left(-\\\\frac{1}{2}\\\\right) = y\\\\left(\\\\frac{1}{2}\\\\right) = y(1) = 1$, thus the maximal value is equal to 1. b) Let $f(x) = 4x^3 + ax^2 + bx + c$. Assume that there exist numbers $a$, $b$, $c$, for which the maximal value $M$ of the function $y = |f(x)|$ in $[-1, 1]$ is less than 1, i.e. $M < 1$. Then $-1 < f(x) < 1$ for all $x \\\\in [-1, 1]$. Consider the function $g(x) = f(x) - (4x^3 - 3x) = ax^2 + (b + 3)x + c$. We have $g(-1) > 0$, $g\\\\left(-\\\\frac{1}{2}\\\\right) < 0$, $g\\\\left(\\\\frac{1}{2}\\\\right) > 0$ and $g(1) < 0$. Consequently $g(x)$ changes its sign at least 3 times, which means that the quadratic equation $ax^2 + (b + 3)x + c = 0$ has at least 3 different roots. This is possible only if $a = b + 3 = c = 0$, i.e. if $f(x) = 4x^3 - 3x$. According to a) the maximal value of $y = |4x^3 - 3x|$ is $\\\\leq 1$. The equality $M = 1$ is reached only when $a = 0$, $b = -3$ and $c = 0$.",
+      "answer": "a) 1; b) a=0, b=-3, c=0",
+      "difficulty": "hard",
+      "techniques": [
+        "derivatives",
+        "polynomials",
+        "chebyshev_polynomials",
+        "inequalities"
+      ],
+      "confidence": "exact",
+      "reasoning": "Част a) директно изчисление с производни; част b) използване на свойствата на полиномите на Чебишев и интерполация."
+    },
+    {
+      "source": "OLI-3-Национален кръг-2007-9-12 кл · 2007-None · Зад. 3",
+      "statement": "Да се намери най-малкото естествено число $n$, за което числото $\\cos \\frac{\\pi}{n}$ не може да се представи във вида $p + \\sqrt{q} + \\sqrt[3]{r}$, където $p, q$ и $r$ са рационални числа.",
+      "solution": "Ще докажем, че $n = 7$. Имаме, че\n\n$$\\cos \\pi = -1, \\quad \\cos \\frac{\\pi}{2} = 0, \\quad \\cos \\frac{\\pi}{3} = \\frac{1}{2}, \\quad \\cos \\frac{\\pi}{4} = \\frac{\\sqrt{2}}{2}, \\quad \\cos \\frac{\\pi}{6} = \\frac{\\sqrt{3}}{2}.$$\n\nОсвен това, от $0 = \\cos \\frac{3\\pi}{5} + \\cos \\frac{2\\pi}{5}$, следва, че $x_5 = \\cos \\frac{\\pi}{5}$ е корен на уравнението $0 = 4x^3 - 3x + 2x^2 - 1 = (x + 1)(4x^2 - 2x - 1)$, откъдето $x_5 = \\frac{1 + \\sqrt{5}}{4}$.\n\nОстава да покажем, че $x_7 = \\cos \\frac{\\pi}{7}$ няма дадения вид. Понеже $0 = \\cos \\frac{4\\pi}{7} + \\cos \\frac{3\\pi}{7}$, следва, че $x_7$ е корен на\n\n$$0 = 2(2x^2 - 1)^2 - 1 + 4x^3 - 3x = (x + 1)(8x^3 - 4x^2 - 4x + 1),$$\n\nt.е. $x_7$ е нула на полинома $P(x) = 8x^3 - 4x^2 - 4x + 1$. Сега да допуснем, че $x_7 = p + \\sqrt{q} + \\sqrt[3]{r}$, където $q \\geq 0, p, r \\in \\mathbb{Q}$. Тогава $x_7$ е нула на полинома\n\n$$Q(x) = (x - p - \\sqrt{q})^3 - r$$\n\nс коефициенти от $\\mathbb{Q}[\\sqrt{q}]$, т.е. от вида $a + b\\sqrt{q}$, $a, b \\in \\mathbb{Q}$. Понеже коефициентът пред $x$ е неотрицателен, то $P \\neq 8Q$. Тогава $P = 8Q + R$, където $R$ е полином от степен 1 или 2 с коефициенти от $\\mathbb{Q}[\\sqrt{q}]$ и $R(x_7) = 0$. Ако $\\deg R = 1$, то $x_7 \\in \\mathbb{Q}[\\sqrt{q}]$. Ако $\\deg R = 2$ и $R$ не дели $P$, то $x_7$ е нулата на остатъка на $P$ при деление на $R$, т.е. отново $x_7 \\in \\mathbb{Q}[q]$. Ако $\\deg R = 2$ и $R$ дели $P$, то нулата на $\\frac{P}{R}$, която е от $\\mathbb{Q}[q]$, е нула и на $P$. И така, $P$ има нула от $\\mathbb{Q}[q]$. Тази нула е нула на полином от степен 1 или 2 с рационални коефициенти. Подобно на по-горе следва, че $P$ има рационална нула. Тя трябва да е измежду числата $\\pm 1, \\pm \\frac{1}{2}, \\pm \\frac{1}{4}, \\pm \\frac{1}{8}$ и директна проверка води до противоречие.",
+      "answer": "7",
+      "difficulty": "hard",
+      "techniques": [
+        "minimal_polynomial",
+        "algebraic_identities",
+        "rational_root_theorem"
+      ],
+      "confidence": "exact",
+      "reasoning": "Доказване, че cos(π/7) не може да се представи в дадения вид чрез използване на минимален полином и алгебрична теория, съответства на точка 5.5.",
+      "_crosslinked_from": "5.5",
+      "_crosslink_confidence": 0.85
+    }
+  ]
+}

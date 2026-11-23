@@ -1,24 +1,44 @@
 {
   "point_id": "2.1",
-  "total": 1,
+  "total": 2,
   "by_difficulty": {
     "easy": 0,
-    "medium": 0,
+    "medium": 1,
     "hard": 1
   },
   "problems": [
     {
-      "source": "OLI-3-Национален кръг-1998-9-12 кл · 1998-None · Зад. 3",
-      "statement": "On the sides of a non-obtuse triangle $ABC$ a square, a regular $n$-gon and a regular $m$-gon ($n, m > 5$) are constructed externally, so that their centres are vertices of a regular triangle. Prove that $m = n = 6$ and find the angles of $ABC$.",
-      "solution": "Solution: Let the square, the n-gon and the m-gon be constructed on the sides AB, BC and CA, respectively. Denote their centres by O₁, O₂ and O₃; denote by A₁, B₁ and C₁ the centres of the equilateral triangles constructed externally on BC, CA and AB.\n\nThe lines $O_1C_1, O_2A_1$ and $O_3B_1$ intersect at the circumcentre $O$ of $\\triangle ABC$. Since $\\triangle A_1A_2A_3$ is equilateral, it follows straightforwardly that $\\triangle O_1O_2O_3$ is equilateral if and only if $C_1A_1||O_1O_2, A_1B_1||O_2O_3$ and $B_1C_1||O_1O_3$. This is equivalent to\n\n$$\\frac{OC_1}{C_1O_1} = \\frac{OA_1}{A_1O_2} = \\frac{OB_1}{B_1O_3} = k.$$\n\nOn the other hand,\n\n$$\\begin{array}{l} \\frac{OC_1}{C_1O_1} = \\frac{\\cot C + \\tan 30^\\circ}{\\cot 45^\\circ - \\tan 30^\\circ}, \\\\ \\frac{OA_1}{A_1O_2} = \\frac{\\cot A + \\tan 30^\\circ}{\\cot \\frac{180^\\circ}{n} - \\tan 30^\\circ}, \\\\ \\frac{OB_1}{B_1O_3} = \\frac{\\cot B + \\tan 30^\\circ}{\\cot \\frac{180^\\circ}{m} - \\tan 30^\\circ}. \\end{array}$$\n\nSet $\\cot \\frac{180^\\circ}{n} = x$ and $\\cot \\frac{180^\\circ}{m} = y$. The above identities imply that\n\n$$\\cot A = kx - \\frac{k+1}{\\sqrt{3}}, \\cot B = ky - \\frac{k+1}{\\sqrt{3}}, \\cot C = k - \\frac{k+1}{\\sqrt{3}}.$$\n\nFrom the identity $\\cot A \\cot B + \\cot B \\cot C + \\cot C \\cot A = 1$ we get\n\n$$k = \\frac{2(x+y+1-\\sqrt{3})}{\\sqrt{3}xy + (\\sqrt{3}-2)(x+y) + \\sqrt{3}-2},$$\n\n$$\\cot C = \\frac{x+y-xy+3-2\\sqrt{3}}{\\sqrt{3}xy + (\\sqrt{3}-2)(x+y) + \\sqrt{3}-2}.$$\n\nSince $m, n \\ge 6$ it follows that $x, y \\ge \\sqrt{3}$, i. e. $xy \\ge \\sqrt{3}(x+y)-3$. The inequality $\\cot C \\ge 0$ implies $x+y-xy+3-2\\sqrt{3} \\ge 0$. and therefore $x+y+3-2\\sqrt{3} \\ge xy \\ge \\sqrt{3}(x+y)-3$, i. e. $x+y \\le 2\\sqrt{3}$. This shows that $x=y=\\sqrt{3}$, i. e., $m=n=6$. Hence $\\cot C = 0$, $\\cot A = \\cot B = 1$, so $\\angle C = 90^\\circ, \\angle A = \\angle B = 45^\\circ$.",
-      "answer": "m = n = 6; ∠C = 90°, ∠A = ∠B = 45° (with the square on AB).",
-      "difficulty": "hard",
+      "source": "OLI-3-Национален кръг-1987-9-12 кл · 1987-None · Зад. 5",
+      "statement": "От точката E, лежаща на медианата AD на триъглника ABC, с спуснат перпендикуляр EF към страната BC. От точката M, лежаща на EF, са спуснати перпендикулярите MN и MP съответно към страните AC и AB. Да се докаже, че ако точките N, E и P лежат на една права, то M лежи на вътрешната ълополовяща на ъгъла BAC.",
+      "solution": "Решение. През точката E построяваме права, успоредна на BC. Нека тя пресича AB и AC съответно в точките  \\( B_{1} \\)  и  \\( C_{1} \\)  (черт.2). Правата EF е перпендикулярна на  \\( B_{1}C_{1} \\), понеже по условие  \\( EF \\perp BC \\), а  \\( B_{1}C_{1} \\parallel BC \\). Освен това не е трудно да се съобрази, че E е средата на  \\( B_{1}C_{1} \\). Следователно  \\( \\triangle B_{1}C_{1}M \\)  е равнобедрен, тъй като ME е едновременно негова височина и медиана.\n\nПърви подход. Тъй като  \\( \\angle MNC_{1} = \\angle MEC_{1} = 90^{\\circ} \\) , точките M, N,  \\( C_{1} \\) , E лежат на една окръжност. Аналогично се доказва, че и точките M,  \\( B_{1} \\) , P, E лежат на една окръжност. Предлагаме на читателя да се убеди, че във всички случаи точките N и  \\( C_{1} \\)  са в една и съща полуравнина относно правата. Същото е вярно и за точките P и  \\( B_{1} \\) . Ето защо\n\n\\[\n\\angle E N M = \\angle E C _ {1} M = \\angle E B _ {1} M = \\angle E P M.\n\\]\n\nНо точките N, E и P лежат на една права, така че  \\( \\angle PNM = \\angle ENM \\) ,  \\( \\angle NPM = \\angle EPM \\) . Тогава доказаните равенства показват, че  \\( \\angle PNM = \\angle NPM \\) , т. е.  \\( \\angle NPM \\)  е равнобедрен. Вече е ясно, че M лежи на ъглополовящата на  \\( \\angle BAC \\) , тъй като тя е равноотдалечена от раменете на този ъгъл.\n\nВтори подход. Можем да завършим решението и с разсъждения, свързани с правата на Симсън. Да разгледаме точката M и триъгълника  \\( AB_{1}C_{1} \\) . Петите P, E и N на перпендикулярите от M съответно към правите  \\( AB_{1}, B_{1}C_{1} \\)  и  \\( C_{1}A \\)  лежат на една права. Тогава M лежи на окръжността k, описана около  \\( \\triangle AB_{1}C_{1} \\)  (вж. например задача 3.11 в \"555 задачи по геометрия\"). В такъв случай ъглите  \\( B_{1}AM \\)  и C. AM са вписани в k и се измерват съответно с половинките от дъгите  \\( B_{1}M \\)  и  \\( C_{1}M \\) . Но по-горе доказахме, че  \\( \\triangle B_{1}C_{1}M \\)  е равнобедрен, така че  \\( B_{1}M = C_{1}M \\) . Следователно  \\( B_{1}M = C_{1}M \\) , откъдето получаваме, че  \\( \\angle B_{1}AM = \\angle C_{1}AM \\) , т. е. M лежи на ъглополовящата на  \\( \\angle BAC \\) .",
+      "answer": null,
+      "difficulty": "medium",
       "techniques": [
-        "harmonic_ratio",
-        "trigonometric"
+        "cyclic_quadrilaterals",
+        "simson_line",
+        "basic_properties"
       ],
       "confidence": "exact",
-      "reasoning": "Transforms geometric condition into ratios of distances (harmonic division) and solves via cotangent identities, leading to n=m=6."
+      "reasoning": "Задачата използва правата на Симсън като ключов елемент, което е част от точка 2.11. Вторият подход директно цитира тази теорема.",
+      "_crosslinked_from": "2.11",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-3-Национален кръг-2026-9-12 кл · 2026-None · Зад. 4",
+      "statement": "Даден е \\triangle ABC с описана около него окръжност Γ. Окръжност Ω през върховете B и C пресича отсечките AB и AC в точки D и E съответно. Върху малката дъга DE от Ω е избрана точка F. Нека ω е окръжността, която минава през A и F и се допира до Ω. Да се докаже, че ω се допира до Γ тогава и само тогава, когато правата AF е ъглополовяща на \\angle DFE.",
+      "solution": "Решение. (I начин) Нека $X$ е пресечната точка на допирателната в $F$ към $\\Omega$ и допирателната в $A$ към $\\Gamma$. Нека $AF$ пресича $\\Omega$ за втори път в $M$ и $Y = DE \\cap AF$. Можем да видим, че $\\angle XAD = \\angle BCA = \\angle EDA$, тоест $AX \\parallel DE$.\n\n![img-0.jpeg](img-0.jpeg)\n\nПосока 1: Нека $\\omega$ се допира до $\\Gamma$. Щом $XA$ и $XF$ са допирателните, то $\\angle XAF = \\angle XFA$. Можем да видим, че $\\angle XAF = \\angle DYM = \\angle YDF + \\angle DFM$. Освен това $\\angle XFA = 180 - \\angle XFM = \\angle MDF = \\angle YDF + \\angle MFE$ от което следва, че $\\angle DFM = \\angle MFE$ с което сме готови.\n\nПосока 2: Нека $AF$ е ъглополовяща на $\\angle EDF$. То $\\angle XAF = \\angle DYM = \\angle FDY + \\angle YDM = 180 - \\angle FEM = 180 - \\angle XFM = \\angle XFA$. Щом $\\angle XAF = \\angle XFA$ следва, че $XA$ е допирателна към $\\omega$, обаче тя е допирателна и към $\\Gamma$, следователно двете окръжности се допират в $A$.\n\nСвалено от Klasirane.com\n\n(II начин) Нека правата AF пресича за втори път Ω и Γ в точките M и N съответно, а точка  $ Z \\in \\widehat{AF} $  както е показано на чертежа. Окръжността ω се допира до Γ тогава и само тогава, когато  $ \\widehat{ACN} = \\widehat{AZF} $ . Тъй като ω и Ω имат обща вътрешна допирателна, то  $ \\widehat{AZF} = \\widehat{FDM} $ . От друга страна,\n\n$$\n\\begin{array}{l} \\widehat {A C N} = \\widehat {A C} + \\widehat {C N} = 2 \\text {   A   B   C   } + 2 \\text {   C   A   N   } \\\\ = \\widehat {D F C} + \\widehat {M C} - \\widehat {F E} = \\widehat {D F} + \\widehat {E C M}. \\\\ \\end{array}\n$$\n\nСледователно условието е еквивалентно на  $ \\widehat{DF} + \\widehat{ECM} = \\widehat{FDM} $ , т.е.  $ \\widehat{ECM} = \\widehat{DBM} $  или AF да е ъглополовяща на  $ \\triangle DFE $ .\n\n(III начин) Да разгледаме инверсия с център A и радиус  $ \\sqrt{AD \\cdot AB} = \\sqrt{AE \\cdot AC} $ . При тази инверсия можем да видим, че  $ \\Omega $  се запазва. B и D се разменят, E и C се разменят. Освен това F отива в  $ M = AF \\cap \\Omega $ . Г трябва да отиде в права през образите на B и C, тоест отива в DE.  $ \\omega $  отива в допирателната към  $ \\Omega $  през M. Искаме да докажем, че DE е успоредна на допирателната през M към  $ \\Omega $  тогава и само тогава когато AF е ъглополовяща, което е същото като M да е среда на дъгата, и твърдението следва.\n\nОценяване. (7 точки) (I начин) 1 т. за дефиниране на точка X и DE || AX; 3 т. за посока 1; 3 т. за посока 2. (II начин) 2 т. за свеждане на задачата до равенство на дъги от Г или Ω като ACN = FDM; 3 т. за изразяване на тези дъги чрез дъги само в Ω; 2 т. за довършване. (III начин) 1 т. за разглеждане на инверсия с център A и радиус √AD·AB; 3 точки за намиране образите на дефинираните точки и окръжности; 2 точки за преформулиране на задачата спрямо новата конфигурация; 1 т. за довършване.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circle_geometry",
+        "power_of_point",
+        "angle_chasing",
+        "tangency"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрична задача с допиращи се окръжности и ъгли. Основната техника е степен на точка (1.4).",
+      "_crosslinked_from": "1.4",
+      "_crosslink_confidence": 0.85
     }
   ]
 }

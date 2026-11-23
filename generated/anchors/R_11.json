@@ -1,65 +1,291 @@
 {
   "point_id": "R.11",
-  "total": 4,
+  "total": 19,
   "by_difficulty": {
     "easy": 1,
-    "medium": 1,
-    "hard": 2
+    "medium": 8,
+    "hard": 10
   },
   "problems": [
     {
-      "source": "OLI-3-Национален кръг-1988-9-12 кл · 1988-None · Зад. 5",
-      "statement": "Точките от пространството са оцветени в два цвята (бял и червен). Да се докаже, че може да се намери тетраедър, чиито върхове и център на тежестта са оцветени в един и същ цвят.",
-      "solution": "Решение. Нека ABCD е тетраедър, върховете на който са едноцветни (например бели) и [неразчетено] е произволна точка от пространството. От равенството\nвектор OA₁ = 4 вектор OA − вектор OB − вектор OC − вектор OD\nопределяме точка A₁. Ако тя е бяла, то тетраедърът A₁BCD заедно с центъра на тежестта си — точката A — удовлетворява условието на задачата. Затова нека точката A₁ е оцветена в червено. Аналогично определяме точките B₁, C₁ и D₁ и можем да смятаме, че те също са оцветени в червено. Тогава от равенството\n(1/4)(вектор OA₁ + вектор OB₁ + вектор OC₁ + вектор OD₁) = (1/4)(вектор OA + вектор OB + вектор OC + вектор OD)\nследва, че центровете на тежестта на тетраедрите ABCD и A₁B₁C₁D₁ съвпадат, откъдето веднага следва твърдението на задачата.",
+      "source": "OLI-3-Национален кръг-2021-9-12 кл · 2021-None · Зад. 11.6",
+      "statement": "В пространството са дадени точките A₁, A₂, . . . , A₁₀. Докажете, че съществува точка M, така че векторът MA₁ + MA₂ + · · · + MA₁₀ = 0.",
+      "solution": "Решение. Това е класическа задача. Нека O е произволна точка. Тогава сумата от векторите MA_i = (O - M) + (A_i - O) + (M - O)? Всъщност, MA_i = A_i - M. Тогава сумата S = Σ (A_i - M) за i=1 до 10. Искаме S=0. Тогава Σ A_i - 10 M = 0, така че M = (Σ A_i)/10, т.е. центърът на масите. Тъй като точките са дадени, M е определена. Векторната сума е Σ (A_i - M) = Σ A_i - 10 M. Ако изберем M = (A_1 + A_2 + ... + A_10)/10, тогава Σ (A_i - M) = Σ A_i - 10 * (Σ A_i / 10) = Σ A_i - Σ A_i = 0. Това е решението.",
       "answer": null,
       "difficulty": "easy",
       "techniques": [
-        "vector_method",
-        "centroid_coloring",
-        "pigeonhole_principle"
+        "vector_geometry",
+        "center_of_mass"
       ],
       "confidence": "exact",
-      "reasoning": "Simple vector equality gives a tetrahedron whose vertices and centroid share a colour."
+      "reasoning": "Стандартна задача за център на масите. Решението е директно приложение на векторна алгебра. Трудност easy (5 мин)."
     },
     {
-      "source": "OLI-2-Областен кръг-1997-10 кл · 1997-10 · Зад. 2",
-      "statement": "Given a convex quadrilateral ABCD which can be inscribed in a circle. Let F be the intersecting point of diagonals AC and BD and E be the intersecting point of the lines AD and BC. If M and N are the midpoints of AB and CD, prove that\n\n$$\\frac{M N}{E F}=\\frac{1}{2} \\cdot\\left|\\frac{A B}{C D}-\\frac{C D}{A B}\\right| .$$",
-      "solution": "Solution: Let $\\angle AEB = \\gamma$, $EC = c$, $ED = d$, $\\overrightarrow{i} = \\frac{1}{c} \\cdot \\overrightarrow{EC}$ and $\\overrightarrow{j} = \\frac{1}{d} \\cdot \\overrightarrow{ED}$. Since $ABCD$ is an inscribed quadrilateral, $\\frac{AB}{CD} = \\frac{AE}{CE} = \\frac{BE}{DE} = k$. Therefore $\\overrightarrow{EA} = kc\\overrightarrow{j}$ and $\\overrightarrow{EB} = kd\\overrightarrow{i}$. Since $F \\in AC$ and $F \\in BD$ there exist $x$ and $y$ such that\n\n$$\\overrightarrow{EF} = x\\overrightarrow{EA} + (1 - x)\\overrightarrow{EC} = xkc\\overrightarrow{j} + (1 - x)c\\overrightarrow{i}$$\n\nand\n\n$$\\overrightarrow{EF} = y\\overrightarrow{EB} + (1 - y)\\overrightarrow{ED} = ykd\\overrightarrow{i} + (1 - y)d\\overrightarrow{j}.$$\n\nComparing the coefficients of $\\overrightarrow{i}$ and $\\overrightarrow{j}$ in these equalities gives $xkc = (1 - y)d$ and $ykd = (1 - x)c$. This implies $x = \\frac{kd - c}{(k^2 - 1)c}$. Therefore\n\n$$\\overrightarrow{EF} = \\frac{k}{k^2 - 1} \\left( (kd - c)\\overrightarrow{j} + (kc - d)\\overrightarrow{i} \\right)$$\n\nand thus\n\n$$EF^2 = \\left( \\frac{k}{k^2 - 1} \\right)^2 \\left( (kd - c)^2 + (kc - d)^2 + 2(kd - c)(kc - d)\\cos \\gamma \\right).$$\n\nOn the other hand\n\n$$\\begin{aligned} \\overrightarrow{MN} &= \\frac{1}{2} \\cdot \\left( \\overrightarrow{AD} + \\overrightarrow{BC} \\right) = \\frac{1}{2} \\cdot \\left( \\overrightarrow{ED} - \\overrightarrow{EA} + \\overrightarrow{EC} - \\overrightarrow{EB} \\right) \\\\ &= \\frac{1}{2} \\cdot \\left( (d - kc)\\overrightarrow{j} + (c - kd)\\overrightarrow{i} \\right) \\end{aligned}$$\n\nand it follows that\n\n$$MN^2 = \\frac{1}{4} \\cdot \\left( (d - kc)^2 + (c - kd)^2 + 2(d - kc)(c - kd)\\cos \\gamma \\right).$$\n\nTherefore $\\frac{MN^2}{EF^2} = \\frac{1}{4} \\left( \\frac{k^2 - 1}{k} \\right)^2 = \\frac{1}{4} \\left( k - \\frac{1}{k} \\right)^2$ and so\n\n$$\\frac{MN}{EF} = \\frac{1}{2} \\cdot \\left| \\frac{AB}{CD} - \\frac{CD}{AB} \\right|$$",
+      "source": "OLI-2-Областен кръг-1995-10 кл · 1995-10 · Зад. 10.1",
+      "statement": "Let $p$ and $q$ be positive numbers such that the parabola $y = x^2 - 2px + q$ has no common point with the $x$-axis. Prove that there exist points $A$ and $B$ on the parabola such that the segment $AB$ is parallel to the $x$-axis and $\\angle  AOB = 90^°$ ($O$ is the coordinate origin) if and only if $p^2 < q \\le  \\frac{1}{4}$. Find the values of $p$ and $q$ for which the points $A$ and $B$ are defined in an unique way.",
+      "solution": "Solution. Since the parabola has no common point with the $x$-axis, then the roots of the equation $x^2 - 2px + q = 0$ are not real and hence $p^2 < q$. Let the points $A(x_1, y_0)$ and $B(x_2, y_0)$ (Figure 1) be with the required properties. Then $x_1$ and $x_2$ are the roots of the equation $x^2 - 2px + q - y_0 = 0$ and $y_0 > q - p^2$, because the vertex of the parabola has coordinates $(p, q - p^2)$. On the other hand $OA^2 = x_1^2 + y_0^2$, $OB^2 = x_2^2 + y_0^2$, $AB^2 = (x_1 - x_2)^2$ and it follows from the Pythagorean theorem that $y_0^2 + x_1x_2 = 0$. But $x_1x_2 = q - y_0$ and thus $y_0^2 - y_0 + q = 0$. Consequently the existence of the points $A$ and $B$ is equivalent to the assertion that the equation $f(y) = y^2 - y + q = 0$ has a solution $y_0 > q - p^2$. ($A$ and $B$ are defined in an unique way if this is the only solution.) A necessary condition is that the discriminant of the equation is not negative, i.e. $q \\leq \\frac{1}{4}$. The last condition is sufficient because $f(q - p^2) = (q - p^2) + p^2 > 0$ and $\\frac{1}{2} > \\frac{1}{4} \\geq q - p^2$. The corresponding solution $y_0$ is unique iff $q = \\frac{1}{4}$.\n\nFigure 1.\n\n![img-0.jpeg](img-0.jpeg)\n\nFigure 2.\n\n![img-1.jpeg](img-1.jpeg)",
       "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "vectors"
+        "coordinate_geometry",
+        "quadratic_equations",
+        "pythagorean_theorem"
       ],
       "confidence": "exact",
-      "reasoning": "Expresses all relevant segments as vectors, exploits cyclic quadrilateral ratios, and computes MN/EF."
+      "reasoning": "Задачата използва координатна геометрия на парабола, свойства на корените на квадратно уравнение и Питагорова теорема за ъгъл 90°. Решението е стандартно, но изисква внимателен анализ на условията."
     },
     {
-      "source": "OLI-3-Национален кръг-1984-9-12 кл · 1984-None · Зад. 6",
-      "statement": "Дадена е пирамидата SABCD, основата на която е успоредника ABCD. Нека N е средата на отсечката BC. Равнина λ се движи по такъв начин, че пресича правите SC, SA и AB съответно в точките P, Q и R, така че\nCP/CS = SQ/SA = AR/AB.\nТочката M от правата SD е такава, че правата MN е успоредна на равнината λ. Да се докаже, че геометричното място на точката M, когато λ описва всички възможни положения, е отсечка с дължина (√5/2)SD.",
-      "solution": "Решение. Нека CP/CS = SQ/SA = AR/AB = t. Тогава (черт. 2), ако векторите SA = a⃗, SB = b⃗, SC = c⃗, то\nSP = (1 − t)c⃗,\nSQ = ta⃗,\nSR = (1 − t)a⃗ + tb⃗,\nSD = a⃗ − b⃗ + c⃗,\nSN = (1/2)(b⃗ + c⃗),\nSM = m(a⃗ − b⃗ + c⃗)\nи MN = ma⃗ − (m + 1/2)b⃗ + (m − 1/2)c⃗.\nОт друга страна, понеже векторът MN е колинеарен с λ, то\nMN = αPQ + βPR = [αt + β(1 − t)]a⃗ + βtb⃗ − [(α + β)(1 − t)]c⃗.\nТъй като a⃗, b⃗, c⃗ са линейно независими, то\nm = αt + β(1 − t),\n−m − 1/2 = βt,\nm − 1/2 = −(α + β)(1 − t),\nоткъдето получаваме\n(1) m = (−t² + 3t − 1)/(2(2t² − 2t + 1)).\nТъй като 2t² − 2t + 1 > 0 за всяко t и\nlim_(t→±∞) (−t² + 3t − 1)/(2(2t² − 2t + 1)) = −1/4,\nтърсеното геометрично място е отсечка. От (1) получаваме\n(2) (4m + 1)t² − (4m + 3)t + 2m + [неразчетено] = 0.\nПонеже t е реално число, дискриминантата D на (2) трябва да е неотрицателна. Имаме\nD = (4m + 3)² − 4(4m + 1)(2m + 1) = 5 − 16m²,\nт.е. −√5/4 ≤ m ≤ √5/4. Следователно за краищата на отсечката M₁ и M₂ имаме векторите SM₁ = −(√5/4)SD и SM₂ = (√5/4)SD, откъдето векторът M₁M₂ = (√5/2)SD или M₁M₂ = (√5/2)SD, с което задачата е решена.",
-      "answer": "Геометричното място е отсечката M₁M₂ с вектори SM₁ = −(√5/4)SD и SM₂ = (√5/4)SD и дължина M₁M₂ = (√5/2)SD.",
+      "source": "OLI-2-Областен кръг-2004-10 кл · 2004-10 · Зад. 10.5",
+      "statement": "Нека $O$ е център на описаната окръжност за $\\triangle ABC$, $M$ е средата на страната $AB$, а $G$ е медианът на $\\triangle ACM$. Ако $OG \\perp CM$, да се докаже, че $\\triangle ABC$ е равнобедрен.",
+      "solution": "Нека означим ⃕ a= − →OA, ⃗b = ⃗OB, ⃗ c= − − →OC. Имаме − − →OM = 12 (⃕ a+⃗b), значи− − →OG = 16 (3⃕ a+ ⃗b + 2⃗ c). От друга страна − − →CM = 12 (⃕ a+ ⃗b − 2⃗ c). Тогава\n0 = − − →OG.− − →CM = (3⃕ a+⃗b+2⃗ c)(⃕ a+⃗b−2⃗ c) = 3 R2+3⃕ a⃗b−6⃕ a⃗ c+⃕ a⃗b+R2−2⃗b⃗ c+2⃕ a⃗ c+2⃗b⃗ c−4R2.\nИ така, 0 = 4⃕ a(⃗b − ⃗ c), следователно OA⊥BC , т.е. AB = AC.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "vector_geometry",
+        "dot_product"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва векторни координати и скаларно произведение за доказване на равнобедрен триъгълник. Основната техника е векторна геометрия."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2004-10 кл · 2004-10 · Зад. 10.5",
+      "statement": "Нека $O$ е център на описаната окръжност за $\\triangle ABC$, $M$ е средата на страната $AB$, а $G$ е медианът на $\\triangle ACM$. Ако $OG \\perp CM$, да се докаже, че $\\triangle ABC$ е равнобедрен.",
+      "solution": "Нека означим ⃕ a= − →OA, ⃗b = ⃗OB, ⃗ c= − − →OC. Имаме − − →OM = 12 (⃕ a+⃗b), значи− − →OG = 16 (3⃕ a+ ⃗b + 2⃗ c). От друга страна − − →CM = 12 (⃕ a+ ⃗b − 2⃗ c). Тогава\n0 = − − →OG.− − →CM = (3⃕ a+⃗b+2⃗ c)(⃕ a+⃗b−2⃗ c) = 3 R2+3⃕ a⃗b−6⃕ a⃗ c+⃕ a⃗b+R2−2⃗b⃗ c+2⃕ a⃗ c+2⃗b⃗ c−4R2.\nИ така, 0 = 4⃕ a(⃗b − ⃗ c), следователно OA⊥BC , т.е. AB = AC.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "vector_geometry",
+        "dot_product"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва векторни координати и скаларно произведение за доказване на равнобедрен триъгълник. Основната техника е векторна геометрия.",
+      "_crosslinked_from": "R.11",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2005-12 кл · 2005-12 · Зад. 12.2",
+      "statement": "Да се намерят стойностите на реалните параметри $a$ и $b$, за които графиката на функцията $y = x^3 + ax + b$ има точно три общи точки с координатните оси и те са върхове на правоъгълен триъгълник.",
+      "solution": "12.2. Условието, че графиката на дадената функция има точно три общи точки с координатните оси, които са върхове на триъгълник, означава, че уравнението $$x^3 + ax + b = 0$$ има един двоен реален корен $$x_1 \neq 0$$ и още един реален корен $$x_2 \neq 0$$, т.е. $$x^3 + ax + b = (x - x_1)^2(x - x_2)$$. Тогава $$\\angle  ACB = 90^°$$, където $$A = (x_1, 0)$$, $$B = (x_2, 0)$$, $$C = (0, b)$$ и $$x_1x_2 < 0$$. Оттук $$AO.BO = CO^2$$, т.е. $$-x_1x_2 = b^2$$. Понеже $$b = -x_1^2x_2$$ и $$x_1, x_2 \neq 0$$, то $$x_1^3x_2 = -1$$. От друга страна, $$2x_1 + x_2 = 0$$ и значи $$2x_1 = -x_2 = \f\\frac{1}{x_1^3}$$. Следователно $$x_1 = ± \f\\frac{1}{∛[3]{2}}$$ и $$x_2 = ∓ ∛[4]{8}$$. Тогава $$a = x_1^2 + 2x_1x_2 = -\f\\frac{3}{∛[3]{2}}$$ и $$b = -x_1^2x_2 = ± ∛[4]{2}$$. От направените разглеждания е ясно, че и за двете намерени стойности на $$b$$ са изпълнени условията на задачата.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "polynomial_roots",
+        "geometry"
+      ],
+      "confidence": "exact",
+      "reasoning": "Решение чрез разлагане на полином и геометрични свойства на триъгълник.",
+      "_crosslinked_from": "5.9",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2018-12 кл · 2018-12 · Зад. 12.3",
+      "statement": "Колко най-малко може да бъде разстоянието между точки $M$ и $N$ съответно от графиките на функциите $y = x^2$ и $y = 5x^2 + 1$?",
+      "solution": "Първи начин. Ако $M = (x-a, (x-a)^2)$ и $N = (x, 5x^2 + 1)$, то\n\n$$(1) \\quad MN^2 = a^2 + (5x^2 + 1 - (x-a)^2)^2 = a^2 + (4(x+a/4)^2 + 1 - 5a^2/4)^2.$$\n\nПри $a^2 \\geq 4/5$ следва, че (2) $MN^2 \\geq 4/5$, а при $a^2 < 4/5$ имаме, че\n\n$$(3) \\quad MN^2 \\geq a^2 + (1 - 5a^2/4)^2 = (3/5 - 5a^2/4)^2 + 16/25.$$\n\nЗначи (4) $\\min MN = 4/5$ (достига се при $a = \\pm 2\\sqrt{3}/5$, $x = \\mp\\sqrt{3}/10$).\n\nВтори начин. Лесно се съобразява, че разстоянието между точки от двете параболи има най-малка стойност. Нека тя се достига за точки $M$ и $N$. Тогава кръговете с центрове в тези точки и радиус $MN$ се допират до съответната парабола. Следователно правата $MN$ е перпендукулярна на съответните допирателни, т.е. е обща нормала за двете параболи (*).\n\nАко $MN$ е успоредна на ординатната ос, то (1) $M = (0, 0)$, $N = (1, 6)$ и $MN = 1$. Иначе $M = (x_1, x_1^2)$, $N = (x_2, 5x_2^2 + 1)$, $x_1 x_2 \\neq 0$, и правата $MN$ може да бъде зададена по два начина:\n\n$$(2) \\quad y - x_1^2 = -\\frac{1}{2x_1}(x - x_1), \\quad y - (5x_2^2 + 1) = -\\frac{1}{10x_2}(x - x_2).$$\n\nОттук $x_1 = 5x_2$, $x_1^2 + 1/2 = 5x_2^2 + 1 + 1/10$, т.е. (3) $x_1 = \\pm\\sqrt{3}/2$, $x_2 = \\pm\\sqrt{3}/10$. Тогава (4) $MN = 4/5$, което е отговорът на задачата.\n\nИнструкции за оценяване. (7 точки) Първи начин: 2 т. за (1), 1 т. за (2), 3 т. за (3) и 1 т. за (4); Втори начин: 2 т. за (*), 1 т. за (1), 2 т. за (2), 1 т. за (3) и 1 т. за (4).",
+      "answer": "4/5",
+      "difficulty": "medium",
+      "techniques": [
+        "coordinate_geometry",
+        "distance_minimization",
+        "calculus"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата се решава с координатна геометрия и минимизиране на разстояние между криви. Използват се производни за намиране на минимум."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2020-12 кл · 2020-12 · Зад. 12.2",
+      "statement": "Дадена е правилна четириъгълна пирамида $ABCDE$ с основен ръб $AB = 1$ и околен ръб $AE = \\sqrt{2}$. Върху ребрата $AB$ и $DE$ са избрани точки $M$ и $N$ съответно, така че $MN$ е успоредна на равнината ($BCE$). Ако $MN = 1$, да се намери разстоянието между правите $MN$ и $BE$.",
+      "solution": "Решение. Нека равнината през M N, успоредна на равнината (BCE ) пресича ръбовете CD и AE в точките K и L съответно. Тогава M K ‖ BC , KN ‖ CE , M L ‖ BE и съответно N L ‖ AD. Ако AM = t, то M L : BE = AM : AB ⇒ M L = √2t и от съображения за симетрия KN = √2t. Също така N L : DA = EL : EA = BM : BA = 1 − t, т.е. N L = 1 − t. В равнобедрения трапец M KN L пресмятаме височината N H = √N K2 − KH 2 = √2t2 − t2/4 и съответно M N2 = N H2 + M H2 = 2 t2 − t2/4 + (1 − t/2)^2 = 2 t2 − t + 1. Но по условие M N = 1 и следователно t = 1/2, т.е. M е среда на AB и N е среда на ED. Остава да пресметнем разстоянието от върха E до равнината (M N L). Последователно получаваме VEN LM = 1/2 VEN LB = 1/8 VEADB = 1/16 VABCDE = 1/16 · 1/3 · 1 · √3/2 = √6/96. Тогава търсеното разстояние е d = 3VEN LM / SLM N = (√6/32) / (√7/16) = √42/14.",
+      "answer": "√42/14",
+      "difficulty": "medium",
+      "techniques": [
+        "coordinate_geometry",
+        "volume_calculation",
+        "distance_between_lines"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва координатен метод за намиране на разстояние в пирамида, което е основна тема в R.11. Трудността е medium поради необходимостта от построяване на помощни елементи и обемни изчисления."
+    },
+    {
+      "source": "OLI-3-Национален кръг-1992-9-12 кл · 1992-None · Зад. 1",
+      "statement": "През произволна точка C1 от ръба DC на правилния тетраедър ABCD е прекарана равнина, успоредна на равнината (ABC). Тази равнина пресича ръбовете DA и DB съответно в точките A1 и B1. Нека точката H е средата на височината през върха D на тетраедъра DA1B1C1, а M е медицентърът на триъгълника ABC1. Да се докаже, че мярката на ъгъла не зависи от положението на точката C1.",
+      "solution": "Решение. Нека даденият правилен тетраедър има ръб с дължина 1. Тогава $\\overrightarrow{DA} = \\vec{a}$, $\\overrightarrow{DB} = \\vec{b}$, $\\overrightarrow{DC} = \\vec{c}$ (черт. 1). Тъй като равнините (ABC) и (A1B1C1) са успоредни, то съществува число $\\lambda$, за което $\\overrightarrow{DA_1} = \\lambda\\vec{a}$, $\\overrightarrow{DB_1} = \\lambda\\vec{b}$ и $\\overrightarrow{DC_1} = \\lambda\\vec{c}$. Тетраедърът A1B1C1D е правилен, следователно петата на височината му през върха D съвпада с медицентъра на равностранния $\\triangle A_1B_1C_1$. Оттук за вектора $\\overrightarrow{DH}$ непосредствено получаваме $\\overrightarrow{DH} = \\frac{1}{2} \\cdot \\frac{1}{3} \\left( \\overrightarrow{DA_1} + \\overrightarrow{DB_1} + \\overrightarrow{DC_1} \\right) = \\frac{\\lambda}{6} (\\vec{a} + \\vec{b} + \\vec{c})$ и тъй като $\\overrightarrow{DM} = \\frac{1}{3} \\left( \\overrightarrow{DA} + \\overrightarrow{DB} + \\overrightarrow{DC_1} \\right) = \\frac{\\lambda}{6} (\\vec{a} + \\vec{b} + \\lambda\\vec{c})$, то $\\overrightarrow{CM} = \\overrightarrow{DM} - \\overrightarrow{DC} = \\frac{1}{3} \\left( \\vec{a} + \\vec{b} + (\\lambda - 3)\\vec{c} \\right)$ и $\\overrightarrow{MH} = \\overrightarrow{DH} - \\overrightarrow{DM} = \\frac{1}{6} \\left( (\\lambda - 2)\\vec{a} + (\\lambda - 2)\\vec{b} - \\lambda\\vec{c} \\right)$. Като вземем предвид, че $\\vec{a}^2 = \\vec{b}^2 = \\vec{c}^2 = 1$, $\\vec{a} \\cdot \\vec{b} = \\vec{b} \\cdot \\vec{c} = \\vec{c} \\cdot \\vec{a} = \\frac{1}{2}$ (защото ABCD е правилен тетраедър) за скаларното произведение на ненулевите вектори $\\overrightarrow{CM}$ и $\\overrightarrow{MH}$ получаваме $\\overrightarrow{CM} \\cdot \\overrightarrow{MH} = \\frac{1}{3} \\left( \\vec{a} + \\vec{b} + (\\lambda - 3)\\vec{c} \\right) \\cdot \\frac{1}{6} \\left( (\\lambda - 2)\\vec{a} + (\\lambda - 2)\\vec{b} - \\lambda\\vec{c} \\right) = \\frac{1}{18} \\left[ (\\lambda - 2)\\vec{a}^2 + (\\lambda - 2)\\vec{b}^2 \\right] + \\frac{1}{18} \\left[ (3\\lambda - \\lambda^2) \\vec{c}^2 + (2\\lambda - 4)\\vec{a} \\cdot \\vec{b} + (\\lambda^2 - 6\\lambda + 6)\\vec{b} \\cdot \\vec{c} + (\\lambda^2 - 6\\lambda + 6)\\vec{c} \\cdot \\vec{a} \\right] = 0$. Следователно $\\overrightarrow{CM} \\perp \\overrightarrow{MH}$, т. е. $\\angle HMC = 90^\\circ$ независимо от избора на точката C1 върху DC.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "barycentric_coordinates",
+        "vector_algebra",
+        "dot_product"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква използване на барицентрични координати (неявно, чрез векторен подход) за изразяване на позициите на медицентрите и точката H. Основната техника е векторна алгебра със скаларно произведение за доказване на перпендикулярност. Това е класическа стереометрична задача с параметър, която се решава елегантно с координатен метод, но тук е представена във векторна форма, която е еквивалентна на барицентрични координати.",
+      "_crosslinked_from": "12.2",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-3-Национален кръг-2023-9-12 кл · 2023-None · Зад. 4",
+      "statement": "Да се докаже, че върху страната $AD$ на изпъкнал четириъгълник $ABCD$ съществува единствена точка $M$, за която\n\n$$\\sqrt{S_{ABM}} + \\sqrt{S_{CDM}} = \\sqrt{S_{ABCD}},$$\n\nтогава и само тогава $AB||CD$.",
+      "solution": "Първи начин. (Н. Николов)\n\nСлед повдигане на квадрат даденото равенство приема вида\n\n$$2\\sqrt{S_{ABM}S_{CDM}} = S_{BCM}.$$\n\nПърво ще докажем, че ако $AB||CD$, то\n\n$$(1) 2\\sqrt{S_{ABM}S_{CDM}} \\leq S_{BCM}.$$\n\nза всяка точка $M \\in [AD]$, като равенство се достига само в една точка.\n\nНека $AB = a$, $CD = b$, $d(M, AB) = x$ и $d(M, CD) = y$. Тогава\n\n$$(1) \\Leftrightarrow 2\\sqrt{axby} \\leq (a + b)(x + y) - ax - by \\Leftrightarrow (\\sqrt{ay} - \\sqrt{bx})^2 \\geq 0.$$\n\nРавенство се достига само ако $AM/BM = a/b$. По-нататък, нека $D' \\in AD$ така, че $CD'||AB$. Ако $\\angle B + \\angle C < 180^\\circ$, то $D \\in (AD')$ и от (1) следва, че\n\n$$2\\sqrt{S_{ABM}S_{CDM}} < 2\\sqrt{S_{ABM}S_{CD'M}} \\leq S_{BCM}$$\n\nза $M \\in (A, D]$.\n\nАко $\\angle B + \\angle C > 180^\\circ$, то $D' \\in (AD)$. Нека $f(M) = 2\\sqrt{S_{ABM}S_{CDM}} - S_{BCM}$ за $M \\in [AD]$. Очевидно $f(A) < 0$ и $f(D) < 0$. От друга страна, вече знаем, че има единствена точка $M' \\in (AD')$, за която $2\\sqrt{S_{ABM'}S_{CD'M'}} = S_{BCM'}$ и значи $f(M') > 0$. По непрекъснатост следва, че съществуват точки $M_1 \\in (AM')$ и $M_2 \\in (M'D)$ така, че $f(M_1) = f(M_2) = 0$. Оттук задачата следва.\n\nЗабележка. В случая $\\angle B + \\angle C > 180^\\circ$ съществуват точно две точки $M_1, M_2 \\in (AD)$, за които\n\n$$\\sqrt{S_{ABM}} + \\sqrt{S_{CDM}} = \\sqrt{S_{ABCD}}.$$\n\nНаистина, $S_{ABM}$ и $S_{CDM}$ са линейни функции на $M \\in [AD]$. Следователно $\\sqrt{S_{ABM}} + \\sqrt{S_{CDM}}$ е строго вдлъбната функция и значи приема дадена стойност най-много два пъти.\n\nВтори начин. (К. Делчев и Н. Николов)\n\nЩе използваме, че ако $A_1(x_1, y_1)$, $A_2(x_2, y_2)$ и $A_3(x_3, y_3)$, то удвоеното ориентирано лице на $\\triangle A_1 A_2 A_3$ е равно на $x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)$.\n\nМожем да считаме, че $A(0, 0)$, $B(x_1, y_1)$, $C(x_2, y_2)$, $D(0, 1)$ и $M = (0, m)$, където $x_1, x_2 > 0$. Записваме даденото равенство във вида $4S_{ABM}S_{CDM} = S_{BCM}^2$ и получаваме, че\n\n$$4x_1x_2m(1 - m) = (\\triangle + m(x_2 - x_1))^2,$$\n\nсвалено от Klasirane.com\n\nкъдето $\\triangle = x_1 y_2 - x_2 y_1 = 2S_{ABC} > 0$, т.е.\n\n$$m^2(x_1 + x_2)^2 + 2m((x_2 - x_1)\\triangle - 2x_1 x_2) + \\triangle^2 = 0.$$\n\nТова уравнение има единствено решение $m \\in (0, 1)$ точно когато\n\n$$D_1 = 4x_1 x_2 (x_1 - \\triangle)(x_2 + \\triangle) = 0 \\Leftrightarrow x_1 = \\triangle \\Leftrightarrow \\frac{x_1}{x_2} = \\frac{y_1}{y_2 - 1} \\Leftrightarrow AB || CD.$$\n\n**Оценяване.** *Първи начин* (7 точки) 2т. за случая $AB || CD$, 2т. за $\\measuredangle B + \\measuredangle C < 180^\\circ$, 3т. за случая $\\measuredangle B + \\measuredangle C > 180^\\circ$.\n\n*Втори начин* (7 точки) 1т. за свеждането до $4S_{ABM}S_{CDM} = S_{BCM}^2$, 3т. за въвеждане на подходяща параметризация и изразяване на равенството от по-горе чрез нея, 3т. за довършване",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "quadrilateral_properties",
+        "parallel_lines",
+        "area_calculation",
+        "coordinate_geometry"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата свързва лица на триъгълници и четириъгълник с успоредни страни. Точка 1.7 (Формули за лице) е подходяща. Трудност: medium, стандартна но с няколко стъпки.",
+      "_crosslinked_from": "1.7",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-2-Областен кръг-1995-10 кл · 1995-10 · Зад. 10.5",
+      "statement": "The points $A_1$, $B_1$, $C_1$ lie on the sides $BC$, $CA$, $AB$ of the triangle $ABC$ respectively and the lines $AA_1$, $BB_1$, $CC_1$ have a common point $M$. Prove that if the point $M$ is center of gravity of $\\triangle A_1B_1C_1$, then $M$ is the center of gravity of $\\triangle ABC$.",
+      "solution": "Let $M$ be the center of gravity of $\\triangle A_1 B_1 C_1$. Let $A_2$ be a point on $MA^-$ such that $B_1 A_1 C_1 A_2$ is a parallelogram. The points $B_2$ and $C_2$ are constructed analogously. Since $A_1 C_1 / A_1 B_1 / C_1 B_2$, then the points $A_2$, $C_1$, $B_2$ are colinear and $C_1$ is the midpoint of $A_2 B_2$. The same is true for the points $A_2$, $B_1$, $C_2$ and $C_2$, $A_1$, $B_2$. We shall prove that $A_2 = A$, $B_2 = B$ and $C_2 = C$, which will solve the problem.\n\nAssume that $A_2 \neq A$ and let $A$ be between $A_2$ and $M$. Then $C_2$ is between $C$ and $M$, $B$ is between $B_2$ and $M$ and consequently $A_2$ is between $A$ and $M$, which is a contradiction.",
+      "answer": null,
       "difficulty": "hard",
       "techniques": [
-        "vector_method",
-        "analytic_geometry"
+        "vector_geometry",
+        "centroid_properties",
+        "contradiction"
       ],
       "confidence": "exact",
-      "reasoning": "Vector parametrisation, solving a quadratic discriminant; requires several algebraic manipulations."
+      "reasoning": "Геометрична конструкция с вектори и паралелограми, използваща свойства на медицентъра. Решението използва противоречие за доказване. Трудността идва от нетривиалната конструкция."
     },
     {
-      "source": "OLI-3-Национален кръг-1993-9-12 кл · 1993-None · Зад. 5",
-      "statement": "Нека Oxy е фиксирана правоъгълна координатна система в равнината. На всяка наредена двойка точки A₁, A₂ от същата равнина, които са различни от O и имат съответно координати (x₁, y₁) и (x₂, y₂), е съпоставено реално число f(A₁, A₂), като са изпълнени условията:\n(а) Ако OA₁ = OB₁, OA₂ = OB₂ и A₁A₂ = B₁B₂, то f(A₁, A₂) = f(B₁, B₂).\n(б) Съществува такъв полином от втора степен F(u, v, w, z), че f(A₁, A₂) = F(x₁, y₁, x₂, y₂) за всяка наредена двойка точки A₁, A₂.\n(в) Съществува такова число φ ∈ (0, π), че за всеки две точки A₁, A₂, за които ∠A₁OA₂ = φ, е изпълнено f(A₁, A₂) = 0.\n(г) Ако точките A₁, A₂ са такива, че △OA₁A₂ е равностранен със страна 1, то f(A₁, A₂) = 1/2.\nДа се докаже, че f(A₁, A₂) = \\overrightarrow{OA₁} · \\overrightarrow{OA₂} за всяка наредена двойка точки A₁, A₂.",
-      "solution": "Решение. Нека полиномът F(u, v, w, z) има вида\nF(u, v, w, z) = a₁₁u²+a₂₂v²+a₃₃w²+a₄₁z²+a₁₂uv+a₁₃uw+a₁₄uz+a₂₃vw+a₂₄vz+a₃₄wz+a₁u+a₂v+a₃w+a₄z+a.\nОт точките A₁(x₁, y₁), A₂(x₂, y₂) при симетрията относно Ox се получават точките B₁(x₁, −y₁) и B₂(x₂, −y₂). Освен това C₁(−x₁, −y₁), C₂(−x₂, −y₂) са симетрични на A₁, A₂ относно координатното начало. Условието а) показва, че f(A₁, A₂) = f(B₁, B₂) = f(C₁, C₂), така че са налице тъждествата\n(1) F(x₁, y₁, x₂, y₂) = F(x₁, −y₁, x₂, −y₂),\n(2) F(x₁, y₁, x₂, y₂) = F(−x₁, −y₁, −x₂, −y₂).\nОт (2) следва, че a₁x₁+a₂y₁+a₃x₂+a₁y₂ = 0 за произволни x₁, y₁, x₂, y₂, което е възможно само при a₁ = a₂ = a₃ = a₄ = 0. Аналогично, от (1) получаваме тъждеството a₁₂x₁y₁+a₁₄x₁y₂+a₂₃x₂y₁+a₃₄x₂y₂ = 0, откъдето a₁₂ = a₁₄ = a₂₃ = a₃₄ = 0. Следователно\n(3) F(u, v, w, z) = a₁₁u²+a₂₂v²+a₃₃w²+a₄₄z²+a₁₃uw+a₂₄vz+a.\nОтново от а) имаме F(1, 1, −1, 1) = F(1, −1, 1, 1), F(1, 0, 1, 1) = F(0, 1, −1, 1), F(1, −1, 1, 0) = F(1, 1, 0, 1), от които намираме последователно a₁₃ = a₂₄, a₁₁ = a₂₂, a₃₃ = a₄₁. Тогава от (3) се вижда, че за всеки две точки A₁, A₂ имаме\nf(A₁, A₂) = a₁₁OA₁²+a₃₃OA₂²+a₁₃ OA₁⃗ · OA₂⃗+a.\nСега да изберем A₁ и A₂ така, че ∠A₁OA₂ = φ. Тъй като f(A₁, A₂) = 0 съгласно в), равенството a₁₁OA₁²+a₃₃OA₂²+a₁₃OA₁·OA₂ cos φ+a = 0 е изпълнено за произволни стойности на дължините OA₁ и A₂. Оттук a₁₁ = a₃₃ = a = 0, така че f(A₁, A₂) = a₁₃ OA₁⃗ · OA₂⃗ за произволни точки A₁, A₂.\nНай-после, като вземем предвид г), намираме a₁₃ = 1, с което твърдението е доказано.",
-      "answer": "f(A₁, A₂) = OA₁⃗ · OA₂⃗.",
+      "source": "OLI-2-Областен кръг-1995-10 кл · 1995-10 · Зад. 10.5",
+      "statement": "The points $A_1$, $B_1$, $C_1$ lie on the sides $BC$, $CA$, $AB$ of the triangle $ABC$ respectively and the lines $AA_1$, $BB_1$, $CC_1$ have a common point $M$. Prove that if the point $M$ is center of gravity of $\\triangle A_1B_1C_1$, then $M$ is the center of gravity of $\\triangle ABC$.",
+      "solution": "Let $M$ be the center of gravity of $\\triangle A_1 B_1 C_1$. Let $A_2$ be a point on $MA^-$ such that $B_1 A_1 C_1 A_2$ is a parallelogram. The points $B_2$ and $C_2$ are constructed analogously. Since $A_1 C_1 / A_1 B_1 / C_1 B_2$, then the points $A_2$, $C_1$, $B_2$ are colinear and $C_1$ is the midpoint of $A_2 B_2$. The same is true for the points $A_2$, $B_1$, $C_2$ and $C_2$, $A_1$, $B_2$. We shall prove that $A_2 = A$, $B_2 = B$ and $C_2 = C$, which will solve the problem.\n\nAssume that $A_2 \neq A$ and let $A$ be between $A_2$ and $M$. Then $C_2$ is between $C$ and $M$, $B$ is between $B_2$ and $M$ and consequently $A_2$ is between $A$ and $M$, which is a contradiction.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "vector_geometry",
+        "centroid_properties",
+        "contradiction"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрична конструкция с вектори и паралелограми, използваща свойства на медицентъра. Решението използва противоречие за доказване. Трудността идва от нетривиалната конструкция.",
+      "_crosslinked_from": "R.11",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-2-Областен кръг-1997-10 кл · 1997-10 · Зад. 10.5",
+      "statement": "Two squares K₁ and K₂ with centres M and N and sides of length 1 are placed in the plane in a way that MN = 4, two of the sides of K₁ are parallel to MN and one of the diagonals of K₂ lies on the line MN. Find the locus of midpoints of segments XY where X is an interior point for K₁ and Y is an interior point for K₂.",
+      "solution": "The locus is the interior of a regular hexagon centred at the midpoint of the segment $MN$ and with a side length of $\\frac{1}{2}$.\n\nTo prove this, proceed as follows.\n\nFix the point $Y$ in the interior of $K_2$. When $X$ varies in the interior of $K_1$ the locus of the midpoints of $XY$ is a square $K_1'$ which is homothetic to $K_1$ by homothecy with centre $Y$ and coefficient $\\frac{1}{2}$.\n\nObviously the side of this square is $\\frac{1}{2}$ and its centre is the midpoint of $MY$. When $Y$ varies in the interior of $K_2$ then the locus of the midpoints of $MY$ is a square $K_2'$ which is homothetic to $K_2$ by homothecy with centre $M$ and coefficient $\\frac{1}{2}$. The side of this square equals $\\frac{1}{2}$ and its centre $Q$ is the midpoint of $MN$. Finally, when the centres of $K_1'$ vary in the interior of $K_2'$, the squares vary in the interior of a regular hexagon centred at $Q$ and with a side length of $\\frac{1}{2}$.",
+      "answer": "the interior of a regular hexagon centred at the midpoint of the segment $MN$ and with a side length of $\\frac{1}{2}$",
+      "difficulty": "hard",
+      "techniques": [
+        "homothety",
+        "locus",
+        "geometric_transformations"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задача за геометрично място, използваща хомотетии (2.4 - спирално подобие). Трудността е hard поради комбинацията от две хомотетии и анализ на областта.",
+      "_crosslinked_from": "2.4",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-1997-11 кл · 1997-11 · Зад. 11.2",
+      "statement": "Given a convex quadrilateral ABCD which can be inscribed in a circle. Let F be the intersecting point of diagonals AC and BD and E be the intersecting point of the lines AD and BC. If M and N are the midpoints of AB and CD, prove that\n\n$$\\frac{M N}{E F}=\\frac{1}{2} \\cdot\\left|\\frac{A B}{C D}-\\frac{C D}{A B}\\right| .$$",
+      "solution": "Let $\\angle AEB = \\gamma$, $EC = c$, $ED = d$, $\\overrightarrow{i} = \\frac{1}{c} \\cdot \\overrightarrow{EC}$ and $\\overrightarrow{j} = \\frac{1}{d} \\cdot \\overrightarrow{ED}$. Since $ABCD$ is an inscribed quadrilateral, $\\frac{AB}{CD} = \\frac{AE}{CE} = \\frac{BE}{DE} = k$. Therefore $\\overrightarrow{EA} = kc\\overrightarrow{j}$ and $\\overrightarrow{EB} = kd\\overrightarrow{i}$. Since $F \\in AC$ and $F \\in BD$ there exist $x$ and $y$ such that\n\n$$\\overrightarrow{EF} = x\\overrightarrow{EA} + (1 - x)\\overrightarrow{EC} = xkc\\overrightarrow{j} + (1 - x)c\\overrightarrow{i}$$\n\nand\n\n$$\\overrightarrow{EF} = y\\overrightarrow{EB} + (1 - y)\\overrightarrow{ED} = ykd\\overrightarrow{i} + (1 - y)d\\overrightarrow{j}.$$\n\nComparing the coefficients of $\\overrightarrow{i}$ and $\\overrightarrow{j}$ in these equalities gives $xkc = (1 - y)d$ and $ykd = (1 - x)c$. This implies $x = \\frac{kd - c}{(k^2 - 1)c}$. Therefore\n\n$$\\overrightarrow{EF} = \\frac{k}{k^2 - 1} \\left( (kd - c)\\overrightarrow{j} + (kc - d)\\overrightarrow{i} \\right)$$\n\nand thus\n\n$$EF^2 = \\left( \\frac{k}{k^2 - 1} \\right)^2 \\left( (kd - c)^2 + (kc - d)^2 + 2(kd - c)(kc - d)\\cos \\gamma \\right).$$\n\nOn the other hand\n\n$$\\begin{aligned} \\overrightarrow{MN} &= \\frac{1}{2} \\cdot \\left( \\overrightarrow{AD} + \\overrightarrow{BC} \\right) = \\frac{1}{2} \\cdot \\left( \\overrightarrow{ED} - \\overrightarrow{EA} + \\overrightarrow{EC} - \\overrightarrow{EB} \\right) \\\\ &= \\frac{1}{2} \\cdot \\left( (d - kc)\\overrightarrow{j} + (c - kd)\\overrightarrow{i} \\right) \\end{aligned}$$\n\nand it follows that\n\n$$MN^2 = \\frac{1}{4} \\cdot \\left( (d - kc)^2 + (c - kd)^2 + 2(d - kc)(c - kd)\\cos \\gamma \\right).$$\n\nTherefore $\\frac{MN^2}{EF^2} = \\frac{1}{4} \\left( \\frac{k^2 - 1}{k} \\right)^2 = \\frac{1}{4} \\left( k - \\frac{1}{k} \\right)^2$ and so\n\n$$\\frac{MN}{EF} = \\frac{1}{2} \\cdot \\left| \\frac{AB}{CD} - \\frac{CD}{AB} \\right|$$",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "vector_algebra",
+        "coordinate_geometry"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрична задача, решена с векторен и координатен метод. Въпреки че е за вписан четириъгълник, решението не използва стандартни геометрични теореми, а разчита на параметризация и векторни изрази. Това я прави сложна и дълга."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2005-12 кл · 2005-12 · Зад. 12.4",
+      "statement": "Върху ръба $AB$ на куб $ABCD A_1 B_1 C_1 D_1$ е взета точка $K$ така, че правата $A_1B$ сключва с равнината $(B_1CK)$ ъгъл с големина $60^\\circ$. Да се намери тангенсът на ъгъла между тази равнина и равнината на основата $ABCD$ на куба.",
+      "solution": "Ще считаме, че ръбовете на куба имат дължина 1. Нека $M = A_1B \\cap KB_1$ и $KB = x$. От $\\triangle KBM \\sim \\triangle A_1MB_1$ следва, че $\\frac{MB}{A_1M} = x$. Понеже $A_1M + MB = \\sqrt{2}$, намираме, че $MB = \\frac{x\\sqrt{2}}{x+1}$. Нека $V$ е обемът на пирамидата $KBCB_1$. Тогава\n\n$$V = \\frac{1}{3}BB_1.S_{KBC} = \\frac{x}{6}. \\tag{5}$$\n\nОт друга страна, височината на $KBCB_1$ през върха $B$ е равна на $h = BM \\sin 60^\\circ = \\frac{x\\sqrt{6}}{2(x+1)}$. Тъй като $B_1K = CK = \\sqrt{x^2+1}$ и $B_1C = \\sqrt{2}$, то $S_{B_1KC} = \\frac{\\sqrt{2x^2+1}}{2}$. Следователно\n\n$$V = \\frac{h.S_{B_1KC}}{3} = \\frac{x\\sqrt{6}\\sqrt{2x^2+1}}{12(x+1)}.$$\n\nОттук и (5) следва, че\n\n$$\\frac{x}{6} = \\frac{x\\sqrt{6}\\sqrt{2x^2+1}}{12(x+1)}.$$\n\nСлед съкращаване на $\\frac{x}{6}$ и повдигане в квадрат намираме, че $x = \\frac{1}{2}$.\n\nНека сега $L$ е проекцията на перпендикуляра от $B$ към $KC$. От теоремата за трите перпендикуляра следва, че $KC \\perp B_1L$ и значи търсеният ъгъл е $\\alpha = \\frac{1}{2}B_1LB$. От $\\triangle KBC$ намираме $BL = \\frac{1}{\\sqrt{5}}$ и следователно $\\operatorname{tg} \\alpha = \\sqrt{5}$.",
+      "answer": "$\\operatorname{tg} \\alpha = \\sqrt{5}$",
+      "difficulty": "hard",
+      "techniques": [
+        "coordinate_geometry",
+        "volume_calculation",
+        "trigonometry"
+      ],
+      "confidence": "exact",
+      "reasoning": "Координатна геометрия и обемни изчисления в куб."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2007-12 кл · 2007-12 · Зад. 12.2",
+      "statement": "В сфера с радиус 2 е вписана пирамида ABCD, за която AB = 2, CD = √7 и \\angle ABC = \\angle BAD = 90◦. Да се намери ъгълът между правите AD и BC.",
+      "solution": "Нека O е центърът на описаната около ABCD сфера, O1 е средата на AC, E е точката, за която ABCE е правоъгълник, E1 е средата на AE и O2 е центърът на описаната около \\triangle AED окръжност k. Тъй като AB ⊥ AE и AB ⊥ AD, следва, че (ABCE ) ⊥ (AED). Значи E1O1OO2 е правоъгълник (защо?). Освен това, ясно е, че ъгълът между правите AD и BC е равен на \\angle DAE = α. От CE \\parallel AB ⊥ (AED) следва, че DE = √ DC 2 − CE 2 = √3 и радиусът на k е AO2 = DE2 sinα = √32 sinα . Понеже AO = 2 и OO2 = O1E1 = AB2 = 1, от правоъгълния \\triangle AO2O намираме, че 4 = 34 sin2 α + 1. Оттук sin α = 12 , т.е. α = 30◦.",
+      "answer": "α = 30°",
       "difficulty": "hard",
       "techniques": [
         "vectors",
-        "dot_product",
-        "polynomial_symmetry",
-        "geometric_invariants"
+        "coordinate_geometry",
+        "sphere",
+        "pyramid"
       ],
       "confidence": "exact",
-      "reasoning": "Derives the explicit form of a second‑degree polynomial invariant under rotations and reflections, leading to f(A1,A2)=OA1·OA2. Main framework is vector/coordinate geometry (R.11)."
+      "reasoning": "Задачата включва пирамида, вписана в сфера, и изисква намиране на ъгъл между прави. Решението използва вектори и координатна геометрия, които са основни техники в геометрията на пространството."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2014-12 кл · 2014-12 · Зад. 12.2",
+      "statement": "Да се намери най‑малката възможна стойност на страната на равностранен триъгълник с върхове върху параболата $y = x^2$.",
+      "solution": "**Решение.** Нека $A_1(x_1, x_1^2)$, $A_2(x_2, x_2^2)$, $A_3(x_3, x_3^2)$ са върхове на на равностранен тригълник. Можем да считаме, че $x_1 < 0 \\le  x_2 \\le  x_3$. Нека $α$ е острият ъгъл между правата $A_2 A_3$ и абсцисната ос, а $β$ е острият ъгъл между правата $A_2 A_3$ и тази ос. Тогава\n\n$$α + β = 120^°,     \\tan α = \f\\frac{x_3^2 - x_2^2}{x_3 - x_2} = x_3 + x_2,     \\tan β = \f\\frac{x_1^2 - x_2^2}{x_2 - x_1} = -x_1 - x_2,$$\n\nоткъдето\n\n$$-√{3} = \\tan 120^° = \f\\frac{x_3 - x_1}{1 - \\tan α \\tan β}.$$\n\nПонеже\n\n$$0 < \\tan α \\tan β - 1 = -\f\\frac{2 √{3}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "coordinate_geometry",
+        "equilateral_triangle",
+        "optimization"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква намиране на минимална страна на равностранен триъгълник с върхове на парабола. Решението използва координатна геометрия и тригонометрични зависимости, но е непълно."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2019-12 кл · 2019-12 · Зад. 12.2",
+      "statement": "За всяко реално число $x > 0$ дефинираме триъгълника $T(x) = ABC$, чиито върхове имат координати $A = (-1, 1)$, $B = (x, \f\\frac{1}{x})$ и $C = (\f\\frac{x}{2}, -\f\\frac{2}{x})$ в правоъгълна координатна система. Измежду всички триъгълници $T(x)$, $x > 0$, да се намерят тези, които имат най-малко лице.",
+      "solution": "Решение. Първи начин. Да фиксираме $x$ и да разгледаме триъгълника $ABC = T(x)$. Ще изразим неговото лице като функция на $x$.\n\nНека $l_C$ и $l_A$ са правите през $C$ и $A$, упоредни на абсцисата. Нека $l_B$ е правата през $B$, упоредна на ординатата. Нека $X = CA \\cap l_B$, $Y = l_A \\cap l_B$ и $D = l_C \\cap l_B$, вж. фиг. 1. Директно пресмятаме, че:\n\n$$|AY| = 1 + x, \\quad |CD| = \\frac{x}{2}, \\quad |DY| = 1 + \\frac{2}{x} \\text{ и } |BD| = \\frac{3}{x}. \\tag{1}$$\n\nТогава е ясно, че $|AY| = 1 + x > \\frac{x}{2} = |CD|$. Това означава, че $X$ съществува и $C$ се намира на отсечката $AX$, откъдето $X$ е в четвърти квадрант. Сега може да изразим лицето на $ABC$ чрез лицето на $AXB$ както следва:\n\n$$S_{ABC} = \\frac{|CA|}{|AX|} S_{AXB} = \\left(1 - \\frac{|CD|}{|AY|}\\right) S_{AXB},$$\n\nзащото по Теоремата на Талес $\\frac{|CA|}{|AX|} = 1 - \\frac{|CX|}{|AX|} = 1 - \\frac{|CD|}{|AY|}$. Сега лицето на $AXB$ е $S_{AXB} =$\n\nСвалено от Klasirane.com\n\n\\[\n\\frac {| A Y | . | B X |}{2}.\n\\]\n\n\\[\nS _ {A B C} = \\frac {(| A Y | - | C D |)}{| A Y |} \\frac {| A Y | . | B X |}{2} = (| A Y | - | C D |) \\frac {| B D | + | X D |}{2}.\n\\]\n\nОстана да отчетем, че  \\( |XD| = |CD| \\frac{|XY|}{|AY|} = |CD| \\frac{|XD| + |DY|}{|AY|} \\) , където използвахме, че  \\( AXY \\sim CXD \\) . Оттук намираме, че  \\( |XD| = \\frac{|CD| \\cdot |DY|}{|AY| - |CD|} \\) . Заместваме и получаваме:\n\n\\[\nS _ {A B C} = \\frac {| A Y | - | C D |}{2} \\left(| B D | + \\frac {| C D | . | D Y |}{| A Y | - | C D |}\\right) = \\frac {| B D | (| A Y | - | C D |)}{2} + \\frac {| C D | . | D Y |}{2}.\n\\]\n\nСега заместваме дължините на отсечките BD, CD, AY и DY от 1, за да заключим, че:\n\n\\[\nS _ {A B C} = \\frac {3}{x} \\frac {1 + \\frac {x}{2}}{2} + \\frac {x}{4} \\left(1 + \\frac {2}{x}\\right) = \\frac {3}{2 x} + \\frac {5}{4} + \\frac {x}{4}.\n\\]\n\nТака за всяко x > 0 лицето на триъгълника  \\( T(x) \\)  е:\n\n\\[\n\\frac {x}{4} + \\frac {3}{2 x} + \\frac {5}{4} = \\left(\\sqrt {\\frac {x}{4}} - \\sqrt {\\frac {3}{2 x}}\\right) ^ {2} + \\sqrt {\\frac {3}{2}} + \\frac {5}{4}.\n\\]\n\nТака най-малката възможна стойност за лицата на триъгълниците  \\( T(x) \\)  се достига, когато  \\( \\sqrt{\\frac{x}{4}} - \\sqrt{\\frac{3}{2x}} = 0 \\) . Оттук  \\( x = \\sqrt{6} \\)  и множеството от търсените триъгълници е  \\( \\{T(\\sqrt{6})\\} \\) .\n\nВтори начин. Нека точките B и C имат координати  \\( \\left(x,\\frac{1}{x}\\right) \\)  и  \\( \\left(\\frac{x}{2},-\\frac{2}{x}\\right) \\) , съответно, за някое x>0. Тогава лицето на триъгълника ABC е равно (защо?) на  \\( S(x)=\\frac{x^{2}+5x+6}{4x}=\\frac{5}{4}+\\frac{x}{4}+\\frac{6}{4x}\\geq\\frac{5}{4}+2\\sqrt{\\frac{x}{4}\\cdot\\frac{6}{4x}}=\\frac{5}{4}+\\frac{\\sqrt{6}}{2} \\) . Равенство се достига, когато  \\( x=\\frac{6}{x} \\)  или за  \\( x=\\sqrt{6} \\) . Така триъгълникът е с най-малко лице, когато точките B и C са с координати  \\( \\left(\\sqrt{6},\\frac{\\sqrt{6}}{6}\\right) \\)  и  \\( \\left(\\frac{\\sqrt{6}}{2},-\\frac{\\sqrt{6}}{3}\\right) \\) , съответно.\n\nОценяване. (7 точки) 5 т. – за изразяването на лицето на  \\( T(x) \\)  в явен вид като функция на x; 2 т. – за намирането на оптималната стойност:  \\( x = \\sqrt{6} \\) .",
+      "answer": "\\( \\{T(\\sqrt{6})\\} \\)",
+      "difficulty": "hard",
+      "techniques": [
+        "coordinate_geometry",
+        "area_minimization",
+        "calculus"
+      ],
+      "confidence": "exact",
+      "reasoning": "Използва се координатна геометрия за изразяване на лицето и минимизиране чрез производни или неравенства."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2020-10 кл · 2020-10 · Зад. 10.1",
+      "statement": "Даден е трапец $ABCD$ с основи $AB \nparallel CD$ и пресечна точка на диагоналите $O$. Средите на страните $AB$, $BC$, $CD$ и $DA$ са означени съответно с точките $N$, $P$, $M$ и $Q$. Да се намери лицето на трапеца, ако\n\n$$ON = 14; \\quad OP = \\frac{13}{2}; \\quad OM = 7; \\quad OQ = \\frac{15}{2}.$$",
+      "solution": "Решение. Нека $NQ \\cap CD = E$ и $NP \\cap CD = F$. От $\\triangle ANQ \\cong \\triangle DEQ$, следва че точка $Q$ е среда на $EN$ и, че лицата на двата триъгълника са равни. Аналогично, точка $P$ е среда на $NF$ и лицата на $\\triangle NBP$ и $\\triangle FCP$ са равни. От тук получаваме, че\n\n$$S_{ABCD} = S_{ANQ} + S_{NBP} + S_{QNPCD} = S_{DEQ} + S_{FCP} + S_{QNPCD} = S_{EFN}.$$\n\nТака, задачата се свежда до намиране лицето на $\\triangle EFN$. $NM$ е медиана в $\\triangle EFN$, точката $O$ лежи върху нея (запо?) и я дели в отношение $2 : 1$, считано от върха на триъгълника. Следователно, точка $O$ е медицинтър за $\\triangle EFN$. Оттук, точка $O$ лежи и върху медианите $EP$ и $FQ$, като $EO = 2 \\cdot OP = 13$ и $FO = 2 \\cdot OQ = 15$. Да построим точка $O'$ върху правата $NM$, такава че $OM = MO'$ и $M$ е между $O$ и $O'$. Четириъгълникът $FO'EO$ е успоредник и $FO' = EO = 13$. Също така $S_{EFN} = 6S_{FMO} = 3S_{FO'O}$, откъдето използвайки Хероновата формула заключаваме:\n\n$$S_{ABCD} = S_{EFN} = 3S_{FO'O} = 3\\sqrt{21 \\cdot 8 \\cdot 7 \\cdot 6} = 3 \\cdot 7 \\cdot 3 \\cdot 4 = 252.$$\n\nОценяване (7 точки): 1 т. – за построяване на $E$ и $F$ и заключение, че $S_{ABCD} = S_{EFN}$; 1 т. – за доказателство, че $O$ е медицинтър за $\\triangle EFN$; 2 т. – за пресмятане на $EO$ и $FO$; 3 т. – за намиране лицето на $\\triangle FMO$ и довършване.\n\nЗабележка: Вместо използването на Хероновата формула за намиране лицето на $\\triangle FO'O$, може да се реши система квадратни уравнения. Например, ако означим с $F'$ петата на височината от точка $F$ към страната $OO'$, а с $x$ и $y$ съответно дължините на отсечките $FF'$ и $OO'$, то от Питагоровите теореми за $\\triangle FF'O$ и $\\triangle FO'F'$ имаме, че:\n\n$$\\left| \\begin{array}{l} x^2 + y^2 = 15^2 \\\\ x^2 + (14 - y)^2 = 13^2 \\end{array} \\right. \\Leftrightarrow \\left| \\begin{array}{l} x^2 = (15 - y)(15 + y) \\\\ 15^2 + 14^2 - 28y = 13^2 \\end{array} \\right. \\Leftrightarrow \\left| \\begin{array}{l} x = 12 \\\\ y = 9 \\end{array} \\right. .$$\n\nОттук, $S_{FO'O} = (OO' \\cdot FF')/2 = (14 \\cdot 12)/2 = 84$.",
+      "answer": "252",
+      "difficulty": "hard",
+      "techniques": [
+        "triangle_centers",
+        "area_formulas",
+        "vector_geometry"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва медицентър и Херонова формула. Точка 1.7 (Формули за лице) е най-близка, въпреки че медицентърът не е изрично в STEPS. Решението е сложно с построявания.",
+      "_crosslinked_from": "1.7",
+      "_crosslink_confidence": 0.7
+    },
+    {
+      "source": "OLI-2-Областен кръг-2023-12 кл · 2023-12 · Зад. 12.4",
+      "statement": "Дадена е функцията $f(x) = x^3 - 2ax^2 + 3ax$, където $a$ е реален параметър. Да се намерят стойностите на параметъра $a$, при условие че графиката на $y = f(x)$ има единствена обща точка $C$ с абсцисната ос и $A \not\not\not B$, където с $A$ и $B$ върху тази графика са отбелязани локалните екстремуми. За всяка от тези стойности на параметъра да се докаже, че точките $A$ и $B$ лежат в първи квадрант и лицето на триъгълника $ABC$ е по-малко от 6.",
+      "solution": "Решение. Функцията $f(x)$ има локални екстремуми в две различни точки точно когато производната и $f'(x) = 3x^2 - 4ax + 3a$, която е квадратен тричлен, има два различни реални корена, което е еквивалентно с дискриминантата на $f'(x) = 0$ да бъде строго положителна, т.е. $D_{f'} = 16a^2 - 4 \\cdot 3 \\cdot 3a > 0$ или $a \\in (-\\infty, 0) \\cup \\left(\\frac{9}{4}, +\\infty\\right)$.\n\nНека при $a \\in (-\\infty, 0) \\cup \\left(\\frac{9}{4}, +\\infty\\right)$ да означим корените на квадратния тричлен $f'(x) = 3x^2 - 4ax + 3a = 0$ съответно с $x_1$ и $x_2$ ($x_1 < x_2$), тогава от формулите на Виет имаме $x_1 + x_2 = \\frac{4a}{3}$ и $x_1 \\cdot x_2 = a$.\n\nФункцията $f(x)$ расте $\\left(f'(x) > 0\\right)$ за $x \\in (-\\infty, x_1) \\cup (x_2, +\\infty)$ и намалява $\\left(f'(x) < 0\\right)$ за $x \\in (x_1, x_2)$, т.е. в точката $A(x_1, f(x_1))$ тя има локален максимум, а в точката $B(x_2, f(x_2))$ – локален минимум.\n\nПресечните точки на графиката на функцията $y = f(x)$ с оста $Ox$ (правата с уравнение $y=0$) имат абсциси, които са решения на уравнението $f(x) = x(x^2 - 2ax + 3a) = 0$. Понеже за всяка стойност на параметъра $a$ имаме $f(0) = 0$, то точката $C(0, 0)$ ще бъде пресечна точка на графиката на функцията с оста $Ox$. Така графиката на $f(x)$ ще има единствена обща точка с абсцисната ос точно когато квадратният тричлен $g(x) = x^2 - 2ax + 3a$ няма реални корени, т.е. когато $D_g = 4a^2 - 4 \\cdot 3 \\cdot 3a < 0$ или $a \\in (0, 3)$.\n\nТака стойностите на параметъра $a$, за които $f(x)$ има два локални екстремума и една пресечна точка с абсцисната ос са $a \\in \\left(\\left((-\\infty, 0) \\cup \\left(\\frac{9}{4}, +\\infty\\right)\\right) \\cap (0, 3)\\right)$ или $a \\in \\left(\\frac{9}{4}, 3\\right)$.\n\nПонеже за $a \\in \\left(\\frac{9}{4}, 3\\right)$ имаме $x_1 + x_2 = \\frac{4a}{3} > 0$ и $x_1 \\cdot x_2 = a > 0$, то числата $x_1$ и $x_2$ са положителни.\n\n![img-1.jpeg](img-1.jpeg)\n\nФигура 3: Чертеж към задача 4.\n\nсвалено от Klasirane.com\n\n─── Стр. 5 ───\nОт $f(0) = 0$, $x_1 > 0$ и факта, че функцията $f(x)$ расте за $x \\in (-\\infty, x_1)$ имаме $f(x_1) > 0 = f(0)$. Ако стойността на локалния минимум $f(x_2)$ не е положителна, то от теоремата на Болцано ще получим, че графиката на $f(x)$ ще има повече от една обща точка с оста $Ox$, което не е вярно.\n\nСледователно $x_1$ и $x_2$ са положителни и $f(x_1) > f(x_2) > 0$, т.е. точките на локален екстремум $A(x_1, f(x_1))$ и $B(x_2, f(x_2))$ лежат в първи квадрант.\n\nДа разгледаме квадратния тричлен $f'(x) = 3x^2 - 4ax + 3a = 0$ за $a \\in \\left(\\frac{9}{4}, 3\\right)$. Понеже старшият му коефициент е положителен и са изпълнени неравенствата $f'(1) = 3 - a > 0$ и $1 < \\frac{x_1 + x_2}{2} = \\frac{2a}{3}$, то имаме $1 < x_1 < x_2$. Освен това $1 < x_1 < \\frac{x_1 + x_2}{2} = \\frac{2a}{3} < 2$, т.е. $1 < x_1 < 2$.\n\nДа намерим най-голямата стойност на квадратния тричлен $h(t) = g(t) - 4 = t^2 - 2at + 3a - 4$ за $t \\in [1, 2]$. Понеже върхът на параболата е в точката $t_0 = a > 2$, то за $t \\in [1, 2]$ функцията $h(t)$ ще намалява и ще достига най-голямата си стойност в левия край на интервала, т.е. $h(t) \\leq h(1) = a - 3 < 0$ или $g(t) < 4$ за всяко $t \\in [1, 2]$.\n\nСега ще изразим лицето на тригълника $ABC$ по следния начин (вж. чертежа):\n\n$$S_{ABC} = S_{CFED} - S_{CFB} - S_{CAD} - S_{ABE} = x_2 f(x_1) - \\frac{x_2 f(x_2)}{2} - \\frac{x_1 f(x_1)}{2} - \\frac{(x_2 - x_1)(f(x_1) - f(x_2))}{2}.$$\n\nНепосредствено се проверява, че неравенството $S_{ABC} < \\frac{1}{2} S_{CFED} = \\frac{x_2 f(x_1)}{2}$ е изпълнено. (Действително след разкриване на скобите и опростяване то става еквивалентно на неравенството $\\frac{x_1 f(x_2)}{2} > 0$, което очевидно е вярно.)\n\nТака окончателно получаваме $S_{ABC} < \\frac{x_2 f(x_1)}{2} = \\frac{x_2 x_1 g(x_1)}{2} = \\frac{a \\cdot g(x_1)}{2} < 6$, понеже $a < 3$ и $g(x_1) < 4$ ($x_1 \\in (1, 2)$).\n\n**Оценяване.** (7 точки) 2 т. за достигане до $a \\in \\left(\\frac{9}{4}, 3\\right)$ (по 1 т. за $A \\neq B$ и съществуване на единствена пресечна точка $C$); 1 т. за доказване, че $A(x_1, f(x_1))$ и $B(x_2, f(x_2))$ лежат в първи квадрант; 1 т. за достигане до $1 < x_1 < 2$; 1 т. за доказване, че $g(t) < 4$ за всяко $t \\in [1, 2]$; 1 т. за доказване на неравенството $S_{ABC} < \\frac{1}{2} S_{CFED} = \\frac{x_2 f(x_1)}{2}$; 1 т. за получаване на $S_{ABC} < 6$.\n\n**Забележка.** Стойностите на параметра, за които графиката на $y = f(x)$ има единствена обща точка с абсцисната ос могат да бъдат намерени и от условието $G(x_1, x_2) = f(x_1) \\cdot f(x_2) > 0$. Трябва да отбележим, че това условие е симетрично, относно $x_1$ и $x_2$, т.е. може да се изрази чрез $x_1 + x_2 = \\frac{4a}{3}$ и $x_1 \\cdot x_2 = a$. ($0 < G(x_1, x_2) = G(x_2, x_1) = H(x_1 + x_2, x_1 x_2) = x_1 x_2 (x_1^2 x_2^2 - 2ax_1 x_2 (x_1 + x_2) + 3a(x_1^2 + x_2^2) + 4a^2 x_1 x_2 + 9a^2 - 6a^2 (x_1 + x_2) = W(a) = 4a^3 \\left(1 - \\frac{a}{3}\\right)$). Полученото условие е еквивалентно на $a \\in (0, 3)$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "derivative_analysis",
+        "discriminant",
+        "quadratic_roots",
+        "function_behavior"
+      ],
+      "confidence": "exact",
+      "reasoning": "Изследване на функция с параметър, фокусирано върху корените на производната и поведението на функцията. Съвпада с A4.",
+      "_crosslinked_from": "5.9",
+      "_crosslink_confidence": 0.7
     }
   ]
 }

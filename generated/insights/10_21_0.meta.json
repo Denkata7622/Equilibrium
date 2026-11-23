@@ -1,0 +1,40 @@
+{
+  "key": "10.21#0",
+  "point_id": "10.21",
+  "idx": 0,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-2021-10 кл · 2021-10 · Зад. 10.1",
+  "techniques": [
+    "systems_of_equations",
+    "substitution",
+    "discriminant"
+  ],
+  "word_count": 1675,
+  "score": 3,
+  "verdict": "reject",
+  "status": "done",
+  "structure": {
+    "missing": [],
+    "has_boxed": true,
+    "why_count": 8,
+    "sec12_words": 169,
+    "ends_ok": true,
+    "fatal": [],
+    "soft": []
+  },
+  "caught_errors_in_solution": [
+    "Единствеността сред решенията с z=0 неправилно е приета за достатъчна за единственост на оригиналната система. За всяко реално a тройките (0,8,√3) и (0,8,-√3) са различни решения, следователно няма търсена стойност на параметъра.",
+    "При a=-1 правилната стойност е x=-3/8, а не x=3/8; y=64/5 остава вярно."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 338.3,
+  "generated_at": "2026-11-20T22:13:46.187399",
+  "accepted_manually": true,
+  "lesson_refs": [
+    "R.3",
+    "R.1"
+  ],
+  "enriched": true,
+  "enriched_at": "2026-11-22T18:17:35.909240"
+}

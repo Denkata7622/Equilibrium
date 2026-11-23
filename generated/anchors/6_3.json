@@ -1,0 +1,25 @@
+{
+  "point_id": "6.3",
+  "total": 1,
+  "by_difficulty": {
+    "easy": 0,
+    "medium": 1,
+    "hard": 0
+  },
+  "problems": [
+    {
+      "source": "OLI-2-Областен кръг-2026-12 кл · 2026-12 · Зад. 12.4",
+      "statement": "Дадено е естествено число $n \\geq 2026$. Естественото число $k$ ще наричаме областно, ако за всеки набор от положителни реални числа $a_1 \\geq a_2 \\geq \\dots \\geq a_n > 0$, за които е изпълнено\n\n$$a_1^2 + a_2^2 + \\dots + a_n^2 = n,$$\n\nе в сила $a_1 + a_2 + \\dots + a_k \\geq k$.",
+      "solution": "Ако $k > \\sqrt{n}$, то да разгледаме $a_1 = \\sqrt{n} - \\varepsilon$, а $a_2 = a_3 = \\dots = a_n = c$ за достатъчно малко $\\varepsilon > 0$ където $c = c(\\varepsilon) > 0$ е такова, че $(\\sqrt{n} - \\varepsilon)^2 + (n - 1)c^2 = 1$.\n\nИмаме, че $\\sum_{i=1}^k a_i = \\sqrt{n} - \\varepsilon + (k - 1)c$, както и\n\n$$\\lim_{\\varepsilon \\to 0} \\sqrt{n} - \\varepsilon + (k - 1)c(\\varepsilon) = \\sqrt{n}.$$\n\nЗначи ако $k > \\sqrt{n}$, можем да изберем $\\varepsilon$ достатъчно малко, че $a_1 + a_2 + \\dots + a_k < k$.\n\nНека сега $k \\leq \\sqrt{n}$ и да допуснем, че $a_1 + a_2 + \\dots + a_k < k$, от което в частност следва и $a_i < 1$ за $i \\geq k + 1$. Последователно получаваме\n\n$$\\begin{aligned} a_1^2 + a_2^2 + \\dots + a_k^2 + 2 \\sum_{1 \\leq i < j \\leq k} a_i a_j &< k^2 \\\\ \\Rightarrow n - (a_{k+1}^2 + \\dots + a_n^2) + 2 \\sum_{1 \\leq i < j \\leq k} a_i a_j &< k^2 \\\\ \\Rightarrow a_{k+1}^2 + \\dots + a_n^2 > n - k^2 + 2 \\sum_{1 \\leq i < j \\leq k} a_i a_j, \\end{aligned}$$\n\nно да забележим, че ако запишем $n - k^2$ като $n - k^2$ единици, то събираемите отляво и отдясно ще станат точно по $n - k$, като всяко от тези вдясно ще бъде по-голямо или равно на всяко от тези вляво, което е противоречие.\n\n**Оценяване.** (7 точки) 1 т. за отговор; 2 т. за $k > \\sqrt{n}$; 4 т. за $k \\leq \\sqrt{n}$.",
+      "answer": "$k = \\lfloor \\sqrt{n} \\rfloor$",
+      "difficulty": "medium",
+      "techniques": [
+        "inequalities",
+        "am_qm_inequality",
+        "counterexample"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изследва сума на първите k числа при условие за сума на квадратите. Решението използва сравнение между средно аритметично и средно квадратично (САСК) и контрапример. Точка 6.3 е точна, тъй като САСК е ключово. Трудността е medium, тъй като има два ясни случая."
+    }
+  ]
+}

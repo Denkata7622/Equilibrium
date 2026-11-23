@@ -1,0 +1,123 @@
+{
+  "pdf": "OLI-3-Национален кръг-2005-9-12 кл-sol",
+  "version": 3,
+  "extraction_model": "deepseek/deepseek-r1-0528",
+  "extraction_level": "L3_escalation",
+  "verification": {
+    "verdict": "PASS_WITH_WARNINGS",
+    "expected": 6,
+    "actual": 4,
+    "verified": 4,
+    "hallucinated": 0,
+    "unreadable": 0,
+    "wrong_grade": 0,
+    "duplicates": 0,
+    "null_num": 0,
+    "numeric_mismatch": 0,
+    "avg_confidence": 1.0,
+    "expected_grade": null,
+    "grade_distribution": {},
+    "escalate_to": "L1_ocr",
+    "reasons": [
+      "missing: 4 < 6±0",
+      "segmenter blind spot, 1 missing at conf 1.00"
+    ],
+    "ai_checked": true,
+    "ai_result": {
+      "missing_count": 2,
+      "hallucinated_indices": [],
+      "overall": "missing"
+    }
+  },
+  "extracted_at": "2026-11-06T18:57:58.207893",
+  "problems": [
+    {
+      "num": 1,
+      "year": 2005,
+      "grade": null,
+      "round": "nacionalen",
+      "statement": null,
+      "solution": null,
+      "answer": null,
+      "page": null,
+      "source_quote": "1.** Първо ще докажем, че ако $p$, $q$ и $r$ са рационални числа и $\\sqrt{p} + \\sqrt{q} + \\sqrt{r}$ е рационално число, то всяко от числата $\\sqrt{p}$, $\\sqrt{q}$ и $\\sqrt{r}$ е рационално.",
+      "readability": "partial",
+      "readability_issues": [
+        "Липсва условието; текстът започва директно с решение.",
+        "Решението е прекъснато при „Следователно решенията на задачата са всички тройки от числа $(x, y“. Поради непълнотата solution е null.",
+        "Годината, класът и страницата не са указани."
+      ],
+      "pdf": "OLI-3-Национален кръг-2005-9-12 кл-sol",
+      "grade_range": [
+        9,
+        12
+      ]
+    },
+    {
+      "num": 2,
+      "year": 2005,
+      "grade": null,
+      "round": "nacionalen",
+      "statement": null,
+      "solution": "а) Понеже $k_1$ и $k_2$ се допират, имаме $\\sphericalangle BXT = \\frac{\\wideparen{XT}}{2} = \\frac{\\wideparen{TS}}{2} = \\sphericalangle TAS$.  \nОттук лесно следва, че $S$ е среда на дъгата $\\wideparen{AB}$. Тогава $\\sphericalangle TCI = \\sphericalangle TAS$ (защото $ATCS$ е вписан в $k_1$), $\\sphericalangle TAS = \\sphericalangle BXT$, $\\sphericalangle BXT = \\sphericalangle TYX$ (защото се измерват с една и съща дъга). Следователно $\\sphericalangle TCI = \\sphericalangle TYI$, което означава, че около $CTIY$ може да се опише окръжност.  \nб) Тъй като $\\sphericalangle AXS = \\sphericalangle TAS$, получаваме че $\\Delta AXS \\sim \\Delta TAS$. Оттук намираме $SA^2 = ST.SX$. От а) имаме $\\sphericalangle CIT = \\sphericalangle CYT = \\sphericalangle TXY$ и следователно $\\Delta SXI \\sim \\Delta SIT$. Оттук намираме $SI^2 = ST.SX$. Окончателно получихме $SA = SI$. Освен това от\n\n$$\\sphericalangle BCI = 180^\\circ - \\sphericalangle BCS = 180^\\circ - \\left(\\gamma + \\frac{\\alpha + \\beta}{2}\\right) = 90^\\circ - \\frac{\\gamma}{2},$$\n\nследва, че $CI$ е външна ъглополовяща на $\\sphericalangle ACB$. Остава да забележим, че $SB = SA = SI$ и от равнобедрения $\\Delta BSI$ с $\\sphericalangle BSI = \\sphericalangle BSC = \\alpha$ намираме $\\sphericalangle BIS = 90^\\circ - \\frac{\\alpha}{2}$. Сега от $\\Delta BCI$ намираме $\\sphericalangle CBI = 90^\\circ - \\frac{\\beta}{2}$, което означава, че $BI$ е външна ъглополовяща на $\\sphericalangle ABC$. Следователно $I$ е центърът на външновписаната окръжност за триъгълник $ABC$ към страната $BC$.",
+      "answer": "Около $CTIY$ може да се опише окръжност. $I$ е центърът на външновписаната окръжност за триъгълник $ABC$ към страната $BC$.",
+      "page": null,
+      "source_quote": "2.** а) Понеже $k_1$ и $k_2$ се допират, имаме $\\sphericalangle BXT = \\frac{\\wideparen{XT}}{2} = \\frac{\\wideparen{TS}}{2} = \\sphericalangle TAS$.",
+      "readability": "ok",
+      "readability_issues": [
+        "Условието не е включено в предоставения текст.",
+        "Годината, класът и страницата не са указани."
+      ],
+      "pdf": "OLI-3-Национален кръг-2005-9-12 кл-sol",
+      "grade_range": [
+        9,
+        12
+      ]
+    },
+    {
+      "num": 3,
+      "year": 2005,
+      "grade": null,
+      "round": "nacionalen",
+      "statement": null,
+      "solution": null,
+      "answer": "Такова множество не съществува.",
+      "page": null,
+      "source_quote": "3.** Ще докажем, че такова множество не съществува. Да допуснем противното. Нека $a \\in A$ и да допуснем, че съществува $a' \\in A$ и $a' > \\frac{a}{2}$.",
+      "readability": "partial",
+      "readability_issues": [
+        "Липсва условието; текстът започва директно с решение.",
+        "Решението е прекъснато при „могат да се представят като су“. Поради непълнотата solution е null.",
+        "Годината, класът и страницата не са указани."
+      ],
+      "pdf": "OLI-3-Национален кръг-2005-9-12 кл-sol",
+      "grade_range": [
+        9,
+        12
+      ]
+    },
+    {
+      "num": 4,
+      "year": 2005,
+      "grade": null,
+      "round": "nacionalen",
+      "statement": null,
+      "solution": null,
+      "answer": null,
+      "page": null,
+      "source_quote": "4. Нека $a = BC = B'C$, $b = AC = A'C$, $c = AB = A'B'$, $\\gamma = \\sphericalangle C$. Понеже $\\Delta AA'C \\sim \\Delta BB'C$ по втори признак, имаме $AA' : AC = BB' : BC = k$.",
+      "readability": "partial",
+      "readability_issues": [
+        "Липсва условието; текстът започва директно с решение.",
+        "Геометричното решение е прекъснато при „четириъгълник (на“. Поради непълнотата solution е null.",
+        "След прекъсването следва текст за естествени числа без нов номер. Принадлежността му към номерирана задача не е установена; не е добавена отделна задача и текстът не е приписан на задача 4.",
+        "Годината, класът и страницата не са указани."
+      ],
+      "pdf": "OLI-3-Национален кръг-2005-9-12 кл-sol",
+      "grade_range": [
+        9,
+        12
+      ]
+    }
+  ]
+}

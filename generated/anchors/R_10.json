@@ -1,24 +1,93 @@
 {
   "point_id": "R.10",
-  "total": 1,
+  "total": 5,
   "by_difficulty": {
     "easy": 0,
-    "medium": 1,
-    "hard": 0
+    "medium": 3,
+    "hard": 2
   },
   "problems": [
     {
-      "source": "OLI-2-Областен кръг-2025-11 кл · 2025-11 · Зад. 2",
-      "statement": "Даден е триъгълник ABC. Окръжност k минава през върха C, допира се до правата AB в точка A, пресича отсечката BC в точка P и медианата CM в точка Q. Правата BQ пресича k в точка R. Да се докаже, че PR е успоредна на AB.",
-      "solution": "Решение. Имаме $MB^2 = MA^2 = MQ.MC$, откъдето\n\n$$\\frac{MB}{MQ} = \\frac{MC}{MB}. \\tag{1}$$\n\nОт това равенство получаваме, че $\\triangle MBQ \\sim \\triangle MCB$. Следователно $\\angle MBC = \\angle MQB$, откъдето намираме:\n\n$$\\frac{\\widehat{RC}}{2} = \\angle RQC = \\angle MQB = \\angle MBC = \\frac{\\widehat{RC}}{2} + \\frac{\\widehat{RA}}{2} - \\frac{\\widehat{AP}}{2}. \\tag{2}$$\n\nОт (2) следва $\\widehat{RA} = \\widehat{AP}$, т.е. $RP \\parallel AB$.",
+      "source": "OLI-2-Областен кръг-2009-10 кл · 2009-10 · Зад. 10.2",
+      "statement": "Права през върха C пресича диагонала BD, страната AD и продължението на страната AB на успоредника ABCD съответно в точките M, E и F. Да се докаже, че AM е допирателна към описаната около триъгълника AEF окръжност тогава и само тогава, когато ABCD е ромб.",
+      "solution": "Нека $ABCD$ е ромб. Тогава триъгълниците $AMD$ и $CMD$ са еднакви по първи признак, откъдето $\\angle  DCM = \\angle  DAM$. Но $\\angle  DCM = \\angle  EFA$. Следователно $\\angle  DAM = \\angle  EFA$, т.е. $AM$ е допирателна към описаната около $\\triangle  AEF$ окръжност.\n\nНека $\\angle  DAM = \\angle  EFA$. Тогава разглежданите по-горе триъгълници са еднакви, защото имат обща страна, един и същ ъгъл срещу нея и равни височини. Това показва, че радиусите на описаните окръжности са равни, а оттам следва и равенство на ъглите.",
       "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "power_of_a_point",
-        "similar_triangles"
+        "circle_properties",
+        "tangent_conditions",
+        "congruent_triangles",
+        "parallelogram_properties"
       ],
       "confidence": "exact",
-      "reasoning": "Uses equality MB^2 = MA^2 = MQ·MC (power of point) and derives similarity of triangles to get PR ∥ AB."
+      "reasoning": "Задачата изисква доказване, че AM е допирателна тогава и само тогава, когато ABCD е ромб. Решението използва ъглови връзки и свойства на ромб. Точка 1.4 (Степен на точка) е приложима поради връзката с допирателна и окръжност.",
+      "_crosslinked_from": "1.4",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-2-Областен кръг-2024-12 кл · 2024-12 · Зад. 12.1",
+      "statement": "Даден е остроъгълен триъгълник $ABC$ със среда на страната $AB$ точка $M$. Нека точка $D$ е на отсечката $MB$, а точките $I_1$ и $I_2$ са центровете на вписаните окръжности съответно за триъгълник $ADC$ и триъгълник $BDC$. Ако $\\angle I_1 MI_2 = 90^\\circ$, то да се докаже, че $AC = BC$.",
+      "solution": "Решение. Нека N е средата на \\( I_{1}I_{2} \\) , а X и Y са петите на перпендикулярите от \\( I_{1} \\) и \\( I_{2} \\) към правата AB. Нека H е петата на перпендикуляра от N към AB. Тогава \\( \\angle I_{1}MI_{2} = \\angle I_{1}DI_{2} = 90^{\\circ} \\) дава, че H е средата на отсечката MD, а т.к \\( I_{1}XYI_{2} \\) е трапец, то H също е среда и на отсечката XY. Така получаваме, че XM = DY. Имаме, че\n\n\\[\nX M = A M - A X = \\frac {A B - (A D + A C - C D)}{2} = \\frac {A B + C D - A D - A C}{2},\n\\]\n\nкакто и\n\n\\[\nD Y = \\frac {C D + B D - B C}{2}.\n\\]\n\nТъй като \\( AD + BD = AB \\) , то получаваме AC = BC.\n\nОценяване. (7 точки) 1т. за дефиниране на точките N, X, Y, (и трите трябва да са дефинирани за тази точка), 1т. за дефинирне на т. H, 1т. за доказване, че H е средата на MD, 1т. за доказване, че XM = DY, 3т. за довършване.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "вписани_окръжности",
+        "перпендикулярни_ъгли",
+        "алгебрични_преобразувания"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на вписаните окръжности и перпендикулярни ъгли. Основната техника е свързана с точка 1.10 (Вписана и външновписани окръжности). Решението използва допълнителни построения и алгебрични манипулации, които са типични за средна трудност.",
+      "_crosslinked_from": "1.10",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-3-Национален кръг-2007-9-12 кл · 2007-None · Зад. 1",
+      "statement": "В четириъгълник $ABCD$, за който $\\angle  BAD + \\angle  ADC > 180^◦$ е вписана окръжност с център $I$. През $I$ е прекарана права, която пресича страните $AB$ и $CD$ съответно в точки $X$ и $Y$ така, че $IX = IY$. Да се докаже, че $AX⋅DY = BX⋅CY$.",
+      "solution": "**Решение.** Нека $M$ и $N$ са допирни точки на вписаната окръжност със страните $AB$ и $CD$. От условието $\\angle  BAD + \\angle  ADC > 180^◦$ следва, че $AB \\parallel  CD$ и $\\angle  MIN < 180^◦$. Освен това, от $IM = IN$, $\\angle  IMX = \\angle  INY$ и $IX = IY$, следва, че $\\triangle IMX ≅ \\triangle INY$, откъдето $\\angle  IYN = \\angle  IXM$. Ако $X ∈ BM$ и $Y ∈ DN$ (или $X ∈ AM$ и $Y ∈ CN$), то $\\angle  IYN = \\angle  IXM$ означава, че $AB \\parallel  CD$, което не е вярно. Следователно разположението на точките $X$ и $Y$ е както е показано на чертежа. От четириъгълника $AXYD$ имаме\n\n$$\\angle AXI = \\angle DYI = 180^◦ - \\angle \\frac{A}{2} - \\angle \\frac{D}{2},$$\n\nоткъдето намираме $\\angle AIX = \\angle \\frac{D}{2}$ и $\\angle DIY = \\angle \\frac{A}{2}$. Следователно $\\triangle AIX \\sim \\triangle IDY$, откъдето следва, че $AX·DY = IY·IX$. Аналогично $\\triangle BIX \\sim \\triangle ICY$, т.е. $BX·CY = IY·IX$. Окончателно $AX·DY = BX·CY$.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "circle_inscribed",
+        "similar_triangles",
+        "angle_chasing"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на вписаната окръжност и подобни триъгълници. Основната техника е свързана с точка 1.10.",
+      "_crosslinked_from": "1.10",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-1997-12 кл · 1997-12 · Зад. 12.2",
+      "statement": "Given a convex quadrilateral ABCD which can be inscribed in a circle. Let F be the intersecting point of diagonals AC and BD and E be the intersecting point of the lines AD and BC. If M and N are the midpoints of AB and CD, prove that\n\n$$\\frac{M N}{E F}=\\frac{1}{2} \\cdot\\left|\\frac{A B}{C D}-\\frac{C D}{A B}\\right| .$$",
+      "solution": "Let $\\angle AEB = \\gamma$, $EC = c$, $ED = d$, $\\overrightarrow{i} = \\frac{1}{c} \\cdot \\overrightarrow{EC}$ and $\\overrightarrow{j} = \\frac{1}{d} \\cdot \\overrightarrow{ED}$. Since $ABCD$ is an inscribed quadrilateral, $\\frac{AB}{CD} = \\frac{AE}{CE} = \\frac{BE}{DE} = k$. Therefore $\\overrightarrow{EA} = kc\\overrightarrow{j}$ and $\\overrightarrow{EB} = kd\\overrightarrow{i}$. Since $F \\in AC$ and $F \\in BD$ there exist $x$ and $y$ such that\n\n$$\\overrightarrow{EF} = x\\overrightarrow{EA} + (1 - x)\\overrightarrow{EC} = xkc\\overrightarrow{j} + (1 - x)c\\overrightarrow{i}$$\n\nand\n\n$$\\overrightarrow{EF} = y\\overrightarrow{EB} + (1 - y)\\overrightarrow{ED} = ykd\\overrightarrow{i} + (1 - y)d\\overrightarrow{j}.$$\n\nComparing the coefficients of $\\overrightarrow{i}$ and $\\overrightarrow{j}$ in these equalities gives $xkc = (1 - y)d$ and $ykd = (1 - x)c$. This implies $x = \\frac{kd - c}{(k^2 - 1)c}$. Therefore\n\n$$\\overrightarrow{EF} = \\frac{k}{k^2 - 1} \\left( (kd - c)\\overrightarrow{j} + (kc - d)\\overrightarrow{i} \\right)$$\n\nand thus\n\n$$EF^2 = \\left( \\frac{k}{k^2 - 1} \\right)^2 \\left( (kd - c)^2 + (kc - d)^2 + 2(kd - c)(kc - d)\\cos \\gamma \\right).$$\n\nOn the other hand\n\n$$\\begin{aligned} \\overrightarrow{MN} &= \\frac{1}{2} \\cdot \\left( \\overrightarrow{AD} + \\overrightarrow{BC} \\right) = \\frac{1}{2} \\cdot \\left( \\overrightarrow{ED} - \\overrightarrow{EA} + \\overrightarrow{EC} - \\overrightarrow{EB} \\right) \\\\ &= \\frac{1}{2} \\cdot \\left( (d - kc)\\overrightarrow{j} + (c - kd)\\overrightarrow{i} \\right) \\end{aligned}$$\n\nand it follows that\n\n$$MN^2 = \\frac{1}{4} \\cdot \\left( (d - kc)^2 + (c - kd)^2 + 2(d - kc)(c - kd)\\cos \\gamma \\right).$$\n\nTherefore $\\frac{MN^2}{EF^2} = \\frac{1}{4} \\left( \\frac{k^2 - 1}{k} \\right)^2 = \\frac{1}{4} \\left( k - \\frac{1}{k} \\right)^2$ and so\n\n$$\\frac{MN}{EF} = \\frac{1}{2} \\cdot \\left| \\frac{AB}{CD} - \\frac{CD}{AB} \\right|$$",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "vector_algebra",
+        "ratio_properties",
+        "cyclic_quadrilateral"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на вписания четириъгълник и векторен подход за доказване на отношението. Изисква координатен избор и дълги сметки, което я прави трудна.",
+      "_crosslinked_from": "1.5",
+      "_crosslink_confidence": 0.7
+    },
+    {
+      "source": "OLI-2-Областен кръг-2007-12 кл · 2007-12 · Зад. 12.2",
+      "statement": "В сфера с радиус 2 е вписана пирамида ABCD, за която AB = 2, CD = √7 и \\angle ABC = \\angle BAD = 90◦. Да се намери ъгълът между правите AD и BC.",
+      "solution": "Нека O е центърът на описаната около ABCD сфера, O1 е средата на AC, E е точката, за която ABCE е правоъгълник, E1 е средата на AE и O2 е центърът на описаната около \\triangle AED окръжност k. Тъй като AB ⊥ AE и AB ⊥ AD, следва, че (ABCE ) ⊥ (AED). Значи E1O1OO2 е правоъгълник (защо?). Освен това, ясно е, че ъгълът между правите AD и BC е равен на \\angle DAE = α. От CE \\parallel AB ⊥ (AED) следва, че DE = √ DC 2 − CE 2 = √3 и радиусът на k е AO2 = DE2 sinα = √32 sinα . Понеже AO = 2 и OO2 = O1E1 = AB2 = 1, от правоъгълния \\triangle AO2O намираме, че 4 = 34 sin2 α + 1. Оттук sin α = 12 , т.е. α = 30◦.",
+      "answer": "α = 30°",
+      "difficulty": "hard",
+      "techniques": [
+        "vectors",
+        "coordinate_geometry",
+        "sphere",
+        "pyramid"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата включва пирамида, вписана в сфера, и изисква намиране на ъгъл между прави. Решението използва вектори и координатна геометрия, които са основни техники в геометрията на пространството.",
+      "_crosslinked_from": "R.11",
+      "_crosslink_confidence": 0.85
     }
   ]
 }

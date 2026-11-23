@@ -1,130 +1,123 @@
 {
   "point_id": "1.5",
-  "total": 21,
+  "total": 60,
   "by_difficulty": {
-    "easy": 2,
-    "medium": 18,
-    "hard": 1
+    "easy": 1,
+    "medium": 24,
+    "hard": 35
   },
   "problems": [
     {
-      "source": "OLI-2-Областен кръг-2003-10 кл · 2003-10 · Зад. 4",
-      "statement": "Точка D върху страната AC на △ABC е такава, че BD = CD. През точка E от страната BC е прекарана права, успоредна на BD, която пресича правата AB в точка F. Ако G = AE ∩ BD, да се докаже, че <) BCG =<) BCF.",
-      "solution": "Ако H = AC ∩ EF, то ∠CDG = ∠FHC и\nCD/DG = BD/DG = FH/HE = FH/HC.\nТогава △CDG ∼ △FHC и значи ∠GCD = ∠CFH, откъдето\n∠BCG = ∠BCD − ∠GCD = ∠CEH − ∠CFH = ∠BCF.",
-      "answer": "∠BCG = ∠BCF",
+      "source": "OLI-2-Областен кръг-2004-12 кл · 2004-12 · Зад. 12.4",
+      "statement": "Нека E е пресечната точка на диагоналите AC и BD на вписан в окръжност четириъгълник ABCD. Ако AC = BC, AD = 5, BE = 12 и DE = 3, да се намери <) BCD.",
+      "solution": "Ако симетралата на CD пресича BD в точка O, то <) COD = 180 ◦ − 2 <) ODC = 180 ◦ − 2 <) BAC =<) ACB =<) ADO и следователно AD||CO. Тогава OE3 = COAD = OE + 35 и значи OE = 92 , т.е. O е среда на BC, откъдето <) BCD = 90 ◦.",
+      "answer": null,
       "difficulty": "easy",
       "techniques": [
-        "similar_triangles",
-        "angle_chasing"
+        "circle_geometry",
+        "parallel_lines"
       ],
       "confidence": "exact",
-      "reasoning": "Доказателството се свежда до подобие на триъгълници и ъглово пресмятане – точка 1.5."
+      "reasoning": "Вписана окръжност и симетрала; директно следване от свойства."
     },
     {
-      "source": "OLI-2-Областен кръг-2003-11 кл · 2003-11 · Зад. 4",
-      "statement": "Точка D върху страната AC на △ABC е такава, че BD = CD. През точка E от страната BC е прекарана права, успоредна на BD, която пресича правата AB в точка F. Ако G = AE ∩ BD, да се докаже, че ∠BCG = ∠BCF.",
-      "solution": "Ако H = AC ∩ EF, то ∠CDG = ∠FHC и\nCD/DG = BD/DG = FH/HE = FH/HC.\nТогава △CDG ∼ △FHC и значи ∠GCD = ∠CFH, откъдето\n∠BCG = ∠BCD − ∠GCD = ∠CEH − ∠CFH = ∠BCF.",
-      "answer": "∠BCG = ∠BCF",
-      "difficulty": "easy",
-      "techniques": [
-        "similar_triangles",
-        "angle_chasing"
-      ],
-      "confidence": "exact",
-      "reasoning": "Доказателството се базира на подобие на триъгълници и пресмятане на ъгли – стъпка 1.5."
-    },
-    {
-      "source": "OLI-2-Областен кръг-2000-11 кл · 2000-11 · Зад. 6",
-      "statement": "Да се намерят всички множества $S$ от четири точки в равнината със свойството: за всеки две окръжности $k_1$ и $k_2$, които имат диаметри с краища в точки от $S$, съществува точка $A \\in S \\cap k_1 \\cap k_2$.",
-      "solution": "Решение: Нека S = {A, B, C, D}. Да разгледаме окръжностите k₁ и k₂ с диаметри съответно AB и CD. От условието следва, че поне един от ъглите ACB, ADB, CAD и CBD е прав. Без ограничение можем да считаме, че ∢ACB = 90°. Нека k₃ и k₄ са окръжности с диаметри съответно AC и BD. Тъй като ∢ABC < 90°, то общата точка на k₃ и k₄ може да бъде A, C или D.\n\n1. Нека A ∈ k₃ ∩ k₄. Тогава ∢BAD = 90° и следователно D ∈ l₁, където l₁ ⊥ AB, A ∈ l₁. Лесно се проверява, че ∢BDC < 90° и понеже ∢BAC < 90°, ∢ABD < 90°, то общата точка на окръжностите с диаметри AD и BC е точка C и ∢ACD = 90°. Следователно D = l₁ ∩ BC.\n\n2. Нека C ∈ k₃ ∩ k₄. Тогава ∢BCD = 90° и следователно D лежи на правата AC. Тъй като ∢BDC < 90°, ∢BAC < 90° и ∢ACD < 90°, получаваме, че общата точка на окръжностите с диаметри AD и BC е B и ∢ABD = 90°. Следователно D = l₂ ∩ AC, където l₂ ⊥ AB, B ∈ l₂.\n\n3. Нека D ∈ k₃ ∩ k₄. Тогава ∢ADC = 90° и следователно D ∈ k₃. Тъй като ∢BAC < 90° и ∢ACD < 90°, получаваме, че общата точка на окръжностите с диаметри AD и BC е B или D. В първия случай ∢ABD = 90° и следователно D ∈ l₂; от друга страна, l₂ ∩ k₃ = ∅, което е противоречие. Във втория случай ∢BDC = 90°, откъдето получаваме, че D е петата на височината от точката C към AB.\n\nВ заключение, всички множества S, които изпълняват условието на задачата, се състоят от върховете на произволен правоъгълен триъгълник и петата на височината към хипотенузата.",
-      "answer": "Множествата от върховете на произволен правоъгълен триъгълник и петата на височината към хипотенузата.",
-      "difficulty": "medium",
-      "techniques": [
-        "thales_theorem",
-        "case_analysis"
-      ],
-      "confidence": "exact",
-      "reasoning": "От свойството за диаметър се получава прав ъгъл (Талес), след това се разглеждат трите възможни конфигурации."
-    },
-    {
-      "source": "OLI-2-Областен кръг-2002-10 кл · 2002-10 · Зад. 2",
-      "statement": "Нека $E$ и $F$ са точки съответно върху страните $AD$ и $CD$ на успоредник $ABCD$ такива, че $\\measuredangle AEB = \\measuredangle AFB = 90^{\\circ}$, а $G$ е точка върху $BF$, за която $EG||AB$. Да се докаже, че ако $H = AF \\cap BE$ и $I = DH \\cap BC$, то $FI \\perp GH$.",
-      "solution": "Решение. Нека $J = AF \\cap BC$, а $K$ е ортогоналната проекция на $I$ върху $AF$. От теоремата на Талес следва, че $\\frac{KF}{JF} = \\frac{IB}{JB} = \\frac{DE}{AE} = \\frac{FG}{BG}$, откъде $\\frac{KF}{KJ} = \\frac{FG}{FB}$. От друга страна, $\\triangle IJK \\sim \\triangle HBF$, защото $\\angle JKI = \\angle BFH = 90^\\circ$ и $\\angle IJK = 90^\\circ - \\angle FBJ = \\angle HBF$. Следователно $\\frac{KI}{KJ} = \\frac{FH}{FB}$. Тогава $\\frac{KF}{FG} = \\frac{KJ}{FB} = \\frac{KI}{FH}$ и понеже $\\angle FKI = \\angle GFH = 90^\\circ$, то $\\triangle FKI \\sim \\triangle GFH$. Оттук $\\angle GHF = \\angle FIK = 90^\\circ - \\angle KFI$, т. е. $FI \\perp GH$.",
+      "source": "OLI-2-Областен кръг-2000-10 кл · 2000-10 · Зад. 2",
+      "statement": "В $\\triangle ABC, CH(H \\in AB)$ е височина, а $CM$ и $CN(M, N \\in AB)$ са ъглополовящи съответно на ъглите $ACH$ и $BCH$. Центърът на описаната около $\\triangle CMN$ окръжност съвпада с центъра на вписаната в $\\triangle ABC$ окръжност. Да се докаже, че $S_{\\triangle ABC} = \\frac{AN.BM}{2}$.",
+      "solution": "Решение: Нека I е центърът на вписаната в △ABC окръжност, а P, Q и R са допирните точки на тази окръжност съответно със страните AB, BC и CA. От равенствата IP = IQ = IR и IC = IM = IN следва, че △IMP, △INP, △ICQ и △ICR са еднакви. Нека ∠MIP = ∠NIP = ∠QIC = ∠CIR = δ. Тогава ∠MCN = ½∠MIN = δ. Тъй като CM и CN са ъглополовящи, получаваме ∠ACB = 2∠MCN = 2δ. Сега от четириъгълника IQCR имаме ∠QIR + ∠QCR = 180° ⇔ 4δ = 180° ⇔ δ = 45°.\nСледователно △ABC е правоъгълен, откъдето лесно получаваме ∠BCM = ∠BMC = ∠BAC + ∠ABC/2 и ∠ANC = ∠ACN = ∠ABC + ∠BAC/2. Следователно BC = BM и AC = AN и оттук S_{ABC} = AC·BC/2 = AN·BM/2.",
       "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "thales_theorem",
-        "similar_triangles"
+        "inscribed_circumscribed_circles"
       ],
       "confidence": "exact",
-      "reasoning": "Solution cites Теоремата на Талес and uses several similar triangles to obtain FI ⟂ GH."
+      "reasoning": "Използва свойства на вписаната и описаната окръжност, съвпадение на центрове и ъглополовящи.",
+      "_crosslinked_from": "1.10",
+      "_crosslink_confidence": 0.85
     },
     {
-      "source": "OLI-2-Областен кръг-2002-10 кл · 2002-10 · Зад. 4",
-      "statement": "Точки $A$ и $B$ лежат на окръжност, а точка $C$ се мени върху нея, като $\\triangle ABC$ е остроъгълен. Да се докаже, че ако $E$ и $F$ са ортогоналчите проекции на средата на отсечката $AB$ върху страните $AC$ и $BC$, то симетралата на отсечката $EF$ минава през постоянна точка.",
-      "solution": "Решение. Нека $M$, $K$ и $L$ са средите съответно на отсечките $AB$, $AM$ и $BM$. Нека $D$ е точка върху симетралата на $AB$, която лежи в полуравнината спрямо $AB$, несъдържаща $C$, и такава, че $\\angle DKL = \\angle ACB$. Ще докажем, симетралата на $EF$ минава през $D$. Ако $\\angle ABC = \\angle BAC$, твърдението е очевидно. Следователно можем да считаме, че $\\angle BAC > \\angle ABC$. Тогава $\\angle DLF = \\angle DLK + \\angle KLF = \\angle ACB + 2 \\angle ABC$ и $\\angle DKE = 360^\\circ - \\angle DKL - \\angle LKE = 360^\\circ - \\angle ACB - 2 \\angle BAC$, откъдето $\\angle DLF = \\angle DKE$. Следователно $\\triangle DLF \\cong \\triangle DKE$, защото $DL = DK$ и $LF = KE = \\frac{AB}{4}$. Оттук $DF = DE$, т.е. симетралата на $EF$ минава през $D$.\n\nЗабележка. Твърдението на задачата е вярно и без условието $\\triangle ABC$ да е остроъгълен.",
+      "source": "OLI-2-Областен кръг-2001-12 кл · 2001-12 · Зад. 12.2",
+      "statement": "Диагоналите $AC$ и $BD$ на вписан в окръжност четириъгълник се пресичат в точка $E$. Да се докаже, че ако $\\angle  BAD = 60^◦$ и $AE = 3CE$, то сумата на две от страните на четириъгълника е равна на сумата на другите му две страни.",
+      "solution": "Нека $\\angle ABD = x$ и $\\angle CBD = y$. От синусовата теорема получаваме\n\n$$\\frac{AE}{AB} = \\frac{\\sin x}{\\sin(120^\\circ + y - x)}, \\frac{CE}{BC} = \\frac{\\sin y}{\\sin(60^\\circ + x - y)}$$\n\nи $$\\frac{AB}{BC} = \\frac{\\sin(120^\\circ - x)}{\\sin(60^\\circ - y)}$$. Следователно $$3 = \\frac{AE}{CE} = \\frac{\\sin x \\cdot \\sin(120^\\circ - x)}{\\sin y \\cdot \\sin(60^\\circ - y)}$$.\n\nОттук $$3(\\cos(2y - 60^\\circ) - \\cos 60^\\circ) = \\cos(2x - 120^\\circ) - \\cos 120^\\circ$$, т.е.\n\n$$1 - \\cos(2x - 120^\\circ) = 3(1 - \\cos(2y - 60^\\circ))$$ и значи $$\\sin^2(x - 60^\\circ) = 3\\sin^2(y - 30^\\circ)$$.\n\nСледователно $$\\sin(x - 60^\\circ) \\cos 60^\\circ = \\pm \\cos 30^\\circ \\sin(y - 30^\\circ)$$,\n\nт.е. $$\\sin x - \\sin(120^\\circ - x) = \\pm(\\sin y - \\sin(60^\\circ - y))$$. Отново от синусовата теорема получаваме, че $$AD - AB = \\pm(CD - BC)$$, т.е.\n\n$$AD + BC = AB + CD \\quad \\text{или} \\quad AD + CD = AB + BC.$$",
       "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "symmetry",
-        "congruence"
+        "sine_theorem",
+        "trigonometric_identities"
       ],
       "confidence": "exact",
-      "reasoning": "Relies on symmetry of the circle and congruence of triangles (∠DKE = ∠DLF) to prove the line through the midpoint of EF passes a fixed point."
+      "reasoning": "Задачата използва синусова теорема в четириъгълник и тригонометрични преобразувания. Точка 1.6 покрива синусова и косинусова теорема.",
+      "_crosslinked_from": "1.6",
+      "_crosslink_confidence": 0.75
     },
     {
-      "source": "OLI-2-Областен кръг-2002-11 кл · 2002-11 · Зад. 2",
-      "statement": "Нека $E$ и $F$ са точки съответно върху страните $AD$ и $CD$ на успоредник $ABCD$ такива, че $\\measuredangle AEB = \\measuredangle AFB = 90^\\circ$, а $G$ е точка върху $BF$, за която $EG||AB$. Да се докаже, че ако $H = AF \\cap BE$ и $I = DH \\cap BC$, то $FI \\perp GH$.",
-      "solution": "Решение. Нека $J = AF \\cap BC$, а $K$ е ортогоналната проекция на $I$ върху $AF$. От теоремата на Талес следва, че $\\frac{KF}{JF} = \\frac{IB}{JB} = \\frac{DE}{AE} = \\frac{FG}{BG}$, откъде $\\frac{KF}{KJ} = \\frac{FG}{FB}$. От друга страна, $\\triangle IJK \\sim \\triangle HBF$, защото $\\angle JKI = \\angle BFH = 90^\\circ$ и $\\angle IJK = 90^\\circ - \\angle FBJ = \\angle HBF$. Следователно $\\frac{KI}{KJ} = \\frac{FH}{FB}$. Тогава $\\frac{KF}{FG} = \\frac{KJ}{FB} = \\frac{KI}{FH}$ и понеже $\\angle FKI = \\angle GFH = 90^\\circ$, то $\\triangle FKI \\sim \\triangle GFH$. Оттук $\\angle GHF = \\angle FIK = 90^\\circ - \\angle KFI$, т. е. $FI \\perp GH$.",
+      "source": "OLI-2-Областен кръг-2002-10 кл · 2002-10 · Зад. 10.2",
+      "statement": "Нека $E$ и $F$ са точки съответно върху страните $AD$ и $CD$ на успоредник $ABCD$ такива, че $\\angle  AEB = \\angle  AFB = 90^{◦}$, а $G$ е точка върху $BF$, за която $EG||AB$. Да се докаже, че ако $H = AF ∩ BE$ и $I = DH ∩ BC$, то $FI ⊥ GH$.",
+      "solution": "Нека $J = AF ∩ BC$, а $K$ е ортогоналната проекция на $I$ върху $AF$. От теоремата на Талес следва, че $\\frac{KF}{JF} = \\frac{IB}{JB} = \\frac{DE}{AE} = \\frac{FG}{BG}$, откъде $\\frac{KF}{KJ} = \\frac{FG}{FB}$. От друга страна, $\\triangle IJK ∼ \\triangle HBF$, защото $\\angle JKI = \\angle BFH = 90^◦$ и $\\angle IJK = 90^◦ - \\angle FBJ = \\angle HBF$. Следователно $\\frac{KI}{KJ} = \\frac{FH}{FB}$. Тогава $\\frac{KF}{FG} = \\frac{KJ}{FB} = \\frac{KI}{FH}$ и понеже $\\angle FKI = \\angle GFH = 90^◦$, то $\\triangle FKI ∼ \\triangle GFH$. Оттукъ $\\angle GHF = \\angle FIK = 90^◦ - \\angle KFI$, т. е. $FI ⊥ GH$.",
       "answer": null,
       "difficulty": "medium",
       "techniques": [
         "similar_triangles",
         "parallel_lines",
-        "right_angle"
+        "angle_chasing"
       ],
       "confidence": "exact",
-      "reasoning": "Solution uses right angles, parallelism and similar triangles to prove FI ⟂ GH."
+      "reasoning": "Задачата използва теорема на Талес и подобие на триъгълници за доказване на перпендикулярност. Основна техника е геометричната трансформация и работа с ъгли, която се покрива от точка 1.5 (Вписани ъгли, Талес, симетрали). Трудността е medium поради необходимостта от няколко стъпки и изграждане на спомагателни точки."
     },
     {
-      "source": "OLI-2-Областен кръг-2002-11 кл · 2002-11 · Зад. 4",
+      "source": "OLI-2-Областен кръг-2002-11 кл · 2002-11 · Зад. 11.4",
       "statement": "Точки $A$ и $B$ лежат на окръжност, а точка $C$ се мени върху нея, като $\\triangle ABC$ е остроъгълен. Да се докаже, че ако $E$ и $F$ са ортогоналчите проекции на средата на отсечката $AB$ върху страните $AC$ и $BC$, то симетралата на отсечката $EF$ минава през постоянна точка.",
-      "solution": "Решение. Нека $M$, $K$ и $L$ са средите съответно на отсечките $AB$, $AM$ и $BM$. Нека $D$ е точка върху симетралата на $AB$, която лежи в полуравнината спрямо $AB$, несъдържаща $C$, и такава, че $\\angle DKL = \\angle ACB$. Ще докажем, симетралата на $EF$ минава през $D$. Ако $\\angle ABC = \\angle BAC$, твърдението е очевидно. Следователно можем да считаме, че $\\angle BAC > \\angle ABC$. Тогава $\\angle DLF = \\angle DLK + \\angle KLF = \\angle ACB + 2 \\angle ABC$ и $\\angle DKE = 360^\\circ - \\angle DKL - \\angle LKE = 360^\\circ - \\angle ACB - 2 \\angle BAC$, откъдето $\\angle DLF = \\angle DKE$. Следователно $\\triangle DLF \\cong \\triangle DKE$, защото $DL = DK$ и $LF = KE = \\frac{AB}{4}$. Оттук $DF = DE$, т.е. симетралата на $EF$ минава през $D$.\n\nЗабележка. Твърдението на задачата е вярно и без условието $\\triangle ABC$ да е остроъгълен.",
+      "solution": "Нека $M$, $K$ и $L$ са средите съответно на отсечките $AB$, $AM$ и $BM$. Нека $D$ е точка върху симетралата на $AB$, която лежи в полуравнината спрямо $AB$, несъдържаща $C$, и такава, че $\nangle DKL = \nangle ACB$. Ще докажем, симетралата на $EF$ минава през $D$. Ако $\nangle ABC = \nangle BAC$, твърдението е очевидно. Следователно можем да считаме, че $\nangle BAC > \nangle ABC$. Тогава $\nangle DLF = \nangle DLK + \nangle KLF = \nangle ACB + 2 \nangle ABC$ и $\nangle DKE = 360^\ncirc - \nangle DKL - \nangle LKE = 360^\ncirc - \nangle ACB - 2 \nangle BAC$, откъдето $\nangle DLF = \nangle DKE$. Следователно $\ntriangle DLF \ncong \ntriangle DKE$, защото $DL = DK$ и $LF = KE = \nfrac{AB}{4}$. Оттук $DF = DE$, т.е. симетралата на $EF$ минава през $D$.",
       "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "symmetry",
+        "circle_geometry",
+        "cyclic_quadrilateral",
+        "symmetry"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на окръжности и симетрали. Решението използва симетрия и свойства на средни точки, които са свързани с основни геометрични теореми за окръжности."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2002-12 кл · 2002-12 · Зад. 12.4",
+      "statement": "Точки $A$ и $B$ лежат на окръжност, а точка $C$ се мени върху нея, като $\\triangle ABC$ е остроъгълен. Да се докаже, че ако $E$ и $F$ са ортогоналчите проекции на средата на отсечката $AB$ върху страните $AC$ и $BC$, то симетралата на отсечката $EF$ минава през постоянна точка.",
+      "solution": "Нека $M$, $K$ и $L$ са средите съответно на отсечките $AB$, $AM$ и $BM$. Нека $D$ е точка върху симетралата на $AB$, която лежи в полуравнината спрямо $AB$, несъдържаща $C$, и такава, че $\\angle DKL = \\angle ACB$. Ще докажем, симетралата на $EF$ минава през $D$. Ако $\\angle ABC = \\angle BAC$, твърдението е очевидно. Следователно можем да считаме, че $\\angle BAC > \\angle ABC$. Тогава $\\angle DLF = \\angle DLK + \\angle KLF = \\angle ACB + 2 \\angle ABC$ и $\\angle DKE = 360^\\circ - \\angle DKL - \\angle LKE = 360^\\circ - \\angle ACB - 2 \\angle BAC$, откъдето $\\angle DLF = \\angle DKE$. Следователно $\\triangle DLF \\cong \\triangle DKE$, защото $DL = DK$ и $LF = KE = \\frac{AB}{4}$. Оттук $DF = DE$, т.е. симетралата на $EF$ минава през $D$.\n\n**Забележка.** Твърдението на задачата е вярно и без условието $\\triangle ABC$ да е остроъгълен.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "circle_geometry",
         "midpoint",
         "perpendicular_projection"
       ],
       "confidence": "exact",
-      "reasoning": "Uses midpoint of AB, orthogonal projections and symmetry of EF to locate a fixed point."
+      "reasoning": "Геометрична задача с окръжност и проекции. Решението използва свойства на среди и проекции, но има проблеми с доказателството (липсващи детайли)."
     },
     {
-      "source": "OLI-2-Областен кръг-2005-10 кл · 2005-10 · Зад. 5",
-      "statement": "Четириъгълник ABCD е вписан в окръжност k. Лъчите DA и CB се пресичат в точка N, а NT е допирателна към k. Диагоналите AC и BD се пресичат в точка P, която е медицентър на △NTD. Да се намери отношението NT : AP.",
-      "solution": "От условието следва, че T не е на дъгата AD, значи е на дъгата BC. Нека M ∈ NT ∩ DP е средата на NT. От свойството на допирателна и секуща имаме MB·MD = MT² = MN².\nТогава MB : MN = MN : MD и следователно △NMB ∼ △DMN по втори признак. Получаваме ∠MNB = ∠MDN = ∠NCA, така че NT ∥ AC.\nСледователно NT : AP = 2NM : AP = 2MD : PD = 3 : 1.",
-      "answer": "NT : AP = 3 : 1",
+      "source": "OLI-2-Областен кръг-2003-11 кл · 2003-11 · Зад. 11.4",
+      "statement": "Точка D върху страната AC на \\triangle ABC е такава, че BD = CD. През точка E от страната BC е прекарана права, успоредна на BD, която пресича правата AB в точка F. Ако G = AE ∩ BD, да се докаже, че <) BCG =<) BCF.",
+      "solution": "Ако H = AC ∩EF, то <) CDG =<) FHC и CD DG = BD DG = FH HE = FH HC . Тогава \\triangle CDG ∼\\triangle FHC и значи <) GCD =<) CFH, откъдето <) BCG =<) BCD−<) GCD =<) CEH−<) CFH =<) BCF.",
+      "answer": null,
       "difficulty": "medium",
       "techniques": [
+        "parallel_lines",
         "similar_triangles",
-        "tangent_properties"
-      ],
-      "confidence": "exact",
-      "reasoning": "От свойствата на допирателната и секущата се получава подобие, което дава съотношението NT:AP = 3:1."
-    },
-    {
-      "source": "OLI-2-Областен кръг-2006-10 кл · 2006-10 · Зад. 1",
-      "statement": "Окръжност $k$ се допира до раменете на ъгъл с връх $O$ в точки $A$ и $B$. През $B$ е построен перпендикуляр $BP$ към диаметъра $AD$ на $k$ през $A$, $P \\in AD$. Правата $OD$ пресича $BP$ в точка $M$. Да се намери отношението $\\frac{BM}{BP}$.",
-      "solution": "Нека допирателната към $k$ в точка $D$ пресича рамото $OB$ в точка $S$. Тогава правите $SD$, $BP$ и $OA$ са успоредни и имаме подобията $\\triangle OBM \\sim \\triangle OSD$ и $\\triangle DPM \\sim \\triangle DAO$. Следователно $\\frac{BM}{SD} = \\frac{OB}{OS}$ и $\\frac{MP}{OA} = \\frac{DP}{DA}$, т.е. $BM = \\frac{OB.SD}{OS}$ и $MP = \\frac{OA.DP}{DA}$.\n\nТъй като $OA = OB$ и $\\frac{BS}{OS} = \\frac{DP}{DA}$ (използвахме и равенството $SD = SB$), получаваме $BM = MP$, откъдето следва, че търсеното отношение е $1:2$.",
-      "answer": "$\\frac{BM}{BP} = \\frac{1}{2}$",
-      "difficulty": "medium",
-      "techniques": [
-        "similarity",
         "angle_chasing"
       ],
       "confidence": "exact",
-      "reasoning": "Solution uses similar triangles OBM~OSD and DPM~DAO, classic angle‑chasing in circle geometry."
+      "reasoning": "Геометрична задача с успоредни прави и ъгли. Решението използва подобни триъгълници и свойства на успоредните прави. Основната техника е свързана с ъгли и симетрали, точка 1.5."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2006-11 кл · 2006-11 · Зад. 11.5",
+      "statement": "Допирателните към описаната около равнобедрен $\\triangle ABC$, $AC = BC$, окръжност $k$ в точките $B$ и $C$ се пресичат в точка $X$. Ако $AX$ пресича $k$ в точка $Y$, да се намери отношението $\\frac{AY}{BY}$.",
+      "solution": "Ако $\\angle BAY = \\alpha$ и $\\angle ABY = \\beta$, то $\\angle BYX = \\beta + \\alpha$. Нещо повече, имаме $\\angle ACB = \\angle AYB = 180^{\\circ} - \\alpha - \\beta$, откъдето $\\angle BAC = \\angle ABC = \\frac{\\beta + \\alpha}{2}$.\n\n![img-0.jpeg](img-0.jpeg)\n\nТогава $\\angle AYC = \\frac{\\beta + \\alpha}{2}$ и $\\angle YCX = \\angle YAC = \\frac{\\beta + \\alpha}{2} - \\alpha = \\frac{\\beta - \\alpha}{2}$. Синусовата теорема за $\\triangle BYX$ и $\\triangle CYX$ дава\n\n$$\\frac{XY}{XB} = \\frac{\\sin \\alpha}{\\sin(\\alpha + \\beta)}, \\quad \\frac{XY}{XC} = \\frac{\\sin(\\frac{\\beta - \\alpha}{2})}{\\sin(\\frac{\\beta + \\alpha}{2})}$$\n\nи тъй като $XB = XC$, получаваме $\\frac{\\sin \\alpha}{\\sin(\\alpha + \\beta)} = \\frac{\\sin(\\frac{\\beta - \\alpha}{2})}{\\sin(\\frac{\\beta + \\alpha}{2})}$. Следователно\n\n$$\\sin \\alpha = 2 \\cos \\left( \\frac{\\beta + \\alpha}{2} \\right) \\sin \\left( \\frac{\\beta - \\alpha}{2} \\right) = \\sin \\beta - \\sin \\alpha$$\n\nи значи $\\frac{AY}{BY} = \\frac{\\sin \\beta}{\\sin \\alpha} = 2$.",
+      "answer": "$\\frac{AY}{BY} = 2$",
+      "difficulty": "medium",
+      "techniques": [
+        "circle_theorems",
+        "angle_chasing",
+        "trigonometry"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на окръжности и вписани ъгли, както и синусова теорема. Това съответства на точка 1.5 (Вписани ъгли, Талес, симетрали). Решението е с умерена дължина и изисква инсайт за ъглите, което го прави medium."
     },
     {
       "source": "OLI-2-Областен кръг-2008-10 кл · 2008-10 · Зад. 2",
@@ -140,143 +133,339 @@
       "reasoning": "Used inscribed‑angle theorem and tangent–chord properties to prove ∠CQP = ∠CMN and that SC is tangent."
     },
     {
-      "source": "OLI-2-Областен кръг-2013-11 кл · 2013-11 · Зад. 2",
-      "statement": "Даден е △ABC, вписан в окръжност k с център O. Допирателната към k в точка C пресича лъча BA в точка S. Върху лъча CA след точка A са избрани точки P и Q, за които AP = PQ. Да се докаже, че точките P, O, C и S лежат на една окръжност, тогава и само тогава, когато точките Q, B, C и S лежат на една окръжност.",
-      "solution": "Решение. ($\\rightarrow$) Нека точките $P$, $O$, $C$ и $S$ лежат на една окръжност $k'$. Тъй като $OC \\perp SC$, то $OS$ е диаметър на $k'$ и ако $M$ е средата на $AB$, то $OM \\perp AB$ и следователно $M \\in k'$. Тогава $\\angle SMP = \\angle SCP$ и понеже $PM$ е средна отсечка в $\\triangle QBA$, то $\\angle SMP = \\angle SBQ$. Тогава $\\angle SCQ = \\angle SBQ$, което означава, че точките $Q$, $B$, $C$ и $S$ лежат на една окръжност.\n\n($\\leftarrow$) Обратно, ако точките $Q$, $B$, $C$ и $S$ лежат на една окръжност, то $\\angle SCQ = \\angle SBQ$ и понеже $\\angle SBQ = \\angle SMP$, то точките $S$, $P$, $M$ и $C$ лежат на една окръжност $k'$. Но $\\angle OMS = \\angle OCS = 90^\\circ$, т.е. $k'$ е с диаметър $SO$ и следователно $P$, $O$, $C$ и $S$ лежат на една окръжност.",
+      "source": "OLI-2-Областен кръг-2008-10 кл · 2008-10 · Зад. 2",
+      "statement": "Дадена е окръжност $k$ и три различни точки $A$, $B$ и $C$ върху нея. Нека допирателните в точките $A$ и $B$ се пресичат в точка $P$, а правата през $C$, която е перпендикулярна на $PC$, пресича правата $AB$ в точка $Q$.\n\nа) Ако правите $PC$ и $QC$ пресичат за втори път окръжността съответно в точки $M$ и $N$, да се докаже, че $\\angle CQP = \\angle CMN$.\nб) Ако $S$ е средата на $PQ$, да се докаже, че $SC$ е допирателна към $k$.",
+      "solution": "а) Нека $O$ е центъра на окръжността и $PO$ пресича $AB$ в точка $K$. По условие $\\angle PCQ = 90^\\circ$ и следователно $MN$ е диаметър в $k$. От една страна четириъгълникът $QCKP$ е вписан в окръжност с диаметър $PQ$ и $\\angle CQP = \\angle CKO$, а от друга $PM \\cdot PC = PA^2 = PK \\cdot PO$, т.е. четириъгълникът $MCOK$ е вписан в окръжност и $\\angle CKO = \\angle CMO$. Следователно $\\angle CQP = \\angle CMN$.\n\nб) От а) имаме $\\angle CQP = \\angle CMN$ и освен това $\\angle QCP = \\angle MCN = 90^\\circ$, т.е. $\\triangle CQP \\sim \\triangle CMN$, откъдето стигаме до заключението, че\n\n$$\\angle SCP = \\angle OCN = \\angle ONC = \\frac{1}{2}\\widehat{MC},$$\n\nт.е. $SC$ е допирателна към $k$.\n\nСледователно $\\angle CQP = \\angle CMN$ и освен това $\\angle QCP = \\angle MCN = 90^\\circ$, т.е. $\\triangle CQP \\sim \\triangle CMN$.",
       "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "power_of_a_point",
-        "cyclic_quadrilateral",
-        "angle_chasing"
+        "inscribed_angle_theorem",
+        "tangent_properties"
       ],
       "confidence": "exact",
-      "reasoning": "Доказателството се базира на степента на точка (OS диаметр) и ъглово пресмятане, за да се установи съвместната цикличност."
+      "reasoning": "Used inscribed‑angle theorem and tangent–chord properties to prove ∠CQP = ∠CMN and that SC is tangent.",
+      "_crosslinked_from": "1.5",
+      "_crosslink_confidence": 0.85
     },
     {
-      "source": "OLI-2-Областен кръг-2015-11 кл · 2015-11 · Зад. 2",
-      "statement": "Даден е остроъгълен триъгълник ABC с център на вписаната окръжност точка I и център на описаната окръжност точка O. Ъглополовящата CL, (L ∈ AB) пресича описаната окръжност в точка D. Нека P е симетричната точка на D спрямо правата AB. Да се докаже, че:\nа) точките C, L, P и O лежат на една окръжност;\nб) ∠CPI = ∠LOI.",
-      "solution": "Решение. Ще разгледаме случая когато точката P е между D и O (случаят, когато O е между P и D, се разглежда аналогично). Нека T е среда на AB, а K е диаметрално противоположната на D. Имаме\nDI² = DA² = DL·DC = DT·DK = DP·DO.\nПървото равенство следва от добре известния факт, че DI = DA = DB. Второто равенство следва от подобието на триъгълниците DAC и DLA. Третото равенство следва от това, че CLTK е вписан четириъгълник (поради ∠LCK = ∠LTK = 90°), а четвъртото от DP = 2DT и DK = 2DO.\nа) От DL·DC = DP·DO следва, че точките C, L, P и O лежат на една окръжност. Това следва и от ∠LPD = ∠LDP = ∠OCL, откъдето ∠LPO + ∠OCL = 180°.\nб) От DI² = DP·DO следва, че триъгълниците DIO и DPI са подобни, откъдето ∠CIO = ∠IPO. От а) следва, че ∠ILO = ∠CPO. От последните две равенства получаваме\n∠CPI = ∠IPO − ∠CPO = ∠CIO − ∠ILO = ∠IOL.",
+      "source": "OLI-2-Областен кръг-2011-12 кл · 2011-12 · Зад. 12.4",
+      "statement": "Четириъгълникът $ABCD$ е вписан в окръжност, като $\\angle  BAC < 90^◦$, $\\angle  ABC ≠ 90^◦$ и точка $M$ е среда на $AC$. Да се докаже, че $\\angle  BMD = 2 \\angle  BAD$ тогава и само тогава, когато е изпълнено равенството $AB⋅CD = AD⋅BC$.",
+      "solution": "Решение. Нека $\\measuredangle BAC = \\alpha$ и $O$ е центърът на окръжността. От $\\measuredangle ABC \\neq 90^\\circ$ следва, че $O \\neq M$ и без ограничение приемаме, че $O$ е във вътрешността на $\\triangle ABC$. Ако $\\measuredangle BMD = 2\\alpha$, то от $\\measuredangle BOD = 2\\alpha$ следва, че точките $M$, $O$, $B$ и $D$ лежат на една окръжност. Тогава\n\n$$\\measuredangle OMB = \\measuredangle ODB = 90^\\circ - \\alpha$$\n\nи следователно $\\measuredangle BMC = \\measuredangle OMC - \\measuredangle OMB = 90^\\circ - \\measuredangle OMB = \\alpha$. Сега от подобието $\\triangle MCB \\sim \\triangle ADB$ намираме $\\frac{MC}{CB} = \\frac{AD}{DB}$. Тъй като $MC = \\frac{1}{2}AC$, последното е еквивалентно на $AC \\cdot BD = 2AD \\cdot BC$. От теоремата на Птолемей имаме $AC \\cdot BD = AD \\cdot BC + AB \\cdot CD$, откъдето следва $AB \\cdot CD = AD \\cdot BC$.\n\nОбратно, ако $AB \\cdot CD = AD \\cdot BC$, то $AC \\cdot BD = 2AD \\cdot BC$, откъдето $\\triangle MCB \\sim \\triangle ADB$ и $AC \\cdot BD = 2AB \\cdot CD$, откъдето следва $\\triangle AMB \\sim \\triangle DCB$. От горните подобия следва, че $\\measuredangle AMB = \\measuredangle AMD = \\measuredangle BCD = 180^\\circ - \\alpha$, т.е. $\\measuredangle BMC = \\measuredangle DMC = \\alpha$, откъдето $\\measuredangle BMD = 2\\alpha$.\n\nОценяване. За правата посока – 4 т.(за доказване, че $M$, $O$, $B$ и $D$ лежат на една окръжност – 1 т.; за $\\measuredangle BMC = \\measuredangle DMC = \\alpha - 1$ т.; за подобието на триъгълниците $\\triangle MCB \\sim \\triangle ADB - 1$ т.; за използване на Птолемей – 1 т.); За обратната посока – 3 т. (за използване на Птолемей за доказване на $\\triangle MCB \\sim \\triangle ADB$ и $\\triangle AMB \\sim \\triangle DCB - 2$ т.; за довършване – 1 т.)",
       "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "cyclic_quadrilateral",
-        "angle_bisector",
-        "similarity"
+        "ptolemy_theorem",
+        "triangle_similarity",
+        "circle_properties"
       ],
       "confidence": "exact",
-      "reasoning": "Използва се свойството за вписан четириъгълник (C,L,P,O) и подобия между триъгълници, получени от ъглополовящата и симетрията."
+      "reasoning": "Ключов елемент е прилагането на теоремата на Птолемей за вписания четириъгълник. Решението има две посоки с по 2-3 стъпки, включващи подобие на триъгълници и свойства на окръжност.",
+      "_crosslinked_from": "1.3",
+      "_crosslink_confidence": 0.82
     },
     {
-      "source": "OLI-2-Областен кръг-2020-11 кл · 2020-11 · Зад. 1",
-      "statement": "Точка F от страната BC на триъгълника ABC е такава, че AC = BF. Да се докаже, че правата, построена през средата на CF и успоредна на ъглополовящата на ∠ACB, разполовява страната AB.",
-      "solution": "Решение. Нека M е средата на CF, E е средата на AF и N е средата на AB. Ще докажем, че NM е успоредна на ъглополовящата на ∠ACB. Тъй като EM е средна отсечка в триъгълник AFC и EN е средна отсечка в триъгълник ABF, то от AC = BF следва, че EM = EN. Лъчите EN и CB са еднопосочни, а EM и CA са противопосочни, така че ∠MEN = 180° − ∠ACB. Тогава от равнобедрения триъгълник MNE получаваме, че ∠EMN = (1/2)∠ACB. Но ∠EMB = ∠ACB, така че ∠NMB = (1/2)∠ACB и MN е успоредна на ъглополовящата на ∠ACB.",
+      "source": "OLI-2-Областен кръг-2014-10 кл · 2014-10 · Зад. 10.3",
+      "statement": "Върху дадена окръжност $k$ са избрани точките $A$, $B$ и $C$. Построена е окръжност $ω$, която се допира до хордите $AB$, $AC$ и вътрешно до окръжността $k$ в точките $P$, $Q$ и $R$ съответно. Нека правите $PR$ и $QR$ пресичат за втори път $k$ в точките $M$ и $N$ съответно, а точка $T$ е такава, че $AMTN$ е успоредник. Да се докаже, че точките $P$, $Q$ и $T$ лежат на една права.",
+      "solution": "Нека описаните окръжности около $\\triangle  AMP$ и $\\triangle  ANQ$ се пресичат за втори път точка $X$. Тогава $\\angle  AXP + \\angle  AXQ = (180^{○} - \\angle  AMP) + (180^{○} - \\angle  ANQ) = 180^{○}$ и следователно $X ∈ PQ$. Нещо повече, $\\angle  AXM = \\angle  APM = \\angle  BPR = \\angle  PQR = \\angle  XAN$ и следователно $MX \\parallel  AN$. Аналогично $NX \\parallel  AM$, т.е. $AMXN$ е успоредник и $X ≡ T$. С това доказателството е завършено.\n\nИнструкции за оценяване. 3 т. за построяване на точката $X$ и доказателство, че $X ∈ PQ$; 4 т. за доказателство, че $X ≡ T$.",
       "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "midpoint_theorem",
+        "cyclic_quadrilaterals",
+        "inscribed_angles",
         "parallel_lines"
       ],
       "confidence": "exact",
-      "reasoning": "Задачата е геометрична, решава се с свойства на средните отсечки и успоредност към ъглополовящата."
+      "reasoning": "Доказателство за колинеарност с помощта на окръжности и успоредници. Главната техника е използване на вписани ъгли и свойства на циклични четириъгълници (1.5). Difficulty medium, тъй като решението изисква инсайт за точка X, но е сравнително кратко."
     },
     {
-      "source": "OLI-3-Национален кръг-1990-9-12 кл · 1990-None · Зад. 2",
-      "statement": "Да се докаже, че в равнината съществува такава единствена точка P, че за всяка права през P, която пресича графиката на функцията y = αx², α ≥ 0, в две различни точки A и B, отсечките OA и OB са перпендикулярни, където O е началото на координатната система.",
-      "solution": "Решение. Нека A(x₁, αx₁²) и B(x₂, αx₂²) са точки от параболата с уравнение y = αx², чиито абсциси са различни от 0. Векторите OA(x₁, αx₁²) и OB(x₂, αx₂²) са перпендикулярни точно когато е изпълнено x₁x₂ + α²x₁²x₂² = 0. Тъй като x₁x₂ ≠ 0, това условие е еквивалентно на x₁x₂ = −1/α².\nДа предположим, че P(x₀, y₀) е точка със свойството от условието. Всяка права през P има уравнение от вида y − y₀ = λ(x − x₀), където λ е реално число, следователно абсцисите на пресечните ѝ точки с параболата y = αx² могат да се получат от системата\ny = αx²,\ny − y₀ = λ(x − x₀),\nот която достигаме до корените на уравнението αx² − λx + λx₀ − y₀ = 0. Това уравнение има различни реални корени x₁, x₂ за безбройно много стойности на λ т.к. дискриминантата му λ² − 4αλx₀ + 4αy₀ е строго положителна, например, за всички достатъчно големи λ. За всички такива λ (евентуално с изключение на едно — за което λx₀ − y₀ = 0) трябва да е изпълнено равенството\n(λx₀ − y₀)/α = x₁x₂ = −1/α²,\nт. е. (αx₀)λ + (1 − αy₀) = 0. Това е изпълнено само при αx₀ = 1 − αy₀ = 0, откъдето намираме единствената възможност за координатите на точката P: x₀ = 0, y₀ = 1/α. Обратно, нека l е произволна права през точката P(0, 1/α), пресичаща параболата y = αx² в две различни точки A и B. Уравнението на l е от вида y − 1/α = λx, където λ е реално число, така че абсцисите на A и B са корените x₁ и x₂ на уравнението αx² − λx − 1/α = 0. Тъй като x₁x₂ = −1/α², от бележката в началото на решението следва, че P има свойството от условието. С това твърдението е доказано.",
-      "answer": "P(0, 1/α)",
-      "difficulty": "medium",
-      "techniques": [
-        "analytic_geometry",
-        "parabola",
-        "perpendicular_chords",
-        "thales_theorem"
-      ],
-      "confidence": "exact",
-      "reasoning": "Uses coordinates of intersection points of a line through P with y=αx² and condition OA·OB⊥; Thales theorem appears for right angle."
-    },
-    {
-      "source": "OLI-3-Национален кръг-1993-9-12 кл · 1993-None · Зад. 2",
-      "statement": "Точката M лежи във вътрешността на триъгълника ABC и е такава, че ∠AMC = 90°, ∠AMB = 150° и ∠BMC = 120°. Точките P, Q и R са съответно центровете на описаните около триъгълниците AMC, AMB и BMC окръжности. Да се докаже, че лицето на триъгълника PQR е по-голямо от лицето на триъгълника ABC.",
-      "solution": "Решение. Правите PQ, QR и RP са симетралите съответно на отсечките MA, MB и MC (черт. 1). Ако X, Y и Z са съответно средите на MA, MB и MC, хомотетията с център M и коефициент 2 преобразува △XYZ в △ABC. Ето защо е достатъчно да докажем, че S_XYZ ≤ (1/4)S_PQR. Да забележим, че XZMP е правоъгълник. Тогава петите на перпендикулярите YU и YV от Y съответно към PQ и PR са външни точки за отсечките PX и PZ. Триъгълникът XYZ е вписан в правоъгълника YVPU и съгласно едно известно твърдение имаме S_XYZ ≤ (1/2)S_YVPU. На свой ред YVPU е вписан в △PQR и тогава (пак въз основа на известно твърдение) S_YVPU ≤ (1/2)S_PQR.\nВторо решение. Твърдението остава в сила за произволна точка M, за която ∠AMC = 90°. Съгласно една формула на Ойлер\nS_XYZ = (S_PQR/4)|1−OM²/R²|,\nкъдето O и R са съответно центърът и радиусът на описаната около △PQR окръжност.",
+      "source": "OLI-2-Областен кръг-2014-10 кл · 2014-10 · Зад. 10.3",
+      "statement": "Върху дадена окръжност $k$ са избрани точките $A$, $B$ и $C$. Построена е окръжност $ω$, която се допира до хордите $AB$, $AC$ и вътрешно до окръжността $k$ в точките $P$, $Q$ и $R$ съответно. Нека правите $PR$ и $QR$ пресичат за втори път $k$ в точките $M$ и $N$ съответно, а точка $T$ е такава, че $AMTN$ е успоредник. Да се докаже, че точките $P$, $Q$ и $T$ лежат на една права.",
+      "solution": "Нека описаните окръжности около $\\triangle  AMP$ и $\\triangle  ANQ$ се пресичат за втори път точка $X$. Тогава $\\angle  AXP + \\angle  AXQ = (180^{○} - \\angle  AMP) + (180^{○} - \\angle  ANQ) = 180^{○}$ и следователно $X ∈ PQ$. Нещо повече, $\\angle  AXM = \\angle  APM = \\angle  BPR = \\angle  PQR = \\angle  XAN$ и следователно $MX \\parallel  AN$. Аналогично $NX \\parallel  AM$, т.е. $AMXN$ е успоредник и $X ≡ T$. С това доказателството е завършено.\n\nИнструкции за оценяване. 3 т. за построяване на точката $X$ и доказателство, че $X ∈ PQ$; 4 т. за доказателство, че $X ≡ T$.",
       "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "geometry",
-        "symmedian",
-        "homothety",
-        "area_comparison"
+        "cyclic_quadrilaterals",
+        "inscribed_angles",
+        "parallel_lines"
       ],
       "confidence": "exact",
-      "reasoning": "Key step: PQ, QR, RP are symmedians of MA, MB, MC; homothety with centre M maps triangle XYZ to ABC. Uses inscribed‑angle / symmedian theory (1.5)."
+      "reasoning": "Доказателство за колинеарност с помощта на окръжности и успоредници. Главната техника е използване на вписани ъгли и свойства на циклични четириъгълници (1.5). Difficulty medium, тъй като решението изисква инсайт за точка X, но е сравнително кратко.",
+      "_crosslinked_from": "1.5",
+      "_crosslink_confidence": 0.8
+    },
+    {
+      "source": "OLI-2-Областен кръг-2022-12 кл · 2022-12 · Зад. 12.2",
+      "statement": "Точките $A_1$, $B_1$ и $C_1$ лежат съответно на страните $BC$, $CA$ и $AB$ на триъгълника $ABC$ и са такива, че отсечките $AA_1$, $BB_1$ и $CC_1$ се пресичат в точка $P$. Да се намерят отношенията $CB_1 : B_1A$ и $CP : PC_1$, при условие че $BA_1 : A_1C = 3 : 2$ и $AP : PA_1 = 5 : 1$.",
+      "solution": "Решение. Нека построим отсечка $PQ||AB$, $Q \\in BC$, тогава от теоремата на Талес имаме $\\frac{A_1P}{PA} = \\frac{A_1Q}{QB} = \\frac{1}{5}$ и $\\frac{CP}{PC_1} = \\frac{CQ}{QB} = \\frac{CA_1 + A_1Q}{A_1B - A_1Q}$. От равенствата $\\frac{A_1Q}{QB} = \\frac{1}{5}$ и $\\frac{CA_1}{A_1B} = \\frac{2}{3}$ получаваме $A_1Q = k$, $A_1B = 6k$ и $CA_1 = 4k$, откъдето $\\frac{CP}{PC_1} = \\frac{CA_1 + A_1Q}{A_1B - A_1Q} = \\frac{5k}{5k} = \\frac{1}{1}$. Нека построим отсечка $PR||AC$, $R \\in BC$, тогава $\\frac{A_1P}{PA} = \\frac{A_1R}{RC} = \\frac{1}{5}$ и $\\frac{BP}{PB_1} = \\frac{BR}{RC} = \\frac{BA_1 + A_1R}{A_1C - A_1R}$. От $\\frac{A_1R}{RB} = \\frac{1}{5}$ и $\\frac{CA_1}{A_1B} = \\frac{2}{3}$ имаме $A_1R = l$, $CA_1 = 6l$ и $A_1B = 9l$, откъдето $\\frac{BP}{PB_1} = \\frac{BA_1 + A_1R}{A_1C - A_1R} = \\frac{10l}{5l} = \\frac{2}{1}$. Нека построим отсечка $PT||AB$, $T \\in AC$, така последователно получаваме $\\frac{B_1P}{PB} = \\frac{B_1T}{TA} = \\frac{1}{2}$, $\\frac{CT}{TA} = \\frac{CP}{PC_1} = \\frac{1}{1}$, $B_1T = d$ и $TA = CT = 2d$, откъдето $\\frac{CB_1}{B_1A} = \\frac{CT - B_1T}{BT + B_1T} = \\frac{d}{3d} = \\frac{1}{3}$.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "thales_theorem",
+        "segment_ratios"
+      ],
+      "confidence": "exact",
+      "reasoning": "Приложение на теоремата на Талес няколко пъти с помощни построения. Изисква изчисляване на отношения."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2022-12 кл · 2022-12 · Зад. 12.2",
+      "statement": "Точките $A_1$, $B_1$ и $C_1$ лежат съответно на страните $BC$, $CA$ и $AB$ на триъгълника $ABC$ и са такива, че отсечките $AA_1$, $BB_1$ и $CC_1$ се пресичат в точка $P$. Да се намерят отношенията $CB_1 : B_1A$ и $CP : PC_1$, при условие че $BA_1 : A_1C = 3 : 2$ и $AP : PA_1 = 5 : 1$.",
+      "solution": "Решение. Нека построим отсечка $PQ||AB$, $Q \\in BC$, тогава от теоремата на Талес имаме $\\frac{A_1P}{PA} = \\frac{A_1Q}{QB} = \\frac{1}{5}$ и $\\frac{CP}{PC_1} = \\frac{CQ}{QB} = \\frac{CA_1 + A_1Q}{A_1B - A_1Q}$. От равенствата $\\frac{A_1Q}{QB} = \\frac{1}{5}$ и $\\frac{CA_1}{A_1B} = \\frac{2}{3}$ получаваме $A_1Q = k$, $A_1B = 6k$ и $CA_1 = 4k$, откъдето $\\frac{CP}{PC_1} = \\frac{CA_1 + A_1Q}{A_1B - A_1Q} = \\frac{5k}{5k} = \\frac{1}{1}$. Нека построим отсечка $PR||AC$, $R \\in BC$, тогава $\\frac{A_1P}{PA} = \\frac{A_1R}{RC} = \\frac{1}{5}$ и $\\frac{BP}{PB_1} = \\frac{BR}{RC} = \\frac{BA_1 + A_1R}{A_1C - A_1R}$. От $\\frac{A_1R}{RB} = \\frac{1}{5}$ и $\\frac{CA_1}{A_1B} = \\frac{2}{3}$ имаме $A_1R = l$, $CA_1 = 6l$ и $A_1B = 9l$, откъдето $\\frac{BP}{PB_1} = \\frac{BA_1 + A_1R}{A_1C - A_1R} = \\frac{10l}{5l} = \\frac{2}{1}$. Нека построим отсечка $PT||AB$, $T \\in AC$, така последователно получаваме $\\frac{B_1P}{PB} = \\frac{B_1T}{TA} = \\frac{1}{2}$, $\\frac{CT}{TA} = \\frac{CP}{PC_1} = \\frac{1}{1}$, $B_1T = d$ и $TA = CT = 2d$, откъдето $\\frac{CB_1}{B_1A} = \\frac{CT - B_1T}{BT + B_1T} = \\frac{d}{3d} = \\frac{1}{3}$.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "thales_theorem",
+        "segment_ratios"
+      ],
+      "confidence": "exact",
+      "reasoning": "Приложение на теоремата на Талес няколко пъти с помощни построения. Изисква изчисляване на отношения.",
+      "_crosslinked_from": "1.5",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2024-10 кл · 2024-10 · Зад. 10.2",
+      "statement": "Даден е остър ъгъл с връх $O$ и големина $\\alpha$. Точка $P$ е фиксирана във вътрешността на ъгъла. Точки $M$ и $N$ са върху раменете на ъгъла, такива че $P$ е вътрешна за триъгълник $OMN$ и $\\angle MPN = 180^{\\circ} - \\alpha$. Да се докаже, че когато точките $M$ и $N$ се движат по двете рамена на ъгъла, петата на перпендикуляра от $P$ към $MN$ лежи на фиксирана окръжност.",
+      "solution": "Нека K и L са петите на перпендикулярите от точка P към раменете на ъгъла (O, K, M са върху едното рамо, а O, L, N – върху другото). Нека точка R е средата на P O. От вписаните четириъгълници QP LN и QP KM следва, че ∡KQL = ∡KQP + ∡P QL = ∡P M O+ ∡P N O = 180 ◦ − 2α (това е от сбор ъгли в M ON P). От R среда на хипутенуза в правоъгълните триъгълници P LO и P KO следва, че ∡LRK = 2α. Следователно QKRL е вписан и точка Q лежи върху фиксираната окръжност, описана около \\triangle KRL. Задачата е доказана.\nОценяване. (7 точки) 1т. за построяване на точки K и L; по 1т. за QP LN и QP KM – вписани четириъгълници; 1т. за пресмятане на ∡KQL; 1т. за построяване на точка R; 1т. за QKRL – вписан; 1т. за финален извод.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "cyclic_quadrilaterals",
+        "circle_properties",
+        "midpoint_theorem"
+      ],
+      "confidence": "exact",
+      "reasoning": "Използване на вписани четириъгълници и свойството на средата на хипотенуза в правоъгълен триъгълник (Талес) за доказване, че точката лежи на фиксирана окръжност."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2024-11 кл · 2024-11 · Зад. 11.2",
+      "statement": "Трапецът $ABCD$ ($AB \\parallel  CD$, $AB > CD$) е вписан в окръжност с радиус 9 cm. Петата на перпендикуляра от върха $C$ към основата $AB$ я разделя в отношение $2 : 1$, считано от върха $A$. Ако дължината на диагонала $AC$ е равна на дължината на основата $AB$, то да се намери лицето на трапеца.",
+      "solution": "Тъй като трапецът ABCD е вписан, то той е равнобедрен. Нека CP, P ∈ AB е височината от върха C. От условието AP : P B = 2 : 1 , получаваме, че AB = 3 CD . Нека означим с α острия ъгъл на трапеца, т.е. ∡ABC = α. От AC = AB следва, че \\triangle ABC е равнобедрен с ъгли ∡ABC = ∡ACB = α и ∡BAC = 180 ◦ − 2α. От правоъгълния \\triangle AP C имаме ∡P AC = 180 ◦ − 2α < 90◦. т. е. α ∈ (45◦; 90◦) или 2α ∈ (90◦; 180◦). От правоъгълните \\triangle AP C и \\triangle BP C изразяваме tg(180◦ − 2α) = CP/AP и tg α = CP/BP, откъдето tg(180◦ − 2α)/(tg α) = BP/AP = 1 /2. Тъй като tg(180◦ − 2α) = − tg(2α) = −(2 · tg α)/(1 − tg2 α), получаваме −2/(1 − tg2 α) = 1 /2, т.е. tg2 α = 5 , откъдето tg α = √5, т. к. α е остър ъгъл. Пресмятаме sin(α) = √30/6 и cos α = √6/6 . От синусова теорема за \\triangle ABC намираме AB = 3√30 cm, а от AB = 3 CD , CD = √30 cm. От \\triangle BP C имаме CP = BP · tg α = √30 · √5 = 5√6 cm. Тогава лицето на трапеца е равно на S = AB + CD/2 · CP = 2 · √30 · 5√6 = 60 √5 cm2.",
+      "answer": "60 √5 cm2",
+      "difficulty": "medium",
+      "techniques": [
+        "inscribed_quadrilateral",
+        "trigonometry",
+        "sine_law"
+      ],
+      "confidence": "exact",
+      "reasoning": "Основна техника: синусова теорема (1.6) за намиране на страни. Допълнително: свойства на вписани трапеци (1.5) и тригонометрични зависимости. Трудност: medium - стандартна, но с няколко стъпки.",
+      "_crosslinked_from": "1.6",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-3-Национален кръг-1997-9-12 кл · 1997-None · Зад. 5",
+      "statement": "Given a $\\triangle ABC$ with bisectors $BM$ and $CN$ ($M \\in AC$, $N \\in AB$). The ray $MN^{\\to}$ intersects the circumcircle of $\\triangle ABC$ at point $D$. Prove that\n\n$$\\frac{1}{BD} = \\frac{1}{AD} + \\frac{1}{CD}.$$",
+      "solution": "Let $A_1$, $B_1$ and $C_1$ be the orthogonal projections of $D$ on the lines $BC$, $CA$ and $AB$, respectively. It follows from $\\triangle DAB_1$ and the Sine Law that $DB_1 = DA \\cdot \\sin \\angle DAB_1 = DA \\cdot \\sin \\angle DAC = \\frac{DA \\cdot DC}{2R}$ ($R$ is the circumradius of $\\triangle ABC$). Analogously $DA_1 = \\frac{DB \\cdot DC}{2R}$ and $DC_1 = \\frac{DA \\cdot DB}{2R}$. Our equality is now equivalent to $AD \\cdot CD = BD \\cdot CD + AD \\cdot BD$ and so it suffices to prove that\n\n$$(1) \\qquad DB_1 = DA_1 + DC_1$$\n\nDenote by $m$ the distance from $M$ to $AB$ and $BC$ and by $n$ the distance from $N$ to $AC$ and $BC$. Let $\\frac{DM}{MN} = x$ ($x > 1$). Further, $\\frac{DB_1}{n} = x$, $\\frac{DC_1}{m} = x - 1$ and $\\frac{DA_1 - m}{n - m} = x$. Therefore $DB_1 = nx$, $DC_1 = m(x-1)$ and $DA_1 = nx - m(x-1) = DB_1 - DC_1$ and (1) holds.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "angle_chasing",
+        "circle_theorems",
+        "trigonometry"
+      ],
+      "confidence": "exact",
+      "reasoning": "The problem involves angle bisectors and a point on the circumcircle. The solution uses properties of cyclic quadrilaterals, inscribed angles, and trigonometric identities to prove the harmonic relation of distances. The main technique is circle theorems and angle properties."
+    },
+    {
+      "source": "OLI-3-Национален кръг-2004-9-12 кл · 2004-None · Зад. 1",
+      "statement": "Нека $I$ е центърът на описаната в триъгълник $ABC$ окръжност и $A_1$, $B_1$, $C_1$ са точки съответно върху отсечките $AI$, $BI$ и $CI$. Симетралите на отсечките $AA_1$, $BB_1$ и $CC_1$ се пресичат в точки $A_2$, $B_2$ и $C_2$. Да се докаже, че центърът на описаната около триъгълник $A_2B_2C_2$ окръжност съвпада с центъра на описаната около триъгълник $ABC$ окръжност тогава и само тогава, когато $I$ е ортоцентър на триъгълник $A_1B_1C_1$.",
+      "solution": "Нека O е центърът на описаната около \\triangle ABC окръжност и нека той съвпада с този на \\triangle A2B2C2. Тогава <) C2OB2 = 2<) C2A2B2 = 2(180 ◦−<) BIC ) = <) B+<) C. Следователно <) OB2C2 = 12 (180◦ − <) C2OB2) = <) A2 = <) IAC. Оттук OB2 ⊥ AC, т.е. OB2 е симетралата на AC. Тогава точките A, A1, C1 и C лежат на окръжност с център B2, което показва, че <) A1C1I = <) A1AC = <) A 2 и <) C1A1I = <) C2 . Аналогично <) B1A1I = <) B2 . Оттук <) IC 1A1 + <) C1A1B1 = <) A + <) B + <) C2 = 90 ◦, т.е. C1I ⊥ A1B1. По същия начин виждаме, че B1I ⊥ A1C1 и A1I ⊥ B1C1, т.е. I е ортоцентър на \\triangle A1B1C1. Обратно, нека I е ортоцентър на \\triangle A1B1C1. Тогава <) B1A1C1 = 180 ◦ − <) B1IC 1 = <) B2 + <) C2 . Следователно <) A1C1I = 90 ◦ − <) B1A1C1 = <) A2 . Тогава около AA1C1C може да се опише окръжност и значи симетралата на AC минава през B2. Нека O е центърът на описаната окръжност на \\triangle ABC . Тъй като O лежи на симетралата на AC заключаваме, че <) OB2C2 = <) CAI = <) A2 (ъгли с перпендикулярни рамене). Аналогично <) OC2B2 = <) BAI = <) A2 и значи OB2 = OC2. По същия начин доказваме, че OA2 = OC2, т.е. O е център на описаната около \\triangle A2B2C2 окръжност.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "circle_properties",
+        "perpendicular_bisectors",
+        "orthocenter"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на описаната окръжност, симетрали и ортоцентър. Основната техника е геометрична, свързана с вписани ъгли и симетрали (STEPS 1.5). Решението изисква няколко стъпки за доказване на еквивалентността."
+    },
+    {
+      "source": "OLI-3-Национален кръг-2004-9-12 кл · 2004-None · Зад. 1",
+      "statement": "Нека $I$ е центърът на описаната в триъгълник $ABC$ окръжност и $A_1$, $B_1$, $C_1$ са точки съответно върху отсечките $AI$, $BI$ и $CI$. Симетралите на отсечките $AA_1$, $BB_1$ и $CC_1$ се пресичат в точки $A_2$, $B_2$ и $C_2$. Да се докаже, че центърът на описаната около триъгълник $A_2B_2C_2$ окръжност съвпада с центъра на описаната около триъгълник $ABC$ окръжност тогава и само тогава, когато $I$ е ортоцентър на триъгълник $A_1B_1C_1$.",
+      "solution": "Нека O е центърът на описаната около \\triangle ABC окръжност и нека той съвпада с този на \\triangle A2B2C2. Тогава <) C2OB2 = 2<) C2A2B2 = 2(180 ◦−<) BIC ) = <) B+<) C. Следователно <) OB2C2 = 12 (180◦ − <) C2OB2) = <) A2 = <) IAC. Оттук OB2 ⊥ AC, т.е. OB2 е симетралата на AC. Тогава точките A, A1, C1 и C лежат на окръжност с център B2, което показва, че <) A1C1I = <) A1AC = <) A 2 и <) C1A1I = <) C2 . Аналогично <) B1A1I = <) B2 . Оттук <) IC 1A1 + <) C1A1B1 = <) A + <) B + <) C2 = 90 ◦, т.е. C1I ⊥ A1B1. По същия начин виждаме, че B1I ⊥ A1C1 и A1I ⊥ B1C1, т.е. I е ортоцентър на \\triangle A1B1C1. Обратно, нека I е ортоцентър на \\triangle A1B1C1. Тогава <) B1A1C1 = 180 ◦ − <) B1IC 1 = <) B2 + <) C2 . Следователно <) A1C1I = 90 ◦ − <) B1A1C1 = <) A2 . Тогава около AA1C1C може да се опише окръжност и значи симетралата на AC минава през B2. Нека O е центърът на описаната окръжност на \\triangle ABC . Тъй като O лежи на симетралата на AC заключаваме, че <) OB2C2 = <) CAI = <) A2 (ъгли с перпендикулярни рамене). Аналогично <) OC2B2 = <) BAI = <) A2 и значи OB2 = OC2. По същия начин доказваме, че OA2 = OC2, т.е. O е център на описаната около \\triangle A2B2C2 окръжност.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "circle_properties",
+        "perpendicular_bisectors",
+        "orthocenter"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на описаната окръжност, симетрали и ортоцентър. Основната техника е геометрична, свързана с вписани ъгли и симетрали (STEPS 1.5). Решението изисква няколко стъпки за доказване на еквивалентността.",
+      "_crosslinked_from": "1.5",
+      "_crosslink_confidence": 0.85
     },
     {
       "source": "OLI-3-Национален кръг-2006-9-12 кл · 2006-None · Зад. 5",
       "statement": "Даден е $\\triangle ABC$, за който $\\angle BAC = 30^\\circ$ и $\\angle ABC = 45^\\circ$. Разглеждаме всички двойки точки $X$ и $Y$ такива, че $X$ и $Y$ са съответно върху лъчите $AC^\\to$ и $BC^\\to$ и $OX = BY$, където $O$ е центърът на описаната около $\\triangle ABC$ окръжност. Да се докаже, че симетралите на отсечките $XY$ минават през постоянна точка.",
       "solution": "Ще докажем, че симетралата на отсечката $XY$ минава през точката $C_0$, която е симетрична на точка $C$ спрямо правата $AB$. Да означим с $R$ радиуса на описаната окръжност за $\\triangle ABC$. От синусовата теорема за $\\triangle ABC$ имаме $AC = R\\sqrt{2}$ и $BC = R$. Нека точка $C$ е между точките $A$ и $X$. Като използваме равенствата $OX = BY$, $C_0A = CA$, $C_0B = CB$, $\\angle C_0BY = 90^\\circ$ и косинусовата теорема за $\\triangle C_0AX$, намираме\n\n$$\\begin{array}{l} C_0X^2 = C_0A^2 + AX^2 - C_0A.AX = AC^2 + AX^2 - AC.AX \\\\ = AC^2 + XA.XC = 2R^2 + (OX^2 - R^2) = R^2 + BY^2 \\\\ = C_0B^2 + BY^2 = C_0Y^2. \\end{array}$$\n\nТова означава, че $C_0$ лежи на симетралата на $XY$. Аналогично се разглежда и случаят, когато точка $X$ е между точките $A$ и $C$.",
-      "answer": "Симетралата на $XY$ минава през точката $C_0$, симетрична на $C$ спрямо правата $AB$.",
+      "answer": null,
       "difficulty": "medium",
       "techniques": [
         "geometry",
-        "symmedian",
-        "sine_theorem"
-      ],
-      "confidence": "exact",
-      "reasoning": "Involves symmetral (perpendicular bisector) of segment XY and sine law; step 1.5 covers symmetries and inscribed angles."
-    },
-    {
-      "source": "OLI-3-Национален кръг-2011-9-12 кл · 2011-None · Зад. 4",
-      "statement": "От вътрешна за остроъгълен $\\triangle ABC$ точка $O$ са спуснати перпендикуляри $OA_1$, $OB_1$ и $OC_1$ съответно към страните $BC$, $AC$ и $AB$. Перпендикулярите от $A$ и $B$ съответно към $B_1C_1$ и $A_1C_1$ се пресичат в точка $P$. Ако $H$ е петата на перпендикуляра от $P$ към $AB$, да се докаже, че точките $A_1$, $B_1$, $C_1$ и $H$ лежат на една окръжност.",
-      "solution": "Тъй като $\\measuredangle PBC_1 = \\measuredangle OC_1A_1$ като ъгли с взаимно перпендикулярни рамене и $\\measuredangle OC_1A_1 = \\measuredangle OBA_1$ (от вписания четириъгълник $OC_1BA_1$), заключаваме, че $\\measuredangle PBA = \\measuredangle OBC$. Аналогично $\\measuredangle PAB = \\measuredangle OAC$. Нека $M$ и $N$ са петите на перпендикулярите от $P$ съответно към $BC$ и $AC$. Тъй като\n\n$$BC_1.BH = BO.BP \\cos \\measuredangle OBA \\cos \\measuredangle PBA = BA_1.BM,$$\n\nто точките $H$, $C_1$, $A_1$ и $M$ лежат на една окръжност, чийто център е средата на $OP$ (тъй като симетралите на $HC_1$ и $MA_1$ се пресичат в средата на $OP$).\n\nАналогично доказваме, че $H$, $C_1$, $N$ и $B_1$ лежат на окръжност с център средата на $OP$.\n\nСледователно точките $A_1$, $B_1$, $C_1$, $H$, $M$ и $N$ лежат на една окръжност, с което доказателството е завършено.",
-      "answer": null,
-      "difficulty": "medium",
-      "techniques": [
-        "cyclic_quadrilateral",
+        "circle_properties",
         "angle_chasing",
-        "perpendiculars"
+        "symmetry"
       ],
       "confidence": "exact",
-      "reasoning": "Чрез ъглови съотношения и перпендикулярни проекции се доказва, че A1,B1,C1,H лежат на една окръжност."
+      "reasoning": "Геометрична задача, която използва свойства на описаната окръжност и симетрична точка. Решението доказва, че симетралата минава през фиксирана точка чрез свойства на окръжности и симетрия. Това се отнася до вписани ъгли и симетрали (1.5)."
     },
     {
-      "source": "OLI-3-Национален кръг-2015-9-12 кл · 2015-None · Зад. 5",
-      "statement": "Даден е △ABC. Точката L лежи върху отсечката AB, а точките P и Q лежат съответно върху отсечките AC и BC по такъв начин, че четириъгълникът PCQL е успоредник. Окръжността с център средата M на AB и радиус CM и окръжността с диаметър CL се пресичат за втори път в точката T. Да се докаже, че правите AQ, BP и LT се пресичат в една точка.",
-      "solution": "Решение. Понеже AC ∥ LQ и BC ∥ LP, имаме, че S_ALQ = S_CLQ = S_PLC = S_PLB. Нека точката K е такава, че четириъгълникът AKBC е успоредник. Аналогично имаме, че S_AKQ = S_AKC = S_CKB = S_PKB.\nНо геометричното място на точките X, такива, че △AXQ и △PXB са еднакво ориентирани и имат равни лица, е права ℓ през пресечната точка на AQ и BP. Следователно, ℓ ≡ KL и правите AQ, BP и KL се пресичат в една точка.\nНека N е средата на CL. Тогава правата KL е хомотетична на MN с център C и коефициент 2. Понеже точката T е симетрична на C относно MN, оттук следва, че T лежи на KL, с което задачата е решена.",
+      "source": "OLI-3-Национален кръг-2008-9-12 кл · 2008-None · Зад. 1",
+      "statement": "Нека $\\triangle ABC$ е остроъгълен с вътрешна ъглополовяща $CL, L \\in AB$. Точка P принадлежи на отсечката CL така, че $\\angle APB = \\pi - \\frac{1}{2} \\angle ACB$. Нека $k_1$ и $k_2$ са описаните окръжности съответно около $\\triangle APC$ и $\\triangle BPC$. $BP \\cap k_1 = Q, AP \\cap k_2 = R$. Допирателните към $k_1$ в Q и към $k_2$ в B се пресичат в точка S, допирателните към $k_1$ в A и към $k_2$ в R се пресичат в точка T. Да се докаже, че $|AS|=|BT|$.",
+      "solution": "1. Като използваме, че $SQ$ и $SB$ са допирателни съответно към $k_1$ и $k_2$ получаваме $\\angle QCB = \\angle QCP + \\angle PCB = \\angle SQB + \\angle SBQ$, откъдето\n\n$$\\angle QSB + \\angle QCB = \\angle QSB + \\angle SQB + \\angle SBQ = 180^{\\circ}.$$\n\nСледователно четириъгълникът $SBCQ$ е вписан. Освен това\n\n$$\\angle QCA = \\angle QPA = \\frac{1}{2}\\gamma = \\angle QBC = \\angle QCS,$$\n\nкоето означава, че $A \\in CS$. Оттук\n\n$$\\angle QAS = 180^{\\circ} - \\angle QAC = 180^{\\circ} - \\angle QPC = \\angle CPB$$\n\nи понеже $\\angle SQA = \\frac{1}{2}\\gamma = \\angle BCP$, то $\\triangle QAS \\sim \\triangle CPB$. Тогава $\\frac{AS}{AQ} = \\frac{PB}{PC}$ и като използваме, че $AQ = PA$ (тъй като $\\angle QCA = \\angle PCA = \\frac{1}{2}\\gamma$), получаваме $AS = \\frac{PB.AQ}{PC} = \\frac{PB.PA}{PC}$. Аналогично намираме $BT = \\frac{PB.PA}{PC}$, т.е. $AS = BT$.",
       "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "parallelism",
-        "homothety",
-        "concurrency"
-      ],
-      "confidence": "exact",
-      "reasoning": "Relies on parallelism (PCQL is a parallelogram) and homothety between circles to locate T on KL, giving concurrency of AQ, BP, LT."
-    },
-    {
-      "source": "OLI-3-Национален кръг-2016-9-12 кл · 2016-None · Зад. 5",
-      "statement": "Даден е равнобедрен триъгълник ABC, AC = BC. Върху продължението на AC след C е избрана точка D, като AC > CD. Ъглополовящата на ∠BCD пресича BD в точка N, а M е средата на BD. Допирателната в точка M към описаната около триъгълник AMD окръжност пресича страната BC в точка P. Да се докаже, че точките A, P, M и N лежат на една окръжност.",
-      "solution": "Решение. От условието следва, че ∠MAD = ∠PMB = φ. Да построим права ℓ ∥ AB през D. Нека ℓ ∩ BC = {Q}, T е средата на AQ и BT да пресича ℓ в точка K. От симетрията следва, че ∠KBQ = φ. Освен това имаме KQ/QD = AB/QD = CD/BC = DN/BN, откъдето BK ∥ QN и следователно ∠CQN = φ.\nТъй като ∠QAD = ∠QBD = [неразчетено] поради симетрията, получаваме ∠QAM = ∠QND = φ + [неразчетено]. Тогава Q, A, M и N лежат на една окръжност. Тъй като ∠PMB = φ = ∠NQB, точките Q, M, N и P лежат на една окръжност. Следователно A, P, M и N лежат на една окръжност.",
-      "answer": null,
-      "difficulty": "medium",
-      "techniques": [
-        "inscribed_angles",
-        "cyclic_quadrilateral"
-      ],
-      "confidence": "exact",
-      "reasoning": "Използва се ъглово пресмятане и свойства на вписани четириъгълници, за да се покаже, че A,P,M,N са съвместни."
-    },
-    {
-      "source": "OLI-3-Национален кръг-2019-9-12 кл · 2019-None · Зад. 2",
-      "statement": "Даден е остроъгълен триъгълник ABC с ортоцентър H и център на описаната окръжност O. Симетралата на CH пресича страните AC и BC съответно в точки X и Y. Правите XO и YO пресичат страната AB съответно в точки P и Q. Ако XP + YQ = AB + XY да се намери ∡OHC.",
-      "solution": "Решение. Първи начин. Нека N и M са съответно среди на CH и AC. За △CYO и △CNM имаме: ∠OCY=∠MCN и CY/CN=CO/CM (следва от подобието на △CYN и △COM), което означава, че △CYO∼△CNM. Следователно ∠CYO=∠CNM. Понеже MN е средна отсечка в △AHC, то ∠CHA=180°−β, т.е. ∠BYQ=β, откъдето YQ=BQ. Аналогично XP=AP.\nУсловието XP+YQ=AB+XY дава XY=QP и тъй като XY∥PQ, то QPYX е успоредник. Тъй като O е пресечна точка на диагоналите на този успоредник, то разстоянието от O до XY е равно на разстоянието от O до AB, което е Rcosγ. Понеже HN⊥XY и XN=Rcosγ, то търсеният ъгъл е 90°.\nВтори начин. Ако N е средата на CH, то CN=Rcosγ и следователно CY=Rcosγ/sinβ. Тогава:\nBY=BC−CY=2Rsinα−Rcosγ/sinβ=Rcos(α−β)/sinβ.\nАко ∠BYO=φ от синусовата теорема за △OBY получаваме:\nR/sinφ=Rcos(α−β)/(sinβ sin(90°−α+φ)) ⇔ cotgφ=cotgβ.\nСледователно φ=β, т.е. YQ=BQ и решението се довършва както по-горе.",
-      "answer": "∠OHC=90°.",
-      "difficulty": "medium",
-      "techniques": [
-        "symmedian",
+        "circle_properties",
+        "tangents",
+        "similar_triangles",
         "angle_chasing"
       ],
       "confidence": "exact",
-      "reasoning": "Uses symmedian of CH and angle relations to prove ∠OHC = 90°."
+      "reasoning": "Задачата използва степен на точка, свойства на допирателни и вписани ъгли. Основната техника е свързана с окръжности и техните допирни точки, което отговаря на точка 1.4 (Степен на точка. Радикална ос). Решението изисква няколко стъпки с геометрични наблюдения.",
+      "_crosslinked_from": "1.4",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-3-Национален кръг-2015-9-12 кл · 2015-None · Зад. 1",
+      "statement": "Шестоъгълникът ABLCDK е вписан в окръжност. Правата LK пресича отсечките AD, BC, AC, BD съответно в точки M, N, P, Q. Да се докаже, че NL.KP.MQ = KM.PN.LQ.",
+      "solution": "Първо решение. Да означим $s = \\sin \\frac{\\overline{AB}}{2}$, $t = \\sin \\frac{\\overline{BL}}{2}$, $u = \\sin \\frac{\\overline{LC} + \\overline{AK}}{2}$, $v = \\sin \\frac{\\overline{CK}}{2}$, $w = \\sin \\frac{\\overline{DK}}{2}$, $x = \\sin \\frac{\\overline{LD} + \\overline{AK}}{2}$. Имаме\n\n$$\\frac{NL.KP.MQ}{KM.PN.LQ} = \\frac{NL}{NC} \\cdot \\frac{NC}{NP} \\cdot \\frac{KP}{AK} \\cdot \\frac{AK}{KM} \\cdot \\frac{MQ}{DQ} \\cdot \\frac{DQ}{LQ} = \\frac{t}{v} \\cdot \\frac{u}{s} \\cdot \\frac{v}{u} \\cdot \\frac{x}{w} \\cdot \\frac{s}{x} \\cdot \\frac{w}{t} = 1.$$\n\nВторо решение. Нека точката T от правата MN е такава, че $\\angle NTB = \\angle ADB = \\angle ACB$ и N е между P и T. Тогава $\\triangle CNP \\sim \\triangle TNB$ и следователно $(TL + NL)PN = CN.BN$, откъдето $TL = \\frac{NL.KP}{PN}$. Аналогично от $\\triangle DQM \\sim \\triangle TQB$ получаваме $TL = \\frac{LQ.KM}{MQ}$. Резултатът следва.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "power_of_point",
+        "trigonometry",
+        "similar_triangles"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва степен на точка и подобни триъгълници за доказване на отношението. Решението включва синуси и геометрични свойства на окръжност.",
+      "_crosslinked_from": "1.4",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-3-Национален кръг-2017-9-12 кл · 2017-None · Зад. 1",
+      "statement": "В изпъкнал четириъгълник $ABCD$ диагоналите $AC$ и $BD$ се пресичат в точка $O$. Точките $A_1$, $B_1$, $C_1$ и $D_1$ съответно върху отсечките $AO$, $BO$, $CO$ и $DO$ са такива, че $AA_1 = CC_1$ и $BB_1 = DD_1$. Нека $M$ и $N$ са вторите пресечни точки съответно на окръжностите, описани около $\\triangle AOB$ и $\\triangle COD$ и около $\\triangle AOD$ и $\\triangle BOC$, а $P$ и $Q$ са вторите пресечни точки съответно на окръжностите, описани около $\\triangle A_1OB_1$ и $\\triangle C_1OD_1$ и около $\\triangle A_1OD_1$ и $\\triangle B_1OC_1$. Да се докаже, че точките $M$, $N$, $P$ и $Q$ лежат на една окръжност.",
+      "solution": "Първи начин. (Стоян Боев) От условието имаме $\\angle MAC = \\angle MBD$ и $\\angle MCA = \\angle MDB$. Следователно $\\triangle MAC \\sim \\triangle MBD$. Нека $X$ и $Y$ са средите съответно на $AC$ и $BD$. Тогава от горното подобие следва, че $\\angle MXC = \\angle MYD$. Последното означава, че $M$ лежи на описаната около $\\triangle OXY$ окръжност. Аналогично се вижда, че $N$ лежи на същата окръжност.\n\nТъй като $X$ и $Y$ са средите съответно и на $A_1C_1$ и $B_1D_1$, горните разсъждения за четиригълника $A_1B_1C_1D_1$ дават, че $P$ и $Q$ също лежат на описаната около $\\triangle OXY$ окръжност.\n\nВтори начин. (Александър Иванов) Да построим през върховете $A$ и $C$ прави, перпендикулярни на $AC$, а през върховете $B$ и $D$ прави, перпендикулярни на $BD$. Тези 4 прави определят успоредник, в който точките $M$ и $N$ са проекциите на перпендикулярите от $O$ към диагоналите му. Следователно $M$ и $N$ лежат на окръжността с диаметър $OT$, където $T$ е пресечната точка на диагоналите на успоредника. Аналогично се вижда, че точките $P$ и $Q$ лежат на същата окръжност (точките $O$ и $T$ са едни и същи за четиригълниците $ABCD$ и $A_1B_1C_1D_1$).",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "circle_power",
+        "similarity",
+        "midpoints"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква доказателство, че точки лежат на окръжност, като решението използва степен на точка (1.4) и подобия. Изисква 2-3 стъпки, което отговаря на medium трудност.",
+      "_crosslinked_from": "1.4",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-3-Национален кръг-2020-9-12 кл · 2020-None · Зад. 1",
+      "statement": "(Емил Колев) Върху страните на триъгълник $ABC$ са избрани точки $P, Q \\in AB$ ($P$ е между точките $A$ и $Q$) и $R \\in BC$. Точките $M$ и $N$ са пресечни точки на $AR$ съответно с отсечките $CP$ и $CQ$. Ако $BC = BQ$, $CP = AP$, $CR = CN$ и $\\angle BPC = \\angle CRA$, да се докаже, че $MP + NQ = BR$.",
+      "solution": "Решение. Първи начин: От теоремата на Менелай за триъгълник $PBC$ и правата $AR$ получаваме:\n\n$$\\frac{BR}{RC} \\cdot \\frac{CM}{MP} \\cdot \\frac{PA}{AB} = 1,$$\n\nоткъдето намираме $\\frac{MP}{BR} = \\frac{CM.PA}{RC.AB}$.\n\nОт теоремата на Менелай за триъгълник $QBC$ и правата $AR$ получаваме:\n\n$$\\frac{BR}{RC} \\cdot \\frac{CN}{NQ} \\cdot \\frac{QA}{AB} = 1,$$\n\nоткъдето (тъй като $RC = CN$) намираме $\\frac{NQ}{BR} = \\frac{QA}{AB}$.\n\nОт горните равенства следва:\n\n$$\\frac{MP + NQ}{BR} = 1 \\iff QA + \\frac{CM.PA}{RC} = AB \\iff \\frac{CM.PA}{RC} = BQ.$$\n\nТъй като $BQ = BC$ последното равенство е еквивалентно на $CM.CP = CR.CB$.\n\nТова равенство е вярно понеже от условието $\\measuredangle BPC = \\measuredangle CRA$ следва, че четириъгълникът $PBRM$ е вписан в окръжност.\n\nВтори начин: Нека $S \\in BC$ като $QS \\parallel NR$. От теоремата на Талес следва, че $QN = SR$ и за да докажем твърдението на задачата трябва да докажем, че $BS = PM$. За целта ще покажем, че $\\triangle APM \\cong \\triangle QSB$.\n\n1. От $QS \\parallel AM$ следва, че $\\measuredangle BQS = \\measuredangle MAP$.\n\n2. От $\\measuredangle QSC = \\measuredangle CRA = \\measuredangle BPC$ следва, че $\\measuredangle BSQ = \\measuredangle APM$.\n\n3. Като използваме последователно $BQ = BC$, синусовата теорема за $\\triangle PBC$, $CP = AP$ и синусовата теорема за $\\triangle APM$ получаваме:\n\n$$\\frac{BQ}{\\sin \\measuredangle BSQ} = \\frac{BQ}{\\sin \\measuredangle QSC} = \\frac{BC}{\\sin \\measuredangle BPC} = \\frac{CP}{\\sin \\measuredangle QBS} = \\frac{AP}{\\sin \\measuredangle AMP} = \\frac{AM}{\\sin \\measuredangle APM}.$$\n\nТъй като  $ \\measuredangle BSQ = \\measuredangle APM $ , получаваме BQ = AM.\n\nСледователно  $ \\triangle APM \\cong \\triangle QSB $ , BS = PM и MP + NQ = BR.\n\nОценяване (7 точки): Първи начин: 2 т. за  $ \\frac{MP}{BR} = \\frac{CM.PA}{RC.AB} $ ; 2 т. за  $ \\frac{NQ}{BR} = \\frac{QA}{AB} $ ; 1 т. за  $ \\frac{MP + NQ}{BR} = 1 \\iff \\frac{CM.PA}{RC} = BQ $ ; 2 т. за довършване на решението.\n\nВтори начин: 2 т. за построяване на $QS \\parallel NR$ и свеждане на задачата до $BS = PM$; 2 т. за доказване, че $\\triangle APM$ и $\\triangle QSB$ имат равни съответни ъгли; 2 т. за доказване на $BQ = AM$; 1 т. за довършване на решението.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "menelaus_theorem",
+        "thales_theorem",
+        "sine_law"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва теорема на Менелай и Талес, както и синусова теорема. Основната техника е теорема на Менелай (point_id 1.1). Трудността е medium, тъй като изисква няколко стъпки и инсайт за вписания четириъгълник.",
+      "_crosslinked_from": "1.1",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-2-Областен кръг-1997-10 кл · 1997-10 · Зад. 10.2",
+      "statement": "Given a convex quadrilateral ABCD which can be inscribed in a circle. Let F be the intersecting point of diagonals AC and BD and E be the intersecting point of the lines AD and BC. If M and N are the midpoints of AB and CD, prove that\n\n$$\\frac{M N}{E F}=\\frac{1}{2} \\cdot\\left|\\frac{A B}{C D}-\\frac{C D}{A B}\\right| .$$",
+      "solution": "Let $\\angle AEB = \\gamma$, $EC = c$, $ED = d$, $\\overrightarrow{i} = \\frac{1}{c} \\cdot \\overrightarrow{EC}$ and $\\overrightarrow{j} = \\frac{1}{d} \\cdot \\overrightarrow{ED}$. Since $ABCD$ is an inscribed quadrilateral, $\\frac{AB}{CD} = \\frac{AE}{CE} = \\frac{BE}{DE} = k$. Therefore $\\overrightarrow{EA} = kc\\overrightarrow{j}$ and $\\overrightarrow{EB} = kd\\overrightarrow{i}$. Since $F \\in AC$ and $F \\in BD$ there exist $x$ and $y$ such that\n\n$$\\overrightarrow{EF} = x\\overrightarrow{EA} + (1 - x)\\overrightarrow{EC} = xkc\\overrightarrow{j} + (1 - x)c\\overrightarrow{i}$$\n\nand\n\n$$\\overrightarrow{EF} = y\\overrightarrow{EB} + (1 - y)\\overrightarrow{ED} = ykd\\overrightarrow{i} + (1 - y)d\\overrightarrow{j}.$$\n\nComparing the coefficients of $\\overrightarrow{i}$ and $\\overrightarrow{j}$ in these equalities gives $xkc = (1 - y)d$ and $ykd = (1 - x)c$. This implies $x = \\frac{kd - c}{(k^2 - 1)c}$. Therefore\n\n$$\\overrightarrow{EF} = \\frac{k}{k^2 - 1} \\left( (kd - c)\\overrightarrow{j} + (kc - d)\\overrightarrow{i} \\right)$$\n\nand thus\n\n$$EF^2 = \\left( \\frac{k}{k^2 - 1} \\right)^2 \\left( (kd - c)^2 + (kc - d)^2 + 2(kd - c)(kc - d)\\cos \\gamma \\right).$$\n\nOn the other hand\n\n$$\\begin{aligned} \\overrightarrow{MN} &= \\frac{1}{2} \\cdot \\left( \\overrightarrow{AD} + \\overrightarrow{BC} \\right) = \\frac{1}{2} \\cdot \\left( \\overrightarrow{ED} - \\overrightarrow{EA} + \\overrightarrow{EC} - \\overrightarrow{EB} \\right) \\\\ &= \\frac{1}{2} \\cdot \\left( (d - kc)\\overrightarrow{j} + (c - kd)\\overrightarrow{i} \\right) \\end{aligned}$$\n\nand it follows that\n\n$$MN^2 = \\frac{1}{4} \\cdot \\left( (d - kc)^2 + (c - kd)^2 + 2(d - kc)(c - kd)\\cos \\gamma \\right).$$\n\nTherefore $\\frac{MN^2}{EF^2} = \\frac{1}{4} \\left( \\frac{k^2 - 1}{k} \\right)^2 = \\frac{1}{4} \\left( k - \\frac{1}{k} \\right)^2$ and so\n\n$$\\frac{MN}{EF} = \\frac{1}{2} \\cdot \\left| \\frac{AB}{CD} - \\frac{CD}{AB} \\right|$$",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "vector_geometry",
+        "circle_quadrilateral",
+        "ratio_properties"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрична задача с вписан четириъгълник, използваща векторни методи и свойства на вписани ъгли (1.5). Трудността е hard поради сложната векторна алгебра и дългите сметки."
+    },
+    {
+      "source": "OLI-2-Областен кръг-1997-10 кл · 1997-10 · Зад. 10.2",
+      "statement": "Given a convex quadrilateral ABCD which can be inscribed in a circle. Let F be the intersecting point of diagonals AC and BD and E be the intersecting point of the lines AD and BC. If M and N are the midpoints of AB and CD, prove that\n\n$$\\frac{M N}{E F}=\\frac{1}{2} \\cdot\\left|\\frac{A B}{C D}-\\frac{C D}{A B}\\right| .$$",
+      "solution": "Let $\\angle AEB = \\gamma$, $EC = c$, $ED = d$, $\\overrightarrow{i} = \\frac{1}{c} \\cdot \\overrightarrow{EC}$ and $\\overrightarrow{j} = \\frac{1}{d} \\cdot \\overrightarrow{ED}$. Since $ABCD$ is an inscribed quadrilateral, $\\frac{AB}{CD} = \\frac{AE}{CE} = \\frac{BE}{DE} = k$. Therefore $\\overrightarrow{EA} = kc\\overrightarrow{j}$ and $\\overrightarrow{EB} = kd\\overrightarrow{i}$. Since $F \\in AC$ and $F \\in BD$ there exist $x$ and $y$ such that\n\n$$\\overrightarrow{EF} = x\\overrightarrow{EA} + (1 - x)\\overrightarrow{EC} = xkc\\overrightarrow{j} + (1 - x)c\\overrightarrow{i}$$\n\nand\n\n$$\\overrightarrow{EF} = y\\overrightarrow{EB} + (1 - y)\\overrightarrow{ED} = ykd\\overrightarrow{i} + (1 - y)d\\overrightarrow{j}.$$\n\nComparing the coefficients of $\\overrightarrow{i}$ and $\\overrightarrow{j}$ in these equalities gives $xkc = (1 - y)d$ and $ykd = (1 - x)c$. This implies $x = \\frac{kd - c}{(k^2 - 1)c}$. Therefore\n\n$$\\overrightarrow{EF} = \\frac{k}{k^2 - 1} \\left( (kd - c)\\overrightarrow{j} + (kc - d)\\overrightarrow{i} \\right)$$\n\nand thus\n\n$$EF^2 = \\left( \\frac{k}{k^2 - 1} \\right)^2 \\left( (kd - c)^2 + (kc - d)^2 + 2(kd - c)(kc - d)\\cos \\gamma \\right).$$\n\nOn the other hand\n\n$$\\begin{aligned} \\overrightarrow{MN} &= \\frac{1}{2} \\cdot \\left( \\overrightarrow{AD} + \\overrightarrow{BC} \\right) = \\frac{1}{2} \\cdot \\left( \\overrightarrow{ED} - \\overrightarrow{EA} + \\overrightarrow{EC} - \\overrightarrow{EB} \\right) \\\\ &= \\frac{1}{2} \\cdot \\left( (d - kc)\\overrightarrow{j} + (c - kd)\\overrightarrow{i} \\right) \\end{aligned}$$\n\nand it follows that\n\n$$MN^2 = \\frac{1}{4} \\cdot \\left( (d - kc)^2 + (c - kd)^2 + 2(d - kc)(c - kd)\\cos \\gamma \\right).$$\n\nTherefore $\\frac{MN^2}{EF^2} = \\frac{1}{4} \\left( \\frac{k^2 - 1}{k} \\right)^2 = \\frac{1}{4} \\left( k - \\frac{1}{k} \\right)^2$ and so\n\n$$\\frac{MN}{EF} = \\frac{1}{2} \\cdot \\left| \\frac{AB}{CD} - \\frac{CD}{AB} \\right|$$",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "vector_geometry",
+        "circle_quadrilateral",
+        "ratio_properties"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрична задача с вписан четириъгълник, използваща векторни методи и свойства на вписани ъгли (1.5). Трудността е hard поради сложната векторна алгебра и дългите сметки.",
+      "_crosslinked_from": "1.5",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-2-Областен кръг-1997-12 кл · 1997-12 · Зад. 12.2",
+      "statement": "Given a convex quadrilateral ABCD which can be inscribed in a circle. Let F be the intersecting point of diagonals AC and BD and E be the intersecting point of the lines AD and BC. If M and N are the midpoints of AB and CD, prove that\n\n$$\\frac{M N}{E F}=\\frac{1}{2} \\cdot\\left|\\frac{A B}{C D}-\\frac{C D}{A B}\\right| .$$",
+      "solution": "Let $\\angle AEB = \\gamma$, $EC = c$, $ED = d$, $\\overrightarrow{i} = \\frac{1}{c} \\cdot \\overrightarrow{EC}$ and $\\overrightarrow{j} = \\frac{1}{d} \\cdot \\overrightarrow{ED}$. Since $ABCD$ is an inscribed quadrilateral, $\\frac{AB}{CD} = \\frac{AE}{CE} = \\frac{BE}{DE} = k$. Therefore $\\overrightarrow{EA} = kc\\overrightarrow{j}$ and $\\overrightarrow{EB} = kd\\overrightarrow{i}$. Since $F \\in AC$ and $F \\in BD$ there exist $x$ and $y$ such that\n\n$$\\overrightarrow{EF} = x\\overrightarrow{EA} + (1 - x)\\overrightarrow{EC} = xkc\\overrightarrow{j} + (1 - x)c\\overrightarrow{i}$$\n\nand\n\n$$\\overrightarrow{EF} = y\\overrightarrow{EB} + (1 - y)\\overrightarrow{ED} = ykd\\overrightarrow{i} + (1 - y)d\\overrightarrow{j}.$$\n\nComparing the coefficients of $\\overrightarrow{i}$ and $\\overrightarrow{j}$ in these equalities gives $xkc = (1 - y)d$ and $ykd = (1 - x)c$. This implies $x = \\frac{kd - c}{(k^2 - 1)c}$. Therefore\n\n$$\\overrightarrow{EF} = \\frac{k}{k^2 - 1} \\left( (kd - c)\\overrightarrow{j} + (kc - d)\\overrightarrow{i} \\right)$$\n\nand thus\n\n$$EF^2 = \\left( \\frac{k}{k^2 - 1} \\right)^2 \\left( (kd - c)^2 + (kc - d)^2 + 2(kd - c)(kc - d)\\cos \\gamma \\right).$$\n\nOn the other hand\n\n$$\\begin{aligned} \\overrightarrow{MN} &= \\frac{1}{2} \\cdot \\left( \\overrightarrow{AD} + \\overrightarrow{BC} \\right) = \\frac{1}{2} \\cdot \\left( \\overrightarrow{ED} - \\overrightarrow{EA} + \\overrightarrow{EC} - \\overrightarrow{EB} \\right) \\\\ &= \\frac{1}{2} \\cdot \\left( (d - kc)\\overrightarrow{j} + (c - kd)\\overrightarrow{i} \\right) \\end{aligned}$$\n\nand it follows that\n\n$$MN^2 = \\frac{1}{4} \\cdot \\left( (d - kc)^2 + (c - kd)^2 + 2(d - kc)(c - kd)\\cos \\gamma \\right).$$\n\nTherefore $\\frac{MN^2}{EF^2} = \\frac{1}{4} \\left( \\frac{k^2 - 1}{k} \\right)^2 = \\frac{1}{4} \\left( k - \\frac{1}{k} \\right)^2$ and so\n\n$$\\frac{MN}{EF} = \\frac{1}{2} \\cdot \\left| \\frac{AB}{CD} - \\frac{CD}{AB} \\right|$$",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "vector_algebra",
+        "ratio_properties",
+        "cyclic_quadrilateral"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на вписания четириъгълник и векторен подход за доказване на отношението. Изисква координатен избор и дълги сметки, което я прави трудна."
+    },
+    {
+      "source": "OLI-2-Областен кръг-1998-10 кл · 1998-10 · Зад. 10.5",
+      "statement": "The convex pentagon $ABCDE$ is inscribed in a circle with radius $R$. The inradii of the triangles $ABC, ABD, AEC$ and $AED$ are denoted by $r_{ABC}, r_{ABD}, r_{AEC}$ and $r_{AED}$. Prove that\n\na.) \\(\\cos \\angle CAB + \\cos \\angle ABC + \\cos \\angle BCA = 1 + \\frac{r_{ABC}}{R}\\)\n\nb.) If \\( r_{ABC} = r_{AED} \\) and \\( r_{ABD} = r_{AEC} \\), then \\( \\triangle ABC \\cong \\triangle AED \\).",
+      "solution": "Solution: a.) Using the standard notation for the elements of $\\triangle ABC$, we obtain that\n\n$$\\begin{array}{l} \\frac {r}{R} = \\frac {S}{p R} = \\frac {4 S ^ {2}}{p a b c} = \\frac {4 (p - a) (p - b) (p - c)}{a b c} = \\\\ = \\frac {1}{2 a b c} \\left(a \\left(b ^ {2} + c ^ {2} - a ^ {2}\\right) + b \\left(c ^ {2} + a ^ {2} - b ^ {2}\\right) + c \\left(a ^ {2} + b ^ {2} - c ^ {2}\\right) - 2 a b c\\right) = \\\\ = \\cos \\angle C A B + \\cos \\angle A B C + \\cos \\angle B C A - 1. \\\\ \\end{array}$$\n\nb.) Applying continuously the equality from a.) and using the fact that $ABCDE$ is inscribed in a circle convex pentagon, it is easy to see that\n\n$$r _ {A B C} + r _ {A E C} + r _ {E D C} = r _ {A E D} + r _ {A B D} + r _ {B C D}.$$\n\nThe condition of the problem and the above equality imply $r_{BCD} = r_{EDC}$. Since $\\triangle BCD$ and $\\triangle EDC$ have a side in common and equal circumradiuses we get that $\\triangle BCD \\cong \\triangle EDC$ (prove it using a.)). In particular $BC = ED$ and using $r_{ABC} = r_{AED}$ again, we get $\\triangle ABC \\cong \\triangle AED$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "incircle_formulas",
+        "triangle_congruence"
+      ],
+      "confidence": "exact",
+      "reasoning": "Част a) извежда формула връзка между косинуси на ъгли и r/R. Част b) използва условието за радиуси и доказва съвпадение на триъгълници. Изисква прилагане на специализирани формули и геометрични свойства.",
+      "_crosslinked_from": "1.10",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-1998-12 кл · 1998-12 · Зад. 12.5",
+      "statement": "The convex pentagon $ABCDE$ is inscribed in a circle with radius $R$. The inradii of the triangles $ABC, ABD, AEC$ and $AED$ are denoted by $r_{ABC}, r_{ABD}, r_{AEC}$ and $r_{AED}$. Prove that\n\na.) \\(\\cos \\angle CAB + \\cos \\angle ABC + \\cos \\angle BCA = 1 + \\frac{r_{ABC}}{R}\\)\nb.) If \\( r_{ABC} = r_{AED} \\) and \\( r_{ABD} = r_{AEC} \\), then \\( \\triangle ABC \\cong \\triangle AED \\).",
+      "solution": "a.) Using the standard notation for the elements of $\\Delta ABC$, we obtain that\n$$ \\frac{r}{R} = \\frac{S}{pR} = \\frac{4S^2}{pabc} = \\frac{4(p-a)(p-b)(p-c)}{abc} =$$\n$$ = \\frac{1}{2abc}\\bigl(a(b^2 + c^2 - a^2) + b(c^2 + a^2 - b^2) + c(a^2 + b^2 - c^2) - 2abc\\bigr) =$$\n$$ = \\cos \\angle CAB + \\cos \\angle ABC + \\cos \\angle BCA - 1. $$\n\nb.) Applying continuously the equality from a.) and using the fact that $ABCDE$ is inscribed in a circle convex pentagon, it is easy to see that\n$$ r_{ABC} + r_{AEC} + r_{EDC} = r_{AED} + r_{ABD} + r_{BCD}. $$\nThe condition of the problem and the above equality imply $r_{BCD} = r_{EDC}$. Since $\\Delta BCD$ and $\\Delta EDC$ have a side in common and equal circumradiuses we get that $\\Delta BCD \\cong \\Delta EDC$ (prove it using a.)). In particular $BC = ED$ and using $r_{ABC} = r_{AED}$ again, we get $\\Delta ABC \\cong \\Delta AED$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circumcircle",
+        "inradius",
+        "trigonometric_identities"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата има две части: а) доказване на тригонометрична връзка между ъглите и радиусите в триъгълник; б) използване на условието за равенство на радиуси за доказване на еднаквост на триъгълници. Решението използва формули за лице и тригонометрични тъждества.",
+      "_crosslinked_from": "1.10",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-2-Областен кръг-1999-10 кл · 1999-10 · Зад. 10.2",
+      "statement": "A convex quadrilateral of area $S$ is inscribed in a circle whose centre is a point interior to the quadrilateral. Prove that the area of the quadrilateral whose vertices are the projections of the point of intersection of the diagonals on the sides does not exceed $\\frac{S}{2}$.",
+      "solution": "Let $ABCD$ be a quadrilateral inscribed in a circle with centre $O$ and radius $R$. Denote by $E$ the point of intersection of $AC$ and $BD$. Denote further by $M, N, P, Q$ and $F$ the projections of $E$ on $AB, BC, CD, DA$ and $MN$, respectively. We know that $MN = BE \\sin \\angle ABC = \\frac{BE \\cdot AC}{2R}$. Also,\n\n$$EF = EM \\sin \\angle EMN = \\frac{AE \\cdot BE \\sin \\angle AEB}{AB} \\sin \\angle CBE.$$\n\nSince $BE \\sin \\angle CBE = CE \\sin \\angle BCE = CE \\frac{AB}{2R}$ and $AE \\cdot CE = R^2 - OE^2$, it follows that $EF = \\frac{R^2 - OE^2}{2R} \\sin \\angle AEB$. Therefore",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circle_properties",
+        "area_formulas",
+        "trigonometry",
+        "projections"
+      ],
+      "confidence": "exact",
+      "reasoning": "Използва свойства на вписана окръжност, проекции на точка, тригонометрични зависимости и формули за лице; дълго решение с множество стъпки.",
+      "_crosslinked_from": "1.7",
+      "_crosslink_confidence": 0.7
     },
     {
       "source": "OLI-2-Областен кръг-2000-10 кл · 2000-10 · Зад. 6",
@@ -289,6 +478,448 @@
       ],
       "confidence": "exact",
       "reasoning": "Използва прави ъгли от диаметри (Талес), радикална ос и множество конфигурации – решение с множество случаи."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2000-11 кл · 2000-11 · Зад. 11.2",
+      "statement": "В $\\triangle ABC, CH(H \\in AB)$ е височина, а $CM$ и $CN(M, N \\in AB)$ са ъглополовящи съответно на ъглите $ACH$ и $BCH$. Центърът на описаната около $\\triangle CMN$ окръжност съвпада с центъра на вписаната в $\\triangle ABC$ окръжност. Да се докаже, че $S_{\\triangle ABC} = \\frac{AN.BM}{2}$.",
+      "solution": "Нека $I$ е центърът на вписаната в $\\triangle ABC$ окръжност, а $P, Q$ и $R$ са допирните точки на тази окръжност съответно със страните $AB, BC$ и $CA$. От равенствата $IP = IQ = IR$ и $IC = IM = IN$ следва, че $\\triangle IMP, \\triangle INP, \\triangle ICQ$ и $\\triangle ICR$ са еднакви. Нека $\\angle MIP = \\angle NIP =$ $\\angle QIC = \\angle CIR = \\delta$. Тогава $\\angle MCN = \\frac{1}{2} \\angle MIN = \\delta$. Тъй като $CM$ и $CN$ са ъглополовящи, получаваме $\\angle ACB = 2 \\angle MCN = 2\\delta$. Сега от четириъгълника $IQCR$ имаме $\\angle QIR + \\angle QCR = 180^\\circ \\iff 4\\delta = 180^\\circ \\iff \\delta = 45^\\circ$. Следователно $\\triangle ABC$ е правоъгълен, откъдето лесно получаваме $\\angle BCM =$ $\\angle BMC = \\angle BAC + \\frac{\\angle ABC}{2}$ и $\\angle ANC = \\angle ACN =$ $\\angle ABC + \\frac{\\angle BAC}{2}$. Следователно $BC = BM$ и $AC = AN$ и оттук $S_{ABC} = \\frac{AC.BC}{2} = \\frac{AN.BM}{2}$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "angle_bisectors",
+        "incircle",
+        "circumcircle",
+        "congruent_triangles"
+      ],
+      "confidence": "exact",
+      "reasoning": "Използване на свойствата на вписаната и описаната окръжност, конгруентни триъгълници и ъглови зависимости. Изисква построяване и дълъг анализ.",
+      "_crosslinked_from": "1.10",
+      "_crosslink_confidence": 0.7
+    },
+    {
+      "source": "OLI-2-Областен кръг-2000-12 кл · 2000-12 · Зад. 12.2",
+      "statement": "В $\\triangle ABC, CH(H \\in AB)$ е височина, а $CM$ и $CN(M, N \\in AB)$ са ъглополовящи съответно на ъглите $ACH$ и $BCH$. Центърът на описаната около $\\triangle CMN$ окръжност съвпада с центъра на вписаната в $\\triangle ABC$ окръжност. Да се докаже, че $S_{\\triangle ABC} = \\frac{AN \\cdot BM}{2}$.",
+      "solution": "Нека $I$ е центърът на вписаната в $\\triangle ABC$ окръжност, а $P, Q$ и $R$ са допирните точки на тази окръжност съответно със страните $AB, BC$ и $CA$. От равенствата $IP = IQ = IR$ и $IC = IM = IN$ следва, че $\\triangle IMP, \\triangle INP, \\triangle ICQ$ и $\\triangle ICR$ са еднакви. Нека $\\angle MIP = \\angle NIP =$ $\\angle QIC = \\angle CIR = \\delta$. Тогава $\\angle MCN = \\frac{1}{2} \\angle MIN = \\delta$. Тъй като $CM$ и $CN$ са ъглополовящи, получаваме $\\angle ACB = 2 \\angle MCN = 2\\delta$. Сега от четириъгълника $IQCR$ имаме $\\angle QIR + \\angle QCR = 180^\\circ \\iff 4\\delta = 180^\\circ \\iff \\delta = 45^\\circ$. Следователно $\\triangle ABC$ е правоъгълен, откъдето лесно получаваме $\\angle BCM =$ $\\angle BMC = \\angle BAC + \\frac{\\angle ABC}{2}$ и $\\angle ANC = \\angle ACN =$ $\\angle ABC + \\frac{\\angle BAC}{2}$. Следователно $BC = BM$ и $AC = AN$ и оттук $S_{ABC} = \\frac{AC \\cdot BC}{2} = \\frac{AN \\cdot BM}{2}$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "incircle",
+        "circumcircle",
+        "angle_chasing",
+        "triangle_properties"
+      ],
+      "confidence": "exact",
+      "reasoning": "Сложна геометрична конструкция с вписана и описана окръжност. Използване на свойствата на ъглополовящи и връзка между ъгли. Доказателство, че триъгълникът е правоъгълен.",
+      "_crosslinked_from": "1.10",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2000-12 кл · 2000-12 · Зад. 12.6",
+      "statement": "Да се намерят всички множества $S$ от четири точки в равнината със свойството: за всеки две окръжности $k_1$ и $k_2$, които имат диаметри с краища в точки от $S$, съществува точка $A \\\\in S \\\\cap k_1 \\\\cap k_2$.",
+      "solution": "Нека S = {A, B, C, D}. Да разгледаме окръжностите k₁ и k₂ с диаметри съответно AB и CD. От условието следва, че поне един от ъглите ACB, ADB, CAD и CBD е прав. Без ограничение можем да считаме, че ∢ACB = 90°. Нека k₃ и k₄ са окръжности с диаметри съответно AC и BD. Тъй като ∢ABC < 90°, то общата точка на k₃ и k₄ може да бъде A, C или D.\n\n1. Нека A ∈ k₃ ∩ k₄. Тогава ∢BAD = 90° и следователно D ∈ l₁, където l₁ ⊥ AB, A ∈ l₁. Лесно се проверява, че ∢BDC < 90° и понеже ∢BAC < 90°, ∢ABD < 90°, то общата точка на окръжностите с диаметри AD и BC е точка C и ∢ACD = 90°. Следователно D = l₁ ∩ BC.\n\n2. Нека C ∈ k₃ ∩ k₄. Тогава ∢BCD = 90° и следователно D лежи на правата AC. Тъй като ∢BDC < 90°, ∢BAC < 90° и ∢ACD < 90°, получаваме, че общата точка на окръжностите с диаметри AD и BC е B и ∢ABD = 90°. Следователно D = l₂ ∩ AC, където l₂ ⊥ AB, B ∈ l₂.\n\n3. Нека D ∈ k₃ ∩ k₄. Тогава ∢ADC = 90° и следователно D ∈ k₃. Тъй като ∢BAC < 90° и ∢ACD < 90°, получаваме, че общата точка на окръжностите с диаметри AD и BC е B или D. В първия случай ∢ABD = 90° и следователно D ∈ l₂; от друга страна, l₂ ∩ k₃ = ∅, което е противоречие. Във втория случай ∢BDC = 90°, откъдето получаваме, че D е петата на височината от точката C към AB.\n\nВ заключение, всички множества S, които изпълняват условието на задачата, се състоят от върховете на произволен правоъгълен триъгълник и петата на височината към хипотенузата.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circle_geometry",
+        "right_angles",
+        "combinatorial_geometry"
+      ],
+      "confidence": "exact",
+      "reasoning": "Множество от четири точки. Използване на свойствата на окръжности с диаметри от точките и Талесова теорема. Разглеждане на случаи за общи точки."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2002-10 кл · 2002-10 · Зад. 10.4",
+      "statement": "Точки $A$ и $B$ лежат на окръжност, а точка $C$ се мени върху нея, като $\\triangle ABC$ е остроъгълен. Да се докаже, че ако $E$ и $F$ са ортогоналчите проекции на средата на отсечката $AB$ върху страните $AC$ и $BC$, то симетралата на отсечката $EF$ минава през постоянна точка.",
+      "solution": "Нека $M$, $K$ и $L$ са средите съответно на отсечките $AB$, $AM$ и $BM$. Нека $D$ е точка върху симетралата на $AB$, която лежи в полуравнината спрямо $AB$, несъдържаща $C$, и такава, че $\\angle DKL = \\angle ACB$. Ще докажем, симетралата на $EF$ минава през $D$. Ако $\\angle ABC = \\angle BAC$, твърдението е очевидно. Следователно можем да считаме, че $\\angle BAC > \\angle ABC$. Тогава $\\angle DLF = \\angle DLK + \\angle KLF = \\angle ACB + 2 \\angle ABC$ и $\\angle DKE = 360^\\circ - \\angle DKL - \\angle LKE = 360^\\circ - \\angle ACB - 2 \\angle BAC$, откъдето $\\angle DLF = \\angle DKE$. Следователно $\\triangle DLF \\cong \\triangle DKE$, защото $DL = DK$ и $LF = KE = \\frac{AB}{4}$. Оттук $DF = DE$, т.е. симетралата на $EF$ минава през $D$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circle_geometry",
+        "midpoint_properties",
+        "angle_calculations"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква построяване на спомагателна точка D и сложни ъглови връзки, базирани на средни точки и окръжност. Техниките са покрити от точка 1.5 (включително свойства на симетрали). Трудността е hard поради нетривиалната конструкция и необходимостта от дълги ъглови пресмятания."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2002-10 кл · 2002-10 · Зад. 10.4",
+      "statement": "Точки $A$ и $B$ лежат на окръжност, а точка $C$ се мени върху нея, като $\\triangle ABC$ е остроъгълен. Да се докаже, че ако $E$ и $F$ са ортогоналчите проекции на средата на отсечката $AB$ върху страните $AC$ и $BC$, то симетралата на отсечката $EF$ минава през постоянна точка.",
+      "solution": "Нека $M$, $K$ и $L$ са средите съответно на отсечките $AB$, $AM$ и $BM$. Нека $D$ е точка върху симетралата на $AB$, която лежи в полуравнината спрямо $AB$, несъдържаща $C$, и такава, че $\\angle DKL = \\angle ACB$. Ще докажем, симетралата на $EF$ минава през $D$. Ако $\\angle ABC = \\angle BAC$, твърдението е очевидно. Следователно можем да считаме, че $\\angle BAC > \\angle ABC$. Тогава $\\angle DLF = \\angle DLK + \\angle KLF = \\angle ACB + 2 \\angle ABC$ и $\\angle DKE = 360^\\circ - \\angle DKL - \\angle LKE = 360^\\circ - \\angle ACB - 2 \\angle BAC$, откъдето $\\angle DLF = \\angle DKE$. Следователно $\\triangle DLF \\cong \\triangle DKE$, защото $DL = DK$ и $LF = KE = \\frac{AB}{4}$. Оттук $DF = DE$, т.е. симетралата на $EF$ минава през $D$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circle_geometry",
+        "midpoint_properties",
+        "angle_calculations"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква построяване на спомагателна точка D и сложни ъглови връзки, базирани на средни точки и окръжност. Техниките са покрити от точка 1.5 (включително свойства на симетрали). Трудността е hard поради нетривиалната конструкция и необходимостта от дълги ъглови пресмятания.",
+      "_crosslinked_from": "1.5",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-2-Областен кръг-2006-10 кл · 2006-10 · Зад. 10.1",
+      "statement": "Окръжност $k$ се допира до раменете на ъгъл с връх $O$ в точки $A$ и $B$. През $B$ е построен перпендикуляр $BP$ към диаметъра $AD$ на $k$ през $A$, $P ∈ AD$. Правата $OD$ пресича $BP$ в точка $M$. Да се намери отношението $\f\\frac{BM}{BP}$.",
+      "solution": "Нека допирателната към $k$ в точка $D$ пресича рамото $OB$ в точка $S$. Тогава правите $SD$, $BP$ и $OA$ са успоредни и имаме подобията $\\Delta OBM \\sim \\Delta OSD$ и $\\Delta DPM \\sim \\Delta DAO$. Следователно $\\frac{BM}{SD} = \\frac{OB}{OS}$ и $\\frac{MP}{OA} = \\frac{DP}{DA}$, т.е. $BM = \\frac{OB.SD}{OS}$ и $MP = \\frac{OA.DP}{DA}$.\n\nТъй като $OA = OB$ и $\\frac{BS}{OS} = \\frac{DP}{DA}$ (използвахме и равенството $SD = SB$), получаваме $BM = MP$, откъдето следва, че търсеното отношение е $1 : 2$.",
+      "answer": "$1 : 2$",
+      "difficulty": "hard",
+      "techniques": [
+        "similar_triangles",
+        "parallel_lines",
+        "circle_properties"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва подобие на триъгълници и свойства на окръжности. Основната техника е геометрична конструкция с подобия и успоредни прави. Тъй като има няколко стъпки и построения, трудността е hard."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2006-11 кл · 2006-11 · Зад. 11.1",
+      "statement": "Нека $k$ е окръжност с диаметър $AB$ и $C \\in k$ е произволна точка. Външновписаните окръжности за $\\triangle ABC$ към страните $AC$ и $BC$ се допират до правата $AB$ съответно в точки $M$ и $N$. Нека $O_1$ и $O_2$ са центровете на описаните около $\\triangle AMC$ и $\\triangle BNC$ окръжности. Да се докаже, че лицето на $\\triangle O_1CO_2$ не зависи от избора на точката $C$.",
+      "solution": "Нека $AB = c$, $BC = a$, $AC = b$, $p = \\frac{a + b + c}{2}$ и $O$, $P$ и $Q$ са съответно средите на $AB$, $AM$ и $BN$. Тъй като $OO_1 \\perp AC$ и $O_1P \\perp AM$, имаме $\\triangle O_1OP \\sim \\triangle ABC$, откъдето $\\frac{OO_1}{c} = \\frac{OP}{a}$. По-нататък, от $AM = p - c$ следва, че\n\n$$OP = OA + \\frac{1}{2}AM = \\frac{1}{2}c + \\frac{1}{2}(p - c) = \\frac{a + b + c}{4}$$\n\nи следователно $OO_1 = \\frac{c(a + b + c)}{4a}$. Аналогично $OO_2 = \\frac{c(a + b + c)}{4b}$. Тъй като $\\angle ACB = 90^\\circ$, получаваме $\\angle O_1OO_2 = 90^\\circ$.\n\nНакрая, тъй като $S_{O_1O_2C} = |S_{OO_1O_2} - S_{OO_1C} - S_{OO_2C}|$, пресмятаме\n\n$$\\begin{array}{l} S_{OO_1O_2} - S_{OO_1C} - S_{OO_2C} = \\frac{OO_1.OO_2}{2} - \\frac{OO_1.b}{4} - \\frac{OO_2.a}{4} = \\\\ = \\frac{c^2(a + b + c)^2}{32ab} - \\frac{c(a + b + c)}{16} \\left(\\frac{b}{a} + \\frac{a}{b}\\right) = \\\\ = \\frac{c^2(a + b + c)^2}{32ab} - \\frac{c^3(a + b + c)}{16ab} = \\frac{c^2}{16}, \\end{array}$$\n\nтъй като $c^2 = a^2 + b^2$. Следователно $S_{O_1CO_2}$ не зависи от избора на $C$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circle_properties",
+        "triangle_properties",
+        "area_calculation"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на външновписани окръжности и центрове на описани окръжности. Основната техника е свързана с външновписани окръжности (точка 1.10 от STEPS). Решението е дълго и изисква построение на помощни точки и изчисляване на лица, което го класифицира като hard.",
+      "_crosslinked_from": "1.10",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-2-Областен кръг-2015-11 кл · 2015-11 · Зад. 11.2",
+      "statement": "Даден е остроъгълен триъгълник $ABC$ с център на вписаната окръжност точка $I$ и център на описаната окръжност точка $O$. Ъглополовящата $CL$, ($L \\in AB$) пресича описаната окръжност в точка $D$. Нека $P$ е симетричната точка на $D$ спрямо правата $AB$. Да се докаже, че:\n\na) точките $C$, $L$, $P$ и $O$ лежат на една окръжност;",
+      "solution": "Решение. Ще разгледаме случая когато точката P е между D и O (случаят, когато O е между P и D, се разглежда аналогично). Нека T е среда на AB, а K е диаметрално противоположната на D. Имаме DI2 = DA2 = DL.DC = DT.DK = DP.DO. Първото равенство следва от добре известния факт, че DI = DA = DB. Второто равенство следва от подобието на триъгълниците DAC и DLA. Третото равенство следва от това, че CLTK е вписан четириъгълник (поради <) LCK =<) LTK = 90◦), а четвъртото от DP = 2DT и DK = 2DO.\nа) От DL.DC = DP.DO следва, че точките C, L, P и O лежат на една окръжност. Това следва и от <) LPD =<) LDP =<) OCL, откъдето <) LPO+ <) OCL = 180◦.\nб) От DI2 = DP.DO следва, че триъгълниците DIO и DPI са подобни, откъдето <) CIO =<) IPO. От а) следва, че <) ILO =<) CPO. От последните две равенства получаваме <) CPI =<) IPO−<) CPO =<) CIO−<) ILO =<) IOL.\nИнструкции за оценяване. 3 т. за а); за б): 2 т. за подобието на триъгълниците DIO и DPI и 2 т. за довършване на решението.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "power_of_a_point",
+        "circle_properties",
+        "similarity"
+      ],
+      "confidence": "exact",
+      "reasoning": "Доказателството използва степен на точка (DL·DC = DP·DO) и свойства на окръжности. Точка 1.4 покрива основната техника.",
+      "_crosslinked_from": "1.4",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2016-12 кл · 2016-12 · Зад. 12.2",
+      "statement": "В трапец $ABCD$, $AB \\parallel  CD$, вписаната окръжност в триъгълник $ABD$ допира страните $AB$ и $BD$ съответно в точки $M$ и $N$, а вписаната окръжност в триъгълник $ACD$ допира страните $AC$ и $DC$ съответно в точки $P$ и $Q$. Да се докаже, че пресечната точка на правите $MN$ и $PQ$ лежи на средната основа на трапеца.",
+      "solution": "Нека $O$ е центърът на вписаната в $\\triangle ABD$ окръжност и ъглополовящата на ъгъл $BAC$ пресича правата $MN$ в точка $S$. Тъй като $\\angle ASM = \\angle BMN - \\angle BAO$, то $\\angle ASM = \\frac{1}{2} \\angle ADB$. Следователно точките $O$, $S$, $N$ и $D$ лежат на една окръжност. Тогава $\\angle DSA = \\angle DNO = 90^\\circ$. Понеже $ABCD$ е трапец, то $DS$ е ъглополовяща на $\\angle ADC$.\n\nПо същия начин доказваме, че ъглополовящите на $\\angle ADC$ и $\\angle BAC$ се пресичат върху $PQ$. Следователно $S$ е пресечната точка на правите $MN$ и $PQ$. Ако $T$ е средата на $AD$, то $\\angle TSA = \\angle TAS = \\angle SAB$, което означава, че $ST \\parallel AB$. Понеже $T$ е среда на $AD$ и $ST \\parallel AB$, точката $S$ лежи на средната основа на трапеца.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "incircle",
+        "angle_bisectors",
+        "cyclic_quadrilaterals",
+        "midline_property"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на вписани окръжности в триъгълниците на трапеца, ъглополовящи и циклични точки, за да докаже, че пресечната точка лежи на средната основа. Основната техника е свързана с вписани окръжности.",
+      "_crosslinked_from": "1.10",
+      "_crosslink_confidence": 0.72
+    },
+    {
+      "source": "OLI-2-Областен кръг-2018-10 кл · 2018-10 · Зад. 4",
+      "statement": "Даден е триъгълник ABC и произволна точка L, вътрешна за страната AB. Окръжност през точките A и L се допира до правата CL и пресича страната AC за втори път в точка M. Аналогично, окръжност през точките B и L се допира до правата CL и пресича страната BC за втори път в точка N. Ъглополовящата на ъгъл ALM пресича AC в точка P, а ъглополовящата на ъгъл BLN пресича BC в точка Q. Да се докаже, че центърът на вписаната в триъгълник MNL окръжност лежи на отсечката PQ.",
+      "solution": "От условието следва, че $\\angle MLC = \\angle BAC$ и $\\angle NLC = \\angle ABC$. Тогава имаме $\\angle ACB + \\angle MLN = 180^\\circ$ и значи четириъгълникът $MLNC$ е вписан. По-нататък, $\\angle CPL = \\angle BAC + \\frac{1}{2} \\angle ALM$ като външен за $\\triangle ALP$ и $\\angle CLP = \\angle CLM + \\frac{1}{2} \\angle ALM$, откъдето $\\angle CPL = \\angle CLP$ и следователно $CP = CL$. Аналогично $CQ = CL$, т.е. $P$, $Q$ и $L$ лежат на окръжност с център $C$.\n\nОт $\\angle PML + \\angle QNL = 180^\\circ$ следва, че окръжностите, описани около триъгълниците $PML$ и $QNL$ се пресичат за втори път в точка от отсечката $PQ$. Ако тази точка е $I$, имаме $\\angle LPI = \\angle LMI$. От друга страна, $\\angle LNM = \\angle LCN = 2 \\angle LPQ$. Следователно $\\angle LMI = \\frac{1}{2} \\angle LMN$, т.е. $MI$ е ъглополовяща в $\\triangle MNL$. Аналогично се вижда, че $NI$ е ъглополовяща в $\\triangle MNL$ и следователно $I$ е центърът на вписаната в триъгълник $MNL$ окръжност.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circle_properties",
+        "angle_bisectors",
+        "cyclic_quadrilateral",
+        "inscribed_circle"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на окръжности, вписани ъгли и ъглополовящи. Основната техника е геометрична с вписани окръжности и ъглополовящи, което се отнася до точка 1.5 (Вписани ъгли, Талес, симетрали)."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2018-10 кл · 2018-10 · Зад. 4",
+      "statement": "Даден е триъгълник ABC и произволна точка L, вътрешна за страната AB. Окръжност през точките A и L се допира до правата CL и пресича страната AC за втори път в точка M. Аналогично, окръжност през точките B и L се допира до правата CL и пресича страната BC за втори път в точка N. Ъглополовящата на ъгъл ALM пресича AC в точка P, а ъглополовящата на ъгъл BLN пресича BC в точка Q. Да се докаже, че центърът на вписаната в триъгълник MNL окръжност лежи на отсечката PQ.",
+      "solution": "От условието следва, че $\\angle MLC = \\angle BAC$ и $\\angle NLC = \\angle ABC$. Тогава имаме $\\angle ACB + \\angle MLN = 180^\\circ$ и значи четириъгълникът $MLNC$ е вписан. По-нататък, $\\angle CPL = \\angle BAC + \\frac{1}{2} \\angle ALM$ като външен за $\\triangle ALP$ и $\\angle CLP = \\angle CLM + \\frac{1}{2} \\angle ALM$, откъдето $\\angle CPL = \\angle CLP$ и следователно $CP = CL$. Аналогично $CQ = CL$, т.е. $P$, $Q$ и $L$ лежат на окръжност с център $C$.\n\nОт $\\angle PML + \\angle QNL = 180^\\circ$ следва, че окръжностите, описани около триъгълниците $PML$ и $QNL$ се пресичат за втори път в точка от отсечката $PQ$. Ако тази точка е $I$, имаме $\\angle LPI = \\angle LMI$. От друга страна, $\\angle LNM = \\angle LCN = 2 \\angle LPQ$. Следователно $\\angle LMI = \\frac{1}{2} \\angle LMN$, т.е. $MI$ е ъглополовяща в $\\triangle MNL$. Аналогично се вижда, че $NI$ е ъглополовяща в $\\triangle MNL$ и следователно $I$ е центърът на вписаната в триъгълник $MNL$ окръжност.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circle_properties",
+        "angle_bisectors",
+        "cyclic_quadrilateral",
+        "inscribed_circle"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на окръжности, вписани ъгли и ъглополовящи. Основната техника е геометрична с вписани окръжности и ъглополовящи, което се отнася до точка 1.5 (Вписани ъгли, Талес, симетрали).",
+      "_crosslinked_from": "1.5",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2020-11 кл · 2020-11 · Зад. 11.2",
+      "statement": "В окръжност с център $O$ и радиус $R$ е вписан остроъгълен $\\triangle ABC$. Върху страната $BC$ е избрана точка $X$, за която $AX=BX$ и $OX=CX$. Да се намерят ъглите на $\\triangle ABC$, ако радиусът на описаната окръжност около $\\triangle AOC$ е равен на $R$.",
+      "solution": "Решение. Ще използваме стандартни означения за ъглите на \\triangle ABC. Тъй като \\triangle ABC е остроъгълен, то \\angle AOC = 2β и от условието, че радиусът на описаната окръжност около \\triangle AOC е равен на R получаваме:\n\n\\[\n\\frac {b}{\\sin \\beta} = \\frac {b}{\\sin 2 \\beta} \\iff \\sin \\beta = \\sin 2 \\beta \\iff \\beta = 60^{\\circ}.\n\\]\n\nПонеже \\angle AOC = 2β и \\angle AXC = \\angle ABX + \\angle BAX = 2β, то AOXC е вписан четириъгълник. Сега от OX = CX получаваме, че AX е ъглополовяща на \\angle OAC. Следователно \\angle OAC = 2 \\angle XAC = 2(\\alpha - \\beta) и понеже \\angle OAC = 90^{\\circ} - \\beta = 30^{\\circ} намираме\n\n\\[\n2 \\alpha - 120^{\\circ} = 30^{\\circ} \\iff \\alpha = 75^{\\circ}.\n\\]\n\nТогава \\( \\gamma = 45^{\\circ} \\).\n\nОценяване (7 точки): 2 т. – за \\(\\beta = 60^{\\circ}\\); 2 т. – за вписания четириъгълник AOXC; 2 т. – за AX ъглополовяща на \\angle OAC; по 1 т. – за намиране на \\(\\alpha\\) и \\(\\gamma\\).\n\nСвалено от Klasirane.com",
+      "answer": "α=75°, β=60°, γ=45°",
+      "difficulty": "hard",
+      "techniques": [
+        "inscribed_angles",
+        "circle_properties",
+        "angle_bisector"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва вписани ъгли и свойства на окръжности (точка 1.5). Изисква няколко стъпки: намиране на ъгъл, вписан четириъгълник, ъглополовяща. Това я прави hard."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2020-11 кл · 2020-11 · Зад. 11.2",
+      "statement": "В окръжност с център $O$ и радиус $R$ е вписан остроъгълен $\\triangle ABC$. Върху страната $BC$ е избрана точка $X$, за която $AX=BX$ и $OX=CX$. Да се намерят ъглите на $\\triangle ABC$, ако радиусът на описаната окръжност около $\\triangle AOC$ е равен на $R$.",
+      "solution": "Решение. Ще използваме стандартни означения за ъглите на \\triangle ABC. Тъй като \\triangle ABC е остроъгълен, то \\angle AOC = 2β и от условието, че радиусът на описаната окръжност около \\triangle AOC е равен на R получаваме:\n\n\\[\n\\frac {b}{\\sin \\beta} = \\frac {b}{\\sin 2 \\beta} \\iff \\sin \\beta = \\sin 2 \\beta \\iff \\beta = 60^{\\circ}.\n\\]\n\nПонеже \\angle AOC = 2β и \\angle AXC = \\angle ABX + \\angle BAX = 2β, то AOXC е вписан четириъгълник. Сега от OX = CX получаваме, че AX е ъглополовяща на \\angle OAC. Следователно \\angle OAC = 2 \\angle XAC = 2(\\alpha - \\beta) и понеже \\angle OAC = 90^{\\circ} - \\beta = 30^{\\circ} намираме\n\n\\[\n2 \\alpha - 120^{\\circ} = 30^{\\circ} \\iff \\alpha = 75^{\\circ}.\n\\]\n\nТогава \\( \\gamma = 45^{\\circ} \\).\n\nОценяване (7 точки): 2 т. – за \\(\\beta = 60^{\\circ}\\); 2 т. – за вписания четириъгълник AOXC; 2 т. – за AX ъглополовяща на \\angle OAC; по 1 т. – за намиране на \\(\\alpha\\) и \\(\\gamma\\).\n\nСвалено от Klasirane.com",
+      "answer": "α=75°, β=60°, γ=45°",
+      "difficulty": "hard",
+      "techniques": [
+        "inscribed_angles",
+        "circle_properties",
+        "angle_bisector"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва вписани ъгли и свойства на окръжности (точка 1.5). Изисква няколко стъпки: намиране на ъгъл, вписан четириъгълник, ъглополовяща. Това я прави hard.",
+      "_crosslinked_from": "1.5",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2021-11 кл · 2021-11 · Зад. 11.2",
+      "statement": "Даден е триъгълник $ABC$, за който $\\angle  ACB = 60^◦$. Точките $P$ и $Q$ върху страните $BC$ и $AC$ са такива, че четиригълникът $ABPQ$ е вписан в окръжност с радиус $r$ и разстоянието от върха $C$ до допирната точка на вписаната окръжност в $\\triangle  ABC$ със страната $BC$ е равно на $BP + AQ - PQ$. Да се намери отношението $\\frac{AB}{r}$.",
+      "solution": "Ще използваме стандартни означения за елементите на $\\triangle  ABC$.\n\nТъй като $ABPQ$ е вписан в окръжност имаме $\\triangle  ABC ∼ \\triangle  PQC$. Тогава $CP = kb$, $CQ = ka$ и $PQ = kc$, където $k$ е коефициентът на подобие на двата триъгълника.\n\nОт $BP + AQ - PQ = фрак{a + b - c}{2}$ получаваме:\n\n$$a - kb + b - ka - kc = фрак{a + b - c}{2} ⇔ (a + b + c)(2k - 1) = 0.$$\n\nТова означава, че $k = фрак{1}{2}$ и от косинусовата теорема за $\\triangle  APC$ получаваме:\n\n$$AP^2 = AC^2 + CP^2 - AP.AC = 3CP^2 ⇒ AP = CP√3.$$\n\nЗа $\\triangle  APC$ е изпълнена Питагоровата теорема, т.е. $\\angle  APC = 90^{◦}$. Следователно $R = фрак{c}{2}$ и търсеното отношение е равно на 2.\n\nОценяване. 3 т. за намиране на $k$; 3 т. за намиране на $\\angle  APC = 90^{◦}$; 1 т. за получаване на отговора.",
+      "answer": "2",
+      "difficulty": "hard",
+      "techniques": [
+        "circle_properties",
+        "similar_triangles",
+        "angle_chasing",
+        "trigonometry"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрична задача с вписан четириъгълник и вписана окръжност. Решението използва подобие на триъгълници и свойства на вписаните ъгли. Има използване на косинусова теорема и намиране на специален ъгъл (90 градуса). Основната точка е свързана с вписани ъгли и окръжности (точка 1.5)."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2021-11 кл · 2021-11 · Зад. 11.2",
+      "statement": "Даден е триъгълник $ABC$, за който $\\angle  ACB = 60^◦$. Точките $P$ и $Q$ върху страните $BC$ и $AC$ са такива, че четиригълникът $ABPQ$ е вписан в окръжност с радиус $r$ и разстоянието от върха $C$ до допирната точка на вписаната окръжност в $\\triangle  ABC$ със страната $BC$ е равно на $BP + AQ - PQ$. Да се намери отношението $\\frac{AB}{r}$.",
+      "solution": "Ще използваме стандартни означения за елементите на $\\triangle  ABC$.\n\nТъй като $ABPQ$ е вписан в окръжност имаме $\\triangle  ABC ∼ \\triangle  PQC$. Тогава $CP = kb$, $CQ = ka$ и $PQ = kc$, където $k$ е коефициентът на подобие на двата триъгълника.\n\nОт $BP + AQ - PQ = фрак{a + b - c}{2}$ получаваме:\n\n$$a - kb + b - ka - kc = фрак{a + b - c}{2} ⇔ (a + b + c)(2k - 1) = 0.$$\n\nТова означава, че $k = фрак{1}{2}$ и от косинусовата теорема за $\\triangle  APC$ получаваме:\n\n$$AP^2 = AC^2 + CP^2 - AP.AC = 3CP^2 ⇒ AP = CP√3.$$\n\nЗа $\\triangle  APC$ е изпълнена Питагоровата теорема, т.е. $\\angle  APC = 90^{◦}$. Следователно $R = фрак{c}{2}$ и търсеното отношение е равно на 2.\n\nОценяване. 3 т. за намиране на $k$; 3 т. за намиране на $\\angle  APC = 90^{◦}$; 1 т. за получаване на отговора.",
+      "answer": "2",
+      "difficulty": "hard",
+      "techniques": [
+        "circle_properties",
+        "similar_triangles",
+        "angle_chasing",
+        "trigonometry"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрична задача с вписан четириъгълник и вписана окръжност. Решението използва подобие на триъгълници и свойства на вписаните ъгли. Има използване на косинусова теорема и намиране на специален ъгъл (90 градуса). Основната точка е свързана с вписани ъгли и окръжности (точка 1.5).",
+      "_crosslinked_from": "1.5",
+      "_crosslink_confidence": 0.7
+    },
+    {
+      "source": "OLI-2-Областен кръг-2022-10 кл · 2022-10 · Зад. 10.2",
+      "statement": "Даден е остроъгълен триъгълник $ABC$ с $\\angle ACB = 70^\\circ$ и височини $AM$ ($M \\in BC$) и $CN$ ($N \\in AB$). Точките $T$ и $Q$ от отсечката $BN$ са такива, че $T$ е между $N$ и $Q$ и $\\angle NCT = \\angle BCQ$. Правата $CQ$ пресича отсечката $AM$ в точка $P$. Описаната около триъгълника $APQ$ окръжност пресича отсечката $AC$ за втори път в точка $K$, а правата $KP$ пресича отсечката $BC$ в точка $L$. Да се намери големината на $\\angle CTL$.",
+      "solution": "Решение. Нека P₁ е симетричната точка на P относно BC (явно P, M и P₁ лежат на една права) и P₁L ∩ AB = T₁. Тъй като \\angle CP₁T₁ = \\angle CPL = \\angle KPQ = 180° - \\angle BAC, получаваме, че ACP₁T₁ е вписан в окръжност. От друга страна, \\angle TCP₁ = \\angle TCB + \\angle BCP₁ = \\angle TCB + \\angle NCT = \\angle NCB = \\angle P₁AT и значи ACP₁T също е вписан. Оттук T и T₁ съвпадат, откъдето \\angle CTL = \\angle P₁TC = \\angle CAP₁ = \\angle CAM = 90° - \\angle ACB = 20°.\n\nОценяване. (7 точки) 1 т. за въвеждането на P₁, 2 т. за ACP₁T – вписан; 2 т. за T ≡ T₁ (или колинеарността на P₁, L и T); 2 т. за довършване.",
+      "answer": "20°",
+      "difficulty": "hard",
+      "techniques": [
+        "circle_theorems",
+        "angle_chasing",
+        "cyclic_quadrilateral"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква построяване на допълнителни точки и използване на свойства на вписани ъгли и окръжности. Решението използва симетрия и връзки между ъгли."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2023-10 кл · 2023-10 · Зад. 10.2",
+      "statement": "Две окръжности $k_1$ и $k_2$ се пресичат в точки $A$ и $B$. Допирателната в точка $A$ към $k_1$ пресича $k_2$ за втори път в точка $C$, а допирателната в точка $A$ към $k_2$ пресича $k_1$ за втори път в точка $D$. Точка $M$ лежи върху отсечката $AD$, а точка $N$ лежи върху отсечката $AC$. Ако $BD = 32$, $BC = 18$, $DM = 20$ и $AN = 15$, да се докаже, че четириъгълник $BNAM$ е вписан.",
+      "solution": "Решение. Точките $C$ и $D$ се намират в различни полуравнини спрямо правата $AB$, следователно същото важи и за точките $N$ и $M$. Така, че $AB$ е вътрешен диагонал за четириъгълник $BNAM$ и е достатъчно да докажем, че $\\angle BMA + \\angle BNA = 180^{\\circ}$.\n\nЗа окръжност $k_1$ имаме, че $\\angle BDA = \\angle BAC$, съответно като вписан и периферен за една и съща дъга. Аналогично, за окръжност $k_2$ имаме, че $\\angle BCA = \\angle BAD$. Оттук, $\\triangle BAD \\sim \\triangle BCA$ (I пр.) и\n\n$$\\frac{AB}{BC} = \\frac{BD}{AB} \\implies AB = \\sqrt{BC \\cdot BD} = \\sqrt{18 \\cdot 32} = 24.$$\n\nАко означим коефициентът на подобие между триъгълниците с $r$, то имаме че\n\n$$r^2 = (AB/BC)(BD/AB) = BD/BC = 32/18 = 16/9.$$\n\nСледователно $r = 4/3$. Забелязваме, че $DM/AN = 20/15 = 4/3 = r = DB/AB$ и значи $\\triangle BMD \\sim \\triangle BNA$ (II пр.). Така,\n\n$$\\angle BMA = 180^{\\circ} - \\angle BMD = 180^{\\circ} - \\angle BNA \\implies \\angle BMA + \\angle BNA = 180^{\\circ},$$\n\nоткъдето и четириъгълник $BNAM$ е вписан.\n\nОценяване. (7 точки) 1 т. за $\\triangle BAD \\sim \\triangle BCA$; 1 т. за пресмятане на кофициента на подобие $r = 4/3$; 1 т. за $DM/AN = r$; 3 т. за $\\triangle BMD \\sim \\triangle BNA$; 1 т. за довършване.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "similar_triangles",
+        "cyclic_quadrilateral",
+        "power_of_point"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата е геометрична с две окръжности и точки. Решението използва подобие на триъгълници (BAD ~ BCA), степен на точка за AB, и подобие на BMD и BNA за доказване на вписаност. Числата съвпадат: BD=32, BC=18, DM=20, AN=15. Проверка: AB=24, коефициент 4/3, DM/AN=20/15=4/3.",
+      "_crosslinked_from": "1.4",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2025-11 кл · 2025-11 · Зад. 11.2",
+      "statement": "Даден е триъгълник $ABC$. Окръжност $k$ минава през върха $C$, допира се до правата $AB$ в точка $A$, пресича отсечката $BC$ в точка $P$ и медианата $CM$ в точка $Q$. Правата $BQ$ пресича $k$ в точка $R$. Да се докаже, че $PR$ е успоредна на $AB$.",
+      "solution": "Имаме $MB^2 = MA^2 = MQ.MC$, откъдето\n\n$$\\frac{MB}{MQ} = \\frac{MC}{MB}. \\tag{1}$$\n\nОт това равенство получаваме, че $\\triangle MBQ \\sim \\triangle MCB$. Следователно $\\angle MBC = \\angle MQB$, откъдето намираме:\n\n$$\\frac{\\widehat{RC}}{2} = \\angle RQC = \\angle MQB = \\angle MBC = \\frac{\\widehat{RC}}{2} + \\frac{\\widehat{RA}}{2} - \\frac{\\widehat{AP}}{2}. \\tag{2}$$\n\nОт (2) следва $\\widehat{RA} = \\widehat{AP}$, т.е. $RP \\parallel AB$.\n\nОценяване. (7 точки) 1 т. за (1); 3 т. за $\\triangle MBQ \\sim \\triangle MCB$; 3 т. за довършване на решението.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circle_properties",
+        "similar_triangles",
+        "parallel_lines"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата е геометрична с окръжност, допирателна и успоредни прави. Решението използва подобни триъгълници и свойства на окръжности и ъгли за доказване на успоредност."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2025-11 кл · 2025-11 · Зад. 11.2",
+      "statement": "Даден е триъгълник $ABC$. Окръжност $k$ минава през върха $C$, допира се до правата $AB$ в точка $A$, пресича отсечката $BC$ в точка $P$ и медианата $CM$ в точка $Q$. Правата $BQ$ пресича $k$ в точка $R$. Да се докаже, че $PR$ е успоредна на $AB$.",
+      "solution": "Имаме $MB^2 = MA^2 = MQ.MC$, откъдето\n\n$$\\frac{MB}{MQ} = \\frac{MC}{MB}. \\tag{1}$$\n\nОт това равенство получаваме, че $\\triangle MBQ \\sim \\triangle MCB$. Следователно $\\angle MBC = \\angle MQB$, откъдето намираме:\n\n$$\\frac{\\widehat{RC}}{2} = \\angle RQC = \\angle MQB = \\angle MBC = \\frac{\\widehat{RC}}{2} + \\frac{\\widehat{RA}}{2} - \\frac{\\widehat{AP}}{2}. \\tag{2}$$\n\nОт (2) следва $\\widehat{RA} = \\widehat{AP}$, т.е. $RP \\parallel AB$.\n\nОценяване. (7 точки) 1 т. за (1); 3 т. за $\\triangle MBQ \\sim \\triangle MCB$; 3 т. за довършване на решението.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circle_properties",
+        "similar_triangles",
+        "parallel_lines"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата е геометрична с окръжност, допирателна и успоредни прави. Решението използва подобни триъгълници и свойства на окръжности и ъгли за доказване на успоредност.",
+      "_crosslinked_from": "1.5",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-3-Национален кръг-1989-9-12 кл · 1989-None · Зад. 5",
+      "statement": "Да се докаже, че перпендикулярите, спуснати от средите на основните ръбове на дадена триъгълна пирамида към срещуположните околни ръбове, се пресичат в една точка тогава и само тогава, когато центърът на описаната около пирамидата сфера, медицентьрът на основата и върхът лежат на една права.",
+      "solution": "Да означим с ABC основата на пирамидата, с D - върха й, а с  \\( A_{1} \\) ,  \\( B_{1} \\) ,  \\( C_{1} \\) ,  \\( A_{2} \\) ,  \\( B_{2} \\) ,  \\( C_{2} \\)  - съответно средите на ръбовете BC, CA, AB, DA, DB, DC. Ако поставим във всеки връх на пирамидата маса, равна на 1, то точките  \\( A_{1} \\)  и  \\( A_{2} \\)  са свответно центровете на тежестта на системите  \\( \\{B, C\\} \\)  и  \\( \\{A, D\\} \\) . Тогава средата на AB е центъра на тежестта на системата  \\( \\{A, B, C, D\\} \\) , т.е. тя съвпада с медицинъра G на ABCD (черт. 2). По същият начин се вижда, че G е среда на всяка от отсечките  \\( B_{1}B_{2} \\)  и  \\( C_{1}C_{2} \\) . Нека  \\( h_{A} \\) ,  \\( h_{B} \\)  и  \\( h_{C} \\)  са съответно петите на перпендикулярите, спуснати от  \\( A_{1} \\) ,  \\( B_{1} \\) ,  \\( C_{1} \\)  към DA, DB, DC.\n\n![img-1.jpeg](img-1.jpeg)\n\nНека \\(l_{A}, l_{B}, l_{C}\\) са симетралите на отсечките \\(DA, DB, DC\\), разглеждани съответно в равнините \\((AA_{1}D), (BB_{1}D), (CC_{1}D)\\). Тъй като \\(G\\) разполова \\(A_{1}A_{2}, B_{1}B_{2}\\) и \\(C_{1}C_{2}\\), централната симетрия \\(\\sigma\\) с център \\(G\\) преобразува \\(A_{1}\\) в \\(A_{2}\\), \\(B_{1}-\\) в \\(B_{2}\\) и \\(C_{1}-\\) в \\(C_{2}\\). Тогава не е трудно да се съобрази, че \\(\\sigma(h_{A}) = l_{A}, \\sigma(h_{B}) = l_{n}\\) и \\(\\sigma(h_{C}) = l_{C}\\).\n\nНека \\( h_A, h_B, h_C \\) се пресичат в една точка \\( H \\). Очевидно \\( H \\) лежи на пресечнината \\( DG \\) на равнините \\( (AA_1D), (BB_1D), (CC_1D) \\). В такъв случай правите \\( l_A = \\sigma(h_A), l_B = \\sigma(h_B), l_C = \\sigma(h_C) \\) се пресичат в точката \\( L = \\sigma(H) \\), която лежи на \\( \\sigma(DG) = DG \\). Но \\( L \\) е равноотдалечена от върховете на пирамидата \\( ABCD \\), понеже \\( l_A, l_B, l_C \\) са симетрали на околните ръбове. Следователно \\( L \\) съвпада с центъра на сферата, описана около \\( ABCD \\). Остава да отбележим, че медицинърът на основата \\( ABC \\) същ лежи на \\( DG \\). Достатъчността е доказана.\n\nОбратно, нека центърът L на описаната сфера лежи на DG. Тогава точката L е разположена в равнината  \\( (AA_{1}D) \\)  и е равноотдалечена от A и D. Ето защо  \\( L \\in l_{A} \\)  и аналогично  \\( L \\in l_{B}, L \\in l_{C} \\) . Получихме, че  \\( l_{A}, l_{B} \\)  и  \\( l_{C} \\)  се пресичат в една точка, Следователно  \\( h_{A} = \\sigma(l_{A}), h_{B} = \\sigma(l_{B}), h_{C} = \\sigma(l_{C}) \\)  също се пресичат в една точка. Задачата е решена.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "ортоцентър",
+        "симетрия",
+        "описана_сфера"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва ортоцентър, симетрия и свойства на описаната сфера. Това е класическа задача за точка 2.11.",
+      "_crosslinked_from": "2.11",
+      "_crosslink_confidence": 0.7
+    },
+    {
+      "source": "OLI-3-Национален кръг-1996-9-12 кл · 1996-None · Зад. 5",
+      "statement": "The quadrilateral $ABCD$ is inscribed in a circle. The lines $AB$ and $CD$ meet each other in the point $E$, while the diagonals $AC$ and $BD$ — in the point $F$. The circumcircles of the triangles $AFD$ and $BFC$ have a second common point, which is denoted by $H$. Prove that $\\angle  EHF = 90^°$.",
+      "solution": "Let $O$ be the circumcenter of $ABCD$. We shall prove that $O$ is the second common point of the circumcircles of $\\triangle AHB$ and $\\triangle CHD$. (Since $AB$ and $CD$ are not parallel, then $O \\ne H$.) After that we shall prove that the points $E, H$ and $O$ are colinear and $\\angle OHF = 90^\\circ$.\n\nWe shall consider the possible positions of $H$.\n\nLet $G$ be the common point of $AD$ and $BC$ (these lines are not parallel because the circumcircles of $\\triangle AFD$ and $\\triangle BFC$ are not tangent). It is clear that $H$ is in the interior of $\\angle AGB$.\n\n1) \\(H\\) is in \\(\\triangle CGD\\). Then, \\(\\angle CHD = \\angle CHF + \\angle DHF = 180^{\\circ} - \\angle CBF + 180^{\\circ} - \\angle DAF = 360^{\\circ} - \\widehat{CD} > 180^{\\circ}\\) (from \\(\\widehat{CD} < \\widehat{AB}\\) and \\(\\widehat{AB} + \\widehat{CD} < 360^{\\circ}\\)), which is impossible.\n2) \\(H\\) is in \\(\\triangle CFD\\). Then, \\(\\angle CHD = 360^{\\circ} - \\angle CHF - \\angle DHF = \\angle CBF + \\angle DAF = \\widehat{CD} = \\angle COD\\) and \\(\\angle AHB = \\angle AHF + \\angle BHF = \\angle ADF + \\angle BCF = \\widehat{AB} = \\angle AOB\\).\n3) \\(H\\) is in \\(\\triangle ABF\\). Analogously, \\(\\angle CHD = \\angle COD\\) and \\(\\angle AHB = \\angle AOB\\).\n4) \\(H\\) is on \\(AB\\). Again \\(\\angle CHD = \\angle COD\\) and \\(180^{\\circ} = \\angle AHB = \\angle AOB\\). Consequently, \\(O\\) is the midpoint of \\(AB\\).\n5) \\(H\\) is not in \\(\\triangle ABG\\). Then \\(\\angle CHD = \\angle COD\\) and \\(\\angle AHB = 360^{\\circ} - \\angle AOB\\).\n\nNote that in the cases 2), 3) and 5) the points $O$ and $H$ are in one and the same semiplane with respect to the line $AB$ and with respect to the line $CD$. Consequently, the points $A, B, H$ and $O$ are concyclic. We have the same for the points $C, D, H$ and $O$.\n\nNow we shall prove that the line $EH$ passes through the point $O$. Let this line meet the circumcircles of $\\triangle AHB$ and $\\triangle CHD$ at the points $O_1$ and $O_2$, respectively. Since these points lie on the ray $EH^-$, it follows from the equalities $EH.EO_1 = EA.EB = EC.ED = EH.EO_2$ that $O_1 \\equiv O_2 \\equiv O$.\n\nThe points $O$ and $H$ are in one and the same semiplane with respect to $CD$ and we can assume that the quadrilateral $COHD$ is convex. Let $H$ be in $\\triangle CFD$. Then, $\\angle OHF = \\angle FHC - \\angle OHC = 180^\\circ - \\angle FBC - \\angle ODC = 180^\\circ - \\frac{1}{2} \\angle COD - (90^\\circ - \\frac{1}{2} \\angle COD) = 90^\\circ$. The other possibility for $H$ is to be inside $\\angle AGB$ and outside the non-convex quadrilateral $AFBG$.\n\nHence $\\angle OHF = \\angle OHC + \\angle FHC = \\angle ODC + \\angle FBC = 90^\\circ$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "cyclic_quadrilateral",
+        "circumcircle",
+        "angle_chasing"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата доказва, че ъгъл EHF е прав при дадени пресечни точки и описани окръжности. Решението използва свойства на цикличния четириъгълник, окръжности и пресмятане на ъгли. Това е геометрична задача със степени на точки и окръжности.",
+      "_crosslinked_from": "1.4",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-3-Национален кръг-1999-9-12 кл · 1999-None · Зад. 5",
+      "statement": "The vertices $A$, $B$ and $C$ of an acute triangle $ABC$ lie on the sides $B_1C_1, C_1A_1$ and $A_1B_1$ of $\triangle A_1B_1C_1$ and $\\angle ABC = \\angle A_1B_1C_1$, $\\angle BCA = \\angle B_1C_1A_1$, $\\angle CAB = \\angle C_1A_1B_1$. Prove that the orthocentres of $\\triangle ABC$ and $\\triangle A_1B_1C_1$ are equally remote from the circumcentre of $\\triangle ABC$.",
+      "solution": "Denote by $H$ the orthocentre of $\\triangle ABC$. Since $\\angle CHB = 180^\\circ - \\angle CAB = 180^\\circ - \\angle C_1A_1B_1$, we have that $A_1$ lies on the circumcircle $k_1$ of $\\triangle BHC$. Similarly, $B_1$ and $C_1$ lie on circumcircles $k_2$ and $k_3$ of $\\triangle CHA$ and $\\triangle AHB$. Therefore $\\angle B_1HC_1 = \\angle B_1HA + \\angle C_1HA = \\angle B_1CA + \\angle C_1BA = 2\\angle B_1A_1C_1$ and likewise $\\angle C_1HA_1 = 2\\angle C_1B_1A_1$ and $\\angle A_1HB_1 = 2\\angle A_1C_1B_1$, so $H$ is the circumcentre of $\\triangle A_1B_1C_1$.\n\nLet us draw straight lines passing through the vertices of $\\triangle ABC$ and parallel to the corresponding sides and denote their points of intersection by $A_0$, $B_0$ and $C_0$. Since $\\angle A_0B_0C_0 = \\angle A_1B_1C_1$, $\\angle B_0C_0A_0 = \\angle B_1C_1A_1$ and $\\angle C_0A_0B_0 = \\angle C_1B_1A_1$, it follows from the above that the segments $A_0H$, $B_0H$ and $C_0H$ are of equal length and are diameters of $k_1, k_2$ and $k_3$. It is clear now that there exists a composition of a rotation and a homothecy, both centred at $H$, such that the image of $\\triangle A_1B_1C_1$ is $\\triangle A_0B_0C_0$. Therefore the image of orthocentre $H_1$ of $\\triangle A_1B_1C_1$ is the orthocentre $H_0$ of $\\triangle A_0B_0C_0$. Thus $\\angle HH_1H_0 = \\angle HA_1A_0 = 90^\\circ$, and to solve the problem we have to show that the circumcentre $O$ of $\\triangle ABC$ is the midpoint of $HH_0$.\n\nIndeed, the image of $\\triangle ABC$ by a homothecy centred at the centroid of $\\triangle ABC$ and with coefficient $-2$ is $\\triangle A_0B_0C_0$. Therefore $\\overrightarrow{MH_0} = -2\\overrightarrow{MH}$ and since $\\overrightarrow{MH} = -2\\overrightarrow{MO}$, we obtain $\\overrightarrow{OH_0} = -\\overrightarrow{OH}$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "orthocenter",
+        "circumcircle",
+        "homothety",
+        "vector_geometry"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата доказва, че ортоцентрите на два триъгълника са на еднакво разстояние от описаната окръжност на единия. Решението използва свойства на ортоцентър, хомотетия и векторна геометрия.",
+      "_crosslinked_from": "2.11",
+      "_crosslink_confidence": 0.7
+    },
+    {
+      "source": "OLI-3-Национален кръг-2005-9-12 кл · 2005-None · Зад. 2",
+      "statement": "Окръжности $k_1$ и $k_2$ се допират външно в точка $T$. Права пресича $k_1$ в точки $A$ и $B$ и се допира до $k_2$ в точка $X$. Правата $XT$ пресича $k_1$ в точка $S$. Върху дъгата $TS$, несъдържаща $A$ и $B$, е избрана точка $C$. Нека $CY$ е допирателната към $k_2$ ($Y ∈ k_2$), за която отсечките $CY$ и $ST$ не се пресичат. Ако $I$ е пресечната точка на правите $XY$ и $SC$, да се докаже, че:\n\na) Това е ... eHa OKpbKHOCT;\nb) TOUka I e IeHTbp Ha BbHIOHOVINCAHaT a OKpbXHOCT в $\\triangle  ABC$ към BC.",
+      "solution": "а) Понеже k1 и k2 се допират, имаме <) BXT = ⌊\nXT\n2 =\n⌊\nT S\n2 = <) T AS.\nОттук лесно следва, че S е среда на дъгата\n⌊\nAB. Тогава <) T CI = <) T AS\n(защото AT CS е вписан в k1), <) T AS = <) BXT , <) BXT = <) T Y X (защото\nсе измерват с една и съща дъга). Следователно <) T CI = <) T Y I, което\nозначава, че около CT IY може да се опише окръжност.\nб) Тъй като <) AXS = <) T AS, получаваме че \\triangle AXS ∼ \\triangle  T AS. Оттук\nнамираме SA2 = ST.SX . От а) имаме <) CIT = <) CY T = <) T XY и следователно\n\\triangle SXI ∼ \\triangle  SIT . Оттук намираме SI 2 = ST.SX . Окончателно получихме\nSA = SI . Освен това от\n<) BCI = 180 ◦ − <) BCS = 180 ◦ − (\nγ + α + β2 ) = 90 ◦ − γ2 ,\nследва, че CI е външна ъглополовяща на <) ACB . Остава да забележим, че\nSB = SA = SI и от равнобедрения \\triangle BSI с <) BSI = <) BSC = α намираме\n<) BIS = 90 ◦ − α2 . Сега от \\triangle BCI намираме <) CBI = 90 ◦ − β2 , което означава,че BI е външна ъглополовяща на <) ABC . Следователно I е центърът на\nвъншновписаната окръжност за триъгълник ABC към страната BC .",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circle_geometry",
+        "angle_chasing",
+        "similar_triangles",
+        "excircle"
+      ],
+      "confidence": "exact",
+      "reasoning": "Доказателството използва свойства на окръжности, ъгли и подобни триъгълници, за да установи, че точка I е център на външновписаната окръжност. Изисква сложни геометрични конструкции.",
+      "_crosslinked_from": "1.10",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-3-Национален кръг-2011-9-12 кл · 2011-None · Зад. 4",
+      "statement": "От вътрешна за остроъгълен $\\triangle ABC$ точка $O$ са спуснати перпендикуляри $OA_1$, $OB_1$ и $OC_1$ съответно към страните $BC$, $AC$ и $AB$. Перпендикулярите от $A$ и $B$ съответно към $B_1C_1$ и $A_1C_1$ се пресичат в точка $P$. Ако $H$ е петата на перпендикуляра от $P$ към $AB$, да се докаже, че точките $A_1$, $B_1$, $C_1$ и $H$ лежат на една окръжност.",
+      "solution": "4. Тъй като $\\measuredangle PBC_1 = \\measuredangle OC_1A_1$ като ъгли с взаимно перпендикулярни рамене и $\\measuredangle OC_1A_1 = \\measuredangle OBA_1$ (от вписания четириъгълник $OC_1BA_1$), заключаваме, че $\\measuredangle PBA = \\measuredangle OBC$. Аналогично $\\measuredangle PAB = \\measuredangle OAC$. Нека $M$ и $N$ са петите на перпендикулярите от $P$ съответно към $BC$ и $AC$. Тъй като\n\n$$BC_1.BH = BO.BP \\cos \\measuredangle OBA \\cos \\measuredangle PBA = BA_1.BM,$$\n\nто точките $H$, $C_1$, $A_1$ и $M$ лежат на една окръжност, чийто център е средата на $OP$ (тъй като симетралите на $HC_1$ и $MA_1$ се пресичат в средата на $OP$).\n\nАналогично доказваме, че $H$, $C_1$, $N$ и $B_1$ лежат на окръжност с център средата на $OP$.\n\nСледователно точките $A_1$, $B_1$, $C_1$, $H$, $M$ и $N$ лежат на една окръжност, с което доказателството е завършено.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "cyclic_quadrilaterals",
+        "angle_chasing",
+        "circle_properties"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата включва геометрична конфигурация с перпендикуляри и окръжности. Решението използва ъглови връзки и свойства на вписани четириъгълници."
+    },
+    {
+      "source": "OLI-3-Национален кръг-2011-9-12 кл · 2011-None · Зад. 4",
+      "statement": "От вътрешна за остроъгълен $\\triangle ABC$ точка $O$ са спуснати перпендикуляри $OA_1$, $OB_1$ и $OC_1$ съответно към страните $BC$, $AC$ и $AB$. Перпендикулярите от $A$ и $B$ съответно към $B_1C_1$ и $A_1C_1$ се пресичат в точка $P$. Ако $H$ е петата на перпендикуляра от $P$ към $AB$, да се докаже, че точките $A_1$, $B_1$, $C_1$ и $H$ лежат на една окръжност.",
+      "solution": "4. Тъй като $\\measuredangle PBC_1 = \\measuredangle OC_1A_1$ като ъгли с взаимно перпендикулярни рамене и $\\measuredangle OC_1A_1 = \\measuredangle OBA_1$ (от вписания четириъгълник $OC_1BA_1$), заключаваме, че $\\measuredangle PBA = \\measuredangle OBC$. Аналогично $\\measuredangle PAB = \\measuredangle OAC$. Нека $M$ и $N$ са петите на перпендикулярите от $P$ съответно към $BC$ и $AC$. Тъй като\n\n$$BC_1.BH = BO.BP \\cos \\measuredangle OBA \\cos \\measuredangle PBA = BA_1.BM,$$\n\nто точките $H$, $C_1$, $A_1$ и $M$ лежат на една окръжност, чийто център е средата на $OP$ (тъй като симетралите на $HC_1$ и $MA_1$ се пресичат в средата на $OP$).\n\nАналогично доказваме, че $H$, $C_1$, $N$ и $B_1$ лежат на окръжност с център средата на $OP$.\n\nСледователно точките $A_1$, $B_1$, $C_1$, $H$, $M$ и $N$ лежат на една окръжност, с което доказателството е завършено.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "cyclic_quadrilaterals",
+        "angle_chasing",
+        "circle_properties"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата включва геометрична конфигурация с перпендикуляри и окръжности. Решението използва ъглови връзки и свойства на вписани четириъгълници.",
+      "_crosslinked_from": "1.5",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-3-Национален кръг-2016-9-12 кл · 2016-None · Зад. 5",
+      "statement": "Даден е равнобедрен триъгълник $ABC$, $AC = BC$. Върху продължението на $AC$ след $C$ е избрана точка $D$, като $AC > CD$. Ъглополовящата на $\\measuredangle BCD$ пресича $BD$ в точка $N$, а $M$ е средата на $BD$. Допирателната в точка $M$ към описаната около триъгълник $AMD$ окръжност пресича страната $BC$ в точка $P$. Да се докаже, че точките $A$, $P$, $M$ и $N$ лежат на една окръжност.",
+      "solution": "От условието следва, че $\\angle  MAD = \\angle  PMB = φ$. Да построим права $ℓ \\parallel  AB$ през $D$. Нека $ℓ ∩ BC = \\{Q\\}$, $T$ е средата на $AQ$ и $BT$ да пресича $ℓ$ в точка $K$. От симетрията следва, че $\\angle  KBQ = φ$. Освен това имаме $\\frac{KQ}{QD} = \\frac{AB}{QD} = \\frac{CD}{BC} = \\frac{DN}{BN}$, откъдето $BK \\parallel  QN$ и следователно $\\angle  CQN = φ$.\n\nТъй като $\\angle  QAD = \\angle  QBD = ψ$ поради симетрията, получаваме $\\angle  QAM = \\angle  QND = φ + ψ$. Тогава $Q, A, M$ и $N$ лежат на една окръжност. Тъй като $\\angle  PMB = φ = \\angle  NQB$, точките $Q, M, N$ и $P$ лежат на една окръжност. Следователно $A, P, M$ и $N$ лежат на една окръжност.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circle_properties",
+        "tangent_lines",
+        "cyclic_quadrilaterals"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрична задача с окръжности, допирателни и циклични четириъгълници. Използва се степен на точка и свойства на ъгли.",
+      "_crosslinked_from": "1.4",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-3-Национален кръг-2022-9-12 кл · 2022-None · Зад. 2",
+      "statement": "Даден е остроъгълен триъгълник $ABC$ със среда $M$ на страната $AB$. Окръжност през точките $B$ и $C$ пресича отсечките $CM$ и $BM$ в точките $P$ и $Q$, съответно. Точката $K$ е симетрична на $P$ относно $M$. Описаните около триъгълниците $AKM$ и $CQM$ окръжности се пресичат за втори път в точка $X$, а описаните около триъгълниците $AMC$ и $KMQ$ окръжности се пресичат за втори път в точка $Y$. Отсечките $BP$ и $CQ$ се пресичат в точка $T$. Да се докаже, че $MT$ е допирателна към описаната около триъгълника $MXY$ окръжност.",
+      "solution": "(Първи начин, А. Иванов) Явно $AKBP$ е успоредник, откъдето с вписания $BQPC$ получаваме $\\angle  AKC = \\angle  KPB = \\angle  AQC = φ$, т.е. $AKQC$ е вписан – нека центърът му е $O$. Тогава $\\angle  AYC = (180^◦ - \\angle  AYM) + (180^◦ - \\angle  CYM) = \\angle  AKM + \\angle  CQM = 2φ = \\angle  AOC$, т.е. $AOYC$ е вписан. Оттук $\\angle  OYM = \\angle  CYM - \\angle  CYO = (360^◦ - \\angle  AYC - \\angle  AYM) - \\angle  CAO = 180^◦ - φ - (90^◦ - φ) = 90^◦$ и аналогично $\\angle  OXM = 90^◦$. Сега ако $TM ∩ AK = T'$, то $TM = MT'$ от успоредника $AKBP$ и сега обратната теорема за пеперудата в $AKQC$ дава $OM ⊥ TT'$, т.е. $OM ⊥ MT$. Следователно $MT$ е перпендикулярна на диаметъра $OM$ на окръжността около $MXY$ и исканото следва.\n\n(Втори начин, М. Маринов) Явно $AKBP$ е успоредник, откъдето с вписания $BQPC$ получаваме $\\angle  AKC = \\angle  KPB = \\angle  AQC$, т.е. $AKQC$ е вписан – нека центърът му е $O$. Да разгледаме композицията $f$ от инверсия с център $M$ и радиус $√{MA ⋅ MQ} = √{MC ⋅ MK}$ и симетрия относно точката $M$. Да означим $AK ∩ CQ = X'$ и $AC ∩ KQ = Y'$. Тогава $f(A) = Q$, $f(C) = K$ и от свойствата на инверсията следва $f(X) = X'$ и $f(Y) = Y'$. Тъй като правата $TM$ (което минава през центъра $M$ на инверсията и симетрията) остава в себе си, исканото е еквивалентно на $TM \\parallel  XY'$. От теоремата на Брокар за вписания $AKQC$ имаме $OM ⊥ XY'$ и значи остава да докажем, че $OM ⊥ MT$. Ако $TM ∩ AK = T'$, то $TM = MT'$ от успоредника $AKBP$ и сега обратната теорема за пеперудата в $AKQC$ дава $OM ⊥ TT'$, с което исканото следва.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "inversion",
+        "circle_properties",
+        "cyclic_quadrilaterals",
+        "symmetry"
+      ],
+      "confidence": "exact",
+      "reasoning": "Основната техника е инверсия (STEPS 2.3). Решението използва вписани четириъгълници и симетрия, с няколко стъпки и построения.",
+      "_crosslinked_from": "2.3",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-3-Национален кръг-2023-9-12 кл · 2023-None · Зад. 2",
+      "statement": "Даден е разностранен триъгълник ABC. Нека  \\( A_{1} \\) ,  \\( B_{1} \\)  и  \\( C_{1} \\)  са допирните точки на външновписаните окръжности със страните BC, CA, AB съответно. Центровете на описаната около  \\( \\triangle AB_{1}C_{1} \\) ,  \\( \\triangle BA_{1}C_{1} \\) ,  \\( \\triangle CA_{1}B_{1} \\)  са означени с  \\( O_{A} \\) ,  \\( O_{B} \\) ,  \\( O_{C} \\)  съответно. Да се докаже, че правите през  \\( O_{A} \\) ,  \\( O_{B} \\)  и  \\( O_{C} \\) , съответно успоредни на ъглополовящите на \\( \\angle A \\), \\( \\angle B \\) и \\( \\angle C \\), се пресичат в една точка.",
+      "solution": "Решение. Нека O е центърът на описаната около  \\( \\triangle ABC \\)  окръжност, и нека T е средата на дъгата  \\( \\widehat{ACB} \\)  от описаната окръжност (виж чертежа). Имаме  \\( AB_{1} = BA_{1} \\) , AT = BT,  \\( \\angle B_{1}AT = \\angle A_{1}BT \\) , следователно  \\( \\triangle B_{1}AT \\cong \\triangle A_{1}BT \\) . От еднаквостта получаваме, че  \\( \\angle CB_{1}T = \\angle CA_{1}T \\) , следователно описаната около  \\( A_{1}B_{1}C \\)  окръжност минава през T и  \\( OO_{C} \\)  е симетрала на CT. Но правите  \\( OO_{C} \\)  и ъглополовящата на  \\( \\angle ACB \\)  са перпендикулярни на CT (защо?), следователно правата през  \\( O_{C} \\) , успоредна на ъглополовящата на  \\( \\angle ACB \\) минава през $O!$. Повтаряйки това разсъждение, достигаме до заключението, че исканите прави се пресичат в $O$.\n\n**Оценяване.** (7 точки) 2т. за хипотеза, че трите прави се пресичат в т.$O$. 1т. за построяване на средата на някоя от дъгите $\\widehat{BAC}$, $\\widehat{ABC}$ или $\\widehat{ACB}$, 2т. за $\\triangle B_1 AT \\cong \\triangle A_1 BT$ и 2т. за довършване.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circumcircle",
+        "excircles",
+        "angle_bisectors",
+        "parallel_lines",
+        "concurrency"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва външновписани окръжности и центрове на описани окръжности. Точка 1.10 е точна. Трудност: hard поради сложните геометрични построения.",
+      "_crosslinked_from": "1.10",
+      "_crosslink_confidence": 0.85
     }
   ]
 }

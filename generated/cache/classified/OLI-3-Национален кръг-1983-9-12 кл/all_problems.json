@@ -26,6 +26,12 @@
       "grade_range": [
         9,
         12
+      ],
+      "secondary_points": [
+        {
+          "id": "3.7",
+          "confidence": 0.65
+        }
       ]
     },
     {
@@ -52,6 +58,16 @@
       "grade_range": [
         9,
         12
+      ],
+      "secondary_points": [
+        {
+          "id": "8.10",
+          "confidence": 0.75
+        },
+        {
+          "id": "8.15",
+          "confidence": 0.7
+        }
       ]
     },
     {
@@ -79,6 +95,12 @@
       "grade_range": [
         9,
         12
+      ],
+      "secondary_points": [
+        {
+          "id": "1.6",
+          "confidence": 0.65
+        }
       ]
     },
     {
@@ -133,6 +155,12 @@
       "grade_range": [
         9,
         12
+      ],
+      "secondary_points": [
+        {
+          "id": "5.5",
+          "confidence": 0.85
+        }
       ]
     },
     {
@@ -160,7 +188,8 @@
       "grade_range": [
         9,
         12
-      ]
+      ],
+      "secondary_points": []
     }
   ]
 }

@@ -1,104 +1,221 @@
 {
   "point_id": "8.3",
-  "total": 7,
+  "total": 14,
   "by_difficulty": {
-    "easy": 2,
-    "medium": 2,
-    "hard": 3
+    "easy": 0,
+    "medium": 5,
+    "hard": 9
   },
   "problems": [
     {
-      "source": "OLI-2-Областен кръг-2024-11 кл · 2024-11 · Зад. 4",
-      "statement": "В клетките на квадратна таблица $2025 \\times 2025$ са записани числата $1, 2, 3, \\dots, 2024, 2025$, всяко по 2025 пъти. Да се докаже, че в някой ред или в някоя колона на таблицата се срещат поне 45 различни числа.",
-      "solution": "Решение. Да означим с xᵢ, i = 1, 2, ..., 2025 броят на редовете на таблицата, в които се среща числото i, а с yᵢ, i = 1, 2, ..., 2025 броят на колоните на таблицата, в които се среща числото i. Тъй като всяко число i може да се среща само в пресечна клетка на ред с i и колона с i, то xᵢyᵢ ≥ 2025. Следователно\nxᵢ + yᵢ ≥ 2√(xᵢyᵢ) = 90.\nДа означим с aᵢ, i = 1, 2, ..., 2025 броят на различните числа в ред i, а с bᵢ, i = 1, 2, ..., 2025 броят на различните числа в колона i. Всяко i дава принос xᵢ към сумата ∑ᵢ₌₁²⁰²⁵ aᵢ и принос yᵢ към сумата ∑ᵢ₌₁²⁰²⁵ bᵢ. Тогава:\n∑ᵢ₌₁²⁰²⁵ aᵢ + ∑ᵢ₌₁²⁰²⁵ bᵢ = ∑ᵢ₌₁²⁰²⁵ xᵢ + ∑ᵢ₌₁²⁰²⁵ yᵢ ≥ 90·2025.\nОт горното равенство следва, че някое от числата aᵢ и/или bᵢ е поне 45.",
+      "source": "OLI-2-Областен кръг-1996-10 кл · 1996-10 · Зад. 10.6",
+      "statement": "A rectangle $m \\times n$ ($m > 1$, $n > 1$) is divided into $mn$ squares $1 \\times 1$ with lines, parallel to its sides. In how many ways could two of the squares be canceled and the remaining part be covered with dominoes $2 \\times 1$?",
+      "solution": "Denote by $F(m, n)$ the number we are looking for. Since every domino covers exactly two squares, then $F(m, n) = 0$ if $m$ and $n$ are odd.\n\nFigure 5.\n\n![img-4.jpeg](img-4.jpeg)\n\nLet at least one of the numbers $m$ and $n$ be even. We color the squares in two colors — white and black in such a way that every two neighbor squares (with common side) are of different colors (Figure 5). The number $S_0$ of the white squares is equal to the number $S_1$ of the black ones and $S_0 = S_1 = \\frac{mn}{2}$.\n\nEach domino covers one white and one black square. If two white or two black squares are canceled, then it is impossible to cover by dominoes the remaining part of the rectangle. Now we shall show that if one white and one black squares are canceled then the remaining part can be covered by dominoes.\n\nSince $mn$ is even, then $mn = 2t$, where $t \\ge 2$. We make induction with respect to $t$. The case $t = 2$ is obvious. Let $t_0 > 2$ and the proposition is true for all $2 \\le t \\le t_0$. Let $mn = 2(t_0 + 1)$. Denote by $T_1$ the rectangle consisted of the first two rows of the considered rectangle, and by $T_2$ — the rectangle consisted of the remaining rows. If the two canceled squares are in $T_1$ or in $T_2$, then we can cover each of the rectangles by dominoes and consequently we can cover the given rectangle.\n\nLet one of the canceled squares be in $T_1$, and the other — in $T_2$. We place a domino in such a way that it covers one square from $T_1$ and one square from $T_2$. It is also possible that the canceled square from $T_1$ and the covered square from $T_1$ are of different colors. Thus, the canceled square from $T_2$ and the covered square from $T_2$ are of different colors. According to the inductive assumption the remaining part of $T_1$ and the remaining part of $T_2$ can be covered. Thus, the rectangle can be covered too.\n\nFinally one white and one black squares can be chosen in $S_0 \\cdot S_1 = \\left(\\frac{mn}{2}\\right)^2$ ways. Therefore, in this case $F(m, n) = \\frac{m^2 n^2}{4}$.",
       "answer": null,
-      "difficulty": "easy",
+      "difficulty": "medium",
       "techniques": [
-        "double_counting",
-        "pigeonhole_principle"
+        "coloring",
+        "induction",
+        "tiling"
       ],
       "confidence": "exact",
-      "reasoning": "Използва се двойно броене и неравенството x_i + y_i ≥ 2√(x_i y_i) → 90, което е типичен пример за принципа на Дирихле."
+      "reasoning": "Основната техника е оцветяване (двойно броене на бели и черни квадрати). Точка 8.3 (Двойно броене) е подходяща."
     },
     {
-      "source": "OLI-3-Национален кръг-2016-9-12 кл · 2016-None · Зад. 4",
-      "statement": "Съществува ли естествено число n < 10^9, което се представя по повече от 1000 различни начина като сума на три квадрата на естествени числа?",
-      "solution": "Решение. Сумите a² + b² + c², където 1 ≤ a < b < c ≤ N, a, b, c са естествени числа, са binom(N, 3) на брой и не надминават 3N². Следователно съществува естествено число, не надминаващо 3N², което е равно на binom(N, 3)/(3N²) от тези суми. Тъй като при N = 18003 имаме binom(N, 3)/(3N²) > 1000 и 3N² < 10^9, отговорът на поставения в задачата въпрос е положителен.",
-      "answer": "Да, съществува.",
-      "difficulty": "easy",
+      "source": "OLI-2-Областен кръг-1996-12 кл · 1996-12 · Зад. 12.6",
+      "statement": "A rectangle $m \\times n$ ($m > 1$, $n > 1$) is divided into $mn$ squares $1 \\times 1$ with lines, parallel to its sides. In how many ways could two of the squares be canceled and the remaining part be covered with dominoes $2 \\times 1$?",
+      "solution": "Solution. Denote by $F(m, n)$ the number we are looking for. Since every domino covers exactly two squares, then $F(m, n) = 0$ if $m$ and $n$ are odd.\n\nFigure 5.\n\n![img-4.jpeg](img-4.jpeg)\n\nLet at least one of the numbers $m$ and $n$ be even. We color the squares in two colors — white and black in such a way that every two neighbor squares (with common side) are of different colors (Figure 5). The number $S_0$ of the white squares is equal to the number $S_1$ of the black ones and $S_0 = S_1 = \\frac{mn}{2}$.\n\nEach domino covers one white and one black square. If two white or two black squares are canceled, then it is impossible to cover by dominoes the remaining part of the rectangle. Now we shall show that if one white and one black squares are canceled then the remaining part can be covered by dominoes.\n\nSince $mn$ is even, then $mn = 2t$, where $t \\ge 2$. We make induction with respect to $t$. The case $t = 2$ is obvious. Let $t_0 > 2$ and the proposition is true for all $2 \\le t \\le t_0$. Let $mn = 2(t_0 + 1)$. Denote by $T_1$ the rectangle consisted of the first two rows of the considered rectangle, and by $T_2$ — the rectangle consisted of the remaining rows. If the two canceled squares are in $T_1$ or in $T_2$, then we can cover each of the rectangles by dominoes and consequently we can cover the given rectangle.\n\nLet one of the canceled squares be in $T_1$, and the other — in $T_2$. We place a domino in such a way that it covers one square from $T_1$ and one square from $T_2$. It is also possible that the canceled square from $T_1$ and the covered square from $T_1$ are of different colors. Thus, the canceled square from $T_2$ and the covered square from $T_2$ are of different colors. According to the inductive assumption the remaining part of $T_1$ and the remaining part of $T_2$ can be covered. Thus, the rectangle can be covered too.\n\nFinally one white and one black squares can be chosen in $S_0 \\cdot S_1 = \\left(\\frac{mn}{2}\\right)^2$ ways. Therefore, in this case $F(m, n) = \\frac{m^2 n^2}{4}$.",
+      "answer": "$F(m, n) = \\frac{m^2 n^2}{4}$ if at least one of $m,n$ is even, and $0$ otherwise",
+      "difficulty": "medium",
       "techniques": [
-        "pigeonhole",
+        "checkerboard_coloring",
+        "induction",
         "counting"
       ],
       "confidence": "exact",
-      "reasoning": "Оценка на броя на суми a²+b²+c² чрез проста брояща оценка и принципа на Дирихле."
+      "reasoning": "Основната техника е двойното броене чрез шахматно оцветяване, което е в основата на решението. Индукцията е допълнителен инструмент за общия случай. Задачата е типична олимпиадна комбинаторна задача с ясна необходимост от анализ на паритет чрез оцветяване."
     },
     {
-      "source": "OLI-2-Областен кръг-1999-10 кл · 1999-10 · Зад. 3",
+      "source": "OLI-2-Областен кръг-1999-10 кл · 1999-10 · Зад. 10.3",
       "statement": "In a competition 8 judges marked the contestants by *yes* or *no*. It is known that for any two contestants, two judges gave both a *yes*; two judges gave the first one a *yes* and the second one a *no*; two judges gave the first one a *no* and the second one a *yes*, and finally, two judges gave both a *no*. What is the greatest possible number of contestants?",
-      "solution": "Denote the number of contestants by $n$. Consider a table with 8 rows and $n$ columns such that the cell in the $i$th row and $j$th column contains 0 (1) if the $i$th judge gave the $j$th contestant a no (a yes). The conditions of the problem now imply that the table formed by any two columns contains among its rows each of the pairs 00, 01, 10 and 11 twice. We shall prove that 8 columns having this property do not exist. Assume the opposite. It is easily seen that if in any column all 0s are replaced by 1s and vice versa, the above property is retained. Therefore without loss of generality suppose that the first row consists of 0s. Denote the number of 0s in the $i$th row by $a_i$. It is clear that the total number of 0s is $8 \\cdot 4 = 32$. Further, the number of occurrences of 00 is $\\binom{8}{2} \\cdot 2 = 56$.\n\nOn the other hand the same number is $\\sum_{i=1}^{8} \\binom{a_i}{2}$. Since $a_1 = 8$, it follows that $\\sum_{i=2}^{8} a_i = 24$. It is easy to prove now that $\\sum_{i=2}^{8} \\binom{a_i}{2} \\geq 30$. Therefore $56 = \\sum_{i=1}^{8} \\binom{a_i}{2} \\geq 58$, which is false.\n\nThe diagram on the right shows that it is possible to have exactly 7 contestants:\n\n0 0 0 0 0 0 0\n0 1 1 1 1 0 0\n0 1 1 0 0 1 1\n0 0 0 1 1 1 1\n1 0 1 0 1 0 1\n1 0 1 1 0 1 0\n1 1 0 0 1 1 0\n1 1 0 1 0 0 1",
-      "answer": "7",
+      "solution": "Solution: Denote the number of contestants by $n$. Consider a table with 8 rows and $n$ columns such that the cell in the $i$th row and $j$th column contains 0 (1) if the $i$th judge gave the $j$th contestant a no (a yes). The conditions of the problem now imply that the table formed by any two columns contains among its rows each of the pairs 00, 01, 10 and 11 twice. We shall prove that 8 columns having this property do not exist. Assume the opposite. It is easily seen that if in any column all 0s are replaced by 1s and vice versa, the above property is retained. Therefore without loss of generality suppose that the first row consists of 0s. Denote the number of 0s in the $i$th row by $a_i$. It is clear that the total number of 0s is $8 · 4 = 32$. Further, the number of occurrences of 00 is $\\binom{8}{2} · 2 = 56$.\n\nOn the other hand the same number is $\\sum_{i=1}^{8} \\binom{a_i}{2}$. Since $a_1 = 8$, it follows that $\\sum_{i=2}^{8} a_i = 24$. It is easy to prove now that $\\sum_{i=2}^{8} \\binom{a_i}{2} \\geq 30$. Therefore $56 = \\sum_{i=1}^{8} \\binom{a_i}{2} \\geq 58$, which is false.\n\n|   | 0 | 0 | 0 | 0 | 0 | 0 | 0  |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n|   | 0 | 1 | 1 | 1 | 1 | 0 | 0  |\n|   | 0 | 1 | 1 | 0 | 0 | 1 | 1  |\n|  The diagram on the right shows | 0 | 0 | 0 | 1 | 1 | 1 | 1  |\n|  that it is possible to have exactly | 1 | 0 | 1 | 0 | 1 | 0 | 1  |\n|  7 contestants: | 1 | 0 | 1 | 1 | 0 | 1 | 0  |\n|   | 1 | 1 | 0 | 0 | 1 | 1 | 0  |\n|   | 1 | 1 | 0 | 1 | 0 | 0 | 1  |",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "combinatorics",
+        "double_counting",
+        "binary_vectors"
+      ],
+      "confidence": "exact",
+      "reasoning": "Комбинаторна задача с двоични вектори; двойно броене за броя на нулите и единиците, използване на комбинаторни тъждества и достигане на противоречие за n=8."
+    },
+    {
+      "source": "OLI-2-Областен кръг-1999-12 кл · 1999-12 · Зад. 12.3",
+      "statement": "In a competition 8 judges marked the contestants by *yes* or *no*. It is known that for any two contestants, two judges gave both a *yes*; two judges gave the first one a *yes* and the second one a *no*; two judges gave the first one a *no* and the second one a *yes*, and finally, two judges gave both a *no*. What is the greatest possible number of contestants?",
+      "solution": "**Solution:** Denote the number of contestants by $n$. Consider a table with 8 rows and $n$ columns such that the cell in the $i$th row and $j$th column contains 0 (1) if the $i$th judge gave the $j$th contestant a *no* (a *yes*). The conditions of the problem now imply that the table formed by any two columns contains among its rows each of the pairs 00, 01, 10 and 11 twice. We shall prove that 8 columns having this property do not exist. Assume the opposite. It is easily seen that if in any column all 0s are replaced by 1s and *vice versa*, the above property is retained. Therefore without loss of generality suppose that the first row consists of 0s. Denote the number of 0s in the $i$th row by $a_i$. It is clear that the total number of 0s is $8 · 4 = 32$. Further, the number of occurrences of 00 is $\\binom{8}{2} · 2 = 56$. On the other hand the same number is $\\sum_{i=1}^8 \\binom{a_i}{2}$. Since $a_1 = 8$, it follows that $\\sum_{i=2}^8 a_i = 24$. It is easy to prove now that $\\sum_{i=2}^8 \\binom{a_i}{2} \\geq 30$. Therefore $56 = \\sum_{i=1}^8 \\binom{a_i}{2} \\geq 58$, which is false.\n\n|   | 0 | 0 | 0 | 0 | 0 | 0 | 0  |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n|   | 0 | 1 | 1 | 1 | 1 | 0 | 0  |\n|   | 0 | 1 | 1 | 0 | 0 | 1 | 1  |\n|  The diagram on the right shows | 0 | 0 | 0 | 1 | 1 | 1 | 1  |\n|  that it is possible to have exactly | 1 | 0 | 1 | 0 | 1 | 0 | 1  |\n|  7 contestants: | 1 | 0 | 1 | 1 | 0 | 1 | 0  |\n|   | 1 | 1 | 0 | 0 | 1 | 1 | 0  |\n|   | 1 | 1 | 0 | 1 | 0 | 0 | 1  |",
+      "answer": null,
       "difficulty": "medium",
       "techniques": [
         "double_counting",
-        "combinatorial_design"
+        "combinatorial_identities",
+        "dirichlet_principle"
       ],
       "confidence": "exact",
-      "reasoning": "Counts 00,01,10,11 pairs twice for any two columns; double‑counting yields contradiction."
+      "reasoning": "Комбинаторна задача с двойно броене на двойки оценки от съдиите."
     },
     {
-      "source": "OLI-2-Областен кръг-2002-11 кл · 2002-11 · Зад. 6",
-      "statement": "Нека $n \\ge 3$ е дадено естествено число и $a_1, a_2, \\dots, a_n$ е $n$-орка от различни реални числа с положителна сума. Една пермутация $b_1, b_2, \\dots, b_n$ на тези числа наричаме „добра“, ако за всяко $k = 1, 2, \\dots, n$ е изпълнено $b_1 + b_2 + \\dots + b_k > 0$. Колко най-малко могат да бъдат „добрите“ пермутации?",
-      "solution": "Решение. Ще докажем, че „добрите“ пермутации не могат да бъдат по-малко от $(n - 1)!$ и съществуват числа $a_1, a_2, \\dots, a_n$, за които тези пермутации са точно $(n - 1)!$.\n\nДа разположим числата във върховете на правилен $n$-ъгълник. Тъй като числата са различни, започвайки от кое да е число и движейки се по посока на часовниковата стрелка, получаваме $n$ различни техни пермутации. Следователно, за да получим всички пермутации, са ни достатъчни $(n - 1)!$ различни разположения.\n\nДа разгледаме едно разположение. Ще покажем, че съществува $a_i$, от което, движейки се по посока на часовниковата стрелка, ще имаме „добра“ пермутация. От всички суми на няколко последователни числа да избери онази, която приема най-малка стойност и нека това е $a_s + a_{s+1} + \\dots + a_{s+t}$ (индексите се взимат по модул $n$). Без ограничение можем да считаме, че $t$ е възможно най-голямо. Да отбележим, че сумата $a_{s+t_1} + \\dots + a_{s+t}$ при $t_1 \\leq t$ е неположителна, защото иначе $a_s + a_{s+1} \\dots + a_{s+t_1-1} < a_s + a_{s+1} + \\dots + a_{s+t}$. Тогава пермутацията, започваща от $a_{s+t+1}$, е „добра“. Наистина, ако допуснем, че някоя сума от вида $a_{s+t+1} + \\dots + a_{s+t+k}$ е неположителна, то лесно следва (трябва да се разгледат два случая – $a_{s+t+k}$ е преди $a_s$ и $a_{s+t+k}$ е след $a_s$), че има сума на няколко последователни числа, която е по-малка от $a_s + a_{s+1} + \\dots + a_{s+t}$ или е равна на $a_s + a_{s+1} + \\dots + a_{s+t}$, но е с повече членове.\n\nНакрая да отбележим, че ако $a_i < 0$ за $i = 1, 2, \\dots, n - 1$ и $a_n > 0$, „добри“ са само пермутациите, започващи с $a_n$ и следователно техния брой е $(n - 1)!$.",
-      "answer": "$(n - 1)!$",
+      "source": "OLI-3-Национален кръг-1992-9-12 кл · 1992-None · Зад. 3",
+      "statement": "Нека m и n са фиксирани естествени числа и Oxy е координатна система в равнината. Да се намери броят на всички възможни разположения на n + m −1 точки P1 (x1, y1) , P2 (x2, y2) , . . . , Pn+m−1 (xn+m−1, yn+m−1) в равнината, за които са изпълнени условията: 1) Числата xi и yi за i = 1, 2, . . . , n + m −1 са цели и 1 ≦xi ≦n, 1 ≦yi ≦m. 2) Всяко едно от числата 1, 2, . . . , n се среща в редицата x1, x2, . . . , xn+m−1 и всяко едно от числата 1, 2, . . . , m се среща в редицата y1, y2, . . . , yn+m−1. 3) За всяко i = 1, 2, . . . , n + m −2 правата PiPi+1 е успоредна на една от координатните оси.",
+      "solution": "Решение. Да разгледаме n червени топки, номерирани с числата 1, 2, . . . , n, и m сини топки, номерирани с числата 1, 2, . . . , m. Нека Pi (xi, yi) , i = 1, 2, . . . , n + m −1 е произволен набор от точки в равнината, които удовлетворяват условията 1,2 и 3. Ще му съпоставим пермутация на множеството от всички топки по следното правило. На първо място поставяме червената топка с номер x1, на второ - синята топка с номер y1. Съгласно 3) отсечкать P1P2 е успоредна на една от координатните оси, следователно е изпълнено точно едно от равенствата x1 = x2 и y1 = y2. Ако x1̸ = x2 и y1 = y2, на трето място поставяме червената топка с номер x2; ако x1 = x2 и y1̸ = y2, там поставяме синята топка с номер y2. Продължаваме нататък по същия начин: ако за координатите на точките Pi−1 и Pi (2 ≦i ≦n+m−1) имаме xi−1̸ = xi и yi−1 = yi, на (i+1)-во място слагаме червената топка с номер xi; ако xi−1 = xi yi−1̸ = yi, там поставяме синята топка с номер yi. Съгласно 2 всяко от числата 1, 2, . . . , n (1, 2, . . . , m) се среща измежду абсцисите (ординатите) на разглежданите точки. Тогава не е трудно да се съобрази, че по описаното правило ще достигнем до еднозначно определено подреждане на всичките n + m на брой червени и сини топки. Ще отбележим само, че например синята топка с номер k, 1 ≦k ≦n, бива поставена в първия момент, когато при обхождането нд редицата P1, P2, . . . , Pn+m−1 достигнем до точка с ордината, равна на k. Такъв момент съществува съгласно 2. Построихме съответствие от множеството A на наборите от точки със свойствата 1), 2 и 3 в множеството B на онези пермутации на разглежданите n + m топки, в които на първите две места има съответно червена и синя топка. Непосредствено се съобразява, че това съответствие е взаимно еднозначно: всяка пермутация от B е съпоставена на единствен набор от A. Нека читателя обмисли сам доказателството на това твърдение, което е почти очевидно, но неприятно за описание и обяснение. Щом между множествата A и B има взаимно еднозначно съответствие, елементите на A са толкова, колкото и тези на B. Оттук лесно получаваме отговора на поставения въпрос. Тъй като червените топки са съответно m и n на брой, то първите две топки във всяка пермутация от B могат да се изберат по nm начина. За наредбата на останалите n + m −2 топки няма никакви ограничения, следователно те могат да се подредят по (n + m −2)! начина. Ето защо елементите на B са общо nm(n + m −2)! на брой. Толкова са и възможните разположения на точките P1, P2, . . . , Pn+m−1, за които са изпълнени условията 1), 2) и 3).",
+      "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "double_counting",
-        "circular_permutations"
+        "combinatorics",
+        "bijection",
+        "permutations"
       ],
       "confidence": "exact",
-      "reasoning": "Counts good permutations via circular arrangements and a minimal‑sum argument."
+      "reasoning": "Задачата включва комбинаторно броене чрез биекция с пермутации на цветни топки. Точка 8.6 (Пермутации и комбинации) е подходяща, тъй като се занимава с наредби и преброяване. Решението е елегантно и типично за олимпиади.",
+      "_crosslinked_from": "8.6",
+      "_crosslink_confidence": 0.75
     },
     {
-      "source": "OLI-2-Областен кръг-2012-11 кл · 2012-11 · Зад. 3",
-      "statement": "Разглеждаме ъгли, съставени от едно ъглово квадратче, 2012 хоризонтални съседни и 2012 вертикални съседни квадратчета.\nКолко най-много ъгли могат да се разположат върху безкрайна клетъчна дъска така, че всеки два ъгъла да имат поне едно общо квадратче?",
-      "solution": "Решение. Търсеният максимум е 16092. Да разгледаме ъглите, сочещи нагоре и надясно. Ще докажем, че има най-много 4023 такива ъгъла, всеки два от които имат поне едно общо квадратче. Да въведем стандартни координати на единичните квадратчета в равнината и да разгледаме върховете на всички ъгли. Ако за координатите $(a, b)$ и $(c, d)$ на върховете на два ъгъла е изпълнено $a < c$ и $b < d$ (или съответно $a > c$ и $b > d$), то двата ъгъла не се пресичат.\n\nНека най-горният и най-ляв връх е с координати $(i, j)$ и съответно най-долният и най-десен връх е $(p, q)$. За да се пресичат съответните ъгли е необходимо $p - i \\le 2011$ и $j - q \\le 2011$.\n\nДа забележим, че всеки друг връх е с координати $(a, b)$, където $i \\le a \\le p$ и $j \\le b \\le q$. От всички такива върхове да изберем връх с най-голяма втора координата. Да забележим, че ако преместим този връх едно квадратче наляво, условието за пресичане на ъглите е изпълнено. Това означава, че можем да приемем, че всички върхове с най-голяма втора координата са разположени един до друг, започвайки от квадратчето $(i, b)$. Аналогично, можем да считаме, че всички върхове с най-голяма първа координата са разположени един до друг, започвайки от квадратчето с координати $(c, q)$.\n\nСега разглеждаме върховете, ограничени от квадратчетата с координати $(i, b)$ за най-голямото $b$ и $(c, q)$ за най-голямото $c$. Повтаряме горната процедура и т.н. Ще получим, че всички върхове се съдържат в начупена линия, започваща от квадратчето $(i, j)$ и завършваща в квадратчето $(p, q)$, която се движи само надясно и надолу. Понеже такава начупена линия съдържа 4021 върха, получаваме, че можем да разположим най-много 4023 ъгли.\n\nАналогично за всяко от другите три разположения на ъглите имаме най-много 4023 ъгли, изпълняващи условието на задачата.\n\nСледователно има най-много $4\\cdot4023 = 16092$ ъгли. Ако изберем едно квадратче и разгледаме всички ъгли, които го съдържат, ще получим точно 16092 ъгли с исканото свойство.",
-      "answer": "16092 ъгли",
+      "source": "OLI-2-Областен кръг-2017-11 кл · 2017-11 · Зад. 11.4",
+      "statement": "Дадени са реалните числа $a_1, a_2, \\dots, a_{2017}$ със сбор 2017. Да се намери най-големия възможен брой на двойките $(i, j)$ за които $1 \\le i < j \\le 2017$ и $a_i + a_j < 2$.",
+      "solution": "Нека $a_1 = a_2 = \\dots = a_{2016} = 1 - \\epsilon$ и $a_{2017} = 1 + 2016\\epsilon$ за някое $0 < \\epsilon < 1$. Тогава $a_i + a_j < 2$ за $1 \\leq i < j \\leq 2016$ и следователно има $\\binom{2016}{2}$ двойки с исканото свойство.\n\nДа допуснем, че съществуват числа $a_1, a_2, \\dots, a_{2017}$ със сбор 2017, за които има повече от $\\binom{2016}{2}$ двойки с исканото свойство. Да разгледаме граф $G$ с върхове числата $a_1, a_2, \\dots, a_{2017}$, като два върха са свързани с ребро само когато сборът на съответните числа е по-малък от 2. Ако ребрата са повече от $\\binom{2016}{2} + 1$ изтриваме част от тях, за да получим граф с точно $\\binom{2016}{2} + 1$ ребра.\n\nПърво ще докажем с индукция по $k \\geq 2$, че в граф с $n = 2k$ върха и поне $\\binom{n-1}{2} + 1$ ребра, съществуват $k$ ребра без общи върхове.\n\nПри $n = 4$ графът има поне 4 ребра и лесно се вижда, че има две ребра без общ връх.\n\nДа допуснем, че твърдението е вярно за някое $n = 2k$ и да разгледаме граф с $2k + 2$ ребра и $\\binom{2k+1}{2} + 1$ ребра. Това означава, че от всеки връх излиза поне едно ребро (тъй като липсващите ребра са най-много $2k$). Понеже липсващите ребра имат $4k$ върха, то съществува връх $A$, който не е свързан с поне два други върха. Като\n\n3\n\nСвалено от Klasirane.com\n\nпремахнем върха $A$ и свързан с него връх $B$, получаваме граф с $2k$ върха и повече от $\\binom{2k-1}{2} + 1$ ребра. Като изтрием необходимия брой ребра попадаме в индукционното допускане.\n\nСега да разгледаме графа $G$ и да изберем всички върхове, всеки от които не е свързан с поне един връх. Тъй като липсващите ребра са 2015 и $2015 \\neq \\frac{k(k+1)}{2}$, то съществуват два такива върха $P$ и $Q$, които са свързани с ребро. Това означава, че едното от числата, съответстващи на $P$ и $Q$ е по-малко от 1. Да изтрием този връх от графа $G$. Получаваме граф с 2016 върха и поне $\\binom{2015}{2} + 1$ ребра. Съгласно доказаното могат да се изберат 1008 ребра без общи върхове. Това означава, че сборът на всички числа е по-малък от 2017, противоречие.\n\nСледователно търсеният брой е $\\binom{2016}{2}$.",
+      "answer": "\\binom{2016}{2}",
       "difficulty": "hard",
       "techniques": [
-        "double_counting",
-        "grid_path",
-        "extremal_combinatorics"
+        "extremal_principle",
+        "graph_theory_basics"
       ],
       "confidence": "exact",
-      "reasoning": "Extremal argument on a grid, ordering of vertices and counting maximal non‑intersecting set."
+      "reasoning": "Задачата използва екстремален принцип и графови аргументи за максимизиране на брой двойки. Основната точка е 8.15 (Екстремален принцип). Трудността е твърда поради индукцията и комбинаторната сложност.",
+      "_crosslinked_from": "8.15",
+      "_crosslink_confidence": 0.7
     },
     {
-      "source": "OLI-3-Национален кръг-2016-9-12 кл · 2016-None · Зад. 6",
-      "statement": "Дадено е естествено число n и квадрат със страна n, който е разделен на n² единични квадратчета. Единичните квадратчета са оцветени в n различни цвята така, че от всеки цвят да има оцветени точно n квадратчета. Да се докаже, че съществува число N, такова, че за всяко n > N е изпълнено следното: съществува квадрат със страна √n, успоредни на страните на дадения квадрат, който съдържа изцяло квадратчета от поне 4 различни цвята.",
-      "solution": "Решение. Да означим [√n] = x. Да разгледаме първо следната задача: ако върху безкрайна дъска оцветим по някакъв начин n клетки, колко най-малко квадрата със страна x съдържат оцветени клетки.\nНека оцветените клетки са разположени в a реда, като редът с най-много (b на брой) оцветени клетки ще наричаме главен. Да премахнем временно оцветените клетки и да започнем да ги добавяме обратно една по една, започвайки от най-лявата на главния ред и продължавайки по главния ред отляво надясно. При връщането на първата клетка маркираме x² квадрата със страна x, които я съдържат, а после при връщането на всяка клетка от главния ред маркираме по x немаркирани досега квадрата със страна x, които съдържат въпросната клетка. По-нататък, при връщането на най-лявата от разположените над главния ред оцветени клетки маркираме x нови квадрата, а след това всяка клетка в същия ред дава поне по един нов квадрат и т.н. Аналогично се разсъждава и за клетките под главния ред.\nГорните разсъждения показват, че търсеният брой квадрати е\nA = x² + (a+b−2)x + n−(a+b−1) = x² + (a+b)(x−1)−2x+n+1.\nТъй като n ≥ [√n]² = x², a+b ≥ 2√(ab) ≥ 2√n и ab ≥ n (последното поради избора на a и b), получаваме\nA ≥ x² + 2x(x−1)−2x+x²+1 = (2x−1)².\nКвадратите със страна x, които имат поне една обща клетка с дадения квадрат, са (n+x−1)² на брой. Тъй като n(2x−1)² > 3(n+x−1)² за достатъчно големи n, поне един квадрат със страна x ще е маркиран от поне 4 различни цвята.",
+      "source": "OLI-2-Областен кръг-2020-12 кл · 2020-12 · Зад. 12.4",
+      "statement": "Нека $S = \\{1, 2, \\dots, 2020\\}$, тоест множеството от цели числа от 1 до 2020. За подмножества $A$ и $B$ на $S$ казваме, че $A$ свързва $B$, ако $A$ съдържа както елемент от $B$, така и елемент, който не е от $B$. Колко най-много непразни различни подмножества на $S$ могат да бъдат избрани, така че: за всеки три от избраните подмножества $A, B$ и $C$, ако $A$ свързва $B$ и $B$ свързва $C$, то $A$ и $C$ нямат общ елемент?",
+      "solution": "Решение. Ще разгледаме по-общата задача, където Sn = {1, 2, . . . , n} и търсим максимална фамилия F от непразни подмножества на Sn с желаното свойство. Първо да допуснем, че има три различни множества A, B и C от F, за които A ∩ B ∩ C ⁄= ∅. Тъй като A ⁄= B, без ограничение на общността нека A \\ B ⁄= ∅ и следователно A свързва B. Тогава, ако B \\ C ⁄= ∅, то A свързва B и B свързва C. Но A ∩ C ⁄= ∅, което е противоречие. Следователно B \\ C = ∅, откъдето: B ⊂ C. (1) Сега C ⁄= B, откъдето C \\ B ⁄= ∅ и следователно C свързва B. Оттук, както и по-горе, ако A свързва C, стигаме до противоречие. Следователно A не свързва C, което влече: A \\ C = ∅, тоест A ⊂ C. (2) Следователно C свързва A и от това, че A свързва B, получаваме, че B ∩ C = ∅, което е противоречие. С това доказахме, че за всеки три различни множества A, B, C ∈ F е в сила, че A ∩ B ∩ C = ∅. Следователно: ∀a ∈ Sn( има най-много две различни множества A, B ∈ F за които a ∈ A и a ∈ B). (3) Нека Fi = {A ∈ F | | A| = i}. Тогава от горното получаваме, че: 2n = 2|Sn| \\ge  ∑ i|Fi|. (4) Следователно: 2n + |F1| \\ge  2 ∑ |Fi| = 2|F |. (5) Тъй като |F1| \\le  n, то |F | \\le  3n2 , следователно |F | \\le  [3n/2]. Остана да забележим, че ако F = {{i} | i \\le  n}∪{ (2i−1, 2i) | 2 \\le  2i \\le  n}, то |F | = 3n2 = [3n/2] при n четно и |F | = 3n−12 = [3 n/2] при n нечетно. Наистина, ако A свързва B и B е непразно, то |A| > |B|. Тогава ако A свързва B и B свързва C, то |A| \\ge  | C| + 2. Но всяко множество във F е с поне 1 и най-много два елемента, така че такива A, B и C във F няма. Следователно търсеният максимум е [3n/2]. В частност при n = 2020 получаваме:",
       "answer": null,
       "difficulty": "hard",
       "techniques": [
-        "pigeonhole",
-        "double_counting"
+        "extremal_set_theory",
+        "double_counting",
+        "combinatorial_inequalities"
       ],
       "confidence": "exact",
-      "reasoning": "Дълъг броен аргумент за оцветяването, включва оценка на брой квадрати и прилагане на принципа на Дирихле."
+      "reasoning": "Задачата е комбинаторна, търси максимален брой подмножества с дадено свойство, което се отнася до екстремален принцип (8.15). Трудността е hard поради нетривиалната конструкция.",
+      "_crosslinked_from": "8.15",
+      "_crosslink_confidence": 0.85
     },
     {
-      "source": "OLI-3-Национален кръг-2024-9-12 кл · 2024-None · Зад. 5",
-      "statement": "Дадена е фамилия F от 4-елементни подмножества („четворки“) на дадено множество с 5^m елемента, където m е фиксирано естествено число. Известно е, че сечението на никои две четворки от F не се състои от точно два елемента. Да се намери максималната възможна стойност за броя на четворките |F| в F.",
-      "solution": "Решение. За краткост, нека означим с n = 5^m, а множеството с 5^m елемента — с A_n. Ще докажем, че отговорът е n(n − 1)/4. Пример за такава конструкция се състои от всички 4-елементни подмножества, съответстващи на права в афинното m-мерно пространство над крайното поле F_5 = Z/5Z (примерът може лесно да се конструира и експлицитно, посредством индукция). Наистина, броят точки в F_5^m е именно n = 5^m, всяка права минава през точно 5 от тези точки, а всяка двойка точки се съдържа в точно една права и следователно общия брой прави е\nC(n,2)/C(5,2) = n(n − 1)/20.\nТъй като на всяка права съответстват точно C(5,4) = 5 4-елементни подмножества, то генерирахме n(n − 1)/4 множества с исканото свойство.\nОстава да покажем, че това е максималната мощност за |F|. Без ограничение на общността, нека си мислим, че A_n = {1,2,...,n}. За всяка двойка 1 ≤ i < j ≤ n, да означим с d_ij броят на елементите на F, съдържащи едновременно и i и j. Ако d_ij ≤ 3, то броейки по два начина двойките елементи на A_n, участващи в елемент на F, получаваме отново n(n − 1)/4 за горна граница. По-детайлно, всеки елемент на F съдържа C(4,2) = 6 различни двойки елементи на A_n, а всяка двойка се среща най-много 3 пъти, т.е.,\n6 · |F| = ∑_{1≤i<j≤n} d_ij ≤ 3C(n,2) ⇒ |F| ≤ n(n − 1)/4.\nНека сега, б.о.о., d_12 = k > 3. Съгласно свойството на F всеки два различни негови елемента, съдържащи {1,2} се пресичат в точно 3 елемента на A_n. Тъй като k > C(3,2) = 3, те трябва задължително да съдържат и трети общ елемент, да кажем 3, и могат да бъдат описани по следния начин:\n{1,2,3,4}, {1,2,3,5}, ..., {1,2,3,k + 3}.\nНо от k ≥ 4, свойството в условието води до d_1i = d_2i = d_3i = 1 за i ∈ {4,5,...,k + 3}, както и d_13 = d_23 = k. Следователно\nd_12 + d_13 + d_23 + ∑_{i=4}^{k+3}(d_1i + d_2i + d_3i) = 6k.\nБроят на различните двойки (i,j), участващи в горния израз посредством d_ij е 3 + 3k, и значи усреднената стойност за d_ij в тази група е под 2, което отново е по-малко от 3. За да завършим доказателството, остава единствено да отбележим, че никои две подмножества {d_ij} от горния тип нямат общ елемент.",
-      "answer": "max |F| = 5^m(5^m − 1)/4.",
+      "source": "OLI-2-Областен кръг-2023-11 кл · 2023-11 · Зад. 11.4",
+      "statement": "Да се намерят всички естествени числа $n$, за които от група от $2n$ ученици могат да се изберат 14 групи, всяка от по $n$ ученици, така, че всеки двама ученици да участват заедно в точно 3 от избраните групи.",
+      "solution": "Решение. Всички двойки ученици са $\binom{2n}{2}$, а във всяка група се срещат точно $\binom{n}{2}$ двойки. От условието сега следва, че\n\n$$3\binom{2n}{2} = 14\binom{n}{2} \n\nequiv 6n(2n-1) = 14n(n-1) \n\nequiv n = 4.$$\n\nСледователно от 8 ученици трябва да образуваме 14 групи от по 4 ученика всяка, така че всеки двама ученици да се срещат в точно три групи. Пример за такова разпределение е следния:\n\n$$\n\b\\egin{array}{l} (1, 2, 3, 4), (5, 6, 7, 8), (1, 2, 5, 6), (3, 4, 7, 8), (1, 2, 7, 8), (3, 4, 5, 6), (1, 3, 5, 7), \\\\ (2, 4, 6, 8), (1, 3, 6, 8), (2, 4, 5, 7), (1, 4, 5, 8), (2, 3, 6, 7), (1, 4, 6, 7), (2, 3, 5, 8) \n\\end{array}\n$$\n\nОценяване. (7 точки) 3 т. за намиране на $n = 4$; 4 т. за примера.",
+      "answer": "n=4",
       "difficulty": "hard",
       "techniques": [
         "double_counting",
-        "construction",
-        "finite_geometry"
+        "combinatorial_design",
+        "extremal_set_theory"
       ],
       "confidence": "exact",
-      "reasoning": "Uses double counting of pairs inside 4‑sets and a construction from affine geometry over F_5 to prove the maximal size n(n‑1)/4."
+      "reasoning": "Комбинаторна задача, използваща двойно броене за установяване на уравнение и построяване на пример, което отговаря на точка 8.3. Трудността е hard поради комбинаторния инсайт, необходим за конструкцията."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2025-11 кл · 2025-11 · Зад. 11.3",
+      "statement": "Нека $n$ е нечетно естествено число и $a_1, a_2, \\dots, a_n$ е произволна пермутация на числата $1, 2, \\dots, n$. Да се намери най-голямата стойност на израза:\n\n$$|a_1 - 1| + |a_2 - 2| + \\dots + |a_n - n|.$$",
+      "solution": "Решение. Перви подход. Ще докажем, че\n\n$$|a_1 - 1| + |a_2 - 2| + \\dots + |a_n - n| \\leq \\frac{n^2 - 1}{2}.$$\n\nДа означим с $S$ израза от условието на задачата. Тъй като $|a_i - i| = a_i - i$ или $|a_i - i| = -a_i + i$, то от всяко събираемо в $S$ след „разкриване“ на модула ще получим едно положително и едно отрицателно число. Освен това всяко $k, 1 \\leq k \\leq n$ след разкриване на модулите ще се среща два пъти в $S$. Следователно\n\n$$S = \\pm 1 \\pm 1 \\pm 2 \\pm 2 \\pm 3 \\pm \\dots \\pm n \\pm n,$$\n\nкато броят на плюсовете е равен на броя на минусите. Най-голямата стойност на $S$ се достига когато първите $n$ събираеми са със знак минус, а следващите $n$ – със знак плюс.\n\nТогава\n\n$$\\begin{array}{l} S = - 1 - 1 - 2 - 2 - \\cdots - \\frac { n - 1 } { 2 } - \\frac { n - 1 } { 2 } - \\frac { n + 1 } { 2 } + \\frac { n + 1 } { 2 } + \\cdots + n = \\\\ = 2 \\left( - 1 - 2 - \\cdots - \\frac { n - 1 } { 2 } \\right) - \\frac { n + 1 } { 2 } + \\frac { n + 1 } { 2 } + 2 \\left( \\frac { n + 3 } { 2 } + \\cdots + n \\right) = \\\\ = 2 \\left( 1 + 2 + \\cdots + n - \\frac { n + 1 } { 2 } - 2 ( 1 + 2 + \\cdots \\frac { n - 1 } { 2 } ) \\right) = \\\\ = 2 \\left( \\frac { n ( n + 1 ) } { 2 } - \\frac { n + 1 } { 2 } - \\frac { n ^ { 2 } - 1 } { 4 } \\right) = \\frac { n ^ { 2 } - 1 } { 2 } \\end{array}$$\n\nЛесно се вижда, че за всяка пермутация, за която са изпълнени равенствата\n\n$$\\left\\{ a _ { 1 } , a _ { 2 } , \\ldots , a _ { \\frac { n - 1 } { 2 } } \\right\\} = \\left\\{ \\frac { n + 3 } { 2 } , \\frac { n + 5 } { 2 } , \\ldots , n \\right\\} , a _ { \\frac { n + 1 } { 2 } } = \\frac { n + 1 } { 2 }$$\n\n$$\\left\\{ a _ { \\frac { n + 3 } { 2 } } , \\ldots a _ { n } \\right\\} = \\left\\{ 1 , 2 , \\ldots \\frac { n - 1 } { 2 } \\right\\}$$\n\nе вярно равенството $S = \\frac { n ^ { 2 } - 1 } { 2 }$.\n\nВтори подход. За пермутацията $a _ { k } : = n - k + 1 , k = 1 , 2 , \\ldots , n$ изразът има стойност $\\frac { n ^ { 2 } - 1 } { 2 }$. Сега за произволна пермутация ще докажем неравенството\n\n$$\\left| a _ { 1 } - 1 \\right| + \\left| a _ { 2 } - 2 \\right| + \\cdots + \\left| a _ { n } - n \\right| \\leq \\frac { n ^ { 2 } - 1 } { 2 } .$$\n\nВърху числовата ос да разгледаме точките $1 , 2 , \\ldots , n$ и за всяко $i = 1 , 2 , \\ldots , n$ да свържем със стрелка от $a _ { i }$ към $i$. Дължина на стрелката ще наричаме числото $\\left| a _ { i } - i \\right|$. Във всяка точка $1 \\leq i \\leq n$ влиза една стрелка и излиза една стрелка. Искаме да оценим сумата от дължините на стрелките. Да разгледаме интервала $[ i , i + 1 ] , 1 \\leq i \\leq n - 1$ и да видим колко стрелки го покриват. Отляво на този интервал има $i$ възможни върхове $( 1 , 2 , \\ldots , i )$, които могат да са начало/край на покриваща го стрелка. От дясната му страна има $n - i$ такива $( i + 1 , i + 2 , \\ldots , n )$. Всеки от тези върхове може да участва максимум в две стрелки – като начало и като край. Така максималният брой стрелки, които могат да покриват интервала $[ i , i + 1 ]$, е равен на $2 \\cdot \\min ( i , n - i )$. Ако си представим дължината на всяка стрелка като сума на единичните интервали, които тя покрива, от казаното следва, че сумата на дължините на стрелките е най-много:\n\n$$\\sum _ { i = 1 } ^ { n - 1 } 2 \\cdot \\min ( i , n - i ) = 4 \\sum _ { i = 1 } ^ { ( n - 1 ) / 2 } i = \\frac { ( n - 1 ) ( n + 1 ) } { 2 } .$$",
+      "answer": "$\\frac{n^2 - 1}{2}$",
+      "difficulty": "hard",
+      "techniques": [
+        "permutation",
+        "absolute_value",
+        "extreme_value"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата търси максималната стойност на сума от абсолютни разлики за пермутация. Решението използва комбинаторен подход с разглеждане на знаците и достигане до екстремална стойност.",
+      "_crosslinked_from": "8.15",
+      "_crosslink_confidence": 0.7
+    },
+    {
+      "source": "OLI-2-Областен кръг-2026-12 кл · 2026-12 · Зад. 12.3",
+      "statement": "За естествено число $d \\ge  3$ крайна група ученици наричаме $d$-добра, ако всеки ученик в групата има точно $d$, $2d$ или $3d$ приятели в нея и са изпълнени следните условия:\n\n- всеки ученик има поне един приятел, който има различен брой приятели от него\n- броят на учениците с точно $d$ приятели е равен на 11 пъти точен квадрат на естествено число\n- броят на учениците с точно $2d$ приятели е точен квадрат на естествено число\n- броят на учениците с точно $3d$ приятели е точен квадрат на естествено число\n\nДа се намерят всички естествени числа $d \\ge  3$, за които съществува $d$-добра група ученици.",
+      "solution": "Нека $K_{a,b}$ бъде пълният двуделен граф с $a$ върху в единия и $b$ върху в другия си дял. Да разгледаме графа, съставен от $4d$ независими копия на $K_{3d,2d}$, $d$ копия на $K_{3d,d}$, $4d$ копия на $K_{2d,d}$. Тогава бройката върхове от степен $3d$ е $(2 \\cdot 4d + d) \\cdot d = 9d^2$, бройката върхове от степен $2d$ е $(3 \\cdot 4d + 4d)d = 16d^2$, а тези от степен $d$ са $(3 \\cdot d + 2 \\cdot 4d) \\cdot d = 11d^2$.",
+      "answer": "Всяко $d ≥ 3$.",
+      "difficulty": "hard",
+      "techniques": [
+        "graph_theory",
+        "bipartite_graphs",
+        "counting"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата дефинира 'd-добра' група като граф с определени степени. Решението дава конструкция с пълни двуделни графи (K_{a,b}), което е основна техника в теорията на графите. Трудността е hard поради комбинаторната конструкция и изискването за квадрати на бройките.",
+      "_crosslinked_from": "9.1",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-3-Национален кръг-1984-9-12 кл · 1984-None · Зад. 3",
+      "statement": "В пространството са дадени такива точки P1, P2, . . . , Pn, Q(n ≧4), че никои четири от тях не лежат в една равнина. Да се докаже, че ако за всяка тройка различни точки Pα, Pβ, Pγ съществува такава точка Pδ, че тетраедърът PαPβPγPδ съдържа точката Q, то n е четно число.",
+      "solution": "Да разгледаме равнината, определена от точките P1, P2, Q. Част от точките P3, P4, . . . , Pn са от една страна на тази равнина, а останалите - от другата. Въртим полуравнината, определена от точките Q, P1, P2, около правата QP1. При движението си тя преминава през точките (да кажем) P3, P4, . . . , Pk, които са наредени по реда на това преминаване. Да разгледаме точките P1, P2, P3. По условие има такава точка Ps, че тетраедърът P1P2P3Ps съдържа Q. Ясно е, че точката Ps лежи в допълнителния тристенен ъгъл на QP1P2P3. Ще докажем, че в този ъгъл има само една такава точка. Наистина, ако Pt е една друга такава, за точките P1, Ps, Pi ще има точка Pr, за която тетраедърът P1PsPtPr съдържа Q. Но тази точка Pr ще трябва да лежи между полуравнините, определени от P1, P2, Q п P1, P3, Q. Такава точка обаче няма. Аналогично, обхождайки точките от едното нолупространство, построяваме еднозначно съответствие на тези точки от допълнителното полупространство, т. е. n е четно число.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "spatial_geometry",
+        "bijection"
+      ],
+      "confidence": "partial",
+      "reasoning": "Задачата изисква построяване на биекция между две множества точки в пространството, което е комбинаторна техника. Основната точка 8.3 (двойно броене) е най-близка, но не е точна съвпадение. Алтернативи са 8.15 (екстремален принцип) и 9.11 (векторни пространства), но увереността е partial поради нестандартността на задачата. Трудността е hard поради необходимостта от пространствена интуиция и нетривиална конструкция."
+    },
+    {
+      "source": "OLI-3-Национален кръг-1996-9-12 кл · 1996-None · Зад. 6",
+      "statement": "A square table of size $7 \\times 7$ with the four corner squares deleted is given.\n\nFigure 4.\n\na) What is the smallest number of squares which need to be colored black so that a 5-square entirely uncolored Greek cross (Figure 4) cannot be found on the table?\n\nb) Prove that it is possible to write integers in each square in a way that the sum of the integers in each Greek cross is negative while the sum of all integers in the square table is positive.\n\n![img-0.jpeg](img-0.jpeg)",
+      "solution": "Solution. Denote the square in row $i$ and column $j$ by $(i, j)$. Note that a cross is uniquely determined by its central cell. The cross with central cell $(i, j)$ is denoted by $C_{ij}$, $2 \\leq i, j \\leq 6$. The number of all crosses is 25.\n\na) The squares $(1, i)$, $(i, 1)$, $(7, i)$, $(i, 7)$, $i = 2, \\ldots, 6$, are included in exactly one cross; the squares $(2, 2)$, $(2, 6)$, $(6, 2)$, $(6, 6)$ are included in exactly 3 crosses; the squares $(2, i)$, $(i, 2)$, $(6, i)$, $(i, 6)$, $i = 3, 4, 5$ — in exactly 4 crosses and finally, the squares $(i, j)$, $3 \\leq i, j \\leq 5$, are included in exactly 5 crosses. Since $C_{22}$ contains a colored square, then at least one of $(1, 2)$, $(2, 1)$, $(2, 2)$, $(2, 3)$, $(3, 2)$ should be colored. Similarly, at least one of $(2, 7)$, $(1, 6)$, $(2, 6)$, $(2, 5)$, $(3, 6)$, at least one of $(7, 2)$, $(6, 1)$, $(6, 2)$, $(5, 2)$, $(6, 3)$ and at least one of $(6, 7)$, $(7, 6)$, $(6, 6)$, $(6, 5)$, $(5, 6)$ are colored. Any of them is contained in at most four crosses (the first two in each quintuple in 1 cross, the third one in 3 crosses and the remaining two — in 4 crosses). Denote by $x$ the number of the colored squares among $(i, j)$, $3 \\leq i, j \\leq 5$. The number of crosses containing a colored square is not greater than $4.4 + 5x$, whence\n\n$$16 + 5x \\geq 25. \\tag{1}$$\n\nThus, $x \\geq 2$ and the number of the colored cells is at least 6.\n\nSuppose that the number of the colored squares is 6. Then $x = 2$. Moreover, according (1) there exists at most one Greek cross containing more than one colored square. If two squares with a common side or a common vertex are colored, then it is easy to check that there are two crosses with at least two colored squares each. Therefore, the squares $(4, 4)$, $(3, 3)$, $(3, 5)$, $(5, 3)$, $(5, 5)$ should be uncolored. With no loss of generality, let the two colored squares be $(4, 3)$ and $(4, 5)$. But now the crosses $C_{34}$ and $C_{54}$ do not contain colored squares.\n\nTo prove that the minimal number of colored squares is 7, color for example the squares $(2, 5)$, $(3, 2)$, $(3, 3)$, $(4, 6)$, $(5, 4)$, $(6, 2)$, $(6, 5)$.\n\nb) Let us write $-5$ in each of the colored squares from a) and 1 in the remaining squares. Since every Greek cross contains a colored square, the sum of the numbers in its squares does not exceed $1 + 1 + 1 + 1 - 5 = -1 < 0$. The sum of all numbers in the table is $7.(-5) + (45 - 7).1 = 3 > 0$ and we are done.\n\nDownloaded from Klasirane.com",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "combinatorics",
+        "extremal_principle",
+        "sums"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата има две части: а) намиране на минимален брой черни квадрати, които блокират гръцки кръст, и б) конструкция с цели числа. Решението използва комбинаторика и екстремален принцип за част а) и конструкция за част б). Това е комбинаторна задача с екстремален принцип.",
+      "_crosslinked_from": "8.15",
+      "_crosslink_confidence": 0.95
+    },
+    {
+      "source": "OLI-3-Национален кръг-2013-9-12 кл · 2013-None · Зад. 3",
+      "statement": "Всички целочислени точки в равнината са оцветени в три цвята. Да се намери най-малкото реално положително число $S$ със следното свойство: за всяко такова оцветяване съществува триъгълник с лице $S$, върховете на който са оцветени в един и същи цвят?",
+      "solution": "Решение. Да разгледаме следните две оцветявания:\n\n(1) ToKkata $(x,y)$ oIbTeBame B Ibeta $i$ $1\\leq i\\leq 2$ , TaKbB, Ye $x\\equiv i$ (mod 2),\n(2) ToKkata $(x,y)$ oIbTeBame B Ibeta $i$ $1\\leq i\\leq 3$ , TaKbB, Ye $x\\equiv i$ (mod 3).\n\nЯсно е, че числото $S$ (ако съществува) трябва да бъде естествено или половинка на естествено. Оцветяването (1) показва, че $S$ може да е 1, 2, 3 или по-голямо, а оцветяването (2) дава, че $S$ може да е $\\frac{3}{2}$, 3 или по-голямо. Следователно, ако $S$ съществува, то $S \\ge 3$.\n\nЩе докажем, че при произволно оцветяване винаги има едноцветен триъгълник с лице 3.\n\nДа отбележим, че за някое $d \\in \\{1, 2, 3\\}$ има едноцветна двойка точки от вида $A = (x, y)$, $B = (x + d, y)$. Наистина, достатъчно е да разгледаме точките $(0, 0)$, $(1, 0)$, $(2, 0)$, $(3, 0)$. Сега, ако $m \\equiv AB$ и $l$ е успоредна на $m$ и на разстояние $\\frac{6}{d}$ от $m$, то правата $l \\parallel Ox$ е двуцветна или имаме триъгълник от нужния вид.\n\nЩе казваме, че цветът $c$ в правата $l$ реализира разстоянието $a$, ако има две точки от цвят $c$ върху правата $l$ на разстояние $a$.\n\nАко има разстояние $a \\in \\{1, 2, 3, 6\\}$, което се реализира и от двата цвята в $l$, то правата $p \\parallel l$ на разстояние $\\frac{6}{a}$ от $l$ трябва да бъде едноцветна (в противен случай бихме получили триъгълник от нужния вид). Ако такова разстояние не съществува, то един от цветовете в $l$ непременно реализира всички разстояния в множеството $\\{2, 3, 6\\}$. (Наистина, да предположим, че цветът $c_1$ не реализира разстоянието 1, и че поне една точка $P_0$ от $l$ е оцветена в $c_1$. Съседните на $P_0$ – точките $P_{-1}$ и $P_1$ – трябва в такъв случай да бъдат оцветени в $c_2$, така че $c_2$ реализира разстоянието 2. Оттук следва, че $c_1$ не реализира 2, и че точките $P_{-2}$ и $P_2$ са оцветени в $c_2$. Както и преди, $c_2$ реализира 3, $c_1$ не реализира 3, и $P_{-3}$ и $P_3$ са оцветени в $c_2$. Но $c_2$ вече реализира всички разстояния в $\\{2, 3, 6\\}$!) И в двата случая, има права $p \\parallel Ox$ и цвят $c$ от $p$, който реализира всички разстояния в множеството $\\{2, 3, 6\\}$ (или вече сме намерили триъгълник от нужния вид).\n\nДа разгледаме правите $u_1$, $u_2$, $u_3$, успоредни на $p$ и такива, че $u_i$, $i = 1, 2, 3$, е разположена на разстояние $i$ над $p$. Тогава от горното следва, че всички тези прави са двуцветни. Да разгледаме деветте точки, в които правите $u_1$, $u_2$, $u_3$ пресичат правите $x = 0$, $x = 3$, $x = 6$. Лесно се вижда, че три от тези девет точки са върхове на едноцветен триъгълник с лице 3.\n\nОценяване: (7 точки) 2 т. за конструкцията, 5 т. за съществуването на едноцветен триъгълник, в т.ч.: 1 т. за съществуването на двуцветна права, 3 т. за пълно доказателство на съществуването на правата $p$, 1 т. за довършване.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "ramsey_theory",
+        "combinatorial_geometry",
+        "extremal_combinatorics"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква намиране на минимално лице за едноцветен триъгълник в оцветена равнина, като се използват специфични оцветявания и комбинаторни аргументи, свързани с теоремата на Рамзи за гарантиране на монохроматичен триъгълник.",
+      "_crosslinked_from": "9.6",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-3-Национален кръг-2016-9-12 кл · 2016-None · Зад. 6",
+      "statement": "Дадени са естествено число $n$ и квадрат със страна $n$, който е разделен на $n^2$ единични квадратчета. Единичните квадратчета са оцветени в $n$ различни цвята така, че от всеки цвят да има оцветени точно $n$ квадратчета. Да се докаже, че съществува число $N$, таково, че за всяко $n > N$ е изпълнено следното: съществува квадрат със страни $√{n}$, успоредни на страните на дадения квадрат, който съдържа изцяло квадратчета от поне 4 различни цвята.",
+      "solution": "Да означим $[√n] = x$. Да разгледаме първо следната задача: ако върху безкрайна дъска оцветим по някакъв начин $n$ клетки, колко най-малко квадрата със страна $x$ съдържат оцветени клетки.\n\nНека оцветените клетки са разположени в $a$ реда, като редът с най-много ($b$ на брой) оцветени клетки ще наричаме главен. Да премахнем временно оцветените клетки и да започнем да ги добавяме обратно една по една, започвайки от най-лявата на главния ред и продължавайки по главния ред отляво надясно. При връщането на първата клетка маркираме $x^2$ квадрата със страна $x$, които я съдържат, а после при връщането на всяка клетка от главния ред маркираме по $x$ немаркирани досега квадрати със страна $x$, които съдържат въпросната клетка.\n\nСвалено от Klasirane.com\n\nпо-нататък, при връщането на най-лявата от разположените над главния ред оцветени клетки маркираме $x$ нови квадрати, а след това всяка клетка в същия ред дава поне по един нов квадрат и т.н. Аналогично се разсъждава и за клетките под главния ред.\n\nГорните разсъждения показват, че търсеният брой квадрати е\n\n$$A = x^2 + (a + b - 2)x + n - (a + b - 1) = x^2 + (a + b)(x - 1) - 2x + n + 1.$$\n\nТъй като $n \\ge  [√n]^2 = x^2$, $a + b \\ge  2√(ab) \\ge  2√n$ и $ab \\ge  n$ (последното поради избора на $a$ и $b$), получаваме\n\n$$A \\ge  x^2 + 2x(x - 1) - 2x + x^2 + 1 = (2x - 1)^2.$$\n\nКвадратите със страна $x$, които имат поне една обща клетка с дадения квадрат, са $(n + x - 1)^2$ на брой. Тъй като $n(2x - 1)^2 > 3(n + x - 1)^2$ за достатъчно големи $n$, поне един квадрат със страна $x$ ще е маркиран от поне 4 различни цвята.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "combinatorics",
+        "pigeonhole_principle",
+        "extremal_principle"
+      ],
+      "confidence": "exact",
+      "reasoning": "Комбинаторна задача за оцветяване на квадрат, използваща принципа на Дирихле и екстремален принцип.",
+      "_crosslinked_from": "8.15",
+      "_crosslink_confidence": 0.75
     }
   ]
 }

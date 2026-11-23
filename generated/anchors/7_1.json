@@ -1,0 +1,143 @@
+{
+  "point_id": "7.1",
+  "total": 9,
+  "by_difficulty": {
+    "easy": 0,
+    "medium": 2,
+    "hard": 7
+  },
+  "problems": [
+    {
+      "source": "OLI-3-Национален кръг-2006-9-12 кл · 2006-None · Зад. 2",
+      "statement": "Нека $\\mathbb{R}^+$ е множеството на положителните реални числа и функцията $f : \\mathbb{R}^+ \\to \\mathbb{R}^+$ е такава, че\n\n$$f(x + y) - f(x - y) = 4\\sqrt{f(x)f(y)}$$\n\nза произволни $x > y > 0$.\n\na)Ia ce IOKaKe, Ye \\(f(2x) = 4f(x)\\) 3a BCKo \\(x\\in \\mathbb{R}^{+}\\)\n6)Ja ce HamepT BCnKn TaKHBa yHKHH.",
+      "solution": "а) Понеже $f(x+y) - f(x-y) > 0$, то $f$ е (строго) растяща функция. Следователно $f(x)$ има граница $l \\ge 0$ при $x \\to 0$, $x > 0$ (докажете!). Тогава при $x, y \\to 0$, $x > y > 0$, получаваме, че $l - l = 4\\sqrt{l^2}$, т.е. $l = 0$. Сега да фиксираме $x$. При $y \\to 0$, $y > 0$ следва, че $f(x+y) - f(x-y) \\to 0$. Тъй като $f$ е монотонна функция, заключаваме, че тя е непрекъсната в $x$. Накрая при $y \\to x$, $y < x$, получаваме, че $f(2x) = 4f(x)$.\n\nб) При $x = ny > 0$, където $n \\ge 2$ е естествено число, следва, че $f((n+1)y) = f((n-1)y) + 4\\sqrt{f(ny)f(y)}$. Понеже $f(2y) = 4f(y)$ по индукция заключаваме, че $f(ny) = n^2 f(y)$. Полагаме $f(1) = c > 0$. Тогава $f(n) = n^2 c$. Сега при $p, q \\in \\mathbb{N}$ имаме, че $c p^2 = f(q \\cdot p/q) = q^2 f(p/q)$, т.е. $f(p/q) = c(p/q)^2$. Тъй като $f$ е непрекъсната функция, следва, че $f(x) = cx^2$ за всяко $x > 0$. Обратно, функциите от този вид изпълняват условието на задачата.\n\nСвалено от Klasirane.com\n\n─── Стр. 2 ───\nЗабележка. Може да се докаже, че функция, изпълняваща даденото условие, е диференцируема. Тогава от равенството $$\\frac{f(x+y)-f(x-y)}{2y} = 2\\sqrt{f(x)}\\frac{\\sqrt{f(y)}}{y}$$ при $$y \\to 0$$, $$y > 0$$, следва, че $$f'(x) = 2c\\sqrt{f(x)}$$. Оттук $$(\\sqrt{f(x)})' = c$$, т.е. $$f(x) = c^2x^2$$.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "functional_equations",
+        "cauchy_equation",
+        "induction"
+      ],
+      "confidence": "exact",
+      "reasoning": "Функционалното уравнение прилича на уравнение на Коши, но с разлика. Решението използва свойства на монотонност и непрекъснатост, и стига до квадратична функция. Това е класическа функционална задача, която се отнася до уравнение на Коши (7.1)."
+    },
+    {
+      "source": "OLI-3-Национален кръг-2013-9-12 кл · 2013-None · Зад. 2",
+      "statement": "Да се намерят всички функции $f : \\mathbb{R} \\to \\mathbb{R}$, ограничени в интервала $(0, 1)$ и такива, че\n\n$$x^2 f(x) - y^2 f(y) = (x^2 - y^2)f(x + y) - xyf(x - y)$$\n\nза произволни $x, y \\in \\mathbb{R}$.",
+      "solution": "Решение. Ако числата $x > y + 1/2$ пробягват интервала $(0, n)$, то $x + y$ пробягва интервала $(0, 2n - 1/2)$. Тогава по индукция заключаваме, че $f$ е ограничена в интервалите от вида $(0, 2^k + 1/2)$. При $0 < x < y$ следва, че $f$ е ограничена и в интервалите от вида $(-2^k, 0)$. Значи $f$ е ограничена върху всяко ограничено подмножество на $\\mathbb{R}$.\n\nНека $x \\neq 0$. При $y \\to 0$ от ограничеността и даденото равенство следва, че $f(x + y) \\to f(x)$, т.е. $f$ е непрекъсната в точката $x$.\n\n(I начин) Записваме началното равенство във вида\n\n$$x f(x - y) + y(f(x + y) - f(y)) = x^2 \\frac{f(x + y) - f(x)}{y}.$$\n\nПри $y \\to 0$ лявата страна клони към $xf(x)$. Значи $f$ има производна в $x$ и $f(x) = x f'(x)$. От това равенство следва, че и $f'$ има производна в $x$. Тогава $f'(x) = (x f(x))' = f'(x) + x f''(x)$ и значи $f''(x) = 0$. Следователно $f(x) = ax + b$ при $x > 0$. Като заместим в условието на задачата лесно получаваме, че $f(x) = ax$ за всяко $x$.\n\n(II начин) При $y = -x$ имаме, че $f(x) - f(-x) = f(2x)$. Тогава $f(-x) - f(x) = f(-2x)$ и значи $-f(-2x) = f(2x) = 2f(x)$. При $x = (n - 1)y$ с индукция по $n \\ge 3$ следва, че $f(ny) = n f(y)$.\n\nОттук $f(r) = ar$, където $a = f(1)$ и $r \\in \\mathbb{Q}^+$. От непрекъснатостта и нечетността на $f$ следва, че $f(x) = ax$ за всяко $x \\neq 0$. При $x = y$ получаваме, че $f(0) = 0$. Значи $f(x) = ax$ за всяко $x$, като условието на задачата се изпълнява.\n\nОценяване: (7 точки) 1 т. за ограниченост; 1 т. за непрекъснатост; (I начин) 2 т. за $f(x) = x f'(x)$; 3 т. за довършване на решението; (II начин) 2 т. за $-f(-2x) = f(2x) = 2f(x)$; 1 т. за $f(nx) = n f(x)$; 1 т. за $f(r) = ar$; 1 т. за довършване на решението.",
+      "answer": "f(x) = ax",
+      "difficulty": "medium",
+      "techniques": [
+        "functional_equations",
+        "boundedness",
+        "continuity",
+        "linear_functions"
+      ],
+      "confidence": "exact",
+      "reasoning": "Функционалното уравнение с ограниченост се решава чрез установяване на непрекъснатост и използване на два подхода: диференциране и функционални свойства, водещи до f(x)=ax.",
+      "_crosslinked_from": "7.2",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2006-10 кл · 2006-10 · Зад. 10.3",
+      "statement": "Нека $\\mathbb{Q}^+$ е множеството на положителните рационални числа. Да се намерят всички функции $f : \\mathbb{Q}^+ \\to \\mathbb{R}$, такива че $f(1/x) = f(x)$, $xf(x) = (x + 1)f(x - 1)$ за всяко $x \\in \\mathbb{Q}^+$ и $f(1) = 1$.",
+      "solution": "Нека $x = \\frac{p}{q}$ е несъкратима дроб (т.е. $p$ и $q$ са взаимнопрости естествени числа). Ще докажем с индукция по $n = p + q \\ge 2$, че $f(x)$ е еднозначно определена.\n\nТвърдението е вярно за $n = 2$ (имаме $f(1) = 1$). Да предположим, че то е вярно за всички числа, по-малки от дадено $n \\ge 3$, и да разгледаме $x = \\frac{p}{q}$ с $p + q = n$. От първото условие следва, че можем да считаме $p > q$.\n\nТогава от второто условие $f\\left(\\frac{p}{q}\\right)$ се дефинира еднозначно чрез $f\\left(\\frac{p - q}{q}\\right)$, за която $p - q + q < n$, т.е. тя е еднозначно определена от индукционното предположение.\n\nОстава да отбележим, че функцията $f\\left(\\frac{p}{q}\\right) = \\frac{1}{2}(p + q)$, където $p$ и $q$ са взаимнопрости естествени числа, изпълнява условието на задачата.",
+      "answer": "$f\\left(\\frac{p}{q}\\right) = \\frac{1}{2}(p + q)$, където $p$ и $q$ са взаимнопрости естествени числа.",
+      "difficulty": "hard",
+      "techniques": [
+        "functional_equations",
+        "induction",
+        "rational_numbers"
+      ],
+      "confidence": "exact",
+      "reasoning": "Функционалното уравнение се решава с индукция по сума на числител и знаменател. Това е типичен подход за функционални уравнения с рационални числа. Трудността е hard поради нетривиалната индукция."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2009-12 кл · 2009-12 · Зад. 12.3",
+      "statement": "Да се намерят всички реални числа a, за които:\nа) съществува функция f : R →R такава, че f(0) = a и f(f(x)) = x2009 за всяко x ∈R;\nб) съществува непрекъсната функция със свойствата от а).",
+      "solution": "Решение. а) Понеже $f^{2009}(x) = f(f(f(x))) = f(x^{2009})$, то $a^{2009} = a$, т.е.\n\nсвалено от Klasirane.com\n\n$a = 0, \\pm 1$. Да отбележим, че ако $\\{b, c, d\\} = \\{-1, 0, 1\\}$ и\n\n$$f(x) = \\begin{cases} 1/x, & |x| > 1 \\\\ 1/x^{2009}, & 0 < |x| < 1 \\\\ b, & x = b \\\\ c, & x = d \\\\ d, & x = c \\end{cases}$$\n\nто $f(f(x)) = x^{2009}$ за всяко $x \\in \\mathbb{R}$. Значи търсените числа са 0 и $\\pm 1$.\n\nб) Да отбележим, че $f$ е инективна функция (ако $f(x) = f(y)$, то $x^{2009} = f(f(x)) = f(f(y)) = y^{2009}$, т.е. $x = y$). Ако допуснем, че $a = f(0) = -1$, то $f(-1) = 0$. За $e = f(1)$ имаме, че $e \\neq 0, -1$ и $e^{2009} = e$, т.е. $e = 1$. Тогава $f(0)f(1) < 0$ и понеже $f$ е непрекъсната, то $f(y) = 0$ за някое $y \\in (0, 1)$. Това е противоречие с инективността на $f$ и $f(-1) = 0$. Аналогично $a \\neq 1$. Остава $a = 0$. Тази стойност може да се реализира както показва следната непрекъсната функция $f$, за която $f(f(x)) = x^{2009}$:\n\n$$f(x) = \\begin{cases} x^{\\sqrt{2009}}, & x > 0 \\\\ 0, & x = 0 \\\\ -(-x)^{\\sqrt{2009}}, & x < 0. \\end{cases}$$\n\nОценяване. а) 1 т. за $a = 0, \\pm 1$ и 2 т. за примери; б) 3 т. за $a = 0$ и 1 т. за пример.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "functional_equation",
+        "injective",
+        "continuous"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата е за функционални уравнения с итерации и изисква разглеждане на непрекъснатост и инективност."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2011-11 кл · 2011-11 · Зад. 11.5",
+      "statement": "Да се намерят всички функции $f : \\mathbb{R} \\to \\mathbb{R}$ такива, че за произволни $x, y, z$, е изпълнено неравенството\n\n$$(f(x) + f(y) - 2f(xy)) \\cdot (f(x) + f(z) - 2f(xz)) \\geq 0.$$",
+      "solution": "Решение. (1 т.) При y = 0 и z = 1 следва, че (f (x) − f (0)).(f (x) − f (1)) \\le  0, т.е. f (0) \\le  f (x) \\le  f (1) или f (1) \\le  f (x) \\le  f (0) за всяко x. (4 т.) Да предположим, че f не е константа. Ако f (0) \\le  f (x) < f (1) или f (1) < f (x) \\le  f (0) за някое x ̸= 0 , то при y = 1 /x и z = 1 следва, че f (1) + f (1) > f (a) + f (1/a) \\ge  2f (1) или f (1) + f (1) < f (a) + f (1/a) \\le  2f (1) което е противоречие. Значи f (x) = f (1) при x ̸= 0. (2 т.) Проверка показва, че всяка такава функция изпълнява да деното неравенство.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "functional_equations",
+        "inequalities",
+        "cauchy_equation",
+        "constant_function"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата е за функционално неравенство, което води до функционално уравнение. Решението използва специални стойности за аргументи и доказва, че функцията е константа."
+    },
+    {
+      "source": "OLI-3-Национален кръг-1993-9-12 кл · 1993-None · Зад. 1",
+      "statement": "Да се намерят всички функции f, дефинирани и приемащи стойности в множеството на целите числа, за които са изпълнени условията:\n(a) f(1) = 1;\n(б) за всеки две цели числа m и n е в сила равенството:\nf(m + n)(f(m) −f(n)) = f(m −n)(f(m) + f(n))",
+      "solution": "Решение. Нека $f$ е функция, удовлетворяваща а) и б). Полагаме в б) $m = n = 1$ и намираме $2f(0) = 0$, т. е. $f(0) = 0$. Отново от б) при $m = 0$ получзвзме, че за всяко цяло $n$ е изпълнено $f(n)(f(n) + f(-n)) = 0$. Оттук $f(-n) = -f(n)$ или $f(n) = 0$. Ако обаче $f(n) = 0$, заместваме $m$ и $n$ съответно с 0 и $-n$ и лесно намираме $f(-n) = 0 = f(n)$. Следователно $f(-n) = -f(n)$ за всяко $n ∈ \\mathbb{Z}$, т. е. $f$ е нечетна функция.\n\nДа положим в б) $m = 2, n = 1$. Имаме $f(3)(f(2) - 1) = f(2) + 1$ или $(f(2) - 1)(f(3) - 1) = 2$. Тъй като $f(2)$ и $f(3)$ са цели числа, последното е възможно само в един от следните случаи:\n\n$$\\begin{array}{l} f(2) = 2, f(3) = 3; f(2) = 3, f(3) = 2 \\\\ f(2) = 0, f(3) = -1; f(2) = -1, f(3) = 0 \\end{array}$$\n\nПърви случай. При $f(2) = 2, f(3) = 3$, ще докажем по индукция, че $f(n) = n$ за всяко $n ∈ \\mathbb{Z}$. При $n = 0, 1, 2, 3$ това вече е проверено. Нека $f(k) = k$ за всяко $k = 0, 1, 2, \\dots, n$, където $n \\geqq 3$. Тогава съгласно б) имаме\n\n$$f(n + 1)(f(n) - 1) = f(n - 1)(f(n) + 1)$$\n\nи като вземем предвид индуктивното предположение, намираме $f(n + 1) = n + 1$. Твърдението е доказано за всяко $n \\geqq 0$. Но $f$ е нечетна функция, следователно то е вярно за всяко $n ∈ \\mathbb{Z}$.\n\nВтори случай. Ако $f(2) = 3, f(3) = 2$, от б) намираме последователно $f(4) = 9$ и $f(5) = \\frac{5}{2}$, което е невъзможно.\n\nТрети случай. Нека $f(2) = 0, f(3) = -1$. Ще докажем, че\n\n$$f(n) = \\left\\{ \\begin{array}{ll} 0, & \\text{ако } n = 2k \\\\ 1, & \\text{ако } n = 4k + 1 \\\\ -1, & \\text{ако } n = 4k + 3 \\end{array} \\right.$$\n\nза всяко $k ∈ \\mathbb{Z}$. Поради нечетността на $f$ и тук можем да се ограничим със случая $k \\geqq 0$. За $k = 0$ твърдението е вярно. Нека то изпълнено за някое $k > 0$. Равенството $f(m - 2)f(m) = f(m - 2)f(m)$ показва при $m = 4k + 1$ и $m = 4k + 3$, че $f(4(k + 1) + 1) = f(4k + 1) = 1$ и $f(4(k + 1) + 3) = f(4k + 3) = -1$. Сега можем да се позовем на равенствата\n\n$$\\begin{array}{l} f(2k + 2)(f(2k + 1) - 1) = f(2k)(f(2k + 1) + 1) \\\\ f(2k + 2)(f(2k - 1) - f(3)) = f(2k - 4)(f(2k - 1) + f(3)), \\end{array}$$\n\nот които се вижда, че $f(2k + 2) = 0$ и при четно, и при нечетно $k$.\n\nЧетвърти случай. Ако $f(2) = -1, f(3) = 0$, както в Трети случай се доказва, че\n\n$$f(n) = \\left\\{ \\begin{array}{ll} 0, & \\text{ако } n = 3k \\\\ 1, & \\text{ако } n = 3k + 1 \\\\ -1, & \\text{ако } n = 3k + 2 \\end{array} \\right.$$\n\nСвалено от Klasirane.com\n\nНакрая непосредствено се проверява, че трите функции, намерени в Първи, трети и четвърти са решения на задачата.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "functional_equations",
+        "induction",
+        "odd_function"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата е за намиране на функции с цели стойности, удовлетворяващи функционално уравнение. Решението използва специфични стойности и индукция, което е типично за уравнения на Коши."
+    },
+    {
+      "source": "OLI-3-Национален кръг-1995-9-12 кл · 1995-None · Зад. 5",
+      "statement": "Let $A = \\{1, 2, \\dots, m + n\\}$, where $m$ and $n$ are positive integers and let the function $f : A \\to A$ be defined by the equations:\n\n$$f(i) = i + 1 \\quad \\text{for} \\quad i = 1, 2, \\dots, m - 1, m + 1, \\dots, m + n - 1$$\n\n$$f(m) = 1 \\quad \\text{and} \\quad f(m + n) = m + 1.$$\n\na) Prove that if $m$ and $n$ are odd then there exists a function $g : A \\to A$ such that $g(g(a)) = f(a)$ for all $a \\in A$.\n\nb) Prove that if $m$ is even then $m = n$ iff there exists a function $g : A \\to A$ such that $g(g(a)) = f(a)$ for all $a \\in A$.",
+      "solution": "Solution. a) Let $m = 2p + 1$, $n = 2q + 1$ and $g(i) = p + i + 1$ for $i = 1, 2, \\ldots, p$; $g(i) = q + i + 1$ for $i = m + 1, m + 2, \\ldots, m + q$; $g(2p + 1) = p + 1$; $g(p + 1) = 1$; $g(m + 2q + 1) = m + q + 1$; $g(m + q + 1) = m + 1$. It is easy to check that $g(g(a)) = f(a)$ for all $a \\in A$.\n\nb) Let $m = n$ and $g(i) = m + i$ for $i = 1, 2, \\ldots, m$; $g(m + i) = i + 1$ for $i = 1, 2, \\ldots, m - 1$; $g(2m) = 1$.\n\nFor the converse let $M = \\{1, 2, \\ldots, m\\}$. It follows by the definition of $f$ that the elements of $M$ remain in $M$ after applying the powers of $f$ with respect to superposition. Moreover, these powers scoop out the whole $M$. The same is true for the set $A \\setminus M$. The function $f$ is bijective in $A$ and if there exists $g$ verifying the condition, then $g$ is bijective too. We shall prove that $g(M) \\cap M = \\emptyset$. It follows from the contrary that there exists $i \\in M$ such that $g(i) \\in M$. Consider the sequence $i, g(i), g^2(i), \\ldots$ and the subsequence $i, f(i), f^2(i), \\ldots$. It is easy to see that $g(M) = M$. We deduce that there exists a permutation $a_1, a_2, \\ldots, a_m$ of elements of $M$, such that $g(a_i) = a_{i+1}$ for $i = 1, 2, \\ldots, m - 1$; $g(a_m) = a_1$ and $f(a_{2i-1}) = a_{2i+1}$ for $i = 1, 2, \\ldots, s - 1$; $f(a_{2s-1}) = a_1$, where $m = 2s$. The last contradicts to the properties of $f$ which were mentioned already. Thus $g(M) \\cap M = \\emptyset$. Analogously $g(A \\setminus M) = A \\setminus M$, if $g(i) \\in A \\setminus M$ for $i \\in A \\setminus M$. At last let us observe that when starting from an element of $M$ and applying $g$ we go to $A \\setminus M$, but when applying $g$ for a second time we go back to $M$. The same is true for the set $A \\setminus M$. From here and from the bijectivity of $g$ it follows that $M$ and $A \\setminus M$ have one and the same number of elements, i.e. $n = m$.\n\nFigure 1.\n\n![img-0.jpeg](img-0.jpeg)\n\nDownloaded from Klasirane.com",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "functional_equation",
+        "permutation_cycles",
+        "involution"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква намиране на функция g, такава че g(g(a)) = f(a), което е функционално уравнение. Решението анализира структурата на f и конструира g, което е типично за функционални уравнения от тип уравнение на Коши или подобни, затова точка 7.1."
+    },
+    {
+      "source": "OLI-3-Национален кръг-1995-9-12 кл · 1995-None · Зад. 5",
+      "statement": "Let $A = \\{1, 2, \\dots, m + n\\}$, where $m$ and $n$ are positive integers and let the function $f : A \\to A$ be defined by the equations:\n\n$$f(i) = i + 1 \\quad \\text{for} \\quad i = 1, 2, \\dots, m - 1, m + 1, \\dots, m + n - 1$$\n\n$$f(m) = 1 \\quad \\text{and} \\quad f(m + n) = m + 1.$$\n\na) Prove that if $m$ and $n$ are odd then there exists a function $g : A \\to A$ such that $g(g(a)) = f(a)$ for all $a \\in A$.\n\nb) Prove that if $m$ is even then $m = n$ iff there exists a function $g : A \\to A$ such that $g(g(a)) = f(a)$ for all $a \\in A$.",
+      "solution": "Solution. a) Let $m = 2p + 1$, $n = 2q + 1$ and $g(i) = p + i + 1$ for $i = 1, 2, \\ldots, p$; $g(i) = q + i + 1$ for $i = m + 1, m + 2, \\ldots, m + q$; $g(2p + 1) = p + 1$; $g(p + 1) = 1$; $g(m + 2q + 1) = m + q + 1$; $g(m + q + 1) = m + 1$. It is easy to check that $g(g(a)) = f(a)$ for all $a \\in A$.\n\nb) Let $m = n$ and $g(i) = m + i$ for $i = 1, 2, \\ldots, m$; $g(m + i) = i + 1$ for $i = 1, 2, \\ldots, m - 1$; $g(2m) = 1$.\n\nFor the converse let $M = \\{1, 2, \\ldots, m\\}$. It follows by the definition of $f$ that the elements of $M$ remain in $M$ after applying the powers of $f$ with respect to superposition. Moreover, these powers scoop out the whole $M$. The same is true for the set $A \\setminus M$. The function $f$ is bijective in $A$ and if there exists $g$ verifying the condition, then $g$ is bijective too. We shall prove that $g(M) \\cap M = \\emptyset$. It follows from the contrary that there exists $i \\in M$ such that $g(i) \\in M$. Consider the sequence $i, g(i), g^2(i), \\ldots$ and the subsequence $i, f(i), f^2(i), \\ldots$. It is easy to see that $g(M) = M$. We deduce that there exists a permutation $a_1, a_2, \\ldots, a_m$ of elements of $M$, such that $g(a_i) = a_{i+1}$ for $i = 1, 2, \\ldots, m - 1$; $g(a_m) = a_1$ and $f(a_{2i-1}) = a_{2i+1}$ for $i = 1, 2, \\ldots, s - 1$; $f(a_{2s-1}) = a_1$, where $m = 2s$. The last contradicts to the properties of $f$ which were mentioned already. Thus $g(M) \\cap M = \\emptyset$. Analogously $g(A \\setminus M) = A \\setminus M$, if $g(i) \\in A \\setminus M$ for $i \\in A \\setminus M$. At last let us observe that when starting from an element of $M$ and applying $g$ we go to $A \\setminus M$, but when applying $g$ for a second time we go back to $M$. The same is true for the set $A \\setminus M$. From here and from the bijectivity of $g$ it follows that $M$ and $A \\setminus M$ have one and the same number of elements, i.e. $n = m$.\n\nFigure 1.\n\n![img-0.jpeg](img-0.jpeg)\n\nDownloaded from Klasirane.com",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "functional_equation",
+        "permutation_cycles",
+        "involution"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква намиране на функция g, такава че g(g(a)) = f(a), което е функционално уравнение. Решението анализира структурата на f и конструира g, което е типично за функционални уравнения от тип уравнение на Коши или подобни, затова точка 7.1.",
+      "_crosslinked_from": "7.1",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-3-Национален кръг-2014-9-12 кл · 2014-None · Зад. 5",
+      "statement": "(Николай Николов) Да се намерят всички функции f : Q⁺ → R⁺, за които\n\n$$f(xy) = f(x + y)(f(x) + f(y)), \\text{ за произволни } x, y \\in \\mathbb{Q}^+.$$\n\n(С Q⁺ и R⁺ означаваме съответно множествата на положителните рационални и реални числа.)",
+      "solution": "Решение. Ако положим g(x) = 1 /f (x), то g : Q+ → R+ и даденото условие се преобразува във вида\n(∗) g(x + y)g(x)g(y) = g(xy)(g(x) + g(y)).\nНека f (1) = c > 0, т.е. g(1) = 1c . От (∗) получаваме g(x + 1) = cg(x) + 1 и следователно g(2) = 2 , g(3) = 2 c + 1, g(4) = 2 c2 + c + 1, g(5) = 2 c3 + c2 + c + 1, g(6) = 2 c4 + c3 + c2 + c + 1. От друга страна, полагайки x = 2, y = 3 в (∗) получаваме\ng(5)g(2)g(3) = g(6)(g(2) + g(3)),\nкоето ни води до уравнението\n4c5 − 3c3 − c2 − c + 1 = 0 ⇔ (c − 1)(c + 1)(2c − 1)(2c2 + 2c + 1) = 0 .\nСледователно c = 1 или 12 .\nСлучай 1. Ако c = 1 , то g(x + 1) = g(x) + 1. Оттук с индукция g(n) = n за всяко n ∈ N и, нещо повече, g(x + n) = g(x) + n за всяко фиксирано x ∈ Q+ и всяко n ∈ N.\nСега от (∗) при y = n получаваме\n(g(x) + n)g(x)n = g(nx)(g(x) + n),\nт.е. g(nx) = ng(x). Оттук при x = p/q и n = q, където p, q ∈ N, получаваме g(x) = x, за всяко x ∈ Q+, т.е. f (x) = 1 /x, за всяко x ∈ Q+.\nСлучай 2. Ако c = 12 , то g(x + 1) = 12 g(x) + 1. Оттук\ng(n) = 2 и g(x + n) − 2 = g(x) − 22n , x ∈ Q+, n ∈ N;",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "functional_equations",
+        "substitution",
+        "induction"
+      ],
+      "confidence": "exact",
+      "reasoning": "Това е функционално уравнение с положителни рационални числа. Основната техника е решаване на функционални уравнения, което е точка 7.1. Решението използва субституция и индукция."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "verdict": "revise",
+  "score": 5,
+  "issues": [
+    {
+      "severity": "critical",
+      "section": "1. Защо е важно и 4.3 Hard examples",
+      "description": "Грешка в руската задача: при равностранен триъгълник (AB=AC=BC), MN=0, но AB+AC-BC ≠ 0. Формулата е невярна."
+    },
+    {
+      "severity": "major",
+      "section": "4.3 Hard examples",
+      "description": "Решение на Пример 8 (Русия) е непълно и грешно за специалния случай."
+    },
+    {
+      "severity": "major",
+      "section": "целият документ",
+      "description": "Примерите са представени като реални олимпиадни, но не са от посочените източници или са измислени."
+    },
+    {
+      "severity": "minor",
+      "section": "4. Примери с решения",
+      "description": "Липсва CHECK след hard примери."
+    }
+  ],
+  "strengths": [
+    "Добре структурирана статия с ясни секции.",
+    "Разнообразни примери, покриващи различни нива."
+  ],
+  "suggestions": [
+    "Коригирай математическите грешки в геометричните примери.",
+    "Използвай реални олимпиадни задачи с проверени източници.",
+    "Добави CHECK секция след hard примери."
+  ],
+  "math_errors": [
+    {
+      "formula": "MN = AB + AC - BC",
+      "problem": "Не е вярно за равностранен триъгълник. При AB=AC=BC=2, MN=0, но AB+AC-BC=2.",
+      "fix": "Преработи задачата или предостави правилно решение."
+    },
+    {
+      "formula": "PQ = (AB + AC)⋅√3/2 в секция 3.1",
+      "problem": "Грешно изведено. В действителност за триъгълник с ъгъл 60° не е така.",
+      "fix": "Преработи решението с правилна геометрична конструкция."
+    }
+  ],
+  "missing_topics": [],
+  "structure_check": {
+    "section_1_why_important": true,
+    "section_2_objectives": true,
+    "section_3_theory": true,
+    "section_4_examples_3_levels": true,
+    "section_5_recognition": true,
+    "section_6_mistakes": true,
+    "section_7_mastery": true,
+    "section_8_quiz": true,
+    "section_9_recall": true,
+    "check_marks_present": false
+  },
+  "examples_check": {
+    "real_olympiad": false,
+    "easy_count": 3,
+    "medium_count": 4,
+    "hard_count": 2
+  },
+  "verdict_reasoning": "Статията има критични математически грешки и примерите не са реални олимпиадни задачи. Липсва CHECK след hard примери. Необходима е ревизия.",
+  "_tokens": 14854,
+  "_model": "deepseek/deepseek-r1-0528"
+}

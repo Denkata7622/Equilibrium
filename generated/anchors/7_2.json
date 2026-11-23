@@ -1,25 +1,164 @@
 {
   "point_id": "7.2",
-  "total": 1,
+  "total": 11,
   "by_difficulty": {
     "easy": 0,
-    "medium": 1,
-    "hard": 0
+    "medium": 5,
+    "hard": 6
   },
   "problems": [
     {
-      "source": "OLI-3-Национален кръг-2013-9-12 кл · 2013-None · Зад. 2",
-      "statement": "Да се намерят всички функции $f : \\mathbb{R} \\to \\mathbb{R}$, ограничени в интервала $(0, 1)$ и такива, че\n\n$$x^2 f(x) - y^2 f(y) = (x^2 - y^2)f(x + y) - xyf(x - y)$$\n\nза произволни $x, y \\in \\mathbb{R}$.",
-      "solution": "Решение. Ако числата $x > y + 1/2$ пробягват интервала $(0, n)$, то $x + y$ пробягва интервала $(0, 2n - 1/2)$. Тогава по индукция заключаваме, че $f$ е ограничена в интервалите от вида $(0, 2^k + 1/2)$. При $0 < x < y$ следва, че $f$ е ограничена и в интервалите от вида $(-2^k, 0)$. Значи $f$ е ограничена върху всяко ограничено подмножество на $\\mathbb{R}$.\n\nНека $x \\neq 0$. При $y \\to 0$ от ограничеността и даденото равенство следва, че $f(x + y) \\to f(x)$, т.е. $f$ е непрекъсната в точката $x$.\n\n(I начин) Записваме началното равенство във вида\n\n$$x f(x - y) + y(f(x + y) - f(y)) = x^2 \\frac{f(x + y) - f(x)}{y}.$$\n\nПри $y \\to 0$ лявата страна клони към $xf(x)$. Значи $f$ има производна в $x$ и $f(x) = x f'(x)$. От това равенство следва, че и $f'$ има производна в $x$. Тогава $f'(x) = (x f(x))' = f'(x) + x f''(x)$ и значи $f''(x) = 0$. Следователно $f(x) = ax + b$ при $x > 0$. Като заместим в условието на задачата лесно получаваме, че $f(x) = ax$ за всяко $x$.\n\n(II начин) При $y = -x$ имаме, че $f(x) - f(-x) = f(2x)$. Тогава $f(-x) - f(x) = f(-2x)$ и значи $-f(-2x) = f(2x) = 2f(x)$. При $x = (n - 1)y$ с индукция по $n \\ge 3$ следва, че $f(ny) = n f(y)$.\n\nОттук $f(r) = ar$, където $a = f(1)$ и $r \\in \\mathbb{Q}^+$. От непрекъснатостта и нечетността на $f$ следва, че $f(x) = ax$ за всяко $x \\neq 0$. При $x = y$ получаваме, че $f(0) = 0$. Значи $f(x) = ax$ за всяко $x$, като условието на задачата се изпълнява.",
-      "answer": "$f(x) = ax$ за всяко $x \\in \\mathbb{R}$, където $a \\in \\mathbb{R}$.",
+      "source": "OLI-2-Областен кръг-1997-11 кл · 1997-11 · Зад. 11.4",
+      "statement": "Find all continuous functions f(x) defined in the set of real numbers and such that\n\n$$f(x)=f\\left(x^{2}+\\frac{1}{4}\\right)$$\n\nfor all real x.",
+      "solution": "**Solution:** Let $f(x)$ be a function satisfying the conditions of the problem. Obviously $f(x)$ is an even function.\n\nLet $x_0 \\ge 0$. There are two cases:\n\n(I) $0 \\le x_0 \\le \\frac{1}{2}$. Consider the sequence\n\n(1) $$x_0, x_1, \\dots, x_n, \\dots$$\n\ndefined by the equalities $x_{n+1} = x_n^2 + \\frac{1}{4}$.\n\nIt is easy to see by induction that $0 \\le x_n \\le \\frac{1}{2}$ for all $n$. Moreover\n\n$$x_{n+1} - x_n = x_n^2 - x_n + \\frac{1}{4} = \\left(x_n - \\frac{1}{2}\\right)^2 \\ge 0,$$\n\nwhich implies that (1) is a monotone increasing function. Since it is bounded, it follows that it is a convergent function. Let $\\lim_{n\\to\\infty} x_n = \\alpha$.\n\nNow $\\alpha^2 - \\alpha + \\frac{1}{4} = 0$, so $\\alpha = \\frac{1}{2}$.\n\nOn the other hand, since $f(x)$ is a continuous function,\n\n$$\\lim_{n\\to\\infty} f(x_n) = f\\left(\\frac{1}{2}\\right).$$\n\nBut\n\n$$f(x_{n+1}) = f\\left(x_n^2 + \\frac{1}{4}\\right) = f(x_n)$$\n\nfor all $n$. Thus $f(x_0) = f(x_1) = \\cdots$ which means that $f(x_0) = f\\left(\\frac{1}{2}\\right)$ for all $x_0 \\in \\left[0, \\frac{1}{2}\\right]$.\n\n(II) $x_0 > \\frac{1}{2}$. Consider the following sequence:\n\n(2) $x_0, x_1, \\ldots, x_n, \\ldots$\n\ndefined by $x_{n+1} = \\sqrt{x_n - \\frac{1}{4}}$.\n\nAs in the previous case, we show that (2) is a convergent function and $\\lim_{n\\to\\infty} x_n = \\frac{1}{2}$. Further $\\lim_{n\\to\\infty} f(x_n) = f\\left(\\frac{1}{2}\\right)$ and since\n\n$$f(x_{n+1}) = f\\left(x_{n+1}^2 + \\frac{1}{4}\\right) = f(x_n)$$\n\nfor all $n$ we get that $f(x_0) = f\\left(\\frac{1}{2}\\right)$.\n\nTherefore $f(x)$ is a constant function in the interval $[0, +\\infty)$, and since it is even, it is a constant for all $x$.\n\nConversely, any constant function satisfies the conditions of the problem.",
+      "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "functional_equation",
+        "iteration",
+        "fixed_point"
+      ],
+      "confidence": "exact",
+      "reasoning": "Функционално уравнение, решено чрез итерации и сходимост към неподвижна точка (1/2). Използва се ограниченост и непрекъснатост, което е в темата за ФУ с ограниченост."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2000-12 кл · 2000-12 · Зад. 12.5",
+      "statement": "Да се докаже, че за всеки две реални числа $a$ и $b$ съществува такова число $c \\in (0, 1)$, че\n\n$$\\left| ac + b + \\frac{1}{c+1} \\right| > \\frac{1}{24}.$$",
+      "solution": "Решение: Нека $f(x) = ax + \\frac{1}{x + 1}$ и $m$ и $M$ означават съответно най-малката и най-голямата стойност на функцията $f$ в интервала $[0, 1]$. Понеже $f(0) = 1$, $f(1) = a + \\frac{1}{2}$ и $f'(x) = a - \\frac{1}{(x + 1)^2}$, възможни са четири случая за разликата $M - m$.\n\n1. \\(a \\leq \\frac{1}{4}\\). ToraBa \\(f'(x) \\leq 0\\) 3a \\(x \\in [0,1]\\) n 3naun \\(M - m = f(0) - f(1) = \\frac{1}{2} - a \\geq \\frac{1}{4}\\).\n2. \\(a \\geq 1\\). ToraBa \\(f'(x) \\geq 0\\) 3a \\(x \\in [0,1]\\) n 3naun \\(M - m = f(1) - f(0) = a - \\frac{1}{2} \\geq \\frac{1}{2}\\).\n3. \\(\\frac{1}{4} \\leq a \\leq 1\\). ToraBa \\(d = \\frac{1}{\\sqrt{a}} - 1 \\in [0,1]\\), \\(f'(x) \\leq 0\\) 3a \\(x \\in [0,d]\\) n \\(f'(x) \\geq 0\\) 3a \\(x \\in [d,1]\\)",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "function_analysis",
+        "inequality",
+        "calculus"
+      ],
+      "confidence": "exact",
+      "reasoning": "Доказателство за съществуване на c в (0,1) с дадено неравенство. Анализ на функцията f(x)=ax+1/(x+1) в [0,1], намиране на min и max. Решението е частично, но условието е пълно."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2007-12 кл · 2007-12 · Зад. 12.6",
+      "statement": "Да се намерят всички функции f : R → R такива, че f(0) \\le  0 и f(x + y) \\le  x + f(f(y)) за произволни x, y ∈ R.",
+      "solution": "Понеже f (f (x)) = f (f (x) − x + x) \\le  f (x) − x + f (f (x)), то f (x) \\ge  x. В частност, f (0) = 0и значи f (x) \\le  x + f (f (0)) =x. И така, f (x) =x, като тази функция изпълнява даденото условие. Забележка. Лесно се вижда, че една функция f изпълнява условието f (x+ y) \\le  x + f (f (y)) тогава и само тогава, когато sup(f (x) − x) \\le  inf(f (f (x)) − x). В частност, f (x) =x за всяко x или f (x) > x за всяко x. Например, ако c >0 и f е такава функция, че c \\le  f (x) − x \\le  2c, то f изпълнява горното условие.",
+      "answer": "f(x) = x",
+      "difficulty": "medium",
+      "techniques": [
+        "functional_inequalities",
+        "inequality_manipulation",
+        "identity_function"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата намира функции, удовлетворяващи функционално неравенство. Решението използва манипулации с неравенства и показва, че единственото решение е идентитетът."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2011-12 кл · 2011-12 · Зад. 12.6",
+      "statement": "Нека $\\mathbb{R}^+$ е множеството на положителните реални числа. Да се докаже, че за всяка неконстанта функция $f : \\mathbb{R}^+ \\to \\mathbb{R}^+$ съществуват числа $x, y$ и $z > 0$, за които е изпълнено неравенството\n\n$$(f(x) + f(y) - 2f(xy)).(f(x) + f(z) - 2f(xz)) < 0.$$",
+      "solution": "Решение. Да допуснем противното. Тогава са възможни два случая.\n\n1. (2 т.) $f(x) + f(y) \\ge 2f(xy)$ за произволни $x, y > 0$. При $y = 1$ следва, че $f(x) \\le f(1)$ за всяко $x > 0$. Тогава $2f(1) \\ge f(x) + f(1/x) \\ge 2f(1)$ и значи $f(x) = f(1)$ за всяко $x > 0$.\n\n2. (3 т.) Съществува $x > 0$ такова, че (1) $f(x) + f(y) \\le 2f(xy)$ за всяко $y > 0$. При $y = 1$ следва, че $f(x) \\ge f(1)$. Нека $m = \\inf_{\\mathbb{R}^+} f$ и $(a_n) \\subset \\mathbb{R}^+$ така, че $f(a_n) \\to m$. При $y_n = a_n/x$ имаме, че $2m \\le f(x) + f(y_n) \\le f(xy_n) \\to 2m$ и значи $f(x) = m = f(1)$ за всяко $x > 0$, за което (1) е в сила.\n\n(2 т.) Ако този случай съществува $x > 0$ такова, че (2) $f(x) + f(y) \\ge 2f(xy)$ за всяко $y > 0$, то при $y = 1$ следва, че $m = f(1) \\ge f(x) \\ge m$ и значи $f(x) = f(1)$ за всяко $x > 0$, за което (2) е в сила.\n\nИ в двата случая получихме, че $f$ е константа $-$ противоречие.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "functional_inequalities",
+        "contradiction",
+        "infimum"
+      ],
+      "confidence": "exact",
+      "reasoning": "Допускане на противно и разглеждане на два случая за поведението на f. Използва се ограниченост (infimum) за достигане на противоречие, което е типично за ФУ с ограниченост (точка 7.2)."
+    },
+    {
+      "source": "OLI-3-Национален кръг-2013-9-12 кл · 2013-None · Зад. 2",
+      "statement": "Да се намерят всички функции $f : \\mathbb{R} \\to \\mathbb{R}$, ограничени в интервала $(0, 1)$ и такива, че\n\n$$x^2 f(x) - y^2 f(y) = (x^2 - y^2)f(x + y) - xyf(x - y)$$\n\nза произволни $x, y \\in \\mathbb{R}$.",
+      "solution": "Решение. Ако числата $x > y + 1/2$ пробягват интервала $(0, n)$, то $x + y$ пробягва интервала $(0, 2n - 1/2)$. Тогава по индукция заключаваме, че $f$ е ограничена в интервалите от вида $(0, 2^k + 1/2)$. При $0 < x < y$ следва, че $f$ е ограничена и в интервалите от вида $(-2^k, 0)$. Значи $f$ е ограничена върху всяко ограничено подмножество на $\\mathbb{R}$.\n\nНека $x \\neq 0$. При $y \\to 0$ от ограничеността и даденото равенство следва, че $f(x + y) \\to f(x)$, т.е. $f$ е непрекъсната в точката $x$.\n\n(I начин) Записваме началното равенство във вида\n\n$$x f(x - y) + y(f(x + y) - f(y)) = x^2 \\frac{f(x + y) - f(x)}{y}.$$\n\nПри $y \\to 0$ лявата страна клони към $xf(x)$. Значи $f$ има производна в $x$ и $f(x) = x f'(x)$. От това равенство следва, че и $f'$ има производна в $x$. Тогава $f'(x) = (x f(x))' = f'(x) + x f''(x)$ и значи $f''(x) = 0$. Следователно $f(x) = ax + b$ при $x > 0$. Като заместим в условието на задачата лесно получаваме, че $f(x) = ax$ за всяко $x$.\n\n(II начин) При $y = -x$ имаме, че $f(x) - f(-x) = f(2x)$. Тогава $f(-x) - f(x) = f(-2x)$ и значи $-f(-2x) = f(2x) = 2f(x)$. При $x = (n - 1)y$ с индукция по $n \\ge 3$ следва, че $f(ny) = n f(y)$.\n\nОттук $f(r) = ar$, където $a = f(1)$ и $r \\in \\mathbb{Q}^+$. От непрекъснатостта и нечетността на $f$ следва, че $f(x) = ax$ за всяко $x \\neq 0$. При $x = y$ получаваме, че $f(0) = 0$. Значи $f(x) = ax$ за всяко $x$, като условието на задачата се изпълнява.\n\nОценяване: (7 точки) 1 т. за ограниченост; 1 т. за непрекъснатост; (I начин) 2 т. за $f(x) = x f'(x)$; 3 т. за довършване на решението; (II начин) 2 т. за $-f(-2x) = f(2x) = 2f(x)$; 1 т. за $f(nx) = n f(x)$; 1 т. за $f(r) = ar$; 1 т. за довършване на решението.",
+      "answer": "f(x) = ax",
+      "difficulty": "medium",
+      "techniques": [
+        "functional_equations",
         "boundedness",
+        "continuity",
+        "linear_functions"
+      ],
+      "confidence": "exact",
+      "reasoning": "Функционалното уравнение с ограниченост се решава чрез установяване на непрекъснатост и използване на два подхода: диференциране и функционални свойства, водещи до f(x)=ax."
+    },
+    {
+      "source": "OLI-2-Областен кръг-1998-10 кл · 1998-10 · Зад. 10.3",
+      "statement": "Let $\\mathbb{R}^+$ be the set of all positive real numbers. Prove that there is no function $f : \\mathbb{R}^+ \\to \\mathbb{R}^+$ such that\n\n$$(f(x))^2 \\ge f(x+y)(f(x)+y)$$\n\nfor arbitrary positive real numbers $x$ and $y$.",
+      "solution": "Solution: Suppose there exists a function satisfying the conditions of the problem. Write the initial equality in the form\n\n$$f(x) - f(x + y) \\geq \\frac{f(x)y}{f(x) + y}.$$\n\nFirst we prove that $f(x) - f(x + 1) \\geq \\frac{1}{2}$ for $x > 0$. Obviously $f$ is a (strictly) monotone non-increasing function. Fix $x > 0$ and choose a natural number $n$, such that $n \\cdot F(x + 1) \\geq 1$. When $k = 0, 1, \\ldots, n - 1$, we obtain that\n\n$$f(x + \\frac{k}{n}) - f(x + \\frac{k + 1}{n}) \\geq \\frac{f(x + \\frac{k}{n})\\frac{1}{n}}{f(x + \\frac{k}{n}) + \\frac{1}{n}} \\geq \\frac{1}{2n}.$$\n\nAdding the above inequalities gives $f(x) - f(x + 1) \\geq \\frac{1}{2}$.\n\nLet the natural number $m$ be such that $m \\geq 2f(x)$. Therefore\n\n$$f(x) - f(x + m) = \\sum_{i=0}^{m-1} (f(x + i) - f(x + i + 1)) \\geq \\frac{m}{2} \\geq f(x),$$\n\nand so $f(x + m) \\leq 0$. But this contradicts the fact that $f$ is strictly positive.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "functional_inequalities",
+        "contradiction_method"
+      ],
+      "confidence": "exact",
+      "reasoning": "Доказателство за несуществaне на функция чрез функционално неравенство. Използва редукция до противоречие със строга положителност, изисква построяване на редица и сумиране."
+    },
+    {
+      "source": "OLI-2-Областен кръг-1998-11 кл · 1998-11 · Зад. 11.3",
+      "statement": "Let $\\mathbb{R}^+$ be the set of all positive real numbers. Prove that there is no function $f : \\mathbb{R}^+ \\to \\mathbb{R}^+$ such that\n\n$$(f(x))^2 \\ge f(x+y)(f(x)+y)$$\n\nfor arbitrary positive real numbers $x$ and $y$.",
+      "solution": "Suppose there exists a function satisfying the conditions of the problem. Write the initial equality in the form $f(x) - f(x + y) \\geq \\frac{f(x)y}{f(x) + y}$. First we prove that $f(x) - f(x + 1) \\geq \\frac{1}{2}$ for $x > 0$. Obviously $f$ is a (strictly) monotone non-increasing function. Fix $x > 0$ and choose a natural number $n$, such that $n \\cdot F(x + 1) \\geq 1$. When $k = 0, 1, \\ldots, n - 1$, we obtain that $f(x + \\frac{k}{n}) - f(x + \\frac{k + 1}{n}) \\geq \\frac{f(x + \\frac{k}{n})\\frac{1}{n}}{f(x + \\frac{k}{n}) + \\frac{1}{n}} \\geq \\frac{1}{2n}$. Adding the above inequalities gives $f(x) - f(x + 1) \\geq \\frac{1}{2}$. Let the natural number $m$ be such that $m \\geq 2f(x)$. Therefore $f(x) - f(x + m) = \\sum_{i=0}^{m-1} (f(x + i) - f(x + i + 1)) \\geq \\frac{m}{2} \\geq f(x)$, and so $f(x + m) \\leq 0$. But this contradicts the fact that $f$ is strictly positive.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "functional_inequalities",
+        "monotonicity",
+        "contradiction"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата доказва невъзможност на функция с дадено неравенство. Решението използва монотонност и достигане на противоречие чрез сумиране на неравенствата за последователни стъпки."
+    },
+    {
+      "source": "OLI-2-Областен кръг-1998-12 кл · 1998-12 · Зад. 12.3",
+      "statement": "Let $\\mathbb{R}^+$ be the set of all positive real numbers. Prove that there is no function $f : \\mathbb{R}^+ \\to \\mathbb{R}^+$ such that\n\n$$(f(x))^2 \\ge f(x+y)(f(x)+y)$$\n\nfor arbitrary positive real numbers $x$ and $y$.",
+      "solution": "Suppose there exists a function satisfying the conditions of the problem. Write the initial equality in the form\n$$ f(x) - f(x+y) \\ge \\frac{f(x)y}{f(x)+y}. $$\n\nFirst we prove that $f(x) - f(x+1) \\ge \\frac{1}{2}$ for $x > 0$. Obviously $f$ is a (strictly) monotone non-increasing function. Fix $x > 0$ and choose a natural number $n$, such that $n \\cdot f(x+1) \\ge 1$. When $k = 0, 1, \\dots, n-1$, we obtain that\n$$ f\\bigl(x + \\frac{k}{n}\\bigr) - f\\bigl(x + \\frac{k+1}{n}\\bigr) \\ge \\frac{f\\bigl(x+\\frac{k}{n}\\bigr)\\frac{1}{n}}{f\\bigl(x+\\frac{k}{n}\\bigr) + \\frac{1}{n}} \\ge \\frac{1}{2n}. $$\nAdding the above inequalities gives $f(x) - f(x+1) \\ge \\frac{1}{2}$.\n\nLet the natural number $m$ be such that $m \\ge 2f(x)$. Therefore\n$$ f(x) - f(x+m) = \\sum_{i=0}^{m-1}\\bigl(f(x+i) - f(x+i+1)\\bigr) \\ge \\frac{m}{2} \\ge f(x), $$\nand so $f(x+m) \\le 0$. But this contradicts the fact that $f$ is strictly positive.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "functional_inequalities",
+        "monotonicity"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата доказва, че няма функция f:R+→R+, която удовлетворява даденото неравенство. Решението използва монотонност и достига до противоречие чрез сумиране на неравенства."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2002-10 кл · 2002-10 · Зад. 10.3",
+      "statement": "Да се намерят всички естествени числа $n$, за които съществуват реални числа $x$, $y$ и $z$ такива, че\n\n$$x = y - \\frac{1}{y^n}, \\ y = z - \\frac{1}{z^n} \\text{ и } z = x - \\frac{1}{x^n}.$$",
+      "solution": "**Решение.** Ако $n$ е четно, като съберем трите уравнения, получаваме $\\frac{1}{x^n} + \\frac{1}{y^n} + \\frac{1}{z^n} = 0$, което е невъзможно. Ще докажем, че всяко нечетно $n$ е ре-\n\nречение на задачата. Нека $f(y) = y - \\frac{1}{y^n}$ за $y \\in (0, 1)$ и $h(y) = f(f(f(y))) - y = f(y) - \\frac{1}{f^n(y)} - \\frac{1}{\\left(f(y) - \\frac{1}{f^n(y)}\\right)^n} - y$. Понеже $f(y)$ е растяща функция в\n\nинтервала $(0, 1)$, то функцията $g(y) = f(y) - \\frac{1}{f^n(y)}$ е също растяща. Тъй като $\\lim_{y \\to 0, y > 0} g(y) = -\\infty$ и $\\lim_{y \\to 1, y < 1} g(y) = +\\infty$, съгласно теоремата на Болцано-Вайершрас съществува единствено $\\beta \\in (0, 1)$, за което $g(\\beta) = 0$. Следователно функцията $h(y)$ е непрекъсната в $(0, \\beta)$. Понеже $\\lim_{y \\to 0, y > 0} h(y) = -\\infty$ и $\\lim_{y \\to \\beta, y < \\beta} h(y) = +\\infty$, то съществува $\\gamma \\in (0, \\beta)$, за което $h(\\gamma) = 0$. Тогава числата $x = f(\\gamma)$, $y = \\gamma$ и $z = f(f(\\gamma))$ изпълняват условието на задачата.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "functional_equations",
+        "fixed_point",
         "continuity"
       ],
       "confidence": "exact",
-      "reasoning": "Solves a functional equation by exploiting boundedness → continuity → linearity."
+      "reasoning": "Системата от функционални уравнения се решава с теорема на Болцано (непрекъснатост) и търсене на неподвижна точка. Това е класически пример за ФУ с ограниченост (точка 7.2). Трудността е hard поради необходимостта от построяване на съставна функция и прилагане на теореми от реалния анализ."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2008-12 кл · 2008-12 · Зад. 12.6",
+      "statement": "Нека $\\mathbb{R}$ е множеството на реалните числа. Да се намерят всички функции $f : \\mathbb{R} \\to \\mathbb{R}$ такава, че $f(x+y^2) \\ge (y+1)f(x)$ за произволни $x, y \\in \\mathbb{R}$.",
+      "solution": "12.6. Понеже $f(x) \\geq 0$. $f(x - 1) = 0$, то\n\n$$f(x + y^2) \\geq (y + 1)f(x) \\geq f(x), \\quad y \\geq 0$$\n\nи значи $f$ е растяща функция. Нека $a_0 = b_0 = 0$, $a_n = \\sum_{i=1}^n \\frac{1}{i^2}$ и $b_n = \\sum_{i=1}^n \\frac{1}{i}$.\n\nТъй като $f(x + y^2) - f(x) \\geq yf(x)$, то\n\n$$f(x + a_{k+1}) - f(x + a_k) \\geq \\frac{f(x + a_k)}{k + 1} \\geq \\frac{f(x)}{k + 1}.$$\n\nКато съберем почленно тези неравенства за $k = 0, 1, \\dots n - 1$, получаваме, че $f(x + a_n) - f(x) \\geq b_n f(x)$. Както е добре известно, $a_n < 2$ за всяко $n$, докато $b_n \\to \\infty$ (докажете!). Тогава $f(x+2) \\geq (1+b_n)f(x)$ и граничен преход показва, че $f(x) \\leq 0$. От друга страна, $f(x) \\geq 0$ и следователно $f(x) = 0$ за всяко $x$. Тази функция очевидно изпълнява даденото условие.\n\nЗабележка. След установяване на неотрицателността и монотонността на $f$ неположителността на $f$ може да се докаже и така. Имаме, че\n\n$$\\frac{f(x + y^2) - f(x)}{y^2} \\geq \\frac{f(x)}{y}, \\quad y \\neq 0.$$\n\nПонеже $f$ е монотонна функция, известно е, че тя има производна за почти всички $x$; в частност, за всяко $x$ от някакво неограничено отгоре множество $A$. За $x \\in A$ при $y \\to 0+$ следва, че $f(x) \\leq 0$. Остава да съобразим, че за всяко $x \\in \\mathbb{R}$ съществува $y > 0$ така, че $x + y^2 \\in A$ и тогава $0 \\geq f(x + y^2) \\geq (y + 1)f(x) \\geq f(x)$.\n\nсвалено от Klasirane.com",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "functional_inequalities",
+        "monotonicity",
+        "limit_analysis"
+      ],
+      "confidence": "exact",
+      "reasoning": "Функционалното неравенство се решава с установяване на монотонност и използване на граници. Точка 7.2 (ФУ с ограниченост) е подходяща, макар и с елементи от 7.9."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2025-12 кл · 2025-12 · Зад. 12.4",
+      "statement": "Дадени са цели числа $k$ и $n$, за които $5 \\le n < k < 2n$. Да се намерят всички функции $f : \\mathbb{N} \\to \\mathbb{N}$, такива че $x_1! + x_2! + \\dots + x_n! - k$ дели $f(x_1)! + f(x_2)! + \\dots + f(x_n)! - k$ за произволни естествени числа $x_1, x_2, \\dots, x_n$, за които $x_1! + x_2! + \\dots + x_n! - k \\neq 0$.",
+      "solution": "Ако $x \\ge 2$ е естествено число, то полагането $x_1 = x_2 = \\dots = x_n = x$ е валидно, тъй като $nx! - k \\ge 2n - k > 0$. Следователно за $x \\ge 2$ имаме $nx! - k |nf(x)| - k$. Оттук следва, че или $f(x) \\ge x$ или $nf(x)! = k$, като последното е невъзможно, тъй като $n < k < 2n$. Следователно имаме $f(x) \\ge x$ за всяко $x \\in \\mathbb{N}$ и в частност $x! |f(x)!$.\n\nДа отбележим, че всяко естествено число $k < 2n$ може да се представи като сума на не повече от $n-2$ естествени числа, всяко от които е равно на 1, 2 или 6 за всяко $n \\ge 5$. Значи съществуват естествени числа $y_1, y_2, \\dots, y_t \\in \\{1, 2, 3\\}$, за които $k = y_1! + \\dots + y_t!$ и $t \\le n-2$. Нека $p$ е просто число. Полагайки $x_i = y_i$ за $i \\le t, x_{t+1} = p-1, x_{t+2} = 1$, а $x_{t+3} = \\dots = x_n = p$, ако $t \\le n-3$ и $x_i = y_i$ за $i = 1, \\dots, n-2, x_{n-1} = p-1$ и $x_n = 1$ за $t = n-2$, получаваме\n\n$$(p-1)! + 1 + (n-t-2)p! |f(y_1)! + \\dots + f(y_t)! + f(p-1)! + f(1)! - k + (n-t-2)f(p)!$$\n\nНека $C := f(y_1)! + \\dots + f(y_t)! + f(1)! - k \\ge y_1! + y_2! + \\dots + y_t! + f(1)! - k = f(1)! \\ge 1$. От Теорема на Уилсън имаме, че $p|(p-1)! + 1$, а тъй като $p! |f(p)!$, то $p|C + f(p-1)!$ за всяко просто число $p$. Също понеже $f(p-1) \\ge p-1$ и $C > 0$, то за всяко $p > C$ имаме, че $f(p-1) = p-1$ (в противен случай имаме $p|f(p-1)!$, т.е $p|C$, което е невъзможно).\n\nСега нека $x \\in \\mathbb{N}$ и нека $p > \\max(C, f(x)!)$ е просто число. Полагайки $x_1 = x_2 = \\dots = x_{n-1} = p-1, x_n = x$, получаваме\n\n$$(n-1)(p-1)! + x! - k |(n-1)(p-1)! + f(x)! - k \\Rightarrow (n-1)(p-1)! + x! - k |f(x)! - x!,$$\n\nоткъдето следва, че $f(x) = x$, тъй като $|(n-1)(p-1)! + x! - k| > |f(x)! - x|$. Непосредствено се вижда, че $f(x) = x$ изпълнява условието на задачата.\n\nОценяване. (7 точки) 1 т. за $f(x) \\ge x$; 1 т. за представяне на $k$ като сума на ограничен брой факториели; 3 т. за $f(p-1) = p-1$ за големи $p$; 2 т. за довършване.",
+      "answer": "$f(x) = x$",
+      "difficulty": "hard",
+      "techniques": [
+        "functional_equations",
+        "factorials",
+        "wilsons_theorem",
+        "modular_arithmetic"
+      ],
+      "confidence": "exact",
+      "reasoning": "Функционалното уравнение изисква използване на свойства на факториели и теоремата на Уилсън. Трудна поради комбинацията от функционален анализ и теория на числата."
     }
   ]
 }

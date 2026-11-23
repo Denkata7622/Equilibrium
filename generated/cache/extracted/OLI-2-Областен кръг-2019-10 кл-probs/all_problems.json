@@ -1,0 +1,96 @@
+{
+  "pdf": "OLI-2-Областен кръг-2019-10 кл-probs",
+  "version": 1,
+  "extraction_model": "deepseek/deepseek-r1-0528",
+  "extraction_level": "L0_native",
+  "verification": {
+    "verdict": "PASS",
+    "expected": 4,
+    "actual": 4,
+    "verified": 4,
+    "hallucinated": 0,
+    "unreadable": 0,
+    "wrong_grade": 0,
+    "duplicates": 0,
+    "null_num": 0,
+    "numeric_mismatch": 0,
+    "avg_confidence": 0.988,
+    "expected_grade": 10,
+    "grade_distribution": {
+      "10": 4
+    },
+    "escalate_to": "none",
+    "reasons": [],
+    "ai_checked": false,
+    "ai_result": {}
+  },
+  "extracted_at": "2026-11-05T11:45:30.520811",
+  "problems": [
+    {
+      "num": "10.1",
+      "year": 2019,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "Да се намерят всички стойности на реалния параметър $a$, за които уравнението\n\n$$2x^2 - ax = 4 - 2x\\sqrt{x^2 - ax}$$\n\nима единствен реален корен.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 10.1. Да се намерят всички стойности на реалния параметър $a$, за които уравнението\n\n$$2x^2 - ax = 4 - 2x\\sqrt{x^2 - ax}$$",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "10.1",
+      "_quote_grade": "EXACT",
+      "pdf": "OLI-2-Областен кръг-2019-10 кл-probs"
+    },
+    {
+      "num": "10.2",
+      "year": 2019,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "Даден е тригълник $ABC$ с център на вписаната окръжност $I$ и среди на страните $AB$, $BC$ и $CA$ съответно $C_0$, $A_0$ и $B_0$. Правата $C_0I$ пресича $A_0B_0$ в точка $C_1$. Аналогично се дефинират и точките $A_1$ и $B_1$. Да се докаже, че:\n\na) npabnte \\(AA_{1}\\) \\(BB_{1}\\) n \\(CC_{1}\\) ce npcevat b eHa toka;\n6) nepneHikkyIpaTe ot \\(A_{1}\\) \\(B_{1}\\) n \\(C_1\\) cboTBeTHo KbM BC, CA n AB ce npcevat b eHa toka.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 10.2. Даден е тригълник $ABC$ с център на вписаната окръжност $I$ и среди на страните $AB$, $BC$ и $CA$ съответно $C_0$, $A_0$ и $B_0$. Правата $C_0I$ пресича $A_0B_0$ в точка $C_1$. Аналогично се дефинират и точките $A_1$ и $B_1$. Да се докаже, че: a) npabnte \\(AA_{1}\\) \\(BB_{1}\\) n \\(CC_{1}\\) ce npcevat b eHa toka;",
+      "readability": "partial",
+      "readability_issues": [
+        "OCR errors in Bulgarian text (e.g., 'npabnte' for 'правите', 'npcevat' for 'пресичат', 'b eHa toka' for 'в една точка')"
+      ],
+      "segment_num": "10.2",
+      "_quote_grade": "NORMALIZED",
+      "pdf": "OLI-2-Областен кръг-2019-10 кл-probs"
+    },
+    {
+      "num": "10.3",
+      "year": 2019,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "Нека $n$ е четно естествено число. В някои от клетките на таблица $n \\times n$ са поставени пулове (не повече от един пул в клетка). Известно е, че във всеки ред, във всеки стълб и във всеки диагонал (ъгловите клетки също са диагонали) на таблицата има четен брой пулове. Да се намери максималният възможен брой пулове.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 10.3. Нека $n$ е четно естествено число. В някои от клетките на таблица $n \\times n$ са поставени пулове (не повече от един пул в клетка). Известно е, че във всеки ред, във всеки стълб и във всеки диагонал (ъгловите клетки също са диагонали) на таблицата има четен брой пулове. Да се намери максималният възможен брой пулове.",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "10.3",
+      "_quote_grade": "EXACT",
+      "pdf": "OLI-2-Областен кръг-2019-10 кл-probs"
+    },
+    {
+      "num": "10.4",
+      "year": 2019,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "Да се намерят всички полиноми $f(x)$ с цели неотрицателни коефициенти, за които $f(1) = 9$, $f(2) = 218$ и $f(3) = 2019$.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 10.4. Да се намерят всички полиноми $f(x)$ с цели неотрицателни коефициенти, за които $f(1) = 9$, $f(2) = 218$ и $f(3) = 2019$.",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "10.4",
+      "_quote_grade": "EXACT",
+      "pdf": "OLI-2-Областен кръг-2019-10 кл-probs"
+    }
+  ]
+}

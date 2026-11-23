@@ -1,0 +1,172 @@
+2026-11-21 08:52:28,913 [PDF_CHUNKER] INFO 10.21#0: accepted -> 10_21_0.md
+2026-11-21 08:52:28,940 [PDF_CHUNKER] INFO 11.6#0: accepted -> 11_6_0.md
+2026-11-21 09:01:42,865 [PDF_CHUNKER] INFO tasks: 4
+2026-11-21 09:01:43,200 [PDF_CHUNKER] INFO backup: C:\Users\denis\Downloads\Материали Олимпиада МАТ\backups\2026-11-21_090142\insights
+2026-11-21 09:01:43,223 [PDF_CHUNKER] INFO regen: изтрити 9 файла
+2026-11-21 09:01:43,226 [PDF_CHUNKER] INFO [1/4] 11.7#0 (hard)
+2026-11-21 09:03:42,427 [PDF_CHUNKER] INFO   → done score=9 wc=1747
+2026-11-21 09:03:42,427 [PDF_CHUNKER] INFO [2/4] 11.7#1 (hard)
+2026-11-21 09:06:12,439 [PDF_CHUNKER] INFO [11.7#1] adjudication: confirmed math=0 issues=0 refuted=4
+2026-11-21 09:06:12,453 [PDF_CHUNKER] INFO   → done score=8 wc=1649
+2026-11-21 09:06:12,453 [PDF_CHUNKER] INFO [3/4] 11.7#2 (hard)
+2026-11-21 09:07:47,142 [PDF_CHUNKER] INFO   → done score=10 wc=1630
+2026-11-21 09:07:47,142 [PDF_CHUNKER] INFO [4/4] 11.7#3 (easy)
+2026-11-21 09:09:33,162 [PDF_CHUNKER] INFO   → done score=9 wc=1759
+2026-11-21 09:09:33,163 [PDF_CHUNKER] INFO session done: 4 cards, budget: $0.00
+2026-11-21 10:28:12,419 [PDF_CHUNKER] INFO tasks: 4
+2026-11-21 10:28:12,713 [PDF_CHUNKER] INFO backup: C:\Users\denis\Downloads\Материали Олимпиада МАТ\backups\2026-11-21_102812\insights
+2026-11-21 10:28:12,739 [PDF_CHUNKER] INFO regen: изтрити 12 файла
+2026-11-21 10:28:12,740 [PDF_CHUNKER] INFO [1/4] 11.7#0 (hard)
+2026-11-21 10:30:06,428 [PDF_CHUNKER] INFO   → done score=9 wc=1789
+2026-11-21 10:30:06,429 [PDF_CHUNKER] INFO [2/4] 11.7#1 (hard)
+2026-11-21 10:31:52,870 [PDF_CHUNKER] INFO [11.7#1] adjudication: confirmed math=0 issues=0 refuted=1
+2026-11-21 10:31:52,876 [PDF_CHUNKER] INFO   → done score=8 wc=1634
+2026-11-21 10:31:52,876 [PDF_CHUNKER] INFO [3/4] 11.7#2 (hard)
+2026-11-21 10:33:38,139 [PDF_CHUNKER] INFO   → done score=9 wc=1562
+2026-11-21 10:33:38,139 [PDF_CHUNKER] INFO [4/4] 11.7#3 (easy)
+2026-11-21 10:35:21,974 [PDF_CHUNKER] INFO [11.7#3] adjudication: confirmed math=0 issues=0 refuted=1
+2026-11-21 10:35:21,981 [PDF_CHUNKER] INFO   → done score=8 wc=1708
+2026-11-21 10:35:21,981 [PDF_CHUNKER] INFO session done: 4 cards, budget: $0.00
+2026-11-21 14:09:09,329 [PDF_CHUNKER] INFO tasks: 2
+2026-11-21 14:09:09,765 [PDF_CHUNKER] INFO backup: C:\Users\denis\Downloads\Материали Олимпиада МАТ\backups\2026-11-21_140909\insights
+2026-11-21 14:09:09,799 [PDF_CHUNKER] INFO regen: изтрити 6 файла
+2026-11-21 14:09:09,801 [PDF_CHUNKER] INFO [1/2] 12.1#0 (hard)
+2026-11-21 14:10:46,988 [PDF_CHUNKER] INFO   → done score=10 wc=1597
+2026-11-21 14:10:46,988 [PDF_CHUNKER] INFO [2/2] 12.1#1 (hard)
+2026-11-21 14:12:58,257 [PDF_CHUNKER] INFO [12.1#1] adjudication: confirmed math=0 issues=0 refuted=1
+2026-11-21 14:12:58,263 [PDF_CHUNKER] INFO   → done score=9 wc=1676
+2026-11-21 14:12:58,263 [PDF_CHUNKER] INFO session done: 2 cards, budget: $0.00
+2026-11-21 14:13:01,458 [PDF_CHUNKER] INFO tasks: 2
+2026-11-21 14:13:01,881 [PDF_CHUNKER] INFO backup: C:\Users\denis\Downloads\Материали Олимпиада МАТ\backups\2026-11-21_141301\insights
+2026-11-21 14:13:01,909 [PDF_CHUNKER] INFO regen: изтрити 3 файла
+2026-11-21 14:13:01,910 [PDF_CHUNKER] INFO [1/2] 12.2#0 (hard)
+2026-11-21 14:15:30,234 [PDF_CHUNKER] INFO [12.2#0] adjudication: confirmed math=0 issues=0 refuted=1
+2026-11-21 14:15:30,311 [PDF_CHUNKER] INFO   → done score=8 wc=1731
+2026-11-21 14:15:30,314 [PDF_CHUNKER] INFO [2/2] 12.2#1 (medium)
+2026-11-21 14:18:06,311 [PDF_CHUNKER] INFO [12.2#1] adjudication: confirmed math=0 issues=0 refuted=2
+2026-11-21 14:18:06,317 [PDF_CHUNKER] INFO   → done score=9 wc=1715
+2026-11-21 14:18:06,318 [PDF_CHUNKER] INFO session done: 2 cards, budget: $0.00
+2026-11-21 14:18:09,352 [PDF_CHUNKER] INFO tasks: 4
+2026-11-21 14:18:09,680 [PDF_CHUNKER] INFO backup: C:\Users\denis\Downloads\Материали Олимпиада МАТ\backups\2026-11-21_141809\insights
+2026-11-21 14:18:09,712 [PDF_CHUNKER] INFO regen: изтрити 12 файла
+2026-11-21 14:18:09,713 [PDF_CHUNKER] INFO [1/4] 13.1#0 (hard)
+2026-11-21 14:20:21,550 [PDF_CHUNKER] INFO   → done score=9 wc=1942
+2026-11-21 14:20:21,551 [PDF_CHUNKER] INFO [2/4] 13.1#1 (hard)
+2026-11-21 14:22:24,346 [PDF_CHUNKER] INFO [13.1#1] adjudication: confirmed math=0 issues=0 refuted=1
+2026-11-21 14:22:24,352 [PDF_CHUNKER] INFO   → done score=9 wc=1808
+2026-11-21 14:22:24,352 [PDF_CHUNKER] INFO [3/4] 13.1#2 (hard)
+2026-11-21 14:25:01,732 [PDF_CHUNKER] INFO [13.1#2] adjudication: confirmed math=0 issues=0 refuted=6
+2026-11-21 14:25:01,740 [PDF_CHUNKER] INFO   → done score=8 wc=1652
+2026-11-21 14:25:01,740 [PDF_CHUNKER] INFO [4/4] 13.1#3 (hard)
+2026-11-21 14:27:11,278 [PDF_CHUNKER] INFO   → done score=9 wc=1812
+2026-11-21 14:27:11,280 [PDF_CHUNKER] INFO session done: 4 cards, budget: $0.00
+2026-11-21 14:27:14,467 [PDF_CHUNKER] INFO tasks: 1
+2026-11-21 14:27:14,800 [PDF_CHUNKER] INFO backup: C:\Users\denis\Downloads\Материали Олимпиада МАТ\backups\2026-11-21_142714\insights
+2026-11-21 14:27:14,827 [PDF_CHUNKER] INFO regen: изтрити 3 файла
+2026-11-21 14:27:14,827 [PDF_CHUNKER] INFO [1/1] 10.4#0 (hard)
+2026-11-21 14:29:12,652 [PDF_CHUNKER] INFO   → done score=9 wc=2235
+2026-11-21 14:29:12,652 [PDF_CHUNKER] INFO session done: 1 cards, budget: $0.00
+2026-11-21 14:55:35,678 [PDF_CHUNKER] INFO tasks: 1
+2026-11-21 14:55:36,027 [PDF_CHUNKER] INFO backup: C:\Users\denis\Downloads\Материали Олимпиада МАТ\backups\2026-11-21_145535\insights
+2026-11-21 14:55:36,048 [PDF_CHUNKER] INFO regen: изтрити 0 файла
+2026-11-21 14:55:36,049 [PDF_CHUNKER] INFO [1/1] 10.11#0 (medium)
+2026-11-21 14:58:07,005 [PDF_CHUNKER] INFO [10.11#0] adjudication: confirmed math=0 issues=0 refuted=4
+2026-11-21 14:58:07,011 [PDF_CHUNKER] INFO   → done score=8 wc=1685
+2026-11-21 14:58:07,011 [PDF_CHUNKER] INFO session done: 1 cards, budget: $0.00
+2026-11-21 19:18:55,536 [PDF_CHUNKER] INFO [1.1] duplicate statement skipped: 'Let $ABCD$ be a quadrilateral such that $AD = CD$ and $\\angl'
+2026-11-21 19:18:55,540 [PDF_CHUNKER] INFO [1.1] duplicate statement skipped: 'Let $ABCD$ be a quadrilateral such that $AD = CD$ and $\\\\ang'
+2026-11-21 19:18:55,559 [PDF_CHUNKER] INFO [1.1] duplicate statement skipped: 'Точките D, E и F са средите съответно на страните AB, BC и C'
+2026-11-21 19:18:55,610 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'The circles $k_1$ and $k_2$ with centers $O_1$ and $O_2$ res'
+2026-11-21 19:18:55,611 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'The circles $k_1$ and $k_2$ with centers $O_1$ and $O_2$ res'
+2026-11-21 19:18:55,614 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'The convex pentagon $ABCDE$ is inscribed in a circle with ra'
+2026-11-21 19:18:55,616 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'The convex pentagon $ABCDE$ is inscribed in a circle with ra'
+2026-11-21 19:18:55,627 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'В $\\triangle ABC, CH(H \\in AB)$ е височина, а $CM$ и $CN(M, '
+2026-11-21 19:18:55,634 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'Нека $ABC$ е правоъгълен триъгълник с хипотенуза $AB$. Върху'
+2026-11-21 19:18:55,652 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'Правоъгълен трапец с лице 10 и височина 4 е разделен с права'
+2026-11-21 19:18:55,662 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'Правоъгълен трапец с лице 10 и височина 4 е разделен с права'
+2026-11-21 19:18:55,678 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'Ъглополовящите на ∠BAC, ∠ABC и ∠ACB в △ABC пресичат описанат'
+2026-11-21 19:18:55,717 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'Вписаната в $\\triangle ABC$ окръжност се допира до страните '
+2026-11-21 19:18:55,883 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'Точка $D$ лежи на страната $AB$ на остроъгълен триъгълник $A'
+2026-11-21 19:18:56,079 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'Let $B_1$ and $C_1$ be points on the sides $AC$ and $AB$ of '
+2026-11-21 19:18:56,081 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'Let $B_1$ and $C_1$ be points on the sides $AC$ and $AB$ of '
+2026-11-21 19:18:56,084 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'В $\\triangle ABC, CH(H \\in AB)$ е височина, а $CM$ и $CN(M, '
+2026-11-21 19:18:56,156 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'В трапец ABCD, AB ∥ CD, вписаната окръжност в триъгълник ABD'
+2026-11-21 19:18:56,378 [PDF_CHUNKER] INFO [1.2] duplicate statement skipped: 'The circles $k_1$ and $k_2$ with centers $O_1$ and $O_2$ res'
+2026-11-21 19:18:56,379 [PDF_CHUNKER] INFO [1.2] duplicate statement skipped: 'The circles $k_1$ and $k_2$ with centers $O_1$ and $O_2$ res'
+2026-11-21 19:18:56,397 [PDF_CHUNKER] INFO [1.2] duplicate statement skipped: 'The points $A_1$, $B_1$, $C_1$ lie on the sides $BC$, $CA$, '
+2026-11-21 19:18:56,434 [PDF_CHUNKER] INFO [1.3] duplicate statement skipped: 'Let $A_1A_2A_3A_4A_5A_6A_7$, $B_1B_2B_3B_4B_5B_6B_7$, $C_1C_'
+2026-11-21 19:18:56,435 [PDF_CHUNKER] INFO [1.3] duplicate statement skipped: 'Let $A_1A_2A_3A_4A_5A_6A_7$, $B_1B_2B_3B_4B_5B_6B_7$, $C_1C_'
+2026-11-21 19:18:56,442 [PDF_CHUNKER] INFO [1.3] duplicate statement skipped: 'Нека $ABCD$ е изпъкнал четириъгълник. С $A_1$ и $C_1$ са озн'
+2026-11-21 19:18:56,480 [PDF_CHUNKER] INFO [1.4] duplicate statement skipped: 'The circles $k_1$ and $k_2$ with centers $O_1$ and $O_2$ res'
+2026-11-21 19:18:56,483 [PDF_CHUNKER] INFO [1.4] duplicate statement skipped: 'A convex quadrilateral of area $S$ is inscribed in a circle '
+2026-11-21 19:18:56,485 [PDF_CHUNKER] INFO [1.4] duplicate statement skipped: 'A convex quadrilateral of area $S$ is inscribed in a circle '
+2026-11-21 19:18:56,583 [PDF_CHUNKER] INFO [1.4] duplicate statement skipped: 'Let $p$ and $q$ be positive numbers such that the parabola $'
+2026-11-21 19:18:56,673 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'Given a convex quadrilateral ABCD which can be inscribed in '
+2026-11-21 19:18:56,674 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'Given a convex quadrilateral ABCD which can be inscribed in '
+2026-11-21 19:18:56,677 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'The convex pentagon $ABCDE$ is inscribed in a circle with ra'
+2026-11-21 19:18:56,690 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'В $\\triangle ABC, CH(H \\in AB)$ е височина, а $CM$ и $CN(M, '
+2026-11-21 19:18:56,692 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'Да се намерят всички множества $S$ от четири точки в равнина'
+2026-11-21 19:18:56,700 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'Точки $A$ и $B$ лежат на окръжност, а точка $C$ се мени върх'
+2026-11-21 19:18:56,741 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'Даден е триъгълник ABC и произволна точка L, вътрешна за стр'
+2026-11-21 19:18:56,759 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'В окръжност с център $O$ и радиус $R$ е вписан остроъгълен $'
+2026-11-21 19:18:56,779 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'Даден е триъгълник $ABC$, за който $\\angle  ACB = 60^◦$. Точ'
+2026-11-21 19:18:56,842 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'Даден е триъгълник $ABC$. Окръжност $k$ минава през върха $C'
+2026-11-21 19:18:56,948 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'От вътрешна за остроъгълен $\\triangle ABC$ точка $O$ са спус'
+2026-11-21 19:18:57,013 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'В $\\triangle ABC, CH(H \\in AB)$ е височина, а $CM$ и $CN(M, '
+2026-11-21 19:18:57,063 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'Точки $A$ и $B$ лежат на окръжност, а точка $C$ се мени върх'
+2026-11-21 19:18:57,069 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'Точки $A$ и $B$ лежат на окръжност, а точка $C$ се мени върх'
+2026-11-21 19:18:57,220 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'Дадена е окръжност $k$ и три различни точки $A$, $B$ и $C$ в'
+2026-11-21 19:18:57,316 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'Върху дадена окръжност $k$ са избрани точките $A$, $B$ и $C$'
+2026-11-21 19:18:57,381 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'Точките $A_1$, $B_1$ и $C_1$ лежат съответно на страните $BC'
+2026-11-21 19:18:57,535 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'Нека $I$ е центърът на описаната в триъгълник $ABC$ окръжнос'
+2026-11-21 19:18:57,747 [PDF_CHUNKER] INFO [1.6] duplicate statement skipped: 'Let $A_1A_2A_3A_4A_5A_6A_7$, $B_1B_2B_3B_4B_5B_6B_7$, $C_1C_'
+2026-11-21 19:18:57,748 [PDF_CHUNKER] INFO [1.6] duplicate statement skipped: 'Let $A_1A_2A_3A_4A_5A_6A_7$, $B_1B_2B_3B_4B_5B_6B_7$, $C_1C_'
+2026-11-21 19:18:57,750 [PDF_CHUNKER] INFO [1.6] duplicate statement skipped: 'A convex quadrilateral $ABCD$, for which $\\angle ABC + \\angl'
+2026-11-21 19:18:57,764 [PDF_CHUNKER] INFO [1.6] duplicate statement skipped: 'A convex quadrilateral of area $S$ is inscribed in a circle '
+2026-11-21 19:18:57,800 [PDF_CHUNKER] INFO [1.6] duplicate statement skipped: 'а) Да се докаже, че за триъгълник с ъгли α, β и γ е изпълнен'
+2026-11-21 19:18:57,877 [PDF_CHUNKER] INFO [1.6] duplicate statement skipped: 'Нека $AM$ и $BN$ ($M \\in BC, N \\in AC$) са вътрешните ъглопо'
+2026-11-21 19:18:58,029 [PDF_CHUNKER] INFO [1.6] duplicate statement skipped: 'On the sides of a non-obtuse triangle $ABC$ a square, a regu'
+2026-11-21 19:18:58,089 [PDF_CHUNKER] INFO [1.6] duplicate statement skipped: 'Точка $D$ е средата на основата $AB$ на остроъгълен равнобед'
+2026-11-21 19:18:58,091 [PDF_CHUNKER] INFO [1.6] duplicate statement skipped: 'A convex quadrilateral $ABCD$, for which $\\angle ABC + \\angl'
+2026-11-21 19:18:58,151 [PDF_CHUNKER] INFO [1.6] duplicate statement skipped: 'Диагоналите $AC$ и $BD$ на вписан в окръжност четириъгълник '
+2026-11-21 19:18:58,181 [PDF_CHUNKER] INFO [1.6] duplicate statement skipped: 'В окръжност с радиус $R = 65$ е вписан четиригълник $ABCD$, '
+2026-11-21 19:18:58,235 [PDF_CHUNKER] INFO [1.6] duplicate statement skipped: 'Точките $O$ и $I$ са съответно център на описаната и вписана'
+2026-11-21 19:18:58,315 [PDF_CHUNKER] INFO [1.6] duplicate statement skipped: 'Върху медианата CM на триъгълика ABC(AC̸ = BC) с остър ъгъл '
+2026-11-21 19:18:58,404 [PDF_CHUNKER] INFO [1.7] duplicate statement skipped: 'A convex quadrilateral of area $S$ is inscribed in a circle '
+2026-11-21 19:18:58,450 [PDF_CHUNKER] INFO [1.7] duplicate statement skipped: 'Даден е трапец $ABCD$ с основи $AB \nparallel CD$ и пресечна '
+2026-11-21 19:18:58,570 [PDF_CHUNKER] INFO [1.7] duplicate statement skipped: 'В тризъглна пирамида $ABCD$ околните ръбове $DB$ и $DC$ са р'
+2026-11-21 19:18:58,629 [PDF_CHUNKER] INFO [1.8] duplicate statement skipped: 'Точките $O$ и $I$ са съответно център на описаната и вписана'
+2026-11-21 19:18:58,642 [PDF_CHUNKER] INFO [1.9] duplicate statement skipped: 'Да се намерят всички множества $S$ от четири точки в равнина'
+2026-11-21 19:18:58,642 [PDF_CHUNKER] INFO [1.9] duplicate statement skipped: 'Да се намерят всички множества $S$ от четири точки в равнина'
+2026-11-21 19:18:58,698 [PDF_CHUNKER] INFO [2.10] duplicate statement skipped: 'Даден е изпъкнал четириъгълник $ABCD$, за който $\\measuredan'
+2026-11-21 19:18:58,727 [PDF_CHUNKER] INFO [2.11] duplicate statement skipped: 'Да се намерят всички множества $S$ от четири точки в равнина'
+2026-11-21 19:18:58,732 [PDF_CHUNKER] INFO [2.11] duplicate statement skipped: 'Даден е $\\triangle ABC$ с ортоцентър $H$. Нека $M$ е средата'
+2026-11-21 19:18:58,767 [PDF_CHUNKER] INFO [2.11] duplicate statement skipped: 'Даден е остроъгълен триъгълник $\\triangle ABC$ с ортоцентър '
+2026-11-21 19:18:58,843 [PDF_CHUNKER] INFO [2.11] duplicate statement skipped: 'The vertices $A$, $B$ and $C$ of an acute triangle $ABC$ lie'
+2026-11-21 19:18:59,081 [PDF_CHUNKER] INFO tasks: 10
+2026-11-21 19:18:59,081 [PDF_CHUNKER] INFO [1/10] 2.10#3 (hard)
+2026-11-21 19:20:57,620 [PDF_CHUNKER] INFO   → done score=9 wc=1690
+2026-11-21 19:20:57,620 [PDF_CHUNKER] INFO [2/10] 2.11#0 (hard)
+2026-11-21 19:24:05,100 [PDF_CHUNKER] INFO [2.11#0] adjudication: confirmed math=0 issues=0 refuted=2
+2026-11-21 19:24:05,105 [PDF_CHUNKER] INFO   → done score=8 wc=1895
+2026-11-21 19:24:05,106 [PDF_CHUNKER] INFO [3/10] 2.11#1 (hard)
+2026-11-21 19:27:58,953 [PDF_CHUNKER] INFO [2.11#1] adjudication: confirmed math=0 issues=0 refuted=4
+2026-11-21 19:27:58,959 [PDF_CHUNKER] INFO   → done score=8 wc=1724
+2026-11-21 19:27:58,960 [PDF_CHUNKER] INFO [4/10] 2.11#2 (hard)
+2026-11-21 19:30:34,893 [PDF_CHUNKER] INFO   → done score=9 wc=1757
+2026-11-21 19:30:34,893 [PDF_CHUNKER] INFO [5/10] 2.11#3 (hard)
+2026-11-21 19:33:09,085 [PDF_CHUNKER] INFO [2.11#3] adjudication: confirmed math=1 issues=0 refuted=1
+2026-11-21 19:35:03,849 [PDF_CHUNKER] INFO [2.11#3] adjudication: confirmed math=0 issues=0 refuted=2
+2026-11-21 19:35:03,855 [PDF_CHUNKER] INFO   → done score=8 wc=1874
+2026-11-21 19:35:03,855 [PDF_CHUNKER] INFO [6/10] 2.2#0 (hard)
+2026-11-21 19:37:56,319 [PDF_CHUNKER] INFO [2.2#0] adjudication: confirmed math=1 issues=0 refuted=4
+2026-11-21 19:39:24,034 [PDF_CHUNKER] INFO [2.2#0] adjudication: confirmed math=0 issues=0 refuted=4
+2026-11-21 19:39:24,040 [PDF_CHUNKER] INFO   → done score=8 wc=1933
+2026-11-21 19:39:24,040 [PDF_CHUNKER] INFO [7/10] 2.3#0 (hard)
+2026-11-21 19:41:49,574 [PDF_CHUNKER] INFO   → done score=9 wc=1822
+2026-11-21 19:41:49,575 [PDF_CHUNKER] INFO [8/10] 2.3#1 (hard)
+2026-11-21 19:45:37,278 [PDF_CHUNKER] INFO [2.3#1] adjudication: confirmed math=0 issues=0 refuted=3
+2026-11-21 19:45:37,286 [PDF_CHUNKER] INFO   → done score=8 wc=1659
+2026-11-21 19:45:37,286 [PDF_CHUNKER] INFO [9/10] 2.3#2 (hard)
+2026-11-21 19:49:09,140 [PDF_CHUNKER] WARNING BudgetExhausted (402) — stopping
+2026-11-21 19:49:09,142 [PDF_CHUNKER] INFO session done: 8 cards, budget: $0.00

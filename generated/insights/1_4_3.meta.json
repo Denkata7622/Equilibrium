@@ -1,0 +1,23 @@
+{
+  "key": "1.4#3",
+  "point_id": "1.4",
+  "idx": 3,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-1999-12 кл · 1999-12 · Зад. 12.2",
+  "techniques": [
+    "circle_properties",
+    "projections",
+    "trigonometry",
+    "area_formulas"
+  ],
+  "word_count": 1621,
+  "score": 9,
+  "verdict": "approve",
+  "caught_errors_in_solution": [
+    "След „Therefore“ липсва формулата S_{triangle MEN}=BE·AC·(R²−OE²)·sin(angle AEB)/(8R²). Тя е възстановена и обяснена."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 169.2,
+  "generated_at": "2026-11-19T22:09:57.752621"
+}

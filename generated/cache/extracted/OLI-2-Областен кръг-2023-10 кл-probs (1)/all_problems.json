@@ -1,0 +1,97 @@
+{
+  "pdf": "OLI-2-Областен кръг-2023-10 кл-probs (1)",
+  "version": 3,
+  "extraction_model": "deepseek/deepseek-r1-0528",
+  "extraction_level": "L0_native",
+  "verification": {
+    "verdict": "PASS",
+    "expected": 4,
+    "actual": 4,
+    "verified": 4,
+    "hallucinated": 0,
+    "unreadable": 0,
+    "wrong_grade": 0,
+    "duplicates": 0,
+    "null_num": 0,
+    "numeric_mismatch": 0,
+    "avg_confidence": 0.988,
+    "expected_grade": 10,
+    "grade_distribution": {
+      "10": 4
+    },
+    "escalate_to": "none",
+    "reasons": [],
+    "ai_checked": false,
+    "ai_result": {}
+  },
+  "extracted_at": "2026-11-10T10:00:07.760262",
+  "problems": [
+    {
+      "num": "10.1",
+      "year": 2023,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "Да се реши уравнението\n\n$$8 - 3\\sqrt{x^2 + 16} = \\frac{56}{2 - \\sqrt{x^2 + 16}}.$$",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 10.1. Да се реши уравнението\n\n$$8 - 3\\sqrt{x^2 + 16} = \\frac{56}{2 - \\sqrt{x^2 + 16}}.$",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "10.1",
+      "_quote_grade": "EXACT",
+      "pdf": "OLI-2-Областен кръг-2023-10 кл-probs (1)"
+    },
+    {
+      "num": "10.2",
+      "year": 2023,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "Две окръжности $k_1$ и $k_2$ се пресичат в точки $A$ и $B$. Допирателната в точка $A$ към $k_1$ пресича $k_2$ за втори път в точка $C$, а допирателната в точка $A$ към $k_2$ пресича $k_1$ за втори път в точка $D$. Точка $M$ лежи върху отсечката $AD$, а точка $N$ лежи върху отсечката $AC$. Ако $BD = 32$, $BC = 18$, $DM = 20$ и $AN = 15$, да се докаже, че четириъгълник $BNAM$ е вписан.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 10.2. Две окръжности $k_1$ и $k_2$ се пресичат в точки $A$ и $B$. Допирателната в точка $A$ към $k_1$ пресича $k_2$ за втори път в точка $C$, а допирателната в точка $A$ към $k_2$ пресича $k_1$ за втори път в точка $D$.",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "10.2",
+      "_quote_grade": "EXACT",
+      "pdf": "OLI-2-Областен кръг-2023-10 кл-probs (1)"
+    },
+    {
+      "num": "10.3",
+      "year": 2023,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "Да се намери най-малкото естествено число $n$, за което съществуват $n$ прави в равнината, никои три от които не се пресичат в една точка такива, че\n\n(i) EpoT pa3JIuHn IIpeceHH ToUKN MeKdy IpaBHe e 23;\n(ii) EpoT pa3JIuHn TpIbIbJIHHn, o6pa3yBaHn qpe3 npaBHe e 14.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 10.3. Да се намери най-малкото естествено число $n$, за което съществуват $n$ прави в равнината, никои три от които не се пресичат в една точка такива, че\n\n(i) EpoT pa3JIuHn IIpeceHH ToUKN MeKdy IpaBHe e 23;\n(ii) EpoT pa3JIuHn TpIbIbJIHHn, o6pa3yBaHn qpe3 npaBHe e 14.",
+      "readability": "partial",
+      "readability_issues": [
+        "OCR errors in condition (i): 'EpoT' (likely 'Броят'), 'pa3JIuHn' (likely 'различни'), 'IIpeceHH' (likely 'пресечни'), 'ToUKN' (likely 'точки'), 'MeKdy' (likely 'между'), 'IpaBHe' (likely 'правите')",
+        "OCR errors in condition (ii): 'EpoT' (likely 'Броят'), 'pa3JIuHn' (likely 'различни'), 'TpIbIbJIHHn' (likely 'триъгълници'), 'o6pa3yBaHn' (likely 'образувани'), 'qpe3' (likely 'чрез'), 'npaBHe' (likely 'правите')"
+      ],
+      "segment_num": "10.3",
+      "_quote_grade": "EXACT",
+      "pdf": "OLI-2-Областен кръг-2023-10 кл-probs (1)"
+    },
+    {
+      "num": "10.4",
+      "year": 2023,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "Нека $n \\ge 4$ е естествено число. Да се намерят всички цели числа $a$, за които полиномът $$f(x) = x^n + ax^{n-1} + 63$$ може да се напише като произведение $p(x)q(x)$ на два полинома $p(x), q(x)$ с цели коефициенти, всеки от които е от степен поне единица.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 10.4. Нека $n \\ge 4$ е естествено число. Да се намерят всички цели числа $a$, за които полиномът $$f(x) = x^n + ax^{n-1} + 63$$ може да се напише като произведение $p(x)q(x)$ на два полинома $p(x), q(x)$ с цели коефициенти, всеки от които е от степен поне единица. Свалено от Klasirane.com",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "10.4",
+      "_quote_grade": "NORMALIZED",
+      "pdf": "OLI-2-Областен кръг-2023-10 кл-probs (1)"
+    }
+  ]
+}

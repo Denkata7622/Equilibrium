@@ -1,0 +1,921 @@
+2026-11-12 09:43:39,893 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-12 09:43:39,893 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-12 09:43:39,894 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-12 10:06:03,158 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-12 10:06:03,159 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-12 10:06:03,159 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-12 10:14:36,219 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-12 10:14:36,225 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-12 10:14:36,225 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-12 10:14:36,582 [PDF_CHUNKER] INFO Classify-paired: 140 olympiads (11 кл областен first, newest→oldest)
+2026-11-12 10:14:36,583 [PDF_CHUNKER] INFO Нов ден — рестарт на бюджета
+2026-11-12 10:14:36,589 [PDF_CHUNKER] INFO 
+[1/140] OLI-2-Областен кръг-2026-11 кл: skip (already classified)
+2026-11-12 10:14:36,590 [PDF_CHUNKER] INFO 
+[2/140] OLI-2-Областен кръг-2025-11 кл: skip (already classified)
+2026-11-12 10:14:36,591 [PDF_CHUNKER] INFO 
+[3/140] OLI-2-Областен кръг-2024-11 кл: skip (already classified)
+2026-11-12 10:14:36,593 [PDF_CHUNKER] INFO 
+[4/140] OLI-2-Областен кръг-2023-11 кл: skip (already classified)
+2026-11-12 10:14:36,594 [PDF_CHUNKER] INFO 
+[5/140] OLI-2-Областен кръг-2022-11 кл: skip (already classified)
+2026-11-12 10:14:36,594 [PDF_CHUNKER] INFO 
+[6/140] OLI-2-Областен кръг-2021-11 кл: skip (already classified)
+2026-11-12 10:14:36,595 [PDF_CHUNKER] INFO 
+[7/140] OLI-2-Областен кръг-2020-11 кл: skip (already classified)
+2026-11-12 10:14:36,597 [PDF_CHUNKER] INFO 
+[8/140] OLI-2-Областен кръг-2019-11 кл: skip (already classified)
+2026-11-12 10:14:36,597 [PDF_CHUNKER] INFO 
+[9/140] OLI-2-Областен кръг-2018-11 кл: skip (already classified)
+2026-11-12 10:14:36,598 [PDF_CHUNKER] INFO 
+[10/140] OLI-2-Областен кръг-2017-11 кл: skip (already classified)
+2026-11-12 10:14:36,600 [PDF_CHUNKER] INFO 
+[11/140] OLI-2-Областен кръг-2016-11 кл: skip (already classified)
+2026-11-12 10:14:36,601 [PDF_CHUNKER] INFO 
+[12/140] OLI-2-Областен кръг-2015-11 кл: skip (already classified)
+2026-11-12 10:14:36,602 [PDF_CHUNKER] INFO 
+[13/140] OLI-2-Областен кръг-2014-11 кл: skip (already classified)
+2026-11-12 10:14:36,603 [PDF_CHUNKER] INFO 
+[14/140] OLI-2-Областен кръг-2013-11 кл: skip (already classified)
+2026-11-12 10:14:36,604 [PDF_CHUNKER] INFO 
+[15/140] OLI-2-Областен кръг-2012-11 кл: skip (already classified)
+2026-11-12 10:14:36,606 [PDF_CHUNKER] INFO 
+[16/140] OLI-2-Областен кръг-2011-11 кл: skip (already classified)
+2026-11-12 10:14:36,607 [PDF_CHUNKER] INFO 
+[17/140] OLI-2-Областен кръг-2010-11 кл: skip (already classified)
+2026-11-12 10:14:36,608 [PDF_CHUNKER] INFO 
+[18/140] OLI-2-Областен кръг-2009-11 кл: skip (already classified)
+2026-11-12 10:14:36,609 [PDF_CHUNKER] INFO 
+[19/140] OLI-2-Областен кръг-2008-11 кл: skip (already classified)
+2026-11-12 10:14:36,610 [PDF_CHUNKER] INFO 
+[20/140] OLI-2-Областен кръг-2007-11 кл: skip (already classified)
+2026-11-12 10:14:36,611 [PDF_CHUNKER] INFO 
+[21/140] OLI-2-Областен кръг-2006-11 кл: skip (already classified)
+2026-11-12 10:14:36,612 [PDF_CHUNKER] INFO 
+[22/140] OLI-2-Областен кръг-2005-11 кл: skip (already classified)
+2026-11-12 10:14:36,613 [PDF_CHUNKER] INFO 
+[23/140] OLI-2-Областен кръг-2004-11 кл: skip (already classified)
+2026-11-12 10:14:36,614 [PDF_CHUNKER] INFO 
+[24/140] OLI-2-Областен кръг-2003-11 кл: skip (already classified)
+2026-11-12 10:14:36,615 [PDF_CHUNKER] INFO 
+[25/140] OLI-2-Областен кръг-2002-11 кл: skip (already classified)
+2026-11-12 10:14:36,617 [PDF_CHUNKER] INFO 
+[26/140] OLI-2-Областен кръг-2001-11 кл: skip (already classified)
+2026-11-12 10:14:36,618 [PDF_CHUNKER] INFO 
+[27/140] OLI-2-Областен кръг-2000-11 кл: skip (already classified)
+2026-11-12 10:14:36,619 [PDF_CHUNKER] INFO 
+[28/140] OLI-2-Областен кръг-1999-11 кл: skip (already classified)
+2026-11-12 10:14:36,620 [PDF_CHUNKER] INFO 
+[29/140] OLI-2-Областен кръг-1998-11 кл: skip (already classified)
+2026-11-12 10:14:36,622 [PDF_CHUNKER] INFO 
+[30/140] OLI-2-Областен кръг-1997-11 кл: skip (already classified)
+2026-11-12 10:14:36,623 [PDF_CHUNKER] INFO 
+[31/140] OLI-2-Областен кръг-1996-11 кл: skip (already classified)
+2026-11-12 10:14:36,624 [PDF_CHUNKER] INFO 
+[32/140] OLI-2-Областен кръг-1995-11 кл: skip (already classified)
+2026-11-12 10:14:36,626 [PDF_CHUNKER] INFO 
+[33/140] OLI-2-Областен кръг-2026-10 кл: skip (already classified)
+2026-11-12 10:14:36,627 [PDF_CHUNKER] INFO 
+[34/140] OLI-2-Областен кръг-2026-12 кл: skip (already classified)
+2026-11-12 10:14:36,633 [PDF_CHUNKER] INFO 
+[35/140] OLI-3-Национален кръг-2026-9-12 кл: skip (already classified)
+2026-11-12 10:14:36,634 [PDF_CHUNKER] INFO 
+[36/140] OLI-2-Областен кръг-2025-10 кл: skip (already classified)
+2026-11-12 10:14:36,635 [PDF_CHUNKER] INFO 
+[37/140] OLI-2-Областен кръг-2025-12 кл: skip (already classified)
+2026-11-12 10:14:36,636 [PDF_CHUNKER] INFO 
+[38/140] OLI-3-Национален кръг-2025-9-12 кл: skip (already classified)
+2026-11-12 10:14:36,638 [PDF_CHUNKER] INFO 
+[39/140] OLI-2-Областен кръг-2024-10 кл: skip (already classified)
+2026-11-12 10:14:36,643 [PDF_CHUNKER] INFO 
+[40/140] OLI-2-Областен кръг-2024-12 кл: skip (already classified)
+2026-11-12 10:14:36,644 [PDF_CHUNKER] INFO 
+[41/140] OLI-3-Национален кръг-2024-9-12 кл: skip (already classified)
+2026-11-12 10:14:36,645 [PDF_CHUNKER] INFO 
+[42/140] OLI-2-Областен кръг-2023-10 кл: skip (already classified)
+2026-11-12 10:14:36,646 [PDF_CHUNKER] INFO 
+[43/140] OLI-2-Областен кръг-2023-12 кл: skip (already classified)
+2026-11-12 10:14:36,647 [PDF_CHUNKER] INFO 
+[44/140] OLI-3-Национален кръг-2023-9-12 кл: skip (already classified)
+2026-11-12 10:14:36,650 [PDF_CHUNKER] INFO 
+[45/140] OLI-2-Областен кръг-2022-10 кл: skip (already classified)
+2026-11-12 10:14:36,652 [PDF_CHUNKER] INFO 
+[46/140] OLI-2-Областен кръг-2022-12 кл: skip (already classified)
+2026-11-12 10:14:36,653 [PDF_CHUNKER] INFO 
+[47/140] OLI-3-Национален кръг-2022-9-12 кл: skip (already classified)
+2026-11-12 10:14:36,654 [PDF_CHUNKER] INFO 
+[48/140] OLI-2-Областен кръг-2021-10 кл: skip (already classified)
+2026-11-12 10:14:36,655 [PDF_CHUNKER] INFO 
+[49/140] OLI-2-Областен кръг-2021-12 кл: 4 probs, 4 sols
+2026-11-12 10:15:11,751 [PDF_CHUNKER] INFO   ✓ matched=4, orphan_kept=0, no_sol=0, dropped_unclassifiable=0, total=4
+2026-11-12 10:15:11,752 [PDF_CHUNKER] INFO 
+[50/140] OLI-3-Национален кръг-2021-9-12 кл: skip (already classified)
+2026-11-12 10:15:11,754 [PDF_CHUNKER] INFO 
+[51/140] OLI-2-Областен кръг-2020-10 кл: 4 probs, 4 sols
+2026-11-12 10:16:56,511 [PDF_CHUNKER] INFO   ✓ matched=4, orphan_kept=0, no_sol=0, dropped_unclassifiable=0, total=4
+2026-11-12 10:16:56,513 [PDF_CHUNKER] INFO 
+[52/140] OLI-2-Областен кръг-2020-12 кл: skip (already classified)
+2026-11-12 10:16:56,513 [PDF_CHUNKER] INFO 
+[53/140] OLI-3-Национален кръг-2020-9-12 кл: skip (already classified)
+2026-11-12 10:16:56,514 [PDF_CHUNKER] INFO 
+[54/140] OLI-2-Областен кръг-2019-10 кл: skip (already classified)
+2026-11-12 10:16:56,516 [PDF_CHUNKER] INFO 
+[55/140] OLI-2-Областен кръг-2019-12 кл: skip (already classified)
+2026-11-12 10:16:56,517 [PDF_CHUNKER] INFO 
+[56/140] OLI-3-Национален кръг-2019-9-12 кл: skip (already classified)
+2026-11-12 10:16:56,517 [PDF_CHUNKER] INFO 
+[57/140] OLI-2-Областен кръг-2018-10 кл: skip (already classified)
+2026-11-12 10:16:56,518 [PDF_CHUNKER] INFO 
+[58/140] OLI-2-Областен кръг-2018-12 кл: skip (already classified)
+2026-11-12 10:16:56,519 [PDF_CHUNKER] INFO 
+[59/140] OLI-3-Национален кръг-2018-9-12 кл: skip (already classified)
+2026-11-12 10:16:56,522 [PDF_CHUNKER] INFO 
+[60/140] OLI-2-Областен кръг-2017-10 кл: skip (already classified)
+2026-11-12 10:16:56,523 [PDF_CHUNKER] INFO 
+[61/140] OLI-2-Областен кръг-2017-12 кл: skip (already classified)
+2026-11-12 10:16:56,524 [PDF_CHUNKER] INFO 
+[62/140] OLI-3-Национален кръг-2017-9-12 кл: skip (already classified)
+2026-11-12 10:16:56,525 [PDF_CHUNKER] INFO 
+[63/140] OLI-2-Областен кръг-2016-10 кл: skip (already classified)
+2026-11-12 10:16:56,525 [PDF_CHUNKER] INFO 
+[64/140] OLI-2-Областен кръг-2016-12 кл: skip (already classified)
+2026-11-12 10:16:56,526 [PDF_CHUNKER] INFO 
+[65/140] OLI-3-Национален кръг-2016-9-12 кл: skip (already classified)
+2026-11-12 10:16:56,528 [PDF_CHUNKER] INFO 
+[66/140] OLI-2-Областен кръг-2015-10 кл: 4 probs, 4 sols
+2026-11-12 10:17:22,523 [PDF_CHUNKER] INFO   ✓ matched=4, orphan_kept=0, no_sol=0, dropped_unclassifiable=0, total=4
+2026-11-12 10:17:22,525 [PDF_CHUNKER] INFO 
+[67/140] OLI-2-Областен кръг-2015-12 кл: skip (already classified)
+2026-11-12 10:17:22,526 [PDF_CHUNKER] INFO 
+[68/140] OLI-3-Национален кръг-2015-9-12 кл: skip (already classified)
+2026-11-12 10:17:22,527 [PDF_CHUNKER] INFO 
+[69/140] OLI-2-Областен кръг-2014-10 кл: skip (already classified)
+2026-11-12 10:17:22,529 [PDF_CHUNKER] INFO 
+[70/140] OLI-2-Областен кръг-2014-12 кл: skip (already classified)
+2026-11-12 10:17:22,530 [PDF_CHUNKER] INFO 
+[71/140] OLI-3-Национален кръг-2014-9-12 кл: skip (already classified)
+2026-11-12 10:17:22,531 [PDF_CHUNKER] INFO 
+[72/140] OLI-2-Областен кръг-2013-10 кл: skip (already classified)
+2026-11-12 10:17:22,532 [PDF_CHUNKER] INFO 
+[73/140] OLI-2-Областен кръг-2013-12 кл: skip (already classified)
+2026-11-12 10:17:22,534 [PDF_CHUNKER] INFO 
+[74/140] OLI-3-Национален кръг-2013-9-12 кл: skip (already classified)
+2026-11-12 10:17:22,535 [PDF_CHUNKER] INFO 
+[75/140] OLI-2-Областен кръг-2012-10 кл: skip (already classified)
+2026-11-12 10:17:22,538 [PDF_CHUNKER] INFO 
+[76/140] OLI-2-Областен кръг-2012-12 кл: skip (already classified)
+2026-11-12 10:17:22,540 [PDF_CHUNKER] INFO 
+[77/140] OLI-3-Национален кръг-2012-9-12 кл: skip (already classified)
+2026-11-12 10:17:22,541 [PDF_CHUNKER] INFO 
+[78/140] OLI-2-Областен кръг-2011-10 кл: skip (already classified)
+2026-11-12 10:17:22,543 [PDF_CHUNKER] INFO 
+[79/140] OLI-2-Областен кръг-2011-12 кл: 6 probs, 5 sols
+2026-11-12 10:18:36,046 [PDF_CHUNKER] INFO   ✓ matched=5, orphan_kept=0, no_sol=1, dropped_unclassifiable=0, total=6
+2026-11-12 10:18:36,047 [PDF_CHUNKER] INFO 
+[80/140] OLI-3-Национален кръг-2011-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,048 [PDF_CHUNKER] INFO 
+[81/140] OLI-2-Областен кръг-2010-10 кл: skip (already classified)
+2026-11-12 10:18:36,049 [PDF_CHUNKER] INFO 
+[82/140] OLI-2-Областен кръг-2010-12 кл: skip (already classified)
+2026-11-12 10:18:36,050 [PDF_CHUNKER] INFO 
+[83/140] OLI-3-Национален кръг-2010-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,051 [PDF_CHUNKER] INFO 
+[84/140] OLI-2-Областен кръг-2009-10 кл: skip (already classified)
+2026-11-12 10:18:36,052 [PDF_CHUNKER] INFO 
+[85/140] OLI-2-Областен кръг-2009-12 кл: skip (already classified)
+2026-11-12 10:18:36,053 [PDF_CHUNKER] INFO 
+[86/140] OLI-3-Национален кръг-2009-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,053 [PDF_CHUNKER] INFO 
+[87/140] OLI-2-Областен кръг-2008-10 кл: skip (already classified)
+2026-11-12 10:18:36,055 [PDF_CHUNKER] INFO 
+[88/140] OLI-2-Областен кръг-2008-12 кл: skip (already classified)
+2026-11-12 10:18:36,056 [PDF_CHUNKER] INFO 
+[89/140] OLI-3-Национален кръг-2008-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,057 [PDF_CHUNKER] INFO 
+[90/140] OLI-2-Областен кръг-2007-10 кл: skip (already classified)
+2026-11-12 10:18:36,058 [PDF_CHUNKER] INFO 
+[91/140] OLI-2-Областен кръг-2007-12 кл: skip (already classified)
+2026-11-12 10:18:36,060 [PDF_CHUNKER] INFO 
+[92/140] OLI-3-Национален кръг-2007-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,061 [PDF_CHUNKER] INFO 
+[93/140] OLI-2-Областен кръг-2006-10 кл: skip (already classified)
+2026-11-12 10:18:36,062 [PDF_CHUNKER] INFO 
+[94/140] OLI-2-Областен кръг-2006-12 кл: skip (already classified)
+2026-11-12 10:18:36,064 [PDF_CHUNKER] INFO 
+[95/140] OLI-3-Национален кръг-2006-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,064 [PDF_CHUNKER] INFO 
+[96/140] OLI-2-Областен кръг-2005-10 кл: skip (already classified)
+2026-11-12 10:18:36,066 [PDF_CHUNKER] INFO 
+[97/140] OLI-2-Областен кръг-2005-12 кл: skip (already classified)
+2026-11-12 10:18:36,067 [PDF_CHUNKER] INFO 
+[98/140] OLI-3-Национален кръг-2005-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,069 [PDF_CHUNKER] INFO 
+[99/140] OLI-2-Областен кръг-2004-10 кл: skip (already classified)
+2026-11-12 10:18:36,070 [PDF_CHUNKER] INFO 
+[100/140] OLI-2-Областен кръг-2004-12 кл: skip (already classified)
+2026-11-12 10:18:36,071 [PDF_CHUNKER] INFO 
+[101/140] OLI-3-Национален кръг-2004-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,072 [PDF_CHUNKER] INFO 
+[102/140] OLI-2-Областен кръг-2003-10 кл: skip (already classified)
+2026-11-12 10:18:36,073 [PDF_CHUNKER] INFO 
+[103/140] OLI-2-Областен кръг-2003-12 кл: skip (already classified)
+2026-11-12 10:18:36,074 [PDF_CHUNKER] INFO 
+[104/140] OLI-3-Национален кръг-2003-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,075 [PDF_CHUNKER] INFO 
+[105/140] OLI-2-Областен кръг-2002-10 кл: skip (already classified)
+2026-11-12 10:18:36,077 [PDF_CHUNKER] INFO 
+[106/140] OLI-2-Областен кръг-2002-12 кл: skip (already classified)
+2026-11-12 10:18:36,078 [PDF_CHUNKER] INFO 
+[107/140] OLI-3-Национален кръг-2002-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,081 [PDF_CHUNKER] INFO 
+[108/140] OLI-2-Областен кръг-2001-10 кл: skip (already classified)
+2026-11-12 10:18:36,082 [PDF_CHUNKER] INFO 
+[109/140] OLI-2-Областен кръг-2001-12 кл: skip (already classified)
+2026-11-12 10:18:36,084 [PDF_CHUNKER] INFO 
+[110/140] OLI-3-Национален кръг-2001-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,085 [PDF_CHUNKER] INFO 
+[111/140] OLI-2-Областен кръг-2000-10 кл: skip (already classified)
+2026-11-12 10:18:36,086 [PDF_CHUNKER] INFO 
+[112/140] OLI-2-Областен кръг-2000-12 кл: skip (already classified)
+2026-11-12 10:18:36,088 [PDF_CHUNKER] INFO 
+[113/140] OLI-3-Национален кръг-2000-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,089 [PDF_CHUNKER] INFO 
+[114/140] OLI-2-Областен кръг-1999-10 кл: skip (already classified)
+2026-11-12 10:18:36,091 [PDF_CHUNKER] INFO 
+[115/140] OLI-2-Областен кръг-1999-12 кл: skip (already classified)
+2026-11-12 10:18:36,092 [PDF_CHUNKER] INFO 
+[116/140] OLI-3-Национален кръг-1999-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,093 [PDF_CHUNKER] INFO 
+[117/140] OLI-2-Областен кръг-1998-10 кл: skip (already classified)
+2026-11-12 10:18:36,094 [PDF_CHUNKER] INFO 
+[118/140] OLI-2-Областен кръг-1998-12 кл: skip (already classified)
+2026-11-12 10:18:36,096 [PDF_CHUNKER] INFO 
+[119/140] OLI-3-Национален кръг-1998-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,097 [PDF_CHUNKER] INFO 
+[120/140] OLI-2-Областен кръг-1997-10 кл: skip (already classified)
+2026-11-12 10:18:36,098 [PDF_CHUNKER] INFO 
+[121/140] OLI-2-Областен кръг-1997-12 кл: skip (already classified)
+2026-11-12 10:18:36,099 [PDF_CHUNKER] INFO 
+[122/140] OLI-3-Национален кръг-1997-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,099 [PDF_CHUNKER] INFO 
+[123/140] OLI-2-Областен кръг-1996-10 кл: skip (already classified)
+2026-11-12 10:18:36,101 [PDF_CHUNKER] INFO 
+[124/140] OLI-2-Областен кръг-1996-12 кл: skip (already classified)
+2026-11-12 10:18:36,103 [PDF_CHUNKER] INFO 
+[125/140] OLI-3-Национален кръг-1996-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,104 [PDF_CHUNKER] INFO 
+[126/140] OLI-2-Областен кръг-1995-10 кл: skip (already classified)
+2026-11-12 10:18:36,105 [PDF_CHUNKER] INFO 
+[127/140] OLI-2-Областен кръг-1995-12 кл: skip (already classified)
+2026-11-12 10:18:36,106 [PDF_CHUNKER] INFO 
+[128/140] OLI-3-Национален кръг-1995-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,108 [PDF_CHUNKER] INFO 
+[129/140] OLI-3-Национален кръг-1994-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,109 [PDF_CHUNKER] INFO 
+[130/140] OLI-3-Национален кръг-1993-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,110 [PDF_CHUNKER] INFO 
+[131/140] OLI-3-Национален кръг-1992-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,113 [PDF_CHUNKER] INFO 
+[132/140] OLI-3-Национален кръг-1991-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,115 [PDF_CHUNKER] INFO 
+[133/140] OLI-3-Национален кръг-1990-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,116 [PDF_CHUNKER] INFO 
+[134/140] OLI-3-Национален кръг-1989-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,117 [PDF_CHUNKER] INFO 
+[135/140] OLI-3-Национален кръг-1988-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,119 [PDF_CHUNKER] INFO 
+[136/140] OLI-3-Национален кръг-1987-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,120 [PDF_CHUNKER] INFO 
+[137/140] OLI-3-Национален кръг-1986-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,121 [PDF_CHUNKER] INFO 
+[138/140] OLI-3-Национален кръг-1985-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,123 [PDF_CHUNKER] INFO 
+[139/140] OLI-3-Национален кръг-1984-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,125 [PDF_CHUNKER] INFO 
+[140/140] OLI-3-Национален кръг-1983-9-12 кл: skip (already classified)
+2026-11-12 10:18:36,125 [PDF_CHUNKER] INFO 
+═══ Classify-paired завърши: processed=4, skipped=136, total=140 ═══
+2026-11-12 10:24:57,647 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-12 10:24:57,647 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-12 10:24:57,649 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-12 10:25:11,815 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-12 10:25:11,816 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-12 10:25:11,816 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-12 10:25:11,817 [PDF_CHUNKER] INFO Намерени 0 merged папки
+2026-11-12 10:26:19,958 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-12 10:26:19,959 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-12 10:26:19,959 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-12 10:26:20,216 [PDF_CHUNKER] INFO Заредени 279 извлечени PDF-а
+2026-11-12 10:26:20,217 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1995-10 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,221 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1995-11 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,225 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1995-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,236 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1996-10 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,240 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1996-11 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,244 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1996-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,250 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1997-10 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,254 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1997-11 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,258 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1997-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,262 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1998-10 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,266 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1998-11 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,271 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1998-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,274 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1999-10 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,278 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1999-11 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,283 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1999-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,288 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2000-10 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,293 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2000-11 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,312 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2000-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,316 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2001-10 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,323 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2001-11 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,327 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2001-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,332 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2002-10 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,336 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2002-11 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,341 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2002-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,345 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2003-10 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,350 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2003-11 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,354 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2003-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,359 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2004-10 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,364 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2004-11 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,368 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2004-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,373 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2005-10 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,377 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2005-11 кл] merge 6 probs + 5 sols → 6 problems
+2026-11-12 10:26:20,383 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2005-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,388 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2006-10 кл] merge 5 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,393 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2006-11 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,397 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2006-12 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,402 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2007-10 кл] merge 5 probs + 5 sols → 5 problems
+2026-11-12 10:26:20,406 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2007-11 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,412 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2007-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,416 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2008-10 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,420 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2008-11 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,425 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2008-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,431 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2009-10 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,435 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2009-11 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,440 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2009-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,447 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2010-10 кл] merge 6 probs + 4 sols → 6 problems
+2026-11-12 10:26:20,453 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2010-11 кл] merge 6 probs + 6 sols → 12 problems
+2026-11-12 10:26:20,457 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2010-12 кл] merge 3 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,463 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2011-10 кл] merge 6 probs + 2 sols → 6 problems
+2026-11-12 10:26:20,468 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2011-11 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,473 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2011-12 кл] merge 6 probs + 5 sols → 6 problems
+2026-11-12 10:26:20,480 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2012-10 кл] merge 6 probs + 1 sols → 6 problems
+2026-11-12 10:26:20,485 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2012-11 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,490 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2012-12 кл] merge 6 probs + 3 sols → 9 problems
+2026-11-12 10:26:20,497 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2013-10 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,503 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2013-11 кл] merge 3 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,507 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2013-12 кл] merge 2 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,513 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2014-10 кл] merge 4 probs + 3 sols → 4 problems
+2026-11-12 10:26:20,518 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2014-11 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,524 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2014-12 кл] merge 4 probs + 3 sols → 4 problems
+2026-11-12 10:26:20,531 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2015-10 кл] merge 4 probs + 4 sols → 8 problems
+2026-11-12 10:26:20,536 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2015-11 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,542 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2015-12 кл] merge 4 probs + 3 sols → 4 problems
+2026-11-12 10:26:20,548 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2016-10 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,552 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2016-11 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,558 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2016-12 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,563 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2017-10 кл] merge 4 probs + 3 sols → 4 problems
+2026-11-12 10:26:20,569 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2017-11 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,575 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2017-12 кл] merge 3 probs + 4 sols → 3 problems
+2026-11-12 10:26:20,582 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2018-10 кл] merge 4 probs + 4 sols → 8 problems
+2026-11-12 10:26:20,588 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2018-11 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,594 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2018-12 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,599 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2019-10 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,607 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2019-11 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,613 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2019-12 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,619 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2020-10 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,626 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2020-11 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,633 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2020-12 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,638 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2021-10 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,643 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2021-11 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,650 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2021-12 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,655 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2022-10 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,660 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2022-11 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,667 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2022-12 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,673 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2023-10 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,679 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2023-11 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,686 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2023-12 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,693 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2024-10 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,700 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2024-11 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,708 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2024-12 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,716 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2025-10 кл] merge 4 probs + 4 sols → 8 problems
+2026-11-12 10:26:20,723 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2025-11 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,730 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2025-12 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,736 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2026-10 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,745 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2026-11 кл] standalone (4 problems)
+2026-11-12 10:26:20,751 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-2026-12 кл] merge 4 probs + 4 sols → 4 problems
+2026-11-12 10:26:20,758 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-1983-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,765 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-1984-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,771 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-1985-9-12 кл] merge 6 probs + 5 sols → 6 problems
+2026-11-12 10:26:20,783 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-1986-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,790 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-1987-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,797 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-1988-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,806 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-1989-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,816 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-1990-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,824 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-1991-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,834 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-1992-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,840 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-1993-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,847 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-1994-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,854 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-1995-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,864 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-1996-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,871 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-1997-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,880 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-1998-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,889 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-1999-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,898 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-2000-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,906 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-2001-9-12 кл] merge 6 probs + 5 sols → 6 problems
+2026-11-12 10:26:20,916 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-2002-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,923 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-2003-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,932 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-2004-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,940 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-2005-9-12 кл] merge 5 probs + 5 sols → 5 problems
+2026-11-12 10:26:20,953 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-2006-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,962 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-2007-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,970 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-2008-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,979 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-2009-9-12 кл] merge 6 probs + 5 sols → 6 problems
+2026-11-12 10:26:20,988 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-2010-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:20,998 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-2011-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:21,007 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-2012-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:21,016 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-2013-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:21,024 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-2014-9-12 кл] merge 6 probs + 2 sols → 6 problems
+2026-11-12 10:26:21,035 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-2015-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:21,043 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-2016-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:21,051 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-2017-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:21,060 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-2018-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:21,070 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-2019-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:21,079 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-2020-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:21,089 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-2021-9-12 кл] merge 6 probs + 3 sols → 9 problems
+2026-11-12 10:26:21,100 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-2022-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:21,109 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-2023-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:21,179 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-2024-9-12 кл] merge 6 probs + 5 sols → 6 problems
+2026-11-12 10:26:21,208 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-2025-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:21,288 [PDF_CHUNKER] INFO   [OLI-3-Национален кръг-2026-9-12 кл] merge 6 probs + 6 sols → 6 problems
+2026-11-12 10:26:21,301 [PDF_CHUNKER] INFO ✓ 140 merged olympiads → C:\Users\denis\Downloads\Материали Олимпиада МАТ\generated\cache\merged
+2026-11-12 10:26:38,496 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-12 10:26:38,496 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-12 10:26:38,496 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-12 10:26:38,511 [PDF_CHUNKER] INFO Намерени 140 merged папки
+2026-11-12 10:26:38,565 [PDF_CHUNKER] INFO 
+[OLI-2-Областен кръг-1995-10 кл] класифицирам 6 задачи...
+2026-11-12 10:27:06,323 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1995-10 кл:10.1:1] → 5.9 (medium)
+2026-11-12 10:28:09,199 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1995-10 кл:10.2:1] → 1.3 (medium)
+2026-11-12 10:28:45,652 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1995-10 кл:10.3:1] → 8.8 (medium)
+2026-11-12 10:29:39,618 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1995-10 кл:10.4:1] → 6.10 (medium)
+2026-11-12 10:30:54,067 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1995-10 кл:10.5:1] → 1.2 (medium)
+2026-11-12 10:31:24,994 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1995-10 кл:10.6:1] → 4.2 (medium)
+2026-11-12 10:31:24,997 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-1995-10 кл] 6 classified
+2026-11-12 10:31:25,052 [PDF_CHUNKER] INFO 
+[OLI-2-Областен кръг-1995-11 кл] класифицирам 6 задачи...
+2026-11-12 10:32:43,536 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1995-11 кл:11.1:1] → ? (medium)
+2026-11-12 10:33:17,534 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1995-11 кл:11.2:1] → 1.3 (medium)
+2026-11-12 10:33:52,966 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1995-11 кл:11.3:1] → 8.8 (medium)
+2026-11-12 10:34:54,507 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1995-11 кл:11.4:1] → 8.15 (medium)
+2026-11-12 10:34:57,323 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1995-11 кл:11.5:1] → ? (?)
+2026-11-12 10:35:05,021 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1995-11 кл:11.6:1] → 3.8 (hard)
+2026-11-12 10:35:05,023 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-1995-11 кл] 6 classified
+2026-11-12 10:35:05,072 [PDF_CHUNKER] INFO 
+[OLI-2-Областен кръг-1995-12 кл] класифицирам 6 задачи...
+2026-11-12 10:35:30,142 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1995-12 кл:12.1:1] → 5.1 (medium)
+2026-11-12 10:35:58,820 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1995-12 кл:12.2:1] → 1.3 (hard)
+2026-11-12 10:36:01,068 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1995-12 кл:12.3:1] → ? (?)
+2026-11-12 10:36:11,513 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1995-12 кл:12.4:1] → 6.1 (medium)
+2026-11-12 10:41:29,852 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1995-12 кл:12.5:1] → 12.2 (medium)
+2026-11-12 10:42:11,360 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1995-12 кл:12.6:1] → 4.10 (medium)
+2026-11-12 10:42:11,363 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-1995-12 кл] 6 classified
+2026-11-12 10:42:11,426 [PDF_CHUNKER] INFO 
+[OLI-2-Областен кръг-1996-10 кл] класифицирам 6 задачи...
+2026-11-12 10:43:31,854 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1996-10 кл:10.1:1] → 4.10 (medium)
+2026-11-12 10:43:41,476 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1996-10 кл:10.2:1] → 1.2 (hard)
+2026-11-12 10:45:49,786 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1996-10 кл:10.3:1] → 5.6 (medium)
+2026-11-12 10:47:05,422 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1996-10 кл:10.4:1] → R.6 (medium)
+2026-11-12 10:47:45,686 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1996-10 кл:10.5:1] → ? (?)
+2026-11-12 10:47:48,233 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1996-10 кл:10.6:1] → ? (?)
+2026-11-12 10:47:48,236 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-1996-10 кл] 6 classified
+2026-11-12 10:47:48,299 [PDF_CHUNKER] INFO 
+[OLI-2-Областен кръг-1996-11 кл] класифицирам 6 задачи...
+2026-11-12 10:47:54,821 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1996-11 кл:11.1:1] → 3.10 (medium)
+2026-11-12 10:48:57,522 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1996-11 кл:11.2:1] → 1.2 (medium)
+2026-11-12 10:49:32,107 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1996-11 кл:11.3:1] → 5.6 (medium)
+2026-11-12 10:51:00,271 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1996-11 кл:11.4:1] → ? (medium)
+2026-11-12 10:51:49,836 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1996-11 кл:11.5:1] → 1.6 (medium)
+2026-11-12 10:52:37,623 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1996-11 кл:11.6:1] → 8.3 (medium)
+2026-11-12 10:52:37,626 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-1996-11 кл] 6 classified
+2026-11-12 10:52:37,683 [PDF_CHUNKER] INFO 
+[OLI-2-Областен кръг-1996-12 кл] класифицирам 6 задачи...
+2026-11-12 10:53:36,926 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1996-12 кл:12.1:1] → 3.10 (medium)
+2026-11-12 10:54:17,557 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1996-12 кл:12.2:1] → 1.2 (medium)
+2026-11-12 10:55:58,677 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1996-12 кл:12.3:1] → 5.6 (medium)
+2026-11-12 10:56:52,110 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1996-12 кл:12.4:1] → R.6 (medium)
+2026-11-12 10:57:53,790 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1996-12 кл:12.5:1] → 1.6 (medium)
+2026-11-12 10:58:59,215 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1996-12 кл:12.6:1] → 8.10 (medium)
+2026-11-12 10:58:59,229 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-1996-12 кл] 6 classified
+2026-11-12 10:58:59,284 [PDF_CHUNKER] INFO 
+[OLI-2-Областен кръг-1997-10 кл] класифицирам 6 задачи...
+2026-11-12 10:59:45,601 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1997-10 кл:10.1:1] → 6.1 (medium)
+2026-11-12 11:00:30,556 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1997-10 кл:10.2:1] → 1.3 (medium)
+2026-11-12 11:01:03,230 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1997-10 кл:10.3:1] → 3.8 (medium)
+2026-11-12 11:01:11,519 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1997-10 кл:10.4:1] → 7.1 (hard)
+2026-11-12 11:01:34,662 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1997-10 кл:10.5:1] → 2.4 (hard)
+2026-11-12 11:01:47,160 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1997-10 кл:10.6:1] → 8.8 (medium)
+2026-11-12 11:01:47,165 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-1997-10 кл] 6 classified
+2026-11-12 11:01:47,235 [PDF_CHUNKER] INFO 
+[OLI-2-Областен кръг-1997-11 кл] класифицирам 6 задачи...
+2026-11-12 11:02:45,115 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1997-11 кл:11.1:1] → 5.1 (medium)
+2026-11-12 11:02:51,053 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1997-11 кл:11.2:1] → 1.3 (hard)
+2026-11-12 11:02:53,615 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1997-11 кл:11.3:1] → ? (?)
+2026-11-12 11:03:18,397 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1997-11 кл:11.4:1] → 7.5 (medium)
+2026-11-12 11:09:39,030 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1997-11 кл:11.5:1] → 2.4 (medium)
+2026-11-12 11:10:16,916 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1997-11 кл:11.6:1] → 8.8 (medium)
+2026-11-12 11:10:16,920 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-1997-11 кл] 6 classified
+2026-11-12 11:10:16,968 [PDF_CHUNKER] INFO 
+[OLI-2-Областен кръг-1997-12 кл] класифицирам 6 задачи...
+2026-11-12 11:10:19,068 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1997-12 кл:12.1:1] → ? (?)
+2026-11-12 11:10:38,730 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1997-12 кл:12.2:1] → 1.3 (hard)
+2026-11-12 11:10:47,638 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1997-12 кл:12.3:1] → 3.8 (medium)
+2026-11-12 11:11:55,003 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1997-12 кл:12.4:1] → 7.7 (medium)
+2026-11-12 11:17:16,624 [PDF_CHUNKER] WARNING   [OLI-2-Областен кръг-1997-12 кл:12.5:1] empty (no statement, no solution) — skip
+2026-11-12 11:17:23,947 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1997-12 кл:12.6:1] → 8.8 (medium)
+2026-11-12 11:17:23,950 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-1997-12 кл] 5 classified
+2026-11-12 11:17:23,990 [PDF_CHUNKER] INFO 
+[OLI-2-Областен кръг-1998-10 кл] класифицирам 6 задачи...
+2026-11-12 11:17:27,577 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1998-10 кл:10.1:1] → ? (?)
+2026-11-12 11:17:35,778 [PDF_CHUNKER] INFO   [OLI-2-Областен кръг-1998-10 кл:10.2:1] → 1.1 (hard)
+2026-11-12 11:23:00,408 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-12 11:23:00,409 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-12 11:23:00,409 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-12 11:23:00,840 [PDF_CHUNKER] INFO Филтър '1995-10 кл,1995-11 кл,1995-12 кл,1996-10 кл,1996-11 кл,1996-12 кл,1997-10 кл,1997-11 кл,1997-12 кл': 9 olympiads
+2026-11-12 11:23:00,841 [PDF_CHUNKER] INFO Classify-paired: 9 olympiads (11 кл областен first, newest→oldest)
+2026-11-12 11:23:00,842 [PDF_CHUNKER] INFO 
+[1/9] OLI-2-Областен кръг-1997-11 кл: 6 probs, 6 sols
+2026-11-12 11:23:56,449 [PDF_CHUNKER] INFO   ✓ matched=6, orphan_kept=0, no_sol=0, dropped_unclassifiable=0, total=6
+2026-11-12 11:23:56,450 [PDF_CHUNKER] INFO 
+[2/9] OLI-2-Областен кръг-1996-11 кл: 6 probs, 6 sols
+2026-11-12 11:24:48,257 [PDF_CHUNKER] INFO   ✓ matched=6, orphan_kept=0, no_sol=0, dropped_unclassifiable=0, total=6
+2026-11-12 11:24:48,258 [PDF_CHUNKER] INFO 
+[3/9] OLI-2-Областен кръг-1995-11 кл: 6 probs, 6 sols
+2026-11-12 11:25:15,507 [PDF_CHUNKER] INFO   ✓ matched=6, orphan_kept=0, no_sol=0, dropped_unclassifiable=0, total=6
+2026-11-12 11:25:15,509 [PDF_CHUNKER] INFO 
+[4/9] OLI-2-Областен кръг-1997-10 кл: 6 probs, 6 sols
+2026-11-12 11:26:24,619 [PDF_CHUNKER] INFO   ✓ matched=6, orphan_kept=0, no_sol=0, dropped_unclassifiable=0, total=6
+2026-11-12 11:26:24,620 [PDF_CHUNKER] INFO 
+[5/9] OLI-2-Областен кръг-1997-12 кл: 6 probs, 6 sols
+2026-11-12 11:26:51,348 [PDF_CHUNKER] INFO   ✓ matched=6, orphan_kept=0, no_sol=0, dropped_unclassifiable=0, total=6
+2026-11-12 11:26:51,349 [PDF_CHUNKER] INFO 
+[6/9] OLI-2-Областен кръг-1996-10 кл: 6 probs, 6 sols
+2026-11-12 11:27:38,965 [PDF_CHUNKER] INFO   ✓ matched=6, orphan_kept=0, no_sol=0, dropped_unclassifiable=0, total=6
+2026-11-12 11:27:38,966 [PDF_CHUNKER] INFO 
+[7/9] OLI-2-Областен кръг-1996-12 кл: 6 probs, 6 sols
+2026-11-12 11:28:35,899 [PDF_CHUNKER] INFO   ✓ matched=6, orphan_kept=0, no_sol=0, dropped_unclassifiable=0, total=6
+2026-11-12 11:28:35,901 [PDF_CHUNKER] INFO 
+[8/9] OLI-2-Областен кръг-1995-10 кл: 6 probs, 6 sols
+2026-11-12 11:30:44,012 [PDF_CHUNKER] INFO   ✓ matched=6, orphan_kept=0, no_sol=0, dropped_unclassifiable=0, total=6
+2026-11-12 11:30:44,013 [PDF_CHUNKER] INFO 
+[9/9] OLI-2-Областен кръг-1995-12 кл: 6 probs, 6 sols
+2026-11-12 11:31:21,404 [PDF_CHUNKER] INFO   ✓ matched=6, orphan_kept=0, no_sol=0, dropped_unclassifiable=0, total=6
+2026-11-12 11:31:21,404 [PDF_CHUNKER] INFO 
+═══ Classify-paired завърши: processed=9, skipped=0, total=9 ═══
+2026-11-12 11:46:09,270 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-12 11:46:09,271 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-12 11:46:09,272 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-12 11:46:09,986 [PDF_CHUNKER] INFO ✓ [R.11] 11 real problems
+2026-11-12 11:46:09,991 [PDF_CHUNKER] INFO ✓ [1.3] 7 real problems
+2026-11-12 11:46:10,011 [PDF_CHUNKER] INFO ✓ [8.8] 6 real problems
+2026-11-12 11:46:10,054 [PDF_CHUNKER] INFO ✓ [8.15] 26 real problems
+2026-11-12 11:46:10,062 [PDF_CHUNKER] INFO ✓ [4.2] 16 real problems
+2026-11-12 11:46:10,082 [PDF_CHUNKER] INFO ✓ [1.4] 20 real problems
+2026-11-12 11:46:10,086 [PDF_CHUNKER] INFO ✓ [8.6] 7 real problems
+2026-11-12 11:46:10,104 [PDF_CHUNKER] INFO ✓ [6.1] 19 real problems
+2026-11-12 11:46:10,128 [PDF_CHUNKER] INFO ✓ [1.2] 10 real problems
+2026-11-12 11:46:10,132 [PDF_CHUNKER] INFO ✓ [3.10] 5 real problems
+2026-11-12 11:46:10,134 [PDF_CHUNKER] INFO ✓ [5.6] 2 real problems
+2026-11-12 11:46:10,139 [PDF_CHUNKER] INFO ✓ [1.6] 20 real problems
+2026-11-12 11:46:10,149 [PDF_CHUNKER] INFO ✓ [8.10] 5 real problems
+2026-11-12 11:46:10,153 [PDF_CHUNKER] INFO ✓ [4.4] 18 real problems
+2026-11-12 11:46:10,159 [PDF_CHUNKER] INFO ✓ [1.5] 24 real problems
+2026-11-12 11:46:10,174 [PDF_CHUNKER] INFO ✓ [3.2] 11 real problems
+2026-11-12 11:46:10,187 [PDF_CHUNKER] INFO ✓ [7.8] 11 real problems
+2026-11-12 11:46:10,192 [PDF_CHUNKER] INFO ✓ [2.4] 2 real problems
+2026-11-12 11:46:10,195 [PDF_CHUNKER] INFO ✓ [3.8] 3 real problems
+2026-11-12 11:46:10,214 [PDF_CHUNKER] INFO ✓ [7.2] 11 real problems
+2026-11-12 11:46:10,218 [PDF_CHUNKER] INFO ✓ [4.1] 3 real problems
+2026-11-12 11:46:10,221 [PDF_CHUNKER] INFO ✓ [7.1] 8 real problems
+2026-11-12 11:46:10,226 [PDF_CHUNKER] INFO ✓ [12.1] 3 real problems
+2026-11-12 11:46:10,229 [PDF_CHUNKER] INFO ✓ [9.6] 6 real problems
+2026-11-12 11:46:10,233 [PDF_CHUNKER] INFO ✓ [1.1] 10 real problems
+2026-11-12 11:46:10,236 [PDF_CHUNKER] INFO ✓ [5.4] 5 real problems
+2026-11-12 11:46:10,244 [PDF_CHUNKER] INFO ✓ [1.10] 38 real problems
+2026-11-12 11:46:10,248 [PDF_CHUNKER] INFO ✓ [5.1] 22 real problems
+2026-11-12 11:46:10,250 [PDF_CHUNKER] INFO ✓ [4.3] 6 real problems
+2026-11-12 11:46:10,255 [PDF_CHUNKER] INFO ✓ [1.7] 8 real problems
+2026-11-12 11:46:10,261 [PDF_CHUNKER] INFO ✓ [8.3] 3 real problems
+2026-11-12 11:46:10,264 [PDF_CHUNKER] INFO ✓ [8.1] 13 real problems
+2026-11-12 11:46:10,268 [PDF_CHUNKER] INFO ✓ [7.6] 9 real problems
+2026-11-12 11:46:10,271 [PDF_CHUNKER] INFO ✓ [6.6] 1 real problems
+2026-11-12 11:46:10,279 [PDF_CHUNKER] INFO ✓ [5.11] 29 real problems
+2026-11-12 11:46:10,282 [PDF_CHUNKER] INFO ✓ [1.9] 1 real problems
+2026-11-12 11:46:10,284 [PDF_CHUNKER] INFO ✓ [11.6] 4 real problems
+2026-11-12 11:46:10,286 [PDF_CHUNKER] INFO ✓ [2.10] 1 real problems
+2026-11-12 11:46:10,292 [PDF_CHUNKER] INFO ✓ [3.1] 14 real problems
+2026-11-12 11:46:10,295 [PDF_CHUNKER] INFO ✓ [9.4] 6 real problems
+2026-11-12 11:46:10,299 [PDF_CHUNKER] INFO ✓ [4.8] 9 real problems
+2026-11-12 11:46:10,305 [PDF_CHUNKER] INFO ✓ [2.11] 16 real problems
+2026-11-12 11:46:10,311 [PDF_CHUNKER] INFO ✓ [7.4] 2 real problems
+2026-11-12 11:46:10,315 [PDF_CHUNKER] INFO ✓ [9.10] 12 real problems
+2026-11-12 11:46:10,318 [PDF_CHUNKER] INFO ✓ [3.12] 6 real problems
+2026-11-12 11:46:10,322 [PDF_CHUNKER] INFO ✓ [8.12] 6 real problems
+2026-11-12 11:46:10,328 [PDF_CHUNKER] INFO ✓ [13.1] 4 real problems
+2026-11-12 11:46:10,334 [PDF_CHUNKER] INFO ✓ [5.10] 7 real problems
+2026-11-12 11:46:10,337 [PDF_CHUNKER] INFO ✓ [R.14] 1 real problems
+2026-11-12 11:46:10,343 [PDF_CHUNKER] INFO ✓ [7.5] 6 real problems
+2026-11-12 11:46:10,348 [PDF_CHUNKER] INFO ✓ [8.5] 2 real problems
+2026-11-12 11:46:10,352 [PDF_CHUNKER] INFO ✓ [R.4] 5 real problems
+2026-11-12 11:46:10,358 [PDF_CHUNKER] INFO ✓ [5.9] 7 real problems
+2026-11-12 11:46:10,362 [PDF_CHUNKER] INFO ✓ [R.3] 1 real problems
+2026-11-12 11:46:10,366 [PDF_CHUNKER] INFO ✓ [2.8] 8 real problems
+2026-11-12 11:46:10,369 [PDF_CHUNKER] INFO ✓ [7.7] 8 real problems
+2026-11-12 11:46:10,371 [PDF_CHUNKER] INFO ✓ [R.5] 3 real problems
+2026-11-12 11:46:10,380 [PDF_CHUNKER] INFO ✓ [3.9] 4 real problems
+2026-11-12 11:46:10,383 [PDF_CHUNKER] INFO ✓ [3.4] 5 real problems
+2026-11-12 11:46:10,385 [PDF_CHUNKER] INFO ✓ [4.9] 2 real problems
+2026-11-12 11:46:10,392 [PDF_CHUNKER] INFO ✓ [R.1] 1 real problems
+2026-11-12 11:46:10,396 [PDF_CHUNKER] INFO ✓ [3.3] 9 real problems
+2026-11-12 11:46:10,399 [PDF_CHUNKER] INFO ✓ [1.11] 3 real problems
+2026-11-12 11:46:10,402 [PDF_CHUNKER] INFO ✓ [3.6] 4 real problems
+2026-11-12 11:46:10,407 [PDF_CHUNKER] INFO ✓ [1.8] 5 real problems
+2026-11-12 11:46:10,411 [PDF_CHUNKER] INFO ✓ [5.5] 3 real problems
+2026-11-12 11:46:10,415 [PDF_CHUNKER] INFO ✓ [8.4] 2 real problems
+2026-11-12 11:46:10,418 [PDF_CHUNKER] INFO ✓ [8.2] 1 real problems
+2026-11-12 11:46:10,420 [PDF_CHUNKER] INFO ✓ [10.11] 1 real problems
+2026-11-12 11:46:10,424 [PDF_CHUNKER] INFO ✓ [7.9] 1 real problems
+2026-11-12 11:46:10,427 [PDF_CHUNKER] INFO ✓ [8.11] 2 real problems
+2026-11-12 11:46:10,430 [PDF_CHUNKER] INFO ✓ [5.7] 6 real problems
+2026-11-12 11:46:10,434 [PDF_CHUNKER] INFO ✓ [8.13] 7 real problems
+2026-11-12 11:46:10,436 [PDF_CHUNKER] INFO ✓ [2.9] 1 real problems
+2026-11-12 11:46:10,443 [PDF_CHUNKER] INFO ✓ [R.6] 3 real problems
+2026-11-12 11:46:10,446 [PDF_CHUNKER] INFO ✓ [8.14] 1 real problems
+2026-11-12 11:46:10,459 [PDF_CHUNKER] INFO ✓ [9.8] 3 real problems
+2026-11-12 11:46:10,465 [PDF_CHUNKER] INFO ✓ [6.4] 2 real problems
+2026-11-12 11:46:10,468 [PDF_CHUNKER] INFO ✓ [4.7] 5 real problems
+2026-11-12 11:46:10,475 [PDF_CHUNKER] INFO ✓ [10.21] 1 real problems
+2026-11-12 11:46:10,479 [PDF_CHUNKER] INFO ✓ [9.11] 4 real problems
+2026-11-12 11:46:10,482 [PDF_CHUNKER] INFO ✓ [4.10] 1 real problems
+2026-11-12 11:46:10,486 [PDF_CHUNKER] INFO ✓ [5.12] 1 real problems
+2026-11-12 11:46:10,488 [PDF_CHUNKER] INFO ✓ [9.5] 2 real problems
+2026-11-12 11:46:10,491 [PDF_CHUNKER] INFO ✓ [9.1] 1 real problems
+2026-11-12 11:46:10,495 [PDF_CHUNKER] INFO ✓ [6.3] 1 real problems
+2026-11-12 11:46:10,500 [PDF_CHUNKER] INFO ✓ [3.7] 4 real problems
+2026-11-12 11:46:10,503 [PDF_CHUNKER] INFO ✓ [6.7] 1 real problems
+2026-11-12 11:46:10,505 [PDF_CHUNKER] INFO ✓ [12.2] 1 real problems
+2026-11-12 11:46:10,510 [PDF_CHUNKER] INFO ✓ [11.7] 3 real problems
+2026-11-12 11:46:10,514 [PDF_CHUNKER] INFO ✓ [2.3] 3 real problems
+2026-11-12 11:46:10,517 [PDF_CHUNKER] INFO ✓ [5.3] 2 real problems
+2026-11-12 11:46:10,519 [PDF_CHUNKER] INFO ✓ [7.3] 1 real problems
+2026-11-12 11:46:10,522 [PDF_CHUNKER] INFO ✓ [9.7] 1 real problems
+2026-11-12 11:46:10,526 [PDF_CHUNKER] INFO ✓ [6.5] 1 real problems
+2026-11-12 11:46:10,534 [PDF_CHUNKER] INFO ✓ [4.5] 4 real problems
+2026-11-12 11:46:10,545 [PDF_CHUNKER] INFO ✓ [10.4] 1 real problems
+2026-11-12 11:46:10,552 [PDF_CHUNKER] INFO ✓ [3.5] 1 real problems
+2026-11-12 11:46:10,562 [PDF_CHUNKER] INFO ✓ [9.3] 2 real problems
+2026-11-12 11:46:10,570 [PDF_CHUNKER] INFO ✓ [2.6] 1 real problems
+2026-11-12 11:46:10,585 [PDF_CHUNKER] INFO ⚠ 58 unclassified problems → _unclassified.json
+2026-11-12 11:46:23,036 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-12 11:46:23,037 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-12 11:46:23,037 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-12 11:46:34,737 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-12 11:46:34,738 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-12 11:46:34,738 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-12 11:52:49,902 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-12 11:52:49,902 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-12 11:52:49,902 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-12 11:52:50,242 [PDF_CHUNKER] INFO Филтър '1995-12 кл,1996-10 кл,1997-12 кл': 3 olympiads
+2026-11-12 11:52:50,242 [PDF_CHUNKER] INFO Classify-paired: 3 olympiads (11 кл областен first, newest→oldest)
+2026-11-12 11:52:50,243 [PDF_CHUNKER] INFO 
+[1/3] OLI-2-Областен кръг-1997-12 кл: 6 probs, 6 sols
+2026-11-12 11:53:34,876 [PDF_CHUNKER] INFO   ✓ matched=6, orphan_kept=0, no_sol=0, dropped_unclassifiable=0, total=6
+2026-11-12 11:53:34,877 [PDF_CHUNKER] INFO 
+[2/3] OLI-2-Областен кръг-1996-10 кл: 6 probs, 6 sols
+2026-11-12 11:54:29,353 [PDF_CHUNKER] INFO   ✓ matched=6, orphan_kept=0, no_sol=0, dropped_unclassifiable=0, total=6
+2026-11-12 11:54:29,354 [PDF_CHUNKER] INFO 
+[3/3] OLI-2-Областен кръг-1995-12 кл: 6 probs, 6 sols
+2026-11-12 11:54:47,008 [PDF_CHUNKER] INFO   ✓ matched=6, orphan_kept=0, no_sol=0, dropped_unclassifiable=0, total=6
+2026-11-12 11:54:47,008 [PDF_CHUNKER] INFO 
+═══ Classify-paired завърши: processed=3, skipped=0, total=3 ═══
+2026-11-12 12:46:47,907 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-12 12:46:47,908 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-12 12:46:47,908 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-12 12:46:53,875 [PDF_CHUNKER] INFO ✓ [R.11] 11 real problems
+2026-11-12 12:46:53,878 [PDF_CHUNKER] INFO ✓ [1.3] 7 real problems
+2026-11-12 12:46:53,885 [PDF_CHUNKER] INFO ✓ [8.8] 6 real problems
+2026-11-12 12:46:53,890 [PDF_CHUNKER] INFO ✓ [8.15] 26 real problems
+2026-11-12 12:46:53,893 [PDF_CHUNKER] INFO ✓ [4.2] 15 real problems
+2026-11-12 12:46:53,895 [PDF_CHUNKER] INFO ✓ [1.4] 19 real problems
+2026-11-12 12:46:53,899 [PDF_CHUNKER] INFO ✓ [8.6] 7 real problems
+2026-11-12 12:46:53,902 [PDF_CHUNKER] INFO ✓ [6.1] 19 real problems
+2026-11-12 12:46:53,906 [PDF_CHUNKER] INFO ✓ [1.2] 10 real problems
+2026-11-12 12:46:53,910 [PDF_CHUNKER] INFO ✓ [4.4] 19 real problems
+2026-11-12 12:46:53,912 [PDF_CHUNKER] INFO ✓ [5.6] 2 real problems
+2026-11-12 12:46:53,914 [PDF_CHUNKER] INFO ✓ [R.6] 4 real problems
+2026-11-12 12:46:53,918 [PDF_CHUNKER] INFO ✓ [1.6] 20 real problems
+2026-11-12 12:46:53,920 [PDF_CHUNKER] INFO ✓ [8.3] 4 real problems
+2026-11-12 12:46:53,924 [PDF_CHUNKER] INFO ✓ [8.10] 4 real problems
+2026-11-12 12:46:53,925 [PDF_CHUNKER] INFO ✓ [3.10] 4 real problems
+2026-11-12 12:46:53,930 [PDF_CHUNKER] INFO ✓ [1.5] 25 real problems
+2026-11-12 12:46:53,932 [PDF_CHUNKER] INFO ✓ [3.2] 12 real problems
+2026-11-12 12:46:53,934 [PDF_CHUNKER] INFO ✓ [7.8] 11 real problems
+2026-11-12 12:46:53,937 [PDF_CHUNKER] INFO ✓ [2.4] 2 real problems
+2026-11-12 12:46:53,940 [PDF_CHUNKER] INFO ✓ [3.8] 3 real problems
+2026-11-12 12:46:53,942 [PDF_CHUNKER] INFO ✓ [7.2] 11 real problems
+2026-11-12 12:46:53,945 [PDF_CHUNKER] INFO ✓ [7.5] 7 real problems
+2026-11-12 12:46:53,947 [PDF_CHUNKER] INFO ✓ [9.6] 6 real problems
+2026-11-12 12:46:53,950 [PDF_CHUNKER] INFO ✓ [1.1] 10 real problems
+2026-11-12 12:46:53,953 [PDF_CHUNKER] INFO ✓ [5.4] 5 real problems
+2026-11-12 12:46:53,960 [PDF_CHUNKER] INFO ✓ [1.10] 38 real problems
+2026-11-12 12:46:53,963 [PDF_CHUNKER] INFO ✓ [5.1] 22 real problems
+2026-11-12 12:46:53,966 [PDF_CHUNKER] INFO ✓ [4.3] 6 real problems
+2026-11-12 12:46:53,969 [PDF_CHUNKER] INFO ✓ [1.7] 8 real problems
+2026-11-12 12:46:53,973 [PDF_CHUNKER] INFO ✓ [8.1] 13 real problems
+2026-11-12 12:46:53,977 [PDF_CHUNKER] INFO ✓ [7.6] 9 real problems
+2026-11-12 12:46:53,979 [PDF_CHUNKER] INFO ✓ [6.6] 1 real problems
+2026-11-12 12:46:53,982 [PDF_CHUNKER] INFO ✓ [5.11] 29 real problems
+2026-11-12 12:46:53,984 [PDF_CHUNKER] INFO ✓ [1.9] 1 real problems
+2026-11-12 12:46:53,986 [PDF_CHUNKER] INFO ✓ [11.6] 4 real problems
+2026-11-12 12:46:53,988 [PDF_CHUNKER] INFO ✓ [2.10] 1 real problems
+2026-11-12 12:46:53,992 [PDF_CHUNKER] INFO ✓ [3.1] 14 real problems
+2026-11-12 12:46:53,995 [PDF_CHUNKER] INFO ✓ [9.4] 6 real problems
+2026-11-12 12:46:53,997 [PDF_CHUNKER] INFO ✓ [4.8] 9 real problems
+2026-11-12 12:46:54,002 [PDF_CHUNKER] INFO ✓ [2.11] 16 real problems
+2026-11-12 12:46:54,003 [PDF_CHUNKER] INFO ✓ [7.4] 2 real problems
+2026-11-12 12:46:54,007 [PDF_CHUNKER] INFO ✓ [4.1] 2 real problems
+2026-11-12 12:46:54,010 [PDF_CHUNKER] INFO ✓ [9.10] 12 real problems
+2026-11-12 12:46:54,013 [PDF_CHUNKER] INFO ✓ [3.12] 6 real problems
+2026-11-12 12:46:54,015 [PDF_CHUNKER] INFO ✓ [8.12] 6 real problems
+2026-11-12 12:46:54,018 [PDF_CHUNKER] INFO ✓ [13.1] 4 real problems
+2026-11-12 12:46:54,021 [PDF_CHUNKER] INFO ✓ [5.10] 7 real problems
+2026-11-12 12:46:54,024 [PDF_CHUNKER] INFO ✓ [R.14] 1 real problems
+2026-11-12 12:46:54,027 [PDF_CHUNKER] INFO ✓ [8.5] 2 real problems
+2026-11-12 12:46:54,030 [PDF_CHUNKER] INFO ✓ [R.4] 5 real problems
+2026-11-12 12:46:54,032 [PDF_CHUNKER] INFO ✓ [5.9] 7 real problems
+2026-11-12 12:46:54,033 [PDF_CHUNKER] INFO ✓ [R.3] 1 real problems
+2026-11-12 12:46:54,035 [PDF_CHUNKER] INFO ✓ [7.1] 7 real problems
+2026-11-12 12:46:54,039 [PDF_CHUNKER] INFO ✓ [2.8] 8 real problems
+2026-11-12 12:46:54,042 [PDF_CHUNKER] INFO ✓ [7.7] 8 real problems
+2026-11-12 12:46:54,043 [PDF_CHUNKER] INFO ✓ [R.5] 3 real problems
+2026-11-12 12:46:54,046 [PDF_CHUNKER] INFO ✓ [3.9] 4 real problems
+2026-11-12 12:46:54,048 [PDF_CHUNKER] INFO ✓ [3.4] 5 real problems
+2026-11-12 12:46:54,050 [PDF_CHUNKER] INFO ✓ [4.9] 2 real problems
+2026-11-12 12:46:54,052 [PDF_CHUNKER] INFO ✓ [R.1] 1 real problems
+2026-11-12 12:46:54,055 [PDF_CHUNKER] INFO ✓ [3.3] 9 real problems
+2026-11-12 12:46:54,058 [PDF_CHUNKER] INFO ✓ [1.11] 3 real problems
+2026-11-12 12:46:54,060 [PDF_CHUNKER] INFO ✓ [3.6] 4 real problems
+2026-11-12 12:46:54,062 [PDF_CHUNKER] INFO ✓ [1.8] 5 real problems
+2026-11-12 12:46:54,065 [PDF_CHUNKER] INFO ✓ [5.5] 3 real problems
+2026-11-12 12:46:54,068 [PDF_CHUNKER] INFO ✓ [8.4] 2 real problems
+2026-11-12 12:46:54,070 [PDF_CHUNKER] INFO ✓ [8.2] 1 real problems
+2026-11-12 12:46:54,073 [PDF_CHUNKER] INFO ✓ [10.11] 1 real problems
+2026-11-12 12:46:54,076 [PDF_CHUNKER] INFO ✓ [7.9] 1 real problems
+2026-11-12 12:46:54,078 [PDF_CHUNKER] INFO ✓ [8.11] 2 real problems
+2026-11-12 12:46:54,081 [PDF_CHUNKER] INFO ✓ [5.7] 6 real problems
+2026-11-12 12:46:54,084 [PDF_CHUNKER] INFO ✓ [8.13] 7 real problems
+2026-11-12 12:46:54,086 [PDF_CHUNKER] INFO ✓ [2.9] 1 real problems
+2026-11-12 12:46:54,089 [PDF_CHUNKER] INFO ✓ [8.14] 1 real problems
+2026-11-12 12:46:54,091 [PDF_CHUNKER] INFO ✓ [9.8] 3 real problems
+2026-11-12 12:46:54,093 [PDF_CHUNKER] INFO ✓ [6.4] 2 real problems
+2026-11-12 12:46:54,096 [PDF_CHUNKER] INFO ✓ [4.7] 5 real problems
+2026-11-12 12:46:54,097 [PDF_CHUNKER] INFO ✓ [10.21] 1 real problems
+2026-11-12 12:46:54,100 [PDF_CHUNKER] INFO ✓ [9.11] 4 real problems
+2026-11-12 12:46:54,102 [PDF_CHUNKER] INFO ✓ [4.10] 1 real problems
+2026-11-12 12:46:54,104 [PDF_CHUNKER] INFO ✓ [5.12] 1 real problems
+2026-11-12 12:46:54,107 [PDF_CHUNKER] INFO ✓ [12.1] 2 real problems
+2026-11-12 12:46:54,109 [PDF_CHUNKER] INFO ✓ [9.5] 2 real problems
+2026-11-12 12:46:54,111 [PDF_CHUNKER] INFO ✓ [9.1] 1 real problems
+2026-11-12 12:46:54,113 [PDF_CHUNKER] INFO ✓ [6.3] 1 real problems
+2026-11-12 12:46:54,115 [PDF_CHUNKER] INFO ✓ [3.7] 4 real problems
+2026-11-12 12:46:54,117 [PDF_CHUNKER] INFO ✓ [6.7] 1 real problems
+2026-11-12 12:46:54,119 [PDF_CHUNKER] INFO ✓ [12.2] 1 real problems
+2026-11-12 12:46:54,121 [PDF_CHUNKER] INFO ✓ [11.7] 3 real problems
+2026-11-12 12:46:54,124 [PDF_CHUNKER] INFO ✓ [2.3] 3 real problems
+2026-11-12 12:46:54,125 [PDF_CHUNKER] INFO ✓ [5.3] 2 real problems
+2026-11-12 12:46:54,128 [PDF_CHUNKER] INFO ✓ [7.3] 1 real problems
+2026-11-12 12:46:54,130 [PDF_CHUNKER] INFO ✓ [9.7] 1 real problems
+2026-11-12 12:46:54,132 [PDF_CHUNKER] INFO ✓ [6.5] 1 real problems
+2026-11-12 12:46:54,134 [PDF_CHUNKER] INFO ✓ [4.5] 4 real problems
+2026-11-12 12:46:54,137 [PDF_CHUNKER] INFO ✓ [10.4] 1 real problems
+2026-11-12 12:46:54,139 [PDF_CHUNKER] INFO ✓ [3.5] 1 real problems
+2026-11-12 12:46:54,141 [PDF_CHUNKER] INFO ✓ [9.3] 2 real problems
+2026-11-12 12:46:54,144 [PDF_CHUNKER] INFO ✓ [2.6] 1 real problems
+2026-11-12 12:46:54,150 [PDF_CHUNKER] INFO ⚠ 59 unclassified problems → _unclassified.json
+2026-11-12 12:47:37,976 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-12 12:47:37,977 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-12 12:47:37,977 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-12 13:48:56,214 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-12 13:48:56,214 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-12 13:48:56,215 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-12 19:17:53,386 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-12 19:17:53,386 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-12 19:17:53,387 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-12 19:19:36,254 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-12 19:19:36,254 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-12 19:19:36,254 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-12 19:19:36,405 [PDF_CHUNKER] INFO ✓ [R.11] 11 real problems
+2026-11-12 19:19:36,406 [PDF_CHUNKER] INFO ✓ [1.3] 7 real problems
+2026-11-12 19:19:36,407 [PDF_CHUNKER] INFO ✓ [8.8] 6 real problems
+2026-11-12 19:19:36,411 [PDF_CHUNKER] INFO ✓ [8.15] 26 real problems
+2026-11-12 19:19:36,413 [PDF_CHUNKER] INFO ✓ [4.2] 15 real problems
+2026-11-12 19:19:36,415 [PDF_CHUNKER] INFO ✓ [1.4] 19 real problems
+2026-11-12 19:19:36,418 [PDF_CHUNKER] INFO ✓ [8.6] 7 real problems
+2026-11-12 19:19:36,420 [PDF_CHUNKER] INFO ✓ [6.1] 19 real problems
+2026-11-12 19:19:36,422 [PDF_CHUNKER] INFO ✓ [1.2] 10 real problems
+2026-11-12 19:19:36,423 [PDF_CHUNKER] INFO ✓ [4.4] 19 real problems
+2026-11-12 19:19:36,424 [PDF_CHUNKER] INFO ✓ [5.6] 2 real problems
+2026-11-12 19:19:36,426 [PDF_CHUNKER] INFO ✓ [R.6] 4 real problems
+2026-11-12 19:19:36,427 [PDF_CHUNKER] INFO ✓ [1.6] 20 real problems
+2026-11-12 19:19:36,428 [PDF_CHUNKER] INFO ✓ [8.3] 4 real problems
+2026-11-12 19:19:36,429 [PDF_CHUNKER] INFO ✓ [8.10] 4 real problems
+2026-11-12 19:19:36,431 [PDF_CHUNKER] INFO ✓ [3.10] 4 real problems
+2026-11-12 19:19:36,433 [PDF_CHUNKER] INFO ✓ [1.5] 25 real problems
+2026-11-12 19:19:36,435 [PDF_CHUNKER] INFO ✓ [3.2] 12 real problems
+2026-11-12 19:19:36,436 [PDF_CHUNKER] INFO ✓ [7.8] 11 real problems
+2026-11-12 19:19:36,437 [PDF_CHUNKER] INFO ✓ [2.4] 2 real problems
+2026-11-12 19:19:36,438 [PDF_CHUNKER] INFO ✓ [3.8] 3 real problems
+2026-11-12 19:19:36,440 [PDF_CHUNKER] INFO ✓ [7.2] 11 real problems
+2026-11-12 19:19:36,441 [PDF_CHUNKER] INFO ✓ [7.5] 7 real problems
+2026-11-12 19:19:36,443 [PDF_CHUNKER] INFO ✓ [9.6] 6 real problems
+2026-11-12 19:19:36,445 [PDF_CHUNKER] INFO ✓ [1.1] 10 real problems
+2026-11-12 19:19:36,446 [PDF_CHUNKER] INFO ✓ [5.4] 5 real problems
+2026-11-12 19:19:36,449 [PDF_CHUNKER] INFO ✓ [1.10] 38 real problems
+2026-11-12 19:19:36,451 [PDF_CHUNKER] INFO ✓ [5.1] 22 real problems
+2026-11-12 19:19:36,452 [PDF_CHUNKER] INFO ✓ [4.3] 6 real problems
+2026-11-12 19:19:36,454 [PDF_CHUNKER] INFO ✓ [1.7] 8 real problems
+2026-11-12 19:19:36,456 [PDF_CHUNKER] INFO ✓ [8.1] 13 real problems
+2026-11-12 19:19:36,457 [PDF_CHUNKER] INFO ✓ [7.6] 9 real problems
+2026-11-12 19:19:36,459 [PDF_CHUNKER] INFO ✓ [6.6] 1 real problems
+2026-11-12 19:19:36,461 [PDF_CHUNKER] INFO ✓ [5.11] 29 real problems
+2026-11-12 19:19:36,462 [PDF_CHUNKER] INFO ✓ [1.9] 1 real problems
+2026-11-12 19:19:36,463 [PDF_CHUNKER] INFO ✓ [11.6] 4 real problems
+2026-11-12 19:19:36,463 [PDF_CHUNKER] INFO ✓ [2.10] 1 real problems
+2026-11-12 19:19:36,465 [PDF_CHUNKER] INFO ✓ [3.1] 14 real problems
+2026-11-12 19:19:36,468 [PDF_CHUNKER] INFO ✓ [9.4] 6 real problems
+2026-11-12 19:19:36,469 [PDF_CHUNKER] INFO ✓ [4.8] 9 real problems
+2026-11-12 19:19:36,471 [PDF_CHUNKER] INFO ✓ [2.11] 16 real problems
+2026-11-12 19:19:36,471 [PDF_CHUNKER] INFO ✓ [7.4] 2 real problems
+2026-11-12 19:19:36,472 [PDF_CHUNKER] INFO ✓ [4.1] 2 real problems
+2026-11-12 19:19:36,474 [PDF_CHUNKER] INFO ✓ [9.10] 12 real problems
+2026-11-12 19:19:36,476 [PDF_CHUNKER] INFO ✓ [3.12] 6 real problems
+2026-11-12 19:19:36,477 [PDF_CHUNKER] INFO ✓ [8.12] 6 real problems
+2026-11-12 19:19:36,478 [PDF_CHUNKER] INFO ✓ [13.1] 4 real problems
+2026-11-12 19:19:36,479 [PDF_CHUNKER] INFO ✓ [5.10] 7 real problems
+2026-11-12 19:19:36,480 [PDF_CHUNKER] INFO ✓ [R.14] 1 real problems
+2026-11-12 19:19:36,482 [PDF_CHUNKER] INFO ✓ [8.5] 2 real problems
+2026-11-12 19:19:36,483 [PDF_CHUNKER] INFO ✓ [R.4] 5 real problems
+2026-11-12 19:19:36,484 [PDF_CHUNKER] INFO ✓ [5.9] 7 real problems
+2026-11-12 19:19:36,486 [PDF_CHUNKER] INFO ✓ [R.3] 1 real problems
+2026-11-12 19:19:36,487 [PDF_CHUNKER] INFO ✓ [7.1] 7 real problems
+2026-11-12 19:19:36,489 [PDF_CHUNKER] INFO ✓ [2.8] 8 real problems
+2026-11-12 19:19:36,491 [PDF_CHUNKER] INFO ✓ [7.7] 8 real problems
+2026-11-12 19:19:36,492 [PDF_CHUNKER] INFO ✓ [R.5] 3 real problems
+2026-11-12 19:19:36,494 [PDF_CHUNKER] INFO ✓ [3.9] 4 real problems
+2026-11-12 19:19:36,496 [PDF_CHUNKER] INFO ✓ [3.4] 5 real problems
+2026-11-12 19:19:36,497 [PDF_CHUNKER] INFO ✓ [4.9] 2 real problems
+2026-11-12 19:19:36,498 [PDF_CHUNKER] INFO ✓ [R.1] 1 real problems
+2026-11-12 19:19:36,501 [PDF_CHUNKER] INFO ✓ [3.3] 9 real problems
+2026-11-12 19:19:36,502 [PDF_CHUNKER] INFO ✓ [1.11] 3 real problems
+2026-11-12 19:19:36,504 [PDF_CHUNKER] INFO ✓ [3.6] 4 real problems
+2026-11-12 19:19:36,505 [PDF_CHUNKER] INFO ✓ [1.8] 5 real problems
+2026-11-12 19:19:36,507 [PDF_CHUNKER] INFO ✓ [5.5] 3 real problems
+2026-11-12 19:19:36,508 [PDF_CHUNKER] INFO ✓ [8.4] 2 real problems
+2026-11-12 19:19:36,509 [PDF_CHUNKER] INFO ✓ [8.2] 1 real problems
+2026-11-12 19:19:36,511 [PDF_CHUNKER] INFO ✓ [10.11] 1 real problems
+2026-11-12 19:19:36,512 [PDF_CHUNKER] INFO ✓ [7.9] 1 real problems
+2026-11-12 19:19:36,513 [PDF_CHUNKER] INFO ✓ [8.11] 2 real problems
+2026-11-12 19:19:36,515 [PDF_CHUNKER] INFO ✓ [5.7] 6 real problems
+2026-11-12 19:19:36,516 [PDF_CHUNKER] INFO ✓ [8.13] 7 real problems
+2026-11-12 19:19:36,518 [PDF_CHUNKER] INFO ✓ [2.9] 1 real problems
+2026-11-12 19:19:36,519 [PDF_CHUNKER] INFO ✓ [8.14] 1 real problems
+2026-11-12 19:19:36,521 [PDF_CHUNKER] INFO ✓ [9.8] 3 real problems
+2026-11-12 19:19:36,523 [PDF_CHUNKER] INFO ✓ [6.4] 2 real problems
+2026-11-12 19:19:36,524 [PDF_CHUNKER] INFO ✓ [4.7] 5 real problems
+2026-11-12 19:19:36,524 [PDF_CHUNKER] INFO ✓ [10.21] 1 real problems
+2026-11-12 19:19:36,525 [PDF_CHUNKER] INFO ✓ [9.11] 4 real problems
+2026-11-12 19:19:36,526 [PDF_CHUNKER] INFO ✓ [4.10] 1 real problems
+2026-11-12 19:19:36,528 [PDF_CHUNKER] INFO ✓ [5.12] 1 real problems
+2026-11-12 19:19:36,529 [PDF_CHUNKER] INFO ✓ [12.1] 2 real problems
+2026-11-12 19:19:36,529 [PDF_CHUNKER] INFO ✓ [9.5] 2 real problems
+2026-11-12 19:19:36,532 [PDF_CHUNKER] INFO ✓ [9.1] 1 real problems
+2026-11-12 19:19:36,534 [PDF_CHUNKER] INFO ✓ [6.3] 1 real problems
+2026-11-12 19:19:36,535 [PDF_CHUNKER] INFO ✓ [3.7] 4 real problems
+2026-11-12 19:19:36,538 [PDF_CHUNKER] INFO ✓ [6.7] 1 real problems
+2026-11-12 19:19:36,539 [PDF_CHUNKER] INFO ✓ [12.2] 1 real problems
+2026-11-12 19:19:36,540 [PDF_CHUNKER] INFO ✓ [11.7] 3 real problems
+2026-11-12 19:19:36,541 [PDF_CHUNKER] INFO ✓ [2.3] 3 real problems
+2026-11-12 19:19:36,542 [PDF_CHUNKER] INFO ✓ [5.3] 2 real problems
+2026-11-12 19:19:36,543 [PDF_CHUNKER] INFO ✓ [7.3] 1 real problems
+2026-11-12 19:19:36,544 [PDF_CHUNKER] INFO ✓ [9.7] 1 real problems
+2026-11-12 19:19:36,545 [PDF_CHUNKER] INFO ✓ [6.5] 1 real problems
+2026-11-12 19:19:36,546 [PDF_CHUNKER] INFO ✓ [4.5] 4 real problems
+2026-11-12 19:19:36,548 [PDF_CHUNKER] INFO ✓ [10.4] 1 real problems
+2026-11-12 19:19:36,549 [PDF_CHUNKER] INFO ✓ [3.5] 1 real problems
+2026-11-12 19:19:36,551 [PDF_CHUNKER] INFO ✓ [9.3] 2 real problems
+2026-11-12 19:19:36,552 [PDF_CHUNKER] INFO ✓ [2.6] 1 real problems
+2026-11-12 19:19:36,554 [PDF_CHUNKER] INFO ⚠ 59 unclassified problems → _unclassified.json
+2026-11-12 19:19:40,628 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-12 19:19:40,628 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-12 19:19:40,628 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-12 19:19:50,602 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-12 19:19:50,603 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-12 19:19:50,603 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash

@@ -1,0 +1,60 @@
+{
+  "verdict": "approve",
+  "score": 8,
+  "issues": [
+    {
+      "severity": "major",
+      "section": "4.2",
+      "description": "Пример 4 (нов) липсва пълно решение за перпендикулярността ∠MPN=90°."
+    },
+    {
+      "severity": "minor",
+      "section": "4.3",
+      "description": "Липсва CHECK за hard примерите (>>> CHECK: Hard mastery <<<)."
+    },
+    {
+      "severity": "minor",
+      "section": "4.3",
+      "description": "В пример 8 (BMO 2020) решението е само на идея, без пълно доказателство."
+    }
+  ],
+  "strengths": [
+    "Пълно покритие на структурата с 9 секции",
+    "Реални олимпиадни примери с ясни източници",
+    "Добро балансиране на примерите по трудност"
+  ],
+  "suggestions": [
+    "Добави пълно решение за пример 4.2 (перпендикулярност)",
+    "Добави CHECK секция за hard примерите",
+    "Разшири решението на пример 8 (BMO) с конкретна геометрична конструкция"
+  ],
+  "math_errors": [
+    {
+      "formula": "N/A",
+      "problem": "Липсва решение в Пример 4 (4.2)",
+      "fix": "Добави геометрично доказателство с ъгли или свойства на окръжността"
+    }
+  ],
+  "missing_topics": [],
+  "structure_check": {
+    "section_1_why_important": true,
+    "section_2_objectives": true,
+    "section_3_theory": true,
+    "section_4_examples_3_levels": true,
+    "section_5_recognition": true,
+    "section_6_mistakes": true,
+    "section_7_mastery": true,
+    "section_8_quiz": true,
+    "section_9_recall": true,
+    "check_marks_present": false
+  },
+  "examples_check": {
+    "real_olympiad": true,
+    "easy_count": 3,
+    "medium_count": 3,
+    "hard_count": 2
+  },
+  "verdict_reasoning": "Статията е с добро качество и покрива структурата, но има пропуски в решенията на някои примери. Оценка 8 поради силна олимпиадна релевантност и добра теория.",
+  "_tokens": 18403,
+  "_model": "deepseek/deepseek-r1-0528"
+}

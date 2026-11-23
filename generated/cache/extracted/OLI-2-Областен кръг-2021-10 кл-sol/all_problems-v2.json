@@ -1,0 +1,44 @@
+{
+  "pdf": "OLI-2-Областен кръг-2021-10 кл-sol",
+  "version": 2,
+  "extraction_model": "deepseek/deepseek-r1-0528",
+  "extracted_at": "2026-11-02T21:00:03.251663",
+  "problems": [
+    {
+      "num": null,
+      "year": 2021,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "⏐⏐⏐⏐ xy + y − x = ax + 8z2 − x2y − xy = 3 , /GI/GY/GC/GD/GQ/GM a /GD /GO/GD/G8/GJ/GD/GL /GN/G8/GO/G8/GK/GD/GQ/GY/GO/BA [неразчетено]",
+      "solution": "/FC/GI /GM (x0, y0, z0) /CT /GO/GD/GW/GD/GL/GG/GD /GL/G8 /GP/GG/GP/GQ/GD/GK/G8/GQ /G8/B8 /GQ/GM (x0, y0, −z0) /GP/GY/GX/GM /GD /GO/GD/GW/GD/GL/GG/GD/BA /FT/GJ/GD/GC/GM/GA/G8/B9 /GQ/GD/GJ/GL/GM z = 0 /GG /GQ/GM/GB /G8/GA/G8/BM ⏐⏐⏐⏐ xy + y − x = ax + 8x2y + xy = −3 ⇐ ⇒ ⏐⏐⏐⏐ y(x + 1) = x(a + 1) + 8xy(x + 1) = −3 /FU/GY/GH /GI /G8/GQ/GM x ⁄= 0 , −1/B8 /GQ/GM y(x + 1) = − 3x /GG /GP/GJ/GD/GC /GF/G8/GK/GD/GP/GQ/GA/G8/GL/GD /GA /GN/GY/GO/GA/GM/GQ/GM /GR/GO/G8/GA/GL/GD/GL/GG/GD /GL/G8/GK/GG/GO/G8/GK/GD/BM (a + 1).x2 + 8.x + 3 = 0 /BA /FK/GP/GI /G8/GK/GD /GQ/GM/GA/G8 /GR/GO/G8/GA/GL/GD/GL/GG/GD /GC/G8 /GG/GK/G8 /GD/GC/GG/GL/GP/GQ/GA/GD/GL/GM /GO/GD/GW/GD/GL/GG/GD/BA /FR/GY/GO/GA/GG /GP/GJ/GR/GV/G8/GH/BA a = −1 /GQ/GM/GB /G8/GA/G8 x = 38 /B8 y = 645 /BA /FE/GQ/GM/GO/GG /GP/GJ/GR/GV/G8/GH/BA a ⁄= −1 /GQ/GM/GB /G8/GA/G8 /GM/GQ D = 0 /GN/GM/GJ/GR/GV/G8/GA/G8/GK/GD a = 133 /B8 /GM/GQ/GI/GY/GC/GD/GQ/GM x = − 34 /GG y = 16 /BA /FU/GO/GD/GQ/GG /GP/GJ/GR/GV/G8/GH/BA a ⁄= −1 /GG D > 0/B8 /GI /G8/GQ/GM /GD/GC/GG/GL/GG/H3/GQ /GI /GM/GO/GD/GL /GD x1 = −1/B8 /GQ/GM/GB /G8/GA/G8 a = 4 /B8 x2 = − 35 /GG y = 252 /BA /FQ/GQ/GB/GM/GA/GM/GO/BM /FR/GO/GG a = −1 /GO/GD/GW/GD/GL/GG/GD/GQ/GM /GD (3/8; 64/5; 0)/BN /GN/GO/GG a = 133 /GO/GD/GW/GD/GL/GG/GD/GQ/GM /GD (−3/4; 16; 0) /GG /GN/GO/GG a = 4 /GO/GD/GW/GD/GL/GG/GD/GQ/GM /GD (−3/5; 25/2; 0)/BA",
+      "answer": "a = -1, a = 13/3, a = 4",
+      "page": 1,
+      "source_quote": "/BD/BC/BA/BD/BA /FG/G8/GC/GD/GL/G8 /GD /GP/GG/GP/GQ/GD/GK/G8/GQ /G8 ⏐⏐⏐⏐ xy + y − x = ax + 8z2 − x2y − xy = 3 , /GI/GY/GC/GD/GQ/GM a /GD /GO/GD/G8/GJ/GD/GL /GN/G8/GO/G8/GK/GD/GQ/GY/GO/BA",
+      "readability": "partial",
+      "readability_issues": [
+        "OCR errors",
+        "incomplete equations"
+      ],
+      "pdf": "OLI-2-Областен кръг-2021-10 кл-sol",
+      "chunk": 1
+    },
+    {
+      "num": null,
+      "year": 2021,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "/BD/BC/BA/BF/BA /FG/G8 /GP/GD /GL/G8/GK/GD/GO /H3/GQ /GA/GP/GG/GV/GI/GG /GD/GP/GQ/GD/GP/GQ/GA/GD/GL/GG /GV/GG/GP/GJ/G8 n /B8 /GF/G8 /GI /GM/GG/GQ/GM /GV/GG/GP/GJ/GM/GQ/GM N = 2 + n∑ k=1 k.2k /GD /GQ/GM/GV/GD/GL /GI/GA/G8/GC/GO/G8/GQ /GL/G8 /GD/GP/GQ/GD/GP/GQ/GA/GD/GL/GM /GV/GG/GP/GJ/GM/BA [неразчетено]",
+      "solution": " /FT /FO/FO/FK /GR /GP/GQ /G8/GL/GM/GA/H3/GA/G8/GK/GD/B8 /GV/GD ∑n k=1 k.2k = (n − 1).2n+1 + 2 /BA /FU/GY/GO/GP/GG/GK n /B8 /GF/G8 /GI /GM/GG/GQ/GM N = 4 + ( n − 1).2n+1 = t2 /B8 /GI/GY/GC/GD/GQ/GM t /GD /GD/GP/GQ/GD/GP/GQ/GA/GD/GL/GM /GV/GG/GP/GJ/GM/BA /FR/GO/GG n > 5 /GG/GK/G8/GK/GD t = 2 .k /GM/GQ/GI/GY/GC/GD/GQ/GM 1 + (n − 1).2n−1 = k2 = (2 .s + 1)2 /GG (n − 1).2n−1 = 2 .s(2.s + 2) /B8 /GQ /BA/GD/BA (n − 1).2n−3 = s.(s + 1) /BA /FU/GY/GH /GI /G8/GQ/GM s /GG s + 1 /GP/G8 /BE /GN/GM/GP/GJ/GD/GC/GM/GA/G8/GQ/GD/GJ/GL/GG /GV/GG/GP/GJ/G8 /GG 2n−3 > n /GF/G8 n > 5/B4/FO/FO/FK/B5 /GP/GJ/GD/GC/GM/GA/G8/GQ/GD/GJ/GL/GM 2n−3 − (n − 1) > 1 /GG /GA/GY/GF/GK/GM /GE/GL/GG/GQ/GD /GO/GD/GW/GD/GL/GG/H3 /GP/G8 /GF/G8 n = 1 , 2, 3, 4, 5/BA /FT /GC/GG/GO/GD/GI/GQ/GL/G8 /GN/GO/GM/GA/GD/GO/GI /G8 /GP/GD /GR /GP/GQ /G8/GL/GM/GA/H3/GA/G8/B8 /GV/GD /GQ/GY/GO/GP/GD/GL/GG/GQ/GD n /GP/G8 n = 1 /GG N = 4 /B8 n = 3 /GG N = 36 /B8 n = 4 /GG N = 100 /BA",
+      "answer": "n=1,3,4",
+      "page": 2,
+      "source_quote": "/BD/BC/BA/BF/BA /FG/G8 /GP/GD /GL/G8/GK/GD/GO /H3/GQ /GA/GP/GG/GV/GI/GG /GD/GP/GQ/GD/GP/GQ/GA/GD/GL/GG /GV/GG/GP/GJ/G8 n /B8 /GF/G8 /GI /GM/GG/GQ/GM /GV/GG/GP/GJ/GM/GQ/GM N = 2 + n∑ k=1 k.2k /GD /GQ/GM/GV/GD/GL /GI/GA/G8/GC/GO/G8/GQ /GL/G8 /GD/GP/GQ/GD/GP/GQ/GA/GD/GL/GM /GV/GG/GP/GJ/GM/BA",
+      "readability": "partial",
+      "readability_issues": [
+        "OCR errors in formulas",
+        "sum notation unclear"
+      ],
+      "pdf": "OLI-2-Областен кръг-2021-10 кл-sol",
+      "chunk": 1
+    }
+  ]
+}

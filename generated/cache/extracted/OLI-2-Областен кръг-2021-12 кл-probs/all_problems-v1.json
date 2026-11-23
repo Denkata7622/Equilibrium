@@ -1,0 +1,245 @@
+{
+  "pdf": "OLI-2-Областен кръг-2021-12 кл-probs",
+  "extraction_model": "deepseek/deepseek-r1-0528",
+  "extracted_at": "2026-11-02T21:03:58.776985",
+  "problems": [
+    {
+      "num": 1,
+      "year": 2021,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "[неразчетено]",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "/FO/GG/GL/GG/GP/GQ/GD/GO/GP/GQ/GA/GM /GL/G8 /GM/G9/GO/G8/GF/GM/GA/G8/GL/GG/GD/GQ/GM /GG /GL/G8 /GR/GI /G8/GQ /G8",
+      "readability": "unreadable",
+      "readability_issues": [
+        "OCR грешки, неразчетим текст"
+      ],
+      "pdf": "OLI-2-Областен кръг-2021-12 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 2,
+      "year": 2021,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "[неразчетено]",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "/BJ/BC/BA /FP/G8/GU/GG/GM/GL/G8/GJ/GL/G8 /GM/GJ/GG/GK/GN/GG/G8/GC/G8 /GN/GM /GK/G8/GQ/GD/GK/G8/GQ/GG/GI /G8",
+      "readability": "unreadable",
+      "readability_issues": [
+        "OCR грешки, неразчетим текст"
+      ],
+      "pdf": "OLI-2-Областен кръг-2021-12 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 3,
+      "year": 2021,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "[неразчетено]",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "/FQ/G9/GJ/G8/GP/GQ/GD/GL /GI/GO/GY/GB /B8 /BD/BF  /GD/GA/GO/GR /G8/GO/GG /BE/BC/BE/BD /GB /BA",
+      "readability": "unreadable",
+      "readability_issues": [
+        "OCR грешки, неразчетим текст"
+      ],
+      "pdf": "OLI-2-Областен кръг-2021-12 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 4,
+      "year": 2021,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "[неразчетено]",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "/FU /GD/GK/G8 /GF/G8 /BD/BE /GI/GJ/G8/GP",
+      "readability": "unreadable",
+      "readability_issues": [
+        "OCR грешки, неразчетим текст"
+      ],
+      "pdf": "OLI-2-Областен кръг-2021-12 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 5,
+      "year": 2021,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "[неразчетено]",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "/FJ/G8/GC/G8 /GV/G8 /BD/BA /B4 /BJ /GQ/GM/GV/GI/GG /B5 /FP/GD/GI /G8 a1 > 0, a2 = ( a1) 1 a1 , a3 = ( a2) 1 a2 , . . . /FG/G8 /GP/GD /GC/GM/GI /G8/GE /GD/B8 /GV/GD",
+      "readability": "unreadable",
+      "readability_issues": [
+        "OCR грешки, неразчетим текст"
+      ],
+      "pdf": "OLI-2-Областен кръг-2021-12 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 6,
+      "year": 2021,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "[неразчетено]",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "/GQ /G8/GF/GG /GO/GD/GC/GG/GU/G8 /GD /GP /GT /GM /GC/H3/GX/G8 /GG /GC/G8 /GP/GD /GL/G8/GK/GD/GO/GG /GL/GD/GH/GL/G8/GQ /G8 /GB/GO/G8/GL/GG/GU/G8 /B4/GA /GF/G8/GA/GG/GP/GG/GK/GM/GP/GQ /GM/GQ a1 /B5/BA",
+      "readability": "unreadable",
+      "readability_issues": [
+        "OCR грешки, неразчетим текст"
+      ],
+      "pdf": "OLI-2-Областен кръг-2021-12 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 7,
+      "year": 2021,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "[неразчетено]",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "/FJ/G8/GC/G8 /GV/G8 /BE/BA /B4 /BJ /GQ/GM/GV/GI/GG /B5 /FT /GD/GO/G8 /GP/GD /GC/GM/GN/GG/GO/G8 /GC/GM /GA/GP/GG/GV/GI/GG /GO/GY/G9/GM/GA/GD /GL/G8 n/B9/GY/GB/GY/GJ/GL/G8 /GN/GO/GD/GP/GD/GV/GD/GL/G8",
+      "readability": "unreadable",
+      "readability_issues": [
+        "OCR грешки, неразчетим текст"
+      ],
+      "pdf": "OLI-2-Областен кръг-2021-12 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 8,
+      "year": 2021,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "[неразчетено]",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "/GN/GG/GO/G8/GK/GG/GC/G8/BA /FG/G8 /GP/GD /GC/GM/GI /G8/GE /GD/B8 /GV/GD /GN/GG/GO/G8/GK/GG/GC/G8/GQ /G8 /GD /GN/GO/G8/GA/GG/GJ/GL/G8/BA",
+      "readability": "unreadable",
+      "readability_issues": [
+        "OCR грешки, неразчетим текст"
+      ],
+      "pdf": "OLI-2-Областен кръг-2021-12 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 9,
+      "year": 2021,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "[неразчетено]",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "/FJ/G8/GC/G8 /GV/G8 /BF/BA /B4 /BJ /GQ/GM/GV/GI/GG /B5 /FJ/G8 /GA/GP /H3/GI /GM /GD/GP/GQ/GD/GP/GQ/GA/GD/GL/GM /GV/GG/GP/GJ/GM n /GP f (n) /GM/GF/GL/G8 /GV/G8/GA/G8/GK/GD /GP/G9/GM/GO/GY /GQ /GM/GQ",
+      "readability": "unreadable",
+      "readability_issues": [
+        "OCR грешки, неразчетим текст"
+      ],
+      "pdf": "OLI-2-Областен кръг-2021-12 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 10,
+      "year": 2021,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "[неразчетено]",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "/GA/GP/GG/GV/GI/GG /GD/GP/GQ/GD/GP/GQ/GA/GD/GL/GG /GV/GG/GP/GJ/G8/B8 /GI /GM/GG/GQ/GM /GP/G8 /GN/GM/B9/GK/G8/GJ/GI/GG /GM/GQ n /GG /GL/GD /GP/G8 /GN/GO/GM/GP/GQ/GG/BA",
+      "readability": "unreadable",
+      "readability_issues": [
+        "OCR грешки, неразчетим текст"
+      ],
+      "pdf": "OLI-2-Областен кръг-2021-12 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 11,
+      "year": 2021,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "[неразчетено]",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "/FP/G8/GN/GO/GG/GK/GD/GO f (5) = 1 + 4 = 5 /GG f (10) = 1 + 4 + 6 + 8 + 9 = 28 /BA",
+      "readability": "unreadable",
+      "readability_issues": [
+        "OCR грешки, неразчетим текст"
+      ],
+      "pdf": "OLI-2-Областен кръг-2021-12 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 12,
+      "year": 2021,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "[неразчетено]",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "/FG/G8 /GP/GD /GL/G8/GK/GD/GO /H3/GQ /GA/GP/GG/GV/GI/GG /GD/GP/GQ/GD/GP/GQ/GA/GD/GL/GG /GV/GG/GP/GJ/G8/B8 /GF/G8 /GI /GM/GG/GQ/GM f (n) − 1 = n2 4 /BA",
+      "readability": "unreadable",
+      "readability_issues": [
+        "OCR грешки, неразчетим текст"
+      ],
+      "pdf": "OLI-2-Областен кръг-2021-12 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 13,
+      "year": 2021,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "[неразчетено]",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "/FJ/G8/GC/G8 /GV/G8 /BG/BA /B4 /BJ /GQ/GM/GV/GI/GG /B5 /FG/G8 /GP/GD /GC/GM/GI /G8/GE /GD/B8 /GV/GD /GF/G8 /GA/GP /H3/GI /GM /GU/H3/GJ/GM /GV/GG/GP/GJ/GM n ≥ 3 /GP/GY/GX/GD/GP/GQ/GA/GR/GA/G8/GQ",
+      "readability": "unreadable",
+      "readability_issues": [
+        "OCR грешки, неразчетим текст"
+      ],
+      "pdf": "OLI-2-Областен кръг-2021-12 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 14,
+      "year": 2021,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "[неразчетено]",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "/G9/GD/GF/G9/GO/GM/GH /GK/GL/GM/GB/GM /GL/GD/GV/GD/GQ/GL/GG /GQ/GM/GV/GL/GG /GI/GA/G8/GC/GO/G8/GQ/GG /GP /GQ/GM/GV/GL/GM n2 + n + 2 2 /GD/GC/GG/GL/GG/GU/GG /GA /GC/GA/GM/GG/GV/GL/GG/H3 /GP/GG",
+      "readability": "unreadable",
+      "readability_issues": [
+        "OCR грешки, неразчетим текст"
+      ],
+      "pdf": "OLI-2-Областен кръг-2021-12 кл-probs",
+      "chunk": 1
+    }
+  ]
+}

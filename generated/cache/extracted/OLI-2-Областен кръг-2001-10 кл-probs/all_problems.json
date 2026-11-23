@@ -1,77 +1,130 @@
 {
   "pdf": "OLI-2-Областен кръг-2001-10 кл-probs",
+  "version": 3,
+  "extraction_model": "deepseek/deepseek-r1-0528",
+  "extraction_level": "L0_native",
+  "verification": {
+    "verdict": "PASS",
+    "expected": 6,
+    "actual": 6,
+    "verified": 6,
+    "hallucinated": 0,
+    "unreadable": 0,
+    "wrong_grade": 0,
+    "duplicates": 0,
+    "null_num": 0,
+    "numeric_mismatch": 0,
+    "avg_confidence": 0.963,
+    "expected_grade": 10,
+    "grade_distribution": {
+      "10": 6
+    },
+    "escalate_to": "none",
+    "reasons": [],
+    "ai_checked": false,
+    "ai_result": {}
+  },
+  "extracted_at": "2026-11-07T14:17:19.602363",
   "problems": [
     {
-      "num": 1,
+      "num": "10.1",
       "year": 2001,
       "grade": 10,
       "round": "oblasten",
       "statement": "За кои стойности на параметъра $a$ уравнението\n\n$$x^2 + (1 - 2a)x + 2a^2 + \\lg(4x^2 - (8a - 1)x + 5a^2) = \\lg(x^2 - 2(a + 1)x - a^2)$$\n\nима само едно решение?",
-      "solution": null,
+      "solution": "",
       "answer": null,
       "page": 1,
-      "pdf": "OLI-2-Областен кръг-2001-10 кл-probs",
-      "chunk": 1
+      "source_quote": "Задача 1. За кои стойности на параметъра $a$ уравнението\n\n$$x^2 + (1 - 2a)x + 2a^2 + \\lg(4x^2 - (8a - 1)x + 5a^2) = \\lg(x^2 - 2(a + 1)x - a^2)$$\n\nима само едно решение?",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "1",
+      "_quote_grade": "EXACT",
+      "pdf": "OLI-2-Областен кръг-2001-10 кл-probs"
     },
     {
-      "num": 2,
+      "num": "10.2",
       "year": 2001,
       "grade": 10,
       "round": "oblasten",
-      "statement": "Диагоналите $AC$ и $BD$ на вписан в окръжност четириъгълник се пресичат в точка $E$. Да се докаже, че ако $\\angle BAD = 60^\\circ$ и $AE = 3CE$, то сумата на две от страните на четириъгълника е равна на сумата на другите му две страни.",
-      "solution": null,
+      "statement": "Диагоналите $AC$ и $BD$ на вписан в окръжност четириъгълник се пресичат в точка $E$. Да се докаже, че ако $\\angle  BAD = 60^∘$ и $AE = 3CE$, то сумата на две от страните на четириъгълника е равна на сумата на другите му две страни.",
+      "solution": "",
       "answer": null,
       "page": 1,
-      "pdf": "OLI-2-Областен кръг-2001-10 кл-probs",
-      "chunk": 1
+      "source_quote": "Задача 2. Диагоналите $AC$ и $BD$ на вписан в окръжност четириъгълник се пресичат в точка $E$. Да се докаже, че ако $∠ BAD = 60^∘$ и $AE = 3CE$, то сумата на две от страните на четириъгълника е равна на сумата на другите му две страни.",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "2",
+      "_quote_grade": "OCR_FUZZY",
+      "pdf": "OLI-2-Областен кръг-2001-10 кл-probs"
     },
     {
-      "num": 3,
+      "num": "10.3",
       "year": 2001,
       "grade": 10,
       "round": "oblasten",
-      "statement": "Да се намери най-малкото естествено число $n$, за което съществува група от $n$ човека, за която е изпълнено:\n\n1. Няма четирима, всеки двама от които се познават;\n2. Както и да изберем $k\\geq 1$ човека, измежду които има познати, измежду останалите $n - k$ човека има трима, всеки двама от които се познават.",
-      "solution": null,
+      "statement": "Да се намери най-малкото естествено число $n$, за което съществува група от $n$ човека, за която е изпълнено:\n\n1. Hama YeTHpHMa, BCEKN IBaMa OT KOITo CE IO3HaBaT;\n2. KaKTo H na H36epem \\(k\\geq 1\\) YOBeka, H3MeKdy KOITo HMa H03HaTH, H3MeKdy OCTa-HaJIHTe \\(n - k\\) YOBeka HMa TPhMa, BCEKN IBaMa OT KOITo CE H03HaBaT.",
+      "solution": "",
       "answer": null,
       "page": 1,
-      "pdf": "OLI-2-Областен кръг-2001-10 кл-probs",
-      "chunk": 1
+      "source_quote": "Задача 3. Да се намери най-малкото естествено число $n$, за което съществува група от $n$ човека, за която е изпълнено:\n\n1. Hama YeTHpHMa, BCEKN IBaMa OT KOITo CE IO3HaBaT;\n2. KaKTo H na H36epem \\(k\\geq 1\\) YOBeka, H3MeKdy KOITo HMa H03HaTH, H3MeKdy OCTa-HaJIHTe \\(n - k\\) YOBeka HMa TPhMa, BCEKN IBaMa OT KOITo CE H03HaBaT.",
+      "readability": "partial",
+      "readability_issues": [
+        "OCR грешки в текста"
+      ],
+      "segment_num": "3",
+      "_quote_grade": "EXACT",
+      "pdf": "OLI-2-Областен кръг-2001-10 кл-probs"
     },
     {
-      "num": 4,
+      "num": "10.4",
       "year": 2001,
       "grade": 10,
       "round": "oblasten",
       "statement": "Нека $ABC$ е правоъгълен триъгълник с хипотенуза $AB$. Върху лъча $AC^\\rightarrow$ е избрана точка $D$, различна от $A$ и $C$, за която правата през центъра на вписаната окръжност в $\\triangle ABC$, успоредна на ъглополовящата на $\\angle ADB$, се допира до вписаната окръжност в $\\triangle BCD$. Да се докаже, че $AD = BD$.",
-      "solution": null,
+      "solution": "",
       "answer": null,
       "page": 1,
-      "pdf": "OLI-2-Областен кръг-2001-10 кл-probs",
-      "chunk": 1
+      "source_quote": "Задача 4. Нека $ABC$ е правоъгълен триъгълник с хипотенуза $AB$. Върху лъча $AC^\\rightarrow$ е избрана точка $D$, различна от $A$ и $C$, за която правата през центъра на вписаната окръжност в $\\triangle ABC$, успоредна на ъглополовящата на $\\angle ADB$, се допира до вписаната окръжност в $\\triangle BCD$. Да се докаже, че $AD = BD$.",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "4",
+      "_quote_grade": "EXACT",
+      "pdf": "OLI-2-Областен кръг-2001-10 кл-probs"
     },
     {
-      "num": 5,
+      "num": "10.5",
       "year": 2001,
       "grade": 10,
       "round": "oblasten",
       "statement": "Да се намерят всички тройки естествени числа $(a, b, c)$, за които числото $a^3 + b^3 + c^3$ се дели на всяко от числата $a^2b, b^2c, c^2a$.",
-      "solution": null,
+      "solution": "",
       "answer": null,
       "page": 1,
-      "pdf": "OLI-2-Областен кръг-2001-10 кл-probs",
-      "chunk": 1
+      "source_quote": "Задача 5. Да се намерят всички тройки естествени числа $(a, b, c)$, за които числото $a^3 + b^3 + c^3$ се дели на всяко от числата $a^2b, b^2c, c^2a$.",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "5",
+      "_quote_grade": "EXACT",
+      "pdf": "OLI-2-Областен кръг-2001-10 кл-probs"
     },
     {
-      "num": 6,
+      "num": "10.6",
       "year": 2001,
       "grade": 10,
       "round": "oblasten",
-      "statement": "Дадена е колода от 52 различни карти. Разрешени са следните операции:\n\n1. Смяна на местата на горните две карти;\n2. Преместване на горната карта най-отдолу.\n\nДа се докаже, че използвайки тези две операции, картите могат да се подредят в произволен ред.",
-      "solution": null,
+      "statement": "Дадена е колода от 52 различни карти. Разрешени са следните операции:\n\n1.CMaHa Ha MeCTaTa Ha rOpHHe IBe KapTH;\n2. IpeMeCTBaHe Ha ropHaTa KapTa HaH-OTIOJy.\n\nДа се докаже, че използвайки тези две операции, картите могат да се подредят в произволен ред.",
+      "solution": "",
       "answer": null,
       "page": 1,
-      "pdf": "OLI-2-Областен кръг-2001-10 кл-probs",
-      "chunk": 1
+      "source_quote": "Задача 6. Дадена е колода от 52 различни карти. Разрешени са следните операции: 1.CMaHa Ha MeCTaTa Ha rOpHHe IBe KapTH; 2. IpeMeCTBaHe Ha ropHaTa KapTa HaH-OTIOJy. Да се докаже, че използвайки тези две операции, картите могат да се подредят в произволен ред.",
+      "readability": "partial",
+      "readability_issues": [
+        "OCR грешки в описанието на операциите"
+      ],
+      "segment_num": "6",
+      "_quote_grade": "NORMALIZED",
+      "pdf": "OLI-2-Областен кръг-2001-10 кл-probs"
     }
   ]
 }

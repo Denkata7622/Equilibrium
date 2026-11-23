@@ -1,0 +1,85 @@
+{
+  "pdf": "OLI-2-Областен кръг-2015-12 кл-sol",
+  "version": 3,
+  "extraction_model": "deepseek/deepseek-r1-0528",
+  "extraction_level": "L1_ocr",
+  "verification": {
+    "verdict": "PASS_WITH_WARNINGS",
+    "expected": 4,
+    "actual": 3,
+    "verified": 3,
+    "hallucinated": 0,
+    "unreadable": 0,
+    "wrong_grade": 0,
+    "duplicates": 0,
+    "null_num": 0,
+    "numeric_mismatch": 0,
+    "avg_confidence": 1.0,
+    "expected_grade": 12,
+    "grade_distribution": {
+      "12": 3
+    },
+    "escalate_to": "L1_ocr",
+    "reasons": [
+      "missing: 3 < 4±0",
+      "adjusted: source has 3 markers (expected was 4)"
+    ],
+    "ai_checked": true,
+    "ai_result": {
+      "missing_count": 1,
+      "hallucinated_indices": [],
+      "overall": "missing"
+    }
+  },
+  "extracted_at": "2026-11-10T09:06:35.883674",
+  "problems": [
+    {
+      "num": "12.4",
+      "year": 2015,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Дадено е множество $M$ от $2^{2015}$ естествени числа, всяко от които има 2014 цифри. Всеки две от тези числа дават различни остатъци при деление на $2^{2015}$. Колко най-малко различни цифри участват в десетичния запис на числата от $M$?",
+      "solution": "Ако две числа $x$ и $y$ дават различни остатъци при деление с $2^n$, то след дописване на произволна цифра отдясно, новите числа дават различни остатъци при деление с $2^{n+1}$ (защото ако $10x + c \\equiv 10y + c \\pmod{2^{n+1}}$, то $x \\equiv y \\pmod{2^n}$). Следователно, ако имаме пълна система остатъци по модул $2^n$, след дописване отдясно към всяко число на 1 (от тези числа се получават различни нечетни остатъци), а след това на 2 (от тези числа се получават различни четни остатъци), получаваме пълна система остатъци по модул $2^{n+1}$.\n\nЗапочвайки от 1, 2, 3, 4, които образуват пълна система от остатъци по модул $2^2$, получаваме пример с 4 различни цифри, удовлетворяващи условието на задачата.\n\nДа допуснем, че е възможно да построим такова множество с три цифри $a$, $b$ и $c$. Цифрите $a$, $b$ и $c$ не са с еднаква четност, защото в противен случай всички остатъци по модул $2^{2015}$ ще бъдат с еднаква четност и няма да образуват пълна система от остатъци. Нека $a$ и $b$ са нечетни, а $c$ е четно (другият случай се разглежда аналогично). Тъй като\n\nчислата от $M$ образуват пълна система от остатъци, то половината от числата в $M$ са четни.\n\nПонеже $c$ е единствената четна цифра, то всички четни числа от $M$ завършват на $c$. Ако изтрием последната цифра $c$ от тези числа, ще получим пълна система от остатъци от различни 2013-цифрени числа по модул $2^{2014}$, защото ако $x \\equiv y \\pmod{2^{2014}}$, то $10x+c \\equiv 10y+c \\pmod{2^{2015}}$. За новото множество повтаряме разсъжденията от по-горе и получаваме пълна система от остатъци по модул $2^{2013}$, съставено от различни 2012-цифрени числа. Продължавайки по този начин ще получим пълна система от остатъци по модул $2^2 = 4$ съставено от различни едноцифрени числа. Това е противоречие, понеже различните едноцифрени числа са само три – $a$, $b$ и $c$.\n\n**Инструкции за оценяване.** (7 точки) 3 т. за пример с 4 цифри; 4 т. за доказване, че 3 цифри не са достатъчни.",
+      "answer": null,
+      "page": 1,
+      "source_quote": "**Задача 4.** Дадено е множество $M$ от $2^{2015}$ естествени числа, всяко от които има 2014 цифри. Всеки две от тези числа дават различни остатъци при деление на $2^{2015}$. Колко най-малко различни цифри участват в десетичния запис на числата от $M$?",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "4",
+      "_quote_grade": "EXACT",
+      "pdf": "OLI-2-Областен кръг-2015-12 кл-sol"
+    },
+    {
+      "num": "12.1",
+      "year": 2015,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Да се намерят всички двойки от реални числа $(x, y)$, за които $x, y \\in \\left[0, \\frac{\\pi}{2}\\right]$ и\n\n$$\\sin x + \\cos y - \\sin(x - y) = \\cos x - \\sin y + \\sin(x - y) = 1.$$",
+      "solution": "Решение. След повдигане на квадрат и почленно събиране на равенствата $\\sin x + \\cos y = 1 + \\sin(x - y)$ и $\\cos x - \\sin y = 1 - \\sin(x - y)$, получаваме $2 + 2\\sin(x - y) = 2 + 2\\sin^2(x - y)$, откъдето $\\sin(x - y) = 0$ или $\\sin(x - y) = 1$.\n\nАко $\\sin(x - y) = 0$ получаваме $x = y$ и $\\sin x + \\cos x = \\cos x - \\sin x$, откъдето $\\sin x = 0$, т.е. $x = 0$. Директно се проверява, че $x = y = 0$ е решение.\n\nАко $\\sin(x - y) = 1$, то $x - y = \\frac{\\pi}{2}$, което е възможно само при $x = \\frac{\\pi}{2}$ и $y = 0$. Директно се проверява, че $x = \\frac{\\pi}{2}, y = 0$ е решение.\n\nИнструкции за оценяване. 3 т. за $\\sin(x - y) = 0$ или $\\sin(x - y) = 1$; по 2 т. за разглеждане на всеки от двата случая и получаване на съответните решения.",
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 12.1. Да се намерят всички двойки от реални числа $(x, y)$, за които $x, y \\in \\left[0, \\frac{\\pi}{2}\\right]$ и\n\n$$\\sin x + \\cos y - \\sin(x - y) = \\cos x - \\sin y + \\sin(x - y) = 1.$$",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "12.1",
+      "_quote_grade": "EXACT",
+      "pdf": "OLI-2-Областен кръг-2015-12 кл-sol"
+    },
+    {
+      "num": "12.2",
+      "year": 2015,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Даден е изпъкнал четириъгълник $ABCD$, за който $AD = BC$, $AB = \\sqrt{3}CD$ и $\\angle C - \\angle D = 2(\\angle A - \\angle B) > 0$. Да се намери $\\angle A - \\angle B$.",
+      "solution": "Решение. Понеже\n\n$$\\begin{aligned} DA\\cdot AB \\sin \\angle A + BC\\cdot CD \\sin \\angle C &= 2S_{ABCD} \\\\ &= AB\\cdot BC \\sin \\angle B + CD\\cdot DA \\sin \\angle D, \\end{aligned}$$\n\nот $AD = BC$ и $AB = \\sqrt{3}CD$ следва, че\n\n$$\\sqrt{3} \\sin \\angle A + \\sin \\angle C = \\sqrt{3} \\sin \\angle B + \\sin \\angle D,$$\n\nт.е.\n\n$$\\sin \\frac{\\measuredangle C - \\measuredangle D}{2} \\cos \\frac{\\measuredangle C + \\measuredangle D}{2} = \\sqrt{3} \\sin \\frac{\\measuredangle B - \\measuredangle A}{2} \\cos \\frac{\\measuredangle B + \\measuredangle A}{2}.$$\n\nДа отбележим, че $\\measuredangle C + \\measuredangle D \\neq 180^\\circ$, тъй като иначе от $AD = BC$ ще получим, че $ABCD$ е успоредник, което е противоречие с $AB = \\sqrt{3}CD$. Сега от $\\measuredangle A + \\measuredangle B + \\measuredangle C + \\measuredangle D = 360^\\circ$ имаме, че\n\n$$\\cos \\frac{\\measuredangle C + \\measuredangle D}{2} = - \\cos \\frac{\\measuredangle B + \\measuredangle A}{2} \\neq 0$$\n\nи значи\n\n$$\\sin \\frac{\\measuredangle C - \\measuredangle D}{2} = \\sqrt{3} \\sin \\frac{\\measuredangle A - \\measuredangle B}{2}.$$\n\nПонеже $\\measuredangle C - \\measuredangle D = 2(\\measuredangle A - \\measuredangle B)$ следва, че\n\n$$2 \\sin \\frac{\\measuredangle A - \\measuredangle B}{2} \\cos \\frac{\\measuredangle A - \\measuredangle B}{2} = \\sqrt{3} \\sin \\frac{\\measuredangle A - \\measuredangle B}{2}.$$\n\nТъй като $\\measuredangle A > \\measuredangle B$, то $\\cos \\frac{\\measuredangle A - \\measuredangle B}{2} = \\frac{\\sqrt{3}}{2}$ и тогава $\\measuredangle A - \\measuredangle B = 60^\\circ$.\n\n**Инструкции за оценяване.** (7 точки) 2 т. за получаване на равенството $\\sqrt{3} \\sin \\measuredangle A + \\sin \\measuredangle C = \\sqrt{3} \\sin \\measuredangle B + \\sin \\measuredangle D$, 2 т. за получаване на $\\sin \\frac{\\measuredangle C - \\measuredangle D}{2} = \\sqrt{3} \\sin \\frac{\\measuredangle A - \\measuredangle B}{2}$, 2 т. за получаване на уравнение за $\\frac{\\measuredangle A - \\measuredangle B}{2}$ (или аналогично), 1 т. за довършване.",
+      "answer": "60°",
+      "page": 1,
+      "source_quote": "Задача 12.2. Даден е изпъкнал четириъгълник $ABCD$, за който $AD = BC$, $AB = \\sqrt{3}CD$ и $\\angle C - \\angle D = 2(\\angle A - \\angle B) > 0$. Да се намери $\\angle A - \\angle B$.",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "12.2",
+      "_quote_grade": "EXACT",
+      "pdf": "OLI-2-Областен кръг-2015-12 кл-sol"
+    }
+  ]
+}

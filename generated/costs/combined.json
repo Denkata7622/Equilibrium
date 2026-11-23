@@ -1,11 +1,21 @@
 {
-  "generated_at": "2026-10-29T19:08:13",
+  "generated_at": "2026-11-23T14:34:25",
   "sources": {
     "historical": 2622,
-    "live": 7,
-    "combined": 2629
+    "live": 4581,
+    "combined": 7203
   },
   "by_model": {
+    "deepseek/deepseek-r1-0528": {
+      "calls": 3447,
+      "tokens": 42821247,
+      "cost": 31.720092,
+      "errors": 0,
+      "reasoning_tokens": 2431048,
+      "cached_tokens": 11421952,
+      "cost_prompt": 18.227638,
+      "cost_completion": 13.489861
+    },
     "GPT-6.1 Sol": {
       "calls": 459,
       "tokens": 4178092,
@@ -15,6 +25,26 @@
       "cached_tokens": 0,
       "cost_prompt": 0.0,
       "cost_completion": 0.0
+    },
+    "openai/gpt-6.1-sol": {
+      "calls": 211,
+      "tokens": 3089830,
+      "cost": 14.660278,
+      "errors": 0,
+      "reasoning_tokens": 213158,
+      "cached_tokens": 542196,
+      "cost_prompt": 2.783574,
+      "cost_completion": 14.55728
+    },
+    "anthropic/claude-sonnet-5.5": {
+      "calls": 47,
+      "tokens": 1086067,
+      "cost": 6.064749,
+      "errors": 0,
+      "reasoning_tokens": 148343,
+      "cached_tokens": 0,
+      "cost_prompt": 1.704376,
+      "cost_completion": 2.33879
     },
     "R1 0528": {
       "calls": 244,
@@ -56,6 +86,16 @@
       "cost_prompt": 0.0,
       "cost_completion": 0.0
     },
+    "mistral-ocr-latest": {
+      "calls": 291,
+      "tokens": 0,
+      "cost": 0.936,
+      "errors": 0,
+      "reasoning_tokens": 0,
+      "cached_tokens": 0,
+      "cost_prompt": 0.0,
+      "cost_completion": 0.0
+    },
     "Nano Banana Pro (Gemini 3 Pro Image)": {
       "calls": 7,
       "tokens": 13351,
@@ -86,15 +126,35 @@
       "cost_prompt": 0.0,
       "cost_completion": 0.0
     },
-    "mistral-ocr-latest": {
-      "calls": 109,
-      "tokens": 0,
-      "cost": 0.462,
+    "deepseek/deepseek-v4.1-flash": {
+      "calls": 419,
+      "tokens": 4350951,
+      "cost": 0.559584,
+      "errors": 0,
+      "reasoning_tokens": 572161,
+      "cached_tokens": 1777280,
+      "cost_prompt": 0.101242,
+      "cost_completion": 0.458342
+    },
+    "deepseek/deepseek-v3.2": {
+      "calls": 114,
+      "tokens": 1121372,
+      "cost": 0.258078,
       "errors": 0,
       "reasoning_tokens": 0,
-      "cached_tokens": 0,
-      "cost_prompt": 0.0,
-      "cost_completion": 0.0
+      "cached_tokens": 283456,
+      "cost_prompt": 0.219504,
+      "cost_completion": 0.038574
+    },
+    "openai/gpt-oss-120b": {
+      "calls": 161,
+      "tokens": 1274821,
+      "cost": 0.198593,
+      "errors": 0,
+      "reasoning_tokens": 355658,
+      "cached_tokens": 19009,
+      "cost_prompt": 0.021357,
+      "cost_completion": 0.177236
     },
     "GLM 5.3 Flash": {
       "calls": 104,
@@ -115,16 +175,6 @@
       "cached_tokens": 0,
       "cost_prompt": 0.0,
       "cost_completion": 0.0
-    },
-    "deepseek/deepseek-r1-0528": {
-      "calls": 7,
-      "tokens": 80531,
-      "cost": 0.080126,
-      "errors": 0,
-      "reasoning_tokens": 5884,
-      "cached_tokens": 25344,
-      "cost_prompt": 0.029324,
-      "cost_completion": 0.050686
     },
     "Claude Opus 4.5": {
       "calls": 1,
@@ -387,6 +437,226 @@
       "cached_tokens": 25344,
       "cost_prompt": 0.029324,
       "cost_completion": 0.050686
+    },
+    "2026-10-30": {
+      "calls": 118,
+      "tokens": 2445803,
+      "cost": 2.447588,
+      "errors": 0,
+      "reasoning_tokens": 127587,
+      "cached_tokens": 808064,
+      "cost_prompt": 0.858411,
+      "cost_completion": 1.589176
+    },
+    "2026-10-31": {
+      "calls": 116,
+      "tokens": 2406423,
+      "cost": 2.888725,
+      "errors": 0,
+      "reasoning_tokens": 130983,
+      "cached_tokens": 683080,
+      "cost_prompt": 0.901141,
+      "cost_completion": 1.946097
+    },
+    "2026-11-01": {
+      "calls": 25,
+      "tokens": 621983,
+      "cost": 3.740303,
+      "errors": 0,
+      "reasoning_tokens": 58409,
+      "cached_tokens": 30420,
+      "cost_prompt": 0.745654,
+      "cost_completion": 2.43763
+    },
+    "2026-11-02": {
+      "calls": 369,
+      "tokens": 3005580,
+      "cost": 2.939537,
+      "errors": 0,
+      "reasoning_tokens": 61033,
+      "cached_tokens": 929792,
+      "cost_prompt": 1.057418,
+      "cost_completion": 1.531119
+    },
+    "2026-11-03": {
+      "calls": 361,
+      "tokens": 4291380,
+      "cost": 1.110969,
+      "errors": 0,
+      "reasoning_tokens": 510676,
+      "cached_tokens": 1990244,
+      "cost_prompt": 0.37246,
+      "cost_completion": 0.735031
+    },
+    "2026-11-04": {
+      "calls": 254,
+      "tokens": 2276436,
+      "cost": 1.358187,
+      "errors": 0,
+      "reasoning_tokens": 101296,
+      "cached_tokens": 1325491,
+      "cost_prompt": 0.965111,
+      "cost_completion": 0.392075
+    },
+    "2026-11-05": {
+      "calls": 343,
+      "tokens": 3698102,
+      "cost": 2.551595,
+      "errors": 0,
+      "reasoning_tokens": 279115,
+      "cached_tokens": 854016,
+      "cost_prompt": 1.454171,
+      "cost_completion": 1.092424
+    },
+    "2026-11-06": {
+      "calls": 283,
+      "tokens": 3177464,
+      "cost": 2.46481,
+      "errors": 0,
+      "reasoning_tokens": 254931,
+      "cached_tokens": 592328,
+      "cost_prompt": 1.340597,
+      "cost_completion": 1.088213
+    },
+    "2026-11-07": {
+      "calls": 366,
+      "tokens": 3992997,
+      "cost": 2.942696,
+      "errors": 0,
+      "reasoning_tokens": 302102,
+      "cached_tokens": 640192,
+      "cost_prompt": 1.708516,
+      "cost_completion": 1.15918
+    },
+    "2026-11-09": {
+      "calls": 431,
+      "tokens": 4555713,
+      "cost": 2.943864,
+      "errors": 0,
+      "reasoning_tokens": 278181,
+      "cached_tokens": 1504758,
+      "cost_prompt": 1.877936,
+      "cost_completion": 1.065929
+    },
+    "2026-11-10": {
+      "calls": 379,
+      "tokens": 4058252,
+      "cost": 2.811281,
+      "errors": 0,
+      "reasoning_tokens": 321216,
+      "cached_tokens": 1163014,
+      "cost_prompt": 1.626801,
+      "cost_completion": 1.193483
+    },
+    "2026-11-11": {
+      "calls": 309,
+      "tokens": 4008037,
+      "cost": 2.81375,
+      "errors": 0,
+      "reasoning_tokens": 298937,
+      "cached_tokens": 817269,
+      "cost_prompt": 1.707662,
+      "cost_completion": 1.12454
+    },
+    "2026-11-12": {
+      "calls": 89,
+      "tokens": 1358620,
+      "cost": 3.102488,
+      "errors": 0,
+      "reasoning_tokens": 114359,
+      "cached_tokens": 136560,
+      "cost_prompt": 1.006675,
+      "cost_completion": 1.9657
+    },
+    "2026-11-13": {
+      "calls": 33,
+      "tokens": 368061,
+      "cost": 0.219882,
+      "errors": 0,
+      "reasoning_tokens": 18421,
+      "cached_tokens": 88064,
+      "cost_prompt": 0.16895,
+      "cost_completion": 0.050931
+    },
+    "2026-11-14": {
+      "calls": 360,
+      "tokens": 4337470,
+      "cost": 2.983243,
+      "errors": 0,
+      "reasoning_tokens": 340486,
+      "cached_tokens": 572960,
+      "cost_prompt": 2.059718,
+      "cost_completion": 0.923525
+    },
+    "2026-11-16": {
+      "calls": 415,
+      "tokens": 4941950,
+      "cost": 2.980036,
+      "errors": 0,
+      "reasoning_tokens": 241715,
+      "cached_tokens": 1144832,
+      "cost_prompt": 2.294238,
+      "cost_completion": 0.685798
+    },
+    "2026-11-17": {
+      "calls": 47,
+      "tokens": 684980,
+      "cost": 2.105853,
+      "errors": 0,
+      "reasoning_tokens": 45148,
+      "cached_tokens": 4352,
+      "cost_prompt": 0.632087,
+      "cost_completion": 2.055642
+    },
+    "2026-11-18": {
+      "calls": 74,
+      "tokens": 787094,
+      "cost": 2.317796,
+      "errors": 0,
+      "reasoning_tokens": 42388,
+      "cached_tokens": 217352,
+      "cost_prompt": 0.29086,
+      "cost_completion": 2.428769
+    },
+    "2026-11-19": {
+      "calls": 68,
+      "tokens": 734766,
+      "cost": 2.273166,
+      "errors": 0,
+      "reasoning_tokens": 57213,
+      "cached_tokens": 203944,
+      "cost_prompt": 0.265628,
+      "cost_completion": 2.411625
+    },
+    "2026-11-20": {
+      "calls": 28,
+      "tokens": 344486,
+      "cost": 0.897895,
+      "errors": 0,
+      "reasoning_tokens": 15281,
+      "cached_tokens": 82092,
+      "cost_prompt": 0.176191,
+      "cost_completion": 0.889779
+    },
+    "2026-11-21": {
+      "calls": 74,
+      "tokens": 908325,
+      "cost": 2.960614,
+      "errors": 0,
+      "reasoning_tokens": 62054,
+      "cached_tokens": 154913,
+      "cost_prompt": 0.633952,
+      "cost_completion": 2.279861
+    },
+    "2026-11-22": {
+      "calls": 32,
+      "tokens": 659835,
+      "cost": 3.000972,
+      "errors": 0,
+      "reasoning_tokens": 52953,
+      "cached_tokens": 74812,
+      "cost_prompt": 0.884188,
+      "cost_completion": 1.96287
     }
   },
   "by_role": {
@@ -400,35 +670,135 @@
       "cost_prompt": 0.0,
       "cost_completion": 0.0
     },
-    "gen": {
-      "calls": 3,
-      "tokens": 44672,
-      "cost": 0.05414,
+    "extract": {
+      "calls": 2485,
+      "tokens": 28838015,
+      "cost": 18.671493,
       "errors": 0,
-      "reasoning_tokens": 2329,
-      "cached_tokens": 20992,
-      "cost_prompt": 0.01287,
-      "cost_completion": 0.04127
-    },
-    "ver": {
-      "calls": 1,
-      "tokens": 15404,
-      "cost": 0.013268,
-      "errors": 0,
-      "reasoning_tokens": 2769,
-      "cached_tokens": 4352,
-      "cost_prompt": 0.006045,
-      "cost_completion": 0.007222
+      "reasoning_tokens": 1805974,
+      "cached_tokens": 9387744,
+      "cost_prompt": 10.603222,
+      "cost_completion": 8.065794
     },
     "classify": {
-      "calls": 2,
-      "tokens": 20389,
-      "cost": 0.012602,
+      "calls": 1039,
+      "tokens": 12969027,
+      "cost": 8.59751,
       "errors": 0,
-      "reasoning_tokens": 786,
+      "reasoning_tokens": 833825,
+      "cached_tokens": 2300832,
+      "cost_prompt": 6.007262,
+      "cost_completion": 2.590248
+    },
+    "gen": {
+      "calls": 153,
+      "tokens": 3653177,
+      "cost": 7.85091,
+      "errors": 0,
+      "reasoning_tokens": 106535,
+      "cached_tokens": 1081646,
+      "cost_prompt": 1.538724,
+      "cost_completion": 7.00508
+    },
+    "insight-gen": {
+      "calls": 114,
+      "tokens": 1430872,
+      "cost": 7.095701,
+      "errors": 0,
+      "reasoning_tokens": 151028,
+      "cached_tokens": 374845,
+      "cost_prompt": 0.773674,
+      "cost_completion": 7.61445
+    },
+    "ver": {
+      "calls": 145,
+      "tokens": 2849877,
+      "cost": 6.436655,
+      "errors": 0,
+      "reasoning_tokens": 305848,
+      "cached_tokens": 525696,
+      "cost_prompt": 2.182828,
+      "cost_completion": 2.597475
+    },
+    "gpt-card": {
+      "calls": 31,
+      "tokens": 396936,
+      "cost": 1.79782,
+      "errors": 0,
+      "reasoning_tokens": 24363,
       "cached_tokens": 0,
-      "cost_prompt": 0.010408,
-      "cost_completion": 0.002194
+      "cost_prompt": 0.529826,
+      "cost_completion": 1.84987
+    },
+    "insight-adj": {
+      "calls": 16,
+      "tokens": 222427,
+      "cost": 1.095693,
+      "errors": 0,
+      "reasoning_tokens": 25908,
+      "cached_tokens": 0,
+      "cost_prompt": 0.373452,
+      "cost_completion": 0.35701
+    },
+    "extract-L3": {
+      "calls": 19,
+      "tokens": 277348,
+      "cost": 1.008384,
+      "errors": 0,
+      "reasoning_tokens": 2616,
+      "cached_tokens": 29519,
+      "cost_prompt": 0.483048,
+      "cost_completion": 0.55779
+    },
+    "ocr": {
+      "calls": 182,
+      "tokens": 0,
+      "cost": 0.474,
+      "errors": 0,
+      "reasoning_tokens": 0,
+      "cached_tokens": 0,
+      "cost_prompt": 0.0,
+      "cost_completion": 0.0
+    },
+    "insight-enrich": {
+      "calls": 14,
+      "tokens": 160841,
+      "cost": 0.325892,
+      "errors": 0,
+      "reasoning_tokens": 1801,
+      "cached_tokens": 38714,
+      "cost_prompt": 0.276618,
+      "cost_completion": 0.1302
+    },
+    "insight-ver": {
+      "calls": 114,
+      "tokens": 1121372,
+      "cost": 0.258078,
+      "errors": 0,
+      "reasoning_tokens": 0,
+      "cached_tokens": 283456,
+      "cost_prompt": 0.219504,
+      "cost_completion": 0.038574
+    },
+    "ocr_correct": {
+      "calls": 161,
+      "tokens": 1274821,
+      "cost": 0.198593,
+      "errors": 0,
+      "reasoning_tokens": 355658,
+      "cached_tokens": 19009,
+      "cost_prompt": 0.021357,
+      "cost_completion": 0.177236
+    },
+    "verifier": {
+      "calls": 107,
+      "tokens": 549509,
+      "cost": 0.124531,
+      "errors": 0,
+      "reasoning_tokens": 106812,
+      "cached_tokens": 2432,
+      "cost_prompt": 0.048176,
+      "cost_completion": 0.076356
     },
     "test": {
       "calls": 1,
@@ -442,13 +812,13 @@
     }
   },
   "totals": {
-    "calls": 2629,
-    "tokens": 27195351,
-    "cost": 29.269468,
+    "calls": 7203,
+    "tokens": 80859108,
+    "cost": 83.124716,
     "errors": 36,
-    "reasoning_tokens": 5884,
-    "cached_tokens": 25344,
-    "cost_prompt": 0.029324,
-    "cost_completion": 0.050686
+    "reasoning_tokens": 3720368,
+    "cached_tokens": 14043893,
+    "cost_prompt": 23.057691,
+    "cost_completion": 31.060082
   }
 }

@@ -1,0 +1,71 @@
+{
+  "pdf": "OLI-2-Областен кръг-2008-10 кл",
+  "problems": [
+    {
+      "num": "10.1",
+      "year": 2008,
+      "grade": 10,
+      "grade_range": null,
+      "round": "oblasten",
+      "statement": "Да се намерят всички реални стойности на $x$, за които са изпълнени неравенствата\n\n$$1 \\le  \\sqrt{x+2} - \\frac{1}{\\sqrt{x+2}} \\le  4.$$",
+      "solution": "10.1. Задачата има смисъл при $x > -2$. Полагаме $\\sqrt{x+2} = u > 0$ и получаваме неравенствата $u^2 - u - 1 \\geq 0$ и $u^2 - 4u - 1 \\leq 0$. Решенията им (с отчитане на $u > 0$) са съответно $u \\geq \\frac{1+\\sqrt{5}}{2}$ и $0 < u \\leq 2+\\sqrt{5}$. Следователно търсените стойности на $x$ са точно тези, за които $\\frac{1+\\sqrt{5}}{2} \\leq \\sqrt{x+2} \\leq 2+\\sqrt{5}$. Оттук лесно получаваме $x \\in \\left[ \\frac{\\sqrt{5}-1}{2}, 7+4\\sqrt{5} \\right]$.",
+      "answer": "$x \\in \\left[ \\frac{\\sqrt{5}-1}{2}, 7+4\\sqrt{5} \\right]$",
+      "page": 1
+    },
+    {
+      "num": "10.2",
+      "year": 2008,
+      "grade": 10,
+      "grade_range": null,
+      "round": "oblasten",
+      "statement": "Дадена е окръжност $k$ и три различни точки $A$, $B$ и $C$ върху нея. Нека допирателните в точките $A$ и $B$ се пресичат в точка $P$, а правата през $C$, която е перпендикулярна на $PC$, пресича правата $AB$ в точка $Q$.\n\na) Ako npabnte PC n QC npecuat 3a BTOpn IIbT OKpbXHOCTTa CbOTBeTHO B TOUKN M n N, da ce IOKaKe, ye \\(\\angle CQP = \\angle CMN\\)\n6) Ako S e cpeata Ha PQ, da ce IokaKe, ye SC e IOnnpaTeHa KbM k.",
+      "solution": null,
+      "answer": null,
+      "page": 1
+    },
+    {
+      "num": "10.3",
+      "year": 2008,
+      "grade": 10,
+      "grade_range": null,
+      "round": "oblasten",
+      "statement": "Да се докаже, че съществува функция $f : \\mathbb{N} \\to \\mathbb{N}$, удовлетворяваща равенството $f(f(n)) = 3n$ за всяко $n \\in \\mathbb{N}$.",
+      "solution": "Всяко естествено число $n$ еднозначно се представя във вида $n = 3^k t$, където $k$ е цяло неотрицателно число и $t$ е естествено число, за което $(t, 3) = 1$. Да разгледаме функцията\n\n$$f(n) = \\left\\{ \\begin{array}{ll} 3^{k+1}(t+1), & \\text{ако } t \\equiv 1 \\pmod{3} \\\\ 3^k(t-1), & \\text{ако } t \\equiv 2 \\pmod{3} \\end{array} \\right.$$\n\nАко $n = 3^k t$, където $t \\equiv 1 \\pmod{3}$, то\n\n$$f(f(n)) = f(3^{k+1}(t+1)) = 3^{k+1}(t+1-1) = 3^{k+1}t = 3n.$$\n\nАналогично се проверява, че ако $n = 3^k t$, където $t \\equiv 2 \\pmod{3}$, то $f(f(n)) = 3n$. Следователно функцията $f(n)$ удовлетворява условието.",
+      "answer": null,
+      "page": 1
+    },
+    {
+      "num": "10.4",
+      "year": 2008,
+      "grade": 10,
+      "grade_range": null,
+      "round": "oblasten",
+      "statement": "Дадено е уравнението $8^x - m2^{x+1} + 4m = 8$, където $m$ е реален параметър.\n\na)Ia ce peHH ypaBHeHHeTo npn \\(m = 6\\)\n6) Ia ce onpeJeHn npn KOH cToHOCTn Ha npaMeTbpa m ypaBHeHHeTo HMa TOUHO eHNO IIOJOKHTeJIHO peHHe.",
+      "solution": "Случай 1. Ако $t = 2$ е решение, то $m = 6$, което от а) е решение.\n\nСлучай 2. Ако $D = 2m - 3 < 0$, т.е. $m < \\frac{3}{2}$ уравнението няма реални решения.\n\nСлучай 3. Ако $D = 2m - 3 \\geqq 0$, т.е. $m \\geqq \\frac{3}{2}$, то уравнението има реални решения и е необходимо\n\n$$\\left| \\begin{array}{l} \\frac{-b}{2a} \\leqq 1 \\\\ a.f(1) \\geqq 0 \\end{array} \\right. \\Leftrightarrow \\left| \\begin{array}{l} -1 \\leqq 1 \\\\ 7 - 2m \\geqq 0 \\end{array} \\right. \\Leftrightarrow m \\leqq \\frac{7}{2}$$\n\nОкончателно получаваме $m \\in (-\\infty; \\frac{7}{2}] \\cup \\{6\\}$.",
+      "answer": "$m \\in (-\\infty; \\frac{7}{2}] \\cup \\{6\\}$",
+      "page": 1
+    },
+    {
+      "num": "10.5",
+      "year": 2008,
+      "grade": 10,
+      "grade_range": null,
+      "round": "oblasten",
+      "statement": "Да се докаже, че за произволни положителни реални числа $a$, $b$ и $c$ е в сила неравенството\n\n$$\\frac{a^5}{bc} + \\frac{b^5}{ac} + \\frac{c^5}{ab} + \\frac{3}{2a^2b^2c^2} \\geq 2(a^3 + b^3 + c^3) + \\frac{9}{2} - 6abc.$$\n\nКога се достига равенство?",
+      "solution": "От неравенството между средното аритметично и средното геометрично за две числа имаме $\\frac{a^5}{bc} + abc \\geq 2a^3$ и аналогично $\\frac{b^5}{ac} + abc \\geq 2b^3$ и $\\frac{c^5}{ab} + abc \\geq 2c^3$. Събираме тези три неравенства и получаваме\n\n$$\\frac{a^5}{bc} + \\frac{b^5}{ac} + \\frac{c^5}{ab} + 3abc \\geq 2(a^3 + b^3 + c^3).$$\n\nСледователно е достатъчно да докажем неравенство $abc + \\frac{1}{2a^2b^2c^2} \\geq \\frac{3}{2}$.\n\nПолагаме $t = abc > 0$ и получаваме последователно $t + \\frac{1}{2t^2} - \\frac{3}{2} \\geq 0$, $2t^3 - 3t^2 + 1 \\geq 0$, $(t-1)^2(2t+1) \\geq 0$, като последното очевидно е изпълнено за всяко $t > 0$. С това даденото неравенство е доказано.\n\nРавенство се достига точно когато $a = b = c$ и $abc = t = 1$, т.е. при $a = b = c = 1$.",
+      "answer": null,
+      "page": 1
+    },
+    {
+      "num": "10.6",
+      "year": 2008,
+      "grade": 10,
+      "grade_range": null,
+      "round": "oblasten",
+      "statement": "Равнобедрен трапец с основи 1 и 5 и бедра $\\sqrt{7}$ е покрит с 10 кръга с радиус $r$. Да се докаже, че $r \\geq \\frac{1}{2}$. (\"Покрит\" означава, че всяка точка от трапеца се съдържа в поне един от кръговете.)",
+      "solution": null,
+      "answer": null,
+      "page": 1
+    }
+  ]
+}

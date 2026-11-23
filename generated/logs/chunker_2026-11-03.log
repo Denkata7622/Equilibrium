@@ -1,0 +1,830 @@
+2026-11-03 08:00:55,628 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 08:00:55,629 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-03 08:14:06,176 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 08:14:06,177 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-03 08:14:16,733 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 08:14:16,734 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-03 08:14:16,755 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-03 08:14:16,761 [PDF_CHUNKER] INFO Филтър 'OLI-2-Областен кръг-2004-11 кл-probs': 1 PDF-а
+2026-11-03 08:14:16,762 [PDF_CHUNKER] INFO Нов ден — рестарт на бюджета
+2026-11-03 08:14:16,768 [PDF_CHUNKER] INFO 
+[1/1] OLI-2-Областен кръг-2004-11 кл-probs.pdf
+2026-11-03 08:14:16,769 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2004-11 кл-probs ═══
+2026-11-03 08:14:17,890 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs.pdf] pypdf: 1p, 4786 chars
+2026-11-03 08:14:17,891 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs.pdf] 4786 chars (4786/p) → OCR fallback
+2026-11-03 08:14:17,893 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs.pdf] OCR cache: 1p
+2026-11-03 08:14:17,893 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs.pdf] OCR: 2004 chars (vs Python: 4786)
+2026-11-03 08:14:17,894 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] 1 chunks, 1 pages
+2026-11-03 08:14:17,895 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] 19 existing problems
+2026-11-03 08:14:47,901 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 30s
+2026-11-03 08:15:17,911 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 60s
+2026-11-03 08:15:47,918 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 90s
+2026-11-03 08:16:17,920 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 120s
+2026-11-03 08:16:47,931 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 150s
+2026-11-03 08:17:17,944 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 180s
+2026-11-03 08:17:47,958 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 210s
+2026-11-03 08:18:17,960 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 240s
+2026-11-03 08:18:47,971 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 270s
+2026-11-03 08:19:17,976 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 300s
+2026-11-03 08:19:47,988 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 330s
+2026-11-03 08:20:17,992 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 360s
+2026-11-03 08:20:48,004 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 390s
+2026-11-03 08:21:18,008 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 420s
+2026-11-03 08:21:40,322 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2004-11 кл-probs] validation: ['count: over: 20 > 6+1', 'problem[0]: quote_not_verbatim', 'problem[2]: quote_not_verbatim', 'problem[6]: quote_not_verbatim', 'problem[7]: quote_not_verbatim', 'problem[9]: quote_not_verbatim', 'problem[10]: quote_not_verbatim', 'problem[13]: quote_not_verbatim', 'problem[15]: quote_not_verbatim', 'problem[17]: quote_not_verbatim', 'problem[19]: quote_not_verbatim']
+2026-11-03 08:21:40,322 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] chunk 1-1: 20 problems (442s)
+2026-11-03 08:21:40,354 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] Записан v2 (38 problems)
+2026-11-03 08:21:40,362 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-2004-11 кл-probs] 38 problems (deduped) → C:\Users\denis\Downloads\Материали Олимпиада МАТ\generated\cache\extracted\OLI-2-Областен кръг-2004-11 кл-probs\all_problems.json
+2026-11-03 08:41:58,436 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 08:41:58,437 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-03 08:42:09,928 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 08:42:09,929 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-03 08:48:07,636 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 08:48:07,637 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-03 08:48:12,862 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 08:48:12,863 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-03 08:48:12,885 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-03 08:48:12,886 [PDF_CHUNKER] INFO Филтър 'OLI-2-Областен кръг-2004-11 кл-probs': 1 PDF-а
+2026-11-03 08:48:12,887 [PDF_CHUNKER] INFO 
+[1/1] OLI-2-Областен кръг-2004-11 кл-probs.pdf
+2026-11-03 08:48:12,887 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2004-11 кл-probs ═══
+2026-11-03 08:48:13,818 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs.pdf] pypdf: 1p, 4786 chars
+2026-11-03 08:48:13,818 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs.pdf] 4786 chars (4786/p) → OCR fallback
+2026-11-03 08:48:13,880 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs.pdf] OCR cache: 1p
+2026-11-03 08:48:13,881 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs.pdf] OCR: 2004 chars (vs Python: 4786)
+2026-11-03 08:48:13,881 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] 1 chunks, 1 pages
+2026-11-03 08:48:43,887 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 30s
+2026-11-03 08:49:13,896 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 60s
+2026-11-03 08:49:43,902 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 90s
+2026-11-03 08:50:13,911 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 120s
+2026-11-03 08:50:43,920 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 150s
+2026-11-03 08:51:13,932 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 180s
+2026-11-03 08:51:43,939 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 210s
+2026-11-03 08:52:13,944 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 240s
+2026-11-03 08:52:43,957 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 270s
+2026-11-03 08:53:13,968 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 300s
+2026-11-03 08:53:43,981 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 330s
+2026-11-03 08:54:13,989 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 360s
+2026-11-03 08:54:43,997 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 390s
+2026-11-03 08:55:14,005 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 420s
+2026-11-03 08:55:44,007 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 450s
+2026-11-03 08:56:14,021 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 480s
+2026-11-03 08:56:44,025 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 510s
+2026-11-03 08:57:13,736 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2004-11 кл-probs] validation: ['count: over: 20 > 6+1', 'problem[17]: quote_not_verbatim']
+2026-11-03 08:57:13,737 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] chunk 1-1: 20 problems (539s)
+2026-11-03 08:57:13,768 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] Стар файл → all_problems-v1.json
+2026-11-03 08:57:13,770 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] grade filter: 19 → 6 (kept grade=11)
+2026-11-03 08:57:13,821 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] Записан v2 (6 problems)
+2026-11-03 08:57:13,833 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-2004-11 кл-probs] 6 problems (deduped) → C:\Users\denis\Downloads\Материали Олимпиада МАТ\generated\cache\extracted\OLI-2-Областен кръг-2004-11 кл-probs\all_problems.json
+2026-11-03 09:39:52,328 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 09:39:52,329 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-v4.1-flash ($0.0005/call)
+2026-11-03 09:39:52,329 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 09:40:00,220 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 09:40:00,221 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-v4.1-flash ($0.0005/call)
+2026-11-03 09:40:00,221 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 09:40:00,240 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-03 09:40:00,240 [PDF_CHUNKER] INFO Филтър 'OLI-2-Областен кръг-2004-11 кл-probs': 1 PDF-а
+2026-11-03 09:40:00,241 [PDF_CHUNKER] INFO 
+[1/1] OLI-2-Областен кръг-2004-11 кл-probs.pdf
+2026-11-03 09:40:00,242 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2004-11 кл-probs ═══
+2026-11-03 09:40:01,123 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs.pdf] pypdf: 1p, 4786 chars
+2026-11-03 09:40:01,123 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs.pdf] 4786 chars (4786/p) → OCR fallback
+2026-11-03 09:40:01,128 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs.pdf] Mistral OCR (266KB)
+2026-11-03 09:40:05,212 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs.pdf] OCR: 1p, 2004chars, 4s, $0.0010
+2026-11-03 09:40:05,227 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs.pdf] OCR: 2004 chars (vs Python: 4786)
+2026-11-03 09:40:05,228 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] 1 chunks, 1 pages
+2026-11-03 09:40:35,234 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs-1] extract... 30s
+2026-11-03 09:40:35,394 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2004-11 кл-probs] validation: ['count: over: 20 > 6+1', 'problem[4]: quote_not_verbatim']
+2026-11-03 09:40:35,395 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] chunk 1-1: 20 problems (30s)
+2026-11-03 09:40:35,423 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] Стар файл → all_problems-v1.json
+2026-11-03 09:40:35,426 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] grade filter: 19 → 6 (kept grade=11)
+2026-11-03 09:40:35,463 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] Записан v2 (6 problems)
+2026-11-03 09:40:35,475 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-2004-11 кл-probs] 6 problems (deduped) → C:\Users\denis\Downloads\Материали Олимпиада МАТ\generated\cache\extracted\OLI-2-Областен кръг-2004-11 кл-probs\all_problems.json
+2026-11-03 09:46:32,097 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 09:46:32,098 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-v4.1-flash ($0.0005/call)
+2026-11-03 09:46:32,098 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 09:46:38,775 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 09:46:38,776 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-v4.1-flash ($0.0005/call)
+2026-11-03 09:46:38,776 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 09:46:38,801 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-03 09:46:38,802 [PDF_CHUNKER] INFO Филтър 'OLI-2-Областен кръг-2004-11 кл-probs': 1 PDF-а
+2026-11-03 09:46:38,803 [PDF_CHUNKER] INFO 
+[1/1] OLI-2-Областен кръг-2004-11 кл-probs.pdf
+2026-11-03 09:46:38,803 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2004-11 кл-probs ═══
+2026-11-03 09:46:39,689 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs.pdf] pypdf: 1p, 4786 chars
+2026-11-03 09:46:39,690 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] quality=native_ok, 1 pages
+2026-11-03 09:46:39,691 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] segmented into 20 tasks
+2026-11-03 09:47:02,089 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2004-11 кл-probs] seg 9.5: quote ABSENT (num=9.5) — keeping with flag
+2026-11-03 09:48:08,284 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] segmented: 20 problems from 20 segments
+2026-11-03 09:48:08,287 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] grade filter: 19 → 6 (kept grade=11)
+2026-11-03 09:48:08,323 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] Записан v1 (6 problems, level=segmented)
+2026-11-03 09:48:08,331 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-2004-11 кл-probs] 6 problems (level=segmented) → C:\Users\denis\Downloads\Материали Олимпиада МАТ\generated\cache\extracted\OLI-2-Областен кръг-2004-11 кл-probs\all_problems.json
+2026-11-03 11:10:37,892 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs.pdf] pypdf: 1p, 4786 chars
+2026-11-03 11:17:57,822 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 11:17:57,823 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-v4.1-flash ($0.0005/call)
+2026-11-03 11:17:57,823 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 11:18:03,884 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 11:18:03,885 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-v4.1-flash ($0.0005/call)
+2026-11-03 11:18:03,885 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 11:18:03,906 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-03 11:18:03,908 [PDF_CHUNKER] INFO Филтър '2004-11,2005-11,2004-10,2004-12': 8 PDF-а
+2026-11-03 11:18:03,909 [PDF_CHUNKER] INFO 
+[1/8] OLI-2-Областен кръг-2004-10 кл-probs.pdf
+2026-11-03 11:18:03,909 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2004-10 кл-probs ═══
+2026-11-03 11:18:04,903 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-probs.pdf] pdfplumber: 3p, 5623 chars
+2026-11-03 11:18:04,903 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-probs] quality=native_ok, 3 pages
+2026-11-03 11:18:04,904 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-probs] segmented into 19 tasks
+2026-11-03 11:19:21,531 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2004-10 кл-probs] seg 9.2: quote ABSENT (num=9.2) — keeping with flag
+2026-11-03 11:19:33,897 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2004-10 кл-probs] seg 10.4: quote ABSENT (num=10.4) — keeping with flag
+2026-11-03 11:19:57,247 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2004-10 кл-probs] seg 9.5: quote ABSENT (num=9.5) — keeping with flag
+2026-11-03 11:21:30,221 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-probs] segmented: 23 problems from 19 segments
+2026-11-03 11:21:30,225 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-probs] grade filter: 17 → 9 (kept grade=10)
+2026-11-03 11:21:30,282 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-probs] Записан v1 (9 problems, level=segmented)
+2026-11-03 11:21:30,287 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-2004-10 кл-probs] 9 problems (level=segmented) → C:\Users\denis\Downloads\Материали Олимпиада МАТ\generated\cache\extracted\OLI-2-Областен кръг-2004-10 кл-probs\all_problems.json
+2026-11-03 11:21:30,289 [PDF_CHUNKER] INFO 
+[2/8] OLI-2-Областен кръг-2004-10 кл-sol.pdf
+2026-11-03 11:21:30,289 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2004-10 кл-sol ═══
+2026-11-03 11:21:32,414 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol.pdf] pypdf: 3p, 9295 chars
+2026-11-03 11:21:32,414 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol] quality=native_ok, 3 pages
+2026-11-03 11:21:32,415 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol] segmented into 11 tasks
+2026-11-03 11:22:17,961 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2004-10 кл-sol] seg 10.1: quote ABSENT (num=10.1) — keeping with flag
+2026-11-03 11:23:24,807 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol] segmented: 11 problems from 11 segments
+2026-11-03 11:23:24,811 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol] Стар файл → all_problems-v2.json
+2026-11-03 11:23:24,812 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol] grade filter: 9 → 7 (kept grade=10)
+2026-11-03 11:23:24,865 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol] Записан v3 (7 problems, level=segmented)
+2026-11-03 11:23:24,874 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-2004-10 кл-sol] 7 problems (level=segmented) → C:\Users\denis\Downloads\Материали Олимпиада МАТ\generated\cache\extracted\OLI-2-Областен кръг-2004-10 кл-sol\all_problems.json
+2026-11-03 11:23:24,875 [PDF_CHUNKER] INFO 
+[3/8] OLI-2-Областен кръг-2004-11 кл-probs.pdf
+2026-11-03 11:23:24,876 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2004-11 кл-probs ═══
+2026-11-03 11:23:25,899 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs.pdf] pypdf: 1p, 4786 chars
+2026-11-03 11:23:25,899 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] quality=native_ok, 1 pages
+2026-11-03 11:23:25,900 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] segmented into 20 tasks
+2026-11-03 11:24:43,962 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2004-11 кл-probs] seg 11.3: quote ABSENT (num=11.3) — keeping with flag
+2026-11-03 11:25:12,739 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] segmented: 20 problems from 20 segments
+2026-11-03 11:25:12,745 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] Стар файл → all_problems-v1.json
+2026-11-03 11:25:12,745 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] grade filter: 19 → 6 (kept grade=11)
+2026-11-03 11:25:12,786 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] Записан v2 (6 problems, level=segmented)
+2026-11-03 11:25:12,800 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-2004-11 кл-probs] 6 problems (level=segmented) → C:\Users\denis\Downloads\Материали Олимпиада МАТ\generated\cache\extracted\OLI-2-Областен кръг-2004-11 кл-probs\all_problems.json
+2026-11-03 11:25:12,801 [PDF_CHUNKER] INFO 
+[4/8] OLI-2-Областен кръг-2004-11 кл-sol.pdf
+2026-11-03 11:25:12,803 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2004-11 кл-sol ═══
+2026-11-03 11:25:15,374 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-sol.pdf] pypdf: 3p, 10784 chars
+2026-11-03 11:25:15,375 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-sol] quality=native_ok, 3 pages
+2026-11-03 11:25:15,376 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-sol] segmented into 13 tasks
+2026-11-03 11:27:09,265 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-sol] segmented: 13 problems from 13 segments
+2026-11-03 11:27:09,269 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-sol] Стар файл → all_problems-v2.json
+2026-11-03 11:27:09,270 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-sol] grade filter: 9 → 7 (kept grade=11)
+2026-11-03 11:27:09,307 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-sol] Записан v3 (7 problems, level=segmented)
+2026-11-03 11:27:09,316 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-2004-11 кл-sol] 7 problems (level=segmented) → C:\Users\denis\Downloads\Материали Олимпиада МАТ\generated\cache\extracted\OLI-2-Областен кръг-2004-11 кл-sol\all_problems.json
+2026-11-03 11:27:09,317 [PDF_CHUNKER] INFO 
+[5/8] OLI-2-Областен кръг-2004-12 кл-probs.pdf
+2026-11-03 11:27:09,318 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2004-12 кл-probs ═══
+2026-11-03 11:27:10,363 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-probs.pdf] pypdf: 1p, 4348 chars
+2026-11-03 11:27:10,364 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-probs] quality=native_ok, 1 pages
+2026-11-03 11:27:10,364 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-probs] segmented into 16 tasks
+2026-11-03 11:28:42,862 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-probs] segmented: 16 problems from 16 segments
+2026-11-03 11:28:42,863 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-probs] grade filter: 16 → 6 (kept grade=12)
+2026-11-03 11:28:42,887 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-probs] Записан v1 (6 problems, level=segmented)
+2026-11-03 11:28:42,896 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-2004-12 кл-probs] 6 problems (level=segmented) → C:\Users\denis\Downloads\Материали Олимпиада МАТ\generated\cache\extracted\OLI-2-Областен кръг-2004-12 кл-probs\all_problems.json
+2026-11-03 11:28:42,897 [PDF_CHUNKER] INFO 
+[6/8] OLI-2-Областен кръг-2004-12 кл-sol.pdf
+2026-11-03 11:28:42,897 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2004-12 кл-sol ═══
+2026-11-03 11:28:46,109 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-sol.pdf] pypdf: 2p, 8150 chars
+2026-11-03 11:28:46,110 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-sol] quality=native_ok, 2 pages
+2026-11-03 11:28:46,111 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-sol] segmented into 9 tasks
+2026-11-03 11:44:34,089 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 11:44:34,089 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-v4.1-flash ($0.0005/call)
+2026-11-03 11:44:34,089 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 11:44:36,818 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 11:44:36,819 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-v4.1-flash ($0.0005/call)
+2026-11-03 11:44:36,819 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 11:44:36,829 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-03 11:44:36,830 [PDF_CHUNKER] INFO Филтър '2004-11,2005-11,2004-10,2004-12': 8 PDF-а
+2026-11-03 11:44:36,830 [PDF_CHUNKER] INFO 
+[1/8] OLI-2-Областен кръг-2004-10 кл-probs.pdf
+2026-11-03 11:44:36,830 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2004-10 кл-probs ═══
+2026-11-03 11:44:37,303 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-probs.pdf] pdfplumber: 3p, 5623 chars
+2026-11-03 11:44:37,304 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-probs] quality=native_ok, 3 pages
+2026-11-03 11:44:37,305 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-probs] segmented into 19 tasks
+2026-11-03 11:46:30,605 [PDF_CHUNKER] ERROR [OLI-2-Областен кръг-2004-10 кл-probs.pdf] list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "C:\Users\denis\Downloads\Материали Олимпиада МАТ\pipeline\pdf_chunker.py", line 1536, in run_extract
+    self.process_pdf(pdf)
+  File "C:\Users\denis\Downloads\Материали Олимпиада МАТ\pipeline\pdf_chunker.py", line 1420, in process_pdf
+    seg_problems = self._extract_segmented(name, segments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denis\Downloads\Материали Олимпиада МАТ\pipeline\pdf_chunker.py", line 1346, in _extract_segmented
+    p["num"] = seg["num"]
+    ~^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2026-11-03 11:46:30,608 [PDF_CHUNKER] INFO 
+[2/8] OLI-2-Областен кръг-2004-10 кл-sol.pdf
+2026-11-03 11:46:30,609 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2004-10 кл-sol ═══
+2026-11-03 11:46:31,686 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol.pdf] pypdf: 3p, 9295 chars
+2026-11-03 11:46:31,686 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol] quality=native_ok, 3 pages
+2026-11-03 11:46:31,686 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol] segmented into 11 tasks
+2026-11-03 11:48:05,647 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol] segmented: 11 problems from 11 segments
+2026-11-03 11:48:05,678 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol] Стар файл → all_problems-v3.json
+2026-11-03 11:48:05,678 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol] grade filter: 9 → 8 (kept grade=10)
+2026-11-03 11:48:05,708 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol] Записан v4 (8 problems, level=segmented)
+2026-11-03 11:48:05,712 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-2004-10 кл-sol] 8 problems (level=segmented) → C:\Users\denis\Downloads\Материали Олимпиада МАТ\generated\cache\extracted\OLI-2-Областен кръг-2004-10 кл-sol\all_problems.json
+2026-11-03 11:48:05,712 [PDF_CHUNKER] INFO 
+[3/8] OLI-2-Областен кръг-2004-11 кл-probs.pdf
+2026-11-03 11:48:05,712 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2004-11 кл-probs ═══
+2026-11-03 11:48:06,184 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs.pdf] pypdf: 1p, 4786 chars
+2026-11-03 11:48:06,184 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] quality=native_ok, 1 pages
+2026-11-03 11:48:06,184 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] segmented into 20 tasks
+2026-11-03 11:49:58,661 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] segmented: 20 problems from 20 segments
+2026-11-03 11:49:58,685 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] Стар файл → all_problems-v2.json
+2026-11-03 11:49:58,686 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] grade filter: 19 → 6 (kept grade=11)
+2026-11-03 11:49:58,731 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] Записан v3 (6 problems, level=segmented)
+2026-11-03 11:49:58,738 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-2004-11 кл-probs] 6 problems (level=segmented) → C:\Users\denis\Downloads\Материали Олимпиада МАТ\generated\cache\extracted\OLI-2-Областен кръг-2004-11 кл-probs\all_problems.json
+2026-11-03 11:49:58,740 [PDF_CHUNKER] INFO 
+[4/8] OLI-2-Областен кръг-2004-11 кл-sol.pdf
+2026-11-03 11:49:58,741 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2004-11 кл-sol ═══
+2026-11-03 11:50:01,416 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-sol.pdf] pypdf: 3p, 10784 chars
+2026-11-03 11:50:01,417 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-sol] quality=native_ok, 3 pages
+2026-11-03 11:50:01,418 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-sol] segmented into 13 tasks
+2026-11-03 11:51:34,131 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-sol] segmented: 13 problems from 13 segments
+2026-11-03 11:51:34,149 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-sol] Стар файл → all_problems-v3.json
+2026-11-03 11:51:34,150 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-sol] grade filter: 9 → 6 (kept grade=11)
+2026-11-03 11:51:34,178 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-sol] Записан v4 (6 problems, level=segmented)
+2026-11-03 11:51:34,186 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-2004-11 кл-sol] 6 problems (level=segmented) → C:\Users\denis\Downloads\Материали Олимпиада МАТ\generated\cache\extracted\OLI-2-Областен кръг-2004-11 кл-sol\all_problems.json
+2026-11-03 11:51:34,186 [PDF_CHUNKER] INFO 
+[5/8] OLI-2-Областен кръг-2004-12 кл-probs.pdf
+2026-11-03 11:51:34,187 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2004-12 кл-probs ═══
+2026-11-03 11:51:35,177 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-probs.pdf] pypdf: 1p, 4348 chars
+2026-11-03 11:51:35,177 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-probs] quality=native_ok, 1 pages
+2026-11-03 11:51:35,178 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-probs] segmented into 16 tasks
+2026-11-03 11:52:00,251 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2004-12 кл-probs] seg 9.5: quote ABSENT (num=9.5) — keeping with flag
+2026-11-03 11:52:55,335 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-probs] segmented: 16 problems from 16 segments
+2026-11-03 11:52:55,344 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-probs] grade filter: 16 → 6 (kept grade=12)
+2026-11-03 11:52:55,373 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-probs] Записан v1 (6 problems, level=segmented)
+2026-11-03 11:52:55,381 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-2004-12 кл-probs] 6 problems (level=segmented) → C:\Users\denis\Downloads\Материали Олимпиада МАТ\generated\cache\extracted\OLI-2-Областен кръг-2004-12 кл-probs\all_problems.json
+2026-11-03 11:52:55,381 [PDF_CHUNKER] INFO 
+[6/8] OLI-2-Областен кръг-2004-12 кл-sol.pdf
+2026-11-03 11:52:55,382 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2004-12 кл-sol ═══
+2026-11-03 11:52:58,618 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-sol.pdf] pypdf: 2p, 8150 chars
+2026-11-03 11:52:58,619 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-sol] quality=native_ok, 2 pages
+2026-11-03 11:52:58,619 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-sol] segmented into 9 tasks
+2026-11-03 11:54:27,085 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-sol] segmented: 10 problems from 9 segments
+2026-11-03 11:54:27,113 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-sol] Стар файл → all_problems-v2.json
+2026-11-03 11:54:27,114 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-sol] grade filter: 9 → 7 (kept grade=12)
+2026-11-03 11:54:27,140 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-sol] Записан v3 (7 problems, level=segmented)
+2026-11-03 11:54:27,150 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-2004-12 кл-sol] 7 problems (level=segmented) → C:\Users\denis\Downloads\Материали Олимпиада МАТ\generated\cache\extracted\OLI-2-Областен кръг-2004-12 кл-sol\all_problems.json
+2026-11-03 11:54:27,150 [PDF_CHUNKER] INFO 
+[7/8] OLI-2-Областен кръг-2005-11 кл-probs.pdf
+2026-11-03 11:54:27,151 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2005-11 кл-probs ═══
+2026-11-03 11:54:28,351 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs.pdf] pypdf: 1p, 4755 chars
+2026-11-03 11:54:28,352 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs] quality=native_ok, 1 pages
+2026-11-03 11:54:28,353 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs] segmented into 18 tasks
+2026-11-03 11:56:05,082 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs] segmented: 18 problems from 18 segments
+2026-11-03 11:56:05,084 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs] grade filter: 18 → 6 (kept grade=11)
+2026-11-03 11:56:05,114 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs] Записан v1 (6 problems, level=segmented)
+2026-11-03 11:56:05,127 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-2005-11 кл-probs] 6 problems (level=segmented) → C:\Users\denis\Downloads\Материали Олимпиада МАТ\generated\cache\extracted\OLI-2-Областен кръг-2005-11 кл-probs\all_problems.json
+2026-11-03 11:56:05,127 [PDF_CHUNKER] INFO 
+[8/8] OLI-2-Областен кръг-2005-11 кл-sol.pdf
+2026-11-03 11:56:05,128 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2005-11 кл-sol ═══
+2026-11-03 11:56:11,483 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol.pdf] pdfplumber: 3p, 21343 chars
+2026-11-03 11:56:11,484 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] quality=native_ok, 3 pages
+2026-11-03 11:56:11,492 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] segmented into 10 tasks
+2026-11-03 11:56:26,689 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2005-11 кл-sol] seg 9.1: quote ABSENT (num=9.1) — keeping with flag
+2026-11-03 11:59:24,882 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2005-11 кл-sol] seg 9.2: no response
+2026-11-03 12:03:37,976 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2005-11 кл-sol] seg 11.2: no response
+2026-11-03 12:04:24,694 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2005-11 кл-sol] seg 11.6: quote ABSENT (num=11.6) — keeping with flag
+2026-11-03 12:04:46,806 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] segmented: 8 problems from 10 segments
+2026-11-03 12:04:46,806 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2005-11 кл-sol] segmented: got 8/10 — some segments failed
+2026-11-03 12:04:46,827 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] Стар файл → all_problems-v2.json
+2026-11-03 12:04:46,827 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] grade filter: 7 → 2 (kept grade=11)
+2026-11-03 12:04:46,831 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] Записан v3 (2 problems, level=segmented)
+2026-11-03 12:04:46,840 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-2005-11 кл-sol] 2 problems (level=segmented) → C:\Users\denis\Downloads\Материали Олимпиада МАТ\generated\cache\extracted\OLI-2-Областен кръг-2005-11 кл-sol\all_problems.json
+2026-11-03 12:08:28,526 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 12:08:28,526 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-v4.1-flash ($0.0005/call)
+2026-11-03 12:08:28,527 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 12:08:43,454 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 12:08:43,455 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-v4.1-flash ($0.0005/call)
+2026-11-03 12:08:43,455 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 12:08:43,474 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-03 12:08:43,475 [PDF_CHUNKER] INFO Филтър '2004-10,2004-12,2005-11': 6 PDF-а
+2026-11-03 12:08:43,476 [PDF_CHUNKER] INFO 
+[1/6] OLI-2-Областен кръг-2004-10 кл-probs.pdf
+2026-11-03 12:08:43,476 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2004-10 кл-probs ═══
+2026-11-03 12:08:44,377 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-probs.pdf] pdfplumber: 3p, 5623 chars
+2026-11-03 12:08:44,377 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-probs] quality=native_ok, 3 pages
+2026-11-03 12:08:44,378 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-probs] segmented into 19 tasks
+2026-11-03 12:08:44,379 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-probs] segment grade filter: 19 → 10 (kept grade=10)
+2026-11-03 12:10:29,232 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-probs] segmented: 12 problems from 10 segments
+2026-11-03 12:10:29,271 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-probs] Записан v1 (8 problems, level=segmented)
+2026-11-03 12:10:29,281 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-2004-10 кл-probs] 8 problems (level=segmented) → C:\Users\denis\Downloads\Материали Олимпиада МАТ\generated\cache\extracted\OLI-2-Областен кръг-2004-10 кл-probs\all_problems.json
+2026-11-03 12:10:29,283 [PDF_CHUNKER] INFO 
+[2/6] OLI-2-Областен кръг-2004-10 кл-sol.pdf
+2026-11-03 12:10:29,284 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2004-10 кл-sol ═══
+2026-11-03 12:10:31,575 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol.pdf] pypdf: 3p, 9295 chars
+2026-11-03 12:10:31,575 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol] quality=native_ok, 3 pages
+2026-11-03 12:10:31,575 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol] segmented into 11 tasks
+2026-11-03 12:10:31,576 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol] segment grade filter: 11 → 8 (kept grade=10)
+2026-11-03 12:11:28,112 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol] segmented: 8 problems from 8 segments
+2026-11-03 12:11:28,116 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol] Стар файл → all_problems-v4.json
+2026-11-03 12:11:28,149 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol] Записан v5 (6 problems, level=segmented)
+2026-11-03 12:11:28,156 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-2004-10 кл-sol] 6 problems (level=segmented) → C:\Users\denis\Downloads\Материали Олимпиада МАТ\generated\cache\extracted\OLI-2-Областен кръг-2004-10 кл-sol\all_problems.json
+2026-11-03 12:11:28,157 [PDF_CHUNKER] INFO 
+[3/6] OLI-2-Областен кръг-2004-12 кл-probs.pdf
+2026-11-03 12:11:28,157 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2004-12 кл-probs ═══
+2026-11-03 12:11:28,974 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-probs.pdf] pypdf: 1p, 4348 chars
+2026-11-03 12:11:28,975 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-probs] quality=native_ok, 1 pages
+2026-11-03 12:11:28,975 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-probs] segmented into 16 tasks
+2026-11-03 12:11:28,976 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-probs] segment grade filter: 16 → 6 (kept grade=12)
+2026-11-03 12:11:58,834 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-probs] segmented: 6 problems from 6 segments
+2026-11-03 12:11:58,857 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-probs] Записан v1 (6 problems, level=segmented)
+2026-11-03 12:11:58,867 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-2004-12 кл-probs] 6 problems (level=segmented) → C:\Users\denis\Downloads\Материали Олимпиада МАТ\generated\cache\extracted\OLI-2-Областен кръг-2004-12 кл-probs\all_problems.json
+2026-11-03 12:11:58,867 [PDF_CHUNKER] INFO 
+[4/6] OLI-2-Областен кръг-2004-12 кл-sol.pdf
+2026-11-03 12:11:58,869 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2004-12 кл-sol ═══
+2026-11-03 12:12:02,173 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-sol.pdf] pypdf: 2p, 8150 chars
+2026-11-03 12:12:02,173 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-sol] quality=native_ok, 2 pages
+2026-11-03 12:12:02,174 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-sol] segmented into 9 tasks
+2026-11-03 12:12:02,174 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-sol] segment grade filter: 9 → 6 (kept grade=12)
+2026-11-03 12:12:46,363 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-sol] segmented: 6 problems from 6 segments
+2026-11-03 12:12:46,367 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-sol] Стар файл → all_problems-v3.json
+2026-11-03 12:12:46,396 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-12 кл-sol] Записан v4 (6 problems, level=segmented)
+2026-11-03 12:12:46,403 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-2004-12 кл-sol] 6 problems (level=segmented) → C:\Users\denis\Downloads\Материали Олимпиада МАТ\generated\cache\extracted\OLI-2-Областен кръг-2004-12 кл-sol\all_problems.json
+2026-11-03 12:12:46,404 [PDF_CHUNKER] INFO 
+[5/6] OLI-2-Областен кръг-2005-11 кл-probs.pdf
+2026-11-03 12:12:46,404 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2005-11 кл-probs ═══
+2026-11-03 12:12:47,304 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs.pdf] pypdf: 1p, 4755 chars
+2026-11-03 12:12:47,304 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs] quality=native_ok, 1 pages
+2026-11-03 12:12:47,305 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs] segmented into 18 tasks
+2026-11-03 12:12:47,305 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs] segment grade filter: 18 → 6 (kept grade=11)
+2026-11-03 12:13:19,319 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs] segmented: 6 problems from 6 segments
+2026-11-03 12:13:19,322 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs] Стар файл → all_problems-v1.json
+2026-11-03 12:13:19,346 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs] Записан v2 (6 problems, level=segmented)
+2026-11-03 12:13:19,356 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-2005-11 кл-probs] 6 problems (level=segmented) → C:\Users\denis\Downloads\Материали Олимпиада МАТ\generated\cache\extracted\OLI-2-Областен кръг-2005-11 кл-probs\all_problems.json
+2026-11-03 12:13:19,356 [PDF_CHUNKER] INFO 
+[6/6] OLI-2-Областен кръг-2005-11 кл-sol.pdf
+2026-11-03 12:13:19,357 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2005-11 кл-sol ═══
+2026-11-03 12:13:24,803 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol.pdf] pdfplumber: 3p, 21343 chars
+2026-11-03 12:13:24,804 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] quality=native_ok, 3 pages
+2026-11-03 12:13:24,805 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] segmented into 10 tasks
+2026-11-03 12:13:24,806 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] segment grade filter: 10 → 4 (kept grade=11)
+2026-11-03 12:14:27,424 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2005-11 кл-sol] seg 11.2: quote ABSENT (num=11.2) — keeping with flag
+2026-11-03 12:17:19,758 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2005-11 кл-sol] seg 11.6: no response
+2026-11-03 12:17:19,759 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] segmented: 5 problems from 4 segments
+2026-11-03 12:17:19,770 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] Записан v1 (2 problems, level=segmented)
+2026-11-03 12:17:19,778 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-2005-11 кл-sol] 2 problems (level=segmented) → C:\Users\denis\Downloads\Материали Олимпиада МАТ\generated\cache\extracted\OLI-2-Областен кръг-2005-11 кл-sol\all_problems.json
+2026-11-03 13:12:01,184 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 13:12:01,186 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-v4.1-flash ($0.0005/call)
+2026-11-03 13:12:01,186 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 13:12:07,377 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 13:12:07,377 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-v4.1-flash ($0.0005/call)
+2026-11-03 13:12:07,379 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 13:12:07,398 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-03 13:12:07,399 [PDF_CHUNKER] INFO Филтър '2005-11,2004-10': 4 PDF-а
+2026-11-03 13:12:07,400 [PDF_CHUNKER] INFO 
+[1/4] OLI-2-Областен кръг-2004-10 кл-probs.pdf
+2026-11-03 13:12:07,400 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2004-10 кл-probs ═══
+2026-11-03 13:12:08,666 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-probs.pdf] pdfplumber: 3p, 5623 chars
+2026-11-03 13:12:08,668 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-probs] quality=native_ok, 3 pages
+2026-11-03 13:12:08,669 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-probs] segmented into 19 tasks
+2026-11-03 13:12:08,670 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-probs] segment grade filter: 19 → 10 (kept grade=10)
+2026-11-03 13:14:20,107 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-probs] segmented: 12 problems from 10 segments
+2026-11-03 13:14:20,142 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-probs] Записан v1 (6 problems, level=segmented)
+2026-11-03 13:14:20,152 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-2004-10 кл-probs] 6 problems (level=segmented) → C:\Users\denis\Downloads\Материали Олимпиада МАТ\generated\cache\extracted\OLI-2-Областен кръг-2004-10 кл-probs\all_problems.json
+2026-11-03 13:14:20,153 [PDF_CHUNKER] INFO 
+[2/4] OLI-2-Областен кръг-2004-10 кл-sol.pdf
+2026-11-03 13:14:20,154 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2004-10 кл-sol ═══
+2026-11-03 13:14:22,364 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol.pdf] pypdf: 3p, 9295 chars
+2026-11-03 13:14:22,364 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol] quality=native_ok, 3 pages
+2026-11-03 13:14:22,366 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol] segmented into 11 tasks
+2026-11-03 13:14:22,366 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol] segment grade filter: 11 → 8 (kept grade=10)
+2026-11-03 13:15:01,993 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2004-10 кл-sol] seg 10.1: quote ABSENT (num=10.1) — keeping with flag
+2026-11-03 13:15:23,769 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol] segmented: 8 problems from 8 segments
+2026-11-03 13:15:23,773 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol] Стар файл → all_problems-v5.json
+2026-11-03 13:15:23,805 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol] Записан v6 (6 problems, level=segmented)
+2026-11-03 13:15:23,812 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-2004-10 кл-sol] 6 problems (level=segmented) → C:\Users\denis\Downloads\Материали Олимпиада МАТ\generated\cache\extracted\OLI-2-Областен кръг-2004-10 кл-sol\all_problems.json
+2026-11-03 13:15:23,813 [PDF_CHUNKER] INFO 
+[3/4] OLI-2-Областен кръг-2005-11 кл-probs.pdf
+2026-11-03 13:15:23,813 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2005-11 кл-probs ═══
+2026-11-03 13:15:24,838 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs.pdf] pypdf: 1p, 4755 chars
+2026-11-03 13:15:24,839 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs] quality=native_ok, 1 pages
+2026-11-03 13:15:24,839 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs] segmented into 18 tasks
+2026-11-03 13:15:24,839 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs] segment grade filter: 18 → 6 (kept grade=11)
+2026-11-03 13:15:56,876 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs] segmented: 6 problems from 6 segments
+2026-11-03 13:15:56,879 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs] Стар файл → all_problems-v2.json
+2026-11-03 13:15:56,905 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs] Записан v3 (6 problems, level=segmented)
+2026-11-03 13:15:56,913 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-2005-11 кл-probs] 6 problems (level=segmented) → C:\Users\denis\Downloads\Материали Олимпиада МАТ\generated\cache\extracted\OLI-2-Областен кръг-2005-11 кл-probs\all_problems.json
+2026-11-03 13:15:56,914 [PDF_CHUNKER] INFO 
+[4/4] OLI-2-Областен кръг-2005-11 кл-sol.pdf
+2026-11-03 13:15:56,914 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2005-11 кл-sol ═══
+2026-11-03 13:16:02,051 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol.pdf] pdfplumber: 3p, 21343 chars
+2026-11-03 13:16:02,052 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] quality=native_ok, 3 pages
+2026-11-03 13:16:02,054 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] segmented into 10 tasks
+2026-11-03 13:16:02,054 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] segment grade filter: 10 → 4 (kept grade=11)
+2026-11-03 13:17:26,183 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2005-11 кл-sol] seg 11.2: quote ABSENT (num=11.2) — keeping with flag
+2026-11-03 13:18:13,377 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] segmented: 6 problems from 4 segments
+2026-11-03 13:18:13,384 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] Записан v1 (3 problems, level=segmented)
+2026-11-03 13:18:13,392 [PDF_CHUNKER] INFO ✓ [OLI-2-Областен кръг-2005-11 кл-sol] 3 problems (level=segmented) → C:\Users\denis\Downloads\Материали Олимпиада МАТ\generated\cache\extracted\OLI-2-Областен кръг-2005-11 кл-sol\all_problems.json
+2026-11-03 13:20:51,279 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 13:20:51,280 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-v4.1-flash ($0.0005/call)
+2026-11-03 13:20:51,280 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 13:20:56,365 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 13:20:56,366 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-v4.1-flash ($0.0005/call)
+2026-11-03 13:20:56,366 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 13:20:56,389 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-03 13:20:56,390 [PDF_CHUNKER] INFO Филтър '2005-11-sol': 0 PDF-а
+2026-11-03 13:35:11,037 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 13:35:11,037 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-v4.1-flash ($0.0005/call)
+2026-11-03 13:35:11,038 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 13:54:25,673 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 13:54:25,673 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-v4.1-flash ($0.0005/call)
+2026-11-03 13:54:25,673 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 13:54:28,204 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 13:54:28,206 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-v4.1-flash ($0.0005/call)
+2026-11-03 13:54:28,206 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 13:54:28,215 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-03 13:54:28,216 [PDF_CHUNKER] INFO Филтър '2005-11 кл-probs': 1 PDF-а
+2026-11-03 13:54:28,216 [PDF_CHUNKER] INFO 
+[1/1] OLI-2-Областен кръг-2005-11 кл-probs.pdf
+2026-11-03 13:54:28,216 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2005-11 кл-probs ═══
+2026-11-03 13:54:28,633 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs.pdf] pypdf: 1p, 4755 chars
+2026-11-03 13:54:28,634 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs] quality=native_ok, 1 pages, 4770 chars
+2026-11-03 13:54:28,634 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs] L0_native: extracting from 4770 chars
+2026-11-03 13:54:28,635 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs] segment grade filter: 18 → 6 (kept grade=11)
+2026-11-03 13:54:55,230 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs] segmented: 6 problems from 6 segments
+2026-11-03 13:54:55,242 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs] L0_native: verdict=PASS actual=6/6 conf=0.992 grades={11: 6}
+2026-11-03 13:54:55,256 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs] Записан v1 (6 problems, level=L0_native, verdict=PASS)
+2026-11-03 13:54:57,988 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 13:54:57,988 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-v4.1-flash ($0.0005/call)
+2026-11-03 13:54:57,988 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 13:55:00,520 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 13:55:00,521 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-v4.1-flash ($0.0005/call)
+2026-11-03 13:55:00,521 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 13:55:00,530 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-03 13:55:00,531 [PDF_CHUNKER] INFO Филтър '2005-11 кл-sol': 1 PDF-а
+2026-11-03 13:55:00,531 [PDF_CHUNKER] INFO 
+[1/1] OLI-2-Областен кръг-2005-11 кл-sol.pdf
+2026-11-03 13:55:00,531 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2005-11 кл-sol ═══
+2026-11-03 13:55:03,177 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol.pdf] pdfplumber: 3p, 21343 chars
+2026-11-03 13:55:03,178 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] quality=native_ok, 3 pages, 21392 chars
+2026-11-03 13:55:03,178 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] L0_native: extracting from 21392 chars
+2026-11-03 13:55:03,179 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] segment grade filter: 10 → 4 (kept grade=11)
+2026-11-03 13:56:51,450 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2005-11 кл-sol] seg 11.2: no response
+2026-11-03 13:59:04,430 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2005-11 кл-sol] seg 11.6: no response
+2026-11-03 13:59:04,430 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] segmented: 2 problems from 4 segments
+2026-11-03 13:59:04,452 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] L0_native: verdict=FAIL_DUPLICATE actual=2/6 conf=1.0 grades={11: 2}
+2026-11-03 13:59:04,452 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] L0_native → L2_vlm (2 duplicate num values)
+2026-11-03 13:59:04,528 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol.pdf] Mistral OCR (17499KB)
+2026-11-03 13:59:08,448 [PDF_CHUNKER] ERROR [OLI-2-Областен кръг-2005-11 кл-sol.pdf] OCR 413 (3s): 
+2026-11-03 13:59:08,454 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2005-11 кл-sol] L1_ocr: OCR failed, skipping
+2026-11-03 14:00:25,899 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol.pdf] VLM: 3p, $0.0150
+2026-11-03 14:00:25,901 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] L2_vlm: extracting from 9389 chars
+2026-11-03 14:00:55,909 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol-1] extract... 30s
+2026-11-03 14:01:25,921 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol-1] extract... 60s
+2026-11-03 14:01:55,934 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol-1] extract... 90s
+2026-11-03 14:02:22,693 [PDF_CHUNKER] ERROR [OLI-2-Областен кръг-2005-11 кл-sol] chunk 1-3 — no response (116s)
+2026-11-03 14:02:22,694 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2005-11 кл-sol] L2_vlm: 0 problems, trying next level
+2026-11-03 14:02:22,701 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] L3_escalation: extracting from 30801 chars
+2026-11-03 14:03:13,311 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] L3_escalation: verdict=FAIL_DUPLICATE actual=13/6 conf=1.0 grades={11: 6, 9: 3, 10: 1, 12: 3}
+2026-11-03 14:03:13,311 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] L3_escalation → L2_vlm (11 duplicate num values)
+2026-11-03 14:03:13,370 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] Записан v1 (12 problems, level=exhausted, verdict=FAIL_DUPLICATE)
+2026-11-03 14:05:32,769 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 14:05:32,770 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-v4.1-flash ($0.0005/call)
+2026-11-03 14:05:32,770 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 14:05:35,500 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 14:05:35,501 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-v4.1-flash ($0.0005/call)
+2026-11-03 14:05:35,501 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 14:05:35,511 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-03 14:05:35,511 [PDF_CHUNKER] INFO Филтър '2005-11 кл-sol': 1 PDF-а
+2026-11-03 14:05:35,511 [PDF_CHUNKER] INFO 
+[1/1] OLI-2-Областен кръг-2005-11 кл-sol.pdf
+2026-11-03 14:05:35,511 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2005-11 кл-sol ═══
+2026-11-03 14:05:38,122 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol.pdf] pdfplumber: 3p, 21343 chars
+2026-11-03 14:05:38,122 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] quality=native_ok, 3 pages, 21392 chars
+2026-11-03 14:05:38,122 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] L0_native: extracting from 21392 chars
+2026-11-03 14:05:38,124 [PDF_CHUNKER] INFO segment dedupe by num: 10 → 9 (duplicate nums removed)
+2026-11-03 14:05:38,124 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] segment grade filter: 9 → 3 (kept grade=11)
+2026-11-03 14:09:22,235 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2005-11 кл-sol] seg 11.2: no response, retrying
+2026-11-03 14:09:49,578 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2005-11 кл-sol] seg 11.2: quote ABSENT (num=11.3) — keeping with flag
+2026-11-03 14:09:49,581 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2005-11 кл-sol] seg 11.2: quote ABSENT (num=11.4) — keeping with flag
+2026-11-03 14:10:18,437 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] segmented: 5 problems from 3 segments
+2026-11-03 14:10:18,500 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] verifier: AI fallback (verdict=FAIL_HALLUCINATED)
+2026-11-03 14:10:39,531 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] L0_native: verdict=FAIL_HALLUCINATED actual=5/6 conf=1.0 grades={11: 5}
+2026-11-03 14:10:39,531 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] L0_native → L1_ocr (2 hallucinated problems)
+2026-11-03 14:10:39,532 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2005-11 кл-sol.pdf] 17.1MB > 15MB — OCR skip (payload would exceed Mistral limit)
+2026-11-03 14:10:39,532 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2005-11 кл-sol] L1_ocr: OCR failed, skipping
+2026-11-03 14:12:08,150 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol.pdf] VLM: 3p, $0.0150
+2026-11-03 14:12:08,152 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] L2_vlm: extracting from 9294 chars
+2026-11-03 14:12:38,156 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol-1] extract... 30s
+2026-11-03 14:13:08,164 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol-1] extract... 60s
+2026-11-03 14:13:38,173 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol-1] extract... 90s
+2026-11-03 14:14:08,186 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol-1] extract... 120s
+2026-11-03 14:14:38,199 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol-1] extract... 150s
+2026-11-03 14:15:08,208 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol-1] extract... 180s
+2026-11-03 14:15:37,008 [PDF_CHUNKER] ERROR [OLI-2-Областен кръг-2005-11 кл-sol] chunk 1-3 — no response (208s)
+2026-11-03 14:15:37,008 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2005-11 кл-sol] L2_vlm: 0 problems, trying next level
+2026-11-03 14:15:37,008 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] L3_escalation: extracting from 30706 chars
+2026-11-03 14:16:56,486 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] verifier: pre-filtered 15 → 9 (expected grade=11)
+2026-11-03 14:16:56,582 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] L3_escalation: verdict=FAIL_DUPLICATE actual=9/6 conf=1.0 grades={11: 9}
+2026-11-03 14:16:56,583 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] L3_escalation → L1_ocr (5 duplicate num values)
+2026-11-03 14:16:56,617 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol] Записан v1 (11 problems, level=exhausted, verdict=FAIL_DUPLICATE)
+2026-11-03 14:19:29,549 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 14:19:29,549 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-v4.1-flash ($0.0005/call)
+2026-11-03 14:19:29,549 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 14:19:33,336 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 14:19:33,337 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-v4.1-flash ($0.0005/call)
+2026-11-03 14:19:33,337 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 14:19:33,350 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-03 14:19:33,351 [PDF_CHUNKER] INFO Филтър '2004-11 кл-probs,2010-11 кл-probs,2015-10 кл-probs,2020-12 кл-probs,2024-11 кл-probs': 5 PDF-а
+2026-11-03 14:19:33,352 [PDF_CHUNKER] INFO 
+[1/5] OLI-2-Областен кръг-2004-11 кл-probs.pdf
+2026-11-03 14:19:33,352 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2004-11 кл-probs ═══
+2026-11-03 14:19:33,884 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs.pdf] pypdf: 1p, 4786 chars
+2026-11-03 14:19:33,885 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] quality=native_ok, 1 pages, 4801 chars
+2026-11-03 14:19:33,885 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] L0_native: extracting from 4801 chars
+2026-11-03 14:19:33,886 [PDF_CHUNKER] INFO segment dedupe by num: 20 → 19 (duplicate nums removed)
+2026-11-03 14:19:33,886 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] segment grade filter: 19 → 6 (kept grade=11)
+2026-11-03 14:19:58,373 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] segmented: 6 problems from 6 segments
+2026-11-03 14:19:58,383 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] L0_native: verdict=PASS actual=6/6 conf=0.967 grades={11: 6}
+2026-11-03 14:19:58,401 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] Записан v1 (6 problems, level=L0_native, verdict=PASS)
+2026-11-03 14:19:58,405 [PDF_CHUNKER] INFO 
+[2/5] OLI-2-Областен кръг-2010-11 кл-probs.pdf
+2026-11-03 14:19:58,406 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2010-11 кл-probs ═══
+2026-11-03 14:19:58,559 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs.pdf] pdfplumber: 2p, 872 chars
+2026-11-03 14:19:58,559 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] quality=native_ok, 2 pages, 904 chars
+2026-11-03 14:19:58,559 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L0_native: extracting from 904 chars
+2026-11-03 14:20:17,390 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] segmented: 3 problems from 3 segments
+2026-11-03 14:20:17,391 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] verifier: pre-filtered 3 → 0 (expected grade=11)
+2026-11-03 14:20:17,391 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] verifier: AI fallback (verdict=FAIL_MISSING)
+2026-11-03 14:20:19,534 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L0_native: verdict=FAIL_MISSING actual=0/6 conf=0.0 grades={}
+2026-11-03 14:20:19,535 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L0_native → L1_ocr (missing: 0 < 6±1)
+2026-11-03 14:20:19,536 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs.pdf] OCR cache: 2p
+2026-11-03 14:20:19,536 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L1_ocr: extracting from 2225 chars
+2026-11-03 14:20:52,992 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] segmented: 6 problems from 6 segments
+2026-11-03 14:20:52,992 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] verifier: pre-filtered 6 → 1 (expected grade=11)
+2026-11-03 14:20:52,995 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] verifier: AI fallback (verdict=FAIL_MISSING)
+2026-11-03 14:20:55,726 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L1_ocr: verdict=FAIL_MISSING actual=1/6 conf=1.0 grades={11: 1}
+2026-11-03 14:20:55,726 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L1_ocr → L1_ocr (missing: 1 < 6±1)
+2026-11-03 14:21:17,095 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs.pdf] VLM: 2p, $0.0100
+2026-11-03 14:21:17,097 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L2_vlm: extracting from 2298 chars
+2026-11-03 14:21:25,312 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2010-11 кл-probs] validation: ['count: under: 3 < 6-1']
+2026-11-03 14:21:25,312 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] chunk 1-2: 3 problems (8s)
+2026-11-03 14:21:25,317 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] verifier: AI fallback (verdict=FAIL_HALLUCINATED)
+2026-11-03 14:21:34,651 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L2_vlm: verdict=FAIL_HALLUCINATED actual=3/6 conf=0.95 grades={11: 3}
+2026-11-03 14:21:34,651 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L2_vlm → L1_ocr (2 hallucinated problems)
+2026-11-03 14:21:34,651 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L3_escalation: using L2_vlm (2298 chars, single source)
+2026-11-03 14:21:34,651 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L3_escalation: extracting from 2298 chars
+2026-11-03 14:21:48,074 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L3_escalation: verdict=PASS actual=6/6 conf=1.0 grades={11: 6}
+2026-11-03 14:21:48,086 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] Записан v1 (6 problems, level=L3_escalation, verdict=PASS)
+2026-11-03 14:21:48,089 [PDF_CHUNKER] INFO 
+[3/5] OLI-2-Областен кръг-2015-10 кл-probs.pdf
+2026-11-03 14:21:48,090 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2015-10 кл-probs ═══
+2026-11-03 14:21:48,218 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs.pdf] pymupdf: 1p, 938 chars
+2026-11-03 14:21:48,219 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] quality=native_ok, 1 pages, 953 chars
+2026-11-03 14:21:48,219 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L0_native: extracting from 953 chars
+2026-11-03 14:22:03,655 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] segmented: 4 problems from 4 segments
+2026-11-03 14:22:03,656 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] verifier: pre-filtered 4 → 0 (expected grade=10)
+2026-11-03 14:22:03,656 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] verifier: AI fallback (verdict=FAIL_MISSING)
+2026-11-03 14:22:06,442 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L0_native: verdict=FAIL_MISSING actual=0/4 conf=0.0 grades={}
+2026-11-03 14:22:06,442 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L0_native → L1_ocr (missing: 0 < 4±1)
+2026-11-03 14:22:06,444 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs.pdf] OCR cache: 1p
+2026-11-03 14:22:06,444 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L1_ocr: extracting from 1056 chars
+2026-11-03 14:22:14,669 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] validation OK (4 problems)
+2026-11-03 14:22:14,669 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] chunk 1-1: 4 problems (8s)
+2026-11-03 14:22:14,674 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] verifier: AI fallback (verdict=FAIL_HALLUCINATED)
+2026-11-03 14:22:29,973 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L1_ocr: verdict=FAIL_HALLUCINATED actual=4/4 conf=0.0 grades={10: 4}
+2026-11-03 14:22:29,973 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L1_ocr → L1_ocr (4 hallucinated problems)
+2026-11-03 14:22:42,139 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs.pdf] VLM: 1p, $0.0050
+2026-11-03 14:22:42,141 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L2_vlm: extracting from 1068 chars
+2026-11-03 14:22:50,234 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] validation OK (4 problems)
+2026-11-03 14:22:50,234 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] chunk 1-1: 4 problems (8s)
+2026-11-03 14:22:50,243 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] verifier: AI fallback (verdict=FAIL_HALLUCINATED)
+2026-11-03 14:22:53,296 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L2_vlm: verdict=FAIL_HALLUCINATED actual=4/4 conf=0.0 grades={10: 4}
+2026-11-03 14:22:53,296 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L2_vlm → L1_ocr (4 hallucinated problems)
+2026-11-03 14:22:53,296 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L3_escalation: using L2_vlm (1068 chars, single source)
+2026-11-03 14:22:53,297 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L3_escalation: extracting from 1068 chars
+2026-11-03 14:23:03,436 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L3_escalation: verdict=PASS actual=4/4 conf=1.0 grades={10: 4}
+2026-11-03 14:23:03,453 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] Записан v1 (4 problems, level=L3_escalation, verdict=PASS)
+2026-11-03 14:23:03,461 [PDF_CHUNKER] INFO 
+[4/5] OLI-2-Областен кръг-2020-12 кл-probs.pdf
+2026-11-03 14:23:03,461 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2020-12 кл-probs ═══
+2026-11-03 14:23:03,475 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs.pdf] pdfplumber: 1p, 0 chars
+2026-11-03 14:23:03,475 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs.pdf] 0 chars (0/p) → OCR fallback
+2026-11-03 14:23:03,478 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs.pdf] OCR cache: 1p
+2026-11-03 14:23:03,479 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs.pdf] OCR: 1321 chars (vs Python: 0)
+2026-11-03 14:23:03,479 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs] quality=ocr_ok, 1 pages, 1336 chars
+2026-11-03 14:23:03,479 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs] L0_native: extracting from 1336 chars
+2026-11-03 14:23:16,642 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs] segmented: 3 problems from 3 segments
+2026-11-03 14:23:16,645 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs] L0_native: verdict=PASS actual=3/4 conf=1.0 grades={12: 3}
+2026-11-03 14:23:16,653 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs] Записан v1 (3 problems, level=L0_native, verdict=PASS)
+2026-11-03 14:23:16,662 [PDF_CHUNKER] INFO 
+[5/5] OLI-2-Областен кръг-2024-11 кл-probs.pdf
+2026-11-03 14:23:16,663 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2024-11 кл-probs ═══
+2026-11-03 14:23:16,679 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] pdfplumber: 1p, 0 chars
+2026-11-03 14:23:16,679 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] 0 chars (0/p) → OCR fallback
+2026-11-03 14:23:16,683 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] OCR cache: 1p
+2026-11-03 14:23:16,683 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] OCR: 1110 chars (vs Python: 0)
+2026-11-03 14:23:16,684 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] quality=ocr_ok, 1 pages, 1125 chars
+2026-11-03 14:23:16,684 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] L0_native: extracting from 1125 chars
+2026-11-03 14:23:23,103 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] validation OK (4 problems)
+2026-11-03 14:23:23,104 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] chunk 1-1: 4 problems (6s)
+2026-11-03 14:23:23,107 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] L0_native: verdict=PASS actual=4/4 conf=1.0 grades={11: 4}
+2026-11-03 14:23:23,122 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] Записан v1 (4 problems, level=L0_native, verdict=PASS)
+2026-11-03 14:24:35,754 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 14:24:35,754 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-v4.1-flash ($0.0005/call)
+2026-11-03 14:24:35,754 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 14:24:35,798 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-03 14:24:35,799 [PDF_CHUNKER] INFO 
+[1/300] BMC_2003-2006.pdf
+2026-11-03 14:24:35,799 [PDF_CHUNKER] INFO 
+═══ BMC_2003-2006 ═══
+2026-11-03 14:24:37,261 [PDF_CHUNKER] INFO [BMC_2003-2006.pdf] pypdf: 220p, 44 chars
+2026-11-03 14:24:37,261 [PDF_CHUNKER] INFO [BMC_2003-2006.pdf] 44 chars (0/p) → OCR fallback
+2026-11-03 14:24:37,269 [PDF_CHUNKER] INFO [BMC_2003-2006.pdf] OCR cache: 220p
+2026-11-03 14:24:37,269 [PDF_CHUNKER] INFO [BMC_2003-2006.pdf] OCR: 446815 chars (vs Python: 44)
+2026-11-03 14:24:37,271 [PDF_CHUNKER] INFO [BMC_2003-2006] quality=ocr_ok, 220 pages, 450885 chars
+2026-11-03 14:24:37,272 [PDF_CHUNKER] INFO [BMC_2003-2006] L0_native: extracting from 450885 chars
+2026-11-03 14:24:37,281 [PDF_CHUNKER] INFO segment dedupe by num: 464 → 40 (duplicate nums removed)
+2026-11-03 14:24:37,281 [PDF_CHUNKER] WARNING [BMC_2003-2006] 40 segments — too many, skipping
+2026-11-03 15:07:03,808 [PDF_CHUNKER] WARNING [BMC_2003-2006-1] ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-11-03 15:07:11,826 [PDF_CHUNKER] WARNING [BMC_2003-2006-1] HTTPSConnectionPool(host='ai.hackclub.com', port=443): Max retries exceeded with url: /proxy/v1/chat/completions (Caused by NameResolutionError("HTTPSConnection(host='ai.hackclub.com', port=443): Failed to resolve 'ai.hackclub.com' ([Errno 11001] getaddrinfo failed)"))
+2026-11-03 15:07:30,072 [PDF_CHUNKER] WARNING [BMC_2003-2006] No enumeration markers found — model didn't follow Step 1
+2026-11-03 15:07:30,079 [PDF_CHUNKER] INFO [BMC_2003-2006] validation OK (0 problems)
+2026-11-03 15:07:30,079 [PDF_CHUNKER] INFO [BMC_2003-2006] chunk 1-4: 0 problems (2572s)
+2026-11-03 15:07:32,601 [PDF_CHUNKER] WARNING [BMC_2003-2006] No enumeration markers found — model didn't follow Step 1
+2026-11-03 15:07:32,609 [PDF_CHUNKER] INFO [BMC_2003-2006] validation OK (0 problems)
+2026-11-03 15:07:32,609 [PDF_CHUNKER] INFO [BMC_2003-2006] chunk 4-7: 0 problems (2s)
+2026-11-03 19:08:07,165 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 19:08:07,165 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-03 19:08:07,166 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 19:08:12,765 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 19:08:12,765 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-03 19:08:12,765 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 19:08:12,785 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-03 19:08:12,787 [PDF_CHUNKER] INFO Филтър '2004-11 кл-probs,2010-11 кл-probs,2015-10 кл-probs,2020-12 кл-probs,2024-11 кл-probs': 5 PDF-а
+2026-11-03 19:08:12,787 [PDF_CHUNKER] INFO 
+[1/5] OLI-2-Областен кръг-2004-11 кл-probs.pdf
+2026-11-03 19:08:12,788 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2004-11 кл-probs ═══
+2026-11-03 19:08:13,746 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs.pdf] pypdf: 1p, 4786 chars
+2026-11-03 19:08:13,747 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] quality=native_ok, 1 pages, 4801 chars
+2026-11-03 19:08:13,747 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] L0_native: extracting from 4801 chars
+2026-11-03 19:08:13,749 [PDF_CHUNKER] INFO segment dedupe by num: 20 → 19 (duplicate nums removed)
+2026-11-03 19:08:13,749 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] segment grade filter: 19 → 6 (kept grade=11)
+2026-11-03 19:13:48,721 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] segmented: 6 problems from 6 segments
+2026-11-03 19:13:48,740 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] L0_native: verdict=PASS actual=6/6 conf=0.95 grades={11: 6}
+2026-11-03 19:13:48,788 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs] Записан v1 (6 problems, level=L0_native, verdict=PASS)
+2026-11-03 19:13:48,796 [PDF_CHUNKER] INFO 
+[2/5] OLI-2-Областен кръг-2010-11 кл-probs.pdf
+2026-11-03 19:13:48,796 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2010-11 кл-probs ═══
+2026-11-03 19:13:49,117 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs.pdf] pdfplumber: 2p, 872 chars
+2026-11-03 19:13:49,118 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] quality=native_ok, 2 pages, 904 chars
+2026-11-03 19:13:49,118 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L0_native: extracting from 904 chars
+2026-11-03 19:17:27,862 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] segmented: 3 problems from 3 segments
+2026-11-03 19:17:27,863 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] verifier: pre-filtered 3 → 0 (expected grade=11)
+2026-11-03 19:17:27,863 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] verifier: AI fallback (verdict=FAIL_MISSING)
+2026-11-03 19:17:29,542 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L0_native: verdict=FAIL_MISSING actual=0/6 conf=0.0 grades={}
+2026-11-03 19:17:29,543 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L0_native: failed (missing: 0 < 6±1), trying next level
+2026-11-03 19:17:29,545 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs.pdf] OCR cache: 2p
+2026-11-03 19:17:29,545 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L1_ocr: extracting from 2225 chars
+2026-11-03 19:22:43,930 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2010-11 кл-probs] seg 4: quote ABSENT (num=4) — keeping with flag
+2026-11-03 19:26:18,622 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] segmented: 6 problems from 6 segments
+2026-11-03 19:26:18,623 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] verifier: pre-filtered 6 → 1 (expected grade=11)
+2026-11-03 19:26:18,625 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] verifier: AI fallback (verdict=FAIL_MISSING)
+2026-11-03 19:26:22,716 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L1_ocr: verdict=FAIL_MISSING actual=1/6 conf=1.0 grades={11: 1}
+2026-11-03 19:26:22,717 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L1_ocr: failed (missing: 1 < 6±1), trying next level
+2026-11-03 19:26:43,435 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs.pdf] VLM: 2p, $0.0100
+2026-11-03 19:26:43,437 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L2_vlm: extracting from 2290 chars
+2026-11-03 19:27:13,444 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs-1] extract... 30s
+2026-11-03 19:27:37,823 [PDF_CHUNKER] ERROR [OLI-2-Областен кръг-2010-11 кл-probs] chunk 1-2 — no response (54s)
+2026-11-03 19:27:37,823 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2010-11 кл-probs] L2_vlm: 0 problems, trying next level
+2026-11-03 19:27:37,824 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L3_escalation: using L2_vlm (2290 chars, single source)
+2026-11-03 19:27:37,824 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L3_escalation: extracting from 2290 chars
+2026-11-03 19:27:51,686 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L3_escalation: verdict=PASS actual=6/6 conf=1.0 grades={11: 6}
+2026-11-03 19:27:51,707 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] Записан v1 (6 problems, level=L3_escalation, verdict=PASS)
+2026-11-03 19:27:51,715 [PDF_CHUNKER] INFO 
+[3/5] OLI-2-Областен кръг-2015-10 кл-probs.pdf
+2026-11-03 19:27:51,715 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2015-10 кл-probs ═══
+2026-11-03 19:27:51,993 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs.pdf] pymupdf: 1p, 938 chars
+2026-11-03 19:27:51,993 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] quality=native_ok, 1 pages, 953 chars
+2026-11-03 19:27:51,993 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L0_native: extracting from 953 chars
+2026-11-03 19:28:56,420 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2015-10 кл-probs] seg 1: no response, retrying
+2026-11-03 19:30:05,410 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2015-10 кл-probs] seg 1: no response after retry
+2026-11-03 19:31:09,499 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2015-10 кл-probs] seg 2: no response, retrying
+2026-11-03 19:32:19,165 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2015-10 кл-probs] seg 2: no response after retry
+2026-11-03 19:33:31,080 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] segmented: 2 problems from 4 segments
+2026-11-03 19:33:31,080 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] verifier: pre-filtered 2 → 0 (expected grade=10)
+2026-11-03 19:33:31,081 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] verifier: AI fallback (verdict=FAIL_MISSING)
+2026-11-03 19:33:33,495 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L0_native: verdict=FAIL_MISSING actual=0/4 conf=0.0 grades={}
+2026-11-03 19:33:33,495 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L0_native: failed (missing: 0 < 4±1), trying next level
+2026-11-03 19:33:33,497 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs.pdf] OCR cache: 1p
+2026-11-03 19:33:33,498 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L1_ocr: extracting from 1056 chars
+2026-11-03 19:34:03,508 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs-1] extract... 30s
+2026-11-03 19:34:33,511 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs-1] extract... 60s
+2026-11-03 19:35:03,523 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs-1] extract... 90s
+2026-11-03 19:35:33,539 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs-1] extract... 120s
+2026-11-03 19:35:38,750 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] validation OK (4 problems)
+2026-11-03 19:35:38,750 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] chunk 1-1: 4 problems (125s)
+2026-11-03 19:35:38,759 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] verifier: AI fallback (verdict=FAIL_HALLUCINATED)
+2026-11-03 19:35:41,321 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L1_ocr: verdict=FAIL_HALLUCINATED actual=4/4 conf=0.0 grades={10: 4}
+2026-11-03 19:35:41,357 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L1_ocr: failed (4 hallucinated problems), trying next level
+2026-11-03 19:35:54,817 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs.pdf] VLM: 1p, $0.0050
+2026-11-03 19:35:54,820 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L2_vlm: extracting from 1075 chars
+2026-11-03 19:36:24,833 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs-1] extract... 30s
+2026-11-03 19:36:54,848 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs-1] extract... 60s
+2026-11-03 19:37:18,705 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] validation OK (4 problems)
+2026-11-03 19:37:18,706 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] chunk 1-1: 4 problems (83s)
+2026-11-03 19:37:18,715 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] verifier: AI fallback (verdict=FAIL_HALLUCINATED)
+2026-11-03 19:37:21,541 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L2_vlm: verdict=FAIL_HALLUCINATED actual=4/4 conf=0.0 grades={10: 4}
+2026-11-03 19:37:21,542 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L2_vlm: failed (4 hallucinated problems), trying next level
+2026-11-03 19:37:21,542 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L3_escalation: using L2_vlm (1075 chars, single source)
+2026-11-03 19:37:21,543 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L3_escalation: extracting from 1075 chars
+2026-11-03 19:37:30,279 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L3_escalation: verdict=PASS actual=4/4 conf=1.0 grades={10: 4}
+2026-11-03 19:37:30,295 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] Записан v1 (4 problems, level=L3_escalation, verdict=PASS)
+2026-11-03 19:37:30,303 [PDF_CHUNKER] INFO 
+[4/5] OLI-2-Областен кръг-2020-12 кл-probs.pdf
+2026-11-03 19:37:30,303 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2020-12 кл-probs ═══
+2026-11-03 19:37:30,318 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs.pdf] pdfplumber: 1p, 0 chars
+2026-11-03 19:37:30,318 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs.pdf] 0 chars (0/p) → OCR fallback
+2026-11-03 19:37:30,321 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs.pdf] OCR cache: 1p
+2026-11-03 19:37:30,321 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs.pdf] OCR: 1321 chars (vs Python: 0)
+2026-11-03 19:37:30,322 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs] quality=ocr_ok, 1 pages, 1336 chars
+2026-11-03 19:37:30,322 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs] L0_native: extracting from 1336 chars
+2026-11-03 19:41:05,579 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs] segmented: 3 problems from 3 segments
+2026-11-03 19:41:05,583 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs] L0_native: verdict=PASS actual=3/4 conf=1.0 grades={12: 3}
+2026-11-03 19:41:05,590 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs] Записан v1 (3 problems, level=L0_native, verdict=PASS)
+2026-11-03 19:41:05,599 [PDF_CHUNKER] INFO 
+[5/5] OLI-2-Областен кръг-2024-11 кл-probs.pdf
+2026-11-03 19:41:05,599 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2024-11 кл-probs ═══
+2026-11-03 19:41:05,643 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] pdfplumber: 1p, 0 chars
+2026-11-03 19:41:05,643 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] 0 chars (0/p) → OCR fallback
+2026-11-03 19:41:05,646 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] OCR cache: 1p
+2026-11-03 19:41:05,647 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] OCR: 1110 chars (vs Python: 0)
+2026-11-03 19:41:05,647 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] quality=ocr_ok, 1 pages, 1125 chars
+2026-11-03 19:41:05,648 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] L0_native: extracting from 1125 chars
+2026-11-03 19:41:35,660 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs-1] extract... 30s
+2026-11-03 19:42:05,669 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs-1] extract... 60s
+2026-11-03 19:42:35,675 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs-1] extract... 90s
+2026-11-03 19:43:05,683 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs-1] extract... 120s
+2026-11-03 19:43:07,396 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] validation OK (4 problems)
+2026-11-03 19:43:07,398 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] chunk 1-1: 4 problems (121s)
+2026-11-03 19:43:07,401 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] L0_native: verdict=PASS actual=4/4 conf=0.975 grades={11: 4}
+2026-11-03 19:43:07,416 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] Записан v1 (4 problems, level=L0_native, verdict=PASS)
+2026-11-03 21:08:20,927 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 21:08:20,928 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-03 21:08:20,928 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 21:08:25,301 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-03 21:08:25,302 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-03 21:08:25,302 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-03 21:08:25,313 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-03 21:08:25,314 [PDF_CHUNKER] INFO Филтър '2020-12 кл-probs': 1 PDF-а
+2026-11-03 21:08:25,314 [PDF_CHUNKER] INFO 
+[1/1] OLI-2-Областен кръг-2020-12 кл-probs.pdf
+2026-11-03 21:08:25,315 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2020-12 кл-probs ═══
+2026-11-03 21:08:25,322 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs.pdf] pdfplumber: 1p, 0 chars
+2026-11-03 21:08:25,322 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs.pdf] 0 chars (0/p) → OCR fallback
+2026-11-03 21:08:25,324 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs.pdf] OCR cache: 1p
+2026-11-03 21:08:25,324 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs.pdf] OCR: 1321 chars (vs Python: 0)
+2026-11-03 21:08:25,325 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs] quality=ocr_ok, 1 pages, 1336 chars
+2026-11-03 21:08:25,325 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs] L0_native: extracting from 1336 chars
+2026-11-03 21:10:57,368 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs] segmented: 4 problems from 4 segments
+2026-11-03 21:10:57,371 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs] L0_native: verdict=PASS actual=4/4 conf=1.0 grades={12: 4}
+2026-11-03 21:10:57,381 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs] Записан v1 (4 problems, level=L0_native, verdict=PASS)

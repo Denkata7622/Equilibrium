@@ -1,0 +1,35 @@
+{
+  "key": "2.11#1",
+  "point_id": "2.11",
+  "idx": 1,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-2002-11 кл · 2002-11 · Зад. 11.2",
+  "techniques": [
+    "orthocenter",
+    "similar_triangles",
+    "cyclic_quadrilateral"
+  ],
+  "word_count": 1724,
+  "score": 8,
+  "verdict": "approve",
+  "verdict_raw": "reject",
+  "adjudicated": true,
+  "status": "done",
+  "structure": {
+    "missing": [],
+    "has_boxed": true,
+    "why_count": 9,
+    "sec12_words": 153,
+    "ends_ok": true,
+    "fatal": [],
+    "soft": []
+  },
+  "caught_errors_in_solution": [
+    "Оригиналното условие допуска E=F=D, при което H=D и правата DH не е определена; необходима е уговорка за определеност на конструкцията.",
+    "Предоставеното решение не отделя допустимия случай E=D, F≠D. Тогава G=K=F и I=B, използваните подобия са изродени, а заключението трябва да се докаже отделно."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 233.8,
+  "generated_at": "2026-11-21T19:27:58.956619"
+}

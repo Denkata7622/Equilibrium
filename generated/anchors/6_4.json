@@ -1,37 +1,88 @@
 {
   "point_id": "6.4",
-  "total": 2,
+  "total": 5,
   "by_difficulty": {
     "easy": 0,
-    "medium": 2,
-    "hard": 0
+    "medium": 4,
+    "hard": 1
   },
   "problems": [
     {
-      "source": "OLI-3-Национален кръг-1984-9-12 кл · 1984-None · Зад. 4",
-      "statement": "Числата a, b, a₂, a₃, . . . , a_{n−2} са реални, ab ≠ 0 и такива, че всичките корени на уравнението\nax^n − ax^{n−1} + a₂x^{n−2} + · · · + a_{n−2}x² − n²bx + b = 0\nса реални и положителни. Да се докаже, че тези корени са равни помежду си.",
-      "solution": "Решение. От формулите на Виет имаме\nx₁ + x₂ + … + xₙ = 1,\n1/x₁ + 1/x₂ + … + 1/xₙ = n².\nСледователно\n(x₁ + x₂ + … + xₙ)(1/x₁ + 1/x₂ + … + 1/xₙ) = n².\nНо в известното неравенство\n(x₁ + x₂ + … + xₙ)(1/x₁ + 1/x₂ + … + 1/xₙ) ≥ n²\nимаме равенство тогава и само тогава когато x₁ = x₂ = … = xₙ.",
+      "source": "OLI-2-Областен кръг-2002-12 кл · 2002-12 · Зад. 12.5",
+      "statement": "Да се докаже, че ако $a$, $b$ и $c$ са положителни числа, за които $abc \\le \\frac{1}{4}$ и $\\frac{1}{a^2} + \\frac{1}{b^2} + \\frac{1}{c^2} < 9$, то те са дължини на страни на триъгълник.",
+      "solution": "Решение. Нека $a \\leq b \\leq c$. Имаме да докажем, че $c < a + b$. Да допуснем противното и да положим $d = \\frac{1}{4ab}$. Тогава $d^2 \\geq c^2 \\geq (a + b)^2 \\geq 4ab = \\frac{1}{d}$, откъдето $d \\geq 1$. Следователно\n\n$$\\begin{aligned} \\frac{1}{a^2} + \\frac{1}{b^2} + \\frac{1}{c^2} &\\geq \\frac{1}{a^2} + \\frac{1}{b^2} + \\frac{1}{d^2} = (4(a + b)d)^2 - 8d + \\frac{1}{d^2} \\geq \\\\ &\\geq 8d + \\frac{1}{d^2} = 9 + \\frac{(d - 1)(8d^2 - d - 1)}{d^2} \\geq 9, \\end{aligned}$$\n\nкоето е противоречие.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "am_gm",
+        "inequality",
+        "triangle_inequality"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата доказва неравенство с AM-GM и условие за страни на триъгълник. Решението е елегантно, но пропуска някои гранични случаи.",
+      "_crosslinked_from": "6.1",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-3-Национален кръг-1997-9-12 кл · 1997-None · Зад. 4",
+      "statement": "Let $a$, $b$ and $c$ be positive numbers such that $abc = 1$. Prove the inequality\n\n$$\\frac{1}{1 + a + b} + \\frac{1}{1 + b + c} + \\frac{1}{1 + c + a} \\le \\frac{1}{2 + a} + \\frac{1}{2 + b} + \\frac{1}{2 + c}.$$",
+      "solution": "**Solution:** Let $x = a + b + c$ and $y = \\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c} = ab + bc + ca$ ($abc = 1$). It follows from Cauchy's Inequality that $x \\ge 3$ and $y \\ge 3$. Since both sides of the given inequality are symmetric functions of\n\na, b and c, we transform the expression as a function of $x$, $y$ and $abc = 1$. After simple calculations we get\n\n$$\\frac{3+4x+y+x^2}{2x+y+x^2+xy} \\le \\frac{12+4x+y}{9+4x+2y},$$\n\nwhich is equivalent to\n\n$$3x^2y + xy^2 + 6xy - 5x^2 - y^2 - 24x - 3y - 27 \\ge 0.$$\n\nWrite the last inequality in the form\n\n$$(\\frac{5}{3}x^2y - 5x^2) + (\\frac{xy^2}{3} - y^2) + (\\frac{xy^2}{3} - 3y) + (\\frac{4}{3}x^2y - 12x) +$$\n$$+ (\\frac{xy^2}{3} - 3x) + (3xy - 9x) + (3xy - 27) \\ge 0.$$\n\nWhen $x \\ge 3$, $y \\ge 3$, all terms in the left hand side are non-negative and the inequality is true. Equality holds when $x = 3$, $y = 3$, which implies $a = b = c = 1$.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "symmetric_inequalities",
+        "substitution",
+        "am_gm"
+      ],
+      "confidence": "exact",
+      "reasoning": "The inequality is symmetric in a,b,c with abc=1. The solution uses substitution and symmetric polynomial inequalities, reducing to a function of two variables. Although Cauchy's inequality is mentioned, the core is AM-GM and symmetric handling.",
+      "_crosslinked_from": "6.1",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-3-Национален кръг-2009-9-12 кл · 2009-None · Зад. 6",
+      "statement": "Да се докаже, че ако $a_1, \\dots, a_n, b_1, \\dots, b_n$ са произволни реални числа, а $c_1, \\dots, c_n$ са положителни реални числа, то\n\n$$\\left( \\sum_{i,j=1}^n \\frac{a_i a_j}{c_i + c_j} \\right) \\left( \\sum_{i,j=1}^n \\frac{b_i b_j}{c_i + c_j} \\right) \\ge \\left( \\sum_{i,j=1}^n \\frac{a_i b_j}{c_i + c_j} \\right)^2.$$",
+      "solution": "Решение. Първо решение. Можем да считаме, че не всички $a_i$ и не всички $b_i$ са равни на 0. Първо ще докажем, че\n\n$$f(x) = \\sum_{i,j=1}^n \\frac{a_i a_j}{c_i + c_j} x^{c_i + c_j} \\geq 0, \\quad x \\geq 0.$$\n\nИмаме, че $x f'(x) = (\\sum_{i=1}^n a_i x^{c_i})^2 \\geq 0$. Следователно $f(x) \\geq f(0) = 0$ при $x \\geq 0$.\n\nАналогично\n\n$$g(x) = \\sum_{i,j=1}^n \\frac{b_i b_j}{c_i + c_j} x^{c_i + c_j} \\geq 0, \\quad x \\geq 0.$$\n\nСега полагаме\n\n$$h(x) = \\sum_{i,j=1}^n \\frac{a_i b_j}{c_i + c_j} x^{c_i + c_j}.$$\n\nЩе докажем по-общо неравенство от даденото, а именно\n\n$$f(x)g(x) \\geq h^2(x), \\ x \\geq 0.$$\n\nМожем да считаме, че $h(x) \\geq 0$ при дадено $x$ (иначе сменяме $a_i$ с $-a_i$). Тогава трябва да докажем, че $s(x) = \\sqrt{f(x)}\\sqrt{g(x)} - h(x) \\geq 0$. От неравенството $a^2 + b^2 \\geq 2ab$ при $x \\geq 0$ следва, че\n\n$$\\begin{aligned} x s'(x) &= \\frac{x f'(x) \\sqrt{g(x)}}{2 \\sqrt{f(x)}} + \\frac{x g'(x) \\sqrt{f(x)}}{2 \\sqrt{g(x)}} - x h'(x) \\geq \\sqrt{x f'(x) x g'(x)} - x h'(x) \\\\\n&= \\left| \\sum_{i=1}^n a_i x^{c_i} \\sum_{i=1}^n b_i x^{c_i} \\right| - \\sum_{i,j=1}^n a_i b_j x^{c_i + c_j} \\geq \\sum_{i=1}^n a_i x^{c_i} \\sum_{i=1}^n b_i x^{c_i} - \\sum_{i,j=1}^n a_i b_j x^{c_i + c_j} = 0 \\end{aligned}$$\n\nи значи $s(x) > s(0)$ при $x \\neq 0$.\n\nВторо решение. Нека $f(x) = \\sum_{i=1}^n a_i x^{c_i - 1/2}$ и $g(x) = \\sum_{i=1}^n b_i x^{c_i - 1/2}$. Даденото неравенство следва директно от интегралното неравенство на Коши-Буняковски-Шварц:\n\n$$\\int_0^1 f^2(x) dx \\int_0^1 g^2(x) dx \\geq \\left( \\int_0^1 f",
       "answer": null,
       "difficulty": "medium",
       "techniques": [
         "cauchy_schwarz",
-        "vieta"
+        "integral_inequalities",
+        "generating_functions"
       ],
       "confidence": "exact",
-      "reasoning": "Uses Vieta to get sum and sum of reciprocals, then C‑S inequality to force equality of roots."
+      "reasoning": "Неравенството се доказва или с приложение на Коши-Буняковски в интегрален вид, или с генериращи функции. Решението представя два подхода, като и двата използват класически неравенства."
     },
     {
-      "source": "OLI-3-Национален кръг-1997-9-12 кл · 1997-None · Зад. 4",
-      "statement": "Let $a,b$ and $c$ be positive numbers such that $abc=1$. Prove the inequality\n\n$$\\frac{1}{1+a+b}+\\frac{1}{1+b+c}+\\frac{1}{1+c+a}\\leq\\frac{1}{2+a}+\\frac{1}{2+b}+\\frac{1}{2+c}.$$",
-      "solution": "Solution: Let $x=a+b+c$ and $y=\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}=ab+bc+ca$ ($abc=1$). It follows from Cauchy's Inequality that $x\\geq3$ and $y\\geq3$. Since both sides of the given inequality are symmetric functions of $a$, $b$ and $c$, we transform the expression as a function of $x$, $y$ and $abc=1$. After simple calculations we get\n\n$$\\frac{3+4x+y+x^2}{2x+y+x^2+xy}\\leq\\frac{12+4x+y}{9+4x+2y},$$\n\nwhich is equivalent to\n\n$$3x^2y+xy^2+6xy-5x^2-y^2-24x-3y-27\\geq0.$$\n\nWrite the last inequality in the form\n\n$$\\left(\\frac{5}{3}x^2y-5x^2\\right)+\\left(\\frac{xy^2}{3}-y^2\\right)+\\left(\\frac{xy^2}{3}-3y\\right)+\\left(\\frac{4}{3}x^2y-12x\\right)+\\left(\\frac{xy^2}{3}-3x\\right)+(3xy-9x)+(3xy-27)\\geq0.$$\n\nWhen $x\\geq3$, $y\\geq3$, all terms in the left hand side are non-negative and the inequality is true. Equality holds when $x=3$, $y=3$, which implies $a=b=c=1$.",
-      "answer": "Equality holds for $a=b=c=1$.",
+      "source": "OLI-3-Национален кръг-2023-9-12 кл · 2023-None · Зад. 4",
+      "statement": "Да се докаже, че върху страната $AD$ на изпъкнал четириъгълник $ABCD$ съществува единствена точка $M$, за която\n\n$$\\sqrt{S_{ABM}} + \\sqrt{S_{CDM}} = \\sqrt{S_{ABCD}},$$\n\nтогава и само тогава $AB||CD$.",
+      "solution": "Първи начин. (Н. Николов)\n\nСлед повдигане на квадрат даденото равенство приема вида\n\n$$2\\sqrt{S_{ABM}S_{CDM}} = S_{BCM}.$$\n\nПърво ще докажем, че ако $AB||CD$, то\n\n$$(1) 2\\sqrt{S_{ABM}S_{CDM}} \\leq S_{BCM}.$$\n\nза всяка точка $M \\in [AD]$, като равенство се достига само в една точка.\n\nНека $AB = a$, $CD = b$, $d(M, AB) = x$ и $d(M, CD) = y$. Тогава\n\n$$(1) \\Leftrightarrow 2\\sqrt{axby} \\leq (a + b)(x + y) - ax - by \\Leftrightarrow (\\sqrt{ay} - \\sqrt{bx})^2 \\geq 0.$$\n\nРавенство се достига само ако $AM/BM = a/b$. По-нататък, нека $D' \\in AD$ така, че $CD'||AB$. Ако $\\angle B + \\angle C < 180^\\circ$, то $D \\in (AD')$ и от (1) следва, че\n\n$$2\\sqrt{S_{ABM}S_{CDM}} < 2\\sqrt{S_{ABM}S_{CD'M}} \\leq S_{BCM}$$\n\nза $M \\in (A, D]$.\n\nАко $\\angle B + \\angle C > 180^\\circ$, то $D' \\in (AD)$. Нека $f(M) = 2\\sqrt{S_{ABM}S_{CDM}} - S_{BCM}$ за $M \\in [AD]$. Очевидно $f(A) < 0$ и $f(D) < 0$. От друга страна, вече знаем, че има единствена точка $M' \\in (AD')$, за която $2\\sqrt{S_{ABM'}S_{CD'M'}} = S_{BCM'}$ и значи $f(M') > 0$. По непрекъснатост следва, че съществуват точки $M_1 \\in (AM')$ и $M_2 \\in (M'D)$ така, че $f(M_1) = f(M_2) = 0$. Оттук задачата следва.\n\nЗабележка. В случая $\\angle B + \\angle C > 180^\\circ$ съществуват точно две точки $M_1, M_2 \\in (AD)$, за които\n\n$$\\sqrt{S_{ABM}} + \\sqrt{S_{CDM}} = \\sqrt{S_{ABCD}}.$$\n\nНаистина, $S_{ABM}$ и $S_{CDM}$ са линейни функции на $M \\in [AD]$. Следователно $\\sqrt{S_{ABM}} + \\sqrt{S_{CDM}}$ е строго вдлъбната функция и значи приема дадена стойност най-много два пъти.\n\nВтори начин. (К. Делчев и Н. Николов)\n\nЩе използваме, че ако $A_1(x_1, y_1)$, $A_2(x_2, y_2)$ и $A_3(x_3, y_3)$, то удвоеното ориентирано лице на $\\triangle A_1 A_2 A_3$ е равно на $x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)$.\n\nМожем да считаме, че $A(0, 0)$, $B(x_1, y_1)$, $C(x_2, y_2)$, $D(0, 1)$ и $M = (0, m)$, където $x_1, x_2 > 0$. Записваме даденото равенство във вида $4S_{ABM}S_{CDM} = S_{BCM}^2$ и получаваме, че\n\n$$4x_1x_2m(1 - m) = (\\triangle + m(x_2 - x_1))^2,$$\n\nсвалено от Klasirane.com\n\nкъдето $\\triangle = x_1 y_2 - x_2 y_1 = 2S_{ABC} > 0$, т.е.\n\n$$m^2(x_1 + x_2)^2 + 2m((x_2 - x_1)\\triangle - 2x_1 x_2) + \\triangle^2 = 0.$$\n\nТова уравнение има единствено решение $m \\in (0, 1)$ точно когато\n\n$$D_1 = 4x_1 x_2 (x_1 - \\triangle)(x_2 + \\triangle) = 0 \\Leftrightarrow x_1 = \\triangle \\Leftrightarrow \\frac{x_1}{x_2} = \\frac{y_1}{y_2 - 1} \\Leftrightarrow AB || CD.$$\n\n**Оценяване.** *Първи начин* (7 точки) 2т. за случая $AB || CD$, 2т. за $\\measuredangle B + \\measuredangle C < 180^\\circ$, 3т. за случая $\\measuredangle B + \\measuredangle C > 180^\\circ$.\n\n*Втори начин* (7 точки) 1т. за свеждането до $4S_{ABM}S_{CDM} = S_{BCM}^2$, 3т. за въвеждане на подходяща параметризация и изразяване на равенството от по-горе чрез нея, 3т. за довършване",
+      "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "cauchy_schwarz",
-        "symmetrization"
+        "quadrilateral_properties",
+        "parallel_lines",
+        "area_calculation",
+        "coordinate_geometry"
       ],
       "confidence": "exact",
-      "reasoning": "Transforms both sides to symmetric functions of a,b,c and applies Cauchy‑Schwarz to obtain the required inequality."
+      "reasoning": "Задачата свързва лица на триъгълници и четириъгълник с успоредни страни. Точка 1.7 (Формули за лице) е подходяща. Трудност: medium, стандартна но с няколко стъпки.",
+      "_crosslinked_from": "1.7",
+      "_crosslink_confidence": 0.7
+    },
+    {
+      "source": "OLI-2-Областен кръг-2020-10 кл · 2020-10 · Зад. 10.4",
+      "statement": "За всяка редица от 2020 реални числа $a_1, a_2, \\dots, a_{2020}$ определяме редицата $b_1, b_2, \\dots, b_{2020}$ като:\n\n$$b_n = \\frac{a_1 + a_2 + \\dots + a_n}{n} \\quad \\text{за всяко } n = 1, 2, \\dots, 2020.$$\n\nДа се намерят всички редици $a_1, a_2, \\dots, a_{2020}$, за които:\n\n$$b_1^2 + b_2^2 + \\dots + b_{2020}^2 = 4 \\left( a_1^2 + a_2^2 + \\dots + a_{2020}^2 \\right).$$",
+      "solution": "Решение. Ще докажем, че единствено нулевата редица $a_1 = a_2 = \\cdots = a_{2020} = 0$ е решение. За фиксирано $n \\ge 2$ имаме, че $a_n = nb_n - (n-1)b_{n-1}$ и следователно:\n\n$$\\begin{array}{l} b_n^2 - 2a_nb_n = b_n^2 - 2b_n(nb_n - (n-1)b_{n-1}) = (1 - 2n)b_n^2 + 2(n-1)b_{n-1}b_n \\\\ \\quad \\le (1 - 2n)b_n^2 + (n-1)(b_{n-1}^2 + b_n^2) = (n-1)b_{n-1}^2 - nb_n^2, \\end{array} \\tag{1}$$\n\nкато равенство се достига точно тогава, когато $b_{n-1} = b_n$. Тъй като $b_1^2 - 2a_1b_1 = -b_1^2$, сумирайки неравенствата от $n=1$ до $n=2020$ получаваме:\n\n$$\\sum_{n=1}^{2020} b_n^2 - 2 \\sum_{n=1}^{2020} a_nb_n \\le -2020b_{2020}^2 \\le 0 \\quad \\implies \\quad \\sum_{n=1}^{2020} b_n^2 \\le 2 \\sum_{n=1}^{2020} a_nb_n. \\tag{2}$$\n\nСега прилагаме неравенството на Коши-Шварц-Буняковски ($\\sum a_nb_n \\le \\sqrt{\\sum a_n^2} \\sqrt{\\sum b_n^2}$) към горното неравество и получаваме:\n\n$$\\sum_{n=1}^{2020} b_n^2 \\le 2 \\sqrt{\\sum_{n=1}^{2020} a_n^2} \\sqrt{\\sum_{n=1}^{2020} b_n^2}, \\text{ откъдето } \\sum_{n=1}^{2020} b_n^2 \\le 4 \\sum_{n=1}^{2020} a_n^2. \\tag{3}$$\n\nОт допълнителното условие в задачата, заключаваме, че трябва да се достига равенството, откъдето $b_{2020} = 0$ и $b_n^2 - 2a_nb_n = (n-1)b_{n-1}^2 - nb_n^2$, за всяко $n=2, \\ldots, 2020$. Но второто равенство ни дава $b_1 = b_2 = \\cdots = b_{2020}$ и от $b_{2020} = 0$, получаваме, че $b_n = 0$ за $n=1, 2, \\ldots, 2020$. Сега е ясно, че $a_1 = b_1 = 0$ и $a_n = nb_n - (n-1)b_{n-1} = 0$ за всяко $n=2, \\ldots, 2020$. Непосредствена проверка показва, че $a_1 = a_2 = \\cdots = a_{2020} = 0$ е решение.\n\nОценяване (7 точки): а) 1 т. – за (1); 2 т. – за (2); 2 т. – за (3); 2 т. – за довършване.",
+      "answer": "нулевата редица $a_1 = a_2 = \\cdots = a_{2020} = 0$",
+      "difficulty": "hard",
+      "techniques": [
+        "cauchy_schwarz",
+        "sequences",
+        "equality_conditions"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва неравенство на Коши-Шварц и условия за равенство. Точка 6.4 (Коши-Буняковски) е точна. Решението е сложно с преобразувания."
     }
   ]
 }

@@ -1,12 +1,40 @@
 {
   "point_id": "1.10",
-  "total": 25,
+  "total": 55,
   "by_difficulty": {
     "easy": 0,
-    "medium": 20,
-    "hard": 5
+    "medium": 12,
+    "hard": 43
   },
   "problems": [
+    {
+      "source": "OLI-2-Областен кръг-1999-11 кл · 1999-11 · Зад. 11.5",
+      "statement": "Let $B_1$ and $C_1$ be points on the sides $AC$ and $AB$ of $\\triangle ABC$. The straight lines $BB_1$ and $CC_1$ intersect at point $D$. Prove that the quadrilateral $AB_1DC_1$ is circumscribed if and only if the incircles of $\\triangle ABD$ and $\\triangle ACD$ are tangent.",
+      "solution": "gent if and only if $AB + AD - BD = AC + AD - CD$, so $AB + CD = AC + BD$.\n\nSuppose $AB_1DC_1$ is circumscribed and the incircle touches $AB_1$, $B_1D$, $DC_1$, $C_1A$ in the points $M, N, P, Q$, respectively. Therefore $AB + CD = AQ + BQ + CP - DP = AM + BN + CM - DN = AC + BD$.\n\nConversely, let the incircles of $\\triangle ABD$ and $\\triangle ACD$ be tangent. Denote the point of intersection of the tangent through $C$ (different from $CA$) with the incircle of $\\triangle ABB_1$ by $D'$. It follows from the above that $BD' - CD' = AB - AC = BD - CD$, so $DD' = |CD - CD'|$. Therefore $D' \\equiv D$, which completes the proof.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "incircle_properties",
+        "tangency_conditions",
+        "length_equations"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрия с допирателни окръжности; използване на свойствата на допирните точки и суми от дължини."
+    },
+    {
+      "source": "OLI-2-Областен кръг-1999-12 кл · 1999-12 · Зад. 12.5",
+      "statement": "Let $B_1$ and $C_1$ be points on the sides $AC$ and $AB$ of $\\triangle ABC$. The straight lines $BB_1$ and $CC_1$ intersect at point $D$. Prove that the quadrilateral $AB_1DC_1$ is circumscribed if and only if the incircles of $\\triangle ABD$ and $\\triangle ACD$ are tangent.",
+      "solution": "gent if and only if $AB + AD - BD = AC + AD - CD$, so $AB + CD = AC + BD$.\n\nSuppose $AB_1DC_1$ is circumscribed and the incircle touches $AB_1$, $B_1D$, $DC_1$, $C_1A$ in the points $M, N, P, Q$, respectively. Therefore $AB + CD = AQ + BQ + CP - DP = AM + BN + CM - DN = AC + BD$.\n\nConversely, let the incircles of $\\triangle ABD$ and $\\triangle ACD$ be tangent. Denote the point of intersection of the tangent through $C$ (different from $CA$) with the incircle of $\\triangle ABB_1$ by $D'$. It follows from the above that $BD' - CD' = AB - AC = BD - CD$, so $DD' = |CD - CD'|$. Therefore $D' \\equiv D$, which completes the proof.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "incircle_properties",
+        "tangent_segments",
+        "quadrilateral_properties"
+      ],
+      "confidence": "exact",
+      "reasoning": "Условие за допиране на вписани окръжности в триъгълници, свързано с допирателни отсечки."
+    },
     {
       "source": "OLI-2-Областен кръг-2000-10 кл · 2000-10 · Зад. 2",
       "statement": "В $\\triangle ABC, CH(H \\in AB)$ е височина, а $CM$ и $CN(M, N \\in AB)$ са ъглополовящи съответно на ъглите $ACH$ и $BCH$. Центърът на описаната около $\\triangle CMN$ окръжност съвпада с центъра на вписаната в $\\triangle ABC$ окръжност. Да се докаже, че $S_{\\triangle ABC} = \\frac{AN.BM}{2}$.",
@@ -20,141 +48,36 @@
       "reasoning": "Използва свойства на вписаната и описаната окръжност, съвпадение на центрове и ъглополовящи."
     },
     {
-      "source": "OLI-2-Областен кръг-2000-11 кл · 2000-11 · Зад. 2",
-      "statement": "В $\\triangle ABC$, $CH$ ($H \\in AB$) е височина, а $CM$ и $CN$ ($M, N \\in AB$) са ъглополовящи съответно на ъглите $ACH$ и $BCH$. Центърът на описаната около $\\triangle CMN$ окръжност съвпада с центъра на вписаната в $\\triangle ABC$ окръжност. Да се докаже, че $S_{\\triangle ABC} = \\frac{AN.BM}{2}$.",
-      "solution": "Решение: Нека I е центърът на вписаната в △ABC окръжност, а P, Q и R са допирните точки на тази окръжност съответно със страните AB, BC и CA. От равенствата IP = IQ = IR и IC = IM = IN следва, че △IMP, △INP, △ICQ и △ICR са еднакви. Нека ∠MIP = ∠NIP = ∠QIC = ∠CIR = δ. Тогава ∠MCN = ½∠MIN = δ. Тъй като CM и CN са ъглополовящи, получаваме ∠ACB = 2∠MCN = 2δ. Сега от четириъгълника IQCR имаме ∠QIR + ∠QCR = 180° ⇔ 4δ = 180° ⇔ δ = 45°.\n\nСледователно △ABC е правоъгълен, откъдето лесно получаваме ∠BCM = ∠BMC = ∠BAC + ∠ABC/2 и ∠ANC = ∠ACN = ∠ABC + ∠BAC/2. Следователно BC = BM и AC = AN и оттук S_ABC = AC·BC/2 = AN·BM/2.",
+      "source": "OLI-2-Областен кръг-2006-11 кл · 2006-11 · Зад. 11.5",
+      "statement": "Допирателните към описаната около равнобедрен $\\triangle ABC$, $AC = BC$, окръжност $k$ в точките $B$ и $C$ се пресичат в точка $X$. Ако $AX$ пресича $k$ в точка $Y$, да се намери отношението $\\frac{AY}{BY}$.",
+      "solution": "Ако $\\angle BAY = \\alpha$ и $\\angle ABY = \\beta$, то $\\angle BYX = \\beta + \\alpha$. Нещо повече, имаме $\\angle ACB = \\angle AYB = 180^{\\circ} - \\alpha - \\beta$, откъдето $\\angle BAC = \\angle ABC = \\frac{\\beta + \\alpha}{2}$.\n\n![img-0.jpeg](img-0.jpeg)\n\nТогава $\\angle AYC = \\frac{\\beta + \\alpha}{2}$ и $\\angle YCX = \\angle YAC = \\frac{\\beta + \\alpha}{2} - \\alpha = \\frac{\\beta - \\alpha}{2}$. Синусовата теорема за $\\triangle BYX$ и $\\triangle CYX$ дава\n\n$$\\frac{XY}{XB} = \\frac{\\sin \\alpha}{\\sin(\\alpha + \\beta)}, \\quad \\frac{XY}{XC} = \\frac{\\sin(\\frac{\\beta - \\alpha}{2})}{\\sin(\\frac{\\beta + \\alpha}{2})}$$\n\nи тъй като $XB = XC$, получаваме $\\frac{\\sin \\alpha}{\\sin(\\alpha + \\beta)} = \\frac{\\sin(\\frac{\\beta - \\alpha}{2})}{\\sin(\\frac{\\beta + \\alpha}{2})}$. Следователно\n\n$$\\sin \\alpha = 2 \\cos \\left( \\frac{\\beta + \\alpha}{2} \\right) \\sin \\left( \\frac{\\beta - \\alpha}{2} \\right) = \\sin \\beta - \\sin \\alpha$$\n\nи значи $\\frac{AY}{BY} = \\frac{\\sin \\beta}{\\sin \\alpha} = 2$.",
+      "answer": "$\\frac{AY}{BY} = 2$",
+      "difficulty": "medium",
+      "techniques": [
+        "circle_theorems",
+        "angle_chasing",
+        "trigonometry"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на окръжности и вписани ъгли, както и синусова теорема. Това съответства на точка 1.5 (Вписани ъгли, Талес, симетрали). Решението е с умерена дължина и изисква инсайт за ъглите, което го прави medium.",
+      "_crosslinked_from": "1.5",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2014-11 кл · 2014-11 · Зад. 11.2",
+      "statement": "Даден е триъгълник ABC, за който BC2 + AC2 = AC.AB. Да се докаже, че допирната точка на вписаната в \\triangle ABC окръжност със страната BC, средата на страната AB и средата на ъглополовящата през върха C лежат на една права.",
+      "solution": "Ще използваме стандартните означения за елементите на $\\triangle ABC$. Нека $CL$, $L ∈ AB$, е ъглополовящата на $\\angle ACB$, а $P$ и $Q$ са съответно средите на $AB$ и $CL$. Тъй като $a^2 + b^2 = bc < b(a + b) = ab + b^2$, то $a < b$, което означава, че $AL > BL$, т.е. точката $P$ е между $A$ и $L$. Следователно $PL = \\frac{c}{2} - \\frac{ca}{a + b} = \\frac{c(b - a)}{2(b + a)}$. Нека правата $PQ$ пресича страната $BC$ в точка $X$. От теоремата на Менелай за $\\triangle LBC$ и правата $PQ$ имаме\n\n$$\\frac{BP}{PL} · \\frac{LQ}{QC} · \\frac{CX}{XB} = 1,$$\n\nоткъдето $\\frac{XB}{CX} = \\frac{BP}{PL} = \\frac{b + a}{b - a}$. От $CX + XB = a$ намираме $CX = \\frac{a(b - a)}{2b}$.\n\nАко $T$ е допирната точка на вписаната окръжност със страната $BC$, то $CT = \\frac{a + b - c}{2}$. Равенството $CT = CX$ е еквивалентно на\n\n$$\\frac{a + b - c}{2} = \\frac{a(b - a)}{2b} \\iff a^2 + b^2 = bc.$$",
       "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "incircle_circumcircle_relation",
-        "angle_bisector_theorem"
+        "menelaus_theorem",
+        "angle_bisector_properties",
+        "length_calculations"
       ],
       "confidence": "exact",
-      "reasoning": "Използва се съвпадение на центровете на вписаната и описаната окръжност и свойства на ъглополовящите."
-    },
-    {
-      "source": "OLI-2-Областен кръг-2001-10 кл · 2001-10 · Зад. 4",
-      "statement": "Нека $ABC$ е правоъгълен триъгълник с хипотенуза $AB$. Върху лъча $AC^\\rightarrow$ е избрана точка $D$, различна от $A$ и $C$, за която правата през центъра на вписаната окръжност в $\\triangle ABC$, успоредна на ъглополовящата на $\\angle ADB$, се допира до вписаната окръжност в $\\triangle BCD$. Да се докаже, че $AD = BD$.",
-      "solution": "Решение: Първо ще докажем, че точката $C$ лежи на отсечката $AD$. Да допуснем противното, т.е. $\\angle ADB > 90^{\\circ}$. Нека вписаната окръжност $k(I, r)$ в $\\triangle BCD$ се допира до страната $BD$ в точка $P$. Да означим с $T$ допирната точка на $k$ и правата през центъра $J$ на вписаната окръжност в $\\triangle ABC$, успоредна на ъглополовящата $l$ на $\\angle ADB$. Тъй като $l \\perp DI$, то $T \\in DI$. Тогава $\\angle IJT = \\frac{\\angle CBD}{2} = \\angle IBP$ и понеже $IT = r = IP$, то правоъгълните триъгълници $IJT$ и $IBP$ са еднакви. В частност $IJ = IB$, откъдето следва, че $\\angle BJC < 90^{\\circ}$, което е противоречие. Нека сега $A'$ е такава точка върху лъча $\\overrightarrow{DA}$, че $DA' = DB$ и $E$ е средата на $A'B$. Да означим с $F$ допирната точка на вписаната окръжност в $\\triangle A'BC$, а с $J'$ - нейният център. Тогава\n$$EF = |A'E - A'F| = \\frac{1}{2}|A'B - (A'B + A'C - BC)| = \\frac{1}{2}|BC - A'C| = \\frac{1}{2}|BC - (A'D - CD)| = \\frac{1}{2}|BC + CD - BD| = r.$$\nСледователно правата $J'F$, успоредна на $l$ се допира до $k$. Това показва, че $J' \\in JF$. От друга страна, $J' \\in JC$ и понеже $JC$ не е успоредна на $JF(\\angle ACJ = 45^{\\circ} > \\frac{1}{2} \\angle ADB = \\angle ADI)$, то $J = J'$. Тогава $\\angle ABJ = \\angle CBJ = \\angle A'BJ$, т.е. $A = A'$, с което задачата е решена.",
-      "answer": "$AD = BD$",
-      "difficulty": "medium",
-      "techniques": [
-        "incircle_properties",
-        "angle_bisector",
-        "tangent_lengths"
-      ],
-      "confidence": "exact",
-      "reasoning": "Използва свойства на вписаната окръжност и ъглополовящата, за да докаже, че точката D е симетрична спрямо центъра, от което следва AD=BD."
-    },
-    {
-      "source": "OLI-2-Областен кръг-2003-10 кл · 2003-10 · Зад. 1",
-      "statement": "Правоъгълен трапец с лице 10 и височина 4 е разделен с права, успоредна на основите му, на два трапеца, в които могат да се впишат окръжности. Да се намерят радиусите на тези окръжности.",
-      "solution": "Нека ABCD е трапец с лице 10 и бедро AD = 4, перпендикулярно на основите AB = a и CD = b, a > b. Нека правата MN ∥ AB, M ∈ AD, N ∈ BC, го разделя на два трапеца, в които могат да се впишат окръжности. Означаваме MN = c, AM = h₁ и DM = h₂. Тогава h₁² + (a − c)² = (a + c − h₁)², т.е. h₁ = 2ac/(a + c). Аналогично h₂ = 2bc/(b + c), откъдето h₁/h₂ = a(b + c)/(b(a + c)). От друга страна, h₁/h₂ = (a − c)/(c − b) и следователно (a + b)(ab − c²) = 0. Тогава c² = ab, h₁ = 2a√b/(√a + √b), h₂ = 2b√a/(√a + √b) и h₁ + h₂ = 2√(ab). От условието получаваме, че √(ab) = 2, a + b = 5, т.е. a и b са корени на уравнението x² − 5x + 4 = 0. Следователно a = 4, b = 1 и търсените радиуси са равни на h₁/2 = 4/3 и h₂/2 = 2/3.",
-      "answer": "Радиусите са 4/3 и 2/3.",
-      "difficulty": "medium",
-      "techniques": [
-        "inscribed_circles",
-        "geometric_relations",
-        "algebraic_manipulation"
-      ],
-      "confidence": "exact",
-      "reasoning": "Задачата изисква използване на свойствата на вписаните окръжности в трапец и уравнение c^2=ab, което е типично за точка 1.10."
-    },
-    {
-      "source": "OLI-2-Областен кръг-2003-11 кл · 2003-11 · Зад. 1",
-      "statement": "Правоъгълен трапец с лице 10 и височина 4 е разделен с права, успоредна на основите му, на два трапеца, в които могат да се впишат окръжности. Да се намерят радиусите на тези окръжности.",
-      "solution": "Нека ABCD е трапец с лице 10 и бедро AD = 4, перпендикулярно на основите AB = a и CD = b, a > b. Нека правата MN ∥ AB, M ∈ AD, N ∈ BC, го разделя на два трапеца, в които могат да се впишат окръжности. Означаваме MN = c, AM = h₁ и DM = h₂. Тогава h₁² + (a − c)² = (a + c − h₁)², т.е. h₁ = 2ac/(a + c). Аналогично h₂ = 2bc/(b + c), откъдето h₁/h₂ = a(b + c)/(b(a + c)). От друга страна, h₁/h₂ = (a − c)/(c − b) и следователно (a + b)(ab − c²) = 0. Тогава c² = ab, h₁ = 2a√b/(√a + √b), h₂ = 2b√a/(√a + √b) и h₁ + h₂ = 2√(ab). От условието получаваме, че √(ab) = 2, a + b = 5, т.е. a и b са корени на уравнението x² − 5x + 4 = 0. Следователно a = 4, b = 1 и търсените радиуси са равни на h₁/2 = 4/3 и h₂/2 = 2/3.",
-      "answer": "Радиусите са 4/3 и 2/3.",
-      "difficulty": "medium",
-      "techniques": [
-        "inscribed_circles",
-        "area_relations"
-      ],
-      "confidence": "exact",
-      "reasoning": "Задачата за трапец с лице 10 и височина 4, разделен на два трапеца с вписани окръжности, се решава чрез свойства на вписани окръжности в трапец – стъпка 1.10."
-    },
-    {
-      "source": "OLI-2-Областен кръг-2005-11 кл · 2005-11 · Зад. 2",
-      "statement": "Във вътрешността на даден ъгъл са построени две окръжности с центрове O₁ и O₂. Окръжностите се допират до раменете на ъгъла и помежду си. Да се докаже, че ако трета окръжност с център върху отсечката O₁O₂ се допира до раменете на ъгъла и минава през една от точките O₁ и O₂, то тя минава и през другата точка.",
-      "solution": "Нека окръжностите са k₁(O₁,r), k₂(O₂,R) и k(O,x), като r < x < R. Да построим перпендикуляри O₁A, OB и O₂C към едното рамо p на ъгъла. Нека ℓ ∥ p е права през O₁, която пресича OB и O₂C съответно в точки M и N. Тогава △O₁OM ∼ △O₁O₂N и следователно O₁O/O₁O₂ = OM/O₂N.\nИмаме OM = OB − BM = OB − O₁A = x − r, O₂N = O₂C − CN = O₂C − O₁A = R − r и O₁O₂ = r + R. Ако k минава през O₁, то OO₁ = x и получаваме уравнението x/(R + r) = (x − r)/(R − r), откъдето x = (r + R)/2. Ако k минава през O₂, то OO₁ = R + r − x и (R + r − x)/(R + r) = (x − r)/(R − r), откъдето отново x = (r + R)/2. И в двата случая O е среда на O₁O₂ и k минава както през O₁, така и през O₂.",
-      "answer": "x = (r + R)/2; O е средата на O₁O₂ и k минава през O₁ и O₂.",
-      "difficulty": "medium",
-      "techniques": [
-        "circle_tangency",
-        "similar_triangles"
-      ],
-      "confidence": "exact",
-      "reasoning": "Constructs similar triangles from tangency conditions in the angle."
-    },
-    {
-      "source": "OLI-2-Областен кръг-2006-11 кл · 2006-11 · Зад. 1",
-      "statement": "Нека $k$ е окръжност с диаметър $AB$ и $C \\in k$ е произволна точка. Външновписаните окръжности за $\\triangle ABC$ към страните $AC$ и $BC$ се допират до правата $AB$ съответно в точки $M$ и $N$. Нека $O_1$ и $O_2$ са центровете на описаните около $\\triangle AMC$ и $\\triangle BNC$ окръжности. Да се докаже, че лицето на $\\triangle O_1CO_2$ не зависи от избора на точката $C$.",
-      "solution": "Нека $AB = c$, $BC = a$, $AC = b$, $p = \\frac{a + b + c}{2}$ и $O$, $P$ и $Q$ са съответно средите на $AB$, $AM$ и $BN$. Тъй като $OO_1 \\perp AC$ и $O_1P \\perp AM$, имаме $\\triangle O_1OP \\sim \\triangle ABC$, откъдето $\\frac{OO_1}{c} = \\frac{OP}{a}$. По-нататък, от $AM = p - c$ следва, че\n\n$$OP = OA + \\frac{1}{2}AM = \\frac{1}{2}c + \\frac{1}{2}(p - c) = \\frac{a + b + c}{4}$$\n\nи следователно $OO_1 = \\frac{c(a + b + c)}{4a}$. Аналогично $OO_2 = \\frac{c(a + b + c)}{4b}$. Тъй като $\\angle ACB = 90^\\circ$, получаваме $\\angle O_1OO_2 = 90^\\circ$.\n\nНакрая, тъй като $S_{O_1O_2C} = |S_{OO_1O_2} - S_{OO_1C} - S_{OO_2C}|$, пресмятаме\n\n$$\\begin{array}{l} S_{OO_1O_2} - S_{OO_1C} - S_{OO_2C} = \\frac{OO_1.OO_2}{2} - \\frac{OO_1.b}{4} - \\frac{OO_2.a}{4} = \\\\ = \\frac{c^2(a + b + c)^2}{32ab} - \\frac{c(a + b + c)}{16} \\left(\\frac{b}{a} + \\frac{a}{b}\\right) = \\\\ = \\frac{c^2(a + b + c)^2}{32ab} - \\frac{c^3(a + b + c)}{16ab} = \\frac{c^2}{16}, \\end{array}$$\n\nтъй като $c^2 = a^2 + b^2$. Следователно $S_{O_1CO_2}$ не зависи от избора на $C$.",
-      "answer": "$S_{O_1CO_2} = \\frac{AB^2}{16}$.",
-      "difficulty": "medium",
-      "techniques": [
-        "external_inscribed_circles",
-        "similarity",
-        "area_computation"
-      ],
-      "confidence": "exact",
-      "reasoning": "Solution uses properties of external inscribed circles and similarity of triangles to express OO1, OO2 and compute area, matching step 1.10."
-    },
-    {
-      "source": "OLI-2-Областен кръг-2008-11 кл · 2008-11 · Зад. 4",
-      "statement": "В окръжност с радиус $R = 65$ е вписан четиригълник $ABCD$, за който $AB = 50$, $BC = 104$ и $CD = 120$. Да се намери страната $AD$.",
-      "solution": "Ако $O$ е центърът на окръжността, а $M$ и $N$ са среди съответно на страните $AB$ и $CD$, то $OM = \\sqrt{65^2 - 25^2} = 60$ и $ON = \\sqrt{65^2 - 60^2} = 25$. Следователно $\\triangle AMO \\cong \\triangle OND$, откъдето получаваме\n\n$$\\angle AOB + \\angle COD = 2(\\angle AOM + \\angle DON) = 180^\\circ.$$\n\nТогава диагоналите на четириъгълника са перпендикулярни, откъдето\n\n$$AD = \\sqrt{AB^2 + CD^2 - BC^2} = \\sqrt{6084} = 78.$$",
-      "answer": "AD = 78",
-      "difficulty": "medium",
-      "techniques": [
-        "cyclic_quadrilateral",
-        "ptolemy_theorem",
-        "perpendicular_diagonals"
-      ],
-      "confidence": "exact",
-      "reasoning": "Employs geometry of a cyclic quadrilateral inscribed in a circle of radius 65, derives perpendicular diagonals and computes AD via Pythagoras. Matches Вписана и външновписани окръжности → medium."
-    },
-    {
-      "source": "OLI-2-Областен кръг-2009-11 кл · 2009-11 · Зад. 2",
-      "statement": "Вписаната в △ABC окръжност се допира до страните AC и BC съответно в точки P и Q, а правата PQ пресича описаната около △ABC окръжност в точките K и L (K ∈ дъгата AC, L ∈ дъгата BC). Ако K е средата на дъгата AC, да се намери отношението KL : AB.",
-      "solution": "Решение. Имаме\n½(дъга AK + дъга CL) = ∠QPC = ∠PQC = ½(дъга CK + дъга BL).\nНо дъга AK = дъга CK и следователно L е среда на дъгата BC. Тогава AL пресича BK в центъра I на вписаната в △ABC окръжност и KL е симетрала на CI.\nТака получаваме, че PIQC е квадрат, ∠ACB = 90° и освен това △KLC ∼ △ABI, т.е. KL : AB = CS : IR = CS : CP = √2/2, където R е допирната точка на вписаната в △ABC окръжност с AB.",
-      "answer": "KL : AB = √2/2",
-      "difficulty": "medium",
-      "techniques": [
-        "incircle_circumcircle",
-        "similar_triangles",
-        "ratio"
-      ],
-      "confidence": "exact",
-      "reasoning": "Use incircle–circumcircle geometry, similar triangles to obtain KL:AB."
-    },
-    {
-      "source": "OLI-2-Областен кръг-2012-10 кл · 2012-10 · Зад. 2",
-      "statement": "Даден е △ABC. Външновписаната окръжност към страната BC има център J и се допира до правите AB и AC съответно в точки E и F. Ако BJ и CJ пресичат EF съответно в точки P и Q, и BC = 2PQ, да се намери ∠BAC.",
-      "solution": "Решение. Нека $\\angle BAC = \\alpha$. Тогава\n$$\\angle BJC = 90^\\circ - \\frac{\\alpha}{2} = \\angle BEF$$\nи следователно четириъгълникът $BEJQ$ е вписан в окръжност. Тъй като $\\angle BEJ = 90^\\circ$, то тази окръжност е с диаметър $BJ$. В същото време $\\angle JQP = \\angle EBP = \\angle CBP$ и следователно четириъгълникът $CBPQ$ е вписан в окръжност (с диаметър $BC$). Тогава\n$$\\triangle JQP \\sim \\triangle JBC \\Rightarrow \\frac{JQ}{JB} = \\frac{PQ}{BC} = \\frac{1}{2},$$\nт.е. $\\angle JBQ = 30^\\circ$, но $\\angle JQB = 90^\\circ$ и следователно\n$$\\angle BAC = \\alpha = 180^\\circ - 2\\angle BJC = 2\\angle JBQ = 60^\\circ.$$",
-      "answer": "$\\angle BAC = 60^\\circ$",
-      "difficulty": "medium",
-      "techniques": [
-        "angle_chasing",
-        "similarity",
-        "circle_properties"
-      ],
-      "confidence": "exact",
-      "reasoning": "Използва се ъглово пресмятане в външновписана окръжност, сходство на триъгълници и свойствата на диаметрови ъгли."
-    },
-    {
-      "source": "OLI-2-Областен кръг-2013-10 кл · 2013-10 · Зад. 2",
-      "statement": "Даден е △ABC с ∠ACB > 90°. Нека CH е височината от върха C (H ∈ AB), а AL е ъглополовящата на ∠BAC (L ∈ BC). Да се намери ∠ALC, ако е известно, че ∠ALC = ∠BHL.",
-      "solution": "Първо решение. Нека $\\angle ALC = \\angle BHL = \\varphi$ и $P$ е петата на височината от върха $B$ към правата $AC$ ($P \\in AC^\\to$). Четириъгълникът $HBPC$ е вписан в окръжност с диаметър $BC$ и следователно $\\angle BHP = \\angle BCP$. Тогава\n$$\\angle LAP = \\angle BCP - \\varphi = \\angle BHP - \\varphi = \\angle LHP,$$\nт.е. $AHLP$ е вписан четириъгълник. От друга страна, $AL$ е ъглополовяща на $\\measuredangle BAC$ и следователно $L \\in s_{PH}$. Имаме две възможности:\n\nСлучай 1. Ако $s_{PH} \\cap BC$, то $L$ е център на описаната около $HBPC$ окръжност, т.е. $BL = LC$, $AB = AC$. Но $\\measuredangle ACB > 90^\\circ$ и достигаме до противоречие.\n\nСлучай 2. Ако $s_{PH} \\equiv BC$, то $HBPC$ е делтоид и\n$$\\measuredangle CHL = \\measuredangle CPL = \\measuredangle BHL = \\varphi,$$\nт.е. $\\varphi = 45^\\circ$.\n\nВторо решение. Ако използваме стандартните означения за триъгълник, то\n$$\\frac{BL}{LC} = \\frac{S_{BHL}}{S_{CHL}} = \\frac{BH.\\sin\\varphi}{CH.\\cos\\varphi} = \\cot\\beta.\\operatorname{tg}\\varphi = \\cot\\beta.\\operatorname{tg}\\left(\\frac{\\alpha}{2} + \\beta\\right).$$\nОт друга страна,\n$$\\frac{BL}{LC} = \\frac{BA}{AC} = \\frac{\\sin\\gamma}{\\sin\\beta} = \\frac{\\sin(\\alpha + \\beta)}{\\sin\\beta}$$\nи следователно\n$$\\cos\\beta\\sin\\left(\\frac{\\alpha}{2} + \\beta\\right) = \\sin(\\alpha + \\beta)\\cos\\left(\\frac{\\alpha}{2} + \\beta\\right) \\Leftrightarrow 2\\alpha + \\beta = 90^\\circ,$$\nт.е. $\\varphi = 45^\\circ$.\n\nЗабележка. В произволен $\\triangle ABC$ условието $\\measuredangle ALC = \\measuredangle BHL$ е изпълнено тогава и само тогава, когато $\\measuredangle ACB = 90^\\circ + \\measuredangle ABC$.",
-      "answer": "$\\angle ALC = 45^\\circ$.",
-      "difficulty": "medium",
-      "techniques": [
-        "cyclic_quadrilateral",
-        "angle_bisector",
-        "angle_chasing"
-      ],
-      "confidence": "exact",
-      "reasoning": "Key step is recognising HBPC as cyclic (diameter BC) and using angle‑bisector properties to obtain φ=45°."
+      "reasoning": "Задачата използва теорема на Менелай за доказване на колинеарност, която е точка 1.1. Има няколко стъпки: изразяване на дължини, прилагане на Менелай и проверка на условието, следователно трудността е medium.",
+      "_crosslinked_from": "1.1",
+      "_crosslink_confidence": 0.85
     },
     {
       "source": "OLI-2-Областен кръг-2016-11 кл · 2016-11 · Зад. 2",
@@ -171,17 +94,32 @@
       "reasoning": "Uses properties of incircles in triangles ABD and ACD, angle bisectors and cyclic quadrilaterals to show intersection lies on mid‑base."
     },
     {
-      "source": "OLI-2-Областен кръг-2020-11 кл · 2020-11 · Зад. 2",
-      "statement": "В окръжност с център $O$ и радиус $R$ е вписан остроъгълен $\\triangle ABC$. Върху страната $BC$ е избрана точка $X$, за която $AX=BX$ и $OX=CX$. Да се намерят ъглите на $\\triangle ABC$, ако радиусът на описаната окръжност около $\\triangle AOC$ е равен на $R$.",
-      "solution": "Решение. Ще използваме стандартни означения за ъглите на △ABC. Тъй като △ABC е остроъгълен, то ∠AOC = 2β и от условието, че радиусът на описаната окръжност около △AOC е равен на R получаваме:\nb/sin β = b/sin 2β ⇔ sin β = sin 2β ⇔ β = 60°.\nПонеже ∠AOC = 2β и ∠AXC = ∠ABX + ∠BAX = 2β, то AOXC е вписан четириъгълник. Сега от OX = CX получаваме, че AX е ъглополовяща на ∠OAC. Следователно ∠OAC = 2∠XAC = 2(α − β) и понеже ∠OAC = 90° − β = 30° намираме\n2α − 120° = 30° ⇔ α = 75°.\nТогава γ = 45°.",
-      "answer": "∠A = 75°, ∠B = 60°, ∠C = 45°",
+      "source": "OLI-2-Областен кръг-2021-10 кл · 2021-10 · Зад. 10.2",
+      "statement": "(7 точки) За триъгълник $ABC$ външно вписаната окръжност $k$ с център $O$ и радиус $r$ към страната $AB$ се допира до $AB$ в точка $D$ и до продълженията на страните $AC$ и $BC$ съответно в точки $P$ и $Q$. Нека $CO$ пресича $AB$ в точка $L$. Ако $CD = r$, да се докаже, че $QP$ разполовява $OL$.",
+      "solution": "Решение. Нека $PQ$ пресича $OL$ в точка $T$. От $\\triangle QOC$ - правоъгълен следва $QO^2 = OT\\cdot OC\\;(1)$. Нека $DM$ е перпендикуляр от $D$ към $CO$. От $\\triangle DLO$ правоъгълен следва $DO^2 = OM\\cdot OL\\;(2)$. От (1) и (2) получаваме $OT\\cdot OC = OM\\cdot OL$. От $CD = OD$ следва $OC = 2\\cdot OM$, т.е. $2\\cdot OT = OL$, с което твърдението е доказано.",
+      "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "inscribed_circles",
-        "angle_chasing"
+        "circle_properties",
+        "power_of_a_point",
+        "similar_triangles"
       ],
       "confidence": "exact",
-      "reasoning": "Използва се свойството на вписаната окръжност и ъглополовящи за определяне на ъглите на триъгълника."
+      "reasoning": "Геометрична задача с външновписана окръжност. Решението използва свойства на допирните точки и подобни триъгълници. Главната техника е степен на точка (1.4), но точката е вписана окръжност (1.10). Трудността е средна поради необходимостта от построяване на помощни елементи."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2024-12 кл · 2024-12 · Зад. 12.1",
+      "statement": "Даден е остроъгълен триъгълник $ABC$ със среда на страната $AB$ точка $M$. Нека точка $D$ е на отсечката $MB$, а точките $I_1$ и $I_2$ са центровете на вписаните окръжности съответно за триъгълник $ADC$ и триъгълник $BDC$. Ако $\\angle I_1 MI_2 = 90^\\circ$, то да се докаже, че $AC = BC$.",
+      "solution": "Решение. Нека N е средата на \\( I_{1}I_{2} \\) , а X и Y са петите на перпендикулярите от \\( I_{1} \\) и \\( I_{2} \\) към правата AB. Нека H е петата на перпендикуляра от N към AB. Тогава \\( \\angle I_{1}MI_{2} = \\angle I_{1}DI_{2} = 90^{\\circ} \\) дава, че H е средата на отсечката MD, а т.к \\( I_{1}XYI_{2} \\) е трапец, то H също е среда и на отсечката XY. Така получаваме, че XM = DY. Имаме, че\n\n\\[\nX M = A M - A X = \\frac {A B - (A D + A C - C D)}{2} = \\frac {A B + C D - A D - A C}{2},\n\\]\n\nкакто и\n\n\\[\nD Y = \\frac {C D + B D - B C}{2}.\n\\]\n\nТъй като \\( AD + BD = AB \\) , то получаваме AC = BC.\n\nОценяване. (7 точки) 1т. за дефиниране на точките N, X, Y, (и трите трябва да са дефинирани за тази точка), 1т. за дефинирне на т. H, 1т. за доказване, че H е средата на MD, 1т. за доказване, че XM = DY, 3т. за довършване.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "вписани_окръжности",
+        "перпендикулярни_ъгли",
+        "алгебрични_преобразувания"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на вписаните окръжности и перпендикулярни ъгли. Основната техника е свързана с точка 1.10 (Вписана и външновписани окръжности). Решението използва допълнителни построения и алгебрични манипулации, които са типични за средна трудност."
     },
     {
       "source": "OLI-3-Национален кръг-1983-9-12 кл · 1983-None · Зад. 4",
@@ -198,159 +136,696 @@
       "reasoning": "Problem reduces to distances between circle centres inside a reduced square; uses properties of inscribed/circumscribed circles (step 1.10)."
     },
     {
-      "source": "OLI-3-Национален кръг-1989-9-12 кл · 1989-None · Зад. 1",
-      "statement": "Даден е триъгълникът ABC. Точката O е центърът на външновписаната към страната BC окръжност, а външновписаните към страните AB и AC окръжности се допират съответно до тези страни в точките M и N. Правата през O, която е перпендикулярна на MN, пресича правата BC в точка P. Да се намери числената стойност на отношението AB/AC на дължините на страните AB и AC, ако е известно, че отношението на лицата на триъгълниците ABC и MNP е 2R/r, където R и r са съответно радиусите на описаната и вписаната в △ABC окръжности.",
-      "solution": "Решение. Ще използваме означенията: a = BC, b = CA, c = AB, α = ∠BAC, β = ∠ABC, γ = ∠BCA и p = (a+b+c)/2. Нека външновписаната към страната BC окръжност се допира до тази страна в точката H (черт. 1). Ще докажем, че S_ABC/S_MNH = 2R/r. По косинусовата теорема cos α = (b²+c²−a²)/(2bc). Тогава\nsin(α/2) = √((1−cos α)/2) = √((a²−(b−c)²)/(4bc)) = √((p−b)(p−c)/(bc))\nи аналогично\nsin(β/2) = √((p−a)(p−c)/(ac)), sin(γ/2) = √((p−a)(p−b)/(ab)).\nОт друга страна, AM = p−b и AN = p−c. Следователно\nS_AMN = (1/2)AM·AN sin α = (1/2)(p−b)(p−c)sin α = (1/2)bc sin²(α/2)sin α = S_ABC sin²(α/2).\nПо същия начин S_BMH = S_ABC sin²(β/2) и S_CNH = S_ABC sin²(γ/2). Оттук след несложни преобразувания получаваме, че\nS_MNH = S_ABC − (S_AMH + S_BMH + S_CNH) = S_ABC·2sin(α/2)sin(β/2)sin(γ/2).\nНо sin(α/2)sin(β/2)sin(γ/2) = √((p−b)(p−c)/(bc))·√((p−a)(p−c)/(ac))·√((p−a)(p−b)/(ab)) = (p−a)(p−b)(p−c)/(abc) = (S_ABC²/p)/(4RS_ABC) = pr/(4R)·1/p = r/(4R).\nСледователно S_MNH = S_ABC·2r/(4R) и значи S_ABC/S_MNH = 2R/r. От доказаното следва, че △MNP и △MNH са равнолицеви. За точките P и H има две възможности: P ≡ H или P не съвпада с H. Ако P съвпада с H, от условието имаме OH ⊥ MN и понеже OH ⊥ BC, правата MN е успоредна на BC. Ако пък P и H са различни, от S_MNH = S_MNP следва, че точките P и H, които лежат на BC, са на равни разстояния от правата MN и значи пак MN ∥ BC. Но щом MN ∥ BC, от теоремата на Талес получаваме AM/AB = AN/AC, т.е. (p−b)/c = (p−c)/b или все едно (a+c−b)b = (a+b−c)c. Тогава (b−c)(b+c−a) = 0. И тъй като b+c > a, то b−c = 0. Следователно AC = AB и AB/AC = 1.",
-      "answer": "AB/AC = 1",
-      "difficulty": "medium",
-      "techniques": [
-        "excentral_circles",
-        "area_ratio",
-        "sine_law"
-      ],
-      "confidence": "exact",
-      "reasoning": "Solution uses excentral circles, half‑angle formulas and area ratios to deduce AB=AC."
-    },
-    {
-      "source": "OLI-3-Национален кръг-2002-9-12 кл · 2002-None · Зад. 2",
-      "statement": "От върха $A$ на триъгълник $ABC$ е спуснат перпендикуляр към външната ъглополовяща на ъгъл $ACB$. Аналогично, от $C$ е спуснат перпендикуляр към външната ъглополовяща на ъгъл $ABC$ и от върха $B$ е спуснат перпендикуляр към външната ъглополовяща на ъгъл $BAC$. Да се докаже, че ако $d$ е диаметърът на описаната окръжност около триъгълника, образуван от петите на трите перпендикуляра, а $r$ и $p$ са съответно радиусът на вписаната окръжност и полупериметърът на $\\triangle ABC$, то $r^2 + p^2 = d^2$.",
-      "solution": "Решение: Да означим петите на трите перпендикуляра съответно с $A_1$, $C_1$ и $B_1$, а средите на страните на $\\triangle ABC$ с $A_2$, $B_2$ и $C_2$ (черт. 1).\n\nТогава $\\measuredangle A_2BC_1 = 90^\\circ - \\frac{\\beta}{2}$ и тъй като $C_1A_2$ е медиана в правоъгълния $\\triangle BC_1C$, то $\\measuredangle BC_1A_2 = 90^\\circ - \\frac{\\beta}{2}$ откъдето намираме $\\measuredangle BA_2C_1 = \\beta$. Но $\\measuredangle B_2A_2C = \\beta$, което означава, че точките $B_2$, $A_2$ и $C_1$ лежат на една права.\n\nЩе докажем, че центърът $I$ на вписаната окръжност за $\\triangle A_2B_2C_2$ е център на описаната окръжност за $\\triangle A_1B_1C_1$.\n\nАко $T$ е допирната точка на вписаната в $\\triangle A_2B_2C_2$ окръжност със страната $A_2B_2$, то $TC_1 = TA_2 + A_2C_1 = \\left(\\frac{a+b+c}{4} - \\frac{a}{2}\\right) + \\frac{a}{2} = \\frac{p}{2}$. Следователно $IC_1^2 = IT^2 + TC_1^2 = \\left(\\frac{r}{2}\\right)^2 + \\left(\\frac{p}{2}\\right)^2$. Аналогично получаваме $IA_1^2 = IB_1^2 = \\left(\\frac{r}{2}\\right)^2 + \\left(\\frac{p}{2}\\right)^2$, което означава, че $IA_1 = IB_1 = IC_1 = \\frac{d}{2}$, където $d$ е диаметърът на описаната около $\\triangle A_1B_1C_1$ окръжност. Следователно $d^2 = r^2 + p$, с което задачата е решена.",
+      "source": "OLI-3-Национален кръг-1988-9-12 кл · 1988-None · Зад. 4",
+      "statement": "Точките A, B и C не лежат на една права. За произволна точка D от лъча AC→с E и F са означени допирните точки на вписаната в триъгълника ABD окръжност съответно със страните AD и BD. Да се докаже, че когато точката D описва лъча AC→, правата EF минава през постоянна точка.",
+      "solution": "Върху лъча AC→ намираме точка L така, че AL = AB и означаваме с M средата на отсечката BL (черт. 2). Нека D е точка от лъча AC. Ще докажем, че правата EF минава през точката M.\n\nНека  \\( \\overrightarrow{DA}=\\overrightarrow{a},\\overrightarrow{DB}=\\overrightarrow{b},DA=a,DB=b,AB=AL=d,a+b+d=2p. \\)\n\nТогава\n\n$$\\overrightarrow {D L} = \\frac {a - d}{a} \\overrightarrow {a}, \\quad \\overrightarrow {D F} = \\frac {p - d}{b} \\overrightarrow {b} \\quad \\text { и }$$\n\n$$\\overrightarrow {D M} = \\frac {1}{2} (\\overrightarrow {D B} + \\overrightarrow {D L}) = \\frac {1}{2} \\left(\\overrightarrow {b} + \\frac {a - d}{a} \\overrightarrow {a}\\right)$$\n\nЧерт. 2\n\nСледователно\n\n$$\\overrightarrow {F M} = \\overrightarrow {D M} - \\overrightarrow {D F} = \\frac {1}{2} \\overrightarrow {b} + \\frac {a - d}{2 a} \\overrightarrow {a} - \\frac {p - d}{b} \\overrightarrow {b} = \\frac {a - d}{2} \\left(\\frac {\\overrightarrow {a}}{a} - \\frac {\\overrightarrow {b}}{b}\\right).$$\n\nОттук получаваме, че правата FM е перпендикулярна на ъглополовящата на ъгъла ADB. Тъй като и EF е перпендикулярна на тази ъглополовяща, то EF минава през точката M, което и трябваше да се докаже.\n\nДоказателството, че точките E, F и M лежат на една права, може да се извърши и с теоремата на Менелай, синусовата теорема и по други подобни начини. Точката M може да бъде идентифицирана и като пресечна точка на правата EF с ъглополовящата на ъгъла BAC, например по следния начин:\n\nЛесно се вижда, че  \\( \\angle MEA = 90^{\\circ} + \\frac{1}{2}\\angle ADB \\)  и  \\( \\angle AOB = 90^{\\circ} + \\frac{1}{2}\\angle ADB \\) , където O е центърът на вписаната в триъгълника ABD окръжност. Тогава триъгълниците AME и ABO са подобни (тъй като имат по два съответно равни ъгли). Следователно  \\( \\frac{AM}{AB} = \\frac{AE}{AO} = \\cos\\frac{\\alpha}{2} \\) , където  \\( \\alpha = \\angle BAC \\) , т.е.  \\( AM = AB\\cos\\frac{\\alpha}{2} \\) . Оттук получаваме, че положението на точката M върху ъглополовящата на  \\( \\angle BAC \\)  не зависи от положението на точката D върху лъча  \\( AC^{\\rightarrow} \\) .",
       "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "inscribed_exscribed_circles",
-        "perpendicular_to_external_bisector",
-        "geometry"
+        "incircle_properties",
+        "vector_geometry",
+        "angle_bisector",
+        "invariant_point"
       ],
       "confidence": "exact",
-      "reasoning": "Relates incircle, circumcircle and external bisectors; main tool is theory of inscribed/exscribed circles."
+      "reasoning": "Задача за вписана окръжност в триъгълник и постоянна точка на права. Точка 1.10 (Вписана и външновписани окръжности) е точна. Решението използва векторен подход и свойства на ъглополовящи, със средна сложност."
     },
     {
-      "source": "OLI-3-Национален кръг-2005-9-12 кл · 2005-None · Зад. 2",
-      "statement": "Окръжности k₁ и k₂ се допират външно в точка T. Права пресича k₁ в точки A и B и се допира до k₂ в точка X. Правата XT пресича k₁ в точка S. Върху дъгата TS, несъдържаща A и B, е избрана точка C. Нека CY е допирателната към k₂ (Y ∈ k₂), за която отсечките CY и ST не се пресичат. Ако I е пресечната точка на правите XY и SC, да се докаже, че:\nа) точките C, T, Y и I лежат на една окръжност;\nб) точка I е център на външновписаната окръжност за △ABC към BC.",
-      "solution": "а) Понеже k₁ и k₂ се допират, имаме ∠BXT = дъга XT/2 = дъга TS/2 = ∠TAS. Оттук лесно следва, че S е среда на дъгата AB. Тогава ∠TCI = ∠TAS (защото ATCS е вписан в k₁), ∠TAS = ∠BXT, ∠BXT = ∠TYX (защото се измерват с една и съща дъга). Следователно ∠TCI = ∠TYI, което означава, че около CTIY може да се опише окръжност.\nб) Тъй като ∠AXS = ∠TAS, получаваме че △AXS ∼ △TAS. Оттук намираме SA² = ST·SX. От а) имаме ∠CIT = ∠CYT = ∠TXY и следователно △SXI ∼ △SIT. Оттук намираме SI² = ST·SX. Окончателно получихме SA = SI. Освен това от ∠BCI = 180° − ∠BCS = 180° − (γ + (α + β)/2) = 90° − γ/2, следва, че CI е външна ъглополовяща на ∠ACB. Остава да забележим, че SB = SA = SI и от равнобедрения △BSI с ∠BSI = ∠BSC = α намираме ∠BIS = 90° − α/2. Сега от △BCI намираме ∠CBI = 90° − β/2, което означава, че BI е външна ъглополовяща на ∠ABC. Следователно I е центърът на външновписаната окръжност за триъгълник ABC към страната BC.",
-      "answer": "а) Около CTIY може да се опише окръжност. б) I е центърът на външновписаната окръжност за триъгълник ABC към страната BC.",
+      "source": "OLI-3-Национален кръг-2007-9-12 кл · 2007-None · Зад. 1",
+      "statement": "В четириъгълник $ABCD$, за който $\\angle  BAD + \\angle  ADC > 180^◦$ е вписана окръжност с център $I$. През $I$ е прекарана права, която пресича страните $AB$ и $CD$ съответно в точки $X$ и $Y$ така, че $IX = IY$. Да се докаже, че $AX⋅DY = BX⋅CY$.",
+      "solution": "**Решение.** Нека $M$ и $N$ са допирни точки на вписаната окръжност със страните $AB$ и $CD$. От условието $\\angle  BAD + \\angle  ADC > 180^◦$ следва, че $AB \\parallel  CD$ и $\\angle  MIN < 180^◦$. Освен това, от $IM = IN$, $\\angle  IMX = \\angle  INY$ и $IX = IY$, следва, че $\\triangle IMX ≅ \\triangle INY$, откъдето $\\angle  IYN = \\angle  IXM$. Ако $X ∈ BM$ и $Y ∈ DN$ (или $X ∈ AM$ и $Y ∈ CN$), то $\\angle  IYN = \\angle  IXM$ означава, че $AB \\parallel  CD$, което не е вярно. Следователно разположението на точките $X$ и $Y$ е както е показано на чертежа. От четириъгълника $AXYD$ имаме\n\n$$\\angle AXI = \\angle DYI = 180^◦ - \\angle \\frac{A}{2} - \\angle \\frac{D}{2},$$\n\nоткъдето намираме $\\angle AIX = \\angle \\frac{D}{2}$ и $\\angle DIY = \\angle \\frac{A}{2}$. Следователно $\\triangle AIX \\sim \\triangle IDY$, откъдето следва, че $AX·DY = IY·IX$. Аналогично $\\triangle BIX \\sim \\triangle ICY$, т.е. $BX·CY = IY·IX$. Окончателно $AX·DY = BX·CY$.",
+      "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "cyclic_quadrilateral",
-        "similarity",
+        "circle_inscribed",
+        "similar_triangles",
         "angle_chasing"
       ],
       "confidence": "exact",
-      "reasoning": "A2 works with tangent circles, cyclicity of C,T,Y,I and similarity of triangles, exactly the geometry of S2."
-    },
-    {
-      "source": "OLI-3-Национален кръг-2008-9-12 кл · 2008-None · Зад. 1",
-      "statement": "Нека $\\triangle ABC$ е остроъгълен с вътрешна ъглополовяща $CL, L \\in AB$. Точка P принадлежи на отсечката CL така, че $\\angle APB = \\pi - \\frac{1}{2} \\angle ACB$. Нека $k_1$ и $k_2$ са описаните окръжности съответно около $\\triangle APC$ и $\\triangle BPC$. $BP \\cap k_1 = Q, AP \\cap k_2 = R$. Допирателните към $k_1$ в Q и към $k_2$ в B се пресичат в точка S, допирателните към $k_1$ в A и към $k_2$ в R се пресичат в точка T. Да се докаже, че $|AS|=|BT|$.",
-      "solution": "Като използваме, че $SQ$ и $SB$ са допирателни съответно към $k_1$ и $k_2$ получаваме $\\angle QCB = \\angle QCP + \\angle PCB = \\angle SQB + \\angle SBQ$, откъдето\n\n$\\angle QSB + \\angle QCB = \\angle QSB + \\angle SQB + \\angle SBQ = 180^{\\circ}.$\n\nСледователно четириъгълникът $SBCQ$ е вписан. Освен това\n\n$\\angle QCA = \\angle QPA = \\frac{1}{2}\\gamma = \\angle QBC = \\angle QCS,$\n\nкоето означава, че $A \\in CS$. Оттук\n\n$\\angle QAS = 180^{\\circ} - \\angle QAC = 180^{\\circ} - \\angle QPC = \\angle CPB$\n\nи понеже $\\angle SQA = \\frac{1}{2}\\gamma = \\angle BCP$, то $\\triangle QAS \\sim \\triangle CPB$. Тогава $\\frac{AS}{AQ} = \\frac{PB}{PC}$ и като използваме, че $AQ = PA$ (тъй като $\\angle QCA = \\angle PCA = \\frac{1}{2}\\gamma$), получаваме $AS = \\frac{PB.AQ}{PC} = \\frac{PB.PA}{PC}$. Аналогично намираме $BT = \\frac{PB.PA}{PC}$, т.е. $AS = BT$.",
-      "answer": null,
-      "difficulty": "medium",
-      "techniques": [
-        "tangents",
-        "cyclic_quadrilateral",
-        "similar_triangles"
-      ],
-      "confidence": "exact",
-      "reasoning": "Solution uses tangents to the two circles, shows S,B,C,Q cyclic and derives similarity of triangles QAS and CPB to get AS=BT."
+      "reasoning": "Задачата използва свойства на вписаната окръжност и подобни триъгълници. Основната техника е свързана с точка 1.10."
     },
     {
       "source": "OLI-3-Национален кръг-2018-9-12 кл · 2018-None · Зад. 4",
-      "statement": "Точката M лежи на страната AB на описания четириъгълник ABCD. Точките I₁, I₂ и I₃ са центрове на вписаните окръжности на △MBC, △MCD и △MDA. Да се докаже, че точките M, I₁, I₂ и I₃ лежат на една окръжност.",
-      "solution": "Решение. Първо решение. Нека ω₁, ω₂ и ω₃ са вписаните окръжности на △MBC, △MCD и △MDA. За всяка окръжност ω и всяка точка X извън ω, с t(X, ω) означаваме дължината на допирателната от X към ω.\nДължината t₁ на общата вътрешна допирателна на ω₁ и ω₂ е равна на\nt(M, ω₂) − t(M, ω₁) = (1/2)(MC + MD − CD − MB − MC + BC).\nАналогично, дължината t₂ на общата вътрешна допирателна на ω₂ и ω₃ е равна на\nt(M, ω₂) − t(M, ω₃) = (1/2)(MC + MD − CD − MD − MA + DA).\nНай-накрая, дължината t₃ на общата външна допирателна на ω₁ и ω₃ е равна на\nt(M, ω₁) + t(M, ω₃) = (1/2)(MB + MC − BC + MD + MA − DA).\nПонеже ABCD е описан, имаме, че AB + CD = BC + DA, откъдето и t₁ + t₂ = t₃. Следователно ω₁, ω₂ и ω₃ имат обща допирателна s, която разделя ω₂ от ω₁ и ω₃.\nНека △MKL е образуван от правите MC, MD и s. Тогава, понеже I₁I₂ и I₂I₃ са външни ъглополовящи за този триъгълник, имаме, че ∠I₁I₂I₃ = 90° − (1/2)∠KML = 180° − ∠I₁MI₃. Следователно четириъгълникът MI₁I₂I₃ е вписан.\nВторо решение. Лема. Нека I е център на вписаната окръжност на △ABC и нека точките P и Q лежат на правите AB и AC. Тогава точките A, I, P и Q лежат на една окръжност точно когато\nBP + CQ = BC,\nкъдето BP е равно на BP ако P лежи на лъча BA→ и на −BP в противен случай, и аналогично за CQ.\nДоказателство на лемата. Ще разгледаме само случая, когато точките P и Q лежат на отсечките AB и AC. Всички останали случаи се разглеждат аналогично.\nДа допуснем, че A, I, P и Q лежат на една окръжност. Нека D и E са допирните точки на вписаната окръжност на △ABC с AB и AC. Имаме, че ∠PIQ = 180° − α, така че ∠DIP = ∠EIQ и следователно △DIP ≃ △EIQ. Оттук DP = EQ и BP + CQ = BD + CE = BC, което и трябваше да се докаже.\nОбратната посока на твърдението се установява със същите разсъждения, но в обратен ред. □\nНека описаната окръжност на △MI₁I₃ пресича правите AB, CM и DM за втори път в точките P, Q и R. Съгласно лемата, BP + CQ = BC и DR + AP = DA. Следователно CQ + DR = BC + DA − BP − AP = BC + DA − AB. Понеже ABCD е описан, последният израз е равен на CD. Съгласно лемата, това решава задачата.",
+      "statement": "Точката $M$ лежи на страната $AB$ на описания четириъгълник $ABCD$. Точките $I_1$, $I_2$ и $I_3$ са центрове на вписаните окръжности на $\\triangle MBC$, $\\triangle MCD$ и $\\triangle MDA$. Да се докаже, че точките $M$, $I_1$, $I_2$ и $I_3$ лежат на една окръжност.",
+      "solution": "Решение. Поръс решение. Нека $ω_1$, $ω_2$ и $ω_3$ са вписаните окръжности на $\triangle MBC$, $\triangle MCD$ и $\triangle MDA$. За всяка окръжност $ω$ и всяка точка $X$ извън $ω$, с $t(X, ω)$ означаваме дължината на допирателната от $X$ към $ω$.\n\nДължината $t_1$ на общата вътрешна допирателна на $ω_1$ и $ω_2$ е равна на\n\n$$t(M, ω_2) - t(M, ω_1) = \\frac{1}{2}(MC + MD - CD - MB - MC + BC).$$\n\nАналогично, дължината $t_2$ на общата вътрешна допирателна на $ω_2$ и $ω_3$ е равна на\n\n$$t(M, ω_2) - t(M, ω_3) = \\frac{1}{2}(MC + MD - CD - MD - MA + DA).$$\n\nНай-накрая, дължината $t_3$ на общата външна допирателна на $ω_1$ и $ω_3$ е равна на\n\n$$t(M, ω_1) + t(M, ω_3) = \\frac{1}{2}(MB + MC - BC + MD + MA - DA).$$\n\nПонеже $ABCD$ е описан, имаме, че $AB + CD = BC + DA$, откъдето и $t_1 + t_2 = t_3$. Следователно $ω_1$, $ω_2$ и $ω_3$ имат обща допирателна $s$, която разделя $ω_2$ от $ω_1$ и $ω_3$.\n\nНека $\triangle MKL$ е образуван от правите $MC$, $MD$ и $s$. Тогава, понеже $I_1I_2$ и $I_2I_3$ са външни ъглополовящи за този триъгълник, имаме, че $\\angle  I_1I_2I_3 = 90^° - \\frac{1}{2}\\angle  KML = 180^° - \\angle  I_1MI_3$. Следователно четириъгълникът $MI_1I_2I_3$ е вписан.\n\nВторо решение. Лема. Нека $I$ е център на вписаната окръжност на $\triangle ABC$ и нека точките $P$ и $Q$ лежат на правите $AB$ и $AC$. Тогава точките $A$, $I$, $P$ и $Q$ лежат на една окръжност точно когато\n\n$$\\overline{BP} + \\overline{CQ} = BC,$$\n\nкъдето $\\overline{BP}$ е равно на $BP$ ако $P$ лежи на лъча $BA^→$ и на $-BP$ в противен случай, и аналогично за $\\overline{CQ}$. Доказателство на лемата. Ще разгледаме само случая, когато точките $P$ и $Q$ лежат на отсечките $AB$ и $AC$. Всички останали случаи се разглеждат аналогично.\n\nДа допуснем, че $A$, $I$, $P$ и $Q$ лежат на една окръжност. Нека $D$ и $E$ са допирните точки на вписаната окръжност на $\triangle ABC$ с $AB$ и $AC$. Имаме, че $\\angle  PIQ = 180^° - α$, така че $\\angle  DIP = \\angle  EIQ$ и следователно $\triangle DIP ≃ \triangle EIQ$. Оттук $DP = EQ$ и $BP + CQ = BD + CE = BC$, което и трябваше да се докаже.\n\nОбратната посока на твърдението се установява със същите разсъждения, но в обратен ред. $□$\n\nНека описаната окръжност на $\triangle MI_1I_3$ пресича правите $AB$, $CM$ и $DM$ за втори път в точките $P$, $Q$ и $R$. Съгласно лемата, $\\overline{BP} + \\overline{CQ} = BC$ и $\\overline{DR} + \\overline{AP} = DA$. Следователно $\\overline{CQ} + \\overline{DR} = BC + DA - \\overline{BP} - \\overline{AP} = BC + DA - AB$. Понеже $ABCD$ е описан, последният израз е равен на $CD$. Съгласно лемата, това решава задачата.\n\nОценяване. (7 точки) 4 т. за $t_1 + t_2 = t_3$; 3 т. за довършване на решението.",
       "answer": null,
       "difficulty": "medium",
       "techniques": [
         "incircle",
         "tangent_lengths",
-        "cyclic_quadrilateral"
+        "cyclic_points"
       ],
       "confidence": "exact",
-      "reasoning": "Employs equal tangent‑length lemmas for incircles and shows MI₁I₂I₃ is cyclic."
+      "reasoning": "Задачата разглежда центрове на вписани окръжности в триъгълници и доказва, че четири точки са конциклични. Решението използва дължини на допирателни и свойство на описан четириъгълник. Това е класическа задача за вписани окръжности."
     },
     {
-      "source": "OLI-3-Национален кръг-2023-9-12 кл · 2023-None · Зад. 2",
-      "statement": "Даден е разностранен триъгълник ABC. Нека A₁, B₁ и C₁ са допирните точки на външновписаните окръжности със страните BC, CA, AB съответно. Центровете на описаната около △AB₁C₁, △BA₁C₁, △CA₁B₁ са означени с O_A, O_B, O_C съответно. Да се докаже, че правите през O_A, O_B и O_C, съответно успоредни на ъглополовящите на ∠A, ∠B и ∠C, се пресичат в една точка.",
-      "solution": "Решение. Нека O е центърът на описаната около △ABC окръжност, и нека T е средата на дъгата ACB от описаната окръжност (виж чертежа). Имаме AB₁ = BA₁, AT = BT, ∠B₁AT = ∠A₁BT, следователно △B₁AT ≅ △A₁BT. От еднаквостта получаваме, че ∠CB₁T = ∠CA₁T, следователно описаната около A₁B₁C окръжност минава през T и OO_C е симетрала на CT. Но правите OO_C и ъглополовящата на ∠ACB са перпендикулярни на CT (защо?), следователно правата през O_C, успоредна на ъглополовящата на ∠ACB минава през O! Повтаряйки това разсъждение, достигаме до заключението, че исканите прави се пресичат в O.",
-      "answer": "Трите прави се пресичат в центъра O на описаната около △ABC окръжност.",
-      "difficulty": "medium",
-      "techniques": [
-        "excentral_circles",
-        "angle_bisectors",
-        "concurrency"
-      ],
-      "confidence": "exact",
-      "reasoning": "Конструира се точка T от външновписаните окръжности, използват се свойства на ъглополовящите и симетралите, за да се докаже съвместното им пресичане."
-    },
-    {
-      "source": "OLI-2-Областен кръг-2010-11 кл · 2010-11 · Зад. 4",
-      "statement": "Даден е остроъгълен триъгълник ABC, за който cos ∠BAC = 1/3. Правата през A, успоредна на медианата BM, M ∈ AC, пресича продължението на височината CC₁, C₁ ∈ AB, в точка D. Ако CC₁ : C₁D = 2 : 1, да се намери отношението R/r, където R и r са съответно радиусите на описаната и вписаната окръжност за △ABC.",
-      "solution": "Решение. Да означим с N пресечната точка на BM и CC₁. Тъй като MN е успоредна на AD и M е среда на AC, то MN е средна отсечка в △ADC. Следователно N е среда на CD и като използваме, че CC₁ : C₁D = 2 : 1, лесно получаваме CN : NC₁ : C₁D = 3 : 1 : 2.\nАко AC = 2t, то AC₁ = AC cos ∠BAC = 2t/3 и от подобието на △ADC₁ и △BNC₁ намираме AC₁/BC₁ = DC₁/NC₁ = 2, т.е. BC₁ = t/3. Сега от косинусовата теорема пресмятаме\nBC = √(t² + 4t² − (4/3)t²) = t√(11/3).\nТъй като sin ∠BAC = √(1 − cos² ∠BAC) = 2√2/3, то R = BC/(2 sin ∠BAC) = t√66/8.\nОт формулата r(AB + BC + CA) = AB·AC sin ∠BAC намираме r = 4t√2/(9 + √33) и следователно\nR/r = (9√33 + 33)/32.",
-      "answer": "R/r = (9√33 + 33)/32.",
-      "difficulty": "hard",
-      "techniques": [
-        "law_of_cosines",
-        "circumradius",
-        "inradius",
-        "similar_triangles"
-      ],
-      "confidence": "exact",
-      "reasoning": "Uses cosine law, similarity and formulas for R and r to obtain R/r."
-    },
-    {
-      "source": "OLI-2-Областен кръг-2011-10 кл · 2011-10 · Зад. 5",
-      "statement": "Нека T е множеството от всички триъгълници ABC с радиуси r и r_a съответно на вписаната окръжност и на външновписаната окръжност срещу върха A, където r и r_a са фиксирани положителни числа. Да се докаже, че:\nа) всички триъгълници в T имат една и съща дължина на височината от върха A;\nб) измежду всички триъгълници в T най-малко лице има този, за който AB = AC.",
-      "solution": "Решение. а) Нека $I$ и $I_a$ са съответно центъровете на вписаната и външновписаната окръжност, а $AH = h_a$ е разстоянието от $A$ до $BC$, $H \\in BC$. Ако $IP \\perp BC$, $P \\in BC$, и $I_aQ \\perp BC$, $Q \\in BC$, имаме $\\frac{AI}{AI_a} = \\frac{r}{r_a}$. Аналогично, ако $IR \\perp AH$, $R \\in AH$, и $I_aS \\perp AH$, $S \\in AH$, то $\\frac{AI}{AI_a} = \\frac{h_a - r}{h_a + r_a}$. Оттук се вижда, че $h_a = \\frac{2rr_a}{r_a - r}$ може да бъде определено еднозначно по $r$ и $r_a$, и следователно всички триъгълници от $T$ имат равни височини през $A$.\n\nб) От а) следва, че най-малко лице ще има този от триъгълниците в $T$, в който дължината на страната $BC$ е минимална. Лесно се вижда, че четириъгълникът $BI_aCI$ е вписан в окръжност $k$ с диаметър $II_a$, като $II_a \\ge r + r_a$ и равенство се достига, когато вписаната и външновписаната окръжност се допират. В същия случай мярката на $\\angle BAC$ е максимална, а $BC$ е хорда в $k$ срещу ъгъл $90^\\circ + \\frac{1}{2} \\angle BAC$.\n\nПолучихме, че лицето на $\\triangle ABC$ е минимално точно тогава, когато вписаната и външновписаната окръжност се допират. Последното е възможно само тогава, когато $AB = AC$.",
+      "source": "OLI-2-Областен кръг-1996-10 кл · 1996-10 · Зад. 10.2",
+      "statement": "The circles $k_1$ and $k_2$ with centers $O_1$ and $O_2$ respectively are externally tangent at the point $C$, while the circle $k$ with center $O$ is externally tangent to $k_1$ and $k_2$. Let $ℓ$ be the common tangent of $k_1$ and $k_2$ at the point $C$ and let $AB$ be the diameter of $k$, which is perpendicular to $ℓ$, the points $A$ and $O_1$ lie in one and the same semiplane with respect to the line $ℓ$. Prove that the lines $AO_2$, $BO_1$ and $ℓ$ have a common point.",
+      "solution": "Solution. Denote by $r, r_1$ and $r_2$ the radii of $k, k_1$ and $k_2$, by $M$ and $N$ the tangent points of $k$ with $k_1$ and $k_2$, respectively and by $P$ the common point of $ℓ$ and $AB$ (Figure 1).\n\nIt follows from $O_1O_2 ⊥ ℓ$ and $AB ⊥ ℓ$ that $\\triangle  BON ∼ \\triangle  CO_2N$. Then $\\angle CNO_2 = \\angle ONB$, and consequently the points $C, N$ and $B$ are colinear. Also, $\\frac{BN}{CN} = \\frac{BO}{CO_2} = \\frac{r}{r_2}$. Analogously, $A, M$ and $C$ are colinear and $\\frac{AM}{MC} = \\frac{r}{r_1}$.\n\nThe lines $AN, BM$ and $ℓ$ have a common point $H$, which is the altitude center of $\\triangle  ABC$. By Ceva's theorem we have: $\\frac{AP}{PB} · \\frac{BN}{NC} · \\frac{CM}{MA} = \\frac{AP}{PB} · \\frac{r}{r_2} · \\frac{r_1}{r} = 1$, from where:\n\n$$\\frac{r_1}{PB} = \\frac{r_2}{AP}. \\tag{1}$$\n\nLet now $D_1$ and $D_2$ be the common points of the line $ℓ$ with the lines $BO_1$ and $AO_2$, respectively. Obviously, $\\triangle  O_1CD_1 ∼ \\triangle  BPD_1$ (Figure 2), from where $\\frac{CD_1}{D_1P} = \\frac{r_1}{PB}$. Analogously, $\\frac{CD_2}{D_2P} = \\frac{r_2}{AP}$ and according to (1) we have $\\frac{CD_1}{D_1P} = \\frac{CD_2}{D_2P}$, which shows that $D_1 ≡ D_2$. Thus, the lines $AO_2$, $BO_1$ and $ℓ$ have a common point.",
       "answer": null,
       "difficulty": "hard",
       "techniques": [
-        "incircle_excircle",
-        "homothety",
-        "area_minimization"
+        "similar_triangles",
+        "ceva_theorem",
+        "circle_geometry"
       ],
       "confidence": "exact",
-      "reasoning": "Теорията за вписани и външновписани окръжности е централна; се използва хомотетия и сравняване на височини и площи."
+      "reasoning": "Решението използва подобие на триъгълници и теорема на Чева за доказателство. Точка 1.2 (Теорема на Чева) отговаря.",
+      "_crosslinked_from": "1.2",
+      "_crosslink_confidence": 0.78
     },
     {
-      "source": "OLI-3-Национален кръг-1987-9-12 кл · 1987-None · Зад. 3",
-      "statement": "Нека MABCD е пирамида със следните свойства: основата ABCD е квадрат; MA = MD; MA² + AB² = MB²; лицето на триъгълника ADM е равно на 1. Да се намери радиусът на най-голямата сфера, която се съдържа в някоя пирамида от разглеждания вид.",
-      "solution": "Решение. Ще използваме едно планиметрично твърдение, чието доказателство предоставяме на читателя: радиусът на всяка окръжност, която се съдържа в даден триъгълник, не надминава радиуса на окръжността, вписана в този триъгълник.\nНека MABCD е една от разглежданите пирамиди (черт. 1). От условието следва, че AB ⊥ AD и AB ⊥ MA. Тогава правата AB е перпендикулярна на равнината (ADM). Същото е вярно и за правата CD, която е успоредна на AB.\nЕто защо равнините (ABCD), (ABM) и (CDM) са перпендикулярни на равнината (ADM) — всяка от тях съдържа поне една от правите AB и CD, перпендикулярни на (ADM). Триъгълниците ABM и DCM са еднакви, така че MB = MC. Да означим с K и L средите съответно на AD и BC. Тъй като триъгълниците ADM и BCM са равнобедрени, то AD ⊥ MK, BC ⊥ ML. Освен това AD ⊥ KL, BC ⊥ KL. Вече можем както по-горе да направим извода, че всяка от равнините (ABCD), (ADM) и (BCM) е перпендикулярна на равнината (KLM).\nСега да разгледаме произволна сфера σ, която се съдържа в пирамидата (MABCD). Ортогоналната проекция на σ в равнината (ADM) е окръжност, която се съдържа в △ADM, тъй като направлението на проектиране е успоредно на всяка от равнините (ABCD), (ABM) и (CDM), а равнината (ADM) е перпендикулярна на това направление. Следователно радиусът на σ не надминава радиуса R на окръжността, вписана в △ADM. По същия начин можем да се убедим, че ортогоналната проекция на σ в равнината (KLM) е окръжност, която лежи в △KLM. В такъв случай радиусът на σ не надминава радиуса r на вписаната в △KLM окръжност.\nЗа да сравним R и r, полагаме KL = x и MK = y. Тъй като △KLM е правоъгълен, защото ∠MKL е линеен ъгъл на двустенния ъгъл между перпендикулярните равнини (ADM) и (ABCD), то\nML = √(x²+y²), S_KLM = xy/2 и r = xy/(x+y+√(x²+y²)).\nОсвен това AM = DM = √(x²+4y²)/2, S_ADM = xy/2 и R = xy/(x+√(x²+4y²)). Вече не е трудно да се докаже, че r < R, понеже y+√(x²+y²) > √(x²+4y²). Неравенството r < R показва още, че сферата с радиус r, чийто център съвпада с центъра на вписаната в △KLM окръжност, се съдържа в пирамидата MABCD.\nВсяка от разглежданите пирамиди се определя еднозначно от числата x = KL и y = MK, за които xy = 2S_ADM = 2. От направените разсъждения е ясно, че при дадени x и y радиусът на най-голямата сфера, съдържаща се в съответната пирамида, е равен на\nr(x,y) = xy/(x+y+√(x²+y²)) = 2/(x+y+√(x²+y²)).\nОстава да намерим най-голямата стойност на r(x,y) при условията x > 0, y > 0, xy = 2. Тъй като x+y ≥ 2√(xy) = 2√2, √(x²+y²) ≥ √(2xy) = 2, имаме\nr(x,y) = 2/(x+y+√(x²+y²)) ≤ 2/(2√2+2) = √2−1.\nРавенство се достига единствено при x = y = √2. Търсеният максимален радиус е √2−1.",
-      "answer": "√2−1",
+      "source": "OLI-2-Областен кръг-1996-11 кл · 1996-11 · Зад. 11.2",
+      "statement": "The circles $k_1$ and $k_2$ with centers $O_1$ and $O_2$ respectively are externally tangent at the point $C$, while the circle $k$ with center $O$ is externally tangent to $k_1$ and $k_2$. Let $ℓ$ be the common tangent of $k_1$ and $k_2$ at the point $C$ and let $AB$ be the diameter of $k$, which is perpendicular to $ℓ$, the points $A$ and $O_1$ lie in one and the same semiplane with respect to the line $ℓ$. Prove that the lines $AO_2$, $BO_1$ and $ℓ$ have a common point.",
+      "solution": "Solution. Denote by $r, r_1$ and $r_2$ the radii of $k, k_1$ and $k_2$, by $M$ and $N$ the tangent points of $k$ with $k_1$ and $k_2$, respectively and by $P$ the common point of $\\ell$ and $AB$ (Figure 1).\n\nIt follows from $O_1O_2 \\perp \\ell$ and $AB \\perp \\ell$ that $\\triangle BON \\sim \\triangle CO_2N$. Then $\\angle CNO_2 = \\angle ONB$, and consequently the points $C, N$ and $B$ are colinear. Also, $\\frac{BN}{CN} = \\frac{BO}{CO_2} = \\frac{r}{r_2}$. Analogously, $A, M$ and $C$ are colinear and $\\frac{AM}{MC} = \\frac{r}{r_1}$.\n\nThe lines $AN, BM$ and $\\ell$ have a common point $H$, which is the altitude center of $\\triangle ABC$. By Ceva's theorem we have: $\\frac{AP}{PB} \\cdot \\frac{BN}{NC} \\cdot \\frac{CM}{MA} = \\frac{AP}{PB} \\cdot \\frac{r}{r_2} \\cdot \\frac{r_1}{r} = 1$, from where:\n$$\\frac{r_1}{PB} = \\frac{r_2}{AP}. \\tag{1}$$\n\nLet now $D_1$ and $D_2$ be the common points of the line $\\ell$ with the lines $BO_1$ and $AO_2$, respectively. Obviously, $\\triangle O_1CD_1 \\sim \\triangle BPD_1$ (Figure 2), from where $\\frac{CD_1}{D_1P} = \\frac{r_1}{PB}$. Analogously, $\\frac{CD_2}{D_2P} = \\frac{r_2}{AP}$ and according to (1) we have $\\frac{CD_1}{D_1P} = \\frac{CD_2}{D_2P}$, which shows that $D_1 \\equiv D_2$. Thus, the lines $AO_2$, $BO_1$ and $\\ell$ have a common point.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "similar_triangles",
+        "ceva_theorem",
+        "collinearity"
+      ],
+      "confidence": "exact",
+      "reasoning": "Използва се подобие на триъгълници и теорема на Чева за доказване на колинеарност.",
+      "_crosslinked_from": "1.2",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-2-Областен кръг-1996-12 кл · 1996-12 · Зад. 12.2",
+      "statement": "The circles $k_1$ and $k_2$ with centers $O_1$ and $O_2$ respectively are externally tangent at the point $C$, while the circle $k$ with center $O$ is externally tangent to $k_1$ and $k_2$. Let $ℓ$ be the common tangent of $k_1$ and $k_2$ at the point $C$ and let $AB$ be the diameter of $k$, which is perpendicular to $ℓ$, the points $A$ and $O_1$ lie in one and the same semiplane with respect to the line $ℓ$. Prove that the lines $AO_2$, $BO_1$ and $ℓ$ have a common point.",
+      "solution": "Solution. Denote by $r, r_1$ and $r_2$ the radii of $k, k_1$ and $k_2$, by $M$ and $N$ the tangent points of $k$ with $k_1$ and $k_2$, respectively and by $P$ the common point of $ℓ$ and $AB$ (Figure 1).\n\nIt follows from $O_1O_2 ⊥ ℓ$ and $AB ⊥ ℓ$ that $\\triangle  BON ∼ \\triangle  CO_2N$. Then $\\angle  CNO_2 = \\angle  ONB$, and consequently the points $C, N$ and $B$ are colinear. Also, $/ BN}{CN} = / BO}{CO_2} = / r}{r_2}$. Analogously, $A, M$ and $C$ are colinear and $/ AM}{MC} = / r}{r_1}$.\n\nThe lines $AN, BM$ and $ℓ$ have a common point $H$, which is the altitude center of $\\triangle  ABC$. By Ceva's theorem we have: $/ AP}{PB} ⋅ / BN}{NC} ⋅ / CM}{MA} = / AP}{PB} ⋅ / r}{r_2} ⋅ / r_1}{r} = 1$, from where:\n\n$$/ r_1}{PB} = / r_2}{AP}. \\tag{1}$$\n\nLet now $D_1$ and $D_2$ be the common points of the line $ℓ$ with the lines $BO_1$ and $AO_2$, respectively. Obviously, $\\triangle  O_1CD_1 ∼ \\triangle  BPD_1$ (Figure 2), from where $/ CD_1}{D_1P} = / r_1}{PB}$. Analogously, $/ CD_2}{D_2P} = / r_2}{AP}$ and according to (1) we have $/ CD_1}{D_1P} = / CD_2}{D_2P}$, which shows that $D_1 ≡ D_2$. Thus, the lines $AO_2$, $BO_1$ and $ℓ$ have a common point.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circle_geometry",
+        "similar_triangles",
+        "ceva_theorem"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрична задача с три окръжности и допирателна. Решението използва подобие на триъгълници и теорема на Чева за доказателство на съседство. Изисква построения и множествени стъпки.",
+      "_crosslinked_from": "1.2",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-1998-10 кл · 1998-10 · Зад. 10.5",
+      "statement": "The convex pentagon $ABCDE$ is inscribed in a circle with radius $R$. The inradii of the triangles $ABC, ABD, AEC$ and $AED$ are denoted by $r_{ABC}, r_{ABD}, r_{AEC}$ and $r_{AED}$. Prove that\n\na.) \\(\\cos \\angle CAB + \\cos \\angle ABC + \\cos \\angle BCA = 1 + \\frac{r_{ABC}}{R}\\)\n\nb.) If \\( r_{ABC} = r_{AED} \\) and \\( r_{ABD} = r_{AEC} \\), then \\( \\triangle ABC \\cong \\triangle AED \\).",
+      "solution": "Solution: a.) Using the standard notation for the elements of $\\triangle ABC$, we obtain that\n\n$$\\begin{array}{l} \\frac {r}{R} = \\frac {S}{p R} = \\frac {4 S ^ {2}}{p a b c} = \\frac {4 (p - a) (p - b) (p - c)}{a b c} = \\\\ = \\frac {1}{2 a b c} \\left(a \\left(b ^ {2} + c ^ {2} - a ^ {2}\\right) + b \\left(c ^ {2} + a ^ {2} - b ^ {2}\\right) + c \\left(a ^ {2} + b ^ {2} - c ^ {2}\\right) - 2 a b c\\right) = \\\\ = \\cos \\angle C A B + \\cos \\angle A B C + \\cos \\angle B C A - 1. \\\\ \\end{array}$$\n\nb.) Applying continuously the equality from a.) and using the fact that $ABCDE$ is inscribed in a circle convex pentagon, it is easy to see that\n\n$$r _ {A B C} + r _ {A E C} + r _ {E D C} = r _ {A E D} + r _ {A B D} + r _ {B C D}.$$\n\nThe condition of the problem and the above equality imply $r_{BCD} = r_{EDC}$. Since $\\triangle BCD$ and $\\triangle EDC$ have a side in common and equal circumradiuses we get that $\\triangle BCD \\cong \\triangle EDC$ (prove it using a.)). In particular $BC = ED$ and using $r_{ABC} = r_{AED}$ again, we get $\\triangle ABC \\cong \\triangle AED$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "incircle_formulas",
+        "triangle_congruence"
+      ],
+      "confidence": "exact",
+      "reasoning": "Част a) извежда формула връзка между косинуси на ъгли и r/R. Част b) използва условието за радиуси и доказва съвпадение на триъгълници. Изисква прилагане на специализирани формули и геометрични свойства."
+    },
+    {
+      "source": "OLI-2-Областен кръг-1998-11 кл · 1998-11 · Зад. 11.5",
+      "statement": "The convex pentagon $ABCDE$ is inscribed in a circle with radius $R$. The inradii of the triangles $ABC, ABD, AEC$ and $AED$ are denoted by $r_{ABC}, r_{ABD}, r_{AEC}$ and $r_{AED}$. Prove that\n\na.) \\(\\cos \\angle CAB + \\cos \\angle ABC + \\cos \\angle BCA = 1 + \\frac{r_{ABC}}{R}\\)\nb.) If \\( r_{ABC} = r_{AED} \\) and \\( r_{ABD} = r_{AEC} \\), then \\( \\triangle ABC \\cong \\triangle AED \\).",
+      "solution": "Solution: a.) Using the standard notation for the elements of $\\triangle ABC$, we obtain that\n\n$$\\begin{array}{l} \\frac {r}{R} = \\frac {S}{p R} = \\frac {4 S ^ {2}}{p a b c} = \\frac {4 (p - a) (p - b) (p - c)}{a b c} = \\\\ = \\frac {1}{2 a b c} \\left(a \\left(b ^ {2} + c ^ {2} - a ^ {2}\\right) + b \\left(c ^ {2} + a ^ {2} - b ^ {2}\\right) + c \\left(a ^ {2} + b ^ {2} - c ^ {2}\\right) - 2 a b c\\right) = \\\\ = \\cos \\angle C A B + \\cos \\angle A B C + \\cos \\angle B C A - 1. \\\\ \\end{array}$$\n\nb.) Applying continuously the equality from a.) and using the fact that $ABCDE$ is inscribed in a circle convex pentagon, it is easy to see that\n\n$$r _ {A B C} + r _ {A E C} + r _ {E D C} = r _ {A E D} + r _ {A B D} + r _ {B C D}.$$\n\nThe condition of the problem and the above equality imply $r_{BCD} = r_{EDC}$. Since $\\triangle BCD$ and $\\triangle EDC$ have a side in common and equal circumradiuses we get that $\\triangle BCD \\cong \\triangle EDC$ (prove it using a.)). In particular $BC = ED$ and using $r_{ABC} = r_{AED}$ again, we get $\\triangle ABC \\cong \\triangle AED$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "inradius_formula",
+        "circumcircle",
+        "trigonometric_identities"
+      ],
+      "confidence": "exact",
+      "reasoning": "Част а) използва формула за връзка между радиусите и тригонометрични функции на ъглите. Част б) използва равенство на радиуси и конгруентност на триъгълници."
+    },
+    {
+      "source": "OLI-2-Областен кръг-1998-12 кл · 1998-12 · Зад. 12.5",
+      "statement": "The convex pentagon $ABCDE$ is inscribed in a circle with radius $R$. The inradii of the triangles $ABC, ABD, AEC$ and $AED$ are denoted by $r_{ABC}, r_{ABD}, r_{AEC}$ and $r_{AED}$. Prove that\n\na.) \\(\\cos \\angle CAB + \\cos \\angle ABC + \\cos \\angle BCA = 1 + \\frac{r_{ABC}}{R}\\)\nb.) If \\( r_{ABC} = r_{AED} \\) and \\( r_{ABD} = r_{AEC} \\), then \\( \\triangle ABC \\cong \\triangle AED \\).",
+      "solution": "a.) Using the standard notation for the elements of $\\Delta ABC$, we obtain that\n$$ \\frac{r}{R} = \\frac{S}{pR} = \\frac{4S^2}{pabc} = \\frac{4(p-a)(p-b)(p-c)}{abc} =$$\n$$ = \\frac{1}{2abc}\\bigl(a(b^2 + c^2 - a^2) + b(c^2 + a^2 - b^2) + c(a^2 + b^2 - c^2) - 2abc\\bigr) =$$\n$$ = \\cos \\angle CAB + \\cos \\angle ABC + \\cos \\angle BCA - 1. $$\n\nb.) Applying continuously the equality from a.) and using the fact that $ABCDE$ is inscribed in a circle convex pentagon, it is easy to see that\n$$ r_{ABC} + r_{AEC} + r_{EDC} = r_{AED} + r_{ABD} + r_{BCD}. $$\nThe condition of the problem and the above equality imply $r_{BCD} = r_{EDC}$. Since $\\Delta BCD$ and $\\Delta EDC$ have a side in common and equal circumradiuses we get that $\\Delta BCD \\cong \\Delta EDC$ (prove it using a.)). In particular $BC = ED$ and using $r_{ABC} = r_{AED}$ again, we get $\\Delta ABC \\cong \\Delta AED$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circumcircle",
+        "inradius",
+        "trigonometric_identities"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата има две части: а) доказване на тригонометрична връзка между ъглите и радиусите в триъгълник; б) използване на условието за равенство на радиуси за доказване на еднаквост на триъгълници. Решението използва формули за лице и тригонометрични тъждества."
+    },
+    {
+      "source": "OLI-2-Областен кръг-1999-10 кл · 1999-10 · Зад. 10.5",
+      "statement": "Let $B_1$ and $C_1$ be points on the sides $AC$ and $AB$ of $\\triangle ABC$. The straight lines $BB_1$ and $CC_1$ intersect at point $D$. Prove that the quadrilateral $AB_1DC_1$ is circumscribed if and only if the incircles of $\\triangle ABD$ and $\\triangle ACD$ are tangent.",
+      "solution": "gent if and only if $AB + AD - BD = AC + AD - CD$, so $AB + CD = AC + BD$.\n\nSuppose $AB_1DC_1$ is circumscribed and the incircle touches $AB_1$, $B_1D$, $DC_1$, $C_1A$ in the points $M, N, P, Q$, respectively. Therefore $AB + CD = AQ + BQ + CP - DP = AM + BN + CM - DN = AC + BD$.\n\nConversely, let the incircles of $\\triangle ABD$ and $\\triangle ACD$ be tangent. Denote the point of intersection of the tangent through $C$ (different from $CA$) with the incircle of $\\triangle ABB_1$ by $D'$. It follows from the above that $BD' - CD' = AB - AC = BD - CD$, so $DD' = |CD - CD'|$. Therefore $D' \\equiv D$, which completes the proof.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "incircle",
+        "tangency",
+        "cyclic_quadrilateral",
+        "length_equality"
+      ],
+      "confidence": "exact",
+      "reasoning": "Сложна геометрична задача с условие за допиране на вписани окръжности; използва свойства на допирните точки и равенство на дължини."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2000-11 кл · 2000-11 · Зад. 11.2",
+      "statement": "В $\\triangle ABC, CH(H \\in AB)$ е височина, а $CM$ и $CN(M, N \\in AB)$ са ъглополовящи съответно на ъглите $ACH$ и $BCH$. Центърът на описаната около $\\triangle CMN$ окръжност съвпада с центъра на вписаната в $\\triangle ABC$ окръжност. Да се докаже, че $S_{\\triangle ABC} = \\frac{AN.BM}{2}$.",
+      "solution": "Нека $I$ е центърът на вписаната в $\\triangle ABC$ окръжност, а $P, Q$ и $R$ са допирните точки на тази окръжност съответно със страните $AB, BC$ и $CA$. От равенствата $IP = IQ = IR$ и $IC = IM = IN$ следва, че $\\triangle IMP, \\triangle INP, \\triangle ICQ$ и $\\triangle ICR$ са еднакви. Нека $\\angle MIP = \\angle NIP =$ $\\angle QIC = \\angle CIR = \\delta$. Тогава $\\angle MCN = \\frac{1}{2} \\angle MIN = \\delta$. Тъй като $CM$ и $CN$ са ъглополовящи, получаваме $\\angle ACB = 2 \\angle MCN = 2\\delta$. Сега от четириъгълника $IQCR$ имаме $\\angle QIR + \\angle QCR = 180^\\circ \\iff 4\\delta = 180^\\circ \\iff \\delta = 45^\\circ$. Следователно $\\triangle ABC$ е правоъгълен, откъдето лесно получаваме $\\angle BCM =$ $\\angle BMC = \\angle BAC + \\frac{\\angle ABC}{2}$ и $\\angle ANC = \\angle ACN =$ $\\angle ABC + \\frac{\\angle BAC}{2}$. Следователно $BC = BM$ и $AC = AN$ и оттук $S_{ABC} = \\frac{AC.BC}{2} = \\frac{AN.BM}{2}$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "angle_bisectors",
+        "incircle",
+        "circumcircle",
+        "congruent_triangles"
+      ],
+      "confidence": "exact",
+      "reasoning": "Използване на свойствата на вписаната и описаната окръжност, конгруентни триъгълници и ъглови зависимости. Изисква построяване и дълъг анализ."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2000-12 кл · 2000-12 · Зад. 12.2",
+      "statement": "В $\\triangle ABC, CH(H \\in AB)$ е височина, а $CM$ и $CN(M, N \\in AB)$ са ъглополовящи съответно на ъглите $ACH$ и $BCH$. Центърът на описаната около $\\triangle CMN$ окръжност съвпада с центъра на вписаната в $\\triangle ABC$ окръжност. Да се докаже, че $S_{\\triangle ABC} = \\frac{AN \\cdot BM}{2}$.",
+      "solution": "Нека $I$ е центърът на вписаната в $\\triangle ABC$ окръжност, а $P, Q$ и $R$ са допирните точки на тази окръжност съответно със страните $AB, BC$ и $CA$. От равенствата $IP = IQ = IR$ и $IC = IM = IN$ следва, че $\\triangle IMP, \\triangle INP, \\triangle ICQ$ и $\\triangle ICR$ са еднакви. Нека $\\angle MIP = \\angle NIP =$ $\\angle QIC = \\angle CIR = \\delta$. Тогава $\\angle MCN = \\frac{1}{2} \\angle MIN = \\delta$. Тъй като $CM$ и $CN$ са ъглополовящи, получаваме $\\angle ACB = 2 \\angle MCN = 2\\delta$. Сега от четириъгълника $IQCR$ имаме $\\angle QIR + \\angle QCR = 180^\\circ \\iff 4\\delta = 180^\\circ \\iff \\delta = 45^\\circ$. Следователно $\\triangle ABC$ е правоъгълен, откъдето лесно получаваме $\\angle BCM =$ $\\angle BMC = \\angle BAC + \\frac{\\angle ABC}{2}$ и $\\angle ANC = \\angle ACN =$ $\\angle ABC + \\frac{\\angle BAC}{2}$. Следователно $BC = BM$ и $AC = AN$ и оттук $S_{ABC} = \\frac{AC \\cdot BC}{2} = \\frac{AN \\cdot BM}{2}$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "incircle",
+        "circumcircle",
+        "angle_chasing",
+        "triangle_properties"
+      ],
+      "confidence": "exact",
+      "reasoning": "Сложна геометрична конструкция с вписана и описана окръжност. Използване на свойствата на ъглополовящи и връзка между ъгли. Доказателство, че триъгълникът е правоъгълен."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2001-10 кл · 2001-10 · Зад. 10.4",
+      "statement": "Нека $ABC$ е правоъгълен триъгълник с хипотенуза $AB$. Върху лъча $AC^\\rightarrow$ е избрана точка $D$, различна от $A$ и $C$, за която правата през центъра на вписаната окръжност в $\\triangle ABC$, успоредна на ъглополовящата на $\\angle ADB$, се допира до вписаната окръжност в $\\triangle BCD$. Да се докаже, че $AD = BD$.",
+      "solution": "Решение: Първо ще докажем, че точката $C$ лежи на отсечката $AD$. Да допуснем противното, т.е. $\\angle ADB > 90^{\\circ}$. Нека вписаната окръжност $k(I, r)$ в $\\triangle BCD$ се допира до страната $BD$ в точка $P$. Да означим с $T$ допирната точка на $k$ и правата през центъра $J$ на вписаната окръжност в $\\triangle ABC$, успоредна на ъглополовящата $l$ на $\\angle ADB$. Тъй като $l \\perp DI$, то $T \\in DI$. Тогава $\\angle IJT = \\frac{\\angle CBD}{2} = \\angle IBP$ и понеже $IT = r = IP$, то правоъгълните триъгълници $IJT$ и $IBP$ са еднакви. В частност $IJ = IB$, откъдето следва, че $\\angle BJC < 90^{\\circ}$, което е противоречие. Нека сега $A'$ е такава точка върху лъча $\\overrightarrow{DA}$, че $DA' = DB$ и $E$ е средата на $A'B$. Да означим с $F$ допирната точка на вписаната окръжност в $\\triangle A'BC$, а с $J'$ - нейният център. Тогава\n\n$$EF = |A'E - A'F| = \\frac{1}{2}|A'B - (A'B + A'C - BC)| = \\frac{1}{2}|BC - A'C| = \\frac{1}{2}|BC - (A'D - CD)| = \\frac{1}{2}|BC + CD - BD| = r.$$\n\nСледователно правата $J'F$, успоредна на $l$ се допира до $k$. Това показва, че $J' \\in JF$. От друга страна, $J' \\in JC$ и понеже $JC$ не е успоредна на $JF(\\angle ACJ = 45^{\\circ} > \\frac{1}{2} \\angle ADB = \\angle ADI)$, то $J = J'$. Тогава $\\angle ABJ = \\angle CBJ = \\angle A'BJ$, т.е. $A = A'$, с което задачата е решена.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "incircle",
+        "angle_bisector",
+        "parallel_lines"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрия с вписани окръжности и успоредни прави. Точка 1.10 (Вписана и външновписани окръжности)."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2001-12 кл · 2001-12 · Зад. 12.4",
+      "statement": "Нека $ABC$ е правоъгълен триъгълник с хипотенуза $AB$. Върху лъча $AC^\\rightarrow$ е избрана точка $D$, различна от $A$ и $C$, за която правата през центъра на вписаната окръжност в $\\triangle ABC$, успоредна на ъглополовящата на $\\angle ADB$, се допира до вписаната окръжност в $\\triangle BCD$. Да се докаже, че $AD = BD$.",
+      "solution": "Първо ще докажем, че точката $C$ лежи на отсечката $AD$. Да допуснем противното, т.е. $\\angle ADB > 90^{\\circ}$. Нека вписаната окръжност $k(I, r)$ в $\\triangle BCD$ се допира до страници $BD$ в точка $P$. Да означим с $T$ допирната точка на $k$ и правата през центъра $J$ на вписаната окръжност в $\\triangle ABC$, успоредна на ъглополовящата $l$ на $\\angle ADB$. Тъй като $l \\perp DI$, то $T \\in DI$. Тогава $\\angle IJT = \\frac{\\angle CBD}{2} = \\angle IBP$ и понеже $IT = r = IP$, то правоъгълните триъгълници $IJT$ и $IBP$ са еднакви. В частност $IJ = IB$, откъдето следва, че $\\angle BJC < 90^{\\circ}$, което е противоречие. Нека сега $A'$ е такава точка върху лъча $\\overrightarrow{DA}$, че $DA' = DB$ и $E$ е средата на $A'B$. Да означим с $F$ допирната точка на вписаната окръжност в $\\triangle A'BC$, а с $J'$ - нейният център. Тогава\n\n$$EF = |A'E - A'F| = \\frac{1}{2}|A'B - (A'B + A'C - BC)| = \\frac{1}{2}|BC - A'C| = \\frac{1}{2}|BC - (A'D - CD)| = \\frac{1}{2}|BC + CD - BD| = r.$$\n\nСледователно правата $J'F$, успоредна на $l$ се допира до $k$. Това показва, че $J' \\in JF$. От друга страна, $J' \\in JC$ и понеже $JC$ не е успоредна на $JF(\\angle ACJ = 45^{\\circ} > \\frac{1}{2} \\angle ADB = \\angle ADI)$, то $J = J'$. Тогава $\\angle ABJ = \\angle CBJ = \\angle A'BJ$, т.е. $A = A'$, с което задачата е решена.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "incircle",
+        "tangency_points",
+        "parallel_lines"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрична задача с вписани окръжности и успоредни прави. Точка 1.10 покрива вписани и външновписани окръжности."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2003-10 кл · 2003-10 · Зад. 10.1",
+      "statement": "Правоъгълен трапец с лице 10 и височина 4 е разделен с права, успоредна на основите му, на два трапеца, в които могат да се впишат окръжности. Да се намерят радиусите на тези окръжности.",
+      "solution": "Тогава h2 1+(a−c)2 = (a+c−h1)2, т.е. h1 = 2ac a + c. Аналогично h2 = 2bc b + c, откъдето h1 h2 = a(b + c) b(a + c). От друга страна, h1 h2 = a −c c −b и следователно (a + b)(ab −c2) = 0. Тогава c2 = ab, h1 = 2a √ b √a + √ b , h2 = 2b√a √a + √ b и h1 + h2 = 2 √ ab. От условието получаваме, че √ ab = 2, a + b = 5, т.е. a и b са корени на уравнението x2 −5x + 4 = 0. Следователно a = 4, b = 1 и търсените радиуси са равни на h1 2 = 4 3 и h2 2 = 2 3.",
+      "answer": "h1/2 = 4/3 и h2/2 = 2/3",
       "difficulty": "hard",
       "techniques": [
         "inscribed_circle",
-        "projection",
-        "optimization"
+        "trapezoid_properties",
+        "quadratic_equations"
       ],
       "confidence": "exact",
-      "reasoning": "Projects the sphere onto planes, uses inscribed‑circle radii and maximises r(x,y) under xy=2."
+      "reasoning": "Задачата е за трапец с вписани окръжности в подтрапеците. Основната техника е свързана с вписани окръжности и свойства на трапец. Решението използва връзката между основите и височините, което води до квадратно уравнение. Това е типична задача за вписани окръжности в трапец."
     },
     {
-      "source": "OLI-3-Национален кръг-2013-9-12 кл · 2013-None · Зад. 5",
-      "statement": "Даден е остроъгълен $\\triangle ABC$ с височини $AA_1$, $BB_1$ и $CC_1$ ($A_1 \\in BC$, $B_1 \\in AC$, $C_1 \\in AB$). Върху продължението на $B_1A_1$ след $A_1$ е избрана точка $C'$, така че $A_1C' = B_1C_1$. Аналогично върху продължението на $A_1C_1$ след $C_1$ е избрана точка $B'$, така че $C_1B' = A_1B_1$ и върху продължението на $C_1B_1$ след $B_1$ е избрана точка $A'$, така че $B_1A' = C_1A_1$. Да означим с $A''$, $B''$ и $C''$ симетричните точки на $A'$, $B'$ и $C'$ относно правите $BC$, $CA$ и $AB$ съответно. Да се докаже, че ако $R$, $R'$ и $R''$ са радиусите на описаните окръжности съответно около $\\triangle ABC$, $\\triangle A'B'C'$ и $\\triangle A''B''C''$, то $R$, $R'$ и $R''$ са дължини на страните на триъгълник, чието лице е половината от лицето на $\\triangle ABC$.",
-      "solution": "Решение. Нека $O$ центъра на описаната окръжност около $\\triangle ABC$, а $S$ е симетричната му точка относно страната $AB$. Тогава $SOCH$ е успоредник, $SH \\perp A_1B_1$ и $SH = R$ (1).\n\nДа означим с $\\rho$ – радиусът на вписаната окръжност в $\\triangle A_1B_1C_1$, а с $q$ – полупериметъра му. Тогава, ако $T$ е петата на перпендикуляра от $S$ към $A_1B_1$, то $HT = \\rho$; $ST = R + \\rho$; $TC' = q$.\n\nИмаме $HC' = \\sqrt{\\rho^2 + q^2}$, което поради симетрията на получения израз означава, че $H$ е центъра на описаната окръжност около $\\triangle A'B'C'$ и $R' = HC'$ (2).\n\nОт друга страна, $OC'' = SC' = \\sqrt{(R + \\rho)^2 + q^2}$ и следователно $O$ е центъра на описаната окръжност около $\\triangle A''B''C''$ и $R'' = SC'$ (3).\n\nОт (1), (2) и (3) следва, че $R$, $R'$ и $R''$ са дължините на страните на $\\triangle HSC'$, като\n\n$$S_{HSC'} = \\frac{HS.TC'}{2} = \\frac{R.q}{2} = \\frac{1}{2}(S_{A_1OB_1C} + S_{B_1OC_1A} + S_{C_1OA_1B}) = \\frac{S_{ABC}}{2}.$$",
+      "source": "OLI-2-Областен кръг-2003-11 кл · 2003-11 · Зад. 11.1",
+      "statement": "Правоъгълен трапец с лице 10 и височина 4 е разделен с права, успоредна на основите му, на два трапеца, в които могат да се впишат окръжности. Да се намерят радиусите на тези окръжности.",
+      "solution": "Тогава h2 1+(a−c)2 = (a+c−h1)2, т.е. h1 = 2ac a + c. Аналогично h2 = 2bc b + c, откъдето h1 h2 = a(b + c) b(a + c). От друга страна, h1 h2 = a −c c −b и следователно (a + b)(ab −c2) = 0. Тогава c2 = ab, h1 = 2a √ b √a + √ b , h2 = 2b√a √a + √ b и h1 + h2 = 2 √ ab. От условието получаваме, че √ ab = 2, a + b = 5, т.е. a и b са корени на уравнението x2 −5x + 4 = 0. Следователно a = 4, b = 1 и търсените радиуси са равни на h1 2 = 4 3 и h2 2 = 2 3.",
+      "answer": "радиусите са 4/3 и 2/3",
+      "difficulty": "hard",
+      "techniques": [
+        "circle_inscribed_in_trapezoid",
+        "similar_triangles",
+        "quadratic_equations"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата е за трапец с вписани окръжности в подтрапеците. Решението използва свойства на вписаните окръжности и квадратни уравнения. Основната техника е свързана с вписани окръжности в трапец, което е точка 1.10."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2003-12 кл · 2003-12 · Зад. 12.1",
+      "statement": "Правоъгълен трапец с лице 10 и височина 4 е разделен с права, успоредна на основите му, на два трапеца, в които могат да се впишат окръжности. Да се намерят радиусите на тези окръжности.",
+      "solution": "Означаваме MN = c, AM = h1 и DM = h2. Тогава h2 1+(a−c)2 = (a+c−h1)2, т.е. h1 = 2ac a + c. Аналогично h2 = 2bc b + c, откъдето h1 h2 = a(b + c) b(a + c). От друга страна, h1 h2 = a −c c −b и следователно (a + b)(ab −c2) = 0. Тогава c2 = ab, h1 = 2a √ b √a + √ b , h2 = 2b√a √a + √ b и h1 + h2 = 2 √ ab. От условието получаваме, че √ ab = 2, a + b = 5, т.е. a и b са корени на уравнението x2 −5x + 4 = 0. Следователно a = 4, b = 1 и търсените радиуси са равни на h1 2 = 4 3 и h2 2 = 2 3.",
+      "answer": "радиусите са 4/3 и 2/3",
+      "difficulty": "hard",
+      "techniques": [
+        "inscribed_circle",
+        "trapezoid_properties",
+        "quadratic_equations"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата е за трапец с вписани окръжности в подтрапеците. Решението използва свойства на вписаните окръжности и връзката между основите и височините. Това е класическа задача за вписани окръжности в трапец."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2004-11 кл · 2004-11 · Зад. 11.2",
+      "statement": "Допирателните към описаната около остроъгълния триъгълник ABC окръжност, построени в точките A и B, се пресичат в точка D. Ако M е среда на AB, докажете, че <) ACM = <) BCD .",
+      "solution": "От синусовата теорема за триъгълниците AM C и BM C имаме\nAM\nCM = sin <) ACMsin α , BMCM = sin(γ − <) ACM )sin β .\nОттук, тъй като AM = BM , получаваме sin <) ACMsin α = sin(γ − <) ACM )sin β , т.е.\n(1) tg <) ACM = sin α sin γsin β + sin α cos γ .\nОт синусовата теорема за триъгълниците ADC и BDC имаме\nAD\nCD = sin(γ − <) BCD )sin(α + γ) , BDCD = sin <) BCDsin(β + γ) .\nОттук, тъй като AD = BD, получаваме sin(γ − <) BCD )sin β = sin <) BCDsin α , т.е.\n(2) tg <) BCD = sin α sin γsin β + sin α cos γ .\nОт (1) и (2) следва, че tg <) ACM = tg <) BCD . Тъй като и двата ъгъла\nса остри и функцията тангенс е растяща в интервала\n(\n0; π2 ), то <) ACM =<) BCD .",
       "answer": null,
       "difficulty": "hard",
       "techniques": [
-        "circumcircle_properties",
+        "sine_theorem",
+        "angle_chasing"
+      ],
+      "confidence": "exact",
+      "reasoning": "Доказателството използва синусовата теорема в няколко триъгълника и сравняване на тангенсите на ъгли. Основната техника е синусова теорема, която е точка 1.6 в STEPS.",
+      "_crosslinked_from": "1.6",
+      "_crosslink_confidence": 0.7
+    },
+    {
+      "source": "OLI-2-Областен кръг-2005-11 кл · 2005-11 · Зад. 11.5",
+      "statement": "Ъглополовящите на ∠BAC, ∠ABC и ∠ACB в △ABC пресичат описаната около триъгълника окръжност съответно в точки A1, B1 и C1. Страната AB пресича правите C1B1 и C1A1 съответно в M и N, BC пресича A1C1 и A1B1 съответно в P и Q и AC пресича B1A1 и B1C1 съответно в R и S.\nа) Да се докаже, че височината през R в триъгълник CRQ е равна на радиуса на вписаната в триъгълник ABC окръжност.\nб) Да се докаже, че правите MQ, NR и SP се пресичат в една точка.",
+      "solution": "Ако $RT$ е височината през $R$ в $\\Delta CRQ$, то $RT = CR\\sin\\gamma \\quad (1)$. От синусовата теорема за $\\Delta B_1RC$ намираме\n\n$$CR = \\frac{B_1C \\sin\\frac{\\alpha}{2}}{\\cos\\frac{\\gamma}{2}} = \\frac{2R\\sin\\frac{\\beta}{2}\\sin\\frac{\\alpha}{2}}{\\cos\\frac{\\gamma}{2}},$$\n\nкъдето $R$ е радиусът на описаната около $\\Delta ABC$ окръжност. След заместване в (1) получаваме $RT = 4R\\sin\\frac{\\alpha}{2}\\sin\\frac{\\beta}{2}\\sin\\frac{\\gamma}{2}$. Но $r = 4R\\sin\\frac{\\alpha}{2}\\sin\\frac{\\beta}{2}\\sin\\frac{\\gamma}{2}$, където $r$ е радиусът на вписаната в $\\Delta ABC$ окръжност. Следователно $RT = r$.\n\nб) Аналогично на а) височината през $N$ на $\\Delta BNP$ е равна на $r$, което означава, че правата $NR$ е успоредна на $BC$ и е на разстояние $r$ от нея, следователно $I \\in NR$, където $I$ е център на вписаната в $\\Delta ABC$ окръжност. Аналогично $I$ лежи и на правите $MQ$ и $SR$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "angle_bisectors",
+        "circumcircle",
+        "incircle",
+        "sine_theorem"
+      ],
+      "confidence": "exact",
+      "reasoning": "Използва се синусова теорема и свойства на ъглополовящите, за да се докаже равенство на дължини, свързани с вписаната окръжност."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2005-11 кл · 2005-11 · Зад. 11.5",
+      "statement": "Ъглополовящите на ∠BAC, ∠ABC и ∠ACB в △ABC пресичат описаната около триъгълника окръжност съответно в точки A1, B1 и C1. Страната AB пресича правите C1B1 и C1A1 съответно в M и N, BC пресича A1C1 и A1B1 съответно в P и Q и AC пресича B1A1 и B1C1 съответно в R и S.\nа) Да се докаже, че височината през R в триъгълник CRQ е равна на радиуса на вписаната в триъгълник ABC окръжност.\nб) Да се докаже, че правите MQ, NR и SP се пресичат в една точка.",
+      "solution": "Ако $RT$ е височината през $R$ в $\\Delta CRQ$, то $RT = CR\\sin\\gamma \\quad (1)$. От синусовата теорема за $\\Delta B_1RC$ намираме\n\n$$CR = \\frac{B_1C \\sin\\frac{\\alpha}{2}}{\\cos\\frac{\\gamma}{2}} = \\frac{2R\\sin\\frac{\\beta}{2}\\sin\\frac{\\alpha}{2}}{\\cos\\frac{\\gamma}{2}},$$\n\nкъдето $R$ е радиусът на описаната около $\\Delta ABC$ окръжност. След заместване в (1) получаваме $RT = 4R\\sin\\frac{\\alpha}{2}\\sin\\frac{\\beta}{2}\\sin\\frac{\\gamma}{2}$. Но $r = 4R\\sin\\frac{\\alpha}{2}\\sin\\frac{\\beta}{2}\\sin\\frac{\\gamma}{2}$, където $r$ е радиусът на вписаната в $\\Delta ABC$ окръжност. Следователно $RT = r$.\n\nб) Аналогично на а) височината през $N$ на $\\Delta BNP$ е равна на $r$, което означава, че правата $NR$ е успоредна на $BC$ и е на разстояние $r$ от нея, следователно $I \\in NR$, където $I$ е център на вписаната в $\\Delta ABC$ окръжност. Аналогично $I$ лежи и на правите $MQ$ и $SR$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "angle_bisectors",
+        "circumcircle",
+        "incircle",
+        "sine_theorem"
+      ],
+      "confidence": "exact",
+      "reasoning": "Използва се синусова теорема и свойства на ъглополовящите, за да се докаже равенство на дължини, свързани с вписаната окръжност.",
+      "_crosslinked_from": "1.10",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2006-10 кл · 2006-10 · Зад. 10.1",
+      "statement": "Окръжност $k$ се допира до раменете на ъгъл с връх $O$ в точки $A$ и $B$. През $B$ е построен перпендикуляр $BP$ към диаметъра $AD$ на $k$ през $A$, $P ∈ AD$. Правата $OD$ пресича $BP$ в точка $M$. Да се намери отношението $\f\\frac{BM}{BP}$.",
+      "solution": "Нека допирателната към $k$ в точка $D$ пресича рамото $OB$ в точка $S$. Тогава правите $SD$, $BP$ и $OA$ са успоредни и имаме подобията $\\Delta OBM \\sim \\Delta OSD$ и $\\Delta DPM \\sim \\Delta DAO$. Следователно $\\frac{BM}{SD} = \\frac{OB}{OS}$ и $\\frac{MP}{OA} = \\frac{DP}{DA}$, т.е. $BM = \\frac{OB.SD}{OS}$ и $MP = \\frac{OA.DP}{DA}$.\n\nТъй като $OA = OB$ и $\\frac{BS}{OS} = \\frac{DP}{DA}$ (използвахме и равенството $SD = SB$), получаваме $BM = MP$, откъдето следва, че търсеното отношение е $1 : 2$.",
+      "answer": "$1 : 2$",
+      "difficulty": "hard",
+      "techniques": [
+        "similar_triangles",
+        "parallel_lines",
+        "circle_properties"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва подобие на триъгълници и свойства на окръжности. Основната техника е геометрична конструкция с подобия и успоредни прави. Тъй като има няколко стъпки и построения, трудността е hard.",
+      "_crosslinked_from": "1.5",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2006-11 кл · 2006-11 · Зад. 11.1",
+      "statement": "Нека $k$ е окръжност с диаметър $AB$ и $C \\in k$ е произволна точка. Външновписаните окръжности за $\\triangle ABC$ към страните $AC$ и $BC$ се допират до правата $AB$ съответно в точки $M$ и $N$. Нека $O_1$ и $O_2$ са центровете на описаните около $\\triangle AMC$ и $\\triangle BNC$ окръжности. Да се докаже, че лицето на $\\triangle O_1CO_2$ не зависи от избора на точката $C$.",
+      "solution": "Нека $AB = c$, $BC = a$, $AC = b$, $p = \\frac{a + b + c}{2}$ и $O$, $P$ и $Q$ са съответно средите на $AB$, $AM$ и $BN$. Тъй като $OO_1 \\perp AC$ и $O_1P \\perp AM$, имаме $\\triangle O_1OP \\sim \\triangle ABC$, откъдето $\\frac{OO_1}{c} = \\frac{OP}{a}$. По-нататък, от $AM = p - c$ следва, че\n\n$$OP = OA + \\frac{1}{2}AM = \\frac{1}{2}c + \\frac{1}{2}(p - c) = \\frac{a + b + c}{4}$$\n\nи следователно $OO_1 = \\frac{c(a + b + c)}{4a}$. Аналогично $OO_2 = \\frac{c(a + b + c)}{4b}$. Тъй като $\\angle ACB = 90^\\circ$, получаваме $\\angle O_1OO_2 = 90^\\circ$.\n\nНакрая, тъй като $S_{O_1O_2C} = |S_{OO_1O_2} - S_{OO_1C} - S_{OO_2C}|$, пресмятаме\n\n$$\\begin{array}{l} S_{OO_1O_2} - S_{OO_1C} - S_{OO_2C} = \\frac{OO_1.OO_2}{2} - \\frac{OO_1.b}{4} - \\frac{OO_2.a}{4} = \\\\ = \\frac{c^2(a + b + c)^2}{32ab} - \\frac{c(a + b + c)}{16} \\left(\\frac{b}{a} + \\frac{a}{b}\\right) = \\\\ = \\frac{c^2(a + b + c)^2}{32ab} - \\frac{c^3(a + b + c)}{16ab} = \\frac{c^2}{16}, \\end{array}$$\n\nтъй като $c^2 = a^2 + b^2$. Следователно $S_{O_1CO_2}$ не зависи от избора на $C$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circle_properties",
+        "triangle_properties",
+        "area_calculation"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на външновписани окръжности и центрове на описани окръжности. Основната техника е свързана с външновписани окръжности (точка 1.10 от STEPS). Решението е дълго и изисква построение на помощни точки и изчисляване на лица, което го класифицира като hard."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2007-12 кл · 2007-12 · Зад. 12.4",
+      "statement": "Нека I е центърът на външновписаната окръжност към страната AB на \\triangle ABC, а S е симетричната точка на I относно AB. Правата през S, перпендикулярна на BI, пресича правата AI в точка T. Да се докаже, че CI = CT.",
+      "solution": "Нека BI ∩ ST = K, а M и N са петите на перпендикулярите от I и C съответно към AC и AI. От \\angle KIS = 90◦ − \\angle ABI = \\angle ABC2 = \\angle AIC , следва, че \\triangle KIS ∼ \\triangle N IC. Оттук (1) IKIS = INIC . Понеже \\angle AIB = 90◦ − \\angle ACB2 = \\angle M IC, то T ∈ IA → и \\triangle KIT ∼ \\triangle M IC. Следователно (2) IKIM = ITIC . От (1), (2) и IS = 2IM следва, че IT = 2IN . Значи N е средата на IT , откъдето CI = CT . Забележка. Ако правата през S, перпендикулярна на AI, пресича правата BI в точка R, то S и C са съответно ортоцентърът и центърът на описаната окръжност на \\triangle IT R.",
+      "answer": "CI = CT",
+      "difficulty": "hard",
+      "techniques": [
+        "circle_properties",
         "symmetry",
-        "area_relations"
+        "similar_triangles"
       ],
       "confidence": "exact",
-      "reasoning": "Uses circumcircles of constructed triangles and symmetry to relate radii to side lengths; multiple geometric constructions."
+      "reasoning": "Задачата включва външновписана окръжност и симетрична точка. Решението използва свойства на окръжности и подобни триъгълници, които са част от геометрията с окръжности."
     },
     {
-      "source": "OLI-3-Национален кръг-2018-9-12 кл · 2018-None · Зад. 2",
-      "statement": "Четириъгълникът ABCD е вписан в окръжност. Точка H₁ е ортоцентър на △ABC, а точките A₁ и B₁ са симетрични съответно на точките A и B спрямо правите BH₁ и AH₁. Точка O₁ е център на описаната окръжност на △A₁B₁H₁. Точка H₂ е ортоцентър на △ABD, а точките A₂ и B₂ са симетрични съответно на точките A и B спрямо правите BH₂ и AH₂. Точка O₂ е център на описаната окръжност на △A₂B₂H₂. Означаваме правата O₁O₂ с l_AB. Аналогично дефинираме правите l_BC, l_CD и l_DA. Ако l_AB ∩ l_BC = M, l_BC ∩ l_CD = N, l_CD ∩ l_DA = P и l_DA ∩ l_AB = Q, да се докаже, че точките M, N, P и Q лежат на една окръжност.",
-      "solution": "Решение. Лема. Точка O₁ лежи на правата H₁O, където O е центъра на описаната окръжност за △ABC. Отношението в което O₁ дели H₁O зависи само от ∠ACB.\nДоказателство: Нека K и L са пресечните точки на AH₁ и BH₁ с окръжността. Тъй като H₁ и L са симетрични спрямо AC, то четириъгълникът H₁ALA₁ е ромб, като ∠AH₁A₁ = 2∠AH₁L = 2γ. Аналогично H₁BKB₁ е ромб с ∠BH₁B₁ = 2γ. Следователно H₁ALA₁ и H₁BKB₁ са подобни ромбове, откъдето получаваме\nH₁T/H₁X = H₁Q/H₁Y = 1/(1 + 2 cos 2γ).\nТова равенство означава, че O₁ лежи на правата H₁O и отношението в което O₁ дели H₁O зависи само от ∠ACB.\nЯсно е, че CH₁H₂D е успоредник (следва от CH₁ = CH₂ = 2R cos γ) и O₁ и O₂ са хомотетични съответно на H₁ и H₂ спрямо O. Според лемата коефициентите на двете хомотетии са равни (защото зависят само от γ). Следователно O₁O₂ ∥ H₁H₂ ∥ CD, т.е. правата l_AB е успоредна на CD.\nПолучихме, че страните на MNPQ са успоредни на страните на ABCD и следователно MNPQ е вписан.",
+      "source": "OLI-2-Областен кръг-2008-12 кл · 2008-12 · Зад. 12.5",
+      "statement": "Вписаната в $\\triangle ABC$ окръжност се допира до страните $BC$, $CA$ и $AB$ съответно в точки $A_1$, $B_1$ и $C_1$. Известно е, че правата $A_1B_1$ разполовява отсечката $CC_1$. Да се намерят ъглите на тризъглника, ако техните синуси образуват аритметична прогресия.",
+      "solution": "Ще използваме стандартните означения за елементите на $\\triangle ABC$. Правата $A_1B_1$ разполовява отсечката $CC_1$ точно когато\n\n$$\\begin{array}{l} S_{A_1B_1C} = S_{A_1B_1C_1} \\Leftrightarrow A_1C.B_1C \\sin \\gamma = A_1C_1.B_1C_1 \\sin(90^\\circ - \\gamma/2) \\Leftrightarrow \\\\ (p-c)^2 \\sin \\frac{\\gamma}{2} = 2(p-b) \\sin \\frac{\\beta}{2}(p-a) \\sin \\frac{\\alpha}{2} \\\\ \\Leftrightarrow \\cot^2 \\frac{\\gamma}{2} \\sin \\frac{\\gamma}{2} 2 \\cot \\frac{\\beta}{2} \\sin \\frac{\\beta}{2} \\cot \\frac{\\alpha}{2} \\sin \\frac{\\alpha}{2} \\\\ \\Leftrightarrow \\cos^2 \\frac{\\gamma}{2} = 2 \\sin \\frac{\\gamma}{2} \\cos \\frac{\\beta}{2} \\cos \\frac{\\alpha}{2} \\Leftrightarrow \\cos^2 \\frac{\\gamma}{2} = \\sin \\frac{\\gamma}{2} \\left( \\cos \\frac{\\alpha+\\beta}{2} + \\cos \\frac{\\alpha-\\beta}{2} \\right) \\Leftrightarrow \\\\ \\cos^2 \\frac{\\gamma}{2} - \\sin^2 \\frac{\\gamma}{2} = \\sin \\frac{\\gamma}{2} \\cos \\frac{\\alpha-\\beta}{2} \\Leftrightarrow 2 \\cos \\gamma = \\sin \\frac{\\gamma+\\alpha-\\beta}{2} + \\sin \\frac{\\gamma-\\alpha+\\beta}{2} \\Leftrightarrow \\end{array}$$\n\n$$(*) \\quad 2 \\cos \\gamma = \\cos \\beta + \\cos \\alpha.$$\n\nВ частност, $\\alpha \\leq \\gamma \\leq \\beta$ или $\\alpha \\geq \\gamma \\geq \\beta$. Тогава от условието следва, че $2 \\sin \\gamma = \\sin \\beta + \\sin \\alpha$. Повдигаме това равенство и (*) на квадрат и ги събираме. От тъждеството $\\sin^2 x + \\cos^2 x = 1$ получаваме, че $1 = \\cos \\alpha \\cos \\beta + \\sin \\alpha \\sin \\beta = \\cos(\\alpha - \\beta)$. Оттук лесно следва, че $\\alpha = \\beta = \\gamma = 60^\\circ$.\n\nсвалено от Klasirane.com\n\n─── Стр. 3 ───\nЗабележка. Ако предположим, че $\\alpha \\leq \\gamma \\leq \\beta$ или $\\alpha \\geq \\gamma \\geq \\beta$, то $\\sin \\alpha + \\sin \\beta = 2 \\sin \\gamma$, т.е. $\\sin \\frac{\\alpha + \\beta}{2} \\cos \\frac{\\alpha - \\beta}{2} = 2 \\sin \\frac{\\gamma}{2} \\cos \\frac{\\gamma}{2}$, откъдето $\\cos \\frac{\\alpha - \\beta}{2} = 2 \\sin \\frac{\\gamma}{2}$. Оттук и равенството $\\cos^2 \\frac{\\gamma}{2} = \\sin \\frac{\\gamma}{2} \\left( \\sin \\frac{\\gamma}{2} + \\cos \\frac{\\alpha - \\beta}{2} \\right)$ (вж. решението) получаваме, че $\\cot^2 \\frac{\\gamma}{2} = 3$. Тогава лесно следва, че $\\alpha = \\beta = \\gamma = 60^\\circ$.",
       "answer": null,
       "difficulty": "hard",
       "techniques": [
-        "homothety",
-        "cyclic_quadrilateral",
-        "symmetry"
+        "incircle_properties",
+        "trigonometric_identities",
+        "arithmetic_progression"
       ],
       "confidence": "exact",
-      "reasoning": "Main argument relies on homothetic relation of O₁,O₂ with orthocenters and cyclicity of MNPQ."
+      "reasoning": "Задачата комбинира свойства на вписаната окръжност, тригонометрични тъждества и аритметична прогресия. Точка 1.10 (Вписана и външновписани окръжности) е основна."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2008-12 кл · 2008-12 · Зад. 12.5",
+      "statement": "Вписаната в $\\triangle ABC$ окръжност се допира до страните $BC$, $CA$ и $AB$ съответно в точки $A_1$, $B_1$ и $C_1$. Известно е, че правата $A_1B_1$ разполовява отсечката $CC_1$. Да се намерят ъглите на тризъглника, ако техните синуси образуват аритметична прогресия.",
+      "solution": "Ще използваме стандартните означения за елементите на $\\triangle ABC$. Правата $A_1B_1$ разполовява отсечката $CC_1$ точно когато\n\n$$\\begin{array}{l} S_{A_1B_1C} = S_{A_1B_1C_1} \\Leftrightarrow A_1C.B_1C \\sin \\gamma = A_1C_1.B_1C_1 \\sin(90^\\circ - \\gamma/2) \\Leftrightarrow \\\\ (p-c)^2 \\sin \\frac{\\gamma}{2} = 2(p-b) \\sin \\frac{\\beta}{2}(p-a) \\sin \\frac{\\alpha}{2} \\\\ \\Leftrightarrow \\cot^2 \\frac{\\gamma}{2} \\sin \\frac{\\gamma}{2} 2 \\cot \\frac{\\beta}{2} \\sin \\frac{\\beta}{2} \\cot \\frac{\\alpha}{2} \\sin \\frac{\\alpha}{2} \\\\ \\Leftrightarrow \\cos^2 \\frac{\\gamma}{2} = 2 \\sin \\frac{\\gamma}{2} \\cos \\frac{\\beta}{2} \\cos \\frac{\\alpha}{2} \\Leftrightarrow \\cos^2 \\frac{\\gamma}{2} = \\sin \\frac{\\gamma}{2} \\left( \\cos \\frac{\\alpha+\\beta}{2} + \\cos \\frac{\\alpha-\\beta}{2} \\right) \\Leftrightarrow \\\\ \\cos^2 \\frac{\\gamma}{2} - \\sin^2 \\frac{\\gamma}{2} = \\sin \\frac{\\gamma}{2} \\cos \\frac{\\alpha-\\beta}{2} \\Leftrightarrow 2 \\cos \\gamma = \\sin \\frac{\\gamma+\\alpha-\\beta}{2} + \\sin \\frac{\\gamma-\\alpha+\\beta}{2} \\Leftrightarrow \\end{array}$$\n\n$$(*) \\quad 2 \\cos \\gamma = \\cos \\beta + \\cos \\alpha.$$\n\nВ частност, $\\alpha \\leq \\gamma \\leq \\beta$ или $\\alpha \\geq \\gamma \\geq \\beta$. Тогава от условието следва, че $2 \\sin \\gamma = \\sin \\beta + \\sin \\alpha$. Повдигаме това равенство и (*) на квадрат и ги събираме. От тъждеството $\\sin^2 x + \\cos^2 x = 1$ получаваме, че $1 = \\cos \\alpha \\cos \\beta + \\sin \\alpha \\sin \\beta = \\cos(\\alpha - \\beta)$. Оттук лесно следва, че $\\alpha = \\beta = \\gamma = 60^\\circ$.\n\nсвалено от Klasirane.com\n\n─── Стр. 3 ───\nЗабележка. Ако предположим, че $\\alpha \\leq \\gamma \\leq \\beta$ или $\\alpha \\geq \\gamma \\geq \\beta$, то $\\sin \\alpha + \\sin \\beta = 2 \\sin \\gamma$, т.е. $\\sin \\frac{\\alpha + \\beta}{2} \\cos \\frac{\\alpha - \\beta}{2} = 2 \\sin \\frac{\\gamma}{2} \\cos \\frac{\\gamma}{2}$, откъдето $\\cos \\frac{\\alpha - \\beta}{2} = 2 \\sin \\frac{\\gamma}{2}$. Оттук и равенството $\\cos^2 \\frac{\\gamma}{2} = \\sin \\frac{\\gamma}{2} \\left( \\sin \\frac{\\gamma}{2} + \\cos \\frac{\\alpha - \\beta}{2} \\right)$ (вж. решението) получаваме, че $\\cot^2 \\frac{\\gamma}{2} = 3$. Тогава лесно следва, че $\\alpha = \\beta = \\gamma = 60^\\circ$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "incircle_properties",
+        "trigonometric_identities",
+        "arithmetic_progression"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата комбинира свойства на вписаната окръжност, тригонометрични тъждества и аритметична прогресия. Точка 1.10 (Вписана и външновписани окръжности) е основна.",
+      "_crosslinked_from": "1.10",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2009-12 кл · 2009-12 · Зад. 12.4",
+      "statement": "В \\triangle ABC (AC < BC) с лице 20 √ 3 точките M и I са съответно медицентър и център на вписаната окръжност. Отсечката IM има дължина 1 и е успоредна на страната AB. Да се намерят дължините на страните на триъгълника.",
+      "solution": "Решение. Да означим $BC = a$, $AC = b$ и $AB = c$. Нека $CL$ ($L \\in AB$) и $CN$ ($N \\in AB$) са съответно ъглополовяща и медиана ($L$ е между $A$ и $N$, понеже $AC < BC$). От условието следва, че $\\triangle CLN \\sim \\triangle CIM$. Тогава $\\frac{LN}{1} = \\frac{CL}{CI} = \\frac{CN}{CM} = \\frac{3}{2}$ (понеже $M$ е медианер). От $\\frac{b}{a} = \\frac{AL}{BL} = \\frac{AL}{c - AL}$ получаваме $AL = \\frac{bc}{a + b}$. Тъй като $AI$ е ъглополовяща в $\\triangle ALC$, то $\\frac{CI}{IL} = \\frac{AC}{AL} = \\frac{a + b}{c}$ и оттук $\\frac{CL}{CI} = \\frac{a + b + c}{a + b}$. Но $\\frac{CL}{CI} = \\frac{3}{2}$ и получаваме $a + b = 2c$. Тогава\n\n$$\\frac{3}{2} = LN = AN - AL = \\frac{c}{2} - \\frac{bc}{a + b} = \\frac{c(a - b)}{2(a + b)} = \\frac{a - b}{4},$$\n\nоткъдето намираме $a - b = 6$. Сега от $a + b = 2c$ и $a - b = 6$ следва, че $a = c + 3$ и $b = c - 3$. Хероновата формула ни дава, че\n\n$$1200 = S_{ABC}^2 = \\frac{3c}{2} \\left(\\frac{c}{2} - 3\\right) \\left(\\frac{c}{2} + 3\\right) \\frac{c}{2} \\Leftrightarrow c^4 - 36c^2 - 6400 = 0,$$\n\nт.е. $$(c^2 - 100)(c^2 + 64) = 0$$, откъдето $$c = 10$$ и $$a = c + 3 = 13$$, $$b = c - 3 = 7$$.\n\nОценяване. 2 т. за $$a + b = 2c$$, 2 т. за $$\\frac{c(a - b)}{a + b} = 3$$ и 3 т. за довършване на решението.",
+      "answer": "a=13, b=7, c=10",
+      "difficulty": "hard",
+      "techniques": [
+        "triangle_properties",
+        "angle_bisector",
+        "median",
+        "heron"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на медиана и ъглополовяща, подобни триъгълници и Херонова формула.",
+      "_crosslinked_from": "1.7",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-2-Областен кръг-2010-10 кл · 2010-10 · Зад. 10.2",
+      "statement": "Външновписаната окръжност към страната $AB$ на $\\triangle ABC$ се допира до $AB$ в точка $D$. Ако $\\angle CAB = 2 \\angle CDA$, да се намери стойността на отношението $AD : BD$.",
+      "solution": "**Решение.** (*Тригонометричен подход*) Ще използваме стандартните означения за страните на $\\triangle ABC$ и нека $\\ntriangle ADC = \\varphi$. От синусова теорема за $\\triangle ACD$ получаваме $CD = \\frac{b \\sin 2\\varphi}{\\sin \\varphi} = 2b \\cos \\varphi$. Оттук и от косинусова теорема за $\\triangle ADC$ имаме\n\n$$4b^2 \\cos^2 \\varphi = b^2 + (p-b)^2 - 2b(p-b) \\cos 2\\varphi \\iff 2b^2 \\cos 2\\varphi = -b^2 + (p-b)^2 - 2b(p-b) \\cos 2\\varphi,$$\n\nоткъдето намираме $\\cos 2\\varphi = \\frac{p-2b}{2b}$. От косинусова теорема за $\\triangle ABC$ получаваме\n\n$$a^2 = b^2 + c^2 - 2bc \\frac{(p-2b)}{2b} \\iff a^2 = (b+c)^2 - pc \\iff a - b = \\frac{c}{2}.$$\n\nОстава да пресметнем $BD = p - a = \\frac{b + c - a}{2} = \\frac{c}{4}$ и следователно $AD : BD = 3 : 1$.\n\n(Синтетичен подход) Нека вписаната в $\\triangle ABC$ ок-ръжност $k$ е с център $I$ и се допира до страната $AB$ в точка $P$. Ако означим с $Q$ диаметрално противоположната точка на $P$ в $k$, то добре известен факт е, че точките $C$, $Q$ и $D$ са колинеарни. (Класическото доказателство е с хомотетия, с център $C$, която изпраща $k$ във външновписаната окръжност.)\n\n![img-3.jpeg](img-3.jpeg)\n\nТогава $\\measuredangle IAP = \\frac{1}{2} \\measuredangle CAB = \\measuredangle CDA$, т.е. правоъгълните триъгълници $\\triangle IPA$ и $\\triangle QPD$ са подобни и $PD : PA = PQ : PI = 2 : 1$. От друга страна $PA = BD$ и следователно $AD : BD = 3 : 1$.\n\nИнструкции за оценяване: (Тригонометричен подход) 1 т. за въвеждането на помощен ъгъл $\\measuredangle ADC = \\varphi$, 1 т. за прилагане на синусова теорема за $\\triangle ADC$ и намиране $CD = 2b \\cos \\varphi$; 2 т. за прилагане на косинусова теорема за $\\triangle ADC$ и намиране на $\\cos 2\\varphi = \\frac{p - 2b}{2b}$; 2 т. за прилагане на косинусова теорема за $\\triangle ABC$ и достигане до равенството $a - b = \\frac{c}{2}$; 1 т. за достигане до отговора.\n\n(Синтетичен подход) 1 т. за построяване на вписаната окръжност; 2 т. за въвеждане на точката $Q$ и отчитане на факта, че $Q \\in CD$; 1 т. за доказателство на факта, че $Q \\in CD$; 1 т. за $\\triangle IPA \\sim \\triangle QPD$; 2 т. за достигане до отговора.",
+      "answer": "3 : 1",
+      "difficulty": "hard",
+      "techniques": [
+        "incircle_and_excircle",
+        "trigonometry",
+        "similar_triangles"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва външновписаната окръжност и връзка с вписаната. Решението използва синусова теорема и косинусова теорема, но главната техника е свързана със свойствата на вписаната и външновписаните окръжности (1.10). Синтетичният подход потвърждава това с геометрични свойства."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2013-12 кл · 2013-12 · Зад. 12.3",
+      "statement": "Числата $\\frac{1}{5}$ и $\\frac{1}{5}$ се заменят със сумата и произведението им. За новите числа $\\frac{2}{5}$ и $\\frac{1}{25}$ се прилага същата операция и т.н. Да се докаже, че във всеки момент числата са по-малки от $\\frac{1}{2}$.",
+      "solution": "Нека $a_1 = b_1 = \\frac{1}{5}$, $a_{n+1} = a_n + b_n$ и $b_{n+1} = a_nb_n$ при $n \\ge 1$. По индукция ще докажем, че $a_n < \\frac{12}{25}$ и $b_n \\le \\frac{1}{25.2^{n-2}}$ при $n \\ge 2$. За $n=2$ това е вярно. Тогава\n\n$$a_{n+1} = a_2 + b_2 + \\dots + b_n \\le \\frac{2}{5} + \\frac{1}{25} \\left(1 + \\frac{1}{2} + \\dots + \\frac{1}{2^{n-2}}\\right) < \\frac{2}{5} + \\frac{2}{25} = \\frac{12}{25}$$\n\nи $b_{n+1} = a_nb_n < \\frac{b_n}{2} = \\frac{1}{25.2^{n-1}}$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circle_properties",
+        "angle_chasing",
+        "area_ratios"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на вписаната окръжност и описаните окръжности около триъгълниците BIC, CIA, AIB. Основната техника е геометрична, свързана с точка 1.10 (Вписана и външновписани окръжности)."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2014-10 кл · 2014-10 · Зад. 10.2",
+      "statement": "Даден е $\\triangle ABC$. Да се построи с линийка и пергел окръжност, която минава през върховете $A$ и $B$ и се допира до вписаната в $\\triangle ABC$ окръжност.",
+      "solution": "Решение. Построяваме вписаната в $\\triangle ABC$ окръжност $k$ нека $X$ е проиволна точка от нея. Построяваме описаната около $\\triangle ABX$ окръжност и нека тя пресича за втори път $k$ в точка $Y$, а правата $XY$ пресича правата $AB$ в точка $Z$. През $Z$ построяваме допирателна към $k$, която пресича $k$ в точка $P$. (В случай, че $XY \\parallel AB$, $\\triangle ABC$ е равнобедрен и построяваме точка $P$ като втората пресечна точка на симетралата на $AB$ с $k$.).\n\nЩе докажем, че описаната около $\\triangle ABP$ окръжност $\\omega$ е търсената. Наистина, от свойството на секущите имаме $ZP^2 = ZX.ZY = ZA.ZB$ и следователно $\\triangle ZPA \\sim \\triangle ZBP$, т.е. $\\angle ZPA = \\angle ZBP$ и $\\omega$ се допира вътрешно до $k$.\n\nЗабележка. Задачата има няколко възможни подхода за решение, включително и с инверсия. Един такъв е илюстриран на фигурата вдясно. Построяваме вписаната в $\\triangle ABC$ окръжност $k$ и нека $D$, $E$ и $F$ са допирните точки на $k$ със страните $AB$, $BC$ и $CA$ съответно. Нека $\\triangle ABC$ е неравнобедрен и правата $EF$ пресича правата $AB$ в точка $R$. Построяваме окръжност с диаметър $RD$, която пресича $k$ за втори път\n\nв точка $P$. Оказва се, че описаната около $\\triangle ABP$ окръжност е търсената (Защо?).\n\nЕдно много характерно, но нетривиално за доказателство свойство на тази конфигурация е, че $PD$ разполовава височината от върха $C$ в $\\triangle ABC$. Това ни води и до нова възможност за построение на точката $P$.\n\nИнструкции за оценяване. 1 т. за разглеждане на тривиалния случай, когато $\\triangle ABC$ е равнобедрен; 3 т. за построяване на търсената окръжност; 3 т. за доказателство на коректност на построението.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "radical_axis",
+        "circle_inversion",
+        "geometric_construction"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква построяване на окръжност през две точки, допираща се до дадена. Решението използва радикална ос (1.4) и споменава инверсия. Това е hard поради дължината на построението, необходимостта от разглеждане на специален случай и доказателство.",
+      "_crosslinked_from": "1.4",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-2-Областен кръг-2016-10 кл · 2016-10 · Зад. 10.2",
+      "statement": "Даден е \\triangle ABC с център на вписаната окръжност I. Нека D е точка от описаната около \\triangle ABC окръжност, различна от C, такава, че DI е ъглополовяща на \\angle ADB. Ако AD + BD = 2DI, то да се докаже, че AC = BC.",
+      "solution": "Решение. Нека k е описаната около \\triangle ABC окръжност и правите AI и BI пресичат за втори път k в точките K и L съответно. От условието следва, че /varangleADI = /varangleBDI = 12 /varangleADB = /varangleLDK, но /varangleDAI = /varangleDLK и /varangleDBI = /varangleDKL и следователно \\triangle ADI ∼ \\triangle LDK ∼ IDB . Тогава AD ID = IDBD ⇒ AD.BD = DI 2. /Bullet A /Bullet B /Bullet C /Bullet L /Bullet K /Bullet I /Bullet D Окончателно AD + BD = 2DI и AD.BD = DI 2 откъдето следва, че A D = BD = DI . Това означава, че точките C, I и D лежат на една права, но /varangleADI = /varangleBDI , т.е. AC = BC .",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circle_properties",
+        "angle_bisector",
+        "similar_triangles"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на вписаната окръжност и описаната окръжност. Решението използва подобие на триъгълници и свойства на ъглополовящи."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2016-12 кл · 2016-12 · Зад. 12.2",
+      "statement": "В трапец $ABCD$, $AB \\parallel  CD$, вписаната окръжност в триъгълник $ABD$ допира страните $AB$ и $BD$ съответно в точки $M$ и $N$, а вписаната окръжност в триъгълник $ACD$ допира страните $AC$ и $DC$ съответно в точки $P$ и $Q$. Да се докаже, че пресечната точка на правите $MN$ и $PQ$ лежи на средната основа на трапеца.",
+      "solution": "Нека $O$ е центърът на вписаната в $\\triangle ABD$ окръжност и ъглополовящата на ъгъл $BAC$ пресича правата $MN$ в точка $S$. Тъй като $\\angle ASM = \\angle BMN - \\angle BAO$, то $\\angle ASM = \\frac{1}{2} \\angle ADB$. Следователно точките $O$, $S$, $N$ и $D$ лежат на една окръжност. Тогава $\\angle DSA = \\angle DNO = 90^\\circ$. Понеже $ABCD$ е трапец, то $DS$ е ъглополовяща на $\\angle ADC$.\n\nПо същия начин доказваме, че ъглополовящите на $\\angle ADC$ и $\\angle BAC$ се пресичат върху $PQ$. Следователно $S$ е пресечната точка на правите $MN$ и $PQ$. Ако $T$ е средата на $AD$, то $\\angle TSA = \\angle TAS = \\angle SAB$, което означава, че $ST \\parallel AB$. Понеже $T$ е среда на $AD$ и $ST \\parallel AB$, точката $S$ лежи на средната основа на трапеца.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "incircle",
+        "angle_bisectors",
+        "cyclic_quadrilaterals",
+        "midline_property"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на вписани окръжности в триъгълниците на трапеца, ъглополовящи и циклични точки, за да докаже, че пресечната точка лежи на средната основа. Основната техника е свързана с вписани окръжности."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2017-12 кл · 2017-12 · Зад. 12.3",
+      "statement": "Даден е правоъгълен равнобедрен триъгълник $$ABC$$ ($$\\angle  C = 90^◦$$). Вписаната в триъгълника окръжност се допира до страните $$BC$$, $$CA$$, $$AB$$ съответно в точките $$A_1$$, $$B_1$$, $$C_1$$, а върху дъгата $$̂{A_1B_1}$$, която не съдържа $$C_1$$, е избрана произволна точка $$P$$. Нека разстоянията от точката $$P$$ до страните $$BC$$, $$CA$$, $$AB$$ са равни съответно на $$t_a$$, $$t_b$$ и $$t_c$$. Да се докаже, че\n\n$$√{t_a} + √{t_b} √{t_c} = √{2 - √{2}}.$$",
+      "solution": "По теоремата на Птолемей за вписания четириъгълник $PA_1C_1B_1$ имаме $PA_1 \\cdot B_1C_1 + PB_1 \\cdot A_1C_1 = PC_1 \\cdot A_1B_1$, откъдето получаваме\n\n$$\\frac{PA_1 + PB_1}{PC_1} = \\frac{A_1B_1}{A_1C_1} = 2 \\sin \\frac{45^\\circ}{2} = \\sqrt{2 - \\sqrt{2}}.$$\n\nАко диаметърът на вписаната окръжност през $A_1$ е $A_1A_0 = 2r$, то $t_a$ е проекцията на $PA_1$ върху $A_1A_0$. Следователно $PA_1 = \\sqrt{2r\\,t_a}$. Аналогично $PB_1 = \\sqrt{2r\\,t_b}$ и $PC_1 = \\sqrt{2r\\,t_c}$ и като заместим в резултата от по-горе, получаваме желаното равенство.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "ptolemy_theorem",
+        "incircle",
+        "distances_to_sides"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрична задача, използваща теоремата на Птолемей за циклични четириъгълници и връзка с разстояния до страни. Точка 1.3 от STEPS е точна. Трудността е висока поради необходимостта от допълнителни построения и познаване на специфични свойства.",
+      "_crosslinked_from": "1.3",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2019-10 кл · 2019-10 · Зад. 10.2",
+      "statement": "Даден е тригълник $ABC$ с център на вписаната окръжност $I$ и среди на страните $AB$, $BC$ и $CA$ съответно $C_0$, $A_0$ и $B_0$. Правата $C_0I$ пресича $A_0B_0$ в точка $C_1$. Аналогично се дефинират и точките $A_1$ и $B_1$. Да се докаже, че:\n\na) npabnte \\(AA_{1}\\) \\(BB_{1}\\) n \\(CC_{1}\\) ce npcevat b eHa toka;\n6) nepneHikkyIpaTe ot \\(A_{1}\\) \\(B_{1}\\) n \\(C_1\\) cboTBeTHo KbM BC, CA n AB ce npcevat b eHa toka.",
+      "solution": "*Решение.* Ще използваме стандартните означения в $\\triangle ABC$.\n\na) Тъй като $A_0C_0$ е средна отсечка в $\\triangle ABC$, отсечката през $I$, която е перпендикулярна на $AC$ и на $A_0C_0$, има дължина $h_b/2$. Тогава височината от $I$ в $\\triangle A_0C_0I$ е $h_b/2 - r$. Използвайки този факт и аналога му в $\\triangle B_0C_0I$, получаваме последователно\n\n$$\\frac{A_0C_1}{B_0C_1} = \\frac{S_{A_0C_0C_1}}{S_{B_0C_0C_1}} = \\frac{S_{A_0C_0I}}{S_{B_0C_0I}} = \\frac{(h_b/2 - r)b/2}{(h_a/2 - r)a/2} = \\frac{b(S/b - S/p)}{a(S/a - S/p)} = \\frac{p - b}{p - a} = \\frac{BC_2}{AC_2},$$\n\nкъдето $C_2$ е допирната точка на вписаната в $\\triangle ABC$ окръжност до страната $AB$. Следователно $CC_1$ минава през $C_2$.\n\nАналогично се доказва, че $AA_1$ и $BB_1$ минават през съответните допирни точки и са в сила съответните пропорции. Сега исканото следва от теоремата на Чева.\n\nб) От доказаното по-горе равенство $\\frac{A_0C_1}{B_0C_1} = \\frac{p-b}{p-a}$ следва, че $C_1$ е допирната точка на външновписаната за $\\triangle A_0B_0C_0$ окръжност откъм $A_0B_0$. Аналогични факти са в сила и за точките $A_1$ и $B_1$. Сега исканото следва от факта, че $C_1A_0^2 + B_1C_0^2 + A_1B_0^2 = C_1B_0^2 + B_1A_0^2 + A_1C_0^2$ (теорема на Карно).\n\n*Забележка.* Твърдението на подточка а) е в сила за произволна точка $I$ и се доказва лесно с теорема на Чева за $A_0B_0C_0$, пренасяне на полученото в $\\triangle ABC$ чрез теорема на Талес и накрая теорема на Чева за $\\triangle ABC$.\n\n**Оценяване.** (7 точки) 3 т. за а) (2 т. за доказване на $\\frac{A_0C_1}{B_0C_1} = \\frac{p-b}{p-a}$, 1 т. за довършване); 4 т. за б) (2 т. за определяне на $C_1$ като допирната точка на външновписаната за $\\triangle A_0B_0C_0$ окръжност, 2 т. за прилагане на теоремата на Карно).",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "ceva_theorem",
+        "carnot_theorem",
+        "incenter_properties",
+        "midline_triangle"
+      ],
+      "confidence": "exact",
+      "reasoning": "Главната техника е теоремата на Карно (б), която е в STEPS 2.9. Теоремата на Чева (а) също е използвана. Задачата изисква дълбоки познания за вписаната окръжност и среди на страни. Трудността е hard поради сложната геометрична конструкция и комбинация от теореми.",
+      "_crosslinked_from": "2.9",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2023-12 кл · 2023-12 · Зад. 12.2",
+      "statement": "Даден е триъгълник $ABC$, за който ъглополовящата на средния по големина ъгъл е равна на най-малката му страна и числата $a = BC$, $b = CA$ и $c = AB$, взети в този ред, образуват аритметична прогресия. Да се намерят отношението, в което центърът на вписаната окръжност $J$ разделя тази ъглополовяща, радиусът $r$ на тази окръжност и дължините на страните на триъгълника, при условие че лицето му $S$ е равно на $21\\sqrt{15}$.",
+      "solution": "Решение. Понеже числата a = BC, b = CA и c = AB в този ред образуват аритметична прогресия, то a + c = 2b и без ограничение на общността можем да считаме, че a \\le  b \\le  c. В триъгълника срещу по-голям ъгъл лежи по-голяма страна и обратно, т.е. конструкцията ще бъде както е показано на чертежа и BL = BC = a. От свойството на ъглополовящите за триъгълника ABC непосредствено получаваме m = AL = c b/a + c = c/2 и n = CL = a b/a + c = a/2. Сега понеже AJ е ъглополовяща в триъгълника ABL, то 1/2 = c/2 = AL/AB = LJ/BJ, т.е. BJ : JL = 2 : 1. Нека c p да означим полупериметъра на Δ ABC, т.е. p = a + b + c/2. От равенството a + c = 2b получаваме b = 2/3 p и a + c = 4/3 p. Сега от BL = a, m = AL = c/2, n = CL = a/2 и формулта за ъглополовящата в Δ ABC имаме a² = BL² = c · a - m · n = 3/4 ac, т.е. a = 3/4 c. Така от равенствата a = 3/4 c и a + c = 4/3 p непосредствено получаваме a = 12/21 p, b = 2/3 p и c = 16/21 p. Сега от свойствата на допирателна от външна точка към окръжност имаме BM = p - b = p/3, а от BJ : JL = 2 : 1 и BL = a достигаме до BJ = 2/3 a = 8/21 p. Тогава в правоъгълния триъгълник BMJ теоремата на Питагор ни дава BJ² = BM² + JM², (8/21 p)² = (p/3)² + r² или (8² - 7²)/21² p² = r², т.е. r² = 15/21² p². Сега от формулата за лице S = pr = 21√15 след повдигане на квадрат достигаме до S² = p²r² = 21² · 15 и след заместване на r² = 15/21² p² имаме p² 15/21² p² = 21² · 15, т.е. p = 21. Така окончателно получаваме r = √15, a = 12, b = 14 и c = 16.",
+      "answer": "r = √15, a = 12, b = 14, c = 16",
+      "difficulty": "hard",
+      "techniques": [
+        "angle_bisector",
+        "incenter",
+        "semiperimeter",
+        "area_formula",
+        "pythagoras"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрична задача с ъглополовяща и вписана окръжност. Изисква комплексни изчисления и свойства на инцентъра. Съвпада с A2."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2025-10 кл · 2025-10 · Зад. 2",
+      "statement": "Даден е вписан четириъгълник $ABCD$ с пресечна точка $E$ на диагоналите $AC$ и $BD$, за който $AD \\neq BC$. Точките $M$ и $N$ са средите на страните $AD$ и $BC$. Описаната окръжност около триъгълника $EMN$ пресича лъчите $DA^\\rightarrow$ и $CB^\\rightarrow$ в точките $X$ и $Y$. Точка $F$ е пресечна на правите $AD$ и $BC$. Ако $EF$ е перпендикулярна на $MN$, то да се докаже, че $E$ е центърът на описаната около триъгълника $FXY$ окръжност.",
+      "solution": "Решение. Най-напред ще докажем, че $EX = EY$. От вписания $ABCD$ получаваме подобието $\\triangle AED \\sim \\triangle BEC$. Сега $EM$ и $EN$ са съответни медиани в тези два триъгълника, следователно $\\angle EMA = \\angle BNE$. Оттук\n\n$$\\angle YXE = 180^\\circ - \\angle ENY = 180^\\circ - \\angle ENB = 180^\\circ - \\angle EMA = 180^\\circ - \\angle EMX = \\angle EYX,$$\n\nоткъдето $E \\in S_{XY}$. Нека $FH \\perp XY$, като $H \\in XY$. Сега\n\n$$\\angle YFE = 90^\\circ - \\angle MNF = 90^\\circ - \\angle FXY = 90^\\circ - \\angle FXH = \\angle XFH.$$\n\nАко $E'$ е центърът на описаната окръжност около триъгълника $FXY$, то $\\angle YFE' = 90^\\circ - FXY = \\angle YFE$, откъдето $E \\in FE'$. Значи остава да проверим, че $S_{XY} \\neq FE'$, т.е. да проверим, че $FX \\neq FY$. Ако допуснем противното, то ще получим, че четириъгълникът\n\nСвалено от Klasirane.com\n\n─── Стр. 2 ───\n$XYNM$ е равнобедрен трапец, откъдето и $EM = EN$. Следователно $\\triangle AED \\cong \\triangle BEC$, т.е. $AD = BC$, което е противоречие с условието. С това задачата е решена.\n\n**Оценяване.** (7 точки) 5 т. за $E \\in S_{XY}$ и $E \\in FE'$ (от които 3 т., ако е доказано само едното); 2 т. за завършване на решението (от които 1 т. за обосновка на $S_{XY} \\neq FE'$).",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "cyclic_quadrilateral",
+        "midline_theorem",
+        "circle_properties",
+        "perpendicularity"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на вписания четириъгълник, среди на страни, описани окръжности и перпендикулярност. Основната техника е степен на точка и радикална ос, но също така се използват подобия и свойства на окръжности. Решението доказва, че E е център на описаната окръжност чрез свойства на ъгли и перпендикулярност.",
+      "_crosslinked_from": "1.4",
+      "_crosslink_confidence": 0.7
+    },
+    {
+      "source": "OLI-2-Областен кръг-2025-12 кл · 2025-12 · Зад. 12.1",
+      "statement": "Точка $D$ лежи на страната $AB$ на остроъгълен триъгълник $ABC$. Точките $I_A$ и $J_A$ съответно са центърът на вписаната окръжност и центърът на външната вписана окръжност срещу върха $D$ за $\\triangle ADC$. Аналогично дефинираме точките $I_B$ и $J_B$ като съответните центрове за $\\triangle BDC$. Да се докаже, че точките $I_A, I_B, J_B, J_A$ лежат на една окръжност тогава и само тогава, когато $D$ е середина на $AB$.",
+      "solution": "Решение. Първи подход. Поради $\\angle I_A A J_A = 90^\\circ = \\angle I_A C J_A$ точките $I_A, A, J_A, C$ лежат на една окръжност. Нека точка $X$ е втората пресечна точка на $(A I_A J_A)$ с правата $AD$. От $\\angle DXC = \\angle A J_A C = 90^\\circ - \\angle ADC/2$ следва, че $\\triangle DXC$ е равнобедрен с $DX = CD$. Така от степен на точка $D$ спрямо $(A I_A J_A)$ получаваме $D I_A \\cdot D J_A = D A \\cdot D X = D A \\cdot C D$ и аналогично $D I_B \\cdot D J_B = D B \\cdot D C$. Тъй като $I_A, J_A, I_B, J_B$ лежат на една окръжност тогава и само тогава, когато $D I_A \\cdot D J_A = D I_B \\cdot D J_B$, то това е еквивалентно на $AD \\cdot CD = BD \\cdot CD \\iff AD = BD$.\n\nВтори подход. За произволен тригъгълник $XYZ$ с център на вписаната окръжност $I$ и център $J$ на външновписаната окръжност срещу $Z$ имаме, че $\\triangle ZYI \\sim \\triangle ZJX$, тъй като $\\angle ZJX = \\angle ZYI = \\angle XYZ/2$ и $\\angle XZJ = \\angle YZI = \\angle XZY/2$. Така получаваме, че $\\frac{XZ}{ZI} = \\frac{ZJ}{ZY}$ или $ZX \\cdot ZY = ZI \\cdot ZJ$. Прилагайки този резултат за $\\triangle ADC$ и $\\triangle BDC$, получаваме $D I_A \\cdot D J_A = D A \\cdot D C$ и $D I_B \\cdot D J_B = D A \\cdot D B$, откъдето исканото следва както по-горе.\n\nОценяване. (7 точки) Първи подход: 1 т. за построяване на точка $X$; 1 т. за $DX = CD$; 3 т. за $D I_A \\cdot D J_A = C D \\cdot AD$; 2 т. за довършване. Втори подход: 5 т. за доказване на $D I_A \\cdot D J_A = D A \\cdot D C$; 2 т. за довършване.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "incenter",
+        "excenter",
+        "circle_properties",
+        "power_of_a_point"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на вписаната и външновписаната окръжност и степен на точка. Тя е трудна, защото изисква построяване на допълнителна точка и използване на радикални оси."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2025-12 кл · 2025-12 · Зад. 12.1",
+      "statement": "Точка $D$ лежи на страната $AB$ на остроъгълен триъгълник $ABC$. Точките $I_A$ и $J_A$ съответно са центърът на вписаната окръжност и центърът на външната вписана окръжност срещу върха $D$ за $\\triangle ADC$. Аналогично дефинираме точките $I_B$ и $J_B$ като съответните центрове за $\\triangle BDC$. Да се докаже, че точките $I_A, I_B, J_B, J_A$ лежат на една окръжност тогава и само тогава, когато $D$ е середина на $AB$.",
+      "solution": "Решение. Първи подход. Поради $\\angle I_A A J_A = 90^\\circ = \\angle I_A C J_A$ точките $I_A, A, J_A, C$ лежат на една окръжност. Нека точка $X$ е втората пресечна точка на $(A I_A J_A)$ с правата $AD$. От $\\angle DXC = \\angle A J_A C = 90^\\circ - \\angle ADC/2$ следва, че $\\triangle DXC$ е равнобедрен с $DX = CD$. Така от степен на точка $D$ спрямо $(A I_A J_A)$ получаваме $D I_A \\cdot D J_A = D A \\cdot D X = D A \\cdot C D$ и аналогично $D I_B \\cdot D J_B = D B \\cdot D C$. Тъй като $I_A, J_A, I_B, J_B$ лежат на една окръжност тогава и само тогава, когато $D I_A \\cdot D J_A = D I_B \\cdot D J_B$, то това е еквивалентно на $AD \\cdot CD = BD \\cdot CD \\iff AD = BD$.\n\nВтори подход. За произволен тригъгълник $XYZ$ с център на вписаната окръжност $I$ и център $J$ на външновписаната окръжност срещу $Z$ имаме, че $\\triangle ZYI \\sim \\triangle ZJX$, тъй като $\\angle ZJX = \\angle ZYI = \\angle XYZ/2$ и $\\angle XZJ = \\angle YZI = \\angle XZY/2$. Така получаваме, че $\\frac{XZ}{ZI} = \\frac{ZJ}{ZY}$ или $ZX \\cdot ZY = ZI \\cdot ZJ$. Прилагайки този резултат за $\\triangle ADC$ и $\\triangle BDC$, получаваме $D I_A \\cdot D J_A = D A \\cdot D C$ и $D I_B \\cdot D J_B = D A \\cdot D B$, откъдето исканото следва както по-горе.\n\nОценяване. (7 точки) Първи подход: 1 т. за построяване на точка $X$; 1 т. за $DX = CD$; 3 т. за $D I_A \\cdot D J_A = C D \\cdot AD$; 2 т. за довършване. Втори подход: 5 т. за доказване на $D I_A \\cdot D J_A = D A \\cdot D C$; 2 т. за довършване.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "incenter",
+        "excenter",
+        "circle_properties",
+        "power_of_a_point"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на вписаната и външновписаната окръжност и степен на точка. Тя е трудна, защото изисква построяване на допълнителна точка и използване на радикални оси.",
+      "_crosslinked_from": "1.10",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2026-12 кл · 2026-12 · Зад. 12.2",
+      "statement": "Външната вписана окръжност срещу върха $A$ на $\\triangle ABC$ с център $I_A$ допира страната $BC$ в точка $T$. Правата през $A$, перпендикулярна на $BC$, пресича описаната около $\\triangle ABC$ окръжност за втори път в точка $E$. Върху лъчите $I_A T$, $BE$ и $CE$ са взети съответно точките $X$, $Y$ и $Z$, такива че $I_A X = BY = CZ$ и точката $X$ не съвпада с точката $T$. Да се докаже, че ако точките $X$, $Y$, $Z$ и $T$ лежат на една окръжност, то отсечката $I_A X$ е равна на радиуса на вписаната в $\\triangle ABC$ окръжност.",
+      "solution": "Решение. Нека $N$ е средата на малката дъга $\\widehat{BC}$ от окръжността, описана около $\\triangle ABC$. Първо ще докажем, че т. $N$ е центърът на описаната около $\\triangle XYZ$ окръжност. От Лема на тризъбеца имаме, че $N I_A = NB = NC$, а пък $\\angle N I_A X = \\angle N B Y = \\angle N C Z = \\frac{\\angle A C B - \\angle A B C}{2}$ и т.к $I_A X = BY = CZ$, то $\\triangle B Y N \\cong \\triangle C Z N \\cong \\triangle X I_A N$, т.е $N X = \\widehat{N} Y = N Z$, с което твърдението следва.\n\n![img-0.jpeg](img-0.jpeg)\n\nНека $I$ е центърът на вписаната в $ABC$ окръжност, а пък $D$ е проекцията на $I$ върху правата $BC$. От $BT = CD$ и $NB = NC$, получаваме, че $NT = ND$ и значи $\\angle NTD = \\angle NDT$. Следователно\n\n$$\\begin{array}{l} \\angle N X I_A = 180^\\circ - \\angle N X T = 180^\\circ - \\angle N T X = 180^\\circ - (90^\\circ - \\angle NTD) = \\\\ = 90^\\circ + \\angle NDT = \\angle IDN. \\end{array}$$\n\nОт друга страна, $\\angle NID = \\angle X I_A N$, понеже $X I_A || ID$ и тъй като $N I_A = NI$, то $\\triangle N I_A X \\cong \\triangle NID$. Следователно $I_A X = ID$, което трябваше да докажем.\n\nОценяване. (7 точки) 1 т. за въвеждане на т. $N$; 3 т. за $NX = NY = NZ$; 2 т. за $\\angle N X I_A = \\angle I D N$; 1 т. за довършване.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circle_properties",
+        "congruence",
+        "radical_axis"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата включва външновписана окръжност, описана окръжност и перпендикуляри. Решението използва допълнителни построения (точка N) и свойства на окръжности, което е характерно за точка 1.10. Трудността е hard поради множеството стъпки и необходимостта от нетривиални връзки."
+    },
+    {
+      "source": "OLI-3-Национален кръг-1989-9-12 кл · 1989-None · Зад. 1",
+      "statement": "Даден е триъгълиикът ABC. Точката O е центърьт на външновписаната към страната BC окръжност, а външновписаните към страните AB и AC окръжности се допират съответно до тези страни в точките M и N. Правата през O, която е перпендикулярна на MN, пресича правата BC в точка P. Да се намери числената стойност на отношението AB AC на дължините на страните AB и AC, ако е известно, че отношението на лицата на триъгълниците ABC и MNP е 2R r , където R и r са съответно радиусите на описаната и вписаната в \\triangle ABC окръжности.",
+      "solution": "Ще използваме означенията: $$a = BC, b = CA, c = AB, \\u03b1 = \\\\angle BAC, \\u03b2 = \\\\angle ABC, \\u03b3 = \\\\angle BCA$$ и $$p = \\\\frac{a + b + c}{2}$$. Нека външно вписаната към страната BC окръжност се допира до тази страна в точката H (черт. 1). Ще докажем, че $$\\frac{S_{ABC}}{S_{MNH}} = \\frac{2R}{r}$$. По косинусовата теорема $$\\u03b1 = \\u03b1 = \\\\frac{b^2 + c^2 - a^2}{2bc}$$. Тогава\\n\\n$$\\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\u03b1 = \\",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "вписани_окръжности",
+        "радиуси",
+        "лице"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на вписаните и външновписаните окръжности, формули за лице и радиуси. Това е основна техника в точка 1.10."
+    },
+    {
+      "source": "OLI-3-Национален кръг-1995-9-12 кл · 1995-None · Зад. 2",
+      "statement": "A triangle $ABC$ with semiperimeter $p$ is given. Points $E$ and $F$ lie on the line $AB$ and $CE = CF = p$. Prove that the excircle $k_1$ of $\\triangle ABC$ to the side $AB$ touches the circumcircle $k$ of $\\triangle EFC$.",
+      "solution": "Let $P$ and $Q$ be the tangent points of $k_1$ with the lines $CA$ and $CB$, respectively. Since $CP = CQ = p$, then the points $E, P, Q$ and $F$ lie on the circle with center $C$ and radius $p$. We denote by $i$ the inversion defined by this circle. Since $i(P) = P$, $i(Q) = Q$, then $i(k_1) = k_1$. On the other hand $i(E) = E$ and $i(F) = F$. Hence $i(k)$ is the line $AB$. But $k_1$ touches $AB$ and thus $k$ touches $k_1$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "inversion",
+        "excircle",
+        "circumcircle"
+      ],
+      "confidence": "exact",
+      "reasoning": "Решението използва инверсия с център C и радиус p, за да преобразува окръжностите и да докаже допир. Инверсията е основна техника за трансформиране на допирателни окръжности в прави и обратно, което е подходящо за точка 2.3.",
+      "_crosslinked_from": "2.3",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-3-Национален кръг-1995-9-12 кл · 1995-None · Зад. 4",
+      "statement": "The points $C_1, A_1$ and $B_1$ lie on the sides $AB, BC$ and $CA$ of the equilateral triangle $ABC$ respectively in such a way that the inradii of the triangles $C_1AB_1, B_1CA_1, A_1BC_1$ and $A_1B_1C_1$ are equal. Prove that $A_1, B_1$ and $C_1$ are the midpoints of the corresponding sides.",
+      "solution": "We shall prove that $BA_1 = CB_1 = AC_1$ (Figure 1). Assume the contrary and let $BA_1 \\ge CB_1 > AC_1$. Let $\\rho$ be the rotation at $120^\\circ$ which center coincides with the in center of the incircle of $\\triangle ABC$. This rotation transforms the incircles of the triangles $C_1BA_1$, $A_1CB_1$ and $B_1AC_1$ to the incircles of the triangles $A_1CB_1$, $B_1AC_1$ and $C_1BA_1$, respectively. Let $A_2 = \\rho(A_1)$, $B_2 = \\rho(B_1)$ and $C_2 = \\rho(C_1)$. It follows that $BB_2 < BC_1$ and $BC_2 < BA_1$. But the incircles of the triangles $BC_1A_1$ and $BC_2B_2$ have equal radii (because $\\rho(\\triangle AC_1B_1) = \\triangle BC_2B_2$), which is a contradiction.\n\nLet $r$ be the radius of the incircles of the triangles $C_1AB_1$, $B_1CA_1$, $A_1BC_1$ and $A_1B_1C_1$. From the triangle $B_1AC_1$ we have $r = \\frac{1 - B_1C_1}{2} \\cdot \\frac{\\sqrt{3}}{3}$, and from $\\triangle A_1B_1C_1$ which is equilateral we have $r = B_1C_1 \\cdot \\frac{\\sqrt{3}}{6}$. From here $B_1C_1 = \\frac{1}{2}$ and consequently $A_1$, $B_1$, $C_1$ are midpoints of the corresponding sides.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "rotation",
+        "incircle",
+        "equilateral_triangle"
+      ],
+      "confidence": "exact",
+      "reasoning": "Въпреки че решението използва ротация, основната идея е свързана с вписаните окръжности и тяхното поведение при ротация. Тъй като условието директно включва вписани радиуси, точка 1.10 е най-подходяща, въпреки че ротацията не е изрично в STEPS."
+    },
+    {
+      "source": "OLI-3-Национален кръг-2002-9-12 кл · 2002-None · Зад. 2",
+      "statement": "От върха $A$ на триъгълник $ABC$ е спуснат перпендикуляр към външната ъглополовяща на ъгъл $ACB$. Аналогично, от $C$ е спуснат перпендикуляр към външната ъглополовяща на ъгъл $ABC$ и от върха $B$ е спуснат перпендикуляр към външната ъглополовяща на ъгъл $BAC$. Да се докаже, че ако $d$ е диаметърът на описаната окръжност около триъгълника, образуван от трите перпендикуляра, а $r$ и $p$ са съответно радиусът на вписаната окръжност и полупериметърът на $\triangle ABC$, то $r^2 + p^2 = d^2$.",
+      "solution": "**Решение:** Да означим петите на трите перпендикуляра съответно с $A_1$, $C_1$ и $B_1$, а средите на страните на $∆ ABC$ с $A_2$, $B_2$ и $C_2$ (черт. 1).\n\nТогава $\\angle  A_2BC_1 = 90^° - \\frac{\\beta}{2}$ и тъй като $C_1A_2$ е медиана в правоъгълния $∆ BC_1C$, то $\\angle  BC_1A_2 = 90^° - \\frac{\\beta}{2}$, откъдето намираме $\\angle  BA_2C_1 = \\beta$. Но $\\angle  B_2A_2C = \\beta$, което означава, че точките $B_2$, $A_2$ и $C_1$ лежат на една права.\n\nЩе докажем, че центърът $I$ на вписаната окръжност за $∆ A_2B_2C_2$ е център на описаната окръжност за $∆ A_1B_1C_1$.\n\nАко $T$ е допирната точка на вписаната в $∆ A_2B_2C_2$ окръжност със страната $A_2B_2$, то $TC_1 = TA_2 + A_2C_1 = \\left(\\frac{a+b+c}{4} - \\frac{a}{2}\\right) + \\frac{a}{2} = \\frac{p}{2}$. Следователно $IC_1^2 = IT^2 + TC_1^2 = \\left(\\frac{r}{2}\\right)^2 + \\left(\\frac{p}{2}\\right)^2$. Аналогично получаваме $IA_1^2 = IB_1^2 = \\left(\\frac{r}{2}\\right)^2 + \\left(\\frac{p}{2}\\right)^2$, което означава, че $IA_1 = IB_1 = IC_1 = \\frac{d}{2}$, където $d$ е диаметърът на описаната около $∆ A_1B_1C_1$ окръжност. Следователно $d^2 = r^2 + p^2$ с което задачата е решена.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "incircle",
+        "perpendicular",
+        "midpoint",
+        "distance_formula"
+      ],
+      "confidence": "exact",
+      "reasoning": "Централният обект е вписаната окръжност и връзката между триъгълниците. Решението използва свойства на вписаната окръжност и среди на страни, което е в темата за вписани и външновписани окръжности (STEPS 1.10)."
+    },
+    {
+      "source": "OLI-3-Национален кръг-2005-9-12 кл · 2005-None · Зад. 2",
+      "statement": "Окръжности $k_1$ и $k_2$ се допират външно в точка $T$. Права пресича $k_1$ в точки $A$ и $B$ и се допира до $k_2$ в точка $X$. Правата $XT$ пресича $k_1$ в точка $S$. Върху дъгата $TS$, несъдържаща $A$ и $B$, е избрана точка $C$. Нека $CY$ е допирателната към $k_2$ ($Y ∈ k_2$), за която отсечките $CY$ и $ST$ не се пресичат. Ако $I$ е пресечната точка на правите $XY$ и $SC$, да се докаже, че:\n\na) Това е ... eHa OKpbKHOCT;\nb) TOUka I e IeHTbp Ha BbHIOHOVINCAHaT a OKpbXHOCT в $\\triangle  ABC$ към BC.",
+      "solution": "а) Понеже k1 и k2 се допират, имаме <) BXT = ⌊\nXT\n2 =\n⌊\nT S\n2 = <) T AS.\nОттук лесно следва, че S е среда на дъгата\n⌊\nAB. Тогава <) T CI = <) T AS\n(защото AT CS е вписан в k1), <) T AS = <) BXT , <) BXT = <) T Y X (защото\nсе измерват с една и съща дъга). Следователно <) T CI = <) T Y I, което\nозначава, че около CT IY може да се опише окръжност.\nб) Тъй като <) AXS = <) T AS, получаваме че \\triangle AXS ∼ \\triangle  T AS. Оттук\nнамираме SA2 = ST.SX . От а) имаме <) CIT = <) CY T = <) T XY и следователно\n\\triangle SXI ∼ \\triangle  SIT . Оттук намираме SI 2 = ST.SX . Окончателно получихме\nSA = SI . Освен това от\n<) BCI = 180 ◦ − <) BCS = 180 ◦ − (\nγ + α + β2 ) = 90 ◦ − γ2 ,\nследва, че CI е външна ъглополовяща на <) ACB . Остава да забележим, че\nSB = SA = SI и от равнобедрения \\triangle BSI с <) BSI = <) BSC = α намираме\n<) BIS = 90 ◦ − α2 . Сега от \\triangle BCI намираме <) CBI = 90 ◦ − β2 , което означава,че BI е външна ъглополовяща на <) ABC . Следователно I е центърът на\nвъншновписаната окръжност за триъгълник ABC към страната BC .",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circle_geometry",
+        "angle_chasing",
+        "similar_triangles",
+        "excircle"
+      ],
+      "confidence": "exact",
+      "reasoning": "Доказателството използва свойства на окръжности, ъгли и подобни триъгълници, за да установи, че точка I е център на външновписаната окръжност. Изисква сложни геометрични конструкции."
+    },
+    {
+      "source": "OLI-3-Национален кръг-2010-9-12 кл · 2010-None · Зад. 6",
+      "statement": "(Стоян Боев) Даден е $\\triangle ABC$ вписан в окръжност $k$ и нека $D$ е точка върху страната $AB$. Означаваме с $I$ и $J$ центровете на двете окръжности, които се допират до страната $AB$, до отсечката $CD$ и вътрешно до окръжността $k$. Ако точките $A, B, I$ и $J$ лежат на една окръжност, да се докаже, че $D$ е допирната точка на външновписаната окръжност към страната $AB$ на $\\triangle ABC$ с $AB$.",
+      "solution": "Нека окръжността $k$ е с център $O$ и радиус $r$, окръжността с център $I$ е $k_1$ с радиус $r_1$ и се допира до $BD$, $CD$ и $k$ съответно в точките $P$, $R$ и $Q$, а окръжността с център $J$ е $k_2$ с радиус $r_2$ и се допира до $AD$, $CD$ и $k$ съответно в точките $K$, $M$ и $L$.\n\nПърво ще докажем, че $AB \\parallel IJ$, т.е. $ABIJ$ е равнобедрен трапец. Да допуснем противното и нека $IJ$ пресича правата $AB$ в точка $T$. Ако разгледаме $\\triangle IJO$ и точките $T$, $Q$ и $L$ върху страните, то\n\n$$\\frac{IT}{TJ} \\cdot \\frac{JL}{LO} \\cdot \\frac{OQ}{QI} = \\frac{r_1}{r_2} \\cdot \\frac{r_2}{r} \\cdot \\frac{r}{r_1} = 1$$\n\nи от теоремата на Менелай следва, че точките $T$, $Q$ и $L$ лежат на една права. Тогава $TQ.TL = TB.TA$, но по-условие $ABIJ$ е вписан четириъгълник, т.е. $TB.TA = TI.TJ$ и следователно $TQ.TL = TI.TJ$, т.е. $QLJI$ е вписан четириъгълник. От друга страна $\\angle JLQ = \\angle IQL$, т.е. $QLJI$ е равнобедрен трапец и $IJ \\parallel QL$, което е противоречие. Следователно $AB \\parallel IJ$, т.е. $r_1 = r_2$ и $AK = BP$ (1).\n\nОт обобщената теорема на Птолемей, приложена за точките $A$, $B$, $Q$ и $C$ получаваме\n\n$$AB.CR + AC.BP = AP.BC,$$\n\nно $CR = CD - DR = CD - DP = CD - BD + BP$, $AP = AB - BP$ и след заместване в горното равенство достигаме до\n\n$$BP = \\frac{AB(BC + BD - CD)}{AB + BC + AC}. \\quad (2)$$\n\nАналогично\n\n$$AK = \\frac{AB(AC + AD - CD)}{AB + BC + AC}. \\quad (3)$$\n\nНакрая от (1), (2) и (3) получаваме, че $BC + BD = AC + AD$, което е изпълнено точно тогава, когато $D$ е допирната точка на външновписаната окръжност към страната $AB$ на $\\triangle ABC$ с $AB$ и с това доказателството е завършено.\n\nЗабележка. Втората част на задачата може да се реши и синтетично, като се използва далеч неочевидния факт, че за произволна точка $D$ правите $MK$, $PR$ и $IJ$ минават през центъра на вписаната в $\\triangle ABC$ окръжност. Директно с теоремата на Виктор-Тебо ($IJ$ минава през центъра на вписаната в $\\triangle ABC$ окръжност) задачата не може да бъде решена.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circle_geometry",
+        "menelaus_theorem",
+        "incircle",
+        "excircle"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрична задача с вписани и външновписани окръжности. Решението използва теорема на Менелай и свойства на допирните точки, за да докаже, че D е допирна точка на външновписаната окръжност."
+    },
+    {
+      "source": "OLI-3-Национален кръг-2023-9-12 кл · 2023-None · Зад. 2",
+      "statement": "Даден е разностранен триъгълник ABC. Нека  \\( A_{1} \\) ,  \\( B_{1} \\)  и  \\( C_{1} \\)  са допирните точки на външновписаните окръжности със страните BC, CA, AB съответно. Центровете на описаната около  \\( \\triangle AB_{1}C_{1} \\) ,  \\( \\triangle BA_{1}C_{1} \\) ,  \\( \\triangle CA_{1}B_{1} \\)  са означени с  \\( O_{A} \\) ,  \\( O_{B} \\) ,  \\( O_{C} \\)  съответно. Да се докаже, че правите през  \\( O_{A} \\) ,  \\( O_{B} \\)  и  \\( O_{C} \\) , съответно успоредни на ъглополовящите на \\( \\angle A \\), \\( \\angle B \\) и \\( \\angle C \\), се пресичат в една точка.",
+      "solution": "Решение. Нека O е центърът на описаната около  \\( \\triangle ABC \\)  окръжност, и нека T е средата на дъгата  \\( \\widehat{ACB} \\)  от описаната окръжност (виж чертежа). Имаме  \\( AB_{1} = BA_{1} \\) , AT = BT,  \\( \\angle B_{1}AT = \\angle A_{1}BT \\) , следователно  \\( \\triangle B_{1}AT \\cong \\triangle A_{1}BT \\) . От еднаквостта получаваме, че  \\( \\angle CB_{1}T = \\angle CA_{1}T \\) , следователно описаната около  \\( A_{1}B_{1}C \\)  окръжност минава през T и  \\( OO_{C} \\)  е симетрала на CT. Но правите  \\( OO_{C} \\)  и ъглополовящата на  \\( \\angle ACB \\)  са перпендикулярни на CT (защо?), следователно правата през  \\( O_{C} \\) , успоредна на ъглополовящата на  \\( \\angle ACB \\) минава през $O!$. Повтаряйки това разсъждение, достигаме до заключението, че исканите прави се пресичат в $O$.\n\n**Оценяване.** (7 точки) 2т. за хипотеза, че трите прави се пресичат в т.$O$. 1т. за построяване на средата на някоя от дъгите $\\widehat{BAC}$, $\\widehat{ABC}$ или $\\widehat{ACB}$, 2т. за $\\triangle B_1 AT \\cong \\triangle A_1 BT$ и 2т. за довършване.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circumcircle",
+        "excircles",
+        "angle_bisectors",
+        "parallel_lines",
+        "concurrency"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва външновписани окръжности и центрове на описани окръжности. Точка 1.10 е точна. Трудност: hard поради сложните геометрични построения."
+    },
+    {
+      "source": "OLI-3-Национален кръг-2026-9-12 кл · 2026-None · Зад. 4",
+      "statement": "Даден е \\triangle ABC с описана около него окръжност Γ. Окръжност Ω през върховете B и C пресича отсечките AB и AC в точки D и E съответно. Върху малката дъга DE от Ω е избрана точка F. Нека ω е окръжността, която минава през A и F и се допира до Ω. Да се докаже, че ω се допира до Γ тогава и само тогава, когато правата AF е ъглополовяща на \\angle DFE.",
+      "solution": "Решение. (I начин) Нека $X$ е пресечната точка на допирателната в $F$ към $\\Omega$ и допирателната в $A$ към $\\Gamma$. Нека $AF$ пресича $\\Omega$ за втори път в $M$ и $Y = DE \\cap AF$. Можем да видим, че $\\angle XAD = \\angle BCA = \\angle EDA$, тоест $AX \\parallel DE$.\n\n![img-0.jpeg](img-0.jpeg)\n\nПосока 1: Нека $\\omega$ се допира до $\\Gamma$. Щом $XA$ и $XF$ са допирателните, то $\\angle XAF = \\angle XFA$. Можем да видим, че $\\angle XAF = \\angle DYM = \\angle YDF + \\angle DFM$. Освен това $\\angle XFA = 180 - \\angle XFM = \\angle MDF = \\angle YDF + \\angle MFE$ от което следва, че $\\angle DFM = \\angle MFE$ с което сме готови.\n\nПосока 2: Нека $AF$ е ъглополовяща на $\\angle EDF$. То $\\angle XAF = \\angle DYM = \\angle FDY + \\angle YDM = 180 - \\angle FEM = 180 - \\angle XFM = \\angle XFA$. Щом $\\angle XAF = \\angle XFA$ следва, че $XA$ е допирателна към $\\omega$, обаче тя е допирателна и към $\\Gamma$, следователно двете окръжности се допират в $A$.\n\nСвалено от Klasirane.com\n\n(II начин) Нека правата AF пресича за втори път Ω и Γ в точките M и N съответно, а точка  $ Z \\in \\widehat{AF} $  както е показано на чертежа. Окръжността ω се допира до Γ тогава и само тогава, когато  $ \\widehat{ACN} = \\widehat{AZF} $ . Тъй като ω и Ω имат обща вътрешна допирателна, то  $ \\widehat{AZF} = \\widehat{FDM} $ . От друга страна,\n\n$$\n\\begin{array}{l} \\widehat {A C N} = \\widehat {A C} + \\widehat {C N} = 2 \\text {   A   B   C   } + 2 \\text {   C   A   N   } \\\\ = \\widehat {D F C} + \\widehat {M C} - \\widehat {F E} = \\widehat {D F} + \\widehat {E C M}. \\\\ \\end{array}\n$$\n\nСледователно условието е еквивалентно на  $ \\widehat{DF} + \\widehat{ECM} = \\widehat{FDM} $ , т.е.  $ \\widehat{ECM} = \\widehat{DBM} $  или AF да е ъглополовяща на  $ \\triangle DFE $ .\n\n(III начин) Да разгледаме инверсия с център A и радиус  $ \\sqrt{AD \\cdot AB} = \\sqrt{AE \\cdot AC} $ . При тази инверсия можем да видим, че  $ \\Omega $  се запазва. B и D се разменят, E и C се разменят. Освен това F отива в  $ M = AF \\cap \\Omega $ . Г трябва да отиде в права през образите на B и C, тоест отива в DE.  $ \\omega $  отива в допирателната към  $ \\Omega $  през M. Искаме да докажем, че DE е успоредна на допирателната през M към  $ \\Omega $  тогава и само тогава когато AF е ъглополовяща, което е същото като M да е среда на дъгата, и твърдението следва.\n\nОценяване. (7 точки) (I начин) 1 т. за дефиниране на точка X и DE || AX; 3 т. за посока 1; 3 т. за посока 2. (II начин) 2 т. за свеждане на задачата до равенство на дъги от Г или Ω като ACN = FDM; 3 т. за изразяване на тези дъги чрез дъги само в Ω; 2 т. за довършване. (III начин) 1 т. за разглеждане на инверсия с център A и радиус √AD·AB; 3 точки за намиране образите на дефинираните точки и окръжности; 2 точки за преформулиране на задачата спрямо новата конфигурация; 1 т. за довършване.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circle_geometry",
+        "power_of_point",
+        "angle_chasing",
+        "tangency"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрична задача с допиращи се окръжности и ъгли. Основната техника е степен на точка (1.4).",
+      "_crosslinked_from": "1.4",
+      "_crosslink_confidence": 0.75
     }
   ]
 }

@@ -1,48 +1,116 @@
 {
   "point_id": "5.1",
-  "total": 20,
+  "total": 40,
   "by_difficulty": {
-    "easy": 0,
-    "medium": 20,
-    "hard": 0
+    "easy": 2,
+    "medium": 26,
+    "hard": 12
   },
   "problems": [
     {
-      "source": "OLI-2-Областен кръг-1995-11 кл · 1995-11 · Зад. 1",
-      "statement": "Let $p$ and $q$ be positive numbers such that the parabola $y = x^2 - 2px + q$ has no common point with the $x$-axis. Prove that there exist points $A$ and $B$ on the parabola such that the segment $AB$ is parallel to the $x$-axis and $\\angle AOB = 90^\\circ$ ($O$ is the coordinate origin) if and only if $p^2 < q \\leq \\frac{1}{4}$. Find the values of $p$ and $q$ for which the points $A$ and $B$ are defined in an unique way.",
-      "solution": "Solution. Since the parabola has no common point with the $x$-axis, then the roots of the equation $x^2 - 2px + q = 0$ are not real and hence $p^2 < q$. Let the points $A(x_1, y_0)$ and $B(x_2, y_0)$ (Figure 1) be with the required properties. Then $x_1$ and $x_2$ are the roots of the equation $x^2 - 2px + q - y_0 = 0$ and $y_0 > q - p^2$, because the vertex of the parabola has coordinates $(p, q - p^2)$. On the other hand $OA^2 = x_1^2 + y_0^2$, $OB^2 = x_2^2 + y_0^2$, $AB^2 = (x_1 - x_2)^2$ and it follows from the Pythagorean theorem that $y_0^2 + x_1x_2 = 0$. But $x_1x_2 = q - y_0$ and thus $y_0^2 - y_0 + q = 0$. Consequently the existence of the points $A$ and $B$ is equivalent to the assertion that the equation $f(y) = y^2 - y + q = 0$ has a solution $y_0 > q - p^2$. ($A$ and $B$ are defined in an unique way if this is the only solution.) A necessary condition is that the discriminant of the equation is not negative, i.e. $q \\leq \\frac{1}{4}$. The last condition is sufficient because $f(q - p^2) = (q - p^2) + p^2 > 0$ and $\\frac{1}{2} > \\frac{1}{4} \\geq q - p^2$. The corresponding solution $y_0$ is unique iff $q = \\frac{1}{4}$.",
-      "answer": "$q = \\frac{1}{4}$, $0 < p < \\frac{1}{2}$.",
+      "source": "OLI-2-Областен кръг-2013-11 кл · 2013-11 · Зад. 11.1",
+      "statement": "Да се намерят стойностите на реалните параметри $p$, $q$ и $r$, ако числата $p, -\\frac{q}{2}, r$ образуват аритметична прогресия и уравнението\n\n$$x^3 + px^2 + qx + r - 1 = 0$$\n\nима три корена, които са естествени числа и образуват аритметична прогресия с разлика 2013.",
+      "solution": "Решение. От условието $p + r = -q$ следва, че даденото уравнение има корен $x_1 = 1$. Тогава уравнението приема вида\n\n$$(x - 1)(x^2 + (p + 1)x + p + q + 1) = 0,$$\n\nкато корените на квадратното уравнение $x^2 + (p + 1)x + p + q + 1 = 0$ са $x_1 = 2014$ и $x_2 = 4027$. От формулите на Виет сега намираме $p = -x_1 - x_2 - 1 = -6042$ и $q = x_1x_2 - p - 1 = x_1x_2 + x_1 + x_2 = (x_1 + 1)(x_2 + 1) - 1 = 2015.4028 - 1 = 8116419$.\n\nОценяване: 2 т. за намиране на корена $x_1 = 1$; 2 т. за разлагането $(x - 1)(x^2 + (p + 1)x + p + q + 1) = 0$; 3 т. за намиране на $p$, $q$ и $r$.",
+      "answer": null,
+      "difficulty": "easy",
+      "techniques": [
+        "vieta_formulas",
+        "arithmetic_progression",
+        "polynomial_roots"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва формулите на Виет и аритметична прогресия за намиране на параметрите. Това е алгебрична задача, която отговаря на точка 5.1."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2017-11 кл · 2017-11 · Зад. 11.1",
+      "statement": "Да се реши системата:\n\n$$\n\\left| \\begin{array}{l} x ^ { 2 } + 6 y ^ { 2 } = 5 x y \\\\ \\cos ^ { 2 } x + \\sin ^ { 2 } y = 1 \\end{array} \\right. ,\n$$\n\nкъдето $x, y \\in [0, \\pi]$.",
+      "solution": "Решение. Ако $y = 0$, от първото уравнение следва, че $x = 0$. Двойката $(0, 0)$ е решение и на второто уравнение. При $y \\neq 0$ от уравнението $x^2 + 6y^2 = 5xy$ получаваме $\\left(\\frac{x}{y}\\right)^2 - 5\\frac{x}{y} + 6 = 0$ с решения $\\frac{x}{y} = 2$ и $\\frac{x}{y} = 3$. Следователно $x = 2y$ или $x = 3y$.\n\nТъй като $\\cos^2 x = 1 - \\sin^2 y = \\cos^2 y$ и $x, y \\in [0, \\pi]$, то $x = y$ или $x + y = \\pi$. Поради $x = 2y$ или $x = 3y$ и $y \\neq 0$ първото равенство е невъзможно.\n\nКогато $x + y = \\pi$ получаваме $x = \\frac{2\\pi}{3}, y = \\frac{\\pi}{3}$ и $x = \\frac{3\\pi}{4}, y = \\frac{\\pi}{4}$.",
+      "answer": null,
+      "difficulty": "easy",
+      "techniques": [
+        "substitution",
+        "trigonometric_identities"
+      ],
+      "confidence": "exact",
+      "reasoning": "Системата се решава с заместване и тригонометрични тъждества. Основната техника е тригонометрични уравнения (точка 5.10). Трудността е лесна, тъй като решението е директен с няколко стъпки.",
+      "_crosslinked_from": "5.10",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-2-Областен кръг-1995-10 кл · 1995-10 · Зад. 10.1",
+      "statement": "Let $p$ and $q$ be positive numbers such that the parabola $y = x^2 - 2px + q$ has no common point with the $x$-axis. Prove that there exist points $A$ and $B$ on the parabola such that the segment $AB$ is parallel to the $x$-axis and $\\angle  AOB = 90^°$ ($O$ is the coordinate origin) if and only if $p^2 < q \\le  \\frac{1}{4}$. Find the values of $p$ and $q$ for which the points $A$ and $B$ are defined in an unique way.",
+      "solution": "Solution. Since the parabola has no common point with the $x$-axis, then the roots of the equation $x^2 - 2px + q = 0$ are not real and hence $p^2 < q$. Let the points $A(x_1, y_0)$ and $B(x_2, y_0)$ (Figure 1) be with the required properties. Then $x_1$ and $x_2$ are the roots of the equation $x^2 - 2px + q - y_0 = 0$ and $y_0 > q - p^2$, because the vertex of the parabola has coordinates $(p, q - p^2)$. On the other hand $OA^2 = x_1^2 + y_0^2$, $OB^2 = x_2^2 + y_0^2$, $AB^2 = (x_1 - x_2)^2$ and it follows from the Pythagorean theorem that $y_0^2 + x_1x_2 = 0$. But $x_1x_2 = q - y_0$ and thus $y_0^2 - y_0 + q = 0$. Consequently the existence of the points $A$ and $B$ is equivalent to the assertion that the equation $f(y) = y^2 - y + q = 0$ has a solution $y_0 > q - p^2$. ($A$ and $B$ are defined in an unique way if this is the only solution.) A necessary condition is that the discriminant of the equation is not negative, i.e. $q \\leq \\frac{1}{4}$. The last condition is sufficient because $f(q - p^2) = (q - p^2) + p^2 > 0$ and $\\frac{1}{2} > \\frac{1}{4} \\geq q - p^2$. The corresponding solution $y_0$ is unique iff $q = \\frac{1}{4}$.\n\nFigure 1.\n\n![img-0.jpeg](img-0.jpeg)\n\nFigure 2.\n\n![img-1.jpeg](img-1.jpeg)",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "coordinate_geometry",
+        "quadratic_equations",
+        "pythagorean_theorem"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва координатна геометрия на парабола, свойства на корените на квадратно уравнение и Питагорова теорема за ъгъл 90°. Решението е стандартно, но изисква внимателен анализ на условията.",
+      "_crosslinked_from": "R.11",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-2-Областен кръг-1996-12 кл · 1996-12 · Зад. 12.3",
+      "statement": "a) Find the maximal value of the function $y = |4x^3 - 3x|$ in the interval $[-1, 1]$. b) Let $a$, $b$ and $c$ be real numbers and $M$ be the maximal value of the function $y = |4x^3 + ax^2 + bx + c|$ in the interval $[-1, 1]$. Prove that $M \\\\geq 1$. For which $a$, $b$, $c$ is the equality reached?",
+      "solution": "Solution. a) Using that $∆(4x^3 - 3x)' = 12x^2 - 3 = 12(x - \f\\frac{1}{2})(x + \f\\frac{1}{2})$, we find that the function\n\n$$y = |4x^3 - 3x|$$\n\nhas a local maximums when $x = ± \f\\frac{1}{2}$. Then its maximal value in the interval $[-1, 1]$ is the biggest among the numbers $y(-1)$, $y(1)$, $y(-\f\\frac{1}{2})$ and $y(\f\\frac{1}{2})$ (Figure 3).\n\nBut $y(-1) = y(-\f\\frac{1}{2}) = y(\f\\frac{1}{2}) = y(1) = 1$, thus the maximal value is equal to 1.\n\nb) Let $f(x) = 4x^3 + ax^2 + bx + c$. Assume that there exist numbers $a$, $b$, $c$, for which the maximal value $M$ of the function $y = |f(x)|$ in $[-1, 1]$ is less than 1, i.e. $M < 1$. Then $-1 < f(x) < 1$ for all $x ∈ [-1, 1]$.\n\nConsider the function $g(x) = f(x) - (4x^3 - 3x) = ax^2 + (b + 3)x + c$. We have $g(-1) > 0$, $g(-\f\\frac{1}{2}) < 0$, $g(\f\\frac{1}{2}) > 0$ and $g(1) < 0$. Consequently $g(x)$ changes its sign at least 3 times, which means that the quadratic equation $ax^2 + (b + 3)x + c = 0$ has at least 3 different roots. This is possible only if $a = b + 3 = c = 0$, i.e. if $f(x) = 4x^3 - 3x$. According to a) the maximal value of $y = |4x^3 - 3x|$ is $\\le  1$.\n\nThe equality $M = 1$ is reached only when $a = 0$, $b = -3$ and $c = 0$.",
+      "answer": "a) 1\nb) Equality when a=0, b=-3, c=0",
+      "difficulty": "medium",
+      "techniques": [
+        "chebyshev_polynomials",
+        "derivative",
+        "proof_by_contradiction",
+        "polynomial_properties"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва полинома на Чебишев T_3(x) = 4x^3 - 3x като ключов елемент. В част а) се намира max |T_3(x)|, а в част б) се доказва, че за всеки кубичен полином, max |f(x)| ≥ max |T_3(x)| = 1, с равенство само при f(x) = T_3(x). Техниката включва производни за екстремуми (част а) и доказателство от противно със знаков анализ на разликата f(x) - T_3(x) (част б), което е типично за приложенията на полиномите на Чебишев в минимизация на нормата.",
+      "_crosslinked_from": "5.6",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-1997-12 кл · 1997-12 · Зад. 12.1",
+      "statement": "Find all natural numbers a, b and c such that the roots of the equation\n\n$$\b\\egin{array}{l} x^{2}-2 a x+b=0 \\ x^{2}-2 b x+c=0 \\ x^{2}-2 c x+a=0 \n\\end{array}$$\n\nare natural numbers.",
+      "solution": "Let $\\{x_{1},x_{2}\\}$, $\\{x_{3},x_{4}\\}$ and $\\{x_{5},x_{6}\\}$ be the roots of the first, second and third equation respectively, and let all of them be natural numbers.\n\nAssume that $x_{i} \\geq 2$ for all $i=1,2,\\ldots,6$. Then $2 a=x_{1}+x_{2} \\leq x_{1} x_{2}=b, 2 b=x_{3}+x_{4} \\leq x_{3} x_{4}=c$ and $2 c=x_{5}+x_{6} \\leq x_{5} x_{6}=a$. Thus $2(a+b+c) \\leq a+b+c$, which is impossible, since $a, b, c$ are natural numbers.\n\nTherefore at least one of the numbers $x_{i}$ equals 1. Without loss of generality suppose $x_{1}=1$, so $1-2 a+b=0$.\n\nIf $x_{i} \\geq 2$ for $i=3,4,5,6$, then\n\n$$2(b+c)=(x_{3}+x_{4})+(x_{5}+x_{6}) \\leq x_{3} x_{4}+x_{5} x_{6}=c+a,$$\n\nwhence $2(2 a-1+c) \\leq c+a \\Rightarrow c \\leq 2-3 a$, which is impossible when $a, b, c$ are natural numbers.\n\nSo at least one of $x_{3}, x_{4}, x_{5}, x_{6}$ equals 1. Let $x_{3}=1$. Now $1-2 b+c=0$. Assuming that $x_{5} \\geq 2$ and $x_{6} \\geq 2$, we get $2 c=x_{5}+x_{6} \\leq a$, so $2(2 b-1) \\leq \\frac{b+1}{2}$. Thus $7 b \\leq 5$, a contradiction.\n\nTherefore at least one of the numbers $x_{5}, x_{6}$ is 1 and it follows that $1-2 c+a=0$. Further\n\n$$0=(1-2 a+b)+(1-2 b+c)+(1-2 c+a)=3-(a+b+c)$$\n\nand since $a, b, c$ are natural numbers, it follows that $a=b=c=1$.\n\nDirect verification shows that $a=b=c=1$ satisfy the conditions of the problem.",
+      "answer": "a=1, b=1, c=1",
+      "difficulty": "medium",
+      "techniques": [
+        "diophantine_equations",
+        "contradiction"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата се свежда до решаване на система от квадратни диофантови уравнения с естествени числа. Основната техника е търсене на противоречие при минимални стойности на корените.",
+      "_crosslinked_from": "4.2",
+      "_crosslink_confidence": 0.8
+    },
+    {
+      "source": "OLI-2-Областен кръг-1998-11 кл · 1998-11 · Зад. 11.4",
+      "statement": "Let $f(x) = x^3 - 3x + 1$. Find the number of different real solutions of the equation $f(f(x)) = 0$.",
+      "solution": "Solution: Since $f'(x) = 3(x - 1)(x + 1)$ it follows that $f$ is strictly monotone non-decreasing in the intervals $(-\\infty, -1]$ and $[1, \\infty)$ and strictly monotone non-increasing in the interval $[-1, 1]$. Moreover $\\lim_{x \\to \\pm \\infty} f(x) = \\pm \\infty, f(-1) = 3, f(1) = -1, f(3) = 19 > 0$ and so the equation $f(x) = 0$ has three distinct roots $x_1, x_2, x_3$ such that $x_1 < -1 < x_2 < 1 < x_3 < 3$. Therefore $f(x) = x_1$ has only one real root (which is less than $-1$) and $f(x) = x_2$ and $f(x) = x_3$ have three distinct real roots each (one in each of the intervals $(-\\infty, -1), (-1, 1)$ and $(1, \\infty)$). Since the roots of $f(f(x)) = 0$ are exactly the roots of these three equations, we conclude that it has seven distinct real roots.",
+      "answer": null,
       "difficulty": "medium",
       "techniques": [
         "vieta_formulas",
-        "discriminant_analysis"
+        "derivatives",
+        "intermediate_value_theorem"
       ],
       "confidence": "exact",
-      "reasoning": "Solution uses Vieta relations for roots of quadratic and discriminant conditions to derive required inequality."
+      "reasoning": "Задачата включва композиция на кубична функция и намиране на броя на реалните корени. Решението използва производни за определяне на интервалите на монотонност и теоремата за междинните стойности."
     },
     {
-      "source": "OLI-2-Областен кръг-1997-10 кл · 1997-10 · Зад. 1",
-      "statement": "Find all natural numbers a, b and c such that the roots of the equation\n\n$$\\begin{array}{l} x^{2}-2 a x+b=0 \\\\ x^{2}-2 b x+c=0 \\\\ x^{2}-2 c x+a=0 \\end{array}$$\n\nare natural numbers.",
-      "solution": "Solution: Let $\\{x_{1},x_{2}\\}$, $\\{x_{3},x_{4}\\}$ and $\\{x_{5},x_{6}\\}$ be the roots of the first, second and third equation respectively, and let all of them be natural numbers.\n\nAssume that $x_{i} \\geq 2$ for all $i=1,2,\\ldots,6$. Then $2 a=x_{1}+x_{2} \\leq x_{1} x_{2}=b, 2 b=x_{3}+x_{4} \\leq x_{3} x_{4}=c$ and $2 c=x_{5}+x_{6} \\leq x_{5} x_{6}=a$. Thus $2(a+b+c) \\leq a+b+c$, which is impossible, since $a, b, c$ are natural numbers.\n\nTherefore at least one of the numbers $x_{i}$ equals 1. Without loss of generality suppose $x_{1}=1$, so $1-2 a+b=0$.\n\nIf $x_{i} \\geq 2$ for $i=3,4,5,6$, then\n\n$$2(b+c)=(x_{3}+x_{4})+(x_{5}+x_{6}) \\leq x_{3} x_{4}+x_{5} x_{6}=c+a,$$\n\nwhence $2(2 a-1+c) \\leq c+a \\Rightarrow c \\leq 2-3 a$, which is impossible when $a, b, c$ are natural numbers.\n\nSo at least one of $x_{3}, x_{4}, x_{5}, x_{6}$ equals 1. Let $x_{3}=1$. Now $1-2 b+c=0$. Assuming that $x_{5} \\geq 2$ and $x_{6} \\geq 2$, we get $2 c=x_{5}+x_{6} \\leq a$, so $2(2 b-1) \\leq \\frac{b+1}{2}$. Thus $7 b \\leq 5$, a contradiction.\n\nTherefore at least one of the numbers $x_{5}, x_{6}$ is 1 and it follows that $1-2 c+a=0$. Further\n\n$$0=(1-2 a+b)+(1-2 b+c)+(1-2 c+a)=3-(a+b+c)$$\n\nand since $a, b, c$ are natural numbers, it follows that $a=b=c=1$.\n\nDirect verification shows that $a=b=c=1$ satisfy the conditions of the problem.",
-      "answer": "$a=b=c=1$.",
+      "source": "OLI-2-Областен кръг-1998-12 кл · 1998-12 · Зад. 12.4",
+      "statement": "Let $f(x) = x^3 - 3x + 1$. Find the number of different real solutions of the equation $f(f(x)) = 0$.",
+      "solution": "Since $f'(x) = 3(x-1)(x+1)$ it follows that $f$ is strictly monotone non-decreasing in the intervals $(-\\infty, -1]$ and $[1, \\infty)$ and strictly monotone non-increasing in the interval $[-1, 1]$. Moreover $\\lim\\limits_{x \\to \\pm\\infty} f(x) = \\pm\\infty$, $f(-1) = 3, f(1) = -1, f(3) = 19 > 0$ and so the equation $f(x) = 0$ has three distinct roots $x_1, x_2, x_3$ such that $x_1 < -1 < x_2 < 1 < x_3 < 3$. Therefore $f(x) = x_1$ has only one real root (which is less than $-1$) and $f(x) = x_2$ and $f(x) = x_3$ have three distinct real roots each (one in each of the intervals $(-\\infty, -1), (-1, 1)$ and $(1, \\infty)$). Since the roots of $f(f(x)) = 0$ are exactly the roots of these three equations, we conclude that it has seven distinct real roots.",
+      "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "vieta_formulas"
+        "vieta_formulas",
+        "function_composition",
+        "derivative"
       ],
       "confidence": "exact",
-      "reasoning": "Uses Vieta to relate coefficients and roots, then bounds to force a=b=c=1."
-    },
-    {
-      "source": "OLI-2-Областен кръг-1997-11 кл · 1997-11 · Зад. 1",
-      "statement": "Find all natural numbers a, b and c such that the roots of the equation\n\n$$\\begin{array}{l} x^{2}-2 a x+b=0 \\\\ x^{2}-2 b x+c=0 \\\\ x^{2}-2 c x+a=0 \\end{array}$$\n\nare natural numbers.",
-      "solution": "Solution: Let $\\{x_{1},x_{2}\\}$, $\\{x_{3},x_{4}\\}$ and $\\{x_{5},x_{6}\\}$ be the roots of the first, second and third equation respectively, and let all of them be natural numbers.\n\nAssume that $x_{i} \\geq 2$ for all $i=1,2,\\ldots,6$. Then $2 a=x_{1}+x_{2} \\leq x_{1} x_{2}=b, 2 b=x_{3}+x_{4} \\leq x_{3} x_{4}=c$ and $2 c=x_{5}+x_{6} \\leq x_{5} x_{6}=a$. Thus $2(a+b+c) \\leq a+b+c$, which is impossible, since $a, b, c$ are natural numbers.\n\nTherefore at least one of the numbers $x_{i}$ equals 1. Without loss of generality suppose $x_{1}=1$, so $1-2 a+b=0$.\n\nIf $x_{i} \\geq 2$ for $i=3,4,5,6$, then\n\n$$2(b+c)=(x_{3}+x_{4})+(x_{5}+x_{6}) \\leq x_{3} x_{4}+x_{5} x_{6}=c+a,$$\n\nwhence $2(2 a-1+c) \\leq c+a \\Rightarrow c \\leq 2-3 a$, which is impossible when $a, b, c$ are natural numbers.\n\nSo at least one of $x_{3}, x_{4}, x_{5}, x_{6}$ equals 1. Let $x_{3}=1$. Now $1-2 b+c=0$. Assuming that $x_{5} \\geq 2$ and $x_{6} \\geq 2$, we get $2 c=x_{5}+x_{6} \\leq a$, so $2(2 b-1) \\leq \\frac{b+1}{2}$. Thus $7 b \\leq 5$, a contradiction.\n\nTherefore at least one of the numbers $x_{5}, x_{6}$ is 1 and it follows that $1-2 c+a=0$. Further\n\n$$0=(1-2 a+b)+(1-2 b+c)+(1-2 c+a)=3-(a+b+c)$$\n\nand since $a, b, c$ are natural numbers, it follows that $a=b=c=1$.\n\nDirect verification shows that $a=b=c=1$ satisfy the conditions of the problem.",
-      "answer": "$a=b=c=1$.",
-      "difficulty": "medium",
-      "techniques": [
-        "vieta_formulas"
-      ],
-      "confidence": "exact",
-      "reasoning": "Solution uses Vieta relations for the three quadratics and inequality arguments; main tool is Vieta."
+      "reasoning": "Задачата изследва броя на реалните корени на уравнение от вида f(f(x))=0, където f е кубичен полином. Решението използва производна за определяне на монотонността на f и след това анализира броя на корените на всяко от уравненията f(x)=c, където c са корените на f(x)=0."
     },
     {
       "source": "OLI-2-Областен кръг-2000-10 кл · 2000-10 · Зад. 1",
@@ -57,219 +125,478 @@
       "reasoning": "Превръща уравнението в квадратично f(x)=0, използва Виетови формули и знак‑анализ за един корен в интервала."
     },
     {
-      "source": "OLI-2-Областен кръг-2004-10 кл · 2004-10 · Зад. 4",
-      "statement": "Нека f(x) = (a² + 4a + 2)x³ + (a³ + 4a² + a + 1)x² + (2a − a²)x + a², където a е реален параметър.\nа) Да се докаже, че f(−a) = 0.\nб) Да се намерят всички стойности на a, за които уравнението f(x) = 0 има три различни реални положителни корена.",
-      "solution": "а) Следва след директно заместване.\nб) Уравнението се записва във вида\n(x + a)((a² + 4a + 2)x² + (1 − a)x + a) = 0, (1)\nоткъдето следва, че a < 0. Освен това квадратният тричлен в (1) трябва да има два различни корена, т.е. D = (1 − a)² − 4a(a² + 4a + 2) > 0 ⇔ (a + 1)(−4a² − 11a + 1) > 0. Решавайки това неравенство и вземайки предвид a < 0, получаваме\na ∈ (−∞, (−11 − √137)/8) ∪ (−1, 0). (2)\nКорените на квадратния тричлен са положителни точно когато a/(a² + 4a + 2) > 0 и −(1 − a)/(a² + 4a + 2) > 0. Оттук a ∈ (−2 − √2, −2 + √2) и пресичайки с (2) получаваме\na ∈ (−2 − √2, (−11 − √137)/8) ∪ (−1, −2 + √2). (3)\nОстава да изключим стойностите на a, за които −a е корен на квадратния тричлен в (1). Имаме (a² + 4a + 2)(−a)² + (1 − a)(−a) + a = 0 ⇔ a²(a² + 4a + 3) = 0 ⇔ a = −3, −1, 0. Окончателно получаваме\na ∈ (−2 − √2, −3) ∪ (−3, (−11 − √137)/8) ∪ (−1, −2 + √2).",
-      "answer": "б) a ∈ (−2 − √2, −3) ∪ (−3, (−11 − √137)/8) ∪ (−1, −2 + √2)",
+      "source": "OLI-2-Областен кръг-2003-12 кл · 2003-12 · Зад. 12.5",
+      "statement": "Да се намери броят на реалните решения на системата\n¯¯¯¯¯¯\nx + y + z = 3xy\nx2 + y2 + z2 = 3xz\nx3 + y3 + z3 = 3yz.\nСава Гроздев, Светлозар Дойчев",
+      "solution": "5. Ако y = 0, от първото уравнение следва, че x = −z, заместваме във второто и намираме x = z = 0, като тройката (0, 0, 0) очевидно е решение на системата. При y̸ = 0 полагаме a = x y , b = z y и системата добива вида ¯¯¯¯¯¯ 1 + a + b = 3ay 1 + a2 + b2 = 3ab y(1 + a3 + b3) = 3b. Като изключим y, получаваме ¯¯¯¯ (1 + a + b)(1 + a3 + b3) = 9ab 1 + a2 + b2 = 3ab. Тогава за u = a + b, v = ab имаме, че ¯¯¯¯ (1 + u)(1 + u3 −3uv) = 9v 1 + u2 −2v = 3v откъдето v = u2 + 1 5 и 0 = u4+u3−6u2+u−2 = (u−2)(u3+3u2+1). Случаят u = 2 води до v = 1, a = b = 1 и решението (x, y, z) = (1, 1, 1). Функцията f(u) = u3 + 3u2 + 1 има локален максимум при u = −2 и локален минимум при u = 0. Понеже f(0) = 1 > 0, уравнението f(u) = 0 има единствен реален корен u0, като u0 < −2. Тогава u2 0 −4u2 0 + 1 5 = u2 0 −4 5 > 0 и следователно системата ¯¯¯¯¯¯ a + b = u0 ab = u2 0 + 1 5 има две решения, които водят до още две решения на дадената система. Окончателно, системата от условието на задачата има четири реални решения.",
+      "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "Vieta",
-        "parameter_analysis",
-        "sign_of_roots"
+        "system_of_equations",
+        "variable_substitution",
+        "polynomial_roots"
       ],
       "confidence": "exact",
-      "reasoning": "Shows f(−a)=0, then uses Vieta and discriminant to locate a for three positive roots."
+      "reasoning": "Системата се свежда до полиномиално уравнение чрез заместване. Това е алгебрична задача с системи уравнения."
     },
     {
-      "source": "OLI-2-Областен кръг-2005-10 кл · 2005-10 · Зад. 3",
-      "statement": "Да се намерят всички двойки естествени числа (m, n), m > n, за които е изпълнено\n[m² + mn, mn − n²] + [m − n, mn] = 2^2005,\nкъдето [a, b] означава най-малкото общо кратно на числата a и b.",
-      "solution": "Първото уравнение е квадратно с дискриминанта D = (9a² − 1)². Следователно за всяка стойност на a, различна от ±1/3, то има две решения. За a = ±1/3 уравнението има точно един корен. Тъй като функцията 2x³ + 6x + (3a − 1)² − 12x е строго растяща, второто уравнение има не повече от едно решение. При a = 1/3 второто уравнение има корен x = 0, докато за a = −1/3 то не е дефинирано, тъй като подкоренната величина вдясно е отрицателна. Окончателно единствената стойност на a, удовлетворяваща условието е a = 1/3.",
-      "answer": "a = 1/3",
+      "source": "OLI-2-Областен кръг-2003-12 кл · 2003-12 · Зад. 12.5",
+      "statement": "Да се намери броят на реалните решения на системата\n¯¯¯¯¯¯\nx + y + z = 3xy\nx2 + y2 + z2 = 3xz\nx3 + y3 + z3 = 3yz.\nСава Гроздев, Светлозар Дойчев",
+      "solution": "5. Ако y = 0, от първото уравнение следва, че x = −z, заместваме във второто и намираме x = z = 0, като тройката (0, 0, 0) очевидно е решение на системата. При y̸ = 0 полагаме a = x y , b = z y и системата добива вида ¯¯¯¯¯¯ 1 + a + b = 3ay 1 + a2 + b2 = 3ab y(1 + a3 + b3) = 3b. Като изключим y, получаваме ¯¯¯¯ (1 + a + b)(1 + a3 + b3) = 9ab 1 + a2 + b2 = 3ab. Тогава за u = a + b, v = ab имаме, че ¯¯¯¯ (1 + u)(1 + u3 −3uv) = 9v 1 + u2 −2v = 3v откъдето v = u2 + 1 5 и 0 = u4+u3−6u2+u−2 = (u−2)(u3+3u2+1). Случаят u = 2 води до v = 1, a = b = 1 и решението (x, y, z) = (1, 1, 1). Функцията f(u) = u3 + 3u2 + 1 има локален максимум при u = −2 и локален минимум при u = 0. Понеже f(0) = 1 > 0, уравнението f(u) = 0 има единствен реален корен u0, като u0 < −2. Тогава u2 0 −4u2 0 + 1 5 = u2 0 −4 5 > 0 и следователно системата ¯¯¯¯¯¯ a + b = u0 ab = u2 0 + 1 5 има две решения, които водят до още две решения на дадената система. Окончателно, системата от условието на задачата има четири реални решения.",
+      "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "discriminant_analysis",
-        "monotonicity"
+        "system_of_equations",
+        "variable_substitution",
+        "polynomial_roots"
       ],
       "confidence": "exact",
-      "reasoning": "Изчислява се дискриминантът на квадратичното уравнение и се използва монотонност на кубичното за ограничение на решенията."
+      "reasoning": "Системата се свежда до полиномиално уравнение чрез заместване. Това е алгебрична задача с системи уравнения.",
+      "_crosslinked_from": "5.1",
+      "_crosslink_confidence": 0.7
     },
     {
-      "source": "OLI-2-Областен кръг-2005-10 кл · 2005-10 · Зад. 4",
-      "statement": "Да се намерят всички стойности на реалния параметър p, за които уравнението |x² − px − 2p + 1| = p − 1 има четири реални корена x₁, x₂, x₃, x₄, за които x₁² + x₂² + x₃² + x₄² = 20.",
-      "solution": "Отговор: p = 2. За наличието на 4 корена е необходимо (но недостатъчно!) условието p > 1. Разглеждаме два случая:\nСлучай 1. Ако x² − px − 2p + 1 = p − 1 ⇔ x² − px − 3p + 2 = 0, по формулите на Виет получаваме x₁² + x₂² = p² − 2(2 − 3p) = p² + 6p − 4.\nСлучай 2. Ако x² − px − 2p + 1 = 1 − p ⇔ x² − px − p = 0, по формулите на Виет имаме x₃² + x₄² = p² + 2p.\nТогава от условието получаваме x₁² + x₂² + x₃² + x₄² = 20 ⇔ 2p² + 8p − 4 = 20 ⇔ p² + 4p − 12 = 0, откъдето p = 2 или p = −6. Втората стойност противоречи на условието p > 1. При p = 2 уравнението наистина има четири реални корена (например с директна проверка).",
-      "answer": "p = 2",
+      "source": "OLI-2-Областен кръг-2007-12 кл · 2007-12 · Зад. 12.5",
+      "statement": "Да се реши уравнението 8x−2x 6x−3x = 2.",
+      "solution": "Първи начин. Полагаме t = 2x и a = log2 3. Уравнението добива вида t3−tta(t−1) = 2, т.е. f (t) = 2, t̸= 1, където f (t) = t+1ta−1 , t > 0. Имаме, че f ′(t) = (2−a)t+1−ata . Понеже a ∈ (1, 2) следва, че функцията f строго намалява в интервала Ä 0, a−12−a ó и строго расте в интервала î a−1 2−a , +∞ ä . Следователно уравнението f (t) = 2 има най-много по едно решение в тези интервали. Остава да съобразим, че f (1) =f (2) = 0, т.е. x = 1е единственото решение на началното уравнение. Втори начин. Очевидно x = 1 е решение. Ще докажем, че други няма. Фиксираме x ̸= 0, 1 и записваме условието във вида f (2) = f (5), където f (t) = tx + (t + 3)x − 2(t + 1)x. Достатъчно е да покажем, че f (t) е строго монотонна функция при t \\ge  1. Имаме, че f ′(t) =x  tx−1 + (t + 3)x−1 − 2(t + 1)x−1  , tx−1 + (t + 3)x−1 > 2 (t(t + 3))x−1, t(t + 3)\\ge  (t + 1)2, t \\ge  1. Значи ако t \\ge  1, то f ′(t) > 0 при x >0, x̸= 1и f ′(t) < 0 при x <0.",
+      "answer": "x=1",
       "difficulty": "medium",
       "techniques": [
-        "absolute_value",
-        "vieta",
-        "case_analysis"
+        "exponential_equations",
+        "substitution",
+        "function_monotonicity"
       ],
       "confidence": "exact",
-      "reasoning": "Разглежда се два случая за абсолютната стойност, след което се прилага Виет за сума на квадратите."
+      "reasoning": "Задачата решава експоненциално уравнение чрез субституция и изследване на монотонността на функцията. Това е типично за алгебрата с уравнения."
     },
     {
-      "source": "OLI-2-Областен кръг-2005-11 кл · 2005-11 · Зад. 3",
-      "statement": "Нека n е дадено естествено число. Естествените числа a, b, c, d са по-малки или равни на n, като d е най-голямото от тях и е изпълнено равенството\n(ab + cd)(bc + ad)(ac + bd) = (d − a)²(d − b)²(d − c)².\nа) Да се докаже, че d = a + b + c.\nб) Да се намери броят на наредените четворки (a, b, c, d) с посочените свойства.",
-      "solution": "а) Директна проверка показва, че при a + b + c = d условието е изпълнено. Да допуснем, че a + b + c > d. Тогава ab + cd > (d − a)(d − b). Наистина, последното е равносилно с ab + cd > d² − ad − bd + ab ⇔ d(a + b + c) > d² ⇔ a + b + c > d. Аналогично bc + ad > (d − b)(d − c) и ac + bd > (d − a)(d − c). След почленно умножаване получаваме противоречие с условието. Аналогично разсъждаваме и при a + b + c < d. Следователно d = a + b + c.\nб) При фиксирано 3 ≤ d ≤ n броят на решенията на уравнението d = a + b + c е точно равен на биномния коефициент C(d − 1,2) = (d − 1)(d − 2)/2.\nМожем да докажем това по следния начин: ако запишем в редица d единици, броят на решенията е равен на броя на начините, по които можем да разположим две „разделителни чертички“ в редицата (например 111|11…11|1 съответства на a = 3, b = d − 4, c = 1), т.е. на C(d − 1,2). Можем да приемем, че формулата е вярна и при d = 1 и d = 2, защото тогава броят е нула. Остана да пресметнем\nΣ от d=1 до n на (d − 1)(d − 2)/2 = (1/2)Σ от d=1 до n на d² − (3/2)Σ от d=1 до n на d + n = (1/2)·n(n + 1)(2n + 1)/6 − (3/2)·n(n + 1)/2 + n = n(n − 1)(n − 2)/6.",
-      "answer": "а) d = a + b + c. б) n(n − 1)(n − 2)/6.",
+      "source": "OLI-2-Областен кръг-2007-12 кл · 2007-12 · Зад. 12.5",
+      "statement": "Да се реши уравнението 8x−2x 6x−3x = 2.",
+      "solution": "Първи начин. Полагаме t = 2x и a = log2 3. Уравнението добива вида t3−tta(t−1) = 2, т.е. f (t) = 2, t̸= 1, където f (t) = t+1ta−1 , t > 0. Имаме, че f ′(t) = (2−a)t+1−ata . Понеже a ∈ (1, 2) следва, че функцията f строго намалява в интервала Ä 0, a−12−a ó и строго расте в интервала î a−1 2−a , +∞ ä . Следователно уравнението f (t) = 2 има най-много по едно решение в тези интервали. Остава да съобразим, че f (1) =f (2) = 0, т.е. x = 1е единственото решение на началното уравнение. Втори начин. Очевидно x = 1 е решение. Ще докажем, че други няма. Фиксираме x ̸= 0, 1 и записваме условието във вида f (2) = f (5), където f (t) = tx + (t + 3)x − 2(t + 1)x. Достатъчно е да покажем, че f (t) е строго монотонна функция при t \\ge  1. Имаме, че f ′(t) =x  tx−1 + (t + 3)x−1 − 2(t + 1)x−1  , tx−1 + (t + 3)x−1 > 2 (t(t + 3))x−1, t(t + 3)\\ge  (t + 1)2, t \\ge  1. Значи ако t \\ge  1, то f ′(t) > 0 при x >0, x̸= 1и f ′(t) < 0 при x <0.",
+      "answer": "x=1",
       "difficulty": "medium",
       "techniques": [
-        "combinatorial_counting",
-        "binomial_coefficients"
+        "exponential_equations",
+        "substitution",
+        "function_monotonicity"
       ],
       "confidence": "exact",
-      "reasoning": "Counts ordered triples using stars‑and‑bars, then sums over d."
+      "reasoning": "Задачата решава експоненциално уравнение чрез субституция и изследване на монотонността на функцията. Това е типично за алгебрата с уравнения.",
+      "_crosslinked_from": "5.1",
+      "_crosslink_confidence": 0.75
     },
     {
-      "source": "OLI-2-Областен кръг-2009-10 кл · 2009-10 · Зад. 4",
-      "statement": "Нека f(x) = x² + (2a − 1)x − 3 и g(x) = x² + (a − 2)x − 1, където a е реален параметър. Да се намерят всички стойности на a, за които корените на уравненията f(x) = 0 и g(x) = 0 са разположени така, че между двата корена на едното има точно един корен на другото.",
-      "solution": "Решение. Първи начин. Нека x₁ и x₂ са корените на f(x) = 0, а x₃ и x₄ са корените на g(x) = 0. Тогава не е трудно да се съобрази, че исканото е еквивалентно на f(x₃)f(x₄) < 0. Имаме последователно\nf(x₃)f(x₄) < 0\n⇔ [x₃² + (2a − 1)x₃ − 3][x₄² + (2a − 1)x₄ − 3] < 0\n⇔ [1 − (a − 2)x₃ + (2a − 1)x₃ − 3][1 − (a − 2)x₄ + (2a − 1)x₄ − 3] < 0\n⇔ [(a + 1)x₃ − 2][(a + 1)x₄ − 2] < 0\n⇔ (a + 1)²x₃x₄ − 2(a + 1)(x₃ + x₄) + 4 < 0\n⇔ a² − 4a − 1 < 0.\nСледователно търсените стойности на a са a ∈ (2 − √5, 2 + √5).\nВтори начин. Исканото е еквивалентно на изискването пресечната точка на графиките на f(x) и g(x) да лежи под абсцисната ос. Тъй като пресечната точка има абсциса x₀ = 2/(a + 1) (единственото решение на уравнението f(x) = g(x)), получаваме g(2/(a + 1)) < 0 ⇔ a² − 4a − 1 < 0.",
-      "answer": "a ∈ (2 − √5, 2 + √5).",
-      "difficulty": "medium",
-      "techniques": [
-        "vieta",
-        "sign_analysis",
-        "interlacing"
-      ],
-      "confidence": "exact",
-      "reasoning": "Условието се превръща в f(x3)·f(x4)<0, използва се формулите на Виет за корените и знакът им."
-    },
-    {
-      "source": "OLI-2-Областен кръг-2009-11 кл · 2009-11 · Зад. 4",
-      "statement": "Да се намерят всички стойности на реалния параметър a, за които уравнението\n2^(3x) − a·2^(2x+1) + (a² + 1)·2^x − a = 0\nима три различни реални корена, които образуват аритметична прогресия.",
-      "solution": "Решение. След полагането y = 2^x, уравнението става\n(1) y³ − 2ay² + (a² + 1)y − a = 0.\nАко уравнението от условието има три реални корена, които образуват аритметична прогресия, то уравнението (1) има три реални положителни корена, които образуват геометрична прогресия. Уравнението (1) може да се запише във вида (y − a)(y² − ay + 1) = 0. За да има три корена трябва a > 0 и a² − 4 > 0, което означава, че a > 2. За тези стойности на a корените y₁ и y₂ на y² − ay + 1 = 0 са положителни, защото y₁y₂ = 1 и y₁ + y₂ = a > 0. Единствената възможност a, y₁ и y₂ да образуват геометрична прогресия е y₁² = ay₂, което дава ay₁ − 1 = a(a − y₁). Оттук y₁ = (a² + 1)/(2a) и след заместване в уравнението получаваме a⁴ − 4a² − 1 = 0. Единственият положителен корен е a = √(2 + √5), като a > 2.",
-      "answer": "a = √(2 + √5)",
+      "source": "OLI-2-Областен кръг-2008-10 кл · 2008-10 · Зад. 4",
+      "statement": "Дадено е уравнението $8^x - m2^{x+1} + 4m = 8$, където $m$ е реален параметър.\n\nа) Да се реши уравнението при $m = 6$.\nб) Да се определи при кои стойности на параметъра $m$ уравнението има точно едно положително решение.",
+      "solution": "Полагаме $2^x = t, t > 0$, и достигаме до уравнението $t^3 - 2mt + 4m - 8 = 0$.\n\nа) При $m = 6$ получаваме $t^3 - 12t + 16 = 0 \\Leftrightarrow (t - 2)^2(t + 4) = 0$, което има единствено положително решение $t = 2 \\Rightarrow x = 1$.\n\nб) Тъй като $x > 0 \\Leftrightarrow t > 1$, то задачата е еквивалентна с това да определим при кои стойности на параметъра $m$ уравнението $t^3 - 2mt + 4m - 8 = 0$ има единствено решение по-голямо от 1. Но $t^3 - 2mt + 4m - 8 = 0 \\Leftrightarrow (t - 2)(t^2 + 2t - 2m + 4) = 0$ и така задачата се свежда до откриване на тези стойности на $m$, за които уравнението $t^2 + 2t - 2m + 4 = 0$ има реални решения различни от 2 и по-големи от 1.\n\nСлучай 1. Ако $t = 2$ е решение, то $m = 6$, което от а) е решение.\n\nСлучай 2. Ако $D = 2m - 3 < 0$, т.е. $m < \\frac{3}{2}$ уравнението няма реални решения.\n\nСлучай 3. Ако $D = 2m - 3 \\geqq 0$, т.е. $m \\geqq \\frac{3}{2}$, то уравнението има реални решения и е необходимо\n\n$$\\left|\\begin{array}{l} \\frac{-b}{2a} \\leqq 1 \\\\ a\\cdot f(1) \\geqq 0 \\end{array}\\right. \\Leftrightarrow \\left|\\begin{array}{l} -1 \\leqq 1 \\\\ 7 - 2m \\geqq 0 \\end{array}\\right. \\Leftrightarrow m \\leqq \\frac{7}{2}.$$\n\nОкончателно получаваме $m \\in (-\\infty; \\frac{7}{2}] \\cup \\{6\\}$.",
+      "answer": "а) $x=1$; б) $m \\in (-\\infty; \\frac{7}{2}] \\cup \\{6\\}$.",
       "difficulty": "medium",
       "techniques": [
         "exponential_substitution",
-        "vieta",
+        "polynomial_root_analysis",
+        "parameter_analysis"
+      ],
+      "confidence": "exact",
+      "reasoning": "Set t=2^x, obtained cubic t^3‑2mt+4m‑8=0, factorised, examined discriminant and sign conditions for m.",
+      "_crosslinked_from": "5.11",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2009-10 кл · 2009-10 · Зад. 10.4",
+      "statement": "Нека f(x) = x2 +(2a−1)x−3 и g(x) = x2 +(a−2)x−1, където a е реален параметър. Да се намерят всички стойности на a, за които корените на уравненията f(x) = 0 и g(x) = 0 са разположени така, че между двата корена на едното има точно един корен на другото.",
+      "solution": "**Решение.** *Първи начин.* Нека $x_1$ и $x_2$ са корените на $f(x) = 0$, а $x_3$ и $x_4$ са корените на $g(x) = 0$. Тогава не е трудно да се съобрази, че исканото е еквивалентно на $f(x_3)f(x_4) < 0$. Имаме последователно\n\n$$\n\\begin{aligned} \nf(x_3)f(x_4) &< 0 \\\\ \n\\iff [x_3^2 + (2a - 1)x_3 - 3][x_4^2 + (2a - 1)x_4 - 3] &< 0 \\\\ \n\\iff [1 - (a - 2)x_3 + (2a - 1)x_3 - 3][1 - (a - 2)x_4 + (2a - 1)x_4 - 3] &< 0 \\\\ \n\\iff [(a + 1)x_3 - 2][(a + 1)x_4 - 2] &< 0 \\\\ \n\\iff (a + 1)^2 x_3 x_4 - 2(a + 1)(x_3 + x_4) + 4 &< 0 \\\\ \n\\iff a^2 - 4a - 1 &< 0. \n\\end{aligned}\n$$\n\nСледователно търсените стойности на $a$ са $a \\in (2 - \\sqrt{5}, 2 + \\sqrt{5})$.\n\n*Втори начин.* Исканото е еквивалентно на изискването пресечната точка на графиките на $f(x)$ и $g(x)$ да лежи под абсцисната ос. Тъй като пресечната точка има абсциса $x_0 = \\frac{2}{a+1}$ (единственото решение на уравнението $f(x) = g(x)$), получаваме $g(\\frac{2}{a+1}) < 0 \\iff a^2 - 4a - 1 < 0$.\n\n**Оценяване.** 1 т. за съображението, че корените на $f(x)$ и $g(x)$ са реални за всяко $a$, 2 т. за преминаване към еквивалентно твърдение, което води до неравенство и 4 т. за решаване на неравенството.",
+      "answer": "$a \\in (2 - \\sqrt{5}, 2 + \\sqrt{5})$",
+      "difficulty": "medium",
+      "techniques": [
+        "quadratic_equations",
+        "root_location",
+        "discriminant_analysis"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изследва разположението на корените на две квадратни уравнения. Решението използва условието за редуване на корените чрез неравенство. Точка 5.9 (Разположение на корени на квадратен тричлен) е перфектно съответствие.",
+      "_crosslinked_from": "5.9",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2009-11 кл · 2009-11 · Зад. 11.4",
+      "statement": "Да се намерят всички стойности на реалния параметър a, за които уравнението\n23x −a22x+1 + (a2 + 1)2x −a = 0\nима три различни реални корена, които образуват аритметична прогресия.",
+      "solution": "**Решение.** След полагането $y = 2^x$, уравнението става\n\n$$(1) \\quad y^3 - 2ay^2 + (a^2 + 1)y - a = 0.$$\n\nАко уравнението от условието има три реални корена, които образуват аритметична прогресия, то уравнението (1) има три реални положителни корена, които образуват геометрична прогресия. Уравнението (1) може да се запише във вида $(y - a)(y^2 - ay + 1) = 0$. За да има три корена трябва $a > 0$ и $a^2 - 4 > 0$, което означава, че $a > 2$. За тези стойности на $a$ корените $y_1$ и $y_2$ на $y^2 - ay + 1 = 0$ са положителни защото $y_1y_2 = 1$ и $y_1 + y_2 = a > 0$. Единствената възможност $a$, $y_1$ и $y_2$ да образуват геометрична прогресия е $y_1^2 = ay_2$, което дава $ay_1 - 1 = a(a - y_1)$. Оттук $y_1 = \\frac{a^2 + 1}{2a}$ и след заместване в уравнението, получаваме $a^4 - 4a^2 - 1 = 0$. Единственият положителен корен е $a = \\sqrt{2 + \\sqrt{5}}$, като $a > 2$.\n\n**Оценяване.** 1 т. за полагането, 1 т. за извода, че уравнението (1) има три реални положителни корена, които образуват геометрична прогресия, 1 т. за разлагането на (1), 1 т. за определяне на $a > 2$, 2 т. за намиране на $a = \\sqrt{2 + \\sqrt{5}}$ и 1 т. за проверка, че $a > 2$.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "substitution",
+        "exponential_equations",
         "geometric_progression"
       ],
       "confidence": "exact",
-      "reasoning": "Set y=2^x, obtain cubic, use Vieta and GP condition to find a."
+      "reasoning": "Чрез заместване y=2^x уравнението се свежда до кубично. Решението използва разлагане и анализ на корените, които трябва да образуват геометрична прогресия."
     },
     {
-      "source": "OLI-2-Областен кръг-2010-10 кл · 2010-10 · Зад. 4",
-      "statement": "Да се реши системата\nx + ay² + a²z² = a²,\nx + by² + b²z² = b²,\nx + cy² + c²z² = c²,\nкъдето a, b и c са реални параметри (a ≠ b, b ≠ c, c ≠ a).",
-      "solution": "Решение. Нека един от параметрите, например a, е равен на 0. Тогава x = 0 от първото уравнение, а от другите две уравнения получаваме системата\ny² + bz² = b,\ny² + cz² = c,\nоткъдето лесно намираме y² = 0 и z² = 1, т.е. y = 0 и z = ±1.\nНека сега abc ≠ 0. Тогава след изразяване на z² − 1 от трите уравнения получаваме системата\n(x + ay²)/a² = (x + by²)/b² = (x + cy²)/c².\nСледователно\nx(b² − a²) + ab(b − a)y² = 0,\nx(c² − a²) + ac(c − a)y² = 0,\nкоето е еквивалентно на\nx(a + b) + aby² = 0,\nx(a + c) + acy² = 0.\nВ последната система умножаваме първото уравнение с c, второто с b и ги изваждаме, за да получим ax(c − b) = 0, откъдето x = 0. Тогава y = 0 и z² = 1, т.е. отново достигаме до решенията (x, y, z) = (0, 0, ±1).",
-      "answer": "(x, y, z) = (0, 0, 1) или (0, 0, −1).",
+      "source": "OLI-2-Областен кръг-2012-10 кл · 2012-10 · Зад. 10.1",
+      "statement": "Да се намерят стойностите на реалния параметър a, за които уравнението\n3√\n1 + 3x +\n3√\n1 −3x = a\nима решение.",
+      "solution": "Решение. Даденото уравнение има смисъл за всяко $x$. Да положим $u = \\sqrt[3]{1+3^x}$ и $v = \\sqrt[3]{1-3^x}$, като $u$ и $v$ са реални числа и $u > 1 > v$. Имаме $u + v = a$ и\n\n$$2 = u^3 + v^3 = (u + v)((u + v)^2 - 3uv) = a(a^2 - 3uv),$$\n\nоткъдето $a \\neq 0$ и тогава $uv = \\frac{a^3 - 2}{3a}$. Следователно $u$ и $v$ са корените на уравнението $f(t) = t^2 - at + \\frac{a^3 - 2}{3a} = 0$. Необходимо и достатъчно условие $u$ и $v$ да са реални числа и $u > 1 > v$ е $f(1) < 0$, т.е.\n\n$$1 - a + \\frac{a^3 - 2}{3a} < 0 \\Leftrightarrow a(a - 2)(a^2 - a + 1) < 0.$$\n\nСледователно търсените стойности на параметрта са $a \\in (0, 2)$. (Друго възможно решение е да не се отбележи, че $u > 1 > v$, а само $u > v$, $D > 0$, откъдето отново достигаме до $a \\in (0, 2)$.)",
+      "answer": "$a \\in (0, 2)$",
       "difficulty": "medium",
       "techniques": [
-        "symmetry",
-        "vieta_relations"
-      ],
-      "confidence": "exact",
-      "reasoning": "Система със симетрични параметри решава се чрез съотношения от Виет и елиминация."
-    },
-    {
-      "source": "OLI-2-Областен кръг-2012-10 кл · 2012-10 · Зад. 4",
-      "statement": "Дадени са полиномите f(x) = x³ + ax + b и g(x) = x³ + a²x² + b², където a и b са реални параметри. Да се намерят всички стойности на a и b, за които точно едно от числата −2, −1 и 1 е общ корен за f(x) и g(x).",
-      "solution": "Решение. Тъй като $g(1) = 1 + a^2 + b^2 > 0$, общият корен не може да бъде 1. Да допуснем, че $-2$ е общ корен на $f(x)$ и $g(x)$. Тогава $f(-2) = -8 - 2a + b = 0$ и $g(-2) = -8 + 4a^2 + b^2 = 0$, откъдето последователно получаваме $b = 2(a+4)$, $4a^2 + 4(a+4)^2 = 8 \\iff a^2 + 4a + 7 = 0$. Тъй като последното уравнение няма реални решения, и $-2$ не може да бъде общ корен на $f(x)$ и $g(x)$.\n\nАко $-1$ е общият корен, имаме $f(-1) = -1 - a + b = 0$ и $g(-1) = -1 + a^2 + b^2 = 0$, откъдето $b = a + 1$, $a^2 + (a + 1)^2 = 1 \\iff 2a^2 + 2a = 0$, т.е. $a = 0$ или $a = -1$, като съответно $b = 1$ или $b = 0$.",
-      "answer": "$(a,b) = (0,1)$ или $(a,b) = (-1,0)$",
-      "difficulty": "medium",
-      "techniques": [
-        "vieta",
-        "system_of_equations"
-      ],
-      "confidence": "exact",
-      "reasoning": "Прилага се формулата на Виет за корените на полиномите и се решава система от линейни уравнения за a и b."
-    },
-    {
-      "source": "OLI-2-Областен кръг-2013-10 кл · 2013-10 · Зад. 1",
-      "statement": "Да се намерят стойностите на реалния параметър a, за които уравнението x³ + ax² − (1 − a)² = 0 има три различни реални корена x₁, x₂, x₃, изпълняващи неравенството x₁/(x₂x₃) + x₂/(x₃x₁) + x₃/(x₁x₂) > 3/2.",
-      "solution": "Решение. Имаме\n$$x^3 + ax^2 - (1 - a)^2 = (x - (1 - a))(x^2 + x + (1 - a)) = 0.$$\nАко $D$ е дискриминантата на квадратния тричлен, то от $D > 0$ получаваме $a > 3/4$. Освен това $1 - a$ не трябва да е корен на квадратния тричлен, откъдето $a \\neq 1, 3$. Използвайки формулите на Виет даденото по условие, получаваме\n$$\\frac{x_1}{x_2 x_3} + \\frac{x_2}{x_3 x_1} + \\frac{x_3}{x_1 x_2} = \\frac{x_1^2 + x_2^2 + x_3^2}{x_1 x_2 x_3} = \\frac{a^2}{(1 - a)^2} > \\frac{3}{2},$$\nкоето е изпълнено точно тогава, когато $a \\in (3 - \\sqrt{6}, 3 + \\sqrt{6})$. Така окончателно\n$$a \\in \\left(\\frac{3}{4}, 1\\right) \\cup (1, 3) \\cup (3, 3 + \\sqrt{6}).$$",
-      "answer": "$a \\in \\left(\\frac{3}{4}, 1\\right) \\cup (1, 3) \\cup (3, 3 + \\sqrt{6})$.",
-      "difficulty": "medium",
-      "techniques": [
-        "vieta_formulas",
+        "substitution",
         "discriminant_analysis",
         "inequality"
       ],
       "confidence": "exact",
-      "reasoning": "Solution uses factorisation, Vieta relations and discriminant to get conditions on a, then checks inequality via Vieta."
+      "reasoning": "Задачата е уравнение с параметър и заместване. Използва се кубичната формула за сума на кубове и се анализира дискриминантата на квадратното уравнение. Сложността е средна, защото изисква внимателно разглеждане на неравенството.",
+      "_crosslinked_from": "5.11",
+      "_crosslink_confidence": 0.85
     },
     {
-      "source": "OLI-2-Областен кръг-2013-11 кл · 2013-11 · Зад. 1",
-      "statement": "Да се намерят стойностите на реалните параметри p, q и r, ако числата p, [неразчетено], r образуват аритметична прогресия и уравнението x³ + px² + qx + r − 1 = 0 има три корена, които са естествени числа и образуват аритметична прогресия с разлика 2013.",
-      "solution": "Решение. От условието $p + r = -q$ следва, че даденото уравнение има корен $x_1 = 1$. Тогава уравнението приема вида\n\n$$(x - 1)(x^2 + (p + 1)x + p + q + 1) = 0,$$\n\nкато корените на квадратното уравнение $x^2 + (p + 1)x + p + q + 1 = 0$ са $x_1 = 2014$ и $x_2 = 4027$. От формулите на Виет сега намираме $p = -x_1 - x_2 - 1 = -6042$ и $q = x_1x_2 - p - 1 = x_1x_2 + x_1 + x_2 = (x_1 + 1)(x_2 + 1) - 1 = 2015.4028 - 1 = 8116419$.",
-      "answer": "$p = -6042$, $q = 8116419$; стойността на $r$ не е изписана в текста.",
+      "source": "OLI-2-Областен кръг-2013-10 кл · 2013-10 · Зад. 10.1",
+      "statement": "Да се намерят стойностите на реалния параметър a, за които уравнението\nx3 + ax2 − (1 − a)2 = 0\nима три различни реални корена x ,x ,x , изпълняващи неравенството\n1 2 3\nx x x 3\n1 2 3\n+ + > .\nx x x x x x 2\n2 3 3 1 1 2",
+      "solution": "Решение. Имаме\n\n$$x^3 + ax^2 - (1 - a)^2 = (x - (1 - a))(x^2 + x + (1 - a)) = 0.$$\n\nАко $D$ е дискриминантата на квадратния тричлен, то от $D > 0$ получаваме $a > 3/4$. Освен това $1 - a$ не трябва да е корен на квадратния тричлен, откъдето $a \\neq 1, 3$. Използвайки формулите на Виет даденото по условие, получаваме\n\n$$\\frac{x_1}{x_2 x_3} + \\frac{x_2}{x_3 x_1} + \\frac{x_3}{x_1 x_2} = \\frac{x_1^2 + x_2^2 + x_3^2}{x_1 x_2 x_3} = \\frac{a^2}{(1 - a)^2} > \\frac{3}{2},$$\n\nкоето е изпълнено точно тогава, когато $a \\in (3 - \\sqrt{6}, 3 + \\sqrt{6})$. Така окончателно\n\n$$a \\in \\left(\\frac{3}{4}, 1\\right) \\cup (1, 3) \\cup (3, 3 + \\sqrt{6}).$$\n\nОценяване: 1 т. за намиране на корена $x = 1 - a$; 1 т. за $a > 3/4$; 1 т. за $a \\neq 1, 3$; 2 т. за свеждане на условието до квадратно неравенство за $a$; 1 т. за $a \\in (3 - \\sqrt{6}, 3 + \\sqrt{6})$; 1 т. за окончателния отговор.",
+      "answer": "$a \\in \\left(\\frac{3}{4}, 1\\right) \\cup (1, 3) \\cup (3, 3 + \\sqrt{6})$",
       "difficulty": "medium",
       "techniques": [
         "vieta_formulas",
+        "discriminant_analysis",
+        "inequality_solving"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва формулите на Виет за кубично уравнение и анализ на дискриминантата. Решението включва неравенство с параметър."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2015-10 кл · 2015-10 · Зад. 1",
+      "statement": "Да се намерят всички квадратни тричлени f(x) = ax^2 + bx + c с реални корени x1 и x2, за които f(1) = 2, f(2) = 1 и 4x1^2 - 12x1x2 + 4x2^2 = 15.",
+      "solution": "Решение. Условията $f(1) = 2$ и $f(2) = 1$ дават съответно $a+b+c = 2$ и $4a+2b+c = 1$, откъдето получаваме $b = -3a - 1$ и $c = 2a + 3$. Следователно $f(x) = ax^2 - (3a + 1)x + 2a + 3$, а дискриминантата на $f(x)$ е $(3a + 1)^2 - 4a(2a + 3) = a^2 - 6a + 1$.\n\nУсловието $4x_1^2 - 12x_1x_2 + 4x_2^2 = 15$ дава последователно $4(x_1 + x_2)^2 - 20x_1x_2 = 15$,\n\n$$\\frac{4(3a + 1)^2}{a^2} - \\frac{20(2a + 3)}{a} = 15$$\n\nи $19a^2 + 36a - 4 = 0$ с решения $a_1 = -2$ и $a_2 = \\frac{2}{19}$. Лесно се вижда, че и в двата случая дискриминантата е положителна, т.е. и двете намерени стойности на $a$ дават решение на задачата. Имаме $b = 5$ и $c = -1$ при $a = -2$, $b = -\\frac{25}{19}$ и $c = \\frac{61}{19}$ при $a = \\frac{2}{19}$.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "vieta_formulas",
+        "discriminant",
+        "system_of_equations"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва формулите на Виет за квадратния тричлен и връзката между корените. Има система от уравнения, която се решава с изрази за сума и произведение на корените."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2015-12 кл · 2015-12 · Зад. 12.1",
+      "statement": "Да се намерят всички двойки от реални числа $(x, y)$, за които $x, y \\in \\left[0, \\frac{\\pi}{2}\\right]$ и\n\n$$\\sin x + \\cos y - \\sin(x - y) = \\cos x - \\sin y + \\sin(x - y) = 1.$$",
+      "solution": "Решение. След повдигане на квадрат и почленно събиране на равенствата $\\sin x + \\cos y = 1 + \\sin(x - y)$ и $\\cos x - \\sin y = 1 - \\sin(x - y)$, получаваме $2 + 2\\sin(x - y) = 2 + 2\\sin^2(x - y)$, откъдето $\\sin(x - y) = 0$ или $\\sin(x - y) = 1$.\n\nАко $\\sin(x - y) = 0$ получаваме $x = y$ и $\\sin x + \\cos x = \\cos x - \\sin x$, откъдето $\\sin x = 0$, т.е. $x = 0$. Директно се проверява, че $x = y = 0$ е решение.\n\nАко $\\sin(x - y) = 1$, то $x - y = \\frac{\\pi}{2}$, което е възможно само при $x = \\frac{\\pi}{2}$ и $y = 0$. Директно се проверява, че $x = \\frac{\\pi}{2}, y = 0$ е решение.\n\nИнструкции за оценяване. 3 т. за $\\sin(x - y) = 0$ или $\\sin(x - y) = 1$; по 2 т. за разглеждане на всеки от двата случая и получаване на съответните решения.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "trigonometric_identities",
+        "squaring_equations",
+        "case_analysis"
+      ],
+      "confidence": "exact",
+      "reasoning": "Условието и решението съвпадат: тригонометрично уравнение. Основна техника: тригонометрични тъждества (R.5). Решението използва повдигане на квадрат и разглеждане на два случая, което отговаря на medium трудност.",
+      "_crosslinked_from": "R.5",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2020-11 кл · 2020-11 · Зад. 11.1",
+      "statement": "Положителните числа $a$, $b$ и $c$ в този ред образуват геометрична прогресия. Да се намери частното $q$ на тази прогресия, ако корените на уравнението $a^3x^3+b^2x^2+cx=0$ образуват аритметична прогресия.",
+      "solution": "Тъй като a, b и c са положителни числа, то q > 0. След заместване b = aq и  \\( c = aq^{2} \\) , получаваме:\n\n\\[ a ^ {3} x ^ {3} + b ^ {2} x ^ {2} + c x = 0 \\iff a ^ {2} x ^ {3} + a q ^ {2} x ^ {2} + q ^ {2} x = 0 \\]\n\nс корени 0, \\( x_{1} \\) и \\( x_{2} \\), които по условие образуват аритметична прогресия. Ако 0 е средният член на прогресията, то \\(-\\frac{q^{2}}{a} = x_{1} + x_{2} = 0\\), което е невъзможно. Тогава 0, \\( x_{1} \\) и \\( x_{2} \\) в този ред образуват аритметична прогресия и получаваме \\( x_{2} = 2x_{1} \\). Сега от формулите на Виет за уравнението \\( a^{2}x^{2} + aq^{2}x + q^{2} = 0 \\) намираме:\n\n\\[ 2 x _ {1} ^ {2} = x _ {1} x _ {2} = \\frac {q ^ {2}}{a ^ {2}} \\text {и} 3 x _ {1} = x _ {1} + x _ {2} = - \\frac {q ^ {2}}{a}. \\]\n\nОт горните равенства получаваме:\n\n\\[ x _ {1} ^ {2} = \\frac {q ^ {2}}{2 a ^ {2}} \\text {и} x _ {1} ^ {2} = \\frac {q ^ {4}}{9 a ^ {2}}, \\]\n\nоткъдето\n\n\\[ \\frac {q ^ {2}}{2 a ^ {2}} = \\frac {q ^ {4}}{9 a ^ {2}} \\iff q ^ {2} = \\frac{9}{2} \\iff q = \\frac {3 \\sqrt {2}}{2} \\text {   понеже   } q > 0. \\]\n\nНепосредствено проверяваме, че при  \\( q = \\frac{3\\sqrt{2}}{2} \\) ,  \\( x_{1} = -\\frac{3}{2a} \\) , а  \\( x_{2} = -3a \\)  и следователно 0,  \\( x_{1}, x_{2} \\)  образуват аритметична прогресия.\n\nОценяване (7 точки): 2 т. – за  \\( x_{2} = 2x_{1} \\) ; 3 т. – за използване на формулите на Виет за  \\( a^{2}x^{2} + aq^{2}x + q^{2} = 0 \\) ; 2 т. – за намиране на q.",
+      "answer": "q = \\frac{3\\sqrt{2}}{2}",
+      "difficulty": "medium",
+      "techniques": [
+        "vieta_formulas",
+        "geometric_progression",
         "arithmetic_progression"
       ],
       "confidence": "exact",
-      "reasoning": "Използва се Виетови формули за сума и произведение на корените и свойството на аритметична прогресия, за да се намерят p, q, r."
+      "reasoning": "Задачата използва формули на Виет за квадратното уравнение, получено след преобразуване. Главната техника е прилагането на Виет, което е в точка 5.1. Трудността е medium, тъй като изисква инсайт за подреждането на корените и преобразувания."
     },
     {
-      "source": "OLI-2-Областен кръг-2014-11 кл · 2014-11 · Зад. 1",
-      "statement": "Да се намерят всички стойности на параметъра a, при които уравнението 2^(2x+1) − (a + 8)·2^x + a² + 4 = 0 има един положителен и един отрицателен корен.",
-      "solution": "Решение. Плагаме: $y = 2^x$ и разглеждаме функцията $f(y) = 2y^2 - (a + 8)y + a^2 + 4$. За да има уравнението от условието един положителен и един отрицателен корен, то $f(y) = 0$ трябва да има по един корен във всеки от интервалите $(0, 1)$ и $(1, +\\infty)$. Понеже $f(0) = a^2 + 4 > 0$, то достатъчно е да е изпълнено $f(1) < 0$. Това е еквивалентно на $a^2 - a - 2 < 0$, откъдето $a \\in (-1, 2)$.",
-      "answer": "$a \\in (-1, 2)$",
+      "source": "OLI-2-Областен кръг-2023-10 кл · 2023-10 · Зад. 10.1",
+      "statement": "Да се реши уравнението\n\n$$8 - 3\\sqrt{x^2 + 16} = \\frac{56}{2 - \\sqrt{x^2 + 16}}.$$",
+      "solution": "Решение. Нека $u = 2 - \\sqrt{x^2 + 16}$. Тогава $u \\le 2 - 4 < 0$, а лявата страна е $2 + 3u$, следователно можем да умножим по $u$ и да получим\n\n$$3u^2 + 2u - 56 = 0.$$\n\nРешенията на това квадратно уравнение са $-14/3$ и $4$, но $u < 0$, следователно $u = 4$ няма решение. Уравнението $u = -14/3$ е еквивалентно на\n\n$$\\sqrt{x^2 + 16} = \\frac{20}{3},$$\n\nт.е. след вдигане на квадрат (двете страни са положителни), получаваме $x^2 = (400 - 16 \\cdot 9)/9$, или $x^2 = 256/9$, т.е. $x = \\pm 16/3$.",
+      "answer": "$x = \\pm 16/3$",
       "difficulty": "medium",
       "techniques": [
         "substitution",
-        "quadratic_analysis"
+        "quadratic_equation"
       ],
       "confidence": "exact",
-      "reasoning": "Solution substitutes y=2^x, reduces to quadratic f(y) and uses sign analysis on intervals to obtain a∈(-1,2)."
+      "reasoning": "Задачата е уравнение с радикал. Решението използва субституция u = 2 - sqrt(x^2+16), която свежда до квадратно уравнение. Проверено с x=16/3: лявата страна е 8 - 3*sqrt((256/9)+16) = 8 - 3*sqrt(400/9) = 8 - 3*(20/3) = 8-20 = -12, дясната: 56/(2-20/3) = 56/(-14/3) = 56*(-3/14) = -12. Работи."
     },
     {
-      "source": "OLI-2-Областен кръг-2020-11 кл · 2020-11 · Зад. 1",
-      "statement": "Положителните числа $a$, $b$ и $c$ в този ред образуват геометрична прогресия. Да се намери частното $q$ на тази прогресия, ако корените на уравнението $a^3x^3+b^2x^2+cx=0$ образуват аритметична прогресия.",
-      "solution": "Решение. Тъй като a, b и c са положителни числа, то q > 0. След заместване b = aq и c = aq², получаваме:\na³x³ + b²x² + cx = 0 ⇔ a²x³ + aq²x² + q²x = 0\nс корени 0, x₁ и x₂, които по условие образуват аритметична прогресия. Ако 0 е средният член на прогресията, то −q²/a = x₁ + x₂ = 0, което е невъзможно. Тогава 0, x₁ и x₂ в този ред образуват аритметична прогресия и получаваме x₂ = 2x₁. Сега от формулите на Виет за уравнението a²x² + aq²x + q² = 0 намираме:\n2x₁² = x₁x₂ = q²/a² и 3x₁ = x₁ + x₂ = −q²/a.\nОт горните равенства получаваме:\nx₁² = q²/(2a²) и x₁² = q⁴/(9a²),\nоткъдето\nq²/(2a²) = q⁴/(9a²) ⇔ q² = 9/2 ⇔ q = 3√2/2, понеже q > 0.\nНепосредствено проверяваме, че при q = 3√2/2, x₁ = −3/(2a), а x₂ = −3/a и следователно 0, x₁, x₂ образуват аритметична прогресия.",
-      "answer": "q = 3√2/2",
+      "source": "OLI-2-Областен кръг-2023-11 кл · 2023-11 · Зад. 11.1",
+      "statement": "Да се намерят стойностите на реалния параметър $a$, за които уравнението\n\n$$4^{x^2-x} - (1-a)2^{x^2-x} - 6a^2 + 2a = 0$$\n\nима единствено решение в интервала $[-1; 0)$.",
+      "solution": "Решение. Нека $f(x) = x^2 - x$. Тъй като $f(x) = x^2 - x$ е намаляваща в интервала $[-1; 0)$, то $0 < f(x) \\le 2$ за всяко $x \\in [-1; 0)$. Показателната функция $g(u) = 2^u$ е растяща и получаваме, че $2^0 < 2^{x^2-x} \\le 2^2$, т. е. че $1 < 2^{x^2-x} \\le 4$ за всяко $x \\in [-1; 0)$. Така задачата се свежда до намиране на онези стойности на параметър $a$, за които уравнението\n\n$$t^2 - (1-a)t - 6a^2 + 2a = 0$$\n\nима единствено решение в интервала $(1; 4]$. Корените на това уравнение са $t_1 = 2a$ и $t_2 = 1 - 3a$. Тогава имаме следните случаи\n\n1. $t_1 \\le 1 < t_2 \\le 4$; 2. $t_2 \\le 1 < t_1 \\le 4$; 3. $1 < t_1 \\le 4 < t_2$; 4. $1 < t_2 \\le 4 < t_1$; 5. $1 < t_1 = t_2 \\le 4$.\n\nЗа всеки от тези случаи получаваме:\n\n1. $2a \\le 1 < 1 - 3a \\le 4$; 2. $1 - 3a \\le 1 < 2a \\le 4$; 3. $1 < 2a \\le 4 < 1 - 3a$;\n\n4. $1 < 1 - 3a \\le 4 < 2a$; 5. $1 < 2a = 1 - 3a \\le 4$.\n\nВ първите два случая решенията са съответно $a \\in [-1; 0)$ и $a \\in (\\frac{1}{2}; 2]$, а случаите 3), 4), и 5) нямат решение. Окончателно търсените стойности на параметъра са $a \\in [-1; 0) \\cup (\\frac{1}{2}; 2]$.\n\nОценяване. (7 точки) 2 т. за извода, че точно един от корените на $t^2 - (1-a)t - 6a^2 + 2a = 0$ е в интервала $(1; 4)$; 2 т. за намиране на $t_1 = 2a$ и $t_2 = 1 - 3a$ и записване на петте случая; 2 т. за решаване на получените 5 системи и 1 т. за окончателния отговор.",
+      "answer": "$a \\in [-1; 0) \\cup (\\frac{1}{2}; 2]$",
+      "difficulty": "medium",
+      "techniques": [
+        "substitution",
+        "quadratic_equation",
+        "case_analysis"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата включва параметър и показателно уравнение, сведено до квадратно чрез субституция. Основната техника е работа с параметрични уравнения, което се отнася до точка 5.11. Трудността е medium поради необходимостта от разглеждане на няколко случая.",
+      "_crosslinked_from": "5.11",
+      "_crosslink_confidence": 0.7
+    },
+    {
+      "source": "OLI-2-Областен кръг-2025-10 кл · 2025-10 · Зад. 1",
+      "statement": "Да се реши в реални числа уравнението\n\n$$\n\\sqrt{x^4 - 2ax^3 + (a^2 + 1)x^2 - ax - 2} = 3x^2 - 3ax + 7\n$$\n\nпри: а) $a = 2$; б) $a = 3$.",
+      "solution": "Решение. Да забележим, че изразът под квадратния корен може да бъде записан във вида\n\n$$(x^2 - ax - 1)(x^2 - ax + 2).$$\n\nЗначи след полагането $u := x^2 - ax - 1$ уравнението приема вида\n\n$$\\sqrt{u^2 + 3u} = 3u + 10.$$\n\nДефиниционната област на последното е $u \\in (-\\infty, -3] \\cup [0, +\\infty)$. При $u < -\\frac{10}{3}$ дясната страна е отрицателна и уравнението няма решение. При $u \\ge -\\frac{10}{3}$, т.е. $u \\in [-\\frac{10}{3}, -3] \\cup (0, +\\infty)$ след повдигане на квадрат то е еквивалентно на\n\n$$u^2 + 3u = 9u^2 + 60u + 100 \\iff 8u^2 + 57u + 100 = 0.$$\n\nКорените на последното квадратно уравнение са $u_1 = -4$, $u_2 = -\\frac{25}{8}$. Обаче само $u_2$ е сред допустимите стойности, откъдето след връщане в полагането получаваме уравнението\n\n$$x^2 - ax - 1 = -\\frac{25}{8} \\iff x^2 - ax + \\frac{17}{8} = 0. \\tag{\\dagger}$$\n\nа) При $a = 2$ ($\\dagger$) приема вида $x^2 - 2x + \\frac{17}{8} = 0$ и има дискриминанта $D_1 = 4 - \\frac{17}{2} < 0$, т.е. то няма реални корени.\n\nб) При $a = 3$ ($\\dagger$) приема вида $x^2 - 3x + \\frac{17}{8} = 0$ и има дискриминанта $D_2 = 9 - \\frac{17}{2} = \\frac{1}{2}$ и значи корените му са\n\n$$x_{1,2} = \\frac{6 \\pm \\sqrt{2}}{4}.$$",
+      "answer": "а) няма решение; б) $x_{1,2} = \\frac{6 \\pm \\sqrt{2}}{4}$",
+      "difficulty": "medium",
+      "techniques": [
+        "substitution",
+        "quadratic_equation",
+        "domain_analysis"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата е уравнение с параметър и корен. Решението използва субституция u=x^2-ax-1, която свежда до квадратно уравнение. Проверка на граничните случаи (дискриминанта при a=2 и a=3) е извършена. Това е типично за параметрични уравнения с корени.",
+      "_crosslinked_from": "5.11",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2025-11 кл · 2025-11 · Зад. 11.1",
+      "statement": "Да се намерят всички стойности на реалния параметър $k$, за които корените на уравнението $2x^3 - (k^2 + 6)x^2 + (k^2 + k + 4)x - k = 0$ са реални положителни числа и образуват геометрична прогресия.",
+      "solution": "Решение. Вижда се, че $x = 1$ е корен и уравнението придобива вида $(x - 1)P(x) = 0$, където\n\n$$P(x) = 2x^2 - (k^2 + 4)x + k.$$\n\nОт $P(1) = -k^2 + k - 2 < 0, \\forall k \\in \\mathbb{R}$ следва, че $P(x)$ има два различни реални корени $x_1 < x_2$, за които $x_1 < 1 < x_2$.\n\nИмаме $x_1 > 0 \\iff P(0) > 0$ и значи $k > 0$. Тъй като $x_1, 1, x_2$ образуват геометрична прогресия (в този ред), получаваме $x_1x_2 = 1$ и от формулите на Виет следва: $k/2 = 1$, т.е. $k = 2$. Обратното, за $k = 2$, корените $x_1, x_2$ на $P(x) = 0$ са положителни и удовлетворяват $x_1x_2 = 1$, т.е. условието на задачата е изпълнено.\n\nОценяване. (7 точки) 2 т. наблюдението, че $x = 1$ е корен и свеждане до квадратно уравнение; 2 т. за доказване, че 1 е средният член на геометричната прогресия; 3 т. за довършване.",
+      "answer": "k = 2",
       "difficulty": "medium",
       "techniques": [
         "vieta_formulas",
-        "progressions"
+        "geometric_progression"
       ],
       "confidence": "exact",
-      "reasoning": "Използва се замяна b=aq, c=aq^2 и Виетови формули за кубично уравнение, за да се получи условие за q."
+      "reasoning": "Задачата изисква намиране на параметър k, така че корените на кубичното уравнение да образуват геометрична прогресия. Решението използва наблюдението, че x=1 е корен и свежда до квадратно уравнение. След това прилага формулите на Виет за геометрична прогресия."
     },
     {
-      "source": "OLI-2-Областен кръг-2025-11 кл · 2025-11 · Зад. 1",
-      "statement": "Да се намерят всички стойности на реалния параметър k, за които корените на уравнението 2x³ − (k² + 6)x² + (k² + k + 4)x − k = 0 са реални положителни числа и образуват геометрична прогресия.",
-      "solution": "Решение. Вижда се, че $x = 1$ е корен и уравнението придобива вида $(x - 1)P(x) = 0$, където\n\n$$P(x) = 2x^2 - (k^2 + 4)x + k.$$\n\nОт $P(1) = -k^2 + k - 2 < 0, \\forall k \\in \\mathbb{R}$ следва, че $P(x)$ има два различни реални корени $x_1 < x_2$, за които $x_1 < 1 < x_2$.\n\nИмаме $x_1 > 0 \\iff P(0) > 0$ и значи $k > 0$. Тъй като $x_1, 1, x_2$ образуват геометрична прогресия (в този ред), получаваме $x_1x_2 = 1$ и от формулите на Виет следва: $k/2 = 1$, т.е. $k = 2$. Обратното, за $k = 2$, корените $x_1, x_2$ на $P(x) = 0$ са положителни и удовлетворяват $x_1x_2 = 1$, т.е. условието на задачата е изпълнено.",
-      "answer": "$k = 2$.",
+      "source": "OLI-2-Областен кръг-2026-10 кл · 2026-10 · Зад. 10.1",
+      "statement": "Числата a1, a2, . . . , a2026 образуват в този ред аритметична прогресия. Да се намери a1, ако е известно, че a1 + a2 + · · · + a2026 = 2026 и 1 a1.a2 + 1a2.a3 + · · · + 1a2025.a2026 = −2025.",
+      "solution": "Решение. Ако $d$ е разликата на дадената аритметична прогресия, то ако допуснем,\nче $d = 0$, то $a_1 = a_2 = \\dots = a_{2026} = 1$ и второто равенство няма да е изпълнено.\nИмаме\n\n$$a_1 + a_2 + \\dots + a_{2026} = \\frac{2026}{2}(a_1 + a_{2026}) \\Rightarrow a_1 + a_{2026} = 2.$$\n\nОт друга страна,\n\n$$\\begin{aligned} \\frac{1}{a_1.a_2} + \\frac{1}{a_2.a_3} + \\dots + \\frac{1}{a_{2025}.a_{2026}} &= \\frac{1}{d} \\left( \\frac{a_2 - a_1}{a_1.a_2} + \\frac{a_3 - a_2}{a_2.a_3} + \\dots + \\frac{a_{2026} - a_{2025}}{a_{2025}.a_{2026}} \\right) = \\\\ &= \\frac{1}{d} \\left( \\frac{1}{a_1} - \\frac{1}{a_2} + \\frac{1}{a_2} - \\frac{1}{a_3} + \\dots + \\frac{1}{a_{2025}} - \\frac{1}{a_{2026}} \\right) = \\\\ &= \\frac{1}{d} \\cdot \\frac{a_{2026} - a_1}{a_1.a_{2026}} = \\frac{2025}{a_1.a_{2026}} \\Rightarrow a_1.a_{2026} = -1. \\end{aligned}$$\n\nОт формулите на Виет получаваме, че $a_1$ и $a_{2026}$ са корени на квадратното уравнение\n$x^2 - 2x - 1 = 0$, т.е. $a_1 = 1 \\pm \\sqrt{2}$ и съответно $d = \\frac{1}{2025}(a_{2026} - a_1) = \\mp \\frac{2\\sqrt{2}}{2025}$.\n\nОстава да проверим, че за тези стойности членовете на редицата са ненулеви. Ако\nдопуснем, че $a_k = a_1 + (k - 1)d = 0$ за някое естествено число $k \\le 2026$, то $k = 1 - \\frac{a_1}{d}$,\nкоето е ирационално число и достигаме до противоречие.\n\nОценяване. (7 точки) 1 т. за $a_1 + a_{2026} = 2$; 3 т. за $a_1.a_{2026} = -1$; 2 т. за $a_1 = 1 \\pm \\sqrt{2}$\nи $d = \\mp \\frac{2\\sqrt{2}}{2025}$; 1 т. за проверката, че $a_k \\ne 0$.\n\nСвалено от Klasirane.com",
+      "answer": "$a_1 = 1 \\pm \\sqrt{2}$",
       "difficulty": "medium",
       "techniques": [
-        "vieta_formulas",
-        "geometric_progression_condition"
+        "arithmetic_progression",
+        "telescoping_sum",
+        "vieta_formulas"
       ],
       "confidence": "exact",
-      "reasoning": "Solution factors out root x=1, uses Vieta on quadratic and GP condition x1*x2=1 to find k=2."
+      "reasoning": "Задачата използва свойства на аритметична прогресия и телескопична сума. Основната техника е разлагането на сумата от реципрочни произведения чрез разликата на прогресията. Решението води до квадратно уравнение за a1 и a2026, което се решава с Виет.",
+      "_crosslinked_from": "R.6",
+      "_crosslink_confidence": 0.75
     },
     {
-      "source": "OLI-3-Национален кръг-1987-9-12 кл · 1987-None · Зад. 1",
-      "statement": "Нека f(x) = x^n + a₁x^(n−1) + ... + a_n, n ≥ 3, е полином с реални коефициенти, който има n реални корена. Дадено е, че a_{n−1}/a_n > n + 1 и a_{n−2} = 0. Да се докаже, че поне един от корените на f лежи в интервала (−1/2, 1/(n + 1)).",
-      "solution": "Решение. Да означим с α₁, α₂, ..., αₙ корените на f. Ако някой от тях е 0, задачата е решена. Ако αᵢ ≠ 0 за всяко i = 1, 2, ..., n, полагаме βᵢ = 1/αᵢ, i = 1, 2, ..., n. Тогава от формулите на Виет и от условието следва, че\n∑_{1≤i<j≤n} βᵢβⱼ = ∑_{1≤i<j≤n} 1/(αᵢαⱼ) = aₙ₋₂/aₙ = 0,\n∑_{i=1}ⁿ βᵢ = ∑_{i=1}ⁿ 1/αᵢ = −aₙ₋₁/aₙ < −(n+1).\nЩе решим задачата, като използваме следното твърдение: Нека x₁, x₂, ..., xₙ, n ≥ 3, са различни от 0 реални числа, за които\n(1) ∑_{1≤i<j≤n} xᵢxⱼ = 0, ∑_{i=1}ⁿ xᵢ = S < 0.\nТогава най-малкото от числата x₁, x₂, ..., xₙ не надминава 2S/n. Ето и доказателството.\nТъй като между числата x₁, x₂, ..., xₙ има положителни и отрицателни, можем да предполагаме, че\nx₁ ≤ ... ≤ xₖ < 0 < xₖ₊₁ ≤ ... ≤ xₙ,\nкъдето 1 ≤ k ≤ n−1. Нека σ = xₖ₊₁ + ... + xₙ. Тогава S = ∑_{i=1}ⁿ xᵢ ≥ kx₁ + σ, откъдето получаваме\n(2) 0 < σ ≤ S − kx₁.\nОсвен това\nS² = (∑_{i=1}ⁿ xᵢ)² = ∑_{i=1}ⁿ xᵢ² + 2∑_{1≤i<j≤n} xᵢxⱼ = ∑_{i=1}ⁿ xᵢ²,\nследователно\nS² = ∑_{i=1}ⁿ xᵢ² ≤ kx₁² + ∑_{i=k+1}ⁿ xᵢ² ≤ kx₁² + (∑_{i=k+1}ⁿ xᵢ)² = kx₁² + σ².\nОт (2) и (3) следва, че\nS² ≤ kx₁² + σ² ≤ kx₁² + (S − kx₁)²,\n2Sx₁ ≤ x₁² + kx₁² ≤ nx₁².\nТъй като x₁ < 0, неравенството 2Sx₁ ≤ nx₁² показва, че x₁ ≤ 2S/n. За всяко S < 0 съществуват различни от 0 числа x₁, x₂, ..., xₙ, n ≥ 3, със свойствата (1), най-малкото от които е равно на 2S/n. Такива са числата\nx₁ = x₂ = ... = xₙ₋₁ = 2S/n, xₙ = −(n−2)S/n.\nСега да се върнем към решението на задачата. Прилагаме доказаното твърдение на числата β₁, β₂, ..., βₙ. Тъй като S = β₁ + β₂ + ... + βₙ < −(n+1), получаваме, че за някое i = 1, 2, ..., n са изпълнени неравенствата\nβᵢ ≤ 2S/n < −2(n+1)/n < 0.\nТогава 0 > αᵢ = 1/βᵢ > −n/(2(n+1)) > −1/2, с което задачата е решена. Нещо повече, успяхме да докажем, че даденият полином има корен в интервала (−n/(2(n+1)), 0].",
+      "source": "OLI-3-Национален кръг-1984-9-12 кл · 1984-None · Зад. 4",
+      "statement": "Числата a, b, a2, a3, . . . , an−2 са реални, ab̸ = 0 и такива, че всичките корени на уравнението axn −axn−1 + a2xn−2 + · · · + an−2x2 −n2bx + b = 0 са реални и положителни. Да се докаже, че тези корени са равни помежду си",
+      "solution": "От формулите на Виет имамө\nСледователно\nx1 + x2 + . . . + xn = 1\n1\nx1\n+ 1\nx2\n+ . . . + 1\nxn\n= n2.\n(x1 + x2 + . . . + xn)\n\u0012 1\nx1\n+ 1\nx2\n+ . . . + 1\nxn\n\u0013\n= n2\nНо в известното неравенство\n(x1 + x2 + . . . + xn)\n\u0012 1\nx1\n+ 1\nx2\n+ . . . + 1\nxn\n\u0013\n≧n2\nимаме равенство тогава и само тогава когато x1 = x2 = . . . = xn.",
       "answer": null,
       "difficulty": "medium",
       "techniques": [
         "vieta_formulas",
-        "inequality"
+        "am_gm_inequality",
+        "equality_case"
       ],
       "confidence": "exact",
-      "reasoning": "Uses Vieta to express reciprocals, then an inequality on sums with zero pairwise product to bound a root."
+      "reasoning": "Полином с реални корени. Приложение на формулите на Виет и неравенството между средните за доказване на равенство на корените.",
+      "_crosslinked_from": "6.1",
+      "_crosslink_confidence": 0.7
     },
     {
-      "source": "OLI-3-Национален кръг-2010-9-12 кл · 2010-None · Зад. 2",
-      "statement": "Две различни прави, успоредни на абсцисната ос, имат точно по две общи точки с графиката на функцията $f(x) = x^3 + ax^2 + bx + c$. Да се докаже, че четириъгълникът с върхове в тези четири общи точки е ромб тогава и само тогава, когато лицето му е равно на 6.",
-      "solution": "Ясно е, че прави p и q с посоченото свойство съществуват само ако f(x) има максимум и минимум и p и q минават съответно през точката на максимума D и точката на минимума B от графиката на f(x). Графиката на функцията f(x) може да се „премества“ вертикално (чрез полагане g(x) = f(x) + a) и хоризонтално (чрез полагане g(x) = f(x + a)) без това да променя взаимното разположение на четирите точки от условието на задачата. Следователно без ограничение можем да считаме, че точката D е с координати (0, 0) и f(x) = x²(x - t), t > 0.\n\nПравата p е с уравнение y = 0 и втората обща точка с графиката е точката C(t, 0). Тъй като f'(x) = 3x² - 2xt, то точката на минимум е B(2t/3, -4t³/27). Втората обща точка на правата q и графиката е A(α, -4t³/27), където α е корен на f(x) = -4t³/27. Тъй като това уравнение има и един двоен корен x₁ = x₂ = 2t/3, то от формулите на Виет намираме x₁x₂α = -4t³/27, т.е. α = -t/3. Понеже AB = DC = t, то ABCD е успоредник и лицето му е S_ABCD = t. 4t³/27 = 4t⁴/27. За дължината на отсечката BC имаме\n\n$$BC = \\sqrt{\\left(\\frac{2t}{3} - t\\right)^2 + \\left(-\\frac{4t^3}{27}\\right)^2} = \\frac{t}{3}\\sqrt{1 + \\frac{16t^4}{81}}.$$\n\nДиректно се проверява, че условията S_ABCD = 6 и BC = t са еквивалентни на t⁴ = 81/2 с което твърдението е доказано.",
+      "source": "OLI-3-Национален кръг-1991-9-12 кл · 1991-None · Зад. 4",
+      "statement": "Нека f(x) е полином от степен n с реални коефициеити, имащ n (не непременно различни) реални корена. Да се докаже, че за всяко x е в сила неравенството f(x)f ′′(x) ≦(f ′(x))2 , където с f ′(x) и f ′′(x) са означени съответно първата и втората производвв в полинома.",
+      "solution": "*Решение.* Нека $x_1, x_2, \\dots, x_n$ са корените на полинома, а $c$ - старшият му коефициент. Ясно е, че при $x = x_i, i = 1, 2, \\dots, n$, исканото неравенство е изпълнено. Затова нека $x \\neq x_i, i = 1, 2, \\dots, n$. Тогава\n\n$$f(x) = c(x - x_1)(x - x_2)\\cdots(x - x_n)$$\n\nи\n\n$$\\begin{aligned} f'(x) &= c(x - x_2)\\cdots(x - x_n) + \\cdots + c(x - x_1)\\cdots(x - x_{n-1}) = \\\\ &= \\frac{f(x)}{x - x_1} + \\frac{f(x)}{x - x_2} + \\cdots + \\frac{f(x)}{x - x_n} \\end{aligned}$$\n\nт. е.\n\n$$\\frac{f'(x)}{f(x)} = \\frac{1}{x - x_1} + \\frac{1}{x - x_2} + \\cdots + \\frac{1}{x - x_n}$$\n\nОттук следва, че\n\n$$\\left( \\frac{f'(x)}{f(x)} \\right)' = -(x - x_1)^{-2} - (x - x_2)^{-2} - \\cdots - (x - x_n)^{-2} < 0,$$\n\nа от друга страна\n\n$$\\left( \\frac{f'(x)}{f(x)} \\right)' = \\frac{f''(x)f(x) - (f'(x))^2}{f^2(x)}$$\n\nСледователно $f(x)f''(x) \\leqq (f'(x))^2$ за всяко $x$.",
       "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "vieta",
-        "coordinate_geometry",
-        "area_formula"
+        "vieta_formulas",
+        "derivatives",
+        "logarithmic_differentiation"
       ],
       "confidence": "exact",
-      "reasoning": "The proof rewrites the cubic in factored form, uses Vieta’s relations to locate the four intersection points and computes the area of the quadrilateral, showing it equals 6."
+      "reasoning": "Неравенство за полином с реални корени. Решението използва представяне на полинома чрез корени и логаритмична производна, с елегантна проверка на знака."
     },
     {
       "source": "OLI-3-Национален кръг-2011-9-12 кл · 2011-None · Зад. 2",
       "statement": "Нека $f_1(x)$ е полином от втора степен с положителен старши коефициент и $f_{n+1}(x) = f_1(f_n(x))$ при $n \\ge 1$. Да се докаже, че ако уравнението $f_2(x) = 0$ има четири различни неположителни корена, то за произволно $n$ уравнението $f_n(x) = 0$ има $2^n$ реални и различни корена.",
-      "solution": "Да отбележим, че ако $x_1, \\dots, x_{2^n}$ са нулите на $f_n$, то нулите на $f_{n+1}$ са решения на уравненията $f_1(x) = x_k$, $1 \\le k \\le 2^n$. Освен това, уравнението $f_1(x) = a$ има два различни реални корена точно когато $a > m := \\min f_1$.\n\nНека $f_2$ има четири различни неположителни нули. Лесно се съобразява, че това означава, че $f_1$ има две нули $x_1 < x_2 \\le 0$, като $x_1 > m$. Тогава от казаното по-горе по индукция следва, че всички нули на $f_{n+1}$ са различни и лежат в интервала $(x_1, x_2]$.",
+      "solution": "2. Да отбележим, че ако $x_1, \\dots, x_{2^n}$ са нулите на $f_n$, то нулите на $f_{n+1}$ са решения на уравненията $f_1(x) = x_k$, $1 \\le k \\le 2^n$. Освен това, уравнението $f_1(x) = a$ има два различни реални корена точно когато $a > m := \\min f_1$.\n\nНека $f_2$ има четири различни неположителни нули. Лесно се съобразява, че това означава, че $f_1$ има две нули $x_1 < x_2 \\le 0$, като $x_1 > m$. Тогава от казаното по-горе по индукция следва, че всички нули на $f_{n+1}$ са различни и лежат в интервала $(x_1, x_2]$.",
       "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "vieta",
-        "induction",
-        "polynomial_iteration"
+        "polynomials",
+        "roots",
+        "composition"
       ],
       "confidence": "exact",
-      "reasoning": "Използва се формулата на Виет за корените на квадратичния полином и индукция върху n, за да се покаже удвояване на броя реални корени."
+      "reasoning": "Задачата разглежда композиция на полиноми и свойства на корените. Решението използва индукция и свойства на полиномите от втора степен."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2003-10 кл · 2003-10 · Зад. 10.5",
+      "statement": "Да се намери броят на реалните решения на системата\nx + y + z = 3xy\nx2 + y2 + z2 = 3xz\nx3 + y3 + z3 = 3yz.",
+      "solution": "5. Ако y = 0, от първото уравнение следва, че x = −z, заместваме във второто и намираме x = z = 0, като тройката (0, 0, 0) очевидно е решение на системата. При y̸ = 0 полагаме a = x y , b = z y и системата добива вида ¯¯¯¯¯¯ 1 + a + b = 3ay 1 + a2 + b2 = 3ab y(1 + a3 + b3) = 3b. Като изключим y, получаваме ¯¯¯¯ (1 + a + b)(1 + a3 + b3) = 9ab 1 + a2 + b2 = 3ab. Тогава за u = a + b, v = ab имаме, че ¯¯¯¯ (1 + u)(1 + u3 −3uv) = 9v 1 + u2 −2v = 3v откъдето v = u2 + 1 5 и 0 = u4+u3−6u2+u−2 = (u−2)(u3+3u2+1). Случаят u = 2 води до v = 1, a = b = 1 и решението (x, y, z) = (1, 1, 1). Функцията f(u) = u3 + 3u2 + 1 има локален максимум при u = −2 и локален минимум при u = 0. Понеже f(0) = 1 > 0, уравнението f(u) = 0 има единствен реален корен u0, като u0 < −2. Тогава u2 0 −4u2 0 + 1 5 = u2 0 −4 5 > 0 и следователно системата ¯¯¯¯¯¯ a + b = u0 ab = u2 0 + 1 5 има две решения, които водят до още две решения на дадената система. Окончателно, системата от условието на задачата има четири реални решения.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "symmetric_polynomials",
+        "substitution",
+        "vieta_formulas"
+      ],
+      "confidence": "exact",
+      "reasoning": "Системата е симетрична и решението използва симетрични полиноми и заместване. Използват се формулите на Виет за кубичен полином. Това е алгебрична задача с системи уравнения."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2003-11 кл · 2003-11 · Зад. 11.5",
+      "statement": "Да се намери броят на реалните решения на системата\n¯¯¯¯¯¯\nx + y + z = 3xy\nx2 + y2 + z2 = 3xz\nx3 + y3 + z3 = 3yz.\nСава Гроздев, Светлозар Дойчев",
+      "solution": "Ако y = 0, от първото уравнение следва, че x = −z, заместваме във второто и намираме x = z = 0, като тройката (0, 0, 0) очевидно е решение на системата. При y̸ = 0 полагаме a = x y , b = z y и системата добива вида ¯¯¯¯¯¯ 1 + a + b = 3ay 1 + a2 + b2 = 3ab y(1 + a3 + b3) = 3b. Като изключим y, получаваме ¯¯¯¯ (1 + a + b)(1 + a3 + b3) = 9ab 1 + a2 + b2 = 3ab. Тогава за u = a + b, v = ab имаме, че ¯¯¯¯ (1 + u)(1 + u3 −3uv) = 9v 1 + u2 −2v = 3v откъдето v = u2 + 1 5 и 0 = u4+u3−6u2+u−2 = (u−2)(u3+3u2+1). Случаят u = 2 води до v = 1, a = b = 1 и решението (x, y, z) = (1, 1, 1). Функцията f(u) = u3 + 3u2 + 1 има локален максимум при u = −2 и локален минимум при u = 0. Понеже f(0) = 1 > 0, уравнението f(u) = 0 има единствен реален корен u0, като u0 < −2. Тогава u2 0 −4u2 0 + 1 5 = u2 0 −4 5 > 0 и следователно системата ¯¯¯¯¯¯ a + b = u0 ab = u2 0 + 1 5 има две решения, които водят до още две решения на дадената система. Окончателно, системата от условието на задачата има четири реални решения.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "system_of_equations",
+        "variable_substitution",
+        "roots_of_polynomials"
+      ],
+      "confidence": "exact",
+      "reasoning": "Система уравнения, решена със субституция и полиноми. Използва се формула на Виет за намиране на корени. Това е алгебрична задача, свързана с формули на Виет, точка 5.1."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2004-10 кл · 2004-10 · Зад. 10.4",
+      "statement": "Нека $f(x) = (a^2 + 4a + 2)x^3 + (a^3 + 4a^2 + a + 1)x^2 + (2a - a^2)x + a^2$, където $a$ е реален параметър.\n\na) Да се докаже, че $f(-a) = 0$\n\nb) Да се намери всички решения на уравнението $f(x) = 0$ в множеството от реални числа.",
+      "solution": "а) Следва след директно заместване.\nб) Уравнението се записва във вида\n(x + a)((a2 + 4a + 2)x2 + (1 − a)x + a) = 0 , (1)\nоткъдето следва, че a < 0. Освен това квадратният тричлен в (1) трябва\nда има два различни корена, т.е. D = (1 − a)2 − 4a(a2 + 4a + 2) > 0 ⇐ ⇒\n(a + 1)( −4a2 − 11a + 1) > 0. Решавайки това неравенство и и вземайки\nпредвид a < 0, получаваме\na ∈\n(\n−∞, −11 −\n√\n137\n8\n)\n∪ (−1, 0) . (2)\nКорените на квадратния тричлен са положителни точно когато aa2 + 4a + 2 >\n0 и − 1 − aa2 + 4a + 2 > 0. Оттук a ∈ (−2 − √2, −2 + √2) и пресичайки с (2)\n101\n\n─── Стр. 3 ───\nполучаваме\na ∈\n(\n−2 −\n√\n2, −11 −\n√\n137\n8\n)\n∪\n(\n−1, −2 +\n√\n2\n)\n. (3)\nОстава да изключим стойностите на a, за които −a е корен на квадратния\nтричлен в (1). Имаме (a2 + 4a + 2)(−a)2 + (1 − a)(−a) + a = 0 ⇐ ⇒ a2(a2 +\n4a + 3) = 0 ⇐ ⇒ a = −3, −1, 0. Окончателно получаваме\na ∈\n(\n−2 −\n√\n2, −3\n)\n∪\n(\n−3, −11 −\n√\n137\n8\n)\n∪\n(\n−1, −2 +\n√\n2\n)\n.",
+      "answer": "a ∈ (−2 − √2, −3) ∪ (−3, −11 − √137/8) ∪ (−1, −2 + √2)",
+      "difficulty": "hard",
+      "techniques": [
+        "polynomial_equations",
+        "vieta_formulas",
+        "discriminant_analysis"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата е за кубичен полином с параметър. Част а) е директна проверка. Част б) използва факторизация и анализ на дискриминантата на квадратен тричлен. Основната техника е формулите на Виет и анализ на корени."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2009-12 кл · 2009-12 · Зад. 12.1",
+      "statement": "Да се реши уравнението\n3x4 −4x3 −12x2 + 164x−1 + 6\n2x + 1\n= 0.",
+      "solution": "Изследваме функцията $f(x) = 3x^4 - 4x^3 - 12x^2$ в интервала $(-\\infty, +\\infty)$. Имаме $f'(x) = 12(x^3 - x^2 - 2x) = 12x(x + 1)(x - 2)$. Оттук $f'(x) < 0$ при $x \\in (-\\infty, -1) \\cup (0, 2)$ и $f'(x) > 0 при $x\\in(-1, 0) \\cup (2, +\\infty)$. Тогава $f$ намалява в първите два интервала и расте във вторите два. Следователно най-малката стойност на $f$ се достига при $x = -1$ или $x = 2$. Понеже $f(-1) = -5 > -32 = f(2)$, тя е равна на $f(2) = -32$.\n\nОт друга страна,\n\n$$g(x) = \\frac{4^{x-1} + 6}{2^x + 1} \\geq 2 \\Leftrightarrow 4(2^{x-2} - 1)^2 \\geq 0.$$\n\nСледователно $f(x) + 16g(x) \\geq -32 + 16\\cdot2 = 0$, като равенство се достига само при $x = 2$.\n\nОценяване. 1 т. за намиране на нулите на $f'$, 1 т. за определяне на знаците на $f'$, 1 т. за определяне на интервалите на монотонност на $f$, 1 т. за намиране на най-малката стойност на $f$, 2 т. за намиране на най-малката стойност на $g$ и 1 т. за окончателния отговор.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "derivative",
+        "inequality",
+        "function_minimum"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата включва изследване на функция с производни и намиране на минимум. Уравнението е сложно и изисква комбинация от техники."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2010-11 кл · 2010-11 · Зад. 3",
+      "statement": "Дени попълва с ненулево цяло число някой от коефициентите на уравнение от 2010-та степен, след това Вени попълва също с ненулево цяло число друг от коефициентите и т.н., докато бъдат попълнени всичките 2011 коефициента. Дени печели, ако полученото уравнение има целочислен корен, а в противен случай печели Вени. Коя от двете има печеливша стратегия?",
+      "solution": "Дени. Тя може да попълва така, че след всяко нейно попълване (без предпоследното) броят на непопълнените коефициенти пред нечетните и пред четните степени да е един и същ. Значи преди предпоследния ѝ ход има само един непопълнен коефициент от едната група, например групата A. Тя го попълва така, че сумата на числата в A да стане ненулева. С последното си попълване Дени може да направи така, че полученото уравнение да има корен 1 или -1. Наистина, в противен случай сумата от всички коефициенти без последния, който трябва да се попълни, например b, би била 0 (това означава, че 1 не може да е корен на уравнението). Също така, разликата на сумите от числата в A и числата в другата група B без самото b също би била 0 (понеже -1 не е корен на уравнението съгласно допускането). Оттук следва, че както сумата на числата в B \\ {b}, така и тази на числата в A е 0. Последното вече е противоречие.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "combinatorial_games",
+        "invariants"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата е за печеливша стратегия в комбинаторна игра. Решението използва инвариант на паритета на коефициентите. Това е типична задача за игри с инварианти.",
+      "_crosslinked_from": "9.10",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2010-12 кл · 2010-12 · Зад. 12.5",
+      "statement": "Могат ли четири различни реални числа, които са измежду нулите на полином от трета степен и неговата производна, да образуват аритметична прогресия?",
+      "solution": "**Първо решение.** Не. Да допуснем противното за полинома $P(x) = x^3 - ax^2 + bx - c = (x - x_1)(x - x_2)(x - x_3)$ и производната му $P'(x) = 3x^2 - 2ax + b = 3(x - y_1)(x - y_2)$. Можем да считаме, че $x_1 < y_1 < x_2 < y_2 < x_3$ (защо?).\n\nНека $y_1, x_2$ и $y_2$ са членове на прогресията. Понеже $2a/3 = y_1 + y_2 = 2x_2$ и $x_1 + x_2 + x_3 = a$ и някое от числата $x_1$ и $x_3$ също е член на прогресията, то лесно се съобразява, че и петте числа $x_1, y_1, x_2, y_2, x_3$ образуват прогресия. Тогава\n\n$$3y_1y_2 = b = x_1x_2 + x_2x_3 + x_3x_1 = \\frac{(y_1 + y_2)^2}{2} + \\frac{(3y_1 - y_2)(3y_2 - y_1)}{4},$$\n\nоткъдето $(y_1 - y_2)^2 = 0$, противоречие.\n\nНека $x_2$ не е член на прогресията. Тогава числата $x_1, y_1, y_2, x_3$ образуват прогресия, т.е. $x_1 = 2y_1 - y_2$ и $x_3 = 2y_2 - y_1$. Понеже\n\n$$3b - 8a^2/9 = y_1y_2 - 2(y_1 + y_2)^2 = x_1x_3 = b - (x_1 + x_3)x_2 = b - 2a^2/9,$\n\nследва, че $b = a^2/3$. Тъй като $x_2 = a/3$, от $P(a/3) = 0$ намираме, че $c = a^2/27$, откъдето $P(x) = (x - a/3)^3$, противоречие.\n\nНека сега $y_1$ не е член на прогресията. Тогава $x_1 = y_2 - d$, $x_2 = y_2 - d$, $x_3 = y_2 + d$ и от формулите на Виет следва, че $a = 3y_1 - 2d$ и $b = 3y_1^2 - 4yd - d^2$. Като заместим в $3y_1^2 - 2ay_1 + b = 0$, получаваме $d^2 = 0$, противоречие. Случаят, когато $y_2$ не е член на прогресията, е аналогичен.\n\n**Второ решение.** (К. Чакърян) Ще използваме формулата\n\n$$\\frac{P'(x)}{P(x)} = \\frac{1}{x - x_1} + \\frac{1}{x - x_2} \\cdot \\frac{1}{x - x_3}.$$\n\nНека $x_1, y_1, x_2$ образуват прогресия. Тогава\n\n$$0 = \\frac{1}{y_1 - x_1} + \\frac{1}{y_1 - x_2} + \\frac{1}{y_1 - x_3} = \\frac{1}{y_1 - x_3},$$\n\nпротиворечие. Случаят, когато $x_2, y_2, x_3$ образуват прогресия, е аналогичен.\n\nОстава случаят, когато $x_1, y_1, y_2, x_3$ образуват прогресия. Тогава $x_3 - y_1 = 2(y_1 - x_1)$, откъдето\n\n$$0 = \\frac{1}{y_1 - x_1} + \\frac{1}{y_1 - x_2} + \\frac{1}{y_1 - x_3} = \\frac{1}{y_1 - x_2} - \\frac{1}{y_1 - x_3},$$\n\nт.е. $x_2 = x_3$, което отново е противоречие.\n\n**Оценяване.** Първо решение: по 2 т. за първите два случая и 3 т. за третия случай. Второ решение: 4 т. за първия и аналогичния му случай, и 3 т. за втория случай.",
+      "answer": "Не",
+      "difficulty": "hard",
+      "techniques": [
+        "vieta_formulas",
+        "polynomial_roots",
+        "arithmetic_progression",
+        "contradiction"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задача за полином и аритметична прогресия на корени и критични точки. Най-близката точка е 5.1 (Формули на Виет). Трудността е hard поради множество случаи и дълго доказателство с противоречие."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2013-12 кл · 2013-12 · Зад. 12.3",
+      "statement": "Нела P е полином от 2013 степен с реални коефициенти така, че за произволни числа x, y, z ∈ R, за които P (x) + P (y) + P (z) = 0 , следва, че P (x3) + P (y3) + P (z3) = 3P (x)P (y)P (z). Да се докаже, че: а) P (x) ̸= 0 при x ∈ R − {−1, 0, 1}; б) P е нечетна функция.",
+      "solution": "**Решение.** а) Нека $P(\\alpha) = 0$ за някое $\\alpha \\in \\mathbb{R}$. Тогава $3P(\\alpha^3) = 3P^3(\\alpha) = 0$ и по индукция следва, че $P(\\alpha^{3^n}) = 0$ за всяко $n \\in \\mathbb{N}$. Понеже $P$ има краен брой нули (най-много 2013), то $\\alpha = 0$ или $|\\alpha| = 1$, т.е. $\\alpha = \\pm 1$.\n\nб) Тъй като $P$ е от нечетна степен, то $P(\\alpha) = 0$ за някое $\\alpha \\in \\mathbb{R}$. От а) следва, че $\\alpha \\in \\{-1, 0, 1\\}$ и значи $\\alpha^3 = \\alpha$. За всяко $x \\in \\mathbb{R}$ можем да изберем $y \\in \\mathbb{R}$ така, че $P(x) = -P(y)$. При $z = \\alpha$ следва, че $P(x^3) = -P(y^3)$. Пак по индукция получаваме $P(x^{3^n}) = -P(y^{3^n})$. При $x > 1$ имаме $\\lim_{n \\to \\infty} x^{3^n} = \\infty$. В частност, $|y| > 1$. Понеже $\\lim_{|t| \\to \\infty} P(t)/t^3 \\ne 0$, то $\\lim_{n \\to \\infty} (x/y)^{3^n} = -1$. Значи $x = -y$, т.е. $P(x) = -P(-x)$ при $x > 1$, а оттам и за всяко $x$.\n\n**Забележка.** Заменяйки 2013 с произволно нечетно число $2n-1$, може да се докаже, че $P(x) = x^{2n-1}$ или $P(x) = -x^{2n-1}$.\n\n**Оценяване:** а) 2 т.; б) 2 т. за $P(x) = -P(y) \\Rightarrow P(x^{3^n}) = -P(y^{3^n})$ (1 т. при $n=1$) и 3 т. за довършване на решението.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "polynomial_roots",
+        "functional_equations",
+        "induction"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква работа с полиноми и функционални уравнения. Основната техника е използване на свойствата на корените и индукция за доказване на свойствата на полинома. Това се свързва с точка 5.1 (Формули на Виет), но също така включва и други техники."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2023-12 кл · 2023-12 · Зад. 12.4",
+      "statement": "Дадена е функцията $f(x) = x^3 - 2ax^2 + 3ax$, където $a$ е реален параметър. Да се намерят стойностите на параметъра $a$, при условие че графиката на $y = f(x)$ има единствена обща точка $C$ с абсцисната ос и $A \not\not\not B$, където с $A$ и $B$ върху тази графика са отбелязани локалните екстремуми. За всяка от тези стойности на параметъра да се докаже, че точките $A$ и $B$ лежат в първи квадрант и лицето на триъгълника $ABC$ е по-малко от 6.",
+      "solution": "Решение. Функцията $f(x)$ има локални екстремуми в две различни точки точно когато производната и $f'(x) = 3x^2 - 4ax + 3a$, която е квадратен тричлен, има два различни реални корена, което е еквивалентно с дискриминантата на $f'(x) = 0$ да бъде строго положителна, т.е. $D_{f'} = 16a^2 - 4 \\cdot 3 \\cdot 3a > 0$ или $a \\in (-\\infty, 0) \\cup \\left(\\frac{9}{4}, +\\infty\\right)$.\n\nНека при $a \\in (-\\infty, 0) \\cup \\left(\\frac{9}{4}, +\\infty\\right)$ да означим корените на квадратния тричлен $f'(x) = 3x^2 - 4ax + 3a = 0$ съответно с $x_1$ и $x_2$ ($x_1 < x_2$), тогава от формулите на Виет имаме $x_1 + x_2 = \\frac{4a}{3}$ и $x_1 \\cdot x_2 = a$.\n\nФункцията $f(x)$ расте $\\left(f'(x) > 0\\right)$ за $x \\in (-\\infty, x_1) \\cup (x_2, +\\infty)$ и намалява $\\left(f'(x) < 0\\right)$ за $x \\in (x_1, x_2)$, т.е. в точката $A(x_1, f(x_1))$ тя има локален максимум, а в точката $B(x_2, f(x_2))$ – локален минимум.\n\nПресечните точки на графиката на функцията $y = f(x)$ с оста $Ox$ (правата с уравнение $y=0$) имат абсциси, които са решения на уравнението $f(x) = x(x^2 - 2ax + 3a) = 0$. Понеже за всяка стойност на параметъра $a$ имаме $f(0) = 0$, то точката $C(0, 0)$ ще бъде пресечна точка на графиката на функцията с оста $Ox$. Така графиката на $f(x)$ ще има единствена обща точка с абсцисната ос точно когато квадратният тричлен $g(x) = x^2 - 2ax + 3a$ няма реални корени, т.е. когато $D_g = 4a^2 - 4 \\cdot 3 \\cdot 3a < 0$ или $a \\in (0, 3)$.\n\nТака стойностите на параметъра $a$, за които $f(x)$ има два локални екстремума и една пресечна точка с абсцисната ос са $a \\in \\left(\\left((-\\infty, 0) \\cup \\left(\\frac{9}{4}, +\\infty\\right)\\right) \\cap (0, 3)\\right)$ или $a \\in \\left(\\frac{9}{4}, 3\\right)$.\n\nПонеже за $a \\in \\left(\\frac{9}{4}, 3\\right)$ имаме $x_1 + x_2 = \\frac{4a}{3} > 0$ и $x_1 \\cdot x_2 = a > 0$, то числата $x_1$ и $x_2$ са положителни.\n\n![img-1.jpeg](img-1.jpeg)\n\nФигура 3: Чертеж към задача 4.\n\nсвалено от Klasirane.com\n\n─── Стр. 5 ───\nОт $f(0) = 0$, $x_1 > 0$ и факта, че функцията $f(x)$ расте за $x \\in (-\\infty, x_1)$ имаме $f(x_1) > 0 = f(0)$. Ако стойността на локалния минимум $f(x_2)$ не е положителна, то от теоремата на Болцано ще получим, че графиката на $f(x)$ ще има повече от една обща точка с оста $Ox$, което не е вярно.\n\nСледователно $x_1$ и $x_2$ са положителни и $f(x_1) > f(x_2) > 0$, т.е. точките на локален екстремум $A(x_1, f(x_1))$ и $B(x_2, f(x_2))$ лежат в първи квадрант.\n\nДа разгледаме квадратния тричлен $f'(x) = 3x^2 - 4ax + 3a = 0$ за $a \\in \\left(\\frac{9}{4}, 3\\right)$. Понеже старшият му коефициент е положителен и са изпълнени неравенствата $f'(1) = 3 - a > 0$ и $1 < \\frac{x_1 + x_2}{2} = \\frac{2a}{3}$, то имаме $1 < x_1 < x_2$. Освен това $1 < x_1 < \\frac{x_1 + x_2}{2} = \\frac{2a}{3} < 2$, т.е. $1 < x_1 < 2$.\n\nДа намерим най-голямата стойност на квадратния тричлен $h(t) = g(t) - 4 = t^2 - 2at + 3a - 4$ за $t \\in [1, 2]$. Понеже върхът на параболата е в точката $t_0 = a > 2$, то за $t \\in [1, 2]$ функцията $h(t)$ ще намалява и ще достига най-голямата си стойност в левия край на интервала, т.е. $h(t) \\leq h(1) = a - 3 < 0$ или $g(t) < 4$ за всяко $t \\in [1, 2]$.\n\nСега ще изразим лицето на тригълника $ABC$ по следния начин (вж. чертежа):\n\n$$S_{ABC} = S_{CFED} - S_{CFB} - S_{CAD} - S_{ABE} = x_2 f(x_1) - \\frac{x_2 f(x_2)}{2} - \\frac{x_1 f(x_1)}{2} - \\frac{(x_2 - x_1)(f(x_1) - f(x_2))}{2}.$$\n\nНепосредствено се проверява, че неравенството $S_{ABC} < \\frac{1}{2} S_{CFED} = \\frac{x_2 f(x_1)}{2}$ е изпълнено. (Действително след разкриване на скобите и опростяване то става еквивалентно на неравенството $\\frac{x_1 f(x_2)}{2} > 0$, което очевидно е вярно.)\n\nТака окончателно получаваме $S_{ABC} < \\frac{x_2 f(x_1)}{2} = \\frac{x_2 x_1 g(x_1)}{2} = \\frac{a \\cdot g(x_1)}{2} < 6$, понеже $a < 3$ и $g(x_1) < 4$ ($x_1 \\in (1, 2)$).\n\n**Оценяване.** (7 точки) 2 т. за достигане до $a \\in \\left(\\frac{9}{4}, 3\\right)$ (по 1 т. за $A \\neq B$ и съществуване на единствена пресечна точка $C$); 1 т. за доказване, че $A(x_1, f(x_1))$ и $B(x_2, f(x_2))$ лежат в първи квадрант; 1 т. за достигане до $1 < x_1 < 2$; 1 т. за доказване, че $g(t) < 4$ за всяко $t \\in [1, 2]$; 1 т. за доказване на неравенството $S_{ABC} < \\frac{1}{2} S_{CFED} = \\frac{x_2 f(x_1)}{2}$; 1 т. за получаване на $S_{ABC} < 6$.\n\n**Забележка.** Стойностите на параметра, за които графиката на $y = f(x)$ има единствена обща точка с абсцисната ос могат да бъдат намерени и от условието $G(x_1, x_2) = f(x_1) \\cdot f(x_2) > 0$. Трябва да отбележим, че това условие е симетрично, относно $x_1$ и $x_2$, т.е. може да се изрази чрез $x_1 + x_2 = \\frac{4a}{3}$ и $x_1 \\cdot x_2 = a$. ($0 < G(x_1, x_2) = G(x_2, x_1) = H(x_1 + x_2, x_1 x_2) = x_1 x_2 (x_1^2 x_2^2 - 2ax_1 x_2 (x_1 + x_2) + 3a(x_1^2 + x_2^2) + 4a^2 x_1 x_2 + 9a^2 - 6a^2 (x_1 + x_2) = W(a) = 4a^3 \\left(1 - \\frac{a}{3}\\right)$). Полученото условие е еквивалентно на $a \\in (0, 3)$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "derivative_analysis",
+        "discriminant",
+        "quadratic_roots",
+        "function_behavior"
+      ],
+      "confidence": "exact",
+      "reasoning": "Изследване на функция с параметър, фокусирано върху корените на производната и поведението на функцията. Съвпада с A4.",
+      "_crosslinked_from": "5.9",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-3-Национален кръг-1987-9-12 кл · 1987-None · Зад. 1",
+      "statement": "Нека $f(x) = x^n + a_1x^{n-1} + \\dots + a_n, n \\geqq 3$, е полином с реални коефициенти, който има $n$ реални корена. Дадено е, че $\\frac{a_{n-1}}{a_n} > n+1$ и $a_{n-2} = 0$. Да се докаже, че поне един от корените на $f$ лежи в интервала $\\left(-\\frac{1}{2}, \\frac{1}{n+1}\\right)$.",
+      "solution": "Да означим с $\\alpha_1, \\alpha_2, \\dots, \\alpha_n$ корените на $f$. Ако някой от тях е 0, задачата е решена. Ако $\\alpha_i \\neq 0$ за всяко $i = 1, 2, \\dots, n$, полагаме $\\beta_i = \\frac{1}{\\alpha_i}, i = 1, 2, \\dots, n$. Тогава от формулите на Виет и от условието следва, че\n\n$$\\sum_{1 \\leq i < j \\leq n} \\beta_i \\beta_j = \\sum_{1 \\leq i < j \\leq n} \\frac{1}{\\alpha_i \\alpha_j} = \\frac{a_{n-2}}{a_n} = 0,$$\n\n$$\\sum_{i=1}^n \\beta_i = \\sum_{i=1}^n \\frac{1}{\\alpha_i} = -\\frac{a_{n-1}}{a_n} < -(n+1).$$\n\nЩе решим задачата, като използваме следното твърдение: Нека $x_1, x_2, \\dots, x_n, n \\geqq 3$, са различни от 0 реални числа, за които\n\n$$(1) \\sum_{1 \\leq i < j \\leq n} x_i x_j = 0, \\quad \\sum_{i=1}^n x_i = S < 0.$$\n\nТогава най-малкото от числата $x_1, x_2, \\dots, x_n$ не надминава $\\frac{2S}{n}$. Ето и доказателството.\n\nТъй като между числата $x_1, x_2, \\dots, x_n$ има положителни и отрицателни, можем да предполагаме, че\n\n$$x_1 \\leqq \\dots \\leqq x_k < 0 < x_{k+1} \\leqq \\dots \\leqq x_n,$$\n\nкъдето $1 \\leqq k \\leqq n-1$. Нека $\\sigma = x_{k+1} + \\dots + x_n$. Тогава $S = \\sum_{i=1}^n x_i \\geqq k x_1 + \\sigma$, откъдето получаваме\n\n$$(2) \\ 0 < \\sigma \\leqq S - k x_1.$$\n\nОсвен това\n\n$$S^2 = \\left(\\sum_{i=1}^n x_i\\right)^2 = \\sum_{i=1}^n x_i^2 + 2 \\sum_{1 \\leq i < j \\leq n} x_i x_j = \\sum_{i=1}^n x_i^2,$$\n\nследователно\n\n$$S^2 = \\sum_{i=1}^n x_i^2 \\leqq k x_1^2 + \\sum_{i=k+1}^n x_i^2 \\leqq k x_1^2 + \\left(\\sum_{i=k+1}^n x_i\\right)^2 = k x_1^2 + \\sigma^2.$$\n\nОт (2) и (3) следва, че\n\n$$\\begin{aligned} S^2 &\\leqq k x_1^2 + \\sigma^2 \\leqq k x_1^2 + (S - k x_1)^2, \\\\ 2S x_1 &\\leqq x_1^2 + k x_1^2 \\leqq n x_1^2. \\end{aligned}$$\n\nТъй като $x_1 < 0$, неравенството $2S x_1 \\leqq n x_1^2$ показва, че $x_1 \\leqq \\frac{2S}{n}$. За всяко $S < 0$ съществуват различни от 0 числа $x_1, x_2, \\dots, x_n, n \\geqq 3$, със свойствата (1), най-малкото от които е равно на $\\frac{2S}{n}$. Такива са числата\n\n$$x_1 = x_2 = \\dots = x_{n-1} = \\frac{2S}{n}, x_n = -\\frac{(n-2)S}{n}$$\n\nСвалено от Klasirane.com\n\nСега да се върнем към решението на задачата. Прилагаме доказаното твърдение на числата $\\beta_{1}, \\beta_{2}, \\ldots, \\beta_{n}$. Тъй като $S = \\beta_{1} + \\beta_{2} + \\ldots + \\beta_{n} < -(n + 1)$, получаваме, че за някое $i = 1, 2, \\ldots, n$ са изпълнени неравенствата\n\n$$\\beta_ {i} \\leq \\frac {2 S}{n} <   - \\frac {2 (n + 1)}{n} <   0.$$\n\nТогава $0 > \\alpha_{i} = \\frac{1}{\\beta_{i}} > -\\frac{n}{2(n+1)} > -\\frac{1}{2}$, с което задачата е решена. Нещо повече, успяхме да докажем, че даденият полином има корен в интервала $\\left(-\\frac{n}{2(n+1)}, 0\\right]$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "vieta_formulas",
+        "substitution",
+        "inequality_manipulation"
+      ],
+      "confidence": "partial",
+      "reasoning": "Основната техника е формулите на Виет (5.1), но решението изисква и значителна работа с неравенства (6.1). Помощното твърдение е ключово и включва разглеждане на знаци и оценка на суми, което не е директно покрито от една точка. Затова увереността е 'partial' с алтернатива 6.1. Трудността е 'hard' поради дължината на решението и нуждата от инсайт за субституцията и помощното твърдение."
+    },
+    {
+      "source": "OLI-3-Национален кръг-1990-9-12 кл · 1990-None · Зад. 2",
+      "statement": "Да се докаже, че в равнината съществува такава единствена точка $P$, че за всяка права през $P$, която пресича графиката на функцията $y = \\alpha x^2$, $\\alpha \\geq 0$, в две различни точки $A$ и $B$, отсечките $OA$ и $OB$ са перпендикулярни, където $O$ е началото на координатната система.",
+      "solution": "Нека $A(x_1, \\alpha x_1^2)$ и $B(x_2, \\alpha x_2^2)$ са точки от параболата с уравнение $y = \\alpha x^2$, чиито абсциси са различни от 0. Векторите $\\overrightarrow{OA}(x_1, \\alpha x_1^2)$ и $\\overrightarrow{OB}(x_2, \\alpha x_2^2)$ са перпендикулярни точно когато е изпълнено $x_1 x_2 + \\alpha^2 x_1^2 x_2^2 = 0$. Тъй като $x_1 x_2 \\neq 0$, това условие е еквивалентно на $x_1 x_2 = -\\frac{1}{\\alpha^2}$.\n\nДа предположим, че $P(x_0, y_0)$ е точка със свойството от условието. Всяка права през $P$ има уравнение от вида $y - y_0 = \\lambda(x - x_0)$, където $\\lambda$ е реално число, следователно абсцисите на пресечните й точки с параболата $y = \\alpha x^2$ могат да се получат от системата\n\n$$y = \\alpha x^2$$\n\n$$y - y_0 = \\lambda(x - x_0),$$\n\nот която достигаме до корените на уравнението $\\alpha x^2 - \\lambda x + \\lambda x_0 - y_0 = 0$. Това уравнение има различни реални корени $x_1, x_2$ за безбройно много стойности на $\\lambda$ т.к. дискриминантата му $\\lambda^2 - 4\\alpha\\lambda x_0 + 4\\alpha y_0$ е строго положителна, например, за всички достатъчно големи $\\lambda$. За всички такива $\\lambda$ (евентуално с изключение на едно - за което $\\lambda x_0 - y_0 = 0$) трябва да е изпълнено равенството\n\n$$\\frac{\\lambda x_0 - y_0}{\\alpha} = x_1 x_2 = -\\frac{1}{\\alpha^2},$$\n\nт. е. $(\\alpha x_0) \\lambda + (1 - \\alpha y_0) = 0$. Това е изпълнено само при $\\alpha x_0 = 1 - \\alpha y_0 = 0$, откъдето намираме единствената възможност за координатите на точката $P : x_0 = 0, y_0 = \\frac{1}{\\alpha}$. Обратно, нека $l$ е произволна права през точката $P\\left(0, \\frac{1}{\\alpha}\\right)$, пресичзща параболата $y = \\alpha x^2$ в две различни точки $A$ и $B$. Уравнението на $l$ е от вида $y - \\frac{1}{\\alpha} = \\lambda x$, където $\\lambda$ е реално число, така че абцисите на $A$ и $B$ са корените $x_1$ и $x_2$ на уравнението $\\alpha x^2 - \\lambda x - \\frac{1}{\\alpha} = 0$. Тъй като $x_1 x_2 = -\\frac{1}{\\alpha^2}$, от бележката в началото на решението следва, че $P$ има свойството от условието. С това твърдението е доказано.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "complex_numbers",
+        "orthogonality",
+        "parabola"
+      ],
+      "confidence": "exact",
+      "reasoning": "Използва се представяне с комплексни числа за перпендикулярност и свойства на параболата.",
+      "_crosslinked_from": "12.1",
+      "_crosslink_confidence": 0.7
+    },
+    {
+      "source": "OLI-3-Национален кръг-1996-9-12 кл · 1996-None · Зад. 3",
+      "statement": "The quadratic functions $f(x)$ and $g(x)$ are with real coefficients and have the following property: if the number $g(x)$ is integer for a positive $x$, then the number $f(x)$ is integer too. Prove that there are such integers $m$ and $n$, that $f(x) = mg(x) + n$ for all real $x$.",
+      "solution": "Let $g(x) = px^2 + qx + r$. We can assume that $p > 0$. Since $g(x) = p(x + \f\\frac{q}{2p})^2 + r - \f\\frac{q^2}{4p}$ after the variable change of $x$ by $x + \f\\frac{q}{2p}$ we reduce the problem for the following quadratic functions $f(x) = ax^2 + bx + c$ and $g(x) = px^2 + s, p > 0$. Let $k$ be such an integer that $k > s$ and $\n\nsqrt{\f\\frac{k - s}{p}} > \f\\frac{q}{2p}$. Since $g\\left(\\sqrt{\\frac{k - s}{p}}\\right) = k$ is integer, then $f\\left(\\sqrt{\\frac{k - s}{p}}\\right) = \\frac{a(k - s)}{p} + b\\sqrt{\\frac{k - s}{p}} + c$ is an integer too. Consequently, the number\n\n$$f\\left(\\sqrt{\\frac{k + 1 - s}{p}}\\right) - f\\left(\\sqrt{\\frac{k - s}{p}}\\right) = \\frac{b}{\\sqrt{p}} \\cdot \\frac{1}{\\sqrt{k + 1 - s} + \\sqrt{k - s}} + \\frac{a}{p} \\tag{1}$$\n\nis an integer for all $k$ which are sufficiently big. It follows from here that $\\frac{a}{p}$ is an integer. Indeed, suppose that $\\frac{a}{p}$ is not an integer. If $b > 0$, we chose $k$ in a way that\n\n$$\\frac{b}{\\sqrt{p}} \\cdot \\frac{1}{\\sqrt{k + 1 - s} + \\sqrt{k - 1}} < \\left[\\frac{a}{p}\\right] + 1 - \\frac{a}{p},$$\n\nand if $b < 0$, we chose $k$ in a way that\n\n$$\\frac{b}{\\sqrt{p}} \\cdot \\frac{1}{\\sqrt{k + 1 - s} + \\sqrt{k - 1}} > \\left[\\frac{a}{p}\\right] - \\frac{a}{p}.$$\n\nIn both cases there is a contradiction with the fact that (1) is an integer. Now, it follows that\n\n$$\\frac{b}{\\sqrt{p}} \\cdot \\frac{1}{\\sqrt{k + 1 - s} + \\sqrt{k - s}}$$\n\nfor all $k$, which are sufficiently big. This is possible only when $b = 0$.\n\nLet $\\frac{a}{p} = m$. Then, $f\\left(\\sqrt{\\frac{k - s}{p}}\\right) = m(k - s) + c$ is an integer (when $k$ is sufficiently big), i.e. $c - ms$ is an integer. Let $n = c - ms$. Now it is clear that $f(x) = mg(x) + n$ for all $x$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "vieta_formulas",
+        "quadratic_functions",
+        "integer_values"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата доказва, че ако за квадратни функции f и g, когато g(x) е цяло число, то f(x) също е цяло число, то f е линейна комбинация на g с цели коефициенти. Решението използва смяна на променлива и свойства на квадратните функции, след което доказва, че коефициентът пред линейния член е нула и че отношението на старшите коефициенти е цяло число. Това е алгебрична задача с фокус върху квадратни функции и цели стойности."
+    },
+    {
+      "source": "OLI-3-Национален кръг-2010-9-12 кл · 2010-None · Зад. 2",
+      "statement": "Две различни прави, успоредни на абсцисната ос, имат точно по две общи точки с графиката на функцията $f(x) = x^3 + ax^2 + bx + c$. Да се докаже, че четириъгълникът с върхове в тези четири общи точки е ромб тогава и само тогава, когато лицето му е равно на 6.",
+      "solution": "Ясно е, че прави p и q с посоченото свойство съществуват само ако f(x) има максимум и минимум и p и q минават съответно през точката на максимума D и точката на минимума B от графиката на f(x). Графиката на функцията f(x) може да се „премества“ вертикално (чрез полагане g(x) = f(x) + a) и хоризонтално (чрез полагане g(x) = f(x + a)) без това да променя взаимното разположение на четирите точки от условието на задачата. Следователно без ограничение можем да считаме, че точката D е с координати (0, 0) и f(x) = x²(x - t), t > 0.\n\nПравата p е с уравнение y = 0 и втората обща точка с графиката е точката C(t, 0). Тъй като f'(x) = 3x² - 2xt, то точката на минимум е B(2t/3, -4t³/27). Втората обща точка на правата q и графиката е A(α, -4t³/27), където α е корен на f(x) = -4t³/27. Тъй като това уравнение има и един двоен корен x₁ = x₂ = 2t/3, то от формулите на Виет намираме x₁x₂α = -4t³/27, т.е. α = -t/3. Понеже AB = DC = t, то ABCD е успоредник и лицето му е S_ABCD = t. 4t³/27 = 4t⁴/27. За дължината на отсечката BC имаме\n\n$$BC = \\\\sqrt{\\\\left(\\\\frac{2t}{3} - t\\\\right)^2 + \\\\left(-\\\\frac{4t^3}{27}\\\\right)^2} = \\\\frac{t}{3}\\\\sqrt{1 + \\\\frac{16t^4}{81}}.$$\n\nДиректно се проверява, че условията S_ABCD = 6 и BC = t са еквивалентни на t⁴ = 81/2 с което твърдението е доказано.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "cubic_functions",
+        "derivatives",
+        "vieta_formulas",
+        "coordinate_geometry"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква анализ на кубична функция, използване на производни за намиране на екстремуми, формули на Виет и изчисляване на лице на четириъгълник. Главната техника е работа с корените на полинома."
     }
   ]
 }

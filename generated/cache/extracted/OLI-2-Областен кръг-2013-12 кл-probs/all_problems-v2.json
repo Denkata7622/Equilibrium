@@ -1,0 +1,68 @@
+{
+  "pdf": "OLI-2-Областен кръг-2013-12 кл-probs",
+  "version": 2,
+  "extraction_model": "deepseek/deepseek-r1-0528",
+  "extracted_at": "2026-11-02T19:48:52.466703",
+  "problems": [
+    {
+      "num": 1,
+      "year": 2013,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Да се реши в цели числа уравнението\n\n$$x^3 = (x - y)(3xy + 1).$$",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 1. Да се реши в цели числа уравнението\n\n$$x^3 = (x - y)(3xy + 1).$$",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2013-12 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 2,
+      "year": 2013,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Нека $I$ е центърът на вписаната в $\triangle ABC$ окръжност и $A_1, B_1, C_1$ са центровете на оръжностите, описани около $\triangle BIC, \triangle CIA$ и $\triangle AIB$. Да се докаже, че:\n\nа) правите $AA_1, BB_1$ и $CC_1$ се пресичат в една точка;\nб) $\frac{S_{A_1B_1C_1}}{S_{ABC}} = \frac{R}{2r}$, където $r$ и $R$ са радиусите на вписаната и описаната окръжност на $\triangle ABC$.",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 2. Нека $I$ е центърът на вписаната в $\triangle ABC$ окръжност и $A_1, B_1, C_1$ са центровете на оръжностите, описани около $\triangle BIC, \triangle CIA$ и $\triangle AIB$. Да се докаже, че:\n\nа) правите $AA_1, BB_1$ и $CC_1$ се пресичат в една точка;",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2013-12 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 3,
+      "year": 2013,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Числата $\frac{1}{5}$ и $\frac{1}{5}$ се заменят със сумата и произведението им. За новите числа $\frac{2}{5}$ и $\frac{1}{25}$ се прилага същата операция и т.н. Да се докаже, че във всеки момент числата са по-малки от $\frac{1}{2}$.",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 3. Числата $\frac{1}{5}$ и $\frac{1}{5}$ се заменят със сумата и произведението им. За новите числа $\frac{2}{5}$ и $\frac{1}{25}$ се прилага същата операция и т.н. Да се докаже, че във всеки момент числата са по-малки от $\frac{1}{2}$.",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2013-12 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 4,
+      "year": 2013,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Нека $P$ е полином от 2013 степен с реални коефициенти така, че за произволни числа $x, y, z ∈ ℝ$, за които $P(x) + P(y) + P(z) = 0$, следва, че $P(x^3) + P(y^3) + P(z^3) = 3P(x)P(y)P(z)$. Да се докаже, че:\n\nа) $P(x) ≠ 0$ при $x ∈ ℝ \\setminus ⟨-1, 0, 1⟩$;\nб) $P$ е нечетна функция.",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 4. Нека $P$ е полином от 2013 степен с реални коефициенти така, че за произволни числа $x, y, z ∈ ℝ$, за които $P(x) + P(y) + P(z) = 0$, следва, че $P(x^3) + P(y^3) + P(z^3) = 3P(x)P(y)P(z)$. Да се докаже, че:\n\nа) $P(x) ≠ 0$ при $x ∈ ℝ \\setminus ⟨-1, 0, 1⟩;",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2013-12 кл-probs",
+      "chunk": 1
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "key": "11.7#2",
+  "point_id": "11.7",
+  "idx": 2,
+  "difficulty": "hard",
+  "source": "OLI-3-Национален кръг-2026-9-12 кл · 2026-None · Зад. 3",
+  "techniques": [
+    "polynomials",
+    "roots_of_unity",
+    "remainder_theorem"
+  ],
+  "word_count": 1562,
+  "score": 9,
+  "verdict": "approve",
+  "status": "done",
+  "structure": {
+    "missing": [],
+    "has_boxed": true,
+    "why_count": 8,
+    "sec12_words": 163,
+    "ends_ok": true,
+    "fatal": [],
+    "soft": []
+  },
+  "caught_errors_in_solution": [
+    "Степента на полиномиалния остатък е най-много p-2, а не непременно точно p-2.",
+    "В доказателството на циклотомичната лема трябва да се включи и свободният коефициент P_0(Y).",
+    "В последното сравнение на II начин последният множител трябва да бъде a^{p-1}-1, а не a^p-1."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 105.3,
+  "generated_at": "2026-11-21T10:33:38.135454",
+  "lesson_refs": [
+    "11.7",
+    "5.7"
+  ],
+  "enriched": true,
+  "enriched_at": "2026-11-22T18:18:42.720281"
+}

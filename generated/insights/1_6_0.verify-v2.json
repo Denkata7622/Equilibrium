@@ -1,0 +1,32 @@
+{
+  "score": 9,
+  "verdict": "approve",
+  "issues": [
+    {
+      "severity": "minor",
+      "section": "1",
+      "description": "В секция 1 авторът посочва грешки в предоставеното решение, но не е направил проверка с конкретни числа за собствената си формула за a²/(bc). Това е дребен пропуск, но не е критично, тъй като формулата е вярна."
+    }
+  ],
+  "math_errors": [],
+  "sections_present": {
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true,
+    "12": true
+  },
+  "plan_b_quality": "concrete",
+  "how_to_think_quality": "specific",
+  "word_count_actual": 2200,
+  "verdict_reasoning": "Картата е отлична: всички секции са покрити, математиката е вярна, Plan B е реален алтернативен подход, а How to Think е конкретен. Авторът е хванал грешки в предоставеното решение (бонус).",
+  "_attempt": 2,
+  "_model": "deepseek/deepseek-v3.2"
+}

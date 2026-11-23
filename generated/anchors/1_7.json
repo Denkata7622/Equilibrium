@@ -1,38 +1,404 @@
 {
   "point_id": "1.7",
-  "total": 2,
+  "total": 25,
   "by_difficulty": {
     "easy": 0,
-    "medium": 2,
-    "hard": 0
+    "medium": 5,
+    "hard": 20
   },
   "problems": [
     {
-      "source": "OLI-2-Областен кръг-1999-11 кл · 1999-11 · Зад. 2",
-      "statement": "A convex quadrilateral of area $S$ is inscribed in a circle whose centre is a point interior to the quadrilateral. Prove that the area of the quadrilateral whose vertices are the projections of the point of intersection of the diagonals on the sides does not exceed $\\frac{S}{2}$.",
-      "solution": "Let $ABCD$ be a quadrilateral inscribed in a circle with centre $O$ and radius $R$. Denote by $E$ the point of intersection of $AC$ and $BD$. Denote further by $M, N, P, Q$ and $F$ the projections of $E$ on $AB, BC, CD, DA$ and $MN$, respectively. We know that $MN = BE \\sin \\angle ABC = \\frac{BE \\cdot AC}{2R}$. Also,\n\n$$EF = EM \\sin \\angle EMN = \\frac{AE \\cdot BE \\sin \\angle AEB}{AB} \\sin \\angle CBE.$$\n\nSince $BE \\sin \\angle CBE = CE \\sin \\angle BCE = CE \\frac{AB}{2R}$ and $AE \\cdot CE = R^2 - OE^2$, it follows that $EF = \\frac{R^2 - OE^2}{2R} \\sin \\angle AEB$. Therefore [неразчетено]\n\nSimilar equalities hold for $S_{\\triangle NEP}, S_{\\triangle PEQ}$ and $S_{\\triangle QEM}$. By combining the above we obtain\n\n$$S_{MNPQ} = \\frac{AC \\cdot BD \\sin \\angle AEB(R^2 - OE^2)}{4R^2} \\leq \\frac{S_{ABCD}}{2},$$\n\nQ. E. D.",
+      "source": "OLI-2-Областен кръг-2008-12 кл · 2008-12 · Зад. 12.1",
+      "statement": "В тризъглна пирамида $ABCD$ околните ръбове $DB$ и $DC$ са равни и $\\angle DAB = \\angle DAC$. Да се намери обемът на пирамидата, ако $AB = 15, BC = 14, CA = 13$ и $DA = 18$.",
+      "solution": "12.1. Нека $H$ е ортогоналната проекция на $D$ върху равнината ($ABC$). Тъй като $меасуредангле DAB = меасуредангле DAC$, то $H$ лежи върху ъглополовящата на $меасуредангле BAC$ (докажете!). От друга страна, от $DB = DC$ следва, че $BH = CH$, т.е. $H$ лежи върху симетралата на отсечката $BC$. Тъй като $BA ≠ AC$, то ъглополовящата на $меасуредангле BAC$ и симетралата на $BC$ се пресичат върху описаната около $\\triangle  ABC$ окръжност (докажете!). Следователно $H$ лежи върху тази окръжност. Нека $L = AH ∩ BC$. Тогава $\\triangle  ABL ∼ \\triangle  AHC$ и значи $AH = фрак{AB ⋅ AC}{AL}$. От формулата за ъглополовящата намираме $AL = фрак{3}{2}√{65}$, т.е. $AH = 2√{65}$. Следователно $DH = √{AD^2 - AH^2} = 8$. От Хероновата формула изчисляваме, че $S_{ABC} = 84$ и получаваме, че обемът на пирамидата е 224.",
+      "answer": "224",
+      "difficulty": "medium",
+      "techniques": [
+        "orthogonal_projection",
+        "angle_bisector",
+        "perpendicular_bisector",
+        "similar_triangles",
+        "heron_formula"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква намиране на обем на пирамида с помощта на проекция, свойства на ъглополовяща и симетрала, подобни триъгълници и Херонова формула. Точка 1.7 (Формули за лице. Херон) е най-подходяща."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2008-12 кл · 2008-12 · Зад. 12.1",
+      "statement": "В тризъглна пирамида $ABCD$ околните ръбове $DB$ и $DC$ са равни и $\\angle DAB = \\angle DAC$. Да се намери обемът на пирамидата, ако $AB = 15, BC = 14, CA = 13$ и $DA = 18$.",
+      "solution": "12.1. Нека $H$ е ортогоналната проекция на $D$ върху равнината ($ABC$). Тъй като $меасуредангле DAB = меасуредангле DAC$, то $H$ лежи върху ъглополовящата на $меасуредангле BAC$ (докажете!). От друга страна, от $DB = DC$ следва, че $BH = CH$, т.е. $H$ лежи върху симетралата на отсечката $BC$. Тъй като $BA ≠ AC$, то ъглополовящата на $меасуредангле BAC$ и симетралата на $BC$ се пресичат върху описаната около $\\triangle  ABC$ окръжност (докажете!). Следователно $H$ лежи върху тази окръжност. Нека $L = AH ∩ BC$. Тогава $\\triangle  ABL ∼ \\triangle  AHC$ и значи $AH = фрак{AB ⋅ AC}{AL}$. От формулата за ъглополовящата намираме $AL = фрак{3}{2}√{65}$, т.е. $AH = 2√{65}$. Следователно $DH = √{AD^2 - AH^2} = 8$. От Хероновата формула изчисляваме, че $S_{ABC} = 84$ и получаваме, че обемът на пирамидата е 224.",
+      "answer": "224",
+      "difficulty": "medium",
+      "techniques": [
+        "orthogonal_projection",
+        "angle_bisector",
+        "perpendicular_bisector",
+        "similar_triangles",
+        "heron_formula"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква намиране на обем на пирамида с помощта на проекция, свойства на ъглополовяща и симетрала, подобни триъгълници и Херонова формула. Точка 1.7 (Формули за лице. Херон) е най-подходяща.",
+      "_crosslinked_from": "1.7",
+      "_crosslink_confidence": 0.8
+    },
+    {
+      "source": "OLI-3-Национален кръг-1990-9-12 кл · 1990-None · Зад. 5",
+      "statement": "Дъга от окръжност да се покрие с триъгълник с възможно най-малко лице, така че краищата на дъгата да лежат на една от страните на триъгълника.",
+      "solution": "Решение. Ясно е, че търсеният триъгълник ще покрива както дадената дъга L, така и сегмента, определен от нея. Едната му страна ще лежи ддената дага делена от краищата A и B на L, а другите му две страни ще са допирателни към към L. Най-напред ще докажем, че тези две страни трябва да бъдат равни. Наистина, нека MNP е триъгълник, покриващ L, чиято страна лежи на правата AB, а правите MP и NP са допирателни към L (черт. 1). Да предположим, че  \\( MP \\neq NP \\) . Разглеждаме симетралата l на AB и означаваме с  \\( P' \\)  пресечната точка на l и правата през P, успоредна на AB.\n\nБез ограничение можем да предполагаме, че B и P са в една полуравнина относно L. През  \\( P' \\)  прекарваме допирателни към L; Нека те пресичат правата AB в точките  \\( M' \\)  и  \\( N' \\), както е показано на черт. 1. Очевидно  \\( \\triangle M'N'P' \\)  е равнобедрен и за допирните точки X и Y на L съответно с  \\( M'P' \\)  и  \\( N'P' \\)  имаме  \\( M'X = N'Y \\). Нека Q е пресечната точка на MP и  \\( M'P' \\), а R - на NP и  \\( N'P' \\). Тъй като  \\( M'Q > M'X = N'Y > N'R \\)  и аналогично  \\( QP' < RP' \\), теоремата на Талес получаваме\n\n\\[\n\\frac {M M ^ {\\prime}}{P P ^ {\\prime}} = \\frac {M ^ {\\prime} Q}{Q P ^ {\\prime}} > \\frac {N ^ {\\prime} R}{Q P ^ {\\prime}} > \\frac {N ^ {\\prime} R}{R P ^ {\\prime}} = \\frac {N N ^ {\\prime}}{P P ^ {\\prime}}.\n\\]\n\nЕто защо \\(MM' > NN'\\), откъдето \\(MN > M'N'\\). Следователно \\(S_{MNP} > S_{M'N'P'}\\) т. е. \\(\\triangle MNP\\) не удовлетворява условието на задачата.\n\nИ така, ако съществува триъгълник с желаното свойство, той е равнобедрен. Затова разглеждаме равнобедрените триъгълници MNP, покриващи дъгата L, чиито бедра MP и NP се допират до нея, а основите им MN лежат на правата AB (черт. 2). Достатъчно е да докажем, че от тях най-малко лице има този, чийто бедра се разполовяват от допирните точки с L.\n\nНека O е центъра на окръжността, част от която е дъгата AB, а H - средата на AB. Означаваме с E допирната точка на L и MP и полагаме OE = R, OH = a, OP = x.\n\nОт подобието  \\( \\triangle OPE \\sim \\triangle MPH \\)  получаваме  \\( \\frac{R}{MH} = \\frac{\\sqrt{x^{2} - R^{2}}}{x + a} \\) . Следователно  \\( MH = \\frac{R(x + a)}{\\sqrt{x^{2} - R^{2}}} \\)  и лицето на  \\( \\triangle MNH \\)  е равно на\n\n\\[\nS (x) = R \\frac {(x + a) ^ {2}}{\\sqrt {x ^ {2} - R ^ {2}}}\n\\]\n\nЩе намерим най-малката стоиност на функцията  \\( f(x) = \\frac{(x + a)^{2}}{\\sqrt{x^{2} - R^{2}}} \\)  в интервала  \\( (R, +\\infty) \\) . Тъй като  \\( f'(x) = \\frac{(x + a)(x^{2} - ax - 2R^{2})}{(x^{2} - R^{2})\\sqrt{x^{2} - R^{2}}} \\) , производната  \\( f' \\)  има единствен положителен корен - това е положителният корен  \\( x_{0} = \\frac{1}{2} \\left( a + \\sqrt{a^{2} + 8R^{2}} \\right) \\)  на уравнението  \\( x^{2} - ax - 2R^{2} = 0 \\) . Ясно е, че  \\( x_{0} > R \\) ; освен това  \\( f'(x) \\leq 0 \\)  в интервала  \\( (R, x_{0}] \\)  и  \\( f'(x) \\geq 0 \\)  в интервала  \\( [x_{0}, +\\infty) \\) . Следователно  \\( \\overline{f(x)} \\)  и  \\( S(x) \\)  приемат най-малките си стойности в точката  \\( x_{0} \\) . Ще проверим, че тогава MO = OP. Наистина, тъй като  \\( x_{0} \\)  удовлетворява равенството  \\( x_{0}^{2} - ax_{0} - 2R^{2} = 0 \\) , имаме\n\n\\[\n\\begin{array}{l} M O ^ {2} = M H ^ {2} + H O ^ {2} = \\frac {R ^ {2} (x _ {0} + a) ^ {2}}{x _ {0} ^ {2} - R ^ {2}} + a ^ {2} = \\frac {x _ {0}}{x _ {0} ^ {2} - R ^ {2}} (a (a x _ {0} + 2 R ^ {2}) + R ^ {2} x _ {0}) = \\\\ = \\frac {x _ {0}}{x _ {0} ^ {2} - R ^ {2}} \\left(a x _ {0} ^ {2} + R ^ {2} x _ {0}\\right) = \\frac {x _ {0} ^ {2}}{x _ {0} ^ {2} - R ^ {2}} \\left(a x _ {0} + R ^ {2}\\right) = \\frac {x _ {0} ^ {2}}{x _ {0} ^ {2} - R ^ {2}} \\left(x _ {0} ^ {2} - R ^ {2}\\right) = x _ {0} ^ {2} = O P ^ {2}. \\\\ \\end{array}\n\\]\n\n![img-0.jpeg](img-0.jpeg)\n\n![img-1.jpeg](img-1.jpeg)\n\nСвалено от Klasirane.com\n\nНо от $MO = OP$ очевидно следва, че $ME = PE$, т. е. бедрата на търсения триъгълник действително се разполовяват от допирните си точки с $L$. Накрая ще отбележим следното. При дадени $R$ и, които определят еднозначно $L$, отсечката с дължина $x_0 = \\frac{1}{2} \\left( a + \\sqrt{a^2 + 8R^2} \\right)$ може да бъде построена с линийка и пергел. В такъв случай покриващият $L$ триъгълник с минимално лице също може да се построи и задачата е решена.\n\nВ изложеното решение предполагахме, че центъръ $O$ лежи в сегмента, определен от дъгата $L$. Ако това не е така, доказателството претърпява само несъществени изменения. В случая, когато $L$ е цялата окръжност, търсеният триъгълник е равностранният триъгълник, описан около $L$.",
       "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "area_projection",
-        "cyclic_quadrilateral"
+        "geometric_inequalities",
+        "isosceles_triangle"
       ],
       "confidence": "exact",
-      "reasoning": "Свързва проекции на пресечната точка с дължините на страните и използва формули за лице в окръжност, типично за задачи с формули за лице (Херон)."
+      "reasoning": "Задачата е за минимизиране на лицето на триъгълник покриващ дъга. Решението използва симетрия и свойства на равнобедрените триъгълници.",
+      "_crosslinked_from": "2.8",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-3-Национален кръг-1997-9-12 кл · 1997-None · Зад. 5",
+      "statement": "Given a $\\triangle ABC$ with bisectors $BM$ and $CN$ ($M \\in AC$, $N \\in AB$). The ray $MN^{\\to}$ intersects the circumcircle of $\\triangle ABC$ at point $D$. Prove that\n\n$$\\frac{1}{BD} = \\frac{1}{AD} + \\frac{1}{CD}.$$",
+      "solution": "Let $A_1$, $B_1$ and $C_1$ be the orthogonal projections of $D$ on the lines $BC$, $CA$ and $AB$, respectively. It follows from $\\triangle DAB_1$ and the Sine Law that $DB_1 = DA \\cdot \\sin \\angle DAB_1 = DA \\cdot \\sin \\angle DAC = \\frac{DA \\cdot DC}{2R}$ ($R$ is the circumradius of $\\triangle ABC$). Analogously $DA_1 = \\frac{DB \\cdot DC}{2R}$ and $DC_1 = \\frac{DA \\cdot DB}{2R}$. Our equality is now equivalent to $AD \\cdot CD = BD \\cdot CD + AD \\cdot BD$ and so it suffices to prove that\n\n$$(1) \\qquad DB_1 = DA_1 + DC_1$$\n\nDenote by $m$ the distance from $M$ to $AB$ and $BC$ and by $n$ the distance from $N$ to $AC$ and $BC$. Let $\\frac{DM}{MN} = x$ ($x > 1$). Further, $\\frac{DB_1}{n} = x$, $\\frac{DC_1}{m} = x - 1$ and $\\frac{DA_1 - m}{n - m} = x$. Therefore $DB_1 = nx$, $DC_1 = m(x-1)$ and $DA_1 = nx - m(x-1) = DB_1 - DC_1$ and (1) holds.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "angle_chasing",
+        "circle_theorems",
+        "trigonometry"
+      ],
+      "confidence": "exact",
+      "reasoning": "The problem involves angle bisectors and a point on the circumcircle. The solution uses properties of cyclic quadrilaterals, inscribed angles, and trigonometric identities to prove the harmonic relation of distances. The main technique is circle theorems and angle properties.",
+      "_crosslinked_from": "1.5",
+      "_crosslink_confidence": 0.75
     },
     {
       "source": "OLI-3-Национален кръг-2023-9-12 кл · 2023-None · Зад. 4",
-      "statement": "Да се докаже, че върху страната AD на изпъкнал четириъгълник ABCD съществува единствена точка M, за която\n√S_ABM + √S_CDM = √S_ABCD,\nтогава и само тогава AB ∥ CD.",
-      "solution": "Решение.\nПърви начин.\nСлед повдигане на квадрат даденото равенство приема вида 2√(S_ABM S_CDM) = S_BCM.\nПърво ще докажем, че ако AB ∥ CD, то\n(1) 2√(S_ABM S_CDM) ≤ S_BCM\nза всяка точка M ∈ [AD], като равенство се достига само в една точка.\nНека AB = a, CD = b, d(M, AB) = x и d(M, CD) = y. Тогава\n(1) ⇔ 2√(axby) ≤ (a + b)(x + y) − ax − by ⇔ (√(ay) − √(bx))² ≥ 0.\nРавенство се достига само ако AM/BM = a/b. По-нататък, нека D′ ∈ AD така, че CD′ ∥ AB. Ако ∠B + ∠C < 180°, то D ∈ (AD′) и от (1) следва, че\n2√(S_ABM S_CDM) < 2√(S_ABM S_CD′M) ≤ S_BCM\nза M ∈ (A, D].\nАко ∠B + ∠C > 180°, то D′ ∈ (AD). Нека f(M) = 2√(S_ABM S_CDM) − S_BCM за M ∈ [AD]. Очевидно f(A) < 0 и f(D) < 0. От друга страна, вече знаем, че има единствена точка M′ ∈ (AD′), за която 2√(S_ABM′ S_CD′M′) = S_BCM′ и значи f(M′) > 0. По непрекъснатост следва, че съществуват точки M₁ ∈ (AM′) и M₂ ∈ (M′D) така, че f(M₁) = f(M₂) = 0. Оттук задачата следва.\nЗабележка. В случая ∠B + ∠C > 180° съществуват точно две точки M₁, M₂ ∈ (AD), за които √S_ABM + √S_CDM = √S_ABCD. Наистина, S_ABM и S_CDM са линейни функции на M ∈ [AD]. Следователно √S_ABM + √S_CDM е строго вдлъбната функция и значи приема дадена стойност най-много два пъти.\nВтори начин.\nЩе използваме, че ако A₁(x₁, y₁), A₂(x₂, y₂) и A₃(x₃, y₃), то удвоеното ориентирано лице на △A₁A₂A₃ е равно на x₁(y₂ − y₃) + x₂(y₃ − y₁) + x₃(y₁ − y₂).\nМожем да считаме, че A(0, 0), B(x₁, y₁), C(x₂, y₂), D(0, 1) и M = (0, m), където x₁, x₂ > 0. Записваме даденото равенство във вида 4S_ABM S_CDM = S_BCM² и получаваме, че\n4x₁x₂m(1 − m) = (Δ + m(x₂ − x₁))²,\nкъдето Δ = x₁y₂ − x₂y₁ = 2S_ABC > 0, т.е.\nm²(x₁ + x₂)² + 2m((x₂ − x₁)Δ − 2x₁x₂) + Δ² = 0.\nТова уравнение има единствено решение m ∈ (0, 1) точно когато\nD₁ = 4x₁x₂(x₁ − Δ)(x₂ + Δ) = 0 ⇔ x₁ = Δ ⇔ x₁/x₂ = y₁/(y₂ − 1) ⇔ AB ∥ CD.",
-      "answer": "AB ∥ CD",
+      "statement": "Да се докаже, че върху страната $AD$ на изпъкнал четириъгълник $ABCD$ съществува единствена точка $M$, за която\n\n$$\\sqrt{S_{ABM}} + \\sqrt{S_{CDM}} = \\sqrt{S_{ABCD}},$$\n\nтогава и само тогава $AB||CD$.",
+      "solution": "Първи начин. (Н. Николов)\n\nСлед повдигане на квадрат даденото равенство приема вида\n\n$$2\\sqrt{S_{ABM}S_{CDM}} = S_{BCM}.$$\n\nПърво ще докажем, че ако $AB||CD$, то\n\n$$(1) 2\\sqrt{S_{ABM}S_{CDM}} \\leq S_{BCM}.$$\n\nза всяка точка $M \\in [AD]$, като равенство се достига само в една точка.\n\nНека $AB = a$, $CD = b$, $d(M, AB) = x$ и $d(M, CD) = y$. Тогава\n\n$$(1) \\Leftrightarrow 2\\sqrt{axby} \\leq (a + b)(x + y) - ax - by \\Leftrightarrow (\\sqrt{ay} - \\sqrt{bx})^2 \\geq 0.$$\n\nРавенство се достига само ако $AM/BM = a/b$. По-нататък, нека $D' \\in AD$ така, че $CD'||AB$. Ако $\\angle B + \\angle C < 180^\\circ$, то $D \\in (AD')$ и от (1) следва, че\n\n$$2\\sqrt{S_{ABM}S_{CDM}} < 2\\sqrt{S_{ABM}S_{CD'M}} \\leq S_{BCM}$$\n\nза $M \\in (A, D]$.\n\nАко $\\angle B + \\angle C > 180^\\circ$, то $D' \\in (AD)$. Нека $f(M) = 2\\sqrt{S_{ABM}S_{CDM}} - S_{BCM}$ за $M \\in [AD]$. Очевидно $f(A) < 0$ и $f(D) < 0$. От друга страна, вече знаем, че има единствена точка $M' \\in (AD')$, за която $2\\sqrt{S_{ABM'}S_{CD'M'}} = S_{BCM'}$ и значи $f(M') > 0$. По непрекъснатост следва, че съществуват точки $M_1 \\in (AM')$ и $M_2 \\in (M'D)$ така, че $f(M_1) = f(M_2) = 0$. Оттук задачата следва.\n\nЗабележка. В случая $\\angle B + \\angle C > 180^\\circ$ съществуват точно две точки $M_1, M_2 \\in (AD)$, за които\n\n$$\\sqrt{S_{ABM}} + \\sqrt{S_{CDM}} = \\sqrt{S_{ABCD}}.$$\n\nНаистина, $S_{ABM}$ и $S_{CDM}$ са линейни функции на $M \\in [AD]$. Следователно $\\sqrt{S_{ABM}} + \\sqrt{S_{CDM}}$ е строго вдлъбната функция и значи приема дадена стойност най-много два пъти.\n\nВтори начин. (К. Делчев и Н. Николов)\n\nЩе използваме, че ако $A_1(x_1, y_1)$, $A_2(x_2, y_2)$ и $A_3(x_3, y_3)$, то удвоеното ориентирано лице на $\\triangle A_1 A_2 A_3$ е равно на $x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)$.\n\nМожем да считаме, че $A(0, 0)$, $B(x_1, y_1)$, $C(x_2, y_2)$, $D(0, 1)$ и $M = (0, m)$, където $x_1, x_2 > 0$. Записваме даденото равенство във вида $4S_{ABM}S_{CDM} = S_{BCM}^2$ и получаваме, че\n\n$$4x_1x_2m(1 - m) = (\\triangle + m(x_2 - x_1))^2,$$\n\nсвалено от Klasirane.com\n\nкъдето $\\triangle = x_1 y_2 - x_2 y_1 = 2S_{ABC} > 0$, т.е.\n\n$$m^2(x_1 + x_2)^2 + 2m((x_2 - x_1)\\triangle - 2x_1 x_2) + \\triangle^2 = 0.$$\n\nТова уравнение има единствено решение $m \\in (0, 1)$ точно когато\n\n$$D_1 = 4x_1 x_2 (x_1 - \\triangle)(x_2 + \\triangle) = 0 \\Leftrightarrow x_1 = \\triangle \\Leftrightarrow \\frac{x_1}{x_2} = \\frac{y_1}{y_2 - 1} \\Leftrightarrow AB || CD.$$\n\n**Оценяване.** *Първи начин* (7 точки) 2т. за случая $AB || CD$, 2т. за $\\measuredangle B + \\measuredangle C < 180^\\circ$, 3т. за случая $\\measuredangle B + \\measuredangle C > 180^\\circ$.\n\n*Втори начин* (7 точки) 1т. за свеждането до $4S_{ABM}S_{CDM} = S_{BCM}^2$, 3т. за въвеждане на подходяща параметризация и изразяване на равенството от по-горе чрез нея, 3т. за довършване",
+      "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "area_formulas",
-        "inequality",
-        "parallelism"
+        "quadrilateral_properties",
+        "parallel_lines",
+        "area_calculation",
+        "coordinate_geometry"
       ],
       "confidence": "exact",
-      "reasoning": "След квадратиране се получава неравенство с площи, което се редуцира до (√(ay)−√(bx))²≥0 → AB∥CD."
+      "reasoning": "Задачата свързва лица на триъгълници и четириъгълник с успоредни страни. Точка 1.7 (Формули за лице) е подходяща. Трудност: medium, стандартна но с няколко стъпки."
+    },
+    {
+      "source": "OLI-2-Областен кръг-1999-10 кл · 1999-10 · Зад. 10.2",
+      "statement": "A convex quadrilateral of area $S$ is inscribed in a circle whose centre is a point interior to the quadrilateral. Prove that the area of the quadrilateral whose vertices are the projections of the point of intersection of the diagonals on the sides does not exceed $\\frac{S}{2}$.",
+      "solution": "Let $ABCD$ be a quadrilateral inscribed in a circle with centre $O$ and radius $R$. Denote by $E$ the point of intersection of $AC$ and $BD$. Denote further by $M, N, P, Q$ and $F$ the projections of $E$ on $AB, BC, CD, DA$ and $MN$, respectively. We know that $MN = BE \\sin \\angle ABC = \\frac{BE \\cdot AC}{2R}$. Also,\n\n$$EF = EM \\sin \\angle EMN = \\frac{AE \\cdot BE \\sin \\angle AEB}{AB} \\sin \\angle CBE.$$\n\nSince $BE \\sin \\angle CBE = CE \\sin \\angle BCE = CE \\frac{AB}{2R}$ and $AE \\cdot CE = R^2 - OE^2$, it follows that $EF = \\frac{R^2 - OE^2}{2R} \\sin \\angle AEB$. Therefore",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circle_properties",
+        "area_formulas",
+        "trigonometry",
+        "projections"
+      ],
+      "confidence": "exact",
+      "reasoning": "Използва свойства на вписана окръжност, проекции на точка, тригонометрични зависимости и формули за лице; дълго решение с множество стъпки."
+    },
+    {
+      "source": "OLI-2-Областен кръг-1999-11 кл · 1999-11 · Зад. 11.2",
+      "statement": "A convex quadrilateral of area $S$ is inscribed in a circle whose centre is a point interior to the quadrilateral. Prove that the area of the quadrilateral whose vertices are the projections of the point of intersection of the diagonals on the sides does not exceed $\\frac{S}{2}$.",
+      "solution": "**Solution:** Let $ABCD$ be a quadrilateral inscribed in a circle with centre $O$ and radius $R$. Denote by $E$ the point of intersection of $AC$ and $BD$. Denote further by $M, N, P, Q$ and $F$ the projections of $E$ on $AB, BC, CD, DA$ and $MN$, respectively. We know that $MN = BE \\sin \\angle ABC = \\frac{BE \\cdot AC}{2R}$. Also,\n\n$$EF = EM \\sin \\angle EMN = \\frac{AE \\cdot BE \\sin \\angle AEB}{AB} \\sin \\angle CBE.$$\n\nSince $BE \\sin \\angle CBE = CE \\sin \\angle BCE = CE \\frac{AB}{2R}$ and $AE \\cdot CE = R^2 - OE^2$, it follows that $EF = \\frac{R^2 - OE^2}{2R} \\sin \\angle AEB$. Therefore\n\nDownloaded from Klasirane.com\n\n─── Стр. 2 ───\nSimilar equalities hold for $S_{\\triangle NEP}, S_{\\triangle PEQ}$ and $S_{\\triangle QEM}$. By combining the above we obtain\n\n$$S_{MNPQ} = \\frac{AC \\cdot BD \\sin \\angle AEB(R^2 - OE^2)}{4R^2} \\leq \\frac{S_{ABCD}}{2},$$\n\nQ. E. D.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circle_properties",
+        "trigonometry",
+        "area_calculation"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрия с вписана окръжност и проекции; използване на степен на точка и тригонометрични зависимости.",
+      "_crosslinked_from": "1.4",
+      "_crosslink_confidence": 0.8
+    },
+    {
+      "source": "OLI-2-Областен кръг-2004-11 кл · 2004-11 · Зад. 11.4",
+      "statement": "Даден е триъгълник ABC . Точките D и E са от симетралите съответно на страните AB и BC , като D е вътрешна за триъгълника ABC , а E – външна и <) ADB = <) CEB . Ако AE пресича отсечката CD в точка O докажете, че триъгълникът ACO и четириъгълникът DBEO имат равни лица.",
+      "solution": "От подобието на равнобедрените триъгълници ABD и CBE имаме AB DB = CBBE . Тъй като <) ABC = <) DBE , получаваме, че \\triangle ABC е подобен на \\triangle DBE с коефициент на подобие 12 cos ϕ , където ϕ е ъгълът при основата на триъгълниците \\triangle ABD и \\triangle CBE . Оттук <) ACB = <) DEB = γ. Изразяваме SACE = 12 AC.CE. sin(ϕ + γ) = 12 b · a2 cos ϕ · sin(ϕ + γ) и SEBDC = 12 CB.DE. sin(ϕ + γ) = 12 a · b2 cos ϕ · sin(ϕ + γ). От полученото равенство SACD = SEBDC следва твърдението на задачата.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "similar_triangles",
+        "area_formulas"
+      ],
+      "confidence": "exact",
+      "reasoning": "Решение с подобие на триъгълници и сравняване на лица. Основната техника е формули за лице (точка 1.7), но има и подобие."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2005-10 кл · 2005-10 · Зад. 10.2",
+      "statement": "Даден е четириъгълник $ABCD$, в който $|AB| = a$, $|BC| = b$, $|CD| = c$, $|DA| = d$, $|AC| = e$, $|BD| = f$.\n\na) Да се докаже, че $a^2 +b^2 +c^2 +d^2\\geq e^2 +f^2$\n\nb) Ако $ABCD$ е вписан в окръжност, да се докаже, че $|a - c| \\geq |e - f|$.",
+      "solution": "10.2. а) Да означим средите на $AC$ и $BD$ съответно с $M$ и $N$. Използвайки формулата за дължината на медиана, приложена за $\\triangle BMD$ имаме\n\n$$|MN|^2 = \\frac{2|MB|^2 + 2|MD|^2 - f^2}{4}.$$ \n\nПо нататък $|MB|^2 = (2a^2 + 2b^2 - e^2)/4$, $|MD|^2 = (2c^2 + 2d^2 - e^2)/4$ и замествайки в равенството за $|MN|^2$ получаваме\n\n$$4|MN|^2 = a^2 + b^2 + c^2 + d^2 - e^2 - f^2 \\ge 0.$$ \n\nб) Съгласно теоремата на Птолемей $ac + bd = ef$. Тъждеството получено в (а) лесно се преобразува до $(a - c)^2 + (b - d)^2 = (e - f)^2 + 4|MN|^2$. За да докажем исканото неравенство е достатъчно да покажем, че $(b - d)^2 \\le 4|MN|^2$. Но последното следва от неравенството на триъгълника, приложено за $\\triangle MNP$, където $P$ е средата на $CD$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "median_formula",
+        "ptolemy_theorem"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата има две части: а) неравенство за страни и диагонали, решено с формула за медиана; б) неравенство при вписан четириъгълник с теорема на Птолемей. Точка 1.7 (Формули за лице. Херон) не е точна, но това е най-близката геометрична точка. Основната техника е използване на формула за медиана и връзка с Птолемей."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2006-11 кл · 2006-11 · Зад. 11.1",
+      "statement": "Нека $k$ е окръжност с диаметър $AB$ и $C \\in k$ е произволна точка. Външновписаните окръжности за $\\triangle ABC$ към страните $AC$ и $BC$ се допират до правата $AB$ съответно в точки $M$ и $N$. Нека $O_1$ и $O_2$ са центровете на описаните около $\\triangle AMC$ и $\\triangle BNC$ окръжности. Да се докаже, че лицето на $\\triangle O_1CO_2$ не зависи от избора на точката $C$.",
+      "solution": "Нека $AB = c$, $BC = a$, $AC = b$, $p = \\frac{a + b + c}{2}$ и $O$, $P$ и $Q$ са съответно средите на $AB$, $AM$ и $BN$. Тъй като $OO_1 \\perp AC$ и $O_1P \\perp AM$, имаме $\\triangle O_1OP \\sim \\triangle ABC$, откъдето $\\frac{OO_1}{c} = \\frac{OP}{a}$. По-нататък, от $AM = p - c$ следва, че\n\n$$OP = OA + \\frac{1}{2}AM = \\frac{1}{2}c + \\frac{1}{2}(p - c) = \\frac{a + b + c}{4}$$\n\nи следователно $OO_1 = \\frac{c(a + b + c)}{4a}$. Аналогично $OO_2 = \\frac{c(a + b + c)}{4b}$. Тъй като $\\angle ACB = 90^\\circ$, получаваме $\\angle O_1OO_2 = 90^\\circ$.\n\nНакрая, тъй като $S_{O_1O_2C} = |S_{OO_1O_2} - S_{OO_1C} - S_{OO_2C}|$, пресмятаме\n\n$$\\begin{array}{l} S_{OO_1O_2} - S_{OO_1C} - S_{OO_2C} = \\frac{OO_1.OO_2}{2} - \\frac{OO_1.b}{4} - \\frac{OO_2.a}{4} = \\\\ = \\frac{c^2(a + b + c)^2}{32ab} - \\frac{c(a + b + c)}{16} \\left(\\frac{b}{a} + \\frac{a}{b}\\right) = \\\\ = \\frac{c^2(a + b + c)^2}{32ab} - \\frac{c^3(a + b + c)}{16ab} = \\frac{c^2}{16}, \\end{array}$$\n\nтъй като $c^2 = a^2 + b^2$. Следователно $S_{O_1CO_2}$ не зависи от избора на $C$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circle_properties",
+        "triangle_properties",
+        "area_calculation"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на външновписани окръжности и центрове на описани окръжности. Основната техника е свързана с външновписани окръжности (точка 1.10 от STEPS). Решението е дълго и изисква построение на помощни точки и изчисляване на лица, което го класифицира като hard.",
+      "_crosslinked_from": "1.10",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2008-12 кл · 2008-12 · Зад. 12.5",
+      "statement": "Вписаната в $\\triangle ABC$ окръжност се допира до страните $BC$, $CA$ и $AB$ съответно в точки $A_1$, $B_1$ и $C_1$. Известно е, че правата $A_1B_1$ разполовява отсечката $CC_1$. Да се намерят ъглите на тризъглника, ако техните синуси образуват аритметична прогресия.",
+      "solution": "Ще използваме стандартните означения за елементите на $\\triangle ABC$. Правата $A_1B_1$ разполовява отсечката $CC_1$ точно когато\n\n$$\\begin{array}{l} S_{A_1B_1C} = S_{A_1B_1C_1} \\Leftrightarrow A_1C.B_1C \\sin \\gamma = A_1C_1.B_1C_1 \\sin(90^\\circ - \\gamma/2) \\Leftrightarrow \\\\ (p-c)^2 \\sin \\frac{\\gamma}{2} = 2(p-b) \\sin \\frac{\\beta}{2}(p-a) \\sin \\frac{\\alpha}{2} \\\\ \\Leftrightarrow \\cot^2 \\frac{\\gamma}{2} \\sin \\frac{\\gamma}{2} 2 \\cot \\frac{\\beta}{2} \\sin \\frac{\\beta}{2} \\cot \\frac{\\alpha}{2} \\sin \\frac{\\alpha}{2} \\\\ \\Leftrightarrow \\cos^2 \\frac{\\gamma}{2} = 2 \\sin \\frac{\\gamma}{2} \\cos \\frac{\\beta}{2} \\cos \\frac{\\alpha}{2} \\Leftrightarrow \\cos^2 \\frac{\\gamma}{2} = \\sin \\frac{\\gamma}{2} \\left( \\cos \\frac{\\alpha+\\beta}{2} + \\cos \\frac{\\alpha-\\beta}{2} \\right) \\Leftrightarrow \\\\ \\cos^2 \\frac{\\gamma}{2} - \\sin^2 \\frac{\\gamma}{2} = \\sin \\frac{\\gamma}{2} \\cos \\frac{\\alpha-\\beta}{2} \\Leftrightarrow 2 \\cos \\gamma = \\sin \\frac{\\gamma+\\alpha-\\beta}{2} + \\sin \\frac{\\gamma-\\alpha+\\beta}{2} \\Leftrightarrow \\end{array}$$\n\n$$(*) \\quad 2 \\cos \\gamma = \\cos \\beta + \\cos \\alpha.$$\n\nВ частност, $\\alpha \\leq \\gamma \\leq \\beta$ или $\\alpha \\geq \\gamma \\geq \\beta$. Тогава от условието следва, че $2 \\sin \\gamma = \\sin \\beta + \\sin \\alpha$. Повдигаме това равенство и (*) на квадрат и ги събираме. От тъждеството $\\sin^2 x + \\cos^2 x = 1$ получаваме, че $1 = \\cos \\alpha \\cos \\beta + \\sin \\alpha \\sin \\beta = \\cos(\\alpha - \\beta)$. Оттук лесно следва, че $\\alpha = \\beta = \\gamma = 60^\\circ$.\n\nсвалено от Klasirane.com\n\n─── Стр. 3 ───\nЗабележка. Ако предположим, че $\\alpha \\leq \\gamma \\leq \\beta$ или $\\alpha \\geq \\gamma \\geq \\beta$, то $\\sin \\alpha + \\sin \\beta = 2 \\sin \\gamma$, т.е. $\\sin \\frac{\\alpha + \\beta}{2} \\cos \\frac{\\alpha - \\beta}{2} = 2 \\sin \\frac{\\gamma}{2} \\cos \\frac{\\gamma}{2}$, откъдето $\\cos \\frac{\\alpha - \\beta}{2} = 2 \\sin \\frac{\\gamma}{2}$. Оттук и равенството $\\cos^2 \\frac{\\gamma}{2} = \\sin \\frac{\\gamma}{2} \\left( \\sin \\frac{\\gamma}{2} + \\cos \\frac{\\alpha - \\beta}{2} \\right)$ (вж. решението) получаваме, че $\\cot^2 \\frac{\\gamma}{2} = 3$. Тогава лесно следва, че $\\alpha = \\beta = \\gamma = 60^\\circ$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "incircle_properties",
+        "trigonometric_identities",
+        "arithmetic_progression"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата комбинира свойства на вписаната окръжност, тригонометрични тъждества и аритметична прогресия. Точка 1.10 (Вписана и външновписани окръжности) е основна.",
+      "_crosslinked_from": "1.10",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-2-Областен кръг-2009-12 кл · 2009-12 · Зад. 12.4",
+      "statement": "В \\triangle ABC (AC < BC) с лице 20 √ 3 точките M и I са съответно медицентър и център на вписаната окръжност. Отсечката IM има дължина 1 и е успоредна на страната AB. Да се намерят дължините на страните на триъгълника.",
+      "solution": "Решение. Да означим $BC = a$, $AC = b$ и $AB = c$. Нека $CL$ ($L \\in AB$) и $CN$ ($N \\in AB$) са съответно ъглополовяща и медиана ($L$ е между $A$ и $N$, понеже $AC < BC$). От условието следва, че $\\triangle CLN \\sim \\triangle CIM$. Тогава $\\frac{LN}{1} = \\frac{CL}{CI} = \\frac{CN}{CM} = \\frac{3}{2}$ (понеже $M$ е медианер). От $\\frac{b}{a} = \\frac{AL}{BL} = \\frac{AL}{c - AL}$ получаваме $AL = \\frac{bc}{a + b}$. Тъй като $AI$ е ъглополовяща в $\\triangle ALC$, то $\\frac{CI}{IL} = \\frac{AC}{AL} = \\frac{a + b}{c}$ и оттук $\\frac{CL}{CI} = \\frac{a + b + c}{a + b}$. Но $\\frac{CL}{CI} = \\frac{3}{2}$ и получаваме $a + b = 2c$. Тогава\n\n$$\\frac{3}{2} = LN = AN - AL = \\frac{c}{2} - \\frac{bc}{a + b} = \\frac{c(a - b)}{2(a + b)} = \\frac{a - b}{4},$$\n\nоткъдето намираме $a - b = 6$. Сега от $a + b = 2c$ и $a - b = 6$ следва, че $a = c + 3$ и $b = c - 3$. Хероновата формула ни дава, че\n\n$$1200 = S_{ABC}^2 = \\frac{3c}{2} \\left(\\frac{c}{2} - 3\\right) \\left(\\frac{c}{2} + 3\\right) \\frac{c}{2} \\Leftrightarrow c^4 - 36c^2 - 6400 = 0,$$\n\nт.е. $$(c^2 - 100)(c^2 + 64) = 0$$, откъдето $$c = 10$$ и $$a = c + 3 = 13$$, $$b = c - 3 = 7$$.\n\nОценяване. 2 т. за $$a + b = 2c$$, 2 т. за $$\\frac{c(a - b)}{a + b} = 3$$ и 3 т. за довършване на решението.",
+      "answer": "a=13, b=7, c=10",
+      "difficulty": "hard",
+      "techniques": [
+        "triangle_properties",
+        "angle_bisector",
+        "median",
+        "heron"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на медиана и ъглополовяща, подобни триъгълници и Херонова формула."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2010-11 кл · 2010-11 · Зад. 4",
+      "statement": "Даден е остроъгълен триъгълник $ABC$ за който $\\cos \\angle BAC = \\frac{1}{3}$. Правата през $A$, успоредна на медианата $BM$, $M \\in AC$ пресича продължението на височината $CC_1$, $C_1 \\in AB$ в точка $D$. Ако $CC_1 : C_1D = 2 : 1$, да се намери отношението $\\frac{R}{r}$ където $R$ и $r$ са съответно радиусите на описаната и вписаната окръжност за $\\triangle ABC$.",
+      "solution": "Решение. Да означим с N пресечната точка на BM и $CC_1$. Тъй като MN е успоредна на AD и M е среда на AC, то MN е средна отсечка в $\\triangle ADC$. Следователно N е среда на CD и като използваме, че $CC_1 : C_1D = 2 : 1$, лесно получаваме $CN : NC_1 : C_1D = 3 : 1 : 2$.\n\nАко $AC = 2t$, то $AC_1 = AC \\cos \\angle BAC = \\frac{2t}{3}$ и от подобието на $\\triangle ADC_1$ и $BNC_1$ намираме $\\frac{AC_1}{BC_1} = \\frac{DC_1}{NC_1} = 2$, т.е. $BC_1 = \\frac{t}{3}$. Сега от косинусовата теорема пресмятаме\n\n$$BC = \\sqrt{t^2 + 4t^2 - 4t^2 \\frac{1}{3}} = t \\sqrt{\\frac{11}{3}}.$$\n\nТъй като $\\sin \\angle BAC = \\sqrt{1 - \\cos^2 \\angle BAC} = \\frac{2\\sqrt{2}}{3}$, то $R = \\frac{BC}{2 \\sin \\angle BAC} = \\frac{t\\sqrt{66}}{8}$.\n\nОт формулата $r(AB + BC + CA) = AB.AC \\sin \\angle BAC$ намираме $r = \\frac{4t\\sqrt{2}}{9 + \\sqrt{33}}$ и следователно\n\n$$\\frac{R}{r} = \\frac{9\\sqrt{33} + 33}{32}.$$",
+      "answer": "$\\frac{9\\sqrt{33} + 33}{32}$",
+      "difficulty": "hard",
+      "techniques": [
+        "similar_triangles",
+        "median_properties",
+        "trigonometry",
+        "circle_radii"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква намиране на отношение R/r за триъгълник. Използва се геометрия с медиани, височини и тригонометрични зависимости. Това е комплексна геометрична задача.",
+      "_crosslinked_from": "1.6",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2015-12 кл · 2015-12 · Зад. 12.2",
+      "statement": "Даден е изпъкнал четириъгълник $ABCD$, за който $AD = BC$, $AB = \\sqrt{3}CD$ и $\\angle C - \\angle D = 2(\\angle A - \\angle B) > 0$. Да се намери $\\angle A - \\angle B$.",
+      "solution": "Решение. Понеже\n\n$$\\begin{aligned} DA\\cdot AB \\sin \\angle A + BC\\cdot CD \\sin \\angle C &= 2S_{ABCD} \\\\ &= AB\\cdot BC \\sin \\angle B + CD\\cdot DA \\sin \\angle D, \\end{aligned}$$\n\nот $AD = BC$ и $AB = \\sqrt{3}CD$ следва, че\n\n$$\\sqrt{3} \\sin \\angle A + \\sin \\angle C = \\sqrt{3} \\sin \\angle B + \\sin \\angle D,$$\n\nт.е.\n\n$$\\sin \\frac{\\measuredangle C - \\measuredangle D}{2} \\cos \\frac{\\measuredangle C + \\measuredangle D}{2} = \\sqrt{3} \\sin \\frac{\\measuredangle B - \\measuredangle A}{2} \\cos \\frac{\\measuredangle B + \\measuredangle A}{2}.$$\n\nДа отбележим, че $\\measuredangle C + \\measuredangle D \\neq 180^\\circ$, тъй като иначе от $AD = BC$ ще получим, че $ABCD$ е успоредник, което е противоречие с $AB = \\sqrt{3}CD$. Сега от $\\measuredangle A + \\measuredangle B + \\measuredangle C + \\measuredangle D = 360^\\circ$ имаме, че\n\n$$\\cos \\frac{\\measuredangle C + \\measuredangle D}{2} = - \\cos \\frac{\\measuredangle B + \\measuredangle A}{2} \\neq 0$$\n\nи значи\n\n$$\\sin \\frac{\\measuredangle C - \\measuredangle D}{2} = \\sqrt{3} \\sin \\frac{\\measuredangle A - \\measuredangle B}{2}.$$\n\nПонеже $\\measuredangle C - \\measuredangle D = 2(\\measuredangle A - \\measuredangle B)$ следва, че\n\n$$2 \\sin \\frac{\\measuredangle A - \\measuredangle B}{2} \\cos \\frac{\\measuredangle A - \\measuredangle B}{2} = \\sqrt{3} \\sin \\frac{\\measuredangle A - \\measuredangle B}{2}.$$\n\nТъй като $\\measuredangle A > \\measuredangle B$, то $\\cos \\frac{\\measuredangle A - \\measuredangle B}{2} = \\frac{\\sqrt{3}}{2}$ и тогава $\\measuredangle A - \\measuredangle B = 60^\\circ$.\n\n**Инструкции за оценяване.** (7 точки) 2 т. за получаване на равенството $\\sqrt{3} \\sin \\measuredangle A + \\sin \\measuredangle C = \\sqrt{3} \\sin \\measuredangle B + \\sin \\measuredangle D$, 2 т. за получаване на $\\sin \\frac{\\measuredangle C - \\measuredangle D}{2} = \\sqrt{3} \\sin \\frac{\\measuredangle A - \\measuredangle B}{2}$, 2 т. за получаване на уравнение за $\\frac{\\measuredangle A - \\measuredangle B}{2}$ (или аналогично), 1 т. за довършване.",
+      "answer": "60°",
+      "difficulty": "hard",
+      "techniques": [
+        "area_formulas",
+        "trigonometric_identities",
+        "angle_relations"
+      ],
+      "confidence": "exact",
+      "reasoning": "Условието и решението съвпадат: геометрична задача за четириъгълник. Основна техника: формули за лице (1.7). Решението извежда уравнение от формулата за лице и преобразува тригонометрични изрази, което е сложно и отнема над 30 мин."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2019-10 кл · 2019-10 · Зад. 10.2",
+      "statement": "Даден е тригълник $ABC$ с център на вписаната окръжност $I$ и среди на страните $AB$, $BC$ и $CA$ съответно $C_0$, $A_0$ и $B_0$. Правата $C_0I$ пресича $A_0B_0$ в точка $C_1$. Аналогично се дефинират и точките $A_1$ и $B_1$. Да се докаже, че:\n\na) npabnte \\(AA_{1}\\) \\(BB_{1}\\) n \\(CC_{1}\\) ce npcevat b eHa toka;\n6) nepneHikkyIpaTe ot \\(A_{1}\\) \\(B_{1}\\) n \\(C_1\\) cboTBeTHo KbM BC, CA n AB ce npcevat b eHa toka.",
+      "solution": "*Решение.* Ще използваме стандартните означения в $\\triangle ABC$.\n\na) Тъй като $A_0C_0$ е средна отсечка в $\\triangle ABC$, отсечката през $I$, която е перпендикулярна на $AC$ и на $A_0C_0$, има дължина $h_b/2$. Тогава височината от $I$ в $\\triangle A_0C_0I$ е $h_b/2 - r$. Използвайки този факт и аналога му в $\\triangle B_0C_0I$, получаваме последователно\n\n$$\\frac{A_0C_1}{B_0C_1} = \\frac{S_{A_0C_0C_1}}{S_{B_0C_0C_1}} = \\frac{S_{A_0C_0I}}{S_{B_0C_0I}} = \\frac{(h_b/2 - r)b/2}{(h_a/2 - r)a/2} = \\frac{b(S/b - S/p)}{a(S/a - S/p)} = \\frac{p - b}{p - a} = \\frac{BC_2}{AC_2},$$\n\nкъдето $C_2$ е допирната точка на вписаната в $\\triangle ABC$ окръжност до страната $AB$. Следователно $CC_1$ минава през $C_2$.\n\nАналогично се доказва, че $AA_1$ и $BB_1$ минават през съответните допирни точки и са в сила съответните пропорции. Сега исканото следва от теоремата на Чева.\n\nб) От доказаното по-горе равенство $\\frac{A_0C_1}{B_0C_1} = \\frac{p-b}{p-a}$ следва, че $C_1$ е допирната точка на външновписаната за $\\triangle A_0B_0C_0$ окръжност откъм $A_0B_0$. Аналогични факти са в сила и за точките $A_1$ и $B_1$. Сега исканото следва от факта, че $C_1A_0^2 + B_1C_0^2 + A_1B_0^2 = C_1B_0^2 + B_1A_0^2 + A_1C_0^2$ (теорема на Карно).\n\n*Забележка.* Твърдението на подточка а) е в сила за произволна точка $I$ и се доказва лесно с теорема на Чева за $A_0B_0C_0$, пренасяне на полученото в $\\triangle ABC$ чрез теорема на Талес и накрая теорема на Чева за $\\triangle ABC$.\n\n**Оценяване.** (7 точки) 3 т. за а) (2 т. за доказване на $\\frac{A_0C_1}{B_0C_1} = \\frac{p-b}{p-a}$, 1 т. за довършване); 4 т. за б) (2 т. за определяне на $C_1$ като допирната точка на външновписаната за $\\triangle A_0B_0C_0$ окръжност, 2 т. за прилагане на теоремата на Карно).",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "ceva_theorem",
+        "carnot_theorem",
+        "incenter_properties",
+        "midline_triangle"
+      ],
+      "confidence": "exact",
+      "reasoning": "Главната техника е теоремата на Карно (б), която е в STEPS 2.9. Теоремата на Чева (а) също е използвана. Задачата изисква дълбоки познания за вписаната окръжност и среди на страни. Трудността е hard поради сложната геометрична конструкция и комбинация от теореми.",
+      "_crosslinked_from": "2.9",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-2-Областен кръг-2020-10 кл · 2020-10 · Зад. 10.1",
+      "statement": "Даден е трапец $ABCD$ с основи $AB \nparallel CD$ и пресечна точка на диагоналите $O$. Средите на страните $AB$, $BC$, $CD$ и $DA$ са означени съответно с точките $N$, $P$, $M$ и $Q$. Да се намери лицето на трапеца, ако\n\n$$ON = 14; \\quad OP = \\frac{13}{2}; \\quad OM = 7; \\quad OQ = \\frac{15}{2}.$$",
+      "solution": "Решение. Нека $NQ \\cap CD = E$ и $NP \\cap CD = F$. От $\\triangle ANQ \\cong \\triangle DEQ$, следва че точка $Q$ е среда на $EN$ и, че лицата на двата триъгълника са равни. Аналогично, точка $P$ е среда на $NF$ и лицата на $\\triangle NBP$ и $\\triangle FCP$ са равни. От тук получаваме, че\n\n$$S_{ABCD} = S_{ANQ} + S_{NBP} + S_{QNPCD} = S_{DEQ} + S_{FCP} + S_{QNPCD} = S_{EFN}.$$\n\nТака, задачата се свежда до намиране лицето на $\\triangle EFN$. $NM$ е медиана в $\\triangle EFN$, точката $O$ лежи върху нея (запо?) и я дели в отношение $2 : 1$, считано от върха на триъгълника. Следователно, точка $O$ е медицинтър за $\\triangle EFN$. Оттук, точка $O$ лежи и върху медианите $EP$ и $FQ$, като $EO = 2 \\cdot OP = 13$ и $FO = 2 \\cdot OQ = 15$. Да построим точка $O'$ върху правата $NM$, такава че $OM = MO'$ и $M$ е между $O$ и $O'$. Четириъгълникът $FO'EO$ е успоредник и $FO' = EO = 13$. Също така $S_{EFN} = 6S_{FMO} = 3S_{FO'O}$, откъдето използвайки Хероновата формула заключаваме:\n\n$$S_{ABCD} = S_{EFN} = 3S_{FO'O} = 3\\sqrt{21 \\cdot 8 \\cdot 7 \\cdot 6} = 3 \\cdot 7 \\cdot 3 \\cdot 4 = 252.$$\n\nОценяване (7 точки): 1 т. – за построяване на $E$ и $F$ и заключение, че $S_{ABCD} = S_{EFN}$; 1 т. – за доказателство, че $O$ е медицинтър за $\\triangle EFN$; 2 т. – за пресмятане на $EO$ и $FO$; 3 т. – за намиране лицето на $\\triangle FMO$ и довършване.\n\nЗабележка: Вместо използването на Хероновата формула за намиране лицето на $\\triangle FO'O$, може да се реши система квадратни уравнения. Например, ако означим с $F'$ петата на височината от точка $F$ към страната $OO'$, а с $x$ и $y$ съответно дължините на отсечките $FF'$ и $OO'$, то от Питагоровите теореми за $\\triangle FF'O$ и $\\triangle FO'F'$ имаме, че:\n\n$$\\left| \\begin{array}{l} x^2 + y^2 = 15^2 \\\\ x^2 + (14 - y)^2 = 13^2 \\end{array} \\right. \\Leftrightarrow \\left| \\begin{array}{l} x^2 = (15 - y)(15 + y) \\\\ 15^2 + 14^2 - 28y = 13^2 \\end{array} \\right. \\Leftrightarrow \\left| \\begin{array}{l} x = 12 \\\\ y = 9 \\end{array} \\right. .$$\n\nОттук, $S_{FO'O} = (OO' \\cdot FF')/2 = (14 \\cdot 12)/2 = 84$.",
+      "answer": "252",
+      "difficulty": "hard",
+      "techniques": [
+        "triangle_centers",
+        "area_formulas",
+        "vector_geometry"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва медицентър и Херонова формула. Точка 1.7 (Формули за лице) е най-близка, въпреки че медицентърът не е изрично в STEPS. Решението е сложно с построявания."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2020-10 кл · 2020-10 · Зад. 10.1",
+      "statement": "Даден е трапец $ABCD$ с основи $AB \nparallel CD$ и пресечна точка на диагоналите $O$. Средите на страните $AB$, $BC$, $CD$ и $DA$ са означени съответно с точките $N$, $P$, $M$ и $Q$. Да се намери лицето на трапеца, ако\n\n$$ON = 14; \\quad OP = \\frac{13}{2}; \\quad OM = 7; \\quad OQ = \\frac{15}{2}.$$",
+      "solution": "Решение. Нека $NQ \\cap CD = E$ и $NP \\cap CD = F$. От $\\triangle ANQ \\cong \\triangle DEQ$, следва че точка $Q$ е среда на $EN$ и, че лицата на двата триъгълника са равни. Аналогично, точка $P$ е среда на $NF$ и лицата на $\\triangle NBP$ и $\\triangle FCP$ са равни. От тук получаваме, че\n\n$$S_{ABCD} = S_{ANQ} + S_{NBP} + S_{QNPCD} = S_{DEQ} + S_{FCP} + S_{QNPCD} = S_{EFN}.$$\n\nТака, задачата се свежда до намиране лицето на $\\triangle EFN$. $NM$ е медиана в $\\triangle EFN$, точката $O$ лежи върху нея (запо?) и я дели в отношение $2 : 1$, считано от върха на триъгълника. Следователно, точка $O$ е медицинтър за $\\triangle EFN$. Оттук, точка $O$ лежи и върху медианите $EP$ и $FQ$, като $EO = 2 \\cdot OP = 13$ и $FO = 2 \\cdot OQ = 15$. Да построим точка $O'$ върху правата $NM$, такава че $OM = MO'$ и $M$ е между $O$ и $O'$. Четириъгълникът $FO'EO$ е успоредник и $FO' = EO = 13$. Също така $S_{EFN} = 6S_{FMO} = 3S_{FO'O}$, откъдето използвайки Хероновата формула заключаваме:\n\n$$S_{ABCD} = S_{EFN} = 3S_{FO'O} = 3\\sqrt{21 \\cdot 8 \\cdot 7 \\cdot 6} = 3 \\cdot 7 \\cdot 3 \\cdot 4 = 252.$$\n\nОценяване (7 точки): 1 т. – за построяване на $E$ и $F$ и заключение, че $S_{ABCD} = S_{EFN}$; 1 т. – за доказателство, че $O$ е медицинтър за $\\triangle EFN$; 2 т. – за пресмятане на $EO$ и $FO$; 3 т. – за намиране лицето на $\\triangle FMO$ и довършване.\n\nЗабележка: Вместо използването на Хероновата формула за намиране лицето на $\\triangle FO'O$, може да се реши система квадратни уравнения. Например, ако означим с $F'$ петата на височината от точка $F$ към страната $OO'$, а с $x$ и $y$ съответно дължините на отсечките $FF'$ и $OO'$, то от Питагоровите теореми за $\\triangle FF'O$ и $\\triangle FO'F'$ имаме, че:\n\n$$\\left| \\begin{array}{l} x^2 + y^2 = 15^2 \\\\ x^2 + (14 - y)^2 = 13^2 \\end{array} \\right. \\Leftrightarrow \\left| \\begin{array}{l} x^2 = (15 - y)(15 + y) \\\\ 15^2 + 14^2 - 28y = 13^2 \\end{array} \\right. \\Leftrightarrow \\left| \\begin{array}{l} x = 12 \\\\ y = 9 \\end{array} \\right. .$$\n\nОттук, $S_{FO'O} = (OO' \\cdot FF')/2 = (14 \\cdot 12)/2 = 84$.",
+      "answer": "252",
+      "difficulty": "hard",
+      "techniques": [
+        "triangle_centers",
+        "area_formulas",
+        "vector_geometry"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва медицентър и Херонова формула. Точка 1.7 (Формули за лице) е най-близка, въпреки че медицентърът не е изрично в STEPS. Решението е сложно с построявания.",
+      "_crosslinked_from": "1.7",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-3-Национален кръг-1984-9-12 кл · 1984-None · Зад. 2",
+      "statement": "Диагоналите на трапеца ABCD с основи AB и CD се пресичат в точка O с AB CD = k > 1. Ъглополовящите на ъглите \\angle AOB, \\angle BOC, \\angle COD и \\angle DOA пресичат страните AB, BC, CD и DA съответно в точките K, L, M и N. Ако P е пресечната точка на правите KL и MN, а Q - пресечната точка на правите KN и LM, да се пресметне стойността на k при условие, че лицето на трапеца ABCD е равно на лицето на триъгълника OPQ.",
+      "solution": "Върху правата AC (черт. 1) разглеждаме точка P ′, вън- шна за отсечхата AC и такава, че AP ′ CP ′ = AO CO = k. Понеже (ACP ′) (CDM)(DAN) = AP ′ CP ′ · CM DM · DN AN = AO CO · CO DO · DO AO = 1, от теоремата на Менелай за триъгълника ACD и правата MN по- лучаваме, че P ′ лежи върху MN. Аналогично, P ′ лежи и вьрху KL, т.е. P ′ ≡P и AP CP = k0. По аналогичен начин получаваме, че Q лежи върху правата BD, външна за отсечката BD и BQ DQ = k. Имаме OA = k k + 1AC и PA = k k −1AC. Тогава OP = PA −OA = 2k k2 −1AC. Аналогично OQ = 2k k2 −1BD. Ако S е лицето на трапеца, то SOPQ S = OP.OQ AC.BD = 4k2 (k2 −1)2 = 1, откъдето намираме k2 = 3 + 2 √ 2 = (1 + √ 2)2, т. е. i k = 1 + √ 2.",
+      "answer": "k = 1 + √2",
+      "difficulty": "hard",
+      "techniques": [
+        "menelaus_theorem",
+        "area_ratios",
+        "similar_triangles"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрична задача за трапец с ъглополовящи. Прилагане на теоремата на Менелай, съотношения на отсечки и изчисляване на лица.",
+      "_crosslinked_from": "1.1",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-3-Национален кръг-1987-9-12 кл · 1987-None · Зад. 3",
+      "statement": "Нека MABCD е пирамида със следните свойства: основата ABCD е квадрат; MA = MD; MA2 + AB2 = MB2; лицето на триъгълника ADM е равно на 1. Да се намери радиусът на най-голямата сфера, която се съдържа в някоя пирамида от разглеждания вид.",
+      "solution": "Решение. Ще използваме едно планиметрично твърдение, чието доказателство предоставяме на читателя: радиусът на всяка окръжност, която се съдържа в даден триъгълник, не надминава радиуса на окръжността, вписана в този триъгълник.\n\nНека MABCD е една от разглежданите пирамиди (черт. 1). От условието следва, че AB ⊥ AD и AB ⊥ MA. Тогава правата AB е перпендикулярна на равнината (ADM). Същото е вярно и за правата CD, която е успоредна на AB.\n\nЕто защо равнините (ABCD), (ABM) и (CDM) са перпендикулярни на равнината (ADM) всяка от тях съдържа поне една от правите AB и CD, перпендикулярни на (ADM). Триъгълниците ABM и DCM са еднакви, така че MB = MC. Да означим с K и L средите съответно на AD и BC. Тъй като триъгълниците ADM и BCM са равнобедрени, то AD ⊥ MK, BC ⊥ ML. Освен това AD ⊥ KL, BC ⊥ KL. Вече можем както по-горе да направим извода, че всяка от равнините (ABCD), (ADM) и (BCM) е перпендикулярна на равнината (KLM).\n\nСега да разгледаме произволна сфера \\(\\sigma\\), която се съдържа в пирамидата (MABCD). Ортогоналната проекция на \\(\\sigma\\) в равнината (ADM) е окръжност, която се съдържа в \\(\\triangle ADM\\), тъй като направлението на проектиране е успоредно на всяка от равнините (ABCD), (ABM) и (CDM), а равнината (ADM) е перпендикулярна на това направление. Следователно радиусът на \\(\\sigma\\) не надминава радиуса \\(R\\) на окръжността, вписана в \\(\\triangle ADM\\). По същия начин можем да се убедим, че ортогоналната проекция\n\n![img-0.jpeg](img-0.jpeg)\n\nСвалено от Klasirane.com\n\nна $\\sigma$ в равнината ($KLM$) е окръжност, която лежи в $\\triangle KLM$. В такъв случай радиусът на $\\sigma$ не надминава радиуса $r$ на вписаната в $\\triangle KLM$ окръжност.\n\nЗа да сравним $R$ и $r$, полагаме $KL = x$ и $MK = y$. Тъй като $\\triangle KLM$ е правоъгълен, защото $\\angle MKL$ е линеен ъгъл на двустенния ъгъл между перпендикулярните равнини ($ADM$) и ($ABCD$), то\n\n$$ML = \\sqrt{x^2 + y^2}, S_{KLM} = \\frac{1}{2}xy \\text{ и } r = \\frac{xy}{x + y + \\sqrt{x^2 + y^2}}.$$\n\nОсвен това $AM = DM = \\frac{1}{2}\\sqrt{x^2 + 4y^2}, S_{ADM} = \\frac{1}{2}xy$ и $R = \\frac{xy}{x + \\sqrt{x^2 + 4y^2}}$. Вече не е трудно да се докаже, че $r < R$, понеже $y + \\sqrt{x^2 + y^2} > \\sqrt{x^2 + 4y^2}$. Неравенството $r < R$ показва още, че сферата с радиус $r$, чийто център съвпада с центъра на вписаната в $\\triangle KLM$ окръжност, се съдържа в пирамидата $MABCD$.\n\nВсяка от разглежданите пирамиди се определя еднозначно от числата $x = KL$ и $y = MK$, за които $xy = 2S_{ADM} = 2$. От направените разсъждения е ясно, че при дадени $x$ и $y$ радиусът на най-голямата сфера, съдържаща се в съответната пирамида, е равен на $r(x, y) = \\frac{xy}{x + y + \\sqrt{x^2 + y^2}} = \\frac{2}{x + y + \\sqrt{x^2 + y^2}}$. Остава да намерим най-голямата стойност на $r(x, y)$ при условията $x > 0, y > 0, xy = 2$. Тъй като $x + y \\geq 2\\sqrt{xy} = 2\\sqrt{2}, \\sqrt{x^2 + y^2} \\geq \\sqrt{2xy} = 2$, имаме\n\n$$r(x, y) = \\frac{2}{x + y + \\sqrt{x^2 + y^2}} \\leq \\frac{2}{2\\sqrt{2} + 2} = \\sqrt{2} - 1.$$\n\nРавенство се достига единствено при $x = y = \\sqrt{2}$. Търсеният максимален радиус е $\\sqrt{2} - 1$",
+      "answer": "\\sqrt{2} - 1",
+      "difficulty": "hard",
+      "techniques": [
+        "orthocenter_properties",
+        "orthogonal_projections",
+        "inscribed_circle",
+        "maximization"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква работа с ортоцентър и ортоцентрични конфигурации като основна техника. Решението използва проекции на сферата в равнините на триъгълниците ADM и KLM, като сравнява радиусите на вписаните окръжности. Трудността е hard поради необходимостта от построяване на помощни точки и равнини, както и множество стъпки за достигане до максимизирания радиус.",
+      "_crosslinked_from": "2.11",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-3-Национален кръг-1990-9-12 кл · 1990-None · Зад. 6",
+      "statement": "Основата $ABC$ на тетраедъра $MABC$ е равностранен триъгълник, а околните му ръбове $MA$, $MB$ и $MC$ образуват триъгълник с лице $S$. Да се докаже, че $RS \\ge V$, където $V$ е обемът на тетраедъра, а $R$ е радиусът на описаната около него сфера. Кога се достига равенство?",
+      "solution": "Решение. Нека $ABCM$ е произволен тетраедър с ръбове $MA = a, MB = b, MC = c, BC = a_1, CA = b_1, AB = c_1$. Тогава:\n\nа) съществува триъгълник със страни $a_1, bb_1, cc_1$;\n\nб) ако $R$ и $V$ са съответно радиусът на описаната сфера и обемът на тетраедъра $ABCM$, а $\\sigma$ е лицето на триъгълника със страни $aa_1, bb_1, cc_1$, то\n\n$$V = \\frac{\\sigma}{6R}$$\n\nДа разгледаме инверсията $I$ с център $M$ и радиус $r^2 = abc$. Ако $A_1 = I(A)$, $B_1 = I(B)$ и $C_1 = I(C)$, от свойство на инверсията $A_1B_1 = \\frac{r^2}{MA \\cdot MB} AB = \\frac{r^2c_1}{ab} = cc_1$, $B_1C_1 = \\frac{r^2}{MB \\cdot MC} BC = \\frac{r^2a_1}{r_1}$ и $C_1A_1 = \\frac{r^2}{MC \\cdot MA} CA = \\frac{r^2b_1}{ca} = bb_1$. Следователно $\\triangle A_1B_1C_1$ е със страни $aa_1$, $bb_1$ и $cc_1$, с което а) е доказано.\n\nб) Нека $H$ е диаметрално противоположната на $M$ в сферата $\\rho$, описана около тетраедъра $ABCM$. Точката $H_1 = I(H)$ лежи на образа на $\\rho$ при инверсията $I$, който е равнина (понеже $\\rho$ съдържа центъра на инверсия $M$) през образите $A_1, B_1, C_1$ на върховете $A, B, C$. От друга страна $\\angle AMH = \\angle BMH = \\angle CMH = 90^\\circ$ и пак от свойствата на инверсията имаме $\\angle MH_1A_1 = \\angle MB_1H_1 = \\angle MC_1H_1$. Така получихме, че $MH_1$ е височината в тетраедъра $A_1B_1C_1$. Тогава този обем е\n\n$$V_1 = \\frac{1}{3} S_{A_1B_1C_1} \\cdot MH_1 = \\frac{1}{3} \\sigma \\frac{r^2}{MH} = \\frac{1}{3} \\sigma \\frac{r^2}{2R} = \\frac{\\sigma r^2}{6R}.$$\n\nТочките $A_1, B_1, C_1$ лежат съответно на лъчите $MA^\\rightarrow, MB^\\rightarrow, MC^\\rightarrow$, следователно отношението на обемите на тетраедрите $ABCM$ и $A_1B_1C_1M$ е\n\n$$\\frac{V}{V_1} = \\frac{MA \\cdot MB \\cdot MC}{MA_1 \\cdot MB_1 \\cdot MC_1} = \\frac{abc}{\\frac{r^2}{a} \\cdot \\frac{r^2}{b} \\cdot \\frac{r^2}{c}} = \\frac{(abc)^2}{r^6} = \\frac{1}{r^2}.$$\n\nТогава $V = \\frac{1}{r^2} V_1 = \\frac{\\sigma}{6R}$, с което доказахме и б).\n\nДа се върнем към решението на задачата, запазвайки означенията от формулировката на току-що разгледаното твърдение. Нека $a_1 = b_1 = c_1 = d$. От а) следва, че има триъгълник със страни $ad, bd, cd$, а следователно - триъгълник със страни $a, b, c$ (в условието не е необходимо да се посочва, че вторият триъгълник съществува). Ако $S$ е лицето на триъгълника със страни $a, b, c$, очевидно $\\sigma = d^2S$ и от\n\nСвалено от Klasirane.com\n\nб) получаваме $V = \\frac{\\sigma}{6R} = \\frac{d^2S}{6R}$. Но $d = R_1\\sqrt{3}$, където $R_1$ е рддиусът на окръжността, описана около равностранния триъгълник $ABC$. Тъй като $R_1 \\leqq R$, имаме\n\n$$2V = \\frac{2d^2S}{6R} = \\frac{6R_1^2S}{6R} \\leqq RS,$$\n\nс което задачата е решена. Равенство се достига само когато $R_1 = R$, т. е. когато равнината ($ABC$) минава през центъра на описаната сфера.\n\nСвалено от Klasirane.com",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "orthocenter",
+        "inversion",
+        "volume_formula"
+      ],
+      "confidence": "exact",
+      "reasoning": "Използва се инверсия и свойства на ортоцентъра за намиране на връзка между обем и радиус на описана сфера.",
+      "_crosslinked_from": "2.11",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-3-Национален кръг-1991-9-12 кл · 1991-None · Зад. 5",
+      "statement": "3адача 5. В единичния кръг с център O е взет централен ъгъл, който се измерва с дъгата d AB, където d AB = α < 90◦, като точките A и B са от окръжността. Нека H е петата на перпендикуляра от A към OB, T е точка от дъгата d AB и l е допирателната към окръжността в точката T. Правата l отсича от \\angle правоъгълен триъгълник \\triangle . а) Да се докаже, че лицето на правоъгълния триъгълник \\triangle е минимално точно тогава, когато точката T разполовява неговата хипотенуза. б) Ако Sα е лицето на правоъгълния триъгълник \\triangle с минимално лице, да се докаже, че функцията Sα α3 има граница при α →0, α̸ = 0, и да се пресметне тази граница.",
+      "solution": "Решение.\n\nа) Нека l пресича правите AH и BH съответно в точките M и N (черт. 2), OH = a, HN = x и лицето на \\triangle MHN е S(x). Ясно е, че OT = 1, ON = x + a, x > 0 и a ∈ [0, 1]. От подобието на триъгълниците MHN и OTN следва MH/OT = HN/TN, т. е. MH = x/√(a + x)² - 1. Тогава\n\n$$S(x) = \\frac{1}{2} MH \\cdot HN = \\frac{1}{2} \\cdot \\frac{x^2}{\\sqrt{(a + x)^2 - 1}}$$\n\n$$S'(x) = \\frac{1}{2} \\cdot \\frac{x(x^2 + 3ax + 2a^2 - 2)}{[(a + x)^2 - 1]\\sqrt{(a + x)^2 - 1}}$$\n\nоткъдето се вижда, че уравнението S'(x) = 0 има единствено решение x₀, за което x₀ > 0, а именно\n\n$$x_0 = \\frac{-3a + \\sqrt{a^2 + 8}}{2}$$\n\nЛесно се съобразява, че S(x) намалява в интервала (0, x₀) и расте в интервала (x₀, +∞), което е достатъчно, за да твърдим, че най-малката стоиност на S(x) в интервала (0, +∞) се достига в точката x₀. С това доказахме, че правоъгълният триъгълик с минимално лице съществува. За да докажем, че T е средата на MN, достатъчно е да проверим, че при намереното x₀ имаме OM = ON. Като използваме връзката x₀² + 3ax₀ + 2a² - 2 = 0, последователно получаваме:\n\n$$\\begin{array}{l} OM^2 = MH^2 + OH^2 = \\frac{x_0^2}{(a + x_0)^2 - 1} + a^2 = x_0 \\cdot \\frac{x_0 - a(x_0^2 + 3ax_0 + 2a^2 - 2)}{(a + x_0)^2 - 1} + a^2 = \\\\ = x_0 \\cdot \\frac{(x_0 + 2a)(1 - ax_0 - a^2 + (x_0^2 + 3ax_0 + 2a^2 - 2))}{(a + x_0)^2 - 1} + a^2 = \\\\ = x_0 \\cdot \\frac{(x_0 + 2a)((a + x_0)^2 - 1)}{(a + x_0)^2 - 1} + a^2 = x_0(x_0 + 2a) + a^2 = (x_0 + a)^2 = ON^2. \\end{array}$$\n\nб) Нека MHN е правоъгълният триъгълник с минимално лице, отговарящ на ъгъла α, и правата през M, перпендикулярия на MN, пресича ON в точката N₁. Тъй като OT е средна отсечка в \\triangle N₁MN, то ON₁ = ON. Имаме\n\n$$S_\\alpha^2 = \\frac{1}{4} MH^2 \\cdot HN^2 = \\frac{1}{4} HN_1 \\cdot HN \\cdot HN^2 = \\frac{1}{4} HN^3 \\cdot HN_1.$$\n\nДа означим ON = y и AH = z. От \\triangle AOH следва, че OH = √(1 - z²). Тогава HN = ON - OH = y - √(1 - z²). Освен това OM = ON според доказаното д) и значи MT² = ON² - OT², т. е. MT = √(y² - 1)\n\nи $MN = 2MT = 2\\sqrt{y^2 - 1}$. Сега от $\\triangle MHN$ получаваме $MN^2 = MH^2 + HN^2 = OM^2 - OH^2 + HN^2$ и значи $4(y^2 - 1) = y^2 - 1 + z^2 + (y - \\sqrt{1 - z^2})^2 = 2y^2 - 2y\\sqrt{1 - z^2}$, т. е. $y^2 + y\\sqrt{1 - z^2} - 2 = 0$. Положителният корен на последното уравнение е\n\n$$y = -\\frac{\\sqrt{1 - z^2}}{2} + \\frac{3}{2}\\sqrt{1 - \\frac{z^2}{9}}.$$\n\nТогава $HN = ON - OH = \\frac{3}{2}\\sqrt{1 - \\frac{z^2}{9}} - \\frac{3}{2}\\sqrt{1 - z^2}$, $HN_1 = ON + OH = \\frac{1}{2}\\sqrt{1 - z^2} + \\frac{3}{2}\\sqrt{1 - \\frac{z^2}{9}}$. Заместваме в получения по-горе израз за $S_\\alpha^2$ и след преработваве намираме\n\n$$S_\\alpha^2 = \\frac{2^3}{3^3}z^6 \\frac{\\sqrt{1 - z^2} + 3\\sqrt{1 - \\frac{z^2}{9}}}{\\left(\\sqrt{1 - \\frac{z^2}{9}} + \\sqrt{1 - z^2}\\right)^3}$$\n\nОт $\\triangle AOH$ имаме $AH = AO \\sin \\alpha$, т. е. $z = \\sin \\alpha$. Тогава\n\n$$\\frac{S_\\alpha^2}{\\alpha^6} = \\frac{2^3}{3^3} \\cdot \\frac{\\sin^6 \\alpha}{\\alpha^6} \\cdot \\frac{\\sqrt{1 - \\sin^2 \\alpha} + 3\\sqrt{1 - \\frac{\\sin^2 \\alpha}{9}}}{\\left(\\sqrt{1 - \\frac{\\sin^2 \\alpha}{9}} + \\sqrt{1 - \\sin^2 \\alpha}\\right)^3}$$\n\nи следователно $\\lim_{\\alpha \\to 0} \\frac{S_\\alpha^2}{\\alpha^6} = \\frac{2^3}{3^3} \\cdot 1 \\cdot \\frac{1 + 3}{(1 + 1)^3} = \\frac{2^2}{3^3}$, откъдето $\\lim_{\\alpha \\to 0} \\frac{S_\\alpha}{\\alpha^3} = \\frac{2\\sqrt{3}}{9}$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "analytic_geometry",
+        "derivatives_min_max",
+        "trigonometric_substitution"
+      ],
+      "confidence": "exact",
+      "reasoning": "Минимизиране на лице на правоъгълен триъгълник в кръг. Решението използва координати, производни и тригонометрични замествания за намиране на минимума.",
+      "_crosslinked_from": "2.8",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-3-Национален кръг-1993-9-12 кл · 1993-None · Зад. 2",
+      "statement": "Точката M лежи във вътрешността на триъгълника ABC и е такава, че \\angle AMC = 90◦, \\angle AMB = 150◦и \\angle BMC = 120◦. Точките P, Q и R са съответно центровете на описаните около триъгълницие AMC, AMB и BMC окръжности. Да се докаже, че лицето на триълника PQR е по-голямо от лицето на триъгълника ABC.",
+      "solution": "Решение. Правите PQ, QR и RP са симетралите съответно на отсечките MA, MB и MC (черт. 1). Ако X, Y и Z са съответно средите на MA, MB и MC, хомотетията с център M и коефициент 2 преобразува \\triangle XYZ в \\triangle ABC. Ето защо е достатъчно да докажем, че  \\( S_{XYZ} \\leq \\frac{1}{4} S_{PQR} \\) . Да забележим, че XZMP е правоъгълник. Тогава петите на пепрендикулярите YU и YV от Y съответно към PQ и PR са външни точки за отсечките PX и PZ. Триъгълникът XYZ е вписан в правоъгълника YVPU и съгласно едно известно твърдение имаме  \\( S_{XYZ} \\leq \\frac{1}{2} S_{YVPU} \\) . На свой ред YVPU е вписан в \\triangle PQR и тогава (пак въз основа на известно твърдение)  \\( S_{YVPU} \\leq \\frac{1}{2} S_{PQR} \\) .\n\n![img-0.jpeg](img-0.jpeg)\n\nВторо решение. Твърдението остава в сила за произволна точка M, за която  \\( \\angle AMC = 90^{\\circ} \\) . Съгласно една формула на Ойлер\n\n\\[\nS _ {X Y Z} = \\frac {S _ {P Q R}}{4} \\left| 1 - \\frac {O M ^ {2}}{R ^ {2}} \\right|,\n\\]\n\nкъдето O и R са съответно центърът и радиусът на описаната около  \\( \\triangle PQR \\)  окръжност.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "euler_formula",
+        "homothety",
+        "area_comparison"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва центрове на описани окръжности и връзка с лицето. Решението цитира формула на Ойлер за лицата, което е пряко свързано с точка 1.8.",
+      "_crosslinked_from": "1.8",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-3-Национален кръг-1995-9-12 кл · 1995-None · Зад. 4",
+      "statement": "The points $C_1, A_1$ and $B_1$ lie on the sides $AB, BC$ and $CA$ of the equilateral triangle $ABC$ respectively in such a way that the inradii of the triangles $C_1AB_1, B_1CA_1, A_1BC_1$ and $A_1B_1C_1$ are equal. Prove that $A_1, B_1$ and $C_1$ are the midpoints of the corresponding sides.",
+      "solution": "We shall prove that $BA_1 = CB_1 = AC_1$ (Figure 1). Assume the contrary and let $BA_1 \\ge CB_1 > AC_1$. Let $\\rho$ be the rotation at $120^\\circ$ which center coincides with the in center of the incircle of $\\triangle ABC$. This rotation transforms the incircles of the triangles $C_1BA_1$, $A_1CB_1$ and $B_1AC_1$ to the incircles of the triangles $A_1CB_1$, $B_1AC_1$ and $C_1BA_1$, respectively. Let $A_2 = \\rho(A_1)$, $B_2 = \\rho(B_1)$ and $C_2 = \\rho(C_1)$. It follows that $BB_2 < BC_1$ and $BC_2 < BA_1$. But the incircles of the triangles $BC_1A_1$ and $BC_2B_2$ have equal radii (because $\\rho(\\triangle AC_1B_1) = \\triangle BC_2B_2$), which is a contradiction.\n\nLet $r$ be the radius of the incircles of the triangles $C_1AB_1$, $B_1CA_1$, $A_1BC_1$ and $A_1B_1C_1$. From the triangle $B_1AC_1$ we have $r = \\frac{1 - B_1C_1}{2} \\cdot \\frac{\\sqrt{3}}{3}$, and from $\\triangle A_1B_1C_1$ which is equilateral we have $r = B_1C_1 \\cdot \\frac{\\sqrt{3}}{6}$. From here $B_1C_1 = \\frac{1}{2}$ and consequently $A_1$, $B_1$, $C_1$ are midpoints of the corresponding sides.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "rotation",
+        "incircle",
+        "equilateral_triangle"
+      ],
+      "confidence": "exact",
+      "reasoning": "Въпреки че решението използва ротация, основната идея е свързана с вписаните окръжности и тяхното поведение при ротация. Тъй като условието директно включва вписани радиуси, точка 1.10 е най-подходяща, въпреки че ротацията не е изрично в STEPS.",
+      "_crosslinked_from": "1.10",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-3-Национален кръг-1999-9-12 кл · 1999-None · Зад. 3",
+      "statement": "The vertices of a triangle have integer coordinates and one of its sides is of length $\\sqrt{n}$, where $n$ is a square-free natural number. Prove that the ratio of the circumradius and the inradius is an irrational number.",
+      "solution": "**Solution:** Suppose that $\\frac{R}{r} = q$, where $q$ is a rational number. Without loss of generality assume that one of the ends of the side of length $\\sqrt{n}$ is at the origin of the coordinate system. Let the remaining two vertices have coordinates $(x,y)$ and $(z,t)$, where $x, y, z$ and $t$ are integers. The sides of our triangle have lengths $a = \\sqrt{A}, b = \\sqrt{B}$ and $c = \\sqrt{C}$, where $n = A = x^2 + y^2, B = z^2 + t^2$ and $C = (x-z)^2 + (y-t)^2$. It follows from the conditions of the problem that\n$$q = \\frac{R}{r} = \\frac{abc}{4S} \\cdot \\frac{p}{S} = \\frac{abc(a+b+c)}{8S^2},$$\nwhere $S$ is the area of the triangle. Since $S$ is rational (prove it!), it follows that $\\sqrt{ABC}(\\sqrt{A}+\\sqrt{B}+\\sqrt{C}) = 8S^2q$ is a rational number. Therefore $A\\sqrt{BC} + B\\sqrt{AC} = 8S^2q - C\\sqrt{AB}$ and after squaring we obtain that $\\sqrt{AB}$ is a rational number. Thus $AB$ is a perfect square. By analogy both $BC$ and $CA$ are perfect squares. Let $AB = E^2$, $BC = F^2$ and $CA = G^2$, where $E, F$ and $G$ are integer. Write $A, B$ and $C$ in the following form: $A = a_1 a_2^2, B = b_1 b_2^2$ and $C = c_1 c_2^2$, where $a_1, b_1$ and $c_1$ are square‑free integers. So $a_1 b_1(a_2 b_2)^2 = m^2$ and therefore $a_1 b_1$ is a perfect square, whence $a",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "coordinate_geometry",
+        "rationality_proof",
+        "area_calculation"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква доказателство, че отношението на описаната и вписаната окръжност в триъгълник с цели координати и страна sqrt(n) е ирационално. Решението използва координатна геометрия и свойства на рационални числа.",
+      "_crosslinked_from": "1.11",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-3-Национален кръг-2013-9-12 кл · 2013-None · Зад. 5",
+      "statement": "Даден е остроъгълен $\\triangle ABC$ с височини $AA_1$, $BB_1$ и $CC_1$ ($A_1 \\in BC$, $B_1 \\in AC$, $C_1 \\in AB$). Върху продължението на $B_1A_1$ след $A_1$ е избрана точка $C'$, така че $A_1C' = B_1C_1$. Аналогично върху продължението на $A_1C_1$ след $C_1$ е избрана точка $B'$, така че $C_1B' = A_1B_1$ и върху продължението на $C_1B_1$ след $B_1$ е избрана точка $A'$, така че $B_1A' = C_1A_1$. Да означим с $A''$, $B''$ и $C''$ симетричните точки на $A'$, $B'$ и $C'$ относно правите $BC$, $CA$ и $AB$ съответно. Да се докаже, че ако $R$, $R'$ и $R''$ са радиусите на описаните окръжности съответно около $\\triangle ABC$, $\\triangle A'B'C'$ и $\\triangle A''B''C''$, то $R$, $R'$ и $R''$ са дължини на страните на триъгълник, чието лице е половината от лицето на $\\triangle ABC$.",
+      "solution": "Решение. Нека $O$ центъра на описаната окръжност около $\\triangle ABC$, а $S$ е симетричната му точка относно страната $AB$. Тогава $SOCH$ е успоредник, $SH \\perp A_1B_1$ и $SH = R$ (1).\n\nДа означим с $\\rho$ – радиусът на вписаната окръжност в $\\triangle A_1B_1C_1$, а с $q$ – полупериметъра му. Тогава, ако $T$ е петата на перпендикуляра от $S$ към $A_1B_1$, то $HT = \\rho$; $ST = R + \\rho$; $TC' = q$.\n\nИмаме $HC' = \\sqrt{\\rho^2 + q^2}$, което поради симетрията на получения израз означава, че $H$ е центъра на описаната окръжност около $\\triangle A'B'C'$ и $R' = HC'$ (2).\n\nОт друга страна, $OC'' = SC' = \\sqrt{(R + \\rho)^2 + q^2}$ и следователно $O$ е центъра на описаната окръжност около $\\triangle A''B''C''$ и $R'' = SC'$ (3).\n\nОт (1), (2) и (3) следва, че $R$, $R'$ и $R''$ са дължините на страните на $\\triangle HSC'$, като\n\n$$S_{HSC'} = \\frac{HS.TC'}{2} = \\frac{R.q}{2} = \\frac{1}{2}(S_{A_1OB_1C} + S_{B_1OC_1A} + S_{C_1OA_1B}) = \\frac{S_{ABC}}{2}.$$\n\n![img-0.jpeg](img-0.jpeg)\n\nОценяване: (7 точки) 1 т. за построяване на точката $S$ и $SH = R$; 2 т. за $H$ – център на описаната окръжност около $\\triangle A'B'C'$ и $HC' = R'$; 2 т. за $O$ – център на описаната окръжност около $\\triangle A''B''C''$ и $SC' = R''$; 2 т. за довършване на решението.\n\nСвалено от Klasirane.com",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "orthocenter",
+        "circumcircle",
+        "symmetry",
+        "area_calculation",
+        "triangle_geometry"
+      ],
+      "confidence": "exact",
+      "reasoning": "Сложна геометрична задача, използваща свойства на ортоцентър, симетрия и връзки между радиуси на описани окръжности, с ключова стъпка симетрията относно страните и изчисляване на лица.",
+      "_crosslinked_from": "2.11",
+      "_crosslink_confidence": 0.8
     }
   ]
 }

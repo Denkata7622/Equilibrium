@@ -1,0 +1,84 @@
+{
+  "pdf": "OLI-2-Областен кръг-2012-12 кл-sol",
+  "version": 4,
+  "extraction_model": "deepseek/deepseek-r1-0528",
+  "extraction_level": "L3_escalation",
+  "verification": {
+    "verdict": "PASS_WITH_WARNINGS",
+    "expected": 6,
+    "actual": 3,
+    "verified": 3,
+    "hallucinated": 0,
+    "unreadable": 0,
+    "wrong_grade": 0,
+    "duplicates": 0,
+    "null_num": 0,
+    "numeric_mismatch": 0,
+    "avg_confidence": 1.0,
+    "expected_grade": 12,
+    "grade_distribution": {
+      "12": 3
+    },
+    "escalate_to": "L1_ocr",
+    "reasons": [
+      "missing: 3 < 6±0",
+      "adjusted: source has 3 markers (expected was 6)"
+    ],
+    "ai_checked": true,
+    "ai_result": {
+      "missing_count": 3,
+      "hallucinated_indices": [],
+      "overall": "missing"
+    }
+  },
+  "extracted_at": "2026-11-11T18:58:05.875080",
+  "problems": [
+    {
+      "num": "12.1",
+      "year": 2012,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Да се намерят всички цели стойности на параметъра $a$, за които уравнението\n\n$$\\sin x + a \\sin 2x + \\sin 5x = 2a$$\n\nима решение.",
+      "solution": null,
+      "answer": null,
+      "page": null,
+      "source_quote": "Задача 11.1.** Да се намерят всички цели стойности на параметъра $a$, за които уравнението\n\n$$\\sin x + a \\sin 2x + \\sin 5x = 2a$$\n\nима решение.",
+      "readability": "partial",
+      "readability_issues": [
+        "Решението е прекъснато във формула след „2|a| = |\\sin x + a \\sin 2x + \\“; solution е null.",
+        "След прекъсването има фрагмент „б) Не!“, който няма собствен маркер и не може надеждно да се отнесе към тази задача."
+      ],
+      "pdf": "OLI-2-Областен кръг-2012-12 кл-sol"
+    },
+    {
+      "num": "12.4",
+      "year": 2012,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Да се намерят стойностите на реалния параметър $a$, за които уравнението\n\n$$\\lg(\\lg(x^3 + ax + 1)) = \\lg(\\lg(2x^3 + a))$$\n\nима точно едно решение.",
+      "solution": null,
+      "answer": null,
+      "page": null,
+      "source_quote": "Задача 11.4.** Да се намерят стойностите на реалния параметър $a$, за които уравнението\n\n$$\\lg(\\lg(x^3 + ax + 1)) = \\lg(\\lg(2x^3 + a))$$\n\nима точно едно решение.",
+      "readability": "partial",
+      "readability_issues": [
+        "Решението е непълно: прекъсва след неравенството „x(2x^2 + x + 1) \\le 0“, без окончателно определяне на параметъра; solution е null."
+      ],
+      "pdf": "OLI-2-Областен кръг-2012-12 кл-sol"
+    },
+    {
+      "num": "12.6",
+      "year": 2012,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Нека $a$ е реално число и $P(x)$ е неконстантен полином с реални коефициенти така, че $P(x^2 + a) = (P(x))^2$ за всяко реално число $x$. Да се докаже, че $a = 0$.",
+      "solution": "От $P^2(x) = P^2(-x)$ следва, че $P$ е или четна, или нечетна функция.\n\nАко $P$ е четна функция, то $P(x) = Q(x^2)$. Тогава $Q((x^2 + a)^2) = Q^2(x^2)$ и следователно $Q((x + a)^2) = Q^2(x)$ за всяко $x$. Оттук $Q(x^2) = Q^2(x - a)$, т.е. полиномът $Q(x - a)$ също изпълнява даденото условие, като $\\deg P = 2\\deg Q$.\n\nПродължавайки по същия начин, ще стигнем до полином от нечетна степен, изпълняващ даденото условие. Той не може да е четна функция.\n\nИ така, остана да разгледаме случая, когато $P$ е нечетна функция. Тогава $P(x) = xR(x^2)$ и следователно $(x^2 + a)R((x^2 + a)^2) = x^2 R^2(x^2)$. Оттук $(x + a)R((x + a)^2) = xR^2(x)$, т.е. $P(x) = (x - a)R^2(x - a)$ за всяко $x$. Нека $R(x - a) = x^k S(x)$, където $S(0) \\neq 0$. Лесно се вижда, че $(x - a)R^2(x - a) = x^{2k+1}T(x) - aS^2(0)x^{2k}$. Понеже $P$ е нечетна функция, следва, че $a = 0$.",
+      "answer": "a = 0",
+      "page": null,
+      "source_quote": "Задача 11.6.** Нека $a$ е реално число и $P(x)$ е неконстантен полином с реални коефициенти така, че $P(x^2 + a) = (P(x))^2$ за всяко реално число $x$. Да се докаже, че $a = 0$.",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2012-12 кл-sol"
+    }
+  ]
+}

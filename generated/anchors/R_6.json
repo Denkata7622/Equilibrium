@@ -1,25 +1,113 @@
 {
   "point_id": "R.6",
-  "total": 1,
+  "total": 7,
   "by_difficulty": {
-    "easy": 0,
-    "medium": 1,
-    "hard": 0
+    "easy": 3,
+    "medium": 3,
+    "hard": 1
   },
   "problems": [
     {
-      "source": "OLI-2-Областен кръг-2004-11 кл · 2004-11 · Зад. 1",
-      "statement": "За кои стойности на x ∈ (−π, π) числата 2^(sin x), 2 − 2^(sin x + cos x) и 2^(cos x) са последователни членове на геометрична прогресия?",
-      "solution": "Необходимо и достатъчно условие дадените числа да образуват геометрична прогресия е\n2^{sin x} · 2^{cos x} = (2 − 2^{sin x+cos x})²,\nоткъдето след преобразуване получаваме\n4^{sin x+cos x} − 5 · 2^{sin x+cos x} + 4 = 0.\nПолагането y = 2^{sin x+cos x} свежда уравнението до квадратно y² − 5y + 4 = 0 с корени y₁ = 4 и y₂ = 1.\nПри 2^{sin x+cos x} = 4 получаваме sin x + cos x = 2, т.е. sin(x + π/4) = √2, което очевидно няма решение.\nПри 2^{sin x+cos x} = 1 получаваме sin x + cos x = 0, т.е. sin(x + π/4) = 0.\nОттук x = −π/4 + kπ, където k е цяло число. От тези корени в интервала (−π, π) се намират −π/4 и 3π/4.",
-      "answer": "x = −π/4 или x = 3π/4.",
-      "difficulty": "medium",
+      "source": "OLI-2-Областен кръг-2013-11 кл · 2013-11 · Зад. 11.1",
+      "statement": "Да се намерят стойностите на реалните параметри $p$, $q$ и $r$, ако числата $p, -\\frac{q}{2}, r$ образуват аритметична прогресия и уравнението\n\n$$x^3 + px^2 + qx + r - 1 = 0$$\n\nима три корена, които са естествени числа и образуват аритметична прогресия с разлика 2013.",
+      "solution": "Решение. От условието $p + r = -q$ следва, че даденото уравнение има корен $x_1 = 1$. Тогава уравнението приема вида\n\n$$(x - 1)(x^2 + (p + 1)x + p + q + 1) = 0,$$\n\nкато корените на квадратното уравнение $x^2 + (p + 1)x + p + q + 1 = 0$ са $x_1 = 2014$ и $x_2 = 4027$. От формулите на Виет сега намираме $p = -x_1 - x_2 - 1 = -6042$ и $q = x_1x_2 - p - 1 = x_1x_2 + x_1 + x_2 = (x_1 + 1)(x_2 + 1) - 1 = 2015.4028 - 1 = 8116419$.\n\nОценяване: 2 т. за намиране на корена $x_1 = 1$; 2 т. за разлагането $(x - 1)(x^2 + (p + 1)x + p + q + 1) = 0$; 3 т. за намиране на $p$, $q$ и $r$.",
+      "answer": null,
+      "difficulty": "easy",
       "techniques": [
-        "substitution",
-        "quadratic_equation",
-        "parameter_analysis"
+        "vieta_formulas",
+        "arithmetic_progression",
+        "polynomial_roots"
       ],
       "confidence": "exact",
-      "reasoning": "Uses substitution y=2^{sin x+cos x}, reduces to quadratic, checks cases."
+      "reasoning": "Задачата използва формулите на Виет и аритметична прогресия за намиране на параметрите. Това е алгебрична задача, която отговаря на точка 5.1.",
+      "_crosslinked_from": "5.1",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2019-11 кл · 2019-11 · Зад. 11.1",
+      "statement": "Дадена е аритметична прогресия с първи член $a_1 > 0$ и разлика $d$. Да се докаже, че:\n\na) aKo \\(d = 2a_{1}\\) , to 3a BcKaO n > 1 YncIaTa a1, an n a(n-1)2+n2 o6pa3yBaT rEOMeTpHnHa nporpeCnB To3n pe;\n\n6) aKo \\(\\frac{d}{a_1}\\) e eCTeCTBeHO uHcIIO H a1, an n a m 3a n > 1 o6pa3yBaT rEOMeTpHnHa nporpeCnB To3n peI, to \\(1 + \\frac{d}{a_1} (m - 1)\\) e ToueH KBaIpaT.",
+      "solution": "Решение. Ако $a_1$, $a_n$ и $a_m$ образуват геометрична прогресия, то $a_n^2 = a_1.a_m$, откъдето:\n\n$$(a_1 + (n - 1)d)^2 = a_1(a_1 + (m - 1)d) \\iff \\frac{d}{a_1} = \\frac{m - 1 - 2(n - 1)}{(n - 1)^2}. \\tag{1}$$\n\na)Директно ce npobepraBa,Ye(1)e n3nJIHeNo npH $\\frac{d}{a_1} = 2$ n $m = (n - 1)^2 +n^2$\n6) Ako $\\frac{d}{a_1} = t$ n-1=x, to (1) e ekBnBaJIeHTHO Ha tx²+2x-(m-1)=0. TbI KaTo x e cTeCTBeHO YHcIIO, To D1=1+t(m-1) e ToueH KBaIpaT.",
+      "answer": null,
+      "difficulty": "easy",
+      "techniques": [
+        "arithmetic_progression",
+        "geometric_progression"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква директно приложение на свойствата на аритметичната и геометричната прогресия. Решението проверява условието за геометрична прогресия чрез алгебрични преобразувания. Това е стандартна задача от основните техники за прогресии."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2024-10 кл · 2024-10 · Зад. 10.1",
+      "statement": "Третият, деветият и тридесет и деветият член на растяща аритметична прогресия са последователни членове на геометрична прогресия в този ред.\n\na)Да ce hamepn qactHOTo Ha reoMeTpHnHaTa IIporpeCn.\n6) Ako pa3JIHKaTa Ha apHTMeTHuHaTa IIporpeCnE 2 n cyMaTa Ha IIpbHTe H n YJIeHa e 2024, To da se Hamepn n.",
+      "solution": "Решение. а) Да означим членовете на нарастващата аритметична прогресия с a1, a2, . . ., а разликата ` и сd > 0. Имаме, че a3, a9, a39 образуват в този ред геометрична прогресия и значи, частното e q = a9/a3, а също така е в сила равенството\na29 = a3 · a39 ⇔ (a3 + 6d)2 = a3(a3 + 36d) ⇔ 24a3d = 36d2 ⇔ 2a3 = 3d.\nТогава, a9 = a3 + 6d = a3 + 2(3a3) = 5 a3 и значи q = a9/a3 = 5.\nб) От подточка а) имаме, че a3 = 3 d/2 = 3 , следователно a1 = a3 − 2d = −1. Общата\nформула за сумата Sn на първите n члена на аритметичната прогресия се записва така:\n2024 = Sn = 2a1 + (n − 1)d2 · n = 2 · (−1) + (n − 1) · 22 · n = (n − 2)n.\nРазлагайки квадратното уравнение n2 − 2n − 2024 = 0 на множители, получаваме (n −\n46)(n + 44) = 0 и тъй като n трябва да е естествено число, то n = 46.",
+      "answer": null,
+      "difficulty": "easy",
+      "techniques": [
+        "arithmetic_progression",
+        "geometric_progression"
+      ],
+      "confidence": "exact",
+      "reasoning": "Директно приложение на формули за аритметична и геометрична прогресия. Уравнението за средния член на ГП води до проста връзка между членовете на АП."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2007-11 кл · 2007-11 · Зад. 11.4",
+      "statement": "Дадена е редицата $\\{a_n\\}_{n=1}^\\infty$, дефинирана с равенствата $a_1 = 4$, $a_2 = 3$ и $2a_{n+1} = 3a_n - a_{n-1}$ при $n \\geq 2$.\n\nа) Да се докаже, че редицата е сходяща и да се намери нейната граница.\nб) Да се пресметне границата\n\n$$\\lim_{n \\to \\infty} \\frac{(a_n - 1)(a_n - 2)}{(\\sqrt{a_n + 2} - 2)(\\sqrt{12a_n - 8} - 2)}.$$",
+      "solution": "11.4. а) Записваме рекурентната връзка във вида $2a_{n+1} - a_n = 2a_n - a_{n-1}$, откъдето получаваме\n\n$$2a_{n+1} - a_n = 2a_n - a_{n-1} = 2a_{n-1} - a_{n-2} = … = 2a_2 - a_1 = 2.$$\n\nОттук $a_{n+1} = 1 + \\frac{a_n}{2}$ и следователно\n\n$$\\begin{aligned} a_{n+1} &= 1 + \\frac{a_n}{2} = 1 + \\frac{1}{2} + \\frac{a_{n-1}}{4} = … = 1 + \\frac{1}{2} + … + \\frac{1}{2^{n-1}} + \\frac{a_1}{2^n} = \\\\\n&= 1 + \\frac{1}{2} + … + \\frac{1}{2^{n-1}} + \\frac{1}{2^n} + \\frac{3}{2^n} = \\frac{3}{2^n} + \\frac{2^{n+1} - 1}{2^n} = 2 + \\frac{1}{2^{n-1}}. \\end{aligned}$$\n\nЗа общия член на редицата получаваме $a_n = 2 + \\frac{1}{2^{n-2}}$, което означава, че редицата е сходяща и нейната граница е 2.\n\nб) Тъй като\n\n$$\\begin{aligned} \\frac{(a_n - 1)(a_n - 2)}{(\\sqrt{a_n + 2} - 2)(\\sqrt{12a_n - 8} - 2)} &= \\frac{(a_n - 1)(a_n - 2)(\\sqrt{a_n + 2} + 2)}{(\\sqrt{a_n + 2} - 2)(\\sqrt{a_n + 2} + 2)(\\sqrt{12a_n - 8} - 2)} \\\\\n&= \\frac{(a_n - 1)(\\sqrt{a_n + 2} + 2)}{\\sqrt{12a_n - 8} - 2}, \\end{aligned}$$\n\nto\n\n$$\\begin{aligned} \\lim_{n \\to \\infty} \\frac{(a_n - 1)(a_n - 2)}{(\\sqrt{a_n + 2} - 2)(\\sqrt{12a_n - 8} - 2)} &= \\lim_{n \\to \\infty} \\frac{(a_n - 1)(\\sqrt{a_n + 2} + 2)}{\\sqrt{12a_n - 8} - 2} \\\\\n&= \\frac{(2 - 1)(\\sqrt{2 + 2} + 2)}{\\sqrt{12 \\cdot 2 - 8} - 2} = 2. \\end{aligned}$$\n\nСвалено от Klasirane.com",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "recurrence_relation",
+        "limit_computation",
+        "rationalization"
+      ],
+      "confidence": "exact",
+      "reasoning": "Основен метод: решаване на линейна рекурентна връзка за явен вид, след това граница. Част б) изисква алгебрични преобразувания с рационализация.",
+      "_crosslinked_from": "7.8",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2026-10 кл · 2026-10 · Зад. 10.1",
+      "statement": "Числата a1, a2, . . . , a2026 образуват в този ред аритметична прогресия. Да се намери a1, ако е известно, че a1 + a2 + · · · + a2026 = 2026 и 1 a1.a2 + 1a2.a3 + · · · + 1a2025.a2026 = −2025.",
+      "solution": "Решение. Ако $d$ е разликата на дадената аритметична прогресия, то ако допуснем,\nче $d = 0$, то $a_1 = a_2 = \\dots = a_{2026} = 1$ и второто равенство няма да е изпълнено.\nИмаме\n\n$$a_1 + a_2 + \\dots + a_{2026} = \\frac{2026}{2}(a_1 + a_{2026}) \\Rightarrow a_1 + a_{2026} = 2.$$\n\nОт друга страна,\n\n$$\\begin{aligned} \\frac{1}{a_1.a_2} + \\frac{1}{a_2.a_3} + \\dots + \\frac{1}{a_{2025}.a_{2026}} &= \\frac{1}{d} \\left( \\frac{a_2 - a_1}{a_1.a_2} + \\frac{a_3 - a_2}{a_2.a_3} + \\dots + \\frac{a_{2026} - a_{2025}}{a_{2025}.a_{2026}} \\right) = \\\\ &= \\frac{1}{d} \\left( \\frac{1}{a_1} - \\frac{1}{a_2} + \\frac{1}{a_2} - \\frac{1}{a_3} + \\dots + \\frac{1}{a_{2025}} - \\frac{1}{a_{2026}} \\right) = \\\\ &= \\frac{1}{d} \\cdot \\frac{a_{2026} - a_1}{a_1.a_{2026}} = \\frac{2025}{a_1.a_{2026}} \\Rightarrow a_1.a_{2026} = -1. \\end{aligned}$$\n\nОт формулите на Виет получаваме, че $a_1$ и $a_{2026}$ са корени на квадратното уравнение\n$x^2 - 2x - 1 = 0$, т.е. $a_1 = 1 \\pm \\sqrt{2}$ и съответно $d = \\frac{1}{2025}(a_{2026} - a_1) = \\mp \\frac{2\\sqrt{2}}{2025}$.\n\nОстава да проверим, че за тези стойности членовете на редицата са ненулеви. Ако\nдопуснем, че $a_k = a_1 + (k - 1)d = 0$ за някое естествено число $k \\le 2026$, то $k = 1 - \\frac{a_1}{d}$,\nкоето е ирационално число и достигаме до противоречие.\n\nОценяване. (7 точки) 1 т. за $a_1 + a_{2026} = 2$; 3 т. за $a_1.a_{2026} = -1$; 2 т. за $a_1 = 1 \\pm \\sqrt{2}$\nи $d = \\mp \\frac{2\\sqrt{2}}{2025}$; 1 т. за проверката, че $a_k \\ne 0$.\n\nСвалено от Klasirane.com",
+      "answer": "$a_1 = 1 \\pm \\sqrt{2}$",
+      "difficulty": "medium",
+      "techniques": [
+        "arithmetic_progression",
+        "telescoping_sum",
+        "vieta_formulas"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на аритметична прогресия и телескопична сума. Основната техника е разлагането на сумата от реципрочни произведения чрез разликата на прогресията. Решението води до квадратно уравнение за a1 и a2026, което се решава с Виет."
+    },
+    {
+      "source": "OLI-3-Национален кръг-2022-9-12 кл · 2022-None · Зад. 5",
+      "statement": "Даден е равнобедрен триъгълник $ABC$ със страни $AB = 4$, $BC = AC = 6$. Върху страната $AB$ са избрани последователно точки $X_1, X_2, X_3, \\dots$, за които отсечките $AX_1, X_1X_2, X_2X_3, \\dots$ образуват безкрайна геометрична прогресия с първи член 3 и частно $\\frac{1}{4}$. Върху страната $CB$ са избрани последователно точки $Y_1, Y_2, Y_3, \\dots$, за които отсечките $CY_1, Y_1Y_2, Y_2Y_3, \\dots$ образуват безкрайна геометрична прогресия с първи член 3 и частно $\\frac{1}{2}$. Върху страната $AC$ са избрани последователно точки $Z_1, Z_2, Z_3, \\dots$, за които отсечките $AZ_1, Z_1Z_2, Z_2Z_3, \\dots$ образуват безкрайна геометрична прогресия с първи член 3 и частно $\\frac{1}{2}$. Да се намерят всички тройки $(a, b, c)$ от естествени числа, за които отсечките $AY_a, BZ_b$ и $CX_c$ се пресичат в една точка.",
+      "solution": "Решение. Нека $n > 1$ е естествено число. Върху отсечка $PQ$ с дължина $\\frac{a_1}{1 - \\frac{1}{n}}$ са избрани точки $T_1, T_2, \\dots$, за които отсечките $PT_1, T_1T_2, T_2T_3, \\dots$ образуват геометрична прогресия с първи член $a_1$ и частно $\\frac{1}{n}$. Ще докажем, че $\\frac{PT_s}{T_sQ} = n^s - 1$. Наистина, от $PT_s = \\frac{a_1(1 - (\\frac{1}{n})^s)}{1 - \\frac{1}{n}}$ и $PQ = \\frac{a_1}{1 - \\frac{1}{n}}$ получаваме\n\n$$\\frac{PT_s}{T_sQ} = \\frac{\\frac{a_1(1 - (\\frac{1}{n})^s)}{1 - \\frac{1}{n}}}{\\frac{a_1}{1 - \\frac{1}{n}} - \\frac{a_1(1 - (\\frac{1}{n})^s)}{1 - \\frac{1}{n}}} = n^s - 1$$\n\nКато приложим това твърдение и теоремата на Чева, получаваме:\n\n$$1 = \\frac{AX_c}{X_cB} \\cdot \\frac{BY_a}{Y_aC} \\cdot \\frac{CZ_b}{Z_bA} = \\frac{4^c - 1}{(2^a - 1)(2^b - 1)}$$\n\nи следователно $4^c - 1 = (2^a - 1)(2^b - 1) \\iff 4^c = 2^{a+b} - 2^a - 2^b + 2$. Тъй като $a, b, c \\geq 1$ от последното равенство следва, че $a = 1$ (без ограничение $a \\leq b$). Тогава $4^c = 2^{a+b} - 2^a - 2^b + 2 \\Rightarrow 4^c = 2^b \\iff b = 2c$ и така получаваме $(a, b, c) = (1, 2k, k)$ или $(a, b, c) = (2k, 1, k)$ за $k \\in \\mathbb{N}$.\n\n**Оценяване.** (7 точки) 2 т. за намиране на $AX_i/X_iB$ като $4^i - 1$ или някое от другите отношения. 2 т. прилагане на Чева и получаване на равенството със степените. 3 т. за решаването му и намиране на отговора.",
+      "answer": "Всички тройки $(a, b, c) = (1, 2k, k)$ или $(2k, 1, k)$ за $k \\in \\mathbb{N}$",
+      "difficulty": "medium",
+      "techniques": [
+        "ceva_theorem",
+        "geometric_progressions",
+        "diophantine_equations"
+      ],
+      "confidence": "exact",
+      "reasoning": "Основна техника - теорема на Чева (STEPS 1.2). Отношенията се намират от геометричните прогресии и се решава диофантово уравнение.",
+      "_crosslinked_from": "1.2",
+      "_crosslink_confidence": 0.7
+    },
+    {
+      "source": "OLI-2-Областен кръг-1996-10 кл · 1996-10 · Зад. 10.4",
+      "statement": "The real numbers $a_1, a_2, \\ldots, a_n$ ($n \\geq 3$) form an arithmetic progression. There exists a permutation $a_{i_1}, a_{i_2}, \\ldots, a_{i_n}$ of the same numbers, which is a geometric progression. Find the numbers $a_1, a_2, \\ldots, a_n$, if they are pairwise different and the biggest among them is equal to 1996.",
+      "solution": "Let $a_1 < a_2 < \\dots < a_n = 1996$ and $q$ be the quotient of the geometric progression $a_{i_1}, a_{i_2}, \\dots, a_{i_n}$. We have $q \\neq 0$ and $q \\neq 1$. The numbers $a_{i_n}, a_{i_{n-1}}, \\dots, a_{i_1}$ form also a geometric progression which quotient is $\\frac{1}{q}$. Thus, we can assume that $|q| > 1$, i.e. $q > 1$ or $q < -1$. Then $|a_{i_1}| < |a_{i_2}| < \\dots < |a_{i_n}|$, from where $a_i \\neq 0$ for all $i$.\n\nMore exactly, either all numbers are positive ($q > 1$) and then $a_{i_1} < a_{i_2} < \\dots < a_{i_n}$, which together with $a_1 < a_2 < \\dots < a_n$ shows that $a_{i_k} = a_k$, i.e. the numbers $a_1, a_2, \\dots, a_n$ form an arithmetic as well as a geometric progression, or the numbers $a_{i_1}, a_{i_2}, \\dots, a_{i_n}$ change their signs alternatively ($q < -1$) and then the positive ones form an increasing geometric progression with quotient $q^2$, and the order is the same as in the arithmetic progression. (The numbers $a_1, a_2, \\dots, a_n$ could not be all negative, because $a_n = 1996 > 0$.)\n\nAssume now that 3 among the numbers $a_1, a_2, \\dots, a_n$ are positive. Then $0 < a_{n-2} < a_{n-1} < a_n$ and they form a geometric as well as an arithmetic progression. Therefore $2a_{n-1} = a_{n-2} + a_n$ and $a_{n-1}^2 = a_{n-2}a_n$. From here $a_{n-2} = a_{n-1} = a_n$, which is a contradiction.\n\nThus at most two among the numbers are positive. Analogously, at most two among the numbers are negative. Consequently, $n \\leq 4$.\n\nLet $n = 4$. Then $a_1 < a_2 < 0 < a_3 < a_4$ and $2a_2 = a_1 + a_3$, $2a_3 = a_2 + a_4$. But $q < -1$ and the geometric progression is either $a_3, a_2, a_4, a_1$ or $a_2, a_3, a_1, a_4$. Let it be $a_3, a_2, a_4, a_1$. Then $a_2 = a_3q$, $a_4 = a_3q^2$ and $a_1 = a_3q^3$. Thus, $2a_3q = a_3q^3 + a_3$ and $2a_3 = a_3q + a_3q^2$. From here $q = 1$, which contradicts to $q < -1$.\n\nSo $n = 3$. There are two possibilities:\n\nI. $a_1 < a_2 < 0 < a_3 = 1996$. Then the geometric progression is $a_2$, $a_3 = a_2q$, $a_1 = a_2q^2$. It follows from $2a_2 = a_1 + a_3$ that $2a_2 = a_2q^2 + a_2q$, i.e. $q^2 + q - 2 = 0$. Thus, $q = -2$, $-2a_2 = 1996$, $a_2 = -998$ and the numbers are $(-3992; -998; 1996)$.\n\nII. $a_1 < 0 < a_2 < a_3 = 1996$. Now the geometric progression is $a_2$, $a_1 = a_2q$, $a_3 = a_2q^2$. From $2a_2 = a_1 + a_3$ we obtain $2a_2 = a_2q + a_2q^2$, i.e. again $q = -2$. Therefore, $a_3 = 4a_2 = 1996$ and $a_2 = 499$. The numbers are $(-998; 499; 1996)$.",
+      "answer": "The numbers are either $(-3992, -998, 1996)$ or $(-998, 499, 1996)$.",
+      "difficulty": "hard",
+      "techniques": [
+        "arithmetic_progression",
+        "geometric_progression",
+        "systems_of_equations"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата за комбиниране на аритметична и геометрична прогресия. Няма специфична точка в STEPS, така че R.6 (Прогресии) е най-близко."
     }
   ]
 }

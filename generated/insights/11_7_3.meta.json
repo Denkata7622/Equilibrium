@@ -1,0 +1,40 @@
+{
+  "key": "11.7#3",
+  "point_id": "11.7",
+  "idx": 3,
+  "difficulty": "easy",
+  "source": "OLI-3-Национален кръг-1987-9-12 кл · 1987-None · Зад. 2",
+  "techniques": [
+    "complex_numbers",
+    "periodicity",
+    "group_actions"
+  ],
+  "word_count": 1708,
+  "score": 8,
+  "verdict": "revise",
+  "status": "done",
+  "structure": {
+    "missing": [],
+    "has_boxed": true,
+    "why_count": 7,
+    "sec12_words": 150,
+    "ends_ok": true,
+    "fatal": [],
+    "soft": []
+  },
+  "caught_errors_in_solution": [
+    "Записаното условие не изключва ω₂=0, при което търсеното частно е неопределено; необходимо е уточнението ω₂≠0.",
+    "Без условие за положителност на ъглите s трябва да е цяло число, а не непременно положително цяло число.",
+    "Попълнена е скритата стъпка Aₖ≠O₁ чрез запазването на разстоянието до центъра."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 103.8,
+  "generated_at": "2026-11-21T10:35:21.977278",
+  "lesson_refs": [
+    "8.1",
+    "11.7"
+  ],
+  "enriched": true,
+  "enriched_at": "2026-11-22T18:18:53.000462"
+}

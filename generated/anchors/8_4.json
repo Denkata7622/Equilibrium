@@ -1,39 +1,84 @@
 {
   "point_id": "8.4",
-  "total": 2,
+  "total": 5,
   "by_difficulty": {
     "easy": 0,
-    "medium": 0,
-    "hard": 2
+    "medium": 4,
+    "hard": 1
   },
   "problems": [
     {
-      "source": "OLI-2-Областен кръг-2007-10 кл · 2007-10 · Зад. 6",
-      "statement": "Даден е правилен 16-ъгълник A₁A₂ . . . A₁₆, чиито върхове лежат върху окръжност k с център O. Възможно ли е да бъдат избрани част от върховете на 16-ъгълника така, че при последователно завъртане около O на ъгли 360°/16, 2 · 360°/16, . . . , 16 · 360°/16, отсечките, свързващи избраните върхове, да опишат всички страни и диагонали на 16-ъгълника точно по два пъти?",
-      "solution": "Отговорът е не.\nЗадачата може да бъде преформулирана така: съществува ли подмножество на {0,1,...,15}, за което всевъзможните разлики aᵢ − aⱼ (mod 16) описват точно по два пъти всички ненулеви остатъци?\nДа допуснем, че съществува такова подмножество A. Очевидно то има 6 елемента.\nДа означим с mᵢ, i = 0,1,2,3, броят на числата в A, които дават остатък i при деление на 4.\nИмаме, че ∑mᵢ = 6, ∑mᵢ(mᵢ − 1) = 6, ∑mᵢmᵢ₊₁ = ∑mᵢmᵢ₊₂ = ∑mᵢmᵢ₊₃ = 8. Оттук получаваме две възможности:\n(m₀,m₁,m₂,m₃) = (3,1,1,1), (1,3,1,1), (1,1,3,1), (1,1,1,3)\nили\n(m₀,m₁,m₂,m₃) = (0,2,2,2), (2,0,2,2), (2,2,0,2), (2,2,2,0).\nНека A = {a₁,...,a₆}. Можем да считаме, че точно четири от тези числа са четни, например a₁,a₂,a₃,a₄, като a₁ = 0. Разликите aᵢ − aⱼ (mod 16), 1 ≤ i,j ≤ 4, описват всички четни остатъци по два пъти с изключение на два. Възможно е те да са: (i) 2 и 4; (ii) 4 и 12; (iii) 6 и 10; (iv) 8 и 8.\nСлучаят (iii) е еквивалентен на случая (i), тъй като се получава от него чрез умножение с 3 по модул 16. Можем да разгледаме множество B = {b₁,b₂,b₃,b₄}, bᵢ = aᵢ/2, с елементи от {0,1,...,7}, в което липсващите разлики по модул 8 са разликите от (i)–(iv), разделени на 2. Във всички случаи можем да считаме, че b₀ = 0 и b₁ = 1.\nТогава в случаите (i) и (ii) имаме съответно, че B = {0,1,4,6} и B = {0,1,4,7}, а случаят (iv) е невъзможен. Така A = {0,2,8,12,x,y} или A = {0,2,8,14,x,y}, където x,y са нечетни числа, различаващи се съответно с 2 или 4. С непосредствена проверка се убеждаваме, че при всеки техен избор не получаваме множество с желаното свойство.",
-      "answer": "Не.",
-      "difficulty": "hard",
+      "source": "OLI-2-Областен кръг-1995-11 кл · 1995-11 · Зад. 11.3",
+      "statement": "Let $n > 1$ be an integer. Find the number of the permutations $(a_1, a_2, \\ldots, a_n)$ of the numbers $1, 2, \\ldots, n$ with the following property: there exists only one index $i \\in \\{1, 2, \\ldots, n - 1\\}$ such that $a_i > a_{i+1}$.",
+      "solution": "Denote by $p_n$ the number of the permutations with the given properties. Obviously, $p_1 = 0$ and $p_2 = 1$. Let $n \\geq 2$. The number of the permutations with $a_n = n$ is equal to $p_{n-1}$. Consider all the permutations $(a_1, a_2, \\ldots, a_n)$ with $a_i = n$, where $1 \\leq i \\leq n-1$ is fixed. Their number is $\\binom{n-1}{i-1}$. Consequently\n\n$$p _ {n} = p _ {n - 1} + \\sum_ {i = 1} ^ {n - 1} \\binom {n - 1} {i - 1} = p _ {n - 1} + 2 ^ {n - 1} - 1.$$\n\nFrom here\n\n$$\\begin{array}{l} p _ {n} = (2 ^ {n - 1} - 1) + (2 ^ {n - 2} - 1) + \\dots + (2 - 1) \\\\ = 2 ^ {n} - n - 1. \\\\ \\end{array}$$",
+      "answer": "$2^n - n - 1$",
+      "difficulty": "medium",
       "techniques": [
-        "modular_combinatorics",
-        "difference_sets",
-        "double_counting"
+        "permutations",
+        "recurrence_relation"
       ],
       "confidence": "exact",
-      "reasoning": "Задачата изисква преброяване на разлики по модул 16 и двойно покритие на всички страни/диагонали – типична задача за включване‑изключване и комбинаторни тъждества."
+      "reasoning": "Задачата включва комбинаторика на пермутации с точно една инверсия и рекурентна връзка.",
+      "_crosslinked_from": "8.6",
+      "_crosslink_confidence": 0.85
     },
     {
-      "source": "OLI-3-Национален кръг-2006-9-12 кл · 2006-None · Зад. 3",
-      "statement": "Естествените числа са записани едно след друго в нарастващ ред и по този начин е получена една безкрайна редица от цифри. Да се намери най-малкото естествено число $k$, такова че измежду първите $k$ цифри на получената редица всеки две ненулеви цифри се срещат различен брой пъти.",
-      "solution": "Да означим с $M_n$ множеството от цифрите на числата $1, 2, \\dots, n$. Първо ще намерим най-малкото естествено число $n$, за което всеки две ненулеви цифри се срещат различен брой пъти в $M_n$. Нека търсеното число е $n = \\overline{a_1a_2\\dots a_t}$. Да добавим към всяко от числата $1, 2, \\dots, n-1$ необходимия брой нули от ляво така, че всички числа да станат $t$-цифрени. При това броят на появяванията на всяка ненулева цифра остава непроменен.\n\nНека $B_i^j$ за $i = 1, 2, \\dots, t$ и $j = 1, 2, \\dots, 9$ е броят на появяванията на цифрата $j$ на позиция $i$ измежду числата $1, 2, \\dots, n$. Да забележим, че за всяко $i$ и $j \\le 8$, ако числото А съдържа цифрата $j+1$ на позиция $i$, то числото, което се получава от А чрез замяна на тази цифра с $j$, е по-малко от А. Следователно $B_i^j \\ge B_i^{j+1}$. Освен това при фиксирано $i$ неравенството $B_i^j \\ge B_i^{j+1}$ е изпълнено най-много за две двойки цифри $j$ и $j+1$, а именно $a_{i-1}$ и $a_i$, $a_i$ и $a_{i+1}$, като ако $i = t$, то е изпълнено само за двойката $a_t$ и $a_{t+1}$. Следователно $t \\ge 5$, понеже имаме 8 двойки цифри от вида $(j, j+1)$.\n\nАко $n = 13578$, то $B_1^1 > B_1^2$, $B_2^2 > B_2^3$, $B_3^3 > B_3^4$, $B_4^4 > B_4^5$, $B_5^5 > B_5^6$, $B_6^6 > B_6^7$, $B_7^7 > B_7^8$, $B_8^8 > B_8^9$, т.е. $n = 13578$ удовлетворява условието. Ако $m < 13578$ също удовлетворява условието, то първата цифра на $m$ е 1, а втората е 0, 1, 2 или 3. Понеже $B_1^j > B_1^{j+1}$ е изпълнено само за $j = 1$, то ако втората цифра е 0, 1 или 2, то лесно се вижда че поне две последователни цифри се срещат равен брой пъти. Следователно втората цифра на $m$ е 3. С аналогични разсъждения се вижда, че третата, четвъртата и петата цифри на $m$ са съответно 5, 7 и 8. Следователно $n = 13578$ е най-малкото естествено число, за което всеки две ненулеви цифри се срещат различен брой пъти в $M_n$.\n\nТъй като общият брой на цифрите на числата $1, 2, 3, \\dots, 13578$ е $9.1 + 90.2 + 900.3 + 9000.4 + 3579.5 = 56784$ то числото 56784 има свойството от условието.\n\nДа допуснем, че има $k < 56784$, което също изпълнява условието. Тогава съответната редица ще се състои от цифрите на $M_s$, за някое естествено $s < 13578$ и няколко от цифрите на $s+1$. Съгласно горните разсъждения, съществуват две последователни цифри, различни от цифрите на $s$, евентуално с изключение на последната, които се срещат равен брой пъти в $M_s$. Ако последната цифра на $s$ не е 9, то тези две цифри се срещат равен брой пъти и в последната редица, защото цифрите на $s$ и $s + 1$ с изключение на последната съвпадат. Ако $s$ окончава на 9, то $s + 1$ окончава на 0 и следователно $s+1 < 13578$, като отново се вижда, че има две последователни цифри, различни от цифрите на $s + 1$, които се срещат равен брой пъти.",
-      "answer": "56784",
-      "difficulty": "hard",
+      "source": "OLI-2-Областен кръг-1995-12 кл · 1995-12 · Зад. 12.3",
+      "statement": "Let $n > 1$ be an integer. Find the number of the permutations $(a_1, a_2, \\ldots, a_n)$ of the numbers $1, 2, \\ldots, n$ with the following property: there exists only one index $i \\in \\{1, 2, \\ldots, n - 1\\}$ such that $a_i > a_{i+1}$.",
+      "solution": "Denote by $p_n$ the number of the permutations with the given properties. Obviously, $p_1 = 0$ and $p_2 = 1$. Let $n \\geq 2$. The number of the permutations with $a_n = n$ is equal to $p_{n-1}$. Consider all the permutations $(a_1, a_2, \\ldots, a_n)$ with $a_i = n$, where $1 \\leq i \\leq n-1$ is fixed. Their number is $\\binom{n-1}{i-1}$. Consequently\n\n$$p _ {n} = p _ {n - 1} + \\sum_ {i = 1} ^ {n - 1} \\binom {n - 1} {i - 1} = p _ {n - 1} + 2 ^ {n - 1} - 1.$$\n\nFrom here\n\n$$\\begin{array}{l} p _ {n} = (2 ^ {n - 1} - 1) + (2 ^ {n - 2} - 1) + \\dots + (2 - 1) \\\\ = 2 ^ {n} - n - 1. \\\\ \\end{array}$$",
+      "answer": "2^n - n - 1",
+      "difficulty": "medium",
       "techniques": [
-        "pigeonhole_principle",
-        "digit_counting",
-        "combinatorial"
+        "recurrence_relation",
+        "combinatorial_counting"
       ],
       "confidence": "exact",
-      "reasoning": "Problem reduces to counting digit occurrences and applying pigeonhole arguments; corresponds to combinatorial identities (8.4)."
+      "reasoning": "Задачата за пермутации с точно едно нарушение се свежда до рекурентна връзка, която се решава с комбинаторни техники.",
+      "_crosslinked_from": "8.8",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2013-10 кл · 2013-10 · Зад. 10.4",
+      "statement": "Нека A(n,k) е броят на k-орките (a₁,...,aₖ) от цели числа, за които е изпълнено a₁ + ... + aₖ₋₁ \\le  n, a₁ + ... + aₖ₋₁ + aₖ > n, 1 \\le  aᵢ \\le  n, i = 1,...,k. За кое k стойността на A(12,k) е максимална?",
+      "solution": "**Решение.** Най-напред да пресметнем броя на $k$-орките $( a _ { 1 } , \\ldots , a _ { k } )$ от цели числа $1 \\leq a _ { i } \\leq n$, за които $a _ { 1 } + \\ldots + a _ { k } \\leq n$. Очевидно тази сума може да взема сойностите $k , k + 1 , \\ldots , n$ и следователно броят на тези $k$-орки е\n\n$$\\left( \\begin{array} { l } { k - 1 } \\\\ { k - 1 } \\end{array} \\right) + \\left( \\begin{array} { l } { k } \\\\ { k - 1 } \\end{array} \\right) + \\ldots + \\left( \\begin{array} { l } { n - 1 } \\\\ { k - 1 } \\end{array} \\right) = \\left( \\begin{array} { l } { n } \\\\ { k } \\end{array} \\right) .$$\n\nОттук получаваме, че броят на $k$-орките $( a _ { 1 } , \\ldots , a _ { k } )$, за които $a _ { 1 } + \\ldots + a _ { k - 1 } \\leq n$, $a _ { 1 } + \\ldots + a _ { k - 1 } + a _ { k } > n$, $1 \\leq a _ { i } \\leq n$ е\n\n$$A ( n , k ) = n { \\binom { n } { k - 1 } } - { \\binom { n } { k } } = { \\binom { n } { k } } \\left( { \\frac { n k } { n - k + 1 } } - 1 \\right) .$$\n\nОстава да определим, за кое $k$\n\n$$A ( 1 2 , k ) = { \\binom { 1 2 } { k } } \\left( { \\frac { 1 2 k } { 1 3 - k } } - 1 \\right)$$\n\nе максимално. Тъй като за $1 \\leq k \\leq 6$ и двата множителя растат, то е максимумът се достига за $6 \\leq k \\leq 1 2$. Имаме\n\n$$\\frac { A ( 1 2 , k + 1 ) } { A ( 1 2 , k ) } = \\frac { k ( 1 3 - k ) } { k ^ { 2 } - 1 } .$$\n\nТова отношение е по-голямо от 1 за $k = 6$ и по-малко от 1 за $k = 7 , \\ldots , 1 2$. Следователно търсеният максимум се достига за $k = 7$.",
+      "answer": "k = 7",
+      "difficulty": "medium",
+      "techniques": [
+        "combinatorial_identities",
+        "stars_and_bars",
+        "binomial_coefficients"
+      ],
+      "confidence": "exact",
+      "reasoning": "Комбинаторна задача за преброяване на k-орки с ограничения. Решението използва комбинаторни тъждества и свойства на биномните коефициенти."
+    },
+    {
+      "source": "OLI-3-Национален кръг-1989-9-12 кл · 1989-None · Зад. 4",
+      "statement": "Върху n точки, лежащи на окръжност, са написани числа, всяко от които е +1 или −1. Извършва се следната операция: между всеки две числа се написва произведението им, след което се изтриват предните n числа. Известно e, че какъвто и да бъде първоначалният набор от +1 и −1, след кдаен брой такива операции ще останат само единици. Да се докаже, че n е степен на числото 2.",
+      "solution": "Решение. Нека $a_1$ е едно число от първоначалния набор, а останалите числа по посока на часовни-ковата стрелка са $a_2, \\ldots, a_n$. След първите няколко операции получаваме съответно наборите\n\n$$a_1 a_2, a_2 a_3, \\ldots, a_n a_1$$\n\n$$a_1 a_2^2 a_3, a_2 a_3^2 a_4, \\ldots, a_n a_1^2 a_2$$\n\n$$a_1 a_2^3 a_3^3 a_4, a_2 a_3^3 a_4^3 a_5, \\ldots, a_n a_1^3 a_2^3 a_3$$\n\nи т. н. По индукция лесно се проверява, че след $t$ операции ще се получи наборът\n\n$$a_1 a_2^{r(1)} a_3^{r(2)} \\ldots a_1^{r(t-1)} a_{t-1}, \\ldots, a_n a_1^{r(1)} a_2^{r(2)} \\ldots a_{t-1}^{r(t-1)} a_t,$$\n\nкъдето с $r(i)$ е означен биномният коефициент $\\binom{t}{i}, i = 1, 2, \\ldots, t-1$ и считаме, че $a_{n-1} = a_1, a_{n-2} = a_2$ и т. н. Нека първоначалният набор е $a_1 = 1, a_2 = a_3 = \\ldots = a_n = -1$. По условие след краен брой операции (например $t$ на брой) ще получим само единици. При това можем да считаме, че $t$ е степен на числото 2 (в противен случай ще извършим още няколко операции, при което единиците се запазват).\n\nНо ако $t = 2^m$, не е трудно да се установи, че всичките биномни коефициенти $\\binom{t}{1} \\cdots \\binom{t}{t-1}$ са четни числа.\n\nЕдно от числата, което се получава след $t$ операции, е $a_1 a_2^{r(1)} a_3^{r(2)} \\ldots a_t^{r(t-1)} a_{t+1}$. От горните раз-съждения следва, че то е равно на $a_1 a_{t+1}$. Но от избора на $a_1$ от $a_2 \\ldots, a_n$ се вижда, че за да бъде това число единица, трябва $a_{t+1} = a_1$. Тогава $t+1$ е число от вида $qn+1$ за някое естествено число $q$ и значи $t = qn$. Тъй като $t$ е степен на числото 2, същото е вярно и за $n$.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "биномни_коефициенти",
+        "операции_с_числа"
+      ],
+      "confidence": "exact",
+      "reasoning": "Решение използва биномни коефициенти и свойства на операциите с числа по окръжност. Това е комбинаторна задача, вписваща се в точка 8.5.",
+      "_crosslinked_from": "8.5",
+      "_crosslink_confidence": 0.8
+    },
+    {
+      "source": "OLI-3-Национален кръг-1997-9-12 кл · 1997-None · Зад. 6",
+      "statement": "Let $X$ be a set of $n+1$ elements, $n \\ge 2$. Ordered $n$-tuples $(a_1, a_2, \\dots, a_n)$ and $(b_1, b_2, \\dots, b_n)$ formed from distinct elements of $X$ are called 'disjoint' if distinct indices $i$ and $j$ exist such that $a_i = b_j$. Find the maximal number of $n$-tuples any two of which are 'disjoint'.",
+      "solution": "**Solution:** For $n \\ge 2$ denote by $A(n+1)$ the maximum number of ordered $n$-tuples such that any two of them are 'disjoint'. Also let $S(X)$ be a set of such $n$-tuples for which $|S(X)| = A(n)$. It is clear that for any $\\alpha \\in X$ the following holds:\n$$|\\{(a_1, a_2, \\dots, a_n) \\in S(X) | a_1 = \\alpha\\}| \\le A(n).$$\nThus $A(n+1) \\le (n+1)A(n)$. Therefore\n$$A(n+1) \\le (n+1)n \\dots A(3).$$\nDirect verification shows that $A(3) = 3$, so $A(n+1) \\le \\frac{(n+1)!}{2}$.\n\nWe prove now that $A(n+1) = \\frac{(n+1)!}{2}$ by constructing a set of $\\frac{(n+1)!}{2}$ ordered $n$-tuples, any two of which are 'disjoint'. We may assume that $X = \\{1, 2, \\dots, n+1\\}$. Consider a set $E$ of all even permutations of $1, 2, \\dots, n+1$. (A permutation $(a_1, a_2, \\dots, a_{n+1})$ is called even if the number of pairs $(i, j)$ such that $i < j$ and $a_i > a_j$ is an even number.) The set\n$$\\{(a_1, a_2, \\dots, a_n) | (a_1, a_2, \\dots, a_n, a_{n+1}) \\in E\\}$$\nhas $\\frac{(n+1)!}{2}$ ordered $n$-tuples, any two of which are 'disjoint'.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "combinatorics",
+        "permutations",
+        "disjoint_tuples"
+      ],
+      "confidence": "exact",
+      "reasoning": "The problem asks for the maximum number of n-tuples such that any two share an element. The solution uses combinatorial design and properties of permutations, specifically even permutations. The main theme is combinatorial identities and extremal set theory."
     }
   ]
 }

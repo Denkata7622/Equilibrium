@@ -1,0 +1,101 @@
+{
+  "pdf": "OLI-2-Областен кръг-2006-12 кл-probs",
+  "version": 3,
+  "extraction_model": "deepseek/deepseek-r1-0528",
+  "extraction_level": "L0_native",
+  "verification": {
+    "verdict": "PASS_WITH_WARNINGS",
+    "expected": 6,
+    "actual": 4,
+    "verified": 4,
+    "hallucinated": 0,
+    "unreadable": 0,
+    "wrong_grade": 0,
+    "duplicates": 0,
+    "null_num": 0,
+    "numeric_mismatch": 0,
+    "avg_confidence": 1.0,
+    "expected_grade": 12,
+    "grade_distribution": {
+      "12": 4
+    },
+    "escalate_to": "L1_ocr",
+    "reasons": [
+      "missing: 4 < 6±0",
+      "adjusted: source has 4 markers (expected was 6)"
+    ],
+    "ai_checked": true,
+    "ai_result": {
+      "missing_count": 2,
+      "hallucinated_indices": [],
+      "overall": "missing"
+    }
+  },
+  "extracted_at": "2026-11-07T14:21:15.729810",
+  "problems": [
+    {
+      "num": "12.1",
+      "year": 2006,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Да се намери лицето на трпъгълника, определен от правата $g$ с уравнение $x - y + 1 = 0$ и допирателните към графиката на параболата $y = x^2 - 4x + 5$ в допирните ѝ точки с правата $g$.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 12.1. Да се намери лицето на трпъгълника, определен от правата $g$ с уравнение $x - y + 1 = 0$ и допирателните към графиката на параболата $y = x^2 - 4x + 5$ в допирните ѝ точки с правата $g$.",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "12.1",
+      "_quote_grade": "EXACT",
+      "pdf": "OLI-2-Областен кръг-2006-12 кл-probs"
+    },
+    {
+      "num": "12.3",
+      "year": 2006,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Да се намерят всички реални числа $a$, за които неравенството $x^4 + 2ax^3 + a^2x^2 - 4x + 3 > 0$ е в сила за всяко реално число $x$.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 12.3. Да се намерят всички реални числа $a$, за които неравенството $x^4 + 2ax^3 + a^2x^2 - 4x + 3 > 0$ е в сила за всяко реално число $x$.",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "12.3",
+      "_quote_grade": "EXACT",
+      "pdf": "OLI-2-Областен кръг-2006-12 кл-probs"
+    },
+    {
+      "num": "12.4",
+      "year": 2006,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Да се намерят всички естествени числа $n$, за които равенството $\\frac{\\sin(n\\alpha)}{\\sin\\alpha} - \\frac{\\cos(n\\alpha)}{\\cos\\alpha} = n - 1$ е вярно за всички $\\alpha \\neq \\frac{k\\pi}{2}$, $k \\in \\mathbb{Z}$.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 12.4. Да се намерят всички естествени числа $n$, за които равенството $\\frac{\\sin(n\\alpha)}{\\sin\\alpha} - \\frac{\\cos(n\\alpha)}{\\cos\\alpha} = n - 1$ е вярно за всички $\\alpha \\neq \\frac{k\\pi}{2}$, $k \\in \\mathbb{Z}$.",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "12.4",
+      "_quote_grade": "EXACT",
+      "pdf": "OLI-2-Областен кръг-2006-12 кл-probs"
+    },
+    {
+      "num": "12.5",
+      "year": 2006,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Равнина пресича пирамида $ABCD$ и разделя медианите на трпъгълниците $DAB$, $DBC$ и $DCA$ от върха $D$ съответно в отношения $1 : 2$, $1 : 3$ и $1 : 4$, считано от $D$. Да се намери отношението на обемите на двете части на пирамидата, отсечени от равнината.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 12.5. Равнина пресича пирамида $ABCD$ и разделя медианите на трпъгълниците $DAB$, $DBC$ и $DCA$ от върха $D$ съответно в отношения $1 : 2$, $1 : 3$ и $1 : 4$, считано от $D$. Да се намери отношението на обемите на двете части на пирамидата, отсечени от равнината.",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "12.5",
+      "_quote_grade": "EXACT",
+      "pdf": "OLI-2-Областен кръг-2006-12 кл-probs"
+    }
+  ]
+}

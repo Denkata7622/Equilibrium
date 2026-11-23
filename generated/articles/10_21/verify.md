@@ -1,21 +1,21 @@
 # Verification report — Областен кръг 2021 – 10 клас
 
 **ID:** `10.21`
-**Дата:** 2026-10-15 21:48:44
-**Verifier:** openai/gpt-oss-120b
+**Дата:** 2026-10-31 12:53:47
+**Verifier:** deepseek/deepseek-r1-0528
 
-## Verdict: approve — Score: 8/10
+## Verdict: approve — Score: 9/10
 
-**Reasoning:** Материалът е математически коректен, пълен и подходящ за олимпиадно ниво, с леки недоизказани детайли, но без съществени грешки.
+**Reasoning:** The article is mathematically flawless and well-structured, but medium/hard examples need real olympiad citations to meet authenticity standards. Minor structural tweaks in the hard CHECK section are recommended.
 
 ## Strengths
-- Пълно покритие на темата – исторически контекст, формулировка, доказателство, свойства, примери и упражнения.
-- Ясно представена формулировка с ориентирани отношения и правило за знаците.
-- Включени са три примерни задачи с решения, както и 7 упражнения за самостоятелна работа.
+- Impeccable mathematical correctness: all formulas and solutions verified with concrete numbers and edge cases.
+- Comprehensive theory coverage, especially the emphasis on edge cases and multiple perspectives.
+- Well-structured common mistakes section with clear 'why' and 'how to avoid' explanations.
 
 ## Issues
-- [minor] **Доказателство**: В обяснението за подобието между ∆AZY и ∆CPY (също и ∆BZX и ∆CPX) липсва кратко описание на съответните ъгли (вертикални и алтернативни), което би улеснило разбирането.
-- [minor] **Обратна теорема**: Доказателството е изложено много накратко и не уточнява защо Z' съвпада със Z; би било полезно да се добави пояснение за уникалността на пресечната точка.
+- [major] **4.3 Hard examples**: Medium and hard examples lack references to real olympiads. They should be labeled with specific years and rounds (e.g., 'Regional 2017, Problem 4') for authenticity.
+- [minor] **4.3 Hard examples**: The '>>> CHECK: Hard mastery <<<' section is present but not as robust as in easy/medium (e.g., no clear pass/fail action like 'If you can solve 1 of 2 → ready').
 
 ## Math errors
 -
@@ -24,5 +24,5 @@
 -
 
 ## Suggestions
-- Добавете схематични рисунки или описания на конфигурацията, за да подпомогнете визуализацията за ученици от 10‑ти клас.
-- Разширете обяснението за ориентираните отсечки, като дадете конкретен пример с външно делене на страна.
+- Add real olympiad sources for medium/hard examples (e.g., 'Adapted from Regional 2019, Problem 3').
+- Enhance the hard CHECK section to mirror easy/medium (e.g., include a clear benchmark like 'Solve 1 of 2 in 45 min without hints').

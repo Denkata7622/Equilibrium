@@ -1,0 +1,23 @@
+{
+  "key": "1.7#1",
+  "point_id": "1.7",
+  "idx": 1,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-1999-11 кл · 1999-11 · Зад. 11.2",
+  "techniques": [
+    "circle_properties",
+    "trigonometry",
+    "area_calculation"
+  ],
+  "word_count": 1669,
+  "score": 9,
+  "verdict": "approve",
+  "caught_errors_in_solution": [
+    "След „Therefore“ липсва формулата за лицето на триъгълник MEN; възстановена е като S_MEN = BE·AC·(R²−OE²)·sin∠AEB/(8R²).",
+    "Предоставеното решение пропуска обосновката на разлагането на проекционния четириъгълник на четири триъгълника и междинното събиране на лицата; тези стъпки са добавени. В изписаните оригинални формули не е установена математическа грешка."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 174.2,
+  "generated_at": "2026-11-19T22:42:19.182397"
+}

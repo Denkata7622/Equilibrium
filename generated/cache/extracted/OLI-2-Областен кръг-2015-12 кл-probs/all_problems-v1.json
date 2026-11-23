@@ -1,0 +1,67 @@
+{
+  "pdf": "OLI-2-Областен кръг-2015-12 кл-probs",
+  "extraction_model": "deepseek/deepseek-r1-0528",
+  "extracted_at": "2026-11-02T20:07:52.563704",
+  "problems": [
+    {
+      "num": 1,
+      "year": 2015,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Да се намерят всички двойки от реални числа $(x, y)$, за които $x, y \\in \\left[0, \\frac{\\pi}{2}\\right]$ и\n\n$$\\sin x + \\cos y - \\sin(x - y) = \\cos x - \\sin y + \\sin(x - y) = 1.$$",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "**Задача 1.** Да се намерят всички двойки от реални числа $(x, y)$, за които $x, y \\in \\left[0, \\frac{\\pi}{2}\\right]$ и\n\n$$\\sin x + \\cos y - \\sin(x - y) = \\cos x - \\sin y + \\sin(x - y) = 1.$$",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2015-12 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 2,
+      "year": 2015,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Даден е изпъкнал четириъгълник $ABCD$, за който $AD = BC$, $AB = \\sqrt{3}CD$ и $\\angle C - \\angle D = 2(\\angle A - \\angle B) > 0$. Да се намери $\\angle A - \\angle B$.",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "**Задача 2.** Даден е изпъкнал четириъгълник $ABCD$, за който $AD = BC$, $AB = \\sqrt{3}CD$ и $\\angle C - \\angle D = 2(\\angle A - \\angle B) > 0$. Да се намери $\\angle A - \\angle B$.",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2015-12 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 3,
+      "year": 2015,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Дадени са положителни числа $a_1, a_2, \\dots, a_{2015}$ с произведение 1. Да се докаже, че ако $\\alpha > \\beta > 0$ са рационални числа, то\n\n$$\\sum_{i=1}^{2015} a_i^\\alpha \\geq \\sum_{i=1}^{2015} a_i^\\beta.$$",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "**Задача 3.** Дадени са положителни числа $a_1, a_2, \\dots, a_{2015}$ с произведение 1. Да се докаже, че ако $\\alpha > \\beta > 0$ са рационални числа, то\n\n$$\\sum_{i=1}^{2015} a_i^\\alpha \\geq \\sum_{i=1}^{2015} a_i^\\beta.$$",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2015-12 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 4,
+      "year": 2015,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Дадено е множество $M$ от $2^{2015}$ естествени числа, всяко от които има 2014 цифри. Всеки две от тези числа дават различни остатъци при деление на $2^{2015}$. Колко най-малко различни цифри участват в десетичния запис на числата от $M$?",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "**Задача 4.** Дадено е множество $M$ от $2^{2015}$ естествени числа, всяко от които има 2014 цифри. Всеки две от тези числа дават различни остатъци при деление на $2^{2015}$. Колко най-малко различни цифри участват в десетичния запис на числата от $M$?",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2015-12 кл-probs",
+      "chunk": 1
+    }
+  ]
+}

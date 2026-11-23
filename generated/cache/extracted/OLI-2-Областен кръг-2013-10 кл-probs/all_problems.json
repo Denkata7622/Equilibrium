@@ -1,53 +1,101 @@
 {
   "pdf": "OLI-2-Областен кръг-2013-10 кл-probs",
+  "version": 3,
+  "extraction_model": "deepseek/deepseek-r1-0528",
+  "extraction_level": "L0_native",
+  "verification": {
+    "verdict": "PASS_WITH_WARNINGS",
+    "expected": 4,
+    "actual": 4,
+    "verified": 3,
+    "hallucinated": 1,
+    "unreadable": 0,
+    "wrong_grade": 0,
+    "duplicates": 0,
+    "null_num": 0,
+    "numeric_mismatch": 0,
+    "avg_confidence": 0.967,
+    "expected_grade": 10,
+    "grade_distribution": {
+      "10": 4
+    },
+    "escalate_to": "none",
+    "reasons": [
+      "1 borderline unverified (conf=0.97), 3/4 verified"
+    ],
+    "ai_checked": false,
+    "ai_result": {}
+  },
+  "extracted_at": "2026-11-10T08:38:35.065162",
   "problems": [
     {
-      "num": 1,
+      "num": "10.1",
       "year": 2013,
       "grade": 10,
       "round": "oblasten",
-      "statement": "Да се намерят стойностите на реалния параметър a, за които уравнението x³ + ax² − (1 − a)² = 0 има три различни реални корена x₁, x₂, x₃, изпълняващи неравенството x₁/(x₂x₃) + x₂/(x₃x₁) + x₃/(x₁x₂) > 3/2.",
-      "solution": null,
+      "statement": "Да се намерят стойностите на реалния параметър a, за които уравнението\nx3 + ax2 − (1 − a)2 = 0\nима три различни реални корена x ,x ,x , изпълняващи неравенството\n1 2 3\nx x x 3\n1 2 3\n+ + > .\nx x x x x x 2\n2 3 3 1 1 2",
+      "solution": "",
       "answer": null,
       "page": 1,
-      "pdf": "OLI-2-Областен кръг-2013-10 кл-probs",
-      "chunk": 1
+      "source_quote": "Задача 1. Да се намерят стойностите на реалния параметър a, за които\nуравнението\nx3 + ax2 − (1 − a)2 = 0\nима три различни реални корена x ,x ,x , изпълняващи неравенството\n1 2 3\nx x x 3\n1 2 3\n+ + > .",
+      "readability": "partial",
+      "readability_issues": [
+        "Potential OCR errors: 'x3' likely means 'x³', 'ax2' likely 'ax²', '(1 − a)2' likely '(1 − a)²'",
+        "Inconsistent spacing in variables (e.g., 'x ,x ,x ,')",
+        "Ambiguous line breaks in the inequality expression"
+      ],
+      "segment_num": "1",
+      "_quote_grade": "EXACT",
+      "pdf": "OLI-2-Областен кръг-2013-10 кл-probs"
     },
     {
-      "num": 2,
+      "num": "10.2",
       "year": 2013,
       "grade": 10,
       "round": "oblasten",
-      "statement": "Даден е △ABC с ∠ACB > 90°. Нека CH е височината от върха C (H ∈ AB), а AL е ъглополовящата на ∠BAC (L ∈ BC). Да се намери ∠ALC, ако е известно, че ∠ALC = ∠BHL.",
-      "solution": null,
+      "statement": "Даден е \\triangle ABC с <) ACB > 90 ◦ . Нека CH е височината от върха C (H ∈ AB), а AL е ъглополовящата на <) BAC (L ∈ BC). Да се намери <) ALC, ако е известно, че <) ALC =<) BHL.",
+      "solution": "",
       "answer": null,
       "page": 1,
-      "pdf": "OLI-2-Областен кръг-2013-10 кл-probs",
-      "chunk": 1
+      "source_quote": "Задача 2. Даден е △ABC с <) ACB > 90 ◦ . Нека CH е височината от върха C (H ∈ AB), а AL е ъглополовящата на <) BAC (L ∈ BC). Да се намери <) ALC, ако е известно, че <) ALC =<) BHL.",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "2",
+      "_quote_grade": "NORMALIZED",
+      "pdf": "OLI-2-Областен кръг-2013-10 кл-probs"
     },
     {
-      "num": 3,
+      "num": "10.3",
       "year": 2013,
       "grade": 10,
       "round": "oblasten",
-      "statement": "Да се намерят всички естествени числа n, за които 2^{n+1} дели 7^{n!} − 3^{n!}.\n(С n! се означава произведението на естествените числа от 1 до n.)",
-      "solution": null,
+      "statement": "Да се намерят всички естествени числа n, за които 2n+1 дели 7n! − 3n!. (С n! се означава произведението на естествените числа от 1 до n.)",
+      "solution": "",
       "answer": null,
       "page": 1,
-      "pdf": "OLI-2-Областен кръг-2013-10 кл-probs",
-      "chunk": 1
+      "source_quote": "Задача 3. Да се намерят всички естествени числа n, за които 2n+1 дели 7n! − 3n!.",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "3",
+      "_quote_grade": "NORMALIZED",
+      "pdf": "OLI-2-Областен кръг-2013-10 кл-probs"
     },
     {
-      "num": 4,
+      "num": "10.4",
       "year": 2013,
       "grade": 10,
       "round": "oblasten",
-      "statement": "Нека A(n,k) е броят на k-орките (a₁,...,aₖ) от цели числа, за които е изпълнено\n a₁ + ... + aₖ₋₁ ≤ n,\n a₁ + ... + aₖ₋₁ + aₖ > n,\n 1 ≤ aᵢ ≤ n, i = 1,...,k.\nЗа кое k стойността на A(12,k) е максимална?",
-      "solution": null,
+      "statement": "Нека A(n,k) е броят на k-орките (a₁,...,aₖ) от цели числа, за които е изпълнено a₁ + ... + aₖ₋₁ \\le  n, a₁ + ... + aₖ₋₁ + aₖ > n, 1 \\le  aᵢ \\le  n, i = 1,...,k. За кое k стойността на A(12,k) е максимална?",
+      "solution": "",
       "answer": null,
       "page": 1,
-      "pdf": "OLI-2-Областен кръг-2013-10 кл-probs",
-      "chunk": 1
+      "source_quote": "Задача 4. Нека A(n,k) е броят на k-орките (a ,...,a ) от цели числа, за които е изпълнено a + ... + a ≤ n, a + ... + a + a > n, 1 ≤ a ≤ n, i = 1...,k. За кое k стойността на A(12,k) е максимална?",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "4",
+      "_quote_grade": "ABSENT",
+      "_quote_warning": "absent",
+      "pdf": "OLI-2-Областен кръг-2013-10 кл-probs"
     }
   ]
 }

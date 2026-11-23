@@ -1,25 +1,155 @@
 {
   "point_id": "2.8",
-  "total": 1,
+  "total": 10,
   "by_difficulty": {
     "easy": 0,
-    "medium": 1,
-    "hard": 0
+    "medium": 4,
+    "hard": 6
   },
   "problems": [
     {
+      "source": "OLI-2-Областен кръг-2006-10 кл · 2006-10 · Зад. 10.5",
+      "statement": "Нека $ABCD$ е успоредник с остър ъгъл $γ$ при върха $A$. Нека $DE$ и $DF$ са височини, като $E$ и $F$ лежат съответно на страните $AB$ и $BC$. Да се докаже, че $4(AB.BC.EF + BD.AE.FC) \\le  5.AB.BC.BD$. Ако се достига равенство, да се определи стойността на $γ$.",
+      "solution": "Нека $AB = CD = a$, $AD = BC = b$, $BD = d$. Имаме $DE = b\\sin\\alpha$, $AE = b\\cos\\alpha$, $DF = a\\sin\\alpha$, $CF = a\\cos\\alpha$. Тогава $\\Delta DEF \\sim \\Delta ADB$ по втори признак, като коефициентът на подобие е $\\sin\\alpha$.\n\nСледователно $EF = d\\sin\\alpha$ и неравенството добива вида\n\n$$4(abd\\sin\\alpha + dba\\cos^2\\alpha) \\le 5abd,$$\n\n$$4\\sin\\alpha + 4 - 4\\sin^2\\alpha \\le 5 \\iff 4\\sin^2\\alpha - 4\\sin\\alpha + 1 \\ge 0,$$\n\nкоето е вярно за всяко $\\alpha$. Равенство се достига за $\\alpha = 30^\\circ$.",
+      "answer": "Равенство се достига за $\\alpha = 30^\\circ$.",
+      "difficulty": "medium",
+      "techniques": [
+        "parallelogram_properties",
+        "trigonometry",
+        "inequality"
+      ],
+      "confidence": "exact",
+      "reasoning": "Използват се свойства на успоредник, тригонометрия и доказване на неравенство. Трудността е medium поради необходимостта от тригонометрични преобразувания."
+    },
+    {
+      "source": "OLI-3-Национален кръг-1988-9-12 кл · 1988-None · Зад. 3",
+      "statement": "Нека M е произволна точка в тетраедьра ABCD, а SA, SB, SC и SD са съответно лицата на триъгълниците BCD, ACD, ABD и ABC. Да се докаже неравенството SA.MA + SB.MB + SC.MC + SD.MD ≧9V, където V е обемът на тетраедъра ABCD. Кога се достига равенство?",
+      "solution": "Решение. Нека \\(A_{1}, B_{1}, C_{1}\\) и \\(D_{1}\\) са петите на перпендикулярите, спуснати съответно от върховете \\(A, B, C\\) и \\(D\\) на тетраедъра към срещуположните им стени. Означаваме с \\(A_{2}, B_{2}, C_{2}\\) и \\(D_{2}\\) проекциите на точката \\(M\\) съответно върху стените \\(BCD, ACD, ABD\\) и \\(ABC\\) на тетраедъра, а с \\(V_{1}, V_{2}, V_{3}\\) и \\(V_{4}\\) – съответно обемите на тетраедрите \\(MBCD, MACD, MABD\\) и \\(MABC\\) (черт.1). Тогава точките \\(A, M, A_{1}\\) и \\(A_{2}\\) лежат в една равнина и очевидно \\(AA_{1} \\leq AM + MA_{2}\\). Следователно\n\n$$\nV = \\frac {1}{3} S _ {A}. A A _ {1} \\leq \\frac {1}{3} S _ {A} (A M + M A _ {2}) = \\frac {1}{3} S _ {A}. M A + \\frac {1}{3} S _ {A}. M A _ {2} \\text {и} V \\leq \\frac {1}{3} S _ {A}. M A + V _ {1}.\n$$\n\nАналогично се доказва, че\n\n$$\nV \\leq \\frac {1}{3} S _ {B}. M B + V _ {2}, \\; V \\leq \\frac {1}{3} S _ {C}. M C + V _ {3}, \\; V \\leq \\frac {1}{3} S _ {D}. M D + V _ {4}.\n$$\n\nСъбираме почленно тези четири. неравенства и като вземем пред вид, че  \\( V_{1} + V_{2} + V_{3} + V_{4} = V \\) , получаваме\n\n$$\n9 V \\leq S _ {A}. M A + S _ {B}. M B + S _ {C}. M C + S _ {D}. M D\n$$\n\nРавенство може да има само когато точката M лежи на всяка от височините на тетраедъра, т. е. когато ABCD е ортоцентричен тетраедър и M е пресечната точка на височините му.",
+      "answer": "Равенство се достига, когато ABCD е ортоцентричен тетраедър и M е пресечната точка на височините му.",
+      "difficulty": "medium",
+      "techniques": [
+        "volume_decomposition",
+        "geometric_inequality",
+        "projection_method"
+      ],
+      "confidence": "exact",
+      "reasoning": "Неравенство в тетраедър, свързващо лица, разстояния и обем. Точка 2.8 (Геометрични неравенства) е подходяща. Решението използва проекции и разлагане на обема, с умерена сложност."
+    },
+    {
+      "source": "OLI-3-Национален кръг-1990-9-12 кл · 1990-None · Зад. 5",
+      "statement": "Дъга от окръжност да се покрие с триъгълник с възможно най-малко лице, така че краищата на дъгата да лежат на една от страните на триъгълника.",
+      "solution": "Решение. Ясно е, че търсеният триъгълник ще покрива както дадената дъга L, така и сегмента, определен от нея. Едната му страна ще лежи ддената дага делена от краищата A и B на L, а другите му две страни ще са допирателни към към L. Най-напред ще докажем, че тези две страни трябва да бъдат равни. Наистина, нека MNP е триъгълник, покриващ L, чиято страна лежи на правата AB, а правите MP и NP са допирателни към L (черт. 1). Да предположим, че  \\( MP \\neq NP \\) . Разглеждаме симетралата l на AB и означаваме с  \\( P' \\)  пресечната точка на l и правата през P, успоредна на AB.\n\nБез ограничение можем да предполагаме, че B и P са в една полуравнина относно L. През  \\( P' \\)  прекарваме допирателни към L; Нека те пресичат правата AB в точките  \\( M' \\)  и  \\( N' \\), както е показано на черт. 1. Очевидно  \\( \\triangle M'N'P' \\)  е равнобедрен и за допирните точки X и Y на L съответно с  \\( M'P' \\)  и  \\( N'P' \\)  имаме  \\( M'X = N'Y \\). Нека Q е пресечната точка на MP и  \\( M'P' \\), а R - на NP и  \\( N'P' \\). Тъй като  \\( M'Q > M'X = N'Y > N'R \\)  и аналогично  \\( QP' < RP' \\), теоремата на Талес получаваме\n\n\\[\n\\frac {M M ^ {\\prime}}{P P ^ {\\prime}} = \\frac {M ^ {\\prime} Q}{Q P ^ {\\prime}} > \\frac {N ^ {\\prime} R}{Q P ^ {\\prime}} > \\frac {N ^ {\\prime} R}{R P ^ {\\prime}} = \\frac {N N ^ {\\prime}}{P P ^ {\\prime}}.\n\\]\n\nЕто защо \\(MM' > NN'\\), откъдето \\(MN > M'N'\\). Следователно \\(S_{MNP} > S_{M'N'P'}\\) т. е. \\(\\triangle MNP\\) не удовлетворява условието на задачата.\n\nИ така, ако съществува триъгълник с желаното свойство, той е равнобедрен. Затова разглеждаме равнобедрените триъгълници MNP, покриващи дъгата L, чиито бедра MP и NP се допират до нея, а основите им MN лежат на правата AB (черт. 2). Достатъчно е да докажем, че от тях най-малко лице има този, чийто бедра се разполовяват от допирните точки с L.\n\nНека O е центъра на окръжността, част от която е дъгата AB, а H - средата на AB. Означаваме с E допирната точка на L и MP и полагаме OE = R, OH = a, OP = x.\n\nОт подобието  \\( \\triangle OPE \\sim \\triangle MPH \\)  получаваме  \\( \\frac{R}{MH} = \\frac{\\sqrt{x^{2} - R^{2}}}{x + a} \\) . Следователно  \\( MH = \\frac{R(x + a)}{\\sqrt{x^{2} - R^{2}}} \\)  и лицето на  \\( \\triangle MNH \\)  е равно на\n\n\\[\nS (x) = R \\frac {(x + a) ^ {2}}{\\sqrt {x ^ {2} - R ^ {2}}}\n\\]\n\nЩе намерим най-малката стоиност на функцията  \\( f(x) = \\frac{(x + a)^{2}}{\\sqrt{x^{2} - R^{2}}} \\)  в интервала  \\( (R, +\\infty) \\) . Тъй като  \\( f'(x) = \\frac{(x + a)(x^{2} - ax - 2R^{2})}{(x^{2} - R^{2})\\sqrt{x^{2} - R^{2}}} \\) , производната  \\( f' \\)  има единствен положителен корен - това е положителният корен  \\( x_{0} = \\frac{1}{2} \\left( a + \\sqrt{a^{2} + 8R^{2}} \\right) \\)  на уравнението  \\( x^{2} - ax - 2R^{2} = 0 \\) . Ясно е, че  \\( x_{0} > R \\) ; освен това  \\( f'(x) \\leq 0 \\)  в интервала  \\( (R, x_{0}] \\)  и  \\( f'(x) \\geq 0 \\)  в интервала  \\( [x_{0}, +\\infty) \\) . Следователно  \\( \\overline{f(x)} \\)  и  \\( S(x) \\)  приемат най-малките си стойности в точката  \\( x_{0} \\) . Ще проверим, че тогава MO = OP. Наистина, тъй като  \\( x_{0} \\)  удовлетворява равенството  \\( x_{0}^{2} - ax_{0} - 2R^{2} = 0 \\) , имаме\n\n\\[\n\\begin{array}{l} M O ^ {2} = M H ^ {2} + H O ^ {2} = \\frac {R ^ {2} (x _ {0} + a) ^ {2}}{x _ {0} ^ {2} - R ^ {2}} + a ^ {2} = \\frac {x _ {0}}{x _ {0} ^ {2} - R ^ {2}} (a (a x _ {0} + 2 R ^ {2}) + R ^ {2} x _ {0}) = \\\\ = \\frac {x _ {0}}{x _ {0} ^ {2} - R ^ {2}} \\left(a x _ {0} ^ {2} + R ^ {2} x _ {0}\\right) = \\frac {x _ {0} ^ {2}}{x _ {0} ^ {2} - R ^ {2}} \\left(a x _ {0} + R ^ {2}\\right) = \\frac {x _ {0} ^ {2}}{x _ {0} ^ {2} - R ^ {2}} \\left(x _ {0} ^ {2} - R ^ {2}\\right) = x _ {0} ^ {2} = O P ^ {2}. \\\\ \\end{array}\n\\]\n\n![img-0.jpeg](img-0.jpeg)\n\n![img-1.jpeg](img-1.jpeg)\n\nСвалено от Klasirane.com\n\nНо от $MO = OP$ очевидно следва, че $ME = PE$, т. е. бедрата на търсения триъгълник действително се разполовяват от допирните си точки с $L$. Накрая ще отбележим следното. При дадени $R$ и, които определят еднозначно $L$, отсечката с дължина $x_0 = \\frac{1}{2} \\left( a + \\sqrt{a^2 + 8R^2} \\right)$ може да бъде построена с линийка и пергел. В такъв случай покриващият $L$ триъгълник с минимално лице също може да се построи и задачата е решена.\n\nВ изложеното решение предполагахме, че центъръ $O$ лежи в сегмента, определен от дъгата $L$. Ако това не е така, доказателството претърпява само несъществени изменения. В случая, когато $L$ е цялата окръжност, търсеният триъгълник е равностранният триъгълник, описан около $L$.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "geometric_inequalities",
+        "isosceles_triangle"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата е за минимизиране на лицето на триъгълник покриващ дъга. Решението използва симетрия и свойства на равнобедрените триъгълници."
+    },
+    {
       "source": "OLI-3-Национален кръг-2002-9-12 кл · 2002-None · Зад. 6",
       "statement": "Да се намери най-малкото число $k$, такова че за всеки триъгълник със страни $a$ и $b$ и ъглополовящи към тях $l_a$ и $l_b$ е в сила неравенството $\\frac{l_a + l_b}{a + b} < k$.",
-      "solution": "Решение: Ще докажем, че $k = \\frac{4}{3}$. Първо ще покажем, че $k \\ge \\frac{4}{3}$. Разглеждаме равнобедрени триъгълници, за които $a = b$ е фиксирано число, а ъгълът $\\alpha$ при основата клони към 0. Понеже $l_a = \\frac{2bc \\cos \\frac{\\alpha}{2}}{b + c}$, $c \\to 2b$ и $\\cos \\frac{\\alpha}{2} \\to 1$ при $\\alpha \\to 0$, то $\\frac{l_a + l_b}{a + b} = \\frac{l_a}{b} \\to \\frac{4}{3}$. Следователно $k \\ge \\frac{4}{3}$. Остава да докажем неравенството $\\frac{l_a + l_b}{a + b} < \\frac{4}{3}$. Тъй като\n\n$$l_a < \\frac{2bc}{b + c} = 2b \\left(1 - \\frac{b}{b + c}\\right) < 2b \\left(1 - \\frac{b}{b + a + b}\\right) = 2b \\frac{a + b}{a + 2b}$$\n\nи аналогично $l_b < 2a \\frac{a + b}{2a + b}$, то\n\n$$\\frac{4}{3} - \\frac{l_a + l_b}{a + b} > 2 \\left(\\frac{2}{3} - \\frac{b}{a + 2b} - \\frac{a}{2a + b}\\right) = \\frac{2(a - b)^2}{3(a + 2b)(2a + b)} \\ge 0.$$",
+      "solution": "Ще докажем, че $k = \\frac{4}{3}$. Първо ще покажем, че $k \\ge \\frac{4}{3}$. Разглеждаме равнобедрени триъгълници, за които $a = b$ е фиксирано число, а ъгълът $\\alpha$ при основата клони към 0. Понеже $l_a = \\frac{2bc \\cos \\frac{\\alpha}{2}}{b + c}$, $c \\to 2b$ и $\\cos \\frac{\\alpha}{2} \\to 1$ при $\\alpha \\to 0$, то $\\frac{l_a + l_b}{a + b} = \\frac{l_a}{b} \\to \\frac{4}{3}$. Следователно $k \\ge \\frac{4}{3}$. Остава да докажем неравенството $\\frac{l_a + l_b}{a + b} < \\frac{4}{3}$. Тъй като\n\n$$l_a < \\frac{2bc}{b + c} = 2b\\left(1 - \\frac{b}{b + c}\\right) < 2b\\left(1 - \\frac{b}{b + a + b}\\right) = 2b\\frac{a + b}{a + 2b}$$\n\nи аналогично $l_b < 2a\\frac{a + b}{2a + b}$, то\n\n$$\\frac{4}{3} - \\frac{l_a + l_b}{a + b} > 2\\left(\\frac{2}{3} - \\frac{b}{a + 2b} - \\frac{a}{2a + b}\\right) = \\frac{2(a - b)^2}{3(a + 2b)(2a + b)} \\ge 0.$$",
       "answer": "$k = \\frac{4}{3}$",
       "difficulty": "medium",
       "techniques": [
-        "angle_bisector_inequality",
-        "algebraic_manipulation",
-        "geometric_inequality"
+        "angle_bisector",
+        "inequality",
+        "limit_case"
       ],
       "confidence": "exact",
-      "reasoning": "Derives a sharp bound for the sum of two angle bisectors using algebraic manipulation of the known formula."
+      "reasoning": "Неравенство за ъглополовящи с намиране на най-малка константа. Това е геометрично неравенство (STEPS 2.8)."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2005-10 кл · 2005-10 · Зад. 10.2",
+      "statement": "Даден е четириъгълник $ABCD$, в който $|AB| = a$, $|BC| = b$, $|CD| = c$, $|DA| = d$, $|AC| = e$, $|BD| = f$.\n\na) Да се докаже, че $a^2 +b^2 +c^2 +d^2\\geq e^2 +f^2$\n\nb) Ако $ABCD$ е вписан в окръжност, да се докаже, че $|a - c| \\geq |e - f|$.",
+      "solution": "10.2. а) Да означим средите на $AC$ и $BD$ съответно с $M$ и $N$. Използвайки формулата за дължината на медиана, приложена за $\\triangle BMD$ имаме\n\n$$|MN|^2 = \\frac{2|MB|^2 + 2|MD|^2 - f^2}{4}.$$ \n\nПо нататък $|MB|^2 = (2a^2 + 2b^2 - e^2)/4$, $|MD|^2 = (2c^2 + 2d^2 - e^2)/4$ и замествайки в равенството за $|MN|^2$ получаваме\n\n$$4|MN|^2 = a^2 + b^2 + c^2 + d^2 - e^2 - f^2 \\ge 0.$$ \n\nб) Съгласно теоремата на Птолемей $ac + bd = ef$. Тъждеството получено в (а) лесно се преобразува до $(a - c)^2 + (b - d)^2 = (e - f)^2 + 4|MN|^2$. За да докажем исканото неравенство е достатъчно да покажем, че $(b - d)^2 \\le 4|MN|^2$. Но последното следва от неравенството на триъгълника, приложено за $\\triangle MNP$, където $P$ е средата на $CD$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "median_formula",
+        "ptolemy_theorem"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата има две части: а) неравенство за страни и диагонали, решено с формула за медиана; б) неравенство при вписан четириъгълник с теорема на Птолемей. Точка 1.7 (Формули за лице. Херон) не е точна, но това е най-близката геометрична точка. Основната техника е използване на формула за медиана и връзка с Птолемей.",
+      "_crosslinked_from": "1.7",
+      "_crosslink_confidence": 0.7
+    },
+    {
+      "source": "OLI-3-Национален кръг-1991-9-12 кл · 1991-None · Зад. 5",
+      "statement": "3адача 5. В единичния кръг с център O е взет централен ъгъл, който се измерва с дъгата d AB, където d AB = α < 90◦, като точките A и B са от окръжността. Нека H е петата на перпендикуляра от A към OB, T е точка от дъгата d AB и l е допирателната към окръжността в точката T. Правата l отсича от \\angle правоъгълен триъгълник \\triangle . а) Да се докаже, че лицето на правоъгълния триъгълник \\triangle е минимално точно тогава, когато точката T разполовява неговата хипотенуза. б) Ако Sα е лицето на правоъгълния триъгълник \\triangle с минимално лице, да се докаже, че функцията Sα α3 има граница при α →0, α̸ = 0, и да се пресметне тази граница.",
+      "solution": "Решение.\n\nа) Нека l пресича правите AH и BH съответно в точките M и N (черт. 2), OH = a, HN = x и лицето на \\triangle MHN е S(x). Ясно е, че OT = 1, ON = x + a, x > 0 и a ∈ [0, 1]. От подобието на триъгълниците MHN и OTN следва MH/OT = HN/TN, т. е. MH = x/√(a + x)² - 1. Тогава\n\n$$S(x) = \\frac{1}{2} MH \\cdot HN = \\frac{1}{2} \\cdot \\frac{x^2}{\\sqrt{(a + x)^2 - 1}}$$\n\n$$S'(x) = \\frac{1}{2} \\cdot \\frac{x(x^2 + 3ax + 2a^2 - 2)}{[(a + x)^2 - 1]\\sqrt{(a + x)^2 - 1}}$$\n\nоткъдето се вижда, че уравнението S'(x) = 0 има единствено решение x₀, за което x₀ > 0, а именно\n\n$$x_0 = \\frac{-3a + \\sqrt{a^2 + 8}}{2}$$\n\nЛесно се съобразява, че S(x) намалява в интервала (0, x₀) и расте в интервала (x₀, +∞), което е достатъчно, за да твърдим, че най-малката стоиност на S(x) в интервала (0, +∞) се достига в точката x₀. С това доказахме, че правоъгълният триъгълик с минимално лице съществува. За да докажем, че T е средата на MN, достатъчно е да проверим, че при намереното x₀ имаме OM = ON. Като използваме връзката x₀² + 3ax₀ + 2a² - 2 = 0, последователно получаваме:\n\n$$\\begin{array}{l} OM^2 = MH^2 + OH^2 = \\frac{x_0^2}{(a + x_0)^2 - 1} + a^2 = x_0 \\cdot \\frac{x_0 - a(x_0^2 + 3ax_0 + 2a^2 - 2)}{(a + x_0)^2 - 1} + a^2 = \\\\ = x_0 \\cdot \\frac{(x_0 + 2a)(1 - ax_0 - a^2 + (x_0^2 + 3ax_0 + 2a^2 - 2))}{(a + x_0)^2 - 1} + a^2 = \\\\ = x_0 \\cdot \\frac{(x_0 + 2a)((a + x_0)^2 - 1)}{(a + x_0)^2 - 1} + a^2 = x_0(x_0 + 2a) + a^2 = (x_0 + a)^2 = ON^2. \\end{array}$$\n\nб) Нека MHN е правоъгълният триъгълник с минимално лице, отговарящ на ъгъла α, и правата през M, перпендикулярия на MN, пресича ON в точката N₁. Тъй като OT е средна отсечка в \\triangle N₁MN, то ON₁ = ON. Имаме\n\n$$S_\\alpha^2 = \\frac{1}{4} MH^2 \\cdot HN^2 = \\frac{1}{4} HN_1 \\cdot HN \\cdot HN^2 = \\frac{1}{4} HN^3 \\cdot HN_1.$$\n\nДа означим ON = y и AH = z. От \\triangle AOH следва, че OH = √(1 - z²). Тогава HN = ON - OH = y - √(1 - z²). Освен това OM = ON според доказаното д) и значи MT² = ON² - OT², т. е. MT = √(y² - 1)\n\nи $MN = 2MT = 2\\sqrt{y^2 - 1}$. Сега от $\\triangle MHN$ получаваме $MN^2 = MH^2 + HN^2 = OM^2 - OH^2 + HN^2$ и значи $4(y^2 - 1) = y^2 - 1 + z^2 + (y - \\sqrt{1 - z^2})^2 = 2y^2 - 2y\\sqrt{1 - z^2}$, т. е. $y^2 + y\\sqrt{1 - z^2} - 2 = 0$. Положителният корен на последното уравнение е\n\n$$y = -\\frac{\\sqrt{1 - z^2}}{2} + \\frac{3}{2}\\sqrt{1 - \\frac{z^2}{9}}.$$\n\nТогава $HN = ON - OH = \\frac{3}{2}\\sqrt{1 - \\frac{z^2}{9}} - \\frac{3}{2}\\sqrt{1 - z^2}$, $HN_1 = ON + OH = \\frac{1}{2}\\sqrt{1 - z^2} + \\frac{3}{2}\\sqrt{1 - \\frac{z^2}{9}}$. Заместваме в получения по-горе израз за $S_\\alpha^2$ и след преработваве намираме\n\n$$S_\\alpha^2 = \\frac{2^3}{3^3}z^6 \\frac{\\sqrt{1 - z^2} + 3\\sqrt{1 - \\frac{z^2}{9}}}{\\left(\\sqrt{1 - \\frac{z^2}{9}} + \\sqrt{1 - z^2}\\right)^3}$$\n\nОт $\\triangle AOH$ имаме $AH = AO \\sin \\alpha$, т. е. $z = \\sin \\alpha$. Тогава\n\n$$\\frac{S_\\alpha^2}{\\alpha^6} = \\frac{2^3}{3^3} \\cdot \\frac{\\sin^6 \\alpha}{\\alpha^6} \\cdot \\frac{\\sqrt{1 - \\sin^2 \\alpha} + 3\\sqrt{1 - \\frac{\\sin^2 \\alpha}{9}}}{\\left(\\sqrt{1 - \\frac{\\sin^2 \\alpha}{9}} + \\sqrt{1 - \\sin^2 \\alpha}\\right)^3}$$\n\nи следователно $\\lim_{\\alpha \\to 0} \\frac{S_\\alpha^2}{\\alpha^6} = \\frac{2^3}{3^3} \\cdot 1 \\cdot \\frac{1 + 3}{(1 + 1)^3} = \\frac{2^2}{3^3}$, откъдето $\\lim_{\\alpha \\to 0} \\frac{S_\\alpha}{\\alpha^3} = \\frac{2\\sqrt{3}}{9}$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "analytic_geometry",
+        "derivatives_min_max",
+        "trigonometric_substitution"
+      ],
+      "confidence": "exact",
+      "reasoning": "Минимизиране на лице на правоъгълен триъгълник в кръг. Решението използва координати, производни и тригонометрични замествания за намиране на минимума."
+    },
+    {
+      "source": "OLI-3-Национален кръг-1996-9-12 кл · 1996-None · Зад. 2",
+      "statement": "Find the side length of the smallest equilateral triangle in which three disks with radii 2, 3 and 4 without common inner points can be placed.",
+      "solution": "Solution. Let in a equilateral $\\triangle ABC$ two disks with radii 3 and 4 without common inner points be placed. It is clear that a line $\\ell$ exists, which separates them, i.e. the disks are in different semiplanes with respect to $\\ell$ (Figure 1).\n\nFigure 1.\n\n![img-0.jpeg](img-0.jpeg)\n\nFigure 2.\n\n![img-1.jpeg](img-1.jpeg)\n\nThis line divides the triangle into a triangle and a quadrilateral or into two triangles. In both cases the disks can be replaced in the figure in a way that each of them is tangent to two of the sides of $\\triangle ABC$. It is clear that the new disks have no common inner point. Let the disks be inscribed in $\\angle A$ and $\\angle B$ of $\\triangle ABC$, respectively. We translate the side $BC$ parallelly to itself towards the point $A$, till the disk which is inscribed in $\\angle B$ touches the disk which is inscribed in $\\angle A$ (Figure 2). Thus, we get an equilateral $\\triangle A_1 B_1 C_1$ with a smaller sides, in which two disks with radii 3 and 4 and without common inner points are placed.\n\nLet $A_1 B_1 = x$, $I$ be the incenter of $\\triangle A_1 B_1 C_1$, while $O_1$ and $O_2$ be the centers of the two disks. Then $A_1 I = B_1 I = \\frac{x}{\\sqrt{3}}$, $A_1 O_1 = 6$, $B_1 O_2 = 8$. Since the disk with radius 4 is\n\nDownloaded from Klasirane.com\n\n─── Стр. 2 ───\n![img-2.jpeg](img-2.jpeg)\n\ninside the $\\triangle A_1B_1C_1$, then $O_2 \\in IB_1$. Thus, $B_1O_2 \\leq B_1I$, i.e. $x \\geq 8\\sqrt{3}$. On the other hand $O_1I = \\frac{x}{\\sqrt{3}} - 6$, $O_2I = \\frac{x}{\\sqrt{3}} - 8$, $O_1O_2 = 7$ and by the cosine theorem for $\\triangle O_1O_2I$ we find that $\\left(\\frac{x}{\\sqrt{3}} - 6\\right)^2 + \\left(\\frac{x}{\\sqrt{3}} - 8\\right)^2 + \\left(\\frac{x}{\\sqrt{3}} - 6\\right)\\left(\\frac{x}{\\sqrt{3}} - 8\\right) = 49$. But $x \\geq 8\\sqrt{3}$, and from here $x = 11\\sqrt{3}$. Consequently, $AB \\geq 11\\sqrt{3}$. On the other hand in the equilateral $\\triangle ABC$ with side length $11\\sqrt{3}$ three disks with radii 2, 3 and 4 (without common inner points) can be placed inscribing circles with these radii in the angles of the triangle (Figure 3).\n\nNote that the disks wit radii 3 and 4 are tangent to each other. It follows from the above considerations that the solution of the problem is $11\\sqrt{3}$.",
+      "answer": "11\\sqrt{3}",
+      "difficulty": "hard",
+      "techniques": [
+        "geometric_inequalities",
+        "tangent_circles",
+        "equilateral_triangle"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата търси най-малкия равностранен триъгълник, в който могат да се поставят три диска с дадени радиуси без припокриване. Решението използва геометрични съображения за позициониране на дисковете и намира минималната страна чрез оптимизация. Това е геометрична задача с неравенства и построения."
+    },
+    {
+      "source": "OLI-3-Национален кръг-1997-9-12 кл · 1997-None · Зад. 2",
+      "statement": "Let $M$ be the centroid of $\triangle ABC$. Prove the inequality\n$$\n\\sin \\angle CAM + \\sin \\angle CBM \\le \\frac{2}{\\sqrt{3}}\n$$\n(a) if the circumscribed circle of $\triangle AMC$ is tangent to the line $AB$;\n\n(b) for any $\triangle ABC$.",
+      "solution": "**Solution:** We use the standard notation for the elements of $\triangle ABC$. Let $G$ be the midpoint of $AB$.\n\n(a) It follows from the conditions of the problem that\n$$\n\\left(\\frac{c}{2}\\right)^2 = GA^2 = GM \\cdot GC = \\frac{1}{3}m_c^2 = \\frac{1}{12}(2a^2 + 2b^2 - c^2),\n$$\nand therefore $a^2 + b^2 = 2c^2$. Using the median formula we get $m_a = \\frac{\\sqrt{3}}{2}b$ and $m_b = \\frac{\\sqrt{3}}{2}a$. Further\n\n$$\nA = \\sin \\angle CAM + \\sin \\angle CBM = S \\left(\\frac{1}{bm_a} + \\frac{1}{am_b}\\right) = \\frac{(a^2 + b^2)\\sin\\gamma}{\\sqrt{3}ab}.\n$$\n\nFrom the Cosine Law $a^2 + b^2 - 2ab\\cos\\gamma = c^2 = \\frac{a^2 + b^2}{2}$, so $a^2 + b^2 = 4ab\\cos\\gamma$. Therefore $A = \\frac{2}{\\sqrt{3}}\\sin 2\\gamma \\le \\frac{2}{\\sqrt{3}}$.\n\n(b) There are two circles through $C$ and $M$ tangent to the line $AB$. Denote the contact points by $A_1$ and $B_1$ and let $A_1 \\in GA^{\\to}$, $B_1 \\in GB^{\\to}$. Since $G$ is the midpoint of $A_1B_1$ and $CM : MG = 2 : 1$, $M$ must be the centroid of $\triangle A_1B_1C$. Furthermore it is clear that $\\angle CAM \\le \\angle CA_1M$ and $\\angle CBM \\le \\angle CB_1M$. Suppose $\\angle CA_1M \\le 90^\\circ$ and $\\angle CB_1M \\le 90^\\circ$. Now $\\sin \\angle CAM + \\sin \\angle CBM \\le \\sin \\angle CA_1M + \\sin \\angle CB_1M \\le \\frac{2}{\\sqrt{3}}$.\n\nIt remains to consider the case $\\angle CA_1M > 90^\\circ$, $\\angle CB_1M \\le 90^\\circ$ (the above angles could not both be obtuse). It follows from $\\triangle CA_1M$ that $CM^2 > CA_1^2 + A_1M^2$, so\n$$\n\\frac{1}{9}(2b_1^2 + 2a_1^2 - c_1^2) > b_1^2 + \\frac{1}{9}(2b_1^2 + 2c_1^2 - a_1^2)\n$$\n($a_1, b_1, c_1$ are sides of $\triangle A_1B_1C$). We know from (a) that $a_1^2 + b_1^2 = 2c_1^2$ and the above inequality becomes $a_1^2 > 7b_1^2$. Again from (a) we obtain\n$$\n\\sin \\angle CB_1M = \\frac{b_1 \\sin\\gamma_1}{a_1\\sqrt{3}} = \\frac{b_1}{a_1\\sqrt{3}}\\sqrt{1 - \\left(\\frac{a_1^2 + b_1^2}{4a_1b_1}\\right)^2}.\n$$\n\n---\n\nDownload from Klasirane.com\n\nSubstituting $\\frac{b_1^2}{a_1^2} = x$ we get that\n\n$$\n\\sin \\angle CB_1M = \\frac{1}{4\\sqrt{3}}\\sqrt{14x - x^2 - 1} < \\frac{1}{4\\sqrt{3}}\\sqrt{2 - \\frac{1}{49} - 1} = \\frac{1}{7}\n$$\n\nsince $x < \\frac{1}{7}$. Therefore\n\n$$\n\\sin \\angle CAM + \\sin \\angle CBM < 1 + \\sin \\angle CB_1M < 1 + \\frac{1}{7} < \\frac{2}{\\sqrt{3}}.\n$$\n\n**Note:** The inequality holds only for $\triangle ABC$ with angles $\\alpha = 22.5^\\circ$, $\\beta = 112.5^\\circ$, $\\gamma = 45^\\circ$ or $\\alpha = 112.5^\\circ$, $\\beta = 22.5^\\circ$, $\\gamma = 45^\\circ$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "trigonometry",
+        "inequalities",
+        "circle_properties",
+        "centroid"
+      ],
+      "confidence": "exact",
+      "reasoning": "The inequality involves sines of angles at the centroid. Part (a) uses properties of tangency and median formulas, while part (b) uses geometric constructions with circles and tangents. The solution employs trigonometric identities and geometric inequalities, fitting under geometric inequalities."
+    },
+    {
+      "source": "OLI-3-Национален кръг-1997-9-12 кл · 1997-None · Зад. 2",
+      "statement": "Let $M$ be the centroid of $\triangle ABC$. Prove the inequality\n$$\n\\sin \\angle CAM + \\sin \\angle CBM \\le \\frac{2}{\\sqrt{3}}\n$$\n(a) if the circumscribed circle of $\triangle AMC$ is tangent to the line $AB$;\n\n(b) for any $\triangle ABC$.",
+      "solution": "**Solution:** We use the standard notation for the elements of $\triangle ABC$. Let $G$ be the midpoint of $AB$.\n\n(a) It follows from the conditions of the problem that\n$$\n\\left(\\frac{c}{2}\\right)^2 = GA^2 = GM \\cdot GC = \\frac{1}{3}m_c^2 = \\frac{1}{12}(2a^2 + 2b^2 - c^2),\n$$\nand therefore $a^2 + b^2 = 2c^2$. Using the median formula we get $m_a = \\frac{\\sqrt{3}}{2}b$ and $m_b = \\frac{\\sqrt{3}}{2}a$. Further\n\n$$\nA = \\sin \\angle CAM + \\sin \\angle CBM = S \\left(\\frac{1}{bm_a} + \\frac{1}{am_b}\\right) = \\frac{(a^2 + b^2)\\sin\\gamma}{\\sqrt{3}ab}.\n$$\n\nFrom the Cosine Law $a^2 + b^2 - 2ab\\cos\\gamma = c^2 = \\frac{a^2 + b^2}{2}$, so $a^2 + b^2 = 4ab\\cos\\gamma$. Therefore $A = \\frac{2}{\\sqrt{3}}\\sin 2\\gamma \\le \\frac{2}{\\sqrt{3}}$.\n\n(b) There are two circles through $C$ and $M$ tangent to the line $AB$. Denote the contact points by $A_1$ and $B_1$ and let $A_1 \\in GA^{\\to}$, $B_1 \\in GB^{\\to}$. Since $G$ is the midpoint of $A_1B_1$ and $CM : MG = 2 : 1$, $M$ must be the centroid of $\triangle A_1B_1C$. Furthermore it is clear that $\\angle CAM \\le \\angle CA_1M$ and $\\angle CBM \\le \\angle CB_1M$. Suppose $\\angle CA_1M \\le 90^\\circ$ and $\\angle CB_1M \\le 90^\\circ$. Now $\\sin \\angle CAM + \\sin \\angle CBM \\le \\sin \\angle CA_1M + \\sin \\angle CB_1M \\le \\frac{2}{\\sqrt{3}}$.\n\nIt remains to consider the case $\\angle CA_1M > 90^\\circ$, $\\angle CB_1M \\le 90^\\circ$ (the above angles could not both be obtuse). It follows from $\\triangle CA_1M$ that $CM^2 > CA_1^2 + A_1M^2$, so\n$$\n\\frac{1}{9}(2b_1^2 + 2a_1^2 - c_1^2) > b_1^2 + \\frac{1}{9}(2b_1^2 + 2c_1^2 - a_1^2)\n$$\n($a_1, b_1, c_1$ are sides of $\triangle A_1B_1C$). We know from (a) that $a_1^2 + b_1^2 = 2c_1^2$ and the above inequality becomes $a_1^2 > 7b_1^2$. Again from (a) we obtain\n$$\n\\sin \\angle CB_1M = \\frac{b_1 \\sin\\gamma_1}{a_1\\sqrt{3}} = \\frac{b_1}{a_1\\sqrt{3}}\\sqrt{1 - \\left(\\frac{a_1^2 + b_1^2}{4a_1b_1}\\right)^2}.\n$$\n\n---\n\nDownload from Klasirane.com\n\nSubstituting $\\frac{b_1^2}{a_1^2} = x$ we get that\n\n$$\n\\sin \\angle CB_1M = \\frac{1}{4\\sqrt{3}}\\sqrt{14x - x^2 - 1} < \\frac{1}{4\\sqrt{3}}\\sqrt{2 - \\frac{1}{49} - 1} = \\frac{1}{7}\n$$\n\nsince $x < \\frac{1}{7}$. Therefore\n\n$$\n\\sin \\angle CAM + \\sin \\angle CBM < 1 + \\sin \\angle CB_1M < 1 + \\frac{1}{7} < \\frac{2}{\\sqrt{3}}.\n$$\n\n**Note:** The inequality holds only for $\triangle ABC$ with angles $\\alpha = 22.5^\\circ$, $\\beta = 112.5^\\circ$, $\\gamma = 45^\\circ$ or $\\alpha = 112.5^\\circ$, $\\beta = 22.5^\\circ$, $\\gamma = 45^\\circ$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "trigonometry",
+        "inequalities",
+        "circle_properties",
+        "centroid"
+      ],
+      "confidence": "exact",
+      "reasoning": "The inequality involves sines of angles at the centroid. Part (a) uses properties of tangency and median formulas, while part (b) uses geometric constructions with circles and tangents. The solution employs trigonometric identities and geometric inequalities, fitting under geometric inequalities.",
+      "_crosslinked_from": "2.8",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-3-Национален кръг-2007-9-12 кл · 2007-None · Зад. 5",
+      "statement": "Да се намери най-малкото число $m$ така, че с всеки пет равностранни триъгълника със сума на лицата $m$ може да се покрие равностранен триъгълник с лице 1.",
+      "solution": "Ще докажем, че $m = 2$. Първо ще покажем, че $m \\geq 2$. Достатъчно е за всяко $s \\in (0, 1)$ да намерим пет равностранни триъгълника със сумата на лицата $> 2s$, които не могат да покрият равностранен $\\triangle ABC$ с лице 1. Нека $A_1 B_1 C_1$ е равностранен триъгълник с лице $(1+s)/2$ и върхове върху съответните страни на $\\triangle$. Нека за определеност $2BA_1 \\leq BC$. Очевидно съществуват три равностранни триъгълника, които не могат покрият коя да е от отсечките $BA_1$, $CB_1$ и $AC_1$. Тогава тези три триъгълника и два равностранни триъгълника $\\triangle_1$ и $\\triangle_2$ с лица $s$ не могат да покрият $\\triangle$. В противен случай $\\triangle_1$ и $\\triangle_2$ трябва да покрият точки от горните три отсечки и следователно един от тях, например $\\triangle_1$, ще покрие точки от две от тях, да кажем $D \\in A_1 B$ и $E \\in B_1 C$. Тъй като $S_{A_1 B_1 C_1} \\geq \\frac{1}{3}$, то $\\angle A_1 B_1 C_1 \\geq 90^\\circ$ (докажете!) и значи страната на $\\triangle_1$ е поне $DE \\geq A_1 B_1$. Следователно $S_{\\triangle_1} \\geq S_{A_1 B_1 C_1}$, което е противоречие.\n\nСега ще докажем, че от всеки пет равностранни триъгълника с лица $a^2$, $b^2$, $c^2$, $d^2$ и $e^2$, за които $a^2 + b^2 + c^2 + d^2 + e^2 = 2$, има четири, които могат да покрият $\\triangle$. Нека $a \\geq b \\geq c \\geq d \\geq e > 0$. Ако $a \\geq 1$, то триъгълникът с лице $a^2$ покрива $\\triangle$. В противен случай $b + c > 1$. Това е очевидно при $c > 1/2$ (защото $b \\geq c$), а иначе\n\n$$b^2 = 2 - a^2 - c^2 - d^2 - e^2 > 1 - 3c^2 \\geq (1 - c)^2.$$\n\nТогава триъгълниците с лица $a^2$, $b^2$ и $c^2$, поставени стандартно във върховете на $\\Delta$, ще се пресичат два по два. Те не покриват $\\Delta$, ако $f = 2 - a - b - c > 0$ и остава равностранен триъгълник с лице $f^2$. Трябва да покажем, че $d \\geq f$. Това е очевидно при $d > 1/2$ (защото $a, b, c \\geq d$), а иначе от $a, b, c < 1$ следва, че\n\n$$d \\geq 2d^2 \\geq d^2 + e^2 = 2 - a^2 - b^2 - c^2 > 2 - a - b - c = f.$$\n\n**Забележка.** Ще отбележим, че от всеки четири равностранни триъгълника със сума на лицата 2 има три, които могат да покрият $\\Delta$. За целта покажете, че ако $1 > a \\geq b \\geq c > 0$ и $a^2 + b^2 + 2c^2 \\geq 2$, то $a + b + c > 2$. Освен това, произволен краен брой равностранни триъгълници със сума на лицата 4 могат да покрият $\\Delta$ (докажете!).",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "geometric_inequalities",
+        "covering_problems",
+        "area_calculation"
+      ],
+      "confidence": "exact",
+      "reasoning": "Покриване на триъгълник с други триъгълници, използвайки геометрични неравенства и свойства на площите, съответства на точка 2.8."
     }
   ]
 }

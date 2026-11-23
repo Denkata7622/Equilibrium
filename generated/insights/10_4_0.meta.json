@@ -1,0 +1,40 @@
+{
+  "key": "10.4#0",
+  "point_id": "10.4",
+  "idx": 0,
+  "difficulty": "hard",
+  "source": "OLI-3-Национален кръг-2015-9-12 кл · 2015-None · Зад. 2",
+  "techniques": [
+    "combinatorial_design",
+    "uniqueness",
+    "pigeonhole_principle"
+  ],
+  "word_count": 2235,
+  "score": 9,
+  "verdict": "approve",
+  "status": "done",
+  "structure": {
+    "missing": [],
+    "has_boxed": true,
+    "why_count": 9,
+    "sec12_words": 210,
+    "ends_ok": true,
+    "fatal": [],
+    "soft": []
+  },
+  "caught_errors_in_solution": [
+    "Точки (4)–(5) са повредени при OCR; възстановени са точните определения на граничните прави и заключението.",
+    "В точка (3) е пропусната обосновката защо областите не могат да са без синя клетка и защо няма допълнителни разрези; тя е добавена.",
+    "Обратната посока на общото твърдение е само скицирана; добавено е доказателство, обхващащо и едноредовите и едноколонните сини правоъгълници."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 117.8,
+  "generated_at": "2026-11-21T14:29:12.649237",
+  "lesson_refs": [
+    "8.10",
+    "4.5"
+  ],
+  "enriched": true,
+  "enriched_at": "2026-11-22T18:17:51.427676"
+}

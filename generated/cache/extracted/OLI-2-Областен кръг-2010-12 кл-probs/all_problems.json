@@ -1,0 +1,89 @@
+{
+  "pdf": "OLI-2-Областен кръг-2010-12 кл-probs",
+  "version": 3,
+  "extraction_model": "deepseek/deepseek-r1-0528",
+  "extraction_level": "L0_native",
+  "verification": {
+    "verdict": "PASS_WITH_WARNINGS",
+    "expected": 6,
+    "actual": 3,
+    "verified": 3,
+    "hallucinated": 0,
+    "unreadable": 0,
+    "wrong_grade": 0,
+    "duplicates": 0,
+    "null_num": 0,
+    "numeric_mismatch": 0,
+    "avg_confidence": 0.95,
+    "expected_grade": 12,
+    "grade_distribution": {
+      "12": 3
+    },
+    "escalate_to": "L1_ocr",
+    "reasons": [
+      "missing: 3 < 6±0",
+      "adjusted: source has 3 markers (expected was 6)"
+    ],
+    "ai_checked": true,
+    "ai_result": {
+      "missing_count": 3,
+      "hallucinated_indices": [],
+      "overall": "missing"
+    }
+  },
+  "extracted_at": "2026-11-09T10:39:58.493256",
+  "problems": [
+    {
+      "num": "12.1",
+      "year": 2010,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Да се реши неравенството 2 2ax+1 +2 a \\le  2 ax +2 ax+a+1, където a е реален параметър.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 1. Да се реши неравенството 2 2ax+1 +2 a ≤ 2 ax +2 ax+a+1, където a е реален параметър.",
+      "readability": "partial",
+      "readability_issues": [
+        "Формулата съдържа повтарящи се термини и липсващи оператори, вероятно OCR грешка"
+      ],
+      "segment_num": "1",
+      "_quote_grade": "NORMALIZED",
+      "pdf": "OLI-2-Областен кръг-2010-12 кл-probs"
+    },
+    {
+      "num": "12.2",
+      "year": 2010,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Нека a 1 > 1 и a n+1 = a n + −1 при n \\ge  1. Да се докаже, че:\na n\na) редицата (a n) е сходяща и да се намери нейната граница;\n1\nб) съществува n, за което a 2n < 1+ 22n .",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 2. Нека a 1 > 1 и a n+1 = a n + −1 при n ≥ 1. Да се докаже, че:\na n\na) редицата (a n) е сходяща и да се намери нейната граница;",
+      "readability": "partial",
+      "readability_issues": [
+        "Формулата за рекурентната връзка изглежда счупена: 'a n+1 = a n + −1' вероятно трябва да е 'a_{n+1} = a_n + \\frac{1}{a_n}' или подобно, но не поправям."
+      ],
+      "segment_num": "2",
+      "_quote_grade": "NORMALIZED",
+      "pdf": "OLI-2-Областен кръг-2010-12 кл-probs"
+    },
+    {
+      "num": "12.3",
+      "year": 2010,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Дени попълва с ненулево цяло число някой от коефициентите на уравнение от 2010-та степен, след това Вени попълва също с ненулево цяло число друг от коефициентите и т.н., докато бъдат попълнени всичките 2011 коефициента. Дени печели, ако полученото уравнение има целочислен корен, а в противен случай печели Вени. Коя от двете има печеливша стратегия?",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 3. Дени попълва с ненулево цяло число някой от коефициентите на уравнение от 2010-та степен, след това Вени попълва също с ненулево цяло число друг от коефициентите и т.н., докато бъдат попълнени всичките 2011 коефициента. Дени печели, ако полученото уравнение има целочислен корен, а в противен случай печели Вени. Коя от двете има печеливша стратегия?",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "3",
+      "_quote_grade": "NORMALIZED",
+      "pdf": "OLI-2-Областен кръг-2010-12 кл-probs"
+    }
+  ]
+}

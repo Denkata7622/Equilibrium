@@ -1,0 +1,102 @@
+{
+  "pdf": "OLI-2-Областен кръг-2001-11 кл-probs",
+  "version": 2,
+  "extraction_model": "deepseek/deepseek-r1-0528",
+  "extracted_at": "2026-11-02T16:55:18.640705",
+  "problems": [
+    {
+      "num": 1,
+      "year": 2001,
+      "grade": 11,
+      "round": "oblasten",
+      "statement": "За кои стойности на параметъра $a$ уравнението\n\n$$x^2 + (1 - 2a)x + 2a^2 + \\lg(4x^2 - (8a - 1)x + 5a^2) = \\lg(x^2 - 2(a + 1)x - a^2)$$\n\nима само едно решение?",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 1. За кои стойности на параметъра $a$ уравнението\n\n$$x^2 + (1 - 2a)x + 2a^2 + \\lg(4x^2 - (8a - 1)x + 5a^2) = \\lg(x^2 - 2(a + 1)x - a^2)$$\n\nима само едно решение?",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2001-11 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 2,
+      "year": 2001,
+      "grade": 11,
+      "round": "oblasten",
+      "statement": "Диагоналите $AC$ и $BD$ на вписан в окръжност четириъгълник се пресичат в точка $E$. Да се докаже, че ако $\\angle BAD = 60^\\circ$ и $AE = 3CE$, то сумата на две от страните на четириъгълника е равна на сумата на другите му две страни.",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 2. Диагоналите $AC$ и $BD$ на вписан в окръжност четириъгълник се пресичат в точка $E$. Да се докаже, че ако $\\angle BAD = 60^\\circ$ и $AE = 3CE$, то сумата на две от страните на четириъгълника е равна на сумата на другите му две страни.",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2001-11 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 3,
+      "year": 2001,
+      "grade": 11,
+      "round": "oblasten",
+      "statement": "Да се намери най-малкото естествено число $n$, за което съществува група от $n$ човека, за която е изпълнено:\n\n1. Hama YeTHpHMa, BCEKN IBaMa OT KOITo CE IO3HaBaT;\n2. KaKTo H na H36epem $k\\geq 1$ YOBeka, H3MeKdy KOITo HMa H03HaTH, H3MeKdy OCTa-HaJIHTe $n - k$ YOBeka Hma TPhMa, BCEKN IBaMa OT KOITo CE H03HaBaT.",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 3. Да се намери най-малкото естествено число $n$, за което съществува група от $n$ човека, за която е изпълнено:\n\n1. Hama YeTHpHMa, BCEKN IBaMa OT KOITo CE IO3HaBaT;\n2. KaKTo H na H36epem $k\\geq 1$ YOBeka, H3MeKdy KOITo HMa H03HaTH, H3MeKdy OCTa-HaJIHTe $n - k$ YOBeka Hma TPhMa, BCEKN IBaMa OT KOITo CE H03HaBaT.",
+      "readability": "partial",
+      "readability_issues": [
+        "OCR грешки в текст на кирилица"
+      ],
+      "pdf": "OLI-2-Областен кръг-2001-11 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 4,
+      "year": 2001,
+      "grade": 11,
+      "round": "oblasten",
+      "statement": "Нека $ABC$ е правоъгълен триъгълник с хипотенуза $AB$. Върху лъча $AC^\\rightarrow$ е избрана точка $D$, различна от $A$ и $C$, за която правата през центъра на вписаната окръжност в $\\triangle ABC$, успоредна на ъглополовящата на $\\angle ADB$, се допира до вписаната окръжност в $\\triangle BCD$. Да се докаже, че $AD = BD$.",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 4. Нека $ABC$ е правоъгълен триъгълник с хипотенуза $AB$. Върху лъча $AC^\\rightarrow$ е избрана точка $D$, различна от $A$ и $C$, за която правата през центъра на вписаната окръжност в $\\triangle ABC$, успоредна на ъглополовящата на $\\angle ADB$, се допира до вписаната окръжност в $\\triangle BCD$. Да се докаже, че $AD = BD$.",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2001-11 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 5,
+      "year": 2001,
+      "grade": 11,
+      "round": "oblasten",
+      "statement": "Да се намерят всички тройки естествени числа $(a, b, c)$, за които числото $a^3 + b^3 + c^3$ се дели на всяко от числата $a^2b, b^2c, c^2a$.",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 5. Да се намерят всички тройки естествени числа $(a, b, c)$, за които числото $a^3 + b^3 + c^3$ се дели на всяко от числата $a^2b, b^2c, c^2a$.",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2001-11 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 6,
+      "year": 2001,
+      "grade": 11,
+      "round": "oblasten",
+      "statement": "Дадена е колода от 52 различни карти. Разрешени са следните операции:\n\n1.CMaHa Ha MeCTaTa Ha rOpHHe IBe KapTH;\n2. IpeMeCTBaHe Ha roPHaTa KapTa Hau-OTIOJy.\n\nДа се докаже, че използвайки тези две операции, картите могат да се подредят в произволен ред.",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 6. Дадена е колода от 52 различни карти. Разрешени са следните операции:\n\n1.CMaHa Ha MeCTaTa Ha rOpHHe IBe KapTH;\n2. IpeMeCTBaHe Ha roPHaTa KapTa Hau-OTIOJy.\n\nДа се докаже, че използвайки тези две операции, картите могат да се подредят в произволен ред.",
+      "readability": "partial",
+      "readability_issues": [
+        "OCR грешки в текст на кирилица"
+      ],
+      "pdf": "OLI-2-Областен кръг-2001-11 кл-probs",
+      "chunk": 1
+    }
+  ]
+}

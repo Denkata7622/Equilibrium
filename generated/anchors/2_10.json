@@ -1,53 +1,187 @@
 {
   "point_id": "2.10",
-  "total": 3,
+  "total": 11,
   "by_difficulty": {
     "easy": 0,
-    "medium": 2,
-    "hard": 1
+    "medium": 4,
+    "hard": 7
   },
   "problems": [
     {
-      "source": "OLI-2-Областен кръг-2023-11 кл · 2023-11 · Зад. 2",
-      "statement": "Ъглоиловящата $AD$ в $\\triangle ABC$ е равна на страната $AC$. Описаната около $\\triangle ABD$ окръжност пресича страната $AC$ в точка $E$ като $\\frac{DE}{CD} = \\frac{\\sqrt{3}+1}{2}$. Да се намерят ъглите на $\\triangle ABC$.",
-      "solution": "Решение. Нека $\\angle BAC = \\alpha$. От свойството на ъглополовящата $\\frac{DB}{DC} = \\frac{AB}{AC}$. Но $BD = DE$ като хорди в окръжност, на които отговарят равни дъги, откъдето $AB = \\frac{\\sqrt{3}+1}{2}AC$. Ако $BD = DE = x$, то $CD = \\frac{2x}{1+\\sqrt{3}}$ и от формулата за ъглополовящата, при $AD = AC$ намираме\n\n$$AD^2 = AB.AD - BD.DC = 2x^2,$$\n\nт. е. $AD = x\\sqrt{2}$. От косинусова теорема за $\\triangle ABD$ спрямо страната $BD$ получаваме\n\n$$x^2 = x^2 \\left( \\frac{\\sqrt{3}+1}{\\sqrt{2}} \\right)^2 + (x\\sqrt{2})^2 - 2\\sqrt{2} \\cdot \\frac{\\sqrt{3}+1}{\\sqrt{2}} x^2 \\cdot \\cos \\frac{\\alpha}{2}.$$\n\nОттук $\\cos \\frac{\\alpha}{2} = \\frac{\\sqrt{3}}{2}$, т. е. $\\alpha = 60^{\\circ}$. От равнобедрения триъгълник $\\triangle ACD$ намираме $\\angle DCA = \\angle CDA = 75^{\\circ}$ и тогава $\\angle ABC = 45^{\\circ}$. Окончателно ъглите на $\\triangle ABC$ са $60^{\\circ}, 45^{\\circ}$ и $75^{\\circ}$.",
-      "answer": "$\\angle BAC = 60^{\\circ}$, $\\angle ABC = 45^{\\circ}$, $\\angle ACB = 75^{\\circ}$.",
-      "difficulty": "medium",
-      "techniques": [
-        "angle_bisector_theorem",
-        "law_of_cosines",
-        "ratio_analysis"
-      ],
-      "confidence": "exact",
-      "reasoning": "Използва се теоремата за ъглополовящата и законът за косинусите за да се намери съотношението на страните и ъглите."
-    },
-    {
-      "source": "OLI-3-Национален кръг-1987-9-12 кл · 1987-None · Зад. 5",
-      "statement": "От точката E, лежаща на медианата AD на триъгълника ABC, е спуснат перпендикуляр EF към страната BC. От точката M, лежаща на EF, са спуснати перпендикулярите MN и MP съответно към страните AC и AB. Да се докаже, че ако точките N, E и P лежат на една права, то M лежи на вътрешната ъглополовяща на ъгъла BAC.",
-      "solution": "Решение. През точката E построяваме права, успоредна на BC. Нека тя пресича AB и AC съответно в точките B₁ и C₁ (черт. 2). Правата EF е перпендикулярна на B₁C₁, понеже по условие EF ⊥ BC, а B₁C₁ ∥ BC. Освен това не е трудно да се съобрази, че E е средата на B₁C₁. Следователно △B₁C₁M е равнобедрен, тъй като ME е едновременно негова височина и медиана.\nПърви подход. Тъй като ∠MNC₁ = ∠MEC₁ = 90°, точките M, N, C₁, E лежат на една окръжност. Аналогично се доказва, че и точките M, B₁, P, E лежат на една окръжност. Предлагаме на читателя да се убеди, че във всички случаи точките N и C₁ са в една и съща полуравнина относно правата [неразчетено]. Същото е вярно и за точките P и B₁. Ето защо\n∠ENM = ∠EC₁M = ∠EB₁M = ∠EPM.\nНо точките N, E и P лежат на една права, така че ∠PNM = ∠ENM, ∠NPM = ∠EPM. Тогава доказаните равенства показват, че ∠PNM = ∠NPM, т. е. △NPM е равнобедрен. Вече е ясно, че M лежи на ъглополовящата на ∠BAC, тъй като тя е равноотдалечена от раменете на този ъгъл.\nВтори подход. Можем да завършим решението и с разсъждения, свързани с правата на Симсън. Да разгледаме точката M и триъгълника AB₁C₁. Петите P, E и N на перпендикулярите от M съответно към правите AB₁, B₁C₁ и C₁A лежат на една права. Тогава M лежи на окръжността k, описана около △AB₁C₁ (вж. например задача 3.11 в „555 задачи по геометрия“). В такъв случай ъглите B₁AM и C₁AM са вписани в k и се измерват съответно с половинките от дъгите B₁M и C₁M. Но по-горе доказахме, че △B₁C₁M е равнобедрен, така че B₁M = C₁M. Следователно дъгите B₁M и C₁M са равни, откъдето получаваме, че ∠B₁AM = ∠C₁AM, т. е. M лежи на ъглополовящата на ∠BAC.",
+      "source": "OLI-2-Областен кръг-1998-10 кл · 1998-10 · Зад. 10.2",
+      "statement": "Let $ABCD$ be a quadrilateral such that $AD = CD$ and $\\angle  DAB = \\angle  ABC < 90^◦$. The line passing through $D$ and the midpoint of the segment $BC$ intersects the line $AB$ at the point $E$. Prove that $\\angle  BEC = \\angle  DAC$.",
+      "solution": "Let $M$ be the midpoint of $BC$ and let $AD$ and $BC$ meet at point $N$ and $AN$ and $EC$ meet at point $P$. It follows from Menelaus' Theorem applied to $\\triangle DMN$ and $\\triangle DEN$ that $DP \\cdot NC \\cdot ME = PN \\cdot CM \\cdot ED$ and $DA \\cdot NB \\cdot ME = AN \\cdot BM \\cdot ED$. Combining the above equalities with $AN = BN$, $BE = CE$ and $AD = CD$, we get $DP \\cdot NC = DC \\cdot PN$. Therefore $CP$ is bisector of $\\angle DCN$.\n\nConsequently $\\angle ACP = \\angle ACD + \\angle DCP = \\frac{1}{2}(\\angle NDC + \\angle DCN) = \\angle NAB$ so $\\angle DCP = \\angle CAB$ and we obtain $\\angle BEC = \\angle ABC - \\angle BCE = \\angle BAD - \\angle DCP = \\angle DAC$, Q. E. D.\n\nNote: The assertion is also true if the condition $\\angle ABC < 90^{\\circ}$ is left out.",
       "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "angle_bisector_theorem",
-        "cyclic_quadrilateral",
-        "simson_line"
+        "menelaus_theorem",
+        "angle_chasing"
       ],
       "confidence": "exact",
-      "reasoning": "Shows N,E,P are collinear ⇒ cyclic quadrilaterals ⇒ equal angles ⇒ M on angle bisector."
+      "reasoning": "Решението прилага теорема на Менелай за доказване на равенство на ъгли. Изисква допълнителни геометрични разсъждения за установяване на връзки.",
+      "_crosslinked_from": "1.1",
+      "_crosslink_confidence": 0.8
     },
     {
-      "source": "OLI-2-Областен кръг-2001-11 кл · 2001-11 · Зад. 4",
-      "statement": "Нека $ABC$ е правоъгълен триъгълник с хипотенуза $AB$. Върху лъча $AC^\\rightarrow$ е избрана точка $D$, различна от $A$ и $C$, за която правата през центъра на вписаната окръжност в $\\triangle ABC$, успоредна на ъглополовящата на $\\angle ADB$, се допира до вписаната окръжност в $\\triangle BCD$. Да се докаже, че $AD = BD$.",
-      "solution": "Решение: Първо ще докажем, че точката $C$ лежи на отсечката $AD$. Да допуснем противното, т.е. $\\angle ADB > 90^{\\circ}$. Нека вписаната окръжност $k(I, r)$ в $\\triangle BCD$ се допира до страната $BD$ в точка $P$. Да означим с $T$ допирната точка на $k$ и правата през центъра $J$ на вписаната окръжност в $\\triangle ABC$, успоредна на ъглополовящата $l$ на $\\angle ADB$. Тъй като $l \\perp DI$, то $T \\in DI$. Тогава $\\angle IJT = \\frac{\\angle CBD}{2} = \\angle IBP$ и понеже $IT = r = IP$, то правоъгълните триъгълници $IJT$ и $IBP$ са еднакви. В частност $IJ = IB$, откъдето следва, че $\\angle BJC < 90^{\\circ}$, което е противоречие. Нека сега $A'$ е такава точка върху лъча $\\overrightarrow{DA}$, че $DA' = DB$ и $E$ е средата на $A'B$. Да означим с $F$ допирната точка на вписаната окръжност в $\\triangle A'BC$, а с $J'$ - нейният център. Тогава\n$$EF = |A'E - A'F| = \\frac{1}{2}|A'B - (A'B + A'C - BC)| = \\frac{1}{2}|BC - A'C| = \\frac{1}{2}|BC - (A'D - CD)| = \\frac{1}{2}|BC + CD - BD| = r.$$\nСледователно правата $J'F$, успоредна на $l$ се допира до $k$. Това показва, че $J' \\in JF$. От друга страна, $J' \\in JC$ и понеже $JC$ не е успоредна на $JF$ ($\\angle ACJ = 45^{\\circ} > \\frac{1}{2} \\angle ADB = \\angle ADI$), то $J = J'$. Тогава $\\angle ABJ = \\angle CBJ = \\angle A'BJ$, т.е. $A = A'$, с което задачата е решена.",
-      "answer": "$AD = BD$.",
+      "source": "OLI-2-Областен кръг-2000-10 кл · 2000-10 · Зад. 4",
+      "statement": "Даден е изпъкнал четириъгълник $ABCD$, за който $\\measuredangle BCD = \\measuredangle CDA$. Нека ъглополовящата на ъгъл $ABC$ пресича отсечката $CD$ в точка $E$. Да се докаже, че $\\measuredangle AEB = 90^\\circ$ тогава и само тогава, когато $AB = AD + BC$.",
+      "solution": "Решение: Нека ∠AEB = 90°. Тъй като ∠CEB < 90°, върху страната AB можем да изберем точка F такава, че ∠BEF = ∠BEC. Тогава △BCE ≅ △BFE, откъдето BF = BC и ∠BFE = ∠BCE. От друга страна,\n(*) AE/sin∠AFE = AF/sin∠AEF, AE/sin∠ADE = AD/sin∠AED.\nТъй като ∠AED = ∠AEF и ∠AFE + ∠ADE = 180°, получаваме AF = AD и значи AB = AD + BC.\nОбратно, нека AB = AD + BC. Тогава върху отсечката AB съществува точка F, за която AF = AD и BF = BC. Следователно △BFE ≅ △BCE, откъдето ∠BFE = ∠BCE и ∠BEF = ∠BEC. Понеже AF = AD, от равенствата (*) следва, че sin∠AED = sin∠AEF. Тъй като ∠AED + ∠AEF < 180°, то ∠AED = ∠AEF и значи ∠AEB = 90°.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "law_of_sines"
+      ],
+      "confidence": "exact",
+      "reasoning": "Използва законите за синусите и ъглополовящи за доказателство на условието за прав ъгъл.",
+      "_crosslinked_from": "1.6",
+      "_crosslink_confidence": 0.7
+    },
+    {
+      "source": "OLI-2-Областен кръг-2000-12 кл · 2000-12 · Зад. 12.4",
+      "statement": "Даден е изпъкнал четириъгълник $ABCD$, за който $\\measuredangle BCD = \\measuredangle CDA$. Нека ъглополовящата на ъгъл $ABC$ пресича отсечката $CD$ в точка $E$. Да се докаже, че $\\measuredangle AEB = 90^\\circ$ тогава и само тогава, когато $AB = AD + BC$.",
+      "solution": "Решение: Нека $∼ AEB = 90^{◦}$. Тъй като $∼ CEB < 90^{◦}$, върху страната $AB$ можем да изберем точка $F$ такава, че $∼ BEF = ∼ BEC$. Тогава $\\triangle  BCE ≅ \\triangle  BFE$, откъдето $BF = BC$ и $∼ BFE = ∼ BCE$. От друга страна,\n\n$$ (*)   \\frac{AE}{\\sin ∼ AFE} = \\frac{AF}{\\sin ∼ AEF},   \\frac{AE}{\\sin ∼ ADE} = \\frac{AD}{\\sin ∼ AED}. $$\n\nТъй като $∼ AED = ∼ AEF$ и $∼ AFE + ∼ ADE = 180^{◦}$, получаваме $AF = AD$ и значи $AB = AD + BC$.\n\nОбратно, нека $AB = AD + BC$. Тогава върху отсечката $AB$ съществува точка $F$, за която $AF = AD$ и $BF = BC$. Следователно $\\triangle  BFE ≅ \\triangle  BCE$,\n\nоткъдето $∼ BFE = ∼ BCE$ и $∼ BEF = ∼ BEC$. Понеже $AF = AD$, от равенствата (*) следва, че $\\sin ∼ AED = \\sin ∼ AEF$. Тъй като $∼ AED + ∼ AEF < 180^{◦}$, то $∼ AED = ∼ AEF$ и значи $∼ AEB = 90^{◦}$.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "angle_bisector",
+        "congruent_triangles",
+        "quadrilateral_properties"
+      ],
+      "confidence": "exact",
+      "reasoning": "Четириъгълник с равни ъгли. Построяване на допълнителна точка F на AB. Доказателство чрез конгруентни триъгълници и свойства на ъглите."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2014-11 кл · 2014-11 · Зад. 11.2",
+      "statement": "Даден е триъгълник ABC, за който BC2 + AC2 = AC.AB. Да се докаже, че допирната точка на вписаната в \\triangle ABC окръжност със страната BC, средата на страната AB и средата на ъглополовящата през върха C лежат на една права.",
+      "solution": "Ще използваме стандартните означения за елементите на $\\triangle ABC$. Нека $CL$, $L ∈ AB$, е ъглополовящата на $\\angle ACB$, а $P$ и $Q$ са съответно средите на $AB$ и $CL$. Тъй като $a^2 + b^2 = bc < b(a + b) = ab + b^2$, то $a < b$, което означава, че $AL > BL$, т.е. точката $P$ е между $A$ и $L$. Следователно $PL = \\frac{c}{2} - \\frac{ca}{a + b} = \\frac{c(b - a)}{2(b + a)}$. Нека правата $PQ$ пресича страната $BC$ в точка $X$. От теоремата на Менелай за $\\triangle LBC$ и правата $PQ$ имаме\n\n$$\\frac{BP}{PL} · \\frac{LQ}{QC} · \\frac{CX}{XB} = 1,$$\n\nоткъдето $\\frac{XB}{CX} = \\frac{BP}{PL} = \\frac{b + a}{b - a}$. От $CX + XB = a$ намираме $CX = \\frac{a(b - a)}{2b}$.\n\nАко $T$ е допирната точка на вписаната окръжност със страната $BC$, то $CT = \\frac{a + b - c}{2}$. Равенството $CT = CX$ е еквивалентно на\n\n$$\\frac{a + b - c}{2} = \\frac{a(b - a)}{2b} \\iff a^2 + b^2 = bc.$$",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "menelaus_theorem",
+        "angle_bisector_properties",
+        "length_calculations"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва теорема на Менелай за доказване на колинеарност, която е точка 1.1. Има няколко стъпки: изразяване на дължини, прилагане на Менелай и проверка на условието, следователно трудността е medium.",
+      "_crosslinked_from": "1.1",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-2-Областен кръг-2005-11 кл · 2005-11 · Зад. 11.5",
+      "statement": "Ъглополовящите на ∠BAC, ∠ABC и ∠ACB в △ABC пресичат описаната около триъгълника окръжност съответно в точки A1, B1 и C1. Страната AB пресича правите C1B1 и C1A1 съответно в M и N, BC пресича A1C1 и A1B1 съответно в P и Q и AC пресича B1A1 и B1C1 съответно в R и S.\nа) Да се докаже, че височината през R в триъгълник CRQ е равна на радиуса на вписаната в триъгълник ABC окръжност.\nб) Да се докаже, че правите MQ, NR и SP се пресичат в една точка.",
+      "solution": "Ако $RT$ е височината през $R$ в $\\Delta CRQ$, то $RT = CR\\sin\\gamma \\quad (1)$. От синусовата теорема за $\\Delta B_1RC$ намираме\n\n$$CR = \\frac{B_1C \\sin\\frac{\\alpha}{2}}{\\cos\\frac{\\gamma}{2}} = \\frac{2R\\sin\\frac{\\beta}{2}\\sin\\frac{\\alpha}{2}}{\\cos\\frac{\\gamma}{2}},$$\n\nкъдето $R$ е радиусът на описаната около $\\Delta ABC$ окръжност. След заместване в (1) получаваме $RT = 4R\\sin\\frac{\\alpha}{2}\\sin\\frac{\\beta}{2}\\sin\\frac{\\gamma}{2}$. Но $r = 4R\\sin\\frac{\\alpha}{2}\\sin\\frac{\\beta}{2}\\sin\\frac{\\gamma}{2}$, където $r$ е радиусът на вписаната в $\\Delta ABC$ окръжност. Следователно $RT = r$.\n\nб) Аналогично на а) височината през $N$ на $\\Delta BNP$ е равна на $r$, което означава, че правата $NR$ е успоредна на $BC$ и е на разстояние $r$ от нея, следователно $I \\in NR$, където $I$ е център на вписаната в $\\Delta ABC$ окръжност. Аналогично $I$ лежи и на правите $MQ$ и $SR$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "angle_bisectors",
+        "circumcircle",
+        "incircle",
+        "sine_theorem"
+      ],
+      "confidence": "exact",
+      "reasoning": "Използва се синусова теорема и свойства на ъглополовящите, за да се докаже равенство на дължини, свързани с вписаната окръжност.",
+      "_crosslinked_from": "1.10",
+      "_crosslink_confidence": 0.7
+    },
+    {
+      "source": "OLI-2-Областен кръг-2016-12 кл · 2016-12 · Зад. 12.2",
+      "statement": "В трапец $ABCD$, $AB \\parallel  CD$, вписаната окръжност в триъгълник $ABD$ допира страните $AB$ и $BD$ съответно в точки $M$ и $N$, а вписаната окръжност в триъгълник $ACD$ допира страните $AC$ и $DC$ съответно в точки $P$ и $Q$. Да се докаже, че пресечната точка на правите $MN$ и $PQ$ лежи на средната основа на трапеца.",
+      "solution": "Нека $O$ е центърът на вписаната в $\\triangle ABD$ окръжност и ъглополовящата на ъгъл $BAC$ пресича правата $MN$ в точка $S$. Тъй като $\\angle ASM = \\angle BMN - \\angle BAO$, то $\\angle ASM = \\frac{1}{2} \\angle ADB$. Следователно точките $O$, $S$, $N$ и $D$ лежат на една окръжност. Тогава $\\angle DSA = \\angle DNO = 90^\\circ$. Понеже $ABCD$ е трапец, то $DS$ е ъглополовяща на $\\angle ADC$.\n\nПо същия начин доказваме, че ъглополовящите на $\\angle ADC$ и $\\angle BAC$ се пресичат върху $PQ$. Следователно $S$ е пресечната точка на правите $MN$ и $PQ$. Ако $T$ е средата на $AD$, то $\\angle TSA = \\angle TAS = \\angle SAB$, което означава, че $ST \\parallel AB$. Понеже $T$ е среда на $AD$ и $ST \\parallel AB$, точката $S$ лежи на средната основа на трапеца.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "incircle",
+        "angle_bisectors",
+        "cyclic_quadrilaterals",
+        "midline_property"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на вписани окръжности в триъгълниците на трапеца, ъглополовящи и циклични точки, за да докаже, че пресечната точка лежи на средната основа. Основната техника е свързана с вписани окръжности.",
+      "_crosslinked_from": "1.10",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-2-Областен кръг-2020-11 кл · 2020-11 · Зад. 11.2",
+      "statement": "В окръжност с център $O$ и радиус $R$ е вписан остроъгълен $\\triangle ABC$. Върху страната $BC$ е избрана точка $X$, за която $AX=BX$ и $OX=CX$. Да се намерят ъглите на $\\triangle ABC$, ако радиусът на описаната окръжност около $\\triangle AOC$ е равен на $R$.",
+      "solution": "Решение. Ще използваме стандартни означения за ъглите на \\triangle ABC. Тъй като \\triangle ABC е остроъгълен, то \\angle AOC = 2β и от условието, че радиусът на описаната окръжност около \\triangle AOC е равен на R получаваме:\n\n\\[\n\\frac {b}{\\sin \\beta} = \\frac {b}{\\sin 2 \\beta} \\iff \\sin \\beta = \\sin 2 \\beta \\iff \\beta = 60^{\\circ}.\n\\]\n\nПонеже \\angle AOC = 2β и \\angle AXC = \\angle ABX + \\angle BAX = 2β, то AOXC е вписан четириъгълник. Сега от OX = CX получаваме, че AX е ъглополовяща на \\angle OAC. Следователно \\angle OAC = 2 \\angle XAC = 2(\\alpha - \\beta) и понеже \\angle OAC = 90^{\\circ} - \\beta = 30^{\\circ} намираме\n\n\\[\n2 \\alpha - 120^{\\circ} = 30^{\\circ} \\iff \\alpha = 75^{\\circ}.\n\\]\n\nТогава \\( \\gamma = 45^{\\circ} \\).\n\nОценяване (7 точки): 2 т. – за \\(\\beta = 60^{\\circ}\\); 2 т. – за вписания четириъгълник AOXC; 2 т. – за AX ъглополовяща на \\angle OAC; по 1 т. – за намиране на \\(\\alpha\\) и \\(\\gamma\\).\n\nСвалено от Klasirane.com",
+      "answer": "α=75°, β=60°, γ=45°",
+      "difficulty": "hard",
+      "techniques": [
+        "inscribed_angles",
+        "circle_properties",
+        "angle_bisector"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва вписани ъгли и свойства на окръжности (точка 1.5). Изисква няколко стъпки: намиране на ъгъл, вписан четириъгълник, ъглополовяща. Това я прави hard.",
+      "_crosslinked_from": "1.5",
+      "_crosslink_confidence": 0.8
+    },
+    {
+      "source": "OLI-2-Областен кръг-2022-11 кл · 2022-11 · Зад. 11.2",
+      "statement": "В остроъгълен триъгълник $ABC$ са построени ъглополовящата $BL$, $L ∈ AC$ и височината $AH$, $H ∈ BC$. Да се намери $\\angle  AHL$, ако\n\n$$\\sin \\angle  BAC = √{3} \\cos \\angle  ACB.$$",
+      "solution": "Решение. Ще използваме стандартните означения за елементите на триъгълника $ABC$. За $\\varphi = \\angle AHL$ имаме:\n\n$$\\angle LHC = 90^\\circ - \\varphi \\text{ и } \\angle HLC = 90^\\circ + \\varphi - \\gamma.$$\n\nПърви начин. Тъй като\n\n$$\\frac{S_{AHL}}{S_{CHL}} = \\frac{AL}{CL} \\quad \\text{и} \\quad \\frac{S_{AHL}}{S_{CHL}} = \\frac{AH.LH \\sin \\varphi}{CH.LH \\sin(90^\\circ - \\varphi)} = \\frac{AH \\sin \\varphi}{CH \\cos \\varphi},$$\n\nполучаваме $\\frac{AL}{CL} = \\frac{AH}{CH} \\operatorname{tg} \\varphi$. В това равенство заместваме $\\frac{AL}{CL} = \\frac{AB}{CB} = \\frac{\\sin \\gamma}{\\sin \\alpha}$ и $\\frac{AH}{CH} = \\operatorname{tg} \\gamma$ и получаваме\n\nсвалено от Klasirane.com\n\n$$\\frac {\\sin \\gamma}{\\sin \\alpha} = \\frac {\\sin \\gamma}{\\cos \\gamma} \\operatorname{tg} \\varphi \\iff \\operatorname{tg} \\varphi = \\frac {\\cos \\gamma}{\\sin \\alpha} = \\frac {\\sqrt {3}}{3}.$$\n\nСледователно $\\varphi = 30^{\\circ}$.\n\nВтори начин. От синусовата теорема за $\\triangle LHC$ получаваме:\n\n$$\\frac {L C}{H C} = \\frac {\\sin (90^{\\circ} - \\varphi)}{\\sin (90^{\\circ} + \\varphi - \\gamma)} = \\frac {\\cos \\varphi}{\\cos (\\gamma - \\varphi)}.$$\n\nТъй като $LC = \\frac{ab}{a + c}$ и $HC = b\\cos \\gamma$ след заместване в горното равенство, получаваме:\n\n$$\\frac {\\frac {a b}{a + c}}{b \\cos \\gamma} = \\frac {\\cos \\varphi}{\\cos (\\gamma - \\varphi)} \\iff a \\cos (\\gamma - \\varphi) = (a + c) \\cos \\gamma \\cos \\varphi .$$\n\nКато използваме, че $\\cos (\\gamma -\\varphi) = \\cos \\gamma \\cos \\varphi +\\sin \\gamma \\sin \\varphi$ и $\\frac{a}{c} = \\frac{\\sin\\alpha}{\\sin\\gamma}$ след опростяване на последното равенство, получаваме:\n\n$$\\frac {\\sin \\varphi}{\\cos \\varphi} = \\frac {\\cos \\gamma}{\\sin \\alpha} = \\frac {\\sqrt {3}}{3}.$$\n\nСледователно $\\operatorname{tg} \\varphi = \\frac {\\sqrt {3}}{3}$, т.е. $\\varphi = 30^{\\circ}$.\n\nОценяване. Първи начин: 3 т. за $\\frac{AL}{CL} = \\frac{AH}{CH} \\operatorname{tg} \\varphi$; 2 т. за $\\frac{AL}{CL} = \\frac{AB}{CB} = \\frac{\\sin \\gamma}{\\sin \\alpha}$; 1 т. за $\\frac{AH}{CH} = \\operatorname{tg} \\gamma$; 1 т. за получаване на отговора.\n\nВтори начин: 2 т. за $\\frac{LC}{HC} = \\frac{\\cos\\varphi}{\\cos(\\gamma - \\varphi)}$; 2 т. за $\\cos (\\gamma -\\varphi) = (a + c)\\cos \\gamma \\cos \\varphi$; 2 т. за опростяване до $\\frac{a}{c} = \\frac{\\sin\\alpha}{\\sin\\gamma}$; 1 т. за получаване на отговора.",
+      "answer": "30^{\\circ}",
+      "difficulty": "hard",
+      "techniques": [
+        "trigonometry",
+        "angle_chasing",
+        "properties_of_triangle"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква намиране на ъгъл в триъгълник с дадено тригонометрично условие. Решението използва синусова теорема и свойства на ъглополовяща и височина. Това е класическа задача за триъгълници, която се отнася до синусова и косинусова теорема.",
+      "_crosslinked_from": "1.6",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2023-11 кл · 2023-11 · Зад. 11.2",
+      "statement": "Ъглоиловящата $AD$ в $\\triangle ABC$ е равна на страната $AC$. Описаната около $\\triangle ABD$ окръжност пресича страната $AC$ в точка $E$ като $\f\\frac{DE}{CD} = \f\\frac{\\sqrt{3}+1}{2}$. Да се намерят ъглите на $\\triangle ABC$.",
+      "solution": "Решение. Нека $Угъл BAC = а$. От свойството на ъглополовящата $фрак{DB}{DC} = фрак{AB}{AC}$. Но $BD = DE$ като хорди в окръжност, на които отговарят равни дъги, откъдето $AB = фрак{\\sqrt{3}+1}{2}AC$. Ако $BD = DE = x$, то $CD = фрак{2x}{1+\\sqrt{3}}$ и от формулата за ъглополовящата, при $AD = AC$ намираме\n\n$$AD^2 = AB.AD - BD.DC = 2x^2,$$\n\nт. е. $AD = x\\sqrt{2}$. От косинусова теорема за $триъгълника ABD$ спрямо страната $BD$ получаваме\n\n$$x^2 = x^2 лево( фрак{\\sqrt{3}+1}{\\sqrt{2}} десно)^2 + (x\\sqrt{2})^2 - 2\\sqrt{2} сдот фрак{\\sqrt{3}+1}{\\sqrt{2}} x^2 сдот кос фрак{а}{2}.$$\n\nСвалено от Klasirane.com\n\nОттук $кос фрак{а}{2} = фрак{\\sqrt{3}}{2}$, т. е. $а = 60^{цирк}$. От равнобедрения триъгълник $триъгълник ACD$ намираме $угъл DCA = угъл CDA = 75^{цирк}$ и тогава $угъл ABC = 45^{цирк}$. Окончателно ъгловете на $триъгълника ABC$ са $60^{цирк}, 45^{цирк}$ и $75^{цирк}$.\n\nОценяване. (7 точки) 4 т. за изразяване на $AD$ чрез $BD$, 2 т. за намиране на $а = 60^{цирк}$ и 1 т. за другите два ъгъла.",
+      "answer": "60^{цирк}, 45^{цирм} и 75^{цирк}",
+      "difficulty": "hard",
+      "techniques": [
+        "angle_bisector_theorem",
+        "circle_properties",
+        "cosine_rule"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрична задача, която използва косинусова теорема за намиране на ъгли, което я класифицира в точка 1.6. Трудността е hard поради необходимостта от построение и множество стъпки.",
+      "_crosslinked_from": "1.6",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2023-12 кл · 2023-12 · Зад. 12.2",
+      "statement": "Даден е триъгълник $ABC$, за който ъглополовящата на средния по големина ъгъл е равна на най-малката му страна и числата $a = BC$, $b = CA$ и $c = AB$, взети в този ред, образуват аритметична прогресия. Да се намерят отношението, в което центърът на вписаната окръжност $J$ разделя тази ъглополовяща, радиусът $r$ на тази окръжност и дължините на страните на триъгълника, при условие че лицето му $S$ е равно на $21\\sqrt{15}$.",
+      "solution": "Решение. Понеже числата a = BC, b = CA и c = AB в този ред образуват аритметична прогресия, то a + c = 2b и без ограничение на общността можем да считаме, че a \\le  b \\le  c. В триъгълника срещу по-голям ъгъл лежи по-голяма страна и обратно, т.е. конструкцията ще бъде както е показано на чертежа и BL = BC = a. От свойството на ъглополовящите за триъгълника ABC непосредствено получаваме m = AL = c b/a + c = c/2 и n = CL = a b/a + c = a/2. Сега понеже AJ е ъглополовяща в триъгълника ABL, то 1/2 = c/2 = AL/AB = LJ/BJ, т.е. BJ : JL = 2 : 1. Нека c p да означим полупериметъра на Δ ABC, т.е. p = a + b + c/2. От равенството a + c = 2b получаваме b = 2/3 p и a + c = 4/3 p. Сега от BL = a, m = AL = c/2, n = CL = a/2 и формулта за ъглополовящата в Δ ABC имаме a² = BL² = c · a - m · n = 3/4 ac, т.е. a = 3/4 c. Така от равенствата a = 3/4 c и a + c = 4/3 p непосредствено получаваме a = 12/21 p, b = 2/3 p и c = 16/21 p. Сега от свойствата на допирателна от външна точка към окръжност имаме BM = p - b = p/3, а от BJ : JL = 2 : 1 и BL = a достигаме до BJ = 2/3 a = 8/21 p. Тогава в правоъгълния триъгълник BMJ теоремата на Питагор ни дава BJ² = BM² + JM², (8/21 p)² = (p/3)² + r² или (8² - 7²)/21² p² = r², т.е. r² = 15/21² p². Сега от формулата за лице S = pr = 21√15 след повдигане на квадрат достигаме до S² = p²r² = 21² · 15 и след заместване на r² = 15/21² p² имаме p² 15/21² p² = 21² · 15, т.е. p = 21. Така окончателно получаваме r = √15, a = 12, b = 14 и c = 16.",
+      "answer": "r = √15, a = 12, b = 14, c = 16",
       "difficulty": "hard",
       "techniques": [
         "angle_bisector",
-        "incircle_tangency",
-        "symmetry"
+        "incenter",
+        "semiperimeter",
+        "area_formula",
+        "pythagoras"
       ],
       "confidence": "exact",
-      "reasoning": "Използва се обобщена теорема за ъглополовящата и свойства на вписаните окръжности, за да се докаже AD=BD."
+      "reasoning": "Геометрична задача с ъглополовяща и вписана окръжност. Изисква комплексни изчисления и свойства на инцентъра. Съвпада с A2.",
+      "_crosslinked_from": "1.10",
+      "_crosslink_confidence": 0.8
+    },
+    {
+      "source": "OLI-2-Областен кръг-2026-10 кл · 2026-10 · Зад. 10.2",
+      "statement": "Даден е правилен петоъгълник ABCDE , за който F е пресечната точка на CE и AD, а M е пресечната точка на правите BC и DE. Ъглополовящата на <) AF E пресича AE в точка H. Нека правите M H и AB се пресичат в точка I, а перпендикулярът в I към AB пресича правата CD в точка K. Да се докаже, че B, F и K лежат на една права.",
+      "solution": "Решение.\n\n![img-0.jpeg](img-0.jpeg)\n\nПърви начин: Нека правите AB и DE се пресичат в точка T, а правите AE и CD в точка P. От съображения за симетрия B, F и P лежат на една права и е достатъчно да докажем, че K ≡ P. От теоремата на Менелай за ΔTAE и правата (MHI), както и от AC || ED следва, че\n\n$$\\frac{AI}{IT} = \\frac{AH}{HE} \\cdot \\frac{EM}{MT} = \\frac{AF}{FE} \\cdot \\frac{BM}{MT} = \\frac{AC}{ED} \\cdot \\frac{BC}{AC} = 1.$$\n\nТака получаваме, че AI = IT. Но ΔTAP е равнобедрен (PT || AD и PTA = DAB = PAT = 72°) и следователно PI ⊥ AB, т.е. K ≡ P.\n\nВтори начин: Нека перпендикулярът в точка I към AB пресича AE в точка K'. Ще докажем, че K ≡ K'. Без ограничение на общността нека EF = 1 и AF = x. Тогава страната на петоъгълника също е x, защото ΔAEF е равнобедрен (AE = AF). В ΔAFE е в сила, че ∢HFA = ∢HFE = 36° ⇒ AH = HF = EF = 1, а пък от теорема за ъглополовящата/подобни триъгълници EH : HA = 1 : x и EH = 1/x. Следователно x е решение на уравнението 1/x + 1 = x ⇒ 1 + x = x², получено от AH + HE = AE.\n\nНека J е пресечната точка на MI и EF. Ще изразим AI чрез x. Първо имаме, че AB||EC от теорема на Талес следва, че AI/EJ = AH/HE = x. Следователно AI = x.EJ. Сега HF||ED ⇒ EJ : JF = EM : HF = (1 + 2x) : 1, защото имаме, че EC = CM = MD = 1 + x. Значи EJ = 2x + 1/2x + 2EF = 2x + 1/2x + 2.\n\nФинално IA = x(2x + 1)/2x + 2 = 2x² + x/2x + 2 = 3x + 2/2x + 2. От друга страна cos 72° = x/2/(x + 1) следователно AK' = IA : cos 72° = 3x + 2/2x + 2 · x + 1/x/2 = 3 + 2/x = 3 + 2x - 2 = 2x + 1 = x + 1 + x = AE + EK'. Следователно EK' = x + 1. Може да довършим по много начини, например да кажем, че ΔK'ED ≃ MDC заради ∢K'ED = ∢MDC = 72° и EK' = DM. Значи ΔEK'D е равнобедрен и K' ∈ CD. Следователно K ≡ K'.\n\nОценяване. (7 точки) (Първи начин) 1 т. за построяване на точка P и свеждане на задачата до P ≡ K; 4 т. за построяване на точка T и доказателство, че AI = IT (от които 1 т. за AH : HE = AC : ED и 1 т. за EM : MT = BC : AC); 2 т. за ΔTAP – равнобедрен и P ≡ K; (Втори начин) 1 т. за построяване на K' и свеждане на задачата до K ≡ K'; 1 т. за писмено отбелязване, че HF||ED; 1 т. за изразяване на отношението EH : HA; 3 т. за изразяване на страната IA чрез елементи на петоъгълника; 1 т. за довършване;",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "menelaus_theorem",
+        "properties_of_regular_pentagon",
+        "symmetry",
+        "coordinate_geometry"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква приложение на теоремата на Менелай в конфигурация с правилен петоъгълник. Решението използва симетрия и координатна геометрия за доказване на колинеарност. Това е типична задача за геометрични трансформации и свойства на правилни многоъгълници.",
+      "_crosslinked_from": "1.1",
+      "_crosslink_confidence": 0.7
     }
   ]
 }

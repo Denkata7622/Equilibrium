@@ -1,0 +1,25 @@
+{
+  "key": "1.3#0",
+  "point_id": "1.3",
+  "idx": 0,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-1995-10 кл · 1995-10 · Зад. 10.2",
+  "techniques": [
+    "ptolemy_theorem",
+    "trigonometric_identities",
+    "area_ratios"
+  ],
+  "word_count": 1546,
+  "score": 10,
+  "verdict": "approve",
+  "caught_errors_in_solution": [
+    "Триъгълниците A_1A_2A_3 и B_1B_2B_3 са подобни, не еднакви; знакът за еднаквост трябва да се замени със знак за подобие.",
+    "В реда за долната граница a^2/b + a^2/c трябва да се поправи на a^2/b^2 + a^2/c^2.",
+    "В тригонометричния израз за a^2/(bc) правилният знаменател е sin(2π/7)sin(4π/7), а не sin^2(π/7)sin(4π/7).",
+    "Стойността на 1/[4(√2/2)(1+√2/2)] е (√2−1)/2, а не √2−1."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 166.8,
+  "generated_at": "2026-11-18T22:29:30.000742"
+}

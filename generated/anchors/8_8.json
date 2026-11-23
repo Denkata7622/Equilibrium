@@ -1,103 +1,139 @@
 {
   "point_id": "8.8",
-  "total": 7,
+  "total": 9,
   "by_difficulty": {
     "easy": 3,
     "medium": 4,
-    "hard": 0
+    "hard": 2
   },
   "problems": [
     {
-      "source": "OLI-2-Областен кръг-1995-10 кл · 1995-10 · Зад. 3",
-      "statement": "Let $n > 1$ be an integer. Find the number of the permutations $(a_1, a_2, \\ldots, a_n)$ of the numbers $1, 2, \\ldots, n$ with the following property: there exists only one index $i \\in \\{1, 2, \\ldots, n - 1\\}$ such that $a_i > a_{i+1}$.",
-      "solution": "Solution. Denote by $p_n$ the number of the permutations with the given properties. Obviously, $p_1 = 0$ and $p_2 = 1$. Let $n \\geq 2$. The number of the permutations with $a_n = n$ is equal to $p_{n-1}$. Consider all the permutations $(a_1, a_2, \\ldots, a_n)$ with $a_i = n$, where $1 \\leq i \\leq n-1$ is fixed. Their number is $\\binom{n-1}{i-1}$. Consequently\n\n$$p_n = p_{n-1} + \\sum_{i = 1}^{n - 1} \\binom{n - 1}{i - 1} = p_{n-1} + 2^{n-1} - 1.$$\n\nFrom here\n\n$$\\begin{array}{l} p_n = (2^{n-1} - 1) + (2^{n-2} - 1) + \\dots + (2 - 1) \\\\ = 2^n - n - 1. \\end{array}$$",
-      "answer": "$2^n - n - 1$",
+      "source": "OLI-2-Областен кръг-1997-10 кл · 1997-10 · Зад. 10.6",
+      "statement": "Find the number of non-empty sets of Sₙ = {1, 2, ..., n} such that there are no two consecutive numbers in one and the same set.",
+      "solution": "Denote the required number by $f_n$. It is easy to see that $f_1 = 1$, $f_2 = 2$, $f_3 = 4$.\n\nDivide the subsets of $S_n$ having no two consecutive numbers into two groups—those that do not contain the element $n$ and those that do. Obviously the number of subsets in the first group is $f_{n-1}$.\n\nLet $T$ be a set of the second group. Therefore either $T = \\{n\\}$ or $T = \\{a_1, \\ldots, a_{k-1}, n\\}$, where $k > 1$. It is clear that $a_{k-1} \\neq n - 1$, so $\\{a_1, \\ldots a_{k-1}\\} \\subset S_{n-2}$, whence the number of sets in the second group is $f_{n-2} + 1$. Therefore\n\n$$f_n = f_{n-1} + f_{n-2} + 1.$$\n\nAfter substituting $u_n = f_n + 1$ we get\n\n$$u_1 = 2, u_2 = 3, \\qquad u_n = u_{n-1} + u_{n-2}.$$\n\nTherefore the sequence $\\{u_n\\}_{n=1}^{\\infty}$ coincides with the Fibonacci sequence from its third number onwards. Thus we obtain\n\n$$f_n = \\frac{1}{\\sqrt{5}} \\left( \\left( \\frac{1 + \\sqrt{5}}{2} \\right)^{n+2} - \\left( \\frac{1 - \\sqrt{5}}{2} \\right)^{n+2} \\right) - 1.$$",
+      "answer": null,
       "difficulty": "easy",
       "techniques": [
         "recurrence_relation",
-        "binary_strings",
         "combinatorial_counting"
       ],
       "confidence": "exact",
-      "reasoning": "Derives recurrence p_n = p_{n-1}+2^{n-1}-1 and sums it; short algebraic manipulation."
+      "reasoning": "Комбинаторна задача с рекурентна връзка за брой подмножества без последователни числа (8.8). Трудността е easy, тъй като рекурентната връзка е стандартна и лесна за установяване."
     },
     {
-      "source": "OLI-2-Областен кръг-1995-11 кл · 1995-11 · Зад. 3",
-      "statement": "Let $n > 1$ be an integer. Find the number of the permutations $(a_1, a_2, \\ldots, a_n)$ of the numbers $1, 2, \\ldots, n$ with the following property: there exists only one index $i \\in \\{1, 2, \\ldots, n - 1\\}$ such that $a_i > a_{i+1}$.",
-      "solution": "Solution. Denote by $p_n$ the number of the permutations with the given properties. Obviously, $p_1 = 0$ and $p_2 = 1$. Let $n \\geq 2$. The number of the permutations with $a_n = n$ is equal to $p_{n-1}$. Consider all the permutations $(a_1, a_2, \\ldots, a_n)$ with $a_i = n$, where $1 \\leq i \\leq n-1$ is fixed. Their number is $\\binom{n-1}{i-1}$. Consequently\n\n$$p_n = p_{n-1} + \\sum_{i = 1}^{n - 1} \\binom{n - 1}{i - 1} = p_{n - 1} + 2^{n - 1} - 1.$$\n\nFrom here\n\n$$\\begin{array}{l} p_n = (2^{n - 1} - 1) + (2^{n - 2} - 1) + \\dots + (2 - 1) \\\\ = 2^n - n - 1. \\\\ \\end{array}$$",
-      "answer": "$2^n - n - 1$.",
+      "source": "OLI-2-Областен кръг-1997-11 кл · 1997-11 · Зад. 11.6",
+      "statement": "Find the number of non-empty sets of Sₙ = {1, 2, ..., n} such that there are no two consecutive numbers in one and the same set.",
+      "solution": "Denote the required number by $f_n$. It is easy to see that $f_1 = 1$, $f_2 = 2$, $f_3 = 4$.\n\nDivide the subsets of $S_n$ having no two consecutive numbers into two groups—those that do not contain the element $n$ and those that do. Obviously the number of subsets in the first group is $f_{n-1}$.\n\nLet $T$ be a set of the second group. Therefore either $T = \\{n\\}$ or $T = \\{a_1, \\ldots, a_{k-1}, n\\}$, where $k > 1$. It is clear that $a_{k-1} \\neq n - 1$, so $\\{a_1, \\ldots a_{k-1}\\} \\subset S_{n-2}$, whence the number of sets in the second group is $f_{n-2} + 1$. Therefore\n\n$$f_n = f_{n-1} + f_{n-2} + 1.$$\n\nAfter substituting $u_n = f_n + 1$ we get\n\n$$u_1 = 2, u_2 = 3, \\qquad u_n = u_{n-1} + u_{n-2}.$$\n\nTherefore the sequence $\\{u_n\\}_{n=1}^{\\infty}$ coincides with the Fibonacci sequence from its third number onwards. Thus we obtain\n\n$$f_n = \\frac{1}{\\sqrt{5}} \\left( \\left( \\frac{1 + \\sqrt{5}}{2} \\right)^{n+2} - \\left( \\frac{1 - \\sqrt{5}}{2} \\right)^{n+2} \\right) - 1.$$",
+      "answer": null,
       "difficulty": "easy",
       "techniques": [
         "recurrence_relation",
-        "binomial_sum"
+        "fibonacci"
       ],
       "confidence": "exact",
-      "reasoning": "Derives a recurrence p_n = p_{n-1}+2^{n-1}-1 and sums it; only two logical steps."
+      "reasoning": "Комбинаторна задача с рекурентна връзка, която се свежда до редица на Фибоначи. Стандартна техника, решаема за кратко време."
     },
     {
-      "source": "OLI-2-Областен кръг-1997-11 кл · 1997-11 · Зад. 6",
+      "source": "OLI-2-Областен кръг-1997-12 кл · 1997-12 · Зад. 12.6",
       "statement": "Find the number of non-empty sets of Sₙ = {1, 2, ..., n} such that there are no two consecutive numbers in one and the same set.",
-      "solution": "Solution: Denote the required number by $f_n$. It is easy to see that $f_1 = 1$, $f_2 = 2$, $f_3 = 4$.\n\nDivide the subsets of $S_n$ having no two consecutive numbers into two groups—those that do not contain the element $n$ and those that do. Obviously the number of subsets in the first group is $f_{n-1}$.\n\nLet $T$ be a set of the second group. Therefore either $T = \\{n\\}$ or $T = \\{a_1, \\ldots, a_{k-1}, n\\}$, where $k > 1$. It is clear that $a_{k-1} \\neq n - 1$, so $\\{a_1, \\ldots a_{k-1}\\} \\subset S_{n-2}$, whence the number of sets in the second group is $f_{n-2} + 1$. Therefore\n\n$$f_n = f_{n-1} + f_{n-2} + 1.$$\n\nAfter substituting $u_n = f_n + 1$ we get\n\n$$u_1 = 2, u_2 = 3, \\qquad u_n = u_{n-1} + u_{n-2}.$$\n\nTherefore the sequence $\\{u_n\\}_{n=1}^{\\infty}$ coincides with the Fibonacci sequence from its third number onwards. Thus we obtain\n\n$$f_n = \\frac{1}{\\sqrt{5}} \\left( \\left( \\frac{1 + \\sqrt{5}}{2} \\right)^{n+2} - \\left( \\frac{1 - \\sqrt{5}}{2} \\right)^{n+2} \\right) - 1.$$",
-      "answer": "$f_n = \\frac{1}{\\sqrt{5}}\\left(\\left(\\frac{1+\\sqrt{5}}{2}\\right)^{n+2}-\\left(\\frac{1-\\sqrt{5}}{2}\\right)^{n+2}\\right)-1$.",
+      "solution": "Denote the required number by $f_n$. It is easy to see that $f_1 = 1$, $f_2 = 2$, $f_3 = 4$.\n\nDivide the subsets of $S_n$ having no two consecutive numbers into two groups—those that do not contain the element $n$ and those that do. Obviously the number of subsets in the first group is $f_{n-1}$.\n\nLet $T$ be a set of the second group. Therefore either $T = \\{n\\}$ or $T = \\{a_1, \\ldots, a_{k-1}, n\\}$, where $k > 1$. It is clear that $a_{k-1} \\neq n - 1$, so $\\{a_1, \\ldots a_{k-1}\\} \\subset S_{n-2}$, whence the number of sets in the second group is $f_{n-2} + 1$. Therefore\n\n$$f_n = f_{n-1} + f_{n-2} + 1.$$\n\nAfter substituting $u_n = f_n + 1$ we get\n\n$$u_1 = 2, u_2 = 3, \\qquad u_n = u_{n-1} + u_{n-2}.$$\n\nTherefore the sequence $\\{u_n\\}_{n=1}^{\\infty}$ coincides with the Fibonacci sequence from its third number onwards. Thus we obtain\n\n$$f_n = \\frac{1}{\\sqrt{5}} \\left( \\left( \\frac{1 + \\sqrt{5}}{2} \\right)^{n+2} - \\left( \\frac{1 - \\sqrt{5}}{2} \\right)^{n+2} \\right) - 1.$$",
+      "answer": null,
       "difficulty": "easy",
       "techniques": [
-        "recurrence_relations"
+        "recurrence_relation",
+        "fibonacci"
       ],
       "confidence": "exact",
-      "reasoning": "Derives a simple recurrence fₙ = fₙ₋₁ + fₙ₋₂ + 1 and reduces it to Fibonacci – classic recurrence technique."
+      "reasoning": "Комбинаторната задача се свежда до рекурентна връзка, която се решава с числа на Фибоначи. Това е стандартен подход за подмножества без съседни елементи."
     },
     {
-      "source": "OLI-2-Областен кръг-1996-11 кл · 1996-11 · Зад. 6",
-      "statement": "A rectangle $m \\times n$ ($m > 1$, $n > 1$) is divided into $mn$ squares $1 \\times 1$ with lines, parallel to its sides. In how many ways could two of the squares be canceled and the remaining part be covered with dominoes $2 \\times 1$?",
-      "solution": "Solution. Denote by $F(m, n)$ the number we are looking for. Since every domino covers exactly two squares, then $F(m, n) = 0$ if $m$ and $n$ are odd.\n\nLet at least one of the numbers $m$ and $n$ be even. We color the squares in two colors — white and black in such a way that every two neighbor squares (with common side) are of different colors (Figure 5). The number $S_0$ of the white squares is equal to the number $S_1$ of the black ones and $S_0 = S_1 = \\frac{mn}{2}$.\n\nEach domino covers one white and one black square. If two white or two black squares are canceled, then it is impossible to cover by dominoes the remaining part of the rectangle. Now we shall show that if one white and one black squares are canceled then the remaining part can be covered by dominoes.\n\nSince $mn$ is even, then $mn = 2t$, where $t \\ge 2$. We make induction with respect to $t$. The case $t = 2$ is obvious. Let $t_0 > 2$ and the proposition is true for all $2 \\le t \\le t_0$. Let $mn = 2(t_0 + 1)$. Denote by $T_1$ the rectangle consisted of the first two rows of the considered rectangle, and by $T_2$ — the rectangle consisted of the remaining rows. If the two canceled squares are in $T_1$ or in $T_2$, then we can cover each of the rectangles by dominoes and consequently we can cover the given rectangle.\n\nLet one of the canceled squares be in $T_1$, and the other — in $T_2$. We place a domino in such a way that it covers one square from $T_1$ and one square from $T_2$. It is also possible that the canceled square from $T_1$ and the covered square from $T_1$ are of different colors. Thus, the canceled square from $T_2$ and the covered square from $T_2$ are of different colors. According to the inductive assumption the remaining part of $T_1$ and the remaining part of $T_2$ can be covered. Thus, the rectangle can be covered too.\n\nFinally one white and one black squares can be chosen in $S_0 \\cdot S_1 = \\left(\\frac{mn}{2}\\right)^2$ ways. Therefore, in this case $F(m, n) = \\frac{m^2 n^2}{4}$.",
-      "answer": "$F(m,n) = 0$ if $m$ and $n$ are both odd; otherwise $F(m,n) = \\frac{m^2n^2}{4}$.",
+      "source": "OLI-2-Областен кръг-1995-10 кл · 1995-10 · Зад. 10.3",
+      "statement": "Let $n > 1$ be an integer. Find the number of the permutations $(a_1, a_2, \\ldots, a_n)$ of the numbers $1, 2, \\ldots, n$ with the following property: there exists only one index $i \\in \\{1, 2, \\ldots, n - 1\\}$ such that $a_i > a_{i+1}$.",
+      "solution": "Denote by $p_n$ the number of the permutations with the given properties. Obviously, $p_1 = 0$ and $p_2 = 1$. Let $n \\geq 2$. The number of the permutations with $a_n = n$ is equal to $p_{n-1}$. Consider all the permutations $(a_1, a_2, \\ldots, a_n)$ with $a_i = n$, where $1 \\leq i \\leq n-1$ is fixed. Their number is $\\binom{n-1}{i-1}$. Consequently\n\n$$p _ {n} = p _ {n - 1} + \\sum_ {i = 1} ^ {n - 1} \\binom {n - 1} {i - 1} = p _ {n - 1} + 2 ^ {n - 1} - 1.$$\n\nFrom here\n\n$$\\begin{array}{l} p _ {n} = (2 ^ {n - 1} - 1) + (2 ^ {n - 2} - 1) + \\dots + (2 - 1) \\\\ = 2 ^ {n} - n - 1. \\\\ \\end{array}$$",
+      "answer": "2^n - n - 1",
       "difficulty": "medium",
       "techniques": [
-        "parity_coloring",
-        "induction",
-        "tiling"
+        "recurrence_relations",
+        "binomial_coefficients",
+        "permutations"
       ],
       "confidence": "exact",
-      "reasoning": "Uses chessboard coloring to show one white‑one black removal is necessary, then inductive tiling construction."
+      "reasoning": "Задачата се свежда до рекурентно уравнение за пермутации с точно едно нарушение, решено чрез биномни коефициенти. Стандартна комбинаторна техника с ясна рекурентна връзка."
     },
     {
-      "source": "OLI-2-Областен кръг-1997-10 кл · 1997-10 · Зад. 6",
-      "statement": "Find the number of non-empty sets of Sₙ = {1, 2, ..., n} such that there are no two consecutive numbers in one and the same set.",
-      "solution": "Solution: Denote the required number by $f_n$. It is easy to see that $f_1 = 1$, $f_2 = 2$, $f_3 = 4$.\n\nDivide the subsets of $S_n$ having no two consecutive numbers into two groups—those that do not contain the element $n$ and those that do. Obviously the number of subsets in the first group is $f_{n-1}$.\n\nLet $T$ be a set of the second group. Therefore either $T = \\{n\\}$ or $T = \\{a_1, \\ldots, a_{k-1}, n\\}$, where $k > 1$. It is clear that $a_{k-1} \\neq n - 1$, so $\\{a_1, \\ldots a_{k-1}\\} \\subset S_{n-2}$, whence the number of sets in the second group is $f_{n-2} + 1$. Therefore\n\n$$f_n = f_{n-1} + f_{n-2} + 1.$$\n\nAfter substituting $u_n = f_n + 1$ we get\n\n$$u_1 = 2, u_2 = 3, \\qquad u_n = u_{n-1} + u_{n-2}.$$\n\nTherefore the sequence $\\{u_n\\}_{n=1}^{\\infty}$ coincides with the Fibonacci sequence from its third number onwards. Thus we obtain\n\n$$f_n = \\frac{1}{\\sqrt{5}} \\left( \\left( \\frac{1 + \\sqrt{5}}{2} \\right)^{n+2} - \\left( \\frac{1 - \\sqrt{5}}{2} \\right)^{n+2} \\right) - 1.$$",
-      "answer": "$f_n = \\frac{1}{\\sqrt{5}} \\left( \\left( \\frac{1 + \\sqrt{5}}{2} \\right)^{n+2} - \\left( \\frac{1 - \\sqrt{5}}{2} \\right)^{n+2} \\right) - 1$.",
+      "source": "OLI-2-Областен кръг-1995-12 кл · 1995-12 · Зад. 12.3",
+      "statement": "Let $n > 1$ be an integer. Find the number of the permutations $(a_1, a_2, \\ldots, a_n)$ of the numbers $1, 2, \\ldots, n$ with the following property: there exists only one index $i \\in \\{1, 2, \\ldots, n - 1\\}$ such that $a_i > a_{i+1}$.",
+      "solution": "Denote by $p_n$ the number of the permutations with the given properties. Obviously, $p_1 = 0$ and $p_2 = 1$. Let $n \\geq 2$. The number of the permutations with $a_n = n$ is equal to $p_{n-1}$. Consider all the permutations $(a_1, a_2, \\ldots, a_n)$ with $a_i = n$, where $1 \\leq i \\leq n-1$ is fixed. Their number is $\\binom{n-1}{i-1}$. Consequently\n\n$$p _ {n} = p _ {n - 1} + \\sum_ {i = 1} ^ {n - 1} \\binom {n - 1} {i - 1} = p _ {n - 1} + 2 ^ {n - 1} - 1.$$\n\nFrom here\n\n$$\\begin{array}{l} p _ {n} = (2 ^ {n - 1} - 1) + (2 ^ {n - 2} - 1) + \\dots + (2 - 1) \\\\ = 2 ^ {n} - n - 1. \\\\ \\end{array}$$",
+      "answer": "2^n - n - 1",
       "difficulty": "medium",
       "techniques": [
-        "recurrence"
+        "recurrence_relation",
+        "combinatorial_counting"
       ],
       "confidence": "exact",
-      "reasoning": "Splits subsets by presence of n, obtains fₙ = fₙ₋₁+fₙ₋₂+1, shifts to Fibonacci, and gives closed form."
+      "reasoning": "Задачата за пермутации с точно едно нарушение се свежда до рекурентна връзка, която се решава с комбинаторни техники."
     },
     {
-      "source": "OLI-2-Областен кръг-2011-10 кл · 2011-10 · Зад. 6",
-      "statement": "Една редица от естествени числа x₁, x₂, …, x_k се нарича n-добра, ако x₁ < x₂ < ··· < x_k ≤ n и x_i − i се дели на 3 за всяко i = 1, …, k. Нека a_n е броят на n-добрите редици за фиксирано естествено число n. Да се докаже, че числото a_{n+8} − a_n се дели на 3.",
-      "solution": "Решение. Ако $1, x_2, x_3, \\dots, x_k$ е $n$-добра редица, то $x_2 - 1, x_3 - 1, \\dots, x_k - 1$ е $(n-1)$-добра редица. Вземайки пред вид и редицата с единствен член $x_1 = 1$ получаваме, че броят на $n$-добрите редици, които започват с 1, е $a_{n-1} + 1$. Ако $x_1, x_2, \\dots, x_k$ е $n$-добра редица с $x_1 \\ge 4$, то $x_1 - 3, x_2 - 3, \\dots, x_k - 3$ е $(n-3)$-добра редица. Оттук следва, че броят на $n$-добрите редици, незапочващи с 1, е $a_{n-3}$.\n\nГорните разсъждения показват, че $a_n = a_{n-1} + a_{n-3} + 1$. Пресмятаме първите няколко стойности на $a_n$:\n\n| n | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| a_{n} | 1 | 2 | 3 | 5 | 8 | 12 | 18 | 27 | 40 | 59 | 87 |\n| a_{n} (mod 3) | 1 | 2 | 0 | 2 | 2 | 0 | 0 | 0 | 1 | 2 | 0 |\n\nСега твърдението лесно следва по индукция. Базата за индукцията следва от таблицата. Нека $n \\ge 4$ и $a_{k+8} \\equiv a_k \\pmod 3$ за всяко $k \\le n$. Тогава\n\n$$a_{n+9} = a_{n+8} + a_{n+6} + 1 \\equiv a_n + a_{n-2} + 1 = a_{n+1} \\pmod 3,$$\n\nкоето завършва доказателството.",
+      "source": "OLI-2-Областен кръг-2016-10 кл · 2016-10 · Зад. 10.3",
+      "statement": "Разглеждаме пермутации a1a2 . . . an на числата 1, 2, . . . , n, имащи свойствата:\n(i) ai < ai+2 за всички i = 1, 2, . . . , n −2;\n(ii) ai < ai+3 за всички i = 1, 2, . . . , n −3.\nДа се намери най-малкото число n, за което броят на тези пермутации надхвърля 1000.",
+      "solution": "По условие имаме:\na1 < a 3 < a 5, . . . a1 < a 4 < a 7 < . . . ,\nткъдето\na1 < m in {a3, a4, . . . , an}.\nС\nледователно a1 \\le  2 и имаме две възможности: (1) a1 = 1 и (2) a1 = 2 ( т.е. a2 = 1 ) .\nДа означим със g(n) броят на пермутациите на 1, 2, . . . , n, имащи исканите две свойства.\nОчевидно броят на пермутациите от тип (1) е g(n − 1), а броят на пермутациите от тип (2)\nе g(n − 2). Следователно, g(n) = g(n − 1) + g(n − 2) като освен това g(1) = 1 , g(2) = 2 . С\nнепосредствена проверка се убеждаваме, че търсеното число е n = 16.\nЗабележка: Очевидно g(n) = Fn+ 1 , (n + 1) -вото число но Фибоначи.\nОценяване: 2 т. за получаване на условието a1 \\le  2 ; 3 т. за намиране на рекурентната\nвръзка; 2 т. за за намиране на числото n.",
+      "answer": "n = 16",
+      "difficulty": "medium",
+      "techniques": [
+        "permutations",
+        "recursion",
+        "fibonacci"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата за пермутации с рестрикции се свежда до рекурентна връзка g(n)=g(n-1)+g(n-2), която е числа на Фибоначи."
+    },
+    {
+      "source": "OLI-3-Национален кръг-2012-9-12 кл · 2012-None · Зад. 4",
+      "statement": "(Емил Колев) Нека $n$ е четно естествено число, а $A$ е множеството от всички ненулеви редици от 0 и 1 с дължина $n$. Да се докаже, че елементите на $A$ могат да се разделят на непресичащи се тройки така, че за произволна тройка $(a_1 a_2 \\dots a_n, b_1 b_2 \\dots b_n, c_1 c_2 \\dots c_n)$ броят на единиците измежду $a_i, b_i, c_i$ за всяко $i = 1, 2, \\dots, n$ е четно число.",
+      "solution": "Решение. Ще докажем твърдението с индукция по $n$. За $n = 2$ имаме $A = \\{11, 10, 01\\}$ и твърдението е очевидно. Допускаме, че то е вярно за някое четно $k$. При $n = k + 2$ разглеждаме тройка $(a_1a_2 \\dots a_n, b_1b_2 \\dots b_n, c_1c_2 \\dots c_n)$ с исканото свойство. Тогава тройките\n\n$$\n\\begin{array}{l}\n(00a_1a_2 \\dots a_n, 00b_1b_2 \\dots b_n, 00c_1c_2 \\dots c_n), \\quad (01a_1a_2 \\dots a_n, 10b_1b_2 \\dots b_n, 11c_1c_2 \\dots c_n) \\\\\n(10a_1a_2 \\dots a_n, 11b_1b_2 \\dots b_n, 01c_1c_2 \\dots c_n), \\quad (11a_1a_2 \\dots a_n, 01b_1b_2 \\dots b_n, 10c_1c_2 \\dots c_n)\n\\end{array}\n$$\n\nсъщо имат исканото свойство. Директно се вижда, че по този начин получаваме всички ненулеви редици с дължина $k + 2$.\n\nОценяване: 1 т. за използване на индукция; 6 т. за вярното ѝ прилагане.",
       "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "recurrence_relation",
+        "induction",
+        "binary_vectors",
+        "linear_algebra_over_f2"
+      ],
+      "confidence": "exact",
+      "reasoning": "Разделяне на двоични редици на тройки с четен брой единици на позиция, решено с индукция и линейна алгебра над F2. Трудността е средна, тъй като индуктивната стъпка е стандартна.",
+      "_crosslinked_from": "9.11",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-3-Национален кръг-1997-9-12 кл · 1997-None · Зад. 1",
+      "statement": "Consider the polynomial\n$$P_n(x) = \\binom{n}{2} + \\binom{n}{5}x + \\binom{n}{8}x^2 + \\dots + \\binom{n}{3k+2}x^k,$$\nwhere $n \\ge 2$ is a natural number and $k = \\left[\\frac{n-2}{3}\\right]$.\n\n(a) Prove that $P_{n+3}(x) = 3P_{n+2}(x) - 3P_{n+1}(x) + (x+1)P_n(x)$;\n\n(b) Find all integer numbers $a$ such that $P_n(a^3)$ is divisible by $3^{\\left[\\frac{n-1}{2}\\right]}$ for all $n \\ge 2$.",
+      "solution": "(a) Compare the coefficients in front of $x^m$, $0 \\le m \\le \\left[\\frac{n+1}{3}\\right]$. It suffices to show that\n$$\\binom{n+3}{3m+2} = 3\\binom{n+2}{3m+2} - 3\\binom{n+1}{3m+2} + \\binom{n}{3m+2} + \\binom{n}{3m-1}.$$\n\nUsing the identity $\\binom{a+1}{b} = \\binom{a}{b} + \\binom{a}{b-1}$ we get that\n\n$$\\begin{aligned}\n&\\left(\\binom{n+3}{3m+2} - \\binom{n+2}{3m+2}\\right) - 2\\left(\\binom{n+2}{3m+2} - \\binom{n+1}{3m+2}\\right) + \\\\\n&+ \\left(\\binom{n+1}{3m+2} - \\binom{n}{3m+2}\\right) - \\binom{n}{3m-1} = \\\\\n&= \\binom{n+2}{3m+1} - 2\\binom{n+1}{3m+1} + \\binom{n}{3m+1} - \\binom{n}{3m-1} = \\\\\n&= \\left(\\binom{n+2}{3m+1} - \\binom{n+1}{3m+1}\\right) + \\\\\n&\\quad - \\left(\\binom{n+1}{3m+1} - \\binom{n}{3m+1}\\right) - \\binom{n}{3m-1} = \\\\\n&= \\binom{n+1}{3m} - \\binom{n}{3m} - \\binom{n}{3m-1} = \\\\\n&= 0.\n\\end{aligned}$$\n\n(b) Suppose $a$ satisfies the condition of (b). Then $P_5(a^3) = 10 + a^3$ is divisible by $9$ and so $a \\equiv -1 \\pmod 3$. On the contrary, let $a \\equiv -1 \\pmod 3$. Now $a^3 + 1 \\equiv 0 \\pmod 9$. Since $P_2(a^3) = 1$, $P_3(a^3) = 3$ and $P_4(a^3) = 6$ it follows by induction from (a) that $P_n(a^3)$ is divisible by $3^{\\left[\\frac{n-1}{2}\\right]}$ for any $n$. Therefore the required values of $a$ are all integer numbers congruent to $2$ modulo $3$.",
+      "answer": "all integer numbers congruent to 2 modulo 3",
+      "difficulty": "hard",
+      "techniques": [
+        "binomial_coefficients",
+        "recurrence_relations",
         "modular_arithmetic"
       ],
       "confidence": "exact",
-      "reasoning": "Изводът се базира на рекурентна формула a_n = a_{n-1}+a_{n-3}+1 и проверка по модул 3 – типична за точка 8.8."
+      "reasoning": "The problem involves a polynomial defined with binomial coefficients modulo 3. The recurrence relation in part (a) is proven using binomial identities. Part (b) requires solving a divisibility condition modulo powers of 3, using induction and modular arithmetic. The main technique is manipulation of symmetric polynomials and recurrence relations.",
+      "_crosslinked_from": "5.3",
+      "_crosslink_confidence": 0.8
     },
     {
-      "source": "OLI-3-Национален кръг-1989-9-12 кл · 1989-None · Зад. 2",
-      "statement": "Да се докаже, че редицата с общ член a_n = ∑_{k=1}^{n} {[неразчетено]}^{1−k} е сходяща и да се намери нейната граница.\nЗабележка. Тук със [x] е означена цялата част на числото x, а със {x} — дробната част на това число, т. е. {x} = x − [x].",
-      "solution": "Решение. Да положим t_k = [2^(k−1/2)]. Тъй като t_k < 2^(k−1/2) < 2^k, двоичният запис на числото t_k съдържа най-много k цифри. Нека този запис е t_k = α₁2^(k−1) + α₂2^(k−2) + ... + α_{k−1}2 + α_k, където α_i = 0 или α_i = 1, i = 1, 2, ..., k. Тогава\n{ [2^(k−1/2)]/2 }·2^(1−k) = {t_k/2}/2^(k−1) = {α₁2^(k−2) + α₂2^(k−3) + ... + α_{k−1} + α_k/2}/2^(k−1) = {α_k/2}/2^(k−1) = α_k/2^k.\nСега ще покажем, че за всяко k = 1, 2, ... е в сила равенството t_{k+1} = 2t_k + α_{k−1}. Наистина от t_{k+1} = [2^(k+1−1/2)] = [2·2^(k−1/2)] следва, че t_{k+1} = 2t_k или t_{k+1} = 2t_k + 1. При това първото от тези равенства е в сила, когато t_{k+1} е четно число, а второто — когато t_{k+1} е нечетно. От друга страна, α_{k−1} = 0 или α_{k−1} = 1 в зависимост от това, дали t_{k+1} е четно или нечетно. Следователно t_{k+1} = 2t_k + α_{k+1}.\nНо тогава a_n = α₁/2 + α₂/2² + ... + α_n/2^n = t_n/2^n.\nОт друга страна, 2^(n−1/2)−1 < t_n < 2^(n−1/2), следователно\n1/√2 − 1/2^n < a_n = t_n/2^n < 1/√2.\nОттук получаваме, че дадената редица е сходяща и нейната граница е lim_{n→[неразчетено]} a_n = 1/√2.",
-      "answer": "1/√2",
-      "difficulty": "medium",
+      "source": "OLI-3-Национален кръг-2009-9-12 кл · 2009-None · Зад. 5",
+      "statement": "Изпъкнал 2009-ъгълник е разбит на триъгълници чрез непресичащи се диагонали. Един от тези диагонали е оцветен в зелено. Разрешена е следната операция: за два триъгълника $ABC$ и $BCD$ от разбиването с обща страна $BC$ можем да заменим диагонала $BC$ с диагонала $AD$, като, ако замененият диагонал е бил зелен, той губи цвета си и заменилият го диагонал става зелен. Да се докаже, че всеки предварително избран диагонал на 2009-ъгълника може да бъде оцветен в зелено чрез прилагане на разрешената операция краен брой пъти.",
+      "solution": "Решение. Първо ще докажем, че за даден връх на изпъкналия 2009-ъгълник и всяка триангулация, с прилагане на разрешената операция можем да получим триангулацията, получена от прекарването на всички диагонали през този връх. За произволен връх $A$, движейки се обратно на часовниковата стрелка, да означим с $B_1, B_2, …, B_k$ последователните върхове, за които $AB_i$ е страна на дадения многоъгълник или диагонал в дадената триангулация. Ако отсечката $B_i B_{i+1}$ не е страна, тя е диагонал и след извършване на разрешената операция, ще получим нова триангулация от която излизащите от $A$ диагонали са с един повече. Продължавайки по този начин ще получим триангулация с диагонали само от върха $A$.\n\nЩе докажем по индукция по $n \\ge 4$, че твърдението е вярно за произволен изпъкнал $n$-ъгълник. При $n = 4, 5$ твърдението се проверява директно. Да допуснем, че твърдението е вярно за някое $k \\ge 5$ и да разгледаме триангулация на изпъкнал $(k+1)$-ъгълник. Без ограничение приемаме, че избрания диагонал е $A_1 A_i$. Съгласно доказаното, от дадената триангулация можем да получим триангулацията, получена с прекарването на всички диагонали през $A_1$. Ако при това $A_1 A_i$ е станал зелен, задачата е решена. Нека зелен е станал диагоналът $A_1 A_j$, като без ограничение считаме, че $j < i$. От индукционното допускане следва, че в многоъгълника $A_1 A_2 … A_i$ можем да получим триангулация, в която диагоналът $A_1 A_{i-1}$ е зелен. Тъй като $k \\ge 5$ и всяка триангулация на $(k+1)$-ъгълник съдържа $k-2$ диагонала, то в триангулацията освен диагоналите $A_1 A_{i-1}$ и $A_1 A_i$ има поне още един диагонал. Този диагонал разделя $(k+1)$-ъгълника на два изпъкнали многоъгълника, всеки с по-малко от $k+1$ върха, като диагоналите $A_1 A_{i-1}$ и $A_1 A_i$ са\n\nв един от двата многоъгълника. Остава да приложим индукционното допускане за този многоъгълник.",
+      "answer": null,
+      "difficulty": "hard",
       "techniques": [
-        "binary_representation",
-        "recurrence_relation",
-        "bounding"
+        "triangulation",
+        "flip_operation",
+        "induction"
       ],
       "confidence": "exact",
-      "reasoning": "Transforms floor terms into binary digits, derives recurrence t_{k+1}=2t_k+α, then bounds a_n."
+      "reasoning": "Задачата използва индукция по броя на страните на многоъгълника и операцията 'flip' за промяна на диагоналите. Ключов елемент е възможността да се получи триангулация с всички диагонали от един връх.",
+      "_crosslinked_from": "9.8",
+      "_crosslink_confidence": 0.7
     }
   ]
 }

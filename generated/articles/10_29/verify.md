@@ -1,30 +1,30 @@
 # Verification report — Областен кръг 2025 – 10 клас
 
 **ID:** `10.29`
-**Дата:** 2026-10-17 00:35:11
-**Verifier:** openai/gpt-oss-120b
+**Дата:** 2026-10-31 13:45:39
+**Verifier:** deepseek/deepseek-r1-0528
 
-## Verdict: revise — Score: 5/10
+## Verdict: revise — Score: 9/10
 
-**Reasoning:** Материалът е добре структуриран и формулите са правилни, но съдържа сериозен проблем в третата примерна задача, което изисква корекция преди одобрение.
+**Reasoning:** Except for the critical flaw in Example 8, the article is mathematically sound, well-structured, and pedagogically strong. With revision of Example 8, it would score 10/10.
 
 ## Strengths
-- Коректно формулиране и доказателство на теоремата на Стюарт.
-- Ясно обяснение на специалните случаи (медиана, ъглополовяща).
-- Предоставени са две добре решени примерни задачи с подробни изчисления.
+- Excellent coverage of theory with intuitive explanations and edge cases
+- Real olympiad problems in Section 1 enhance relevance
+- CHECK sections provide clear self-assessment milestones
+- Mistakes section effectively highlights common pitfalls
 
 ## Issues
-- [major] **Пример 3 (трудна – олимпийска)**: Решението е неясно, съдържа множество нелогични стъпки и вероятно е грешно; не се доказва коректно и не води до убедителен резултат.
-- [minor] **Исторически контекст**: Твърдението, че теоремата е публикувана през 1746 г., не е потвърдено и може да е неточно.
+- [critical] **4.3 Hard examples**: Example 8 has an incorrect condition: QA·QB / QP² = QT / QP is not always true, as proven in the solution. This misleads students and needs correction.
+- [minor] **4.2 Medium examples**: Example 5 uses coordinate geometry effectively but could benefit from mentioning a geometric alternative for better insight.
 
 ## Math errors
-- `$AD^2 = \frac{5\cdot 9^2 + 9 \cdot 5^2}{14} - 5 \cdot 9$` — Грешна замяна на страните; правилната формула е $AD^2 = \frac{5\cdot 15^2 + 9 \cdot 13^2}{14} - 5 \cdot 9$. → Използвайте правилните стойности за $b=15$ и $c=13$.
+- `QA·QB / QP² = QT / QP` — Leads to contradiction when tested (e.g., if QP=4, QT=3, then QA·QB=9, but formula requires 9/16 = 3/4 → 0.5625 ≠ 0.75) → Replace with valid statement like QA·QB = QT² or adjust the example entirely.
 
 ## Missing topics
-- Приложения на теоремата в задачи с две чевиани от един връх.
-- Алтернативни доказателства (например чрез векторен метод или масов център).
+-
 
 ## Suggestions
-- Преработете и проверете решението на третата примерна задача, като осигурите стегнато и коректно доказателство.
-- Добавете пояснения за избягване на типични грешки при прилагане на теоремата, особено при задачи с успоредни линии.
-- Уточнете историческите данни за автора и датата на теоремата.
+- Revise Example 8: Correct the condition or provide a valid proof for a modified statement
+- Add a geometric approach to Example 5 as an alternative to coordinates
+- Include 1-2 more hard examples from actual olympiads to strengthen Section 4.3

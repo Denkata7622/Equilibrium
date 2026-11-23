@@ -1,49 +1,115 @@
 {
   "point_id": "2.4",
-  "total": 3,
+  "total": 7,
   "by_difficulty": {
     "easy": 0,
-    "medium": 3,
-    "hard": 0
+    "medium": 2,
+    "hard": 5
   },
   "problems": [
     {
-      "source": "OLI-2-Областен кръг-1997-10 кл · 1997-10 · Зад. 5",
+      "source": "OLI-2-Областен кръг-1997-12 кл · 1997-12 · Зад. 12.5",
       "statement": "Two squares K₁ and K₂ with centres M and N and sides of length 1 are placed in the plane in a way that MN = 4, two of the sides of K₁ are parallel to MN and one of the diagonals of K₂ lies on the line MN. Find the locus of midpoints of segments XY where X is an interior point for K₁ and Y is an interior point for K₂.",
-      "solution": "Solution: The locus is the interior of a regular hexagon centred at the midpoint of the segment $MN$ and with a side length of $\\frac{1}{2}$.\n\nTo prove this, proceed as follows.\n\nFix the point $Y$ in the interior of $K_2$. When $X$ varies in the interior of $K_1$ the locus of the midpoints of $XY$ is a square $K_1'$ which is homothetic to $K_1$ by homothecy with centre $Y$ and coefficient $\\frac{1}{2}$.\n\nObviously the side of this square is $\\frac{1}{2}$ and its centre is the midpoint of $MY$. When $Y$ varies in the interior of $K_2$ then the locus of the midpoints of $MY$ is a square $K_2'$ which is homothetic to $K_2$ by homothecy with centre $M$ and coefficient $\\frac{1}{2}$. The side of this square equals $\\frac{1}{2}$ and its centre $Q$ is the midpoint of $MN$. Finally, when the centres of $K_1'$ vary in the interior of $K_2'$, the squares vary in the interior of a regular hexagon centred at $Q$ and with a side length of $\\frac{1}{2}$.",
-      "answer": "The interior of a regular hexagon centred at the midpoint of $MN$ and with a side length of $\\frac{1}{2}$.",
+      "solution": "The locus is the interior of a regular hexagon centred at the midpoint of the segment $MN$ and with a side length of $\\frac{1}{2}$.\n\nTo prove this, proceed as follows.\n\nFix the point $Y$ in the interior of $K_2$. When $X$ varies in the interior of $K_1$ the locus of the midpoints of $XY$ is a square $K_1'$ which is homothetic to $K_1$ by homothecy with centre $Y$ and coefficient $\\frac{1}{2}$.\n\nDownloaded from Klasirane.com\n\n─── Стр. 5 ───\nObviously the side of this square is $\\frac{1}{2}$ and its centre is the midpoint of $MY$. When $Y$ varies in the interior of $K_2$ then the locus of the midpoints of $MY$ is a square $K_2'$ which is homothetic to $K_2$ by homothecy with centre $M$ and coefficient $\\frac{1}{2}$. The side of this square equals $\\frac{1}{2}$ and its centre $Q$ is the midpoint of $MN$. Finally, when the centres of $K_1'$ vary in the interior of $K_2'$, the squares vary in the interior of a regular hexagon centred at $Q$ and with a side length of $\\frac{1}{2}$.",
+      "answer": "The locus is the interior of a regular hexagon centred at the midpoint of the segment $MN$ and with a side length of $\\frac{1}{2}$.",
       "difficulty": "medium",
       "techniques": [
-        "homothety"
+        "homothety",
+        "geometric_locus"
       ],
-      "confidence": "exact",
-      "reasoning": "Applies homothety (scale ½) from interior points of each square; the moving centres trace a regular hexagon."
-    },
-    {
-      "source": "OLI-2-Областен кръг-1997-11 кл · 1997-11 · Зад. 5",
-      "statement": "Two squares K₁ and K₂ with centres M and N and sides of length 1 are placed in the plane in a way that MN = 4, two of the sides of K₁ are parallel to MN and one of the diagonals of K₂ lies on the line MN. Find the locus of midpoints of segments XY where X is an interior point for K₁ and Y is an interior point for K₂.",
-      "solution": "Solution: The locus is the interior of a regular hexagon centred at the midpoint of the segment $MN$ and with a side length of $\\frac{1}{2}$.\n\nTo prove this, proceed as follows.\n\nFix the point $Y$ in the interior of $K_2$. When $X$ varies in the interior of $K_1$ the locus of the midpoints of $XY$ is a square $K_1'$ which is homothetic to $K_1$ by homothecy with centre $Y$ and coefficient $\\frac{1}{2}$.\n\nObviously the side of this square is $\\frac{1}{2}$ and its centre is the midpoint of $MY$. When $Y$ varies in the interior of $K_2$ then the locus of the midpoints of $MY$ is a square $K_2'$ which is homothetic to $K_2$ by homothecy with centre $M$ and coefficient $\\frac{1}{2}$. The side of this square equals $\\frac{1}{2}$ and its centre $Q$ is the midpoint of $MN$. Finally, when the centres of $K_1'$ vary in the interior of $K_2'$, the squares vary in the interior of a regular hexagon centred at $Q$ and with a side length of $\\frac{1}{2}$.",
-      "answer": "The interior of a regular hexagon centred at the midpoint of $MN$ and with a side length of $\\frac{1}{2}$.",
-      "difficulty": "medium",
-      "techniques": [
-        "spiral_similarity"
-      ],
-      "confidence": "exact",
-      "reasoning": "Uses homotheties (spiral similarity) of the two squares to obtain a regular hexagon as the locus."
+      "confidence": "partial",
+      "reasoning": "Основната техника е хомотетия (homothety), която е част от спиралното подобие (2.4). Решението използва две последователни хомотетии за определяне на междинни квадрати и накрая получава шестоъгълник. Точката 2.4 е най-близката, но не е идеална, тъй като спиралното подобие обикновено включва и ротация, която тук не се използва. Затова увереността е 'partial'. Трудността е medium, тъй като решението изисква 2-3 стъпки и инсайт за хомотетиите."
     },
     {
       "source": "OLI-3-Национален кръг-1986-9-12 кл · 1986-None · Зад. 5",
-      "statement": "Дадени са окръжност k и точка A, която не лежи на k. Нека B е произволна точка от k, а M е такава точка, че AM : AB = m и ∠BAM = α, където m и α са дадени. Да се намери множеството, което описва точката M, когато B описва окръжността k.",
-      "solution": "Решение. Преди всичко ще отбележим, че за всяка точка B ∈ k в равнината съществуват точно две точки M₁, M₂, за които AMᵢ : AB = m и ∠BAMᵢ = α (i = 1, 2). Нека r₁(A, α) и r₂(A, −α) са съответно ротациите с център A на ъгли α и −α, а h(A, m) е хомотетията с център A и коефициент m. От условието следва, че изображението h ◦ r₁ преобразува точката B в едната от точките M₁ и M₂. Нека например B ⟶ M₁ при h ◦ r₁. Тогава B ⟶ M₂ при h ◦ r₂, следователно търсеното множество съвпада с обединението на образите на k при h ◦ r₁ и h ◦ r₂. Но r₁ и r₂ са еднаквости, а h — подобност, така че h ◦ r₁ и h ◦ r₂ са подобности. Тъй като всяка подобност преобразува окръжност в окръжност, търсеното множество се състои от точките на окръжностите k₁ = (h ◦ r₁)(k) и k₂ = (h ◦ r₂)(k). Очевидно k₁ и k₂ имат радиус с дължина mR и центрове съответно (h ◦ r₁)(O) и (h ◦ r₂)(O), където O и R са съответно центърът и радиусът на k.",
-      "answer": "Обединението на окръжностите k₁ = (h ◦ r₁)(k) и k₂ = (h ◦ r₂)(k), с радиус mR и центрове съответно (h ◦ r₁)(O) и (h ◦ r₂)(O), където r₁ и r₂ са ротации около A на ъгли α и −α, а h е хомотетия с център A и коефициент m.",
+      "statement": "Дадени са окрьжност k и точка A, която не лежи на k. Нека B е произволна точка от k, а M е такава точка, че AM : AB = m и \\angle BAM = α, където m и α са дадени. Да се намери множеството, което описва точката M, когато B описва окръжността k.",
+      "solution": "Решение. Преди всичко ще отбележим, че за всяка точка $B ∈ k$ в равнината съществуват точно две точки $M_1, M_2$, за които $AM_i: AB = m$ и $\\angle  BAM_i = α$ ($i = 1, 2$). Нека $r_1(A, α)$ и $r_2(A, -α)$ са съответно ротациите с център $A$ на ъгли $α$ и $-α$, а $h(A, m)$ е хомотетията с център $A$ и коефициент $m$. От условието следва, че изображението $h ∘ r_1$ преобразува точката $B$ в едната от точките $M_1$ и $M_2$. Нека например $B →^{h ∘ r_1} M_1$. Тогава $B →^{h ∘ r_2} M_2$, следователно търсеното множество съвпада с обединението на образите на $k$ при $h ∘ r_1$ и $h ∘ r_2$. Но $r_1$ и $r_2$ са еднаквости, а $h$ – подобност, така че $h ∘ r_1$ и $h ∘ r_2$ са подобности. Тъй като всяка подобност преобразува окръжност в окръжност, търсеното множество се състои от точките на окръжностите $k_1 = (h ∘ r_1)(k)$ и $k_2 = (h ∘ r_2)(k)$. Очевидно $k_1$ и $k_2$ имат радиус с дължина $mR$ и центрове съответно $(h ∘ r_1)(O)$ и $(h ∘ r_2)(O)$, където $O$ и $R$ са съответно центърът и радиусът на $k$.",
+      "answer": null,
       "difficulty": "medium",
       "techniques": [
         "spiral_similarity",
-        "rotation",
+        "transformation_geometry"
+      ],
+      "confidence": "exact",
+      "reasoning": "Намиране на геометрично място чрез комбинация от ротация и хомотетия. Това е класически пример за приложение на спирално подобие (точка 2.4)."
+    },
+    {
+      "source": "OLI-2-Областен кръг-1997-10 кл · 1997-10 · Зад. 10.5",
+      "statement": "Two squares K₁ and K₂ with centres M and N and sides of length 1 are placed in the plane in a way that MN = 4, two of the sides of K₁ are parallel to MN and one of the diagonals of K₂ lies on the line MN. Find the locus of midpoints of segments XY where X is an interior point for K₁ and Y is an interior point for K₂.",
+      "solution": "The locus is the interior of a regular hexagon centred at the midpoint of the segment $MN$ and with a side length of $\\frac{1}{2}$.\n\nTo prove this, proceed as follows.\n\nFix the point $Y$ in the interior of $K_2$. When $X$ varies in the interior of $K_1$ the locus of the midpoints of $XY$ is a square $K_1'$ which is homothetic to $K_1$ by homothecy with centre $Y$ and coefficient $\\frac{1}{2}$.\n\nObviously the side of this square is $\\frac{1}{2}$ and its centre is the midpoint of $MY$. When $Y$ varies in the interior of $K_2$ then the locus of the midpoints of $MY$ is a square $K_2'$ which is homothetic to $K_2$ by homothecy with centre $M$ and coefficient $\\frac{1}{2}$. The side of this square equals $\\frac{1}{2}$ and its centre $Q$ is the midpoint of $MN$. Finally, when the centres of $K_1'$ vary in the interior of $K_2'$, the squares vary in the interior of a regular hexagon centred at $Q$ and with a side length of $\\frac{1}{2}$.",
+      "answer": "the interior of a regular hexagon centred at the midpoint of the segment $MN$ and with a side length of $\\frac{1}{2}$",
+      "difficulty": "hard",
+      "techniques": [
+        "homothety",
+        "locus",
+        "geometric_transformations"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задача за геометрично място, използваща хомотетии (2.4 - спирално подобие). Трудността е hard поради комбинацията от две хомотетии и анализ на областта."
+    },
+    {
+      "source": "OLI-2-Областен кръг-1997-11 кл · 1997-11 · Зад. 11.5",
+      "statement": "Two squares K₁ and K₂ with centres M and N and sides of length 1 are placed in the plane in a way that MN = 4, two of the sides of K₁ are parallel to MN and one of the diagonals of K₂ lies on the line MN. Find the locus of midpoints of segments XY where X is an interior point for K₁ and Y is an interior point for K₂.",
+      "solution": "The locus is the interior of a regular hexagon centred at the midpoint of the segment $MN$ and with a side length of $\\frac{1}{2}$.\n\nTo prove this, proceed as follows.\n\nFix the point $Y$ in the interior of $K_2$. When $X$ varies in the interior of $K_1$ the locus of the midpoints of $XY$ is a square $K_1'$ which is homothetic to $K_1$ by homothecy with centre $Y$ and coefficient $\\frac{1}{2}$.\n\nObviously the side of this square is $\\frac{1}{2}$ and its centre is the midpoint of $MY$. When $Y$ varies in the interior of $K_2$ then the locus of the midpoints of $MY$ is a square $K_2'$ which is homothetic to $K_2$ by homothecy with centre $M$ and coefficient $\\frac{1}{2}$. The side of this square equals $\\frac{1}{2}$ and its centre $Q$ is the midpoint of $MN$. Finally, when the centres of $K_1'$ vary in the interior of $K_2'$, the squares vary in the interior of a regular hexagon centred at $Q$ and with a side length of $\\frac{1}{2}$.",
+      "answer": "the interior of a regular hexagon centred at the midpoint of the segment $MN$ and with a side length of $\\frac{1}{2}$",
+      "difficulty": "hard",
+      "techniques": [
+        "homothety",
+        "convex_sets"
+      ],
+      "confidence": "partial",
+      "reasoning": "Основната техника е хомотетия, която е част от спиралното подобие (точка 2.4), но без ротация. Решението използва две хомотетии и анализира обединението на движещи се квадрати, което води до изпъкнал шестогълник. Това изисква разбиране на геометрични преобразувания и свойства на изпъкнали множества. Няма точна съвпадаща точка в плана, затова увереността е partial. Трудността е hard поради дължината на решението и необходимостта от визуализация на динамични геометрични конфигурации."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2010-10 кл · 2010-10 · Зад. 10.2",
+      "statement": "Външновписаната окръжност към страната $AB$ на $\\triangle ABC$ се допира до $AB$ в точка $D$. Ако $\\angle CAB = 2 \\angle CDA$, да се намери стойността на отношението $AD : BD$.",
+      "solution": "**Решение.** (*Тригонометричен подход*) Ще използваме стандартните означения за страните на $\\triangle ABC$ и нека $\\ntriangle ADC = \\varphi$. От синусова теорема за $\\triangle ACD$ получаваме $CD = \\frac{b \\sin 2\\varphi}{\\sin \\varphi} = 2b \\cos \\varphi$. Оттук и от косинусова теорема за $\\triangle ADC$ имаме\n\n$$4b^2 \\cos^2 \\varphi = b^2 + (p-b)^2 - 2b(p-b) \\cos 2\\varphi \\iff 2b^2 \\cos 2\\varphi = -b^2 + (p-b)^2 - 2b(p-b) \\cos 2\\varphi,$$\n\nоткъдето намираме $\\cos 2\\varphi = \\frac{p-2b}{2b}$. От косинусова теорема за $\\triangle ABC$ получаваме\n\n$$a^2 = b^2 + c^2 - 2bc \\frac{(p-2b)}{2b} \\iff a^2 = (b+c)^2 - pc \\iff a - b = \\frac{c}{2}.$$\n\nОстава да пресметнем $BD = p - a = \\frac{b + c - a}{2} = \\frac{c}{4}$ и следователно $AD : BD = 3 : 1$.\n\n(Синтетичен подход) Нека вписаната в $\\triangle ABC$ ок-ръжност $k$ е с център $I$ и се допира до страната $AB$ в точка $P$. Ако означим с $Q$ диаметрално противоположната точка на $P$ в $k$, то добре известен факт е, че точките $C$, $Q$ и $D$ са колинеарни. (Класическото доказателство е с хомотетия, с център $C$, която изпраща $k$ във външновписаната окръжност.)\n\n![img-3.jpeg](img-3.jpeg)\n\nТогава $\\measuredangle IAP = \\frac{1}{2} \\measuredangle CAB = \\measuredangle CDA$, т.е. правоъгълните триъгълници $\\triangle IPA$ и $\\triangle QPD$ са подобни и $PD : PA = PQ : PI = 2 : 1$. От друга страна $PA = BD$ и следователно $AD : BD = 3 : 1$.\n\nИнструкции за оценяване: (Тригонометричен подход) 1 т. за въвеждането на помощен ъгъл $\\measuredangle ADC = \\varphi$, 1 т. за прилагане на синусова теорема за $\\triangle ADC$ и намиране $CD = 2b \\cos \\varphi$; 2 т. за прилагане на косинусова теорема за $\\triangle ADC$ и намиране на $\\cos 2\\varphi = \\frac{p - 2b}{2b}$; 2 т. за прилагане на косинусова теорема за $\\triangle ABC$ и достигане до равенството $a - b = \\frac{c}{2}$; 1 т. за достигане до отговора.\n\n(Синтетичен подход) 1 т. за построяване на вписаната окръжност; 2 т. за въвеждане на точката $Q$ и отчитане на факта, че $Q \\in CD$; 1 т. за доказателство на факта, че $Q \\in CD$; 1 т. за $\\triangle IPA \\sim \\triangle QPD$; 2 т. за достигане до отговора.",
+      "answer": "3 : 1",
+      "difficulty": "hard",
+      "techniques": [
+        "incircle_and_excircle",
+        "trigonometry",
+        "similar_triangles"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва външновписаната окръжност и връзка с вписаната. Решението използва синусова теорема и косинусова теорема, но главната техника е свързана със свойствата на вписаната и външновписаните окръжности (1.10). Синтетичният подход потвърждава това с геометрични свойства.",
+      "_crosslinked_from": "1.10",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-3-Национален кръг-2018-9-12 кл · 2018-None · Зад. 2",
+      "statement": "Четириъгълен ъгъл $ABCD$ е вписан в окръжност. Точка $H_1$ е ортогенцентър на $\triangle ABC$, а точките $A_1$ и $B_1$ са симетрични съответно на точките $A$ и $B$ спрямо правите $BH_1$ и $AH_1$. Точка $O_1$ е център на описаната окръжност на $\triangle A_1 B_1 H_1$. Точка $H_2$ е ортогенцентър на $\triangle ABD$, а точките $A_2$ и $B_2$ са симетрични съответно на точките $A$ и $B$ спрямо правите $BH_2$ и $AH_2$. Точка $O_2$ е център на описаната окръжност на $\triangle A_2 B_2 H_2$. Означаваме правата $O_1 O_2$ с $l_{AB}$. Аналогично дефинираме правите $l_{BC}$, $l_{CD}$ и $l_{DA}$. Ако $l_{AB} \\\\cap l_{BC} = M$, $l_{BC} \\\\cap l_{CD} = N$, $l_{CD} \\\\cap l_{DA} = P$ и $l_{DA} \\\\cap l_{AB} = Q$, да се докаже, че точките $M$, $N$, $P$ и $Q$ лежат на една окръжност.",
+      "solution": "Лема. Точка $O_1$ лежи на правата $H_1O$, където $O$ е центъра на описаната окръжност за $\\triangle ABC$. Отношението в което $O_1$ дели $H_1O$ зависи само от $\\angle ACB$.\n\nДоказателство: Нека $K$ и $L$ са пресечните точки на $AH_1$ и $BH_1$ с окръжността. Тъй като $H_1$ и $L$ са симетрични спрямо $AC$, то четириъгълникът $H_1ALA_1$ е ромб, като $\\angle AH_1A_1 = 2\\angle AH_1L = 2\\gamma$. Аналогично $H_1BKB_1$ е ромб с $\\angle BH_1B_1 = 2\\gamma$. Следователно $H_1ALA_1$ и $H_1BKB_1$ са подобни ромбове, откъдето получаваме\n\n$$\\frac{H_1T}{H_1X} = \\frac{H_1Q}{H_1Y} = \\frac{1}{1 + 2\\cos 2\\gamma}.$$\n\nТова равенство означава, че $O_1$ лежи на правата $H_1O$ и отношението в което $O_1$ дели $H_1O$ зависи само от $\\angle ACB$.\n\nЯсно е, че $CH_1H_2D$ е успоредник (следва от $CH_1 = CH_2 = 2R\\cos\\gamma$) и $O_1$ и $O_2$ са хомотетични съответно на $H_1$ и $H_2$ спрямо $O$. Според лемата коефициентите на двете хомотетни са равни (защото зависят само от $\\gamma$). Следователно $O_1O_2 \\parallel H_1H_2 \\parallel CD$, т.е. правата $l_{AB}$ е успоредна на $CD$.\n\nПолучихме, че страните на $MNPQ$ са успоредни на страните на $ABCD$ и следователно $MNPQ$ е вписан.\n\nОценяване. (7 точки) 2 т. за доказване, че $H_i$, $O$ и $O_i$ лежат на една права; 1 т. за доказване, че отношенията, в които $O$ дели $H_iO_i$ за $i = 1, 2$ са равни; 1 т. за доказване, че $CH_1H_2D$ е успоредник; 2 т. за доказване, че страните на $MNPQ$ са успоредни на страните на $ABCD$; 1 т. за довършване на решението.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "orthocenter",
+        "cyclic_quadrilateral",
+        "symmetry",
         "homothety"
       ],
       "confidence": "exact",
-      "reasoning": "Локусът се получава като образ на окръжността k при композиция от ротация около A и хомотетия с коефициент m – спирално подобие."
+      "reasoning": "Задачата включва ортоцентър, симетрия и хомотетия в циклични четириъгълници. Решението използва лема за позицията на центрове на описани окръжности и успоредност на прави. Това е геометрична задача с фокус върху ортоцентрични конфигурации.",
+      "_crosslinked_from": "2.11",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-3-Национален кръг-2023-9-12 кл · 2023-None · Зад. 2",
+      "statement": "Даден е разностранен триъгълник ABC. Нека  \\( A_{1} \\) ,  \\( B_{1} \\)  и  \\( C_{1} \\)  са допирните точки на външновписаните окръжности със страните BC, CA, AB съответно. Центровете на описаната около  \\( \\triangle AB_{1}C_{1} \\) ,  \\( \\triangle BA_{1}C_{1} \\) ,  \\( \\triangle CA_{1}B_{1} \\)  са означени с  \\( O_{A} \\) ,  \\( O_{B} \\) ,  \\( O_{C} \\)  съответно. Да се докаже, че правите през  \\( O_{A} \\) ,  \\( O_{B} \\)  и  \\( O_{C} \\) , съответно успоредни на ъглополовящите на \\( \\angle A \\), \\( \\angle B \\) и \\( \\angle C \\), се пресичат в една точка.",
+      "solution": "Решение. Нека O е центърът на описаната около  \\( \\triangle ABC \\)  окръжност, и нека T е средата на дъгата  \\( \\widehat{ACB} \\)  от описаната окръжност (виж чертежа). Имаме  \\( AB_{1} = BA_{1} \\) , AT = BT,  \\( \\angle B_{1}AT = \\angle A_{1}BT \\) , следователно  \\( \\triangle B_{1}AT \\cong \\triangle A_{1}BT \\) . От еднаквостта получаваме, че  \\( \\angle CB_{1}T = \\angle CA_{1}T \\) , следователно описаната около  \\( A_{1}B_{1}C \\)  окръжност минава през T и  \\( OO_{C} \\)  е симетрала на CT. Но правите  \\( OO_{C} \\)  и ъглополовящата на  \\( \\angle ACB \\)  са перпендикулярни на CT (защо?), следователно правата през  \\( O_{C} \\) , успоредна на ъглополовящата на  \\( \\angle ACB \\) минава през $O!$. Повтаряйки това разсъждение, достигаме до заключението, че исканите прави се пресичат в $O$.\n\n**Оценяване.** (7 точки) 2т. за хипотеза, че трите прави се пресичат в т.$O$. 1т. за построяване на средата на някоя от дъгите $\\widehat{BAC}$, $\\widehat{ABC}$ или $\\widehat{ACB}$, 2т. за $\\triangle B_1 AT \\cong \\triangle A_1 BT$ и 2т. за довършване.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circumcircle",
+        "excircles",
+        "angle_bisectors",
+        "parallel_lines",
+        "concurrency"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва външновписани окръжности и центрове на описани окръжности. Точка 1.10 е точна. Трудност: hard поради сложните геометрични построения.",
+      "_crosslinked_from": "1.10",
+      "_crosslink_confidence": 0.7
     }
   ]
 }

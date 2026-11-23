@@ -1,0 +1,7 @@
+2026-11-13 17:25:09,812 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-13 17:25:09,813 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-13 17:25:09,813 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-13 17:25:16,657 [PDF_CHUNKER] INFO Нов ден — рестарт на бюджета
+2026-11-13 17:25:44,522 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-13 17:25:44,524 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-13 17:25:44,525 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash

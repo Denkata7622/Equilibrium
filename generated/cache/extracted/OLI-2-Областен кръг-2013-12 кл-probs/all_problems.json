@@ -1,0 +1,72 @@
+{
+  "pdf": "OLI-2-Областен кръг-2013-12 кл-probs",
+  "version": 3,
+  "extraction_model": "deepseek/deepseek-r1-0528",
+  "extraction_level": "L0_native",
+  "verification": {
+    "verdict": "PASS_WITH_WARNINGS",
+    "expected": 4,
+    "actual": 2,
+    "verified": 2,
+    "hallucinated": 0,
+    "unreadable": 0,
+    "wrong_grade": 0,
+    "duplicates": 0,
+    "null_num": 0,
+    "numeric_mismatch": 0,
+    "avg_confidence": 0.95,
+    "expected_grade": 12,
+    "grade_distribution": {
+      "12": 2
+    },
+    "escalate_to": "L1_ocr",
+    "reasons": [
+      "missing: 2 < 4±0",
+      "adjusted: source has 2 markers (expected was 4)"
+    ],
+    "ai_checked": true,
+    "ai_result": {
+      "missing_count": 2,
+      "hallucinated_indices": [],
+      "overall": "missing"
+    }
+  },
+  "extracted_at": "2026-11-10T08:43:58.717423",
+  "problems": [
+    {
+      "num": "12.2",
+      "year": 2013,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Нека I е центърът на вписаната в \\triangle  ABC окръжност и A1, B1, C1 са центровете на оръжностите, описани около \\triangle  BIC, \\triangle  CIA и \\triangle  AIB . Да се докаже, че: а) правите AA1, BB1 и CC 1 се пресичат в една точка; б)SA1B1C1 SAB C = R2r , където r и R са радиусите на вписаната и описаната окръжност на \\triangle  ABC .",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 2. Нека I е центърът на вписаната в △ ABC окръжност и A1, B1, C1 са центровете на оръжностите, описани около △ BIC, △ CIA и △ AIB . Да се докаже, че: а) правите AA1, BB1 и CC 1 се пресичат в една точка; б)SA1B1C1 SAB C = R2r , където r и R са радиусите на вписаната и описаната",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "2",
+      "_quote_grade": "NORMALIZED",
+      "pdf": "OLI-2-Областен кръг-2013-12 кл-probs"
+    },
+    {
+      "num": "12.3",
+      "year": 2013,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Нела P е полином от 2013 степен с реални коефициенти така, че за произволни числа x, y, z ∈ R, за които P (x) + P (y) + P (z) = 0 , следва, че P (x3) + P (y3) + P (z3) = 3P (x)P (y)P (z). Да се докаже, че: а) P (x) ̸= 0 при x ∈ R − {−1, 0, 1}; б) P е нечетна функция.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source_quote": "Зада\nча 4. Нела P е полином от 2013 степен с реални коефициенти така, че за произволни числа x, y, z ∈ R, за които P (x) + P (y) + P (z) = 0 , следва, че P (x3) + P (y3) + P (z3) = 3P (x)P (y)P (z). Да се докаже, че: а) P (x) ̸= 0 при x ∈ R − {−1, 0, 1};",
+      "readability": "partial",
+      "readability_issues": [
+        "OCR error: 'Нела' likely should be 'Нека'",
+        "Inconsistent spacing in mathematical expressions (e.g., 'P (x3)' instead of 'P(x^3)')"
+      ],
+      "segment_num": "3",
+      "_quote_grade": "OCR_FUZZY",
+      "pdf": "OLI-2-Областен кръг-2013-12 кл-probs"
+    }
+  ]
+}

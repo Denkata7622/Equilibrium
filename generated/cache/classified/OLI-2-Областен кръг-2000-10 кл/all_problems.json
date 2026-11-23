@@ -20,7 +20,8 @@
       ],
       "reasoning": "Превръща уравнението в квадратично f(x)=0, използва Виетови формули и знак‑анализ за един корен в интервала.",
       "_paired": true,
-      "_grade_source": "filename"
+      "_grade_source": "filename",
+      "secondary_points": []
     },
     {
       "num": 2,
@@ -41,7 +42,13 @@
       ],
       "reasoning": "Използва свойства на вписаната и описаната окръжност, съвпадение на центрове и ъглополовящи.",
       "_paired": true,
-      "_grade_source": "filename"
+      "_grade_source": "filename",
+      "secondary_points": [
+        {
+          "id": "1.5",
+          "confidence": 0.85
+        }
+      ]
     },
     {
       "num": 3,
@@ -63,7 +70,13 @@
       ],
       "reasoning": "Анализира линейната рекурентна редица, доказва взаимна простота и периодичност по модул m.",
       "_paired": true,
-      "_grade_source": "filename"
+      "_grade_source": "filename",
+      "secondary_points": [
+        {
+          "id": "3.3",
+          "confidence": 0.85
+        }
+      ]
     },
     {
       "num": 4,
@@ -84,7 +97,13 @@
       ],
       "reasoning": "Използва законите за синусите и ъглополовящи за доказателство на условието за прав ъгъл.",
       "_paired": true,
-      "_grade_source": "filename"
+      "_grade_source": "filename",
+      "secondary_points": [
+        {
+          "id": "2.10",
+          "confidence": 0.7
+        }
+      ]
     },
     {
       "num": 5,
@@ -105,7 +124,13 @@
       ],
       "reasoning": "Изчислява производната на f(x), разглежда монотонност и граници, за да получи желаното неравенство.",
       "_paired": true,
-      "_grade_source": "filename"
+      "_grade_source": "filename",
+      "secondary_points": [
+        {
+          "id": "7.2",
+          "confidence": 0.65
+        }
+      ]
     },
     {
       "num": 6,
@@ -126,7 +151,17 @@
       ],
       "reasoning": "Използва прави ъгли от диаметри (Талес), радикална ос и множество конфигурации – решение с множество случаи.",
       "_paired": true,
-      "_grade_source": "filename"
+      "_grade_source": "filename",
+      "secondary_points": [
+        {
+          "id": "1.9",
+          "confidence": 0.85
+        },
+        {
+          "id": "2.11",
+          "confidence": 0.8
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,70 @@
+{
+  "verdict": "revise",
+  "score": 5,
+  "issues": [
+    {
+      "severity": "critical",
+      "section": "3.2 Формално определение",
+      "description": "Теоремата за делимост е грешна. Пример: a=2,b=2,c=2,m=3 → 2^n + 2^n - 2^n = 2^n ≢0 mod 3 за n=1. Това е фундаментална грешка."
+    },
+    {
+      "severity": "major",
+      "section": "4.2 Medium examples",
+      "description": "Пример 7 (реална адаптация) има грешно решение. За n=3: 2^5 + 3^7 = 32+2187=2219 ≡4 ≢0 mod 5. Решението не е валидно."
+    },
+    {
+      "severity": "major",
+      "section": "4.1 Easy examples",
+      "description": "CHECK секцията съдържа грешни примери (напр. \"Докажи, че 5^n + 2^n се дели на 3 за нечетни n\" е невярно твърдение)."
+    },
+    {
+      "severity": "minor",
+      "section": "CHECK-ове",
+      "description": "Липсват ясни CHECK-ове след easy и medium примерите. Съществуващите са объркващи."
+    }
+  ],
+  "strengths": [
+    "Добро покритие на структурата с 9 секции",
+    "Реални олимпиадни задачи в 'Защо е важно' и някои примери",
+    "Добро разглеждане на edge cases в повечето части"
+  ],
+  "suggestions": [
+    "Коригирайте Теорема 3.2 с правилно твърдение и доказателство",
+    "Поправете решението в Пример 7 (4.2) или заменете с валидна задача",
+    "Преработете CHECK-овете с коректни и ясни примери",
+    "Добавете конкретни критерии за CHECK след всяко ниво (easy/medium/hard)"
+  ],
+  "math_errors": [
+    {
+      "formula": "Ако $a \\equiv b \\equiv c \\pmod{m}$, то $a^n + b^n - c^n \\equiv 0 \\pmod{m}$",
+      "problem": "Не е вярно за a=b=c=2, m=3, n=1: 2+2-2=2 ≢0 mod 3",
+      "fix": "Преформулирайте теоремата или добавете правилни условия"
+    },
+    {
+      "formula": "За нечетни n: $2^{n+2} + 3^{2n+1} \\equiv 0 \\pmod{5}$",
+      "problem": "За n=3: 2^5 + 3^7 = 32+2187=2219 ≡4 ≢0 mod 5",
+      "fix": "Коригирайте задачата или решението"
+    }
+  ],
+  "missing_topics": [],
+  "structure_check": {
+    "section_1_why_important": true,
+    "section_2_objectives": true,
+    "section_3_theory": true,
+    "section_4_examples_3_levels": true,
+    "section_5_recognition": true,
+    "section_6_mistakes": true,
+    "section_7_mastery": true,
+    "section_8_quiz": true,
+    "section_9_recall": true,
+    "check_marks_present": false
+  },
+  "examples_check": {
+    "real_olympiad": true,
+    "easy_count": 3,
+    "medium_count": 4,
+    "hard_count": 3
+  },
+  "verdict_reasoning": "Статията има потенциал, но съдържа критични математически грешки в теорията и примерите. Не може да бъде използвана в сегашната си форма, но с ревизии може да достигне добро ниво.",
+  "_tokens": 16015
+}

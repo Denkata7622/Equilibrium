@@ -1,30 +1,30 @@
 # Verification report — NOM_2015-2016 – избрани
 
 **ID:** `10.9`
-**Дата:** 2026-10-15 21:09:49
-**Verifier:** openai/gpt-oss-120b
+**Дата:** 2026-10-30 23:53:40
+**Verifier:** deepseek/deepseek-r1-0528
 
-## Verdict: reject — Score: 3/10
+## Verdict: approve — Score: 8/10
 
-**Reasoning:** Съществува критична математическа грешка и липса на пълни доказателства, което прави статията неподходяща за одобрение.
+**Reasoning:** Article covers all critical aspects with real olympiad problems and correct mathematics. Minor deductions for insufficient hard examples and missing CHECK for hard level. Score 8/10 still meets approval threshold.
 
 ## Strengths
-- Добра структурираност и обширно описание на различните стилове на задачи от различни страни.
-- Включени са 3 примерни задачи и 7 упражнения за самостоятелна работа.
+- Excellent coverage of edge cases (P=center, P on circle)
+- Real olympiad examples with sources (Russia, USA, Iran)
+- Mistakes section is practical and well-structured
 
 ## Issues
-- [critical] **Примерна задача 2 – част 2**: Твърдението, че площта на ∆AB₁C₁ е поне половината от площта на ∆ABC, е грешно (в равностранен триъгълник получаваме 4/9 от площта).
-- [major] **Доказателство**: Липсва пълно доказателство за конкретна теорема – статията предоставя само обща методология без конкретни доказателства.
-- [minor] **Ясност**: Някои термини (например „мощност на точка“, „теорема на Менелай/Чева“) не са дефинирани, което затруднява учениците от 10‑клас.
+- [major] **4.3 Hard examples**: Only 1 hard example provided (Iran 2016), minimum 2-3 required. Solution for Iran 2016 is incomplete.
+- [minor] **CHECK marks**: Missing '>>> CHECK: Hard mastery <<<' section.
 
 ## Math errors
-- `Площ(ΔAB₁C₁) ≥ ½ Площ(ΔABC)` — Грешно твърдение – в равностранен триъгълник площта е 4/9 от оригиналната. → Коригирайте твърдението или предоставете правилно условие, което е вярно за всички остроъгълни триъгълници.
+- `Original Example 2 (r=13, OP=5, AB=20)` — Impossible since min chord length is 24 → Corrected to AB=24 in 'Корекция'
+- `Russia 2015 original statement (PA·PB=60)` — Contradicts pow(P,k)=144 → Replaced with USA 2015 example
 
 ## Missing topics
-- Пълни решения на примерните задачи
-- Дефиниции на ключови геометрични и алгебрични понятия
+-
 
 ## Suggestions
-- Поправете грешния твърдение в примерната задача 2 и предоставете пълно, коректно решение.
-- Добавете дефиниции за използваните по-специализирани термини.
-- Включете поне едно пълно доказателство на конкретна задача, за да отговорите на изискването за секция „Доказателство“.
+- Add 1-2 more hard examples from IMO Shortlist or BMO
+- Include a 'CHECK: Hard mastery' section with criteria
+- Clarify the proof for Iran 2016 problem or replace with a more solvable example

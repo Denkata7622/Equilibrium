@@ -1,0 +1,805 @@
+2026-11-04 16:07:21,895 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-04 16:07:21,896 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-04 16:07:21,896 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-04 16:07:45,076 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-04 16:07:45,076 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-04 16:07:45,077 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-04 16:07:45,102 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-04 16:07:45,108 [PDF_CHUNKER] INFO Филтър '2010-11 кл-probs': 1 PDF-а
+2026-11-04 16:07:45,109 [PDF_CHUNKER] INFO Нов ден — рестарт на бюджета
+2026-11-04 16:07:45,115 [PDF_CHUNKER] INFO 
+[1/1] OLI-2-Областен кръг-2010-11 кл-probs.pdf
+2026-11-04 16:07:45,117 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2010-11 кл-probs ═══
+2026-11-04 16:07:45,486 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs.pdf] pdfplumber: 2p, 872 chars
+2026-11-04 16:07:45,487 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] quality=native_ok, 2 pages, 904 chars
+2026-11-04 16:07:45,488 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L0_native: extracting from 904 chars
+2026-11-04 16:11:20,979 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] segmented: 3 problems from 3 segments
+2026-11-04 16:11:20,980 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] verifier: pre-filtered 3 → 0 (expected grade=11)
+2026-11-04 16:11:20,981 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] verifier: AI fallback (verdict=FAIL_MISSING)
+2026-11-04 16:11:22,519 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L0_native: verdict=FAIL_MISSING actual=0/6 conf=0.0 grades={}
+2026-11-04 16:11:22,519 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L0_native: failed (missing: 0 < 6±1), trying next level
+2026-11-04 16:11:22,549 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs.pdf] OCR cache: 2p
+2026-11-04 16:11:22,549 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L1_ocr: extracting from 2225 chars
+2026-11-04 16:11:54,726 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2010-11 кл-probs] seg 1: quote ABSENT (num=1) — keeping with flag
+2026-11-04 16:15:48,813 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2010-11 кл-probs] seg 4: quote ABSENT (num=4) — keeping with flag
+2026-11-04 16:17:19,613 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] segmented: 6 problems from 6 segments
+2026-11-04 16:17:19,614 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] verifier: pre-filtered 6 → 1 (expected grade=11)
+2026-11-04 16:17:19,616 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] verifier: AI fallback (verdict=FAIL_MISSING)
+2026-11-04 16:17:21,973 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L1_ocr: verdict=FAIL_MISSING actual=1/6 conf=1.0 grades={11: 1}
+2026-11-04 16:17:21,974 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L1_ocr: failed (missing: 1 < 6±1), trying next level
+2026-11-04 16:17:51,758 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs.pdf] VLM: 2p, $0.0100
+2026-11-04 16:17:51,760 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L2_vlm: extracting from 2304 chars
+2026-11-04 16:18:46,364 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2010-11 кл-probs] seg 1: quote ABSENT (num=1) — keeping with flag
+2026-11-04 16:21:51,269 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2010-11 кл-probs] seg 4: quote ABSENT (num=4) — keeping with flag
+2026-11-04 16:24:13,323 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] segmented: 6 problems from 6 segments
+2026-11-04 16:24:13,323 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] verifier: pre-filtered 6 → 1 (expected grade=11)
+2026-11-04 16:24:13,326 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] verifier: AI fallback (verdict=FAIL_MISSING)
+2026-11-04 16:24:15,165 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L2_vlm: verdict=FAIL_MISSING actual=1/6 conf=0.95 grades={11: 1}
+2026-11-04 16:24:15,166 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L2_vlm: failed (missing: 1 < 6±1), trying next level
+2026-11-04 16:24:15,166 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L3_escalation: using L2_vlm (2304 chars, single source)
+2026-11-04 16:24:15,166 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L3_escalation: extracting from 2304 chars
+2026-11-04 16:24:32,239 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L3_escalation: verdict=PASS actual=6/6 conf=1.0 grades={11: 6}
+2026-11-04 16:24:32,276 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] Записан v1 (6 problems, level=L3_escalation, verdict=PASS)
+2026-11-04 17:09:48,369 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs.pdf] OCR cache: 2p
+2026-11-04 17:17:17,337 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-04 17:17:17,338 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-04 17:17:17,338 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-04 17:17:24,220 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-04 17:17:24,221 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-04 17:17:24,221 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-04 17:17:24,244 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-04 17:17:24,245 [PDF_CHUNKER] INFO Филтър '2010-11 кл-probs': 1 PDF-а
+2026-11-04 17:17:24,246 [PDF_CHUNKER] INFO 
+[1/1] OLI-2-Областен кръг-2010-11 кл-probs.pdf
+2026-11-04 17:17:24,246 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2010-11 кл-probs ═══
+2026-11-04 17:17:24,507 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs.pdf] pdfplumber: 2p, 872 chars
+2026-11-04 17:17:24,507 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] quality=native_ok, 2 pages, 904 chars
+2026-11-04 17:17:24,508 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L0_native: extracting from 904 chars
+2026-11-04 17:18:32,094 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 1: seg_grade_int=11 R1 raw = [(1, None)]
+2026-11-04 17:19:21,022 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 2: seg_grade_int=11 R1 raw = [(2, None)]
+2026-11-04 17:19:21,023 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2010-11 кл-probs] seg 2: quote ABSENT (num=2) — keeping with flag
+2026-11-04 17:19:56,281 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 3: seg_grade_int=11 R1 raw = [(3, None)]
+2026-11-04 17:19:56,284 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] segmented: 3 problems from 3 segments
+2026-11-04 17:19:56,291 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] verifier: AI fallback (verdict=FAIL_HALLUCINATED)
+2026-11-04 17:20:01,464 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L0_native: verdict=FAIL_HALLUCINATED actual=3/6 conf=0.975 grades={11: 3}
+2026-11-04 17:20:01,464 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L0_native: failed (1 hallucinated problems), trying next level
+2026-11-04 17:20:01,466 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs.pdf] OCR cache: 2p
+2026-11-04 17:20:01,466 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L1_ocr: extracting from 2225 chars
+2026-11-04 17:20:43,691 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 1: seg_grade_int=11 R1 raw = [(1, None)]
+2026-11-04 17:20:43,691 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2010-11 кл-probs] seg 1: quote ABSENT (num=1) — keeping with flag
+2026-11-04 17:22:10,120 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 2: seg_grade_int=11 R1 raw = [(2, None)]
+2026-11-04 17:23:01,630 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 3: seg_grade_int=11 R1 raw = [(3, 11)]
+2026-11-04 17:23:57,105 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 4: seg_grade_int=11 R1 raw = [(4, None)]
+2026-11-04 17:25:03,388 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 5: seg_grade_int=11 R1 raw = [(5, None)]
+2026-11-04 17:26:03,096 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 6: seg_grade_int=11 R1 raw = [(6, None)]
+2026-11-04 17:26:03,097 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] segmented: 6 problems from 6 segments
+2026-11-04 17:26:03,110 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] verifier: AI fallback (verdict=FAIL_HALLUCINATED)
+2026-11-04 17:26:08,273 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L1_ocr: verdict=FAIL_HALLUCINATED actual=6/6 conf=1.0 grades={11: 6}
+2026-11-04 17:26:08,273 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L1_ocr: failed (1 hallucinated problems), trying next level
+2026-11-04 17:26:32,841 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs.pdf] VLM: 2p, $0.0100
+2026-11-04 17:26:32,844 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L2_vlm: extracting from 2302 chars
+2026-11-04 17:27:18,971 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 1: seg_grade_int=11 R1 raw = [(1, None)]
+2026-11-04 17:27:18,972 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2010-11 кл-probs] seg 1: quote ABSENT (num=1) — keeping with flag
+2026-11-04 17:28:19,902 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 2: seg_grade_int=11 R1 raw = [(2, None)]
+2026-11-04 17:29:08,001 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 3: seg_grade_int=11 R1 raw = [(3, 11)]
+2026-11-04 17:30:17,699 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 4: seg_grade_int=11 R1 raw = [(4, None)]
+2026-11-04 17:30:17,701 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2010-11 кл-probs] seg 4: quote ABSENT (num=4) — keeping with flag
+2026-11-04 17:30:58,952 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 5: seg_grade_int=11 R1 raw = [(5, None)]
+2026-11-04 17:32:10,618 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 6: seg_grade_int=11 R1 raw = [(6, None)]
+2026-11-04 17:32:10,619 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] segmented: 6 problems from 6 segments
+2026-11-04 17:32:10,635 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] verifier: AI fallback (verdict=FAIL_HALLUCINATED)
+2026-11-04 17:32:15,637 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L2_vlm: verdict=FAIL_HALLUCINATED actual=6/6 conf=0.988 grades={11: 6}
+2026-11-04 17:32:15,637 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L2_vlm: failed (2 hallucinated problems), trying next level
+2026-11-04 17:32:15,638 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L3_escalation: using L2_vlm (2302 chars, single source)
+2026-11-04 17:32:15,639 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L3_escalation: extracting from 2302 chars
+2026-11-04 17:32:32,744 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L3_escalation: verdict=PASS actual=6/6 conf=1.0 grades={11: 6}
+2026-11-04 17:32:32,776 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] Записан v1 (6 problems, level=L3_escalation, verdict=PASS)
+2026-11-04 17:54:47,007 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-04 17:54:47,007 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-04 17:54:47,007 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-04 17:54:53,200 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-04 17:54:53,201 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-04 17:54:53,201 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-04 17:54:53,226 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-04 17:54:53,227 [PDF_CHUNKER] INFO Филтър '2010-11 кл-probs': 1 PDF-а
+2026-11-04 17:54:53,228 [PDF_CHUNKER] INFO 
+[1/1] OLI-2-Областен кръг-2010-11 кл-probs.pdf
+2026-11-04 17:54:53,228 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2010-11 кл-probs ═══
+2026-11-04 17:54:53,507 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs.pdf] pdfplumber: 2p, 872 chars
+2026-11-04 17:54:53,508 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] quality=native_ok, 2 pages, 904 chars
+2026-11-04 17:54:53,509 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L0_native: extracting from 904 chars
+2026-11-04 17:55:35,802 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 1: seg_grade_int=11 R1 raw = [(1, None)]
+2026-11-04 17:56:07,794 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 2: seg_grade_int=11 R1 raw = [(2, None)]
+2026-11-04 17:56:07,795 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2010-11 кл-probs] seg 2: quote ABSENT (num=2) — keeping with flag
+2026-11-04 17:57:20,153 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 3: seg_grade_int=11 R1 raw = [(3, None)]
+2026-11-04 17:57:20,154 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] segmented: 3 problems from 3 segments
+2026-11-04 17:57:20,158 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] verifier: AI fallback (verdict=FAIL_HALLUCINATED)
+2026-11-04 17:57:28,141 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L0_native: verdict=FAIL_HALLUCINATED actual=3/6 conf=0.975 grades={11: 3}
+2026-11-04 17:57:28,141 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L0_native: failed (1 hallucinated + only 2/5 verified), trying next level
+2026-11-04 17:57:28,143 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs.pdf] OCR cache: 2p
+2026-11-04 17:57:28,143 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L1_ocr: extracting from 2225 chars
+2026-11-04 17:58:19,675 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 1: seg_grade_int=11 R1 raw = [(1, None)]
+2026-11-04 17:58:58,666 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 2: seg_grade_int=11 R1 raw = [(2, None)]
+2026-11-04 17:59:57,575 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 3: seg_grade_int=11 R1 raw = [(3, 11)]
+2026-11-04 18:01:36,471 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 4: seg_grade_int=11 R1 raw = [(4, None)]
+2026-11-04 18:01:36,472 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2010-11 кл-probs] seg 4: quote ABSENT (num=4) — keeping with flag
+2026-11-04 18:03:18,312 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 5: seg_grade_int=11 R1 raw = [(5, None)]
+2026-11-04 18:04:36,041 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 6: seg_grade_int=11 R1 raw = [(6, None)]
+2026-11-04 18:04:36,042 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] segmented: 6 problems from 6 segments
+2026-11-04 18:04:36,055 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L1_ocr: verdict=PASS_WITH_WARNINGS actual=6/6 conf=1.0 grades={11: 6}
+2026-11-04 18:04:36,090 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] Записан v1 (6 problems, level=L1_ocr, verdict=PASS_WITH_WARNINGS)
+2026-11-04 18:15:47,249 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-04 18:15:47,249 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-04 18:15:47,250 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-04 18:18:09,483 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-04 18:18:09,485 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-04 18:18:09,485 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-04 18:18:09,505 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-04 18:18:09,506 [PDF_CHUNKER] INFO Филтър '2010-11 кл-probs': 1 PDF-а
+2026-11-04 18:18:09,506 [PDF_CHUNKER] INFO 
+[1/1] OLI-2-Областен кръг-2010-11 кл-probs.pdf
+2026-11-04 18:18:09,506 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2010-11 кл-probs ═══
+2026-11-04 18:18:09,742 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs.pdf] pdfplumber: 2p, 872 chars
+2026-11-04 18:18:09,742 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] quality=native_ok, 2 pages, 904 chars
+2026-11-04 18:18:09,743 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L0_native: extracting from 904 chars
+2026-11-04 18:18:53,513 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 1: seg_grade_int=11 R1 raw = [(1, None)]
+2026-11-04 18:20:00,485 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 2: seg_grade_int=11 R1 raw = [(2, None)]
+2026-11-04 18:20:54,779 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 3: seg_grade_int=11 R1 raw = [(3, None)]
+2026-11-04 18:20:54,780 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] segmented: 3 problems from 3 segments
+2026-11-04 18:20:54,783 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] verifier: AI fallback (verdict=FAIL_MISSING)
+2026-11-04 18:21:00,698 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L0_native: verdict=FAIL_MISSING verified=3/6 (total=3) conf=0.967 grades={11: 3}
+2026-11-04 18:21:00,698 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L0_native: failed (missing: 3 < 6±1), trying next level
+2026-11-04 18:21:00,700 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs.pdf] OCR cache: 2p
+2026-11-04 18:21:00,700 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L1_ocr: extracting from 2225 chars
+2026-11-04 18:21:33,060 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 1: seg_grade_int=11 R1 raw = [(1, None)]
+2026-11-04 18:22:44,229 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 2: seg_grade_int=11 R1 raw = [(2, None)]
+2026-11-04 18:24:05,194 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 3: seg_grade_int=11 R1 raw = [(3, 11)]
+2026-11-04 18:25:18,451 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 4: seg_grade_int=11 R1 raw = [(4, None)]
+2026-11-04 18:25:18,452 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2010-11 кл-probs] seg 4: quote ABSENT (num=4) — keeping with flag
+2026-11-04 18:26:27,674 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 5: seg_grade_int=11 R1 raw = [(5, None)]
+2026-11-04 18:27:32,253 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 6: seg_grade_int=11 R1 raw = [(6, None)]
+2026-11-04 18:27:32,254 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] segmented: 6 problems from 6 segments
+2026-11-04 18:27:32,267 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L1_ocr: verdict=PASS_WITH_WARNINGS verified=5/6 (total=6) conf=0.95 grades={11: 6}
+2026-11-04 18:27:32,290 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2010-11 кл-probs] dropped 1 hallucinated problems from save: ['4']
+2026-11-04 18:27:32,295 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] Записан v1 (5 problems, level=L1_ocr, verdict=PASS_WITH_WARNINGS)
+2026-11-04 18:36:36,199 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-04 18:36:36,201 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-04 18:36:36,201 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-04 18:36:41,511 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-04 18:36:41,511 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-04 18:36:41,512 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-04 18:36:41,532 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-04 18:36:41,534 [PDF_CHUNKER] INFO Филтър '2010-11 кл-probs': 1 PDF-а
+2026-11-04 18:36:41,534 [PDF_CHUNKER] INFO 
+[1/1] OLI-2-Областен кръг-2010-11 кл-probs.pdf
+2026-11-04 18:36:41,535 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2010-11 кл-probs ═══
+2026-11-04 18:36:41,776 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs.pdf] pdfplumber: 2p, 872 chars
+2026-11-04 18:36:41,777 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] quality=native_ok, 2 pages, 904 chars
+2026-11-04 18:36:41,778 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L0_native: extracting from 904 chars
+2026-11-04 18:37:17,224 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 1: seg_grade_int=11 R1 raw = [(1, None)]
+2026-11-04 18:38:43,855 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 2: seg_grade_int=11 R1 raw = [(2, None)]
+2026-11-04 18:39:40,281 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 3: seg_grade_int=11 R1 raw = [(3, None)]
+2026-11-04 18:39:40,282 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] segmented: 3 problems from 3 segments
+2026-11-04 18:39:40,284 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] verifier: AI fallback (verdict=FAIL_MISSING)
+2026-11-04 18:39:43,966 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L0_native: verdict=FAIL_MISSING verified=3/6 (total=3) conf=0.95 grades={11: 3}
+2026-11-04 18:39:43,967 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L0_native: failed (missing: 3 < 6±1), trying next level
+2026-11-04 18:39:43,969 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs.pdf] OCR cache: 2p
+2026-11-04 18:39:43,969 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L1_ocr: extracting from 2225 chars
+2026-11-04 18:40:20,629 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 1: seg_grade_int=11 R1 raw = [(1, None)]
+2026-11-04 18:41:24,017 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 2: seg_grade_int=11 R1 raw = [(2, None)]
+2026-11-04 18:42:26,893 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 3: seg_grade_int=11 R1 raw = [(3, 11)]
+2026-11-04 18:43:53,144 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 4: seg_grade_int=11 R1 raw = [(4, None)]
+2026-11-04 18:43:53,148 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2010-11 кл-probs] seg 4: quote ABSENT (num=4) — keeping with flag
+2026-11-04 18:44:54,606 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 5: seg_grade_int=11 R1 raw = [(5, None)]
+2026-11-04 18:45:28,922 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 6: seg_grade_int=11 R1 raw = [(6, None)]
+2026-11-04 18:45:28,924 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] segmented: 6 problems from 6 segments
+2026-11-04 18:45:28,937 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L1_ocr: verdict=PASS_WITH_WARNINGS verified=5/6 (total=6) conf=0.96 grades={11: 6}
+2026-11-04 18:45:28,962 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2010-11 кл-probs] dropped 1 hallucinated problems from save: ['4']
+2026-11-04 18:45:28,968 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] Записан v1 (5 problems, level=L1_ocr, verdict=PASS_WITH_WARNINGS)
+2026-11-04 18:52:32,332 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-04 18:52:32,332 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-04 18:52:32,333 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-04 18:55:31,009 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-04 18:55:31,010 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-04 18:55:31,010 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-04 18:55:31,045 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-04 18:55:31,048 [PDF_CHUNKER] INFO Филтър '2010-11 кл-probs': 1 PDF-а
+2026-11-04 18:55:31,049 [PDF_CHUNKER] INFO 
+[1/1] OLI-2-Областен кръг-2010-11 кл-probs.pdf
+2026-11-04 18:55:31,051 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2010-11 кл-probs ═══
+2026-11-04 18:55:31,358 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs.pdf] pdfplumber: 2p, 872 chars
+2026-11-04 18:55:31,358 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] quality=native_ok, 2 pages, 904 chars
+2026-11-04 18:55:31,359 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L0_native: extracting from 904 chars
+2026-11-04 18:55:53,227 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 1: seg_grade_int=11 R1 raw = [(1, None)]
+2026-11-04 18:56:18,923 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 2: seg_grade_int=11 R1 raw = [(2, None)]
+2026-11-04 18:58:16,278 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 3: seg_grade_int=11 R1 raw = [(3, None)]
+2026-11-04 18:58:16,279 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] segmented: 3 problems from 3 segments
+2026-11-04 18:58:16,282 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] verifier: AI fallback (verdict=FAIL_MISSING)
+2026-11-04 18:58:21,397 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L0_native: verdict=FAIL_MISSING verified=3/6 (total=3) conf=0.95 grades={11: 3}
+2026-11-04 18:58:21,398 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L0_native: failed (missing: 3 < 6±0), trying next level
+2026-11-04 18:58:21,400 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs.pdf] OCR cache: 2p
+2026-11-04 18:58:32,848 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] OCR correction applied: 2225 → 2226 chars (similarity=1.00)
+2026-11-04 18:58:32,849 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L1_ocr: extracting from 2226 chars
+2026-11-04 18:58:50,592 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 1: seg_grade_int=11 R1 raw = [(1, None)]
+2026-11-04 18:59:05,741 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 2: seg_grade_int=11 R1 raw = [(2, None)]
+2026-11-04 19:00:09,289 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 3: seg_grade_int=11 R1 raw = [(3, 11)]
+2026-11-04 19:00:50,367 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 4: seg_grade_int=11 R1 raw = [(4, None)]
+2026-11-04 19:02:15,737 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 5: seg_grade_int=11 R1 raw = [(5, None)]
+2026-11-04 19:02:35,057 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 6: seg_grade_int=11 R1 raw = [(6, None)]
+2026-11-04 19:02:35,058 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] segmented: 6 problems from 6 segments
+2026-11-04 19:02:35,063 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L1_ocr: verdict=PASS verified=6/6 (total=6) conf=0.967 grades={11: 6}
+2026-11-04 19:02:35,077 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] Записан v1 (6 problems, level=L1_ocr, verdict=PASS)
+2026-11-04 19:22:19,771 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-04 19:22:19,772 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-04 19:22:19,772 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-04 19:22:22,846 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-04 19:22:22,847 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-04 19:22:22,847 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-04 19:22:22,857 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-04 19:22:22,858 [PDF_CHUNKER] INFO Филтър '2015-10 кл-probs,2020-12 кл-probs,2024-11 кл-probs': 3 PDF-а
+2026-11-04 19:22:22,858 [PDF_CHUNKER] INFO 
+[1/3] OLI-2-Областен кръг-2015-10 кл-probs.pdf
+2026-11-04 19:22:22,859 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2015-10 кл-probs ═══
+2026-11-04 19:22:23,032 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs.pdf] pymupdf: 1p, 938 chars
+2026-11-04 19:22:23,032 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] quality=native_ok, 1 pages, 953 chars
+2026-11-04 19:22:23,033 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L0_native: extracting from 953 chars
+2026-11-04 19:23:02,157 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-04 19:23:02,157 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-04 19:23:02,157 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-04 19:23:17,753 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-04 19:23:17,753 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-04 19:23:17,754 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-04 19:23:17,765 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-04 19:23:17,766 [PDF_CHUNKER] INFO Филтър '2010-11 кл-probs': 1 PDF-а
+2026-11-04 19:23:17,766 [PDF_CHUNKER] INFO 
+[1/1] OLI-2-Областен кръг-2010-11 кл-probs.pdf
+2026-11-04 19:23:17,767 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2010-11 кл-probs ═══
+2026-11-04 19:23:17,893 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs.pdf] pdfplumber: 2p, 872 chars
+2026-11-04 19:23:17,893 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] quality=native_ok, 2 pages, 904 chars
+2026-11-04 19:23:17,894 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L0_native: extracting from 904 chars
+2026-11-04 19:23:41,770 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 1: seg_grade_int=11 R1 raw = [(1, None)]
+2026-11-04 19:24:40,999 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 2: seg_grade_int=11 R1 raw = [(2, None)]
+2026-11-04 19:25:43,029 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 3: seg_grade_int=11 R1 raw = [(3, None)]
+2026-11-04 19:25:43,030 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] segmented: 3 problems from 3 segments
+2026-11-04 19:25:43,033 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] verifier: AI fallback (verdict=FAIL_MISSING)
+2026-11-04 19:25:46,806 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L0_native: verdict=FAIL_MISSING verified=3/6 (total=3) conf=0.95 grades={11: 3}
+2026-11-04 19:25:46,806 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L0_native: failed (missing: 3 < 6±0), trying next level
+2026-11-04 19:25:46,809 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs.pdf] OCR cache: 2p
+2026-11-04 19:25:52,366 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] OCR correction applied: 2225 → 2226 chars (similarity=1.00)
+2026-11-04 19:25:52,366 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L1_ocr: extracting from 2226 chars
+2026-11-04 19:26:53,540 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 1: seg_grade_int=11 R1 raw = [(1, None)]
+2026-11-04 19:27:20,278 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 2: seg_grade_int=11 R1 raw = [(2, None)]
+2026-11-04 19:27:33,050 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 3: seg_grade_int=11 R1 raw = [(3, 11)]
+2026-11-04 19:27:49,206 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 4: seg_grade_int=11 R1 raw = [(4, None)]
+2026-11-04 19:28:01,482 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 5: seg_grade_int=11 R1 raw = [(5, None)]
+2026-11-04 19:28:16,363 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] seg 6: seg_grade_int=11 R1 raw = [(6, None)]
+2026-11-04 19:28:16,363 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] segmented: 6 problems from 6 segments
+2026-11-04 19:28:16,369 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] L1_ocr: verdict=PASS verified=6/6 (total=6) conf=0.967 grades={11: 6}
+2026-11-04 19:28:16,383 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs] Записан v1 (6 problems, level=L1_ocr, verdict=PASS)
+2026-11-04 19:37:54,706 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-04 19:37:54,707 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-04 19:37:54,707 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-04 19:38:16,967 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-04 19:38:16,968 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-04 19:38:16,969 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-04 19:38:16,991 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-04 19:38:16,992 [PDF_CHUNKER] INFO Филтър '2015-10 кл-probs,2020-12 кл-probs,2024-11 кл-probs': 3 PDF-а
+2026-11-04 19:38:16,992 [PDF_CHUNKER] INFO 
+[1/3] OLI-2-Областен кръг-2015-10 кл-probs.pdf
+2026-11-04 19:38:16,992 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2015-10 кл-probs ═══
+2026-11-04 19:38:17,265 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs.pdf] pymupdf: 1p, 938 chars
+2026-11-04 19:38:17,265 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] quality=native_ok, 1 pages, 953 chars
+2026-11-04 19:38:17,266 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L0_native: extracting from 953 chars
+2026-11-04 19:38:30,655 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] seg 1: seg_grade_int=10 R1 raw = [(1, None)]
+2026-11-04 19:38:44,171 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] seg 2: seg_grade_int=10 R1 raw = [(2, None)]
+2026-11-04 19:38:55,130 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] seg 3: seg_grade_int=10 R1 raw = [(3, None)]
+2026-11-04 19:39:07,314 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] seg 4: seg_grade_int=10 R1 raw = [(4, None)]
+2026-11-04 19:39:07,316 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] segmented: 4 problems from 4 segments
+2026-11-04 19:39:07,319 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L0_native: verdict=PASS verified=4/4 (total=4) conf=0.95 grades={10: 4}
+2026-11-04 19:39:07,334 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] Записан v1 (4 problems, level=L0_native, verdict=PASS)
+2026-11-04 19:39:07,343 [PDF_CHUNKER] INFO 
+[2/3] OLI-2-Областен кръг-2020-12 кл-probs.pdf
+2026-11-04 19:39:07,343 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2020-12 кл-probs ═══
+2026-11-04 19:39:07,359 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs.pdf] pdfplumber: 1p, 0 chars
+2026-11-04 19:39:07,360 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs.pdf] 0 chars (0/p) → OCR fallback
+2026-11-04 19:39:07,366 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs.pdf] OCR cache: 1p
+2026-11-04 19:39:07,366 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs.pdf] OCR: 1321 chars (vs Python: 0)
+2026-11-04 19:39:07,366 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs] quality=ocr_ok, 1 pages, 1336 chars
+2026-11-04 19:39:07,367 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs] L0_native: extracting from 1336 chars
+2026-11-04 19:39:35,066 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs] seg 12.1: seg_grade_int=12 R1 raw = [(12.1, 12)]
+2026-11-04 19:39:54,420 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs] seg 12.2: seg_grade_int=12 R1 raw = [(12.2, 12)]
+2026-11-04 19:40:04,659 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs] seg 12.3: seg_grade_int=12 R1 raw = [(12.3, 12)]
+2026-11-04 19:40:28,623 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs] seg 12.4: seg_grade_int=12 R1 raw = [(12.4, 12)]
+2026-11-04 19:40:28,624 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs] segmented: 4 problems from 4 segments
+2026-11-04 19:40:28,629 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs] L0_native: verdict=PASS verified=4/4 (total=4) conf=1.0 grades={12: 4}
+2026-11-04 19:40:28,641 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-12 кл-probs] Записан v1 (4 problems, level=L0_native, verdict=PASS)
+2026-11-04 19:40:28,657 [PDF_CHUNKER] INFO 
+[3/3] OLI-2-Областен кръг-2024-11 кл-probs.pdf
+2026-11-04 19:40:28,657 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2024-11 кл-probs ═══
+2026-11-04 19:40:28,673 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] pdfplumber: 1p, 0 chars
+2026-11-04 19:40:28,673 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] 0 chars (0/p) → OCR fallback
+2026-11-04 19:40:28,690 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] OCR cache: 1p
+2026-11-04 19:40:28,690 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] OCR: 1110 chars (vs Python: 0)
+2026-11-04 19:40:28,691 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] quality=ocr_ok, 1 pages, 1125 chars
+2026-11-04 19:40:28,691 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] L0_native: extracting from 1125 chars
+2026-11-04 19:40:30,977 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2024-11 кл-probs] seg 11.1: JSON fail
+2026-11-04 19:40:53,199 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] seg 11.2: seg_grade_int=11 R1 raw = [(11.2, 11)]
+2026-11-04 19:41:11,430 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] seg 11.3: seg_grade_int=11 R1 raw = [(11.3, 11)]
+2026-11-04 19:41:27,709 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] seg 11.4: seg_grade_int=11 R1 raw = [(11.4, 11)]
+2026-11-04 19:41:27,710 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] segmented: 3 problems from 4 segments
+2026-11-04 19:41:27,713 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] verifier: AI fallback (verdict=FAIL_MISSING)
+2026-11-04 19:41:30,273 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] L0_native: verdict=FAIL_MISSING verified=3/4 (total=3) conf=0.943 grades={11: 3}
+2026-11-04 19:41:30,274 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] L0_native: failed (missing: 3 < 4±0), trying next level
+2026-11-04 19:41:30,277 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] OCR cache: 1p
+2026-11-04 19:41:32,014 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2024-11 кл-probs] OCR correction rejected: similarity 0.20 < 0.85
+2026-11-04 19:41:32,014 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] L1_ocr: extracting from 1110 chars
+2026-11-04 19:41:47,064 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] seg 11.1: seg_grade_int=11 R1 raw = [(11.1, 11)]
+2026-11-04 19:42:04,268 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] seg 11.2: seg_grade_int=11 R1 raw = [(11.2, 11)]
+2026-11-04 19:42:22,189 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] seg 11.3: seg_grade_int=11 R1 raw = [(11.3, 11)]
+2026-11-04 19:42:24,033 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2024-11 кл-probs] seg 11.4: JSON fail
+2026-11-04 19:42:24,034 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] segmented: 3 problems from 4 segments
+2026-11-04 19:42:24,038 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] verifier: AI fallback (verdict=FAIL_MISSING)
+2026-11-04 19:42:26,078 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] L1_ocr: verdict=FAIL_MISSING verified=3/4 (total=3) conf=0.92 grades={11: 3}
+2026-11-04 19:42:26,080 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] L1_ocr: failed (missing: 3 < 4±0), trying next level
+2026-11-04 19:42:46,669 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] VLM: 1p, $0.0050
+2026-11-04 19:42:59,476 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] OCR correction applied: 1142 → 1133 chars (similarity=0.99)
+2026-11-04 19:42:59,476 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] L2_vlm: extracting from 1133 chars
+2026-11-04 19:43:15,950 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] seg 11.1: seg_grade_int=11 R1 raw = [(11.1, 11)]
+2026-11-04 19:43:32,130 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] seg 11.2: seg_grade_int=11 R1 raw = [(11.2, 11)]
+2026-11-04 19:43:46,468 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] seg 11.3: seg_grade_int=11 R1 raw = [(11.3, 11)]
+2026-11-04 19:43:58,346 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] seg 11.4: seg_grade_int=11 R1 raw = [(11.4, 11)]
+2026-11-04 19:43:58,347 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] segmented: 4 problems from 4 segments
+2026-11-04 19:43:58,351 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] L2_vlm: verdict=PASS verified=4/4 (total=4) conf=0.958 grades={11: 4}
+2026-11-04 19:43:58,368 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] Записан v1 (4 problems, level=L2_vlm, verdict=PASS)
+2026-11-04 20:02:26,626 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-04 20:02:26,628 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-04 20:02:26,628 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-04 20:02:34,813 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-04 20:02:34,814 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-04 20:02:34,814 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-04 20:02:34,838 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-04 20:02:34,839 [PDF_CHUNKER] INFO Филтър '2015-10 кл-probs,2024-11 кл-probs': 2 PDF-а
+2026-11-04 20:02:34,840 [PDF_CHUNKER] INFO 
+[1/2] OLI-2-Областен кръг-2015-10 кл-probs.pdf
+2026-11-04 20:02:34,840 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2015-10 кл-probs ═══
+2026-11-04 20:02:35,131 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs.pdf] pymupdf: 1p, 938 chars
+2026-11-04 20:02:35,132 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] quality=native_ok, 1 pages, 953 chars
+2026-11-04 20:02:35,134 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L0_native: suspicious native text (math typos likely) — running correction
+2026-11-04 20:02:35,134 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L0_native: extracting from 953 chars
+2026-11-04 20:02:51,310 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] seg 1: seg_grade_int=10 R1 raw = [(1, None)]
+2026-11-04 20:03:04,282 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] seg 2: seg_grade_int=10 R1 raw = [(2, None)]
+2026-11-04 20:03:16,124 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] seg 3: seg_grade_int=10 R1 raw = [(3, None)]
+2026-11-04 20:03:28,364 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] seg 4: seg_grade_int=10 R1 raw = [(4, None)]
+2026-11-04 20:03:28,365 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] segmented: 4 problems from 4 segments
+2026-11-04 20:03:28,369 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L0_native: verdict=PASS verified=4/4 (total=4) conf=0.95 grades={10: 4}
+2026-11-04 20:03:28,387 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] Записан v1 (4 problems, level=L0_native, verdict=PASS)
+2026-11-04 20:03:28,394 [PDF_CHUNKER] INFO 
+[2/2] OLI-2-Областен кръг-2024-11 кл-probs.pdf
+2026-11-04 20:03:28,394 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2024-11 кл-probs ═══
+2026-11-04 20:03:28,410 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] pdfplumber: 1p, 0 chars
+2026-11-04 20:03:28,411 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] 0 chars (0/p) → OCR fallback
+2026-11-04 20:03:28,412 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] OCR cache: 1p
+2026-11-04 20:03:28,412 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] OCR: 1110 chars (vs Python: 0)
+2026-11-04 20:03:28,414 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] quality=ocr_ok, 1 pages, 1125 chars
+2026-11-04 20:03:28,414 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] L0_native: extracting from 1125 chars
+2026-11-04 20:03:48,522 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] seg 11.1: seg_grade_int=11 R1 raw = [(11.1, 11)]
+2026-11-04 20:04:11,116 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] seg 11.2: seg_grade_int=11 R1 raw = [(11.2, 11)]
+2026-11-04 20:04:34,886 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] seg 11.3: seg_grade_int=11 R1 raw = [(11.3, 11)]
+2026-11-04 20:04:57,094 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] seg 11.4: seg_grade_int=11 R1 raw = [(11.4, 11)]
+2026-11-04 20:04:57,095 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] segmented: 4 problems from 4 segments
+2026-11-04 20:04:57,099 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] L0_native: verdict=PASS verified=4/4 (total=4) conf=0.94 grades={11: 4}
+2026-11-04 20:04:57,118 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs] Записан v1 (4 problems, level=L0_native, verdict=PASS)
+2026-11-04 20:09:57,249 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-04 20:09:57,250 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-04 20:09:57,250 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-04 20:10:02,544 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-04 20:10:02,545 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-04 20:10:02,546 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-04 20:10:02,568 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-04 20:10:02,569 [PDF_CHUNKER] INFO Филтър '2015-10 кл-probs': 1 PDF-а
+2026-11-04 20:10:02,569 [PDF_CHUNKER] INFO 
+[1/1] OLI-2-Областен кръг-2015-10 кл-probs.pdf
+2026-11-04 20:10:02,569 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2015-10 кл-probs ═══
+2026-11-04 20:10:02,858 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs.pdf] pymupdf: 1p, 938 chars
+2026-11-04 20:10:02,858 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] quality=native_ok, 1 pages, 953 chars
+2026-11-04 20:10:02,859 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L0_native: suspicious native text (math typos likely) — running correction
+2026-11-04 20:10:09,850 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] OCR correction applied: 953 → 958 chars (similarity=0.99)
+2026-11-04 20:10:09,852 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L0_native: extracting from 958 chars
+2026-11-04 20:10:23,625 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] seg 1: seg_grade_int=10 R1 raw = [(1, None)]
+2026-11-04 20:10:38,863 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] seg 2: seg_grade_int=10 R1 raw = [(2, None)]
+2026-11-04 20:10:48,873 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] seg 3: seg_grade_int=10 R1 raw = [(3, None)]
+2026-11-04 20:11:03,189 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] seg 4: seg_grade_int=10 R1 raw = [(4, None)]
+2026-11-04 20:11:03,190 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] segmented: 4 problems from 4 segments
+2026-11-04 20:11:03,193 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] L0_native: verdict=PASS verified=4/4 (total=4) conf=0.988 grades={10: 4}
+2026-11-04 20:11:03,208 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-10 кл-probs] Записан v1 (4 problems, level=L0_native, verdict=PASS)
+2026-11-04 20:19:32,369 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-04 20:19:32,370 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-04 20:19:32,370 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-04 20:19:39,475 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-04 20:19:39,476 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-04 20:19:39,476 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-04 20:19:39,497 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-04 20:19:39,500 [PDF_CHUNKER] INFO Филтър '2006-10 кл-probs,2012-12 кл-probs,2018-10 кл-probs,2018-11 кл-probs,2019-10 кл-probs,2021-11 кл-probs,2022-10 кл-probs,2024-12 кл-probs,2025-10 кл-probs': 9 PDF-а
+2026-11-04 20:19:39,500 [PDF_CHUNKER] INFO 
+[1/9] OLI-2-Областен кръг-2006-10 кл-probs.pdf
+2026-11-04 20:19:39,501 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2006-10 кл-probs ═══
+2026-11-04 20:19:39,544 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-11-04 20:19:39,546 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-11-04 20:19:39,549 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs.pdf] OCR cache: 1p
+2026-11-04 20:19:39,549 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs.pdf] OCR: 1581 chars (vs Python: 24)
+2026-11-04 20:19:39,550 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] quality=ocr_ok, 1 pages, 1596 chars
+2026-11-04 20:19:39,551 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] L0_native: extracting from 1596 chars
+2026-11-04 20:19:39,552 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] segment grade filter: 6 → 5 (kept grade=10)
+2026-11-04 20:20:00,399 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.1: seg_grade_int=10 R1 raw = [(10.1, 10)]
+2026-11-04 20:20:12,892 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.2: seg_grade_int=10 R1 raw = [(10.2, 10)]
+2026-11-04 20:20:40,029 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.3: seg_grade_int=10 R1 raw = [(10.3, 10)]
+2026-11-04 20:20:40,037 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.3: quote ABSENT (num=10.3) — keeping with flag
+2026-11-04 20:20:58,053 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.4: seg_grade_int=10 R1 raw = [(10.4, 10)]
+2026-11-04 20:21:21,400 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.5: seg_grade_int=10 R1 raw = [(10.5, 10)]
+2026-11-04 20:21:21,401 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] segmented: 5 problems from 5 segments
+2026-11-04 20:21:21,411 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] verifier: AI fallback (verdict=FAIL_HALLUCINATED)
+2026-11-04 20:21:23,962 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] L0_native: verdict=FAIL_HALLUCINATED verified=4/6 (total=5) conf=0.907 grades={10: 5}
+2026-11-04 20:21:23,963 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] L0_native: failed (1 hallucinated + only 4/6 verified), trying next level
+2026-11-04 20:21:23,964 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs.pdf] OCR cache: 1p
+2026-11-04 20:21:49,064 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] OCR correction applied: 1581 → 1581 chars (similarity=1.00)
+2026-11-04 20:21:49,064 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] L1_ocr: extracting from 1581 chars
+2026-11-04 20:21:49,065 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] segment grade filter: 6 → 5 (kept grade=10)
+2026-11-04 20:22:03,285 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.1: seg_grade_int=10 R1 raw = [(10.1, 10)]
+2026-11-04 20:22:17,108 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.2: seg_grade_int=10 R1 raw = [(10.2, 10)]
+2026-11-04 20:22:40,457 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.3: seg_grade_int=10 R1 raw = [(10.3, 10)]
+2026-11-04 20:22:40,458 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.3: quote ABSENT (num=10.3) — keeping with flag
+2026-11-04 20:23:25,312 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.4: seg_grade_int=10 R1 raw = [(10.4, 10)]
+2026-11-04 20:23:41,228 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.5: seg_grade_int=10 R1 raw = [(10.5, 10)]
+2026-11-04 20:23:41,230 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] segmented: 5 problems from 5 segments
+2026-11-04 20:23:41,243 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] verifier: AI fallback (verdict=FAIL_HALLUCINATED)
+2026-11-04 20:24:15,367 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] L1_ocr: verdict=FAIL_HALLUCINATED verified=4/6 (total=5) conf=0.903 grades={10: 5}
+2026-11-04 20:24:15,367 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] L1_ocr: failed (1 hallucinated + only 4/6 verified), trying next level
+2026-11-04 20:24:22,218 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs.pdf] VLM: 1p, $0.0050
+2026-11-04 20:25:00,327 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] OCR correction applied: 1586 → 1584 chars (similarity=1.00)
+2026-11-04 20:25:00,328 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] L2_vlm: extracting from 1584 chars
+2026-11-04 20:25:00,328 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] segment grade filter: 6 → 5 (kept grade=10)
+2026-11-04 20:25:12,322 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.1: seg_grade_int=10 R1 raw = [(10.1, 10)]
+2026-11-04 20:25:23,438 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.2: seg_grade_int=10 R1 raw = [(10.2, 10)]
+2026-11-04 20:25:34,133 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.3: seg_grade_int=10 R1 raw = [(10.3, 10)]
+2026-11-04 20:25:47,510 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.4: seg_grade_int=10 R1 raw = [(10.4, 10)]
+2026-11-04 20:26:03,592 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.5: seg_grade_int=10 R1 raw = [(10.5, 10)]
+2026-11-04 20:26:03,594 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] segmented: 5 problems from 5 segments
+2026-11-04 20:26:03,603 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] verifier: AI fallback (verdict=FAIL_MISSING)
+2026-11-04 20:26:05,487 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] L2_vlm: verdict=FAIL_MISSING verified=5/6 (total=5) conf=0.96 grades={10: 5}
+2026-11-04 20:26:05,488 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] L2_vlm: failed (missing: 5 < 6±0), trying next level
+2026-11-04 20:26:05,488 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] L3_escalation: using L2_vlm (1586 chars, single source)
+2026-11-04 20:26:05,488 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] L3_escalation: extracting from 1586 chars
+2026-11-04 20:26:20,481 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] L3_escalation: verdict=FAIL_DUPLICATE verified=7/6 (total=7) conf=1.0 grades={10: 7}
+2026-11-04 20:26:20,481 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] L3_escalation: failed (2 duplicate num values), trying next level
+2026-11-04 20:26:20,525 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] Записан v1 (6 problems, level=exhausted, verdict=FAIL_DUPLICATE)
+2026-11-04 20:26:20,546 [PDF_CHUNKER] INFO 
+[2/9] OLI-2-Областен кръг-2012-12 кл-probs.pdf
+2026-11-04 20:26:20,546 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2012-12 кл-probs ═══
+2026-11-04 20:26:21,029 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-12 кл-probs.pdf] pymupdf: 2p, 1589 chars
+2026-11-04 20:26:21,030 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-12 кл-probs] quality=native_ok, 2 pages, 1621 chars
+2026-11-04 20:26:21,030 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-12 кл-probs] L0_native: suspicious native text (math typos likely) — running correction
+2026-11-04 20:26:22,465 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2012-12 кл-probs] OCR correction rejected: similarity 0.01 < 0.85
+2026-11-04 20:26:22,465 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-12 кл-probs] L0_native: extracting from 1621 chars
+2026-11-04 20:26:49,818 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-12 кл-probs] seg 1: seg_grade_int=12 R1 raw = [(1, None)]
+2026-11-04 20:26:51,622 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2012-12 кл-probs] seg 2: JSON fail, retrying
+2026-11-04 20:26:56,726 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2012-12 кл-probs] seg 2: JSON fail after retry
+2026-11-04 20:27:09,985 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-12 кл-probs] seg 3: seg_grade_int=12 R1 raw = [(3, 12)]
+2026-11-04 20:27:20,966 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-12 кл-probs] seg 4: seg_grade_int=12 R1 raw = [(4, None)]
+2026-11-04 20:27:32,290 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-12 кл-probs] seg 5: seg_grade_int=12 R1 raw = [(5, None)]
+2026-11-04 20:27:43,264 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-12 кл-probs] seg 6: seg_grade_int=12 R1 raw = [(6, None)]
+2026-11-04 20:27:43,265 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-12 кл-probs] segmented: 5 problems from 6 segments
+2026-11-04 20:27:43,271 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-12 кл-probs] verifier: AI fallback (verdict=FAIL_MISSING)
+2026-11-04 20:27:45,927 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-12 кл-probs] L0_native: verdict=FAIL_MISSING verified=5/6 (total=5) conf=0.98 grades={12: 5}
+2026-11-04 20:27:45,928 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-12 кл-probs] L0_native: failed (missing: 5 < 6±0), trying next level
+2026-11-04 20:27:45,953 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-12 кл-probs.pdf] OCR cache: 2p
+2026-11-04 20:27:54,545 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-12 кл-probs] OCR correction applied: 1794 → 1792 chars (similarity=1.00)
+2026-11-04 20:27:54,545 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-12 кл-probs] L1_ocr: extracting from 1792 chars
+2026-11-04 20:28:04,151 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-12 кл-probs] seg 1: seg_grade_int=12 R1 raw = [(1, None)]
+2026-11-04 20:28:20,231 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-12 кл-probs] seg 2: seg_grade_int=12 R1 raw = [(2, None)]
+2026-11-04 20:28:37,640 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-12 кл-probs] seg 3: seg_grade_int=12 R1 raw = [(3, 12)]
+2026-11-04 20:28:50,748 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-12 кл-probs] seg 4: seg_grade_int=12 R1 raw = [(4, None)]
+2026-11-04 20:29:02,100 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-12 кл-probs] seg 5: seg_grade_int=12 R1 raw = [(5, None)]
+2026-11-04 20:29:12,220 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-12 кл-probs] seg 6: seg_grade_int=12 R1 raw = [(6, None)]
+2026-11-04 20:29:12,221 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-12 кл-probs] segmented: 6 problems from 6 segments
+2026-11-04 20:29:12,230 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-12 кл-probs] L1_ocr: verdict=PASS verified=6/6 (total=6) conf=0.97 grades={12: 6}
+2026-11-04 20:29:12,254 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-12 кл-probs] Записан v1 (6 problems, level=L1_ocr, verdict=PASS)
+2026-11-04 20:29:12,262 [PDF_CHUNKER] INFO 
+[3/9] OLI-2-Областен кръг-2018-10 кл-probs.pdf
+2026-11-04 20:29:12,262 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2018-10 кл-probs ═══
+2026-11-04 20:29:12,508 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-10 кл-probs.pdf] pymupdf: 1p, 1302 chars
+2026-11-04 20:29:12,508 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-10 кл-probs] quality=native_ok, 1 pages, 1317 chars
+2026-11-04 20:29:12,509 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-10 кл-probs] L0_native: suspicious native text (math typos likely) — running correction
+2026-11-04 20:29:23,738 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-10 кл-probs] OCR correction applied: 1317 → 1311 chars (similarity=0.91)
+2026-11-04 20:29:23,739 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-10 кл-probs] L0_native: extracting from 1311 chars
+2026-11-04 20:29:50,042 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-10 кл-probs] seg 1: seg_grade_int=10 R1 raw = [(1, None)]
+2026-11-04 20:30:04,072 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-10 кл-probs] seg 2: seg_grade_int=10 R1 raw = [(2, None)]
+2026-11-04 20:30:20,250 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-10 кл-probs] seg 3: seg_grade_int=10 R1 raw = [(3, None)]
+2026-11-04 20:31:09,405 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-10 кл-probs] seg 4: seg_grade_int=10 R1 raw = [(4, None)]
+2026-11-04 20:31:09,406 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-10 кл-probs] segmented: 4 problems from 4 segments
+2026-11-04 20:31:09,415 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-10 кл-probs] L0_native: verdict=PASS verified=4/4 (total=4) conf=1.0 grades={10: 4}
+2026-11-04 20:31:09,428 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-10 кл-probs] Записан v1 (4 problems, level=L0_native, verdict=PASS)
+2026-11-04 20:31:09,436 [PDF_CHUNKER] INFO 
+[4/9] OLI-2-Областен кръг-2018-11 кл-probs.pdf
+2026-11-04 20:31:09,436 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2018-11 кл-probs ═══
+2026-11-04 20:31:09,665 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-probs.pdf] pdfplumber: 1p, 1189 chars
+2026-11-04 20:31:09,665 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-probs] quality=native_ok, 1 pages, 1204 chars
+2026-11-04 20:31:09,666 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-probs] L0_native: extracting from 1204 chars
+2026-11-04 20:31:20,156 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-probs] seg 1: seg_grade_int=11 R1 raw = [(1, None)]
+2026-11-04 20:31:31,931 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-probs] seg 2: seg_grade_int=11 R1 raw = [(2, None)]
+2026-11-04 20:31:52,612 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-probs] seg 3: seg_grade_int=11 R1 raw = [(3, None)]
+2026-11-04 20:32:13,098 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-probs] seg 4: seg_grade_int=11 R1 raw = [(4, None)]
+2026-11-04 20:32:13,099 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-probs] segmented: 4 problems from 4 segments
+2026-11-04 20:32:13,103 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-probs] L0_native: verdict=PASS verified=4/4 (total=4) conf=0.962 grades={11: 4}
+2026-11-04 20:32:13,117 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-probs] Записан v1 (4 problems, level=L0_native, verdict=PASS)
+2026-11-04 20:32:13,128 [PDF_CHUNKER] INFO 
+[5/9] OLI-2-Областен кръг-2019-10 кл-probs.pdf
+2026-11-04 20:32:13,129 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2019-10 кл-probs ═══
+2026-11-04 20:32:13,145 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-10 кл-probs.pdf] pdfplumber: 1p, 0 chars
+2026-11-04 20:32:13,145 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-10 кл-probs.pdf] 0 chars (0/p) → OCR fallback
+2026-11-04 20:32:13,151 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-10 кл-probs.pdf] OCR cache: 1p
+2026-11-04 20:32:13,152 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-10 кл-probs.pdf] OCR: 1094 chars (vs Python: 0)
+2026-11-04 20:32:13,152 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-10 кл-probs] quality=ocr_ok, 1 pages, 1109 chars
+2026-11-04 20:32:13,153 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-10 кл-probs] L0_native: extracting from 1109 chars
+2026-11-04 20:32:23,647 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-10 кл-probs] seg 10.1: seg_grade_int=10 R1 raw = [(10.1, 10)]
+2026-11-04 20:32:48,131 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-10 кл-probs] seg 10.2: seg_grade_int=10 R1 raw = [(10.2, 10)]
+2026-11-04 20:33:45,775 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-10 кл-probs] seg 10.3: seg_grade_int=10 R1 raw = [(10.3, 10)]
+2026-11-04 20:33:54,991 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-10 кл-probs] seg 10.4: seg_grade_int=10 R1 raw = [(10.4, 10)]
+2026-11-04 20:33:54,992 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-10 кл-probs] segmented: 4 problems from 4 segments
+2026-11-04 20:33:54,996 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-10 кл-probs] L0_native: verdict=PASS verified=4/4 (total=4) conf=0.96 grades={10: 4}
+2026-11-04 20:33:55,010 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-10 кл-probs] Записан v1 (4 problems, level=L0_native, verdict=PASS)
+2026-11-04 20:33:55,019 [PDF_CHUNKER] INFO 
+[6/9] OLI-2-Областен кръг-2021-11 кл-probs.pdf
+2026-11-04 20:33:55,019 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2021-11 кл-probs ═══
+2026-11-04 20:33:55,266 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs.pdf] pypdf: 1p, 3147 chars
+2026-11-04 20:33:55,266 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs] quality=native_ok, 1 pages, 3162 chars
+2026-11-04 20:33:55,267 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs] L0_native: suspicious native text (math typos likely) — running correction
+2026-11-04 20:46:20,903 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs] L0_native: extracting from 3162 chars
+2026-11-04 20:46:30,843 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2021-11 кл-probs] validation: ['count: under: 0 < 4-0']
+2026-11-04 20:46:30,843 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs] chunk 1-1: 0 problems (9s)
+2026-11-04 20:46:30,843 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2021-11 кл-probs] L0_native: 0 problems, trying next level
+2026-11-04 20:46:30,848 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs.pdf] OCR cache: 1p
+2026-11-04 20:46:39,449 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs] OCR correction applied: 1445 → 1445 chars (similarity=1.00)
+2026-11-04 20:46:39,449 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs] L1_ocr: extracting from 1445 chars
+2026-11-04 20:46:53,567 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs] seg 1: seg_grade_int=11 R1 raw = [(1, None)]
+2026-11-04 20:47:14,206 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs] seg 2: seg_grade_int=11 R1 raw = [(2, None)]
+2026-11-04 20:47:14,206 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2021-11 кл-probs] seg 2: quote ABSENT (num=2) — keeping with flag
+2026-11-04 20:47:31,224 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs] seg 3: seg_grade_int=11 R1 raw = [(3, None)]
+2026-11-04 20:47:52,740 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs] seg 4: seg_grade_int=11 R1 raw = [(4, None)]
+2026-11-04 20:47:52,741 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs] segmented: 4 problems from 4 segments
+2026-11-04 20:47:52,744 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs] L1_ocr: verdict=PASS verified=4/4 (total=4) conf=0.93 grades={11: 4}
+2026-11-04 20:47:52,752 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs] Записан v1 (4 problems, level=L1_ocr, verdict=PASS)
+2026-11-04 20:47:52,756 [PDF_CHUNKER] INFO 
+[7/9] OLI-2-Областен кръг-2022-10 кл-probs.pdf
+2026-11-04 20:47:52,757 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2022-10 кл-probs ═══
+2026-11-04 20:47:53,788 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs.pdf] pdfplumber: 1p, 11967 chars
+2026-11-04 20:47:53,788 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] quality=native_ok, 1 pages, 11982 chars
+2026-11-04 20:47:53,789 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] L0_native: suspicious native text (math typos likely) — running correction
+2026-11-04 20:48:37,047 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] OCR correction applied: 11982 → 11986 chars (similarity=1.00)
+2026-11-04 20:48:37,047 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] L0_native: extracting from 11986 chars
+2026-11-04 20:48:37,047 [PDF_CHUNKER] INFO segment dedupe by num: 3 → 2 (duplicate nums removed)
+2026-11-04 20:49:44,409 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] seg 10.1: seg_grade_int=10 R1 raw = [(10.1, 10), (10.2, 10), (10.4, 10)]
+2026-11-04 20:49:44,417 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2022-10 кл-probs] seg 10.1: quote ABSENT (num=10.2) — keeping with flag
+2026-11-04 20:49:44,423 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2022-10 кл-probs] seg 10.1: quote ABSENT (num=10.4) — keeping with flag
+2026-11-04 20:50:29,511 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] seg 10.4: seg_grade_int=10 R1 raw = [(10.4, 10)]
+2026-11-04 20:50:29,513 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] segmented: 4 problems from 2 segments
+2026-11-04 20:50:29,553 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] verifier: AI fallback (verdict=FAIL_HALLUCINATED)
+2026-11-04 20:50:33,770 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] L0_native: verdict=FAIL_HALLUCINATED verified=2/4 (total=4) conf=0.92 grades={10: 4}
+2026-11-04 20:50:33,770 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] L0_native: failed (2 hallucinated problems), trying next level
+2026-11-04 20:50:33,773 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs.pdf] OCR cache: 1p
+2026-11-04 20:50:44,510 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] OCR correction applied: 1721 → 1723 chars (similarity=1.00)
+2026-11-04 20:50:44,510 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] L1_ocr: extracting from 1723 chars
+2026-11-04 20:50:58,971 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] seg 10.1: seg_grade_int=10 R1 raw = [(10.1, 10)]
+2026-11-04 20:51:21,766 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] seg 10.2: seg_grade_int=10 R1 raw = [(10.2, 10)]
+2026-11-04 20:51:35,834 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] seg 10.3: seg_grade_int=10 R1 raw = [(10.3, 10)]
+2026-11-04 20:52:00,037 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] seg 10.4: seg_grade_int=10 R1 raw = [(10.4, 10)]
+2026-11-04 20:52:00,038 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] segmented: 4 problems from 4 segments
+2026-11-04 20:52:00,042 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] L1_ocr: verdict=PASS verified=4/4 (total=4) conf=0.958 grades={10: 4}
+2026-11-04 20:52:00,046 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] Записан v1 (4 problems, level=L1_ocr, verdict=PASS)
+2026-11-04 20:52:00,051 [PDF_CHUNKER] INFO 
+[8/9] OLI-2-Областен кръг-2024-12 кл-probs.pdf
+2026-11-04 20:52:00,052 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2024-12 кл-probs ═══
+2026-11-04 20:52:00,058 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-12 кл-probs.pdf] pdfplumber: 1p, 0 chars
+2026-11-04 20:52:00,058 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-12 кл-probs.pdf] 0 chars (0/p) → OCR fallback
+2026-11-04 20:52:00,068 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-12 кл-probs.pdf] OCR cache: 1p
+2026-11-04 20:52:00,069 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-12 кл-probs.pdf] OCR: 1546 chars (vs Python: 0)
+2026-11-04 20:52:00,069 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-12 кл-probs] quality=ocr_ok, 1 pages, 1561 chars
+2026-11-04 20:52:00,069 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-12 кл-probs] L0_native: extracting from 1561 chars
+2026-11-04 20:52:13,527 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-12 кл-probs] seg 12.1: seg_grade_int=12 R1 raw = [(12.1, 12)]
+2026-11-04 20:52:38,996 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-12 кл-probs] seg 12.2: seg_grade_int=12 R1 raw = [(12.2, 12)]
+2026-11-04 20:52:40,590 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2024-12 кл-probs] seg 12.3: JSON fail, retrying
+2026-11-04 20:53:36,542 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-12 кл-probs] seg 12.3: seg_grade_int=12 R1 raw = [(12.3, 12)]
+2026-11-04 20:54:03,958 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-12 кл-probs] seg 12.4: seg_grade_int=12 R1 raw = [(12.4, 12)]
+2026-11-04 20:54:03,958 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-12 кл-probs] segmented: 4 problems from 4 segments
+2026-11-04 20:54:03,962 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-12 кл-probs] L0_native: verdict=PASS verified=4/4 (total=4) conf=1.0 grades={12: 4}
+2026-11-04 20:54:03,966 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-12 кл-probs] Записан v1 (4 problems, level=L0_native, verdict=PASS)
+2026-11-04 20:54:03,970 [PDF_CHUNKER] INFO 
+[9/9] OLI-2-Областен кръг-2025-10 кл-probs (1).pdf
+2026-11-04 20:54:03,971 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2025-10 кл-probs (1) ═══
+2026-11-04 20:54:04,110 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-10 кл-probs (1).pdf] pdfplumber: 1p, 6746 chars
+2026-11-04 20:54:04,110 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-10 кл-probs (1)] quality=native_ok, 1 pages, 6761 chars
+2026-11-04 20:54:04,110 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-10 кл-probs (1)] L0_native: suspicious native text (math typos likely) — running correction
+2026-11-04 20:56:09,485 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-10 кл-probs (1)] OCR correction applied: 6761 → 6766 chars (similarity=1.00)
+2026-11-04 20:56:09,485 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-10 кл-probs (1)] L0_native: extracting from 6766 chars
+2026-11-04 20:56:39,488 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-10 кл-probs (1)-1] extract... 30s
+2026-11-04 20:57:09,490 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-10 кл-probs (1)-1] extract... 60s
+2026-11-04 20:57:38,685 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2025-10 кл-probs (1)] validation: ['problem[0]: quote_not_verbatim', 'problem[1]: quote_not_verbatim', 'problem[2]: quote_not_verbatim', 'problem[3]: quote_not_verbatim']
+2026-11-04 20:57:38,685 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-10 кл-probs (1)] chunk 1-1: 4 problems (89s)
+2026-11-04 20:57:38,700 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-10 кл-probs (1)] verifier: AI fallback (verdict=FAIL_HALLUCINATED)
+2026-11-04 20:57:57,963 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-10 кл-probs (1)] L0_native: verdict=FAIL_HALLUCINATED verified=0/4 (total=4) conf=0.0 grades={10: 4}
+2026-11-04 20:57:57,963 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-10 кл-probs (1)] L0_native: failed (4 hallucinated problems), trying next level
+2026-11-04 20:57:57,965 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-10 кл-probs (1).pdf] OCR cache: 1p
+2026-11-04 20:58:06,601 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-10 кл-probs (1)] OCR correction applied: 1579 → 1576 chars (similarity=1.00)
+2026-11-04 20:58:06,601 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-10 кл-probs (1)] L1_ocr: extracting from 1576 chars
+2026-11-04 20:58:21,525 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-10 кл-probs (1)] seg 1: seg_grade_int=10 R1 raw = [(1, None)]
+2026-11-04 20:58:51,646 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-10 кл-probs (1)] seg 2: seg_grade_int=10 R1 raw = [(2, None)]
+2026-11-04 20:59:18,504 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-10 кл-probs (1)] seg 3: seg_grade_int=10 R1 raw = [(3, None)]
+2026-11-04 20:59:29,716 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-10 кл-probs (1)] seg 4: seg_grade_int=10 R1 raw = [(4, None)]
+2026-11-04 20:59:29,716 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-10 кл-probs (1)] segmented: 4 problems from 4 segments
+2026-11-04 20:59:29,719 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-10 кл-probs (1)] L1_ocr: verdict=PASS verified=4/4 (total=4) conf=0.988 grades={10: 4}
+2026-11-04 20:59:29,727 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-10 кл-probs (1)] Записан v1 (4 problems, level=L1_ocr, verdict=PASS)
+2026-11-04 22:11:11,533 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-04 22:11:11,534 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-04 22:11:11,534 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-04 22:11:20,055 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-04 22:11:20,057 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-04 22:11:20,057 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-04 22:11:20,076 [PDF_CHUNKER] INFO Намерени 300 PDF-а
+2026-11-04 22:11:20,078 [PDF_CHUNKER] INFO Филтър '2006-10 кл-probs,2018-11 кл-probs,2019-10 кл-probs,2022-10 кл-probs,2021-11 кл-probs': 5 PDF-а
+2026-11-04 22:11:20,078 [PDF_CHUNKER] INFO 
+[1/5] OLI-2-Областен кръг-2006-10 кл-probs.pdf
+2026-11-04 22:11:20,079 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2006-10 кл-probs ═══
+2026-11-04 22:11:20,107 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-11-04 22:11:20,107 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-11-04 22:11:20,110 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs.pdf] Mistral OCR (128KB)
+2026-11-04 22:11:22,678 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs.pdf] OCR: 1p, 1585chars, 2s, $0.0010
+2026-11-04 22:11:22,690 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs.pdf] OCR: 1585 chars (vs Python: 24)
+2026-11-04 22:11:22,691 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] quality=ocr_ok, 1 pages, 1600 chars
+2026-11-04 22:11:22,693 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] L0_native: extracting from 1600 chars
+2026-11-04 22:11:22,695 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] segment grade filter: 6 → 5 (kept grade=10)
+2026-11-04 22:11:40,171 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.1: seg_grade_int=10 R1 raw = [(10.1, 10)]
+2026-11-04 22:12:00,243 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.2: seg_grade_int=10 R1 raw = [(10.2, 10)]
+2026-11-04 22:12:35,162 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.3: seg_grade_int=10 R1 raw = [(10.3, 10)]
+2026-11-04 22:12:55,233 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.4: seg_grade_int=10 R1 raw = [(10.4, 10)]
+2026-11-04 22:13:14,997 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.5: seg_grade_int=10 R1 raw = [(10.5, 10)]
+2026-11-04 22:13:14,998 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] segmented: 5 problems from 5 segments
+2026-11-04 22:13:15,005 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] verifier: AI fallback (verdict=FAIL_MISSING)
+2026-11-04 22:13:17,557 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] L0_native: verdict=FAIL_MISSING verified=5/6 (total=5) conf=0.96 grades={10: 5}
+2026-11-04 22:13:17,558 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] L0_native: failed (missing: 5 < 6±0), trying next level
+2026-11-04 22:13:17,560 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs.pdf] OCR cache: 1p
+2026-11-04 22:13:18,791 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2006-10 кл-probs] OCR correction rejected: similarity 0.00 < 0.85
+2026-11-04 22:13:18,791 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] L1_ocr: extracting from 1585 chars
+2026-11-04 22:13:18,792 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] segment grade filter: 6 → 5 (kept grade=10)
+2026-11-04 22:13:34,251 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.1: seg_grade_int=10 R1 raw = [(10.1, 10)]
+2026-11-04 22:13:49,404 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.2: seg_grade_int=10 R1 raw = [(10.2, 10)]
+2026-11-04 22:14:17,059 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.3: seg_grade_int=10 R1 raw = [(10.3, 10)]
+2026-11-04 22:14:17,060 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.3: quote ABSENT (num=10.3) — keeping with flag
+2026-11-04 22:14:50,543 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.4: JSON fail, retrying
+2026-11-04 22:15:11,533 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.4: seg_grade_int=10 R1 raw = [(10.4, 10)]
+2026-11-04 22:15:30,579 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.5: seg_grade_int=10 R1 raw = [(10.5, 10)]
+2026-11-04 22:15:30,581 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] segmented: 5 problems from 5 segments
+2026-11-04 22:15:30,590 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] verifier: AI fallback (verdict=FAIL_HALLUCINATED)
+2026-11-04 22:15:33,548 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] L1_ocr: verdict=FAIL_HALLUCINATED verified=4/6 (total=5) conf=0.907 grades={10: 5}
+2026-11-04 22:15:33,550 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] L1_ocr: failed (1 hallucinated + only 4/6 verified), trying next level
+2026-11-04 22:15:44,152 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs.pdf] VLM: 1p, $0.0050
+2026-11-04 22:16:13,136 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] OCR correction applied: 1583 → 1581 chars (similarity=1.00)
+2026-11-04 22:16:13,136 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] L2_vlm: extracting from 1581 chars
+2026-11-04 22:16:13,137 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] segment grade filter: 6 → 5 (kept grade=10)
+2026-11-04 22:16:31,973 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.1: seg_grade_int=10 R1 raw = [(10.1, 10)]
+2026-11-04 22:16:46,882 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.2: seg_grade_int=10 R1 raw = [(10.2, 10)]
+2026-11-04 22:16:59,281 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.3: seg_grade_int=10 R1 raw = [(10.3, 10)]
+2026-11-04 22:17:19,835 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.4: seg_grade_int=10 R1 raw = [(10.4, 10)]
+2026-11-04 22:17:43,221 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] seg 10.5: seg_grade_int=10 R1 raw = [(10.5, 10)]
+2026-11-04 22:17:43,222 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] segmented: 5 problems from 5 segments
+2026-11-04 22:17:43,226 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] verifier: AI fallback (verdict=FAIL_MISSING)
+2026-11-04 22:17:46,574 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] L2_vlm: verdict=FAIL_MISSING verified=5/6 (total=5) conf=0.96 grades={10: 5}
+2026-11-04 22:17:46,574 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] L2_vlm: failed (missing: 5 < 6±0), trying next level
+2026-11-04 22:17:46,574 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] L3_escalation: using L2_vlm (1583 chars, single source)
+2026-11-04 22:17:46,575 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] L3_escalation: extracting from 1583 chars
+2026-11-04 22:18:01,151 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] verifier: deduped 7 → 6
+2026-11-04 22:18:01,155 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] L3_escalation: verdict=PASS verified=6/6 (total=6) conf=1.0 grades={10: 6}
+2026-11-04 22:18:01,175 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs] Записан v1 (6 problems, level=L3_escalation, verdict=PASS)
+2026-11-04 22:18:01,179 [PDF_CHUNKER] INFO 
+[2/5] OLI-2-Областен кръг-2018-11 кл-probs.pdf
+2026-11-04 22:18:01,179 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2018-11 кл-probs ═══
+2026-11-04 22:18:01,286 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-probs.pdf] pdfplumber: 1p, 1189 chars
+2026-11-04 22:18:01,286 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-probs] quality=native_ok, 1 pages, 1204 chars
+2026-11-04 22:18:01,287 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-probs] L0_native: suspicious native (cid-artifact) — forcing L1 OCR
+2026-11-04 22:18:01,288 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-probs.pdf] OCR cache: 1p
+2026-11-04 22:18:08,600 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-probs] OCR correction applied: 1325 → 1328 chars (similarity=1.00)
+2026-11-04 22:18:08,600 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-probs] L1_ocr: extracting from 1328 chars
+2026-11-04 22:18:23,364 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-probs] seg 1: seg_grade_int=11 R1 raw = [(1, None)]
+2026-11-04 22:18:36,617 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-probs] seg 2: seg_grade_int=11 R1 raw = [(2, None)]
+2026-11-04 22:19:08,143 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-probs] seg 3: seg_grade_int=11 R1 raw = [(3, None)]
+2026-11-04 22:19:55,603 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-probs] seg 4: seg_grade_int=11 R1 raw = [(4, None)]
+2026-11-04 22:19:55,603 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-probs] segmented: 4 problems from 4 segments
+2026-11-04 22:19:55,606 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-probs] L1_ocr: verdict=PASS verified=4/4 (total=4) conf=1.0 grades={11: 4}
+2026-11-04 22:19:55,612 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-probs] Записан v1 (4 problems, level=L1_ocr, verdict=PASS)
+2026-11-04 22:19:55,616 [PDF_CHUNKER] INFO 
+[3/5] OLI-2-Областен кръг-2019-10 кл-probs.pdf
+2026-11-04 22:19:55,617 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2019-10 кл-probs ═══
+2026-11-04 22:19:55,624 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-10 кл-probs.pdf] pdfplumber: 1p, 0 chars
+2026-11-04 22:19:55,624 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-10 кл-probs.pdf] 0 chars (0/p) → OCR fallback
+2026-11-04 22:19:55,625 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-10 кл-probs.pdf] OCR cache: 1p
+2026-11-04 22:19:55,625 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-10 кл-probs.pdf] OCR: 1094 chars (vs Python: 0)
+2026-11-04 22:19:55,625 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-10 кл-probs] quality=ocr_ok, 1 pages, 1109 chars
+2026-11-04 22:19:55,625 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-10 кл-probs] L0_native: extracting from 1109 chars
+2026-11-04 22:20:08,406 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-10 кл-probs] seg 10.1: seg_grade_int=10 R1 raw = [(10.1, 10)]
+2026-11-04 22:20:42,316 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-10 кл-probs] seg 10.2: seg_grade_int=10 R1 raw = [(10.2, 10)]
+2026-11-04 22:21:09,110 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-10 кл-probs] seg 10.3: seg_grade_int=10 R1 raw = [(10.3, 10)]
+2026-11-04 22:21:27,442 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-10 кл-probs] seg 10.4: seg_grade_int=10 R1 raw = [(10.4, 10)]
+2026-11-04 22:21:27,443 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-10 кл-probs] segmented: 4 problems from 4 segments
+2026-11-04 22:21:27,445 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-10 кл-probs] L0_native: verdict=PASS verified=4/4 (total=4) conf=0.932 grades={10: 4}
+2026-11-04 22:21:27,451 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-10 кл-probs] Записан v1 (4 problems, level=L0_native, verdict=PASS)
+2026-11-04 22:21:27,456 [PDF_CHUNKER] INFO 
+[4/5] OLI-2-Областен кръг-2021-11 кл-probs.pdf
+2026-11-04 22:21:27,456 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2021-11 кл-probs ═══
+2026-11-04 22:21:27,568 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs.pdf] pypdf: 1p, 3147 chars
+2026-11-04 22:21:27,568 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs] quality=native_ok, 1 pages, 3162 chars
+2026-11-04 22:21:27,568 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs] L0_native: suspicious native (digit-after-letter) — forcing L1 OCR
+2026-11-04 22:21:27,569 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs.pdf] OCR cache: 1p
+2026-11-04 22:21:38,565 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2021-11 кл-probs] OCR correction rejected: similarity 0.30 < 0.85
+2026-11-04 22:21:38,565 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs] L1_ocr: extracting from 1445 chars
+2026-11-04 22:22:20,263 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs] seg 1: seg_grade_int=11 R1 raw = [(1, None)]
+2026-11-04 22:22:46,383 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs] seg 2: seg_grade_int=11 R1 raw = [(2, None)]
+2026-11-04 22:22:46,384 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2021-11 кл-probs] seg 2: quote ABSENT (num=2) — keeping with flag
+2026-11-04 22:23:02,786 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs] seg 3: seg_grade_int=11 R1 raw = [(3, None)]
+2026-11-04 22:23:21,240 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs] seg 4: seg_grade_int=11 R1 raw = [(4, None)]
+2026-11-04 22:23:21,241 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs] segmented: 4 problems from 4 segments
+2026-11-04 22:23:21,244 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs] L1_ocr: verdict=PASS verified=4/4 (total=4) conf=0.89 grades={11: 4}
+2026-11-04 22:23:21,253 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs] Записан v1 (4 problems, level=L1_ocr, verdict=PASS)
+2026-11-04 22:23:21,259 [PDF_CHUNKER] INFO 
+[5/5] OLI-2-Областен кръг-2022-10 кл-probs.pdf
+2026-11-04 22:23:21,259 [PDF_CHUNKER] INFO 
+═══ OLI-2-Областен кръг-2022-10 кл-probs ═══
+2026-11-04 22:23:22,375 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs.pdf] pdfplumber: 1p, 11967 chars
+2026-11-04 22:23:22,375 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] quality=native_ok, 1 pages, 11982 chars
+2026-11-04 22:23:22,377 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] L0_native: suspicious native (digit-after-letter) — forcing L1 OCR
+2026-11-04 22:23:22,378 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs.pdf] OCR cache: 1p
+2026-11-04 22:23:27,154 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] OCR correction applied: 1721 → 1721 chars (similarity=1.00)
+2026-11-04 22:23:27,154 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] L1_ocr: extracting from 1721 chars
+2026-11-04 22:23:44,926 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] seg 10.1: seg_grade_int=10 R1 raw = [(10.1, 10)]
+2026-11-04 22:24:06,423 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] seg 10.2: seg_grade_int=10 R1 raw = [(10.2, 10)]
+2026-11-04 22:24:06,424 [PDF_CHUNKER] WARNING [OLI-2-Областен кръг-2022-10 кл-probs] seg 10.2: quote ABSENT (num=10.2) — keeping with flag
+2026-11-04 22:24:27,347 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] seg 10.3: seg_grade_int=10 R1 raw = [(10.3, 10)]
+2026-11-04 22:24:59,650 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] seg 10.4: seg_grade_int=10 R1 raw = [(10.4, 10)]
+2026-11-04 22:24:59,651 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] segmented: 4 problems from 4 segments
+2026-11-04 22:24:59,655 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] verifier: AI fallback (verdict=FAIL_HALLUCINATED)
+2026-11-04 22:25:11,566 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] L1_ocr: verdict=FAIL_HALLUCINATED verified=3/4 (total=4) conf=0.943 grades={10: 4}
+2026-11-04 22:25:11,566 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] L1_ocr: failed (1 hallucinated + only 3/4 verified), trying next level
+2026-11-04 22:25:22,894 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs.pdf] VLM: 1p, $0.0050
+2026-11-04 22:25:46,190 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] OCR correction applied: 1743 → 1744 chars (similarity=1.00)
+2026-11-04 22:25:46,190 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] L2_vlm: extracting from 1744 chars
+2026-11-04 22:26:16,592 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] seg 10.1: seg_grade_int=10 R1 raw = [(10.1, 10)]
+2026-11-04 22:26:48,084 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] seg 10.2: seg_grade_int=10 R1 raw = [(10.2, 10)]
+2026-11-04 22:27:09,813 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] seg 10.3: seg_grade_int=10 R1 raw = [(10.3, 10)]
+2026-11-04 22:27:42,296 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] seg 10.4: seg_grade_int=10 R1 raw = [(10.4, 10)]
+2026-11-04 22:27:42,297 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] segmented: 4 problems from 4 segments
+2026-11-04 22:27:42,301 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] L2_vlm: verdict=PASS verified=4/4 (total=4) conf=1.0 grades={10: 4}
+2026-11-04 22:27:42,306 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-10 кл-probs] Записан v1 (4 problems, level=L2_vlm, verdict=PASS)

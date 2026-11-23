@@ -1,0 +1,15 @@
+2026-11-17 20:13:09,922 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-17 20:13:09,924 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-17 20:13:09,924 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-17 21:26:13,524 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-17 21:26:13,525 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-17 21:26:13,525 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-17 21:48:52,628 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-17 21:48:52,637 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-17 21:48:52,637 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-17 22:06:25,393 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-17 22:06:25,393 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-17 22:06:25,394 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash
+2026-11-17 22:06:37,455 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-11-17 22:06:37,456 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-11-17 22:06:37,456 [PDF_CHUNKER] INFO Verifier model: deepseek/deepseek-v4.1-flash

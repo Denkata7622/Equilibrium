@@ -1,0 +1,177 @@
+{
+  "pdf": "OLI-2-Областен кръг-1998-12 кл",
+  "classify_model": "deepseek/deepseek-r1-0528",
+  "classified_at": "2026-11-11T23:25:17.112150",
+  "problems": [
+    {
+      "num": "12.1",
+      "grade": 12,
+      "year": 1998,
+      "round": "oblasten",
+      "statement": "Find the least positive integer number $n$ ($n \\ge 3$) with the following property: for any colouring of $n$ different points $A_1, A_2, \\ldots, A_n$ on a line and such that $A_1A_2 = A_2A_3 = \\ldots = A_{n-1}A_n$ in two colours, there are three points $A_i, A_j, A_{2j-i} (1 \\le i < 2j - i \\le n)$ which have the same colour.",
+      "solution": "Assume the two colours are white and black. Consider 8 points coloured as follows: $A_1, A_2, A_5, A_6$ (white), $A_3, A_4, A_7, A_8$ (black). Obviously no three points $A_i, A_j, A_{2j-i}$ ($1 \\le i < 2j-i \\le n$) have the same colour and therefore $n \\ge 9$.\n\nIf we can show that $n = 9$ has the required property, we will be done. Suppose there are 9 points coloured black or white and no three points $A_i, A_j, A_{2j-i}$ ($1 \\le i < 2j-i \\le n$) have the same colour.\n\nFirst assume that for $i = 3$, $i = 4$ or $i = 5$ points $A_i$ and $A_{i+2}$ have the same colour (say white). Then the points $A_{i-2}, A_{i+1}, A_{i+4}$ should be black (note that $i - 2 \\ge 1$ and $i + 4 \\le 9$), which is a contradiction.\n\nSuppose now that for $i = 3, 4, 5$ the points $A_i$ and $A_{i+2}$ have different colours. Without loss of generality assume $A_5$ is a white point. Then $A_3$ and $A_7$ are black. Because of the symmetry we may suppose that $A_4$ is white and $A_6$ is black. Consequently $A_8$ is white, $A_2$ is black ($2 + 8 = 2 \\cdot 5$) and $A_9$ is white ($7 + 9 = 2 \\cdot 8$). Therefore $A_1$ should be both white ($1 + 3 = 2 \\cdot 2$) and black ($1 + 9 = 2 \\cdot 5$), which is again a contradiction.\n\nConsequently the assumption is not true and so $n = 9$.",
+      "answer": "9",
+      "page": 1,
+      "source": "OLI-2-Областен кръг-1998-12 кл · 1998-12 · Зад. 12.1",
+      "point_id": "8.6",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "hard",
+      "techniques": [
+        "combinatorics",
+        "ramsey_theory"
+      ],
+      "reasoning": "Задачата е класическа задача от теорията на Рамзи за точки на права с две цветове. Търси се минималното n, за което при всяко оцветяване има три точки с еднакъв цвят в аритметична прогресия. Решението използва конструкция за n=8 и след това доказва, че n=9 работи.",
+      "_paired": true,
+      "_grade_source": "filename",
+      "secondary_points": [
+        {
+          "id": "8.13",
+          "confidence": 0.65
+        }
+      ]
+    },
+    {
+      "num": "12.2",
+      "grade": 12,
+      "year": 1998,
+      "round": "oblasten",
+      "statement": "Let $ABCD$ be a quadrilateral such that $AD = CD$ and $\\\\angle DAB = \\\\angle ABC < 90^\\\\circ$. The line passing through $D$ and the midpoint of the segment $BC$ intersects the line $AB$ at the point $E$. Prove that $\\\\angle BEC = \\\\angle DAC$.",
+      "solution": "Let $M$ be the midpoint of $BC$ and let $AD$ and $BC$ meet at point $N$ and $AN$ and $EC$ meet at point $P$. It follows from Menelaus' Theorem applied to $\\Delta DMN$ and $\\Delta DEN$ that $DP \\cdot NC \\cdot ME = PN \\cdot CM \\cdot ED$ and $DA \\cdot NB \\cdot ME = AN \\cdot BM \\cdot ED$. Combining the above equalities with $AN = BN$, $BE = CE$ and $AD = CD$, we get $DP \\cdot NC = DC \\cdot PN$. Therefore $CP$ is bisector of $\\angle DCN$.\n\nConsequently $\\angle ACP = \\angle ACD + \\angle DCP = \\frac{1}{2}(\\angle NDC + \\angle DCN) = \\angle NAB$ so $\\angle DCP = \\angle CAB$ and we obtain $\\angle BEC = \\angle ABC - \\angle BCE = \\angle BAD - \\angle DCP = \\angle DAC$, Q. E. D.\n\n**Note:** The assertion is also true if the condition $\\angle ABC < 90^\\circ$ is left out.",
+      "answer": null,
+      "page": 1,
+      "source": "OLI-2-Областен кръг-1998-12 кл · 1998-12 · Зад. 12.2",
+      "point_id": "1.1",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "menelaus_theorem",
+        "angle_chasing"
+      ],
+      "reasoning": "Задачата използва теоремата на Менелай за доказване на равенство на ъгли. Решението използва допълнителни построения и прилага теоремата на Менелай два пъти.",
+      "_paired": true,
+      "_grade_source": "filename",
+      "secondary_points": [
+        {
+          "id": "1.6",
+          "confidence": 0.65
+        }
+      ]
+    },
+    {
+      "num": "12.3",
+      "grade": 12,
+      "year": 1998,
+      "round": "oblasten",
+      "statement": "Let $\\mathbb{R}^+$ be the set of all positive real numbers. Prove that there is no function $f : \\mathbb{R}^+ \\to \\mathbb{R}^+$ such that\n\n$$(f(x))^2 \\ge f(x+y)(f(x)+y)$$\n\nfor arbitrary positive real numbers $x$ and $y$.",
+      "solution": "Suppose there exists a function satisfying the conditions of the problem. Write the initial equality in the form\n$$ f(x) - f(x+y) \\ge \\frac{f(x)y}{f(x)+y}. $$\n\nFirst we prove that $f(x) - f(x+1) \\ge \\frac{1}{2}$ for $x > 0$. Obviously $f$ is a (strictly) monotone non-increasing function. Fix $x > 0$ and choose a natural number $n$, such that $n \\cdot f(x+1) \\ge 1$. When $k = 0, 1, \\dots, n-1$, we obtain that\n$$ f\\bigl(x + \\frac{k}{n}\\bigr) - f\\bigl(x + \\frac{k+1}{n}\\bigr) \\ge \\frac{f\\bigl(x+\\frac{k}{n}\\bigr)\\frac{1}{n}}{f\\bigl(x+\\frac{k}{n}\\bigr) + \\frac{1}{n}} \\ge \\frac{1}{2n}. $$\nAdding the above inequalities gives $f(x) - f(x+1) \\ge \\frac{1}{2}$.\n\nLet the natural number $m$ be such that $m \\ge 2f(x)$. Therefore\n$$ f(x) - f(x+m) = \\sum_{i=0}^{m-1}\\bigl(f(x+i) - f(x+i+1)\\bigr) \\ge \\frac{m}{2} \\ge f(x), $$\nand so $f(x+m) \\le 0$. But this contradicts the fact that $f$ is strictly positive.",
+      "answer": null,
+      "page": 1,
+      "source": "OLI-2-Областен кръг-1998-12 кл · 1998-12 · Зад. 12.3",
+      "point_id": "7.2",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "hard",
+      "techniques": [
+        "functional_inequalities",
+        "monotonicity"
+      ],
+      "reasoning": "Задачата доказва, че няма функция f:R+→R+, която удовлетворява даденото неравенство. Решението използва монотонност и достига до противоречие чрез сумиране на неравенства.",
+      "_paired": true,
+      "_grade_source": "filename",
+      "secondary_points": []
+    },
+    {
+      "num": "12.4",
+      "grade": 12,
+      "year": 1998,
+      "round": "oblasten",
+      "statement": "Let $f(x) = x^3 - 3x + 1$. Find the number of different real solutions of the equation $f(f(x)) = 0$.",
+      "solution": "Since $f'(x) = 3(x-1)(x+1)$ it follows that $f$ is strictly monotone non-decreasing in the intervals $(-\\infty, -1]$ and $[1, \\infty)$ and strictly monotone non-increasing in the interval $[-1, 1]$. Moreover $\\lim\\limits_{x \\to \\pm\\infty} f(x) = \\pm\\infty$, $f(-1) = 3, f(1) = -1, f(3) = 19 > 0$ and so the equation $f(x) = 0$ has three distinct roots $x_1, x_2, x_3$ such that $x_1 < -1 < x_2 < 1 < x_3 < 3$. Therefore $f(x) = x_1$ has only one real root (which is less than $-1$) and $f(x) = x_2$ and $f(x) = x_3$ have three distinct real roots each (one in each of the intervals $(-\\infty, -1), (-1, 1)$ and $(1, \\infty)$). Since the roots of $f(f(x)) = 0$ are exactly the roots of these three equations, we conclude that it has seven distinct real roots.",
+      "answer": null,
+      "page": 1,
+      "source": "OLI-2-Областен кръг-1998-12 кл · 1998-12 · Зад. 12.4",
+      "point_id": "5.1",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "vieta_formulas",
+        "function_composition",
+        "derivative"
+      ],
+      "reasoning": "Задачата изследва броя на реалните корени на уравнение от вида f(f(x))=0, където f е кубичен полином. Решението използва производна за определяне на монотонността на f и след това анализира броя на корените на всяко от уравненията f(x)=c, където c са корените на f(x)=0.",
+      "_paired": true,
+      "_grade_source": "filename",
+      "secondary_points": []
+    },
+    {
+      "num": "12.5",
+      "grade": 12,
+      "year": 1998,
+      "round": "oblasten",
+      "statement": "The convex pentagon $ABCDE$ is inscribed in a circle with radius $R$. The inradii of the triangles $ABC, ABD, AEC$ and $AED$ are denoted by $r_{ABC}, r_{ABD}, r_{AEC}$ and $r_{AED}$. Prove that\n\na.) \\(\\cos \\angle CAB + \\cos \\angle ABC + \\cos \\angle BCA = 1 + \\frac{r_{ABC}}{R}\\)\nb.) If \\( r_{ABC} = r_{AED} \\) and \\( r_{ABD} = r_{AEC} \\), then \\( \\triangle ABC \\cong \\triangle AED \\).",
+      "solution": "a.) Using the standard notation for the elements of $\\Delta ABC$, we obtain that\n$$ \\frac{r}{R} = \\frac{S}{pR} = \\frac{4S^2}{pabc} = \\frac{4(p-a)(p-b)(p-c)}{abc} =$$\n$$ = \\frac{1}{2abc}\\bigl(a(b^2 + c^2 - a^2) + b(c^2 + a^2 - b^2) + c(a^2 + b^2 - c^2) - 2abc\\bigr) =$$\n$$ = \\cos \\angle CAB + \\cos \\angle ABC + \\cos \\angle BCA - 1. $$\n\nb.) Applying continuously the equality from a.) and using the fact that $ABCDE$ is inscribed in a circle convex pentagon, it is easy to see that\n$$ r_{ABC} + r_{AEC} + r_{EDC} = r_{AED} + r_{ABD} + r_{BCD}. $$\nThe condition of the problem and the above equality imply $r_{BCD} = r_{EDC}$. Since $\\Delta BCD$ and $\\Delta EDC$ have a side in common and equal circumradiuses we get that $\\Delta BCD \\cong \\Delta EDC$ (prove it using a.)). In particular $BC = ED$ and using $r_{ABC} = r_{AED}$ again, we get $\\Delta ABC \\cong \\Delta AED$.",
+      "answer": null,
+      "page": 1,
+      "source": "OLI-2-Областен кръг-1998-12 кл · 1998-12 · Зад. 12.5",
+      "point_id": "1.10",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "hard",
+      "techniques": [
+        "circumcircle",
+        "inradius",
+        "trigonometric_identities"
+      ],
+      "reasoning": "Задачата има две части: а) доказване на тригонометрична връзка между ъглите и радиусите в триъгълник; б) използване на условието за равенство на радиуси за доказване на еднаквост на триъгълници. Решението използва формули за лице и тригонометрични тъждества.",
+      "_paired": true,
+      "_grade_source": "filename",
+      "secondary_points": [
+        {
+          "id": "1.5",
+          "confidence": 0.75
+        }
+      ]
+    },
+    {
+      "num": "12.6",
+      "grade": 12,
+      "year": 1998,
+      "round": "oblasten",
+      "statement": "Show that the equation\n\n$$x^2y^2 = z^2(z^2 - x^2 - y^2)$$\n\nhas no solution in positive integer numbers.",
+      "solution": "Suppose $x,y,z$ is a solution for which $\\frac{xy}{z}$ (which is a natural number—why?) has its minimum value.\n\nWrite $x,y,z$ in the form $x = dx_1, y = dy_1, z = dz_1$, where $d = (x,y,z)$. Our equation is equivalent to $x_1^2y_1^2 = z_1^2(z_1^2 - x_1^2 - y_1^2)$. Let $u = (x_1, z_1), v = (y_1, z_1), x_1 = ut, y_1 = vw$. Since $z_1$ divides $x_1y_1$, we get $z_1 = uv$. A substitution in the last equality gives\n\nWithout loss of generality we may assume that the first pair of equalities hold. It is easily seen that $v$ and $u$ are odd integer numbers. It follows now from $u^2 + w^2 = v^2$ that $u = m^2 - n^2, w = 2mn, v = m^2 + n^2$, where $m$ and $n$ are coprime natural numbers (of distinct parity). Substitution in $v^2 + t^2 = 2u^2$ shows that $t^2 + (2mn)^2 = (m^2 - n^2)^2$ and so $t = p^2 - q^2, mn = pq, m^2 - n^2 = p^2 + q^2$ for some natural numbers $p$ and $q$. Therefore\n$$ p^2 q^2 = m^2(m^2 - p^2 - q^2), $$\nwhich shows that $p$, $q$, $m$ is a solution of the original equation. It remains to be seen that $\\frac{pq}{m} = n < d(p^2 - q^2)2mn = \\frac{xy}{z}$, which contradicts the way we have chosen $x, y, z$.",
+      "answer": null,
+      "page": 1,
+      "source": "OLI-2-Областен кръг-1998-12 кл · 1998-12 · Зад. 12.6",
+      "point_id": "4.2",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "hard",
+      "techniques": [
+        "infinite_descent",
+        "gcd",
+        "pythagorean_triples"
+      ],
+      "reasoning": "Задачата доказва, че даденото диофантово уравнение няма решения в положителни цели числа. Решението използва безкраен спуск, като предполага минимално решение и построява по-малко решение, което води до противоречие.",
+      "_paired": true,
+      "_grade_source": "filename",
+      "secondary_points": [
+        {
+          "id": "4.2",
+          "confidence": 0.85
+        },
+        {
+          "id": "3.1",
+          "confidence": 0.7
+        }
+      ]
+    }
+  ],
+  "paired": true,
+  "matched": 6,
+  "orphan_kept": 0,
+  "no_sol": 0,
+  "dropped_unclassifiable": 0
+}

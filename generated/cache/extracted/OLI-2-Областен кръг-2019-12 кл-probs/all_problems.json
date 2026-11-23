@@ -1,0 +1,97 @@
+{
+  "pdf": "OLI-2-Областен кръг-2019-12 кл-probs",
+  "version": 3,
+  "extraction_model": "deepseek/deepseek-r1-0528",
+  "extraction_level": "L0_native",
+  "verification": {
+    "verdict": "PASS",
+    "expected": 4,
+    "actual": 4,
+    "verified": 4,
+    "hallucinated": 0,
+    "unreadable": 0,
+    "wrong_grade": 0,
+    "duplicates": 0,
+    "null_num": 0,
+    "numeric_mismatch": 0,
+    "avg_confidence": 0.93,
+    "expected_grade": 12,
+    "grade_distribution": {
+      "12": 4
+    },
+    "escalate_to": "none",
+    "reasons": [],
+    "ai_checked": false,
+    "ai_result": {}
+  },
+  "extracted_at": "2026-11-10T09:41:06.395655",
+  "problems": [
+    {
+      "num": "12.1",
+      "year": 2019,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Дадена е редицата $\\{a_n\\}_{n=1}^{\\infty}$, за която:\n\n$$a_1 = \\frac{4}{3}, \\quad a_{n+1} = a_n^2 - 2a_n + 2.$$\n\nДа се докаже, че редицата $\\{b_k\\}_{k=1}^{\\infty}$ с общ член $b_k = \\prod_{i=1}^k a_i$ е сходяща и да се намери нейната граница при $k \\to \\infty$.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 12.1. Дадена е редицата $\\{a_n\\}_{n=1}^{\\infty}$, за която:\n\n$$a_1 = \\frac{4}{3}, \\quad a_{n+1} = a_n^2 - 2a_n + 2.$$\n\nДа се докаже, че редицата $\\{b_k\\}_{k=1}^{\\infty}$ с общ член $b_k = \\prod_{i=1}^k a_i$ е сходяща и да се намери нейната граница при $k \\to \\infty$.",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "12.1",
+      "_quote_grade": "EXACT",
+      "pdf": "OLI-2-Областен кръг-2019-12 кл-probs"
+    },
+    {
+      "num": "12.2",
+      "year": 2019,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "За всяко реално число $x > 0$ дефинираме триъгълника $T(x) = ABC$, чиито върхове имат координати $A = (-1, 1)$, $B = (x, \f\\frac{1}{x})$ и $C = (\f\\frac{x}{2}, -\f\\frac{2}{x})$ в правоъгълна координатна система. Измежду всички триъгълници $T(x)$, $x > 0$, да се намерят тези, които имат най-малко лице.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 12.2. За всяко реално число $x > 0$ дефинираме триъгълника $T(x) = ABC$, чиито върхове имат координати $A = (-1, 1)$, $B = (x, \frac{1}{x})$ и $C = (\frac{x}{2}, -\frac{2}{x})$ в правоъгълна координатна система. Измежду всички триъгълници $T(x)$, $x > 0$, да се намерят тези, които имат най-малко лице.",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "12.2",
+      "_quote_grade": "ABSENT",
+      "_quote_warning": "absent",
+      "pdf": "OLI-2-Областен кръг-2019-12 кл-probs"
+    },
+    {
+      "num": "12.3",
+      "year": 2019,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Даден е тетраедър $ABCD$. Нека $D$ се проектира в равнината $(ABC)$ в точка $H$. Точките $O_A, O_B, O_C$ са центровете на описаните сфери съответно около $HCDB, HACD, HDAB$. Да се докаже, че средите на ръбовете на $ABCD$ лежат на една сфера точно когато обемът на $ABCD$ е два пъти по-голям от обема на $HO_A O_B O_C$.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 12.3. Даден е тетраедър $ABCD$. Нека $D$ се проектира в равнината $(ABC)$ в точка $H$. Точките $O_A, O_B, O_C$ са центровете на описаните сфери съответно около $HCDB, HACD, HDAB$. Да се докаже, че средите на ръбовете на $ABCD$ лежат на една сфера точно когато обемът на $ABCD$ е два пъти по-голям от обема на $HO_A O_B O_C$.",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "12.3",
+      "_quote_grade": "EXACT",
+      "pdf": "OLI-2-Областен кръг-2019-12 кл-probs"
+    },
+    {
+      "num": "12.4",
+      "year": 2019,
+      "grade": 12,
+      "round": "oblasten",
+      "statement": "Нека $k$ е естествено число. Множество от естествени числа $X \\subseteq \\{1, 2, \\dots, 2019\\}$ се нарича $k$-пълно, ако всеки $k$ (не задължително различни) елемента от $X$ имат общ делител, по-голям от 1, но най-големият общ делител на елементите на $X$ е 1. Нека $n$ е най-голямото естествено число, за което има $n$-пълно множество.\n\na)Да ce hamep n.\n6) Kɔnko haH-MHOrO eIeMeHTa MoKe Ia HMa eHIO n-THIO MHOJKeCTBO?",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 12.4. Нека $k$ е естествено число. Множество от естествени числа $X \\subseteq \\{1, 2, \\dots, 2019\\}$ се нарича $k$-пълно, ако всеки $k$ (не задължително различни) елемента от $X$ имат общ делител, по-голям от 1, но най-големият общ делител на елементите на $X$ е 1. Нека $n$ е най-голямото естествено число, за което има $n$-пълно множество.",
+      "readability": "partial",
+      "readability_issues": [
+        "OCR грешки в подточките"
+      ],
+      "segment_num": "12.4",
+      "_quote_grade": "EXACT",
+      "pdf": "OLI-2-Областен кръг-2019-12 кл-probs"
+    }
+  ]
+}

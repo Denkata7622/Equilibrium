@@ -1,0 +1,70 @@
+{
+  "pdf": "OLI-2-Областен кръг-2020-10 кл-probs",
+  "version": 2,
+  "extraction_model": "deepseek/deepseek-r1-0528",
+  "extracted_at": "2026-11-02T20:50:16.769327",
+  "problems": [
+    {
+      "num": 1,
+      "year": 2020,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "Задача 10.1. Даден е трапец $ABCD$ с основи $AB \\parallel CD$ и пресечна точка на диагоналите $O$. Средите на страните $AB$, $BC$, $CD$ и $DA$ са означени съответно с точките $N$, $P$, $M$ и $Q$. Да се намери лицето на трапеца, ако\n\n$$ON = 14; \\quad OP = \\frac{13}{2}; \\quad OM = 7; \\quad OQ = \\frac{15}{2}.$$",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 10.1. Даден е трапец $ABCD$ с основи $AB \\parallel CD$ и пресечна точка на диагоналите $O$. Средите на страните $AB$, $BC$, $CD$ и $DA$ са означени съответно с точките $N$, $P$, $M$ и $Q$. Да се намери лицето на трапеца, ако",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2020-10 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 2,
+      "year": 2020,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "Задача 10.2. Да се намерят всички реални стойности на променливата $x$, за които:\n\n$$\\sqrt{5x^2 + 5x + 7} + \\sqrt{7x^2 + 7x + 5} = 4x^2 + 4x + \\sqrt{5} + \\sqrt{7}.$$",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 10.2. Да се намерят всички реални стойности на променливата $x$, за които:\n\n$$\\sqrt{5x^2 + 5x + 7} + \\sqrt{7x^2 + 7x + 5} = 4x^2 + 4x + \\sqrt{5} + \\sqrt{7}.$$",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2020-10 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 3,
+      "year": 2020,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "Задача 10.3. На дъската са записани целите числа от 1 до 2020, всяко по веднъж. За един ход Ана избира две от записаните на дъската числа $a$ и $b$, за които $a \\ge b$ и $a > 1$ ги заменя с числата $\\frac{\\text{НОК}(a,b)}{a}$ и $\\frac{b}{\\text{НОД}(a,b)}$, където $\\text{НОК}(a,b)$ е най-малкото общо кратно на числата $a$ и $b$, а $\\text{НОД}(a,b)$ е най-големият им общ делител.\n\na) Ia ce IokaKe, Ye cIe Kpaen 6poh xodoe, He3aBnCnMo KaKBn H B KaKb peI se H3- IIbHBA, Ha Ibckata IIe 6bDat 3aIIncAHN 2020 eINHHn H cIeIbAII xod HMa Ia 6bIe Bb3MOKeH.\n6) Ia ce Hamepn MaKcHMaJIHHrB Bb3MoKeH 6poh xodoe, KOITo AHa MoKe Ja HnPaBn.",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 10.3. На дъската са записани целите числа от 1 до 2020, всяко по веднъж. За един ход Ана избира две от записаните на дъската числа $a$ и $b$, за които $a \\ge b$ и $a > 1$ ги заменя с числата $\\frac{\\text{НОК}(a,b)}{a}$ и $\\frac{b}{\\text{НОД}(a,b)}$, където $\\text{НОК}(a,b)$ е най-малкото общо кратно на числата $a$ и $b$, а $\\text{НОД}(a,b)$ е най-големият им общ делител.",
+      "readability": "partial",
+      "readability_issues": [
+        "Част от текста на подточките е неразчетена"
+      ],
+      "pdf": "OLI-2-Областен кръг-2020-10 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 4,
+      "year": 2020,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "Задача 10.4. За всяка редица от 2020 реални числа $a_1, a_2, \\dots, a_{2020}$ определяме редицата $b_1, b_2, \\dots, b_{2020}$ като:\n\n$$b_n = \\frac{a_1 + a_2 + \\dots + a_n}{n} \\quad \\text{за всяко } n = 1, 2, \\dots, 2020.$$\n\nДа се намерят всички редици $a_1, a_2, \\dots, a_{2020}$, за които:\n\n$$b_1^2 + b_2^2 + \\dots + b_{2020}^2 = 4 \\left( a_1^2 + a_2^2 + \\dots + a_{2020}^2 \\right).$$",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 10.4. За всяка редица от 2020 реални числа $a_1, a_2, \\dots, a_{2020}$ определяме редицата $b_1, b_2, \\dots, b_{2020}$ като:\n\n$$b_n = \\frac{a_1 + a_2 + \\dots + a_n}{n} \\quad \\text{за всяко } n = 1, 2, \\dots, 2020.$$",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2020-10 кл-probs",
+      "chunk": 1
+    }
+  ]
+}

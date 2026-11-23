@@ -1,1420 +1,1948 @@
 {
   "extracted": {
-    "BMC_2003-2006": {
-      "chunks_done": {
-        "1": 0,
-        "2": 0,
-        "3": 19,
-        "4": 21,
-        "5": 22,
-        "6": 26,
-        "7": 31,
-        "8": 31,
-        "9": 26,
-        "10": 23,
-        "11": 28,
-        "12": 24,
-        "13": 24,
-        "14": 22,
-        "15": 24,
-        "16": 30,
-        "17": 29,
-        "18": 14,
-        "19": 7,
-        "20": 8,
-        "21": 8,
-        "22": 8,
-        "23": 6,
-        "24": 9,
-        "25": 7,
-        "26": 8,
-        "27": 6,
-        "28": 6,
-        "29": 9,
-        "30": 8,
-        "31": 9,
-        "32": 10,
-        "33": 8,
-        "34": 9,
-        "35": 8,
-        "36": 11,
-        "37": 8,
-        "38": 9,
-        "39": 8,
-        "40": 7,
-        "41": 9,
-        "42": 10,
-        "43": 10,
-        "44": 5,
-        "45": 4,
-        "46": 8,
-        "47": 10,
-        "48": 6,
-        "49": 10,
-        "50": 10,
-        "51": 9,
-        "52": 6,
-        "53": 6,
-        "54": 8
-      }
-    },
-    "OLI-2-Областен кръг-1995-10 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
+    "OLI-2-Областен кръг-1996-12 кл-sol": {
       "status": "done",
+      "failed_chunks": 1,
+      "total_chunks": 1,
       "problems": 6
-    },
-    "OLI-2-Областен кръг-1995-11 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-1996-10 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-1996-11 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-1997-10 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-1997-11 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-1998-10 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-1998-11 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-1999-10 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-1999-11 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2000-10 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2000-11 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2001-10 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-1995-10 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-1995-11 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-1996-10 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-1996-11 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-1997-10 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-1997-11 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-1998-10 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-1998-11 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-1999-10 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-1999-11 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2000-10 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2000-11 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2001-10 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2001-11 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2001-11 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2002-10 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2002-10 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2002-11 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2002-11 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2003-11 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2003-11 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2004-10 кл-probs": {
-      "chunks_done": {
-        "1": 18
-      },
-      "status": "done",
-      "problems": 18
-    },
-    "OLI-2-Областен кръг-2004-10 кл-sol": {
-      "chunks_done": {
-        "1": 10
-      },
-      "status": "done",
-      "problems": 10
-    },
-    "OLI-2-Областен кръг-2004-11 кл-probs": {
-      "chunks_done": {
-        "1": 20
-      },
-      "status": "done",
-      "problems": 19
-    },
-    "OLI-2-Областен кръг-2004-11 кл-sol": {
-      "chunks_done": {
-        "1": 9
-      },
-      "status": "done",
-      "problems": 9
     },
     "OLI-2-Областен кръг-2005-10 кл-probs": {
-      "chunks_done": {
-        "1": 13
-      },
       "status": "done",
-      "problems": 13
-    },
-    "OLI-2-Областен кръг-2005-10 кл-sol": {
-      "chunks_done": {
-        "1": 12
-      },
-      "status": "done",
-      "problems": 12
-    },
-    "OLI-2-Областен кръг-2005-11 кл-probs": {
-      "chunks_done": {
-        "1": 18
-      },
-      "status": "done",
-      "problems": 18
-    },
-    "OLI-2-Областен кръг-2005-11 кл-sol": {
-      "chunks_done": {
-        "1": 14
-      },
-      "status": "done",
-      "problems": 14
+      "failed_chunks": 1,
+      "total_chunks": 1,
+      "problems": 6
     },
     "OLI-2-Областен кръг-2006-11 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2006-11 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2007-10 кл-probs": {
-      "chunks_done": {
-        "1": 7
-      },
-      "status": "done",
-      "problems": 7
-    },
-    "OLI-2-Областен кръг-2007-10 кл-sol": {
-      "chunks_done": {
-        "1": 7
-      },
-      "status": "done",
-      "problems": 7
-    },
-    "OLI-2-Областен кръг-2007-11 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2007-11 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2008-10 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2008-10 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2008-11 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2008-11 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2009-10 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2009-11 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2009-11 кл-sol": {
-      "chunks_done": {
-        "1": 10
-      },
-      "status": "done",
-      "problems": 10
-    },
-    "OLI-2-Областен кръг-2010-10 кл-probs": {
-      "chunks_done": {
-        "1": 3
-      },
-      "status": "done",
-      "problems": 3
-    },
-    "OLI-2-Областен кръг-2010-10 кл-sol": {
-      "chunks_done": {
-        "1": 7
-      },
-      "status": "done",
-      "problems": 7
-    },
-    "OLI-2-Областен кръг-2010-11 кл-probs": {
-      "chunks_done": {
-        "1": 3
-      },
-      "status": "done",
-      "problems": 3
-    },
-    "OLI-2-Областен кръг-2010-11 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2011-10 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2011-11 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2011-11 кл-sol": {
-      "chunks_done": {
-        "1": 7
-      },
-      "status": "done",
-      "problems": 7
-    },
-    "OLI-2-Областен кръг-2012-10 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2012-10 кл-sol": {
-      "chunks_done": {
-        "1": 11
-      },
-      "status": "done",
-      "problems": 11
-    },
-    "OLI-2-Областен кръг-2012-11 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2013-10 кл-probs": {
-      "chunks_done": {
-        "1": 4
-      },
-      "status": "done",
-      "problems": 4
-    },
-    "OLI-2-Областен кръг-2013-11 кл-probs": {
-      "chunks_done": {
-        "1": 4
-      },
-      "status": "done",
-      "problems": 4
-    },
-    "OLI-2-Областен кръг-2013-11 кл-sol": {
-      "chunks_done": {
-        "1": 4
-      },
-      "status": "done",
-      "problems": 4
-    },
-    "OLI-2-Областен кръг-2014-10 кл-probs": {
-      "status": "partial",
-      "failed_chunks": 1,
-      "total_chunks": 1
-    },
-    "OLI-2-Областен кръг-2014-10 кл-sol": {
-      "status": "partial",
-      "failed_chunks": 1,
-      "total_chunks": 1
-    },
-    "OLI-2-Областен кръг-2014-11 кл-probs": {
       "status": "done",
       "failed_chunks": 1,
       "total_chunks": 1,
-      "chunks_done": {
-        "1": 4
-      },
-      "problems": 4
-    },
-    "OLI-2-Областен кръг-2014-11 кл-sol": {
-      "status": "done",
-      "failed_chunks": 1,
-      "total_chunks": 1,
-      "chunks_done": {
-        "1": 4
-      },
-      "problems": 4
-    },
-    "OLI-2-Областен кръг-2015-10 кл-probs": {
-      "status": "partial",
-      "failed_chunks": 1,
-      "total_chunks": 1
-    },
-    "OLI-2-Областен кръг-2015-10 кл-sol": {
-      "status": "partial",
-      "failed_chunks": 1,
-      "total_chunks": 1
-    },
-    "OLI-2-Областен кръг-2015-11 кл-probs": {
-      "status": "done",
-      "failed_chunks": 1,
-      "total_chunks": 1,
-      "chunks_done": {
-        "1": 4
-      },
-      "problems": 4
-    },
-    "OLI-2-Областен кръг-2015-11 кл-sol": {
-      "status": "done",
-      "failed_chunks": 1,
-      "total_chunks": 1,
-      "chunks_done": {
-        "1": 4
-      },
-      "problems": 4
-    },
-    "OLI-2-Областен кръг-2016-11 кл-probs": {
-      "chunks_done": {
-        "1": 4
-      },
-      "status": "done",
-      "problems": 4
-    },
-    "OLI-2-Областен кръг-2016-11 кл-sol": {
-      "chunks_done": {
-        "1": 4
-      },
-      "status": "done",
-      "problems": 4
-    },
-    "OLI-2-Областен кръг-2017-11 кл-probs": {
-      "chunks_done": {
-        "1": 4
-      },
-      "status": "done",
-      "problems": 4
-    },
-    "OLI-2-Областен кръг-2017-11 кл-sol": {
-      "chunks_done": {
-        "1": 4
-      },
-      "status": "done",
-      "problems": 4
-    },
-    "OLI-2-Областен кръг-2018-11 кл-probs": {
-      "chunks_done": {
-        "1": 4
-      },
-      "status": "done",
-      "problems": 4
-    },
-    "OLI-2-Областен кръг-2018-11 кл-sol": {
-      "chunks_done": {
-        "1": 4
-      },
-      "status": "done",
-      "problems": 4
-    },
-    "OLI-2-Областен кръг-2019-11 кл-probs": {
-      "chunks_done": {
-        "1": 4
-      },
-      "status": "done",
-      "problems": 4
-    },
-    "OLI-2-Областен кръг-2019-11 кл-sol": {
-      "chunks_done": {
-        "1": 7
-      },
-      "status": "done",
-      "problems": 7
-    },
-    "OLI-2-Областен кръг-2020-11 кл-probs": {
-      "chunks_done": {
-        "1": 4
-      },
-      "status": "done",
-      "problems": 4
+      "problems": 6
     },
     "OLI-2-Областен кръг-2020-11 кл-sol": {
-      "chunks_done": {
-        "1": 7
-      },
       "status": "done",
-      "problems": 7
-    },
-    "OLI-2-Областен кръг-2021-11 кл-probs": {
-      "chunks_done": {
-        "1": 4
-      },
-      "status": "done",
+      "failed_chunks": 1,
+      "total_chunks": 1,
       "problems": 4
     },
-    "OLI-2-Областен кръг-2021-11 кл-sol": {
-      "chunks_done": {
-        "1": 4
-      },
+    "OLI-2-Областен кръг-2005-11 кл-probs": {
       "status": "done",
-      "problems": 4
+      "problems": 6
     },
-    "OLI-2-Областен кръг-2022-11 кл-probs": {
-      "chunks_done": {
-        "1": 4
-      },
+    "OLI-2-Областен кръг-2004-11 кл-probs": {
       "status": "done",
-      "problems": 4
+      "problems": 6
     },
-    "OLI-2-Областен кръг-2022-11 кл-sol": {
-      "chunks_done": {
-        "1": 4
-      },
+    "OLI-2-Областен кръг-2010-11 кл-probs": {
       "status": "done",
-      "problems": 4
+      "problems": 6
     },
-    "OLI-2-Областен кръг-2023-11 кл-probs": {
-      "chunks_done": {
-        "1": 4
-      },
-      "status": "done",
-      "problems": 4
-    },
-    "OLI-2-Областен кръг-2023-11 кл-sol": {
-      "chunks_done": {
-        "1": 4
-      },
+    "OLI-2-Областен кръг-2020-12 кл-probs": {
       "status": "done",
       "problems": 4
     },
     "OLI-2-Областен кръг-2024-11 кл-probs": {
-      "chunks_done": {
-        "1": 4
-      },
       "status": "done",
       "problems": 4
     },
-    "OLI-2-Областен кръг-2024-11 кл-sol": {
-      "chunks_done": {
-        "1": 8
-      },
-      "status": "done",
-      "problems": 8
-    },
-    "OLI-2-Областен кръг-2025-11 кл-probs": {
-      "chunks_done": {
-        "1": 4
-      },
+    "OLI-2-Областен кръг-2015-10 кл-probs": {
       "status": "done",
       "problems": 4
     },
-    "OLI-2-Областен кръг-2025-11 кл-sol": {
-      "chunks_done": {
-        "1": 4
-      },
+    "OLI-2-Областен кръг-2012-12 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2018-10 кл-probs": {
       "status": "done",
       "problems": 4
     },
-    "OLI-2-Областен кръг-2026-11 кл-probs": {
-      "chunks_done": {
-        "1": 4
-      },
+    "OLI-2-Областен кръг-2024-12 кл-probs": {
       "status": "done",
       "problems": 4
     },
-    "OLI-3-Национален кръг-1983-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
+    "OLI-2-Областен кръг-2025-10 кл-probs (1)": {
       "status": "done",
-      "problems": 6
+      "problems": 4
     },
-    "OLI-3-Национален кръг-1983-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
+    "OLI-2-Областен кръг-2018-11 кл-probs": {
       "status": "done",
-      "problems": 6
+      "problems": 4
     },
-    "OLI-3-Национален кръг-1984-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
+    "OLI-2-Областен кръг-2019-10 кл-probs": {
       "status": "done",
-      "problems": 6
+      "problems": 4
     },
-    "OLI-3-Национален кръг-1984-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
+    "OLI-2-Областен кръг-2021-11 кл-probs": {
       "status": "done",
-      "problems": 6
+      "problems": 4
     },
-    "OLI-2-Областен кръг-2003-10 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
+    "OLI-2-Областен кръг-2022-10 кл-probs": {
       "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2003-10 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
+      "problems": 4
     },
     "OLI-2-Областен кръг-2006-10 кл-probs": {
-      "chunks_done": {
-        "1": 1
-      },
       "status": "done",
-      "problems": 1
-    },
-    "OLI-2-Областен кръг-2006-10 кл-sol": {
-      "chunks_done": {
-        "1": 7
-      },
-      "status": "done",
-      "problems": 7
-    },
-    "OLI-2-Областен кръг-2009-10 кл-sol": {
-      "chunks_done": {
-        "1": 0
-      },
-      "status": "done",
-      "problems": 0
-    },
-    "OLI-2-Областен кръг-2011-10 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2012-11 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-2-Областен кръг-2013-10 кл-sol": {
-      "chunks_done": {
-        "1": 4
-      },
-      "status": "done",
-      "problems": 4
-    },
-    "OLI-3-Национален кръг-1985-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-3-Национален кръг-1985-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-3-Национален кръг-1986-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-3-Национален кръг-1986-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-3-Национален кръг-1987-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-3-Национален кръг-1987-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-3-Национален кръг-1988-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-3-Национален кръг-1988-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-3-Национален кръг-1989-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-3-Национален кръг-1989-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-3-Национален кръг-1990-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-3-Национален кръг-1990-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-3-Национален кръг-1991-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-3-Национален кръг-1991-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-3-Национален кръг-1992-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-3-Национален кръг-1992-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-3-Национален кръг-1993-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-3-Национален кръг-1993-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-3-Национален кръг-1994-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-3-Национален кръг-1994-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-3-Национален кръг-1995-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-3-Национален кръг-1995-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
+      "problems": 5
     },
     "OLI-3-Национален кръг-1996-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-1996-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-1997-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-1997-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-1998-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-1998-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-1999-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-1999-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2000-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2000-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2001-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2001-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
-      "problems": 6
+      "problems": 5
     },
     "OLI-3-Национален кръг-2002-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2002-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2003-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2003-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2004-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
-      "status": "done",
-      "problems": 6
-    },
-    "OLI-3-Национален кръг-2004-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2005-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
+      "status": "done",
+      "problems": 5
+    },
+    "OLI-3-Национален кръг-2004-9-12 кл-sol": {
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2005-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
-      "problems": 6
+      "problems": 5
     },
     "OLI-3-Национален кръг-2006-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2006-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2007-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2007-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2008-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2008-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2009-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2009-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
-      "problems": 6
+      "problems": 5
     },
     "OLI-3-Национален кръг-2010-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2010-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2011-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2011-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2012-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2012-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2013-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2013-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2014-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2014-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 2
-      },
       "status": "done",
       "problems": 2
     },
     "OLI-3-Национален кръг-2015-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2015-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2016-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2016-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2017-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2017-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2018-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2018-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2019-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2019-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2020-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2020-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2021-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2021-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
-      "problems": 6
+      "problems": 3
     },
     "OLI-3-Национален кръг-2022-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2022-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2023-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2023-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2024-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2024-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
-      "problems": 6
+      "problems": 5
     },
     "OLI-3-Национален кръг-2025-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2025-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2026-9-12 кл-probs": {
-      "chunks_done": {
-        "1": 6
-      },
       "status": "done",
       "problems": 6
     },
     "OLI-3-Национален кръг-2026-9-12 кл-sol": {
-      "chunks_done": {
-        "1": 6
-      },
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2001-10 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2004-12 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2006-12 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2008-10 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1995-10 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1995-10 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1995-11 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1995-11 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1995-12 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1995-12 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1996-10 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1996-10 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1996-11 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1996-11 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1996-12 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1997-10 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1997-10 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1997-11 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1997-11 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1997-12 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1997-12 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1998-10 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1998-10 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1998-11 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1998-11 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1998-12 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1998-12 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1999-10 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1999-10 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1999-11 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1999-11 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1999-12 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-1999-12 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2000-10 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2000-10 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2000-11 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2000-11 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2000-12 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2000-12 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2001-10 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2001-11 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2001-11 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2001-12 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2001-12 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2002-10 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2002-10 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2002-11 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2002-11 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2002-12 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2002-12 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2003-10 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2003-10 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2003-11 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2003-11 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2003-12 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2003-12 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2004-10 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2004-10 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2004-11 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2004-12 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2005-10 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2005-12 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2005-12 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2006-11 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2006-12 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2007-10 кл-probs": {
+      "status": "done",
+      "problems": 5
+    },
+    "OLI-2-Областен кръг-2007-10 кл-sol": {
+      "status": "done",
+      "problems": 5
+    },
+    "OLI-2-Областен кръг-2007-11 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2007-11 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2007-12 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2008-10 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2008-11 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2008-11 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2008-12 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2008-12 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2009-10 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2009-10 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2009-11 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2009-11 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2009-12 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2009-12 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2010-10 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2010-10 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2010-11 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2010-12 кл-probs": {
+      "status": "done",
+      "problems": 3
+    },
+    "OLI-2-Областен кръг-2010-12 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2011-10 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2011-10 кл-sol": {
+      "status": "done",
+      "problems": 2
+    },
+    "OLI-2-Областен кръг-2011-11 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2011-11 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2011-12 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2011-12 кл-sol": {
+      "status": "done",
+      "problems": 5
+    },
+    "OLI-2-Областен кръг-2012-10 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2012-10 кл-sol": {
+      "status": "done",
+      "problems": 1
+    },
+    "OLI-2-Областен кръг-2012-11 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2014-10 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2014-10 кл-sol": {
+      "status": "done",
+      "problems": 3
+    },
+    "OLI-2-Областен кръг-2007-12 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2012-11 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-2-Областен кръг-2013-10 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2013-10 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2013-11 кл-probs": {
+      "status": "done",
+      "problems": 3
+    },
+    "OLI-2-Областен кръг-2013-11 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2013-12 кл-probs": {
+      "status": "done",
+      "problems": 2
+    },
+    "OLI-2-Областен кръг-2013-12 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2014-11 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2014-11 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2014-12 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2014-12 кл-sol": {
+      "status": "done",
+      "problems": 3
+    },
+    "OLI-2-Областен кръг-2015-10 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2015-11 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2015-11 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2015-12 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2015-12 кл-sol": {
+      "status": "done",
+      "problems": 3
+    },
+    "OLI-2-Областен кръг-2016-10 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2016-10 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2016-11 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2016-11 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2016-12 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2016-12 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2017-10 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2017-10 кл-sol": {
+      "status": "done",
+      "problems": 3
+    },
+    "OLI-2-Областен кръг-2017-11 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2017-11 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2017-12 кл-probs": {
+      "status": "done",
+      "problems": 3
+    },
+    "OLI-2-Областен кръг-2017-12 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2018-10 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2018-12 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2018-12 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2019-11 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2019-11 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2019-12 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2019-12 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2020-10 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2020-10 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2020-11 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2020-12 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2021-10 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2021-10 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2021-12 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2021-12 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2022-11 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2022-11 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2022-12 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2022-12 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2023-10 кл-probs (1)": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2023-10 кл-sol (1)": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2023-11 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2023-11 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2023-12 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2023-12 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2024-10 кл-probs (1)": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2024-10 кл-sol (1)": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2024-11 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2024-12 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2025-10 кл-sol (1)": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2025-11 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2025-11 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2025-12 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2025-12 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2026-10 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2026-10 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2026-11 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2026-12 кл-probs": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-2-Областен кръг-2026-12 кл-sol": {
+      "status": "done",
+      "problems": 4
+    },
+    "OLI-3-Национален кръг-1983-9-12 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-3-Национален кръг-1983-9-12 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-3-Национален кръг-1984-9-12 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-3-Национален кръг-1984-9-12 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-3-Национален кръг-1985-9-12 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-3-Национален кръг-1985-9-12 кл-sol": {
+      "status": "done",
+      "problems": 5
+    },
+    "OLI-2-Областен кръг-2005-11 кл-sol": {
+      "status": "done",
+      "problems": 5,
+      "verdict": "PASS_WITH_WARNINGS",
+      "level": "L2_vlm"
+    },
+    "OLI-2-Областен кръг-2006-10 кл-sol": {
+      "status": "done",
+      "problems": 6,
+      "verdict": "PASS",
+      "level": "L3_escalation"
+    },
+    "OLI-2-Областен кръг-2012-12 кл-sol": {
+      "status": "done",
+      "problems": 3,
+      "verdict": "PASS_WITH_WARNINGS",
+      "level": "L3_escalation"
+    },
+    "OLI-2-Областен кръг-2018-11 кл-sol": {
+      "status": "done",
+      "problems": 4,
+      "verdict": "PASS_WITH_WARNINGS",
+      "level": "L1_ocr"
+    },
+    "OLI-2-Областен кръг-2019-10 кл-sol": {
+      "status": "done",
+      "problems": 4,
+      "verdict": "PASS",
+      "level": "L1_ocr"
+    },
+    "OLI-2-Областен кръг-2021-11 кл-sol": {
+      "status": "done",
+      "problems": 4,
+      "verdict": "PASS",
+      "level": "L0_native"
+    },
+    "OLI-2-Областен кръг-2022-10 кл-sol": {
+      "status": "done",
+      "problems": 4,
+      "verdict": "PASS",
+      "level": "L1_ocr"
+    },
+    "OLI-3-Национален кръг-1986-9-12 кл-probs": {
+      "status": "done",
+      "problems": 6,
+      "verdict": "PASS_WITH_WARNINGS",
+      "level": "L0_native"
+    },
+    "OLI-3-Национален кръг-1986-9-12 кл-sol": {
+      "status": "done",
+      "problems": 6,
+      "verdict": "PASS",
+      "level": "L1_ocr"
+    },
+    "OLI-3-Национален кръг-1987-9-12 кл-probs": {
+      "status": "done",
+      "problems": 6,
+      "verdict": "PASS",
+      "level": "L0_native"
+    },
+    "OLI-3-Национален кръг-1987-9-12 кл-sol": {
+      "status": "done",
+      "problems": 6,
+      "verdict": "PASS_WITH_WARNINGS",
+      "level": "L1_ocr"
+    },
+    "OLI-3-Национален кръг-1988-9-12 кл-probs": {
+      "status": "done",
+      "problems": 6,
+      "verdict": "PASS",
+      "level": "L0_native"
+    },
+    "OLI-3-Национален кръг-1988-9-12 кл-sol": {
+      "status": "done",
+      "problems": 6,
+      "verdict": "PASS",
+      "level": "L1_ocr"
+    },
+    "OLI-3-Национален кръг-1989-9-12 кл-probs": {
+      "status": "done",
+      "problems": 6,
+      "verdict": "PASS",
+      "level": "L0_native"
+    },
+    "OLI-3-Национален кръг-1990-9-12 кл-sol": {
+      "status": "done",
+      "problems": 6,
+      "verdict": "PASS",
+      "level": "L1_ocr"
+    },
+    "OLI-3-Национален кръг-1994-9-12 кл-probs": {
+      "status": "done",
+      "problems": 6,
+      "verdict": "PASS",
+      "level": "L1_ocr"
+    },
+    "OLI-3-Национален кръг-1995-9-12 кл-sol": {
+      "status": "done",
+      "problems": 6,
+      "verdict": "PASS",
+      "level": "L0_native"
+    },
+    "OLI-3-Национален кръг-1989-9-12 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-3-Национален кръг-1990-9-12 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-3-Национален кръг-1991-9-12 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-3-Национален кръг-1991-9-12 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-3-Национален кръг-1992-9-12 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-3-Национален кръг-1992-9-12 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-3-Национален кръг-1993-9-12 кл-probs": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-3-Национален кръг-1993-9-12 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-3-Национален кръг-1994-9-12 кл-sol": {
+      "status": "done",
+      "problems": 6
+    },
+    "OLI-3-Национален кръг-1995-9-12 кл-probs": {
       "status": "done",
       "problems": 6
     }
   },
-  "merged": {},
-  "classified": {},
+  "merged": {
+    "OLI-2-Областен кръг-1995-10 кл": 6,
+    "OLI-2-Областен кръг-1995-11 кл": 6,
+    "OLI-2-Областен кръг-1995-12 кл": 6,
+    "OLI-2-Областен кръг-1996-10 кл": 6,
+    "OLI-2-Областен кръг-1996-11 кл": 6,
+    "OLI-2-Областен кръг-1996-12 кл": 6,
+    "OLI-2-Областен кръг-1997-10 кл": 6,
+    "OLI-2-Областен кръг-1997-11 кл": 6,
+    "OLI-2-Областен кръг-1997-12 кл": 6,
+    "OLI-2-Областен кръг-1998-10 кл": 6,
+    "OLI-2-Областен кръг-1998-11 кл": 6,
+    "OLI-2-Областен кръг-1998-12 кл": 6,
+    "OLI-2-Областен кръг-1999-10 кл": 6,
+    "OLI-2-Областен кръг-1999-11 кл": 6,
+    "OLI-2-Областен кръг-1999-12 кл": 6,
+    "OLI-2-Областен кръг-2000-10 кл": 6,
+    "OLI-2-Областен кръг-2000-11 кл": 6,
+    "OLI-2-Областен кръг-2000-12 кл": 6,
+    "OLI-2-Областен кръг-2001-10 кл": 6,
+    "OLI-2-Областен кръг-2001-11 кл": 6,
+    "OLI-2-Областен кръг-2001-12 кл": 6,
+    "OLI-2-Областен кръг-2002-10 кл": 6,
+    "OLI-2-Областен кръг-2002-11 кл": 6,
+    "OLI-2-Областен кръг-2002-12 кл": 6,
+    "OLI-2-Областен кръг-2003-10 кл": 6,
+    "OLI-2-Областен кръг-2003-11 кл": 6,
+    "OLI-2-Областен кръг-2003-12 кл": 6,
+    "OLI-2-Областен кръг-2004-10 кл": 6,
+    "OLI-2-Областен кръг-2004-11 кл": 6,
+    "OLI-2-Областен кръг-2004-12 кл": 6,
+    "OLI-2-Областен кръг-2005-10 кл": 6,
+    "OLI-2-Областен кръг-2005-11 кл": 6,
+    "OLI-2-Областен кръг-2005-12 кл": 6,
+    "OLI-2-Областен кръг-2006-10 кл": 6,
+    "OLI-2-Областен кръг-2006-11 кл": 6,
+    "OLI-2-Областен кръг-2006-12 кл": 4,
+    "OLI-2-Областен кръг-2007-10 кл": 5,
+    "OLI-2-Областен кръг-2007-11 кл": 6,
+    "OLI-2-Областен кръг-2007-12 кл": 6,
+    "OLI-2-Областен кръг-2008-10 кл": 6,
+    "OLI-2-Областен кръг-2008-11 кл": 6,
+    "OLI-2-Областен кръг-2008-12 кл": 6,
+    "OLI-2-Областен кръг-2009-10 кл": 6,
+    "OLI-2-Областен кръг-2009-11 кл": 6,
+    "OLI-2-Областен кръг-2009-12 кл": 6,
+    "OLI-2-Областен кръг-2010-10 кл": 6,
+    "OLI-2-Областен кръг-2010-11 кл": 12,
+    "OLI-2-Областен кръг-2010-12 кл": 6,
+    "OLI-2-Областен кръг-2011-10 кл": 6,
+    "OLI-2-Областен кръг-2011-11 кл": 6,
+    "OLI-2-Областен кръг-2011-12 кл": 6,
+    "OLI-2-Областен кръг-2012-10 кл": 6,
+    "OLI-2-Областен кръг-2012-11 кл": 6,
+    "OLI-2-Областен кръг-2012-12 кл": 9,
+    "OLI-2-Областен кръг-2013-10 кл": 4,
+    "OLI-2-Областен кръг-2013-11 кл": 4,
+    "OLI-2-Областен кръг-2013-12 кл": 4,
+    "OLI-2-Областен кръг-2014-10 кл": 4,
+    "OLI-2-Областен кръг-2014-11 кл": 4,
+    "OLI-2-Областен кръг-2014-12 кл": 4,
+    "OLI-2-Областен кръг-2015-10 кл": 8,
+    "OLI-2-Областен кръг-2015-11 кл": 4,
+    "OLI-2-Областен кръг-2015-12 кл": 4,
+    "OLI-2-Областен кръг-2016-10 кл": 4,
+    "OLI-2-Областен кръг-2016-11 кл": 4,
+    "OLI-2-Областен кръг-2016-12 кл": 4,
+    "OLI-2-Областен кръг-2017-10 кл": 4,
+    "OLI-2-Областен кръг-2017-11 кл": 4,
+    "OLI-2-Областен кръг-2017-12 кл": 3,
+    "OLI-2-Областен кръг-2018-10 кл": 8,
+    "OLI-2-Областен кръг-2018-11 кл": 4,
+    "OLI-2-Областен кръг-2018-12 кл": 4,
+    "OLI-2-Областен кръг-2019-10 кл": 4,
+    "OLI-2-Областен кръг-2019-11 кл": 4,
+    "OLI-2-Областен кръг-2019-12 кл": 4,
+    "OLI-2-Областен кръг-2020-10 кл": 4,
+    "OLI-2-Областен кръг-2020-11 кл": 4,
+    "OLI-2-Областен кръг-2020-12 кл": 4,
+    "OLI-2-Областен кръг-2021-10 кл": 4,
+    "OLI-2-Областен кръг-2021-11 кл": 4,
+    "OLI-2-Областен кръг-2021-12 кл": 4,
+    "OLI-2-Областен кръг-2022-10 кл": 4,
+    "OLI-2-Областен кръг-2022-11 кл": 4,
+    "OLI-2-Областен кръг-2022-12 кл": 4,
+    "OLI-2-Областен кръг-2023-10 кл": 4,
+    "OLI-2-Областен кръг-2023-11 кл": 4,
+    "OLI-2-Областен кръг-2023-12 кл": 4,
+    "OLI-2-Областен кръг-2024-10 кл": 4,
+    "OLI-2-Областен кръг-2024-11 кл": 4,
+    "OLI-2-Областен кръг-2024-12 кл": 4,
+    "OLI-2-Областен кръг-2025-10 кл": 8,
+    "OLI-2-Областен кръг-2025-11 кл": 4,
+    "OLI-2-Областен кръг-2025-12 кл": 4,
+    "OLI-2-Областен кръг-2026-10 кл": 4,
+    "OLI-2-Областен кръг-2026-11 кл": 4,
+    "OLI-2-Областен кръг-2026-12 кл": 4,
+    "OLI-3-Национален кръг-1983-9-12 кл": 6,
+    "OLI-3-Национален кръг-1984-9-12 кл": 6,
+    "OLI-3-Национален кръг-1985-9-12 кл": 6,
+    "OLI-3-Национален кръг-1986-9-12 кл": 6,
+    "OLI-3-Национален кръг-1987-9-12 кл": 6,
+    "OLI-3-Национален кръг-1988-9-12 кл": 6,
+    "OLI-3-Национален кръг-1989-9-12 кл": 6,
+    "OLI-3-Национален кръг-1990-9-12 кл": 6,
+    "OLI-3-Национален кръг-1991-9-12 кл": 6,
+    "OLI-3-Национален кръг-1992-9-12 кл": 6,
+    "OLI-3-Национален кръг-1993-9-12 кл": 6,
+    "OLI-3-Национален кръг-1994-9-12 кл": 6,
+    "OLI-3-Национален кръг-1995-9-12 кл": 6,
+    "OLI-3-Национален кръг-1996-9-12 кл": 6,
+    "OLI-3-Национален кръг-1997-9-12 кл": 6,
+    "OLI-3-Национален кръг-1998-9-12 кл": 6,
+    "OLI-3-Национален кръг-1999-9-12 кл": 6,
+    "OLI-3-Национален кръг-2000-9-12 кл": 6,
+    "OLI-3-Национален кръг-2001-9-12 кл": 6,
+    "OLI-3-Национален кръг-2002-9-12 кл": 6,
+    "OLI-3-Национален кръг-2003-9-12 кл": 6,
+    "OLI-3-Национален кръг-2004-9-12 кл": 6,
+    "OLI-3-Национален кръг-2005-9-12 кл": 5,
+    "OLI-3-Национален кръг-2006-9-12 кл": 6,
+    "OLI-3-Национален кръг-2007-9-12 кл": 6,
+    "OLI-3-Национален кръг-2008-9-12 кл": 6,
+    "OLI-3-Национален кръг-2009-9-12 кл": 6,
+    "OLI-3-Национален кръг-2010-9-12 кл": 6,
+    "OLI-3-Национален кръг-2011-9-12 кл": 6,
+    "OLI-3-Национален кръг-2012-9-12 кл": 6,
+    "OLI-3-Национален кръг-2013-9-12 кл": 6,
+    "OLI-3-Национален кръг-2014-9-12 кл": 6,
+    "OLI-3-Национален кръг-2015-9-12 кл": 6,
+    "OLI-3-Национален кръг-2016-9-12 кл": 6,
+    "OLI-3-Национален кръг-2017-9-12 кл": 6,
+    "OLI-3-Национален кръг-2018-9-12 кл": 6,
+    "OLI-3-Национален кръг-2019-9-12 кл": 6,
+    "OLI-3-Национален кръг-2020-9-12 кл": 6,
+    "OLI-3-Национален кръг-2021-9-12 кл": 9,
+    "OLI-3-Национален кръг-2022-9-12 кл": 6,
+    "OLI-3-Национален кръг-2023-9-12 кл": 6,
+    "OLI-3-Национален кръг-2024-9-12 кл": 6,
+    "OLI-3-Национален кръг-2025-9-12 кл": 6,
+    "OLI-3-Национален кръг-2026-9-12 кл": 6
+  },
+  "classified": {
+    "OLI-2-Областен кръг-1995-10 кл:10.1:1": {
+      "point_id": "5.9",
+      "point_confidence": "partial",
+      "alternative_points": [
+        "R.11"
+      ],
+      "difficulty": "medium",
+      "techniques": [
+        "quadratic_equation",
+        "discriminant_analysis",
+        "coordinate_geometry",
+        "pythagoras_theorem"
+      ],
+      "reasoning": "Задачата изисква анализ на разположението на корените на квадратното уравнение y^2 - y + q = 0 спрямо допълнително условие y_0 > q - p^2. Това е основната техника, която отговаря на точка 5.9, въпреки че контекстът е координатна геометрия. Решението използва и Питагорова теорема, но ядрото е в квадратния тричлен. Увереността е 'partial', тъй като точка 5.9 не е идеална (тя е фокусирана върху корени в интервал, а тук има допълнителен параметър), но е най-близката. R.11 е алтернатива, но е основна точка, не олимпийска. Трудността е 'medium' поради необходимостта от комбиниране на техники и анализ на параметри."
+    },
+    "OLI-2-Областен кръг-1995-10 кл:10.2:1": {
+      "point_id": "1.3",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "ptolemys_theorem",
+        "similar_triangles",
+        "area_ratio_through_sides",
+        "sine_theorem",
+        "trigonometric_inequality"
+      ],
+      "reasoning": "Основната техника е теоремата на Птолемей (1.3), използвана за получаване на ключовото отношение a/b + a/c = 1. Решението използва и подобие на триъгълници за определяне на страните на другите седмоъгълници, пресмятане на лицата чрез квадратите на страните, синусова теорема за изражаване на a²/(bc) и тригонометрична оценка за доказване на неравенството. Задачата е типична олимпиадна геометрична задача със седмоъгълник, която не може да се реши ефективно без Птолемей."
+    },
+    "OLI-2-Областен кръг-1995-10 кл:10.3:1": {
+      "point_id": "8.8",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "recurrence_relation",
+        "binomial_coefficients",
+        "summation"
+      ],
+      "reasoning": "Задачата изисква построяване на рекурентна връзка за броя на пермутациите с точно едно нарушение на нарастването, което е класически подход в комбинаториката. Решението използва разбиване на случаи (позиция на максималния елемент) и сумиране на биномни коефициенти, което води до явна формула. Това е стандартна техника за рекурентни връзки, която се изучава в подготовката за олимпиади."
+    },
+    "OLI-2-Областен кръг-1995-10 кл:10.4:1": {
+      "point_id": "6.10",
+      "point_confidence": "partial",
+      "alternative_points": [
+        "8.3"
+      ],
+      "difficulty": "medium",
+      "techniques": [
+        "discretization",
+        "linearity",
+        "double_summation",
+        "floor_function"
+      ],
+      "reasoning": "Задачата е неравенство, което използва техники на свеждане до дискретни стойности (0 и 1) чрез линейност и индукция, последвано от двойна сума за оценка. Основната техника не е стандартно олимпиадни неравенство като AM-GM или Коши, а по-скоро комбинация от алгебрични и комбинаторни елементи. Най-близката точка е 6.10 (общи неравенства), с алтернатива 8.3 (двойно броене), но без перфектно съвпадение поради спецификата на подхода."
+    },
+    "OLI-2-Областен кръг-1995-10 кл:10.5:1": {
+      "point_id": "1.2",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "ceva_theorem",
+        "centroid_properties"
+      ],
+      "reasoning": "Задачата изисква теорема на Чева за доказване, че ако M е медицентър и на двата триъгълника, то отношенията от Чева са изпълнени с конкретни коефициенти. Основната техника е приложение на теоремата на Чева в комбинация със свойствата на медицентъра (отношение 2:1). Решението, което е дадено, е непълно и има грешки, но самата задача е класическа олимпиадна задача, вероятно от регионален или национален кръг."
+    },
+    "OLI-2-Областен кръг-1995-10 кл:10.6:1": {
+      "point_id": "4.2",
+      "point_confidence": "exact",
+      "alternative_points": [
+        "4.10"
+      ],
+      "difficulty": "medium",
+      "techniques": [
+        "diophantine_equation",
+        "sum_of_squares",
+        "prime_divisors_mod4"
+      ],
+      "reasoning": "Задачата е квадратично диофантово уравнение, което изисква разлагане на сума от квадрати x² + y² и свойства на прости числа от вида 4q+3 (3,7,19). Основната техника е решаване на диофантови уравнения с квадратични форми (точка 4.2), като алтернативно може да се класифицира и като приложение на суми на квадрати (4.10). Трудността е medium, тъй като решението изисква няколко стъпки: разлагане на 1995, прилагане на теоремата за простите 4q+3, свеждане до уравнение с k=5 и решаването му, но без извънредно сложни инсайти."
+    },
+    "OLI-2-Областен кръг-1995-11 кл:11.1:1": {
+      "point_id": null,
+      "point_confidence": "off",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "coordinate_geometry",
+        "vector_dot_product",
+        "vieta_formulas",
+        "quadratic_equation_analysis"
+      ],
+      "reasoning": "Задачата е от координатна геометрия с доказателствен характер, използваща вектори (условие за перпендикулярност), свойства на парабола и анализ на квадратни уравнения. Въпреки че техниките са валидни, STEPS точките нямат специфична категория за координатна геометрия на олимпийско ниво (R.11 е основна точка, не олимпиаднa). Затова не се класифицира към нито една олимпийска точка от плана."
+    },
+    "OLI-2-Областен кръг-1995-11 кл:11.2:1": {
+      "point_id": "1.3",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "ptolomeus_theorem",
+        "sine_theorem",
+        "trigonometric_identities",
+        "inequality_estimation"
+      ],
+      "reasoning": "Основната техника е теоремата на Птолемей, използвана за получаване на ключовото отношение между страните на седмоъгълника. Допълнително се използва синусова теорема за изразяване на страните, тригонометрични идентичности за преобразуване и оценка на неравенството."
+    },
+    "OLI-2-Областен кръг-1995-11 кл:11.3:1": {
+      "point_id": "8.8",
+      "point_confidence": "exact",
+      "alternative_points": [
+        "8.4"
+      ],
+      "difficulty": "medium",
+      "techniques": [
+        "recursion",
+        "binomial_coefficients",
+        "geometric_series_sum"
+      ],
+      "reasoning": "Задачата изисква изграждане на рекурентна връзка за броя на пермутациите с точно един 'спад' (descent), което е класически подход в комбинаториката. Решението демонстрира: 1) дефиниране на p_n, 2) установяване на рекурентна връзка чрез фиксиране на позицията на n (с биномни коефициенти), 3) сумиране на геометрична прогресия. Това е точно в духа на точка 8.8 (Рекурентни връзки). Биномните коефициенти са поддържаща техника (точка 8.4). Трудността е medium, тъй като решението изисква 2-3 ключови стъпки с ясно комбинаторно мислене (15-20 мин). Задачата е типична за олимпиади (например областен кръг)."
+    },
+    "OLI-2-Областен кръг-1995-11 кл:11.4:1": {
+      "point_id": "8.15",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "extreme_value_selection",
+        "linearity_in_each_variable",
+        "induction",
+        "integer_part_utilization"
+      ],
+      "reasoning": "Основната техника е екстремалният принцип (избор на стойности 0 или 1 за достигане на екстремум), което е точно точка 8.15. Решението използва линейност по всяка променлива и индукция, след което допълнително преобразуване за получаване на цялата част. Трудността е medium, тъй като изисква ключово наблюдение и не е тривиално, но е в рамките на 15-20 мин."
+    },
+    "OLI-2-Областен кръг-1995-11 кл:11.5:1": {},
+    "OLI-2-Областен кръг-1995-11 кл:11.6:1": {
+      "point_id": "3.8",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "hard",
+      "techniques": [
+        "quadratic_residues",
+        "descent",
+        "diophantine_equation"
+      ],
+      "reasoning": "Задачата използва квадратични остатъци и безкрайно спускане за диофантово уравнение. Основната техника е теоремата за квадратични остатъци (Лежандър символ), която е задължителна за решението."
+    },
+    "OLI-2-Областен кръг-1995-12 кл:12.1:1": {
+      "point_id": "5.1",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "quadratic_equations",
+        "vieta_formulas",
+        "pythagorean_theorem",
+        "discriminant_analysis"
+      ],
+      "reasoning": "Основната техника е приложение на формулите на Виет за корените на квадратното уравнение, получено от условието за успоредната отсечка и правоъгълния ъгъл. Допълнително се използват свойства на параболата (връх, дискриминанта за реални корени) и Питагорова теорема за ъгъл 90°. Задачата е типична за олимпиадно ниво с умерена трудност (15-20 мин)."
+    },
+    "OLI-2-Областен кръг-1995-12 кл:12.2:1": {
+      "point_id": "1.3",
+      "point_confidence": "exact",
+      "alternative_points": [
+        "1.6"
+      ],
+      "difficulty": "hard",
+      "techniques": [
+        "ptolemy_theorem",
+        "sine_law",
+        "trigonometric_identities",
+        "inequality_am_gm",
+        "regular_polygon_properties"
+      ],
+      "reasoning": "Основната техника е теоремата на Птолемей (1.3), използвана за получаване на съотношението ab + ac = bc в правилния седмоъгълник. Синусовата теорема (1.6) е вторична за тригонометричните преобразувания. Трудността е hard поради комбинация от геометрични конструкции, нетривиална тригонометрия и неравенства."
+    },
+    "OLI-2-Областен кръг-1995-12 кл:12.3:1": {},
+    "OLI-2-Областен кръг-1995-12 кл:12.4:1": {
+      "point_id": "6.1",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "am_gm",
+        "linearity",
+        "discretization"
+      ],
+      "reasoning": "Основната техника е използване на линейността на израза и редукция до дискретния случай чрез екстремални стойности. След това се прилага AM-GM или директно изчисление за булеви стойности. Това е класическа задача за неравенства с дискретизация."
+    },
+    "OLI-2-Областен кръг-1995-12 кл:12.5:1": {
+      "point_id": "12.2",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "barycentric_coordinates",
+        "cevas_theorem",
+        "centroid"
+      ],
+      "reasoning": "Задачата изисква прилагане на барицентрични координати за изразяване на позициите на точките A1, B1, C1 и медицентъра на триъгълниците. Условието за конкурентни прави (теорема на Чева) е имплицитно използвано, а основният инструмент е барицентричната система. Доказателството показва, че условието M да е медицентър на A1B1C1 води до система уравнения, която има решение само ако M е медицентър и на ABC. Трудността е средна, тъй като изисква познаване на барицентрични координати и техники за манипулиране, но не е прекалено дълго."
+    },
+    "OLI-2-Областен кръг-1995-12 кл:12.6:1": {
+      "point_id": "4.10",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "sum_of_squares",
+        "prime_factorization",
+        "modular_arithmetic",
+        "diophantine_equation"
+      ],
+      "reasoning": "Задачата изисква разлагане на 1995 и приложение на свойство за прости числа от вида 4q+3, които ако делят сума на квадрати, то делят и самите числа. Това е класическа техника в теорията на квадратичните форми и сумите на квадрати, която се покрива от точка 4.10. Решението след това редуцира до решаване на уравнението a² + b² = 5(a - b), което е диофантово уравнение, свързано с представяне като сума на квадрати."
+    },
+    "OLI-2-Областен кръг-1996-10 кл:10.1:1": {
+      "point_id": "4.10",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "induction",
+        "quadratic_forms",
+        "parity_analysis"
+      ],
+      "reasoning": "Задачата се свежда до работа с квадратична форма 7x² + y² = 2^n. Основната техника е конструктивна индукция с избор между две двойки, базирана на свойствата на нечетните числа (parity analysis). Това е класически подход за диофантови уравнения със суми на квадрати, което точно отговаря на точка 4.10. Трудността е medium, тъй като решението изисква нетривиална индукционна стъпка с проверка на четност, но е в рамките на 15-20 мин."
+    },
+    "OLI-2-Областен кръг-1996-10 кл:10.2:1": {
+      "point_id": "1.2",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "hard",
+      "techniques": [
+        "similar_triangles",
+        "cevas_theorem",
+        "collinearity"
+      ],
+      "reasoning": "Основната техника е теоремата на Чева за конкурентност на правите. Решението използва подобни триъгълници за установяване на колинеарност и съотношения, след което прилага Чева за да докаже конкурентността на трите прави."
+    },
+    "OLI-2-Областен кръг-1996-10 кл:10.3:1": {
+      "point_id": "5.6",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "chebyshev_polynomials",
+        "derivative_application",
+        "proof_by_contradiction",
+        "sign_analysis"
+      ],
+      "reasoning": "Задачата използва специфично полинома на Чебишев от трета степен T_3(x) = 4x^3 - 3x. В част а) се намира максимумът му в [-1,1], а в част б) се доказва, че за всеки кубичен полином, максимумът на модула в интервала е поне 1, като равенството се достига точно за T_3(x). Това е класическо свойство на полиномите на Чебишев. Решението използва производни за екстремуми (част а)) и доказателство чрез противоречие със знаков анализ (част б)), но основната техника е свързана със свойствата на Чебишевите полиноми."
+    },
+    "OLI-2-Областен кръг-1996-10 кл:10.4:1": {
+      "point_id": "R.6",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "arithmetic_progression",
+        "geometric_progression",
+        "solving_quadratic_equations",
+        "case_analysis"
+      ],
+      "reasoning": "Задачата се основава на свойствата на аритметичната и геометричната прогресия. Основната техника е разглеждането на връзката между двете прогресии, с анализ на знаци и случаи, включително решаване на квадратни уравнения. Трудността е средна (medium), тъй като изисква няколко логически стъпки и разглеждане на специфични случаи (n=3 и n=4), но без сложни инсайти."
+    },
+    "OLI-2-Областен кръг-1996-10 кл:10.5:1": {
+      "point_id": null,
+      "point_confidence": "off",
+      "alternative_points": [],
+      "difficulty": null,
+      "techniques": [],
+      "reasoning": "Решението е дефектно: съдържа повтарящи се фрагменти (многократно 'Figure 4.' и '$$\\triangle ACE$, we obtain:') без действително решение. Това не е типично за реална олимпиадна задача. Без пълно и ясно решение не може да се класифицира основна техника или трудност. Според критерия за 'реалност' на задачата (миризма на AI или грешка в източника) материалът не е завършен."
+    },
+    "OLI-2-Областен кръг-1996-10 кл:10.6:1": {},
+    "OLI-2-Областен кръг-1996-11 кл:11.1:1": {
+      "point_id": "3.10",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "induction",
+        "pell_equation"
+      ],
+      "reasoning": "Задачата е диофантово уравнение от вида x² - Dy² = N с D=7 и N=2^n. Решението използва индукция и конструкция, типична за уравненията на Пел. Основната техника е работа с уравнения на Пел."
+    },
+    "OLI-2-Областен кръг-1996-11 кл:11.2:1": {
+      "point_id": "1.2",
+      "point_confidence": "partial",
+      "alternative_points": [
+        "1.10"
+      ],
+      "difficulty": "medium",
+      "techniques": [
+        "similar_triangles",
+        "cevas_theorem",
+        "collinearity"
+      ],
+      "reasoning": "Основната техника е теорема на Чева, използвана за доказване на конкурентност. Подобието на триъгълници и колинеарността са поддържащи. Точка 1.10 (допирни точки) е алтернативна, но не основна. Решението има пропуски (недефиниран 'височинен център', липса на разглеждане на специални случаи), но структурата е олимпиадническа. Трудността е medium поради 2-3 ключови стъпки и необходимост от инсайт за прилагането на Чева."
+    },
+    "OLI-2-Областен кръг-1996-11 кл:11.3:1": {
+      "point_id": "5.6",
+      "point_confidence": "exact",
+      "alternative_points": [
+        "11.6"
+      ],
+      "difficulty": "medium",
+      "techniques": [
+        "derivatives",
+        "intermediate_value_theorem",
+        "chebyshev_polynomials"
+      ],
+      "reasoning": "Задачата директно използва свойствата на полиномите на Чебишев (T_3(x) = 4x^3 - 3x), които минимизират максималното отклонение в [-1,1]. Част a) намира максимума на |T_3(x)|, а част b) доказва, че за всеки кубичен полином максимумът в интервала е поне 1, като използва конструкция с теоремата за междинните стойности и факта, че квадратен полином не може да има три корена. Това е класическа задача за полиномите на Чебишев. Алтернативна точка 11.6 също е приложима поради използването на производни и теорема на Рол (имплицитно), но 5.6 е по-специфична. Трудността е medium, тъй като част b) изисква нетривиална конструкция."
+    },
+    "OLI-2-Областен кръг-1996-11 кл:11.4:1": {
+      "point_id": null,
+      "point_confidence": "off",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "arithmetic_progression",
+        "geometric_progression",
+        "sign_analysis",
+        "solving_quadratic_equations"
+      ],
+      "reasoning": "Задачата изисква комбинация от свойства на аритметична и геометрична прогресия, анализ на знаци и броя на елементите, и решаване на квадратни уравнения. В STEPS плана няма специфична точка за прогресии в олимпиаден контекст (R.6 е за основни свойства, не за олимпиадни задачи). Задачата е реална олимпиадна (с конкретно число 1996 и строго решение), но не се вписва в дадените геометрични, теоретично-числови или алгебрични точки."
+    },
+    "OLI-2-Областен кръг-1996-11 кл:11.5:1": {
+      "point_id": "1.6",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "sine_theorem",
+        "trigonometric_identities"
+      ],
+      "reasoning": "Задачата изисква многократно прилагане на синусовата теорема в различни триъгълници (ACD, ACE, ABC) и последващи тригонометрични трансформации за доказване на еквивалентността. Това е основната техника, като трудността е medium поради дължината на алгебричните преобразувания и необходимостта от внимателен избор на триъгълници."
+    },
+    "OLI-2-Областен кръг-1996-11 кл:11.6:1": {
+      "point_id": "8.3",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "chessboard_coloring",
+        "double_counting",
+        "induction"
+      ],
+      "reasoning": "Основната техника е двойно броене (double_counting), използващо шахматно оцветяване за определяне на необходимите условия за покриване с домино. Индукцията е помощен инструмент за доказателството, но ядрото е комбинаторният аргумент чрез оцветяването. Задачата е типична олимпиадна комбинаторна задача със средна трудност (15-20 мин), изискваща ключово прозрение за оцветяването и внимателно прилагане на индукцията."
+    },
+    "OLI-2-Областен кръг-1996-12 кл:12.1:1": {
+      "point_id": "3.10",
+      "point_confidence": "partial",
+      "alternative_points": [
+        "4.4",
+        "4.2"
+      ],
+      "difficulty": "medium",
+      "techniques": [
+        "induction",
+        "parity_arguments",
+        "algebraic_manipulation"
+      ],
+      "reasoning": "Задачата изисква доказване на съществуване на решения в цели числа за уравнението 7x^2 + y^2 = 2^n с нечетни x и y. Основната техника е индукция с конструктивна стъпка, която прилича на разширение на идеи от уравненията на Пел (3.10), но не е стандартно уравнение на Пел. Алтернативни точки: 4.4 (Точни квадрати и степени) поради степенуването и 4.2 (Диофантови – квадратни) поради квадратните форми. Трудността е medium, тъй като конструкцията изисква инсайт за двете възможни двойки и проверка на нечетността."
+    },
+    "OLI-2-Областен кръг-1996-12 кл:12.2:1": {
+      "point_id": "1.2",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "similar_triangles",
+        "ceva_theorem",
+        "collinearity"
+      ],
+      "reasoning": "Основната техника е теоремата на Чева (1.2), използвана за доказателството на ключовото равенство (1). Подобието на триъгълници е помощна техника за установяване на пропорции и колинеарност. Задачата е типична олимпиадна геометрична задача със средна трудност, изискваща около 15-20 минути за решаване с 3-4 ключови стъпки."
+    },
+    "OLI-2-Областен кръг-1996-12 кл:12.3:1": {
+      "point_id": "5.6",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "chebyshev_polynomials",
+        "derivatives",
+        "absolute_value",
+        "sign_analysis",
+        "polynomial_roots"
+      ],
+      "reasoning": "Задачата използва полинома на Чебишев T₃(x) = 4x³ - 3x като ключов елемент. В част а) се намира максимумът му, а в част б) се доказва, че за произволен кубичен полином, максимумът на |f(x)| в [-1,1] е поне 1, като равенството се достига само за T₃(x). Това е класическо минимаксно свойство на полиномите на Чебишев. Решението използва производни, абсолютна стойност, анализ на знаци и свойства на квадратни полиноми."
+    },
+    "OLI-2-Областен кръг-1996-12 кл:12.4:1": {
+      "point_id": "R.6",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "arithmetic_progression",
+        "geometric_progression",
+        "sign_analysis",
+        "quadratic_equation"
+      ],
+      "reasoning": "Задачата изисква разбиране на свойствата на аритметичните и геометричните прогресии, включително анализ на знаците и решаване на квадратни уравнения. Това е основна тема в R.6 (Прогресии)."
+    },
+    "OLI-2-Областен кръг-1996-12 кл:12.5:1": {
+      "point_id": "1.6",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "sine_theorem",
+        "trigonometric_identities"
+      ],
+      "reasoning": "Основната техника е приложението на синусова теорема в множество триъгълници (ACD, ACE, ABC), последвано от сложни тригонометрични преобразувания за доказване на еквивалентността. Задачата е типична олимпиадна геометрична задача с нетривиални алгебрични манипулации, която не може да се реши ефективно без синусова теорема."
+    },
+    "OLI-2-Областен кръг-1996-12 кл:12.6:1": {
+      "point_id": "8.10",
+      "point_confidence": "exact",
+      "alternative_points": [
+        "8.3"
+      ],
+      "difficulty": "medium",
+      "techniques": [
+        "chessboard_coloring",
+        "induction",
+        "counting"
+      ],
+      "reasoning": "Основната техника е индукция (8.10), използвана за доказване, че при премахване на едно бяло и едно черно квадратче винаги е възможно покриване с домино. Шахматното оцветяване (част от двойно броене, 8.3) е необходимо за определяне на условието за възможност, но индукцията е ядрото на решението. Трудността е medium, тъй като индуктивната стъпка изисква внимание при разделянето на правоъгълника и случаите, но не е прекалено сложна."
+    },
+    "OLI-2-Областен кръг-1997-10 кл:10.1:1": {
+      "point_id": "6.1",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "am_gm_inequality",
+        "vieta_formulas",
+        "proof_by_contradiction",
+        "case_analysis"
+      ],
+      "reasoning": "Основната техника е приложението на AM-GM неравенството (x+y ≤ xy за x,y≥2) за достигане на противоречие при предположението, че всички корени са ≥2. След това се използват формулите на Виет за сума и произведение на корените, заедно с разглеждане на случаи и доказателство чрез противоречие, за да се стигне до единственото решение a=b=c=1."
+    },
+    "OLI-2-Областен кръг-1997-10 кл:10.2:1": {
+      "point_id": "1.3",
+      "point_confidence": "partial",
+      "alternative_points": [
+        "R.11"
+      ],
+      "difficulty": "medium",
+      "techniques": [
+        "vector_geometry",
+        "inscribed_quadrilateral",
+        "midpoint_theorem"
+      ],
+      "reasoning": "Задачата изисква свойства на вписан четириъгълник (основно) и векторна геометрия. Точка 1.3 (Теорема на Птолемей) е най-близката, въпреки че Птолемей не се използва директно. Решението разчита на отношението AB/CD = AE/CE = BE/DE, което е следствие от вписания четириъгълник и подобни триъгълници. Векторният подход е значителен, затова R.11 е алтернативна точка. Трудността е medium поради дължината на решението (15-20 мин) и нуждата от параметризация."
+    },
+    "OLI-2-Областен кръг-1997-10 кл:10.3:1": {
+      "point_id": "3.8",
+      "point_confidence": "exact",
+      "alternative_points": [
+        "3.2",
+        "4.4"
+      ],
+      "difficulty": "medium",
+      "techniques": [
+        "modular_arithmetic",
+        "sum_of_squares",
+        "proof_by_contradiction"
+      ],
+      "reasoning": "Задачата изисква приложение на квадратични остатъци (модул 4 и 8) за доказване, че 7 не може да бъде представена като сбор от три квадрата в цели числа след преобразуване. Това е основна техника в точка 3.8. Трудността е medium поради необходимостта от преобразуване и два отделни модулни случая."
+    },
+    "OLI-2-Областен кръг-1997-10 кл:10.4:1": {
+      "point_id": "7.1",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "hard",
+      "techniques": [
+        "functional_equations",
+        "fixed_point_iteration",
+        "continuity"
+      ],
+      "reasoning": "Задачата е за функционално уравнение на Коши с итерации към фиксирана точка. Основната техника е функционални уравнения (7.1), но използва и итерации към фиксирана точка и непрекъснатост."
+    },
+    "OLI-2-Областен кръг-1997-10 кл:10.5:1": {
+      "point_id": "2.4",
+      "point_confidence": "partial",
+      "alternative_points": [
+        "12.3",
+        "R.11"
+      ],
+      "difficulty": "hard",
+      "techniques": [
+        "homothety",
+        "locus",
+        "square_properties"
+      ],
+      "reasoning": "Задачата използва хомотетии (част от спирално подобие без ротация) за намиране на геометрично място. Точка 2.4 е най-близката, но не е точна съвпадение. Алтернативи: проективна геометрия (12.3) или координати (R.11). Трудността е hard поради дължината на решението и необходимостта от комбиниране на две хомотетии."
+    },
+    "OLI-2-Областен кръг-1997-10 кл:10.6:1": {
+      "point_id": "8.8",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "recurrence_relations",
+        "fibonacci_sequence"
+      ],
+      "reasoning": "Задачата изисква рекурентни връзки като основна техника. Решението дефинира рекурентна връзка f_n = f_{n-1} + f_{n-2} + 1 и след заместване получава Фибоначи редица. Това е класически пример за комбинаторна задача с рекурентна връзка."
+    },
+    "OLI-2-Областен кръг-1997-11 кл:11.1:1": {
+      "point_id": "5.1",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "vieta_formulas",
+        "proof_by_contradiction",
+        "case_analysis"
+      ],
+      "reasoning": "Основната техника е приложението на формулите на Виет за сума и произведение на корените на квадратните уравнения. Решението използва доказателство от противно и разглеждане на случаи (като допускане, че всички корени са поне 2, след това последователно разглеждане на корени, равни на 1). Трудността е medium, тъй като решението изисква няколко логически стъпки и инсайт за минималните стойности, но не е изключително дълго или сложно."
+    },
+    "OLI-2-Областен кръг-1997-11 кл:11.2:1": {
+      "point_id": "1.3",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "hard",
+      "techniques": [
+        "vector_algebra",
+        "ratio_properties",
+        "midpoint_theorem"
+      ],
+      "reasoning": "Основната техника е теоремата на Птолемей за вписан четириъгълник, но задачата изисква допълнително векторна алгебра и свойства на отношенията. Трудността е hard поради дългите изчисления и необходимостта от използване на вектори."
+    },
+    "OLI-2-Областен кръг-1997-11 кл:11.3:1": {},
+    "OLI-2-Областен кръг-1997-11 кл:11.4:1": {
+      "point_id": "7.5",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "functional_equations",
+        "sequences",
+        "convergence",
+        "continuity",
+        "even_function"
+      ],
+      "reasoning": "Задачата изисква общи техники за функционални уравнения: използване на редици, сходимост и непрекъснатост за доказване, че функцията е константа. Това е точно в обхвата на точка 7.5."
+    },
+    "OLI-2-Областен кръг-1997-11 кл:11.5:1": {
+      "point_id": "2.4",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "homothety",
+        "locus_analysis",
+        "convex_hull"
+      ],
+      "reasoning": "Основната техника е хомотетия, използвана два пъти: първо с център Y за получаване на квадрат K₁', после с център M за получаване на K₂'. Финалният резултат изисква анализ на геометричното място като обединение на квадрати, което води до изпъкнала обвивка (правилен шестоъгълник). Това е класическа задача за преобразувания и сума на Минковски. Трудността е medium, тъй като решението изисква две последователни хомотетии и синтез, но без допълнителни сложни техники."
+    },
+    "OLI-2-Областен кръг-1997-11 кл:11.6:1": {
+      "point_id": "8.8",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "recurrence_relation",
+        "combinatorial_counting"
+      ],
+      "reasoning": "Задачата изисква установяване на рекурентна връзка за броя на подмножествата без последователни елементи, която се свежда до редица, подобна на Фибоначи. Това е класически пример за приложение на рекурентни релации в комбинаториката, което точно отговаря на точка 8.8. Трудността е средна, тъй като изисква инсайт за разделянето на случаи и преобразуването на рекуренцията, но не е прекалено сложно."
+    },
+    "OLI-2-Областен кръг-1997-12 кл:12.1:1": {},
+    "OLI-2-Областен кръг-1997-12 кл:12.2:1": {
+      "point_id": "1.3",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "hard",
+      "techniques": [
+        "cyclic_quadrilateral_properties",
+        "vector_algebra",
+        "midpoint_theorem",
+        "ratio_manipulation"
+      ],
+      "reasoning": "Основната техника е теоремата на Птолемей или свойствата на вписания четириъгълник. Решението използва векторна алгебра и манипулации с отношения, които са характерни за задачи с вписани четириъгълници. Трудността е hard поради дългия векторен анализ и необходимите алгебрични трансформации."
+    },
+    "OLI-2-Областен кръг-1997-12 кл:12.3:1": {
+      "point_id": "3.8",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "quadratic_residues",
+        "infinite_descent"
+      ],
+      "reasoning": "Задачата използва квадратични остатъци по модул 8 и безкрайно спускане за доказване на невъзможността на уравнението в рационални числа. Това е класическа техника в теорията на числата за диофантови уравнения."
+    },
+    "OLI-2-Областен кръг-1997-12 кл:12.4:1": {
+      "point_id": "7.7",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "nonlinear_recurrence",
+        "convergence",
+        "fixed_point",
+        "continuity"
+      ],
+      "reasoning": "Задачата изисква дефиниране на нелинейна рекурентна редица (x_{n+1} = x_n^2 + 1/4) и използване на нейната сходимост към неподвижна точка (1/2), заедно с непрекъснатост на функцията, за да се докаже, че f е константа. Това е ясен случай на нелинейни рекурентни редици (точка 7.7), с елементи от сходимост (7.8), но основната техника е рекурентната редица."
+    },
+    "OLI-2-Областен кръг-1997-12 кл:12.6:1": {
+      "point_id": "8.8",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "recurrence_relation",
+        "fibonacci"
+      ],
+      "reasoning": "Задачата се свежда до рекурентна връзка, която е точно темата на точка 8.8. Решението използва Фибоначи редица след субституцията u_n = f_n + 1."
+    },
+    "OLI-2-Областен кръг-1998-10 кл:10.1:1": {
+      "point_id": null,
+      "point_confidence": "off",
+      "difficulty": null,
+      "techniques": [],
+      "reasoning": "не е олимпиадна задача"
+    },
+    "OLI-2-Областен кръг-1998-10 кл:10.2:1": {
+      "point_id": "1.1",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "hard",
+      "techniques": [
+        "menelaus_theorem",
+        "angle_chasing",
+        "cyclic_quadrilateral"
+      ],
+      "reasoning": "Основната техника е теоремата на Менелай, използвана два пъти в решението. Трудността е hard, тъй като изисква комбинация от техники и построяване на допълнителни точки. Задачата е от олимпиаден тип."
+    }
+  },
   "budget": {
-    "date": "2026-10-29",
-    "spent_usd": 0.0015,
-    "calls": 2
+    "date": "2026-11-16",
+    "spent_usd": 0.20350000000000015,
+    "calls": 407
   }
 }

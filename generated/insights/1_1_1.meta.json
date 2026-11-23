@@ -1,0 +1,33 @@
+{
+  "key": "1.1#1",
+  "point_id": "1.1",
+  "idx": 1,
+  "difficulty": "hard",
+  "source": "OLI-3-Национален кръг-1983-9-12 кл · 1983-None · Зад. 3",
+  "techniques": [
+    "menelaus_theorem",
+    "vector_method",
+    "optimization"
+  ],
+  "word_count": 1630,
+  "score": 9,
+  "verdict": "approve",
+  "status": "done",
+  "structure": {
+    "missing": [],
+    "has_boxed": true,
+    "why_count": 10,
+    "sec12_words": 152,
+    "ends_ok": true,
+    "fatal": [],
+    "soft": []
+  },
+  "caught_errors_in_solution": [
+    "Няма установена грешна формула. Непълното условие е възстановено по решението: M е средата на AB.",
+    "Попълнени са пропуснатите обосновки за скаларните произведения и за допустимостта t₀<1."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 119.5,
+  "generated_at": "2026-11-20T22:00:18.523101"
+}

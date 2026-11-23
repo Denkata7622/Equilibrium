@@ -1,0 +1,97 @@
+{
+  "pdf": "OLI-2-Областен кръг-2017-10 кл-probs",
+  "version": 3,
+  "extraction_model": "deepseek/deepseek-r1-0528",
+  "extraction_level": "L0_native",
+  "verification": {
+    "verdict": "PASS_WITH_WARNINGS",
+    "expected": 4,
+    "actual": 4,
+    "verified": 3,
+    "hallucinated": 1,
+    "unreadable": 0,
+    "wrong_grade": 0,
+    "duplicates": 0,
+    "null_num": 0,
+    "numeric_mismatch": 0,
+    "avg_confidence": 1.0,
+    "expected_grade": 10,
+    "grade_distribution": {
+      "10": 4
+    },
+    "escalate_to": "none",
+    "reasons": [
+      "1 borderline unverified (conf=1.00), 3/4 verified"
+    ],
+    "ai_checked": false,
+    "ai_result": {}
+  },
+  "extracted_at": "2026-11-10T09:16:49.940537",
+  "problems": [
+    {
+      "num": "10.1",
+      "year": 2017,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "За кои стойности на реалния параметър $a$ неравенството\n\n$$4 ⋅ 27^{2x^2+x-a} < 31 ⋅ 3^{2x^2+x-a} + 15$$\n\nима точно едно целочислено решение.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 10.1. За кои стойности на реалния параметър $a$ неравенството\n\n$$4 ⋅ 27^{2x^2+x-a} < 31 ⋅ 3^{2x^2+x-a} + 15$$\n\nима точно едно целочисено решение.",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "10.1",
+      "_quote_grade": "ABSENT",
+      "_quote_warning": "absent",
+      "pdf": "OLI-2-Областен кръг-2017-10 кл-probs"
+    },
+    {
+      "num": "10.2",
+      "year": 2017,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "Височините $AH_1$, $BH_2$ и $CH_3$ на остроъгълен $\\triangle ABC$ се пресичат в точка $H$. С диаметри $HH_1$, $HH_2$ и $HH_3$ са построени три окръжности: $\\omega_1$, $\\omega_2$ и $\\omega_3$, които се пресичат, както следва: $\\{A_1, H\\} = \\omega_2 \\cap \\omega_3$, $\\{B_1, H\\} = \\omega_1 \\cap \\omega_3$ и $\\{C_1, H\\} = \\omega_1 \\cap \\omega_2$. Да се докаже, че $\\triangle ABC$ е подобен на $\\triangle A_1 B_1 C_1$.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 10.2. Височините $AH_1$, $BH_2$ и $CH_3$ на остроъгълен $\\triangle ABC$ се пресичат в точка $H$. С диаметри $HH_1$, $HH_2$ и $HH_3$ са построени три окръжности: $\\omega_1$, $\\omega_2$ и $\\omega_3$, които се пресичат, както следва: $\\{A_1, H\\} = \\omega_2 \\cap \\omega_3$, $\\{B_1, H\\} = \\omega_1 \\cap \\omega_3$ и $\\{C_1, H\\} = \\omega_1 \\cap \\omega_2$. Да се докаже, че $\\triangle ABC$ е подобен на $\\triangle A_1 B_1 C_1$.",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "10.2",
+      "_quote_grade": "EXACT",
+      "pdf": "OLI-2-Областен кръг-2017-10 кл-probs"
+    },
+    {
+      "num": "10.3",
+      "year": 2017,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "Редицата $(a_n)$ е зададена чрез равенствата\n\n$$a_1 = 1, \\quad a_n = \\lfloor \\sqrt{2a_{n-1} + a_{n-2} + \\cdots + a_1} \\rfloor.$$\n\nДа се намери $a_{2017}$. (Тук с $\\lfloor x \\rfloor$ означаваме най-голямото цяло число по-малко или равно на $x$.)",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 10.3 Редицата $(a_n)$ е зададена чрез равенствата\n\n$$a_1 = 1, \\quad a_n = \\lfloor \\sqrt{2a_{n-1} + a_{n-2} + \\cdots + a_1} \\rfloor.$$\n\nДа се намери $a_{2017}$. (Тук с $\\lfloor x \\rfloor$ означаваме най-голямото цяло число по-малко или равно на $x$.)",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "10.3",
+      "_quote_grade": "EXACT",
+      "pdf": "OLI-2-Областен кръг-2017-10 кл-probs"
+    },
+    {
+      "num": "10.4",
+      "year": 2017,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "Растения от 11 сорта жито са засадени в саксии като във всяка от тях има точно по три растения, които са от три различни сорта. Растенията са засадени така, че всяка двойка от сортове се среща в един и същ брой саксии. Две саксии наричаме различни, ако тройките сортове, засадени в тях, са различни. Да се намери минималният брой различни саксии.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source_quote": "Задача 10.4. Растения от 11 сорта жито са засадени в саксии като във всяка от тях има точно по три растения, които са от три различни сорта Растенията са засадени така, че всяка двойка от сортове се среща в един и същ брой саксии. Две саксии наричаме различни, ако тройките сортове, засадени в тях, са различни. Да се намери минималният брой различни саксии.",
+      "readability": "ok",
+      "readability_issues": [],
+      "segment_num": "10.4",
+      "_quote_grade": "EXACT",
+      "pdf": "OLI-2-Областен кръг-2017-10 кл-probs"
+    }
+  ]
+}

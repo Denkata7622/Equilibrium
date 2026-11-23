@@ -1,0 +1,142 @@
+{
+  "pdf": "OLI-2-Областен кръг-2012-12 кл",
+  "classify_model": "deepseek/deepseek-r1-0528",
+  "classified_at": "2026-11-11T22:57:09.767056",
+  "problems": [
+    {
+      "num": "1",
+      "grade": 12,
+      "year": 2012,
+      "round": "oblasten",
+      "statement": "Да се намерят всички цели стойности на параметъра $a$, за които уравнението\n\n$$\nsin x + a \\sin 2x + \\sin 5x = 2a\n$$\n\nима решение.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source": "OLI-2-Областен кръг-2012-12 кл · 2012-12 · Зад. 1",
+      "point_id": "5.10",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "trigonometric_identities",
+        "parameter_analysis"
+      ],
+      "reasoning": "Уравнението изисква тригонометрични преобразувания (sin5x+sinx=2sin3xcos2x) и анализ на параметър. Точка 5.10 е точна за тригонометрични уравнения.",
+      "_paired": true,
+      "_grade_source": "filename"
+    },
+    {
+      "num": "4",
+      "grade": 12,
+      "year": 2012,
+      "round": "oblasten",
+      "statement": "Да се намерят стойностите на реалния параметър $a$, за които уравнението\n\n$$\\lg(\\lg(x^3 + ax + 1)) = \\lg(\\lg(2x^3 + a))$$\n\nима точно едно решение.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source": "OLI-2-Областен кръг-2012-12 кл · 2012-12 · Зад. 4",
+      "point_id": "R.4",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "logarithm_properties",
+        "domain_analysis"
+      ],
+      "reasoning": "Уравнението изисква работа с дефиниционна област на логаритми и свеждане до полиномиално уравнение. R.4 покрива логаритмични уравнения.",
+      "_paired": true,
+      "_grade_source": "filename"
+    },
+    {
+      "num": "6",
+      "grade": 12,
+      "year": 2012,
+      "round": "oblasten",
+      "statement": "Нека $a$ е реално число и $P(x)$ е неконстантен полином с реални коефициенти така, че $P(x^2 + a) = (P(x))^2$ за всяко реално число $x$. Да се докаже, че $a = 0$.",
+      "solution": "От $P^2(x) = P^2(-x)$ следва, че $P$ е или четна, или нечетна функция.\n\nАко $P$ е четна функция, то $P(x) = Q(x^2)$. Тогава $Q((x^2 + a)^2) = Q^2(x^2)$ и следователно $Q((x + a)^2) = Q^2(x)$ за всяко $x$. Оттук $Q(x^2) = Q^2(x - a)$, т.е. полиномът $Q(x - a)$ също изпълнява даденото условие, като $\\deg P = 2\\deg Q$.\n\nПродължавайки по същия начин, ще стигнем до полином от нечетна степен, изпълняващ даденото условие. Той не може да е четна функция.\n\nИ така, остана да разгледаме случая, когато $P$ е нечетна функция. Тогава $P(x) = xR(x^2)$ и следователно $(x^2 + a)R((x^2 + a)^2) = x^2 R^2(x^2)$. Оттук $(x + a)R((x + a)^2) = xR^2(x)$, т.е. $P(x) = (x - a)R^2(x - a)$ за всяко $x$. Нека $R(x - a) = x^k S(x)$, където $S(0) \\neq 0$. Лесно се вижда, че $(x - a)R^2(x - a) = x^{2k+1}T(x) - aS^2(0)x^{2k}$. Понеже $P$ е нечетна функция, следва, че $a = 0$.",
+      "answer": "a = 0",
+      "page": 1,
+      "source": "OLI-2-Областен кръг-2012-12 кл · 2012-12 · Зад. 6",
+      "point_id": "7.5",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "functional_equations",
+        "polynomial_properties",
+        "even_odd_functions",
+        "degree_reduction"
+      ],
+      "reasoning": "Задачата е функционално уравнение за полиноми, изискващо общи техники като заместване и анализ на четност. Основната точка е 7.5 (Общи техники за ФУ). Трудността е medium, тъй като решението изисква разглеждане на два случая и рекурсивно понижаване на степента.",
+      "_paired": true,
+      "_grade_source": "filename"
+    },
+    {
+      "num": "2",
+      "grade": 12,
+      "year": 2012,
+      "round": "oblasten",
+      "statement": "В остроъгълен \\triangle ABC с ортоцентър $H$ и среда $M$ на страната $AB$, ъглополовящата на $\\angle ACB$ пресича $HM$ в точка $T$. Да се докаже, че:\n\na) $\\frac{HT}{TM} = \\frac{2 \\cos \\gamma}{1 - \\cos \\gamma}$, където $\\gamma = \\angle ACB$.\n\nб) $H$ лежи на отсечката с краища петите на перпендикулярите от $T$ към $AC$ и $BC$.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source": "OLI-2-Областен кръг-2012-12 кл · 2012-12 · Зад. 2",
+      "point_id": "2.11",
+      "point_confidence": "exact",
+      "difficulty": "hard",
+      "techniques": [
+        "orthocenter_properties",
+        "angle_bisector",
+        "trigonometric_ratios"
+      ],
+      "reasoning": "Задачата фокусира върху ортоцентър и ъглополовяща, което директно отговаря на точка 2.11 (Ортоцентър и ортоцентрични конфигурации).",
+      "_no_solution": true
+    },
+    {
+      "num": "3",
+      "grade": 12,
+      "year": 2012,
+      "round": "oblasten",
+      "statement": "Естествените числа са оцветени в два цвята.\n\na) Да се докаже, че съществуват безбройно много двойки от различни едноцветни числа $x$ и $y$, за които $x + y$ е точен квадрат.\n\nб) Вярно ли е, че винаги съществуват две различни едноцветни числа $x$ и $y$, чиито сбор е степен на двойката?",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source": "OLI-2-Областен кръг-2012-12 кл · 2012-12 · Зад. 3",
+      "point_id": "8.12",
+      "point_confidence": "exact",
+      "difficulty": "hard",
+      "techniques": [
+        "combinatorial_coloring",
+        "infinite_sets",
+        "sum_of_squares"
+      ],
+      "reasoning": "Част а) използва принципа на Дирихле за безкрайни множества, част б) изисква по-сложен комбинаторен анализ. Точка 8.12 (Вероятностен метод) е най-подходяща, макар че не е перфектна.",
+      "_no_solution": true
+    },
+    {
+      "num": "5",
+      "grade": 12,
+      "year": 2012,
+      "round": "oblasten",
+      "statement": "а) Да се намери броят на реалните корени на уравнението $x = \\cos x$.\n\nб) Нека $a_1, a_2, \\dots$ е редица от реални числа, за които $a_{n+1} = \\cos a_n$ при $n \\geq 1$. Да се докаже, че редицата е сходяща.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source": "OLI-2-Областен кръг-2012-12 кл · 2012-12 · Зад. 5",
+      "point_id": "7.8",
+      "point_confidence": "exact",
+      "difficulty": "medium",
+      "techniques": [
+        "fixed_point_iteration",
+        "convergence_analysis"
+      ],
+      "reasoning": "Част а) е стандартно приложение на непрекъснатост, част б) изисква разбиране на сходимост на редици. Точка 7.8 (Сходимост и граници) е точна.",
+      "_no_solution": true
+    }
+  ],
+  "paired": true,
+  "matched": 3,
+  "orphan_kept": 0,
+  "no_sol": 3,
+  "dropped_unclassifiable": 0
+}

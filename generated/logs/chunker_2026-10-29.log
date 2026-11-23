@@ -948,3 +948,1100 @@
 2026-10-29 19:08:06,782 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2026-9-12 кл-probs.pdf] pymupdf: 2p, 2593 chars
 2026-10-29 19:08:09,420 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2026-9-12 кл-sol.pdf] pdfplumber: 8p, 17303 chars
 2026-10-29 19:08:35,420 [PDF_CHUNKER] INFO [OT_2010.pdf] pdfplumber: 89p, 202150 chars
+2026-10-29 19:14:16,658 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-10-29 19:14:16,660 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-10-29 19:27:38,568 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-10-29 19:27:38,568 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-10-29 19:27:38,647 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-10-29 19:27:38,647 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-10-29 19:27:39,775 [PDF_CHUNKER] INFO [BMC_2003-2006.pdf] pypdf: 220p, 44 chars
+2026-10-29 19:27:39,775 [PDF_CHUNKER] INFO [BMC_2003-2006.pdf] pypdf: 220p, 44 chars
+2026-10-29 19:27:39,775 [PDF_CHUNKER] INFO [BMC_2003-2006.pdf] 44 chars (0/p) → OCR fallback
+2026-10-29 19:27:39,775 [PDF_CHUNKER] INFO [BMC_2003-2006.pdf] 44 chars (0/p) → OCR fallback
+2026-10-29 19:27:39,797 [PDF_CHUNKER] INFO [BMC_2003-2006.pdf] OCR cache: 220p
+2026-10-29 19:27:39,798 [PDF_CHUNKER] INFO [BMC_2003-2006.pdf] OCR: 446815 chars (vs Python: 44)
+2026-10-29 19:27:39,798 [PDF_CHUNKER] INFO [BMC_2003-2006.pdf] OCR cache: 220p
+2026-10-29 19:27:39,798 [PDF_CHUNKER] INFO [BMC_2003-2006.pdf] OCR: 446815 chars (vs Python: 44)
+2026-10-29 19:27:39,862 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-10 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:39,862 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-10 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:39,862 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-10 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:39,862 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-10 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:39,883 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:39,883 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:39,883 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-10 кл-probs.pdf] OCR: 1724 chars (vs Python: 29)
+2026-10-29 19:27:39,883 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-10 кл-probs.pdf] OCR: 1724 chars (vs Python: 29)
+2026-10-29 19:27:40,006 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-10 кл-sol.pdf] pymupdf: 3p, 87 chars
+2026-10-29 19:27:40,006 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-10 кл-sol.pdf] 87 chars (29/p) → OCR fallback
+2026-10-29 19:27:40,009 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-10 кл-sol.pdf] pymupdf: 3p, 87 chars
+2026-10-29 19:27:40,010 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-10 кл-sol.pdf] 87 chars (29/p) → OCR fallback
+2026-10-29 19:27:40,057 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-10 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:27:40,057 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-10 кл-sol.pdf] OCR: 7894 chars (vs Python: 87)
+2026-10-29 19:27:40,057 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-10 кл-sol.pdf] OCR: 7894 chars (vs Python: 87)
+2026-10-29 19:27:40,116 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-11 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:40,116 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-11 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:40,116 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-11 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:40,116 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-11 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:40,119 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:40,120 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-11 кл-probs.pdf] OCR: 1724 chars (vs Python: 29)
+2026-10-29 19:27:40,120 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-11 кл-probs.pdf] OCR: 1724 chars (vs Python: 29)
+2026-10-29 19:27:40,240 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-11 кл-sol.pdf] pymupdf: 3p, 87 chars
+2026-10-29 19:27:40,240 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-11 кл-sol.pdf] pymupdf: 3p, 87 chars
+2026-10-29 19:27:40,241 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-11 кл-sol.pdf] 87 chars (29/p) → OCR fallback
+2026-10-29 19:27:40,241 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-11 кл-sol.pdf] 87 chars (29/p) → OCR fallback
+2026-10-29 19:27:40,282 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-11 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:27:40,282 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-11 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:27:40,282 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-11 кл-sol.pdf] OCR: 7894 chars (vs Python: 87)
+2026-10-29 19:27:40,282 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-11 кл-sol.pdf] OCR: 7894 chars (vs Python: 87)
+2026-10-29 19:27:40,340 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-10 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:40,340 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-10 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:40,340 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-10 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:40,341 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-10 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:40,360 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:40,360 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:40,360 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-10 кл-probs.pdf] OCR: 1887 chars (vs Python: 29)
+2026-10-29 19:27:40,360 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-10 кл-probs.pdf] OCR: 1887 chars (vs Python: 29)
+2026-10-29 19:27:40,483 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-10 кл-sol.pdf] pymupdf: 4p, 116 chars
+2026-10-29 19:27:40,483 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-10 кл-sol.pdf] 116 chars (29/p) → OCR fallback
+2026-10-29 19:27:40,484 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-10 кл-sol.pdf] pymupdf: 4p, 116 chars
+2026-10-29 19:27:40,484 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-10 кл-sol.pdf] 116 chars (29/p) → OCR fallback
+2026-10-29 19:27:40,547 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-10 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:27:40,548 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-10 кл-sol.pdf] OCR: 11885 chars (vs Python: 116)
+2026-10-29 19:27:40,548 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-10 кл-sol.pdf] OCR: 11885 chars (vs Python: 116)
+2026-10-29 19:27:40,614 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-11 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:40,614 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-11 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:40,617 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-11 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:40,617 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-11 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:40,618 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:40,618 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-11 кл-probs.pdf] OCR: 1887 chars (vs Python: 29)
+2026-10-29 19:27:40,618 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:40,618 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-11 кл-probs.pdf] OCR: 1887 chars (vs Python: 29)
+2026-10-29 19:27:40,748 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-11 кл-sol.pdf] pymupdf: 4p, 116 chars
+2026-10-29 19:27:40,748 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-11 кл-sol.pdf] 116 chars (29/p) → OCR fallback
+2026-10-29 19:27:40,751 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-11 кл-sol.pdf] pymupdf: 4p, 116 chars
+2026-10-29 19:27:40,752 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-11 кл-sol.pdf] 116 chars (29/p) → OCR fallback
+2026-10-29 19:27:40,801 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-11 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:27:40,801 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-11 кл-sol.pdf] OCR: 11885 chars (vs Python: 116)
+2026-10-29 19:27:40,801 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-11 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:27:40,801 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-11 кл-sol.pdf] OCR: 11885 chars (vs Python: 116)
+2026-10-29 19:27:40,857 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-10 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:40,857 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-10 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:40,858 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-10 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:40,858 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-10 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:40,872 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:40,872 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:40,872 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-10 кл-probs.pdf] OCR: 1352 chars (vs Python: 29)
+2026-10-29 19:27:40,873 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-10 кл-probs.pdf] OCR: 1352 chars (vs Python: 29)
+2026-10-29 19:27:40,990 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-10 кл-sol.pdf] pymupdf: 5p, 145 chars
+2026-10-29 19:27:40,991 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-10 кл-sol.pdf] pymupdf: 5p, 145 chars
+2026-10-29 19:27:40,991 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-10 кл-sol.pdf] 145 chars (29/p) → OCR fallback
+2026-10-29 19:27:40,991 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-10 кл-sol.pdf] 145 chars (29/p) → OCR fallback
+2026-10-29 19:27:41,038 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-10 кл-sol.pdf] OCR cache: 5p
+2026-10-29 19:27:41,039 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-10 кл-sol.pdf] OCR: 9238 chars (vs Python: 145)
+2026-10-29 19:27:41,103 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-11 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:41,103 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-11 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:41,106 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-11 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:41,106 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-11 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:41,107 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:41,107 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:41,107 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-11 кл-probs.pdf] OCR: 1352 chars (vs Python: 29)
+2026-10-29 19:27:41,107 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-11 кл-probs.pdf] OCR: 1352 chars (vs Python: 29)
+2026-10-29 19:27:41,221 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-11 кл-sol.pdf] pymupdf: 5p, 145 chars
+2026-10-29 19:27:41,221 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-11 кл-sol.pdf] 145 chars (29/p) → OCR fallback
+2026-10-29 19:27:41,223 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-11 кл-sol.pdf] pymupdf: 5p, 145 chars
+2026-10-29 19:27:41,223 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-11 кл-sol.pdf] 145 chars (29/p) → OCR fallback
+2026-10-29 19:27:41,268 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-11 кл-sol.pdf] OCR cache: 5p
+2026-10-29 19:27:41,268 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-11 кл-sol.pdf] OCR: 9238 chars (vs Python: 145)
+2026-10-29 19:27:41,268 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-11 кл-sol.pdf] OCR cache: 5p
+2026-10-29 19:27:41,268 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-11 кл-sol.pdf] OCR: 9238 chars (vs Python: 145)
+2026-10-29 19:27:41,328 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-10 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:41,329 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-10 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:41,329 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-10 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:41,329 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-10 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:41,346 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:41,347 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-10 кл-probs.pdf] OCR: 1547 chars (vs Python: 29)
+2026-10-29 19:27:41,347 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-10 кл-probs.pdf] OCR: 1547 chars (vs Python: 29)
+2026-10-29 19:27:41,433 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-10 кл-sol.pdf] pymupdf: 4p, 116 chars
+2026-10-29 19:27:41,433 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-10 кл-sol.pdf] pymupdf: 4p, 116 chars
+2026-10-29 19:27:41,433 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-10 кл-sol.pdf] 116 chars (29/p) → OCR fallback
+2026-10-29 19:27:41,433 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-10 кл-sol.pdf] 116 chars (29/p) → OCR fallback
+2026-10-29 19:27:41,473 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-10 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:27:41,474 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-10 кл-sol.pdf] OCR: 7611 chars (vs Python: 116)
+2026-10-29 19:27:41,474 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-10 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:27:41,474 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-10 кл-sol.pdf] OCR: 7611 chars (vs Python: 116)
+2026-10-29 19:27:41,537 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-11 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:41,537 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-11 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:41,538 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-11 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:41,539 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-11 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:41,542 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:41,542 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:41,542 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-11 кл-probs.pdf] OCR: 1547 chars (vs Python: 29)
+2026-10-29 19:27:41,542 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-11 кл-probs.pdf] OCR: 1547 chars (vs Python: 29)
+2026-10-29 19:27:41,634 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-11 кл-sol.pdf] pymupdf: 4p, 116 chars
+2026-10-29 19:27:41,634 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-11 кл-sol.pdf] 116 chars (29/p) → OCR fallback
+2026-10-29 19:27:41,636 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-11 кл-sol.pdf] pymupdf: 4p, 116 chars
+2026-10-29 19:27:41,637 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-11 кл-sol.pdf] 116 chars (29/p) → OCR fallback
+2026-10-29 19:27:41,673 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-11 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:27:41,673 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-11 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:27:41,674 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-11 кл-sol.pdf] OCR: 7638 chars (vs Python: 116)
+2026-10-29 19:27:41,674 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-11 кл-sol.pdf] OCR: 7638 chars (vs Python: 116)
+2026-10-29 19:27:41,729 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-10 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:41,729 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-10 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:41,729 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-10 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:41,729 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-10 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:41,743 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:41,743 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:41,743 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-10 кл-probs.pdf] OCR: 1474 chars (vs Python: 29)
+2026-10-29 19:27:41,744 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-10 кл-probs.pdf] OCR: 1474 chars (vs Python: 29)
+2026-10-29 19:27:41,814 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-10 кл-sol.pdf] pymupdf: 3p, 87 chars
+2026-10-29 19:27:41,814 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-10 кл-sol.pdf] 87 chars (29/p) → OCR fallback
+2026-10-29 19:27:41,815 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-10 кл-sol.pdf] pymupdf: 3p, 87 chars
+2026-10-29 19:27:41,815 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-10 кл-sol.pdf] 87 chars (29/p) → OCR fallback
+2026-10-29 19:27:41,836 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-10 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:27:41,836 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-10 кл-sol.pdf] OCR: 6173 chars (vs Python: 87)
+2026-10-29 19:27:41,836 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-10 кл-sol.pdf] OCR: 6173 chars (vs Python: 87)
+2026-10-29 19:27:41,898 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-11 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:41,899 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-11 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:41,899 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-11 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:41,899 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-11 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:41,902 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:41,902 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:41,902 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-11 кл-probs.pdf] OCR: 1474 chars (vs Python: 29)
+2026-10-29 19:27:41,902 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-11 кл-probs.pdf] OCR: 1474 chars (vs Python: 29)
+2026-10-29 19:27:41,976 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-11 кл-sol.pdf] pymupdf: 3p, 87 chars
+2026-10-29 19:27:41,976 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-11 кл-sol.pdf] pymupdf: 3p, 87 chars
+2026-10-29 19:27:41,977 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-11 кл-sol.pdf] 87 chars (29/p) → OCR fallback
+2026-10-29 19:27:41,977 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-11 кл-sol.pdf] 87 chars (29/p) → OCR fallback
+2026-10-29 19:27:41,980 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-11 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:27:41,980 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-11 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:27:41,980 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-11 кл-sol.pdf] OCR: 6173 chars (vs Python: 87)
+2026-10-29 19:27:41,980 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-11 кл-sol.pdf] OCR: 6173 chars (vs Python: 87)
+2026-10-29 19:27:42,049 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-10 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:27:42,049 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-10 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:27:42,049 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-10 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:27:42,049 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-10 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:27:42,123 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:42,123 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:42,123 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-10 кл-probs.pdf] OCR: 1561 chars (vs Python: 24)
+2026-10-29 19:27:42,123 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-10 кл-probs.pdf] OCR: 1561 chars (vs Python: 24)
+2026-10-29 19:27:42,220 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-10 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:27:42,221 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-10 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:27:42,221 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-10 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:27:42,221 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-10 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:27:42,304 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-10 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:27:42,304 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-10 кл-sol.pdf] OCR: 8107 chars (vs Python: 96)
+2026-10-29 19:27:42,304 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-10 кл-sol.pdf] OCR: 8107 chars (vs Python: 96)
+2026-10-29 19:27:42,358 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-11 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:27:42,359 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-11 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:27:42,359 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-11 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:27:42,360 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-11 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:27:42,363 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:42,363 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-11 кл-probs.pdf] OCR: 1561 chars (vs Python: 24)
+2026-10-29 19:27:42,363 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-11 кл-probs.pdf] OCR: 1561 chars (vs Python: 24)
+2026-10-29 19:27:42,445 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-11 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:27:42,446 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-11 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:27:42,446 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-11 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:27:42,446 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-11 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:27:42,524 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-11 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:27:42,524 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-11 кл-sol.pdf] OCR: 8107 chars (vs Python: 96)
+2026-10-29 19:27:42,524 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-11 кл-sol.pdf] OCR: 8107 chars (vs Python: 96)
+2026-10-29 19:27:42,580 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-10 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:27:42,580 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-10 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:27:42,580 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-10 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:27:42,597 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:42,598 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:42,598 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-10 кл-probs.pdf] OCR: 1619 chars (vs Python: 24)
+2026-10-29 19:27:42,598 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-10 кл-probs.pdf] OCR: 1619 chars (vs Python: 24)
+2026-10-29 19:27:42,681 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-10 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:27:42,682 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-10 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:27:42,682 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-10 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:27:42,683 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-10 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:27:42,701 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-10 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:27:42,701 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-10 кл-sol.pdf] OCR: 11335 chars (vs Python: 96)
+2026-10-29 19:27:42,701 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-10 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:27:42,701 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-10 кл-sol.pdf] OCR: 11335 chars (vs Python: 96)
+2026-10-29 19:27:42,753 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-11 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:27:42,753 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-11 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:27:42,753 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-11 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:27:42,753 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-11 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:27:42,769 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:42,769 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:42,770 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-11 кл-probs.pdf] OCR: 1619 chars (vs Python: 24)
+2026-10-29 19:27:42,770 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-11 кл-probs.pdf] OCR: 1619 chars (vs Python: 24)
+2026-10-29 19:27:42,853 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-11 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:27:42,853 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-11 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:27:42,854 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-11 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:27:42,854 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-11 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:27:42,875 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-11 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:27:42,875 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-11 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:27:42,877 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-11 кл-sol.pdf] OCR: 11335 chars (vs Python: 96)
+2026-10-29 19:27:42,877 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-11 кл-sol.pdf] OCR: 11335 chars (vs Python: 96)
+2026-10-29 19:27:42,934 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-10 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:27:42,934 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-10 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:27:42,936 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-10 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:27:42,936 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-10 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:27:42,953 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:42,953 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-10 кл-probs.pdf] OCR: 1477 chars (vs Python: 24)
+2026-10-29 19:27:42,954 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:42,954 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-10 кл-probs.pdf] OCR: 1477 chars (vs Python: 24)
+2026-10-29 19:27:43,044 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-10 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:27:43,044 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-10 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:27:43,051 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-10 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:27:43,051 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-10 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:27:43,067 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-10 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:27:43,067 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-10 кл-sol.pdf] OCR: 8327 chars (vs Python: 96)
+2026-10-29 19:27:43,067 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-10 кл-sol.pdf] OCR: 8327 chars (vs Python: 96)
+2026-10-29 19:27:43,120 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-11 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:27:43,120 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-11 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:27:43,121 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-11 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:27:43,121 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-11 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:27:43,137 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:43,137 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:43,139 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-11 кл-probs.pdf] OCR: 1475 chars (vs Python: 24)
+2026-10-29 19:27:43,139 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-11 кл-probs.pdf] OCR: 1475 chars (vs Python: 24)
+2026-10-29 19:27:43,239 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-11 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:27:43,239 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-11 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:27:43,246 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-11 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:27:43,246 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-11 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:27:43,267 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-11 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:27:43,267 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-11 кл-sol.pdf] OCR: 8330 chars (vs Python: 96)
+2026-10-29 19:27:43,267 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-11 кл-sol.pdf] OCR: 8330 chars (vs Python: 96)
+2026-10-29 19:27:43,691 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2003-10 кл-probs.pdf] pymupdf: 1p, 1604 chars
+2026-10-29 19:27:43,697 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2003-10 кл-probs.pdf] pymupdf: 1p, 1604 chars
+2026-10-29 19:27:44,624 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2003-10 кл-sol.pdf] pymupdf: 3p, 4236 chars
+2026-10-29 19:27:44,640 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2003-10 кл-sol.pdf] pymupdf: 3p, 4236 chars
+2026-10-29 19:27:44,976 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2003-11 кл-probs.pdf] pymupdf: 1p, 1604 chars
+2026-10-29 19:27:44,985 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2003-11 кл-probs.pdf] pymupdf: 1p, 1604 chars
+2026-10-29 19:27:45,899 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2003-11 кл-sol.pdf] pymupdf: 3p, 4236 chars
+2026-10-29 19:27:45,917 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2003-11 кл-sol.pdf] pymupdf: 3p, 4236 chars
+2026-10-29 19:27:47,216 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-probs.pdf] pdfplumber: 3p, 5623 chars
+2026-10-29 19:27:47,298 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-probs.pdf] pdfplumber: 3p, 5623 chars
+2026-10-29 19:27:48,751 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-10-29 19:27:48,751 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-10-29 19:27:49,811 [PDF_CHUNKER] INFO [BMC_2003-2006.pdf] pypdf: 220p, 44 chars
+2026-10-29 19:27:49,812 [PDF_CHUNKER] INFO [BMC_2003-2006.pdf] 44 chars (0/p) → OCR fallback
+2026-10-29 19:27:49,821 [PDF_CHUNKER] INFO [BMC_2003-2006.pdf] OCR cache: 220p
+2026-10-29 19:27:49,822 [PDF_CHUNKER] INFO [BMC_2003-2006.pdf] OCR: 446815 chars (vs Python: 44)
+2026-10-29 19:27:49,853 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-10 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:49,853 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-10 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:49,855 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:49,855 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-10 кл-probs.pdf] OCR: 1724 chars (vs Python: 29)
+2026-10-29 19:27:49,907 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-10 кл-sol.pdf] pymupdf: 3p, 87 chars
+2026-10-29 19:27:49,907 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-10 кл-sol.pdf] 87 chars (29/p) → OCR fallback
+2026-10-29 19:27:49,909 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-10 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:27:49,909 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-10 кл-sol.pdf] OCR: 7894 chars (vs Python: 87)
+2026-10-29 19:27:49,937 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-11 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:49,937 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-11 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:49,938 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:49,939 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-11 кл-probs.pdf] OCR: 1724 chars (vs Python: 29)
+2026-10-29 19:27:49,989 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-11 кл-sol.pdf] pymupdf: 3p, 87 chars
+2026-10-29 19:27:49,990 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-11 кл-sol.pdf] 87 chars (29/p) → OCR fallback
+2026-10-29 19:27:49,991 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-11 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:27:49,992 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1995-11 кл-sol.pdf] OCR: 7894 chars (vs Python: 87)
+2026-10-29 19:27:50,021 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-10 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:50,022 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-10 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:50,023 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:50,024 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-10 кл-probs.pdf] OCR: 1887 chars (vs Python: 29)
+2026-10-29 19:27:50,092 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-10 кл-sol.pdf] pymupdf: 4p, 116 chars
+2026-10-29 19:27:50,092 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-10 кл-sol.pdf] 116 chars (29/p) → OCR fallback
+2026-10-29 19:27:50,094 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-10 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:27:50,095 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-10 кл-sol.pdf] OCR: 11885 chars (vs Python: 116)
+2026-10-29 19:27:50,130 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-11 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:50,130 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-11 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:50,132 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:50,132 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-11 кл-probs.pdf] OCR: 1887 chars (vs Python: 29)
+2026-10-29 19:27:50,139 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol.pdf] pypdf: 3p, 9295 chars
+2026-10-29 19:27:50,147 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol.pdf] pypdf: 3p, 9295 chars
+2026-10-29 19:27:50,203 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-11 кл-sol.pdf] pymupdf: 4p, 116 chars
+2026-10-29 19:27:50,203 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-11 кл-sol.pdf] 116 chars (29/p) → OCR fallback
+2026-10-29 19:27:50,204 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-11 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:27:50,205 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1996-11 кл-sol.pdf] OCR: 11885 chars (vs Python: 116)
+2026-10-29 19:27:50,241 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-10 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:50,241 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-10 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:50,242 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:50,242 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-10 кл-probs.pdf] OCR: 1352 chars (vs Python: 29)
+2026-10-29 19:27:50,297 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-10 кл-sol.pdf] pymupdf: 5p, 145 chars
+2026-10-29 19:27:50,297 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-10 кл-sol.pdf] 145 chars (29/p) → OCR fallback
+2026-10-29 19:27:50,300 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-10 кл-sol.pdf] OCR cache: 5p
+2026-10-29 19:27:50,300 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-10 кл-sol.pdf] OCR: 9238 chars (vs Python: 145)
+2026-10-29 19:27:50,326 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-11 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:50,326 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-11 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:50,329 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:50,329 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-11 кл-probs.pdf] OCR: 1352 chars (vs Python: 29)
+2026-10-29 19:27:50,394 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-11 кл-sol.pdf] pymupdf: 5p, 145 chars
+2026-10-29 19:27:50,395 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-11 кл-sol.pdf] 145 chars (29/p) → OCR fallback
+2026-10-29 19:27:50,397 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-11 кл-sol.pdf] OCR cache: 5p
+2026-10-29 19:27:50,397 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1997-11 кл-sol.pdf] OCR: 9238 chars (vs Python: 145)
+2026-10-29 19:27:50,435 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-10 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:50,436 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-10 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:50,437 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:50,437 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-10 кл-probs.pdf] OCR: 1547 chars (vs Python: 29)
+2026-10-29 19:27:50,498 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-10 кл-sol.pdf] pymupdf: 4p, 116 chars
+2026-10-29 19:27:50,499 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-10 кл-sol.pdf] 116 chars (29/p) → OCR fallback
+2026-10-29 19:27:50,501 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-10 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:27:50,501 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-10 кл-sol.pdf] OCR: 7611 chars (vs Python: 116)
+2026-10-29 19:27:50,534 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-11 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:50,535 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-11 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:50,536 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:50,537 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-11 кл-probs.pdf] OCR: 1547 chars (vs Python: 29)
+2026-10-29 19:27:50,590 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-11 кл-sol.pdf] pymupdf: 4p, 116 chars
+2026-10-29 19:27:50,590 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-11 кл-sol.pdf] 116 chars (29/p) → OCR fallback
+2026-10-29 19:27:50,591 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-11 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:27:50,592 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1998-11 кл-sol.pdf] OCR: 7638 chars (vs Python: 116)
+2026-10-29 19:27:50,621 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-10 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:50,621 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-10 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:50,621 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:50,622 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-10 кл-probs.pdf] OCR: 1474 chars (vs Python: 29)
+2026-10-29 19:27:50,671 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-10 кл-sol.pdf] pymupdf: 3p, 87 chars
+2026-10-29 19:27:50,671 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-10 кл-sol.pdf] 87 chars (29/p) → OCR fallback
+2026-10-29 19:27:50,673 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-10 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:27:50,674 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-10 кл-sol.pdf] OCR: 6173 chars (vs Python: 87)
+2026-10-29 19:27:50,713 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-11 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:27:50,713 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-11 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:27:50,715 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:50,715 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-11 кл-probs.pdf] OCR: 1474 chars (vs Python: 29)
+2026-10-29 19:27:50,769 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-11 кл-sol.pdf] pymupdf: 3p, 87 chars
+2026-10-29 19:27:50,769 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-11 кл-sol.pdf] 87 chars (29/p) → OCR fallback
+2026-10-29 19:27:50,772 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-11 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:27:50,772 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-1999-11 кл-sol.pdf] OCR: 6173 chars (vs Python: 87)
+2026-10-29 19:27:50,809 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-10 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:27:50,810 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-10 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:27:50,812 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:50,812 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-10 кл-probs.pdf] OCR: 1561 chars (vs Python: 24)
+2026-10-29 19:27:50,875 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-10 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:27:50,876 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-10 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:27:50,878 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-10 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:27:50,879 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-10 кл-sol.pdf] OCR: 8107 chars (vs Python: 96)
+2026-10-29 19:27:50,911 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-11 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:27:50,911 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-11 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:27:50,913 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:50,913 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-11 кл-probs.pdf] OCR: 1561 chars (vs Python: 24)
+2026-10-29 19:27:50,982 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-11 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:27:50,982 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-11 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:27:50,984 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-11 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:27:50,984 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2000-11 кл-sol.pdf] OCR: 8107 chars (vs Python: 96)
+2026-10-29 19:27:51,021 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-10 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:27:51,021 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-10 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:27:51,022 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:51,022 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-10 кл-probs.pdf] OCR: 1619 chars (vs Python: 24)
+2026-10-29 19:27:51,104 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-10 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:27:51,104 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-10 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:27:51,107 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-10 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:27:51,107 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-10 кл-sol.pdf] OCR: 11335 chars (vs Python: 96)
+2026-10-29 19:27:51,149 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-11 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:27:51,149 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-11 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:27:51,150 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:51,150 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-11 кл-probs.pdf] OCR: 1619 chars (vs Python: 24)
+2026-10-29 19:27:51,222 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-11 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:27:51,222 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-11 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:27:51,225 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-11 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:27:51,225 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2001-11 кл-sol.pdf] OCR: 11335 chars (vs Python: 96)
+2026-10-29 19:27:51,264 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-10 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:27:51,264 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-10 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:27:51,265 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:51,266 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-10 кл-probs.pdf] OCR: 1477 chars (vs Python: 24)
+2026-10-29 19:27:51,340 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-10 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:27:51,341 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-10 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:27:51,342 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-10 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:27:51,343 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-10 кл-sol.pdf] OCR: 8327 chars (vs Python: 96)
+2026-10-29 19:27:51,377 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-11 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:27:51,377 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-11 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:27:51,379 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:27:51,379 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-11 кл-probs.pdf] OCR: 1475 chars (vs Python: 24)
+2026-10-29 19:27:51,448 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-11 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:27:51,448 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-11 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:27:51,450 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-11 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:27:51,450 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2002-11 кл-sol.pdf] OCR: 8330 chars (vs Python: 96)
+2026-10-29 19:27:51,466 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs.pdf] pypdf: 1p, 4786 chars
+2026-10-29 19:27:51,485 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs.pdf] pypdf: 1p, 4786 chars
+2026-10-29 19:27:51,934 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2003-10 кл-probs.pdf] pymupdf: 1p, 1604 chars
+2026-10-29 19:27:53,100 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2003-10 кл-sol.pdf] pymupdf: 3p, 4236 chars
+2026-10-29 19:27:53,564 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2003-11 кл-probs.pdf] pymupdf: 1p, 1604 chars
+2026-10-29 19:27:53,784 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-10-29 19:27:53,784 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-10-29 19:27:54,808 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2003-11 кл-sol.pdf] pymupdf: 3p, 4236 chars
+2026-10-29 19:27:55,307 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-sol.pdf] pypdf: 3p, 10784 chars
+2026-10-29 19:27:55,457 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-sol.pdf] pypdf: 3p, 10784 chars
+2026-10-29 19:27:56,239 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-probs.pdf] pdfplumber: 3p, 5623 chars
+2026-10-29 19:27:56,757 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-10 кл-probs.pdf] pypdf: 1p, 4844 chars
+2026-10-29 19:27:56,967 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-10 кл-probs.pdf] pypdf: 1p, 4844 chars
+2026-10-29 19:27:57,885 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-10-29 19:27:57,886 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-10-29 19:27:58,177 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-10-29 19:27:58,178 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-10-29 19:27:59,349 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-10 кл-sol.pdf] pypdf: 3p, 9295 chars
+2026-10-29 19:27:59,913 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-10 кл-sol.pdf] pdfplumber: 2p, 9878 chars
+2026-10-29 19:28:00,061 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-10 кл-sol.pdf] pdfplumber: 2p, 9878 chars
+2026-10-29 19:28:00,618 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-probs.pdf] pypdf: 1p, 4786 chars
+2026-10-29 19:28:01,227 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs.pdf] pypdf: 1p, 4755 chars
+2026-10-29 19:28:01,338 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs.pdf] pypdf: 1p, 4755 chars
+2026-10-29 19:28:04,251 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2004-11 кл-sol.pdf] pypdf: 3p, 10784 chars
+2026-10-29 19:28:06,054 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-10 кл-probs.pdf] pypdf: 1p, 4844 chars
+2026-10-29 19:28:09,444 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-10 кл-sol.pdf] pdfplumber: 2p, 9878 chars
+2026-10-29 19:28:09,956 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol.pdf] pdfplumber: 3p, 21343 chars
+2026-10-29 19:28:10,017 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:28:10,017 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:28:10,037 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:28:10,038 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs.pdf] OCR: 1581 chars (vs Python: 24)
+2026-10-29 19:28:10,050 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-10-29 19:28:10,050 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-10-29 19:28:10,066 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol.pdf] pdfplumber: 3p, 21343 chars
+2026-10-29 19:28:10,098 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:28:10,099 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:28:10,100 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:28:10,100 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs.pdf] OCR: 1581 chars (vs Python: 24)
+2026-10-29 19:28:10,118 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-sol.pdf] pymupdf: 3p, 72 chars
+2026-10-29 19:28:10,119 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-sol.pdf] 72 chars (24/p) → OCR fallback
+2026-10-29 19:28:10,144 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:28:10,144 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-sol.pdf] OCR: 5582 chars (vs Python: 72)
+2026-10-29 19:28:10,156 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-sol.pdf] pymupdf: 3p, 72 chars
+2026-10-29 19:28:10,157 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-sol.pdf] 72 chars (24/p) → OCR fallback
+2026-10-29 19:28:10,158 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:28:10,159 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-sol.pdf] OCR: 5582 chars (vs Python: 72)
+2026-10-29 19:28:10,174 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-10-29 19:28:10,174 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-10-29 19:28:10,192 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-11 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:28:10,192 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-11 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:28:10,195 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-11 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:28:10,196 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-11 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:28:10,216 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:28:10,216 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-11 кл-probs.pdf] OCR: 1446 chars (vs Python: 24)
+2026-10-29 19:28:10,309 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-11 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:28:10,309 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-11 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:28:10,309 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-11 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:28:10,310 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-11 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:28:10,348 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-11 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:28:10,349 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-11 кл-sol.pdf] OCR: 6857 chars (vs Python: 96)
+2026-10-29 19:28:10,350 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-11 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:28:10,350 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-11 кл-sol.pdf] OCR: 6857 chars (vs Python: 96)
+2026-10-29 19:28:10,898 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-probs.pdf] pypdf: 1p, 4755 chars
+2026-10-29 19:28:11,066 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2007-10 кл-probs.pdf] pymupdf: 1p, 1567 chars
+2026-10-29 19:28:11,083 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2007-10 кл-probs.pdf] pymupdf: 1p, 1567 chars
+2026-10-29 19:28:11,769 [PDF_CHUNKER] INFO Заредени 164 STEPS точки
+2026-10-29 19:28:11,769 [PDF_CHUNKER] INFO Classify model: deepseek/deepseek-r1-0528 ($0.0005/call)
+2026-10-29 19:28:13,145 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2007-10 кл-sol.pdf] pdfplumber: 3p, 7502 chars
+2026-10-29 19:28:13,216 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2007-10 кл-sol.pdf] pdfplumber: 3p, 7502 chars
+2026-10-29 19:28:13,684 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2007-11 кл-probs.pdf] pdfplumber: 1p, 2058 chars
+2026-10-29 19:28:13,699 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2007-11 кл-probs.pdf] pdfplumber: 1p, 2058 chars
+2026-10-29 19:28:15,452 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2007-11 кл-sol.pdf] pdfplumber: 4p, 8545 chars
+2026-10-29 19:28:15,471 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2007-11 кл-sol.pdf] pdfplumber: 4p, 8545 chars
+2026-10-29 19:28:15,497 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-10 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:28:15,498 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-10 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:28:15,498 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-10 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:28:15,498 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-10 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:28:15,514 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:28:15,514 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-10 кл-probs.pdf] OCR: 1548 chars (vs Python: 24)
+2026-10-29 19:28:15,514 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-10 кл-probs.pdf] OCR: 1548 chars (vs Python: 24)
+2026-10-29 19:28:15,574 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-10 кл-sol.pdf] pymupdf: 3p, 72 chars
+2026-10-29 19:28:15,574 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-10 кл-sol.pdf] 72 chars (24/p) → OCR fallback
+2026-10-29 19:28:15,588 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-10 кл-sol.pdf] pymupdf: 3p, 72 chars
+2026-10-29 19:28:15,588 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-10 кл-sol.pdf] 72 chars (24/p) → OCR fallback
+2026-10-29 19:28:15,595 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-10 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:28:15,595 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-10 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:28:15,595 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-10 кл-sol.pdf] OCR: 6326 chars (vs Python: 72)
+2026-10-29 19:28:15,639 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-11 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:28:15,639 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-11 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:28:15,639 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-11 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:28:15,639 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-11 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:28:15,664 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:28:15,666 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-11 кл-probs.pdf] OCR: 1775 chars (vs Python: 24)
+2026-10-29 19:28:15,726 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-11 кл-sol.pdf] pymupdf: 3p, 72 chars
+2026-10-29 19:28:15,728 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-11 кл-sol.pdf] 72 chars (24/p) → OCR fallback
+2026-10-29 19:28:15,730 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-11 кл-sol.pdf] pymupdf: 3p, 72 chars
+2026-10-29 19:28:15,730 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-11 кл-sol.pdf] 72 chars (24/p) → OCR fallback
+2026-10-29 19:28:15,746 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-11 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:28:15,746 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-11 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:28:15,746 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-11 кл-sol.pdf] OCR: 6520 chars (vs Python: 72)
+2026-10-29 19:28:15,746 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-11 кл-sol.pdf] OCR: 6520 chars (vs Python: 72)
+2026-10-29 19:28:16,222 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2009-10 кл-probs.pdf] pymupdf: 2p, 1523 chars
+2026-10-29 19:28:16,243 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2009-10 кл-probs.pdf] pymupdf: 2p, 1523 chars
+2026-10-29 19:28:18,366 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2005-11 кл-sol.pdf] pdfplumber: 3p, 21343 chars
+2026-10-29 19:28:18,390 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:28:18,390 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:28:18,392 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:28:18,392 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-probs.pdf] OCR: 1581 chars (vs Python: 24)
+2026-10-29 19:28:18,443 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-sol.pdf] pymupdf: 3p, 72 chars
+2026-10-29 19:28:18,445 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-sol.pdf] 72 chars (24/p) → OCR fallback
+2026-10-29 19:28:18,446 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:28:18,446 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-10 кл-sol.pdf] OCR: 5582 chars (vs Python: 72)
+2026-10-29 19:28:18,472 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-11 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:28:18,472 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-11 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:28:18,473 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:28:18,473 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-11 кл-probs.pdf] OCR: 1446 chars (vs Python: 24)
+2026-10-29 19:28:18,532 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-11 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:28:18,532 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-11 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:28:18,533 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-11 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:28:18,534 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2006-11 кл-sol.pdf] OCR: 6857 chars (vs Python: 96)
+2026-10-29 19:28:18,992 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2007-10 кл-probs.pdf] pymupdf: 1p, 1567 chars
+2026-10-29 19:28:19,352 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2009-10 кл-sol.pdf] pdfplumber: 3p, 12526 chars
+2026-10-29 19:28:19,396 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2009-10 кл-sol.pdf] pdfplumber: 3p, 12526 chars
+2026-10-29 19:28:19,901 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2009-11 кл-probs.pdf] pymupdf: 2p, 1983 chars
+2026-10-29 19:28:19,931 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2009-11 кл-probs.pdf] pymupdf: 2p, 1983 chars
+2026-10-29 19:28:20,497 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2007-10 кл-sol.pdf] pdfplumber: 3p, 7502 chars
+2026-10-29 19:28:20,937 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2007-11 кл-probs.pdf] pdfplumber: 1p, 2058 chars
+2026-10-29 19:28:22,913 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2007-11 кл-sol.pdf] pdfplumber: 4p, 8545 chars
+2026-10-29 19:28:22,939 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-10 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:28:22,940 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-10 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:28:22,941 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-10 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:28:22,941 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-10 кл-probs.pdf] OCR: 1548 chars (vs Python: 24)
+2026-10-29 19:28:22,991 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-10 кл-sol.pdf] pymupdf: 3p, 72 chars
+2026-10-29 19:28:22,991 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-10 кл-sol.pdf] 72 chars (24/p) → OCR fallback
+2026-10-29 19:28:22,993 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-10 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:28:22,993 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-10 кл-sol.pdf] OCR: 6326 chars (vs Python: 72)
+2026-10-29 19:28:23,016 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-11 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:28:23,018 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-11 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:28:23,019 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:28:23,019 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-11 кл-probs.pdf] OCR: 1775 chars (vs Python: 24)
+2026-10-29 19:28:23,066 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-11 кл-sol.pdf] pymupdf: 3p, 72 chars
+2026-10-29 19:28:23,067 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-11 кл-sol.pdf] 72 chars (24/p) → OCR fallback
+2026-10-29 19:28:23,068 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-11 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:28:23,069 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2008-11 кл-sol.pdf] OCR: 6520 chars (vs Python: 72)
+2026-10-29 19:28:23,542 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2009-10 кл-probs.pdf] pymupdf: 2p, 1523 chars
+2026-10-29 19:28:24,695 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2009-11 кл-sol.pdf] pdfplumber: 4p, 18878 chars
+2026-10-29 19:28:24,785 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2009-11 кл-sol.pdf] pdfplumber: 4p, 18878 chars
+2026-10-29 19:28:24,977 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-10 кл-probs.pdf] pdfplumber: 2p, 774 chars
+2026-10-29 19:28:25,079 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-10 кл-probs.pdf] pdfplumber: 2p, 774 chars
+2026-10-29 19:28:26,571 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-10 кл-sol.pdf] pypdf: 7p, 13761 chars
+2026-10-29 19:28:26,604 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2009-10 кл-sol.pdf] pdfplumber: 3p, 12526 chars
+2026-10-29 19:28:26,732 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-10 кл-sol.pdf] pypdf: 7p, 13761 chars
+2026-10-29 19:28:26,926 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs.pdf] pdfplumber: 2p, 872 chars
+2026-10-29 19:28:27,013 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs.pdf] pdfplumber: 2p, 872 chars
+2026-10-29 19:28:27,106 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2009-11 кл-probs.pdf] pymupdf: 2p, 1983 chars
+2026-10-29 19:28:28,483 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-sol.pdf] pdfplumber: 4p, 8170 chars
+2026-10-29 19:28:28,547 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-sol.pdf] pdfplumber: 4p, 8170 chars
+2026-10-29 19:28:28,993 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2011-10 кл-probs.pdf] pymupdf: 2p, 1689 chars
+2026-10-29 19:28:29,048 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2011-10 кл-sol.pdf] pdfplumber: 3p, 0 chars
+2026-10-29 19:28:29,048 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2011-10 кл-sol.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:29,051 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2011-10 кл-probs.pdf] pymupdf: 2p, 1689 chars
+2026-10-29 19:28:29,067 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2011-10 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:28:29,068 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2011-10 кл-sol.pdf] OCR: 8877 chars (vs Python: 0)
+2026-10-29 19:28:29,090 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2011-10 кл-sol.pdf] pdfplumber: 3p, 0 chars
+2026-10-29 19:28:29,090 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2011-10 кл-sol.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:29,092 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2011-10 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:28:29,092 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2011-10 кл-sol.pdf] OCR: 8877 chars (vs Python: 0)
+2026-10-29 19:28:29,537 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2011-11 кл-probs.pdf] pdfplumber: 2p, 1663 chars
+2026-10-29 19:28:29,594 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2011-11 кл-probs.pdf] pdfplumber: 2p, 1663 chars
+2026-10-29 19:28:31,061 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2011-11 кл-sol.pdf] pypdf: 4p, 7801 chars
+2026-10-29 19:28:31,123 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2011-11 кл-sol.pdf] pypdf: 4p, 7801 chars
+2026-10-29 19:28:31,568 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-10 кл-probs.pdf] pymupdf: 2p, 1702 chars
+2026-10-29 19:28:31,578 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-10 кл-probs.pdf] pymupdf: 2p, 1702 chars
+2026-10-29 19:28:31,616 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-10 кл-sol.pdf] pdfplumber: 3p, 0 chars
+2026-10-29 19:28:31,616 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-10 кл-sol.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:31,616 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-10 кл-sol.pdf] pdfplumber: 3p, 0 chars
+2026-10-29 19:28:31,616 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-10 кл-sol.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:31,637 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-10 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:28:31,637 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-10 кл-sol.pdf] OCR: 7858 chars (vs Python: 0)
+2026-10-29 19:28:31,637 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-10 кл-sol.pdf] OCR: 7858 chars (vs Python: 0)
+2026-10-29 19:28:31,797 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2009-11 кл-sol.pdf] pdfplumber: 4p, 18878 chars
+2026-10-29 19:28:32,076 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-10 кл-probs.pdf] pdfplumber: 2p, 774 chars
+2026-10-29 19:28:32,084 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-11 кл-probs.pdf] pymupdf: 2p, 1465 chars
+2026-10-29 19:28:32,113 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-11 кл-probs.pdf] pymupdf: 2p, 1465 chars
+2026-10-29 19:28:32,133 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-11 кл-sol.pdf] pdfplumber: 3p, 0 chars
+2026-10-29 19:28:32,133 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-11 кл-sol.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:32,144 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-11 кл-sol.pdf] pdfplumber: 3p, 0 chars
+2026-10-29 19:28:32,144 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-11 кл-sol.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:32,157 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-11 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:28:32,158 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-11 кл-sol.pdf] OCR: 8160 chars (vs Python: 0)
+2026-10-29 19:28:32,157 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-11 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:28:32,158 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-11 кл-sol.pdf] OCR: 8160 chars (vs Python: 0)
+2026-10-29 19:28:32,428 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-10 кл-probs.pdf] pdfplumber: 1p, 1040 chars
+2026-10-29 19:28:32,434 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-10 кл-probs.pdf] pdfplumber: 1p, 1040 chars
+2026-10-29 19:28:32,478 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-10 кл-sol.pdf] pdfplumber: 3p, 0 chars
+2026-10-29 19:28:32,478 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-10 кл-sol.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:32,478 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-10 кл-sol.pdf] pdfplumber: 3p, 0 chars
+2026-10-29 19:28:32,478 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-10 кл-sol.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:32,495 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-10 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:28:32,495 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-10 кл-sol.pdf] OCR: 6906 chars (vs Python: 0)
+2026-10-29 19:28:32,822 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-11 кл-probs.pdf] pypdf: 1p, 1390 chars
+2026-10-29 19:28:32,835 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-11 кл-probs.pdf] pypdf: 1p, 1390 chars
+2026-10-29 19:28:32,865 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-11 кл-sol.pdf] pdfplumber: 2p, 0 chars
+2026-10-29 19:28:32,865 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-11 кл-sol.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:32,865 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-11 кл-sol.pdf] pdfplumber: 2p, 0 chars
+2026-10-29 19:28:32,865 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-11 кл-sol.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:32,880 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-11 кл-sol.pdf] OCR cache: 2p
+2026-10-29 19:28:32,880 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-11 кл-sol.pdf] OCR cache: 2p
+2026-10-29 19:28:32,881 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-11 кл-sol.pdf] OCR: 5948 chars (vs Python: 0)
+2026-10-29 19:28:32,881 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-11 кл-sol.pdf] OCR: 5948 chars (vs Python: 0)
+2026-10-29 19:28:33,187 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2014-11 кл-probs.pdf] pymupdf: 1p, 1272 chars
+2026-10-29 19:28:33,197 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2014-11 кл-probs.pdf] pymupdf: 1p, 1272 chars
+2026-10-29 19:28:33,233 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2014-11 кл-sol.pdf] pdfplumber: 3p, 0 chars
+2026-10-29 19:28:33,234 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2014-11 кл-sol.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:33,240 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2014-11 кл-sol.pdf] pdfplumber: 3p, 0 chars
+2026-10-29 19:28:33,240 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2014-11 кл-sol.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:33,251 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2014-11 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:28:33,252 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2014-11 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:28:33,252 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2014-11 кл-sol.pdf] OCR: 5996 chars (vs Python: 0)
+2026-10-29 19:28:33,252 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2014-11 кл-sol.pdf] OCR: 5996 chars (vs Python: 0)
+2026-10-29 19:28:33,433 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-10 кл-sol.pdf] pypdf: 7p, 13761 chars
+2026-10-29 19:28:33,568 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-11 кл-probs.pdf] pdfplumber: 1p, 1088 chars
+2026-10-29 19:28:33,577 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-11 кл-probs.pdf] pdfplumber: 1p, 1088 chars
+2026-10-29 19:28:33,701 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-probs.pdf] pdfplumber: 2p, 872 chars
+2026-10-29 19:28:34,571 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-11 кл-sol.pdf] pymupdf: 4p, 5188 chars
+2026-10-29 19:28:34,604 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-11 кл-sol.pdf] pymupdf: 4p, 5188 chars
+2026-10-29 19:28:34,969 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2016-11 кл-probs.pdf] pdfplumber: 1p, 1064 chars
+2026-10-29 19:28:34,975 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2016-11 кл-probs.pdf] pdfplumber: 1p, 1064 chars
+2026-10-29 19:28:34,990 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2010-11 кл-sol.pdf] pdfplumber: 4p, 8170 chars
+2026-10-29 19:28:35,429 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2011-10 кл-probs.pdf] pymupdf: 2p, 1689 chars
+2026-10-29 19:28:35,463 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2011-10 кл-sol.pdf] pdfplumber: 3p, 0 chars
+2026-10-29 19:28:35,463 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2011-10 кл-sol.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:35,465 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2011-10 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:28:35,465 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2011-10 кл-sol.pdf] OCR: 8877 chars (vs Python: 0)
+2026-10-29 19:28:35,767 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2016-11 кл-sol.pdf] pdfplumber: 2p, 3748 chars
+2026-10-29 19:28:35,797 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2016-11 кл-sol.pdf] pdfplumber: 2p, 3748 chars
+2026-10-29 19:28:35,802 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2017-11 кл-probs.pdf] pdfplumber: 1p, 0 chars
+2026-10-29 19:28:35,802 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2017-11 кл-probs.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:35,816 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2017-11 кл-probs.pdf] pdfplumber: 1p, 0 chars
+2026-10-29 19:28:35,816 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2017-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:28:35,816 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2017-11 кл-probs.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:35,816 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2017-11 кл-probs.pdf] OCR: 1436 chars (vs Python: 0)
+2026-10-29 19:28:35,817 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2017-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:28:35,817 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2017-11 кл-probs.pdf] OCR: 1436 chars (vs Python: 0)
+2026-10-29 19:28:35,920 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2011-11 кл-probs.pdf] pdfplumber: 2p, 1663 chars
+2026-10-29 19:28:37,186 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2017-11 кл-sol.pdf] pdfplumber: 4p, 6969 chars
+2026-10-29 19:28:37,219 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2017-11 кл-sol.pdf] pdfplumber: 4p, 6969 chars
+2026-10-29 19:28:37,533 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-probs.pdf] pdfplumber: 1p, 1189 chars
+2026-10-29 19:28:37,548 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-probs.pdf] pdfplumber: 1p, 1189 chars
+2026-10-29 19:28:37,555 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2011-11 кл-sol.pdf] pypdf: 4p, 7801 chars
+2026-10-29 19:28:37,975 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-10 кл-probs.pdf] pymupdf: 2p, 1702 chars
+2026-10-29 19:28:38,009 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-10 кл-sol.pdf] pdfplumber: 3p, 0 chars
+2026-10-29 19:28:38,009 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-10 кл-sol.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:38,011 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-10 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:28:38,011 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-10 кл-sol.pdf] OCR: 7858 chars (vs Python: 0)
+2026-10-29 19:28:38,295 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-sol.pdf] pdfplumber: 3p, 5179 chars
+2026-10-29 19:28:38,334 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-11 кл-probs.pdf] pdfplumber: 1p, 0 chars
+2026-10-29 19:28:38,335 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-11 кл-probs.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:38,336 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-sol.pdf] pdfplumber: 3p, 5179 chars
+2026-10-29 19:28:38,351 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:28:38,351 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-11 кл-probs.pdf] OCR: 1832 chars (vs Python: 0)
+2026-10-29 19:28:38,355 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-11 кл-probs.pdf] pdfplumber: 1p, 0 chars
+2026-10-29 19:28:38,355 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-11 кл-probs.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:38,356 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:28:38,357 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-11 кл-probs.pdf] OCR: 1832 chars (vs Python: 0)
+2026-10-29 19:28:38,506 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-11 кл-probs.pdf] pymupdf: 2p, 1465 chars
+2026-10-29 19:28:38,549 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-11 кл-sol.pdf] pdfplumber: 3p, 0 chars
+2026-10-29 19:28:38,550 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-11 кл-sol.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:38,552 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-11 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:28:38,552 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2012-11 кл-sol.pdf] OCR: 8160 chars (vs Python: 0)
+2026-10-29 19:28:38,831 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-10 кл-probs.pdf] pdfplumber: 1p, 1040 chars
+2026-10-29 19:28:38,857 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-10 кл-sol.pdf] pdfplumber: 3p, 0 chars
+2026-10-29 19:28:38,858 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-10 кл-sol.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:38,859 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-10 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:28:38,859 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-10 кл-sol.pdf] OCR: 6906 chars (vs Python: 0)
+2026-10-29 19:28:39,208 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-11 кл-probs.pdf] pypdf: 1p, 1390 chars
+2026-10-29 19:28:39,235 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-11 кл-sol.pdf] pdfplumber: 2p, 0 chars
+2026-10-29 19:28:39,235 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-11 кл-sol.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:39,237 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-11 кл-sol.pdf] OCR cache: 2p
+2026-10-29 19:28:39,237 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2013-11 кл-sol.pdf] OCR: 5948 chars (vs Python: 0)
+2026-10-29 19:28:39,554 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2014-11 кл-probs.pdf] pymupdf: 1p, 1272 chars
+2026-10-29 19:28:39,588 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2014-11 кл-sol.pdf] pdfplumber: 3p, 0 chars
+2026-10-29 19:28:39,589 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2014-11 кл-sol.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:39,590 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2014-11 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:28:39,590 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2014-11 кл-sol.pdf] OCR: 5996 chars (vs Python: 0)
+2026-10-29 19:28:39,914 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-11 кл-probs.pdf] pdfplumber: 1p, 1088 chars
+2026-10-29 19:28:40,284 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-11 кл-sol.pdf] pdfplumber: 2p, 9376 chars
+2026-10-29 19:28:40,289 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-11 кл-sol.pdf] pdfplumber: 2p, 9376 chars
+2026-10-29 19:28:40,314 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-11 кл-probs.pdf] pdfplumber: 1p, 0 chars
+2026-10-29 19:28:40,314 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-11 кл-probs.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:40,315 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-11 кл-probs.pdf] pdfplumber: 1p, 0 chars
+2026-10-29 19:28:40,315 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-11 кл-probs.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:40,336 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:28:40,336 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:28:40,336 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-11 кл-probs.pdf] OCR: 1464 chars (vs Python: 0)
+2026-10-29 19:28:40,336 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-11 кл-probs.pdf] OCR: 1464 chars (vs Python: 0)
+2026-10-29 19:28:40,836 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2015-11 кл-sol.pdf] pymupdf: 4p, 5188 chars
+2026-10-29 19:28:41,174 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2016-11 кл-probs.pdf] pdfplumber: 1p, 1064 chars
+2026-10-29 19:28:41,991 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2016-11 кл-sol.pdf] pdfplumber: 2p, 3748 chars
+2026-10-29 19:28:42,014 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2017-11 кл-probs.pdf] pdfplumber: 1p, 0 chars
+2026-10-29 19:28:42,014 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2017-11 кл-probs.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:42,017 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2017-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:28:42,017 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2017-11 кл-probs.pdf] OCR: 1436 chars (vs Python: 0)
+2026-10-29 19:28:43,368 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2017-11 кл-sol.pdf] pdfplumber: 4p, 6969 chars
+2026-10-29 19:28:43,771 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-probs.pdf] pdfplumber: 1p, 1189 chars
+2026-10-29 19:28:43,848 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-11 кл-sol.pdf] pypdf: 2p, 12955 chars
+2026-10-29 19:28:43,953 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-11 кл-sol.pdf] pypdf: 2p, 12955 chars
+2026-10-29 19:28:44,156 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs.pdf] pypdf: 1p, 3147 chars
+2026-10-29 19:28:44,206 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-sol.pdf] pdfplumber: 3p, 0 chars
+2026-10-29 19:28:44,206 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-sol.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:44,219 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:28:44,219 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-sol.pdf] OCR: 6655 chars (vs Python: 0)
+2026-10-29 19:28:44,252 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs.pdf] pypdf: 1p, 3147 chars
+2026-10-29 19:28:44,294 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-sol.pdf] pdfplumber: 3p, 0 chars
+2026-10-29 19:28:44,294 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-sol.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:44,296 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:28:44,296 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-sol.pdf] OCR: 6655 chars (vs Python: 0)
+2026-10-29 19:28:44,583 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2018-11 кл-sol.pdf] pdfplumber: 3p, 5179 chars
+2026-10-29 19:28:44,599 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-11 кл-probs.pdf] pdfplumber: 1p, 0 chars
+2026-10-29 19:28:44,599 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-11 кл-probs.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:44,600 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:28:44,600 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-11 кл-probs.pdf] OCR: 1832 chars (vs Python: 0)
+2026-10-29 19:28:46,384 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-11 кл-probs.pdf] pdfplumber: 1p, 8744 chars
+2026-10-29 19:28:46,450 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-11 кл-probs.pdf] pdfplumber: 1p, 8744 chars
+2026-10-29 19:28:46,554 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2019-11 кл-sol.pdf] pdfplumber: 2p, 9376 chars
+2026-10-29 19:28:46,575 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-11 кл-probs.pdf] pdfplumber: 1p, 0 chars
+2026-10-29 19:28:46,576 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-11 кл-probs.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:46,578 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:28:46,578 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-11 кл-probs.pdf] OCR: 1464 chars (vs Python: 0)
+2026-10-29 19:28:48,049 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-11 кл-sol.pdf] pdfplumber: 3p, 6545 chars
+2026-10-29 19:28:48,092 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2023-11 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:28:48,093 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2023-11 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:28:48,177 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2023-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:28:48,177 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2023-11 кл-probs.pdf] OCR: 929 chars (vs Python: 24)
+2026-10-29 19:28:48,238 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-11 кл-sol.pdf] pdfplumber: 3p, 6545 chars
+2026-10-29 19:28:48,268 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2023-11 кл-sol.pdf] pymupdf: 2p, 48 chars
+2026-10-29 19:28:48,268 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2023-11 кл-sol.pdf] 48 chars (24/p) → OCR fallback
+2026-10-29 19:28:48,278 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2023-11 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:28:48,278 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2023-11 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:28:48,279 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2023-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:28:48,280 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2023-11 кл-probs.pdf] OCR: 929 chars (vs Python: 24)
+2026-10-29 19:28:48,284 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2023-11 кл-sol.pdf] OCR cache: 2p
+2026-10-29 19:28:48,284 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2023-11 кл-sol.pdf] OCR: 4993 chars (vs Python: 48)
+2026-10-29 19:28:48,318 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2023-11 кл-sol.pdf] pymupdf: 2p, 48 chars
+2026-10-29 19:28:48,319 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2023-11 кл-sol.pdf] 48 chars (24/p) → OCR fallback
+2026-10-29 19:28:48,320 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2023-11 кл-sol.pdf] OCR cache: 2p
+2026-10-29 19:28:48,322 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2023-11 кл-sol.pdf] OCR: 4993 chars (vs Python: 48)
+2026-10-29 19:28:48,324 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] pdfplumber: 1p, 0 chars
+2026-10-29 19:28:48,324 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:48,337 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] pdfplumber: 1p, 0 chars
+2026-10-29 19:28:48,337 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:48,338 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:28:48,338 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] OCR: 1110 chars (vs Python: 0)
+2026-10-29 19:28:48,340 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:28:48,341 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] OCR: 1110 chars (vs Python: 0)
+2026-10-29 19:28:50,338 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2020-11 кл-sol.pdf] pypdf: 2p, 12955 chars
+2026-10-29 19:28:50,612 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-probs.pdf] pypdf: 1p, 3147 chars
+2026-10-29 19:28:50,639 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-sol.pdf] pdfplumber: 3p, 0 chars
+2026-10-29 19:28:50,639 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-sol.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:50,641 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:28:50,641 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2021-11 кл-sol.pdf] OCR: 6655 chars (vs Python: 0)
+2026-10-29 19:28:51,038 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-sol.pdf] pypdf: 3p, 10928 chars
+2026-10-29 19:28:51,052 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-sol.pdf] pypdf: 3p, 10928 chars
+2026-10-29 19:28:51,328 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-11 кл-probs.pdf] pdfplumber: 1p, 4376 chars
+2026-10-29 19:28:51,346 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-11 кл-probs.pdf] pdfplumber: 1p, 4376 chars
+2026-10-29 19:28:51,382 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-11 кл-sol.pdf] pymupdf: 2p, 48 chars
+2026-10-29 19:28:51,382 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-11 кл-sol.pdf] 48 chars (24/p) → OCR fallback
+2026-10-29 19:28:51,384 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-11 кл-sol.pdf] pymupdf: 2p, 48 chars
+2026-10-29 19:28:51,384 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-11 кл-sol.pdf] 48 chars (24/p) → OCR fallback
+2026-10-29 19:28:51,443 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-11 кл-sol.pdf] OCR cache: 2p
+2026-10-29 19:28:51,443 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-11 кл-sol.pdf] OCR: 7411 chars (vs Python: 48)
+2026-10-29 19:28:51,444 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-11 кл-sol.pdf] OCR: 7411 chars (vs Python: 48)
+2026-10-29 19:28:51,884 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2026-11 кл-probs.pdf] pdfplumber: 1p, 1385 chars
+2026-10-29 19:28:51,890 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2026-11 кл-probs.pdf] pdfplumber: 1p, 1385 chars
+2026-10-29 19:28:52,340 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1983-9-12 кл-probs.pdf] pymupdf: 2p, 1709 chars
+2026-10-29 19:28:52,384 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1983-9-12 кл-probs.pdf] pymupdf: 2p, 1709 chars
+2026-10-29 19:28:52,879 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-11 кл-probs.pdf] pdfplumber: 1p, 8744 chars
+2026-10-29 19:28:54,046 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1983-9-12 кл-sol.pdf] pdfplumber: 4p, 8861 chars
+2026-10-29 19:28:54,076 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1983-9-12 кл-sol.pdf] pdfplumber: 4p, 8861 chars
+2026-10-29 19:28:54,361 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2022-11 кл-sol.pdf] pdfplumber: 3p, 6545 chars
+2026-10-29 19:28:54,395 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2023-11 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:28:54,396 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2023-11 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:28:54,397 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2023-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:28:54,397 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2023-11 кл-probs.pdf] OCR: 929 chars (vs Python: 24)
+2026-10-29 19:28:54,439 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2023-11 кл-sol.pdf] pymupdf: 2p, 48 chars
+2026-10-29 19:28:54,439 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2023-11 кл-sol.pdf] 48 chars (24/p) → OCR fallback
+2026-10-29 19:28:54,442 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2023-11 кл-sol.pdf] OCR cache: 2p
+2026-10-29 19:28:54,442 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2023-11 кл-sol.pdf] OCR: 4993 chars (vs Python: 48)
+2026-10-29 19:28:54,456 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] pdfplumber: 1p, 0 chars
+2026-10-29 19:28:54,457 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:28:54,458 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:28:54,458 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-probs.pdf] OCR: 1110 chars (vs Python: 0)
+2026-10-29 19:28:54,529 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1984-9-12 кл-probs.pdf] pymupdf: 2p, 1996 chars
+2026-10-29 19:28:54,579 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1984-9-12 кл-probs.pdf] pymupdf: 2p, 1996 chars
+2026-10-29 19:28:56,013 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1984-9-12 кл-sol.pdf] pymupdf: 4p, 6955 chars
+2026-10-29 19:28:56,038 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1984-9-12 кл-sol.pdf] pymupdf: 4p, 6955 chars
+2026-10-29 19:28:56,540 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1985-9-12 кл-probs.pdf] pymupdf: 2p, 2211 chars
+2026-10-29 19:28:56,571 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1985-9-12 кл-probs.pdf] pymupdf: 2p, 2211 chars
+2026-10-29 19:28:57,044 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2024-11 кл-sol.pdf] pypdf: 3p, 10928 chars
+2026-10-29 19:28:57,354 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-11 кл-probs.pdf] pdfplumber: 1p, 4376 chars
+2026-10-29 19:28:57,392 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-11 кл-sol.pdf] pymupdf: 2p, 48 chars
+2026-10-29 19:28:57,392 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-11 кл-sol.pdf] 48 chars (24/p) → OCR fallback
+2026-10-29 19:28:57,394 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-11 кл-sol.pdf] OCR cache: 2p
+2026-10-29 19:28:57,395 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2025-11 кл-sol.pdf] OCR: 7411 chars (vs Python: 48)
+2026-10-29 19:28:57,802 [PDF_CHUNKER] INFO [OLI-2-Областен кръг-2026-11 кл-probs.pdf] pdfplumber: 1p, 1385 chars
+2026-10-29 19:28:58,198 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1983-9-12 кл-probs.pdf] pymupdf: 2p, 1709 chars
+2026-10-29 19:28:58,536 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1985-9-12 кл-sol.pdf] pdfplumber: 5p, 11034 chars
+2026-10-29 19:28:58,597 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1985-9-12 кл-sol.pdf] pdfplumber: 5p, 11034 chars
+2026-10-29 19:28:59,002 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1986-9-12 кл-probs.pdf] pymupdf: 2p, 1803 chars
+2026-10-29 19:28:59,022 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1986-9-12 кл-probs.pdf] pymupdf: 2p, 1803 chars
+2026-10-29 19:28:59,913 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1983-9-12 кл-sol.pdf] pdfplumber: 4p, 8861 chars
+2026-10-29 19:29:00,421 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1984-9-12 кл-probs.pdf] pymupdf: 2p, 1996 chars
+2026-10-29 19:29:00,921 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1986-9-12 кл-sol.pdf] pdfplumber: 4p, 10293 chars
+2026-10-29 19:29:00,933 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1986-9-12 кл-sol.pdf] pdfplumber: 4p, 10293 chars
+2026-10-29 19:29:01,400 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1987-9-12 кл-probs.pdf] pymupdf: 2p, 2086 chars
+2026-10-29 19:29:01,418 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1987-9-12 кл-probs.pdf] pymupdf: 2p, 2086 chars
+2026-10-29 19:29:01,758 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1984-9-12 кл-sol.pdf] pymupdf: 4p, 6955 chars
+2026-10-29 19:29:02,270 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1985-9-12 кл-probs.pdf] pymupdf: 2p, 2211 chars
+2026-10-29 19:29:03,435 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1987-9-12 кл-sol.pdf] pdfplumber: 5p, 12148 chars
+2026-10-29 19:29:03,445 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1987-9-12 кл-sol.pdf] pdfplumber: 5p, 12148 chars
+2026-10-29 19:29:03,880 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1988-9-12 кл-probs.pdf] pymupdf: 2p, 1595 chars
+2026-10-29 19:29:03,883 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1988-9-12 кл-probs.pdf] pymupdf: 2p, 1595 chars
+2026-10-29 19:29:04,287 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1985-9-12 кл-sol.pdf] pdfplumber: 5p, 11034 chars
+2026-10-29 19:29:04,703 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1986-9-12 кл-probs.pdf] pymupdf: 2p, 1803 chars
+2026-10-29 19:29:05,774 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1988-9-12 кл-sol.pdf] pdfplumber: 5p, 9727 chars
+2026-10-29 19:29:05,785 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1988-9-12 кл-sol.pdf] pdfplumber: 5p, 9727 chars
+2026-10-29 19:29:06,392 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1989-9-12 кл-probs.pdf] pymupdf: 2p, 2308 chars
+2026-10-29 19:29:06,438 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1989-9-12 кл-probs.pdf] pymupdf: 2p, 2308 chars
+2026-10-29 19:29:06,454 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1986-9-12 кл-sol.pdf] pdfplumber: 4p, 10293 chars
+2026-10-29 19:29:06,967 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1987-9-12 кл-probs.pdf] pymupdf: 2p, 2086 chars
+2026-10-29 19:29:08,663 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1989-9-12 кл-sol.pdf] pdfplumber: 5p, 11459 chars
+2026-10-29 19:29:08,688 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1989-9-12 кл-sol.pdf] pdfplumber: 5p, 11459 chars
+2026-10-29 19:29:09,062 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1987-9-12 кл-sol.pdf] pdfplumber: 5p, 12148 chars
+2026-10-29 19:29:09,235 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1990-9-12 кл-probs.pdf] pdfplumber: 2p, 2181 chars
+2026-10-29 19:29:09,235 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1990-9-12 кл-probs.pdf] pdfplumber: 2p, 2181 chars
+2026-10-29 19:29:09,518 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1988-9-12 кл-probs.pdf] pymupdf: 2p, 1595 chars
+2026-10-29 19:29:11,416 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1988-9-12 кл-sol.pdf] pdfplumber: 5p, 9727 chars
+2026-10-29 19:29:12,046 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1989-9-12 кл-probs.pdf] pymupdf: 2p, 2308 chars
+2026-10-29 19:29:12,081 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1990-9-12 кл-sol.pdf] pdfplumber: 6p, 16388 chars
+2026-10-29 19:29:12,090 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1990-9-12 кл-sol.pdf] pdfplumber: 6p, 16388 chars
+2026-10-29 19:29:12,716 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1991-9-12 кл-probs.pdf] pymupdf: 2p, 2984 chars
+2026-10-29 19:29:12,730 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1991-9-12 кл-probs.pdf] pymupdf: 2p, 2984 chars
+2026-10-29 19:29:14,374 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1989-9-12 кл-sol.pdf] pdfplumber: 5p, 11459 chars
+2026-10-29 19:29:14,989 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1990-9-12 кл-probs.pdf] pdfplumber: 2p, 2181 chars
+2026-10-29 19:29:15,590 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1991-9-12 кл-sol.pdf] pdfplumber: 6p, 14257 chars
+2026-10-29 19:29:15,644 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1991-9-12 кл-sol.pdf] pdfplumber: 6p, 14257 chars
+2026-10-29 19:29:16,184 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1992-9-12 кл-probs.pdf] pymupdf: 2p, 2570 chars
+2026-10-29 19:29:16,255 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1992-9-12 кл-probs.pdf] pymupdf: 2p, 2570 chars
+2026-10-29 19:29:17,804 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1990-9-12 кл-sol.pdf] pdfplumber: 6p, 16388 chars
+2026-10-29 19:29:18,443 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1991-9-12 кл-probs.pdf] pymupdf: 2p, 2984 chars
+2026-10-29 19:29:18,447 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1992-9-12 кл-sol.pdf] pymupdf: 5p, 14230 chars
+2026-10-29 19:29:18,482 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1992-9-12 кл-sol.pdf] pymupdf: 5p, 14230 chars
+2026-10-29 19:29:19,118 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1993-9-12 кл-probs.pdf] pymupdf: 2p, 2464 chars
+2026-10-29 19:29:19,128 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1993-9-12 кл-probs.pdf] pymupdf: 2p, 2464 chars
+2026-10-29 19:29:20,895 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1993-9-12 кл-sol.pdf] pdfplumber: 4p, 10709 chars
+2026-10-29 19:29:20,909 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1993-9-12 кл-sol.pdf] pdfplumber: 4p, 10709 chars
+2026-10-29 19:29:20,925 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1991-9-12 кл-sol.pdf] pdfplumber: 6p, 14257 chars
+2026-10-29 19:29:21,348 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1994-9-12 кл-probs.pdf] pymupdf: 2p, 1518 chars
+2026-10-29 19:29:21,348 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1994-9-12 кл-probs.pdf] pymupdf: 2p, 1518 chars
+2026-10-29 19:29:21,458 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1992-9-12 кл-probs.pdf] pymupdf: 2p, 2570 chars
+2026-10-29 19:29:22,180 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1994-9-12 кл-sol.pdf] pdfplumber: 2p, 3837 chars
+2026-10-29 19:29:22,199 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1994-9-12 кл-sol.pdf] pdfplumber: 2p, 3837 chars
+2026-10-29 19:29:22,223 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1995-9-12 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:29:22,223 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1995-9-12 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:29:22,230 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1995-9-12 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:29:22,230 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1995-9-12 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:29:22,262 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1995-9-12 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:29:22,263 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1995-9-12 кл-probs.pdf] OCR: 1993 chars (vs Python: 29)
+2026-10-29 19:29:22,263 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1995-9-12 кл-probs.pdf] OCR: 1993 chars (vs Python: 29)
+2026-10-29 19:29:22,327 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1995-9-12 кл-sol.pdf] pymupdf: 3p, 87 chars
+2026-10-29 19:29:22,328 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1995-9-12 кл-sol.pdf] 87 chars (29/p) → OCR fallback
+2026-10-29 19:29:22,330 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1995-9-12 кл-sol.pdf] pymupdf: 3p, 87 chars
+2026-10-29 19:29:22,331 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1995-9-12 кл-sol.pdf] 87 chars (29/p) → OCR fallback
+2026-10-29 19:29:22,380 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1995-9-12 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:29:22,380 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1995-9-12 кл-sol.pdf] OCR: 8619 chars (vs Python: 87)
+2026-10-29 19:29:22,380 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1995-9-12 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:29:22,381 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1995-9-12 кл-sol.pdf] OCR: 8619 chars (vs Python: 87)
+2026-10-29 19:29:22,418 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1996-9-12 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:29:22,418 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1996-9-12 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:29:22,418 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1996-9-12 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:29:22,419 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1996-9-12 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:29:22,434 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1996-9-12 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:29:22,434 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1996-9-12 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:29:22,434 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1996-9-12 кл-probs.pdf] OCR: 1762 chars (vs Python: 29)
+2026-10-29 19:29:22,434 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1996-9-12 кл-probs.pdf] OCR: 1762 chars (vs Python: 29)
+2026-10-29 19:29:22,515 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1996-9-12 кл-sol.pdf] pymupdf: 4p, 116 chars
+2026-10-29 19:29:22,516 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1996-9-12 кл-sol.pdf] 116 chars (29/p) → OCR fallback
+2026-10-29 19:29:22,516 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1996-9-12 кл-sol.pdf] pymupdf: 4p, 116 chars
+2026-10-29 19:29:22,516 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1996-9-12 кл-sol.pdf] 116 chars (29/p) → OCR fallback
+2026-10-29 19:29:22,535 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1996-9-12 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:29:22,535 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1996-9-12 кл-sol.pdf] OCR: 13412 chars (vs Python: 116)
+2026-10-29 19:29:22,535 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1996-9-12 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:29:22,535 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1996-9-12 кл-sol.pdf] OCR: 13412 chars (vs Python: 116)
+2026-10-29 19:29:22,618 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1997-9-12 кл-probs.pdf] pymupdf: 5p, 135 chars
+2026-10-29 19:29:22,618 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1997-9-12 кл-probs.pdf] 135 chars (27/p) → OCR fallback
+2026-10-29 19:29:22,619 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1997-9-12 кл-probs.pdf] pymupdf: 5p, 135 chars
+2026-10-29 19:29:22,619 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1997-9-12 кл-probs.pdf] 135 chars (27/p) → OCR fallback
+2026-10-29 19:29:22,658 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1997-9-12 кл-probs.pdf] OCR cache: 5p
+2026-10-29 19:29:22,658 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1997-9-12 кл-probs.pdf] OCR cache: 5p
+2026-10-29 19:29:22,658 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1997-9-12 кл-probs.pdf] OCR: 12196 chars (vs Python: 135)
+2026-10-29 19:29:22,658 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1997-9-12 кл-probs.pdf] OCR: 12196 chars (vs Python: 135)
+2026-10-29 19:29:22,701 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1997-9-12 кл-sol.pdf] pymupdf: 1p, 27 chars
+2026-10-29 19:29:22,701 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1997-9-12 кл-sol.pdf] 27 chars (27/p) → OCR fallback
+2026-10-29 19:29:22,702 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1997-9-12 кл-sol.pdf] pymupdf: 1p, 27 chars
+2026-10-29 19:29:22,702 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1997-9-12 кл-sol.pdf] 27 chars (27/p) → OCR fallback
+2026-10-29 19:29:22,732 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1997-9-12 кл-sol.pdf] OCR cache: 1p
+2026-10-29 19:29:22,732 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1997-9-12 кл-sol.pdf] OCR cache: 1p
+2026-10-29 19:29:22,732 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1997-9-12 кл-sol.pdf] OCR: 2131 chars (vs Python: 27)
+2026-10-29 19:29:22,732 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1997-9-12 кл-sol.pdf] OCR: 2131 chars (vs Python: 27)
+2026-10-29 19:29:22,772 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1998-9-12 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:29:22,772 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1998-9-12 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:29:22,776 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1998-9-12 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:29:22,776 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1998-9-12 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:29:22,800 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1998-9-12 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:29:22,800 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1998-9-12 кл-probs.pdf] OCR: 1558 chars (vs Python: 29)
+2026-10-29 19:29:22,800 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1998-9-12 кл-probs.pdf] OCR: 1558 chars (vs Python: 29)
+2026-10-29 19:29:22,868 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1998-9-12 кл-sol.pdf] pymupdf: 3p, 87 chars
+2026-10-29 19:29:22,868 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1998-9-12 кл-sol.pdf] pymupdf: 3p, 87 chars
+2026-10-29 19:29:22,868 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1998-9-12 кл-sol.pdf] 87 chars (29/p) → OCR fallback
+2026-10-29 19:29:22,868 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1998-9-12 кл-sol.pdf] 87 chars (29/p) → OCR fallback
+2026-10-29 19:29:22,909 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1998-9-12 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:29:22,909 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1998-9-12 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:29:22,909 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1998-9-12 кл-sol.pdf] OCR: 6750 chars (vs Python: 87)
+2026-10-29 19:29:22,909 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1998-9-12 кл-sol.pdf] OCR: 6750 chars (vs Python: 87)
+2026-10-29 19:29:22,958 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1999-9-12 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:29:22,958 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1999-9-12 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:29:22,958 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1999-9-12 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:29:22,959 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1999-9-12 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:29:22,973 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1999-9-12 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:29:22,973 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1999-9-12 кл-probs.pdf] OCR: 1558 chars (vs Python: 29)
+2026-10-29 19:29:22,973 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1999-9-12 кл-probs.pdf] OCR: 1558 chars (vs Python: 29)
+2026-10-29 19:29:23,041 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1999-9-12 кл-sol.pdf] pymupdf: 4p, 116 chars
+2026-10-29 19:29:23,041 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1999-9-12 кл-sol.pdf] 116 chars (29/p) → OCR fallback
+2026-10-29 19:29:23,045 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1999-9-12 кл-sol.pdf] pymupdf: 4p, 116 chars
+2026-10-29 19:29:23,046 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1999-9-12 кл-sol.pdf] 116 chars (29/p) → OCR fallback
+2026-10-29 19:29:23,091 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1999-9-12 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:29:23,091 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1999-9-12 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:29:23,092 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1999-9-12 кл-sol.pdf] OCR: 9113 chars (vs Python: 116)
+2026-10-29 19:29:23,092 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1999-9-12 кл-sol.pdf] OCR: 9113 chars (vs Python: 116)
+2026-10-29 19:29:23,119 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2000-9-12 кл-probs.pdf] pdfplumber: 1p, 0 chars
+2026-10-29 19:29:23,119 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2000-9-12 кл-probs.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:29:23,445 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2000-9-12 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:29:23,445 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2000-9-12 кл-probs.pdf] OCR: 2199 chars (vs Python: 0)
+2026-10-29 19:29:23,445 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2000-9-12 кл-probs.pdf] OCR: 2199 chars (vs Python: 0)
+2026-10-29 19:29:23,551 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2000-9-12 кл-sol.pdf] pymupdf: 6p, 144 chars
+2026-10-29 19:29:23,551 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2000-9-12 кл-sol.pdf] 144 chars (24/p) → OCR fallback
+2026-10-29 19:29:23,555 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2000-9-12 кл-sol.pdf] pymupdf: 6p, 144 chars
+2026-10-29 19:29:23,555 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2000-9-12 кл-sol.pdf] 144 chars (24/p) → OCR fallback
+2026-10-29 19:29:23,619 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2000-9-12 кл-sol.pdf] OCR cache: 6p
+2026-10-29 19:29:23,619 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2000-9-12 кл-sol.pdf] OCR cache: 6p
+2026-10-29 19:29:23,620 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2000-9-12 кл-sol.pdf] OCR: 12396 chars (vs Python: 144)
+2026-10-29 19:29:23,620 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2000-9-12 кл-sol.pdf] OCR: 12396 chars (vs Python: 144)
+2026-10-29 19:29:23,664 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2001-9-12 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:29:23,665 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2001-9-12 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:29:23,671 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2001-9-12 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:29:23,671 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2001-9-12 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:29:23,682 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2001-9-12 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:29:23,682 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2001-9-12 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:29:23,682 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2001-9-12 кл-probs.pdf] OCR: 2599 chars (vs Python: 24)
+2026-10-29 19:29:23,682 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1992-9-12 кл-sol.pdf] pymupdf: 5p, 14230 chars
+2026-10-29 19:29:23,682 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2001-9-12 кл-probs.pdf] OCR: 2599 chars (vs Python: 24)
+2026-10-29 19:29:23,755 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2001-9-12 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:29:23,756 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2001-9-12 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:29:23,764 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2001-9-12 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:29:23,764 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2001-9-12 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:29:23,772 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2001-9-12 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:29:23,773 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2001-9-12 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:29:23,773 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2001-9-12 кл-sol.pdf] OCR: 13177 chars (vs Python: 96)
+2026-10-29 19:29:23,773 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2001-9-12 кл-sol.pdf] OCR: 13177 chars (vs Python: 96)
+2026-10-29 19:29:23,815 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2002-9-12 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:29:23,815 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2002-9-12 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:29:23,816 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2002-9-12 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:29:23,817 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2002-9-12 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:29:23,835 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2002-9-12 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:29:23,835 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2002-9-12 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:29:23,835 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2002-9-12 кл-probs.pdf] OCR: 1784 chars (vs Python: 24)
+2026-10-29 19:29:23,835 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2002-9-12 кл-probs.pdf] OCR: 1784 chars (vs Python: 24)
+2026-10-29 19:29:23,910 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2002-9-12 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:29:23,910 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2002-9-12 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:29:23,910 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2002-9-12 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:29:23,910 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2002-9-12 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:29:23,935 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2002-9-12 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:29:23,935 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2002-9-12 кл-sol.pdf] OCR: 9047 chars (vs Python: 96)
+2026-10-29 19:29:23,935 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2002-9-12 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:29:23,935 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2002-9-12 кл-sol.pdf] OCR: 9047 chars (vs Python: 96)
+2026-10-29 19:29:24,001 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2003-9-12 кл-probs.pdf] pymupdf: 1p, 90 chars
+2026-10-29 19:29:24,001 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2003-9-12 кл-probs.pdf] 90 chars (90/p) → OCR fallback
+2026-10-29 19:29:24,001 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2003-9-12 кл-probs.pdf] pymupdf: 1p, 90 chars
+2026-10-29 19:29:24,001 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2003-9-12 кл-probs.pdf] 90 chars (90/p) → OCR fallback
+2026-10-29 19:29:24,023 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2003-9-12 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:29:24,023 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2003-9-12 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:29:24,023 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2003-9-12 кл-probs.pdf] OCR: 1499 chars (vs Python: 90)
+2026-10-29 19:29:24,023 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2003-9-12 кл-probs.pdf] OCR: 1499 chars (vs Python: 90)
+2026-10-29 19:29:24,187 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2003-9-12 кл-sol.pdf] pymupdf: 4p, 228 chars
+2026-10-29 19:29:24,188 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2003-9-12 кл-sol.pdf] 228 chars (57/p) → OCR fallback
+2026-10-29 19:29:24,188 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2003-9-12 кл-sol.pdf] pymupdf: 4p, 228 chars
+2026-10-29 19:29:24,188 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2003-9-12 кл-sol.pdf] 228 chars (57/p) → OCR fallback
+2026-10-29 19:29:24,242 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2003-9-12 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:29:24,242 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2003-9-12 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:29:24,242 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2003-9-12 кл-sol.pdf] OCR: 9033 chars (vs Python: 228)
+2026-10-29 19:29:24,242 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2003-9-12 кл-sol.pdf] OCR: 9033 chars (vs Python: 228)
+2026-10-29 19:29:24,266 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1993-9-12 кл-probs.pdf] pymupdf: 2p, 2464 chars
+2026-10-29 19:29:24,653 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2004-9-12 кл-probs.pdf] pypdf: 1p, 1970 chars
+2026-10-29 19:29:24,659 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2004-9-12 кл-probs.pdf] pypdf: 1p, 1970 chars
+2026-10-29 19:29:26,090 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1993-9-12 кл-sol.pdf] pdfplumber: 4p, 10709 chars
+2026-10-29 19:29:26,469 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1994-9-12 кл-probs.pdf] pymupdf: 2p, 1518 chars
+2026-10-29 19:29:27,268 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1994-9-12 кл-sol.pdf] pdfplumber: 2p, 3837 chars
+2026-10-29 19:29:27,291 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1995-9-12 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:29:27,291 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1995-9-12 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:29:27,294 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1995-9-12 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:29:27,294 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1995-9-12 кл-probs.pdf] OCR: 1993 chars (vs Python: 29)
+2026-10-29 19:29:27,345 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1995-9-12 кл-sol.pdf] pymupdf: 3p, 87 chars
+2026-10-29 19:29:27,345 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1995-9-12 кл-sol.pdf] 87 chars (29/p) → OCR fallback
+2026-10-29 19:29:27,347 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1995-9-12 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:29:27,347 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1995-9-12 кл-sol.pdf] OCR: 8619 chars (vs Python: 87)
+2026-10-29 19:29:27,375 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1996-9-12 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:29:27,376 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1996-9-12 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:29:27,378 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1996-9-12 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:29:27,378 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1996-9-12 кл-probs.pdf] OCR: 1762 chars (vs Python: 29)
+2026-10-29 19:29:27,429 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1996-9-12 кл-sol.pdf] pymupdf: 4p, 116 chars
+2026-10-29 19:29:27,429 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1996-9-12 кл-sol.pdf] 116 chars (29/p) → OCR fallback
+2026-10-29 19:29:27,431 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1996-9-12 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:29:27,431 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1996-9-12 кл-sol.pdf] OCR: 13412 chars (vs Python: 116)
+2026-10-29 19:29:27,482 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1997-9-12 кл-probs.pdf] pymupdf: 5p, 135 chars
+2026-10-29 19:29:27,482 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1997-9-12 кл-probs.pdf] 135 chars (27/p) → OCR fallback
+2026-10-29 19:29:27,484 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1997-9-12 кл-probs.pdf] OCR cache: 5p
+2026-10-29 19:29:27,484 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1997-9-12 кл-probs.pdf] OCR: 12196 chars (vs Python: 135)
+2026-10-29 19:29:27,505 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1997-9-12 кл-sol.pdf] pymupdf: 1p, 27 chars
+2026-10-29 19:29:27,505 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1997-9-12 кл-sol.pdf] 27 chars (27/p) → OCR fallback
+2026-10-29 19:29:27,507 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1997-9-12 кл-sol.pdf] OCR cache: 1p
+2026-10-29 19:29:27,507 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1997-9-12 кл-sol.pdf] OCR: 2131 chars (vs Python: 27)
+2026-10-29 19:29:27,532 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1998-9-12 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:29:27,532 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1998-9-12 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:29:27,534 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1998-9-12 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:29:27,534 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1998-9-12 кл-probs.pdf] OCR: 1558 chars (vs Python: 29)
+2026-10-29 19:29:27,572 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1998-9-12 кл-sol.pdf] pymupdf: 3p, 87 chars
+2026-10-29 19:29:27,572 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1998-9-12 кл-sol.pdf] 87 chars (29/p) → OCR fallback
+2026-10-29 19:29:27,573 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1998-9-12 кл-sol.pdf] OCR cache: 3p
+2026-10-29 19:29:27,574 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1998-9-12 кл-sol.pdf] OCR: 6750 chars (vs Python: 87)
+2026-10-29 19:29:27,600 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1999-9-12 кл-probs.pdf] pymupdf: 1p, 29 chars
+2026-10-29 19:29:27,602 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1999-9-12 кл-probs.pdf] 29 chars (29/p) → OCR fallback
+2026-10-29 19:29:27,606 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1999-9-12 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:29:27,606 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1999-9-12 кл-probs.pdf] OCR: 1558 chars (vs Python: 29)
+2026-10-29 19:29:27,662 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1999-9-12 кл-sol.pdf] pymupdf: 4p, 116 chars
+2026-10-29 19:29:27,663 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1999-9-12 кл-sol.pdf] 116 chars (29/p) → OCR fallback
+2026-10-29 19:29:27,664 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1999-9-12 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:29:27,664 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-1999-9-12 кл-sol.pdf] OCR: 9113 chars (vs Python: 116)
+2026-10-29 19:29:27,682 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2000-9-12 кл-probs.pdf] pdfplumber: 1p, 0 chars
+2026-10-29 19:29:27,682 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2000-9-12 кл-probs.pdf] 0 chars (0/p) → OCR fallback
+2026-10-29 19:29:27,684 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2000-9-12 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:29:27,684 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2000-9-12 кл-probs.pdf] OCR: 2199 chars (vs Python: 0)
+2026-10-29 19:29:27,770 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2000-9-12 кл-sol.pdf] pymupdf: 6p, 144 chars
+2026-10-29 19:29:27,771 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2000-9-12 кл-sol.pdf] 144 chars (24/p) → OCR fallback
+2026-10-29 19:29:27,772 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2000-9-12 кл-sol.pdf] OCR cache: 6p
+2026-10-29 19:29:27,772 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2000-9-12 кл-sol.pdf] OCR: 12396 chars (vs Python: 144)
+2026-10-29 19:29:27,798 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2001-9-12 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:29:27,798 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2001-9-12 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:29:27,799 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2001-9-12 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:29:27,799 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2001-9-12 кл-probs.pdf] OCR: 2599 chars (vs Python: 24)
+2026-10-29 19:29:27,817 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2004-9-12 кл-sol.pdf] pypdf: 4p, 13648 chars
+2026-10-29 19:29:27,859 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2001-9-12 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:29:27,859 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2001-9-12 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:29:27,860 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2001-9-12 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:29:27,860 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2001-9-12 кл-sol.pdf] OCR: 13177 chars (vs Python: 96)
+2026-10-29 19:29:27,889 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2002-9-12 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:29:27,890 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2002-9-12 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:29:27,891 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2002-9-12 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:29:27,891 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2002-9-12 кл-probs.pdf] OCR: 1784 chars (vs Python: 24)
+2026-10-29 19:29:27,948 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2002-9-12 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:29:27,948 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2002-9-12 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:29:27,949 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2002-9-12 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:29:27,949 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2002-9-12 кл-sol.pdf] OCR: 9047 chars (vs Python: 96)
+2026-10-29 19:29:27,998 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2003-9-12 кл-probs.pdf] pymupdf: 1p, 90 chars
+2026-10-29 19:29:27,998 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2003-9-12 кл-probs.pdf] 90 chars (90/p) → OCR fallback
+2026-10-29 19:29:27,999 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2003-9-12 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:29:27,999 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2003-9-12 кл-probs.pdf] OCR: 1499 chars (vs Python: 90)
+2026-10-29 19:29:28,138 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2003-9-12 кл-sol.pdf] pymupdf: 4p, 228 chars
+2026-10-29 19:29:28,138 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2003-9-12 кл-sol.pdf] 228 chars (57/p) → OCR fallback
+2026-10-29 19:29:28,139 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2003-9-12 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:29:28,140 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2003-9-12 кл-sol.pdf] OCR: 9033 chars (vs Python: 228)
+2026-10-29 19:29:28,173 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2005-9-12 кл-probs.pdf] pymupdf: 1p, 1896 chars
+2026-10-29 19:29:28,487 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2004-9-12 кл-probs.pdf] pypdf: 1p, 1970 chars
+2026-10-29 19:29:31,416 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2004-9-12 кл-sol.pdf] pypdf: 4p, 13648 chars
+2026-10-29 19:29:31,777 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2005-9-12 кл-probs.pdf] pymupdf: 1p, 1896 chars
+2026-10-29 19:29:37,902 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2005-9-12 кл-sol.pdf] pypdf: 4p, 23551 chars
+2026-10-29 19:29:37,946 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2006-9-12 кл-probs.pdf] pymupdf: 1p, 24 chars
+2026-10-29 19:29:37,946 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2006-9-12 кл-probs.pdf] 24 chars (24/p) → OCR fallback
+2026-10-29 19:29:37,966 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2006-9-12 кл-probs.pdf] OCR cache: 1p
+2026-10-29 19:29:37,966 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2006-9-12 кл-probs.pdf] OCR: 1756 chars (vs Python: 24)
+2026-10-29 19:29:38,070 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2006-9-12 кл-sol.pdf] pymupdf: 4p, 96 chars
+2026-10-29 19:29:38,070 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2006-9-12 кл-sol.pdf] 96 chars (24/p) → OCR fallback
+2026-10-29 19:29:38,093 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2006-9-12 кл-sol.pdf] OCR cache: 4p
+2026-10-29 19:29:38,094 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2006-9-12 кл-sol.pdf] OCR: 9478 chars (vs Python: 96)
+2026-10-29 19:29:42,988 [PDF_CHUNKER] INFO [OLI-3-Национален кръг-2007-9-12 кл-probs.pdf] pdfplumber: 2p, 22237 chars

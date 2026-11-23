@@ -1,51 +1,24 @@
 {
   "point_id": "1.6",
-  "total": 16,
+  "total": 50,
   "by_difficulty": {
     "easy": 0,
-    "medium": 16,
-    "hard": 0
+    "medium": 15,
+    "hard": 35
   },
   "problems": [
     {
-      "source": "OLI-2-Областен кръг-1996-11 кл · 1996-11 · Зад. 5",
-      "statement": "A convex quadrilateral $ABCD$, for which $\\angle ABC + \\angle BCD < 180^\\circ$, is given. The common point of the lines $AB$ and $CD$ is $E$. Prove that $\\angle ABC = \\angle ADC$ if and only if\n\n$$AC^2 = CD \\cdot CE - AB \\cdot AE.$$",
-      "solution": "Solution. Let $\\angle ABC = \\beta$, $\\angle ADC = \\delta$, $\\angle BAC = \\varphi$ and $\\angle CAD = \\psi$ (Figure 4). The point $A$ is between $E$ and $B$ and the point $D$ is between $E$ and $C$. Also, $\\angle AEC = \\delta + \\varphi + \\psi - 180^\\circ$.\n\nApplying the sine theorem to the triangles $ACD, ACE, ABC$ and again to $\\triangle ACE$, we obtain:\n\n$$\\begin{array}{l} \\frac{CD}{AC} = \\frac{\\sin \\psi}{\\sin \\delta}, \\\\ \\frac{CE}{AC} = -\\frac{\\sin \\varphi}{\\sin (\\delta + \\varphi + \\psi)}, \\\\ \\frac{AB}{AC} = \\frac{\\sin (\\beta + \\varphi)}{\\sin \\beta}, \\\\ \\frac{AE}{AC} = -\\frac{\\sin (\\delta + \\psi)}{\\sin (\\delta + \\varphi + \\psi)}. \\end{array}$$\n\nFrom here the equation $AC^2 = CD \\cdot CE - AB \\cdot AE$ is equivalent to the equations:\n\n$$\\frac{CD}{AC} \\cdot \\frac{CE}{AC} - \\frac{AB}{AC} \\cdot \\frac{AE}{AC} - 1 = 0;$$\n\n$$\\sin (\\beta + \\varphi) \\sin (\\delta + \\psi) \\sin \\delta - \\sin \\psi \\sin \\varphi \\sin \\beta$$\n\n$$- \\sin \\delta \\sin \\beta \\sin (\\varphi + \\psi + \\delta) = 0;$$\n\n$$\\begin{array}{l} (\\cos (\\beta + \\varphi - \\delta - \\psi) - \\cos (\\beta + \\varphi + \\delta + \\psi)) \\sin \\delta \\\\ - (\\cos (\\varphi - \\psi) - \\cos (\\varphi + \\psi)) \\sin \\beta \\\\ - (\\cos (\\beta - \\delta) - \\cos (\\beta + \\delta)) \\sin (\\varphi + \\psi + \\delta) = 0 \\end{array}$$\n\n$$\\begin{array}{l} \\sin (\\beta + \\varphi + \\psi) - \\sin (2\\delta + \\varphi + \\psi - \\beta) \\\\ + \\sin (2\\delta + \\psi - \\beta - \\varphi) - \\sin (\\beta + \\psi - \\varphi) = 0; \\end{array}$$\n\n$$\\sin (\\beta - \\delta) \\cos (\\delta + \\varphi + \\psi) + \\sin (\\delta - \\beta) \\cos (\\delta + \\psi - \\varphi) = 0;$$\n\n$$\\sin (\\beta - \\delta) \\sin (\\delta + \\psi) \\sin \\varphi = 0$$\n\nBut $\\sin \\varphi \\neq 0$ and $\\sin (\\delta + \\psi) \\neq 0$. Consequently, $\\sin (\\beta - \\delta) = 0$ and $\\beta = \\delta$.",
+      "source": "OLI-2-Областен кръг-1996-10 кл · 1996-10 · Зад. 10.5",
+      "statement": "A convex quadrilateral $ABCD$, for which $\\angle ABC + \\angle BCD < 180^°$, is given. The common point of the lines $AB$ and $CD$ is $E$. Prove that $\\angle ABC = \\angle ADC$ if and only if\n\n$$AC^2 = CD ⋅ CE - AB ⋅ AE.$$",
+      "solution": "Solution. Let $\\angle  ABC = β$, $\\angle  ADC = δ$, $\\angle  BAC = φ$ and $\\angle  CAD = ψ$ (Figure 4). The point $A$ is between $E$ and $B$ and the point $D$ is between $E$ and $C$. Also, $\\angle  AEC = δ + φ + ψ - 180^°$.\n\nApplying the sine theorem to the triangles $ACD, ACE, ABC$ and again to $\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 4.\n\n$$\\triangle  ACE$, we obtain:\n\nFigure 极速赛车开奖直播官网-极速赛车开奖结果记录-极速赛车开奖直播网",
       "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "law_of_sines",
-        "angle_chasing",
-        "trigonometric_identities"
+        "sine_theorem",
+        "triangle_geometry"
       ],
       "confidence": "exact",
-      "reasoning": "Applies sine law to several triangles, reduces to sin(β‑δ)=0, giving the required equivalence."
-    },
-    {
-      "source": "OLI-2-Областен кръг-1998-10 кл · 1998-10 · Зад. 5",
-      "statement": "The convex pentagon $ABCDE$ is inscribed in a circle with radius $R$. The inradii of the triangles $ABC, ABD, AEC$ and $AED$ are denoted by $r_{ABC}, r_{ABD}, r_{AEC}$ and $r_{AED}$. Prove that\n\na.) \\(\\cos \\angle CAB + \\cos \\angle ABC + \\cos \\angle BCA = 1 + \\frac{r_{ABC}}{R}\\)\nb.) If \\( r_{ABC} = r_{AED} \\) and \\( r_{ABD} = r_{AEC} \\), then \\( \\triangle ABC \\cong \\triangle AED \\).",
-      "solution": "Solution: a.) Using the standard notation for the elements of $\\triangle ABC$, we obtain that\n\n$$\\begin{array}{l} \\frac {r}{R} = \\frac {S}{p R} = \\frac {4 S ^ {2}}{p a b c} = \\frac {4 (p - a) (p - b) (p - c)}{a b c} = \\\\ = \\frac {1}{2 a b c} \\left(a \\left(b ^ {2} + c ^ {2} - a ^ {2}\\right) + b \\left(c ^ {2} + a ^ {2} - b ^ {2}\\right) + c \\left(a ^ {2} + b ^ {2} - c ^ {2}\\right) - 2 a b c\\right) = \\\\ = \\cos \\angle C A B + \\cos \\angle A B C + \\cos \\angle B C A - 1. \\\\ \\end{array}$$\n\nb.) Applying continuously the equality from a.) and using the fact that $ABCDE$ is inscribed in a circle convex pentagon, it is easy to see that\n\n$$r _ {A B C} + r _ {A E C} + r _ {E D C} = r _ {A E D} + r _ {A B D} + r _ {B C D}.$$\n\nThe condition of the problem and the above equality imply $r_{BCD} = r_{EDC}$. Since $\\triangle BCD$ and $\\triangle EDC$ have a side in common and equal circumradiuses we get that $\\triangle BCD \\cong \\triangle EDC$ (prove it using a.)). In particular $BC = ED$ and using $r_{ABC} = r_{AED}$ again, we get $\\triangle ABC \\cong \\triangle AED$.",
-      "answer": null,
-      "difficulty": "medium",
-      "techniques": [
-        "law_of_cosines"
-      ],
-      "confidence": "exact",
-      "reasoning": "Transforms inradius/circumradius relation via cosine law; two‑part problem, each part follows from the same identity."
-    },
-    {
-      "source": "OLI-2-Областен кръг-1998-11 кл · 1998-11 · Зад. 5",
-      "statement": "The convex pentagon $ABCDE$ is inscribed in a circle with radius $R$. The inradii of the triangles $ABC, ABD, AEC$ and $AED$ are denoted by $r_{ABC}, r_{ABD}, r_{AEC}$ and $r_{AED}$. Prove that\n\na.) \\(\\cos \\angle CAB + \\cos \\angle ABC + \\cos \\angle BCA = 1 + \\frac{r_{ABC}}{R}\\)\nb.) If \\( r_{ABC} = r_{AED} \\) and \\( r_{ABD} = r_{AEC} \\), then \\( \\triangle ABC \\cong \\triangle AED \\).",
-      "solution": "Solution: a.) Using the standard notation for the elements of $\\triangle ABC$, we obtain that\n\n$$\\begin{array}{l} \\frac {r}{R} = \\frac {S}{p R} = \\frac {4 S ^ {2}}{p a b c} = \\frac {4 (p - a) (p - b) (p - c)}{a b c} = \\\\ = \\frac {1}{2 a b c} \\left(a \\left(b ^ {2} + c ^ {2} - a ^ {2}\\right) + b \\left(c ^ {2} + a ^ {2} - b ^ {2}\\right) + c \\left(a ^ {2} + b ^ {2} - c ^ {2}\\right) - 2 a b c\\right) = \\\\ = \\cos \\angle C A B + \\cos \\angle A B C + \\cos \\angle B C A - 1. \\\\ \\end{array}$$\n\nb.) Applying continuously the equality from a.) and using the fact that $ABCDE$ is inscribed in a circle convex pentagon, it is easy to see that\n\n$$r _ {A B C} + r _ {A E C} + r _ {E D C} = r _ {A E D} + r _ {A B D} + r _ {B C D}.$$\n\nThe condition of the problem and the above equality imply $r_{BCD} = r_{EDC}$. Since $\\triangle BCD$ and $\\triangle EDC$ have a side in common and equal circumradiuses we get that $\\triangle BCD \\cong \\triangle EDC$ (prove it using a.)). In particular $BC = ED$ and using $r_{ABC} = r_{AED}$ again, we get $\\triangle ABC \\cong \\triangle AED$.",
-      "answer": null,
-      "difficulty": "medium",
-      "techniques": [
-        "law_of_cosines",
-        "inradius_circumradius_relation",
-        "angle_cosine_sum"
-      ],
-      "confidence": "exact",
-      "reasoning": "Transforms r/R via Heron and cosine law to obtain the identity; part b uses the same relation and congruence arguments."
+      "reasoning": "Условието изисква синусова теорема, която е в точка 1.6. Решението е непълно, но техниката е ясна."
     },
     {
       "source": "OLI-2-Областен кръг-2000-10 кл · 2000-10 · Зад. 4",
@@ -60,9 +33,9 @@
       "reasoning": "Използва законите за синусите и ъглополовящи за доказателство на условието за прав ъгъл."
     },
     {
-      "source": "OLI-2-Областен кръг-2000-11 кл · 2000-11 · Зад. 4",
-      "statement": "Даден е изпъкнал четириъгълник $ABCD$, за който $\\measuredangle BCD = \\measuredangle CDA$. Нека ъглополовящата на ъгъл $ABC$ пресича отсечката $CD$ в точка $E$. Да се докаже, че $\\measuredangle AEB = 90^\\circ$ тогава и само тогава, когато $AB = AD + BC$.",
-      "solution": "Решение: Нека ∠AEB = 90°. Тъй като ∠CEB < 90°, върху страната AB можем да изберем точка F такава, че ∠BEF = ∠BEC. Тогава △BCE ≅ △BFE, откъдето BF = BC и ∠BFE = ∠BCE. От друга страна,\n\n(*) AE/sin ∠AFE = AF/sin ∠AEF, AE/sin ∠ADE = AD/sin ∠AED.\n\nТъй като ∠AED = ∠AEF и ∠AFE + ∠ADE = 180°, получаваме AF = AD и значи AB = AD + BC.\n\nОбратно, нека AB = AD + BC. Тогава върху отсечката AB съществува точка F, за която AF = AD и BF = BC. Следователно △BFE ≅ △BCE, откъдето ∠BFE = ∠BCE и ∠BEF = ∠BEC. Понеже AF = AD, от равенствата (*) следва, че sin ∠AED = sin ∠AEF. Тъй като ∠AED + ∠AEF < 180°, то ∠AED = ∠AEF и значи ∠AEB = 90°.",
+      "source": "OLI-2-Областен кръг-2001-10 кл · 2001-10 · Зад. 10.2",
+      "statement": "Диагоналите $AC$ и $BD$ на вписан в окръжност четириъгълник се пресичат в точка $E$. Да се докаже, че ако $\\angle  BAD = 60^∘$ и $AE = 3CE$, то сумата на две от страните на четириъгълника е равна на сумата на другите му две страни.",
+      "solution": "Нека $\\angle  ABD = x$ и $\\angle  CBD = y$. От синусовата теорема получаваме\n\n$$\\frac{AE}{AB} = \\frac{\\sin x}{\\sin(120^◦ + y - x)}, \\frac{CE}{BC} = \\frac{\\sin y}{\\sin(60^◦ + x - y)}$$\n\nи $$\\frac{AB}{BC} = \\frac{\\sin(120^◦ - x)}{\\sin(60^◦ - y)}$$. Следователно $$3 = \\frac{AE}{CE} = \\frac{\\sin x \\cdot \\sin(120^◦ - x)}{\\sin y \\cdot \\sin(60^◦ - y)}$$.\n\nОттук $$3(\\cos(2y - 60^◦) - \\cos 60^◦) = \\cos(2x - 120^◦) - \\cos 120^◦$$, т.е.\n\n$$1 - \\cos(2x - 120^◦) = 3(1 - \\cos(2y - 60^◦))$$ и значи $$\\sin^2(x - 60^◦) = 3\\sin^2(y - 30^◦)$$.\n\nСледователно $$\\sin(x - 60^◦) \\cos 60^◦ = \\pm \\cos 30^◦ \\sin(y - 30^◦)$$,\n\nт.е. $$\\sin x - \\sin(120^◦ - x) = \\pm(\\sin y - \\sin(60^◦ - y))$$. Отново от синусовата теорема получаваме, че $$AD - AB = \\pm(CD - BC)$$, т.е.\n\n$$AD + BC = AB + CD \\quad \\text{или} \\quad AD + CD = AB + BC.$$",
       "answer": null,
       "difficulty": "medium",
       "techniques": [
@@ -70,155 +43,730 @@
         "angle_chasing"
       ],
       "confidence": "exact",
-      "reasoning": "Чрез законите за синусите и ъглово пресичане се получава условието ∠AEB=90° ⇔ AB=AD+BC."
+      "reasoning": "Вписан четириъгълник със синусова теорема. Точка 1.6 (Синусова и косинусова теорема)."
     },
     {
-      "source": "OLI-2-Областен кръг-2001-11 кл · 2001-11 · Зад. 2",
-      "statement": "Диагоналите $AC$ и $BD$ на вписан в окръжност четириъгълник се пресичат в точка $E$. Да се докаже, че ако $\\angle BAD = 60^\\circ$ и $AE = 3CE$, то сумата на две от страните на четириъгълника е равна на сумата на другите му две страни.",
-      "solution": "Решение: Нека $\\angle ABD = x$ и $\\angle CBD = y$. От синусовата теорема получаваме\n$$\\frac{AE}{AB} = \\frac{\\sin x}{\\sin(120^\\circ + y - x)}, \\frac{CE}{BC} = \\frac{\\sin y}{\\sin(60^\\circ + x - y)}$$\nи $\\frac{AB}{BC} = \\frac{\\sin(120^\\circ - x)}{\\sin(60^\\circ - y)}$. Следователно\n$$3 = \\frac{AE}{CE} = \\frac{\\sin x \\cdot \\sin(120^\\circ - x)}{\\sin y \\cdot \\sin(60^\\circ - y)}.$$\nОттук $3(\\cos(2y - 60^\\circ) - \\cos 60^\\circ) = \\cos(2x - 120^\\circ) - \\cos 120^\\circ$, т.е.\n$$1 - \\cos(2x - 120^\\circ) = 3(1 - \\cos(2y - 60^\\circ))$$\nи значи $\\sin^2(x - 60^\\circ) = 3\\sin^2(y - 30^\\circ)$.\nСледователно\n$$\\sin(x - 60^\\circ) \\cos 60^\\circ = \\pm \\cos 30^\\circ \\sin(y - 30^\\circ),$$\nт.е. $\\sin x - \\sin(120^\\circ - x) = \\pm(\\sin y - \\sin(60^\\circ - y))$. Отново от синусовата теорема получаваме, че $AD - AB = \\pm(CD - BC)$, т.е.\n$$AD + BC = AB + CD \\quad \\text{или} \\quad AD + CD = AB + BC.$$",
-      "answer": "$AD + BC = AB + CD$ или $AD + CD = AB + BC$.",
+      "source": "OLI-2-Областен кръг-2001-12 кл · 2001-12 · Зад. 12.2",
+      "statement": "Диагоналите $AC$ и $BD$ на вписан в окръжност четириъгълник се пресичат в точка $E$. Да се докаже, че ако $\\angle  BAD = 60^◦$ и $AE = 3CE$, то сумата на две от страните на четириъгълника е равна на сумата на другите му две страни.",
+      "solution": "Нека $\\angle ABD = x$ и $\\angle CBD = y$. От синусовата теорема получаваме\n\n$$\\frac{AE}{AB} = \\frac{\\sin x}{\\sin(120^\\circ + y - x)}, \\frac{CE}{BC} = \\frac{\\sin y}{\\sin(60^\\circ + x - y)}$$\n\nи $$\\frac{AB}{BC} = \\frac{\\sin(120^\\circ - x)}{\\sin(60^\\circ - y)}$$. Следователно $$3 = \\frac{AE}{CE} = \\frac{\\sin x \\cdot \\sin(120^\\circ - x)}{\\sin y \\cdot \\sin(60^\\circ - y)}$$.\n\nОттук $$3(\\cos(2y - 60^\\circ) - \\cos 60^\\circ) = \\cos(2x - 120^\\circ) - \\cos 120^\\circ$$, т.е.\n\n$$1 - \\cos(2x - 120^\\circ) = 3(1 - \\cos(2y - 60^\\circ))$$ и значи $$\\sin^2(x - 60^\\circ) = 3\\sin^2(y - 30^\\circ)$$.\n\nСледователно $$\\sin(x - 60^\\circ) \\cos 60^\\circ = \\pm \\cos 30^\\circ \\sin(y - 30^\\circ)$$,\n\nт.е. $$\\sin x - \\sin(120^\\circ - x) = \\pm(\\sin y - \\sin(60^\\circ - y))$$. Отново от синусовата теорема получаваме, че $$AD - AB = \\pm(CD - BC)$$, т.е.\n\n$$AD + BC = AB + CD \\quad \\text{или} \\quad AD + CD = AB + BC.$$",
+      "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "law_of_sines",
-        "cyclic_quadrilateral",
-        "ratio_analysis"
+        "sine_theorem",
+        "trigonometric_identities"
       ],
       "confidence": "exact",
-      "reasoning": "Приложени са синусовата теорема и съотношението AE=3CE, което води до равенство на суми от страни."
+      "reasoning": "Задачата използва синусова теорема в четириъгълник и тригонометрични преобразувания. Точка 1.6 покрива синусова и косинусова теорема."
     },
     {
-      "source": "OLI-2-Областен кръг-2004-11 кл · 2004-11 · Зад. 2",
-      "statement": "Допирателните към описаната около остроъгълния триъгълник ABC окръжност, построени в точките A и B, се пресичат в точка D. Ако M е среда на AB, докажете, че ∠ACM = ∠BCD.",
-      "solution": "От синусовата теорема за триъгълниците AMC и BMC имаме\nAM/CM = sin ∠ACM / sin α, BM/CM = sin(γ − ∠ACM) / sin β.\nОттук, тъй като AM = BM, получаваме sin ∠ACM / sin α = sin(γ − ∠ACM) / sin β, т.е.\n(1) tg ∠ACM = (sin α sin γ)/(sin β + sin α cos γ).\nОт синусовата теорема за триъгълниците ADC и BDC имаме\nAD/CD = sin(γ − ∠BCD) / sin(α + γ), BD/CD = sin ∠BCD / sin(β + γ).\nОттук, тъй като AD = BD, получаваме sin(γ − ∠BCD) / sin β = sin ∠BCD / sin α, т.е.\n(2) tg ∠BCD = (sin α sin γ)/(sin β + sin α cos γ).\nОт (1) и (2) следва, че tg ∠ACM = tg ∠BCD. Тъй като и двата ъгъла са остри и функцията тангенс е растяща в интервала (0; π/2), то ∠ACM = ∠BCD.",
-      "answer": "∠ACM = ∠BCD.",
+      "source": "OLI-2-Областен кръг-2008-11 кл · 2008-11 · Зад. 11.4",
+      "statement": "В окръжност с радиус $R = 65$ е вписан четиригълник $ABCD$, за който $AB = 50$, $BC = 104$ и $CD = 120$. Да се намери страната $AD$.",
+      "solution": "Ако $O$ е центърът на окръжността, а $M$ и $N$ са среди съответно на страните $AB$ и $CD$, то $OM = \\sqrt{65^2 - 25^2} = 60$ и $ON = \\sqrt{65^2 - 60^2} = 25$. Следователно $\\triangle AMO \\cong \\triangle OND$, откъдето получаваме\n\n$$\\angle AOB + \\angle COD = 2(\\angle AOM + \\angle DON) = 180^\\circ.$$\n\nТогава диагоналите на четириъгълника са перпендикулярни, откъдето\n\n$$AD = \\sqrt{AB^2 + CD^2 - BC^2} = \\sqrt{6084} = 78.$$",
+      "answer": "78",
       "difficulty": "medium",
       "techniques": [
-        "law_of_sines",
-        "angle_chasing"
+        "pythagorean_theorem",
+        "circle_properties"
       ],
       "confidence": "exact",
-      "reasoning": "Applies sine law in two triangles, derives equality of tangents, concludes angles equal."
+      "reasoning": "Прилага се Питагорова теорема за намиране на разстояния от център до хорди и конгруентност на триъгълници. Решението използва свойство за перпендикулярни диагонали."
     },
     {
-      "source": "OLI-2-Областен кръг-2006-10 кл · 2006-10 · Зад. 5",
-      "statement": "Нека $ABCD$ е успоредник с остър ъгъл $\\gamma$ при върха $A$. Нека $DE$ и $DF$ са височини, като $E$ и $F$ лежат съответно на страните $AB$ и $BC$. Да се докаже, че $4(AB.BC.EF + BD.AE.FC) \\le 5.AB.BC.BD$. Ако се достига равенство, да се определи стойността на $\\gamma$.",
-      "solution": "Нека $AB = CD = a$, $AD = BC = b$, $BD = d$. Имаме $DE = b \\sin \\alpha$, $AE = b \\cos \\alpha$, $DF = a \\sin \\alpha$, $CF = a \\cos \\alpha$. Тогава $\\triangle DEF \\sim \\triangle ADB$ по втори признак, като коефициентът на подобие е $\\sin \\alpha$.\n\nСледователно $EF = d \\sin \\alpha$ и неравенството добива вида\n\n$$4(abd \\sin \\alpha + dba \\cos^2 \\alpha) \\le 5abd,$$\n\n$$4 \\sin \\alpha + 4 - 4 \\sin^2 \\alpha \\le 5 \\iff 4 \\sin^2 \\alpha - 4 \\sin \\alpha + 1 \\ge 0,$$\n\nкоето е вярно за всяко $\\alpha$. Равенство се достига за $\\alpha = 30^\\circ$.",
-      "answer": "Равенство се достига при $\\gamma = 30^\\circ$.",
+      "source": "OLI-2-Областен кръг-2008-11 кл · 2008-11 · Зад. 11.4",
+      "statement": "В окръжност с радиус $R = 65$ е вписан четиригълник $ABCD$, за който $AB = 50$, $BC = 104$ и $CD = 120$. Да се намери страната $AD$.",
+      "solution": "Ако $O$ е центърът на окръжността, а $M$ и $N$ са среди съответно на страните $AB$ и $CD$, то $OM = \\sqrt{65^2 - 25^2} = 60$ и $ON = \\sqrt{65^2 - 60^2} = 25$. Следователно $\\triangle AMO \\cong \\triangle OND$, откъдето получаваме\n\n$$\\angle AOB + \\angle COD = 2(\\angle AOM + \\angle DON) = 180^\\circ.$$\n\nТогава диагоналите на четириъгълника са перпендикулярни, откъдето\n\n$$AD = \\sqrt{AB^2 + CD^2 - BC^2} = \\sqrt{6084} = 78.$$",
+      "answer": "78",
       "difficulty": "medium",
       "techniques": [
-        "similarity",
+        "pythagorean_theorem",
+        "circle_properties"
+      ],
+      "confidence": "exact",
+      "reasoning": "Прилага се Питагорова теорема за намиране на разстояния от център до хорди и конгруентност на триъгълници. Решението използва свойство за перпендикулярни диагонали.",
+      "_crosslinked_from": "1.6",
+      "_crosslink_confidence": 0.7
+    },
+    {
+      "source": "OLI-2-Областен кръг-2008-12 кл · 2008-12 · Зад. 12.1",
+      "statement": "В тризъглна пирамида $ABCD$ околните ръбове $DB$ и $DC$ са равни и $\\angle DAB = \\angle DAC$. Да се намери обемът на пирамидата, ако $AB = 15, BC = 14, CA = 13$ и $DA = 18$.",
+      "solution": "12.1. Нека $H$ е ортогоналната проекция на $D$ върху равнината ($ABC$). Тъй като $меасуредангле DAB = меасуредангле DAC$, то $H$ лежи върху ъглополовящата на $меасуредангле BAC$ (докажете!). От друга страна, от $DB = DC$ следва, че $BH = CH$, т.е. $H$ лежи върху симетралата на отсечката $BC$. Тъй като $BA ≠ AC$, то ъглополовящата на $меасуредангле BAC$ и симетралата на $BC$ се пресичат върху описаната около $\\triangle  ABC$ окръжност (докажете!). Следователно $H$ лежи върху тази окръжност. Нека $L = AH ∩ BC$. Тогава $\\triangle  ABL ∼ \\triangle  AHC$ и значи $AH = фрак{AB ⋅ AC}{AL}$. От формулата за ъглополовящата намираме $AL = фрак{3}{2}√{65}$, т.е. $AH = 2√{65}$. Следователно $DH = √{AD^2 - AH^2} = 8$. От Хероновата формула изчисляваме, че $S_{ABC} = 84$ и получаваме, че обемът на пирамидата е 224.",
+      "answer": "224",
+      "difficulty": "medium",
+      "techniques": [
+        "orthogonal_projection",
+        "angle_bisector",
+        "perpendicular_bisector",
+        "similar_triangles",
+        "heron_formula"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква намиране на обем на пирамида с помощта на проекция, свойства на ъглополовяща и симетрала, подобни триъгълници и Херонова формула. Точка 1.7 (Формули за лице. Херон) е най-подходяща.",
+      "_crosslinked_from": "1.7",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2010-12 кл · 2010-12 · Зад. 12.4",
+      "statement": "В пространството са дадени правоъгълен $\\triangle ABC$ с хипотенуза AB и равнина $\\tau$. Нека $α = \\angle (AC, τ)$, $β = \\angle (BC, τ)$ и $φ = \\angle (ABC, τ)$.\n\na) Да се докаже, че $∑^2φ = ∑^2α +∑^2β$\nб) Ако $α +β = 60^{○}$, да се намери $φ$",
+      "solution": "Решение. а) Движейки успорядно $τ$, можем да предполагаме, че $C ∉ τ$. Ако например $BC \\parallel  τ$, то $β = 0$ и $φ = α$. Иначе можем да считаме, че $AC ∩ τ = A_1$ и $BC ∩ τ = B_1$. Нека $C_1$ и $C_2$ са ортогоналните проекции на $C$ съответно върху $A_1B_1$ и $τ$. Тогава $α = \\angle  CA_1C_2$, $β = \\angle  CB_1C_2$ и $φ = \\angle  CC_1C_2$. Ако $x = \\angle  CAC_1$ и $y = \\angle  CBC_1$, то\n\n$$∑ α = средното на CC_2 за CA_1 = средното на CC_2 за CC_1 ∑ x, ∑ β = средното на CC_2 за CB_1 = среднота на CC_2 за CC_1 ∑ y, ∑ φ = средното на CC_2 за CC_1$$\n\nи понеже $x + y = 90^○$, следва, че $∑^2 α + ∑^2 β = ∑^2 φ$.\n\nб) Имаме, че\n\n$$∑^2 φ = ∑^2 α + ∑^2 β = 1 - средното на косинус 2α + косинус 2β за 2 =$$\n\n$$1 - косинус(α + β) косинус(α - β) = 1 - средното на косинус(α - β) за 2 \\ge  средното на 1 за 2.$$\n\nЗначи $∑ φ \\ge  средното на корен от 2 за 2$ и понеже $0 \\le  φ \\le  90^○$, то най-малката стойност на $φ$ е равна на $45^○$ и се достига при $α = β = 30^○$.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "orthogonal_projection",
+        "trigonometric_identities",
+        "minimization"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква приложение на тригонометрични тъждества (част от синусова и косинусова теорема в олимпийски контекст) за доказване на връзка между ъглите в пространството. Решението използва проекции и тригонометрични преобразувания, включително суми от квадрати на синуси и минимизация, което е типично за олимпиадни задачи със средна трудност. Точка 1.6 е точна, тъй като съответства на приложенията на тригонометрията в геометрията."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2011-12 кл · 2011-12 · Зад. 12.2",
+      "statement": "Точките $O$ и $I$ са съответно център на описаната и вписаната окръжност за триъгълник $ABC$. Ъглополовящата на ъгъл $ACB$ пресича описаната около триъгълника окръжност в точка $D$. Ако $r$ е радиусът на вписаната окръжност, $OI = r$ и $ID = 2r$, да се намери $∆ ACB$.",
+      "solution": "Тъй като $DI = DA$ (следва от $\\measuredangle DIA = \\measuredangle DAI = \\frac{\\alpha + \\gamma}{2}$), то от синусовата теорема получаваме $r = R \\sin \\frac{\\gamma}{2}$.\n\nОт $r^2 = OI^2 = R^2 - 2Rr$ след заместване $r = R \\sin \\frac{\\gamma}{2}$, намираме\n\n$$\\sin^2 \\frac{\\gamma}{2} + 2 \\sin \\frac{\\gamma}{2} - 1 = 0.$$\n\nОттук последователно намираме $\\sin \\frac{\\gamma}{2} = \\sqrt{2} - 1$, $\\cos \\frac{\\gamma}{2} = \\sqrt{1 - (\\sqrt{2} - 1)^2} = \\sqrt{2(\\sqrt{2} - 1)}$ и\n\n$$\\sin \\gamma = 2 \\sin \\frac{\\gamma}{2} \\cos \\frac{\\gamma}{2} = \\left(2(\\sqrt{2} - 1)\\right)^{\\frac{3}{2}}.$$\n\nОценяване. За $r = R \\sin \\frac{\\gamma}{2} - 2$ т.; за използване на $r^2 = OI^2 = R^2 - 2Rr - 2$ т.; за получаване на уравнение за $\\sin \\frac{\\gamma}{2} - 1$ т.; за пресмятане на $\\sin \\measuredangle ACB - 2$ т.",
+      "answer": "$\\sin \\gamma = \\left(2(\\sqrt{2} - 1)\\right)^{\\frac{3}{2}}$",
+      "difficulty": "medium",
+      "techniques": [
+        "euler_relation",
+        "angle_bisector",
+        "sine_law"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва връзка между вписана и описана окръжност (OI=r), което е пряко приложение на теоремата на Ойлер. Решението изисква 2-3 стъпки: намиране на DI=DA, синусова теорема и решаване на уравнение.",
+      "_crosslinked_from": "1.8",
+      "_crosslink_confidence": 0.72
+    },
+    {
+      "source": "OLI-2-Областен кръг-2024-11 кл · 2024-11 · Зад. 11.2",
+      "statement": "Трапецът $ABCD$ ($AB \\parallel  CD$, $AB > CD$) е вписан в окръжност с радиус 9 cm. Петата на перпендикуляра от върха $C$ към основата $AB$ я разделя в отношение $2 : 1$, считано от върха $A$. Ако дължината на диагонала $AC$ е равна на дължината на основата $AB$, то да се намери лицето на трапеца.",
+      "solution": "Тъй като трапецът ABCD е вписан, то той е равнобедрен. Нека CP, P ∈ AB е височината от върха C. От условието AP : P B = 2 : 1 , получаваме, че AB = 3 CD . Нека означим с α острия ъгъл на трапеца, т.е. ∡ABC = α. От AC = AB следва, че \\triangle ABC е равнобедрен с ъгли ∡ABC = ∡ACB = α и ∡BAC = 180 ◦ − 2α. От правоъгълния \\triangle AP C имаме ∡P AC = 180 ◦ − 2α < 90◦. т. е. α ∈ (45◦; 90◦) или 2α ∈ (90◦; 180◦). От правоъгълните \\triangle AP C и \\triangle BP C изразяваме tg(180◦ − 2α) = CP/AP и tg α = CP/BP, откъдето tg(180◦ − 2α)/(tg α) = BP/AP = 1 /2. Тъй като tg(180◦ − 2α) = − tg(2α) = −(2 · tg α)/(1 − tg2 α), получаваме −2/(1 − tg2 α) = 1 /2, т.е. tg2 α = 5 , откъдето tg α = √5, т. к. α е остър ъгъл. Пресмятаме sin(α) = √30/6 и cos α = √6/6 . От синусова теорема за \\triangle ABC намираме AB = 3√30 cm, а от AB = 3 CD , CD = √30 cm. От \\triangle BP C имаме CP = BP · tg α = √30 · √5 = 5√6 cm. Тогава лицето на трапеца е равно на S = AB + CD/2 · CP = 2 · √30 · 5√6 = 60 √5 cm2.",
+      "answer": "60 √5 cm2",
+      "difficulty": "medium",
+      "techniques": [
+        "inscribed_quadrilateral",
         "trigonometry",
-        "inequality"
+        "sine_law"
       ],
       "confidence": "exact",
-      "reasoning": "Uses similarity of triangles and sin α, cos α to obtain the inequality."
+      "reasoning": "Основна техника: синусова теорема (1.6) за намиране на страни. Допълнително: свойства на вписани трапеци (1.5) и тригонометрични зависимости. Трудност: medium - стандартна, но с няколко стъпки."
     },
     {
-      "source": "OLI-2-Областен кръг-2006-11 кл · 2006-11 · Зад. 5",
-      "statement": "Допирателните към описаната около равнобедрен $\\triangle ABC$, $AC = BC$, окръжност $k$ в точките $B$ и $C$ се пресичат в точка $X$. Ако $AX$ пресича $k$ в точка $Y$, да се намери отношението $\\frac{AY}{BY}$.",
-      "solution": "Ако $\\angle BAY = \\alpha$ и $\\angle ABY = \\beta$, то $\\angle BYX = \\beta + \\alpha$. Нещо повече, имаме $\\angle ACB = \\angle AYB = 180^{\\circ} - \\alpha - \\beta$, откъдето $\\angle BAC = \\angle ABC = \\frac{\\beta + \\alpha}{2}$.\n\n![img-0.jpeg](img-0.jpeg)\n\nТогава $\\angle AYC = \\frac{\\beta + \\alpha}{2}$ и $\\angle YCX = \\angle YAC = \\frac{\\beta + \\alpha}{2} - \\alpha = \\frac{\\beta - \\alpha}{2}$. Синусовата теорема за $\\triangle BYX$ и $\\triangle CYX$ дава\n\n$$\\frac{XY}{XB} = \\frac{\\sin \\alpha}{\\sin(\\alpha + \\beta)}, \\quad \\frac{XY}{XC} = \\frac{\\sin(\\frac{\\beta - \\alpha}{2})}{\\sin(\\frac{\\beta + \\alpha}{2})}$$\n\nи тъй като $XB = XC$, получаваме $\\frac{\\sin \\alpha}{\\sin(\\alpha + \\beta)} = \\frac{\\sin(\\frac{\\beta - \\alpha}{2})}{\\sin(\\frac{\\beta + \\alpha}{2})}$. Следователно\n\n$$\\sin \\alpha = 2 \\cos \\left( \\frac{\\beta + \\alpha}{2} \\right) \\sin \\left( \\frac{\\beta - \\alpha}{2} \\right) = \\sin \\beta - \\sin \\alpha$$\n\nи значи $\\frac{AY}{BY} = \\frac{\\sin \\beta}{\\sin \\alpha} = 2$.",
-      "answer": "$\\frac{AY}{BY} = 2$.",
-      "difficulty": "medium",
-      "techniques": [
-        "sine_law",
-        "angle_chasing",
-        "tangent_properties"
-      ],
-      "confidence": "exact",
-      "reasoning": "Angle chasing with tangents and application of the sine law yields the ratio AY/BY = 2 – core of step 1.6."
-    },
-    {
-      "source": "OLI-2-Областен кръг-2007-11 кл · 2007-11 · Зад. 1",
-      "statement": "Да се намерят всички стойности на параметъра a, за които системата\nsin x + cos y = 4a + 6,\ncos x + sin y = 3a + 2\nима решение.",
-      "solution": "Повдигаме на квадрат двете равенства и събираме почленно. Получаваме\n2 + 2 sin x cos y + 2 cos x sin y = (4a + 6)² + (3a + 2)² = 25a² + 60a + 40 = (5a + 6)² + 4,\nоткъдето sin(x + y) = (5a + 6)²/2 + 1. Тъй като 1 ≥ sin(x + y) = (5a + 6)²/2 + 1 ≥ 1, то sin(x + y) = 1 и (5a + 6)² = 0, т.е. a = −6/5. За тази стойност на a решение са (x₀, y₀), за които sin x₀ = 3/5, cos x₀ = −4/5 и y₀ = 90° − x₀.",
-      "answer": "a = −6/5",
-      "difficulty": "medium",
-      "techniques": [
-        "trig_identity",
-        "inequality"
-      ],
-      "confidence": "exact",
-      "reasoning": "Solution squares the two equations, adds them and uses sin(x+y) bound; main tool is trigonometric identities."
-    },
-    {
-      "source": "OLI-2-Областен кръг-2009-11 кл · 2009-11 · Зад. 2",
-      "statement": "а) Да се докаже, че за триъгълник с ъгли α, β и γ е изпълнено равенството\nr = 4R sin(α/2) sin(β/2) sin(γ/2),\nкъдето r и R са съответно радиусът на вписаната и на описаната окръжност за този триъгълник.\nб) Шестоъгълникът ABCDEF е вписан в окръжност. Да се докаже, че произведението на радиусите на вписаните окръжности в △ABF, △BCD и △DEF е равно на произведението на радиусите на вписаните окръжности в △ABC, △CDE и △EFA тогава и само тогава, когато периметрите на △ACE и △BDF са равни.",
-      "solution": "Решение. а) Равенството следва от тъждеството sin(α/2) = √((1 − cos α)/2), косинусовата теорема и формулите S = pr = abc/(4R).\nб) Ще използваме, че ако α, β и γ са ъгли в триъгълник, то\nsin 2α + sin 2β + sin 2γ = 2sin(α + β)cos(α − β) + 2sin γ cos γ = 2sin γ(cos(α − β) − cos(α + β)) = 4sin α sin β sin γ.\nКато използваме тъждеството от а), получаваме\n(1) sin(∠ABC/2) sin(∠CDE/2) sin(∠EFA/2) = sin(∠BCD/2) sin(∠DEF/2) sin(∠FAB/2).\nОсвен това ∠ABC + ∠CDE + ∠EFA = ∠BCD + ∠DEF + ∠FAB = 360°, откъдето следва, че\nsin ∠ABC + sin ∠CDE + sin ∠EFA = sin ∠BCD + sin ∠DEF + sin ∠FAB.\nОт синусовата теорема сега следва твърдението на задачата.",
+      "source": "OLI-3-Национален кръг-1985-9-12 кл · 1985-None · Зад. 5",
+      "statement": "Върху медианата CM на триъгълика ABC(AC̸ = BC) с остър ъгъл γ =≮ACB е взета такава точка P, че ъглополовящите на вътрешите ъгли PAC и PBC се пресичат в точка Q от медианата CM. Да се намерят ъглите APB и AQB.",
+      "solution": "Означаваме с $N$ пресечната точка на $CM$ с описаната около триъгъника $ABC$ окръжност (черт. 3). От свойствата на ъглополовящите имаме\n\n$$\\frac{QP}{QC} = \\frac{AP}{AC} = \\frac{BP}{BC},$$\n\nили $\\frac{AP}{BP} = \\frac{b}{a}$. Да означим $MP = k\\,MC$.\n\nПрилагаме косинусовата теорема за триъгълниците $BMP$ и $AMP$ и получаваме\n\n$$BP^2 = \\frac{c^2}{4} + m^2k^2 + kcm \\cos \\theta, \\quad AP^2 = \\frac{c^2}{4} + m^2k^2 + kcm \\cos \\theta,$$\n\nкъдето $m = MC, \\theta = \\angle BMP$. Понеже $\\frac{BP^2}{AP^2} = \\frac{a^2}{b^2}$, от горните равенства следва, че\n\n$$k^2m^2(a^2 - b^2) + kcm(a^2 + b^2) \\cos \\theta + \\frac{c^2}{4}(a^2 - b^2) = 0.$$\n\nЗаместваме $mc \\cos \\theta = \\frac{c^2}{4} + m^2 - a^2$ и $4m^2 = 2a^2 + 2b^2 - c^2$ и получаваме\n\n$$k^2(2a^2 + 2b^2 - c^2)(a^2 - b^2) + 2k(b^2 - a^2)(a^2 + b^2) + c^2(a^2 - b^2) = 0.$$\n\nТъй като $a \\neq b$, достигаме до квадратното уравнение $k^2(2a^2 + 2b^2 - c^2) + 2k(a^2 + b^2) + c^2 = 0$ то очевидно има корен $k = 1$, който няма геометричен смисъл. Остава $k = \\frac{c^2}{2a^2 + 2b^2 - c^2} = \\frac{c^2}{4m^2}$, откъдето $PM\\cdot CM = \\frac{c^2}{4} = MN\\cdot CM$. Оттук получаваме, че $PM = MN$, т. е. четириъгълникът $ANBP$ е успоредник и значи $\\angle APB = \\angle ANB = \\pi - \\gamma$. Освен това\n\n$$\\begin{array}{l} \\angle BAQ + \\angle ABQ = \\angle BAP + \\angle PAQ + \\angle ABP + \\angle PBQ = \\\\ = (\\angle BAP + \\angle P\\end{array}$$",
       "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "trigonometric_formulas",
-        "inradius_circumradius_relation"
+        "triangle_geometry",
+        "angle_bisectors",
+        "medians",
+        "trigonometry"
       ],
       "confidence": "exact",
-      "reasoning": "Apply sine law and r = 4R·sin(α/2)·sin(β/2)·sin(γ/2); hexagon part uses perimeter equality."
+      "reasoning": "Решението използва косинусова теорема и свойства на ъглополовящи и медиани за намиране на ъгли. Това е стандартна техника в триъгълна геометрия."
     },
     {
-      "source": "OLI-2-Областен кръг-2021-11 кл · 2021-11 · Зад. 2",
-      "statement": "Даден е триъгълник ABC, за който ∠ACB = 60°. Точките P и Q върху страните BC и AC са такива, че четириъгълникът ABPQ е вписан в окръжност с радиус r и разстоянието от върха C до допирната точка на вписаната окръжност в △ABC със страната BC е равно на BP + AQ − PQ. Да се намери отношението AB/r.",
-      "solution": "Решение. Ще използваме стандартни означения за елементите на $\\triangle ABC$.\n\nТъй като $ABPQ$ е вписан в окръжност имаме $\\triangle ABC \\sim \\triangle PQC$. Тогава $CP = kb$, $CQ = ka$ и $PQ = kc$, където $k$ е коефициентът на подобие на двата триъгълника.\n\nОт $BP + AQ - PQ = \\frac{a + b - c}{2}$ получаваме:\n\n$$a - kb + b - ka - kc = \\frac{a + b - c}{2} \\iff (a + b + c)(2k - 1) = 0.$$\n\nТова означава, че $k = \\frac{1}{2}$ и от косинусовата теорема за $\\triangle APC$ получаваме:\n\n$$AP^2 = AC^2 + CP^2 - AP.AC = 3CP^2 \\Rightarrow AP = CP\\sqrt{3}.$$\n\nЗа $\\triangle APC$ е изпълнена Питагоровата теорема, т.е. $\\angle APC = 90^{\\circ}$. Следователно $R = \\frac{c}{2}$ и търсеното отношение е равно на 2.",
-      "answer": "$\\frac{AB}{r} = 2$.",
+      "source": "OLI-3-Национален кръг-1985-9-12 кл · 1985-None · Зад. 5",
+      "statement": "Върху медианата CM на триъгълика ABC(AC̸ = BC) с остър ъгъл γ =≮ACB е взета такава точка P, че ъглополовящите на вътрешите ъгли PAC и PBC се пресичат в точка Q от медианата CM. Да се намерят ъглите APB и AQB.",
+      "solution": "Означаваме с $N$ пресечната точка на $CM$ с описаната около триъгъника $ABC$ окръжност (черт. 3). От свойствата на ъглополовящите имаме\n\n$$\\frac{QP}{QC} = \\frac{AP}{AC} = \\frac{BP}{BC},$$\n\nили $\\frac{AP}{BP} = \\frac{b}{a}$. Да означим $MP = k\\,MC$.\n\nПрилагаме косинусовата теорема за триъгълниците $BMP$ и $AMP$ и получаваме\n\n$$BP^2 = \\frac{c^2}{4} + m^2k^2 + kcm \\cos \\theta, \\quad AP^2 = \\frac{c^2}{4} + m^2k^2 + kcm \\cos \\theta,$$\n\nкъдето $m = MC, \\theta = \\angle BMP$. Понеже $\\frac{BP^2}{AP^2} = \\frac{a^2}{b^2}$, от горните равенства следва, че\n\n$$k^2m^2(a^2 - b^2) + kcm(a^2 + b^2) \\cos \\theta + \\frac{c^2}{4}(a^2 - b^2) = 0.$$\n\nЗаместваме $mc \\cos \\theta = \\frac{c^2}{4} + m^2 - a^2$ и $4m^2 = 2a^2 + 2b^2 - c^2$ и получаваме\n\n$$k^2(2a^2 + 2b^2 - c^2)(a^2 - b^2) + 2k(b^2 - a^2)(a^2 + b^2) + c^2(a^2 - b^2) = 0.$$\n\nТъй като $a \\neq b$, достигаме до квадратното уравнение $k^2(2a^2 + 2b^2 - c^2) + 2k(a^2 + b^2) + c^2 = 0$ то очевидно има корен $k = 1$, който няма геометричен смисъл. Остава $k = \\frac{c^2}{2a^2 + 2b^2 - c^2} = \\frac{c^2}{4m^2}$, откъдето $PM\\cdot CM = \\frac{c^2}{4} = MN\\cdot CM$. Оттук получаваме, че $PM = MN$, т. е. четириъгълникът $ANBP$ е успоредник и значи $\\angle APB = \\angle ANB = \\pi - \\gamma$. Освен това\n\n$$\\begin{array}{l} \\angle BAQ + \\angle ABQ = \\angle BAP + \\angle PAQ + \\angle ABP + \\angle PBQ = \\\\ = (\\angle BAP + \\angle P\\end{array}$$",
+      "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "similarity",
+        "triangle_geometry",
+        "angle_bisectors",
+        "medians",
+        "trigonometry"
+      ],
+      "confidence": "exact",
+      "reasoning": "Решението използва косинусова теорема и свойства на ъглополовящи и медиани за намиране на ъгли. Това е стандартна техника в триъгълна геометрия.",
+      "_crosslinked_from": "1.6",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-3-Национален кръг-2002-9-12 кл · 2002-None · Зад. 6",
+      "statement": "Да се намери най-малкото число $k$, такова че за всеки триъгълник със страни $a$ и $b$ и ъглополовящи към тях $l_a$ и $l_b$ е в сила неравенството $\\frac{l_a + l_b}{a + b} < k$.",
+      "solution": "Ще докажем, че $k = \\frac{4}{3}$. Първо ще покажем, че $k \\ge \\frac{4}{3}$. Разглеждаме равнобедрени триъгълници, за които $a = b$ е фиксирано число, а ъгълът $\\alpha$ при основата клони към 0. Понеже $l_a = \\frac{2bc \\cos \\frac{\\alpha}{2}}{b + c}$, $c \\to 2b$ и $\\cos \\frac{\\alpha}{2} \\to 1$ при $\\alpha \\to 0$, то $\\frac{l_a + l_b}{a + b} = \\frac{l_a}{b} \\to \\frac{4}{3}$. Следователно $k \\ge \\frac{4}{3}$. Остава да докажем неравенството $\\frac{l_a + l_b}{a + b} < \\frac{4}{3}$. Тъй като\n\n$$l_a < \\frac{2bc}{b + c} = 2b\\left(1 - \\frac{b}{b + c}\\right) < 2b\\left(1 - \\frac{b}{b + a + b}\\right) = 2b\\frac{a + b}{a + 2b}$$\n\nи аналогично $l_b < 2a\\frac{a + b}{2a + b}$, то\n\n$$\\frac{4}{3} - \\frac{l_a + l_b}{a + b} > 2\\left(\\frac{2}{3} - \\frac{b}{a + 2b} - \\frac{a}{2a + b}\\right) = \\frac{2(a - b)^2}{3(a + 2b)(2a + b)} \\ge 0.$$",
+      "answer": "$k = \\frac{4}{3}$",
+      "difficulty": "medium",
+      "techniques": [
+        "angle_bisector",
+        "inequality",
+        "limit_case"
+      ],
+      "confidence": "exact",
+      "reasoning": "Неравенство за ъглополовящи с намиране на най-малка константа. Това е геометрично неравенство (STEPS 2.8).",
+      "_crosslinked_from": "2.8",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-3-Национален кръг-2020-9-12 кл · 2020-None · Зад. 1",
+      "statement": "(Емил Колев) Върху страните на триъгълник $ABC$ са избрани точки $P, Q \\in AB$ ($P$ е между точките $A$ и $Q$) и $R \\in BC$. Точките $M$ и $N$ са пресечни точки на $AR$ съответно с отсечките $CP$ и $CQ$. Ако $BC = BQ$, $CP = AP$, $CR = CN$ и $\\angle BPC = \\angle CRA$, да се докаже, че $MP + NQ = BR$.",
+      "solution": "Решение. Първи начин: От теоремата на Менелай за триъгълник $PBC$ и правата $AR$ получаваме:\n\n$$\\frac{BR}{RC} \\cdot \\frac{CM}{MP} \\cdot \\frac{PA}{AB} = 1,$$\n\nоткъдето намираме $\\frac{MP}{BR} = \\frac{CM.PA}{RC.AB}$.\n\nОт теоремата на Менелай за триъгълник $QBC$ и правата $AR$ получаваме:\n\n$$\\frac{BR}{RC} \\cdot \\frac{CN}{NQ} \\cdot \\frac{QA}{AB} = 1,$$\n\nоткъдето (тъй като $RC = CN$) намираме $\\frac{NQ}{BR} = \\frac{QA}{AB}$.\n\nОт горните равенства следва:\n\n$$\\frac{MP + NQ}{BR} = 1 \\iff QA + \\frac{CM.PA}{RC} = AB \\iff \\frac{CM.PA}{RC} = BQ.$$\n\nТъй като $BQ = BC$ последното равенство е еквивалентно на $CM.CP = CR.CB$.\n\nТова равенство е вярно понеже от условието $\\measuredangle BPC = \\measuredangle CRA$ следва, че четириъгълникът $PBRM$ е вписан в окръжност.\n\nВтори начин: Нека $S \\in BC$ като $QS \\parallel NR$. От теоремата на Талес следва, че $QN = SR$ и за да докажем твърдението на задачата трябва да докажем, че $BS = PM$. За целта ще покажем, че $\\triangle APM \\cong \\triangle QSB$.\n\n1. От $QS \\parallel AM$ следва, че $\\measuredangle BQS = \\measuredangle MAP$.\n\n2. От $\\measuredangle QSC = \\measuredangle CRA = \\measuredangle BPC$ следва, че $\\measuredangle BSQ = \\measuredangle APM$.\n\n3. Като използваме последователно $BQ = BC$, синусовата теорема за $\\triangle PBC$, $CP = AP$ и синусовата теорема за $\\triangle APM$ получаваме:\n\n$$\\frac{BQ}{\\sin \\measuredangle BSQ} = \\frac{BQ}{\\sin \\measuredangle QSC} = \\frac{BC}{\\sin \\measuredangle BPC} = \\frac{CP}{\\sin \\measuredangle QBS} = \\frac{AP}{\\sin \\measuredangle AMP} = \\frac{AM}{\\sin \\measuredangle APM}.$$\n\nТъй като  $ \\measuredangle BSQ = \\measuredangle APM $ , получаваме BQ = AM.\n\nСледователно  $ \\triangle APM \\cong \\triangle QSB $ , BS = PM и MP + NQ = BR.\n\nОценяване (7 точки): Първи начин: 2 т. за  $ \\frac{MP}{BR} = \\frac{CM.PA}{RC.AB} $ ; 2 т. за  $ \\frac{NQ}{BR} = \\frac{QA}{AB} $ ; 1 т. за  $ \\frac{MP + NQ}{BR} = 1 \\iff \\frac{CM.PA}{RC} = BQ $ ; 2 т. за довършване на решението.\n\nВтори начин: 2 т. за построяване на $QS \\parallel NR$ и свеждане на задачата до $BS = PM$; 2 т. за доказване, че $\\triangle APM$ и $\\triangle QSB$ имат равни съответни ъгли; 2 т. за доказване на $BQ = AM$; 1 т. за довършване на решението.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "menelaus_theorem",
+        "thales_theorem",
+        "sine_law"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва теорема на Менелай и Талес, както и синусова теорема. Основната техника е теорема на Менелай (point_id 1.1). Трудността е medium, тъй като изисква няколко стъпки и инсайт за вписания четириъгълник.",
+      "_crosslinked_from": "1.1",
+      "_crosslink_confidence": 0.8
+    },
+    {
+      "source": "OLI-3-Национален кръг-2024-9-12 кл · 2024-None · Зад. 2",
+      "statement": "Точките $M$ и $P$ върху страните $AB$ и $BC$ на триъгълник $ABC$ са такива, че $AM = BC$ и $CP = BM$. Нека точка $O = AP \ncap CM$ и $\\angle ABC = 2 \\angle AOM$. Да се намери $\\angle ABC$.",
+      "solution": "**Първо решение.** Нека $\\angle ABC = \\varphi$. Да означим с $a = BC$ и с $b = CP$. Тогава $a > b$, защото точка $P$ лежи върху страната $BC$. В полуравнината спрямо $BC$, съдържаща т. $A$, построяваме точка $N$ такава, че $CN \\parallel AB$ и $CN = a$. Следователно, $AMCN$ е успоредник, $\\angle PCN = 180^\\circ - \\varphi$ и $\\angle NAP = \\angle AOM = \\varphi/2$. От косинусови теореми съответно за триъгълниците $MBC$, $PCN$ и $APB$ получаваме\n\n$$AN^2 = CM^2 = a^2 + b^2 - 2ab \\cos \\varphi$$\n\n$$PN^2 = a^2 + b^2 + 2ab \\cos \\varphi$$\n\n$$AP^2 = (a + b)^2 + (a - b)^2 - 2(a^2 - b^2) \\cos \\varphi = 2a^2 + 2b^2 - 2(a^2 - b^2) \\cos \\varphi.$$\n\nОт горните три равенства заключаваме, че:\n\n$$(1) \\quad AP^2 = AN^2 + PN^2 - 2(a^2 - b^2) \\cos \\varphi.$$\n\nДа означим $\\angle APN = \\alpha$ и да разгледаме следните два случая:\n\n1 случай: $\\varphi > 90^\\circ$. Следователно $\\varphi/2 > 45^\\circ$, $AN > PN$, т.е., $\\alpha > \\varphi/2 > 45^\\circ$. Но тогава $\\angle ANP < 90^\\circ$ и значи $AN^2 + PN^2 > AP^2$ откъдето $2(a^2 - b^2) \\cos \\varphi > 0$ и $\\varphi < 90^\\circ$. Противоречие!\n\n2 случай: $\\varphi < 90^\\circ$. Аналогично на първия случай, последователно имаме, че $AN < PN$, т.е., $\\alpha < \\varphi/2 < 45^\\circ$, следователно $\\angle ANP > 90^\\circ$, $AN^2 + PN^2 < AP^2$, $2(a^2 - b^2) \\cos \\varphi < 0$ и значи $\\varphi > 90^\\circ$. Противоречие!\n\nОкончателно, единствено е възможно $\\varphi = 90^\\circ$. Обратно, при $\\varphi = 90^\\circ$ имаме, че $AN = PN$ и $AP^2 = AN^2 + PN^2$, откъдето $\\triangle APN$ е равнобедрен правоъгълен и значи $\\angle NAP = \\angle AOM = 45^\\circ = \\angle ABC/2$. Условието е изпълнено и $\\varphi = 90^\\circ$ наистина е решение.\n\n**Забележка.** От по-горе лесно следва, че $\\angle ABC = 90^\\circ \\Leftrightarrow \\angle AOM = 45^\\circ$ ($\\Rightarrow$ е известен факт с различни доказателства).\n\n**Второ решение.** Нека $CP = x$ и $BP = y$, $CO = a$ и $OM = b$. Тогава $AB = x + y$ и $BM = x$. От теоремата на Менелай за $\\triangle MBC$ и правата $AOP$ получаваме, че\n\n$$(2) \\quad \\frac{y}{x} \\cdot \\frac{a}{b} \\cdot \\frac{x + y}{2x + y} = 1, \\text{ т.е. } \\frac{b}{a} = \\frac{y}{x} \\cdot \\frac{x + y}{2x + y}.$$\n\nНека $T$ е върху $BC$, като $B$ е между $C$ и $T$ и $BT = x$. Имаме, че $\\angle BTM = \\frac{1}{2} \\angle ABC = \\angle AOM$. Следователно $MTPO$ е вписан в окръжност и\n\n$$CP\\cdot CT = CO\\cdot CM \\text{ т.е. } x(2x + y) = a(a + b).$$\n\nТогава\n\n$$(3) \\quad (a + b)^2 = x(2x + y)\\left(1 + \\frac{b}{a}\\right) = x(2x + y)\\left(1 + \\frac{y}{x} \\cdot \\frac{x + y}{2x + y}\\right) = x^2 + (x + y)^2$$\n\nСвалено от Klasirane.com\n\nи значи $\\angle ABC = 90^\\circ$.\n\n**Оценяване.** (7 точки) Първо решение: 1т. за въвеждане на т. $N$; 3т. за (1); по 1т. за разглеждането на всеки от случаите $\\varphi < 90^\\circ$, $\\varphi = 90^\\circ$, $\\varphi > 90^\\circ$.\n\nВторо решение: 1т. за въвеждане на т. $T$; 1т. за $MTPO$ – вписан; 2т. за (2); 3т. за (3).",
+      "answer": "$90^\\circ$",
+      "difficulty": "medium",
+      "techniques": [
         "cosine_law",
-        "inscribed_circle"
+        "angle_chasing",
+        "proof_by_contradiction"
       ],
       "confidence": "exact",
-      "reasoning": "Uses similarity of triangles ABPQ~PQC and cosine law to obtain k=1/2, then derives AB/r=2."
+      "reasoning": "Използва се косинусова теорема и доказателство чрез противоречие. Има няколко стъпки, но е директен подход."
     },
     {
-      "source": "OLI-2-Областен кръг-2024-11 кл · 2024-11 · Зад. 2",
-      "statement": "Трапецът $ABCD$ ($AB \\parallel CD$, $AB > CD$) е вписан в окръжност с радиус 9 cm. Петата на перпендикуляра от върха $C$ към основата $AB$ я разделя в отношение $2 : 1$, считано от върха $A$. Ако дължината на диагонала $AC$ е равна на дължината на основата $AB$, то да се намери лицето на трапеца.",
-      "solution": "Решение. Тъй като трапецът ABCD е вписан, то той е равнобедрен. Нека CP, P ∈ AB е височината от върха C. От условието AP : PB = 2 : 1, получаваме, че AB = 3CD. Нека означим с α острия ъгъл на трапеца, т.е. ∡ABC = α. От AC = AB следва, че △ABC е равнобедрен с ъгли ∡ABC = ∡ACB = α и ∡BAC = 180° − 2α. От правоъгълния △APC имаме\n∡PAC = 180° − 2α < 90°,\nт.е. α ∈ (45°; 90°) или 2α ∈ (90°; 180°). От правоъгълните △APC и △BPC изразяваме\ntg(180° − 2α) = CP/AP и tg α = CP/BP,\nоткъдето tg(180° − 2α)/(tg α) = BP/AP = 1/2. Тъй като tg(180° − 2α) = −tg(2α) = −(2·tg α)/(1 − tg² α), получаваме −2/(1 − tg² α) = 1/2, т.е. tg² α = 5, откъдето tg α = √5, т.к. α е остър ъгъл. Пресмятаме sin α = √30/6 и cos α = √6/6. От синусова теорема за △ABC намираме AB = 3√30 cm, а от AB = 3CD, CD = √30 cm. От △BPC имаме CP = BP·tg α = √30·√5 = 5√6 cm. Тогава лицето на трапеца е равно на\nS = ((AB + CD)/2)·CP = 2·√30·5√6 = 60√5 cm².",
-      "answer": "S = 60√5 cm².",
-      "difficulty": "medium",
+      "source": "OLI-2-Областен кръг-1995-10 кл · 1995-10 · Зад. 10.2",
+      "statement": "Let $A_1A_2A_3A_4A_5A_6A_7$, $B_1B_2B_3B_4B_5B_6B_7$, $C_1C_2C_3C_4C_5C_6C_7$ be regular heptagons with areas $S_A$, $S_B$ and $S_C$, respectively. Let $A_1A_2 = B_1B_3 = C_1C_4$. Prove that\n\n$$\\frac{1}{2} < \\frac{S_B + S_C}{S_A} < 2 - \\sqrt{2}.$$",
+      "solution": "Solution. Let $A_1A_2 = a$, $A_1A_3 = b$, $A_1A_4 = c$ (Figure 2). By the Ptolomeus theorem for the quadrangle $A_1A_3A_4A_5$ it follows that $ab + ac = bc$, i.e. $\\frac{a}{b} + \\frac{a}{c} = 1$. Since $\\triangle A_1A_2A_3 \\cong \\triangle B_1B_2B_3$, then $\\frac{B_1B_2}{B_1B_3} = \\frac{a}{b}$ and hence $B_1B_2 = \\frac{a^2}{b}$. Analogously $C_1C_2 = \\frac{a^2}{c}$. Therefore $\\frac{S_B + S_C}{S_A} = \\frac{a^2}{b^2} + \\frac{a^2}{c^2}$. Then $\\frac{a^2}{b} + \\frac{a^2}{c} > \\frac{1}{2}(\\frac{a}{b} + \\frac{a}{c})^2 = \\frac{1}{2}$ (equality is not possible because $\\frac{a}{b} \\neq \\frac{a}{c}$). On the other hand\n\nDownloaded from Klasirane.com\n\n─── Стр. 2 ───\n$$\\frac {a ^ {2}}{b ^ {2}} + \\frac {a ^ {2}}{c ^ {2}} = \\left(\\frac {a}{b} + \\frac {a}{c}\\right) ^ {2} - \\frac {2 a ^ {2}}{b c} = 1 - \\frac {2 a ^ {2}}{b c}. \\tag {1}$$\n\nBy the sine theorem we get $\\frac{a^2}{bc} = \\frac{\\sin^2\\frac{\\pi}{7}}{\\sin^2\\frac{\\pi}{7}\\sin\\frac{4\\pi}{7}} = \\frac{1}{4\\cos\\frac{2\\pi}{7}(1 + \\cos\\frac{2\\pi}{7})}$. Since $\\cos \\frac{2\\pi}{7} < \\cos \\frac{\\pi}{4} = \\frac{\\sqrt{2}}{2}$, then $\\frac{a^2}{bc} > \\frac{1}{4\\frac{\\sqrt{2}}{2}(1 + \\frac{\\sqrt{2}}{2})} = \\sqrt{2} - 1$. From here and from (1) we get the right hand side inequality of the problem.",
+      "answer": null,
+      "difficulty": "hard",
       "techniques": [
-        "trigonometric_theorem",
-        "cyclic_quadrilateral"
+        "ptolemy_theorem",
+        "trigonometric_identities",
+        "area_ratios"
       ],
       "confidence": "exact",
-      "reasoning": "Решението се базира на тригонометрични съотношения (tg) и свойствата на вписан трапец – типична употреба на синусова/косинусова теорема."
+      "reasoning": "Основната техника е теоремата на Птолемей, приложена за седмоъгълник, комбинирана с тригонометрични преобразувания и сравнение на лица. Трудността е висока поради специфичността на седмоъгълника и необходимите тригонометрични сметки.",
+      "_crosslinked_from": "1.3",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-2-Областен кръг-1995-11 кл · 1995-11 · Зад. 11.2",
+      "statement": "Let $A_1A_2A_3A_4A_5A_6A_7$, $B_1B_2B_3B_4B_5B_6B_7$, $C_1C_2C_3C_4C_5C_6C_7$ be regular heptagons with areas $S_A$, $S_B$ and $S_C$, respectively. Let $A_1A_2 = B_1B_3 = C_1C_4$. Prove that\n\n$$\n\\frac{1}{2} < \\frac{S_B + S_C}{S_A} < 2 - \\sqrt{2}.\n$$",
+      "solution": "Let $A_1A_2 = a$, $A_1A_3 = b$, $A_1A_4 = c$ (Figure 2). By the Ptolomeus theorem for the quadrangle $A_1A_3A_4A_5$ it follows that $ab + ac = bc$, i.e. $\\frac{a}{b} + \\frac{a}{c} = 1$. Since $\\triangle A_1A_2A_3 \\cong \\triangle B_1B_2B_3$, then $\\frac{B_1B_2}{B_1B_3} = \\frac{a}{b}$ and hence $B_1B_2 = \\frac{a^2}{b}$. Analogously $C_1C_2 = \\frac{a^2}{c}$. Therefore $\\frac{S_B + S_C}{S_A} = \\frac{a^2}{b^2} + \\frac{a^2}{c^2}$. Then $\\frac{a^2}{b} + \\frac{a^2}{c} > \\frac{1}{2}(\\frac{a}{b} + \\frac{a}{c})^2 = \\frac{1}{2}$ (equality is not possible because $\\frac{a}{b} \\neq \\frac{a}{c}$). On the other hand\n\n$$\\frac {a ^ {2}}{b ^ {2}} + \\frac {a ^ {2}}{c ^ {2}} = \\left(\\frac {a}{b} + \\frac {a}{c}\\right) ^ {2} - \\frac {2 a ^ {2}}{b c} = 1 - \\frac {2 a ^ {2}}{b c}. \\tag {1}$$\n\nBy the sine theorem we get $\\frac{a^2}{bc} = \\frac{\\sin^2\\frac{\\pi}{7}}{\\sin^2\\frac{\\pi}{7}\\sin\\frac{4\\pi}{7}} = \\frac{1}{4\\cos\\frac{2\\pi}{7}(1 + \\cos\\frac{2\\pi}{7})}$. Since $\\cos \\frac{2\\pi}{7} < \\cos \\frac{\\pi}{4} = \\frac{\\sqrt{2}}{2}$, then $\\frac{a^2}{bc} > \\frac{1}{4\\frac{\\sqrt{2}}{2}(1 + \\frac{\\sqrt{2}}{2})} = \\sqrt{2} - 1$. From here and from (1) we get the right hand side inequality of the problem.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "ptolemy_theorem",
+        "trigonometric_identities"
+      ],
+      "confidence": "exact",
+      "reasoning": "Решение използва теорема на Птолемей за хордите в хептагон и тригонометрични тъждества за доказване на неравенството.",
+      "_crosslinked_from": "1.3",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-2-Областен кръг-1995-12 кл · 1995-12 · Зад. 12.2",
+      "statement": "Let $A_1A_2A_3A_4A_5A_6A_7$, $B_1B_2B_3B_4B_5B_6B_7$, $C_1C_2C_3C_4C_5C_6C_7$ be regular heptagons with areas $S_A$, $S_B$ and $S_C$, respectively. Let $A_1A_2 = B_1B_3 = C_1C_4$. Prove that\n\n$$\\frac{1}{2} < \\frac{S_B + S_C}{S_A} < 2 - \\sqrt{2}.$$",
+      "solution": "Solution. Let $A_1A_2 = a$, $A_1A_3 = b$, $A_1A_4 = c$ (Figure 2). By the Ptolomeus theorem for the quadrangle $A_1A_3A_4A_5$ it follows that $ab + ac = bc$, i.e. $\\frac{a}{b} + \\frac{a}{c} = 1$. Since $\\triangle A_1A_2A_3 \\cong \\triangle B_1B_2B_3$, then $\\frac{B_1B_2}{B_1B_3} = \\frac{a}{b}$ and hence $B_1B_2 = \\frac{a^2}{b}$. Analogously $C_1C_2 = \\frac{a^2}{c}$. Therefore $\\frac{S_B + S_C}{S_A} = \\frac{a^2}{b^2} + \\frac{a^2}{c^2}$. Then $\\frac{a^2}{b} + \\frac{a^2}{c} > \\frac{1}{2}(\\frac{a}{b} + \\frac{a}{c})^2 = \\frac{1}{2}$ (equality is not possible because $\\frac{a}{b} \\neq \\frac{a}{c}$). On the other hand\n\n$$\\frac {a ^ {2}}{b ^ {2}} + \\frac {a ^ {2}}{c ^ {2}} = \\left(\\frac {a}{b} + \\frac {a}{c}\\right) ^ {2} - \\frac {2 a ^ {2}}{b c} = 1 - \\frac {2 a ^ {2}}{b c}. \\tag {1}$$\n\nBy the sine theorem we get $\\frac{a^2}{bc} = \\frac{\\sin^2\\frac{\\pi}{7}}{\\sin^2\\frac{\\pi}{7}\\sin\\frac{4\\pi}{7}} = \\frac{1}{4\\cos\\frac{2\\pi}{7}(1 + \\cos\\frac{2\\pi}{7})}$. Since $\\cos \\frac{2\\pi}{7} < \\cos \\frac{\\pi}{4} = \\frac{\\sqrt{2}}{2}$, then $\\frac{a^2}{bc} > \\frac{1}{4\\frac{\\sqrt{2}}{2}(1 + \\frac{\\sqrt{2}}{2})} = \\sqrt{2} - 1$. From here and from (1) we get the right hand side inequality of the problem.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "ptolemy_theorem",
+        "trigonometric_identities"
+      ],
+      "confidence": "exact",
+      "reasoning": "Решение използва теорема на Птолемей за хептагон и тригонометрични тъждества за ъгли в правилен седмоъгълник.",
+      "_crosslinked_from": "1.3",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-1996-11 кл · 1996-11 · Зад. 11.5",
+      "statement": "A convex quadrilateral $ABCD$, for which $\\angle ABC + \\angle BCD < 180^°$, is given. The common point of the lines $AB$ and $CD$ is $E$. Prove that $\\angle ABC = \\angle ADC$ if and only if\n\n$$AC^2 = CD ⋅ CE - AB ⋅ AE.$$",
+      "solution": "Solution. Let $\\angle ABC = \\beta$, $\\angle ADC = \\delta$, $\\angle BAC = \\varphi$ and $\\angle CAD = \\psi$ (Figure 4). The point $A$ is between $E$ and $B$ and the point $D$ is between $E$ and $C$. Also, $\\angle AEC = \\delta + \\varphi + \\psi - 180^\\circ$.\n\nApplying the sine theorem to the triangles $ACD, ACE, ABC$ and again to $\\triangle ACE$, we obtain:\n\nFigure 4.\n\n$$\\begin{array}{l} \\frac{CD}{AC} = \\frac{\\sin \\psi}{\\sin \\delta}, \\\\ \\frac{CE}{AC} = -\\frac{\\sin \\varphi}{\\sin (\\delta + \\varphi + \\psi)}, \\\\ \\frac{AB}{AC} = \\frac{\\sin (\\beta + \\varphi)}{\\sin \\beta}, \\\\ \\frac{AE}{AC} = -\\frac{\\sin (\\delta + \\psi)}{\\sin (\\delta + \\varphi + \\psi)}. \\end{array}$$\n\nFrom here the equation $AC^2 = CD \\cdot CE - AB \\cdot AE$ is equivalent to the equations:\n\n$$\\frac{CD}{AC} \\cdot \\frac{CE}{AC} - \\frac{AB}{AC} \\cdot \\frac{AE}{AC} - 1 = 0;$$\n\n$$\\sin (\\beta + \\varphi) \\sin (\\delta + \\psi) \\sin \\delta - \\sin \\psi \\sin \\varphi \\sin \\beta$$\n\n$$- \\sin \\delta \\sin \\beta \\sin (\\varphi + \\psi + \\delta) = 0;$$\n\n$$\\begin{array}{l} (\\cos (\\beta + \\varphi - \\delta - \\psi) - \\cos (\\beta + \\varphi + \\delta + \\psi)) \\sin \\delta \\\\ - (\\cos (\\varphi - \\psi) - \\cos (\\varphi + \\psi)) \\sin \\beta \\\\ - (\\cos (\\beta - \\delta) - \\cos (\\beta + \\delta)) \\sin (\\varphi + \\psi + \\delta) = 0 \\end{array}$$\n\n$$\\begin{array}{l} \\sin (\\beta + \\varphi + \\psi) - \\sin (2\\delta + \\varphi + \\psi - \\beta) \\\\ + \\sin (2\\delta + \\psi - \\beta - \\varphi) - \\sin (\\beta + \\psi - \\varphi) = 0; \\end{array}$$\n\n$$\\sin (\\beta - \\delta) \\cos (\\delta + \\varphi + \\psi) + \\sin (\\delta - \\beta) \\cos (\\delta + \\psi - \\varphi) = 0;$$\n\n$$\\sin (\\beta - \\delta) \\sin (\\delta + \\psi) \\sin \\varphi = 0$$\n\nBut $\\sin \\varphi \\neq 0$ and $\\sin (\\delta + \\psi) \\neq 0$. Consequently, $\\sin (\\beta - \\delta) = 0$ and $\\beta = \\delta$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "sine_theorem",
+        "trigonometric_identities",
+        "angle_chasing"
+      ],
+      "confidence": "exact",
+      "reasoning": "Приложение на синусова теорема в множество триъгълници и тригонометрични преобразувания."
+    },
+    {
+      "source": "OLI-2-Областен кръг-1996-12 кл · 1996-12 · Зад. 12.5",
+      "statement": "A convex quadrilateral $ABCD$, for which $\\angle ABC + \\angle BCD < 180^\\circ$, is given. The common point of the lines $AB$ and $CD$ is $E$. Prove that $\\angle ABC = \\angle ADC$ if and only if\n\n$$AC^2 = CD \\cdot CE - AB \\cdot AE.$$",
+      "solution": "Solution. Let $\\angle ABC = \\beta$, $\\angle ADC = \\delta$, $\\angle BAC = \\varphi$ and $\\angle CAD = \\psi$ (Figure 4). The point $A$ is between $E$ and $B$ and the point $D$ is between $E$ and $C$. Also, $\\angle AEC = \\delta + \\varphi + \\psi - 180^\\circ$.\n\nApplying the sine theorem to the triangles $ACD, ACE, ABC$ and again to $\\triangle ACE$, we obtain:\n\nFigure 4.\n\n$$\\begin{array}{l} \\frac{CD}{AC} = \\frac{\\sin \\psi}{\\sin \\delta}, \\\\ \\frac{CE}{AC} = -\\frac{\\sin \\varphi}{\\sin (\\delta + \\varphi + \\psi)}, \\\\ \\frac{AB}{AC} = \\frac{\\sin (\\beta + \\varphi)}{\\sin \\beta}, \\\\ \\frac{AE}{AC} = -\\frac{\\sin (\\delta + \\psi)}{\\sin (\\delta + \\varphi + \\psi)}. \\end{array}$$\n\n![img-3.jpeg](img-3.jpeg)\n\nFrom here the equation $AC^2 = CD \\cdot CE - AB \\cdot AE$ is equivalent to the equations:\n\n$$\\frac{CD}{AC} \\cdot \\frac{CE}{AC} - \\frac{AB}{AC} \\cdot \\frac{AE}{AC} - 1 = 0;$$\n\n$$\\sin (\\beta + \\varphi) \\sin (\\delta + \\psi) \\sin \\delta - \\sin \\psi \\sin \\varphi \\sin \\beta$$\n\n$$- \\sin \\delta \\sin \\beta \\sin (\\varphi + \\psi + \\delta) = 0;$$\n\n$$\\begin{array}{l} (\\cos (\\beta + \\varphi - \\delta - \\psi) - \\cos (\\beta + \\varphi + \\delta + \\psi)) \\sin \\delta \\\\ - (\\cos (\\varphi - \\psi) - \\cos (\\varphi + \\psi)) \\sin \\beta \\\\ - (\\cos (\\beta - \\delta) - \\cos (\\beta + \\delta)) \\sin (\\varphi + \\psi + \\delta) = 0 \\end{array}$$\n\n$$\\begin{array}{l} \\sin (\\beta + \\varphi + \\psi) - \\sin (2\\delta + \\varphi + \\psi - \\beta) \\\\ + \\sin (2\\delta + \\psi - \\beta - \\varphi) - \\sin (\\beta + \\psi - \\varphi) = 0; \\end{array}$$\n\n$$\\sin (\\beta - \\delta) \\cos (\\delta + \\varphi + \\psi) + \\sin (\\delta - \\beta) \\cos (\\delta + \\psi - \\varphi) = 0;$$\n\n$$\\sin (\\beta - \\delta) \\sin (\\delta + \\psi) \\sin \\varphi = 0$$\n\nBut $\\sin \\varphi \\neq 0$ and $\\sin (\\delta + \\psi) \\neq 0$. Consequently, $\\sin (\\beta - \\delta) = 0$ and $\\beta = \\delta$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "trigonometry",
+        "sine_law",
+        "angle_chasing"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрична задача за четириъгълник с условие за ъгли. Решението използва синусова теорема в множество триъгълници и тригонометрични преобразувания. Дълги сметки и внимание за ъгли."
+    },
+    {
+      "source": "OLI-2-Областен кръг-1997-11 кл · 1997-11 · Зад. 11.2",
+      "statement": "Given a convex quadrilateral ABCD which can be inscribed in a circle. Let F be the intersecting point of diagonals AC and BD and E be the intersecting point of the lines AD and BC. If M and N are the midpoints of AB and CD, prove that\n\n$$\\frac{M N}{E F}=\\frac{1}{2} \\cdot\\left|\\frac{A B}{C D}-\\frac{C D}{A B}\\right| .$$",
+      "solution": "Let $\\angle AEB = \\gamma$, $EC = c$, $ED = d$, $\\overrightarrow{i} = \\frac{1}{c} \\cdot \\overrightarrow{EC}$ and $\\overrightarrow{j} = \\frac{1}{d} \\cdot \\overrightarrow{ED}$. Since $ABCD$ is an inscribed quadrilateral, $\\frac{AB}{CD} = \\frac{AE}{CE} = \\frac{BE}{DE} = k$. Therefore $\\overrightarrow{EA} = kc\\overrightarrow{j}$ and $\\overrightarrow{EB} = kd\\overrightarrow{i}$. Since $F \\in AC$ and $F \\in BD$ there exist $x$ and $y$ such that\n\n$$\\overrightarrow{EF} = x\\overrightarrow{EA} + (1 - x)\\overrightarrow{EC} = xkc\\overrightarrow{j} + (1 - x)c\\overrightarrow{i}$$\n\nand\n\n$$\\overrightarrow{EF} = y\\overrightarrow{EB} + (1 - y)\\overrightarrow{ED} = ykd\\overrightarrow{i} + (1 - y)d\\overrightarrow{j}.$$\n\nComparing the coefficients of $\\overrightarrow{i}$ and $\\overrightarrow{j}$ in these equalities gives $xkc = (1 - y)d$ and $ykd = (1 - x)c$. This implies $x = \\frac{kd - c}{(k^2 - 1)c}$. Therefore\n\n$$\\overrightarrow{EF} = \\frac{k}{k^2 - 1} \\left( (kd - c)\\overrightarrow{j} + (kc - d)\\overrightarrow{i} \\right)$$\n\nand thus\n\n$$EF^2 = \\left( \\frac{k}{k^2 - 1} \\right)^2 \\left( (kd - c)^2 + (kc - d)^2 + 2(kd - c)(kc - d)\\cos \\gamma \\right).$$\n\nOn the other hand\n\n$$\\begin{aligned} \\overrightarrow{MN} &= \\frac{1}{2} \\cdot \\left( \\overrightarrow{AD} + \\overrightarrow{BC} \\right) = \\frac{1}{2} \\cdot \\left( \\overrightarrow{ED} - \\overrightarrow{EA} + \\overrightarrow{EC} - \\overrightarrow{EB} \\right) \\\\ &= \\frac{1}{2} \\cdot \\left( (d - kc)\\overrightarrow{j} + (c - kd)\\overrightarrow{i} \\right) \\end{aligned}$$\n\nand it follows that\n\n$$MN^2 = \\frac{1}{4} \\cdot \\left( (d - kc)^2 + (c - kd)^2 + 2(d - kc)(c - kd)\\cos \\gamma \\right).$$\n\nTherefore $\\frac{MN^2}{EF^2} = \\frac{1}{4} \\left( \\frac{k^2 - 1}{k} \\right)^2 = \\frac{1}{4} \\left( k - \\frac{1}{k} \\right)^2$ and so\n\n$$\\frac{MN}{EF} = \\frac{1}{2} \\cdot \\left| \\frac{AB}{CD} - \\frac{CD}{AB} \\right|$$",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "vector_algebra",
+        "coordinate_geometry"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрична задача, решена с векторен и координатен метод. Въпреки че е за вписан четириъгълник, решението не използва стандартни геометрични теореми, а разчита на параметризация и векторни изрази. Това я прави сложна и дълга.",
+      "_crosslinked_from": "R.11",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-2-Областен кръг-1998-11 кл · 1998-11 · Зад. 11.5",
+      "statement": "The convex pentagon $ABCDE$ is inscribed in a circle with radius $R$. The inradii of the triangles $ABC, ABD, AEC$ and $AED$ are denoted by $r_{ABC}, r_{ABD}, r_{AEC}$ and $r_{AED}$. Prove that\n\na.) \\(\\cos \\angle CAB + \\cos \\angle ABC + \\cos \\angle BCA = 1 + \\frac{r_{ABC}}{R}\\)\nb.) If \\( r_{ABC} = r_{AED} \\) and \\( r_{ABD} = r_{AEC} \\), then \\( \\triangle ABC \\cong \\triangle AED \\).",
+      "solution": "Solution: a.) Using the standard notation for the elements of $\\triangle ABC$, we obtain that\n\n$$\\begin{array}{l} \\frac {r}{R} = \\frac {S}{p R} = \\frac {4 S ^ {2}}{p a b c} = \\frac {4 (p - a) (p - b) (p - c)}{a b c} = \\\\ = \\frac {1}{2 a b c} \\left(a \\left(b ^ {2} + c ^ {2} - a ^ {2}\\right) + b \\left(c ^ {2} + a ^ {2} - b ^ {2}\\right) + c \\left(a ^ {2} + b ^ {2} - c ^ {2}\\right) - 2 a b c\\right) = \\\\ = \\cos \\angle C A B + \\cos \\angle A B C + \\cos \\angle B C A - 1. \\\\ \\end{array}$$\n\nb.) Applying continuously the equality from a.) and using the fact that $ABCDE$ is inscribed in a circle convex pentagon, it is easy to see that\n\n$$r _ {A B C} + r _ {A E C} + r _ {E D C} = r _ {A E D} + r _ {A B D} + r _ {B C D}.$$\n\nThe condition of the problem and the above equality imply $r_{BCD} = r_{EDC}$. Since $\\triangle BCD$ and $\\triangle EDC$ have a side in common and equal circumradiuses we get that $\\triangle BCD \\cong \\triangle EDC$ (prove it using a.)). In particular $BC = ED$ and using $r_{ABC} = r_{AED}$ again, we get $\\triangle ABC \\cong \\triangle AED$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "inradius_formula",
+        "circumcircle",
+        "trigonometric_identities"
+      ],
+      "confidence": "exact",
+      "reasoning": "Част а) използва формула за връзка между радиусите и тригонометрични функции на ъглите. Част б) използва равенство на радиуси и конгруентност на триъгълници.",
+      "_crosslinked_from": "1.10",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-1999-10 кл · 1999-10 · Зад. 10.2",
+      "statement": "A convex quadrilateral of area $S$ is inscribed in a circle whose centre is a point interior to the quadrilateral. Prove that the area of the quadrilateral whose vertices are the projections of the point of intersection of the diagonals on the sides does not exceed $\\frac{S}{2}$.",
+      "solution": "Let $ABCD$ be a quadrilateral inscribed in a circle with centre $O$ and radius $R$. Denote by $E$ the point of intersection of $AC$ and $BD$. Denote further by $M, N, P, Q$ and $F$ the projections of $E$ on $AB, BC, CD, DA$ and $MN$, respectively. We know that $MN = BE \\sin \\angle ABC = \\frac{BE \\cdot AC}{2R}$. Also,\n\n$$EF = EM \\sin \\angle EMN = \\frac{AE \\cdot BE \\sin \\angle AEB}{AB} \\sin \\angle CBE.$$\n\nSince $BE \\sin \\angle CBE = CE \\sin \\angle BCE = CE \\frac{AB}{2R}$ and $AE \\cdot CE = R^2 - OE^2$, it follows that $EF = \\frac{R^2 - OE^2}{2R} \\sin \\angle AEB$. Therefore",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circle_properties",
+        "area_formulas",
+        "trigonometry",
+        "projections"
+      ],
+      "confidence": "exact",
+      "reasoning": "Използва свойства на вписана окръжност, проекции на точка, тригонометрични зависимости и формули за лице; дълго решение с множество стъпки.",
+      "_crosslinked_from": "1.7",
+      "_crosslink_confidence": 0.8
+    },
+    {
+      "source": "OLI-2-Областен кръг-1999-12 кл · 1999-12 · Зад. 12.2",
+      "statement": "A convex quadrilateral of area $S$ is inscribed in a circle whose centre is a point interior to the quadrilateral. Prove that the area of the quadrilateral whose vertices are the projections of the point of intersection of the diagonals on the sides does not exceed $\\frac{S}{2}$.",
+      "solution": "Let $ABCD$ be a quadrilateral inscribed in a circle with centre $O$ and radius $R$. Denote by $E$ the point of intersection of $AC$ and $BD$. Denote further by $M, N, P, Q$ and $F$ the projections of $E$ on $AB, BC, CD, DA$ and $MN$, respectively. We know that $MN = BE \\sin \\angle ABC = \\frac{BE \\cdot AC}{2R}$. Also,\n\n$$EF = EM \\sin \\angle EMN = \\frac{AE \\cdot BE \\sin \\angle AEB}{AB} \\sin \\angle CBE.$$\n\nSince $BE \\sin \\angle CBE = CE \\sin \\angle BCE = CE \\frac{AB}{2R}$ and $AE \\cdot CE = R^2 - OE^2$, it follows that $EF = \\frac{R^2 - OE^2}{2R} \\sin \\angle AEB$. Therefore\n\nSimilar equalities hold for $S_{\\triangle NEP}, S_{\\triangle PEQ}$ and $S_{\\triangle QEM}$. By combining the above we obtain\n\n$$S_{MNPQ} = \\frac{AC \\cdot BD \\sin \\angle AEB(R^2 - OE^2)}{4R^2} \\leq \\frac{S_{ABCD}}{2},$$\n\nQ. E. D.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circle_properties",
+        "projections",
+        "trigonometry",
+        "area_formulas"
+      ],
+      "confidence": "exact",
+      "reasoning": "Използване на степен на точка, проекции и тригонометрия за доказване на неравенство за лица.",
+      "_crosslinked_from": "1.4",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-2-Областен кръг-2004-11 кл · 2004-11 · Зад. 11.2",
+      "statement": "Допирателните към описаната около остроъгълния триъгълник ABC окръжност, построени в точките A и B, се пресичат в точка D. Ако M е среда на AB, докажете, че <) ACM = <) BCD .",
+      "solution": "От синусовата теорема за триъгълниците AM C и BM C имаме\nAM\nCM = sin <) ACMsin α , BMCM = sin(γ − <) ACM )sin β .\nОттук, тъй като AM = BM , получаваме sin <) ACMsin α = sin(γ − <) ACM )sin β , т.е.\n(1) tg <) ACM = sin α sin γsin β + sin α cos γ .\nОт синусовата теорема за триъгълниците ADC и BDC имаме\nAD\nCD = sin(γ − <) BCD )sin(α + γ) , BDCD = sin <) BCDsin(β + γ) .\nОттук, тъй като AD = BD, получаваме sin(γ − <) BCD )sin β = sin <) BCDsin α , т.е.\n(2) tg <) BCD = sin α sin γsin β + sin α cos γ .\nОт (1) и (2) следва, че tg <) ACM = tg <) BCD . Тъй като и двата ъгъла\nса остри и функцията тангенс е растяща в интервала\n(\n0; π2 ), то <) ACM =<) BCD .",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "sine_theorem",
+        "angle_chasing"
+      ],
+      "confidence": "exact",
+      "reasoning": "Доказателството използва синусовата теорема в няколко триъгълника и сравняване на тангенсите на ъгли. Основната техника е синусова теорема, която е точка 1.6 в STEPS."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2005-12 кл · 2005-12 · Зад. 12.3",
+      "statement": "Нека $ABCD$ е изпъкнал четириъгълник. С $A_1$ и $C_1$ са означени проекциите на върха $D$ съответно върху правите $BC$ и $BA$. Отсечката $A_1C_1$ пресича диагонала $AC$ във вътрешна точка $B_1$ така, че $DB_1 \\ge  DA_1$. Да се докаже, че $ABCD$ е вписан в окръжност тогава и само тогава, когато\n\n$$\\frac{BC}{DA_1} + \\frac{BA}{DC_1} = \\frac{AC}{DB_1}.$$",
+      "solution": "12.3. Нека първо $$ABCD$$ е вписан в окръжност. От теоремата на Симпсон за $$\\triangle ABC$$ имаме, че $$DB_1 \\perp AC$$. Тогава\n\n$$\\angle B_1C_1D = \\angle B_1AD = \\angle CBD, \\ \\angle B_1DC_1 = \\angle B_1AC_1 = \\angle CDB$$\n\nи следователно $$\\triangle B_1C_1D \\sim \\triangle CBD$$. Аналогично $$\\triangle B_1A_1D \\sim \\triangle ABD$$, откъдето\n\n$$DA : DB : DC = \\frac{1}{DA_1} : \\frac{1}{DB_1} : \\frac{1}{DC_1}.$$\n\nОттук и теоремата на Птоломей за $$ABCD$$ следва, че\n\n$$\\frac{BC}{DA_1} + \\frac{BA}{DC_1} = \\frac{AC}{DB_1}. \\tag{1}$$\n\nОбратно, нека за $$ABCD$$ е изпълнено (1). Да положим $$x = \\frac{DB_1}{DA_1}$$ и $$y = \\frac{DB_1}{DC_1}$$. Като повдигнем (1) на квадрат и приложим косинусовата теорема за $$\\triangle ABC$$, получаваме, че $$\\frac{BA}{BC}$$ е корен на уравнението\n\n$$(y^2 - 1)t^2 + 2(xy + \\cos \\angle ABC)t + x^2 - 1 = 0. \\tag{2}$$\n\nПонеже $$B_1$$ лежи на отсечката $$A_1C_1$$, от $$DB_1 \\ge DA_1$$ следва, че $$DB_1 < DC_1$$. Значи $$0 < x \\ge 1$$ и $$0 < y < 1$$, което показва, че (2) има най-много един положителен корен.\n\nсвалено от Klasirane.com\n\nОт друга страна, лесно се вижда, че $C_1$ и $A_1$ лежат съответно на отворените лъчи $BA^-$ и $BC^-$, и правата през $B_1$, перпендикулярна на $DB_1$, пресича тези лъчи. Ако означим съответните пресечни точки с $A'$ и $C'$, получаваме изпъкнал четириъгълник $A'BC'D$, около който може да се опише окръжност съгласно обратната теорема на Симпсон. Следователно за него е изпълнено (3) и значи $\\frac{BA'}{BC'}$ също е корен на (2). Оттук $\\frac{BA}{BC} = \\frac{BA'}{BC'}$, т.е. $AC||A'C'$. Тъй като тези прави имат обща точка $B_1$, следва, че $A = A'$ и $C = C'$, с което задачата е решена.\n\nЗабележка. Условието $DB_1 \\ge DA_1$ е съществено само за обратната посока на твърдението.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "ptolemy_theorem",
+        "simpson_line",
+        "similar_triangles"
+      ],
+      "confidence": "exact",
+      "reasoning": "Използва теорема на Птолемей и свойства на проекциите за доказателство на условие за вписаност.",
+      "_crosslinked_from": "1.3",
+      "_crosslink_confidence": 0.7
+    },
+    {
+      "source": "OLI-2-Областен кръг-2008-11 кл · 2008-11 · Зад. 11.2",
+      "statement": "Във вътрешността на равностранен тригълник $ABC$ е избрана точка $O$. Симетричните точки на $O$ спрямо страните $BC$, $CA$ и $AB$ са означени съответно с $A_1$, $B_1$ и $C_1$. Да се докаже, че правите $AA_1$, $BB_1$ и $CC_1$ се пресичат в една точка.",
+      "solution": "Ще покажем, че\n\n$$K = \\frac{\\sin \\angle CAA_1}{\\sin \\angle BAA_1} \\frac{\\sin \\angle ABB_1}{\\sin \\angle CBB_1} \\frac{\\sin \\angle BCC_1}{\\sin \\angle ACC_1} = 1$$\n\nи твърдението ще следва от синусовия вариант на теоремата на Чева. От синусовата теорема за $\\triangle AA_1C$ и $\\triangle AA_1B$ получаваме\n\n$$\\sin \\angle CAA_1 = \\frac{CA_1 \\sin(60^\\circ + \\gamma_2)}{AA_1}; \\quad \\sin \\angle BAA_1 = \\frac{BA_1 \\sin(60^\\circ + \\beta_1)}{AA_1}.$$\n\nОттук намираме\n\n$$\\frac{\\sin \\angle CAA_1}{\\sin \\angle BAA_1} = \\frac{CA_1 \\sin(60^\\circ + \\gamma_2)}{BA_1 \\sin(60^\\circ + \\beta_1)} = \\frac{OC}{OB} \\frac{\\sin(60^\\circ + \\gamma_2)}{\\sin(60^\\circ + \\beta_1)}.$$\n\nСлед аналогични пресмятания за $\\frac{\\sin \\angle ABB_1}{\\sin \\angle CBB_1}$ и $\\frac{\\sin \\angle BCC_1}{\\sin \\angle ACC_1}$, получаваме\n\n$$K = \\frac{OC}{OB} \\frac{OA}{OC} \\frac{OB}{OC} \\frac{\\sin(60^\\circ + \\gamma_2) \\sin(60^\\circ + \\alpha_2) \\sin(60^\\circ + \\beta_2)}{\\sin(60^\\circ + \\gamma_1) \\sin(60^\\circ + \\alpha_1) \\sin(60^\\circ + \\beta_1)} = 1,$$\n\nноради $60^\\circ + \\gamma_1 + 60^\\circ + \\gamma_2 = 180^\\circ$ и аналогичните равенства за останалите ъгли.\n\nсвалено от Klasirane.com",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "ceva_theorem",
+        "trigonometry"
+      ],
+      "confidence": "exact",
+      "reasoning": "Използва се теорема на Чева в тригонометричен вариант за доказване на пресичане в една точка. Решението използва синусова теорема и ъглови връзки.",
+      "_crosslinked_from": "1.2",
+      "_crosslink_confidence": 0.8
+    },
+    {
+      "source": "OLI-2-Областен кръг-2009-10 кл · 2009-10 · Зад. 10.5",
+      "statement": "В триъгълник ABC е известно е, че 2 <) BAC + 3 <) ABC = 180◦. Да се докаже, че 4(BC + CA) \\le 5AB.",
+      "solution": "**Решение.** Ще използваме стандартните означения за елементите на $\\triangle ABC$. Лесно се вижда, че $\\beta = 2\\gamma - 180^\\circ$ и $\\alpha = 360^\\circ - 3\\gamma$, откъдето $90^\\circ < \\gamma < 120^\\circ$,\n\nсвалено от Klasirane.com\n\nt.е. $-\\frac{1}{2} < \\cos \\gamma < 0$. Имаме последователно\n\n$$\\begin{array}{l} \\frac{a+b}{c} = \\frac{\\sin \\alpha + \\sin \\beta}{\\sin \\gamma} = -\\frac{\\sin 3\\gamma + \\sin 2\\gamma}{\\sin \\gamma} \\\\ = -(3 - 4 \\sin^2 \\gamma) - 2 \\cos \\gamma = -4 \\cos^2 \\gamma - 2 \\cos \\gamma + 1. \\end{array}$$\n\nТъй като квадратната функция $y = -4x^2 - 2x + 1$ приема най-голямата си стойност при $x = -\\frac{1}{4} \\in (-\\frac{1}{2}, 0)$, заключаваме, че $\\frac{a+b}{c} \\leq y(-\\frac{1}{4}) = \\frac{5}{4}$.\n\n**Оценяване.** 2 т. за оценяването на $\\gamma$ или други важни оценки за ъглите, 1 т. за прехода чрез синусова теорема, 2 т. за получаване на функция за изследване и 2 т. за получаване на исканата оценка.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "law_of_sines",
+        "trigonometric_identities",
+        "function_optimization"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрично неравенство в триъгълник с дадено ъглово условие. Решението използва синусова теорема за изразяване на страните и оптимизира тригонометрична функция. Точка 1.6 (Синусова и косинусова теорема) е основна."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2009-11 кл · 2009-11 · Зад. 11.2",
+      "statement": "а) Да се докаже, че за триъгълник с ъгли α, β и γ е изпълнено равенството r = 4R sin α / 2 sin β / 2 sin γ / 2, където r и R са съответно радиусът на вписаната и на описаната окръжност за този триъгълник.\nб) Шестоъгълникът ABCDEF е вписан в окръжност. Да се докаже, че произведението на радиусите на вписаните окръжности в \\triangle ABF, \\triangle BCD и \\triangle DEF е равно на произведението на радиусите на вписаните окръжности в \\triangle ABC, \\triangle CDE и \\triangle EFA тогава и само тогава, когато периметрите на \\triangle ACE и \\triangle BDF са равни.",
+      "solution": "Решение. а) Равенството следва от тъждеството $\\sin \\frac{\\alpha}{2} = \\sqrt{\\frac{1 - \\cos \\alpha}{2}}$, косинусовата теорема и формулите $S = pr = \\frac{abc}{4R}$.\n\nб) Ще използваме, че ако $\\alpha$, $\\beta$ и $\\gamma$ са ъгли в триъгълник, то\n\n$$\\begin{array}{l} \\sin 2\\alpha + \\sin 2\\beta + \\sin 2\\gamma = 2 \\sin(\\alpha + \\beta) \\cos(\\alpha - \\beta) + 2 \\sin \\gamma \\cos \\gamma = \\\\ = 2 \\sin \\gamma (\\cos(\\alpha - \\beta) - \\cos(\\alpha + \\beta)) = 4 \\sin \\alpha \\sin \\beta \\sin \\gamma \\end{array}$$\n\nКато използваме тъждеството от а), получаваме\n\n$$(1) \\quad \\sin \\frac{\\angle ABC}{2} \\sin \\frac{\\angle CDE}{2} \\sin \\frac{\\angle EFA}{2} = \\sin \\frac{\\angle BCD}{2} \\sin \\frac{\\angle DEF}{2} \\sin \\frac{\\angle FAB}{2}.$$\n\nОсвен това $\\angle ABC + \\angle CDE + \\angle EFA = \\angle BCD + \\angle DEF + \\angle FAB = 360^\\circ$, откъдето следва, че\n\n$$\\sin \\angle ABC + \\sin \\angle CDE + \\sin \\angle EFA = \\sin \\angle BCD + \\sin \\angle DEF + \\sin \\angle FAB.$$\n\nОт синусовата теорема сега следва твърдението на задачата.\n\nОценяване. 2 т. за а) и 5 т. за б), от които 3 т. за равенството (1).",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "trigonometric_identities",
+        "triangle_properties",
+        "sine_theorem"
+      ],
+      "confidence": "exact",
+      "reasoning": "Подточка а) използва тригонометрични тъждества и формули за радиуси в триъгълник. Подточка б) използва синусова теорема и свойства на вписани окръжности в шестоъгълник."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2009-11 кл · 2009-11 · Зад. 11.2",
+      "statement": "а) Да се докаже, че за триъгълник с ъгли α, β и γ е изпълнено равенството r = 4R sin α / 2 sin β / 2 sin γ / 2, където r и R са съответно радиусът на вписаната и на описаната окръжност за този триъгълник.\nб) Шестоъгълникът ABCDEF е вписан в окръжност. Да се докаже, че произведението на радиусите на вписаните окръжности в \\triangle ABF, \\triangle BCD и \\triangle DEF е равно на произведението на радиусите на вписаните окръжности в \\triangle ABC, \\triangle CDE и \\triangle EFA тогава и само тогава, когато периметрите на \\triangle ACE и \\triangle BDF са равни.",
+      "solution": "Решение. а) Равенството следва от тъждеството $\\sin \\frac{\\alpha}{2} = \\sqrt{\\frac{1 - \\cos \\alpha}{2}}$, косинусовата теорема и формулите $S = pr = \\frac{abc}{4R}$.\n\nб) Ще използваме, че ако $\\alpha$, $\\beta$ и $\\gamma$ са ъгли в триъгълник, то\n\n$$\\begin{array}{l} \\sin 2\\alpha + \\sin 2\\beta + \\sin 2\\gamma = 2 \\sin(\\alpha + \\beta) \\cos(\\alpha - \\beta) + 2 \\sin \\gamma \\cos \\gamma = \\\\ = 2 \\sin \\gamma (\\cos(\\alpha - \\beta) - \\cos(\\alpha + \\beta)) = 4 \\sin \\alpha \\sin \\beta \\sin \\gamma \\end{array}$$\n\nКато използваме тъждеството от а), получаваме\n\n$$(1) \\quad \\sin \\frac{\\angle ABC}{2} \\sin \\frac{\\angle CDE}{2} \\sin \\frac{\\angle EFA}{2} = \\sin \\frac{\\angle BCD}{2} \\sin \\frac{\\angle DEF}{2} \\sin \\frac{\\angle FAB}{2}.$$\n\nОсвен това $\\angle ABC + \\angle CDE + \\angle EFA = \\angle BCD + \\angle DEF + \\angle FAB = 360^\\circ$, откъдето следва, че\n\n$$\\sin \\angle ABC + \\sin \\angle CDE + \\sin \\angle EFA = \\sin \\angle BCD + \\sin \\angle DEF + \\sin \\angle FAB.$$\n\nОт синусовата теорема сега следва твърдението на задачата.\n\nОценяване. 2 т. за а) и 5 т. за б), от които 3 т. за равенството (1).",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "trigonometric_identities",
+        "triangle_properties",
+        "sine_theorem"
+      ],
+      "confidence": "exact",
+      "reasoning": "Подточка а) използва тригонометрични тъждества и формули за радиуси в триъгълник. Подточка б) използва синусова теорема и свойства на вписани окръжности в шестоъгълник.",
+      "_crosslinked_from": "1.6",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2010-10 кл · 2010-10 · Зад. 10.2",
+      "statement": "Външновписаната окръжност към страната $AB$ на $\\triangle ABC$ се допира до $AB$ в точка $D$. Ако $\\angle CAB = 2 \\angle CDA$, да се намери стойността на отношението $AD : BD$.",
+      "solution": "**Решение.** (*Тригонометричен подход*) Ще използваме стандартните означения за страните на $\\triangle ABC$ и нека $\\ntriangle ADC = \\varphi$. От синусова теорема за $\\triangle ACD$ получаваме $CD = \\frac{b \\sin 2\\varphi}{\\sin \\varphi} = 2b \\cos \\varphi$. Оттук и от косинусова теорема за $\\triangle ADC$ имаме\n\n$$4b^2 \\cos^2 \\varphi = b^2 + (p-b)^2 - 2b(p-b) \\cos 2\\varphi \\iff 2b^2 \\cos 2\\varphi = -b^2 + (p-b)^2 - 2b(p-b) \\cos 2\\varphi,$$\n\nоткъдето намираме $\\cos 2\\varphi = \\frac{p-2b}{2b}$. От косинусова теорема за $\\triangle ABC$ получаваме\n\n$$a^2 = b^2 + c^2 - 2bc \\frac{(p-2b)}{2b} \\iff a^2 = (b+c)^2 - pc \\iff a - b = \\frac{c}{2}.$$\n\nОстава да пресметнем $BD = p - a = \\frac{b + c - a}{2} = \\frac{c}{4}$ и следователно $AD : BD = 3 : 1$.\n\n(Синтетичен подход) Нека вписаната в $\\triangle ABC$ ок-ръжност $k$ е с център $I$ и се допира до страната $AB$ в точка $P$. Ако означим с $Q$ диаметрално противоположната точка на $P$ в $k$, то добре известен факт е, че точките $C$, $Q$ и $D$ са колинеарни. (Класическото доказателство е с хомотетия, с център $C$, която изпраща $k$ във външновписаната окръжност.)\n\n![img-3.jpeg](img-3.jpeg)\n\nТогава $\\measuredangle IAP = \\frac{1}{2} \\measuredangle CAB = \\measuredangle CDA$, т.е. правоъгълните триъгълници $\\triangle IPA$ и $\\triangle QPD$ са подобни и $PD : PA = PQ : PI = 2 : 1$. От друга страна $PA = BD$ и следователно $AD : BD = 3 : 1$.\n\nИнструкции за оценяване: (Тригонометричен подход) 1 т. за въвеждането на помощен ъгъл $\\measuredangle ADC = \\varphi$, 1 т. за прилагане на синусова теорема за $\\triangle ADC$ и намиране $CD = 2b \\cos \\varphi$; 2 т. за прилагане на косинусова теорема за $\\triangle ADC$ и намиране на $\\cos 2\\varphi = \\frac{p - 2b}{2b}$; 2 т. за прилагане на косинусова теорема за $\\triangle ABC$ и достигане до равенството $a - b = \\frac{c}{2}$; 1 т. за достигане до отговора.\n\n(Синтетичен подход) 1 т. за построяване на вписаната окръжност; 2 т. за въвеждане на точката $Q$ и отчитане на факта, че $Q \\in CD$; 1 т. за доказателство на факта, че $Q \\in CD$; 1 т. за $\\triangle IPA \\sim \\triangle QPD$; 2 т. за достигане до отговора.",
+      "answer": "3 : 1",
+      "difficulty": "hard",
+      "techniques": [
+        "incircle_and_excircle",
+        "trigonometry",
+        "similar_triangles"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва външновписаната окръжност и връзка с вписаната. Решението използва синусова теорема и косинусова теорема, но главната техника е свързана със свойствата на вписаната и външновписаните окръжности (1.10). Синтетичният подход потвърждава това с геометрични свойства.",
+      "_crosslinked_from": "1.10",
+      "_crosslink_confidence": 0.78
+    },
+    {
+      "source": "OLI-2-Областен кръг-2010-11 кл · 2010-11 · Зад. 4",
+      "statement": "Даден е остроъгълен триъгълник $ABC$ за който $\\cos \\angle BAC = \\frac{1}{3}$. Правата през $A$, успоредна на медианата $BM$, $M \\in AC$ пресича продължението на височината $CC_1$, $C_1 \\in AB$ в точка $D$. Ако $CC_1 : C_1D = 2 : 1$, да се намери отношението $\\frac{R}{r}$ където $R$ и $r$ са съответно радиусите на описаната и вписаната окръжност за $\\triangle ABC$.",
+      "solution": "Решение. Да означим с N пресечната точка на BM и $CC_1$. Тъй като MN е успоредна на AD и M е среда на AC, то MN е средна отсечка в $\\triangle ADC$. Следователно N е среда на CD и като използваме, че $CC_1 : C_1D = 2 : 1$, лесно получаваме $CN : NC_1 : C_1D = 3 : 1 : 2$.\n\nАко $AC = 2t$, то $AC_1 = AC \\cos \\angle BAC = \\frac{2t}{3}$ и от подобието на $\\triangle ADC_1$ и $BNC_1$ намираме $\\frac{AC_1}{BC_1} = \\frac{DC_1}{NC_1} = 2$, т.е. $BC_1 = \\frac{t}{3}$. Сега от косинусовата теорема пресмятаме\n\n$$BC = \\sqrt{t^2 + 4t^2 - 4t^2 \\frac{1}{3}} = t \\sqrt{\\frac{11}{3}}.$$\n\nТъй като $\\sin \\angle BAC = \\sqrt{1 - \\cos^2 \\angle BAC} = \\frac{2\\sqrt{2}}{3}$, то $R = \\frac{BC}{2 \\sin \\angle BAC} = \\frac{t\\sqrt{66}}{8}$.\n\nОт формулата $r(AB + BC + CA) = AB.AC \\sin \\angle BAC$ намираме $r = \\frac{4t\\sqrt{2}}{9 + \\sqrt{33}}$ и следователно\n\n$$\\frac{R}{r} = \\frac{9\\sqrt{33} + 33}{32}.$$",
+      "answer": "$\\frac{9\\sqrt{33} + 33}{32}$",
+      "difficulty": "hard",
+      "techniques": [
+        "similar_triangles",
+        "median_properties",
+        "trigonometry",
+        "circle_radii"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква намиране на отношение R/r за триъгълник. Използва се геометрия с медиани, височини и тригонометрични зависимости. Това е комплексна геометрична задача."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2011-11 кл · 2011-11 · Зад. 11.2",
+      "statement": "Точките $O$ и $I$ са съответно център на описаната и вписаната окръжност за триъгълник $ABC$. Ъглополовящата на ъгъл $ACB$ пресича описаната около триъгъла окръжност в точка $D$. Ако $r$ е радиусът на вписаната окръжност, $OI = r$ и $ID = 2r$, да се намери $\\\\sin \\\\angle ACB$.",
+      "solution": "Тъй като DI = DA (следва от <) DIA =<) DAI = α + γ2 ), то от синусовата теорема получаваме r = R sin γ2 . От r2 = OI 2 = R2 − 2Rr след заместване r = R sin γ2 , намираме sin2 γ2 + 2 sin γ2 − 1 = 0 . Оттук последователно намираме sin γ2 = √2 − 1, cos γ2 = √1 − (√2 − 1)2 = √2(√2 − 1) и sin γ = 2 sin γ2 cos γ2 = (2(√2 − 1)) 32 .",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "circle_properties",
+        "angle_bisector",
+        "sine_theorem",
+        "euler_formula"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата включва центрове на описана и вписана окръжност, ъглополовяща и връзки между радиусите. Използва се синусова теорема и формулата на Ойлер за разстоянието между центровете O и I. Решението изисква изразяване на sin γ чрез дадените отношения.",
+      "_crosslinked_from": "1.8",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2013-10 кл · 2013-10 · Зад. 10.2",
+      "statement": "Даден е \\triangle ABC с <) ACB > 90 ◦ . Нека CH е височината от върха C (H ∈ AB), а AL е ъглополовящата на <) BAC (L ∈ BC). Да се намери <) ALC, ако е известно, че <) ALC =<) BHL.",
+      "solution": "Първо решение. Нека $\\angle ALC = \\angle BHL = \\varphi$ и $P$ е петата на височината от върха $B$ към пра-вата $AC$ ($P \\in AC^\\to$). Четириъгълникът $HBPC$ е вписан в окръжност с диаметър $BC$ и следо-вателно $\\angle BHP = \\angle BCP$. Тогава\n\n$$\\angle LAP = \\angle BCP - \\varphi = \\angle BHP - \\varphi = \\angle LHP,$$\n\nСвалено от Klasirane.com\n\nт.е. AHLP е вписан четириъгълник. От друга страна, AL е ъглополовяща на $\\measuredangle BAC$ и следователно $L \\in s_{PH}$. Имаме две възможности:\n\nСлучай 1. Ако $s_{PH} \\cap BC$, то $L$ е център на описаната около HBPC окръжност, т.е. $BL = LC$, $AB = AC$. Но $\\measuredangle ACB > 90^\\circ$ и достигаме до противоречие.\n\nСлучай 2. Ако $s_{PH} \\equiv BC$, то HBPC е делтоид и\n\n$$\\measuredangle CHL = \\measuredangle CPL = \\measuredangle BHL = \\varphi,$$\n\nт.е. $\\varphi = 45^\\circ$.\n\nВторо решение. Ако използваме стандартните означения за триъгълник, то\n\n$$\\frac{BL}{LC} = \\frac{S_{BHL}}{S_{CHL}} = \\frac{BH.\\sin\\varphi}{CH.\\cos\\varphi} = \\cot\\beta.\\operatorname{tg}\\varphi = \\cot\\beta.\\operatorname{tg}\\left(\\frac{\\alpha}{2} + \\beta\\right).$$\n\nОт друга страна,\n\n$$\\frac{BL}{LC} = \\frac{BA}{AC} = \\frac{\\sin\\gamma}{\\sin\\beta} = \\frac{\\sin(\\alpha + \\beta)}{\\sin\\beta}$$\n\nи следователно\n\n$$\\cos\\beta\\sin\\left(\\frac{\\alpha}{2} + \\beta\\right) = \\sin(\\alpha + \\beta)\\cos\\left(\\frac{\\alpha}{2} + \\beta\\right) \\Leftrightarrow 2\\alpha + \\beta = 90^\\circ,$$\n\nт.е. $\\varphi = 45^\\circ$.\n\nЗабележка. В произволен $\\triangle ABC$ условието $\\measuredangle ALC = \\measuredangle BHL$ е изпълнено тогава и само тогава, когато $\\measuredangle ACB = 90^\\circ + \\measuredangle ABC$.\n\n# **Оценяване:**\n\nПърво решение. 1 т. за построяването на точка $P$; 2 т. за AHLP – вписан; 1 т. за $L \\in s_{PH}$; 1 т. за първия случай; 2 т. за втория случай.\n\nВторо решение. 3 т. за достигане до тригонометрична връзка между $\\alpha$, $\\beta$ и $\\gamma$; 3 т. за $2\\alpha + \\beta = 90$; 1 т. за $\\varphi = 45^\\circ$.",
+      "answer": "45^\\circ",
+      "difficulty": "hard",
+      "techniques": [
+        "angle_chasing",
+        "cyclic_quadrilateral",
+        "angle_bisector_theorem",
+        "trigonometry"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрична задача с ъглополовяща и височина в тъпоъгълен триъгълник. Решението използва свойства на вписани четириъгълници и тригонометрични връзки.",
+      "_crosslinked_from": "2.11",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-2-Областен кръг-2017-12 кл · 2017-12 · Зад. 12.3",
+      "statement": "Даден е правоъгълен равнобедрен триъгълник $$ABC$$ ($$\\angle  C = 90^◦$$). Вписаната в триъгълника окръжност се допира до страните $$BC$$, $$CA$$, $$AB$$ съответно в точките $$A_1$$, $$B_1$$, $$C_1$$, а върху дъгата $$̂{A_1B_1}$$, която не съдържа $$C_1$$, е избрана произволна точка $$P$$. Нека разстоянията от точката $$P$$ до страните $$BC$$, $$CA$$, $$AB$$ са равни съответно на $$t_a$$, $$t_b$$ и $$t_c$$. Да се докаже, че\n\n$$√{t_a} + √{t_b} √{t_c} = √{2 - √{2}}.$$",
+      "solution": "По теоремата на Птолемей за вписания четириъгълник $PA_1C_1B_1$ имаме $PA_1 \\cdot B_1C_1 + PB_1 \\cdot A_1C_1 = PC_1 \\cdot A_1B_1$, откъдето получаваме\n\n$$\\frac{PA_1 + PB_1}{PC_1} = \\frac{A_1B_1}{A_1C_1} = 2 \\sin \\frac{45^\\circ}{2} = \\sqrt{2 - \\sqrt{2}}.$$\n\nАко диаметърът на вписаната окръжност през $A_1$ е $A_1A_0 = 2r$, то $t_a$ е проекцията на $PA_1$ върху $A_1A_0$. Следователно $PA_1 = \\sqrt{2r\\,t_a}$. Аналогично $PB_1 = \\sqrt{2r\\,t_b}$ и $PC_1 = \\sqrt{2r\\,t_c}$ и като заместим в резултата от по-горе, получаваме желаното равенство.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "ptolemy_theorem",
+        "incircle",
+        "distances_to_sides"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрична задача, използваща теоремата на Птолемей за циклични четириъгълници и връзка с разстояния до страни. Точка 1.3 от STEPS е точна. Трудността е висока поради необходимостта от допълнителни построения и познаване на специфични свойства.",
+      "_crosslinked_from": "1.3",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-2-Областен кръг-2018-12 кл · 2018-12 · Зад. 12.2",
+      "statement": "Нека $AM$ и $BN$ ($M \\in BC, N \\in AC$) са вътрешните ъглополовящи съответно на $\\angle BAC$ и $\\angle ABC$ в триъгълника $ABC$. Ако $AM \\cap BN = I$, а описаните окръжности съответно около $\\triangle ANI$ и $\\triangle BMI$ се пресичат за втори път в точката $L$ от страната $AB$, да се докаже, че лицето на $\\triangle MNL$ не надминава една четвърт от лицето на $\\triangle ABC$.",
+      "solution": "Решение. Тъй като $\\angle CNI = \\angle ALI$, $\\angle CMI = \\angle BLI$ и $\\angle ALI + \\angle BLI = 180^\\circ$, то четириъгълникът $NICM$ е вписан в окръжност. Тогава\n\n$$180^\\circ = \\gamma + \\angle NIM = \\gamma + 90^\\circ + \\frac{1}{2}\\gamma = \\frac{3}{2}\\gamma + 90^\\circ,$$\n\nт.е. $\\gamma = 60^\\circ$. Тогава\n\n$$\\angle CNM = \\angle CNB - \\angle MNB = \\alpha + \\frac{1}{2}\\beta - 30^\\circ = \\frac{1}{2}\\alpha + 30^\\circ$$\n\nи $\\angle LNM = \\angle LNI + \\angle MNI = \\frac{1}{2}\\alpha + 30^\\circ$. Следователно $\\angle CNM = \\angle LNM$ и аналогично $\\angle CMN = \\angle LMN$, т.е. $\\triangle LNM \\cong \\triangle CMN$. Получаваме\n\n$$\\frac{S_{LMN}}{S_{ABC}} = \\frac{S_{CMN}}{S_{ABC}} = \\frac{CM\\cdot CN}{CB\\cdot CA} = \\frac{\\frac{ab}{b+c} \\cdot \\frac{ab}{a+c}}{ab} = \\frac{ab}{(a+c)(b+c)}.$$\n\nТрябва да докажем, че $\\frac{ab}{(a+c)(b+c)} \\leq \\frac{1}{4} \\iff (a+c)(b+c) \\geq 4ab$.\n\nТъй като $a+c \\geq 2\\sqrt{ac}$ и $b+c \\geq 2\\sqrt{bc}$, последното неравенство е еквивалентно на $c^2 \\geq ab$. От косинусовата теорема имаме $c^2 = a^2 + b^2 - ab \\geq ab \\iff (a-b)^2 \\geq 0$, с което задачата е решена.\n\nИнструкции за оценяване. (7 точки) 2 т. за $\\gamma = 60^\\circ$, 2 т. за $\\triangle LNM \\cong \\triangle CMN$, 1 т. за изразяване на $S_{LMN}/S_{ABC}$, 2 т. за доказване на $S_{LMN}/S_{ABC} \\leq 1/4$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "angle_chasing",
+        "circle_properties",
+        "congruent_triangles",
+        "area_ratios",
+        "cosine_law"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква комбинация от геометрични техники: вписани ъгли, свойства на окръжности, еднакви триъгълници и отношение на лица. Използва се косинусова теорема за доказване на неравенство."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2018-12 кл · 2018-12 · Зад. 12.2",
+      "statement": "Нека $AM$ и $BN$ ($M \\in BC, N \\in AC$) са вътрешните ъглополовящи съответно на $\\angle BAC$ и $\\angle ABC$ в триъгълника $ABC$. Ако $AM \\cap BN = I$, а описаните окръжности съответно около $\\triangle ANI$ и $\\triangle BMI$ се пресичат за втори път в точката $L$ от страната $AB$, да се докаже, че лицето на $\\triangle MNL$ не надминава една четвърт от лицето на $\\triangle ABC$.",
+      "solution": "Решение. Тъй като $\\angle CNI = \\angle ALI$, $\\angle CMI = \\angle BLI$ и $\\angle ALI + \\angle BLI = 180^\\circ$, то четириъгълникът $NICM$ е вписан в окръжност. Тогава\n\n$$180^\\circ = \\gamma + \\angle NIM = \\gamma + 90^\\circ + \\frac{1}{2}\\gamma = \\frac{3}{2}\\gamma + 90^\\circ,$$\n\nт.е. $\\gamma = 60^\\circ$. Тогава\n\n$$\\angle CNM = \\angle CNB - \\angle MNB = \\alpha + \\frac{1}{2}\\beta - 30^\\circ = \\frac{1}{2}\\alpha + 30^\\circ$$\n\nи $\\angle LNM = \\angle LNI + \\angle MNI = \\frac{1}{2}\\alpha + 30^\\circ$. Следователно $\\angle CNM = \\angle LNM$ и аналогично $\\angle CMN = \\angle LMN$, т.е. $\\triangle LNM \\cong \\triangle CMN$. Получаваме\n\n$$\\frac{S_{LMN}}{S_{ABC}} = \\frac{S_{CMN}}{S_{ABC}} = \\frac{CM\\cdot CN}{CB\\cdot CA} = \\frac{\\frac{ab}{b+c} \\cdot \\frac{ab}{a+c}}{ab} = \\frac{ab}{(a+c)(b+c)}.$$\n\nТрябва да докажем, че $\\frac{ab}{(a+c)(b+c)} \\leq \\frac{1}{4} \\iff (a+c)(b+c) \\geq 4ab$.\n\nТъй като $a+c \\geq 2\\sqrt{ac}$ и $b+c \\geq 2\\sqrt{bc}$, последното неравенство е еквивалентно на $c^2 \\geq ab$. От косинусовата теорема имаме $c^2 = a^2 + b^2 - ab \\geq ab \\iff (a-b)^2 \\geq 0$, с което задачата е решена.\n\nИнструкции за оценяване. (7 точки) 2 т. за $\\gamma = 60^\\circ$, 2 т. за $\\triangle LNM \\cong \\triangle CMN$, 1 т. за изразяване на $S_{LMN}/S_{ABC}$, 2 т. за доказване на $S_{LMN}/S_{ABC} \\leq 1/4$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "angle_chasing",
+        "circle_properties",
+        "congruent_triangles",
+        "area_ratios",
+        "cosine_law"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква комбинация от геометрични техники: вписани ъгли, свойства на окръжности, еднакви триъгълници и отношение на лица. Използва се косинусова теорема за доказване на неравенство.",
+      "_crosslinked_from": "1.6",
+      "_crosslink_confidence": 0.72
+    },
+    {
+      "source": "OLI-2-Областен кръг-2022-11 кл · 2022-11 · Зад. 11.2",
+      "statement": "В остроъгълен триъгълник $ABC$ са построени ъглополовящата $BL$, $L ∈ AC$ и височината $AH$, $H ∈ BC$. Да се намери $\\angle  AHL$, ако\n\n$$\\sin \\angle  BAC = √{3} \\cos \\angle  ACB.$$",
+      "solution": "Решение. Ще използваме стандартните означения за елементите на триъгълника $ABC$. За $\\varphi = \\angle AHL$ имаме:\n\n$$\\angle LHC = 90^\\circ - \\varphi \\text{ и } \\angle HLC = 90^\\circ + \\varphi - \\gamma.$$\n\nПърви начин. Тъй като\n\n$$\\frac{S_{AHL}}{S_{CHL}} = \\frac{AL}{CL} \\quad \\text{и} \\quad \\frac{S_{AHL}}{S_{CHL}} = \\frac{AH.LH \\sin \\varphi}{CH.LH \\sin(90^\\circ - \\varphi)} = \\frac{AH \\sin \\varphi}{CH \\cos \\varphi},$$\n\nполучаваме $\\frac{AL}{CL} = \\frac{AH}{CH} \\operatorname{tg} \\varphi$. В това равенство заместваме $\\frac{AL}{CL} = \\frac{AB}{CB} = \\frac{\\sin \\gamma}{\\sin \\alpha}$ и $\\frac{AH}{CH} = \\operatorname{tg} \\gamma$ и получаваме\n\nсвалено от Klasirane.com\n\n$$\\frac {\\sin \\gamma}{\\sin \\alpha} = \\frac {\\sin \\gamma}{\\cos \\gamma} \\operatorname{tg} \\varphi \\iff \\operatorname{tg} \\varphi = \\frac {\\cos \\gamma}{\\sin \\alpha} = \\frac {\\sqrt {3}}{3}.$$\n\nСледователно $\\varphi = 30^{\\circ}$.\n\nВтори начин. От синусовата теорема за $\\triangle LHC$ получаваме:\n\n$$\\frac {L C}{H C} = \\frac {\\sin (90^{\\circ} - \\varphi)}{\\sin (90^{\\circ} + \\varphi - \\gamma)} = \\frac {\\cos \\varphi}{\\cos (\\gamma - \\varphi)}.$$\n\nТъй като $LC = \\frac{ab}{a + c}$ и $HC = b\\cos \\gamma$ след заместване в горното равенство, получаваме:\n\n$$\\frac {\\frac {a b}{a + c}}{b \\cos \\gamma} = \\frac {\\cos \\varphi}{\\cos (\\gamma - \\varphi)} \\iff a \\cos (\\gamma - \\varphi) = (a + c) \\cos \\gamma \\cos \\varphi .$$\n\nКато използваме, че $\\cos (\\gamma -\\varphi) = \\cos \\gamma \\cos \\varphi +\\sin \\gamma \\sin \\varphi$ и $\\frac{a}{c} = \\frac{\\sin\\alpha}{\\sin\\gamma}$ след опростяване на последното равенство, получаваме:\n\n$$\\frac {\\sin \\varphi}{\\cos \\varphi} = \\frac {\\cos \\gamma}{\\sin \\alpha} = \\frac {\\sqrt {3}}{3}.$$\n\nСледователно $\\operatorname{tg} \\varphi = \\frac {\\sqrt {3}}{3}$, т.е. $\\varphi = 30^{\\circ}$.\n\nОценяване. Първи начин: 3 т. за $\\frac{AL}{CL} = \\frac{AH}{CH} \\operatorname{tg} \\varphi$; 2 т. за $\\frac{AL}{CL} = \\frac{AB}{CB} = \\frac{\\sin \\gamma}{\\sin \\alpha}$; 1 т. за $\\frac{AH}{CH} = \\operatorname{tg} \\gamma$; 1 т. за получаване на отговора.\n\nВтори начин: 2 т. за $\\frac{LC}{HC} = \\frac{\\cos\\varphi}{\\cos(\\gamma - \\varphi)}$; 2 т. за $\\cos (\\gamma -\\varphi) = (a + c)\\cos \\gamma \\cos \\varphi$; 2 т. за опростяване до $\\frac{a}{c} = \\frac{\\sin\\alpha}{\\sin\\gamma}$; 1 т. за получаване на отговора.",
+      "answer": "30^{\\circ}",
+      "difficulty": "hard",
+      "techniques": [
+        "trigonometry",
+        "angle_chasing",
+        "properties_of_triangle"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква намиране на ъгъл в триъгълник с дадено тригонометрично условие. Решението използва синусова теорема и свойства на ъглополовяща и височина. Това е класическа задача за триъгълници, която се отнася до синусова и косинусова теорема."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2023-11 кл · 2023-11 · Зад. 11.2",
+      "statement": "Ъглоиловящата $AD$ в $\\triangle ABC$ е равна на страната $AC$. Описаната около $\\triangle ABD$ окръжност пресича страната $AC$ в точка $E$ като $\f\\frac{DE}{CD} = \f\\frac{\\sqrt{3}+1}{2}$. Да се намерят ъглите на $\\triangle ABC$.",
+      "solution": "Решение. Нека $Угъл BAC = а$. От свойството на ъглополовящата $фрак{DB}{DC} = фрак{AB}{AC}$. Но $BD = DE$ като хорди в окръжност, на които отговарят равни дъги, откъдето $AB = фрак{\\sqrt{3}+1}{2}AC$. Ако $BD = DE = x$, то $CD = фрак{2x}{1+\\sqrt{3}}$ и от формулата за ъглополовящата, при $AD = AC$ намираме\n\n$$AD^2 = AB.AD - BD.DC = 2x^2,$$\n\nт. е. $AD = x\\sqrt{2}$. От косинусова теорема за $триъгълника ABD$ спрямо страната $BD$ получаваме\n\n$$x^2 = x^2 лево( фрак{\\sqrt{3}+1}{\\sqrt{2}} десно)^2 + (x\\sqrt{2})^2 - 2\\sqrt{2} сдот фрак{\\sqrt{3}+1}{\\sqrt{2}} x^2 сдот кос фрак{а}{2}.$$\n\nСвалено от Klasirane.com\n\nОттук $кос фрак{а}{2} = фрак{\\sqrt{3}}{2}$, т. е. $а = 60^{цирк}$. От равнобедрения триъгълник $триъгълник ACD$ намираме $угъл DCA = угъл CDA = 75^{цирк}$ и тогава $угъл ABC = 45^{цирк}$. Окончателно ъгловете на $триъгълника ABC$ са $60^{цирк}, 45^{цирк}$ и $75^{цирк}$.\n\nОценяване. (7 точки) 4 т. за изразяване на $AD$ чрез $BD$, 2 т. за намиране на $а = 60^{цирк}$ и 1 т. за другите два ъгъла.",
+      "answer": "60^{цирк}, 45^{цирм} и 75^{цирк}",
+      "difficulty": "hard",
+      "techniques": [
+        "angle_bisector_theorem",
+        "circle_properties",
+        "cosine_rule"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрична задача, която използва косинусова теорема за намиране на ъгли, което я класифицира в точка 1.6. Трудността е hard поради необходимостта от построение и множество стъпки."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2023-12 кл · 2023-12 · Зад. 12.2",
+      "statement": "Даден е триъгълник $ABC$, за който ъглополовящата на средния по големина ъгъл е равна на най-малката му страна и числата $a = BC$, $b = CA$ и $c = AB$, взети в този ред, образуват аритметична прогресия. Да се намерят отношението, в което центърът на вписаната окръжност $J$ разделя тази ъглополовяща, радиусът $r$ на тази окръжност и дължините на страните на триъгълника, при условие че лицето му $S$ е равно на $21\\sqrt{15}$.",
+      "solution": "Решение. Понеже числата a = BC, b = CA и c = AB в този ред образуват аритметична прогресия, то a + c = 2b и без ограничение на общността можем да считаме, че a \\le  b \\le  c. В триъгълника срещу по-голям ъгъл лежи по-голяма страна и обратно, т.е. конструкцията ще бъде както е показано на чертежа и BL = BC = a. От свойството на ъглополовящите за триъгълника ABC непосредствено получаваме m = AL = c b/a + c = c/2 и n = CL = a b/a + c = a/2. Сега понеже AJ е ъглополовяща в триъгълника ABL, то 1/2 = c/2 = AL/AB = LJ/BJ, т.е. BJ : JL = 2 : 1. Нека c p да означим полупериметъра на Δ ABC, т.е. p = a + b + c/2. От равенството a + c = 2b получаваме b = 2/3 p и a + c = 4/3 p. Сега от BL = a, m = AL = c/2, n = CL = a/2 и формулта за ъглополовящата в Δ ABC имаме a² = BL² = c · a - m · n = 3/4 ac, т.е. a = 3/4 c. Така от равенствата a = 3/4 c и a + c = 4/3 p непосредствено получаваме a = 12/21 p, b = 2/3 p и c = 16/21 p. Сега от свойствата на допирателна от външна точка към окръжност имаме BM = p - b = p/3, а от BJ : JL = 2 : 1 и BL = a достигаме до BJ = 2/3 a = 8/21 p. Тогава в правоъгълния триъгълник BMJ теоремата на Питагор ни дава BJ² = BM² + JM², (8/21 p)² = (p/3)² + r² или (8² - 7²)/21² p² = r², т.е. r² = 15/21² p². Сега от формулата за лице S = pr = 21√15 след повдигане на квадрат достигаме до S² = p²r² = 21² · 15 и след заместване на r² = 15/21² p² имаме p² 15/21² p² = 21² · 15, т.е. p = 21. Така окончателно получаваме r = √15, a = 12, b = 14 и c = 16.",
+      "answer": "r = √15, a = 12, b = 14, c = 16",
+      "difficulty": "hard",
+      "techniques": [
+        "angle_bisector",
+        "incenter",
+        "semiperimeter",
+        "area_formula",
+        "pythagoras"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрична задача с ъглополовяща и вписана окръжност. Изисква комплексни изчисления и свойства на инцентъра. Съвпада с A2.",
+      "_crosslinked_from": "1.10",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2026-10 кл · 2026-10 · Зад. 10.2",
+      "statement": "Даден е правилен петоъгълник ABCDE , за който F е пресечната точка на CE и AD, а M е пресечната точка на правите BC и DE. Ъглополовящата на <) AF E пресича AE в точка H. Нека правите M H и AB се пресичат в точка I, а перпендикулярът в I към AB пресича правата CD в точка K. Да се докаже, че B, F и K лежат на една права.",
+      "solution": "Решение.\n\n![img-0.jpeg](img-0.jpeg)\n\nПърви начин: Нека правите AB и DE се пресичат в точка T, а правите AE и CD в точка P. От съображения за симетрия B, F и P лежат на една права и е достатъчно да докажем, че K ≡ P. От теоремата на Менелай за ΔTAE и правата (MHI), както и от AC || ED следва, че\n\n$$\\frac{AI}{IT} = \\frac{AH}{HE} \\cdot \\frac{EM}{MT} = \\frac{AF}{FE} \\cdot \\frac{BM}{MT} = \\frac{AC}{ED} \\cdot \\frac{BC}{AC} = 1.$$\n\nТака получаваме, че AI = IT. Но ΔTAP е равнобедрен (PT || AD и PTA = DAB = PAT = 72°) и следователно PI ⊥ AB, т.е. K ≡ P.\n\nВтори начин: Нека перпендикулярът в точка I към AB пресича AE в точка K'. Ще докажем, че K ≡ K'. Без ограничение на общността нека EF = 1 и AF = x. Тогава страната на петоъгълника също е x, защото ΔAEF е равнобедрен (AE = AF). В ΔAFE е в сила, че ∢HFA = ∢HFE = 36° ⇒ AH = HF = EF = 1, а пък от теорема за ъглополовящата/подобни триъгълници EH : HA = 1 : x и EH = 1/x. Следователно x е решение на уравнението 1/x + 1 = x ⇒ 1 + x = x², получено от AH + HE = AE.\n\nНека J е пресечната точка на MI и EF. Ще изразим AI чрез x. Първо имаме, че AB||EC от теорема на Талес следва, че AI/EJ = AH/HE = x. Следователно AI = x.EJ. Сега HF||ED ⇒ EJ : JF = EM : HF = (1 + 2x) : 1, защото имаме, че EC = CM = MD = 1 + x. Значи EJ = 2x + 1/2x + 2EF = 2x + 1/2x + 2.\n\nФинално IA = x(2x + 1)/2x + 2 = 2x² + x/2x + 2 = 3x + 2/2x + 2. От друга страна cos 72° = x/2/(x + 1) следователно AK' = IA : cos 72° = 3x + 2/2x + 2 · x + 1/x/2 = 3 + 2/x = 3 + 2x - 2 = 2x + 1 = x + 1 + x = AE + EK'. Следователно EK' = x + 1. Може да довършим по много начини, например да кажем, че ΔK'ED ≃ MDC заради ∢K'ED = ∢MDC = 72° и EK' = DM. Значи ΔEK'D е равнобедрен и K' ∈ CD. Следователно K ≡ K'.\n\nОценяване. (7 точки) (Първи начин) 1 т. за построяване на точка P и свеждане на задачата до P ≡ K; 4 т. за построяване на точка T и доказателство, че AI = IT (от които 1 т. за AH : HE = AC : ED и 1 т. за EM : MT = BC : AC); 2 т. за ΔTAP – равнобедрен и P ≡ K; (Втори начин) 1 т. за построяване на K' и свеждане на задачата до K ≡ K'; 1 т. за писмено отбелязване, че HF||ED; 1 т. за изразяване на отношението EH : HA; 3 т. за изразяване на страната IA чрез елементи на петоъгълника; 1 т. за довършване;",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "menelaus_theorem",
+        "properties_of_regular_pentagon",
+        "symmetry",
+        "coordinate_geometry"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква приложение на теоремата на Менелай в конфигурация с правилен петоъгълник. Решението използва симетрия и координатна геометрия за доказване на колинеарност. Това е типична задача за геометрични трансформации и свойства на правилни многоъгълници.",
+      "_crosslinked_from": "1.1",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-3-Национален кръг-1991-9-12 кл · 1991-None · Зад. 1",
+      "statement": "Точката M лежи върху височината CD на остроъгълния \\triangle ABC, а K и L са ортогоналните проекции на M съответно върху страните AC и BC. Известно е, че центровете на описаната и вписаната окръжности за \\triangle ABC окръжности лежат на отсечката KL.\nа) Да се докаже, че CD = R + r, където R и r са съответно радиусите на опиканата и вписаната за триъгълника ABC окръжности.\nб) Да се намери най-малката стойност, която може да приема отношението CM/CD.",
+      "solution": "Решение.\n\n![img-0.jpeg](img-0.jpeg)\n\nа) Нека $O$ и $I$ са съответно центровете на описаната и вписаната окръжности, $CD = h$, $\\angle BAC = \\alpha$ и $\\angle ABC = \\beta$ (черт.1). Понеже около четириъгълника $KMLC$ можа да се опише окръжност $\\angle KLC = \\angle KMC = 90^{\\circ} - \\angle KCM = \\angle DAC = \\alpha$. Аналогично $\\angle LKC = \\beta$. Нека правата $CO$ пресича описаната около $\\triangle ABC$ окръжност в точката $E$. Тогава $CE$ е диаметър и значи $\\angle OCL = 90^{\\circ} - \\angle BEC$, откъдето поради $\\angle BEC = \\angle BAC = \\alpha$ получаваме $\\angle OCL = 90^{\\circ} - \\alpha$. Следователно $\\angle COL = 90^{\\circ}$. Нека $IF$ е перпендикулярът от $I$ към $CD, F \\in CD$. Тъй като $\\angle KCI = \\angle LCI$ и $\\angle KCF = \\angle LCO = 90^{\\circ} - \\alpha$, то $\\angle FCI = \\angle OCI$, така че триъгълниците $CFI$ и $COI$ са еднакви. Оттук $CF = CO = R$, а от $IF \\parallel AB$ следва $FD = r$ и следователно $h = CD = R + r$.\n\nб) Нека $BC = a, AC = b$. От правоъгълните триъгълници $MLC$ и $LOC$ имаме\n\n$$CM = \\frac{CL}{\\sin \\beta} = \\frac{CO}{\\sin \\alpha \\sin \\beta} = \\frac{R}{\\sin \\alpha \\sin \\beta}$$\n\nНо $\\sin \\alpha \\sin \\beta = \\frac{h}{b} \\cdot \\frac{h}{a} = \\frac{h^2}{ab} = \\frac{h^2}{2Rh} = \\frac{h}{2R}$. Тогава от а) получаваме\n\n$$\\frac{CM}{CD} = \\frac{2R^2}{h^2} = \\frac{2R^2}{(R+r)^2}$$\n\nи тъй като $r \\leqq \\frac{R}{2}$ за всеки триъгълник (равенство се достига само за равностранен триъгълник), то $\\frac{CM}{CD} \\geqq \\frac{2R^2}{(3/2R)^2} = \\frac{8}{9}$. Следователно най-малката стойност на $\\frac{CM}{CD}$ е $\\frac{8}{9}$. Тя се достига само при $r = \\frac{R}{2}$, т. е. когато триъгълникът $ABC$ е равностранен. При това лесно се проверява, че равностранният триъгълник удовлетворява условията на задачата.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "orthic_triangle",
+        "euler_formula",
+        "trigonometric_identities"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата използва свойства на ортоцентър, описана и вписана окръжност, и връзка CD=R+r, което е класическа теорема на Ойлер. Решението използва тригонометрични преобразувания и свойства на проекции.",
+      "_crosslinked_from": "1.8",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-3-Национален кръг-1991-9-12 кл · 1991-None · Зад. 5",
+      "statement": "3адача 5. В единичния кръг с център O е взет централен ъгъл, който се измерва с дъгата d AB, където d AB = α < 90◦, като точките A и B са от окръжността. Нека H е петата на перпендикуляра от A към OB, T е точка от дъгата d AB и l е допирателната към окръжността в точката T. Правата l отсича от \\angle правоъгълен триъгълник \\triangle . а) Да се докаже, че лицето на правоъгълния триъгълник \\triangle е минимално точно тогава, когато точката T разполовява неговата хипотенуза. б) Ако Sα е лицето на правоъгълния триъгълник \\triangle с минимално лице, да се докаже, че функцията Sα α3 има граница при α →0, α̸ = 0, и да се пресметне тази граница.",
+      "solution": "Решение.\n\nа) Нека l пресича правите AH и BH съответно в точките M и N (черт. 2), OH = a, HN = x и лицето на \\triangle MHN е S(x). Ясно е, че OT = 1, ON = x + a, x > 0 и a ∈ [0, 1]. От подобието на триъгълниците MHN и OTN следва MH/OT = HN/TN, т. е. MH = x/√(a + x)² - 1. Тогава\n\n$$S(x) = \\frac{1}{2} MH \\cdot HN = \\frac{1}{2} \\cdot \\frac{x^2}{\\sqrt{(a + x)^2 - 1}}$$\n\n$$S'(x) = \\frac{1}{2} \\cdot \\frac{x(x^2 + 3ax + 2a^2 - 2)}{[(a + x)^2 - 1]\\sqrt{(a + x)^2 - 1}}$$\n\nоткъдето се вижда, че уравнението S'(x) = 0 има единствено решение x₀, за което x₀ > 0, а именно\n\n$$x_0 = \\frac{-3a + \\sqrt{a^2 + 8}}{2}$$\n\nЛесно се съобразява, че S(x) намалява в интервала (0, x₀) и расте в интервала (x₀, +∞), което е достатъчно, за да твърдим, че най-малката стоиност на S(x) в интервала (0, +∞) се достига в точката x₀. С това доказахме, че правоъгълният триъгълик с минимално лице съществува. За да докажем, че T е средата на MN, достатъчно е да проверим, че при намереното x₀ имаме OM = ON. Като използваме връзката x₀² + 3ax₀ + 2a² - 2 = 0, последователно получаваме:\n\n$$\\begin{array}{l} OM^2 = MH^2 + OH^2 = \\frac{x_0^2}{(a + x_0)^2 - 1} + a^2 = x_0 \\cdot \\frac{x_0 - a(x_0^2 + 3ax_0 + 2a^2 - 2)}{(a + x_0)^2 - 1} + a^2 = \\\\ = x_0 \\cdot \\frac{(x_0 + 2a)(1 - ax_0 - a^2 + (x_0^2 + 3ax_0 + 2a^2 - 2))}{(a + x_0)^2 - 1} + a^2 = \\\\ = x_0 \\cdot \\frac{(x_0 + 2a)((a + x_0)^2 - 1)}{(a + x_0)^2 - 1} + a^2 = x_0(x_0 + 2a) + a^2 = (x_0 + a)^2 = ON^2. \\end{array}$$\n\nб) Нека MHN е правоъгълният триъгълник с минимално лице, отговарящ на ъгъла α, и правата през M, перпендикулярия на MN, пресича ON в точката N₁. Тъй като OT е средна отсечка в \\triangle N₁MN, то ON₁ = ON. Имаме\n\n$$S_\\alpha^2 = \\frac{1}{4} MH^2 \\cdot HN^2 = \\frac{1}{4} HN_1 \\cdot HN \\cdot HN^2 = \\frac{1}{4} HN^3 \\cdot HN_1.$$\n\nДа означим ON = y и AH = z. От \\triangle AOH следва, че OH = √(1 - z²). Тогава HN = ON - OH = y - √(1 - z²). Освен това OM = ON според доказаното д) и значи MT² = ON² - OT², т. е. MT = √(y² - 1)\n\nи $MN = 2MT = 2\\sqrt{y^2 - 1}$. Сега от $\\triangle MHN$ получаваме $MN^2 = MH^2 + HN^2 = OM^2 - OH^2 + HN^2$ и значи $4(y^2 - 1) = y^2 - 1 + z^2 + (y - \\sqrt{1 - z^2})^2 = 2y^2 - 2y\\sqrt{1 - z^2}$, т. е. $y^2 + y\\sqrt{1 - z^2} - 2 = 0$. Положителният корен на последното уравнение е\n\n$$y = -\\frac{\\sqrt{1 - z^2}}{2} + \\frac{3}{2}\\sqrt{1 - \\frac{z^2}{9}}.$$\n\nТогава $HN = ON - OH = \\frac{3}{2}\\sqrt{1 - \\frac{z^2}{9}} - \\frac{3}{2}\\sqrt{1 - z^2}$, $HN_1 = ON + OH = \\frac{1}{2}\\sqrt{1 - z^2} + \\frac{3}{2}\\sqrt{1 - \\frac{z^2}{9}}$. Заместваме в получения по-горе израз за $S_\\alpha^2$ и след преработваве намираме\n\n$$S_\\alpha^2 = \\frac{2^3}{3^3}z^6 \\frac{\\sqrt{1 - z^2} + 3\\sqrt{1 - \\frac{z^2}{9}}}{\\left(\\sqrt{1 - \\frac{z^2}{9}} + \\sqrt{1 - z^2}\\right)^3}$$\n\nОт $\\triangle AOH$ имаме $AH = AO \\sin \\alpha$, т. е. $z = \\sin \\alpha$. Тогава\n\n$$\\frac{S_\\alpha^2}{\\alpha^6} = \\frac{2^3}{3^3} \\cdot \\frac{\\sin^6 \\alpha}{\\alpha^6} \\cdot \\frac{\\sqrt{1 - \\sin^2 \\alpha} + 3\\sqrt{1 - \\frac{\\sin^2 \\alpha}{9}}}{\\left(\\sqrt{1 - \\frac{\\sin^2 \\alpha}{9}} + \\sqrt{1 - \\sin^2 \\alpha}\\right)^3}$$\n\nи следователно $\\lim_{\\alpha \\to 0} \\frac{S_\\alpha^2}{\\alpha^6} = \\frac{2^3}{3^3} \\cdot 1 \\cdot \\frac{1 + 3}{(1 + 1)^3} = \\frac{2^2}{3^3}$, откъдето $\\lim_{\\alpha \\to 0} \\frac{S_\\alpha}{\\alpha^3} = \\frac{2\\sqrt{3}}{9}$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "analytic_geometry",
+        "derivatives_min_max",
+        "trigonometric_substitution"
+      ],
+      "confidence": "exact",
+      "reasoning": "Минимизиране на лице на правоъгълен триъгълник в кръг. Решението използва координати, производни и тригонометрични замествания за намиране на минимума.",
+      "_crosslinked_from": "2.8",
+      "_crosslink_confidence": 0.7
     },
     {
       "source": "OLI-3-Национален кръг-1996-9-12 кл · 1996-None · Зад. 2",
       "statement": "Find the side length of the smallest equilateral triangle in which three disks with radii 2, 3 and 4 without common inner points can be placed.",
-      "solution": "Solution. Let in a equilateral $\\triangle ABC$ two disks with radii 3 and 4 without common inner points be placed. It is clear that a line $\\ell$ exists, which separates them, i.e. the disks are in different semiplanes with respect to $\\ell$ (Figure 1).\n\nThis line divides the triangle into a triangle and a quadrilateral or into two triangles. In both cases the disks can be replaced in the figure in a way that each of them is tangent to two of the sides of $\\triangle ABC$. It is clear that the new disks have no common inner point. Let the disks be inscribed in $\\angle A$ and $\\angle B$ of $\\triangle ABC$, respectively. We translate the side $BC$ parallelly to itself towards the point $A$, till the disk which is inscribed in $\\angle B$ touches the disk which is inscribed in $\\angle A$ (Figure 2). Thus, we get an equilateral $\\triangle A_1 B_1 C_1$ with a smaller sides, in which two disks with radii 3 and 4 and without common inner points are placed.\n\nLet $A_1 B_1 = x$, $I$ be the incenter of $\\triangle A_1 B_1 C_1$, while $O_1$ and $O_2$ be the centers of the two disks. Then $A_1 I = B_1 I = \\frac{x}{\\sqrt{3}}$, $A_1 O_1 = 6$, $B_1 O_2 = 8$. Since the disk with radius 4 is inside the $\\triangle A_1B_1C_1$, then $O_2 \\in IB_1$. Thus, $B_1O_2 \\leq B_1I$, i.e. $x \\geq 8\\sqrt{3}$. On the other hand $O_1I = \\frac{x}{\\sqrt{3}} - 6$, $O_2I = \\frac{x}{\\sqrt{3}} - 8$, $O_1O_2 = 7$ and by the cosine theorem for $\\triangle O_1O_2I$ we find that $\\left(\\frac{x}{\\sqrt{3}} - 6\\right)^2 + \\left(\\frac{x}{\\sqrt{3}} - 8\\right)^2 + \\left(\\frac{x}{\\sqrt{3}} - 6\\right)\\left(\\frac{x}{\\sqrt{3}} - 8\\right) = 49$. But $x \\geq 8\\sqrt{3}$, and from here $x = 11\\sqrt{3}$. Consequently, $AB \\geq 11\\sqrt{3}$. On the other hand in the equilateral $\\triangle ABC$ with side length $11\\sqrt{3}$ three disks with radii 2, 3 and 4 (without common inner points) can be placed inscribing circles with these radii in the angles of the triangle (Figure 3).\n\nNote that the disks wit radii 3 and 4 are tangent to each other. It follows from the above considerations that the solution of the problem is $11\\sqrt{3}$.",
-      "answer": "$11\\sqrt{3}$",
-      "difficulty": "medium",
+      "solution": "Solution. Let in a equilateral $\\triangle ABC$ two disks with radii 3 and 4 without common inner points be placed. It is clear that a line $\\ell$ exists, which separates them, i.e. the disks are in different semiplanes with respect to $\\ell$ (Figure 1).\n\nFigure 1.\n\n![img-0.jpeg](img-0.jpeg)\n\nFigure 2.\n\n![img-1.jpeg](img-1.jpeg)\n\nThis line divides the triangle into a triangle and a quadrilateral or into two triangles. In both cases the disks can be replaced in the figure in a way that each of them is tangent to two of the sides of $\\triangle ABC$. It is clear that the new disks have no common inner point. Let the disks be inscribed in $\\angle A$ and $\\angle B$ of $\\triangle ABC$, respectively. We translate the side $BC$ parallelly to itself towards the point $A$, till the disk which is inscribed in $\\angle B$ touches the disk which is inscribed in $\\angle A$ (Figure 2). Thus, we get an equilateral $\\triangle A_1 B_1 C_1$ with a smaller sides, in which two disks with radii 3 and 4 and without common inner points are placed.\n\nLet $A_1 B_1 = x$, $I$ be the incenter of $\\triangle A_1 B_1 C_1$, while $O_1$ and $O_2$ be the centers of the two disks. Then $A_1 I = B_1 I = \\frac{x}{\\sqrt{3}}$, $A_1 O_1 = 6$, $B_1 O_2 = 8$. Since the disk with radius 4 is\n\nDownloaded from Klasirane.com\n\n─── Стр. 2 ───\n![img-2.jpeg](img-2.jpeg)\n\ninside the $\\triangle A_1B_1C_1$, then $O_2 \\in IB_1$. Thus, $B_1O_2 \\leq B_1I$, i.e. $x \\geq 8\\sqrt{3}$. On the other hand $O_1I = \\frac{x}{\\sqrt{3}} - 6$, $O_2I = \\frac{x}{\\sqrt{3}} - 8$, $O_1O_2 = 7$ and by the cosine theorem for $\\triangle O_1O_2I$ we find that $\\left(\\frac{x}{\\sqrt{3}} - 6\\right)^2 + \\left(\\frac{x}{\\sqrt{3}} - 8\\right)^2 + \\left(\\frac{x}{\\sqrt{3}} - 6\\right)\\left(\\frac{x}{\\sqrt{3}} - 8\\right) = 49$. But $x \\geq 8\\sqrt{3}$, and from here $x = 11\\sqrt{3}$. Consequently, $AB \\geq 11\\sqrt{3}$. On the other hand in the equilateral $\\triangle ABC$ with side length $11\\sqrt{3}$ three disks with radii 2, 3 and 4 (without common inner points) can be placed inscribing circles with these radii in the angles of the triangle (Figure 3).\n\nNote that the disks wit radii 3 and 4 are tangent to each other. It follows from the above considerations that the solution of the problem is $11\\sqrt{3}$.",
+      "answer": "11\\sqrt{3}",
+      "difficulty": "hard",
       "techniques": [
-        "law_of_cosines",
-        "incenter_distance"
+        "geometric_inequalities",
+        "tangent_circles",
+        "equilateral_triangle"
       ],
       "confidence": "exact",
-      "reasoning": "Places disks tangent to sides, writes distances from incenter and applies cosine theorem to obtain side length."
+      "reasoning": "Задачата търси най-малкия равностранен триъгълник, в който могат да се поставят три диска с дадени радиуси без припокриване. Решението използва геометрични съображения за позициониране на дисковете и намира минималната страна чрез оптимизация. Това е геометрична задача с неравенства и построения.",
+      "_crosslinked_from": "2.8",
+      "_crosslink_confidence": 0.8
+    },
+    {
+      "source": "OLI-3-Национален кръг-1997-9-12 кл · 1997-None · Зад. 2",
+      "statement": "Let $M$ be the centroid of $\triangle ABC$. Prove the inequality\n$$\n\\sin \\angle CAM + \\sin \\angle CBM \\le \\frac{2}{\\sqrt{3}}\n$$\n(a) if the circumscribed circle of $\triangle AMC$ is tangent to the line $AB$;\n\n(b) for any $\triangle ABC$.",
+      "solution": "**Solution:** We use the standard notation for the elements of $\triangle ABC$. Let $G$ be the midpoint of $AB$.\n\n(a) It follows from the conditions of the problem that\n$$\n\\left(\\frac{c}{2}\\right)^2 = GA^2 = GM \\cdot GC = \\frac{1}{3}m_c^2 = \\frac{1}{12}(2a^2 + 2b^2 - c^2),\n$$\nand therefore $a^2 + b^2 = 2c^2$. Using the median formula we get $m_a = \\frac{\\sqrt{3}}{2}b$ and $m_b = \\frac{\\sqrt{3}}{2}a$. Further\n\n$$\nA = \\sin \\angle CAM + \\sin \\angle CBM = S \\left(\\frac{1}{bm_a} + \\frac{1}{am_b}\\right) = \\frac{(a^2 + b^2)\\sin\\gamma}{\\sqrt{3}ab}.\n$$\n\nFrom the Cosine Law $a^2 + b^2 - 2ab\\cos\\gamma = c^2 = \\frac{a^2 + b^2}{2}$, so $a^2 + b^2 = 4ab\\cos\\gamma$. Therefore $A = \\frac{2}{\\sqrt{3}}\\sin 2\\gamma \\le \\frac{2}{\\sqrt{3}}$.\n\n(b) There are two circles through $C$ and $M$ tangent to the line $AB$. Denote the contact points by $A_1$ and $B_1$ and let $A_1 \\in GA^{\\to}$, $B_1 \\in GB^{\\to}$. Since $G$ is the midpoint of $A_1B_1$ and $CM : MG = 2 : 1$, $M$ must be the centroid of $\triangle A_1B_1C$. Furthermore it is clear that $\\angle CAM \\le \\angle CA_1M$ and $\\angle CBM \\le \\angle CB_1M$. Suppose $\\angle CA_1M \\le 90^\\circ$ and $\\angle CB_1M \\le 90^\\circ$. Now $\\sin \\angle CAM + \\sin \\angle CBM \\le \\sin \\angle CA_1M + \\sin \\angle CB_1M \\le \\frac{2}{\\sqrt{3}}$.\n\nIt remains to consider the case $\\angle CA_1M > 90^\\circ$, $\\angle CB_1M \\le 90^\\circ$ (the above angles could not both be obtuse). It follows from $\\triangle CA_1M$ that $CM^2 > CA_1^2 + A_1M^2$, so\n$$\n\\frac{1}{9}(2b_1^2 + 2a_1^2 - c_1^2) > b_1^2 + \\frac{1}{9}(2b_1^2 + 2c_1^2 - a_1^2)\n$$\n($a_1, b_1, c_1$ are sides of $\triangle A_1B_1C$). We know from (a) that $a_1^2 + b_1^2 = 2c_1^2$ and the above inequality becomes $a_1^2 > 7b_1^2$. Again from (a) we obtain\n$$\n\\sin \\angle CB_1M = \\frac{b_1 \\sin\\gamma_1}{a_1\\sqrt{3}} = \\frac{b_1}{a_1\\sqrt{3}}\\sqrt{1 - \\left(\\frac{a_1^2 + b_1^2}{4a_1b_1}\\right)^2}.\n$$\n\n---\n\nDownload from Klasirane.com\n\nSubstituting $\\frac{b_1^2}{a_1^2} = x$ we get that\n\n$$\n\\sin \\angle CB_1M = \\frac{1}{4\\sqrt{3}}\\sqrt{14x - x^2 - 1} < \\frac{1}{4\\sqrt{3}}\\sqrt{2 - \\frac{1}{49} - 1} = \\frac{1}{7}\n$$\n\nsince $x < \\frac{1}{7}$. Therefore\n\n$$\n\\sin \\angle CAM + \\sin \\angle CBM < 1 + \\sin \\angle CB_1M < 1 + \\frac{1}{7} < \\frac{2}{\\sqrt{3}}.\n$$\n\n**Note:** The inequality holds only for $\triangle ABC$ with angles $\\alpha = 22.5^\\circ$, $\\beta = 112.5^\\circ$, $\\gamma = 45^\\circ$ or $\\alpha = 112.5^\\circ$, $\\beta = 22.5^\\circ$, $\\gamma = 45^\\circ$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "trigonometry",
+        "inequalities",
+        "circle_properties",
+        "centroid"
+      ],
+      "confidence": "exact",
+      "reasoning": "The inequality involves sines of angles at the centroid. Part (a) uses properties of tangency and median formulas, while part (b) uses geometric constructions with circles and tangents. The solution employs trigonometric identities and geometric inequalities, fitting under geometric inequalities.",
+      "_crosslinked_from": "2.8",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-3-Национален кръг-1998-9-12 кл · 1998-None · Зад. 3",
+      "statement": "On the sides of a non-obtuse triangle $ABC$ a square, a regular $n$-gon and a regular $m$-gon ($n, m > 5$) are constructed externally, so that their centres are vertices of a regular triangle. Prove that $m = n = 6$ and find the angles of $ABC$.",
+      "solution": "Let the square, the n-gon and the m-gon be constructed on the sides AB, BC and CA, respectively. Denote their centres by O₁, O₂ and O₃; denote by A₁, B₁ and C₁ the centres of the equilateral triangles constructed externally on BC, CA and AB.\nThe lines $O_1C_1, O_2A_1$ and $O_3B_1$ intersect at the circumcentre $O$ of $\\triangle ABC$. Since $\\triangle A_1A_2A_3$ is equilateral, it follows straightforwardly that $\\triangle O_1O_2O_3$ is equilateral if and only if $C_1A_1||O_1O_2, A_1B_1||O_2O_3$ and $B_1C_1||O_1O_3$. This is equivalent to\n$$\\frac{OC_1}{C_1O_1} = \\frac{OA_1}{A_1O_2} = \\frac{OB_1}{B_1O_3} = k.$$\nOn the other hand,\n$$\\begin{array}{l} \\frac{OC_1}{C_1O_1} = \\frac{\\cot C + \\tan 30^\\circ}{\\cot 45^\\circ - \\tan 30^\\circ}, \\\\ \\frac{OA_1}{A_1O_2} = \\frac{\\cot A + \\tan 30^\\circ}{\\cot \\frac{180^\\circ}{n} - \\tan 30^\\circ}, \\\\ \\frac{OB_1}{B_1O_3} = \\frac{\\cot B + \\tan 30^\\circ}{\\cot \\frac{180^\\circ}{m} - \\tan 30^\\circ}. \\end{array}$$\nSet $\\cot \\frac{180^\\circ}{n} = x$ and $\\cot \\frac{180^\\circ}{m} = y$. The above identities imply that\n$$\\cot A = kx - \\frac{k+1}{\\sqrt{3}}, \\cot B = ky - \\frac{k+1}{\\sqrt{3}}, \\cot C = k - \\frac{k+1}{\\sqrt{3}}.$$\nFrom the identity $\\cot A \\cot B + \\cot B \\cot C + \\cot C \\cot A = 1$ we get\n$$k = \\frac{2(x+y+1-\\sqrt{3})}{\\sqrt{3}xy + (\\sqrt{3}-2)(x+y) + \\sqrt{3}-2},$$\n$$\\cot C = \\frac{x+y-xy+3-2\\sqrt{3}}{\\sqrt{3}xy + (\\sqrt{3}-2)(x+y) + \\sqrt{3}-2}.$$\nSince $m, n \\ge 6$ it follows that $x, y \\ge \\sqrt{3}$, i. e. $xy \\ge \\sqrt{3}(x+y)-3$. The inequality $\\cot C \\ge 0$ implies $x+y-xy+3-2\\sqrt{3} \\ge 0$. and therefore $x+y+3-2\\sqrt{3} \\ge xy \\ge \\sqrt{3}(x+y)-3$, i. e. $x+y \\le 2\\sqrt{3}$. This shows that $x=y=\\sqrt{3}$, i. e., $m=n=6$. Hence $\\cot C = 0$, $\\cot A = \\cot B = 1$, so $\\angle C = 90^\\circ, \\angle A = \\angle B = 45^\\circ$.",
+      "answer": "∠C = 90°, ∠A = ∠B = 45°",
+      "difficulty": "hard",
+      "techniques": [
+        "trigonometry",
+        "geometric_constructions"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрична задача с тригонометрични преобразувания и изчисления. Точка 1.6 (синусова и косинусова теорема) е най-близка."
+    },
+    {
+      "source": "OLI-3-Национален кръг-1998-9-12 кл · 1998-None · Зад. 3",
+      "statement": "On the sides of a non-obtuse triangle $ABC$ a square, a regular $n$-gon and a regular $m$-gon ($n, m > 5$) are constructed externally, so that their centres are vertices of a regular triangle. Prove that $m = n = 6$ and find the angles of $ABC$.",
+      "solution": "Let the square, the n-gon and the m-gon be constructed on the sides AB, BC and CA, respectively. Denote their centres by O₁, O₂ and O₃; denote by A₁, B₁ and C₁ the centres of the equilateral triangles constructed externally on BC, CA and AB.\nThe lines $O_1C_1, O_2A_1$ and $O_3B_1$ intersect at the circumcentre $O$ of $\\triangle ABC$. Since $\\triangle A_1A_2A_3$ is equilateral, it follows straightforwardly that $\\triangle O_1O_2O_3$ is equilateral if and only if $C_1A_1||O_1O_2, A_1B_1||O_2O_3$ and $B_1C_1||O_1O_3$. This is equivalent to\n$$\\frac{OC_1}{C_1O_1} = \\frac{OA_1}{A_1O_2} = \\frac{OB_1}{B_1O_3} = k.$$\nOn the other hand,\n$$\\begin{array}{l} \\frac{OC_1}{C_1O_1} = \\frac{\\cot C + \\tan 30^\\circ}{\\cot 45^\\circ - \\tan 30^\\circ}, \\\\ \\frac{OA_1}{A_1O_2} = \\frac{\\cot A + \\tan 30^\\circ}{\\cot \\frac{180^\\circ}{n} - \\tan 30^\\circ}, \\\\ \\frac{OB_1}{B_1O_3} = \\frac{\\cot B + \\tan 30^\\circ}{\\cot \\frac{180^\\circ}{m} - \\tan 30^\\circ}. \\end{array}$$\nSet $\\cot \\frac{180^\\circ}{n} = x$ and $\\cot \\frac{180^\\circ}{m} = y$. The above identities imply that\n$$\\cot A = kx - \\frac{k+1}{\\sqrt{3}}, \\cot B = ky - \\frac{k+1}{\\sqrt{3}}, \\cot C = k - \\frac{k+1}{\\sqrt{3}}.$$\nFrom the identity $\\cot A \\cot B + \\cot B \\cot C + \\cot C \\cot A = 1$ we get\n$$k = \\frac{2(x+y+1-\\sqrt{3})}{\\sqrt{3}xy + (\\sqrt{3}-2)(x+y) + \\sqrt{3}-2},$$\n$$\\cot C = \\frac{x+y-xy+3-2\\sqrt{3}}{\\sqrt{3}xy + (\\sqrt{3}-2)(x+y) + \\sqrt{3}-2}.$$\nSince $m, n \\ge 6$ it follows that $x, y \\ge \\sqrt{3}$, i. e. $xy \\ge \\sqrt{3}(x+y)-3$. The inequality $\\cot C \\ge 0$ implies $x+y-xy+3-2\\sqrt{3} \\ge 0$. and therefore $x+y+3-2\\sqrt{3} \\ge xy \\ge \\sqrt{3}(x+y)-3$, i. e. $x+y \\le 2\\sqrt{3}$. This shows that $x=y=\\sqrt{3}$, i. e., $m=n=6$. Hence $\\cot C = 0$, $\\cot A = \\cot B = 1$, so $\\angle C = 90^\\circ, \\angle A = \\angle B = 45^\\circ$.",
+      "answer": "∠C = 90°, ∠A = ∠B = 45°",
+      "difficulty": "hard",
+      "techniques": [
+        "trigonometry",
+        "geometric_constructions"
+      ],
+      "confidence": "exact",
+      "reasoning": "Геометрична задача с тригонометрични преобразувания и изчисления. Точка 1.6 (синусова и косинусова теорема) е най-близка.",
+      "_crosslinked_from": "1.6",
+      "_crosslink_confidence": 0.75
     },
     {
       "source": "OLI-3-Национален кръг-2000-9-12 кл · 2000-None · Зад. 2",
-      "statement": "Даден е остроъгълен триъгълник $ABC$. Да се докаже, че съществуват единствени точки $A_1, B_1$ и $C_1$, лежащи съответно върху страните $BC, AC$ и $AB$, със следното свойство: Всяка от точките е среда на отсечкат[неразчетено]",
-      "solution": "Решение: Лесно се вижда, че перпендикулярът през $C_1$ към $AB$ минава през средата на $A_1 B_1$. Същото е вярно и за точките $A_1$ и $B_1$. Следователно трите перпендикуляра се пресичат в [неразчетено] на $\\Delta A_1 B_1 C_1$ — точка $P$.\n\nНека $T$ е средата на $A_1 B_1, \\angle PB_1 A_1 = x = \\angle PCA_1; \\angle PA_1 B_1 = y = \\angle PCB_1$. Синусова теорема за $\\Delta B_1 TP$ и $\\Delta A_1 TP$ дава, че\n$$\\frac{\\sin \\alpha}{\\sin x} = \\frac{B_1 T}{TP} = \\frac{A_1 T}{TP} = \\frac{\\sin \\beta}{\\sin y},$$\nоткъдето $\\frac{\\sin x}{\\sin y} = \\frac{\\sin \\alpha}{\\sin \\beta}$. Ако $CN$ е медианата в $\\Delta ABC$, аналогични пресмятания показват, че $\\frac{\\sin \\angle ACG}{\\sin \\angle BCG} = \\frac{\\sin \\alpha}{\\sin \\beta}$. Тъй като $x + y = \\angle ACG + \\angle BCG = \\gamma$ и $\\gamma$ е остър ъгъл, получаваме $x = \\angle ACG, y = \\angle BCG$. Значи $CP$ е симетрична на медианата на $\\Delta ABC$ през $C$ спрямо ъглополовящата на ъгъл $\\gamma$. Аналогично е положението на $AP$ и $BP$. Вече е ясно, че точка $P$ е единствена (а следователно и точките $A_1, B_1$ и $C_1$). Накрая $\\angle B_1 C_1 A_1 = \\angle B_1 C_1 P + \\angle A_1 C_1 P = \\angle B_1 AP + \\angle A_1 BP = \\angle BAG + \\angle ABG = \\angle BGK$, където $K$ е симетричната на $G$ спрямо средата на $BC$. Аналогично $\\angle C_1 A_1 B_1 = \\angle GBK$ и $\\angle A_1 B_1 C_1 = \\angle GKB$. Следователно $\\Delta A_1 B_1 C_1$ е подобен на триъгълника, образуван от медианите на $\\Delta ABC$.\n\nЗабележка: Втората част на задачата може да се реши и чрез допълнително построение. Върху лъча $\\overrightarrow{C_1 B_1}$ построяваме точка $Q$, за която $C_1 B_1 = B_1Q$, а върху лъча $\\overrightarrow{A_1B_1}$ точка $S$, за която $A_1B_1 = 2B_1S$. Ако $R = QS \\cap A_1P$, лесно се доказва, че точка $B_1$ е [неразчетено] на $\\triangle QRA_1$ и $\\triangle QRA_1 \\sim \\triangle ABC$. Освен това дължините на страните на $\\triangle A_1B_1C_1$ са точно $\\frac{2}{3}$ от дължините на медианите на $\\triangle QRA_1$.",
+      "statement": "Даден е остроъгълен триъгълник $ABC$. Да се докаже, че съществуват единствени точки $A_1, B_1$ и $C_1$, лежащи съответно върху страните $BC, AC$ и $AB$, със следното свойство: Всяка от точките е среда на отсечка",
+      "solution": "Лесно се вижда, че перпендикулярът през $C_1$ към $AB$ минава през средата на $A_1B_1$. Същото е вярно и за точките $A_1$ и $B_1$. Следователно трите перпендикуляра се пресичат в центъра на $Δ A_1B_1C_1$ – точка $P$.\n\nНека $T$ е средата на $A_1B_1, \\angle  PB_1A_1 = x = \\angle  PCA_1; \\angle  PA_1B_1 = y = \\angle  PCB_1$. Синусова теорема за $Δ B_1TP$ и $Δ A_1TP$ дава, че\n\n$$\\frac{\\sin \\alpha}{\\sin x} = \\frac{B_1T}{TP} = \\frac{A_1T}{TP} = \\frac{\\sin \\beta}{\\sin y},$$\n\nоткъдето $\\frac{\\sin x}{\\sin y} = \\frac{\\sin \\alpha}{\\sin \\beta}$. Ако $CN$ е медианата в $Δ ABC$, аналогични пресмятания показват, че $\\frac{\\sin \\angle  ACG}{\\sin \\angle  BCG} = \\frac{\\sin \\alpha}{\\sin \\beta}$. Тъй като $x + y = \\angle  ACG + \\angle  BCG = \\gamma$ и $\\gamma$ е остър ъгъл, получаваме $x = \\angle  ACG, y = \\angle  BCG$. Значи $CP$ е симетрична на медианата на $Δ ABC$ през $C$ спрямо ъглополовящата на ъгъл $\\gamma$. Аналогично е положението на $AP$ и $BP$. Вече е ясно, че точка $P$ е единствена (а следователно и точките $A_1$, $B_1$ и $C_1$). Накрая $\\angle  B_1C_1A_1 = \\angle  B_1C_1P + \\angle  A_1C_1P = \\angle  B_1AP + \\angle  A_1BP = \\angle  BAG + \\angle  ABG = \\angle  BGK$, където $K$ е симетричната на $G$ спрямо средата на $BC$. Аналогично $\\angle  C_1A_1B_1 = \\angle  GBK$ и $\\angle  A_1B_1C_1 = \\angle  GKB$. Следователно $Δ A_1B_1C_1$ е подобен на триъгълника, образуван от медианите на $Δ ABC$.\n\n**Забележка:** Втората част на задачата може да се реши и чрез допълнително построение. Върху лъча $C_1B_1^{→}$ построяваме точка $Q$, за която $C_1B_1 = B_1Q$, а върху лъча $A_1B_1^{→}$ точка $S$, за която $A_1B_1 = 2B_1S$. Ако $R = QS ∩ A_1P$, лесно се доказва, че точка $B_1$ е медицентър на $Δ QRA_1$ и $Δ QRA_1 ∼ Δ ABC$. Освен това дължините на страните на $Δ A_1B_1C_1$ са точно $\\frac{2}{3}$ от дължините на медианите на $Δ QRA_1$.",
       "answer": null,
-      "difficulty": "medium",
+      "difficulty": "hard",
       "techniques": [
-        "sine_law",
-        "angle_chasing",
-        "similarity"
+        "sine_theorem",
+        "similar_triangles",
+        "median_properties"
       ],
       "confidence": "exact",
-      "reasoning": "Applies the sine law to several triangles, performs angle chasing and shows ΔA₁B₁C₁ is similar to the median triangle of ΔABC."
+      "reasoning": "Решението използва синусова теорема (1.6) като основен инструмент за доказване на подобие и връзка с медианите. Трудността е hard поради дългите изчисления и необходимостта от допълнителни построения."
     },
     {
-      "source": "OLI-3-Национален кръг-2015-9-12 кл · 2015-None · Зад. 1",
-      "statement": "Шестоъгълникът ABLCDK е вписан в окръжност. Правата LK пресича отсечките AD, BC, AC, BD съответно в точки M, N, P, Q. Да се докаже, че NL·KP·MQ = KM·PN·LQ.",
-      "solution": "Първо решение. Да означим s = sin(⌢AB/2), t = sin(⌢BL/2), u = sin((⌢LC + ⌢AK)/2), v = sin(⌢CK/2), w = sin(⌢DK/2), x = sin((⌢LD + ⌢AK)/2). Имаме\n(NL·KP·MQ)/(KM·PN·LQ) = (NL/NC)·(NC/NP)·(KP/AK)·(AK/KM)·(MQ/DQ)·(DQ/LQ) = (t/v)·(u/s)·(v/u)·(x/w)·(s/x)·(w/t) = 1.\nВторо решение. Нека точката T от правата MN е такава, че ∠NTB = ∠ADB = ∠ACB и N е между P и T. Тогава △CNP ∼ △TNB и следователно (TL + NL)PN = CN·BN, откъдето TL = (NL·KP)/PN. Аналогично от △DQM ∼ △TQB получаваме TL = (LQ·KM)/MQ. Резултатът следва.",
+      "source": "OLI-3-Национален кръг-2000-9-12 кл · 2000-None · Зад. 5",
+      "statement": "Точка $D$ е средата на основата $AB$ на остроъгълен равнобедрен $\\triangle ABC$. Нека $E \\not\\equiv D$ е произволна точка върху основата, а $O$ е центърът на описаната около $\\triangle ACE$ окръжност. Да се докаже, че правата през $D$,",
+      "solution": "Нека $\\measuredangle ABC = \\measuredangle BAC = \\alpha$, $G$ е центърът на описаната около $\\Delta ABC$ окръжност, а $F'$ и $F''$ са такива точки върху правата през $B$, успоредна на $AC$, че $OD \\perp DF'$ и $BC \\perp EF''$. Да означим с $H'$ и $H''$ проекциите съответно на $F'$ и $F''$ върху правата $AB$. Понеже $O$ е вътрешна точка за $\\measuredangle ADC$ и $\\measuredangle ACB < 90^\\circ$, то точките $F'$ и $F''$ съществуват и лежат във вътрешността на $\\measuredangle BAC$. Трябва да докажем, че $F' \\equiv F''$, т.е. $F'H' = F''H''$. Нека $O'$ и $G'$ са проекциите съответно на $O$ върху $AB$ и на $G$ върху $OO'$. Понеже $\\Delta DH'F' \\sim \\Delta OO'D$, то $\\frac{DH'}{F'H'} = \\frac{OO'}{DO'}$. От друга страна $\\measuredangle GOG' = \\alpha$ и значи $\\frac{BH'}{F'H'} = \\operatorname{cotg} \\alpha = \\frac{OG'}{GG'}$. Тогава от $GG' = DO', O'G' = DG$ и $\\measuredangle DBG = 2\\alpha - 90^\\circ$ следва, че $F'H' = \\frac{BD \\cdot O'D}{GD} = -\\operatorname{tg} 2\\alpha \\cdot O'D$. Нека сега $BC \\cap EF'' = I$. Тъй като $\\measuredangle CBF'' = 180^\\circ - 2\\alpha$ и $BE = 2O'D$, то $F''H'' = BF'' \\sin \\alpha = \\frac{BI \\sin \\alpha}{\\cos(180^\\circ - 2\\alpha)} = -BE \\frac{\\sin \\alpha \\cos \\alpha}{\\cos 2\\alpha} = -O'D \\operatorname{tg} 2\\alpha = F'H'$. С това задачата е решена.\n**Забележка:** Твърдението от задачата е вярно и за тъпоъгълен равнобедрен триъгълник, а за правоъгълен трите прави са успоредни.",
       "answer": null,
-      "difficulty": "medium",
+      "difficulty": "hard",
       "techniques": [
-        "sine_law",
-        "similar_triangles"
+        "trigonometry",
+        "coordinate_geometry",
+        "perpendicular_lines"
       ],
       "confidence": "exact",
-      "reasoning": "Solution uses sine of arcs to express segment ratios (sine law) and also a similarity argument; main tool is the sine law for cyclic polygons."
+      "reasoning": "Синусовата теорема (1.6) е скрита в тригонометричните пресмятания. Решението използва координатна геометрия и свойства на перпендикуляри. Трудността е hard поради сложната конфигурация и множество стъпки."
+    },
+    {
+      "source": "OLI-3-Национален кръг-2000-9-12 кл · 2000-None · Зад. 5",
+      "statement": "Точка $D$ е средата на основата $AB$ на остроъгълен равнобедрен $\\triangle ABC$. Нека $E \\not\\equiv D$ е произволна точка върху основата, а $O$ е центърът на описаната около $\\triangle ACE$ окръжност. Да се докаже, че правата през $D$,",
+      "solution": "Нека $\\measuredangle ABC = \\measuredangle BAC = \\alpha$, $G$ е центърът на описаната около $\\Delta ABC$ окръжност, а $F'$ и $F''$ са такива точки върху правата през $B$, успоредна на $AC$, че $OD \\perp DF'$ и $BC \\perp EF''$. Да означим с $H'$ и $H''$ проекциите съответно на $F'$ и $F''$ върху правата $AB$. Понеже $O$ е вътрешна точка за $\\measuredangle ADC$ и $\\measuredangle ACB < 90^\\circ$, то точките $F'$ и $F''$ съществуват и лежат във вътрешността на $\\measuredangle BAC$. Трябва да докажем, че $F' \\equiv F''$, т.е. $F'H' = F''H''$. Нека $O'$ и $G'$ са проекциите съответно на $O$ върху $AB$ и на $G$ върху $OO'$. Понеже $\\Delta DH'F' \\sim \\Delta OO'D$, то $\\frac{DH'}{F'H'} = \\frac{OO'}{DO'}$. От друга страна $\\measuredangle GOG' = \\alpha$ и значи $\\frac{BH'}{F'H'} = \\operatorname{cotg} \\alpha = \\frac{OG'}{GG'}$. Тогава от $GG' = DO', O'G' = DG$ и $\\measuredangle DBG = 2\\alpha - 90^\\circ$ следва, че $F'H' = \\frac{BD \\cdot O'D}{GD} = -\\operatorname{tg} 2\\alpha \\cdot O'D$. Нека сега $BC \\cap EF'' = I$. Тъй като $\\measuredangle CBF'' = 180^\\circ - 2\\alpha$ и $BE = 2O'D$, то $F''H'' = BF'' \\sin \\alpha = \\frac{BI \\sin \\alpha}{\\cos(180^\\circ - 2\\alpha)} = -BE \\frac{\\sin \\alpha \\cos \\alpha}{\\cos 2\\alpha} = -O'D \\operatorname{tg} 2\\alpha = F'H'$. С това задачата е решена.\n**Забележка:** Твърдението от задачата е вярно и за тъпоъгълен равнобедрен триъгълник, а за правоъгълен трите прави са успоредни.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "trigonometry",
+        "coordinate_geometry",
+        "perpendicular_lines"
+      ],
+      "confidence": "exact",
+      "reasoning": "Синусовата теорема (1.6) е скрита в тригонометричните пресмятания. Решението използва координатна геометрия и свойства на перпендикуляри. Трудността е hard поради сложната конфигурация и множество стъпки.",
+      "_crosslinked_from": "1.6",
+      "_crosslink_confidence": 0.85
     }
   ]
 }

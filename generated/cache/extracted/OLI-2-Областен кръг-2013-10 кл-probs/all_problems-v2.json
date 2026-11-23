@@ -1,0 +1,68 @@
+{
+  "pdf": "OLI-2-Областен кръг-2013-10 кл-probs",
+  "version": 2,
+  "extraction_model": "deepseek/deepseek-r1-0528",
+  "extracted_at": "2026-11-02T19:40:32.537010",
+  "problems": [
+    {
+      "num": 1,
+      "year": 2013,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "**Задача 1.** Да се намерят стойностите на реалния параметър $a$, за които уравнението\n\n$$x^3 + ax^2 - (1 - a)^2 = 0$$\n\nима три различни реални корена $x_1, x_2, x_3$, изпълняващи неравенството\n\n$$\\frac{x_1}{x_2 x_3} + \\frac{x_2}{x_3 x_1} + \\frac{x_3}{x_1 x_2} > \\frac{3}{2}.$$",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "**Задача 1.** Да се намерят стойностите на реалния параметър $a$, за които уравнението\n\n$$x^3 + ax^2 - (1 - a)^2 = 0$$\n\nима три различни реални корена $x_1, x_2, x_3$, изпълняващи неравенството\n\n$$\\frac{x_1}{x_2 x_3} + \\frac{x_2}{x_3 x_1} + \\frac{x_3}{x_1 x_2} > \\frac{3}{2}.$$",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2013-10 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 2,
+      "year": 2013,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "**Задача 2.** Даден е $\\triangle ABC$ с $\\angle ACB > 90^\\circ$. Нека $CH$ е височината от върха $C$ ($H \\in AB$), а $AL$ е ъглополовящата на $\\angle BAC$ ($L \\in BC$). Да се намери $\\angle ALC$, ако е известно, че $\\angle ALC = \\angle BHL$.",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "**Задача 2.** Даден е $\\triangle ABC$ с $\\angle ACB > 90^\\circ$. Нека $CH$ е височината от върха $C$ ($H \\in AB$), а $AL$ е ъглополовящата на $\\angle BAC$ ($L \\in BC$). Да се намери $\\angle ALC$, ако е известно, че $\\angle ALC = \\angle BHL$.",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2013-10 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 3,
+      "year": 2013,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "**Задача 3.** Да се намерят всички естествени числа $n$, за които\n\n$$2^{n+1} \\text{ дели } 7^{n!} - 3^{n!}.$$\n\n(С $n!$ се означава произведението на естествените числа от 1 до $n$.)",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "**Задача 3.** Да се намерят всички естествени числа $n$, за които\n\n$$2^{n+1} \\text{ дели } 7^{n!} - 3^{n!}.$$\n\n(С $n!$ се означава произведението на естествените числа от 1 до $n$.)",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2013-10 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 4,
+      "year": 2013,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "**Задача 4.** Нека $A(n, k)$ е броят на $k$-орките $(a_1, \\dots, a_k)$ от цели числа, за които е изпълнено\n\n$$\\begin{aligned} a_1 + \\dots + a_{k-1} &\\leq n, \\\\ a_1 + \\dots + a_{k-1} + a_k &> n, \\\\ 1 &\\leq a_i \\leq n, \\quad i = 1 \\dots, k. \\end{aligned}$$\n\nЗа кое $k$ стойността на $A(12, k)$ е максимална?",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "**Задача 4.** Нека $A(n, k)$ е броят на $k$-орките $(a_1, \\dots, a_k)$ от цели числа, за които е изпълнено\n\n$$\\begin{aligned} a_1 + \\dots + a_{k-1} &\\leq n, \\\\ a_1 + \\dots + a_{k-1} + a_k &> n, \\\\ 1 &\\leq a_i \\leq n, \\quad i = 1 \\dots, k. \\end{aligned}$$\n\nЗа кое $k$ стойността на $A(12, k)$ е максимална?",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2013-10 кл-probs",
+      "chunk": 1
+    }
+  ]
+}

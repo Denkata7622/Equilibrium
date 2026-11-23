@@ -1,0 +1,44 @@
+{
+  "key": "11.7#0",
+  "point_id": "11.7",
+  "idx": 0,
+  "difficulty": "hard",
+  "source": "OLI-3-Национален кръг-1990-9-12 кл · 1990-None · Зад. 3",
+  "techniques": [
+    "cyclotomic_polynomials",
+    "roots_of_unity",
+    "multiplicative_functions"
+  ],
+  "word_count": 1789,
+  "score": 9,
+  "verdict": "approve",
+  "status": "done",
+  "structure": {
+    "missing": [],
+    "has_boxed": true,
+    "why_count": 9,
+    "sec12_words": 154,
+    "ends_ok": true,
+    "fatal": [],
+    "soft": []
+  },
+  "caught_errors_in_solution": [
+    "В условието за принадлежност на α_k към корените на x^d−1 е изпуснат множителят k; правилното условие е n∣kd.",
+    "Не е доказана целочислеността на коефициентите; добавено е доказателство чрез деление на моничен полином в Z[x].",
+    "В края на б) е изпуснато −1: разглежда се степента на p в 2^d−1, а не в 2^d.",
+    "В определението на реда е пропуснат модулът p, а в свойството 2^m≡1 е пропуснато, че δ дели m."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 113.7,
+  "generated_at": "2026-11-21T10:30:06.424319",
+  "lesson_refs": [
+    "11.7",
+    "8.2",
+    "5.7",
+    "3.7",
+    "3.9"
+  ],
+  "enriched": true,
+  "enriched_at": "2026-11-22T18:18:11.495841"
+}

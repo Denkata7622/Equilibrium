@@ -1,0 +1,518 @@
+2026-11-20 21:55:07,756 [PDF_CHUNKER] INFO [1.1] duplicate statement skipped: 'Let $ABCD$ be a quadrilateral such that $AD = CD$ and $\\angl'
+2026-11-20 21:55:07,762 [PDF_CHUNKER] INFO [1.1] duplicate statement skipped: 'Let $ABCD$ be a quadrilateral such that $AD = CD$ and $\\\\ang'
+2026-11-20 21:55:07,806 [PDF_CHUNKER] INFO [1.1] duplicate statement skipped: 'Точките D, E и F са средите съответно на страните AB, BC и C'
+2026-11-20 21:55:07,879 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'The circles $k_1$ and $k_2$ with centers $O_1$ and $O_2$ res'
+2026-11-20 21:55:07,880 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'The circles $k_1$ and $k_2$ with centers $O_1$ and $O_2$ res'
+2026-11-20 21:55:07,883 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'The convex pentagon $ABCDE$ is inscribed in a circle with ra'
+2026-11-20 21:55:07,886 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'The convex pentagon $ABCDE$ is inscribed in a circle with ra'
+2026-11-20 21:55:07,899 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'В $\\triangle ABC, CH(H \\in AB)$ е височина, а $CM$ и $CN(M, '
+2026-11-20 21:55:07,911 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'Нека $ABC$ е правоъгълен триъгълник с хипотенуза $AB$. Върху'
+2026-11-20 21:55:07,945 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'Правоъгълен трапец с лице 10 и височина 4 е разделен с права'
+2026-11-20 21:55:07,968 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'Правоъгълен трапец с лице 10 и височина 4 е разделен с права'
+2026-11-20 21:55:07,994 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'Ъглополовящите на ∠BAC, ∠ABC и ∠ACB в △ABC пресичат описанат'
+2026-11-20 21:55:08,046 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'Вписаната в $\\triangle ABC$ окръжност се допира до страните '
+2026-11-20 21:55:08,368 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'Точка $D$ лежи на страната $AB$ на остроъгълен триъгълник $A'
+2026-11-20 21:55:08,696 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'Let $B_1$ and $C_1$ be points on the sides $AC$ and $AB$ of '
+2026-11-20 21:55:08,702 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'Let $B_1$ and $C_1$ be points on the sides $AC$ and $AB$ of '
+2026-11-20 21:55:08,716 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'В $\\triangle ABC, CH(H \\in AB)$ е височина, а $CM$ и $CN(M, '
+2026-11-20 21:55:08,962 [PDF_CHUNKER] INFO [1.10] duplicate statement skipped: 'В трапец ABCD, AB ∥ CD, вписаната окръжност в триъгълник ABD'
+2026-11-20 21:55:09,280 [PDF_CHUNKER] INFO [1.2] duplicate statement skipped: 'The circles $k_1$ and $k_2$ with centers $O_1$ and $O_2$ res'
+2026-11-20 21:55:09,281 [PDF_CHUNKER] INFO [1.2] duplicate statement skipped: 'The circles $k_1$ and $k_2$ with centers $O_1$ and $O_2$ res'
+2026-11-20 21:55:09,299 [PDF_CHUNKER] INFO [1.2] duplicate statement skipped: 'The points $A_1$, $B_1$, $C_1$ lie on the sides $BC$, $CA$, '
+2026-11-20 21:55:09,345 [PDF_CHUNKER] INFO [1.3] duplicate statement skipped: 'Let $A_1A_2A_3A_4A_5A_6A_7$, $B_1B_2B_3B_4B_5B_6B_7$, $C_1C_'
+2026-11-20 21:55:09,346 [PDF_CHUNKER] INFO [1.3] duplicate statement skipped: 'Let $A_1A_2A_3A_4A_5A_6A_7$, $B_1B_2B_3B_4B_5B_6B_7$, $C_1C_'
+2026-11-20 21:55:09,351 [PDF_CHUNKER] INFO [1.3] duplicate statement skipped: 'Нека $ABCD$ е изпъкнал четириъгълник. С $A_1$ и $C_1$ са озн'
+2026-11-20 21:55:09,394 [PDF_CHUNKER] INFO [1.4] duplicate statement skipped: 'The circles $k_1$ and $k_2$ with centers $O_1$ and $O_2$ res'
+2026-11-20 21:55:09,398 [PDF_CHUNKER] INFO [1.4] duplicate statement skipped: 'A convex quadrilateral of area $S$ is inscribed in a circle '
+2026-11-20 21:55:09,400 [PDF_CHUNKER] INFO [1.4] duplicate statement skipped: 'A convex quadrilateral of area $S$ is inscribed in a circle '
+2026-11-20 21:55:09,504 [PDF_CHUNKER] INFO [1.4] duplicate statement skipped: 'Let $p$ and $q$ be positive numbers such that the parabola $'
+2026-11-20 21:55:09,599 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'Given a convex quadrilateral ABCD which can be inscribed in '
+2026-11-20 21:55:09,600 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'Given a convex quadrilateral ABCD which can be inscribed in '
+2026-11-20 21:55:09,602 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'The convex pentagon $ABCDE$ is inscribed in a circle with ra'
+2026-11-20 21:55:09,617 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'В $\\triangle ABC, CH(H \\in AB)$ е височина, а $CM$ и $CN(M, '
+2026-11-20 21:55:09,622 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'Да се намерят всички множества $S$ от четири точки в равнина'
+2026-11-20 21:55:09,630 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'Точки $A$ и $B$ лежат на окръжност, а точка $C$ се мени върх'
+2026-11-20 21:55:09,718 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'Даден е триъгълник ABC и произволна точка L, вътрешна за стр'
+2026-11-20 21:55:09,737 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'В окръжност с център $O$ и радиус $R$ е вписан остроъгълен $'
+2026-11-20 21:55:09,758 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'Даден е триъгълник $ABC$, за който $\\angle  ACB = 60^◦$. Точ'
+2026-11-20 21:55:09,815 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'Даден е триъгълник $ABC$. Окръжност $k$ минава през върха $C'
+2026-11-20 21:55:09,923 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'От вътрешна за остроъгълен $\\triangle ABC$ точка $O$ са спус'
+2026-11-20 21:55:09,990 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'В $\\triangle ABC, CH(H \\in AB)$ е височина, а $CM$ и $CN(M, '
+2026-11-20 21:55:10,037 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'Точки $A$ и $B$ лежат на окръжност, а точка $C$ се мени върх'
+2026-11-20 21:55:10,042 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'Точки $A$ и $B$ лежат на окръжност, а точка $C$ се мени върх'
+2026-11-20 21:55:10,149 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'Дадена е окръжност $k$ и три различни точки $A$, $B$ и $C$ в'
+2026-11-20 21:55:10,238 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'Върху дадена окръжност $k$ са избрани точките $A$, $B$ и $C$'
+2026-11-20 21:55:10,301 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'Точките $A_1$, $B_1$ и $C_1$ лежат съответно на страните $BC'
+2026-11-20 21:55:10,460 [PDF_CHUNKER] INFO [1.5] duplicate statement skipped: 'Нека $I$ е центърът на описаната в триъгълник $ABC$ окръжнос'
+2026-11-20 21:55:10,695 [PDF_CHUNKER] INFO [1.6] duplicate statement skipped: 'Let $A_1A_2A_3A_4A_5A_6A_7$, $B_1B_2B_3B_4B_5B_6B_7$, $C_1C_'
+2026-11-20 21:55:10,696 [PDF_CHUNKER] INFO [1.6] duplicate statement skipped: 'Let $A_1A_2A_3A_4A_5A_6A_7$, $B_1B_2B_3B_4B_5B_6B_7$, $C_1C_'
+2026-11-20 21:55:10,699 [PDF_CHUNKER] INFO [1.6] duplicate statement skipped: 'A convex quadrilateral $ABCD$, for which $\\angle ABC + \\angl'
+2026-11-20 21:55:10,715 [PDF_CHUNKER] INFO [1.6] duplicate statement skipped: 'A convex quadrilateral of area $S$ is inscribed in a circle '
+2026-11-20 21:55:10,758 [PDF_CHUNKER] INFO [1.6] duplicate statement skipped: 'а) Да се докаже, че за триъгълник с ъгли α, β и γ е изпълнен'
+2026-11-20 21:55:10,836 [PDF_CHUNKER] INFO [1.6] duplicate statement skipped: 'Нека $AM$ и $BN$ ($M \\in BC, N \\in AC$) са вътрешните ъглопо'
+2026-11-20 21:55:11,000 [PDF_CHUNKER] INFO [1.6] duplicate statement skipped: 'On the sides of a non-obtuse triangle $ABC$ a square, a regu'
+2026-11-20 21:55:11,072 [PDF_CHUNKER] INFO [1.6] duplicate statement skipped: 'Точка $D$ е средата на основата $AB$ на остроъгълен равнобед'
+2026-11-20 21:55:11,074 [PDF_CHUNKER] INFO [1.6] duplicate statement skipped: 'A convex quadrilateral $ABCD$, for which $\\angle ABC + \\angl'
+2026-11-20 21:55:11,142 [PDF_CHUNKER] INFO [1.6] duplicate statement skipped: 'Диагоналите $AC$ и $BD$ на вписан в окръжност четириъгълник '
+2026-11-20 21:55:11,175 [PDF_CHUNKER] INFO [1.6] duplicate statement skipped: 'В окръжност с радиус $R = 65$ е вписан четиригълник $ABCD$, '
+2026-11-20 21:55:11,232 [PDF_CHUNKER] INFO [1.6] duplicate statement skipped: 'Точките $O$ и $I$ са съответно център на описаната и вписана'
+2026-11-20 21:55:11,337 [PDF_CHUNKER] INFO [1.6] duplicate statement skipped: 'Върху медианата CM на триъгълика ABC(AC̸ = BC) с остър ъгъл '
+2026-11-20 21:55:11,443 [PDF_CHUNKER] INFO [1.7] duplicate statement skipped: 'A convex quadrilateral of area $S$ is inscribed in a circle '
+2026-11-20 21:55:11,491 [PDF_CHUNKER] INFO [1.7] duplicate statement skipped: 'Даден е трапец $ABCD$ с основи $AB \nparallel CD$ и пресечна '
+2026-11-20 21:55:11,612 [PDF_CHUNKER] INFO [1.7] duplicate statement skipped: 'В тризъглна пирамида $ABCD$ околните ръбове $DB$ и $DC$ са р'
+2026-11-20 21:55:11,681 [PDF_CHUNKER] INFO [1.8] duplicate statement skipped: 'Точките $O$ и $I$ са съответно център на описаната и вписана'
+2026-11-20 21:55:11,695 [PDF_CHUNKER] INFO [1.9] duplicate statement skipped: 'Да се намерят всички множества $S$ от четири точки в равнина'
+2026-11-20 21:55:11,696 [PDF_CHUNKER] INFO [1.9] duplicate statement skipped: 'Да се намерят всички множества $S$ от четири точки в равнина'
+2026-11-20 21:55:11,764 [PDF_CHUNKER] INFO [2.10] duplicate statement skipped: 'Даден е изпъкнал четириъгълник $ABCD$, за който $\\measuredan'
+2026-11-20 21:55:11,792 [PDF_CHUNKER] INFO [2.11] duplicate statement skipped: 'Да се намерят всички множества $S$ от четири точки в равнина'
+2026-11-20 21:55:11,796 [PDF_CHUNKER] INFO [2.11] duplicate statement skipped: 'Даден е $\\triangle ABC$ с ортоцентър $H$. Нека $M$ е средата'
+2026-11-20 21:55:11,834 [PDF_CHUNKER] INFO [2.11] duplicate statement skipped: 'Даден е остроъгълен триъгълник $\\triangle ABC$ с ортоцентър '
+2026-11-20 21:55:11,918 [PDF_CHUNKER] INFO [2.11] duplicate statement skipped: 'The vertices $A$, $B$ and $C$ of an acute triangle $ABC$ lie'
+2026-11-20 21:55:12,178 [PDF_CHUNKER] INFO [2.4] duplicate statement skipped: 'Two squares K₁ and K₂ with centres M and N and sides of leng'
+2026-11-20 21:55:12,185 [PDF_CHUNKER] INFO [2.4] duplicate statement skipped: 'Two squares K₁ and K₂ with centres M and N and sides of leng'
+2026-11-20 21:55:12,234 [PDF_CHUNKER] INFO [2.8] duplicate statement skipped: 'Let $M$ be the centroid of $\triangle ABC$. Prove the inequal'
+2026-11-20 21:55:12,299 [PDF_CHUNKER] INFO [3.1] duplicate statement skipped: 'Show that the equation\n\n$$x^2y^2 = z^2(z^2 - x^2 - y^2)$$\n\nh'
+2026-11-20 21:55:12,320 [PDF_CHUNKER] INFO [3.1] duplicate statement skipped: 'Някои от градовете на една държава са свързани с пътища, кат'
+2026-11-20 21:55:12,393 [PDF_CHUNKER] INFO [3.1] duplicate statement skipped: 'Да се намерят всички тройки естествени числа $(a, b, c)$, за'
+2026-11-20 21:55:12,458 [PDF_CHUNKER] INFO [3.1] duplicate statement skipped: 'Нека $a > 1$ е дадено естествено число. Да се докаже, че за '
+2026-11-20 21:55:12,621 [PDF_CHUNKER] INFO [3.12] duplicate statement skipped: 'Да се намерят всички реални числа a такива, че 4[an] = n + ['
+2026-11-20 21:55:12,622 [PDF_CHUNKER] INFO [3.12] duplicate statement skipped: 'Да се намерят всички реални числа a такива, че 4[an] = n + ['
+2026-11-20 21:55:12,627 [PDF_CHUNKER] INFO [3.12] duplicate statement skipped: '(7 точки) За всяко естествено число $n$ с $f(n)$ означаваме '
+2026-11-20 21:55:12,677 [PDF_CHUNKER] INFO [3.2] duplicate statement skipped: 'Да се намерят всички двойки (a, b) от естествени числа такив'
+2026-11-20 21:55:12,686 [PDF_CHUNKER] INFO [3.2] duplicate statement skipped: 'Дадено е множество $M$ от $2^{2015}$ естествени числа, всяко'
+2026-11-20 21:55:12,750 [PDF_CHUNKER] INFO [3.2] duplicate statement skipped: 'Prove that the equation $$x^{2}+y^{2}+z^{2}+3(x+y+z)+5=0$$ h'
+2026-11-20 21:55:12,751 [PDF_CHUNKER] INFO [3.2] duplicate statement skipped: 'Нека $\\{a_n\\}_{n=1}^{\\infty}$ е редица, за която $a_1 = 43, '
+2026-11-20 21:55:12,752 [PDF_CHUNKER] INFO [3.2] duplicate statement skipped: 'Нека $\\{a_n\\}_{n=1}^{\\infty}$ е редица, за която $a_1 = 43, '
+2026-11-20 21:55:12,806 [PDF_CHUNKER] INFO [3.2] duplicate statement skipped: 'Let $m$ and $n$ be natural numbers such that $A = ((m + 3)^n'
+2026-11-20 21:55:12,854 [PDF_CHUNKER] INFO [3.2] duplicate statement skipped: '(Николай Николов) Нека $a_1 \\in \\mathbb{Z}$, $a_2 = a_1^2 - '
+2026-11-20 21:55:13,193 [PDF_CHUNKER] INFO [3.6] duplicate statement skipped: 'Нека $f(x)$ е полином с цели коефициенти и $n$ е дадено есте'
+2026-11-20 21:55:13,221 [PDF_CHUNKER] INFO [3.7] duplicate statement skipped: 'Нека ∆е множеството на всички триъгълици, вписани в дадена о'
+2026-11-20 21:55:13,277 [PDF_CHUNKER] INFO [3.8] duplicate statement skipped: 'Дадени са естествени числа $a_1, a_2, \\dots, a_{2011}$. Да с'
+2026-11-20 21:55:13,295 [PDF_CHUNKER] INFO [3.8] duplicate statement skipped: 'Prove that the equation\n\n$$x^{2}+y^{2}+z^{2}+3(x+y+z)+5=0$$\n'
+2026-11-20 21:55:13,297 [PDF_CHUNKER] INFO [3.8] duplicate statement skipped: 'Prove that the equation\n\n$$x^{2}+y^{2}+z^{2}+3(x+y+z)+5=0$$\n'
+2026-11-20 21:55:13,298 [PDF_CHUNKER] INFO [3.8] duplicate statement skipped: 'Да се реши в естествени числа уравнението\n\n$$x! + y! = 15.2^'
+2026-11-20 21:55:13,405 [PDF_CHUNKER] INFO [4.10] duplicate statement skipped: 'Find all pairs of positive integers $(x, y)$ for which $\\fra'
+2026-11-20 21:55:13,461 [PDF_CHUNKER] INFO [4.2] duplicate statement skipped: 'Show that the equation\n\n$$x^2y^2 = z^2(z^2 - x^2 - y^2)$$\n\nh'
+2026-11-20 21:55:13,461 [PDF_CHUNKER] INFO [4.2] duplicate statement skipped: 'Show that the equation\n\n$$x^2y^2 = z^2(z^2 - x^2 - y^2)$$\n\nh'
+2026-11-20 21:55:13,462 [PDF_CHUNKER] INFO [4.2] duplicate statement skipped: 'Show that the equation\n\n$$x^2y^2 = z^2(z^2 - x^2 - y^2)$$\n\nh'
+2026-11-20 21:55:13,462 [PDF_CHUNKER] INFO [4.2] duplicate statement skipped: 'Show that the equation\n\n$$x^2y^2 = z^2(z^2 - x^2 - y^2)$$\n\nh'
+2026-11-20 21:55:13,475 [PDF_CHUNKER] INFO [4.2] duplicate statement skipped: 'Find all pairs of positive integers $(x, y)$ for which $\\fra'
+2026-11-20 21:55:13,479 [PDF_CHUNKER] INFO [4.2] duplicate statement skipped: 'Find all pairs of positive integers \\((x, y)\\) for which \\(\\'
+2026-11-20 21:55:13,482 [PDF_CHUNKER] INFO [4.2] duplicate statement skipped: 'Find all pairs of positive integers \\((x, y)\\) for which \\(\\'
+2026-11-20 21:55:13,503 [PDF_CHUNKER] INFO [4.2] duplicate statement skipped: 'Find all natural numbers a, b and c such that the roots of t'
+2026-11-20 21:55:13,511 [PDF_CHUNKER] INFO [4.2] duplicate statement skipped: 'Find all natural numbers a, b and c such that the roots of t'
+2026-11-20 21:55:13,575 [PDF_CHUNKER] INFO [4.3] duplicate statement skipped: 'Find all triples $(x, y, z)$ of natural numbers such that $y'
+2026-11-20 21:55:13,576 [PDF_CHUNKER] INFO [4.3] duplicate statement skipped: 'Find all triples $(x, y, z)$ of natural numbers such that $y'
+2026-11-20 21:55:13,577 [PDF_CHUNKER] INFO [4.3] duplicate statement skipped: 'Find all pairs $(x, y)$ of integer numbers such that $x^3 = '
+2026-11-20 21:55:13,629 [PDF_CHUNKER] INFO [4.4] duplicate statement skipped: 'Да се намери най-малкото естествено число $a$, за което сист'
+2026-11-20 21:55:13,634 [PDF_CHUNKER] INFO [4.4] duplicate statement skipped: 'Съществува ли естествено число $n$, за което числото $\\left('
+2026-11-20 21:55:13,716 [PDF_CHUNKER] INFO [4.4] duplicate statement skipped: 'Prove that for all positive integers $n \\geq 3$ there exist '
+2026-11-20 21:55:13,730 [PDF_CHUNKER] INFO [4.4] duplicate statement skipped: 'Prove that the equation $$x^{2}+y^{2}+z^{2}+3(x+y+z)+5=0$$ h'
+2026-11-20 21:55:13,752 [PDF_CHUNKER] INFO [4.4] duplicate statement skipped: 'Find all triples $(x, y, z)$ of natural numbers such that $y'
+2026-11-20 21:55:13,763 [PDF_CHUNKER] INFO [4.4] duplicate statement skipped: 'Find all triples $(x, y, z)$ of natural numbers such that $y'
+2026-11-20 21:55:13,904 [PDF_CHUNKER] INFO [4.5] duplicate statement skipped: 'Нека $P$ е неконстантен полином с цели коефициенти, като ста'
+2026-11-20 21:55:13,922 [PDF_CHUNKER] INFO [4.5] duplicate statement skipped: 'Да се намерят всички двойки прости числа p и q, за които\n\n$$'
+2026-11-20 21:55:14,016 [PDF_CHUNKER] INFO [4.8] duplicate statement skipped: 'Дадени са естествени числа $a_1, a_2, \\dots, a_{2011}$. Да с'
+2026-11-20 21:55:14,024 [PDF_CHUNKER] INFO [4.8] duplicate statement skipped: 'Нека p ≧5 е просто число. Да се докаже, че:\nа) p3 дели 𐀀2p\np'
+2026-11-20 21:55:14,026 [PDF_CHUNKER] INFO [4.8] duplicate statement skipped: 'Да се реши в естествени числа уравнението\n\n$$x! + y! = 15.2^'
+2026-11-20 21:55:14,042 [PDF_CHUNKER] INFO [4.8] duplicate statement skipped: '(Петър Бойваленков) Съществуват ли естествени числа $m \\ge 5'
+2026-11-20 21:55:14,083 [PDF_CHUNKER] INFO [5.1] duplicate statement skipped: 'Да се намери броят на реалните решения на системата\n¯¯¯¯¯¯\nx'
+2026-11-20 21:55:14,180 [PDF_CHUNKER] INFO [5.1] duplicate statement skipped: 'Let $f(x) = x^3 - 3x + 1$. Find the number of different real'
+2026-11-20 21:55:14,191 [PDF_CHUNKER] INFO [5.1] duplicate statement skipped: 'Да се намери броят на реалните решения на системата\n¯¯¯¯¯¯\nx'
+2026-11-20 21:55:14,192 [PDF_CHUNKER] INFO [5.1] duplicate statement skipped: 'Да се намери броят на реалните решения на системата\n¯¯¯¯¯¯\nx'
+2026-11-20 21:55:14,199 [PDF_CHUNKER] INFO [5.1] duplicate statement skipped: 'Да се реши уравнението 8x−2x 6x−3x = 2.'
+2026-11-20 21:55:14,325 [PDF_CHUNKER] INFO [5.1] duplicate statement skipped: 'Да се реши уравнението\n\n$$8 - 3\\sqrt{x^2 + 16} = \\frac{56}{2'
+2026-11-20 21:55:14,554 [PDF_CHUNKER] INFO [5.10] duplicate statement skipped: 'За кои стойности на реалния параметър $a$ уравнението\n\n$$\\si'
+2026-11-20 21:55:14,592 [PDF_CHUNKER] INFO [5.11] duplicate statement skipped: 'За кои стойности на реалния параметър a уравнението\n\n$$9^t -'
+2026-11-20 21:55:14,600 [PDF_CHUNKER] INFO [5.11] duplicate statement skipped: 'За кои стойности на параметъра $a$ уравнението\n\n$$x^2 + (1 -'
+2026-11-20 21:55:14,601 [PDF_CHUNKER] INFO [5.11] duplicate statement skipped: 'Да се намерят всички реални стойности на $x$, за които са из'
+2026-11-20 21:55:14,622 [PDF_CHUNKER] INFO [5.11] duplicate statement skipped: 'Да се реши неравенството 2 2ax+1 +2 a \\le  2 ax +2 ax+a+1, к'
+2026-11-20 21:55:14,632 [PDF_CHUNKER] INFO [5.11] duplicate statement skipped: 'Да се намерят стойностите на реалния параметър a, за които у'
+2026-11-20 21:55:14,641 [PDF_CHUNKER] INFO [5.11] duplicate statement skipped: 'Да се намерят стойностите на реалния параметър a, за които у'
+2026-11-20 21:55:14,648 [PDF_CHUNKER] INFO [5.11] duplicate statement skipped: 'Да се намерят стойностите на реалния параметър a, за които у'
+2026-11-20 21:55:14,684 [PDF_CHUNKER] INFO [5.11] duplicate statement skipped: '(7 точки) Да се намерят всички стойности на реалния параметъ'
+2026-11-20 21:55:14,703 [PDF_CHUNKER] INFO [5.11] duplicate statement skipped: 'Да се намерят стойностите на реалния параметър $a$, за които'
+2026-11-20 21:55:14,922 [PDF_CHUNKER] INFO [5.5] duplicate statement skipped: 'Могат ли полиномите x⁵ − x − 1 и x² + ax + b, където a и b с'
+2026-11-20 21:55:14,947 [PDF_CHUNKER] INFO [5.6] duplicate statement skipped: 'a) Find the maximal value of the function $y = |4x^3 - 3x|$ '
+2026-11-20 21:55:14,948 [PDF_CHUNKER] INFO [5.6] duplicate statement skipped: 'a) Find the maximal value of the function $y = |4x^3 - 3x|$ '
+2026-11-20 21:55:14,988 [PDF_CHUNKER] INFO [5.7] duplicate statement skipped: 'Нека $n$ е естествено число и $f(x)$ е полином от степен $n$'
+2026-11-20 21:55:14,995 [PDF_CHUNKER] INFO [5.7] duplicate statement skipped: 'Да се намерят всички полиноми $P$ с реални коефициенти такив'
+2026-11-20 21:55:15,043 [PDF_CHUNKER] INFO [5.9] duplicate statement skipped: 'Дадена е функцията $f(x) = x^3 - 2ax^2 + 3ax$, където $a$ е '
+2026-11-20 21:55:15,106 [PDF_CHUNKER] INFO [5.9] duplicate statement skipped: 'Да се намерят всички стойности на реалния параметър a, за ко'
+2026-11-20 21:55:15,155 [PDF_CHUNKER] INFO [5.9] duplicate statement skipped: 'Нека f(x) e полином от втора степен с реални корени, които л'
+2026-11-20 21:55:15,194 [PDF_CHUNKER] INFO [6.1] duplicate statement skipped: 'Let $n \\ge  2$ and $0 \\le  x_i \\le  1$ for $i = 1, 2, \\ldots'
+2026-11-20 21:55:15,213 [PDF_CHUNKER] INFO [6.1] duplicate statement skipped: 'Да се докаже, че ако $a$, $b$ и $c$ са положителни числа, за'
+2026-11-20 21:55:15,219 [PDF_CHUNKER] INFO [6.1] duplicate statement skipped: 'Да се докаже, че ако $a$, $b$ и $c$ са положителни числа, за'
+2026-11-20 21:55:15,507 [PDF_CHUNKER] INFO [7.1] duplicate statement skipped: 'Let $A = \\{1, 2, \\dots, m + n\\}$, where $m$ and $n$ are posi'
+2026-11-20 21:55:15,545 [PDF_CHUNKER] INFO [7.2] duplicate statement skipped: 'Let $\\mathbb{R}^+$ be the set of all positive real numbers. '
+2026-11-20 21:55:15,546 [PDF_CHUNKER] INFO [7.2] duplicate statement skipped: 'Let $\\mathbb{R}^+$ be the set of all positive real numbers. '
+2026-11-20 21:55:15,620 [PDF_CHUNKER] INFO [7.4] duplicate statement skipped: 'Да се намерят всички естествени числа $n$, за които съществу'
+2026-11-20 21:55:15,622 [PDF_CHUNKER] INFO [7.4] duplicate statement skipped: 'Да се намерят всички естествени числа $n$, за които съществу'
+2026-11-20 21:55:15,622 [PDF_CHUNKER] INFO [7.4] duplicate statement skipped: 'Да се намерят всички естествени числа $n$, за които съществу'
+2026-11-20 21:55:15,670 [PDF_CHUNKER] INFO [7.5] duplicate statement skipped: 'Да се намерят всички функции $f : (0, \\infty) \\to (0, \\infty'
+2026-11-20 21:55:15,742 [PDF_CHUNKER] INFO [7.6] duplicate statement skipped: 'Да се намерят всички безкрайни редици $a_1, a_2, \\dots$ от р'
+2026-11-20 21:55:15,829 [PDF_CHUNKER] INFO [7.7] duplicate statement skipped: 'Нека a 1 > 1 и a n+1 = a n + −1 при n \\ge  1. Да се докаже, '
+2026-11-20 21:55:15,939 [PDF_CHUNKER] INFO [7.8] duplicate statement skipped: 'Нека a 1 > 1 и a n+1 = a n + −1 при n \\ge  1. Да се докаже, '
+2026-11-20 21:55:15,975 [PDF_CHUNKER] INFO [7.8] duplicate statement skipped: 'Find all continuous functions f(x) defined in the set of rea'
+2026-11-20 21:55:15,996 [PDF_CHUNKER] INFO [7.8] duplicate statement skipped: 'Дадена е редицата $\\{a_n\\}_{n=1}^\\infty$, дефинирана с равен'
+2026-11-20 21:55:16,054 [PDF_CHUNKER] INFO [7.8] duplicate statement skipped: 'Дадена е редицата $\\{a_n\\}_{n=1}^{\\infty}$, за която:\n\n$$a_1'
+2026-11-20 21:55:16,207 [PDF_CHUNKER] INFO [8.1] duplicate statement skipped: 'Each interior point of an equilateral triangle of side 1 lie'
+2026-11-20 21:55:16,267 [PDF_CHUNKER] INFO [8.1] duplicate statement skipped: 'Each interior point of an equilateral triangle of side 1 lie'
+2026-11-20 21:55:16,313 [PDF_CHUNKER] INFO [8.10] duplicate statement skipped: 'Let $n \\geq 2$ and $0 \\leq x_i \\leq 1$ for $i = 1, 2, \\ldots'
+2026-11-20 21:55:16,332 [PDF_CHUNKER] INFO [8.10] duplicate statement skipped: 'A rectangle $m \\times n$ ($m > 1$, $n > 1$) is divided into '
+2026-11-20 21:55:16,344 [PDF_CHUNKER] INFO [8.10] duplicate statement skipped: 'A rectangle $m \\times n$ ($m > 1$, $n > 1$) is divided into '
+2026-11-20 21:55:16,355 [PDF_CHUNKER] INFO [8.10] duplicate statement skipped: 'A rectangle $m \\times n$ ($m > 1$, $n > 1$) is divided into '
+2026-11-20 21:55:16,408 [PDF_CHUNKER] INFO [8.11] duplicate statement skipped: 'Растения от 11 сорта жито са засадени в саксии като във всяк'
+2026-11-20 21:55:16,411 [PDF_CHUNKER] INFO [8.11] duplicate statement skipped: 'Дадена е фамилия $\\mathcal{F}$ от 4-елементни подмножества ('
+2026-11-20 21:55:16,466 [PDF_CHUNKER] INFO [8.12] duplicate statement skipped: 'Дадено е естествено число n. Яна пише n различни естествени '
+2026-11-20 21:55:16,518 [PDF_CHUNKER] INFO [8.13] duplicate statement skipped: 'Дадено е естествено число n. Яна пише n различни естествени '
+2026-11-20 21:55:16,584 [PDF_CHUNKER] INFO [8.15] duplicate statement skipped: 'Нека $n \\ge 3$ е дадено естествено число и $a_1, a_2, \\dots,'
+2026-11-20 21:55:16,585 [PDF_CHUNKER] INFO [8.15] duplicate statement skipped: 'Нека $n \\ge 3$ е дадено естествено число и $a_1, a_2, \\dots,'
+2026-11-20 21:55:16,586 [PDF_CHUNKER] INFO [8.15] duplicate statement skipped: 'Нека $n \\ge 3$ е дадено естествено число и $a_1, a_2, \\dots,'
+2026-11-20 21:55:16,599 [PDF_CHUNKER] INFO [8.15] duplicate statement skipped: 'Дадени са реалните числа $a_1, a_2, \\dots, a_{2017}$ със сбо'
+2026-11-20 21:55:16,622 [PDF_CHUNKER] INFO [8.15] duplicate statement skipped: 'Нека $n$ е естествено число, а $A$ е множество от редици $v '
+2026-11-20 21:55:16,636 [PDF_CHUNKER] INFO [8.15] duplicate statement skipped: 'Нека $S = \\{1, 2, \\dots, 2020\\}$, тоест множеството от цели '
+2026-11-20 21:55:16,705 [PDF_CHUNKER] INFO [8.15] duplicate statement skipped: 'A square table of size $7 \\times 7$ with the four corner squ'
+2026-11-20 21:55:16,851 [PDF_CHUNKER] INFO [8.15] duplicate statement skipped: 'Нека $S$ е множество от 2006 точки в равнината. Двойка точки'
+2026-11-20 21:55:17,178 [PDF_CHUNKER] INFO [8.3] duplicate statement skipped: 'A rectangle $m \\times n$ ($m > 1$, $n > 1$) is divided into '
+2026-11-20 21:55:17,198 [PDF_CHUNKER] INFO [8.3] duplicate statement skipped: 'In a competition 8 judges marked the contestants by *yes* or'
+2026-11-20 21:55:17,239 [PDF_CHUNKER] INFO [8.4] duplicate statement skipped: 'Let $n > 1$ be an integer. Find the number of the permutatio'
+2026-11-20 21:55:17,276 [PDF_CHUNKER] INFO [8.5] duplicate statement skipped: 'Let $n > 1$ be an integer. Find the number of the permutatio'
+2026-11-20 21:55:17,282 [PDF_CHUNKER] INFO [8.5] duplicate statement skipped: 'Нека n е дадено естествено число. Естествените числа a, b, c'
+2026-11-20 21:55:17,305 [PDF_CHUNKER] INFO [8.6] duplicate statement skipped: 'Find the least positive integer number $n$ ($n \\ge 3$) with '
+2026-11-20 21:55:17,322 [PDF_CHUNKER] INFO [8.6] duplicate statement skipped: 'Дадена е колода от 52 различни карти. Разрешени са следните '
+2026-11-20 21:55:17,370 [PDF_CHUNKER] INFO [8.8] duplicate statement skipped: 'Let $n > 1$ be an integer. Find the number of the permutatio'
+2026-11-20 21:55:17,386 [PDF_CHUNKER] INFO [8.8] duplicate statement skipped: 'Find the number of non-empty sets of Sₙ = {1, 2, ..., n} suc'
+2026-11-20 21:55:17,391 [PDF_CHUNKER] INFO [8.8] duplicate statement skipped: 'Find the number of non-empty sets of Sₙ = {1, 2, ..., n} suc'
+2026-11-20 21:55:17,437 [PDF_CHUNKER] INFO [9.10] duplicate statement skipped: 'Дени попълва с ненулево цяло число някой от коефициентите на'
+2026-11-20 21:55:17,525 [PDF_CHUNKER] INFO [9.11] duplicate statement skipped: 'В страната на барон Мюнхаузен има 2n града, номерирани с чис'
+2026-11-20 21:55:17,577 [PDF_CHUNKER] INFO [9.3] duplicate statement skipped: 'На една планета има $M$ държави и $N$ града. Между някои от '
+2026-11-20 21:55:17,681 [PDF_CHUNKER] INFO [9.6] duplicate statement skipped: 'В пространството са дадени 7 точки, никои четири от които не'
+2026-11-20 21:55:17,820 [PDF_CHUNKER] INFO [R.11] duplicate statement skipped: 'The points $A_1$, $B_1$, $C_1$ lie on the sides $BC$, $CA$, '
+2026-11-20 21:55:17,872 [PDF_CHUNKER] INFO [R.11] duplicate statement skipped: 'Нека $O$ е център на описаната окръжност за $\\triangle ABC$,'
+2026-11-20 21:55:18,025 [PDF_CHUNKER] INFO [R.3] duplicate statement skipped: 'Да се определи най-голямата стойност на израза\n\n$$A = \\frac{'
+2026-11-20 21:55:18,050 [PDF_CHUNKER] INFO [R.4] duplicate statement skipped: 'Да се намерят стойностите на параметъра $a$, при които систе'
+2026-11-20 21:55:18,053 [PDF_CHUNKER] INFO [R.4] duplicate statement skipped: 'Да се намерят всички стойности на реалния параметър $a$, за '
+2026-11-20 21:55:18,081 [PDF_CHUNKER] INFO [R.5] duplicate statement skipped: 'Да се намерят ъглите $\\alpha$, $\\beta$ и $\\gamma$ на остроъг'
+2026-11-20 21:55:18,088 [PDF_CHUNKER] INFO [R.5] duplicate statement skipped: 'Да се намерят всички стойности на параметъра $a$, за които с'
+2026-11-20 21:55:18,175 [PDF_CHUNKER] INFO tasks: 286
+2026-11-20 21:55:18,175 [PDF_CHUNKER] INFO      10.11#0  medium  OLI-2-Областен кръг-2016-10 кл · 2016-10 · Зад. 10
+2026-11-20 21:55:18,176 [PDF_CHUNKER] INFO       11.7#3  easy    OLI-3-Национален кръг-1987-9-12 кл · 1987-None · З
+2026-11-20 21:55:18,176 [PDF_CHUNKER] INFO       12.2#1  medium  OLI-3-Национален кръг-1992-9-12 кл · 1992-None · З
+2026-11-20 21:55:18,176 [PDF_CHUNKER] INFO        1.1#3  medium  OLI-2-Областен кръг-1998-10 кл · 1998-10 · Зад. 10
+2026-11-20 21:55:18,176 [PDF_CHUNKER] INFO       1.11#2  medium  OLI-2-Областен кръг-2009-12 кл · 2009-12 · Зад. 12
+2026-11-20 21:55:18,177 [PDF_CHUNKER] INFO        2.1#1  medium  OLI-3-Национален кръг-1987-9-12 кл · 1987-None · З
+2026-11-20 21:55:18,177 [PDF_CHUNKER] INFO       2.10#3  hard    OLI-2-Областен кръг-2022-11 кл · 2022-11 · Зад. 11
+2026-11-20 21:55:18,177 [PDF_CHUNKER] INFO       2.11#0  hard    OLI-2-Областен кръг-2000-10 кл · 2000-10 · Зад. 6
+2026-11-20 21:55:18,177 [PDF_CHUNKER] INFO       2.11#1  hard    OLI-2-Областен кръг-2002-11 кл · 2002-11 · Зад. 11
+2026-11-20 21:55:18,177 [PDF_CHUNKER] INFO       2.11#2  hard    OLI-2-Областен кръг-2005-10 кл · 2005-10 · Зад. 10
+2026-11-20 21:55:18,177 [PDF_CHUNKER] INFO       2.11#3  hard    OLI-2-Областен кръг-2007-12 кл · 2007-12 · Зад. 12
+2026-11-20 21:55:18,178 [PDF_CHUNKER] INFO        2.2#0  hard    OLI-3-Национален кръг-2000-9-12 кл · 2000-None · З
+2026-11-20 21:55:18,178 [PDF_CHUNKER] INFO        2.3#0  hard    OLI-2-Областен кръг-2014-10 кл · 2014-10 · Зад. 10
+2026-11-20 21:55:18,178 [PDF_CHUNKER] INFO        2.3#1  hard    OLI-3-Национален кръг-1995-9-12 кл · 1995-None · З
+2026-11-20 21:55:18,178 [PDF_CHUNKER] INFO        2.3#2  hard    OLI-3-Национален кръг-2017-9-12 кл · 2017-None · З
+2026-11-20 21:55:18,178 [PDF_CHUNKER] INFO        2.3#3  hard    OLI-3-Национален кръг-2022-9-12 кл · 2022-None · З
+2026-11-20 21:55:18,178 [PDF_CHUNKER] INFO        2.4#0  hard    OLI-2-Областен кръг-1997-10 кл · 1997-10 · Зад. 10
+2026-11-20 21:55:18,178 [PDF_CHUNKER] INFO        2.4#1  hard    OLI-2-Областен кръг-2010-10 кл · 2010-10 · Зад. 10
+2026-11-20 21:55:18,178 [PDF_CHUNKER] INFO        2.4#2  hard    OLI-3-Национален кръг-2018-9-12 кл · 2018-None · З
+2026-11-20 21:55:18,178 [PDF_CHUNKER] INFO        2.4#3  hard    OLI-3-Национален кръг-2023-9-12 кл · 2023-None · З
+2026-11-20 21:55:18,178 [PDF_CHUNKER] INFO        2.6#0  hard    OLI-3-Национален кръг-2019-9-12 кл · 2019-None · З
+2026-11-20 21:55:18,179 [PDF_CHUNKER] INFO        2.8#0  hard    OLI-2-Областен кръг-2005-10 кл · 2005-10 · Зад. 10
+2026-11-20 21:55:18,179 [PDF_CHUNKER] INFO        2.8#1  hard    OLI-3-Национален кръг-1991-9-12 кл · 1991-None · З
+2026-11-20 21:55:18,179 [PDF_CHUNKER] INFO        2.8#2  hard    OLI-3-Национален кръг-1996-9-12 кл · 1996-None · З
+2026-11-20 21:55:18,179 [PDF_CHUNKER] INFO        2.8#3  hard    OLI-3-Национален кръг-1997-9-12 кл · 1997-None · З
+2026-11-20 21:55:18,179 [PDF_CHUNKER] INFO        2.9#0  hard    OLI-2-Областен кръг-2017-11 кл · 2017-11 · Зад. 11
+2026-11-20 21:55:18,179 [PDF_CHUNKER] INFO        2.9#1  hard    OLI-2-Областен кръг-2019-10 кл · 2019-10 · Зад. 10
+2026-11-20 21:55:18,180 [PDF_CHUNKER] INFO        3.1#0  hard    OLI-2-Областен кръг-1998-10 кл · 1998-10 · Зад. 10
+2026-11-20 21:55:18,180 [PDF_CHUNKER] INFO        3.1#1  hard    OLI-2-Областен кръг-2000-11 кл · 2000-11 · Зад. 11
+2026-11-20 21:55:18,181 [PDF_CHUNKER] INFO        3.1#2  hard    OLI-2-Областен кръг-2005-10 кл · 2005-10 · Зад. 10
+2026-11-20 21:55:18,181 [PDF_CHUNKER] INFO        3.1#3  hard    OLI-2-Областен кръг-2006-10 кл · 2006-10 · Зад. 10
+2026-11-20 21:55:18,181 [PDF_CHUNKER] INFO       3.10#0  hard    OLI-3-Национален кръг-2001-9-12 кл · 2001-None · З
+2026-11-20 21:55:18,181 [PDF_CHUNKER] INFO       3.10#1  hard    OLI-3-Национален кръг-2015-9-12 кл · 2015-None · З
+2026-11-20 21:55:18,181 [PDF_CHUNKER] INFO       3.10#2  medium  OLI-2-Областен кръг-1996-12 кл · 1996-12 · Зад. 12
+2026-11-20 21:55:18,181 [PDF_CHUNKER] INFO       3.10#3  medium  OLI-3-Национален кръг-1999-9-12 кл · 1999-None · З
+2026-11-20 21:55:18,183 [PDF_CHUNKER] INFO       3.11#0  hard    OLI-2-Областен кръг-2010-11 кл · 2010-11 · Зад. 6
+2026-11-20 21:55:18,183 [PDF_CHUNKER] INFO       3.12#0  hard    OLI-2-Областен кръг-2003-10 кл · 2003-10 · Зад. 10
+2026-11-20 21:55:18,183 [PDF_CHUNKER] INFO       3.12#1  hard    OLI-3-Национален кръг-2019-9-12 кл · 2019-None · З
+2026-11-20 21:55:18,183 [PDF_CHUNKER] INFO       3.12#2  medium  OLI-2-Областен кръг-2021-11 кл · 2021-11 · Зад. 11
+2026-11-20 21:55:18,183 [PDF_CHUNKER] INFO        3.2#0  hard    OLI-2-Областен кръг-2000-11 кл · 2000-11 · Зад. 11
+2026-11-20 21:55:18,183 [PDF_CHUNKER] INFO        3.2#1  hard    OLI-2-Областен кръг-2005-12 кл · 2005-12 · Зад. 12
+2026-11-20 21:55:18,183 [PDF_CHUNKER] INFO        3.2#2  hard    OLI-2-Областен кръг-2007-10 кл · 2007-10 · Зад. 10
+2026-11-20 21:55:18,183 [PDF_CHUNKER] INFO        3.2#3  hard    OLI-2-Областен кръг-2009-11 кл · 2009-11 · Зад. 11
+2026-11-20 21:55:18,183 [PDF_CHUNKER] INFO        3.3#0  hard    OLI-2-Областен кръг-2003-11 кл · 2003-11 · Зад. 11
+2026-11-20 21:55:18,183 [PDF_CHUNKER] INFO        3.3#1  hard    OLI-2-Областен кръг-2010-11 кл · 2010-11 · Зад. 6
+2026-11-20 21:55:18,184 [PDF_CHUNKER] INFO        3.3#2  hard    OLI-2-Областен кръг-2011-11 кл · 2011-11 · Зад. 11
+2026-11-20 21:55:18,184 [PDF_CHUNKER] INFO        3.3#3  hard    OLI-2-Областен кръг-2015-10 кл · 2015-10 · Зад. 3
+2026-11-20 21:55:18,184 [PDF_CHUNKER] INFO        3.4#0  hard    OLI-2-Областен кръг-2003-11 кл · 2003-11 · Зад. 11
+2026-11-20 21:55:18,184 [PDF_CHUNKER] INFO        3.4#1  hard    OLI-2-Областен кръг-2008-11 кл · 2008-11 · Зад. 11
+2026-11-20 21:55:18,184 [PDF_CHUNKER] INFO        3.4#2  hard    OLI-2-Областен кръг-2019-11 кл · 2019-11 · Зад. 11
+2026-11-20 21:55:18,184 [PDF_CHUNKER] INFO        3.4#3  hard    OLI-2-Областен кръг-2025-10 кл · 2025-10 · Зад. 4
+2026-11-20 21:55:18,184 [PDF_CHUNKER] INFO        3.5#0  hard    OLI-2-Областен кръг-2025-12 кл · 2025-12 · Зад. 12
+2026-11-20 21:55:18,184 [PDF_CHUNKER] INFO        3.5#1  medium  OLI-2-Областен кръг-2023-12 кл · 2023-12 · Зад. 12
+2026-11-20 21:55:18,185 [PDF_CHUNKER] INFO        3.5#2  medium  OLI-3-Национален кръг-2017-9-12 кл · 2017-None · З
+2026-11-20 21:55:18,185 [PDF_CHUNKER] INFO        3.6#0  hard    OLI-2-Областен кръг-2010-11 кл · 2010-11 · Зад. 6
+2026-11-20 21:55:18,185 [PDF_CHUNKER] INFO        3.6#1  hard    OLI-2-Областен кръг-2015-10 кл · 2015-10 · Зад. 3
+2026-11-20 21:55:18,185 [PDF_CHUNKER] INFO        3.6#2  hard    OLI-3-Национален кръг-1987-9-12 кл · 1987-None · З
+2026-11-20 21:55:18,185 [PDF_CHUNKER] INFO        3.6#3  hard    OLI-3-Национален кръг-2008-9-12 кл · 2008-None · З
+2026-11-20 21:55:18,185 [PDF_CHUNKER] INFO        3.7#0  hard    OLI-2-Областен кръг-2022-12 кл · 2022-12 · Зад. 12
+2026-11-20 21:55:18,185 [PDF_CHUNKER] INFO        3.7#1  hard    OLI-2-Областен кръг-2025-11 кл · 2025-11 · Зад. 11
+2026-11-20 21:55:18,187 [PDF_CHUNKER] INFO        3.7#2  hard    OLI-3-Национален кръг-1987-9-12 кл · 1987-None · З
+2026-11-20 21:55:18,187 [PDF_CHUNKER] INFO        3.7#3  hard    OLI-3-Национален кръг-1988-9-12 кл · 1988-None · З
+2026-11-20 21:55:18,188 [PDF_CHUNKER] INFO        3.8#0  hard    OLI-2-Областен кръг-2002-11 кл · 2002-11 · Зад. 11
+2026-11-20 21:55:18,188 [PDF_CHUNKER] INFO        3.8#1  hard    OLI-2-Областен кръг-2007-11 кл · 2007-11 · Зад. 11
+2026-11-20 21:55:18,188 [PDF_CHUNKER] INFO        3.8#2  hard    OLI-2-Областен кръг-2011-11 кл · 2011-11 · Зад. 11
+2026-11-20 21:55:18,189 [PDF_CHUNKER] INFO        3.8#3  hard    OLI-2-Областен кръг-2011-11 кл · 2011-11 · Зад. 11
+2026-11-20 21:55:18,189 [PDF_CHUNKER] INFO        3.9#0  hard    OLI-2-Областен кръг-2007-11 кл · 2007-11 · Зад. 11
+2026-11-20 21:55:18,189 [PDF_CHUNKER] INFO        3.9#1  hard    OLI-2-Областен кръг-2011-11 кл · 2011-11 · Зад. 11
+2026-11-20 21:55:18,189 [PDF_CHUNKER] INFO        3.9#2  hard    OLI-2-Областен кръг-2013-10 кл · 2013-10 · Зад. 10
+2026-11-20 21:55:18,189 [PDF_CHUNKER] INFO        3.9#3  hard    OLI-3-Национален кръг-2006-9-12 кл · 2006-None · З
+2026-11-20 21:55:18,189 [PDF_CHUNKER] INFO        4.1#0  hard    OLI-2-Областен кръг-2007-10 кл · 2007-10 · Зад. 10
+2026-11-20 21:55:18,190 [PDF_CHUNKER] INFO        4.1#1  medium  OLI-2-Областен кръг-2002-12 кл · 2002-12 · Зад. 12
+2026-11-20 21:55:18,190 [PDF_CHUNKER] INFO        4.1#2  medium  OLI-3-Национален кръг-2010-9-12 кл · 2010-None · З
+2026-11-20 21:55:18,190 [PDF_CHUNKER] INFO       4.10#0  hard    OLI-2-Областен кръг-2024-10 кл · 2024-10 · Зад. 10
+2026-11-20 21:55:18,190 [PDF_CHUNKER] INFO       4.10#1  medium  OLI-2-Областен кръг-1995-10 кл · 1995-10 · Зад. 10
+2026-11-20 21:55:18,190 [PDF_CHUNKER] INFO        4.2#0  hard    OLI-2-Областен кръг-1998-10 кл · 1998-10 · Зад. 10
+2026-11-20 21:55:18,191 [PDF_CHUNKER] INFO        4.2#1  hard    OLI-2-Областен кръг-2009-11 кл · 2009-11 · Зад. 11
+2026-11-20 21:55:18,191 [PDF_CHUNKER] INFO        4.2#2  hard    OLI-2-Областен кръг-2020-11 кл · 2020-11 · Зад. 11
+2026-11-20 21:55:18,191 [PDF_CHUNKER] INFO        4.2#3  hard    OLI-2-Областен кръг-2024-11 кл · 2024-11 · Зад. 11
+2026-11-20 21:55:18,192 [PDF_CHUNKER] INFO        4.3#0  hard    OLI-2-Областен кръг-2001-12 кл · 2001-12 · Зад. 12
+2026-11-20 21:55:18,193 [PDF_CHUNKER] INFO        4.3#1  medium  OLI-2-Областен кръг-1999-10 кл · 1999-10 · Зад. 10
+2026-11-20 21:55:18,193 [PDF_CHUNKER] INFO        4.3#2  easy    OLI-2-Областен кръг-1999-10 кл · 1999-10 · Зад. 10
+2026-11-20 21:55:18,194 [PDF_CHUNKER] INFO        4.4#1  hard    OLI-2-Областен кръг-1998-10 кл · 1998-10 · Зад. 10
+2026-11-20 21:55:18,194 [PDF_CHUNKER] INFO        4.4#2  hard    OLI-2-Областен кръг-2005-10 кл · 2005-10 · Зад. 10
+2026-11-20 21:55:18,195 [PDF_CHUNKER] INFO        4.4#3  hard    OLI-2-Областен кръг-2006-11 кл · 2006-11 · Зад. 11
+2026-11-20 21:55:18,195 [PDF_CHUNKER] INFO        4.5#0  hard    OLI-3-Национален кръг-2018-9-12 кл · 2018-None · З
+2026-11-20 21:55:18,195 [PDF_CHUNKER] INFO        4.5#1  hard    OLI-3-Национален кръг-2025-9-12 кл · 2025-None · З
+2026-11-20 21:55:18,195 [PDF_CHUNKER] INFO        4.5#2  medium  OLI-2-Областен кръг-1999-10 кл · 1999-10 · Зад. 10
+2026-11-20 21:55:18,196 [PDF_CHUNKER] INFO        4.5#3  medium  OLI-2-Областен кръг-2021-12 кл · 2021-12 · Зад. 12
+2026-11-20 21:55:18,197 [PDF_CHUNKER] INFO        4.6#0  hard    OLI-2-Областен кръг-2021-10 кл · 2021-10 · Зад. 10
+2026-11-20 21:55:18,197 [PDF_CHUNKER] INFO        4.7#0  hard    OLI-2-Областен кръг-2022-12 кл · 2022-12 · Зад. 12
+2026-11-20 21:55:18,197 [PDF_CHUNKER] INFO        4.7#1  medium  OLI-2-Областен кръг-2013-11 кл · 2013-11 · Зад. 11
+2026-11-20 21:55:18,197 [PDF_CHUNKER] INFO        4.7#2  medium  OLI-2-Областен кръг-2020-12 кл · 2020-12 · Зад. 12
+2026-11-20 21:55:18,198 [PDF_CHUNKER] INFO        4.7#3  medium  OLI-3-Национален кръг-1985-9-12 кл · 1985-None · З
+2026-11-20 21:55:18,198 [PDF_CHUNKER] INFO        4.8#0  hard    OLI-2-Областен кръг-2002-11 кл · 2002-11 · Зад. 11
+2026-11-20 21:55:18,199 [PDF_CHUNKER] INFO        4.8#1  hard    OLI-2-Областен кръг-2011-11 кл · 2011-11 · Зад. 11
+2026-11-20 21:55:18,199 [PDF_CHUNKER] INFO        4.8#2  hard    OLI-2-Областен кръг-2013-10 кл · 2013-10 · Зад. 10
+2026-11-20 21:55:18,199 [PDF_CHUNKER] INFO        4.8#3  hard    OLI-2-Областен кръг-2025-12 кл · 2025-12 · Зад. 12
+2026-11-20 21:55:18,199 [PDF_CHUNKER] INFO        4.9#0  hard    OLI-2-Областен кръг-2008-11 кл · 2008-11 · Зад. 11
+2026-11-20 21:55:18,200 [PDF_CHUNKER] INFO        4.9#1  hard    OLI-2-Областен кръг-2016-10 кл · 2016-10 · Зад. 10
+2026-11-20 21:55:18,200 [PDF_CHUNKER] INFO        5.1#0  hard    OLI-2-Областен кръг-2003-10 кл · 2003-10 · Зад. 10
+2026-11-20 21:55:18,200 [PDF_CHUNKER] INFO        5.1#1  hard    OLI-2-Областен кръг-2004-10 кл · 2004-10 · Зад. 10
+2026-11-20 21:55:18,200 [PDF_CHUNKER] INFO        5.1#2  hard    OLI-2-Областен кръг-2009-12 кл · 2009-12 · Зад. 12
+2026-11-20 21:55:18,201 [PDF_CHUNKER] INFO        5.1#3  hard    OLI-2-Областен кръг-2010-11 кл · 2010-11 · Зад. 3
+2026-11-20 21:55:18,201 [PDF_CHUNKER] INFO       5.10#0  hard    OLI-3-Национален кръг-1986-9-12 кл · 1986-None · З
+2026-11-20 21:55:18,201 [PDF_CHUNKER] INFO       5.10#1  medium  OLI-2-Областен кръг-2004-11 кл · 2004-11 · Зад. 11
+2026-11-20 21:55:18,201 [PDF_CHUNKER] INFO       5.10#2  medium  OLI-2-Областен кръг-2012-11 кл · 2012-11 · Зад. 11
+2026-11-20 21:55:18,202 [PDF_CHUNKER] INFO       5.10#3  medium  OLI-2-Областен кръг-2016-11 кл · 2016-11 · Зад. 1
+2026-11-20 21:55:18,203 [PDF_CHUNKER] INFO       5.11#0  hard    OLI-2-Областен кръг-2005-10 кл · 2005-10 · Зад. 10
+2026-11-20 21:55:18,203 [PDF_CHUNKER] INFO       5.11#1  hard    OLI-2-Областен кръг-2007-10 кл · 2007-10 · Зад. 10
+2026-11-20 21:55:18,203 [PDF_CHUNKER] INFO       5.11#2  hard    OLI-2-Областен кръг-2011-10 кл · 2011-10 · Зад. 10
+2026-11-20 21:55:18,203 [PDF_CHUNKER] INFO       5.11#3  hard    OLI-2-Областен кръг-2011-10 кл · 2011-10 · Зад. 10
+2026-11-20 21:55:18,203 [PDF_CHUNKER] INFO       5.12#0  medium  OLI-2-Областен кръг-2024-11 кл · 2024-11 · Зад. 11
+2026-11-20 21:55:18,204 [PDF_CHUNKER] INFO        5.2#0  hard    OLI-2-Областен кръг-2010-12 кл · 2010-12 · Зад. 12
+2026-11-20 21:55:18,204 [PDF_CHUNKER] INFO        5.3#0  hard    OLI-2-Областен кръг-2003-11 кл · 2003-11 · Зад. 11
+2026-11-20 21:55:18,205 [PDF_CHUNKER] INFO        5.3#1  hard    OLI-2-Областен кръг-2013-12 кл · 2013-12 · Зад. 12
+2026-11-20 21:55:18,205 [PDF_CHUNKER] INFO        5.3#2  hard    OLI-3-Национален кръг-1997-9-12 кл · 1997-None · З
+2026-11-20 21:55:18,205 [PDF_CHUNKER] INFO        5.3#3  medium  OLI-3-Национален кръг-1998-9-12 кл · 1998-None · З
+2026-11-20 21:55:18,206 [PDF_CHUNKER] INFO        5.4#0  hard    OLI-2-Областен кръг-2004-10 кл · 2004-10 · Зад. 10
+2026-11-20 21:55:18,206 [PDF_CHUNKER] INFO        5.4#1  hard    OLI-2-Областен кръг-2014-11 кл · 2014-11 · Зад. 11
+2026-11-20 21:55:18,206 [PDF_CHUNKER] INFO        5.4#2  hard    OLI-2-Областен кръг-2023-10 кл · 2023-10 · Зад. 10
+2026-11-20 21:55:18,206 [PDF_CHUNKER] INFO        5.4#3  hard    OLI-3-Национален кръг-1989-9-12 кл · 1989-None · З
+2026-11-20 21:55:18,206 [PDF_CHUNKER] INFO        5.5#0  hard    OLI-2-Областен кръг-2012-11 кл · 2012-11 · Зад. 11
+2026-11-20 21:55:18,206 [PDF_CHUNKER] INFO        5.5#1  hard    OLI-3-Национален кръг-1983-9-12 кл · 1983-None · З
+2026-11-20 21:55:18,207 [PDF_CHUNKER] INFO        5.5#2  hard    OLI-3-Национален кръг-2007-9-12 кл · 2007-None · З
+2026-11-20 21:55:18,208 [PDF_CHUNKER] INFO        5.6#0  hard    OLI-2-Областен кръг-1996-10 кл · 1996-10 · Зад. 10
+2026-11-20 21:55:18,209 [PDF_CHUNKER] INFO        5.6#1  hard    OLI-3-Национален кръг-2007-9-12 кл · 2007-None · З
+2026-11-20 21:55:18,210 [PDF_CHUNKER] INFO        5.7#0  hard    OLI-2-Областен кръг-2019-10 кл · 2019-10 · Зад. 10
+2026-11-20 21:55:18,210 [PDF_CHUNKER] INFO        5.7#1  hard    OLI-3-Национален кръг-1988-9-12 кл · 1988-None · З
+2026-11-20 21:55:18,210 [PDF_CHUNKER] INFO        5.7#2  hard    OLI-3-Национален кръг-1989-9-12 кл · 1989-None · З
+2026-11-20 21:55:18,211 [PDF_CHUNKER] INFO        5.7#3  hard    OLI-3-Национален кръг-2009-9-12 кл · 2009-None · З
+2026-11-20 21:55:18,211 [PDF_CHUNKER] INFO        5.9#0  hard    OLI-2-Областен кръг-1996-10 кл · 1996-10 · Зад. 10
+2026-11-20 21:55:18,211 [PDF_CHUNKER] INFO        5.9#1  hard    OLI-2-Областен кръг-2011-10 кл · 2011-10 · Зад. 10
+2026-11-20 21:55:18,211 [PDF_CHUNKER] INFO        5.9#2  hard    OLI-2-Областен кръг-2023-12 кл · 2023-12 · Зад. 12
+2026-11-20 21:55:18,211 [PDF_CHUNKER] INFO        5.9#3  hard    OLI-3-Национален кръг-2019-9-12 кл · 2019-None · З
+2026-11-20 21:55:18,213 [PDF_CHUNKER] INFO        6.1#0  hard    OLI-2-Областен кръг-1995-12 кл · 1995-12 · Зад. 12
+2026-11-20 21:55:18,213 [PDF_CHUNKER] INFO        6.1#1  hard    OLI-2-Областен кръг-2024-12 кл · 2024-12 · Зад. 12
+2026-11-20 21:55:18,214 [PDF_CHUNKER] INFO        6.1#2  hard    OLI-3-Национален кръг-1984-9-12 кл · 1984-None · З
+2026-11-20 21:55:18,214 [PDF_CHUNKER] INFO        6.1#3  hard    OLI-3-Национален кръг-1987-9-12 кл · 1987-None · З
+2026-11-20 21:55:18,214 [PDF_CHUNKER] INFO       6.10#0  medium  OLI-3-Национален кръг-2020-9-12 кл · 2020-None · З
+2026-11-20 21:55:18,214 [PDF_CHUNKER] INFO        6.3#0  medium  OLI-2-Областен кръг-2026-12 кл · 2026-12 · Зад. 12
+2026-11-20 21:55:18,214 [PDF_CHUNKER] INFO        6.4#0  hard    OLI-2-Областен кръг-2020-10 кл · 2020-10 · Зад. 10
+2026-11-20 21:55:18,214 [PDF_CHUNKER] INFO        6.4#1  medium  OLI-2-Областен кръг-2002-12 кл · 2002-12 · Зад. 12
+2026-11-20 21:55:18,216 [PDF_CHUNKER] INFO        6.4#2  medium  OLI-3-Национален кръг-1997-9-12 кл · 1997-None · З
+2026-11-20 21:55:18,216 [PDF_CHUNKER] INFO        6.4#3  medium  OLI-3-Национален кръг-2009-9-12 кл · 2009-None · З
+2026-11-20 21:55:18,216 [PDF_CHUNKER] INFO        6.5#0  hard    OLI-3-Национален кръг-2011-9-12 кл · 2011-None · З
+2026-11-20 21:55:18,216 [PDF_CHUNKER] INFO        6.6#0  medium  OLI-2-Областен кръг-2000-10 кл · 2000-10 · Зад. 5
+2026-11-20 21:55:18,216 [PDF_CHUNKER] INFO        6.6#1  medium  OLI-2-Областен кръг-2002-10 кл · 2002-10 · Зад. 10
+2026-11-20 21:55:18,217 [PDF_CHUNKER] INFO        6.7#0  medium  OLI-3-Национален кръг-1983-9-12 кл · 1983-None · З
+2026-11-20 21:55:18,217 [PDF_CHUNKER] INFO        7.1#0  hard    OLI-2-Областен кръг-2006-10 кл · 2006-10 · Зад. 10
+2026-11-20 21:55:18,217 [PDF_CHUNKER] INFO        7.1#1  hard    OLI-2-Областен кръг-2009-12 кл · 2009-12 · Зад. 12
+2026-11-20 21:55:18,217 [PDF_CHUNKER] INFO        7.1#2  hard    OLI-2-Областен кръг-2011-11 кл · 2011-11 · Зад. 11
+2026-11-20 21:55:18,217 [PDF_CHUNKER] INFO        7.1#3  hard    OLI-3-Национален кръг-1993-9-12 кл · 1993-None · З
+2026-11-20 21:55:18,217 [PDF_CHUNKER] INFO        7.2#0  hard    OLI-2-Областен кръг-1998-10 кл · 1998-10 · Зад. 10
+2026-11-20 21:55:18,217 [PDF_CHUNKER] INFO        7.2#1  hard    OLI-2-Областен кръг-2002-10 кл · 2002-10 · Зад. 10
+2026-11-20 21:55:18,218 [PDF_CHUNKER] INFO        7.2#2  hard    OLI-2-Областен кръг-2008-12 кл · 2008-12 · Зад. 12
+2026-11-20 21:55:18,218 [PDF_CHUNKER] INFO        7.2#3  hard    OLI-2-Областен кръг-2025-12 кл · 2025-12 · Зад. 12
+2026-11-20 21:55:18,218 [PDF_CHUNKER] INFO        7.3#0  hard    OLI-2-Областен кръг-1998-11 кл · 1998-11 · Зад. 11
+2026-11-20 21:55:18,219 [PDF_CHUNKER] INFO        7.3#1  hard    OLI-2-Областен кръг-2008-12 кл · 2008-12 · Зад. 12
+2026-11-20 21:55:18,219 [PDF_CHUNKER] INFO        7.3#2  medium  OLI-3-Национален кръг-2006-9-12 кл · 2006-None · З
+2026-11-20 21:55:18,219 [PDF_CHUNKER] INFO        7.3#3  medium  OLI-3-Национален кръг-2015-9-12 кл · 2015-None · З
+2026-11-20 21:55:18,219 [PDF_CHUNKER] INFO        7.4#0  hard    OLI-2-Областен кръг-2002-11 кл · 2002-11 · Зад. 11
+2026-11-20 21:55:18,219 [PDF_CHUNKER] INFO        7.4#1  hard    OLI-2-Областен кръг-2003-12 кл · 2003-12 · Зад. 12
+2026-11-20 21:55:18,220 [PDF_CHUNKER] INFO        7.4#2  hard    OLI-2-Областен кръг-2009-12 кл · 2009-12 · Зад. 12
+2026-11-20 21:55:18,220 [PDF_CHUNKER] INFO        7.5#0  hard    OLI-2-Областен кръг-2003-12 кл · 2003-12 · Зад. 12
+2026-11-20 21:55:18,220 [PDF_CHUNKER] INFO        7.5#1  hard    OLI-2-Областен кръг-2008-12 кл · 2008-12 · Зад. 12
+2026-11-20 21:55:18,221 [PDF_CHUNKER] INFO        7.5#2  hard    OLI-3-Национален кръг-2014-9-12 кл · 2014-None · З
+2026-11-20 21:55:18,221 [PDF_CHUNKER] INFO        7.5#3  hard    OLI-3-Национален кръг-2024-9-12 кл · 2024-None · З
+2026-11-20 21:55:18,221 [PDF_CHUNKER] INFO        7.6#0  hard    OLI-2-Областен кръг-2000-11 кл · 2000-11 · Зад. 11
+2026-11-20 21:55:18,221 [PDF_CHUNKER] INFO        7.6#1  hard    OLI-2-Областен кръг-2009-11 кл · 2009-11 · Зад. 11
+2026-11-20 21:55:18,221 [PDF_CHUNKER] INFO        7.6#2  hard    OLI-3-Национален кръг-1995-9-12 кл · 1995-None · З
+2026-11-20 21:55:18,221 [PDF_CHUNKER] INFO        7.6#3  hard    OLI-3-Национален кръг-1999-9-12 кл · 1999-None · З
+2026-11-20 21:55:18,222 [PDF_CHUNKER] INFO        7.7#0  hard    OLI-2-Областен кръг-2002-10 кл · 2002-10 · Зад. 10
+2026-11-20 21:55:18,222 [PDF_CHUNKER] INFO        7.7#1  hard    OLI-2-Областен кръг-2006-11 кл · 2006-11 · Зад. 11
+2026-11-20 21:55:18,222 [PDF_CHUNKER] INFO        7.7#2  hard    OLI-2-Областен кръг-2010-11 кл · 2010-11 · Зад. 2
+2026-11-20 21:55:18,223 [PDF_CHUNKER] INFO        7.7#3  hard    OLI-2-Областен кръг-2016-11 кл · 2016-11 · Зад. 3
+2026-11-20 21:55:18,224 [PDF_CHUNKER] INFO        7.8#0  hard    OLI-2-Областен кръг-2006-11 кл · 2006-11 · Зад. 11
+2026-11-20 21:55:18,224 [PDF_CHUNKER] INFO        7.8#1  hard    OLI-2-Областен кръг-2010-11 кл · 2010-11 · Зад. 2
+2026-11-20 21:55:18,225 [PDF_CHUNKER] INFO        7.8#2  hard    OLI-2-Областен кръг-2016-11 кл · 2016-11 · Зад. 3
+2026-11-20 21:55:18,225 [PDF_CHUNKER] INFO        7.8#3  hard    OLI-2-Областен кръг-2016-11 кл · 2016-11 · Зад. 4
+2026-11-20 21:55:18,225 [PDF_CHUNKER] INFO        7.9#0  hard    OLI-2-Областен кръг-2016-11 кл · 2016-11 · Зад. 4
+2026-11-20 21:55:18,225 [PDF_CHUNKER] INFO        8.1#0  hard    OLI-2-Областен кръг-1999-11 кл · 1999-11 · Зад. 11
+2026-11-20 21:55:18,227 [PDF_CHUNKER] INFO        8.1#1  hard    OLI-2-Областен кръг-2002-12 кл · 2002-12 · Зад. 12
+2026-11-20 21:55:18,227 [PDF_CHUNKER] INFO        8.1#2  hard    OLI-2-Областен кръг-2005-11 кл · 2005-11 · Зад. 11
+2026-11-20 21:55:18,227 [PDF_CHUNKER] INFO        8.1#3  hard    OLI-2-Областен кръг-2008-10 кл · 2008-10 · Зад. 6
+2026-11-20 21:55:18,228 [PDF_CHUNKER] INFO       8.10#0  hard    OLI-2-Областен кръг-1995-12 кл · 1995-12 · Зад. 12
+2026-11-20 21:55:18,228 [PDF_CHUNKER] INFO       8.10#1  hard    OLI-2-Областен кръг-2018-11 кл · 2018-11 · Зад. 11
+2026-11-20 21:55:18,228 [PDF_CHUNKER] INFO       8.10#2  hard    OLI-2-Областен кръг-2020-10 кл · 2020-10 · Зад. 10
+2026-11-20 21:55:18,229 [PDF_CHUNKER] INFO       8.10#3  hard    OLI-2-Областен кръг-2024-10 кл · 2024-10 · Зад. 10
+2026-11-20 21:55:18,229 [PDF_CHUNKER] INFO       8.11#0  hard    OLI-2-Областен кръг-2017-10 кл · 2017-10 · Зад. 10
+2026-11-20 21:55:18,229 [PDF_CHUNKER] INFO       8.11#1  hard    OLI-3-Национален кръг-2024-9-12 кл · 2024-None · З
+2026-11-20 21:55:18,230 [PDF_CHUNKER] INFO       8.11#2  medium  OLI-2-Областен кръг-1999-10 кл · 1999-10 · Зад. 10
+2026-11-20 21:55:18,230 [PDF_CHUNKER] INFO       8.11#3  medium  OLI-2-Областен кръг-2011-11 кл · 2011-11 · Зад. 11
+2026-11-20 21:55:18,230 [PDF_CHUNKER] INFO       8.12#0  hard    OLI-2-Областен кръг-2003-12 кл · 2003-12 · Зад. 12
+2026-11-20 21:55:18,230 [PDF_CHUNKER] INFO       8.12#1  hard    OLI-2-Областен кръг-2006-10 кл · 2006-10 · Зад. 10
+2026-11-20 21:55:18,230 [PDF_CHUNKER] INFO       8.12#2  hard    OLI-2-Областен кръг-2025-10 кл · 2025-10 · Зад. 3
+2026-11-20 21:55:18,231 [PDF_CHUNKER] INFO       8.12#3  hard    OLI-3-Национален кръг-2007-9-12 кл · 2007-None · З
+2026-11-20 21:55:18,231 [PDF_CHUNKER] INFO       8.13#0  hard    OLI-2-Областен кръг-2003-12 кл · 2003-12 · Зад. 12
+2026-11-20 21:55:18,231 [PDF_CHUNKER] INFO       8.13#1  hard    OLI-2-Областен кръг-2018-10 кл · 2018-10 · Зад. 3
+2026-11-20 21:55:18,231 [PDF_CHUNKER] INFO       8.13#2  hard    OLI-2-Областен кръг-2024-10 кл · 2024-10 · Зад. 10
+2026-11-20 21:55:18,231 [PDF_CHUNKER] INFO       8.13#3  hard    OLI-3-Национален кръг-1990-9-12 кл · 1990-None · З
+2026-11-20 21:55:18,254 [PDF_CHUNKER] INFO       8.14#0  hard    OLI-2-Областен кръг-2019-12 кл · 2019-12 · Зад. 12
+2026-11-20 21:55:18,259 [PDF_CHUNKER] INFO       8.15#0  hard    OLI-2-Областен кръг-2002-10 кл · 2002-10 · Зад. 10
+2026-11-20 21:55:18,259 [PDF_CHUNKER] INFO       8.15#1  hard    OLI-2-Областен кръг-2007-11 кл · 2007-11 · Зад. 11
+2026-11-20 21:55:18,260 [PDF_CHUNKER] INFO       8.15#2  hard    OLI-2-Областен кръг-2011-12 кл · 2011-12 · Зад. 12
+2026-11-20 21:55:18,260 [PDF_CHUNKER] INFO       8.15#3  hard    OLI-2-Областен кръг-2012-11 кл · 2012-11 · Зад. 11
+2026-11-20 21:55:18,261 [PDF_CHUNKER] INFO        8.2#0  hard    OLI-2-Областен кръг-1999-11 кл · 1999-11 · Зад. 11
+2026-11-20 21:55:18,261 [PDF_CHUNKER] INFO        8.2#1  hard    OLI-2-Областен кръг-2015-10 кл · 2015-10 · Зад. 4
+2026-11-20 21:55:18,262 [PDF_CHUNKER] INFO        8.3#0  hard    OLI-2-Областен кръг-2017-11 кл · 2017-11 · Зад. 11
+2026-11-20 21:55:18,262 [PDF_CHUNKER] INFO        8.3#1  hard    OLI-2-Областен кръг-2020-12 кл · 2020-12 · Зад. 12
+2026-11-20 21:55:18,264 [PDF_CHUNKER] INFO        8.3#2  hard    OLI-2-Областен кръг-2023-11 кл · 2023-11 · Зад. 11
+2026-11-20 21:55:18,264 [PDF_CHUNKER] INFO        8.3#3  hard    OLI-2-Областен кръг-2025-11 кл · 2025-11 · Зад. 11
+2026-11-20 21:55:18,265 [PDF_CHUNKER] INFO        8.4#0  hard    OLI-3-Национален кръг-1997-9-12 кл · 1997-None · З
+2026-11-20 21:55:18,265 [PDF_CHUNKER] INFO        8.4#1  medium  OLI-2-Областен кръг-1995-11 кл · 1995-11 · Зад. 11
+2026-11-20 21:55:18,266 [PDF_CHUNKER] INFO        8.4#2  medium  OLI-2-Областен кръг-2013-10 кл · 2013-10 · Зад. 10
+2026-11-20 21:55:18,267 [PDF_CHUNKER] INFO        8.4#3  medium  OLI-3-Национален кръг-1989-9-12 кл · 1989-None · З
+2026-11-20 21:55:18,267 [PDF_CHUNKER] INFO        8.5#0  hard    OLI-2-Областен кръг-2020-10 кл · 2020-10 · Зад. 10
+2026-11-20 21:55:18,267 [PDF_CHUNKER] INFO        8.5#1  medium  OLI-2-Областен кръг-1995-10 кл · 1995-10 · Зад. 10
+2026-11-20 21:55:18,268 [PDF_CHUNKER] INFO        8.5#2  medium  OLI-2-Областен кръг-2005-11 кл · 2005-11 · Зад. 11
+2026-11-20 21:55:18,268 [PDF_CHUNKER] INFO        8.5#3  medium  OLI-3-Национален кръг-1989-9-12 кл · 1989-None · З
+2026-11-20 21:55:18,272 [PDF_CHUNKER] INFO        8.6#0  hard    OLI-2-Областен кръг-1998-11 кл · 1998-11 · Зад. 11
+2026-11-20 21:55:18,275 [PDF_CHUNKER] INFO        8.6#1  hard    OLI-3-Национален кръг-1997-9-12 кл · 1997-None · З
+2026-11-20 21:55:18,276 [PDF_CHUNKER] INFO        8.6#2  medium  OLI-2-Областен кръг-1995-11 кл · 1995-11 · Зад. 11
+2026-11-20 21:55:18,276 [PDF_CHUNKER] INFO        8.6#3  medium  OLI-2-Областен кръг-2001-12 кл · 2001-12 · Зад. 12
+2026-11-20 21:55:18,294 [PDF_CHUNKER] INFO        8.8#0  hard    OLI-3-Национален кръг-1997-9-12 кл · 1997-None · З
+2026-11-20 21:55:18,294 [PDF_CHUNKER] INFO        8.8#1  hard    OLI-3-Национален кръг-2009-9-12 кл · 2009-None · З
+2026-11-20 21:55:18,294 [PDF_CHUNKER] INFO        8.8#2  medium  OLI-2-Областен кръг-1995-10 кл · 1995-10 · Зад. 10
+2026-11-20 21:55:18,296 [PDF_CHUNKER] INFO        8.8#3  medium  OLI-2-Областен кръг-2016-10 кл · 2016-10 · Зад. 10
+2026-11-20 21:55:18,296 [PDF_CHUNKER] INFO        9.1#0  hard    OLI-2-Областен кръг-2011-12 кл · 2011-12 · Зад. 12
+2026-11-20 21:55:18,296 [PDF_CHUNKER] INFO        9.1#1  hard    OLI-2-Областен кръг-2026-12 кл · 2026-12 · Зад. 12
+2026-11-20 21:55:18,296 [PDF_CHUNKER] INFO        9.1#2  hard    OLI-3-Национален кръг-2017-9-12 кл · 2017-None · З
+2026-11-20 21:55:18,296 [PDF_CHUNKER] INFO       9.10#0  hard    OLI-2-Областен кръг-2010-11 кл · 2010-11 · Зад. 3
+2026-11-20 21:55:18,296 [PDF_CHUNKER] INFO       9.10#1  hard    OLI-2-Областен кръг-2010-11 кл · 2010-11 · Зад. 5
+2026-11-20 21:55:18,296 [PDF_CHUNKER] INFO       9.10#2  hard    OLI-2-Областен кръг-2016-12 кл · 2016-12 · Зад. 12
+2026-11-20 21:55:18,296 [PDF_CHUNKER] INFO       9.10#3  hard    OLI-3-Национален кръг-2005-9-12 кл · 2005-None · З
+2026-11-20 21:55:18,296 [PDF_CHUNKER] INFO       9.11#0  hard    OLI-2-Областен кръг-2021-11 кл · 2021-11 · Зад. 11
+2026-11-20 21:55:18,297 [PDF_CHUNKER] INFO       9.11#1  hard    OLI-2-Областен кръг-2022-12 кл · 2022-12 · Зад. 12
+2026-11-20 21:55:18,297 [PDF_CHUNKER] INFO       9.11#2  hard    OLI-3-Национален кръг-2026-9-12 кл · 2026-None · З
+2026-11-20 21:55:18,297 [PDF_CHUNKER] INFO       9.11#3  medium  OLI-2-Областен кръг-2019-10 кл · 2019-10 · Зад. 10
+2026-11-20 21:55:18,297 [PDF_CHUNKER] INFO        9.2#0  hard    OLI-3-Национален кръг-2018-9-12 кл · 2018-None · З
+2026-11-20 21:55:18,297 [PDF_CHUNKER] INFO        9.3#0  hard    OLI-3-Национален кръг-2018-9-12 кл · 2018-None · З
+2026-11-20 21:55:18,297 [PDF_CHUNKER] INFO        9.3#1  hard    OLI-3-Национален кръг-2020-9-12 кл · 2020-None · З
+2026-11-20 21:55:18,297 [PDF_CHUNKER] INFO        9.4#0  hard    OLI-2-Областен кръг-2001-12 кл · 2001-12 · Зад. 12
+2026-11-20 21:55:18,297 [PDF_CHUNKER] INFO        9.4#1  hard    OLI-2-Областен кръг-2006-10 кл · 2006-10 · Зад. 10
+2026-11-20 21:55:18,298 [PDF_CHUNKER] INFO        9.4#2  hard    OLI-2-Областен кръг-2021-10 кл · 2021-10 · Зад. 10
+2026-11-20 21:55:18,298 [PDF_CHUNKER] INFO        9.4#3  hard    OLI-3-Национален кръг-2019-9-12 кл · 2019-None · З
+2026-11-20 21:55:18,298 [PDF_CHUNKER] INFO        9.5#0  hard    OLI-2-Областен кръг-2025-12 кл · 2025-12 · Зад. 12
+2026-11-20 21:55:18,298 [PDF_CHUNKER] INFO        9.5#1  hard    OLI-3-Национален кръг-2002-9-12 кл · 2002-None · З
+2026-11-20 21:55:18,298 [PDF_CHUNKER] INFO        9.5#2  medium  OLI-2-Областен кръг-2004-10 кл · 2004-10 · Зад. 10
+2026-11-20 21:55:18,298 [PDF_CHUNKER] INFO        9.5#3  medium  OLI-3-Национален кръг-2004-9-12 кл · 2004-None · З
+2026-11-20 21:55:18,298 [PDF_CHUNKER] INFO        9.6#0  hard    OLI-2-Областен кръг-2001-10 кл · 2001-10 · Зад. 10
+2026-11-20 21:55:18,298 [PDF_CHUNKER] INFO        9.6#1  hard    OLI-3-Национален кръг-2013-9-12 кл · 2013-None · З
+2026-11-20 21:55:18,298 [PDF_CHUNKER] INFO        9.6#2  hard    OLI-3-Национален кръг-2015-9-12 кл · 2015-None · З
+2026-11-20 21:55:18,300 [PDF_CHUNKER] INFO        9.6#3  medium  OLI-2-Областен кръг-1998-10 кл · 1998-10 · Зад. 10
+2026-11-20 21:55:18,300 [PDF_CHUNKER] INFO        9.7#0  hard    OLI-3-Национален кръг-1998-9-12 кл · 1998-None · З
+2026-11-20 21:55:18,300 [PDF_CHUNKER] INFO        9.7#1  hard    OLI-3-Национален кръг-2020-9-12 кл · 2020-None · З
+2026-11-20 21:55:18,300 [PDF_CHUNKER] INFO        9.8#0  hard    OLI-2-Областен кръг-2020-10 кл · 2020-10 · Зад. 10
+2026-11-20 21:55:18,300 [PDF_CHUNKER] INFO        9.8#1  hard    OLI-3-Национален кръг-2009-9-12 кл · 2009-None · З
+2026-11-20 21:55:18,300 [PDF_CHUNKER] INFO        9.8#2  medium  OLI-3-Национален кръг-1991-9-12 кл · 1991-None · З
+2026-11-20 21:55:18,300 [PDF_CHUNKER] INFO        R.1#0  easy    OLI-2-Областен кръг-2009-10 кл · 2009-10 · Зад. 10
+2026-11-20 21:55:18,301 [PDF_CHUNKER] INFO       R.10#0  hard    OLI-2-Областен кръг-1997-12 кл · 1997-12 · Зад. 12
+2026-11-20 21:55:18,301 [PDF_CHUNKER] INFO       R.10#1  hard    OLI-2-Областен кръг-2007-12 кл · 2007-12 · Зад. 12
+2026-11-20 21:55:18,301 [PDF_CHUNKER] INFO       R.10#2  medium  OLI-2-Областен кръг-2009-10 кл · 2009-10 · Зад. 10
+2026-11-20 21:55:18,301 [PDF_CHUNKER] INFO       R.10#3  medium  OLI-2-Областен кръг-2024-12 кл · 2024-12 · Зад. 12
+2026-11-20 21:55:18,301 [PDF_CHUNKER] INFO       R.11#0  hard    OLI-2-Областен кръг-1995-10 кл · 1995-10 · Зад. 10
+2026-11-20 21:55:18,301 [PDF_CHUNKER] INFO       R.11#1  hard    OLI-2-Областен кръг-1997-10 кл · 1997-10 · Зад. 10
+2026-11-20 21:55:18,302 [PDF_CHUNKER] INFO       R.11#2  hard    OLI-2-Областен кръг-1997-11 кл · 1997-11 · Зад. 11
+2026-11-20 21:55:18,302 [PDF_CHUNKER] INFO       R.11#3  hard    OLI-2-Областен кръг-2005-12 кл · 2005-12 · Зад. 12
+2026-11-20 21:55:18,302 [PDF_CHUNKER] INFO       R.14#0  hard    OLI-2-Областен кръг-2004-11 кл · 2004-11 · Зад. 11
+2026-11-20 21:55:18,302 [PDF_CHUNKER] INFO        R.2#0  medium  OLI-2-Областен кръг-2009-10 кл · 2009-10 · Зад. 10
+2026-11-20 21:55:18,302 [PDF_CHUNKER] INFO        R.2#1  medium  OLI-2-Областен кръг-2022-10 кл · 2022-10 · Зад. 10
+2026-11-20 21:55:18,302 [PDF_CHUNKER] INFO        R.3#0  medium  OLI-2-Областен кръг-2005-11 кл · 2005-11 · Зад. 11
+2026-11-20 21:55:18,302 [PDF_CHUNKER] INFO        R.3#1  medium  OLI-2-Областен кръг-2006-10 кл · 2006-10 · Зад. 10
+2026-11-20 21:55:18,302 [PDF_CHUNKER] INFO        R.4#0  medium  OLI-2-Областен кръг-2005-11 кл · 2005-11 · Зад. 11
+2026-11-20 21:55:18,303 [PDF_CHUNKER] INFO        R.4#1  medium  OLI-2-Областен кръг-2007-10 кл · 2007-10 · Зад. 10
+2026-11-20 21:55:18,303 [PDF_CHUNKER] INFO        R.4#2  medium  OLI-2-Областен кръг-2010-11 кл · 2010-11 · Зад. 1
+2026-11-20 21:55:18,303 [PDF_CHUNKER] INFO        R.4#3  medium  OLI-2-Областен кръг-2014-10 кл · 2014-10 · Зад. 10
+2026-11-20 21:55:18,303 [PDF_CHUNKER] INFO        R.5#0  hard    OLI-2-Областен кръг-2015-12 кл · 2015-12 · Зад. 12
+2026-11-20 21:55:18,303 [PDF_CHUNKER] INFO        R.5#1  medium  OLI-2-Областен кръг-2015-12 кл · 2015-12 · Зад. 12
+2026-11-20 21:55:18,304 [PDF_CHUNKER] INFO        R.5#2  medium  OLI-2-Областен кръг-2019-11 кл · 2019-11 · Зад. 11
+2026-11-20 21:55:18,304 [PDF_CHUNKER] INFO        R.5#3  easy    OLI-2-Областен кръг-2006-12 кл · 2006-12 · Зад. 12
+2026-11-20 21:55:18,304 [PDF_CHUNKER] INFO        R.6#0  hard    OLI-2-Областен кръг-1996-10 кл · 1996-10 · Зад. 10
+2026-11-20 21:55:18,306 [PDF_CHUNKER] INFO        R.6#1  medium  OLI-2-Областен кръг-2007-11 кл · 2007-11 · Зад. 11
+2026-11-20 21:55:18,306 [PDF_CHUNKER] INFO        R.6#2  medium  OLI-2-Областен кръг-2026-10 кл · 2026-10 · Зад. 10
+2026-11-20 21:55:18,306 [PDF_CHUNKER] INFO        R.6#3  medium  OLI-3-Национален кръг-2022-9-12 кл · 2022-None · З
+2026-11-20 21:55:18,306 [PDF_CHUNKER] INFO        R.9#0  hard    OLI-2-Областен кръг-2003-10 кл · 2003-10 · Зад. 10
+2026-11-20 21:55:18,306 [PDF_CHUNKER] INFO dry-run: нищо не е записано; цената зависи от модела — виж budget в config
+2026-11-20 21:55:21,032 [PDF_CHUNKER] INFO [1.1] duplicate statement skipped: 'Let $ABCD$ be a quadrilateral such that $AD = CD$ and $\\angl'
+2026-11-20 21:55:21,035 [PDF_CHUNKER] INFO [1.1] duplicate statement skipped: 'Let $ABCD$ be a quadrilateral such that $AD = CD$ and $\\\\ang'
+2026-11-20 21:55:21,058 [PDF_CHUNKER] INFO [1.1] duplicate statement skipped: 'Точките D, E и F са средите съответно на страните AB, BC и C'
+2026-11-20 21:55:21,124 [PDF_CHUNKER] INFO tasks: 4
+2026-11-20 21:55:21,459 [PDF_CHUNKER] INFO backup: C:\Users\denis\Downloads\Материали Олимпиада МАТ\backups\2026-11-20_215521\insights
+2026-11-20 21:55:21,484 [PDF_CHUNKER] INFO regen: изтрити 10 файла
+2026-11-20 21:55:21,487 [PDF_CHUNKER] INFO [1/4] 1.1#0 (hard)
+2026-11-20 21:58:19,032 [PDF_CHUNKER] INFO   → done score=9 wc=1792
+2026-11-20 21:58:19,033 [PDF_CHUNKER] INFO [2/4] 1.1#1 (hard)
+2026-11-20 22:00:18,526 [PDF_CHUNKER] INFO   → done score=9 wc=1630
+2026-11-20 22:00:18,527 [PDF_CHUNKER] INFO [3/4] 1.1#2 (hard)
+2026-11-20 22:02:09,954 [PDF_CHUNKER] INFO   → done score=9 wc=1595
+2026-11-20 22:02:09,954 [PDF_CHUNKER] INFO [4/4] 1.1#3 (medium)
+2026-11-20 22:08:03,686 [PDF_CHUNKER] INFO   → done score=9 wc=1654
+2026-11-20 22:08:03,686 [PDF_CHUNKER] INFO session done: 4 cards, budget: $0.00
+2026-11-20 22:08:07,422 [PDF_CHUNKER] INFO tasks: 1
+2026-11-20 22:08:07,823 [PDF_CHUNKER] INFO backup: C:\Users\denis\Downloads\Материали Олимпиада МАТ\backups\2026-11-20_220807\insights
+2026-11-20 22:08:07,855 [PDF_CHUNKER] INFO regen: изтрити 5 файла
+2026-11-20 22:08:07,855 [PDF_CHUNKER] INFO [1/1] 10.21#0 (hard)
+2026-11-20 22:13:46,191 [PDF_CHUNKER] INFO   → revise score=3 wc=1675
+2026-11-20 22:13:46,191 [PDF_CHUNKER] INFO session done: 1 cards, budget: $0.00
+2026-11-20 22:35:23,913 [PDF_CHUNKER] INFO tasks: 4
+2026-11-20 22:35:24,325 [PDF_CHUNKER] INFO backup: C:\Users\denis\Downloads\Материали Олимпиада МАТ\backups\2026-11-20_223523\insights
+2026-11-20 22:35:24,355 [PDF_CHUNKER] INFO regen: изтрити 12 файла
+2026-11-20 22:35:24,355 [PDF_CHUNKER] INFO [1/4] 11.6#0 (hard)
+2026-11-20 22:40:36,288 [PDF_CHUNKER] INFO   → revise score=6 wc=1665
+2026-11-20 22:40:36,289 [PDF_CHUNKER] INFO [2/4] 11.6#1 (hard)
+2026-11-20 22:42:11,832 [PDF_CHUNKER] INFO   → done score=9 wc=1639
+2026-11-20 22:42:11,832 [PDF_CHUNKER] INFO [3/4] 11.6#2 (hard)
+2026-11-20 22:43:39,661 [PDF_CHUNKER] INFO   → done score=9 wc=1736
+2026-11-20 22:43:39,661 [PDF_CHUNKER] INFO [4/4] 11.6#3 (hard)
+2026-11-20 22:45:23,187 [PDF_CHUNKER] INFO   → done score=9 wc=1745
+2026-11-20 22:45:23,187 [PDF_CHUNKER] INFO session done: 4 cards, budget: $0.00

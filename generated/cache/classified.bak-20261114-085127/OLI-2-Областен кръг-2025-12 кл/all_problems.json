@@ -1,0 +1,106 @@
+{
+  "pdf": "OLI-2-Областен кръг-2025-12 кл",
+  "classify_model": "deepseek/deepseek-r1-0528",
+  "classified_at": "2026-11-11T22:32:27.907711",
+  "problems": [
+    {
+      "num": "12.1",
+      "grade": 12,
+      "year": 2025,
+      "round": "oblasten",
+      "statement": "Точка $D$ лежи на страната $AB$ на остроъгълен триъгълник $ABC$. Точките $I_A$ и $J_A$ съответно са центърът на вписаната окръжност и центърът на външната вписана окръжност срещу върха $D$ за $\\triangle ADC$. Аналогично дефинираме точките $I_B$ и $J_B$ като съответните центрове за $\\triangle BDC$. Да се докаже, че точките $I_A, I_B, J_B, J_A$ лежат на една окръжност тогава и само тогава, когато $D$ е середина на $AB$.",
+      "solution": "Решение. Първи подход. Поради $\\angle I_A A J_A = 90^\\circ = \\angle I_A C J_A$ точките $I_A, A, J_A, C$ лежат на една окръжност. Нека точка $X$ е втората пресечна точка на $(A I_A J_A)$ с правата $AD$. От $\\angle DXC = \\angle A J_A C = 90^\\circ - \\angle ADC/2$ следва, че $\\triangle DXC$ е равнобедрен с $DX = CD$. Така от степен на точка $D$ спрямо $(A I_A J_A)$ получаваме $D I_A \\cdot D J_A = D A \\cdot D X = D A \\cdot C D$ и аналогично $D I_B \\cdot D J_B = D B \\cdot D C$. Тъй като $I_A, J_A, I_B, J_B$ лежат на една окръжност тогава и само тогава, когато $D I_A \\cdot D J_A = D I_B \\cdot D J_B$, то това е еквивалентно на $AD \\cdot CD = BD \\cdot CD \\iff AD = BD$.\n\nВтори подход. За произволен тригъгълник $XYZ$ с център на вписаната окръжност $I$ и център $J$ на външновписаната окръжност срещу $Z$ имаме, че $\\triangle ZYI \\sim \\triangle ZJX$, тъй като $\\angle ZJX = \\angle ZYI = \\angle XYZ/2$ и $\\angle XZJ = \\angle YZI = \\angle XZY/2$. Така получаваме, че $\\frac{XZ}{ZI} = \\frac{ZJ}{ZY}$ или $ZX \\cdot ZY = ZI \\cdot ZJ$. Прилагайки този резултат за $\\triangle ADC$ и $\\triangle BDC$, получаваме $D I_A \\cdot D J_A = D A \\cdot D C$ и $D I_B \\cdot D J_B = D A \\cdot D B$, откъдето исканото следва както по-горе.\n\nОценяване. (7 точки) Първи подход: 1 т. за построяване на точка $X$; 1 т. за $DX = CD$; 3 т. за $D I_A \\cdot D J_A = C D \\cdot AD$; 2 т. за довършване. Втори подход: 5 т. за доказване на $D I_A \\cdot D J_A = D A \\cdot D C$; 2 т. за довършване.",
+      "answer": null,
+      "page": 1,
+      "source": "OLI-2-Областен кръг-2025-12 кл · 2025-12 · Зад. 12.1",
+      "point_id": "1.10",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "hard",
+      "techniques": [
+        "incenter",
+        "excenter",
+        "circle_properties",
+        "power_of_a_point"
+      ],
+      "reasoning": "Задачата използва свойства на вписаната и външновписаната окръжност и степен на точка. Тя е трудна, защото изисква построяване на допълнителна точка и използване на радикални оси.",
+      "_paired": true,
+      "_grade_source": "filename"
+    },
+    {
+      "num": "12.2",
+      "grade": 12,
+      "year": 2025,
+      "round": "oblasten",
+      "statement": "Да се реши уравнението $\\sin(\\sin x) + \\cos(\\cos x) = \\sin(\\cos x) + \\cos(\\sin x)$.",
+      "solution": "Първи подход. От основните тригонометрични тъждества получаваме\n\n$$\\frac{\\sqrt{2}}{2}(\\sin(\\sin x) - \\cos(\\sin x)) = \\sin(\\sin x) \\cos \\frac{\\pi}{4} - \\sin \\frac{\\pi}{4} \\cos(\\sin x) = \\sin \\left(\\sin x - \\frac{\\pi}{4}\\right),$$\n\n$$\\frac{\\sqrt{2}}{2}(\\sin(\\cos x) - \\cos(\\cos x)) = \\sin(\\cos x) \\cos \\frac{\\pi}{4} - \\sin \\frac{\\pi}{4} \\cos(\\cos x) = \\sin \\left(\\cos x - \\frac{\\pi}{4}\\right).$$\n\nСледователно уравнението е еквивалентно на $\\sin \\left(\\sin x - \\frac{\\pi}{4}\\right) = \\sin \\left(\\cos x - \\frac{\\pi}{4}\\right)$. Оттук $\\sin x - \\cos x = 2n\\pi$ или $\\sin x + \\cos x = (2n + 1)\\pi$, където $n \\in \\mathbb{Z}$. Поради\n\n$$\\pi \\le |(2n + 1)\\pi| = |\\sin x + \\cos x| \\le |\\sin x| + |\\cos x| \\le 1 + 1 < \\pi \\quad \\forall n \\in \\mathbb{Z}$$\n\nвторото уравнение няма решения. Аналогично първото има решения единствено при $\\sin x = \\cos x$, т.е. всички решения са $x = k\\pi + \\frac{\\pi}{4}$ за $k \\in \\mathbb{Z}$.\n\nВтори подход. Да забележим, че:\n\n$$\\cos(\\cos x) - \\cos(\\sin x) = 2 \\sin \\left(\\frac{\\sin x - \\cos x}{2}\\right) \\sin \\left(\\frac{\\sin x + \\cos x}{2}\\right)$$\n\n$$\\sin(\\sin x) - \\sin(\\cos x) = 2 \\sin \\left(\\frac{\\sin - \\cos x}{2}\\right) \\cos \\left(\\frac{\\sin x + \\cos x}{2}\\right).$$\n\nСледователно $x$ е решение на уравнението, ако:\n\n$$\\begin{aligned} 0 &= \\sin(\\sin x) + \\cos(\\cos x) - \\sin(\\cos x) - \\cos(\\sin x) \\\\ &= 2 \\sin \\left(\\frac{\\sin x - \\cos x}{2}\\right) \\left(\\sin \\left(\\frac{\\sin + \\cos x}{2}\\right) + \\cos \\left(\\frac{\\sin x + \\cos x}{2}\\right)\\right) \\\\ &= 2 \\sin \\left(\\frac{\\sin x - \\cos x}{2}\\right) \\sin \\left(\\frac{\\sin x + \\cos x}{2} + \\frac{\\pi}{4}\\right). \\end{aligned}$$\n\nНека $\\alpha = (\\sin x - \\cos x)/2$ и $\\beta = (\\sin x + \\cos x)/2$. Тогава $\\alpha \\in [-1, 1]$ понеже $\\sin x, \\cos x \\in [-1, 1]$ и значи $\\sin \\alpha = 0 \\iff \\alpha = 0$. Това води до $\\sin x = \\cos x$ или $x = k\\pi + \\frac{\\pi}{4}$, което е решение за всяко $k \\in \\mathbb{Z}$. От друга страна, обаче, от неравенството между средно аритметично и средно квадратично получаваме:\n\n$$|\\beta| = \\left| \\frac{\\sin x + \\cos x}{2} \\right| \\le \\sqrt{\\frac{\\sin^2 x + \\cos^2 x}{2}} = \\frac{\\sqrt{2}}{2}.$$\n\nСледователно $0 < \\frac{\\pi - 2\\sqrt{2}}{4} \\le \\beta + \\frac{\\pi}{4} \\le \\frac{\\pi + 2\\sqrt{2}}{4} < \\frac{\\pi}{2}$ и значи $\\sin(\\beta + \\frac{\\pi}{4}) > 0$ за всяко $x$. Окончателно, всички решения са $x = k\\pi + \\frac{\\pi}{4}$ за произволно цяло число $k$.\n\nОценяване. (7 точки) Първи подход: 3 т. за свеждане до $\\sin\\left(\\sin x - \\frac{\\pi}{4}\\right) = \\sin\\left(\\cos x - \\frac{\\pi}{4}\\right)$; по 2 т. за всеки от двата случая.\n\nВтори подход: 3 т. за свеждане до $2\\sin\\left(\\frac{\\sin x - \\cos x}{2}\\right)\\sin\\left(\\frac{\\sin x + \\cos x}{2} + \\frac{\\pi}{4}\\right) = 0$; 1 т. за $\\sin \\alpha = 0 \\iff \\alpha = 0$; 3 т. за довършване.",
+      "answer": "$x = k\\pi + \\frac{\\pi}{4}, \\forall k \\in \\mathbb{Z}$",
+      "page": 1,
+      "source": "OLI-2-Областен кръг-2025-12 кл · 2025-12 · Зад. 12.2",
+      "point_id": "5.10",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "trigonometric_identities",
+        "sum_to_product",
+        "inequalities"
+      ],
+      "reasoning": "Уравнението се свежда до сравняване на тригонометрични изрази с помощта на сума-към-произведение и използване на ограничеността на функциите. Средна трудност поради алгебричните трансформации.",
+      "_paired": true,
+      "_grade_source": "filename"
+    },
+    {
+      "num": "12.3",
+      "grade": 12,
+      "year": 2025,
+      "round": "oblasten",
+      "statement": "Нека $n$ е естествено число. Дадено е множество $A$ от $n$ естествени числа, никое от които не е точен куб. Колко най-много елемента на множеството $\\{ab : a, b \\in A\\}$ може да са точни кубове?",
+      "solution": "Решение. Да дефинираме граф $G$ с върхове числата от $A$, за който $ab$ е ребро тогава и само тогава, когато $ab$ е точен куб на естествено число. Да отбележим, че в $G$ няма тригълници, тъй като ако $ab = x^3, bc = y^3, ac = z^3$ за някои $a, b, c \\in A, x, y, z \\in \\mathbb{N}$, то $(abc)^2 = (xyz)^3$, откъдето следва, че $abc$ е точен куб, а тъй като $ab$ е точен куб, то и $c$ е точен куб – противоречие. Така от Теоремата на Мантел (частен случай на теоремата на Туран) следва, че в $G$ има най-много $\\left\\lfloor \\frac{n^2}{4} \\right\\rfloor$ ребра.\n\nПример, в който това се достига, е, ако $A = B \\cup C$, където $B = \\{4p^3 : p \\in S_1\\}$, а $C = \\{2q^3 : q \\in S_2\\}$, където $S_1$ и $S_2$ са непресичащи се множества от прости числа, за които $|S_1| = \\lfloor \\frac{n}{2} \\rfloor, |S_2| = \\lceil \\frac{n}{2} \\rceil$.\n\nОценяване. (7 точки) 3 т. за доказване, че $G$ не съдържа тригълници; 2 т. за прилагане на Теорема на Туран (или Мантел); 2 т. за пример, в който тази стойност се достига, от които само 1 т., ако не е проверено/осигурено, че всички произведения, които са точни кубове, са различни.",
+      "answer": "$\\left\\lfloor \\frac{n^2}{4} \\right\\rfloor$",
+      "page": 1,
+      "source": "OLI-2-Областен кръг-2025-12 кл · 2025-12 · Зад. 12.3",
+      "point_id": "9.5",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "hard",
+      "techniques": [
+        "graph_theory",
+        "extremal_graphs",
+        "mantel_theorem"
+      ],
+      "reasoning": "Задачата използва теория на графите (Теорема на Мантел) за максимален брой ребра без триъгълници. Трудна, защото изисква абстрактно моделиране и прилагане на комбинаторни теореми.",
+      "_paired": true,
+      "_grade_source": "filename"
+    },
+    {
+      "num": "12.4",
+      "grade": 12,
+      "year": 2025,
+      "round": "oblasten",
+      "statement": "Дадени са цели числа $k$ и $n$, за които $5 \\le n < k < 2n$. Да се намерят всички функции $f : \\mathbb{N} \\to \\mathbb{N}$, такива че $x_1! + x_2! + \\dots + x_n! - k$ дели $f(x_1)! + f(x_2)! + \\dots + f(x_n)! - k$ за произволни естествени числа $x_1, x_2, \\dots, x_n$, за които $x_1! + x_2! + \\dots + x_n! - k \\neq 0$.",
+      "solution": "Ако $x \\ge 2$ е естествено число, то полагането $x_1 = x_2 = \\dots = x_n = x$ е валидно, тъй като $nx! - k \\ge 2n - k > 0$. Следователно за $x \\ge 2$ имаме $nx! - k |nf(x)| - k$. Оттук следва, че или $f(x) \\ge x$ или $nf(x)! = k$, като последното е невъзможно, тъй като $n < k < 2n$. Следователно имаме $f(x) \\ge x$ за всяко $x \\in \\mathbb{N}$ и в частност $x! |f(x)!$.\n\nДа отбележим, че всяко естествено число $k < 2n$ може да се представи като сума на не повече от $n-2$ естествени числа, всяко от които е равно на 1, 2 или 6 за всяко $n \\ge 5$. Значи съществуват естествени числа $y_1, y_2, \\dots, y_t \\in \\{1, 2, 3\\}$, за които $k = y_1! + \\dots + y_t!$ и $t \\le n-2$. Нека $p$ е просто число. Полагайки $x_i = y_i$ за $i \\le t, x_{t+1} = p-1, x_{t+2} = 1$, а $x_{t+3} = \\dots = x_n = p$, ако $t \\le n-3$ и $x_i = y_i$ за $i = 1, \\dots, n-2, x_{n-1} = p-1$ и $x_n = 1$ за $t = n-2$, получаваме\n\n$$(p-1)! + 1 + (n-t-2)p! |f(y_1)! + \\dots + f(y_t)! + f(p-1)! + f(1)! - k + (n-t-2)f(p)!$$\n\nНека $C := f(y_1)! + \\dots + f(y_t)! + f(1)! - k \\ge y_1! + y_2! + \\dots + y_t! + f(1)! - k = f(1)! \\ge 1$. От Теорема на Уилсън имаме, че $p|(p-1)! + 1$, а тъй като $p! |f(p)!$, то $p|C + f(p-1)!$ за всяко просто число $p$. Също понеже $f(p-1) \\ge p-1$ и $C > 0$, то за всяко $p > C$ имаме, че $f(p-1) = p-1$ (в противен случай имаме $p|f(p-1)!$, т.е $p|C$, което е невъзможно).\n\nСега нека $x \\in \\mathbb{N}$ и нека $p > \\max(C, f(x)!)$ е просто число. Полагайки $x_1 = x_2 = \\dots = x_{n-1} = p-1, x_n = x$, получаваме\n\n$$(n-1)(p-1)! + x! - k |(n-1)(p-1)! + f(x)! - k \\Rightarrow (n-1)(p-1)! + x! - k |f(x)! - x!,$$\n\nоткъдето следва, че $f(x) = x$, тъй като $|(n-1)(p-1)! + x! - k| > |f(x)! - x|$. Непосредствено се вижда, че $f(x) = x$ изпълнява условието на задачата.\n\nОценяване. (7 точки) 1 т. за $f(x) \\ge x$; 1 т. за представяне на $k$ като сума на ограничен брой факториели; 3 т. за $f(p-1) = p-1$ за големи $p$; 2 т. за довършване.",
+      "answer": "$f(x) = x$",
+      "page": 1,
+      "source": "OLI-2-Областен кръг-2025-12 кл · 2025-12 · Зад. 12.4",
+      "point_id": "7.2",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "hard",
+      "techniques": [
+        "functional_equations",
+        "factorials",
+        "wilsons_theorem",
+        "modular_arithmetic"
+      ],
+      "reasoning": "Функционалното уравнение изисква използване на свойства на факториели и теоремата на Уилсън. Трудна поради комбинацията от функционален анализ и теория на числата.",
+      "_paired": true,
+      "_grade_source": "filename"
+    }
+  ],
+  "paired": true,
+  "matched": 4,
+  "orphan_kept": 0,
+  "no_sol": 0,
+  "dropped_unclassifiable": 0
+}

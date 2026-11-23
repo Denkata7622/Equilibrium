@@ -1,0 +1,99 @@
+{
+  "pdf": "OLI-2-Областен кръг-2010-10 кл-probs",
+  "extraction_model": "deepseek/deepseek-r1-0528",
+  "extracted_at": "2026-11-02T18:33:14.208038",
+  "problems": [
+    {
+      "num": 1,
+      "year": 2010,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "Да се реши уравнението\n\n$$20^{x^2} \\cdot 10^x = 2$$",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "**Задача 1.** Да се реши уравнението\n\n$$20^{x^2} \\cdot 10^x = 2$$",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2010-10 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 2,
+      "year": 2010,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "Външновписаната окръжност към страната $AB$ на $\\triangle ABC$ се допира до $AB$ в точка $D$. Ако $\\angle CAB = 2 \\angle CDA$, да се намери стойността на отношението $AD : BD$.",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "**Задача 2.** Външновписаната окръжност към страната $AB$ на $\\triangle ABC$ се допира до $AB$ в точка $D$. Ако $\\angle CAB = 2 \\angle CDA$, да се намери стойността на отношението $AD : BD$.",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2010-10 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 3,
+      "year": 2010,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "Върху успоредните прави $a$ и $b$ са взети съответно точките $A_1$, $A_2$, $A_3$, $A_4$ и $B_1$, $B_2$, $B_3$, $B_4$, които са две по две различни. Да се намери минималният възможен брой различни точки, получени при пресичането на отсечките $A_i B_j$, $i = 1, 2, 3, 4$; $j = 1, 2, 3, 4$. (Включително самите точки $A_1$, $A_2$, $A_3$, $A_4$ и $B_1$, $B_2$, $B_3$, $B_4$.)",
+      "solution": null,
+      "answer": null,
+      "page": 1,
+      "source_quote": "**Задача 3.** Върху успоредните прави $a$ и $b$ са взети съответно точките $A_1$, $A_2$, $A_3$, $A_4$ и $B_1$, $B_2$, $B_3$, $B_4$, които са две по две различни. Да се намери минималният възможен брой различни точки, получени при пресичането на отсечките $A_i B_j$, $i = 1, 2, 3, 4$; $j = 1, 2, 3, 4$. (Включително самите точки $A_1$, $A_2$, $A_3$, $A_4$ и $B_1$, $B_2$, $B_3$, $B_4$.)",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2010-10 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 4,
+      "year": 2010,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "Да се намерят всички естествени числа $n$, такива че за всяко $x$ е изгълнено равенството:\n\n$$(\\sin x)^{2n} + (\\cos x)^{2n} + n \\sin^2 x \\cos^2 x = 1.$$",
+      "solution": null,
+      "answer": null,
+      "page": 2,
+      "source_quote": "Задача 4. Да се намерят всички естествени числа $n$, такива че за всяко $x$ е изгълнено равенството:\n\n$$(\\sin x)^{2n} + (\\cos x)^{2n} + n \\sin^2 x \\cos^2 x = 1.$$",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2010-10 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 5,
+      "year": 2010,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "Даден е $\\triangle ABC$ с ортоцентър $H$ и център на вписаната окръжност $I$. Окръжност, минаваща през върховете $A$ и $B$ пресича страните $CA$ и $CB$ за втори път в точките $P$ и $Q$ съответно.\n\na) Ako I Jekn Ha oteckata PQ, da ce dokae, ye AP + BQ = PQ;\n6) Ako H Jekn Ha oteckata PQ, da ce dokae, ye AP + BQ = PQ",
+      "solution": null,
+      "answer": null,
+      "page": 2,
+      "source_quote": "Задача 5. Даден е $\\triangle ABC$ с ортоцентър $H$ и център на вписаната окръжност $I$. Окръжност, минаваща през върховете $A$ и $B$ пресича страните $CA$ и $CB$ за втори път в точките $P$ и $Q$ съответно.\n\na) Ako I Jekn Ha oteckata PQ, da ce dokae, ye AP + BQ = PQ;\n6) Ako H Jekn Ha oteckata PQ, da ce dokae, ye AP + BQ = PQ",
+      "readability": "partial",
+      "readability_issues": [
+        "OCR грешки в подточките: 'Ako I Jekn Ha oteckata PQ' вместо 'Ако I лежи на отсечката PQ' и т.н."
+      ],
+      "pdf": "OLI-2-Областен кръг-2010-10 кл-probs",
+      "chunk": 1
+    },
+    {
+      "num": 6,
+      "year": 2010,
+      "grade": 10,
+      "round": "oblasten",
+      "statement": "Нека $n$ е естествено число. Да се намери най-малкото естествено число $k$, за което съществуват естествени числа $a_1, a_2, \\ldots, a_k$, такива че\n\n$$7.2^n = a_1^2 + a_2^2 + \\cdots + a_k^2.$$",
+      "solution": null,
+      "answer": null,
+      "page": 2,
+      "source_quote": "Задача 6. Нека $n$ е естествено число. Да се намери най-малкото естествено число $k$, за което съществуват естествени числа $a_1, a_2, \\ldots, a_k$, такива че\n\n$$7.2^n = a_1^2 + a_2^2 + \\cdots + a_k^2.$$",
+      "readability": "ok",
+      "readability_issues": [],
+      "pdf": "OLI-2-Областен кръг-2010-10 кл-probs",
+      "chunk": 1
+    }
+  ]
+}

@@ -1,92 +1,484 @@
 {
   "point_id": "4.4",
-  "total": 6,
+  "total": 32,
   "by_difficulty": {
     "easy": 0,
-    "medium": 5,
-    "hard": 1
+    "medium": 17,
+    "hard": 15
   },
   "problems": [
     {
-      "source": "OLI-2-Областен кръг-2019-11 кл · 2019-11 · Зад. 1",
-      "statement": "Дадена е аритметична прогресия с първи член $a_1 > 0$ и разлика $d$. Да се докаже, че:\n\nа) ако $d = 2a_1$, то за всяко $n > 1$ числата $a_1$, $a_n$ и $a_{[неразчетено]}$ образуват геометрична прогресия в този ред;\nб) ако $\\frac{d}{a_1}$ е естествено число и $a_1$, $a_n$ и $a_m$ за $n > 1$ образуват геометрична прогресия в този ред, то $1 + \\frac{d}{a_1}(m - 1)$ е точен квадрат.",
-      "solution": "Решение. Ако a₁, aₙ и aₘ образуват геометрична прогресия, то aₙ² = a₁·aₘ, откъдето:\n(1) (a₁ + (n − 1)d)² = a₁(a₁ + (m − 1)d) ⇔ d/a₁ = (m − 1 − 2(n − 1))/(n − 1)².\nа) Директно се проверява, че (1) е изпълнено при d/a₁ = 2 и m = (n − 1)² + n².\nб) Ако d/a₁ = t и n − 1 = x, то (1) е еквивалентно на tx² + 2x − (m − 1) = 0. Тъй като x е естествено число, то D₁ = 1 + t(m − 1) е точен квадрат.",
+      "source": "OLI-2-Областен кръг-1995-10 кл · 1995-10 · Зад. 10.6",
+      "statement": "Find all pairs of positive integers $(x, y)$ for which $\\frac{x^2 + y^2}{x - y}$ is an integer which is a divisor of 1995.",
+      "solution": "It is enough to find all pairs $(x, y)$ for which $x > y$ and $x^2 + y^2 = k(x - y)$, where $k$ divides 1995 = 3.5.7.19. We shall use the following well-known fact: if $p$ is a prime number of the type $4q + 3$ and if it divides $x^2 + y^2$, then $p$ divides $x$ and $y$. (For $p = 3, 7, 19$ this can be proved directly.) If $k$ is divisible by 3 then $x$ and $y$ are divisible by 3 too. Simplifying by 9 we get an equality $x_1^2 + x_1^2 = k_1(x_1 - y_1)$, where $k_1$ divides 5.7.19. Considering 7 and 19 in an analogous way we get an equality $a^2 + b^2 = 5(a - b)$ (it is not possible to get an equality $a^2 + b^2 = (a - b)$), where $a > b$. From here $(2a - 5)^2 + (2b - 5)^2 = 50$, i.e. $a = 3$, $b = 1$ or $a = 2$, $b = 1$.\n\nThe above considerations imply that the pairs we are looking for are of the type $(3c, c)$, $(2c, c)$, $(c, 3c)$, $(c, 2c)$, where $c = 1, 3, 7, 19, 3.7, 3.19, 7.19, 3.7.19$.",
       "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "arith_progression",
-        "geometric_progression",
-        "diophantine"
+        "diophantine_equations",
+        "prime_factorization",
+        "sum_of_squares"
       ],
       "confidence": "exact",
-      "reasoning": "Използва свойството a_n^2 = a_1 a_m и преобразува уравнението до квадратична форма; проверка за перфектен квадрат дава условието."
+      "reasoning": "Диофантово уравнение, свеждащо се до факторизация на 1995 и свойства на суми от квадрати. Стандартна техника за диофантови уравнения с фиксиран делител.",
+      "_crosslinked_from": "4.2",
+      "_crosslink_confidence": 0.7
     },
     {
-      "source": "OLI-3-Национален кръг-2001-9-12 кл · 2001-None · Зад. 1",
-      "statement": "Дадена е редицата $\\{a_n\\}$, за която $a_0 = 4$, $a_1 = 22$ и\n\n$$a_n - 6a_{n-1} + a_{n-2} = 0$$\n\nза $n \\ge 2$. Да се докаже, че съществуват редици $\\{x_n\\}$ и $\\{y_n\\}$ от естествени числа такива, че за всяко $n \\ge 0$ е изпълнено $a_n = \\frac{y_n^2 + 7}{x_n - y_n}$.",
-      "solution": "Решение: Нека $x_n = \\frac{a_n + a_{n-1}}{2}$, $x_0 = 3$ и $y_n = \\frac{a_n - a_{n-1}}{2}$, $y_0 = 1$. Тогава $x_n = 3x_{n-1} + 4y_{n-1}$ и $y_n = 2x_{n-1} + 3y_{n-1}$. Понеже $a_n = x_n + y_n$, достатъчно е да покажем, че $x_n + y_n = \\frac{y_n^2 + 7}{x_n - y_n}$, т.е. $x_n^2 = 2y_n^2 + 7$. Ще докажем това равенство по индукция.\n\nПри $n = 0$ то е очевидно. Да допуснем, че $x_{n-1}^2 = 2y_{n-1}^2 + 7$. Записваме това равенство във вида $(3x_{n-1} + 4y_{n-1})^2 = 2(3y_{n-1} + 2x_{n-1})^2 + 7$, откъдето $x_n^2 = 2y_n^2 + 7$, което трябваше да се докаже.",
+      "source": "OLI-2-Областен кръг-1996-10 кл · 1996-10 · Зад. 10.1",
+      "statement": "Prove that for all positive integers $n \\geq 3$ there exist an odd positive integers $x_n$ and $y_n$, such that\n\n$$7x_n^2 + y_n^2 = 2^n.$$",
+      "solution": "Solution. If $n = 3$ we have $x_3 = y_3 = 1$.\n\nSuppose that for an integer $n \\geq 3$ there are odd positive integers $x_n, y_n$, such that $7x_n^2 + y_n^2 = 2^n$. We shall prove that for each pair\n\n$$\\left(X = \\frac{x_n + y_n}{2}, Y = \\frac{|7x_n - y_n|}{2}\\right) \\quad \\text{and} \\quad \\left(X = \\frac{|x_n - y_n|}{2}, Y = \\frac{7x_n + y_n}{2}\\right)$$\n\nwe have $7X^2 + Y^2 = 2^{n+1}$. Indeed,\n\n$$7 \\left(\\frac{x_n \\pm y_n}{2}\\right)^2 + \\left(\\frac{7x_n \\mp y_n}{2}\\right)^2 = 2 \\left(7x_n^2 + y_n^2\\right) = 2 \\cdot 2^n = 2^{n+1}.$$\n\nSince $x_n$ and $y_n$ are odd, i.e. $x_n = 2k + 1$ and $y_n = 2l + 1$ ($k, l$ are integers), then $\\frac{x_n + y_n}{2} = k + l + 1$ and $\\frac{|x_n - y_n|}{2} = |k - l|$, which shows that one of the numbers $\\frac{x_n + y_n}{2}$ and $\\frac{|x_n - y_n|}{2}$ is odd. Thus, for $n + 1$ there are odd natural numbers $x_{n+1}$ and $y_{n+1}$ with the required property.",
       "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "pell_equation",
-        "linear_recurrence",
-        "induction"
+        "induction",
+        "diophantine_equations"
       ],
       "confidence": "exact",
-      "reasoning": "Uses linear recurrences for x_n,y_n and shows x_n^2=2y_n^2+7, a Pell‑type relation solved by induction."
+      "reasoning": "Задачата използва индукция и диофантово уравнение за представяне на степен като сума от квадрати. Точка 4.4 (Точни квадрати и степени) е най-подходяща."
     },
     {
-      "source": "OLI-3-Национален кръг-2009-9-12 кл · 2009-None · Зад. 6",
-      "statement": "Да се докаже, че ако $a_1, \\dots, a_n, b_1, \\dots, b_n$ са произволни реални числа, а $c_1, \\dots, c_n$ са положителни реални числа, то\n\n$$\\left( \\sum_{i,j=1}^n \\frac{a_i a_j}{c_i + c_j} \\right) \\left( \\sum_{i,j=1}^n \\frac{b_i b_j}{c_i + c_j} \\right) \\ge \\left( \\sum_{i,j=1}^n \\frac{a_i b_j}{c_i + c_j} \\right)^2.$$",
-      "solution": "Решение. Първо решение. Можем да считаме, че не всички a_i и не всички b_i са равни на 0. Първо ще докажем, че\nf(x) = ∑_{i,j=1}^n [a_i a_j/(c_i + c_j)]x^{c_i+c_j} ≥ 0, x ≥ 0.\nИмаме, че xf′(x) = (∑_{i=1}^n a_i x^{c_i})² ≥ 0. Следователно f(x) ≥ f(0) = 0 при x ≥ 0. Аналогично\ng(x) = ∑_{i,j=1}^n [b_i b_j/(c_i + c_j)]x^{c_i+c_j} ≥ 0, x ≥ 0.\nСега полагаме\nh(x) = ∑_{i,j=1}^n [a_i b_j/(c_i + c_j)]x^{c_i+c_j}.\nЩе докажем по-общо неравенство от даденото, а именно\nf(x)g(x) ≥ h²(x), x ≥ 0.\nМожем да считаме, че h(x) ≥ 0 при дадено x (иначе сменяме a_i с −a_i). Тогава трябва да докажем, че s(x) = √f(x) √g(x) − h(x) ≥ 0. От неравенството a² + b² ≥ 2ab при x ≥ 0 следва, че\nxs′(x) = [xf′(x)√g(x)]/[2√f(x)] + [xg′(x)√f(x)]/[2√g(x)] − xh′(x)\n≥ √(xf′(x)xg′(x)) − xh′(x)\n= |∑_{i=1}^n a_i x^{c_i}| |∑_{i=1}^n b_i x^{c_i}| − ∑_{i,j=1}^n a_i b_j x^{c_i+c_j}\n≥ (∑_{i=1}^n a_i x^{c_i})(∑_{i=1}^n b_i x^{c_i}) − ∑_{i,j=1}^n a_i b_j x^{c_i+c_j} = 0\nи значи s(x) > s(0) при x ≠ 0.\nВторо решение. Нека f(x) = ∑_{i=1}^n a_i x^{c_i−1/2} и g(x) = ∑_{i=1}^n b_i x^{c_i−1/2}. Даденото неравенство следва директно от интегралното неравенство на Коши-Буняковски-Шварц:\n(∫₀¹ f²(x) dx)(∫₀¹ g²(x) dx) ≥ (∫₀¹ f(x)g(x) dx)².",
+      "source": "OLI-2-Областен кръг-1996-11 кл · 1996-11 · Зад. 11.1",
+      "statement": "Prove that for all positive integers $n \\geq 3$ there exist an odd positive integers $x_n$ and $y_n$, such that\n\n$$7x_n^2 + y_n^2 = 2^n.$$",
+      "solution": "Solution. If $n = 3$ we have $x_3 = y_3 = 1$.\n\nSuppose that for an integer $n \\geq 3$ there are odd positive integers $x_n, y_n$, such that $7x_n^2 + y_n^2 = 2^n$. We shall prove that for each pair\n\n$$\\left(X = \\frac{x_n + y_n}{2}, Y = \\frac{|7x_n - y_n|}{2}\\right) \\quad \\text{and} \\quad \\left(X = \\frac{|x_n - y_n|}{2}, Y = \\frac{7x_n + y_n}{2}\\right)$$\n\nwe have $7X^2 + Y^2 = 2^{n+1}$. Indeed,\n\n$$7 \\left(\\frac{x_n \\pm y_n}{2}\\right)^2 + \\left(\\frac{7x_n \\mp y_n}{2}\\right)^2 = 2 \\left(7x_n^2 + y_n^2\\right) = 2 \\cdot 2^n = 2^{n+1}.$$\n\nSince $x_n$ and $y_n$ are odd, i.e. $x_n = 2k + 1$ and $y_n = 2l + 1$ ($k, l$ are integers), then $\\frac{x_n + y_n}{2} = k + l + 1$ and $\\frac{|x_n - y_n|}{2} = |k - l|$, which shows that one of the numbers $\\frac{x_n + y_n}{2}$ and $\\frac{|x_n - y_n|}{2}$ is odd. Thus, for $n + 1$ there are odd natural numbers $x_{n+1}$ and $y_{n+1}$ with the required property.",
       "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "cauchy_schwarz",
-        "integral_representation"
+        "induction",
+        "diophantine_equations",
+        "parity_analysis"
       ],
       "confidence": "exact",
-      "reasoning": "Inequality reduced to (∫f²)(∫g²)≥(∫fg)² via integral form of Cauchy‑Schwarz."
+      "reasoning": "Индукция и конструкция за представяне на степен като сума от квадрати с нечетни числа."
     },
     {
-      "source": "OLI-3-Национален кръг-2012-9-12 кл · 2012-None · Зад. 1",
-      "statement": "Редицата $a_1, a_2, \\dots$ от естествени числа удовлетворява равенството $a_{n+1} = a_n + 2\\tau(n)$ за всяко $n \\ge 1$, където с $\\tau(n)$ е означен броят на различните естествени делители на $n$. Възможно ли е два последователни члена на тази редица да са точни квадрати?",
-      "solution": "Решение. Отговор – Не! Очевидно редицата е строго растяща. Да допуснем, че a_n = x² и a_{n+1} = y², x, y ∈ N. Тогава x и y са с еднаква четност и\n2τ(n) = a_{n+1} − a_n = y² − x² ≥ (x + 2)² − x² = 4x + 4.\nТъй като τ(n) ≤ 2√n (това следва лесно от факта, че естествените делители на n, евентуално без √n, се разбиват на двойки с точно един от двойката, по-малък от √n), получаваме √n > x = √a_n, т.е. n > a_n, което очевидно е невъзможно.",
-      "answer": "Не.",
+      "source": "OLI-2-Областен кръг-1997-10 кл · 1997-10 · Зад. 10.3",
+      "statement": "Prove that the equation $$x^{2}+y^{2}+z^{2}+3(x+y+z)+5=0$$ has no solution in rational numbers.",
+      "solution": "It is easy to see that the equation is equivalent to\n\n$$(2x + 3)^2 + (2y + 3)^2 + (2z + 3)^2 = 7.$$\n\nIt has a solution in rational numbers if and only if there exist integer numbers $a, b, c$ and a natural number $m$ such that\n\n(*) $$a^2 + b^2 + c^2 = 7m^2.$$\n\nSuppose such numbers exist and give $m$ its smallest possible value. There are two cases:\n\n(I) $m = 2n$ is an even number. Now $a^2 + b^2 + c^2$ is divisible by 4. This implies that all numbers $a, b, c$ are even ones, so $a = 2a_1$, $b = 2b_1$, $c = c_1$. It follows now that $a_1^2 + b_1^2 + c_1^2 = 7n^2$, which contradicts the way $m$ have been chosen.\n\n(II) $m = 2n + 1$ is an odd number. Now $m^2 ≡ 1 \\pmod 8$ and therefore $a^2 + b^2 + c^2 ≡ 7 \\pmod 8$, which is impossible when $a, b, c$ are integer.",
+      "answer": null,
       "difficulty": "medium",
       "techniques": [
-        "diophantine_bounds",
-        "inequality"
+        "sum_of_squares",
+        "modular_arithmetic",
+        "infinite_descent"
       ],
       "confidence": "exact",
-      "reasoning": "Използва оценка τ(n) ≤ 2√n и сравнява разликата на квадратите – типичен подход за диофантови задачи с квадрати."
+      "reasoning": "Доказателство, че уравнение няма рационални решения, свеждащо се до модулна аритметика (3.2) и сума на квадрати. Трудността е medium поради елегантната трансформация и разглеждане на модули.",
+      "_crosslinked_from": "3.2",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-2-Областен кръг-1997-12 кл · 1997-12 · Зад. 12.3",
+      "statement": "Prove that the equation $$x^{2}+y^{2}+z^{2}+3(x+y+z)+5=0$$ has no solution in rational numbers.",
+      "solution": "It is easy to see that the equation is equivalent to\n\n$$(2x + 3)^2 + (2y + 3)^2 + (2z + 3)^2 = 7.$$\n\nIt has a solution in rational numbers if and only if there exist integer numbers $a, b, c$ and a natural number $m$ such that\n\n(*) $$a^2 + b^2 + c^2 = 7m^2.$$\n\nSuppose such numbers exist and give $m$ its smallest possible value. There are two cases:\n\n(I) $m = 2n$ is an even number. Now $a^2 + b^2 + c^2$ is divisible by 4. This implies that all numbers $a, b, c$ are even ones, so $a = 2a_1$, $b = 2b_1$, $c = c_1$. It follows now that $a_1^2 + b_1^2 + c_1^2 = 7n^2$, which contradicts the way $m$ have been chosen.\n\n(II) $m = 2n + 1$ is an odd number. Now $m^2 ≡ 1 \\pmod 8$ and therefore $a^2 + b^2 + c^2 ≡ 7 \\pmod 8$, which is impossible when $a, b, c$ are integer.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "infinite_descent",
+        "modular_arithmetic"
+      ],
+      "confidence": "exact",
+      "reasoning": "Уравнението се свежда до сбора на три квадрата, равен на 7. Доказателството използва безкрайно слизане и модулна аритметика (mod 8), което е стандартна техника в теорията на числата.",
+      "_crosslinked_from": "3.2",
+      "_crosslink_confidence": 0.7
+    },
+    {
+      "source": "OLI-2-Областен кръг-1999-10 кл · 1999-10 · Зад. 10.1",
+      "statement": "Find all triples $(x, y, z)$ of natural numbers such that $y$ is a prime number, $y$ and 3 do not divide $z$, and $x^3 - y^3 = z^2$.",
+      "solution": "**Solution:** Since $(x - y)((x - y)^2 + 3xy)) = x^3 - y^3 = z^2$, it follows from the conditions of the problem that $x - y$ and $(x - y)^2 + 3xy$ are relatively prime. Therefore $x - y = u^2$ and $x^2 + xy + y^2 = v^2$. Thus $3y^2 = (2v - 2x - y)(2v + 2x + y)$ and since $y$ is a prime number, there are three cases to consider:\n\n1. $2v - 2x - y = y, 2v + 2x + y = 3y$. Now $x = 0$, which is impossible.\n2. $2v - 2x - y = 1, 2v + 2x + y = 3y^2$. Now $3y^2 - 1 = 2(2x + y) = 2(2u^2 + 3y)$ and it follows that 3 divides $u^2 + 1$, which is impossible.\n3. $2v - 2x - y = 3, 2v + 2x + y = y^2$. Now $y^2 - 3 = 2(2x + y) = 2(2u^2 + 3y)$ and it follows that $(y - 3)^2 - (2u)^2 = 12$. Therefore $y = 7, u = 1, x = 8, z = 13$. Direct verification shows that $(8, 7, 13)$ is a solution of the problem.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "diophantine_equations",
+        "factorization",
+        "prime_properties",
+        "case_analysis"
+      ],
+      "confidence": "exact",
+      "reasoning": "Кубично диофантово уравнение с просто число y; разлагане на разлика от кубове и разглеждане на случаи според делителите.",
+      "_crosslinked_from": "4.3",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-1999-11 кл · 1999-11 · Зад. 11.1",
+      "statement": "Find all triples $(x, y, z)$ of natural numbers such that $y$ is a prime number, $y$ and 3 do not divide $z$, and $x^3 - y^3 = z^2$.",
+      "solution": "Since $(x - y)((x - y)^2 + 3xy)) = x^3 - y^3 = z^2$, it follows from the conditions of the problem that $x - y$ and $(x - y)^2 + 3xy$ are relatively prime. Therefore $x - y = u^2$ and $x^2 + xy + y^2 = v^2$. Thus $3y^2 = (2v - 2x - y)(2v + 2x + y)$ and since $y$ is a prime number, there are three cases to consider:\n\n1. $2v - 2x - y = y, 2v + 2x + y = 3y$. Now $x = 0$, which is impossible.\n2. $2v - 2x - y = 1, 2v + 2x + y = 3y^2$. Now $3y^2 - 1 = 2(2x + y) = 2(2u^2 + 3y)$ and it follows that 3 divides $u^2 + 1$, which is impossible.\n3. $2v - 2x - y = 3, 2v + 2x + y = y^2$. Now $y^2 - 3 = 2(2x + y) = 2(2u^2 + 3y)$ and it follows that $(y - 3)^2 - (2u)^2 = 12$. Therefore $y = 7, u = 1, x = 8, z = 13$. Direct verification shows that $(8, 7, 13)$ is a solution of the problem.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "diophantine_equations",
+        "factorization",
+        "prime_properties"
+      ],
+      "confidence": "exact",
+      "reasoning": "Кубично диофантово уравнение с просто число; разлагане и разглеждане на случаи.",
+      "_crosslinked_from": "4.3",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-1999-12 кл · 1999-12 · Зад. 12.1",
+      "statement": "Find all triples $(x, y, z)$ of natural numbers such that $y$ is a prime number, $y$ and 3 do not divide $z$, and $x^3 - y^3 = z^2$.",
+      "solution": "Since $(x - y)((x - y)^2 + 3xy)) = x^3 - y^3 = z^2$, it follows from the conditions of the problem that $x - y$ and $(x - y)^2 + 3xy$ are relatively prime. Therefore $x - y = u^2$ and $x^2 + xy + y^2 = v^2$. Thus $3y^2 = (2v - 2x - y)(2v + 2x + y)$ and since $y$ is a prime number, there are three cases to consider:\n\n1. $2v - 2x - y = y, 2v + 2x + y = 3y$. Now $x = 0$, which is impossible.\n2. $2v - 2x - y = 1, 2v + 2x + y = 3y^2$. Now $3y^2 - 1 = 2(2x + y) = 2(2u^2 + 3y)$ and it follows that 3 divides $u^2 + 1$, which is impossible.\n3. $2v - 2x - y = 3, 2v + 2x + y = y^2$. Now $y^2 - 3 = 2(2x + y) = 2(2u^2 + 3y)$ and it follows that $(y - 3)^2 - (2u)^2 = 12$. Therefore $y = 7, u = 1, x = 8, z = 13$. Direct verification shows that $(8, 7, 13)$ is a solution of the problem.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "diophantine_equations",
+        "factoring",
+        "case_analysis"
+      ],
+      "confidence": "exact",
+      "reasoning": "Диофантово кубично уравнение с просто число. Разлагане на множители и разглеждане на случаи.",
+      "_crosslinked_from": "4.3",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2008-11 кл · 2008-11 · Зад. 11.1",
+      "statement": "Дадена с аритметична прогресия $a_1, a_2, \\dots, a_n, \\dots$, за която $a_1 a_2 < 0$ и\n\n$$(a_1 + a_2 + a_3) \\left( \\frac{1}{a_1} + \\frac{1}{a_2} + \\frac{1}{a_3} \\right) = -\\frac{3}{8}.$$\n\nДа се намери най-малкото естествено число $n > 2$, за което $\\frac{a_n}{a_2}$ е точен квадрат на естествено число.",
+      "solution": "11.1. Ако $d$ е разликата на прогресията, като използваме равенствата $a_1 = a_2 - d$ и $a_3 = a_2 + d$, получаваме, че равенството от условието е еквивалентно на\n\n$$3a_2 \\cdot \\frac{3a_2^2 - d^2}{a_2(a_2^2 - d^2)} = -\\frac{3}{8},$$\n\nоткъдето $25a_2^2 = 9d^2$. Ако $d = -\\frac{5}{3}a_2$, то $a_1 = \\frac{8}{3}a_2$ и тогава $a_1a_2 = \\frac{8}{3}a_2^2 > 0$. Следователно $d = \\frac{5}{3}a_2$ и тогава $a_1 = -\\frac{2}{3}a_2$. Директна проверка показва, че $\\frac{a_{11}}{a_2} = 16$ и при $n < 11$ частното $\\frac{a_n}{a_2}$ не е квадрат на естествено число. Следователно търсеното число е $n = 11$.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "arithmetic_progression",
+        "divisibility"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата включва аритметична прогресия и търсене на делимост (точен квадрат). Основната техника е работа с прогресия и свойства на делимост.",
+      "_crosslinked_from": "3.1",
+      "_crosslink_confidence": 0.7
+    },
+    {
+      "source": "OLI-2-Областен кръг-2013-12 кл · 2013-12 · Зад. 12.1",
+      "statement": "Да се реши в цели числа уравнението $$x^3 = (x - y)(3xy + 1).$$",
+      "solution": "Първо решение. Полагаме $x = y + z$ и след заместване в уравнението получаваме (*) $z(z^2 - 1) = (-y)^3$. Ако $z > 1$, то $-y > 0$. Тъй като числата $z$ и $z^2 - 1$ са взаимно прости, следва, че $z = a^3$ и $z^2 - 1 = b^3$, където $a, b ∈ ℕ$. Оттук $(a^2)^3 - b^2 = 1$, което е невъзможно (докажете). Ако $z < -1$, полагаме $t = -z > 1$ и (*) приема вида $t(t^2 - 1) = y^3$, което според доказаното по-горе няма решение. Следователно $z = 0, ± 1, y = 0$ и получаваме, че решенията на даденото уравнение са $(x, y) = (0, 0), (1, 0), (-1, 0)$.\n\nВторо решение. Нека $x ≠ 0, x ≠ y$. Тъй като числата $x$ и $3xy + 1$ са взаимно прости следва, че $x$ дели $x - y$, т.е. $x$ дели $y$. Полагаме $x = ky$, където $k ∈ ℤ$. Заместваме в даденото уравнение и получаваме $(1 - k)(3ky^2 + 1) = x^2$. Ако $k > 1$ или $k < 0$, дясната страна е отрицателна и горното равенство е невъзможно. При $k = 0, 1$ намираме решенията от по-горе.\n\nОценяване:\n\nПърво решение. 1 т. за свеждане на уравнението до (*), 3 т. за отхвърляне на случая $z > 1$, 2 т. за отхвърляне на случая $z < -1$ и 1 т. за намиране на решенията.\n\nВторо решение. 2 т. за доказателство, че $x$ дели $y$, по 2 т. за отхвърляне на случаите $k > 1$ и $k > 0$ и 1 т. за намиране на решенията.",
+      "answer": "Решенията са $(x, y) = (0, 0), (1, 0), (-1, 0)$.",
+      "difficulty": "medium",
+      "techniques": [
+        "diophantine_equations",
+        "substitution",
+        "infinite_descent"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата е диофантово уравнение, което се решава чрез субституция и безкраен спуск. Това се класифицира към точка 4.4 (Точни квадрати и степени)."
+    },
+    {
+      "source": "OLI-3-Национален кръг-1984-9-12 кл · 1984-None · Зад. 1",
+      "statement": "Да се реши в цели неотрицателни числа уравнението 5x · 7y + 4 = 3z",
+      "solution": "Решение. Нека (x, y, z) е решение на даденото уравнение. Ако x = 0, получаваме 7y + 4 = 3z. Но 7y + 4 ≡1 + 1 ≡2 (mod 3), което показва, че x ≧1. Тогава 3z ≡4 (mod 5), откъдето следва, че z е четно число, т. е. z = 2t. Имаме 5x.7y = (3t −2) (3t + 2), Очевидно t ≧1 и следователно числата 3t −2 и 3t + 2 са взаимно прости. Тогава в сила една от следните възможности: Първа възможност. 3t −2 = 1, 3t + 2 = 5x.7y. В този случай t = 1 и получаваме решение x = 1, y = 0, z = 2. Втора възможност. 3t −2 = 5x, 3t + 2 = 7y, t ≧2 или 3t −2 = 7y, 3t + 2 = 5x, t ≧2л Тогава ако x ≧2, то 7y −5x = ±4. Значи 7y ≡±4 (mod 25), което е невъзможно, защото 7y ≡±1, ±7 (mod 25).",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "modular_arithmetic",
+        "exponential_diophantine",
+        "case_analysis"
+      ],
+      "confidence": "exact",
+      "reasoning": "Диофантово уравнение с експоненти. Решение чрез разглеждане на случаи, модулна аритметика и разлагане на множители."
+    },
+    {
+      "source": "OLI-3-Национален кръг-1986-9-12 кл · 1986-None · Зад. 1",
+      "statement": "Да се намери най-малкото естествено число n, за което числото n2 −n + 11 се разлага в произведение на точно четири (не непременно различни) прости множители.",
+      "solution": "Числото $n^2 - n + 11$ не се дели на 2 за никое цяло $n$. Това се вижда от представянето $n^2 - n + 11 = n(n - 1) + 11$. Ще покажем, че $n^2 - n + 11$ не се дели още и на 3, 5 и 7 за никое естествено $n$. За удобство използваме представянето $4(n^2 - n + 11) = (2n - 1)^2 + 43$. Известно е, че квадратите са сравними с 0 и 1 по модул 3, с 0, 1, 4 по модул 5, с 0, 1, 2, 4 по модул 7. Тъй като $43 \\equiv 1(\\text{mod}3)$, $43 \\equiv 3(\\text{mod}5)$ и $43 \\equiv 1(\\text{mod}7)$, числото $(2n - 1)^2 + 43$ не се дели на 3, 5 и 7.\n\nОт казаното дотук следва, че най-малкият прост делител на целите числа от вида $n^2 - n + 11$ е 11. Тъй като $\\varphi(x) = x^2 - x + 11$ е растяща функция при $x \\ge 1$, търсената най-малка стойност на $n$ е онази, за която $n^2 - n + 11$ е възможно наймалко и се представя като произведение на четири прости числа, не по-малки от 11. Най-малкото такова произведение е $11^4$, но от него не се получава решение, понеже уравнението $n^2 - n + 11 = 11^4$ няма цели корени. Следващата възможност е $n^2 - n + 11 = 11^3\\cdot 13$. Това уравнение има цял корен $n = 132$, защото\n\n$$\\begin{array}{l}\n11^3\\cdot 13 - 11 = 11\\bigl(11^2\\cdot 13 - 1\\bigr) = 11\\bigl(11\\bigl(12^2 - 1\\bigr) - 1\\bigr) = \\\\\n\\qquad = 11\\bigl(11\\cdot 12^2 - 12\\bigr) = 11\\cdot 12\\bigl(11\\cdot 12 - 1\\bigr) = 132\\cdot 131\n\\end{array}$$\n\nСледователно търсеното естествено число е $n = 132$.",
+      "answer": "n = 132",
+      "difficulty": "medium",
+      "techniques": [
+        "modular_arithmetic",
+        "quadratic_forms",
+        "prime_factorization"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква намиране на минимално n, такова че квадратичен израз се разлага на точно четири прости множителя. Използва се модулна аритметика за проверка на делимост и свойства на квадратични форми, което я свързва с точка 4.4 (Точни квадрати и степени)."
+    },
+    {
+      "source": "OLI-3-Национален кръг-2008-9-12 кл · 2008-None · Зад. 4",
+      "statement": "Да се намери най-малкото естествено k такова че съществуват такива естествени числа m и n, че $1324 + 279m + 5^n$ е точна k-та степен на естествено число.",
+      "solution": "При $$m = 1$$ и $$n = 3$$ имаме $$1324 + 279 \\cdot 1 + 5^3 = 1728 = 12^3$$, което означава, че търсеното число е 2 или 3. Ще докажем, че уравнението $$1324 + 279m + 5^n = x^2$$ няма решение в естествени числа, откъдето ще следва, че $$k = 3$$.\n\nДа допуснем, че $$m$$, $$n$$ и $$x$$ са естествени числа, за които $$1324 + 279m + 5^n = x^2$$. Ако $$x$$ не се дели на 3, то $$1 + 5^n \\equiv 1 \\pmod{3}$$, което е невъзможно. Следователно $$x$$ се дели на 3 и тогава $$1 + 5^n \\equiv 0 \\pmod{9}$$. Оттук заключаваме, че $$n \\equiv 3 \\pmod{6}$$, в частност $$n$$ се дели на 3. Ако $$n = 3t$$, $$t \\in \\mathbb{N}$$, то $$5^n = (5^3)^t \\equiv 1 \\pmod{31}$$ и следователно $$x^2 \\equiv 22 + 0 + 1 \\equiv 23 \\pmod{31}$$. Очевидно $$(x, 31) = 1$$ и с помощта на малката теорема на Ферма получаваме $$1 \\equiv x^{30} \\equiv 23^{15} \\pmod{31}$$. Не е трудно да се провери обаче, че сравнението $$23^{15} \\equiv 1 \\pmod{31}$$ не е вярно (всъщност имаме $$23^{15} \\equiv -1 \\pmod{31}$$).",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "exponential_diophantine",
+        "modular_arithmetic",
+        "lifting_the_exponent"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата е диофантово уравнение с показатели, фокусирано върху точни степени. Това отговаря на точка 4.4 (Точни квадрати и степени). Решението използва модулна аритметика и проверка за възможни степени."
+    },
+    {
+      "source": "OLI-3-Национален кръг-2013-9-12 кл · 2013-None · Зад. 1",
+      "statement": "Да се намерят всички прости числа $p$ и $q$, за които $p^{q+1} + q^{p+1}$ е точен квадрат на естествено число.",
+      "solution": "Лесно се вижда, че $p = q = 2$ е решение на задачата. Нека $p^{q+1} + q^{p+1} = x^2$, $x \\in \\mathbb{N}$ и $p$ е нечетно. Тогава $p + 1$ е четно и\n\n$$p^{q+1} = (x - q^{\\frac{p+1}{2}})(x + q^{\\frac{p+1}{2}}).$$\n\nАко най-големият общ делител на двата множителя отдясно е $d$, то $d$ е степен на $p$ и дели $2x$, откъдето при $d > 1$ лесно следва, че $p|q$, т.е. $p = q$, $2p^{p+1} = x^2$, което е невъзможно.\n\nСледователно $d = 1$ и $x - q^{\\frac{p+1}{2}} = 1$, $x + q^{\\frac{p+1}{2}} = p^{q+1}$. Оттук $2q^{\\frac{p+1}{2}} = p^{q+1} - 1$, което при нечетно $q$ е невъзможно (по модул 4). Тогава $q = 2$ и $2^{\\frac{p+3}{2}} = p^3 - 1 = (p - 1)(p^2 + p + 1)$. Остава да отбележим, че $(p - 1, p^2 + p + 1) = 1$ и следователно $p - 1 = 1$, противоречие.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "diophantine_equations",
+        "modular_arithmetic",
+        "prime_numbers"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква решаване на диофантово уравнение с прости числа, като се използва разлика на квадрати и модулна аритметика за доказване, че единственото решение е p=q=2."
+    },
+    {
+      "source": "OLI-3-Национален кръг-2013-9-12 кл · 2013-None · Зад. 6",
+      "statement": "Нека $m$ е естествено число, а $p$ е просто число, $p > m$. Да се докаже, че броя на естествените числа $n$, за които\n\n$$m^2 + n^2 + p^2 - 2mn - 2mp - 2np$$\n\nе точен квадрат на естествено число не зависи от $p$.",
+      "solution": "Решение. Нека $m^2 + n^2 + p^2 - 2mn - 2mp - 2np = (m + n - p)^2 - 4mn$ е точен квадрат. Тогава квадратният тричлен $f(x) = mx^2 + (m + n - p)x + n$ има два рационални корена с еднакви знаци, което означава, че $f(x) = (d_1x - a)(d_2x - b)$, където $d_1, d_2 \\in \\mathbb{N}$, $d_1d_2 = m$, а $a$ и $b$ са цели числа с еднакви знаци, като $ab = n$ (в общия случай това следва от лемата на Гаус, а тук лесно се вижда с помощта на теоремата за разлагане на квадратен тричлен). Тъй като $p = f(-1) = (a + d_1)(b + d_2)$, възможността $a$ и $b$ да са положителни отпада.\n\nНека $a$ и $b$ са отрицателни. Тогава от $p = (a + d_1)(b + d_2)$ следва, че числата $a + d_1$ и $b + d_2$ са равни в някакъв ред на $-1$ и $-p$ или на $1$ и $p$. Във втория случай лесно получаваме противоречие с условието $p > m$. При $a + d_1 = -1$, $b + d_2 = -p$ получаваме $n = ab = (1 + d_1)(p + d_2)$. Обратно, ако $n = (1 + d_1)(p + d_2)$, където $d_1, d_2 \\in \\mathbb{N}$, $d_1d_2 = m$, непосредствено се проверява, че $(m + n - p)^2 - 4mn = (d_1p - d_2)^2$.\n\nПолучихме, че всеки делител на $m$ води до решение и сега ще докажем, че всички тези решения са различни. Да допуснем противното и нека $\\ell|m$, $k|m$, $\\ell \\neq k$, водят до едно и също решение, т.е.\n\n$$n = (\\ell + 1) \\left( \\frac{m}{\\ell} + p \\right) = (k + 1) \\left( \\frac{m}{k} + p \\right).$$\n\nПолучаваме $p\\ell + \\frac{m}{\\ell} = pk + \\frac{m}{k} \\iff pk\\ell = m$, т.е. $p|m$, което противоречи на условието $p > m$.\n\nОкончателно, броят на числата $n$, за които $m^2 + n^2 + p^2 - 2mn - 2mp - 2np$ е точен квадрат, е равен на броя на естествените делители на $m$ и не зависи от $p$.\n\nОценяване: (7 точки) 3 т. за преход към $f(x) = (d_1x - a)(d_2x - b)$, където $d_1, d_2 \\in \\mathbb{N}$, $d_1d_2 = m$, $a, b \\in \\mathbb{Z}$, $ab = n$; 1 т. за $p = f(-1) = (a + d_1)(b + d_2)$; 2 т. за намиране на $n$ и извода, че всеки делител на $m$ води до решение; 1 т. за доказване, че всички получени решения са различни.",
+      "answer": null,
+      "difficulty": "medium",
+      "techniques": [
+        "diophantine_equations",
+        "divisibility",
+        "perfect_squares",
+        "prime_numbers"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата се свежда до намиране на броя на делителите на m чрез разлагане на квадратен тричлен и използване на факторизация, доказвайки независимост от p."
     },
     {
       "source": "OLI-3-Национален кръг-2019-9-12 кл · 2019-None · Зад. 4",
-      "statement": "Да се намерят всички естествени числа d, за които съществува естествено число k ≥ 3, такова, че числата d, 2d, 3d, ..., kd могат да се наредят в редица със следното свойство: сумата на всеки две съседни числа е точен квадрат.",
-      "solution": "Решение. Отговор: Всяко d, което е точен квадрат. Ясно е, че ако съществува k≥3 и наредба на d,2d,3d,...,kd, то същото k и същата наредба ще работят за всяко d₁=s²d, s∈ℕ. Следователно, достатъчно е да разглеждаме естествените числа d, свободни от квадрати. При d=1 имаме пример за k=15:\n8,1,15,10,6,3,13,12,4,5,11,14,2,7,9.\nНека сега d>1. Независимо от наредбата на членовете на прогресията, сумата на всеки две съседни ще се дели на d, и тъй като d е свободно от квадрати, то необходимо условие да съществува k с исканото свойство е: всички генерирани точни квадрати да се делят на d². Задачата се трансформира до: да се наредят числата от 1 до k в редица a₁,a₂,...,aₖ така, че за всяко i=1,2,...,k−1 съществува естествено число qᵢ със свойството: aᵢ+aᵢ₊₁=dqᵢ². Но тогава\naᵢ+aᵢ₊₁≡0 (mod d) ⇒ aᵢ≡−aᵢ₊₁ (mod d) ⇒ a₂ⱼ≡a₂ₗ≡−a₂ₗ₊₁≡−a₂ⱼ₊₁ (mod d)\nи значи в цялата редица се срещат само два различни остатъка по модул d. Следователно k=2 (което е невъзможно) или d=2. Последното означава, че числата a₁,a₂,...,aₖ са от една и съща четност, което е невъзможно.",
-      "answer": "Всички естествени числа d, които са точни квадрати.",
+      "statement": "(П. Бойваленков, Е. Колев, С. Харизанов) Да се намерят всички естествени числа $d$, за които съществува естествено число $k \\ge 3$, таково, че числата $d, 2d, 3d, \\dots, kd$ могат да се наредят в редица със следното свойство: сумата на всеки две съседни числа е точен квадрат.",
+      "solution": "Отговор: Всяко $d$, което е точен квадрат. Ясно е, че ако съществува $k \\ge 3$ и наредба на $d, 2d, 3d, \\dots, kd$, то същото $k$ и същата наредба ще работят за всяко $d_1 = s^2 d$, $s \\in \\mathbb{N}$. Следователно, достатъчно е да разглеждаме естествените числа $d$, свободни от квадрати. При $d = 1$ имаме пример за $k = 15$:\n\n$$8, 1, 15, 10, 6, 3, 13, 12, 4, 5, 11, 14, 2, 7, 9.$$\n\nНека сега $d > 1$. Независимо от наредбата на членовете на прогресията, сумата на всеки две съседни ще се дели на $d$, и тъй като $d$ е свободно от квадрати, то необходимо условие да съществува $k$ с исканото свойство е: всички генерирани точни квадрати да се делят на $d^2$. Задачата се трансформира до: да се наредят числата от 1 до $k$ в редица $a_1, a_2, \\dots, a_k$ така, че за всяко $i = 1, 2, \\dots, k-1$ съществува естествено число $q_i$ със свойството: $a_i + a_{i+1} = d q_i^2$. Но тогава\n\n$$a_i + a_{i+1} \\equiv 0 \\pmod{d} \\Rightarrow a_i \\equiv -a_{i+1} \\pmod{d} \\Rightarrow a_{2j} \\equiv a_{2\\ell} \\equiv -a_{2\\ell+1} \\equiv -a_{2j+1} \\pmod{d}$$\n\nи значи в цялата редица се срещат само два различни остатъка по модул $d$. Следователно $k = 2$ (което е невъзможно) или $d = 2$. Последното означава, че числата $a_1, a_2, \\dots, a_k$ са от една и съща четност, което е невъзможно.\n\nОценяване. 1 т. за свеждане на задачата до свободни от квадрати $d$, 2 т. за пример при $d = 1$ (или в общ вид), 1 т. за съображението, че всички генерирани точни квадрати се делят на $d^2$, 2 т. за достигане до само два остатъка и заключение при $d > 2$, 1 т. за случая $d = 2$.",
+      "answer": "Всяко $d$, което е точен квадрат.",
       "difficulty": "medium",
       "techniques": [
-        "square_sum_sequence",
-        "graph_construction"
+        "perfect_squares",
+        "permutation",
+        "modular_arithmetic"
       ],
       "confidence": "exact",
-      "reasoning": "Reduces to parity/mod‑d constraints; shows only perfect‑square d work."
+      "reasoning": "Задачата търси естествени числа d, за които съществува наредба на кратните му със сума на съседни точен квадрат. Решението използва модулна аритметика и свойства на точните квадрати."
     },
     {
-      "source": "OLI-3-Национален кръг-2001-9-12 кл · 2001-None · Зад. 6",
-      "statement": "Дадено е уравнението\n\n$$(p+2)x^2 - (p+1)y^2 + px + (p+2)y = 1.$$\n\nкъдето $p$ е фиксирано просто число от вида $4k+3$. Да се докаже, че:\n\nа) Ако $(x_0, y_0)$ е решение на уравнението в естествени числа, то $p$ дели $x_0$.\n\nб) Уравнението има безбройно много решения в естествени числа.",
-      "solution": "Решение: а) Полагаме $y - 1 = z$ и тогава уравнението е еквивалентно на\n\n$$x^2 = (z - x)((p + 1)(z + x) + p). \\tag{3}$$\n\nАко допуснем, че числата $z - x$ и $(p + 1)(z + x) + p$ са взаимно прости, то те трябва да са точни квадрати, което е невъзможно, понеже второто е от вида $4k + 3$. Нека сега $q$ е техен общ прост делител. От (3) следва, че $q/x$ и значи $q/z$. Тъй като $q/(p + 1)(z + x) + p$, то $q/p$, т.е. $q = p$, което доказва твърдението а).\n\nб) Достатъчно е да покажем, че уравнението (3) има безбройно много решения в естествени числа. Нека $x = px_1$ и $z = pz_1$. Тогава $x_1^2 = (z_1 - x_1)((p + 1)(z_1 + x_1) + 1)$ и следователно съществуват естествени числа $a$ и $b$, за които $z_1 - x_1 = a^2$, $x_1 = ab$ и $(p + 1)(z_1 + x_1) + 1 = b^2$. Оттук намираме, че\n\n$$(p + 2)b^2 - (p + 1)(a + b)^2 = 1. \\tag{4}$$\n\nНека $\\left(\\sqrt{p + 2} + \\sqrt{p + 1}\\right)^{2k+1} = m_k\\sqrt{p + 2} + n_k\\sqrt{p + 1}$ за всяко $k = 0, 1, \\dots$, където $m_k$ и $n_k$ са естествени числа. Тогава очевидно\n\n$$(\\sqrt{p + 2} - \\sqrt{p + 1})^{2k+1} = m_k\\sqrt{p + 2} - n_k\\sqrt{p + 1}$$\n\nи след почленно умножаване получаваме, че $(p + 2)m_k^2 - (p + 1)n_k^2 = 1$, т.е. $b = m_k$ и $a + b = n_k$ са решения на (4). Значи $x = pm_k(n_k - m_k)$ и $z = pn_k(n_k - m_k)$ са решения на (3). Сега твърдението б) следва от факта, че редиците $m_1, m_2, \\dots$ и $n_1, n_2, \\dots$ са строго растящи.",
+      "source": "OLI-3-Национален кръг-2022-9-12 кл · 2022-None · Зад. 3",
+      "statement": "Нека $x > y > 2022$ са естествени числа, такива че $xy + x + y$ е точен квадрат. Възможно ли е за всяко естествено $z$ в интервала $[x + 3y + 1, 3x + y + 1]$ числата $x + y + z$ и $x^2 + xy + y^2$ да не са взаимнопрости?",
+      "solution": "**Решение.** Не е възможно! Да положим $k = \\sqrt{xy + x + y}$ и $z = x + y + 2k + 1$. Тъй като\n\n$$y < \\sqrt{y^2 + 2y} \\leq \\sqrt{xy + x + y} = k \\leq \\sqrt{x^2 + 2x} < x + 1, \\quad \\implies \\quad k \\in (y, x],$$\n\nоткъдето $z \\in (x + 3y + 1, 3x + y + 1]$. Лесно се проверява, че $xy + yz + zx = (x + y + k)^2$ и $xy + yz + zx + x + y + z = (x + y + k + 1)^2$. Да допуснем, че съществува просто число $p$, за което $p|(x + y + z, x^2 + xy + y^2)$. Тогава $x + y \\equiv -z \\pmod{p}$ и значи $x^2 + xy + y^2 = (x + y)^2 - xy \\equiv -xy - yz - zx \\pmod{p}$. Така получаваме, че $p|xy + yz + zx$ и $p|x + y + z$, т.е. $p|(x + y + k)^2$ и $p|(x + y + k + 1)^2$, което е противоречие.",
+      "answer": "Не",
+      "difficulty": "medium",
+      "techniques": [
+        "diophantine_equations",
+        "modular_arithmetic",
+        "perfect_squares"
+      ],
+      "confidence": "exact",
+      "reasoning": "Фокусът е върху точни квадрати и диофантови уравнения (STEPS 4.4). Решението използва ключово заместване и модулна аритметика."
+    },
+    {
+      "source": "OLI-2-Областен кръг-1996-11 кл · 1996-11 · Зад. 11.4",
+      "statement": "The real numbers $a_1, a_2, \\ldots, a_n$ ($n \\geq 3$) form an arithmetic progression. There exists a permutation $a_{i_1}, a_{i_2}, \\ldots, a_{i_n}$ of the same numbers, which is a geometric progression. Find the numbers $a_1, a_2, \\ldots, a_n$, if they are pairwise different and the biggest among them is equal to 1996.",
+      "solution": "Let $a_1 < a_2 < \\dots < a_n = 1996$ and $q$ be the quotient of the geometric progression $a_{i_1}, a_{i_2}, \\dots, a_{i_n}$. We have $q \\neq 0$ and $q \\neq 1$. The numbers $a_{i_n}, a_{i_{n-1}}, \\dots, a_{i_1}$ form also a geometric progression which quotient is $\\frac{1}{q}$. Thus, we can assume that $|q| > 1$, i.e. $q > 1$ or $q < -1$. Then $|a_{i_1}| < |a_{i_2}| < \\dots < |a_{i_n}|$, from where $a_i \\neq 0$ for all $i$.\n\nMore exactly, either all numbers are positive ($q > 1$) and then $a_{i_1} < a_{i_2} < \\dots < a_{i_n}$, which together with $a_1 < a_2 < \\dots < a_n$ shows that $a_{i_k} = a_k$, i.e. the numbers $a_1, a_2, \\dots, a_n$ form an arithmetic as well as a geometric progression, or the numbers $a_{i_1}, a_{i_2}, \\dots, a_{i_n}$ change their signs alternatively ($q < -1$) and then the positive ones form an increasing geometric progression with quotient $q^2$, and the order is the same as in the arithmetic progression. (The numbers $a_1, a_2, \\dots, a_n$ could not be all negative, because $a_n = 1996 > 0$.)\n\nAssume now that 3 among the numbers $a_1, a_2, \\dots, a_n$ are positive. Then $0 < a_{n-2} < a_{n-1} < a_n$ and they form a geometric as well as an arithmetic progression. Therefore $2a_{n-1} = a_{n-2} + a_n$ and $a_{n-1}^2 = a_{n-2}a_n$. From here $a_{n-2} = a_{n-1} = a_n$, which is a contradiction.\n\nThus at most two among the numbers are positive. Analogously, at most two among the numbers are negative. Consequently, $n \\leq 4$.\n\nLet $n = 4$. Then $a_1 < a_2 < 0 < a_3 < a_4$ and $2a_2 = a_1 + a_3$, $2a_3 = a_2 + a_4$. But $q < -1$ and the geometric progression is either $a_3, a_2, a_4, a_1$ or $a_2, a_3, a_1, a_4$. Let it be $a_3, a_2, a_4, a_1$. Then $a_2 = a_3q$, $a_4 = a_3q^2$ and $a_1 = a_3q^3$. Thus, $2a_3q = a_3q^3 + a_3$ and $2a_3 = a_3q + a_3q^2$. From here $q = 1$, which contradicts to $q < -1$.\n\nSo $n = 3$. There are two possibilities:\n\nI. $a_1 < a_2 < 0 < a_3 = 1996$. Then the geometric progression is $a_2$, $a_3 = a_2q$, $a_1 = a_2q^2$. It follows from $2a_2 = a_1 + a_3$ that $2a_2 = a_2q^2 + a_2q$, i.e. $q^2 + q - 2 = 0$. Thus, $q = -2$, $-2a_2 = 1996$, $a_2 = -998$ and the numbers are $(-3992; -998; 1996)$.\n\nII. $a_1 < 0 < a_2 < a_3 = 1996$. Now the geometric progression is $a_2$, $a_1 = a_2q$, $a_3 = a_2q^2$. From $2a_2 = a_1 + a_3$ we obtain $2a_2 = a_2q + a_2q^2$, i.e. again $q = -2$. Therefore, $a_3 = 4a_2 = 1996$ and $a_2 = 499$. The numbers are $(-998; 499; 1996)$.",
+      "answer": "The numbers are either (-3992, -998, 1996) or (-998, 499, 1996).",
+      "difficulty": "hard",
+      "techniques": [
+        "arithmetic_progression",
+        "geometric_progression",
+        "systems_of_equations"
+      ],
+      "confidence": "exact",
+      "reasoning": "Анализ на комбинация от аритметична и геометрична прогресия с конкретни стойности, достигане до n=3."
+    },
+    {
+      "source": "OLI-2-Областен кръг-1998-10 кл · 1998-10 · Зад. 10.6",
+      "statement": "Show that the equation\n\n$$x^2y^2 = z^2(z^2 - x^2 - y^2)$$\n\nhas no solution in positive integer numbers.",
+      "solution": "Solution: Suppose $x, y, z$ is a solution for which $\\frac{xy}{z}$ (which is a natural number—why?) has its minimum value.\n\nWrite $x, y, z$ in the form $x = dx_1, y = dy_1, z = dz_1$, where $d = (x, y, z)$. Our equation is equivalent to $x_1^2 y_1^2 = z_1^2 (z_1^2 - x_1^2 - y_1^2)$. Let $u = (x_1, z_1), v = (y_1, z_1), x_1 = ut, y_1 = vw$. Since $z_1$ divides $x_1 y_1$, we get $z_1 = uv$. A substitution in the last equality gives\n\nDownloaded from Klasirane.com\n\n─── Стр. 4 ───\nWithout loss of generality we may assume that the first pair of equalities hold. It is easily seen that $v$ and $u$ are odd integer numbers. It follows now from $u^2 + w^2 = v^2$ that $u = m^2 - n^2, w = 2mn, v = m^2 + n^2$, where $m$ and $n$ are coprime natural numbers (of distinct parity). Substitution in $v^2 + t^2 = 2u^2$ shows that $t^2 + (2mn)^2 = (m^2 - n^2)^2$ and so $t = p^2 - q^2, mn = pq, m^2 - n^2 = p^2 + q^2$ for some natural numbers $p$ and $q$. Therefore\n\n$$p^2 q^2 = m^2(m^2 - p^2 - q^2),$$\n\nwhich shows that $p, q, m$ is a solution of the original equation. It remains to be seen that $\\frac{pq}{m} = n < d(p^2 - q^2)2mn = \\frac{xy}{z}$, which contradicts the way we have chosen $x, y, z$.",
       "answer": null,
       "difficulty": "hard",
       "techniques": [
-        "pell_equation",
-        "divisibility",
-        "infinite_family"
+        "infinite_descent",
+        "pythagorean_triples"
       ],
       "confidence": "exact",
-      "reasoning": "Reduces the equation to a Pell‑type form (p+2)m^2-(p+1)n^2=1) and generates infinitely many solutions via powers of √(p+2)+√(p+1)."
+      "reasoning": "Доказателство за липса на цели числа чрез безкрайно спускане. Уравнението е квадратично диофантово, решението използва минимален контрапример и параметризация.",
+      "_crosslinked_from": "4.2",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-2-Областен кръг-2005-10 кл · 2005-10 · Зад. 10.3",
+      "statement": "Да се намерят всички двойки естествени числа $(m, n)$, $m > n$, за които е изпълнено\n\n$$[m^2 + mn, mn - n^2] + [m - n, mn] = 2^{2005},$$\n\nкъдето $[a, b]$ означава най-малкото общо кратно на числата $a$ и $b$.",
+      "solution": "10.3. Лявата страна се дели на $m$, $n$ и $m - n$, следователно $m = 2^a$, $n = 2^b$, $m - n = 2^c$. Очевидно $2^b(2^{a-b} - 1) = 2^c$, откъдето $a - b = 1$. Полагайки обратно в уравнението получаваме\n\n$$[2^{2a} + 2^{2a-1}, 2^{2a-1} - 2^{2a-2}] + [2^a - 2^{a-1}, 2^{2a-1}] = 2^{2a-1} + 3 · 2^{2a-1} = 2^{2a+1} = 2^{2005}.$$ \n\nСледователно $a = 1002$, $m = 2^{1002}$, $n = 2^{1001}$.",
+      "answer": "$m = 2^{1002}$, $n = 2^{1001}$",
+      "difficulty": "hard",
+      "techniques": [
+        "lcm",
+        "divisibility",
+        "exponent_properties"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата включва намиране на естествени числа m,n с условие за НОК. Решението използва свойства на НОК и делимост, като стига до извода, че m и n са степени на 2. Точка 3.1 (Делимост. НОД/НОК) е точна.",
+      "_crosslinked_from": "3.1",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-2-Областен кръг-2006-11 кл · 2006-11 · Зад. 11.4",
+      "statement": "Да се намери най-малкото естествено число $a$, за което системата $\\begin{cases} x + y + z = a \\\\ x^3 + y^3 + z^2 = a \\end{cases}$ няма цели решения.",
+      "solution": "При $a = 1, 2, 3$ системата има решения съответно $(1, 0, 0)$, $(1, 1, 0)$ и $(1, 1, 1)$. Ще докажем, че тя няма решения при $a = 4$. Да допуснем противното. Имаме\n\n$$4 - z^2 = x^3 + y^3 = (x + y)(x^2 - xy + y^2) = (4 - z)(x^2 - xy + y^2), \\quad (1)$$\n\nкоето означава (тъй като $z = 4$ не дава цяло решение), че $\\frac{4 - z^2}{4 - z}$ е цяло число. Тъй като $\\frac{4 - z^2}{4 - z} = \\frac{-12 + 16 - z^2}{4 - z} = 4 + z + \\frac{12}{z - 4}$, заключаваме, че $z - 4$ дели 12. Следователно $z - 4 = \\pm 1, \\pm 2, \\pm 3, \\pm 4, \\pm 6, \\pm 12$ и съответно $z = -8, -2, 0, 1, 2, 3, 5, 6, 7, 8, 10$ или 16. С помощта на (1) имаме\n\n$$(x + y)^2 - 3xy = \\frac{4 - z^2}{4 - z} \\iff 3xy = (4 - z)^2 - \\frac{4 - z^2}{4 - z}$$\n\nи за $x$ и $y$ получаваме системата\n\n$$\\begin{cases} x + y = 4 - z \\\\ xy = \\frac{(4 - z)^3 + z^2 - 4}{3(4 - z)} \\end{cases}$$\n\nЛесно се проверява, че никоя от изброените по-горе стойности на $z$ не води до цяло решение за $x$ и $y$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "diophantine_equations",
+        "divisibility",
+        "substitution"
+      ],
+      "confidence": "exact",
+      "reasoning": "Системата се свежда до диофантово уравнение с проверка на възможни стойности. Основната техника е намиране на точни квадрати и степени (точка 4.4). Решението е дълго и изисква множество стъпки за проверка, което го прави hard."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2006-11 кл · 2006-11 · Зад. 11.4",
+      "statement": "Да се намери най-малкото естествено число $a$, за което системата $\\begin{cases} x + y + z = a \\\\ x^3 + y^3 + z^2 = a \\end{cases}$ няма цели решения.",
+      "solution": "При $a = 1, 2, 3$ системата има решения съответно $(1, 0, 0)$, $(1, 1, 0)$ и $(1, 1, 1)$. Ще докажем, че тя няма решения при $a = 4$. Да допуснем противното. Имаме\n\n$$4 - z^2 = x^3 + y^3 = (x + y)(x^2 - xy + y^2) = (4 - z)(x^2 - xy + y^2), \\quad (1)$$\n\nкоето означава (тъй като $z = 4$ не дава цяло решение), че $\\frac{4 - z^2}{4 - z}$ е цяло число. Тъй като $\\frac{4 - z^2}{4 - z} = \\frac{-12 + 16 - z^2}{4 - z} = 4 + z + \\frac{12}{z - 4}$, заключаваме, че $z - 4$ дели 12. Следователно $z - 4 = \\pm 1, \\pm 2, \\pm 3, \\pm 4, \\pm 6, \\pm 12$ и съответно $z = -8, -2, 0, 1, 2, 3, 5, 6, 7, 8, 10$ или 16. С помощта на (1) имаме\n\n$$(x + y)^2 - 3xy = \\frac{4 - z^2}{4 - z} \\iff 3xy = (4 - z)^2 - \\frac{4 - z^2}{4 - z}$$\n\nи за $x$ и $y$ получаваме системата\n\n$$\\begin{cases} x + y = 4 - z \\\\ xy = \\frac{(4 - z)^3 + z^2 - 4}{3(4 - z)} \\end{cases}$$\n\nЛесно се проверява, че никоя от изброените по-горе стойности на $z$ не води до цяло решение за $x$ и $y$.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "diophantine_equations",
+        "divisibility",
+        "substitution"
+      ],
+      "confidence": "exact",
+      "reasoning": "Системата се свежда до диофантово уравнение с проверка на възможни стойности. Основната техника е намиране на точни квадрати и степени (точка 4.4). Решението е дълго и изисква множество стъпки за проверка, което го прави hard.",
+      "_crosslinked_from": "4.4",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-2-Областен кръг-2008-12 кл · 2008-12 · Зад. 12.3",
+      "statement": "Съществува ли естествено число $n$, за което числото $\\left(\\frac{2008}{n}\\right)^3 + \\frac{2008}{n}$ е квадрат на рационално число?",
+      "solution": "Не съществува. Нека $\\left(\\frac{2008}{n}\\right)^3 + \\frac{2008}{n} = \\left(\\frac{a}{b}\\right)^2$, $(a, b) = 1$. Полагаме $d = (2008, n)$ и $2008 = pd$, $n = qd$, където $(p, q) = 1$. Тогава $b^2(p^3 + pq^2) = a^2q^3$. Тъй като $(a, b) = 1$ и $(p^3 + pq^2, q^3) = 1$, следва, че $b^2 = q^3$ и $p^3 + pq^2 = a^2$. Оттук $b = b_1^3$, $q = b_1^2$ и $p(p^2 + b_1^4) = a^2$. Сега от $(p, p^2 + b_1^4) = (p, b_1^4) = 1$ (тъй като $(p, q) = 1$) заключаваме, че $p = x^2$ и $p^2 + b_1^4 = y^2$. Оттук $x^4 + b_1^4 = y^2$ и, както е добре известно, следва, че $x = 0$ или $b_1 = 0$, което е противоречие. Противоречието следва и от факта, че $p = x^2$ е делител на $2008 = 2^3 \\cdot 251$. Оттук $x = 1$ или $x = 2$ и стигаме до $1 + b_1^4 = y^2$ или $16 + b_1^4 = y^2$, откъдето лесно получаваме, че $b_1 = 0$.\n\nЗабележка. Задачата е частен случай на добре известния факт, че $(0, 0)$ е единствената рационална точка върху елиптичната крива $y^2 = x^3 + x$.\n\nсвалено от Klasirane.com",
+      "answer": "Не съществува",
+      "difficulty": "hard",
+      "techniques": [
+        "diophantine_equations",
+        "gcd",
+        "square_numbers",
+        "modular_arithmetic"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата е диофантов проблем за точно квадрат, използващ НОД, модулна аритметика и свойства на квадрати. Точка 4.4 (Точни квадрати и степени) е подходяща."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2008-12 кл · 2008-12 · Зад. 12.3",
+      "statement": "Съществува ли естествено число $n$, за което числото $\\left(\\frac{2008}{n}\\right)^3 + \\frac{2008}{n}$ е квадрат на рационално число?",
+      "solution": "Не съществува. Нека $\\left(\\frac{2008}{n}\\right)^3 + \\frac{2008}{n} = \\left(\\frac{a}{b}\\right)^2$, $(a, b) = 1$. Полагаме $d = (2008, n)$ и $2008 = pd$, $n = qd$, където $(p, q) = 1$. Тогава $b^2(p^3 + pq^2) = a^2q^3$. Тъй като $(a, b) = 1$ и $(p^3 + pq^2, q^3) = 1$, следва, че $b^2 = q^3$ и $p^3 + pq^2 = a^2$. Оттук $b = b_1^3$, $q = b_1^2$ и $p(p^2 + b_1^4) = a^2$. Сега от $(p, p^2 + b_1^4) = (p, b_1^4) = 1$ (тъй като $(p, q) = 1$) заключаваме, че $p = x^2$ и $p^2 + b_1^4 = y^2$. Оттук $x^4 + b_1^4 = y^2$ и, както е добре известно, следва, че $x = 0$ или $b_1 = 0$, което е противоречие. Противоречието следва и от факта, че $p = x^2$ е делител на $2008 = 2^3 \\cdot 251$. Оттук $x = 1$ или $x = 2$ и стигаме до $1 + b_1^4 = y^2$ или $16 + b_1^4 = y^2$, откъдето лесно получаваме, че $b_1 = 0$.\n\nЗабележка. Задачата е частен случай на добре известния факт, че $(0, 0)$ е единствената рационална точка върху елиптичната крива $y^2 = x^3 + x$.\n\nсвалено от Klasirane.com",
+      "answer": "Не съществува",
+      "difficulty": "hard",
+      "techniques": [
+        "diophantine_equations",
+        "gcd",
+        "square_numbers",
+        "modular_arithmetic"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата е диофантов проблем за точно квадрат, използващ НОД, модулна аритметика и свойства на квадрати. Точка 4.4 (Точни квадрати и степени) е подходяща.",
+      "_crosslinked_from": "4.4",
+      "_crosslink_confidence": 0.85
+    },
+    {
+      "source": "OLI-2-Областен кръг-2009-11 кл · 2009-11 · Зад. 11.6",
+      "statement": "Естествените числа a, b и c са такива, че a2 + ab + b2 = c2 и a и b са взаимнопрости. Да се докаже, че числото |a −b| + 2c е точен квадрат на естествено число тогава и само тогава, когато то не се дели на 3.",
+      "solution": "Без ограничение можем да считаме, че $a > b$. Записваме равенството $a^2 + ab + b^2 = c^2$ във вида\n\n$$(2c - a + b)(2c + a - b) = 3(a + b)^2.$$\n\nТъй като $a$ и $b$ са взаимнопрости, то те не са едновременно четни. От $a^2 + ab + b^2 = c^2$ следва, че $c$ е нечетно число. Нека НОД$(2c - a + b, 2c + a - b) = d$. Ако $p$ е нечетен прост делител на $d$, то $p^2$ дели $3(a + b)^2$ и значи $p$ дели $a + b$. Освен това $p$ дели $2c - a + b - (2c + a - b) = 2(b - a)$ и следователно $p$ дели $b - a$. Получаваме, че $p$ дели $a$ и $b$, което е противоречие. Следователно $d$ няма нечетни прости делители и тъй като $d$ дели $4c$, ($c$ е нечетно), то $d = 1, 2$ или 4.\n\nАко $d = 2$ или 4 (т.е. $a$ и $b$ са нечетни), то числото $c$ е нечетно и тъй като $a^2 \\equiv b^2 \\equiv c^2 \\equiv 1 \\pmod 8$, имаме $ab \\equiv 7 \\pmod 8$. Оттук и от факта, че всяко от числата $a$ и $b$ дава остатък 1, 3, 5 или 7 при деление на 8, следва, че $a + b$ се дели на 8. Ако $d = 2$, то $2c - a + b = 2p$ и $2c + a - b = 2q$, като $(p, q) = 1$ и $p + q = 2c$ е четно число. Следователно $p$ и $q$ са нечетни и равенството $(2c - a + b)(2c + a - b) = 3(a + b)^2$ е невъзможно по модул 8.\n\nАко $d = 4$, след съкращаване на 4 получаваме ситуация, аналогична на случая $d = 1$, като при това точният квадрат си остава такъв.\n\nНека $d = 1$, т.е. $a$ и $b$ са с различна четност. Тогава числата $2c - a + b$ и $2c + a - b$ са нечетни и едното от тях е от вида $3p^2$, а другото е от вида $q^2$, където $q$ не се дели на 3, защото иначе $2c - a + b$ и $2c + a - b$ не са взаимнопрости. Остава да отбележим, че ако $|a - b| + 2c$ е точен квадрат, то е равно на $q^2$ и значи не се дели на 3 и, обратно, ако $|a - b| + 2c$ не се дели на 3, то е равно на $q^2$, т.е. е точен квадрат.\n\n**Оценяване.** 1 т. за разлагането $(2c - a + b)(2c + a - b) = 3(a + b)^2$, 2 т. за доказване, че $d = 1, 2, 4$, 1 т. за случая $a$ и $b$ с различна четност и 3 т. за останалата част.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "diophantine_equations",
+        "gcd",
+        "modular_arithmetic"
+      ],
+      "confidence": "exact",
+      "reasoning": "Уравнението a^2 + ab + b^2 = c^2 е диофантово. Решението използва разлагане и анализ на взаимната простота и четност, както и свойства по модул."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2021-10 кл · 2021-10 · Зад. 10.3",
+      "statement": "(7 точки) Да се намерят всички естествени числа $n$, за които числото\n\n$$N = 2 + \\sum_{k=1}^n k \\cdot 2^k$$\n\nе точен квадрат на естествено число.",
+      "solution": "Решение. С ММИ установяваме, че $\\sum_{k=1}^{n} k\\cdot2^k = (n-1)\\cdot2^{n+1} + 2$. Търсим $n$, за които $N = 4 + (n-1)\\cdot2^{n+1} = t^2$, където $t$ е естествено число. При $n > 5$ имаме $t = 2\\cdot k$ откъдето $1 + (n-1)\\cdot2^{n-1} = k^2 = (2\\cdot s + 1)^2$ и $(n-1)\\cdot2^{n-1} = 2\\cdot s(2\\cdot s + 2)$, т.е. $(n-1)\\cdot2^{n-3} = s\\cdot(s + 1)$. Тъй като $s$ и $s + 1$ са 2 последователни числа и $2^{n-3} > n$ за $n > 5$(ММИ) следователно $2^{n-3} - (n-1) > 1$ и възможните решения са за $n = 1, 2, 3, 4, 5$. С директна проверка се установява, че търсените $n$ са $n = 1$ и $N = 4$, $n = 3$ и $N = 36$, $n = 4$ и $N = 100$.",
+      "answer": "n = 1, 3, 4",
+      "difficulty": "hard",
+      "techniques": [
+        "summation",
+        "closed_form",
+        "perfect_squares"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква намиране на точни квадрати. Решението използва затворена форма за сумата и анализ на диофантово уравнение. Главната техника е точни квадрати и степени (4.4). Трудността е висока поради нетривиалната индукция и проверката за малки n."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2021-12 кл · 2021-12 · Зад. 12.4",
+      "statement": "Да се докаже, че за всяко цяло число $n \\geq 3$ съществуват безброй нечетни точки в квадрати с точно $\\frac{n^2 + n + 2}{2}$ единици в двоичния си запис.",
+      "solution": "Решение. Нека $a_1 = k \\ge 4$, $a_2 = k+1$, $a_3 = k+2$, $a_4 = 2k+4$ и $a_{n+1} = 2a_n - 1$ при $n \\ge 4$. Полагаме $A_n = 1 + 2^{a_1} + \\dots + 2^{a_n}$. Тогава\n\n$$A_3^2 = 1 + 2^{k+1} + 2^{k+2} + 2^{k+3} + 2^{2k} + 2^{2k+4} + 2^{2k+5},$$\n\n$$A_4^2 = 1 + 2^{k+1} + 2^{k+2} + 2^{k+3} + 2^{2k} + 2^{2k+4} + 2^{2k+6} + 2^{3k+5} + 2^{3k+6} + 2^{3k+7} + 2^{4k+8}.$$\n\nДа допуснем, че $n \\ge 4$ и числото $A_n^2$ има точно $\\frac{n^2+n+2}{2}$ единици в двоичния си запис. Тогава\n\n$$A_{n+1}^2 = (A_n + 2^{2a_n-1})^2 = A_n^2 + 2^{2a_n} A_n + 2^{4a_n-2} =$$\n\n$$(1 + \\dots + 2^{a_n+a_{n-1}+1} + 2^{2a_n}) + 2^{2a_n} (1 + 2^{a_1} + \\dots + 2^{a_n}) + 2^{4a_n-2} =$$\n\n$$1 + \\dots + 2^{a_n+a_{n-1}+1} + 2^{2a_n+1} + 2^{2a_n+a_1} + \\dots + 2^{3a_n} + 2^{4a_n-2}.$$\n\nСледователно броят на единиците в двоичния запис на $A_{n+1}^2$ е равен на\n\n$$\\frac{n^2+n+2}{2} - 1 + (n+1) + 1 = \\frac{(n+1)^2 + (n+1) + 2}{2}$$\n\nи твърдението от задачата следва по индукция.\n\nОценяване. (7 точки) 7 т. за пълно решение; по 1 т. за частните случаи $n = 3, 4, 5$.\n\nЗабележка. Твърдението от задачата е вярно за всеки брой единици, различен от 1, 2 и 4 (A. Moscariello, 2021).",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "binary_representation",
+        "induction",
+        "explicit_construction"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изисква конструкция на безброй нечетни квадрати с точно определен брой единици в двоичен запис. Решението използва индуктивна конструкция със специална редица. Това е типична задача за точни квадрати и комбинаторика на битовете."
+    },
+    {
+      "source": "OLI-2-Областен кръг-2024-12 кл · 2024-12 · Зад. 12.4",
+      "statement": "Да се намерят всички двойки естествени числа $(n, k)$, за които всяко нечетно естествено число $m > 20242024$ може да се представи във вида\n\n$$m = a_1^{n^2} + a_2^{(n+1)^2} + \\dots + a_{k+1}^{(n+k)^2}$$\n\nза някои неотрицателни цели числа $a_1, a_2, \\dots, a_{k+1}$.",
+      "solution": "При $n = 1$ можем да вземем $a_1 = m$, а $a_2 = \\dots = a_{k+1} = 0$.\n\nНека сега $n \\ge 2$. Да допуснем, че съществува естествено число $k$, за което двойката $(n, k)$ изпълнява условието. За всяко естествено число $m$ с $f(m)$ ще означаваме броят естествени числа $s \\le m$, които могат да се представят в искания вид. Имаме, че ако $a_1^{n^2} + a_2^{(n+1)^2} + \\dots + a_k^{(n+k)^2} \\le m$, то $a_i \\le m^{\\frac{1}{(n+i)^2}}$, което значи, че за $a_i$ имаме най-много $m^{\\frac{1}{(n+i)^2}} + 1$ възможности за всяко $1 \\le i \\le k$. Освен това имаме, че $m^{\\frac{1}{(n+i)^2}} + 1 < 2m^{\\frac{1}{(n+i)^2}}$ и значи за $(a_1, a_2, \\dots, a_k)$ имаме най-много\n\n$$\\prod_{i=0}^k 2m^{\\frac{1}{(n+i)^2}} = 2^{k+1} m^{\\sum_{i=0}^k \\frac{1}{(n+i)^2}} \\le 2^{k+1} m^{\\frac{3}{4}},$$\n\nзащото\n\n$$\\sum_{i=0}^k \\frac{1}{(n+i)^2} \\le \\sum_{i=0}^k \\frac{1}{(2+i)^2} \\le \\frac{1}{4} + \\sum_{i=3}^{k+2} \\frac{1}{i(i-1)} = \\frac{1}{4} + \\frac{1}{2} - \\frac{1}{k+2} \\le \\frac{3}{4}.$$\n\nТака получаваме, че $f(m) \\le 2^{k+1} m^{\\frac{3}{4}}$ и значи $m \\le 3 \\cdot 2^{k+1} m^{\\frac{3}{4}}$ (т.к според допускането ни $f(m) > \\frac{m}{3}$ за големи $m$), което дава противоречие за големи стойности на $m$.",
+      "answer": "$(n, k) = (1, k)$ за всяко $k \\in \\mathbb{N}$",
+      "difficulty": "hard",
+      "techniques": [
+        "експоненциални_суми",
+        "оценки"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата изследва представяне на числа чрез суми от степени. Основната техника е оценка на броя възможни представяния, което се отнася до точка 4.4 (Точни квадрати и степени). Трудността е hard поради сложната оценка на сума от експоненти."
+    },
+    {
+      "source": "OLI-3-Национален кръг-1999-9-12 кл · 1999-None · Зад. 2",
+      "statement": "Let $\\{a_n\\}_{n=1}^{\\infty}$ be a sequence of integer numbers such that\n\n$$(n-1)a_{n+1} = (n+1)a_n - 2(n-1)$$\n\nfor any $n \\geq 1$. If 2000 divides $a_{1999}$, find the smallest $n \\geq 2$ such that 2000 divides $a_n$.",
+      "solution": "It is obvious that $a_1 = 0$ and $a_{n+1} = \\frac{n + 1}{n - 1}a_n - 2$ when $n \\ge 2$. Therefore the sequence is uniquely determined by its second term. Furthermore the sequence $a_n = (n - 1)(cn + 2)$ (where $c = \\frac{a_2}{2} - 1$ is an arbitrary real number) satisfies the equality from the conditions of the problem. We conclude now that all sequences which satisfy this equality are of the kind given above. Since all terms are integer numbers and $2000$ divides $a_{1999}$, it is easy to see that $c$ is integer and $c = 1000m + 2$. Therefore $2000$ divides $a_n$ if and only if $1000$ divides $(n-1)(n+1)$. Thus $n = 2k+1$ and $k(k+1)$ is divisible by $250 = 5^3 \\cdot 2$. Since $k$ and $k+1$ are relatively prime, we get that the smallest $n \\ge 2$ equals $2 \\cdot 124 + 1 = 249$.",
+      "answer": "249",
+      "difficulty": "hard",
+      "techniques": [
+        "linear_recurrence",
+        "divisibility",
+        "pell_equation"
+      ],
+      "confidence": "exact",
+      "reasoning": "Задачата включва рекурентна редица с целочислени стойности и търсене на най-малкото n, за което a_n се дели на 2000. Решението извежда формула за редицата и свежда задачата до диофантово уравнение от тип Пел.",
+      "_crosslinked_from": "7.6",
+      "_crosslink_confidence": 0.75
+    },
+    {
+      "source": "OLI-3-Национален кръг-2007-9-12 кл · 2007-None · Зад. 6",
+      "statement": "Нека $f(x)$ е полином от четна степен с цели коефициенти и старши коефициент 1. Известно е, че съществуват безбройно много цели числа $x$, за които $f(x)$ е точен квадрат на естествено число. Да се докаже, че съществува полином $g(x)$ с цели коефициенти, за който $f(x) = g^2(x)$.",
+      "solution": "**Решение.** Нека $n = 2k$ и $f(x) = x^{2k} + a_{2k-1}x^{2k-1} + \\dots + a_1x + a_0$, където $a_i$ са цели числа. Ще докажем, че $f(x)$ може да се представи във вида\n\n$$f(x) = (x^k + b_{k-1}x^{k-1} + \\dots + b_1x + b_0)^2 + r(x),$$\n\nкъдето $b_0, b_1, \\dots, b_{k-1}$ рационални числа, а $r(x)$ е полином с рационални коефициенти от степен най-много $k-1$. Наистина, коефициентът пред $x^{k+1}$ за $t = k-1, k-2, \\dots, 1, 0$ на полинома $(x^k + b_{k-1}x^{k-1} + \\dots + b_1x + b_0)^2$ има вида $c_{k+1} = 2b_t + \\sum_{i=1}^{k-1} b_{i+1}b_{k-i}$. По индукция лесно определяме стойностите на $b_{k-1}, b_{k-2}, \\dots, b_1, b_0$ така, че $c_{k+1} = a_{k+1}$ за $t = k-1, k-2, \\dots, 1, 0$. След това определяме коефициентите на $r(x)$.\n\nАко $f(x) = y^2$ има безбройно много решения, за които $x < 0$, то $f_1(x) = y^2$ за $f_1(x) = f(-x)$ има безбройно много решения, за които $x > 0$. Следователно можем да приемем, че $f(x) = y^2$ има безбройно много решения, за които $x > 0$. Тъй като $(x^k + b_{k-1}x^{k-1} + \\dots + b_1x + b_0)^2 + r(x) = y^2$ има безбройно много решения, след привеждане под общ знаменател на рационалните числа $b_{k-1}, \\dots, b_1, b_0$, ще получим $h^2(x) + M^2r(x) = (My_x)^2$, където $M$ е НОК на знаменателите на $b_i$, $0 \\leq i \\leq k-1$ и $h(x)$ е пол",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "polynomial_divisibility",
+        "perfect_squares",
+        "diophantine_equations"
+      ],
+      "confidence": "exact",
+      "reasoning": "Полином, който е точен квадрат за безбройно много цели числа, се доказва, че е точен квадрат на полином. Техниките са свързани с точни квадрати, точка 4.4."
+    },
+    {
+      "source": "OLI-3-Национален кръг-2010-9-12 кл · 2010-None · Зад. 4",
+      "statement": "(Иван Тонов) Да се намерят всички 6-цифрени числа, за които числото съставено от първите три цифри е с 4 по-малко от числото съставено от последните три цифри (напр. 123127, 897901) и които могат да се представят във вида $n^k$ където $n$ и $k \\ge  3$ са естествени числа.",
+      "solution": "Ще докажем, че не съществуват 6-цифрени числа с търсеното свойство.\n\nОт условието следва, че ако $\\overline{a_1 a_2 a_3 a_4 a_5 a_6}$ е число от търсения вид, то $10^5 < \\overline{a_1 a_2 a_3 a_4 a_5 a_6} < 10^6$ и $\\overline{a_4 a_5 a_6} = \\overline{a_1 a_2 a_3} + 4$. Имаме\n\n$$ \\overline{a_1 a_2 a_3 a_4 a_5 a_6} = 1000 \\overline{a_1 a_2 a_3} + \\overline{a_4 a_5 a_6} = 1001 \\overline{a_1 a_2 a_3} + 4. $$\n\nСледователно търсим всички трицифрени числа $A = \\overline{a_1 a_2 a_3}$, за които $1001A + 4 = n^k$ за $k \\ge 3$. Ще използваме, че $1001 = 7.11.13$, което означава, че $n^k \\equiv 4 \\pmod{t}$ за $t = 7, 11, 13$.\n\n1. Нека $k = 3$. Тогава трябва да е изпълнено $n^3 \\equiv 4 \\pmod{7}$, като директна проверка показва, че $n^3 \\equiv \\pm 1 \\pmod{7}$, което е противоречие.\n\n2. Нека $k = 4$. Тогава трябва да е изпълнено $n^4 \\equiv 4 \\pmod{13}$, като директна проверка показва, че $n^4 \\equiv 1, 3, 9 \\pmod{7}$, което е противоречие.\n\n3. Нека $k = 5$. Тогава трябва да е изпълнено $n^5 \\equiv 4 \\pmod{11}$, като директна проверка показва, че $n^5 \\equiv \\pm 1 \\pmod{11}$, което е противоречие.\n\n4. Нека $k = 7$. Тогава трябва да е изпълнено $n^7 \\equiv 4 \\pmod{7}$, което поради $n^7 \\equiv n \\pmod{7}$, означава, че $n \\equiv 4 \\pmod{7}$. Ако $n = 4$ имаме $4^7 < 10^5$, а ако $n \\ge 11$, то $n^7 \\ge 11^7 > 10^6$, което е противоречие.\n\n5. Нека $k = 11$. Тогава поради $4^{11} > 2^{20} > 10^6$ трябва да е изпълнено $n < 4$ понеже $n^{11} \\equiv n \\pmod{11}$, то $n^{11} \\equiv 4 \\pmod{11}$ е невъзможно.\n\n6. Нека $k \\ge 13$. Тогава поради $3^{13} = 2187.729 > 2000.700 > 10^6$ трябва да имаме $n = 2$. Сега от $2^{20} > 10^6$ следва, че $k \\le 19$. Освен това $2^k \\equiv 4 \\pmod{11}$, откъдето $2^{k-2} \\equiv 1 \\pmod{11}$. Понеже показателят на 2 по модул 11 е 10, трябва да имаме $10|k-2$, което е невъзможно, понеже $13 \\le k \\le 19$.\n\nАко $n$ е четно число, по-голямо от 4, то $n$ или се дели на 4 или има нечетен прост делител. Това означава, че задачата се свежда до някой от разгледаните случаи.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "modular_arithmetic",
+        "exponents",
+        "number_theory"
+      ],
+      "confidence": "exact",
+      "reasoning": "Търсят се 6-цифрени числа, които са степени и удовлетворяват условие за цифрите. Решението използва модулна аритметика за проверка на различни експоненти и доказва, че няма решения."
+    },
+    {
+      "source": "OLI-3-Национален кръг-2015-9-12 кл · 2015-None · Зад. 3",
+      "statement": "Редицата a₁, a₂, ... е зададена с равенствата a₁ = 2, a₂ = 12 и aₙ₊₁ = 6aₙ - aₙ₋₁ за всяко естествено число n \\ge  2. Да се докаже, че нито един член на тази редица не е точна (по-голяма от първа) степен на естествено число.",
+      "solution": "Решение. Лема. Нека $k \\ge 2$ е естествено число. Тогава уравнението $2x^{2k} + 1 = y^2$ няма решение в естествени числа.\n\nДоказателство. Да допуснем, че $x$, $y$ и $k \\ge 2$ са такива естествени числа, че $2x^{2k} + 1 = y^2$ и нека те са такива, че $x$ е минимално възможно.\n\nОчевидно $x$ е четно, а $y$ е нечетно; да означим $x = 2a$, $y = 2b + 1$. Тогава $2^{2k-1}a^{2k} = b(b+1)$, като двата множителя отдясно са взаимнопрости. Имаме две възможности:\n\n- ако $b = x_1^{2k}$ и $b+1 = 2^{2k-1}x_2^{2k}$, $x_1, x_2 \\in \\mathbb{N}$, $x_1x_2 = a$, то $2^{2k-1}x_2^{2k} - x_1^{2k} = 1$, което води до противоречие по модул 4;\n\n- ако $b = 2^{2k-1}x_1^{2k}$ и $b+1 = x_2^{2k}$, $x_1, x_2 \\in \\mathbb{N}$, $x_1x_2 = a$, то $x_2^{2k} - 2^{2k-1}x_1^{2k} = 1$, което води до уравнението $y_1^2 = 2^{2k-1}x_1^{2k} + 1$, $y_1 = x_2^k$, като при това $x_1 < x$.\n\nЯсно е, че описаният процес на намаляване на степените на 2 може да продължава докато имаме степен на двойката поне 5. Следователно можем да достигнем до уравнението $y_0^2 = 8x_0^{2k} + 1$, където $x_0 < x$ и $y_0 = y_2^k$, $y_2 \\in \\mathbb{N}$. Отново $y_0$ е нечетно – нека $y_0 = 2c + 1$. Получаваме $c(c+1) = 2x_0^{2k}$, като двата множителя отдясно са взаимнопрости. И тук имаме две възможности:\n\n- ако $c = x_3^{2k}$ и $c+1 = 2x_4^{2k}$, $x_3, x_4 \\in \\mathbb{N}$, $x_3x_4 = x_0$, то $4x_4^{2k} = 2c+2 = y_2^k + 1$, откъдето $(2x_4^k - 1)(2x_4^k + 1) = y_2^k$, което води до $2x_4^k - 1 = y_3^k$, $2x_4^k + 1 = y_4^k$, $y_3, y_4 \\in \\mathbb{N}$, $y_3y_4 = y_2$, и накрая $y_4^k - y_3^k = 2$, което е невъзможно;\n\n- ако $c = 2x_3^{2k}$ и $c+1 = x_4^{2k}$, $x_3, x_4 \\in \\mathbb{N}$, $x_3x_4 = x_0$, то $2x_3^{2k} + 1 = (x_4^k)^2$, което води до противоречие с избора на минимално по $x$ решение.\n\nС това лемата е доказана.\n\nКорените на характеристичното уравнение $t^2 - 6t + 1 = 0$ на разглежданата редица са $t_{1,2} = 3 \\pm 2\\sqrt{2}$. Оттук и от началните условия $a_1 = 2$ и $a_2 = 12$ намираме общия член\n\n$$a_n = \\frac{(3 + 2\\sqrt{2})^n - (3 - 2\\sqrt{2})^n}{2\\sqrt{2}}.$$\n\nДа означим $(3+2\\sqrt{2})^n = \\alpha_n + \\beta_n\\sqrt{2}$, $\\alpha_n, \\beta_n \\in \\mathbb{N}$. Тогава $(3-2\\sqrt{2})^n = \\alpha_n - \\beta_n\\sqrt{2}$, $a_n = \\beta_n$ и $\\alpha_n^2 - 2\\beta_n^2 = 1$. Ако допуснем, че $a_n$ е точна (по-голяма от първа) степен за някое $n$, от последните две равенства получаваме противоречие с лемата.\n\nЗабележка. Намирането на общия член на редицата може да се замени със следното разсъждение. Нека $b_n$ е редицата със същата рекурентна връзка и начални условия $b_1 = 3$ и $b_2 = 17$. Тогава по индукция леко се доказва, че $2a_n^2 + 1 = b_n^2$.\n\nОценяване: (7 точки) 2 т. за достигане до диофантовото уравнение от редицата, 1 т. за избор на минимално решение (или друг вариант на спускане), 2 т. за спускане по степените на двойката до $2^3$, по 1 т. за всеки от двата случая след това.",
+      "answer": null,
+      "difficulty": "hard",
+      "techniques": [
+        "pells_equation",
+        "linear_recurrence",
+        "diophantine_equation"
+      ],
+      "confidence": "exact",
+      "reasoning": "Редицата води до уравнение на Пел. Решението използва общ член и диофантов анализ, което е стандартно за такива задачи.",
+      "_crosslinked_from": "3.10",
+      "_crosslink_confidence": 0.75
     }
   ]
 }

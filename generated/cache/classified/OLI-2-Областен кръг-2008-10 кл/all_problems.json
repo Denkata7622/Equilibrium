@@ -21,7 +21,8 @@
       ],
       "reasoning": "Substituted u=√(x+2), solved two quadratic inequalities, intersected intervals to obtain x-range.",
       "_paired": true,
-      "_grade_source": "filename"
+      "_grade_source": "filename",
+      "secondary_points": []
     },
     {
       "num": 2,
@@ -43,7 +44,13 @@
       ],
       "reasoning": "Used inscribed‑angle theorem and tangent–chord properties to prove ∠CQP = ∠CMN and that SC is tangent.",
       "_paired": true,
-      "_grade_source": "filename"
+      "_grade_source": "filename",
+      "secondary_points": [
+        {
+          "id": "1.5",
+          "confidence": 0.85
+        }
+      ]
     },
     {
       "num": 3,
@@ -65,7 +72,8 @@
       ],
       "reasoning": "Represented n=3^k·t, defined f piecewise, verified f(f(n))=3n for both residue classes.",
       "_paired": true,
-      "_grade_source": "filename"
+      "_grade_source": "filename",
+      "secondary_points": []
     },
     {
       "num": 4,
@@ -88,7 +96,13 @@
       ],
       "reasoning": "Set t=2^x, obtained cubic t^3‑2mt+4m‑8=0, factorised, examined discriminant and sign conditions for m.",
       "_paired": true,
-      "_grade_source": "filename"
+      "_grade_source": "filename",
+      "secondary_points": [
+        {
+          "id": "5.1",
+          "confidence": 0.85
+        }
+      ]
     },
     {
       "num": 5,
@@ -110,7 +124,8 @@
       ],
       "reasoning": "Applied AM‑GM to each fraction, reduced to t+1/(2t^2)≥3/2, proved via factorisation (t‑1)^2(2t+1)≥0.",
       "_paired": true,
-      "_grade_source": "filename"
+      "_grade_source": "filename",
+      "secondary_points": []
     },
     {
       "num": 6,
@@ -132,7 +147,8 @@
       ],
       "reasoning": "Identified 11 distinct points in the trapezoid, covered by 10 circles; Dirichlet principle forces two points in one circle, giving diameter ≥1 ⇒ r≥½.",
       "_paired": true,
-      "_grade_source": "filename"
+      "_grade_source": "filename",
+      "secondary_points": []
     }
   ]
 }
