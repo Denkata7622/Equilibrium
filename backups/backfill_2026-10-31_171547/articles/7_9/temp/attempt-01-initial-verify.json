@@ -1,0 +1,48 @@
+{
+  "verdict": "approve",
+  "score": 9,
+  "issues": [
+    {
+      "severity": "major",
+      "section": "4.2 Medium examples",
+      "description": "Само 2 medium примера вместо 3-4. Пример 3 не е завършен, Пример 4 е твърде кратък."
+    },
+    {
+      "severity": "major",
+      "section": "4.3 Hard examples",
+      "description": "Само 1 hard пример (Пример 5) вместо 2-3. Липсва пълно решение."
+    }
+  ],
+  "strengths": [
+    "Отлична математическа коректност - всички формули проверени с конкретни числа",
+    "Реални олимпиадни примери с точни източници",
+    "Пълно покритие на структурата, включително CHECK-ове"
+  ],
+  "suggestions": [
+    "Добави още 1-2 medium примера с пълни решения",
+    "Разшири секцията за hard примери с поне още една задача",
+    "В Пример 3 (medium) добави пълно решение вместо описание"
+  ],
+  "math_errors": [],
+  "missing_topics": [],
+  "structure_check": {
+    "section_1_why_important": true,
+    "section_2_objectives": true,
+    "section_3_theory": true,
+    "section_4_examples_3_levels": true,
+    "section_5_recognition": true,
+    "section_6_mistakes": true,
+    "section_7_mastery": true,
+    "section_8_quiz": true,
+    "section_9_recall": true,
+    "check_marks_present": true
+  },
+  "examples_check": {
+    "real_olympiad": true,
+    "easy_count": 3,
+    "medium_count": 2,
+    "hard_count": 1
+  },
+  "verdict_reasoning": "Статията е математически коректна и покрива всички ключови секции, но броят на medium и hard примерите е под очакванията.",
+  "_tokens": 16643
+}

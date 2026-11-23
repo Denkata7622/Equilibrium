@@ -1,0 +1,21 @@
+{
+  "key": "11.6#3",
+  "point_id": "11.6",
+  "idx": 3,
+  "difficulty": "hard",
+  "source": "OLI-3-Национален кръг-2010-9-12 кл · 2010-None · Зад. 2",
+  "techniques": [
+    "cubic_functions",
+    "derivatives",
+    "vieta_formulas",
+    "coordinate_geometry"
+  ],
+  "word_count": 1670,
+  "score": 8,
+  "verdict": "revise",
+  "caught_errors_in_solution": [],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 115.4,
+  "generated_at": "2026-11-18T21:35:53.243233"
+}

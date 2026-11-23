@@ -1,0 +1,24 @@
+{
+  "key": "1.7#2",
+  "point_id": "1.7",
+  "idx": 2,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-2004-11 кл · 2004-11 · Зад. 11.4",
+  "techniques": [
+    "similar_triangles",
+    "area_formulas"
+  ],
+  "word_count": 1649,
+  "score": 9,
+  "verdict": "approve",
+  "caught_errors_in_solution": [
+    "В последното равенство S_ACD трябва да бъде S_ACE; иначе изваждането на общия триъгълник CEO е невъзможно.",
+    "Повреденото изписване на дробите е възстановено като AB/DB = CB/BE и коефициент на подобие 1/(2 cos φ).",
+    "Пропусната е обосновката, че E е от противоположната страна на BC спрямо A; за това е необходимо условието AE да пресича отсечката CD.",
+    "Допълнена е обосновката на формулата за лице на EBDC чрез диагоналите BC и DE."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 227.4,
+  "generated_at": "2026-11-19T22:46:06.602111"
+}

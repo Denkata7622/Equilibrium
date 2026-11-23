@@ -1,0 +1,25 @@
+{
+  "key": "1.9#3",
+  "point_id": "1.9",
+  "idx": 3,
+  "difficulty": "hard",
+  "source": "OLI-3-Национален кръг-2022-9-12 кл · 2022-None · Зад. 2",
+  "techniques": [
+    "inversion",
+    "circle_properties",
+    "cyclic_quadrilaterals",
+    "symmetry"
+  ],
+  "word_count": 1803,
+  "score": 10,
+  "verdict": "approve",
+  "caught_errors_in_solution": [
+    "Във втория начин двете срещания на XY' трябва да бъдат X'Y': образът на окръжността (MXY) е правата през f(X)=X' и f(Y)=Y'.",
+    "Уточнено е, че P и Q са различните от C и B втори пресечни точки и са вътрешни за съответните отсечки; допускането на краищата води до неопределени окръжности.",
+    "Разгърната е пропуснатата обосновка на OM ⟂ MT чрез симетричната точка T' и равните степени на T и T' към (AKQC), вместо позоваване само на обратната теорема за пеперудата."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 182.2,
+  "generated_at": "2026-11-19T23:11:18.690287"
+}

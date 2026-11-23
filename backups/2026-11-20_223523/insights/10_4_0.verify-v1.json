@@ -1,0 +1,32 @@
+{
+  "score": 9,
+  "verdict": "approve",
+  "issues": [
+    {
+      "severity": "minor",
+      "section": "4",
+      "description": "Вътрешният въпрос в 'Как да се сетиш' е малко общ. Може да се конкретизира повече, но не е критично."
+    }
+  ],
+  "math_errors": [],
+  "sections_present": {
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true,
+    "12": true
+  },
+  "plan_b_quality": "concrete",
+  "how_to_think_quality": "specific",
+  "word_count_actual": 2100,
+  "verdict_reasoning": "Картата е изключително добре структурирана, с дълбоко разбиране на задачата. Всички ключови моменти са обяснени, грешките в предоставеното решение са идентифицирани и поправени. Self-check отговорите са верни. Единствено малкото подобрение в секция 4 не намалява качеството.",
+  "_attempt": 1,
+  "_model": "deepseek/deepseek-v3.2"
+}

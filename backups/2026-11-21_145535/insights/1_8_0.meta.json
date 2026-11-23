@@ -1,0 +1,25 @@
+{
+  "key": "1.8#0",
+  "point_id": "1.8",
+  "idx": 0,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-2011-11 кл · 2011-11 · Зад. 11.2",
+  "techniques": [
+    "circle_properties",
+    "angle_bisector",
+    "sine_theorem",
+    "euler_formula"
+  ],
+  "word_count": 1544,
+  "score": 9,
+  "verdict": "approve",
+  "caught_errors_in_solution": [
+    "В предоставения запис е повредено форматирането на дробите, степените и радикалите. Правилният косинус е sqrt(2(sqrt(2)-1)), а крайният показател е 3/2; математическият резултат е верен.",
+    "Означението alpha не е дефинирано в предоставеното решение. За записаното равенство на ъгли трябва alpha = angle BAC / 2.",
+    "Разгърнати са пропуснатото доказателство на DI = DA и основанията за избор на положителните стойности на синуса и косинуса."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 148.5,
+  "generated_at": "2026-11-19T22:50:52.677210"
+}

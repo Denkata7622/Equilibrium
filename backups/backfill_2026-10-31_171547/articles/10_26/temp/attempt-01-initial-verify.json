@@ -1,0 +1,53 @@
+{
+  "verdict": "approve",
+  "score": 8,
+  "issues": [
+    {
+      "severity": "major",
+      "section": "1. Защо е важно",
+      "description": "Липсват конкретни източници (ID на задачи) за споменатите олимпиадни примери. Трябва да се посочат точни източници, напр. 'Областен кръг 2021, задача 3'."
+    },
+    {
+      "severity": "minor",
+      "section": "4.3 Hard examples",
+      "description": "Пример 8 първоначално има объркващо условие (AG/GM=3:1), което не е адекватно обяснено. Коригираният пример не е реална олимпиадна задача."
+    },
+    {
+      "severity": "minor",
+      "section": "Примери като цяло",
+      "description": "Няма реални олимпиадни задачи в medium и hard примери. Препоръчително е да се включат поне 1-2 реални задачи."
+    }
+  ],
+  "strengths": [
+    "Отлична математическа коректност - всички формули и примери са проверени и верни",
+    "Добра покритост на теорията, особено разделът за edge cases",
+    "Секцията за чести грешки е много полезна и добре структурирана"
+  ],
+  "suggestions": [
+    "В секция 'Защо е важно' добави конкретни източници (ID на задачи) за всяка спомената година",
+    "Замени Пример 8 с реална олимпиадна задача от областен кръг",
+    "В medium/hard примери включи поне по една реална задача от областни кръгове"
+  ],
+  "math_errors": [],
+  "missing_topics": [],
+  "structure_check": {
+    "section_1_why_important": true,
+    "section_2_objectives": true,
+    "section_3_theory": true,
+    "section_4_examples_3_levels": true,
+    "section_5_recognition": true,
+    "section_6_mistakes": true,
+    "section_7_mastery": true,
+    "section_8_quiz": true,
+    "section_9_recall": true,
+    "check_marks_present": true
+  },
+  "examples_check": {
+    "real_olympiad": false,
+    "easy_count": 3,
+    "medium_count": 3,
+    "hard_count": 2
+  },
+  "verdict_reasoning": "Статията е математически коректна и покрива структурата, но липсват реални олимпиадни примери и точни източници в секция 1. Оценка 8/10 поради силна теория и добро покритие на темата.",
+  "_tokens": 14745
+}

@@ -1,0 +1,24 @@
+{
+  "key": "1.5#1",
+  "point_id": "1.5",
+  "idx": 1,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-1997-10 кл · 1997-10 · Зад. 10.2",
+  "techniques": [
+    "vector_geometry",
+    "circle_quadrilateral",
+    "ratio_properties"
+  ],
+  "word_count": 1524,
+  "score": 9,
+  "verdict": "approve",
+  "caught_errors_in_solution": [
+    "В предоставеното решение се дели на k^2-1 без доказателство, че k≠1. Добавено е изключване на k=1 чрез системата за пресечната точка F.",
+    "Не са обосновани разположението на E извън окръжността и еднаквите посоки на EA и ED, съответно EB и EC. Добавена е обосновка чрез изпъкналостта.",
+    "Уточнено е, че E трябва да е крайна точка, тоест AD и BC не са успоредни; иначе отношението MN/EF не е определено."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 202.9,
+  "generated_at": "2026-11-19T22:17:50.263166"
+}

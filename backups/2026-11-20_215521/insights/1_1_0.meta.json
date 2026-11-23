@@ -1,0 +1,24 @@
+{
+  "key": "1.1#0",
+  "point_id": "1.1",
+  "idx": 0,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-2026-10 кл · 2026-10 · Зад. 10.2",
+  "techniques": [
+    "menelaus_theorem",
+    "properties_of_regular_pentagon",
+    "symmetry",
+    "coordinate_geometry"
+  ],
+  "word_count": 1662,
+  "score": 8,
+  "verdict": "revise",
+  "caught_errors_in_solution": [
+    "Във втория начин са загубени дробни черти и скоби. Възстановените записи са EJ=(2x+1)/(2x+2), IA=x(2x+1)/(2x+2)=(3x+2)/(2x+2) и cos72°=(x/2)/(x+1).",
+    "Първият начин пропуска обосновките на фиксирането на F и P от симетрията, равенството EM=BM, отношението AF/FE=AC/ED и успоредността PT∥AD; те са допълнени."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 172.2,
+  "generated_at": "2026-11-18T21:57:29.448669"
+}

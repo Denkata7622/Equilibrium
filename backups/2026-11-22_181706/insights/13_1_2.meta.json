@@ -1,0 +1,34 @@
+{
+  "key": "13.1#2",
+  "point_id": "13.1",
+  "idx": 2,
+  "difficulty": "hard",
+  "source": "OLI-3-Национален кръг-2004-9-12 кл · 2004-None · Зад. 6",
+  "techniques": [
+    "cauchy_davenport",
+    "set_addition",
+    "induction"
+  ],
+  "word_count": 1652,
+  "score": 8,
+  "verdict": "reject",
+  "status": "done",
+  "structure": {
+    "missing": [],
+    "has_boxed": true,
+    "why_count": 9,
+    "sec12_words": 161,
+    "ends_ok": true,
+    "fatal": [],
+    "soft": []
+  },
+  "caught_errors_in_solution": [
+    "В базата на индукцията n=m+1−1 трябва да бъде n=m+n−1 при m=1.",
+    "Индукционното предположение трябва да допуска |X|≤|Y|, а не само |X|<|Y|.",
+    "От F+G⊆A′+B трябва да се изведе |F+G|≤|A′+B|; записаното сравнение на сборовете от мощности не е следствие от включването и не замества нужната оценка."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 157.4,
+  "generated_at": "2026-11-21T14:25:01.736461"
+}

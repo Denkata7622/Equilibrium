@@ -1,0 +1,22 @@
+{
+  "key": "11.6#1",
+  "point_id": "11.6",
+  "idx": 1,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-2005-10 кл · 2005-10 · Зад. 10.4",
+  "techniques": [
+    "quadratic_equation",
+    "discriminant",
+    "monotonic_function"
+  ],
+  "word_count": 1568,
+  "score": 9,
+  "verdict": "approve",
+  "caught_errors_in_solution": [
+    "За приведеното квадратно уравнение 15x²−(12a²+2)x+2a²−3a⁴=0 дискриминантата е D=4(9a²−1)², а не D=(9a²−1)². Проверка при a=0: D=4. Пропуснатият положителен множител не променя кандидатите или крайния отговор."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 101.3,
+  "generated_at": "2026-11-18T21:32:08.826833"
+}

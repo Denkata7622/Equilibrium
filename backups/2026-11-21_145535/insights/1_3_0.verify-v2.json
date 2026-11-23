@@ -1,0 +1,26 @@
+{
+  "score": 10,
+  "verdict": "approve",
+  "issues": [],
+  "math_errors": [],
+  "sections_present": {
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true,
+    "12": true
+  },
+  "plan_b_quality": "concrete",
+  "how_to_think_quality": "specific",
+  "word_count_actual": 2100,
+  "verdict_reasoning": "Картата е отлична. Хваща четири грешки в предоставеното решение, дава конкретен план Б, всички секции са покрити, математиката е проверена с числа, а само-проверката е точна.",
+  "_attempt": 2,
+  "_model": "deepseek/deepseek-v3.2"
+}

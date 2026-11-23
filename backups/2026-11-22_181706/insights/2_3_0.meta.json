@@ -1,0 +1,37 @@
+{
+  "key": "2.3#0",
+  "point_id": "2.3",
+  "idx": 0,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-2014-10 кл · 2014-10 · Зад. 10.2",
+  "techniques": [
+    "radical_axis",
+    "circle_inversion",
+    "geometric_construction"
+  ],
+  "word_count": 1822,
+  "score": 9,
+  "verdict": "approve",
+  "verdict_raw": "approve",
+  "adjudicated": false,
+  "status": "done",
+  "structure": {
+    "missing": [],
+    "has_boxed": true,
+    "why_count": 8,
+    "sec12_words": 150,
+    "ends_ok": true,
+    "fatal": [],
+    "soft": []
+  },
+  "caught_errors_in_solution": [
+    "Изборът на произволна X трябва да изключва допирната точка D върху AB, иначе описаната около ABX окръжност не съществува.",
+    "Пропуснат е случаят, когато помощната окръжност вече се допира до k при X и няма различна втора пресечна точка Y.",
+    "От допирателните през Z трябва да се избере различната от AB; иначе P=D и окръжността през A,B,P не съществува.",
+    "Специалният равнобедрен случай трябва да се уточни като CA=CB."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 145.5,
+  "generated_at": "2026-11-21T19:41:49.571343"
+}

@@ -1,0 +1,65 @@
+{
+  "verdict": "reject",
+  "score": 3,
+  "issues": [
+    {
+      "severity": "critical",
+      "section": "3.1",
+      "description": "Грешна задача за вписана окръжност: при r=2, AC=8, BC=10, AB=14 → 8²+10²=164 ≠ 196. Фатална грешка в основата."
+    },
+    {
+      "severity": "major",
+      "section": "4.1 Пример 1",
+      "description": "Грешно подреждане на точките при степен на точка без корекция."
+    },
+    {
+      "severity": "critical",
+      "section": "4.2 Пример 3",
+      "description": "Решение за окръжностите е объркано, недовършено и води до противоречие без разрешение."
+    },
+    {
+      "severity": "minor",
+      "section": "Структура",
+      "description": "Липсва CHECK след easy примерите (4.1)"
+    }
+  ],
+  "strengths": [
+    "Добра структурираност на повечето секции",
+    "Реални олимпиадни задачи в уводната част"
+  ],
+  "suggestions": [
+    "Преработете основната задача в 3.1 с коректни данни",
+    "Решете пример 4.2 (окръжности) напълно и коректно",
+    "Добавете CHECK след всяко ниво примери"
+  ],
+  "math_errors": [
+    {
+      "formula": "$(6+r)^2 + (8+r)^2 = 14^2$",
+      "problem": "При r=2: 8²+10²=164 ≠ 196",
+      "fix": "Променете параметрите: напр. AM=3, MB=4, AB=5 → r=(3+4-5)/2=1"
+    }
+  ],
+  "missing_topics": [
+    "CHECK след easy примери"
+  ],
+  "structure_check": {
+    "section_1_why_important": true,
+    "section_2_objectives": true,
+    "section_3_theory": true,
+    "section_4_examples_3_levels": true,
+    "section_5_recognition": true,
+    "section_6_mistakes": true,
+    "section_7_mastery": true,
+    "section_8_quiz": true,
+    "section_9_recall": false,
+    "check_marks_present": false
+  },
+  "examples_check": {
+    "real_olympiad": true,
+    "easy_count": 2,
+    "medium_count": 4,
+    "hard_count": 2
+  },
+  "verdict_reasoning": "Фатални математически грешки в ключови примери (3.1 и 4.2), които биха объркали учениците. Липсва коректен edge case анализ.",
+  "_tokens": 19953
+}

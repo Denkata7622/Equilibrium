@@ -1,0 +1,34 @@
+{
+  "key": "11.7#3",
+  "point_id": "11.7",
+  "idx": 3,
+  "difficulty": "easy",
+  "source": "OLI-3-Национален кръг-1987-9-12 кл · 1987-None · Зад. 2",
+  "techniques": [
+    "complex_numbers",
+    "periodicity",
+    "group_actions"
+  ],
+  "word_count": 1759,
+  "score": 9,
+  "verdict": "approve",
+  "status": "done",
+  "structure": {
+    "missing": [],
+    "has_boxed": true,
+    "why_count": 8,
+    "sec12_words": 182,
+    "ends_ok": true,
+    "fatal": [],
+    "soft": []
+  },
+  "caught_errors_in_solution": [
+    "В условието липсва изключване на ω2=0: ограничението ωi≠2π не гарантира, че отношението ω1/ω2 е определено.",
+    "В предоставеното решение s е наречено положително цяло число без записано условие за положителност на ъгъла; в общия случай правилното е s∈ℤ.",
+    "Изрично е попълнена скритата проверка Ak≠O1 чрез запазването на разстоянието до центъра."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 106.0,
+  "generated_at": "2026-11-21T09:09:33.159956"
+}

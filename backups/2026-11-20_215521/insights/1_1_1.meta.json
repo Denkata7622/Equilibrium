@@ -1,0 +1,23 @@
+{
+  "key": "1.1#1",
+  "point_id": "1.1",
+  "idx": 1,
+  "difficulty": "hard",
+  "source": "OLI-3-Национален кръг-1983-9-12 кл · 1983-None · Зад. 3",
+  "techniques": [
+    "menelaus_theorem",
+    "vector_method",
+    "optimization"
+  ],
+  "word_count": 1503,
+  "score": 9,
+  "verdict": "approve",
+  "caught_errors_in_solution": [
+    "Неразчетеният ръб в условието е AB; това се възстановява от използваното равенство MA⃗ + MB⃗ = 0.",
+    "Няма установена грешна формула в предоставеното решение. Допълнени са пропуснатите обосновки за дължината на MN, скаларните произведения и допустимостта на минимума."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 165.7,
+  "generated_at": "2026-11-18T22:00:15.172035"
+}

@@ -1,0 +1,38 @@
+{
+  "verdict": "approve",
+  "score": 10,
+  "issues": [],
+  "strengths": [
+    "Статията е математически коректна - всички формули и решения са проверени с конкретни числа и са верни.",
+    "Структурата е изцяло покрита, включително CHECK-ове между нивата и всички 9 секции.",
+    "Примерите включват реални олимпиадни задачи (напр. Национален кръг 2003) и са добре балансирани по трудност.",
+    "Edge cases са разгледани подробно и правилно."
+  ],
+  "suggestions": [
+    "Може да се добави още един hard пример за по-голяма покритост, но не е задължително.",
+    "В секция 'Как да разпознаеш' може да се включат още 1-2 сигнала, но текущото покритие е добро."
+  ],
+  "math_errors": [],
+  "missing_topics": [],
+  "structure_check": {
+    "section_1_why_important": true,
+    "section_2_objectives": true,
+    "section_3_theory": true,
+    "section_4_examples_3_levels": true,
+    "section_5_recognition": true,
+    "section_6_mistakes": true,
+    "section_7_mastery": true,
+    "section_8_quiz": true,
+    "section_9_recall": true,
+    "check_marks_present": true
+  },
+  "examples_check": {
+    "real_olympiad": true,
+    "easy_count": 3,
+    "medium_count": 4,
+    "hard_count": 2
+  },
+  "verdict_reasoning": "Статията е изключително качествена: математически безупречна, с пълна структура, реални олимпиадни примери и отлично обяснение на техниката. Нулеви критични грешки и високо практическо приложение за ученици.",
+  "_tokens": 17973,
+  "_model": "deepseek/deepseek-r1-0528"
+}

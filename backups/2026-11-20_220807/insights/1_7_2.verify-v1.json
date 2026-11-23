@@ -1,0 +1,32 @@
+{
+  "score": 9,
+  "verdict": "approve",
+  "issues": [
+    {
+      "severity": "minor",
+      "section": "2",
+      "description": "В секция 2 се споменава, че в предоставения откъс няма подраздели 3.2 или 3.4. Това е излишно уточнение, което не носи стойност за ученика. По-добре е да се фокусира върху същността на темата."
+    }
+  ],
+  "math_errors": [],
+  "sections_present": {
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true,
+    "12": true
+  },
+  "plan_b_quality": "concrete",
+  "how_to_think_quality": "specific",
+  "word_count_actual": 2100,
+  "verdict_reasoning": "Картата е отлична: хваща критична грешка в предоставеното решение, дава конкретни проверки, план Б е реален, а секциите са пълни и логични. Единствено има дребен стилов коментар.",
+  "_attempt": 1,
+  "_model": "deepseek/deepseek-v3.2"
+}

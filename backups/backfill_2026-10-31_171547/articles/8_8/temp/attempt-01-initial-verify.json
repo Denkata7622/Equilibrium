@@ -1,0 +1,48 @@
+{
+  "verdict": "approve",
+  "score": 9,
+  "issues": [
+    {
+      "severity": "minor",
+      "section": "4.3 Hard examples",
+      "description": "Само 2 hard примери, докато структурата препоръчва 2-3. Добавянето на още един би било полезно."
+    },
+    {
+      "severity": "minor",
+      "section": "3.3 Теореми с доказателства",
+      "description": "Доказателството на Теорема 2 (нехомогенни) е твърде кратка; може да се разшири с още една стъпка."
+    }
+  ],
+  "strengths": [
+    "Използва реални олимпиадни задачи с точни източници (година, клас, номер)",
+    "Отлично покриване на edge cases във всички примери",
+    "CHECK-овете между нивата са ефективни за самопроверка",
+    "Секция 'Чести грешки' е конкретна и с практични насоки"
+  ],
+  "suggestions": [
+    "Добави още един hard пример (напр. за рекурентна връзка с f(n) ≠ 0)",
+    "Разшири доказателството на Теорема 2 с междинна стъпка"
+  ],
+  "math_errors": [],
+  "missing_topics": [],
+  "structure_check": {
+    "section_1_why_important": true,
+    "section_2_objectives": true,
+    "section_3_theory": true,
+    "section_4_examples_3_levels": true,
+    "section_5_recognition": true,
+    "section_6_mistakes": true,
+    "section_7_mastery": true,
+    "section_8_quiz": true,
+    "section_9_recall": true,
+    "check_marks_present": true
+  },
+  "examples_check": {
+    "real_olympiad": true,
+    "easy_count": 3,
+    "medium_count": 3,
+    "hard_count": 2
+  },
+  "verdict_reasoning": "Статията е математически коректна (проверени всички формули с конкретни примери), покрива цялата структура, използва реални олимпиадни задачи и примерите са с подходяща трудност. Единствено броят на hard примерите е в долната граница.",
+  "_tokens": 15375
+}

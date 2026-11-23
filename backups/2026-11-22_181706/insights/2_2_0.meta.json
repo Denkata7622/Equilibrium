@@ -1,0 +1,37 @@
+{
+  "key": "2.2#0",
+  "point_id": "2.2",
+  "idx": 0,
+  "difficulty": "hard",
+  "source": "OLI-3-Национален кръг-2000-9-12 кл · 2000-None · Зад. 2",
+  "techniques": [
+    "sine_theorem",
+    "similar_triangles",
+    "median_properties"
+  ],
+  "word_count": 1933,
+  "score": 8,
+  "verdict": "approve",
+  "verdict_raw": "reject",
+  "adjudicated": true,
+  "status": "done",
+  "structure": {
+    "missing": [],
+    "has_boxed": true,
+    "why_count": 11,
+    "sec12_words": 166,
+    "ends_ok": true,
+    "fatal": [],
+    "soft": []
+  },
+  "caught_errors_in_solution": [
+    "Условието е прекъснато и липсва споменатата в решението втора част.",
+    "„Центъра“ трябва да бъде „медицентъра“, защото разглежданите прави са медиани.",
+    "Означенията G, N, α, β и γ не са изрично определени.",
+    "Началното твърдение за перпендикулярите не може да се обоснове от записаното условие; разпознаването на кандидата не доказва съществуване за липсващото свойство."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 260.2,
+  "generated_at": "2026-11-21T19:39:24.037241"
+}

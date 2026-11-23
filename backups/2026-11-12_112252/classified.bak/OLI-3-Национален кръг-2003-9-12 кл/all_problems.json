@@ -1,0 +1,174 @@
+{
+  "pdf": "OLI-3-Национален кръг-2003-9-12 кл",
+  "classify_model": "deepseek/deepseek-r1-0528",
+  "classified_at": "2026-11-11T23:15:09.616500",
+  "problems": [
+    {
+      "num": "1",
+      "grade": null,
+      "year": 2003,
+      "round": "nacionalen",
+      "statement": "Find the least positive integer $n$ with the following property: if $n$ distinct sums of the form $x_p + x_q + x_r$, $1 \\le p < q < r \\le 5$, equal 0, then $x_1 = x_2 = x_3 = x_4 = x_5 = 0$.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source": "OLI-3-Национален кръг-2003-9-12 кл · 2003-? · Зад. 1",
+      "point_id": "13.1",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "hard",
+      "techniques": [
+        "combinatorics",
+        "pigeonhole_principle",
+        "extremal_principle"
+      ],
+      "reasoning": "Задачата изисква намиране на най-малкото n, такова че ако n суми от вида x_p + x_q + x_r са равни на 0, то всички променливи са нули. Решението използва комбинаторика и принципа на Дирихле, които са част от точка 13.1 (Теорема на Коши-Девънпорт). Трудността е hard поради нетривиалната комбинация от техники.",
+      "_paired": true,
+      "_grade_source": "grade_range",
+      "grade_range": [
+        9,
+        12
+      ]
+    },
+    {
+      "num": "2",
+      "grade": null,
+      "year": 2003,
+      "round": "nacionalen",
+      "statement": "Let $H$ be a point on the altitude $CP$ ($P ∈ AB$) of an acute $\\triangle  ABC$. The lines $AH$ and $BH$ intersect $BC$ and $AC$ at points $M$ and $N$, respectively.\n\na) Prove that $\\angle  MPC = \\angle  NPC$.\n\nb) The lines $MN$ and $CP$ intersect at $O$. A line through $O$ meets the sides of the quadrilateral $CNHM$ at points $D$ and $E$. Prove that $\\angle  DPC = \\angle  EPC$.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source": "OLI-3-Национален кръг-2003-9-12 кл · 2003-? · Зад. 2",
+      "point_id": "1.2",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "ceva_theorem",
+        "trigonometry",
+        "angle_chasing"
+      ],
+      "reasoning": "Геометрична задача с доказателство за равенство на ъгли и използване на теорема на Чева (точка 1.2). Решението използва тригонометрични съотношения и прилагане на Чева за част a). За част b) се използват допълнителни ъглови аргументи. Трудността е medium поради необходимостта от няколко стъпки.",
+      "_paired": true,
+      "_grade_source": "grade_range",
+      "grade_range": [
+        9,
+        12
+      ]
+    },
+    {
+      "num": "3",
+      "grade": null,
+      "year": 2003,
+      "round": "nacionalen",
+      "statement": "Consider the sequence\n\n$$y_1 = y_2 = 1, \\ y_{n+2} = (4k - 5)y_{n+1} - y_n + 4 - 2k, \\ n \\ge 1.$$\n\nFind all integers $k$ such that any term of the sequence is a perfect square.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source": "OLI-3-Национален кръг-2003-9-12 кл · 2003-? · Зад. 3",
+      "point_id": "7.6",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "hard",
+      "techniques": [
+        "linear_recurrence",
+        "perfect_squares",
+        "fibonacci_sequence"
+      ],
+      "reasoning": "Задачата включва рекурентна редица и търсене на цели k, такива че всички членове да са точни квадрати. Решението използва свойства на линейните рекурентни редици (точка 7.6) и специфично връзка с редицата на Фибоначи. Трудността е hard поради дългия анализ и нуждата от проверка на конкретни стойности.",
+      "_paired": true,
+      "_grade_source": "grade_range",
+      "grade_range": [
+        9,
+        12
+      ]
+    },
+    {
+      "num": "4",
+      "grade": null,
+      "year": 2003,
+      "round": "nacionalen",
+      "statement": "A set of at least three positive integers is called uniform if removing any of its elements the remaining set can be disjoint into two subsets with equal sums of elements. Find the minimal cardinality of a uniform set.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source": "OLI-3-Национален кръг-2003-9-12 кл · 2003-? · Зад. 4",
+      "point_id": "8.15",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "hard",
+      "techniques": [
+        "extremal_set_theory",
+        "parity_arguments",
+        "combinatorial_design"
+      ],
+      "reasoning": "Задачата търси минималния брой елементи в множество, което е 'uniform'. Решението използва екстремални аргументи (точка 8.15) и анализ на паритета. Трудността е hard поради комбинаторната сложност и необходимостта от изчерпателно разглеждане на случаи.",
+      "_paired": true,
+      "_grade_source": "grade_range",
+      "grade_range": [
+        9,
+        12
+      ]
+    },
+    {
+      "num": "5",
+      "grade": null,
+      "year": 2003,
+      "round": "nacionalen",
+      "statement": "Let $a$, $b$ and $c$ be rational numbers such that $a + b + c$ and $a^2 + b^2 + c^2$ are equal integers. Prove that the number $abc$ can be written as a ratio of a perfect cube and a perfect square that are coprime.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source": "OLI-3-Национален кръг-2003-9-12 кл · 2003-? · Зад. 5",
+      "point_id": "4.2",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "medium",
+      "techniques": [
+        "diophantine_equations",
+        "rational_numbers",
+        "coprime_conditions"
+      ],
+      "reasoning": "Задачата доказва, че abc е отношение на куб и квадрат на взаимно прости числа при дадени условия. Решението използва диофантови уравнения (точка 4.2) и анализ на рационални числа. Трудността е medium поради алгебричните трансформации.",
+      "_paired": true,
+      "_grade_source": "grade_range",
+      "grade_range": [
+        9,
+        12
+      ]
+    },
+    {
+      "num": "6",
+      "grade": null,
+      "year": 2003,
+      "round": "nacionalen",
+      "statement": "Find all polynomials $P(x)$ with integer coefficients such that for any positive integer $n$ the equation $P(x) = 2^n$ has an integer solution.",
+      "solution": "",
+      "answer": null,
+      "page": 1,
+      "source": "OLI-3-Национален кръг-2003-9-12 кл · 2003-? · Зад. 6",
+      "point_id": "5.5",
+      "point_confidence": "exact",
+      "alternative_points": [],
+      "difficulty": "hard",
+      "techniques": [
+        "polynomials",
+        "integer_solutions",
+        "eisenstein_criterion"
+      ],
+      "reasoning": "Задачата търси полиноми с цели коефициенти, такива че P(x)=2^n има целочислено решение за всяко n. Решението използва теория на полиномите (точка 5.5) и критерий на Айзенщайн. Трудността е hard поради нетривиалното прилагане на алгебрична теория.",
+      "_paired": true,
+      "_grade_source": "grade_range",
+      "grade_range": [
+        9,
+        12
+      ]
+    }
+  ],
+  "paired": true,
+  "matched": 6,
+  "orphan_kept": 0,
+  "no_sol": 0,
+  "dropped_unclassifiable": 0
+}

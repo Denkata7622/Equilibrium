@@ -1,0 +1,36 @@
+{
+  "key": "2.11#2",
+  "point_id": "2.11",
+  "idx": 2,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-2005-10 кл · 2005-10 · Зад. 10.5",
+  "techniques": [
+    "cyclic_quadrilateral",
+    "symmedian",
+    "circumcircle"
+  ],
+  "word_count": 1757,
+  "score": 9,
+  "verdict": "approve",
+  "verdict_raw": "approve",
+  "adjudicated": false,
+  "status": "done",
+  "structure": {
+    "missing": [],
+    "has_boxed": true,
+    "why_count": 7,
+    "sec12_words": 155,
+    "ends_ok": true,
+    "fatal": [],
+    "soft": []
+  },
+  "caught_errors_in_solution": [
+    "В предоставеното решение погрешно са посочени BH_1 и BH_2 като ъглополовящи; трябва да се използват ъглополовящите през C.",
+    "Пропуснат е случаят ∠ACB=90°, когато H=H_1=H_2=C и окръжността с диаметър CH се изражда.",
+    "Не са уточнени съвпаденията на точки при CA=CB и при прав ъгъл при A или B; те изискват отделна проверка или формулировка чрез принадлежност към окръжност."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 155.9,
+  "generated_at": "2026-11-21T19:30:34.889189"
+}

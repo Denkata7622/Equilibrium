@@ -1,0 +1,24 @@
+{
+  "key": "1.6#3",
+  "point_id": "1.6",
+  "idx": 3,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-1996-11 кл · 1996-11 · Зад. 11.5",
+  "techniques": [
+    "sine_theorem",
+    "trigonometric_identities",
+    "angle_chasing"
+  ],
+  "word_count": 1622,
+  "score": 9,
+  "verdict": "approve",
+  "caught_errors_in_solution": [
+    "Няма установена грешна формула. Пропусната е обосновката на подредбата E,A,B и E,D,C.",
+    "Не е изрично проверено, че знаменателите при тригонометричните преобразувания са ненулеви.",
+    "При заключението от sin(β−δ)=0 е пропуснат аргументът, че −180°<β−δ<180°."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 164.4,
+  "generated_at": "2026-11-19T22:36:06.938833"
+}

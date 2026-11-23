@@ -1,0 +1,25 @@
+{
+  "key": "1.6#0",
+  "point_id": "1.6",
+  "idx": 0,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-1995-10 кл · 1995-10 · Зад. 10.2",
+  "techniques": [
+    "ptolemy_theorem",
+    "trigonometric_identities",
+    "area_ratios"
+  ],
+  "word_count": 1505,
+  "score": 9,
+  "verdict": "approve",
+  "caught_errors_in_solution": [
+    "Знакът за еднаквост на триъгълниците трябва да бъде заменен със знак за подобие.",
+    "При долната оценка знаменателите трябва да бъдат b^2 и c^2, а не b и c.",
+    "Правилното синусово отношение е sin^2(π/7)/(sin(2π/7)sin(3π/7)); отпечатаният знаменател е грешен.",
+    "Реципрочната стойност 1/[4(√2/2)(1+√2/2)] е (√2−1)/2, а не √2−1."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 221.7,
+  "generated_at": "2026-11-19T22:26:51.940868"
+}

@@ -1,0 +1,24 @@
+{
+  "key": "1.4#2",
+  "point_id": "1.4",
+  "idx": 2,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-1999-11 кл · 1999-11 · Зад. 11.2",
+  "techniques": [
+    "circle_properties",
+    "trigonometry",
+    "area_calculation"
+  ],
+  "word_count": 1727,
+  "score": 9,
+  "verdict": "approve",
+  "caught_errors_in_solution": [
+    "След „Therefore“ липсва формулата за лицето на триъгълника MEN; възстановена е като S_MEN = AC·BE·(R²−OE²)·sin∠AEB/(8R²).",
+    "В предоставеното решение не е обосновано разлагането на MNPQ на четирите триъгълника с общ връх E; добавена е проверка на разположението.",
+    "В запазените математически формули не е установена грешка; текстът „Downloaded from Klasirane.com“ и номерацията на страницата са технически артефакти."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 181.0,
+  "generated_at": "2026-11-19T22:07:08.525197"
+}

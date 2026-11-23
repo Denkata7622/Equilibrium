@@ -1,0 +1,36 @@
+{
+  "key": "11.7#0",
+  "point_id": "11.7",
+  "idx": 0,
+  "difficulty": "hard",
+  "source": "OLI-3-Национален кръг-1990-9-12 кл · 1990-None · Зад. 3",
+  "techniques": [
+    "cyclotomic_polynomials",
+    "roots_of_unity",
+    "multiplicative_functions"
+  ],
+  "word_count": 1747,
+  "score": 9,
+  "verdict": "approve",
+  "status": "done",
+  "structure": {
+    "missing": [],
+    "has_boxed": true,
+    "why_count": 9,
+    "sec12_words": 158,
+    "ends_ok": true,
+    "fatal": [],
+    "soft": []
+  },
+  "caught_errors_in_solution": [
+    "В условието е повторен множителят x^{n/p_1}-1, а многоточията изискват уточнение чрез всички подмножества.",
+    "В ъгловото условие за принадлежност на корен липсва k; правилното условие е n|kd, еквивалентно на (n/d)|k.",
+    "След доказването на полиномиалността е пропуснато доказателството за цели коефициенти; добавено е деление с моничен знаменател.",
+    "В част б) при броенето на кратността е изпуснато -1: правилният израз е 2^{n/(p_{j_1}...p_{j_m})}-1.",
+    "Включването между подмножествата в част б) трябва да допуска и равенство."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 119.2,
+  "generated_at": "2026-11-21T09:03:42.424766"
+}

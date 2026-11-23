@@ -1,0 +1,11 @@
+{
+  "pdf": "OLI-2-Областен кръг-2001-11 кл",
+  "classify_model": "deepseek/deepseek-r1-0528",
+  "classified_at": "2026-11-11T22:26:54.995787",
+  "problems": [],
+  "paired": true,
+  "matched": 0,
+  "orphan_kept": 0,
+  "no_sol": 0,
+  "dropped_unclassifiable": 0
+}

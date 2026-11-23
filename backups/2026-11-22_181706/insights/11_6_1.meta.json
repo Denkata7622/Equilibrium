@@ -1,0 +1,38 @@
+{
+  "key": "11.6#1",
+  "point_id": "11.6",
+  "idx": 1,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-2005-10 кл · 2005-10 · Зад. 10.4",
+  "techniques": [
+    "quadratic_equation",
+    "discriminant",
+    "monotonic_function"
+  ],
+  "word_count": 1639,
+  "score": 9,
+  "verdict": "approve",
+  "status": "done",
+  "structure": {
+    "missing": [],
+    "has_boxed": true,
+    "why_count": 7,
+    "sec12_words": 146,
+    "ends_ok": true,
+    "fatal": [],
+    "soft": []
+  },
+  "caught_errors_in_solution": [
+    "Записаното D=(9a^2-1)^2 е редуцираната дискриминанта; стандартната дискриминанта на първото уравнение е D=4(9a^2-1)^2. Крайният отговор не се променя."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 95.5,
+  "generated_at": "2026-11-20T22:42:11.821809",
+  "lesson_refs": [
+    "5.9",
+    "11.6"
+  ],
+  "enriched": true,
+  "enriched_at": "2026-11-22T18:13:19.271536"
+}

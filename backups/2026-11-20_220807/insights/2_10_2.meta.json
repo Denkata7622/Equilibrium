@@ -1,0 +1,24 @@
+{
+  "key": "2.10#2",
+  "point_id": "2.10",
+  "idx": 2,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-2020-11 кл · 2020-11 · Зад. 11.2",
+  "techniques": [
+    "inscribed_angles",
+    "circle_properties",
+    "angle_bisector"
+  ],
+  "word_count": 1657,
+  "score": 9,
+  "verdict": "approve",
+  "caught_errors_in_solution": [
+    "В предоставеното оценяване сборът на изброените точки е 8, а не обявените 7.",
+    "Попълнена е пропуснатата обосновка защо AX е вътрешна ъглополовяща на ъгъл OAC.",
+    "Добавена е липсващата проверка за съществуване на точка X върху страната BC при намерените ъгли."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 137.8,
+  "generated_at": "2026-11-19T23:23:02.299764"
+}

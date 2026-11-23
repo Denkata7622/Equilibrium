@@ -1,0 +1,32 @@
+{
+  "score": 9,
+  "verdict": "approve",
+  "issues": [
+    {
+      "severity": "minor",
+      "section": "2",
+      "description": "В секция 2 се казва, че не може да се посочи номер на секция, защото не е предоставена статия. Това е технически проблем, но не засяга качеството на картата."
+    }
+  ],
+  "math_errors": [],
+  "sections_present": {
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true,
+    "12": true
+  },
+  "plan_b_quality": "concrete",
+  "how_to_think_quality": "specific",
+  "word_count_actual": 2100,
+  "verdict_reasoning": "Картата е изключително добре структурирана, с конкретни проверки на формули, хваща критични грешки в предоставеното решение и дава ясни, практически насоки. Self-check отговорите са верни, а план Б е реален алтернативен подход.",
+  "_attempt": 3,
+  "_model": "deepseek/deepseek-v3.2"
+}

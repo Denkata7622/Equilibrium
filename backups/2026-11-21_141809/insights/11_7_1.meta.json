@@ -1,0 +1,34 @@
+{
+  "key": "11.7#1",
+  "point_id": "11.7",
+  "idx": 1,
+  "difficulty": "hard",
+  "source": "OLI-3-Национален кръг-2008-9-12 кл · 2008-None · Зад. 3",
+  "techniques": [
+    "complex_numbers",
+    "roots_of_unity",
+    "linear_recurrence"
+  ],
+  "word_count": 1634,
+  "score": 8,
+  "verdict": "revise",
+  "status": "done",
+  "structure": {
+    "missing": [],
+    "has_boxed": true,
+    "why_count": 7,
+    "sec12_words": 172,
+    "ends_ok": true,
+    "fatal": [],
+    "soft": []
+  },
+  "caught_errors_in_solution": [
+    "Решението използва различност на ъглите, която липсва в записаното условие; при повторени ъгли твърдението е невярно.",
+    "В последното тригонометрично равенство липсват коефициентите вляво и се смесват означенията a_j и b_j.",
+    "Приложението към 2n различни основи изисква корекция при ъгли 0 и π: съвпадащите комплексно спрегнати основи трябва първо да се обединят."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 106.4,
+  "generated_at": "2026-11-21T10:31:52.873186"
+}

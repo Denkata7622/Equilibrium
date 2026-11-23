@@ -1,0 +1,48 @@
+{
+  "verdict": "approve",
+  "score": 9,
+  "issues": [
+    {
+      "severity": "minor",
+      "section": "4.1 Easy examples",
+      "description": "Броят на лесните примери е 2, а препоръката е 3. Това не е фатално, но за пълнота може да се добави още един."
+    },
+    {
+      "severity": "minor",
+      "section": "4.2 Medium examples",
+      "description": "Броят на средните примери е 2, а препоръката е 3-4. Качеството е добро, но допълнителен пример би бил полезен."
+    }
+  ],
+  "strengths": [
+    "Математическата коректност е безупречна - всички формули, доказателства и решения са проверени и верни.",
+    "Структурата е изцяло покрита, включително CHECK-ове между нивата.",
+    "Примерите са реални олимпиадни задачи с точни източници (Областен кръг 2019, 2020, 2021).",
+    "Педагогически подход - показване на чести грешки (както в Пример 4) и техните коригирания."
+  ],
+  "suggestions": [
+    "Добави още един лесен пример в секция 4.1 за постигане на препоръчания брой 3.",
+    "Разгледай добавяне на още един среден пример в секция 4.2, особено от областен кръг."
+  ],
+  "math_errors": [],
+  "missing_topics": [],
+  "structure_check": {
+    "section_1_why_important": true,
+    "section_2_objectives": true,
+    "section_3_theory": true,
+    "section_4_examples_3_levels": true,
+    "section_5_recognition": true,
+    "section_6_mistakes": true,
+    "section_7_mastery": true,
+    "section_8_quiz": true,
+    "section_9_recall": true,
+    "check_marks_present": true
+  },
+  "examples_check": {
+    "real_olympiad": true,
+    "easy_count": 2,
+    "medium_count": 2,
+    "hard_count": 2
+  },
+  "verdict_reasoning": "Статията е математически безупречна, напълно покрива структурата и използва реални олимпиадни задачи. Минорни забележки за броя примери не променят високата оценка.",
+  "_tokens": 15698
+}

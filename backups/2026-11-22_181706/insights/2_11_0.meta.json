@@ -1,0 +1,33 @@
+{
+  "key": "2.11#0",
+  "point_id": "2.11",
+  "idx": 0,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-2000-10 кл · 2000-10 · Зад. 6",
+  "techniques": [
+    "thales_theorem"
+  ],
+  "word_count": 1895,
+  "score": 8,
+  "verdict": "approve",
+  "verdict_raw": "revise",
+  "adjudicated": true,
+  "status": "done",
+  "structure": {
+    "missing": [],
+    "has_boxed": true,
+    "why_count": 7,
+    "sec12_words": 187,
+    "ends_ok": true,
+    "fatal": [],
+    "soft": []
+  },
+  "caught_errors_in_solution": [
+    "Във втория случай твърдението ∠ACD<90° е невярно: A,C,D са колинеарни, а в получената конфигурация ∠ACD=180°. Заменено е с доказателство, че C не принадлежи на окръжността с диаметър AD.",
+    "В предоставеното решение липсва изрична проверка на достатъчността. Добавена е проверка на трите разделяния на четирите точки на две двойки и обяснение за двойките диаметри с общ край."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 187.5,
+  "generated_at": "2026-11-21T19:24:05.102676"
+}

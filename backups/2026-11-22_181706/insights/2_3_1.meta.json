@@ -1,0 +1,35 @@
+{
+  "key": "2.3#1",
+  "point_id": "2.3",
+  "idx": 1,
+  "difficulty": "hard",
+  "source": "OLI-3-Национален кръг-1995-9-12 кл · 1995-None · Зад. 2",
+  "techniques": [
+    "inversion",
+    "excircle",
+    "circumcircle"
+  ],
+  "word_count": 1659,
+  "score": 8,
+  "verdict": "approve",
+  "verdict_raw": "revise",
+  "adjudicated": true,
+  "status": "done",
+  "structure": {
+    "missing": [],
+    "has_boxed": true,
+    "why_count": 9,
+    "sec12_words": 139,
+    "ends_ok": true,
+    "fatal": [],
+    "soft": []
+  },
+  "caught_errors_in_solution": [
+    "Изводът i(k_1)=k_1 само от неподвижността на P и Q е необоснован. Добавена е необходимата обосновка чрез ортогоналността на k_1 и инверсионната окръжност.",
+    "Равенството CP=CQ=p е използвано без доказателство; добавено е извеждането му чрез равните допирателни."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 227.7,
+  "generated_at": "2026-11-21T19:45:37.280906"
+}

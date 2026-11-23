@@ -1,0 +1,33 @@
+{
+  "key": "12.1#0",
+  "point_id": "12.1",
+  "idx": 0,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-2024-12 кл · 2024-12 · Зад. 12.3",
+  "techniques": [
+    "комплексни_числа",
+    "медиацентър",
+    "косинусова_теорема"
+  ],
+  "word_count": 1597,
+  "score": 10,
+  "verdict": "approve",
+  "status": "done",
+  "structure": {
+    "missing": [],
+    "has_boxed": true,
+    "why_count": 9,
+    "sec12_words": 147,
+    "ends_ok": true,
+    "fatal": [],
+    "soft": []
+  },
+  "caught_errors_in_solution": [
+    "В първата формула на косинусовата теорема е извадено |A_nB_n|^2 вместо правилното |B_nC_n|^2.",
+    "Пропусната е проверката, че всички построени триъгълници са неизродени, необходима за твърдението за обща вътрешна точка."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 97.2,
+  "generated_at": "2026-11-21T14:10:46.985079"
+}

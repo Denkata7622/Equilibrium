@@ -1,0 +1,37 @@
+{
+  "score": 9,
+  "verdict": "approve",
+  "issues": [
+    {
+      "severity": "minor",
+      "section": "2",
+      "description": "Секция 'Къде се вписва в темата' е малко абстрактна и не посочва конкретна тема от статията (например 'Коши–Девънпорт'), но това не е критично, тъй като картата е самостоятелна."
+    },
+    {
+      "severity": "minor",
+      "section": "5",
+      "description": "'План Б' е добър, но може да се направи още по-конкретен с пример за n=3."
+    }
+  ],
+  "math_errors": [],
+  "sections_present": {
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true,
+    "12": true
+  },
+  "plan_b_quality": "concrete",
+  "how_to_think_quality": "specific",
+  "word_count_actual": 2200,
+  "verdict_reasoning": "Картата е отлична: математически безупречна, с конкретни проверки, хваща грешка в предоставеното решение, има всички секции и е много добре структурирана за ученик.",
+  "_attempt": 1,
+  "_model": "deepseek/deepseek-v3.2"
+}

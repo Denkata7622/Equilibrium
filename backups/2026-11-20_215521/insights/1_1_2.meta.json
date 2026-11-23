@@ -1,0 +1,25 @@
+{
+  "key": "1.1#2",
+  "point_id": "1.1",
+  "idx": 2,
+  "difficulty": "hard",
+  "source": "OLI-3-Национален кръг-1984-9-12 кл · 1984-None · Зад. 2",
+  "techniques": [
+    "menelaus_theorem",
+    "area_ratios",
+    "similar_triangles"
+  ],
+  "word_count": 1577,
+  "score": 9,
+  "verdict": "approve",
+  "caught_errors_in_solution": [
+    "В преписа са изгубени дробни черти; възстановени са отношенията и формулите.",
+    "Записите „k0“ и „i k“ са OCR артефакти; правилното е AP/CP=k и k=1+√2.",
+    "Попълнена е пропуснатата обосновка на отношението на лицата чрез общия синус на ъгъла между диагоналите.",
+    "Не е установена същинска математическа грешка в предоставеното решение."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 134.7,
+  "generated_at": "2026-11-18T22:02:29.910051"
+}

@@ -1,0 +1,35 @@
+{
+  "key": "11.6#0",
+  "point_id": "11.6",
+  "idx": 0,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-1996-11 кл · 1996-11 · Зад. 11.3",
+  "techniques": [
+    "derivatives",
+    "polynomials",
+    "chebyshev_polynomials",
+    "inequalities"
+  ],
+  "word_count": 1665,
+  "score": 6,
+  "verdict": "revise",
+  "status": "done",
+  "structure": {
+    "missing": [],
+    "has_boxed": true,
+    "why_count": 9,
+    "sec12_words": 165,
+    "ends_ok": true,
+    "fatal": [],
+    "soft": []
+  },
+  "caught_errors_in_solution": [
+    "При допускането M<1 строгите знаци изключват g≡0; трите различни корена дават противоречие, а не допустим случай a=b+3=c=0.",
+    "Предоставеното решение не доказва единствеността при M=1; необходим е отделен аргумент за нестрогите неравенства."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 311.9,
+  "generated_at": "2026-11-20T22:40:36.285053",
+  "accepted_manually": true
+}

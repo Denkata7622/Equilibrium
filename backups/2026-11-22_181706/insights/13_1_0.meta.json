@@ -1,0 +1,32 @@
+{
+  "key": "13.1#0",
+  "point_id": "13.1",
+  "idx": 0,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-2003-11 кл · 2003-11 · Зад. 11.6",
+  "techniques": [
+    "chinese_remainder_theorem",
+    "prime_numbers",
+    "combinatorics"
+  ],
+  "word_count": 1942,
+  "score": 9,
+  "verdict": "approve",
+  "status": "done",
+  "structure": {
+    "missing": [],
+    "has_boxed": true,
+    "why_count": 8,
+    "sec12_words": 178,
+    "ends_ok": true,
+    "fatal": [],
+    "soft": []
+  },
+  "caught_errors_in_solution": [
+    "В записаното условие липсва предпоставката, че C е добро множество; предоставеното решение я използва. Без нея C={2003} е контрапример."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 131.8,
+  "generated_at": "2026-11-21T14:20:21.545817"
+}

@@ -1,0 +1,32 @@
+{
+  "score": 9,
+  "verdict": "approve",
+  "issues": [
+    {
+      "severity": "minor",
+      "section": "1",
+      "description": "Картата отбелязва, че условието е некоректно, ако 'средната основа' се разбира като отсечка, а не права. Това е важно уточнение, но не е грешка в картата."
+    }
+  ],
+  "math_errors": [],
+  "sections_present": {
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true,
+    "12": true
+  },
+  "plan_b_quality": "concrete",
+  "how_to_think_quality": "specific",
+  "word_count_actual": 2100,
+  "verdict_reasoning": "Картата е изключително добре структурирана, с конкретни проверки, хваща грешка в предоставеното решение и дава ясни, специфични насоки. Отговаря на всички критерии за високо качество.",
+  "_attempt": 1,
+  "_model": "deepseek/deepseek-v3.2"
+}

@@ -1,0 +1,32 @@
+{
+  "score": 9,
+  "verdict": "approve",
+  "issues": [
+    {
+      "severity": "minor",
+      "section": "1",
+      "description": "Отбелязано е несъответствие в източниците (областен кръг 12 клас vs. задача за 10 клас). Това не е грешка в картата, а забележка към метаданните."
+    }
+  ],
+  "math_errors": [],
+  "sections_present": {
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true,
+    "12": true
+  },
+  "plan_b_quality": "concrete",
+  "how_to_think_quality": "specific",
+  "word_count_actual": 2100,
+  "verdict_reasoning": "Картата е отлична. Хваща критични грешки в предоставеното решение, дава конкретни и верни алтернативи, секциите са пълни и смислени. Само една дребна забележка към метаданните.",
+  "_attempt": 1,
+  "_model": "deepseek/deepseek-v3.2"
+}

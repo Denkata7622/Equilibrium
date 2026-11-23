@@ -1,0 +1,32 @@
+{
+  "key": "1.1#2",
+  "point_id": "1.1",
+  "idx": 2,
+  "difficulty": "hard",
+  "source": "OLI-3-Национален кръг-1984-9-12 кл · 1984-None · Зад. 2",
+  "techniques": [
+    "menelaus_theorem",
+    "area_ratios",
+    "similar_triangles"
+  ],
+  "word_count": 1595,
+  "score": 9,
+  "verdict": "approve",
+  "status": "done",
+  "structure": {
+    "missing": [],
+    "has_boxed": true,
+    "why_count": 8,
+    "sec12_words": 159,
+    "ends_ok": true,
+    "fatal": [],
+    "soft": []
+  },
+  "caught_errors_in_solution": [
+    "Повреденият запис „AP CP = k0“ е възстановен като AP/CP = k; техническите повреди в дробите са поправени. Не е установена съдържателна математическа грешка в предоставеното решение."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 111.4,
+  "generated_at": "2026-11-20T22:02:09.950779"
+}

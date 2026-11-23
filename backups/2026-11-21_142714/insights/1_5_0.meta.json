@@ -1,0 +1,23 @@
+{
+  "key": "1.5#0",
+  "point_id": "1.5",
+  "idx": 0,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-1997-10 кл · 1997-10 · Зад. 10.2",
+  "techniques": [
+    "vector_geometry",
+    "circle_quadrilateral",
+    "ratio_properties"
+  ],
+  "word_count": 1640,
+  "score": 9,
+  "verdict": "approve",
+  "caught_errors_in_solution": [
+    "В предоставеното решение липсва обосновка, че k≠1, преди делението на k²−1. Добавено е доказателство чрез системата за пресечната точка: k=1 води до c=d и A=D.",
+    "Допълнени са обосновките за линейната независимост на двата единични вектора и за EF>0 преди делението на квадратите."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 269.6,
+  "generated_at": "2026-11-19T22:14:27.394279"
+}

@@ -1,0 +1,32 @@
+{
+  "score": 9,
+  "verdict": "approve",
+  "issues": [
+    {
+      "severity": "minor",
+      "section": "1",
+      "description": "В секция 1 е отбелязано, че в предоставеното оценяване има аритметична грешка (8 точки вместо 7). Това е добре, но не е математическа грешка в решението."
+    }
+  ],
+  "math_errors": [],
+  "sections_present": {
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true,
+    "12": true
+  },
+  "plan_b_quality": "concrete",
+  "how_to_think_quality": "specific",
+  "word_count_actual": 2200,
+  "verdict_reasoning": "Картата е изключително добре структурирана, с конкретни проверки, реален план Б и специфични насоки. Попълва критични пропуски от предоставеното решение (проверка за вътрешна ъглополовяща, съществуване).",
+  "_attempt": 1,
+  "_model": "deepseek/deepseek-v3.2"
+}

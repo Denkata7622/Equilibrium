@@ -1,0 +1,24 @@
+{
+  "key": "1.6#1",
+  "point_id": "1.6",
+  "idx": 1,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-1995-11 кл · 1995-11 · Зад. 11.2",
+  "techniques": [
+    "ptolemy_theorem",
+    "trigonometric_identities"
+  ],
+  "word_count": 1610,
+  "score": 10,
+  "verdict": "approve",
+  "caught_errors_in_solution": [
+    "Триъгълниците A1A2A3 и B1B2B3 са подобни, а не еднакви; знакът ≅ трябва да бъде ∼.",
+    "В доказателството на долната граница a²/b + a²/c трябва да бъде a²/b² + a²/c².",
+    "В синусовия израз знаменателят трябва да бъде sin(2π/7)sin(4π/7), а не sin²(π/7)sin(4π/7).",
+    "Стойността 1/[4(√2/2)(1+√2/2)] е (√2−1)/2, а не √2−1."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 206.8,
+  "generated_at": "2026-11-19T22:30:18.706179"
+}

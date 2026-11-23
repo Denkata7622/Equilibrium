@@ -1,0 +1,24 @@
+{
+  "key": "1.5#2",
+  "point_id": "1.5",
+  "idx": 2,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-1997-12 кл · 1997-12 · Зад. 12.2",
+  "techniques": [
+    "vector_algebra",
+    "ratio_properties",
+    "cyclic_quadrilateral"
+  ],
+  "word_count": 1610,
+  "score": 8,
+  "verdict": "revise",
+  "caught_errors_in_solution": [
+    "Не е изрично уточнено, че AD и BC трябва да са непаралелни; иначе E не е определена като крайна точка.",
+    "Преди делението на k^2-1 липсва доказателство, че k≠1.",
+    "Подобието EAB∼ECD и съответствието A↔C, B↔D са използвани без обосновка; в картата тази стъпка е допълнена."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 146.0,
+  "generated_at": "2026-11-19T22:20:16.262354"
+}

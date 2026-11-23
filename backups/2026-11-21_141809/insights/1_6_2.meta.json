@@ -1,0 +1,24 @@
+{
+  "key": "1.6#2",
+  "point_id": "1.6",
+  "idx": 2,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-1995-12 кл · 1995-12 · Зад. 12.2",
+  "techniques": [
+    "ptolemy_theorem",
+    "trigonometric_identities"
+  ],
+  "word_count": 1523,
+  "score": 10,
+  "verdict": "approve",
+  "caught_errors_in_solution": [
+    "Триъгълниците A1A2A3 и B1B2B3 са подобни, а не еднакви; знакът ≅ трябва да бъде заменен с ∼.",
+    "При долната оценка a²/b+a²/c трябва да бъде a²/b²+a²/c².",
+    "В синусовото отношение правилният знаменател е sin(2π/7)sin(4π/7), еквивалентно sin(2π/7)sin(3π/7), а не sin²(π/7)sin(4π/7).",
+    "Стойността на 1/[4(√2/2)(1+√2/2)] е (√2−1)/2, а не √2−1. Поправката дава точно необходимата горна граница 2−√2."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 183.9,
+  "generated_at": "2026-11-19T22:33:22.573477"
+}

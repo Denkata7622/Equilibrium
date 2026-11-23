@@ -1,0 +1,31 @@
+{
+  "key": "13.1#1",
+  "point_id": "13.1",
+  "idx": 1,
+  "difficulty": "hard",
+  "source": "OLI-3-Национален кръг-1993-9-12 кл · 1993-None · Зад. 4",
+  "techniques": [
+    "combinatorial_number_theory",
+    "pigeonhole_principle"
+  ],
+  "word_count": 1808,
+  "score": 9,
+  "verdict": "approve",
+  "status": "done",
+  "structure": {
+    "missing": [],
+    "has_boxed": true,
+    "why_count": 7,
+    "sec12_words": 167,
+    "ends_ok": true,
+    "fatal": [],
+    "soft": []
+  },
+  "caught_errors_in_solution": [
+    "В предоставеното решение липсва проверка, че двете равни по модул суми идват от различни неупорядъчени двойки индекси. Попълнена е чрез различността на наредените двойки разлики и проверка на мултимножествата от индекси."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 122.8,
+  "generated_at": "2026-11-21T14:22:24.348950"
+}

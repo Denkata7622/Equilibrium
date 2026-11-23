@@ -1,0 +1,35 @@
+{
+  "key": "12.1#1",
+  "point_id": "12.1",
+  "idx": 1,
+  "difficulty": "hard",
+  "source": "OLI-3-Национален кръг-1990-9-12 кл · 1990-None · Зад. 2",
+  "techniques": [
+    "complex_numbers",
+    "orthogonality",
+    "parabola"
+  ],
+  "word_count": 1676,
+  "score": 9,
+  "verdict": "approve",
+  "status": "done",
+  "structure": {
+    "missing": [],
+    "has_boxed": true,
+    "why_count": 10,
+    "sec12_words": 152,
+    "ends_ok": true,
+    "fatal": [],
+    "soft": []
+  },
+  "caught_errors_in_solution": [
+    "Условието допуска α=0, но тогава единственост няма; необходимо е α>0.",
+    "Твърдението, че всяка права през P има уравнение с реален наклон λ, пропуска вертикалната права.",
+    "Изключването на най-много една стойност от λx₀−y₀=0 изисква предварително да се отхвърли P=O.",
+    "Не е изяснено, че геометричната перпендикулярност изисква ненулеви отсечки; нулевото скаларно произведение само по себе си не покрива дегенеративния случай."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 131.3,
+  "generated_at": "2026-11-21T14:12:58.259419"
+}

@@ -1,0 +1,25 @@
+{
+  "key": "2.10#0",
+  "point_id": "2.10",
+  "idx": 0,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-2005-11 кл · 2005-11 · Зад. 11.5",
+  "techniques": [
+    "angle_bisectors",
+    "circumcircle",
+    "incircle",
+    "sine_theorem"
+  ],
+  "word_count": 1703,
+  "score": 9,
+  "verdict": "approve",
+  "caught_errors_in_solution": [
+    "В последното изречение SR е печатна грешка; правилното е SP. Правата SR съвпада с AC и не съдържа инцентъра.",
+    "Пропусната е проверката, че N и R са от една и съща страна на BC като инцентъра. Само равенството на разстоянията до BC не обосновава извода.",
+    "Не са обосновани ъглите в триъгълника B1RC; добавено е, че ъгълът при R е 90°+γ/2 и затова синусът му е cos(γ/2)."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 187.8,
+  "generated_at": "2026-11-19T23:17:23.565698"
+}

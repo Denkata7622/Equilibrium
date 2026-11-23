@@ -1,0 +1,59 @@
+{
+  "verdict": "approve",
+  "score": 8,
+  "issues": [
+    {
+      "severity": "major",
+      "section": "4.3 Hard examples",
+      "description": "Липсва CHECK след hard примерите, както е изисквано в структурата."
+    },
+    {
+      "severity": "minor",
+      "section": "4.2 Medium examples (Задача 4)",
+      "description": "Решението е непълно; не е даден окончателен отговор или контекст от реалната олимпиадна задача."
+    },
+    {
+      "severity": "minor",
+      "section": "Примери като цяло",
+      "description": "Броят примери е под препоръчания: easy (2 вместо 3), medium (2 вместо 3-4), hard (2 вместо 2-3)."
+    },
+    {
+      "severity": "minor",
+      "section": "Олимпийска релевантност",
+      "description": "Не са посочени конкретни източници (номер на задача или пълен контекст) за примерите, което намалява автентичността."
+    }
+  ],
+  "strengths": [
+    "Отлична покритост на теорията с ясни доказателства и интуитивни обяснения.",
+    "Добро структуриране на секциите, особено в 'Чести грешки' и 'Как да разпознаеш'.",
+    "Правилна проверка на edge cases във всички ключови моменти."
+  ],
+  "suggestions": [
+    "Добави CHECK след hard примерите за затвърждаване.",
+    "Посочи конкретни източници за задачите (напр. 'Задача 3 от Областен кръг 2017, 10 клас').",
+    "Довърши решението на Задача 4 или добави бележка за контекста от реалната олимпиада.",
+    "Добави по още един пример в easy и medium секциите за по-пълно покритие."
+  ],
+  "math_errors": [],
+  "missing_topics": [],
+  "structure_check": {
+    "section_1_why_important": true,
+    "section_2_objectives": true,
+    "section_3_theory": true,
+    "section_4_examples_3_levels": true,
+    "section_5_recognition": true,
+    "section_6_mistakes": true,
+    "section_7_mastery": true,
+    "section_8_quiz": true,
+    "section_9_recall": true,
+    "check_marks_present": false
+  },
+  "examples_check": {
+    "real_olympiad": false,
+    "easy_count": 2,
+    "medium_count": 2,
+    "hard_count": 2
+  },
+  "verdict_reasoning": "Статията е математически коректна и покрива структурата на 90%, с малки пропуски в броя примери и липса на CHECK за hard. Оценка 8/10 поради високо качество на обясненията и педагогическа стойност, но с нужда от дребни подобрения.",
+  "_tokens": 18578
+}

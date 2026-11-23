@@ -1,0 +1,22 @@
+{
+  "key": "1.7#3",
+  "point_id": "1.7",
+  "idx": 3,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-2005-10 кл · 2005-10 · Зад. 10.2",
+  "techniques": [
+    "median_formula",
+    "ptolemy_theorem"
+  ],
+  "word_count": 1663,
+  "score": 9,
+  "verdict": "approve",
+  "caught_errors_in_solution": [
+    "Няма установена грешна формула. В последната стъпка е пропуснато обяснението MP=d/2, NP=b/2 и |NP-MP|≤MN.",
+    "Помощните триъгълници BMD и MNP могат да са изродени. Уточнено е, че медианното тъждество и неравенствата между разстоянията остават валидни."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 137.6,
+  "generated_at": "2026-11-19T22:48:24.186032"
+}

@@ -1,0 +1,37 @@
+{
+  "score": 9,
+  "verdict": "approve",
+  "issues": [
+    {
+      "severity": "minor",
+      "section": "5",
+      "description": "План Б е конкретен (вектори), но може да се допълни с 1-2 изречения защо е по-добър от 'пробвай координати'."
+    },
+    {
+      "severity": "minor",
+      "section": "12",
+      "description": "Self-check отговорите са верни, но може да се добави още един въпрос: 'Защо не може M да съвпада с C?'"
+    }
+  ],
+  "math_errors": [],
+  "sections_present": {
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true,
+    "12": true
+  },
+  "plan_b_quality": "concrete",
+  "how_to_think_quality": "specific",
+  "word_count_actual": 2100,
+  "verdict_reasoning": "Картата е отлична: всички секции са покрити, математиката е проверена с конкретни примери, хванати са грешки в предоставеното решение (специален случай O=I), план Б е реален, а не generic.",
+  "_attempt": 1,
+  "_model": "deepseek/deepseek-v3.2"
+}

@@ -1,0 +1,22 @@
+{
+  "key": "1.3#3",
+  "point_id": "1.3",
+  "idx": 3,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-2005-10 кл · 2005-10 · Зад. 10.2",
+  "techniques": [
+    "median_formula",
+    "ptolemy_theorem"
+  ],
+  "word_count": 1656,
+  "score": 8,
+  "verdict": "revise",
+  "caught_errors_in_solution": [
+    "Няма сгрешена формула. Пропуснато е обяснението MP=d/2 и NP=b/2 чрез средни отсечки, последвано от |NP−MP|≤MN.",
+    "Не са обсъдени изродените помощни конфигурации: например при правоъгълник M=N и B,M,D са колинеарни. Използваните метрични зависимости остават валидни."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 140.1,
+  "generated_at": "2026-11-19T22:01:26.094899"
+}

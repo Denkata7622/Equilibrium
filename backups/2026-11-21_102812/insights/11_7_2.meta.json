@@ -1,0 +1,34 @@
+{
+  "key": "11.7#2",
+  "point_id": "11.7",
+  "idx": 2,
+  "difficulty": "hard",
+  "source": "OLI-3-Национален кръг-2026-9-12 кл · 2026-None · Зад. 3",
+  "techniques": [
+    "polynomials",
+    "roots_of_unity",
+    "remainder_theorem"
+  ],
+  "word_count": 1630,
+  "score": 10,
+  "verdict": "approve",
+  "status": "done",
+  "structure": {
+    "missing": [],
+    "has_boxed": true,
+    "why_count": 9,
+    "sec12_words": 172,
+    "ends_ok": true,
+    "fatal": [],
+    "soft": []
+  },
+  "caught_errors_in_solution": [
+    "При полиномиалното деление правилното ограничение е deg R ≤ p−2, не задължително deg R = p−2.",
+    "В доказателството на лемата трябва да се включи и свободният коефициент P_0(Y); индексът j започва от 0.",
+    "В последното сравнение на II начин произведението трябва да завършва с a^{p−1}−1, не с a^p−1."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 94.7,
+  "generated_at": "2026-11-21T09:07:47.139935"
+}

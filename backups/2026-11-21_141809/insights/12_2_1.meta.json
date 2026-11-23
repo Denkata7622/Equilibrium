@@ -1,0 +1,34 @@
+{
+  "key": "12.2#1",
+  "point_id": "12.2",
+  "idx": 1,
+  "difficulty": "medium",
+  "source": "OLI-3-Национален кръг-1992-9-12 кл · 1992-None · Зад. 1",
+  "techniques": [
+    "barycentric_coordinates",
+    "vector_algebra",
+    "dot_product"
+  ],
+  "word_count": 1715,
+  "score": 9,
+  "verdict": "approve",
+  "status": "done",
+  "structure": {
+    "missing": [],
+    "has_boxed": true,
+    "why_count": 8,
+    "sec12_words": 168,
+    "ends_ok": true,
+    "fatal": [],
+    "soft": []
+  },
+  "caught_errors_in_solution": [
+    "В условието липсва означението на търсения ъгъл; предоставеното решение установява ∠HMC = 90°.",
+    "Във формулата за DM коефициентът λ/6 е печатна грешка; правилното е DM = (a+b+λc)/3.",
+    "Крайното положение C1=D изражда малкия тетраедър и изисква изключване или изрично пределно тълкуване."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 156.0,
+  "generated_at": "2026-11-21T14:18:06.314054"
+}

@@ -1,0 +1,32 @@
+{
+  "key": "11.6#2",
+  "point_id": "11.6",
+  "idx": 2,
+  "difficulty": "hard",
+  "source": "OLI-2-Областен кръг-2007-12 кл · 2007-12 · Зад. 12.1",
+  "techniques": [
+    "derivative",
+    "tangent_lines",
+    "perpendicular_lines"
+  ],
+  "word_count": 1736,
+  "score": 9,
+  "verdict": "approve",
+  "status": "done",
+  "structure": {
+    "missing": [],
+    "has_boxed": true,
+    "why_count": 7,
+    "sec12_words": 199,
+    "ends_ok": true,
+    "fatal": [],
+    "soft": []
+  },
+  "caught_errors_in_solution": [
+    "Повредено форматиране на допълването до квадрат; възстановено е равенството с (a+(cos x1+cos x2)/2)^2+1-(cos x1-cos x2)^2/4. Математическа грешка в предоставеното решение няма."
+  ],
+  "generator_model": "openai/gpt-6.1-sol",
+  "verifier_model": "deepseek/deepseek-v3.2",
+  "elapsed_sec": 87.8,
+  "generated_at": "2026-11-20T22:43:39.650720"
+}
