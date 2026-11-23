@@ -4,6 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OLYMPIAD PREP TERMINAL</title>
+<script>
+// ⚠️ 127.0.0.1 и localhost имат ОТДЕЛНИ localStorage
+// Ако видиш това предупреждение — данните ти може да са на другия origin
+if (location.hostname === '127.0.0.1' && location.port === '8000') {
+  setTimeout(() => {
+    const alt = 'http://localhost:8000/';
+    const msg = '⚠️ На 127.0.0.1:8000.\n\n' +
+                'Ако чатове/памет/прогрес липсват — отвори ' + alt +
+                '\n\n(127.0.0.1 и localhost имат отделни localStorage)';
+    console.warn('[origin] ' + msg);
+    if (confirm(msg + '\n\nДа те пренасоча към localhost:8000?')) {
+      location.replace(alt);
+    }
+  }, 800);
+}
+</script>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308120c'/%3E%3Crect x='1.5' y='1.5' width='61' height='61' rx='12.5' fill='none' stroke='%2300ff9d' stroke-width='2' opacity='0.35'/%3E%3Cpath d='M17 17 L47 17 L22 32 L47 47 L17 47' fill='none' stroke='%2300ff9d' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <meta name="theme-color" content="#08120c">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,7 +56,7 @@
       </div>
 
       <!-- Daily Goal — clickable -->
-      <div class="goal-widget clickable" id="goalWidget" onclick="StatsModal.open('goal')" title="Клик за детайли">
+      <div class="goal-widget clickable" id="goalWidget" onclick="StatsModal.open('goal')">
         <div class="goal-row">
           <span>DAILY GOAL</span>
           <span id="goalLabel">0 / 120 MIN</span>
@@ -50,7 +66,7 @@
       </div>
 
       <!-- Calendar (green squares) — clickable -->
-      <div class="calendar-widget clickable" id="calendarWidget" onclick="StatsModal.open('streak')" title="Клик за детайли">
+      <div class="calendar-widget clickable" id="calendarWidget" onclick="StatsModal.open('streak')">
         <div class="calendar-label">
           <span>LAST 30 DAYS</span>
           <span id="calTotal">0h</span>
@@ -174,6 +190,10 @@
             <button class="dropdown-item" onclick="event.stopPropagation();Pomodoro.openSettings()">
               <i data-lucide="timer"></i> Pomodoro timing
               <span class="shortcut" id="pomoLabel">25/5/15</span>
+            </button>
+            <button class="dropdown-item" onclick="ArticleRefresher.toggle();UI.closeMenus()">
+              <i data-lucide="refresh-cw"></i> Auto-refresh articles
+              <span class="shortcut" id="autoRefreshLabel">ON</span>
             </button>
             <button class="dropdown-item" onclick="AISettings.openModal();UI.closeMenus()">
               <i data-lucide="bot"></i> AI настройки
@@ -755,10 +775,13 @@
         <div class="deepdive-meta" id="ddMeta"></div>
       </div>
       <div class="deepdive-actions">
+        <button class="pm-btn" onclick="DeepDive.toggleFocus()" title="Focus mode (Shift+F)">
+          <i data-lucide="maximize-2"></i>
+        </button>
         <button class="pm-btn" onclick="DeepDive.print()" title="Print">
           <i data-lucide="printer"></i>
         </button>
-        <button class="pm-btn" onclick="DeepDive.copy()" title="Copy">
+        <button class="pm-btn" onclick="DeepDive.copy(this)" title="Копирай">
           <i data-lucide="copy"></i>
         </button>
         <button class="pm-btn close" onclick="DeepDive.close()">
@@ -768,6 +791,23 @@
     </div>
     <div class="deepdive-progress"><div class="deepdive-progress-fill" id="ddProgress"></div></div>
     <div class="deepdive-body" id="ddBody"></div>
+
+    <!-- ═══ DEEP DIVE FOCUS MODE — floating elements ═══ -->
+    <div class="dd-side-tools" id="ddSideTools">
+      <button onclick="Pomodoro.toggle()" title="Pomodoro (T)"><i data-lucide="timer"></i></button>
+      <button onclick="Scratchpad.open()" title="Scratchpad (S)"><i data-lucide="pen-tool"></i></button>
+      <button onclick="Quiz.open()" title="Quiz (Q)"><i data-lucide="target"></i></button>
+      <div class="pst-sep"></div>
+      <button onclick="Theme.cycle()" title="Theme (G)"><i data-lucide="palette"></i></button>
+      <button onclick="DeepDive.toggleFocus()" title="Exit focus (Shift+F)"><i data-lucide="minimize-2"></i></button>
+    </div>
+
+    <div class="dd-toc" id="ddToc"></div>
+
+    <div class="dd-pomo" id="ddPomo" onclick="Pomodoro.toggle()" title="Pomodoro (T)">
+      <i data-lucide="timer"></i>
+      <span id="ddPomoTime">25:00</span>
+    </div>
   </div>
 </div>
 
@@ -807,15 +847,6 @@
       <button onclick="AIAssistant.close()" title="Затвори (Esc)">
         <i data-lucide="x"></i>
       </button>
-      <div class="ai-chats-dropdown" id="aiChatsDropdown">
-        <div class="ai-chats-header">
-          <span>Моите чатове</span>
-          <button onclick="AIChats.toggleDropdown(event)" title="Затвори">
-            <i data-lucide="x"></i>
-          </button>
-        </div>
-        <div class="ai-chats-list" id="aiChatsList"></div>
-      </div>
       <div class="ai-chats-dropdown" id="aiChatsDropdown">
         <div class="ai-chats-header">
           <span>Моите чатове</span>
@@ -1132,6 +1163,256 @@ const Store = {
 /* ═══════════════════════════════════════════════════════════════
    MODULE: UTILS
    ═══════════════════════════════════════════════════════════════ */
+const Tooltips = {
+  _el: null,
+  _timer: null,
+  _active: null,
+  _removalTimer: null,
+  DELAY: 500,
+  GAP: 10,
+  MARGIN: 8,
+  ARROW_CLAMP: 14,
+
+  // Зони без custom tooltip (имат собствен визуален indicator или са декоративни)
+  SKIP_ZONES: '.sidebar-stats, .pomodoro .time, .pomodoro .mode, .pomo-count, .pomo-ring, .hero-quick',
+
+  init() {
+    this._sanitizeAll();
+
+    this._observer = new MutationObserver(muts => {
+      for (const m of muts) {
+        for (const node of m.addedNodes) {
+          if (node.nodeType === 1) this._sanitizeNode(node);
+        }
+      }
+    });
+    this._observer.observe(document.body, { childList: true, subtree: true });
+
+    document.addEventListener('mouseover', e => this._onOver(e), true);
+    document.addEventListener('focusin',   e => this._onOver(e), true);
+    document.addEventListener('mouseout',  e => this._onOut(e), true);
+    document.addEventListener('focusout',  e => this._onOut(e), true);
+    document.addEventListener('mousedown', () => this._hide(), true);
+    document.addEventListener('click',     () => this._hide(), true);
+    window.addEventListener('scroll',      () => this._hide(), true);
+    window.addEventListener('resize',      () => this._hide());
+    window.addEventListener('blur',        () => this._hide());
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') this._hide();
+    });
+    window.addEventListener('beforeunload', () => this._restoreAll());
+  },
+
+  _sanitizeAll() {
+    document.querySelectorAll('[title]').forEach(el => this._sanitizeNode(el));
+  },
+
+  _sanitizeNode(el) {
+    if (!el || el.nodeType !== 1) return;
+    if (el.matches?.('[title]') && this._needsStrip(el)) {
+      el.removeAttribute('title');
+    }
+    el.querySelectorAll?.('[title]').forEach(child => {
+      if (this._needsStrip(child)) child.removeAttribute('title');
+    });
+  },
+
+  _needsStrip(el) {
+    return el.closest(this.SKIP_ZONES) || !!el.querySelector('.tooltip');
+  },
+
+  _isSkipped(el) {
+    if (!el) return true;
+    if (el.hasAttribute('data-no-tip')) return true;
+    if (el.closest(this.SKIP_ZONES)) return true;
+    if (el.querySelector('.tooltip')) return true;
+    return false;
+  },
+
+  _onOver(e) {
+    if (this._active && !this._active.isConnected) this._hide();
+
+    const zoneTarget = e.target.closest(this.SKIP_ZONES);
+    if (zoneTarget) {
+      const titled = e.target.closest('[title]');
+      if (titled) titled.removeAttribute('title');
+      return;
+    }
+
+    const target = e.target.closest('[title]');
+    if (!target) return;
+    if (target === this._active) return;
+    if (target.querySelector('.tooltip')) {
+      target.removeAttribute('title');
+      return;
+    }
+    if (this._isSkipped(target)) return;
+
+    const text = target.getAttribute('title');
+    if (!text) return;
+
+    if (this._active) this._hide();
+
+    this._active = target;
+    target.setAttribute('data-tt', text);
+    target.removeAttribute('title');
+
+    clearTimeout(this._timer);
+    this._timer = setTimeout(() => {
+      if (!target.isConnected) { this._hide(); return; }
+      if (this._active !== target) return;
+      this._show(target);
+    }, this.DELAY);
+  },
+
+  _onOut(e) {
+    if (!this._active) return;
+    if (e.relatedTarget && this._active.contains(e.relatedTarget)) return;
+    this._hide();
+  },
+
+  /* ── Placement engine: top → bottom → right → left (с fallback по пространство) ── */
+  _computePlacement(rect, tipRect) {
+    const vw = window.innerWidth;
+    const vh = window.innerHeight;
+    const M = this.MARGIN;
+    const G = this.GAP;
+
+    const fits = {
+      top:    rect.top          >= tipRect.height + G + M,
+      bottom: vh - rect.bottom  >= tipRect.height + G + M,
+      right:  vw - rect.right   >= tipRect.width  + G + M,
+      left:   rect.left         >= tipRect.width  + G + M,
+    };
+
+    // Високи/тесни елементи (вертикални табове, edge tabs) → side placement
+    const isTall = rect.height > tipRect.height * 2.5;
+
+    if (!isTall && fits.top)    return 'top';
+    if (!isTall && fits.bottom) return 'bottom';
+    if (fits.right)             return 'right';
+    if (fits.left)              return 'left';
+    if (fits.top)               return 'top';
+    if (fits.bottom)            return 'bottom';
+
+    // Нищо не пасва → избери посоката с най-много свободно пространство
+    const space = {
+      top:    rect.top - M,
+      bottom: vh - rect.bottom - M,
+      right:  vw - rect.right - M,
+      left:   rect.left - M,
+    };
+    let best = 'top';
+    for (const p of ['bottom', 'right', 'left']) {
+      if (space[p] > space[best]) best = p;
+    }
+    return best;
+  },
+
+  _show(target) {
+    const text = target.getAttribute('data-tt');
+    if (!text) return;
+
+    // Cleanup lingering (вкл. fade-out) tooltips
+    document.querySelectorAll('.custom-tooltip').forEach(t => t.remove());
+
+    const tip = document.createElement('div');
+    tip.className = 'custom-tooltip';
+    tip.textContent = text;
+
+    // Measurement phase — off-screen, but correctly sized
+    tip.style.top = '-9999px';
+    tip.style.left = '-9999px';
+    tip.style.visibility = 'hidden';
+    document.body.appendChild(tip);
+    this._el = tip;
+
+    const rect    = target.getBoundingClientRect();
+    const tipRect = tip.getBoundingClientRect();
+    const place   = this._computePlacement(rect, tipRect);
+
+    const M = this.MARGIN;
+    const G = this.GAP;
+    const vw = window.innerWidth;
+    const vh = window.innerHeight;
+
+    let top, left;
+    let arrowX = '50%';
+    let arrowY = '50%';
+
+    if (place === 'top' || place === 'bottom') {
+      top = place === 'top'
+        ? rect.top - tipRect.height - G
+        : rect.bottom + G;
+
+      left = rect.left + rect.width / 2 - tipRect.width / 2;
+      if (left < M) left = M;
+      if (left + tipRect.width > vw - M) left = vw - tipRect.width - M;
+
+      // Arrow X — clamp за да не излиза от ръба на tooltip-а
+      let ax = (rect.left + rect.width / 2) - left;
+      ax = Math.max(this.ARROW_CLAMP, Math.min(tipRect.width - this.ARROW_CLAMP, ax));
+      arrowX = ax + 'px';
+    } else {
+      left = place === 'left'
+        ? rect.left - tipRect.width - G
+        : rect.right + G;
+
+      top = rect.top + rect.height / 2 - tipRect.height / 2;
+      if (top < M) top = M;
+      if (top + tipRect.height > vh - M) top = vh - tipRect.height - M;
+
+      // Arrow Y — clamp
+      let ay = (rect.top + rect.height / 2) - top;
+      ay = Math.max(this.ARROW_CLAMP, Math.min(tipRect.height - this.ARROW_CLAMP, ay));
+      arrowY = ay + 'px';
+    }
+
+    tip.className = `custom-tooltip place-${place}`;
+    tip.style.top        = top + 'px';
+    tip.style.left       = left + 'px';
+    tip.style.visibility = '';
+    tip.style.setProperty('--arrow-x', arrowX);
+    tip.style.setProperty('--arrow-y', arrowY);
+
+    requestAnimationFrame(() => tip.classList.add('show'));
+
+    clearInterval(this._removalTimer);
+    this._removalTimer = setInterval(() => {
+      if (!target.isConnected) this._hide();
+    }, 400);
+  },
+
+  _hide() {
+    clearTimeout(this._timer);
+    this._timer = null;
+    clearInterval(this._removalTimer);
+    this._removalTimer = null;
+
+    if (this._el) {
+      const el = this._el;
+      this._el = null;
+      el.classList.remove('show');
+      setTimeout(() => el.remove(), 200);
+    }
+    if (this._active) {
+      const text = this._active.getAttribute('data-tt');
+      if (text) {
+        this._active.setAttribute('title', text);
+        this._active.removeAttribute('data-tt');
+      }
+      this._active = null;
+    }
+  },
+
+  _restoreAll() {
+    document.querySelectorAll('[data-tt]').forEach(el => {
+      el.setAttribute('title', el.getAttribute('data-tt'));
+      el.removeAttribute('data-tt');
+    });
+  },
+};
+
 const Utils = {
   pdfUrl(path, page) {
     if (!path) return '';
@@ -1156,14 +1437,53 @@ const Utils = {
     if (!window.lucide) return '';
     try {
       const set = lucide.icons || (lucide.default && lucide.default.icons);
-      if (!set || !set[name]) return '';
-      const node = lucide.createElement(set[name]);
+      if (!set) return '';
+      const pascalName = name.split('-')
+        .map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase())
+        .join('');
+      if (!set[pascalName]) return '';
+      const node = lucide.createElement(set[pascalName]);
       node.setAttribute('width', String(size));
       node.setAttribute('height', String(size));
+      node.classList.add('lucide');
+      node.classList.add('lucide-' + name.toLowerCase());
       if (color) node.style.color = color;
       return node.outerHTML;
     } catch (e) { return ''; }
   },
+
+  copyWithFeedback(text, btn) {
+    const doSuccess = () => {
+      Utils.toast('Копирано', 'copy');
+      if (!btn) return;
+      const origHTML = btn.innerHTML;
+      btn.classList.add('copied');
+      btn.innerHTML = Utils.iconSVG('check', 14) || '✓';
+      Utils.refreshIcons();
+      setTimeout(() => {
+        btn.classList.remove('copied');
+        btn.innerHTML = origHTML;
+        Utils.refreshIcons();
+      }, 1500);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(doSuccess).catch(() => {
+        Utils.toast('Грешка при копиране', 'alert-circle');
+      });
+    } else {
+      // Fallback
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand('copy'); doSuccess(); }
+      catch (e) { Utils.toast('Грешка при копиране', 'alert-circle'); }
+      ta.remove();
+    }
+  },
+
   toast(msg, icon) {
     const t = document.getElementById('toast');
     const inner = icon
@@ -1390,6 +1710,7 @@ const MathRender = {
         const point = el.closest('.point');
         if (point && !point.classList.contains('expanded')) return false;
       }
+      if (el.classList.contains('version-content') && !el.classList.contains('active')) return false;
       return true;
     });
     if (!nodes.length) return;
@@ -2291,7 +2612,9 @@ toggleTaskProblem(taskNum, problemId) {
       <div class="point-expand">
         <div class="point-expand-inner">
           <div class="section-label">▸ Detailed Notes</div>
-          <div class="explanation">${Utils.escapeHtml(p.explanation || '')}</div>
+          <div class="explanation-placeholder" data-pid="${p.id}">
+            <div class="version-content active explanation">${Utils.escapeHtml(p.explanation || '')}</div>
+          </div>
           <div class="section-label">▸ Personal Notes</div>
           <textarea class="notes-area" placeholder="Write your ideas, lemmas, tricks..." oninput="PointActions.saveNotes('${p.id}', this.value)" onclick="event.stopPropagation()">${Utils.escapeHtml(meta.notes||'')}</textarea>
           ${bonusHtml}
@@ -2447,7 +2770,20 @@ const PointActions = {
   toggleExpand(id, e) {
     if (e) e.stopPropagation();
     const el = document.querySelector(`[data-pid="${id}"]`);
-    if (el) el.classList.toggle('expanded');
+    if (!el) return;
+    el.classList.toggle('expanded');
+    if (el.classList.contains('expanded')) {
+      const slot = el.querySelector(`.explanation-placeholder[data-pid="${id}"]`);
+      if (slot && slot.dataset.loaded !== '1') {
+        slot.dataset.loaded = '1';
+        const p = getPoint(id);
+        ArticleLoader.render(id, 'versions', p ? p.explanation : '', 'explanation')
+          .then(html => {
+            slot.innerHTML = html;
+            MathRender.apply(slot);
+          });
+      }
+    }
   },
   updatePointEl(id, onlyNotesBadge) {
     const meta = Store.getPoint(id);
@@ -2494,8 +2830,16 @@ const Modal = {
     pmDescEl.textContent = p.desc || '';
     pmDescEl.dataset.mathDone = '';
     const pmExpEl = document.getElementById('pmExplanation');
-    pmExpEl.textContent = p.explanation || '';
+    pmExpEl.innerHTML = '<div class="loading">⏳ Зареждане…</div>';
     pmExpEl.dataset.mathDone = '';
+    ArticleLoader.render(id, 'versions', p.explanation, 'pm-explanation-inner')
+      .then(html => {
+        if (State.currentModalId !== id) return;
+        pmExpEl.innerHTML = html;
+        pmExpEl.dataset.mathDone = '';
+        MathRender.apply(pmExpEl);
+        Utils.refreshIcons();
+      });
 
     const notesEl = document.getElementById('pmNotes');
     notesEl.value = meta.notes || '';
@@ -2544,9 +2888,19 @@ const Modal = {
     this.updateTaskNav();
     this.updateTaskCount();
 
-    // Show Deep Dive button only when the point has a deepExplanation
+    // Show Deep Dive button when point has deepExplanation OR article.json has deep_versions
     const ddBtn = document.getElementById('pmDeepBtn');
-    if (ddBtn) ddBtn.style.display = p.deepExplanation ? 'inline-flex' : 'none';
+    if (ddBtn) {
+      const setDD = (visible) => {
+        if (State.currentModalId === id) {
+          ddBtn.style.display = visible ? 'inline-flex' : 'none';
+        }
+      };
+      setDD(!!p.deepExplanation);
+      if (!p.deepExplanation) {
+        ArticleLoader.hasVersions(id, 'deep_versions').then(setDD).catch(() => {});
+      }
+    }
 
     const prereqs = PREREQS[id];
     const oldPrereq = document.querySelector('.pm-section.prereq-section');
@@ -2970,10 +3324,14 @@ const Pomodoro = {
     const mtg = document.getElementById('pmPomoToggle');
     const pdfPomoTime = document.getElementById('pdfPomoTime');
     const pdfPomo = document.getElementById('pdfPomo');
+    const ddPomoTime = document.getElementById('ddPomoTime');
+    const ddPomo = document.getElementById('ddPomo');
     if (mt) mt.textContent = Utils.fmtTime(this.remaining);
     if (mtg) mtg.innerHTML = Utils.iconSVG(this.running ? 'pause' : 'play', 14);
     if (pdfPomoTime) pdfPomoTime.textContent = Utils.fmtTime(this.remaining);
     if (pdfPomo) pdfPomo.classList.toggle('running', this.running);
+    if (ddPomoTime) ddPomoTime.textContent = Utils.fmtTime(this.remaining);
+    if (ddPomo) ddPomo.classList.toggle('running', this.running);
     Utils.refreshIcons();
   },
 
@@ -3813,6 +4171,7 @@ const Keys = {
     const paletteOpen = document.getElementById('paletteOverlay').classList.contains('open');
     const helpOpen = document.getElementById('helpOverlay').classList.contains('open');
     const modalOpen = document.getElementById('pointModal').classList.contains('open');
+    const ddOpen = document.getElementById('deepdiveOverlay').classList.contains('open');
     const quizOpen = document.getElementById('quizOverlay').classList.contains('open');
     const achOpen = document.getElementById('achOverlay').classList.contains('open');
     const reportOpen = document.getElementById('reportOverlay').classList.contains('open');
@@ -3842,6 +4201,7 @@ const Keys = {
       if (reportOpen) { Report.close(); return; }
       if (sheetOpen) { Formulas.close(); return; }
       if (plogOpen) { ProblemLog.close(); return; }
+      if (ddOpen) { DeepDive.close(); return; }
       if (modalOpen) { Modal.close(); return; }
       if (inField) { e.target.blur(); return; }
       return;
@@ -3877,7 +4237,12 @@ const Keys = {
 
     if (modalOpen) {
       if (inField) return;
-      if (e.shiftKey && (e.key === 'f' || e.key === 'F')) { e.preventDefault(); Modal.togglePdfFocus(); return; }
+      if (e.shiftKey && (e.key === 'f' || e.key === 'F')) {
+        e.preventDefault();
+        if (ddOpen) DeepDive.toggleFocus();
+        else Modal.togglePdfFocus();
+        return;
+      }
       if (e.key === 'd' || e.key === 'D') { e.preventDefault(); DeepDive.open(State.currentModalId); return; }
       if (e.key === 'b' || e.key === 'B') { Modal.addBookmark(); return; }
       if (e.key === 'p' || e.key === 'P') { document.getElementById('pdfSearch').focus(); e.preventDefault(); return; }
@@ -5205,11 +5570,13 @@ const StatsModal = {
    MODULE: DEEP DIVE
    ═══════════════════════════════════════════════════════════════ */
 const DeepDive = {
-  open(pointId) {
+  async open(pointId) {
     if (!pointId) return;
     const p = getPoint(pointId);
     if (!p) return;
-    if (!p.deepExplanation) {
+    const hasDeep = !!p.deepExplanation
+                 || await ArticleLoader.hasVersions(pointId, 'deep_versions');
+    if (!hasDeep) {
       Utils.toast('Няма deep-dive за тази точка', 'alert-circle');
       return;
     }
@@ -5218,7 +5585,29 @@ const DeepDive = {
     document.getElementById('ddMeta').innerHTML =
       `<span class="tag">${p.source}</span>` +
       (p.page ? `<span class="tag">стр. ${p.page}</span>` : '');
-    document.getElementById('ddBody').innerHTML = this.md2html(p.deepExplanation);
+    const ddBody = document.getElementById('ddBody');
+    ddBody.innerHTML = '<div class="loading">⏳ Зареждане…</div>';
+    ArticleLoader.render(
+      pointId, 'deep_versions', p.deepExplanation, 'deepdive-version-content',
+      s => this.md2html(s),
+      v => this._buildVersionMeta(v)
+    ).then(html => {
+      ddBody.innerHTML = html;
+      ddBody.dataset.mathDone = '';
+      const active = ddBody.querySelector('.version-content.active');
+      if (active && window.renderMathInElement) {
+        try {
+          window.renderMathInElement(active, {
+            delimiters: [
+              {left:'$$',right:'$$',display:true},
+              {left:'$',right:'$',display:false},
+            ],
+            throwOnError: false, strict: false,
+          });
+        } catch(e) {}
+      }
+      Utils.refreshIcons();
+    });
     document.getElementById('deepdiveOverlay').classList.add('open');
     document.body.style.overflow = 'hidden';
     const body = document.getElementById('ddBody');
@@ -5248,7 +5637,11 @@ const DeepDive = {
   },
 
   close() {
-    document.getElementById('deepdiveOverlay').classList.remove('open');
+    const overlay = document.getElementById('deepdiveOverlay');
+    overlay.classList.remove('open');
+    overlay.classList.remove('focus-mode');
+    this._focusMode = false;
+    this._removeScrollSpy();
     // Възстанови overflow само ако и point modal-ът е затворен
     const modalOpen = document.getElementById('pointModal').classList.contains('open');
     document.body.style.overflow = modalOpen ? 'hidden' : '';
@@ -5259,6 +5652,144 @@ const DeepDive = {
     const el = document.getElementById('ddBody');
     const pct = el.scrollTop / Math.max(1, el.scrollHeight - el.clientHeight) * 100;
     document.getElementById('ddProgress').style.width = (pct || 0) + '%';
+  },
+
+  /* ═══ FOCUS MODE ═══ */
+  _focusMode: false,
+  _scrollSpyHandler: null,
+
+  toggleFocus() {
+    const overlay = document.getElementById('deepdiveOverlay');
+    if (!overlay.classList.contains('open')) return;
+    this._focusMode = !overlay.classList.contains('focus-mode');
+    overlay.classList.toggle('focus-mode', this._focusMode);
+    if (this._focusMode) {
+      this._buildTOC();
+      this._installScrollSpy();
+      // Re-render icons for the newly-shown floating elements
+      Utils.refreshIcons();
+    } else {
+      this._removeScrollSpy();
+    }
+    Utils.toast(
+      this._focusMode ? 'Focus mode ON' : 'Focus mode OFF',
+      this._focusMode ? 'maximize-2' : 'minimize-2'
+    );
+  },
+
+  _buildTOC() {
+    const body = document.getElementById('ddBody');
+    const toc = document.getElementById('ddToc');
+    if (!body || !toc) return;
+    // ВАЖНО: query-ваме h2 САМО в активната версия.
+    // Скритите .version-content (v1, v2, ...) също имат h2, но са display:none —
+    // без този филтър TOC-ът показва 3× съдържанието.
+    const activePane = body.querySelector('.version-content.active');
+    const scope = activePane || body;
+    const headers = Array.from(scope.querySelectorAll('h2'));
+    if (headers.length < 2) {
+      toc.style.display = 'none';
+      return;
+    }
+    toc.style.display = '';
+    toc.innerHTML = headers.map((h, i) => {
+      const id = 'dd-sec-' + i;
+      h.id = id;
+      const label = (h.textContent || '').trim();
+      // Escape за HTML
+      const safe = label.replace(/[&<>"']/g, c => ({
+        '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+      }[c]));
+      return `<div class="dd-toc-item" data-target="${id}" title="${safe}">${safe}</div>`;
+    }).join('');
+    toc.querySelectorAll('.dd-toc-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const target = document.getElementById(item.dataset.target);
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  },
+
+  _installScrollSpy() {
+    const body = document.getElementById('ddBody');
+    const toc = document.getElementById('ddToc');
+    if (!body || !toc) return;
+    if (this._scrollSpyHandler) {
+      body.removeEventListener('scroll', this._scrollSpyHandler);
+    }
+    this._scrollSpyHandler = () => {
+      // Само h2 от активната версия — иначе scroll spy „скача" между
+      // секциите на скритите версии (виж _buildTOC за обяснение).
+      const activePane = body.querySelector('.version-content.active');
+      const scope = activePane || body;
+      const headers = scope.querySelectorAll('h2');
+      const bodyTop = body.getBoundingClientRect().top;
+      let activeId = null;
+      let minDist = Infinity;
+      headers.forEach(h => {
+        const rect = h.getBoundingClientRect();
+        const offsetFromTop = rect.top - bodyTop;
+        if (offsetFromTop <= 100) {
+          const dist = Math.abs(offsetFromTop - 60);
+          if (dist < minDist) {
+            minDist = dist;
+            activeId = h.id;
+          }
+        }
+      });
+      toc.querySelectorAll('.dd-toc-item').forEach(item => {
+        item.classList.toggle('active', item.dataset.target === activeId);
+      });
+    };
+    body.addEventListener('scroll', this._scrollSpyHandler, { passive: true });
+    this._scrollSpyHandler();
+  },
+
+  _removeScrollSpy() {
+    if (!this._scrollSpyHandler) return;
+    const body = document.getElementById('ddBody');
+    if (body) body.removeEventListener('scroll', this._scrollSpyHandler);
+    this._scrollSpyHandler = null;
+  },
+
+  _buildVersionMeta(v) {
+    const parts = [];
+
+    const gen = v.model || v.model_name || v.generator_model || v.generator_name
+             || v.generator || v.gen_model || v.llm || v.generated_by;
+    if (gen) parts.push(`<span class="vv">${Utils.escapeHtml(gen)}</span>`);
+
+    const ver = v.verifier_model || v.verifier_name || v.verified_by
+             || v.verifier || v.ver_model || v.verification_model;
+    if (ver) parts.push(`verified by <span class="vv">${Utils.escapeHtml(ver)}</span>`);
+
+    const content = v.content || '';
+    const words = content.split(/\s+/).filter(Boolean).length;
+    if (words > 0) {
+      parts.push(`${words.toLocaleString('bg-BG')} words`);
+      const mins = Math.max(1, Math.ceil(words / 180));
+      parts.push(`${mins} min read`);
+    }
+
+    const cost = v.cost_usd ?? v.cost ?? v.total_cost ?? v.total_cost_usd
+              ?? v.price_usd ?? v.price ?? v.cost_total;
+    if (cost != null && !isNaN(cost)) {
+      parts.push(`$${Number(cost).toFixed(4)}`);
+    }
+
+    const score = v.score ?? v.quality_score ?? v.final_score
+               ?? v.verifier_score ?? v.verification_score;
+    if (score != null) {
+      const cls = score >= 8 ? 'score-good' : score >= 6 ? 'score-mid' : 'score-bad';
+      parts.push(`<span class="${cls}">score ${score}/10</span>`);
+    }
+
+    if (v.v != null) parts.push(`<span class="vv">v${v.v}</span>`);
+
+    if (!parts.length) return '';
+
+    const joined = parts.join(` <span class="sep">·</span> `);
+    return `<div class="dd-version-info">· ${joined}</div>`;
   },
 
   md2html(md) {
@@ -5329,11 +5860,10 @@ const DeepDive = {
     w.document.close();
   },
 
-  copy() {
+  copy(btn) {
     const p = State.currentModalId ? getPoint(State.currentModalId) : null;
     if (!p || !p.deepExplanation) return;
-    navigator.clipboard.writeText(p.deepExplanation);
-    Utils.toast('Копирано', 'copy');
+    Utils.copyWithFeedback(p.deepExplanation, btn);
   },
 };
 
@@ -5578,6 +6108,196 @@ const History = {
 };
 
 /* ═══════════════════════════════════════════════════════════════
+   MODULE: ARTICLE LOADER — fetch article.json + cache
+   ═══════════════════════════════════════════════════════════════ */
+const ArticleLoader = {
+  _cache: new Map(),
+  _BASE: 'generated/articles/',
+
+  _safeId(pid) { return pid.replace('.', '_'); },
+
+  load(pid) {
+    if (this._cache.has(pid)) return this._cache.get(pid);
+    const url = `${this._BASE}${this._safeId(pid)}/article.json`;
+    const p = fetch(url)
+      .then(r => r.ok ? r.json() : null)
+      .catch(() => null);
+    this._cache.set(pid, p);
+    return p;
+  },
+
+  invalidate(pid) {
+    if (pid) this._cache.delete(pid);
+    else this._cache.clear();
+  },
+
+  async hasVersions(pid, field) {
+    const bundle = await this.load(pid);
+    if (!bundle) return false;
+    const versions = bundle[field];
+    return Array.isArray(versions) && versions.length > 0;
+  },
+
+  async render(pid, field, fallbackContent, cssClass = '', processor = s => Utils.escapeHtml(s), metaBuilder = null) {
+    const bundle = await this.load(pid);
+    const versions = bundle ? (bundle[field] || []) : [];
+    if (!versions.length) {
+      return `<div class="version-content active ${cssClass}">${processor(fallbackContent || '')}</div>`;
+    }
+    const sorted = [...versions].sort((a, b) => a.v - b.v);
+    const latest = sorted[sorted.length - 1].v;
+    // Debug: log schema once per session so we can verify field names
+    if (!this._schemaLogged && window.console) {
+      this._schemaLogged = true;
+      console.log('[ArticleLoader] version keys:', Object.keys(sorted[0] || {}));
+      console.log('[ArticleLoader] sample:', sorted[0]);
+    }
+    const btns = sorted.map(v =>
+      `<button class="ver-btn${v.v === latest ? ' active' : ''}" data-version="${v.v}">v${v.v}</button>`
+    ).join('');
+    const panes = sorted.map(v =>
+      `<div class="version-content${v.v === latest ? ' active' : ''} ${cssClass}" data-version="${v.v}">${metaBuilder ? metaBuilder(v) : ''}${processor(v.content || '')}</div>`
+    ).join('');
+    return `<div class="versions">${btns}</div>${panes}`;
+  },
+
+  install() {
+    document.addEventListener('click', e => {
+      const btn = e.target.closest('.ver-btn');
+      if (!btn) return;
+      const versions = btn.closest('.versions');
+      if (!versions) return;
+      const targetV = btn.dataset.version;
+      const parent = versions.parentElement;
+      versions.querySelectorAll('.ver-btn').forEach(b =>
+        b.classList.toggle('active', b === btn));
+      parent.querySelectorAll(':scope > .version-content').forEach(c => {
+        c.classList.toggle('active', c.dataset.version === targetV);
+      });
+      const active = parent.querySelector(':scope > .version-content.active');
+      if (active) {
+        active.dataset.mathDone = '';
+        MathRender.apply(active);
+      }
+      // Ако сме в DeepDive Focus mode — презареди TOC-а за новата версия
+      if (window.DeepDive && DeepDive._focusMode &&
+          document.getElementById('deepdiveOverlay')?.classList.contains('open')) {
+        DeepDive._buildTOC();
+        DeepDive._installScrollSpy();
+      }
+      e.stopPropagation();
+    });
+  },
+};
+
+/* ═══════════════════════════════════════════════════════════════
+   MODULE: ARTICLE REFRESHER — polls /api/articles/status
+   Автоматично презарежда отворения modal / expanded points,
+   когато pipeline запише нова версия на article.json.
+   ═══════════════════════════════════════════════════════════════ */
+const ArticleRefresher = {
+  KEY: 'olympiad_article_refresh',
+  _interval: null,
+  _lastSeen: new Map(),   // pid → mtime
+  _pollMs: 15000,
+  _inFlight: false,
+
+  enabled() {
+    return (localStorage.getItem(this.KEY) ?? '1') === '1';
+  },
+
+  start() {
+    if (!this.enabled()) return;
+    if (this._interval) return;
+    this._interval = setInterval(() => this._tick(), this._pollMs);
+    setTimeout(() => this._tick(), 3000);
+  },
+
+  stop() {
+    clearInterval(this._interval);
+    this._interval = null;
+  },
+
+  toggle() {
+    const on = !this.enabled();
+    localStorage.setItem(this.KEY, on ? '1' : '0');
+    if (on) { this.start(); Utils.toast('Auto-refresh: ON', 'refresh-cw'); }
+    else    { this.stop();  Utils.toast('Auto-refresh: OFF', 'refresh-cw'); }
+    const lbl = document.getElementById('autoRefreshLabel');
+    if (lbl) lbl.textContent = on ? 'ON' : 'OFF';
+  },
+
+  async _tick() {
+    if (this._inFlight) return;
+    // Don't disturb the user while typing
+    const ae = document.activeElement;
+    if (ae && (ae.tagName === 'TEXTAREA' || ae.tagName === 'INPUT')) return;
+
+    this._inFlight = true;
+    let data;
+    try {
+      const r = await fetch('/api/articles/status', { cache: 'no-store' });
+      if (!r.ok) return;
+      data = await r.json();
+    } catch (e) {
+      return;
+    } finally {
+      this._inFlight = false;
+    }
+
+    // 1. Currently open modal
+    const curId = State.currentModalId;
+    if (curId && data[curId]) {
+      const mtime = data[curId].mtime;
+      const prev = this._lastSeen.get(curId);
+      if (prev && prev !== mtime) {
+        // Preserve scroll position in the modal
+        const explEl = document.getElementById('pmExplanation');
+        const scrollTop = explEl ? explEl.scrollTop : 0;
+        try {
+          Modal.open(curId);
+          setTimeout(() => {
+            const el = document.getElementById('pmExplanation');
+            if (el) el.scrollTop = scrollTop;
+          }, 80);
+          Utils.toast('Обновена статия: ' + curId, 'refresh-cw');
+        } catch (e) {}
+      }
+      this._lastSeen.set(curId, mtime);
+    }
+
+    // 2. Any expanded point in the list
+    document.querySelectorAll('.point.expanded').forEach(el => {
+      const pid = el.dataset.pid;
+      if (!pid || !data[pid]) return;
+      const mtime = data[pid].mtime;
+      const prev = this._lastSeen.get(pid);
+      if (prev && prev !== mtime) {
+        const slot = el.querySelector('.explanation-placeholder[data-pid="' + pid + '"]');
+        if (slot) {
+          slot.dataset.loaded = '1';
+          ArticleLoader.invalidate(pid);
+          const p = getPoint(pid);
+          ArticleLoader.render(pid, 'versions', p ? p.explanation : '', 'explanation')
+            .then(html => {
+              slot.innerHTML = html;
+              MathRender.apply(slot);
+              Utils.refreshIcons();
+            });
+        }
+        Utils.toast('Обновена: ' + pid, 'refresh-cw');
+      }
+      this._lastSeen.set(pid, mtime);
+    });
+
+    // 3. First-time seen — record mtime so we don't spam on next tick
+    for (const id in data) {
+      if (!this._lastSeen.has(id)) this._lastSeen.set(id, data[id].mtime);
+    }
+  },
+};
+
+/* ═══════════════════════════════════════════════════════════════
    INIT
    ═══════════════════════════════════════════════════════════════ */
 function init() {
@@ -5625,11 +6345,13 @@ function init() {
   Today.render();
   Events.updateFilterCounts();
   FirstHint.init();
+  Tooltips.init();
   Utils.refreshIcons();
   setTimeout(() => MathRender.apply(), 800);
   setTimeout(() => MathRender.apply(), 2200);
 
   setInterval(() => Achievements.check(), 30000);
+  ArticleRefresher.start();
 }
 
 /* ═══════════════════════════════════════════════════════════════
@@ -6225,6 +6947,7 @@ const PageState = {
 };
 
 PageState.install();
+ArticleLoader.install();
 init();
 PageState.restore();
 
