@@ -455,15 +455,57 @@ svg.lucide { stroke-width: 2; }
 /* ──────────────────────────────────────────────────────────────
    11. POMODORO
    ────────────────────────────────────────────────────────────── */
-.pomodoro{position:fixed; bottom:20px; right:20px; background:var(--surface); border:1px solid var(--accent-2); border-radius:6px; padding:10px 14px; display:flex; align-items:center; gap:12px; box-shadow:0 0 20px var(--accent-glow); z-index:500; font-size:14px;}
-.pomodoro .time{font-size:24px; color:var(--accent); text-shadow:0 0 8px var(--accent-glow); min-width:72px; text-align:center; letter-spacing:2px;}
+.pomodoro{
+  position:fixed; bottom:20px; right:20px;
+  background:var(--surface);
+  border:1px solid var(--border-2);
+  border-radius:8px;
+  padding:10px 14px;
+  display:flex; align-items:center; gap:12px;
+  box-shadow:0 0 24px var(--accent-glow), 0 4px 12px rgba(0,0,0,.5);
+  z-index:500; font-size:14px;
+}
+.pomodoro .time{
+  font-size:24px; color:var(--accent);
+  text-shadow:0 0 8px var(--accent-glow);
+  min-width:72px; text-align:center; letter-spacing:2px;
+}
 .pomodoro .time.break{color:var(--warn);text-shadow:0 0 8px rgba(221,255,0,.5)}
 .pomodoro .mode{font-size:10px;color:var(--text-3);letter-spacing:2px;text-align:center}
-.pomo-btn{width:30px; height:30px; background:var(--surface-2); border:1px solid var(--border-2); color:var(--text-2); cursor:pointer; border-radius:3px; display:flex; align-items:center; justify-content:center; transition:all .15s;}
+
+/* Base button */
+.pomo-btn{
+  width:32px; height:32px;
+  background:var(--surface-2);
+  border:1px solid var(--border-2);
+  color:var(--text-2);
+  cursor:pointer;
+  border-radius:6px;
+  display:flex; align-items:center; justify-content:center;
+  transition:all .15s;
+}
 .pomo-btn svg{width:14px;height:14px}
-.pomo-btn:hover{color:var(--accent);border-color:var(--accent)}
+.pomo-btn svg.lucide{stroke-width:2.5}
+.pomo-btn:hover{
+  color:var(--accent);
+  border-color:var(--accent);
+  background:var(--surface-3);
+}
+
 .pomo-btn.play{background:var(--accent);color:#000;border-color:var(--accent)}
-.pomo-count{font-size:11px; color:var(--text-3); letter-spacing:1px; border-left:1px solid var(--border); padding-left:12px; text-align:center;}
+.pomo-btn.play svg.lucide{fill:currentColor;stroke:none;width:14px;height:14px;transform:translateX(1px)}
+.pomo-btn.play svg.lucide path,
+.pomo-btn.play svg.lucide polygon{fill:currentColor;stroke:none}
+
+.pomodoro .pomo-ring svg.lucide{stroke-width:2.5}
+.pm-pomo-inline svg.lucide{stroke-width:2.5}
+.pomo-count{
+  font-size:11px; color:var(--text-3);
+  letter-spacing:1px;
+  border-left:1px solid var(--border);
+  padding-left:12px;
+  text-align:center;
+}
 
 /* ──────────────────────────────────────────────────────────────
    12. COMMAND PALETTE
@@ -1087,16 +1129,7 @@ body.focus-mode .step-header { background:transparent; }
 }
 .pomodoro { position: fixed; }
 
-/* 7. Step header hint */
-.step-header { position: relative; }
-.step-header::after {
-  content: "↓ expand"; position: absolute; right: 60px; top: 50%;
-  transform: translateY(-50%); color: var(--text-3);
-  font-size: 10px; letter-spacing: 1px; opacity: 0; transition: opacity .15s;
-}
-.step-header:hover::after { opacity: 0.6; }
-.step.collapsed .step-header::after { content: "→ expand"; }
-@media (max-width: 900px) { .step-header::after { display: none; } }
+/* 7. Step header hint — премахнат (chevron показва състоянието) */
 
 /* 8. Pomodoro ring */
 .pomodoro .pomo-ring {
@@ -1351,7 +1384,8 @@ body.focus-mode .step-header { background:transparent; }
 }
 #pointModal.pdf-focus .pdf-pomo { display: flex; }
 .pdf-pomo:hover { opacity: 1; transform: scale(1.06); }
-.pdf-pomo svg { width: 16px; height: 16px; }
+.tools-header h2 svg{width:20px;height:20px}
+#pomoSettingsOverlay svg.lucide{stroke-width:2.5}
 .pdf-pomo.running { border-color: var(--accent); animation: pulse-live 2s ease-in-out infinite; }
 @media (max-width: 700px) {
   .pdf-side-tools { left: 8px; padding: 4px; gap: 2px; }
@@ -2284,3 +2318,412 @@ body.focus-mode .step-header { background:transparent; }
 .ai-suggestion-card.suggestion-special i {
   color: rgb(255, 200, 0);
 }
+
+/* ── ArticleLoader: loading ── */
+.loading {
+  padding: 12px;
+  color: var(--text-3);
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+.version-content { display: none; }
+.version-content.active { display: block; }
+
+/* ── Version tabs — pill group (matches article.html.j2) ── */
+.versions {
+  display: inline-flex;
+  gap: 4px;
+  background: var(--surface-2);
+  border: 1px solid var(--border-2);
+  padding: 4px;
+  border-radius: 5px;
+  margin: 8px 0;
+  flex-wrap: wrap;
+}
+.ver-btn {
+  padding: 6px 12px;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-3);
+  cursor: pointer;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  border-radius: 3px;
+  transition: all .15s;
+}
+.ver-btn:hover {
+  color: var(--accent);
+  background: rgba(255,255,255,0.04);
+}
+.ver-btn.active {
+  background: var(--accent);
+  color: #000;
+  box-shadow: 0 0 10px var(--accent-glow, rgba(0,255,157,0.35));
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   MICRO-ANIMATIONS & CUSTOM TOOLTIPS
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Button press feedback ── */
+.pm-btn:active,
+.pomo-btn:active,
+.icon-btn:active,
+.mini-btn:active,
+.chip:active,
+.main-tab:active,
+.ver-btn:active,
+.exam-btn:active,
+.quiz-btn:active,
+.scratch-btn:active,
+.pdf-btn:active,
+.palette-item:active {
+  transform: scale(0.94);
+  transition-duration: .05s;
+}
+
+.pm-btn,
+.icon-btn,
+.mini-btn,
+.pomo-btn {
+  transition: all .15s cubic-bezier(.4,0,.2,1), transform .1s;
+}
+
+/* ── Copy success ── */
+.copied {
+  color: var(--accent) !important;
+  border-color: var(--accent) !important;
+  background: var(--accent-dim) !important;
+  animation: copy-pop .4s cubic-bezier(.34,1.56,.64,1);
+}
+.copied svg.lucide {
+  stroke: var(--accent) !important;
+  fill: none;
+}
+
+@keyframes copy-pop {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.18); }
+  100% { transform: scale(1); }
+}
+
+/* ── Checkbox pop on mark done ── */
+.point-check.checked {
+  animation: check-pop .35s cubic-bezier(.34,1.56,.64,1);
+}
+@keyframes check-pop {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.22); }
+  100% { transform: scale(1); }
+}
+
+/* ── Modal fade-in ── */
+.modal-overlay.open .point-modal,
+.deepdive-overlay.open .deepdive-box {
+  animation: modal-in .22s cubic-bezier(.4,0,.2,1);
+}
+@keyframes modal-in {
+  from { opacity: 0; transform: scale(.98) translateY(6px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* ── Version switch fade ── */
+.version-content.active {
+  animation: version-fade .2s ease;
+}
+@keyframes version-fade {
+  from { opacity: .4; }
+  to   { opacity: 1; }
+}
+
+/* ── Custom tooltip — 4-way placement + collision-aware arrow ── */
+.custom-tooltip {
+  position: fixed;
+  z-index: 9999;
+  padding: 6px 10px;
+  background: var(--surface);
+  border: 1px solid var(--accent-2);
+  border-radius: 5px;
+  color: var(--accent);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  text-align: center;
+  pointer-events: none;
+  opacity: 0;
+  transform: scale(.92);
+  transition: opacity .14s ease, transform .16s cubic-bezier(.34,1.56,.64,1);
+  box-shadow: 0 4px 14px rgba(0,0,0,.6), 0 0 14px var(--accent-glow);
+  max-width: min(280px, calc(100vw - 16px));
+  --arrow-x: 50%;
+  --arrow-y: 50%;
+}
+.custom-tooltip.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Base arrow — shared geometry */
+.custom-tooltip::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: var(--surface);
+}
+
+/* ▲ place-top: tooltip above target, arrow on bottom edge ↓ */
+.custom-tooltip.place-top::after {
+  bottom: -5px;
+  left: var(--arrow-x);
+  transform: translateX(-50%) rotate(45deg);
+  border-right: 1px solid var(--accent-2);
+  border-bottom: 1px solid var(--accent-2);
+}
+
+/* ▼ place-bottom: tooltip below target, arrow on top edge ↑ */
+.custom-tooltip.place-bottom::after {
+  top: -5px;
+  left: var(--arrow-x);
+  transform: translateX(-50%) rotate(45deg);
+  border-top: 1px solid var(--accent-2);
+  border-left: 1px solid var(--accent-2);
+}
+
+/* ◀ place-left: tooltip left of target, arrow on right edge → */
+.custom-tooltip.place-left::after {
+  right: -5px;
+  top: var(--arrow-y);
+  transform: translateY(-50%) rotate(45deg);
+  border-top: 1px solid var(--accent-2);
+  border-right: 1px solid var(--accent-2);
+}
+
+/* ▶ place-right: tooltip right of target, arrow on left edge ← */
+.custom-tooltip.place-right::after {
+  left: -5px;
+  top: var(--arrow-y);
+  transform: translateY(-50%) rotate(45deg);
+  border-bottom: 1px solid var(--accent-2);
+  border-left: 1px solid var(--accent-2);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DEEP DIVE — FOCUS MODE
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Fullscreen overlay */
+.deepdive-overlay.focus-mode {
+  padding: 0;
+}
+.deepdive-overlay.focus-mode .deepdive-box {
+  max-width: 100vw;
+  width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+/* Header — floating top-right, fade in on hover */
+.deepdive-overlay.focus-mode .deepdive-header {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  left: auto;
+  padding: 6px 8px;
+  background: rgba(0,0,0,.78);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--border-2);
+  border-radius: 8px;
+  z-index: 100;
+  opacity: .3;
+  transition: opacity .2s;
+  flex-wrap: nowrap;
+}
+.deepdive-overlay.focus-mode .deepdive-header:hover {
+  opacity: 1;
+}
+.deepdive-overlay.focus-mode .deepdive-title-area {
+  display: none;
+}
+.deepdive-overlay.focus-mode .deepdive-actions .btn-label {
+  display: none;
+}
+
+/* Body — оптимална ширина за четене (~75ch), по-голям ред */
+.deepdive-overlay.focus-mode .deepdive-body {
+  padding: 60px max(32px, calc((100vw - 75ch) / 2)) 140px;
+  font-size: 16px;
+  line-height: 1.85;
+}
+.deepdive-overlay.focus-mode .deepdive-body h2 {
+  font-size: 22px;
+  margin-top: 48px;
+}
+.deepdive-overlay.focus-mode .deepdive-body h3 {
+  font-size: 17px;
+}
+.deepdive-overlay.focus-mode .deepdive-body p {
+  margin-bottom: 18px;
+}
+
+/* Side tools (mirror на PDF focus) */
+.dd-side-tools {
+  position: fixed;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  padding: 6px;
+  background: rgba(0,0,0,.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--accent-2);
+  border-radius: 12px;
+  box-shadow: 0 0 30px var(--accent-glow), 0 6px 16px rgba(0,0,0,.5);
+  z-index: 100;
+  opacity: 0.42;
+  transition: opacity .25s, transform .25s;
+  pointer-events: none;
+}
+.deepdive-overlay.focus-mode .dd-side-tools {
+  display: flex;
+  pointer-events: auto;
+}
+.dd-side-tools:hover { opacity: 1; transform: translateY(-50%) scale(1.02); }
+.dd-side-tools button {
+  width: 40px; height: 40px;
+  background: transparent; border: 1px solid transparent;
+  color: var(--text-2); cursor: pointer; border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  transition: all .15s;
+}
+.dd-side-tools button:hover {
+  background: var(--accent); color: #000;
+  border-color: var(--accent);
+  transform: scale(1.08);
+  box-shadow: 0 0 12px var(--accent-glow);
+}
+.dd-side-tools button:active { transform: scale(0.95); }
+.dd-side-tools button svg { width: 18px; height: 18px; }
+
+/* Mini TOC (right side) */
+.dd-toc {
+  position: fixed;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px;
+  max-width: 210px;
+  max-height: 60vh;
+  overflow-y: auto;
+  background: rgba(0,0,0,.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--border-2);
+  border-radius: 10px;
+  font-size: 11px;
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: .5px;
+  z-index: 100;
+  opacity: 0.32;
+  transition: opacity .25s;
+}
+.deepdive-overlay.focus-mode .dd-toc { display: flex; }
+.dd-toc:hover { opacity: 1; }
+.dd-toc-item {
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--text-3);
+  border-left: 2px solid transparent;
+  transition: all .12s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dd-toc-item:hover {
+  color: var(--accent);
+  background: var(--surface-2);
+  border-left-color: var(--accent-2);
+}
+.dd-toc-item.active {
+  color: var(--accent);
+  border-left-color: var(--accent);
+  background: var(--accent-dim);
+}
+@media (max-width: 1100px) {
+  .dd-toc { display: none !important; }
+}
+
+/* Floating pomodoro bottom-left */
+.dd-pomo {
+  position: fixed;
+  bottom: 18px;
+  left: 18px;
+  display: none;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: rgba(0,0,0,.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--accent-2);
+  border-radius: 10px;
+  color: var(--accent);
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  z-index: 100;
+  box-shadow: 0 0 20px var(--accent-glow), 0 4px 12px rgba(0,0,0,.5);
+  opacity: 0.5;
+  transition: opacity .2s, transform .15s;
+  font-family: 'JetBrains Mono', monospace;
+  user-select: none;
+}
+.deepdive-overlay.focus-mode .dd-pomo { display: flex; }
+.dd-pomo:hover { opacity: 1; transform: scale(1.06); }
+.dd-pomo svg { width: 16px; height: 16px; }
+.dd-pomo svg.lucide { stroke-width: 2.5; }
+.dd-pomo.running {
+  border-color: var(--accent);
+  animation: pulse-live 2s ease-in-out infinite;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DEEP DIVE — VERSION INFO (styled like .pm-label)
+   ═══════════════════════════════════════════════════════════════ */
+.dd-version-info {
+  font-size: 10px;
+  color: var(--text-3);
+  letter-spacing: 2px;
+  margin: 4px 0 18px 0;
+  text-transform: uppercase;
+  font-family: 'JetBrains Mono', monospace;
+  line-height: 1.7;
+  user-select: text;
+}
+.dd-version-info .vv {
+  color: var(--text-2);
+  font-weight: 600;
+}
+.dd-version-info .sep {
+  color: var(--border-2);
+  margin: 0 4px;
+  font-weight: 400;
+}
+.dd-version-info .score-good { color: var(--accent); }
+.dd-version-info .score-mid  { color: var(--warn); }
+.dd-version-info .score-bad  { color: var(--danger); }
