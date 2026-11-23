@@ -14,8 +14,9 @@ from datetime import datetime
 # продължава да ползва cp1252 за sys.stdout. Emoji в print() гърми.
 if sys.platform == "win32":
     try:
-        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-        sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+        if "pytest" not in sys.modules:
+            sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+            sys.stderr.reconfigure(encoding="utf-8", errors="replace")
     except Exception:
         pass
 
@@ -73,16 +74,18 @@ def clean_markdown(text: str) -> str:
 
 def read_text_md(path: Path) -> str:
     text = path.read_text(encoding='utf-8')
-    parts = text.split('---', 1)
-    body = parts[1] if len(parts) == 2 else text
+    # Strip YAML frontmatter (opening --- ... closing ---), if present
+    parts = text.split('---', 2)
+    body = parts[2] if len(parts) >= 3 else text
     body = re.sub(r'^#\s+.*?\n', '', body, count=1)
     return clean_markdown(body)
 
 
 def read_deep_md(path: Path) -> str:
     text = path.read_text(encoding='utf-8')
-    parts = text.split('---', 1)
-    body = parts[1] if len(parts) == 2 else text
+    # Strip YAML frontmatter (opening --- ... closing ---), if present
+    parts = text.split('---', 2)
+    body = parts[2] if len(parts) >= 3 else text
     body = re.sub(r'^\s*#\s+.*?\n', '', body, count=1)
     return body.strip()
 
@@ -166,10 +169,127 @@ def replace_or_insert_field(block: str, key: str, value: str, anchor: str | None
     return block, 'error'
 
 
+# ─── Version collection & array literals ───────────────────────
+def collect_versions(item_dir: Path, prefix: str) -> list[dict]:
+    """Връща [{v: 1, content: '...'}, ...] от {prefix}-v1.md, {prefix}-v2.md, ...
+    За 'text' → clean_markdown (както explanation); за 'deep' → raw markdown
+    (DeepDive.md2html го обработва на frontend-а)."""
+    pattern = re.compile(rf'^{re.escape(prefix)}-v(\d+)\.md$')
+    files = []
+    for f in item_dir.glob(f'{prefix}-v*.md'):
+        m = pattern.match(f.name)
+        if m:
+            files.append((int(m.group(1)), f))
+    files.sort(key=lambda x: x[0])
+    if not files:
+        return []
+    reader = read_text_md if prefix == 'text' else read_deep_md
+    out = []
+    for v, f in files:
+        try:
+            content = reader(f)
+            if content:
+                out.append({'v': v, 'content': content})
+        except Exception as e:
+            print(f"  ⚠ {f.name}: {e}")
+    return out
+
+
+def build_versions_js(versions: list[dict]) -> str:
+    """[{v, content}, ...] → JS array literal, безопасен за вграждане."""
+    if not versions:
+        return '[]'
+    parts = []
+    for item in versions:
+        content = escape_for_backtick(item['content'])
+        parts.append(f'{{v:{item["v"]},content:`{content}`}}')
+    return '[' + ','.join(parts) + ']'
+
+
+def find_value_span(block: str, key: str):
+    """Връща (start, end) за key:<value> — поддържа string, array и object."""
+    pattern = re.compile(r'\b' + re.escape(key) + r'\s*:\s*')
+    m = pattern.search(block)
+    if not m:
+        return None
+    j = m.end()
+    if j >= len(block):
+        return None
+    opener = block[j]
+
+    # ── String ──
+    if opener in ('"', "'", '`'):
+        quote = opener
+        k = j + 1
+        in_escape = False
+        while k < len(block):
+            c = block[k]
+            if in_escape:
+                in_escape = False; k += 1; continue
+            if c == '\\':
+                in_escape = True; k += 1; continue
+            if c == quote:
+                return (m.start(), k + 1)
+            k += 1
+        return None
+
+    # ── Array / object — bracket counting (устойчиво на backtick-стрингове вътре) ──
+    if opener in ('[', '{'):
+        open_ch = opener
+        close_ch = ']' if opener == '[' else '}'
+        depth = 1
+        k = j + 1
+        in_str = False; quote = None; escape = False
+        while k < len(block):
+            c = block[k]
+            if escape:
+                escape = False; k += 1; continue
+            if in_str:
+                if c == '\\':
+                    escape = True
+                elif c == quote:
+                    in_str = False
+                k += 1; continue
+            if c in ('"', "'", '`'):
+                in_str = True; quote = c; k += 1; continue
+            if c == open_ch:
+                depth += 1
+            elif c == close_ch:
+                depth -= 1
+                if depth == 0:
+                    return (m.start(), k + 1)
+            k += 1
+        return None
+
+    return None
+
+
+def replace_or_insert_array_field(block: str, key: str, value_js: str,
+                                  anchor: str | None = None) -> tuple[str, str]:
+    """Замества key с готов JS израз (напр. [{v:1,...},...]), или го вмъква след anchor."""
+    new_field = f'{key}: {value_js}'
+    span = find_value_span(block, key)
+    if span:
+        start, end = span
+        return block[:start] + new_field + block[end:], 'replaced'
+
+    if anchor:
+        anchor_span = find_value_span(block, anchor)
+        if anchor_span:
+            _, aend = anchor_span
+            return block[:aend] + f',\n    {new_field}' + block[aend:], 'inserted'
+
+    last = block.rstrip()
+    if last.endswith('}'):
+        return last[:-1].rstrip() + f',\n    {new_field}\n  }}', 'inserted'
+    return block, 'error'
+
+
 # ─── Main ──────────────────────────────────────────────────────
 def integrate(html_path: Path, only=None):
     stats = {'expl_replaced': 0, 'expl_inserted': 0, 'deep_replaced': 0, 'deep_inserted': 0,
-             'deep_skipped': 0, 'missing_md': 0, 'not_found': 0, 'errors': 0}
+             'deep_skipped': 0, 'missing_md': 0, 'not_found': 0, 'errors': 0,
+             'expl_ver': 0, 'deep_ver': 0}
 
     if not html_path.exists():
         print(f"✗ {html_path} не съществува"); return stats
@@ -231,6 +351,35 @@ def integrate(html_path: Path, only=None):
             except Exception as e:
                 print(f"✗ [{pid}] deep: {e}"); stats['errors'] += 1
 
+        # ── Versions: запиши ВСИЧКИ версии като array ──
+        try:
+            expl_versions = collect_versions(item_dir, 'text')
+            if expl_versions:
+                js = build_versions_js(expl_versions)
+                block, action = replace_or_insert_array_field(
+                    block, 'explanationVersions', js, anchor='explanation')
+                if action in ('replaced', 'inserted'):
+                    stats['expl_ver'] += 1
+                    print(f"  📚 [{pid}] explanationVersions: {len(expl_versions)} версии ({action})")
+                else:
+                    stats['errors'] += 1
+        except Exception as e:
+            print(f"✗ [{pid}] explanationVersions: {e}"); stats['errors'] += 1
+
+        try:
+            deep_versions = collect_versions(item_dir, 'deep')
+            if deep_versions:
+                js = build_versions_js(deep_versions)
+                block, action = replace_or_insert_array_field(
+                    block, 'deepExplanationVersions', js, anchor='deepExplanation')
+                if action in ('replaced', 'inserted'):
+                    stats['deep_ver'] += 1
+                    print(f"  📚 [{pid}] deepExplanationVersions: {len(deep_versions)} версии ({action})")
+                else:
+                    stats['errors'] += 1
+        except Exception as e:
+            print(f"✗ [{pid}] deepExplanationVersions: {e}"); stats['errors'] += 1
+
         html = html[:start] + block + html[end:]
 
     if html == original:
@@ -247,6 +396,7 @@ def integrate(html_path: Path, only=None):
     print(f"\n✅ Записан: {html_path}")
     print(f"\n📊 Explanation: replaced={stats['expl_replaced']} inserted={stats['expl_inserted']}")
     print(f"   Deep:       replaced={stats['deep_replaced']} inserted={stats['deep_inserted']} missing_md={stats['missing_md']}")
+    print(f"   Versions:   explanation={stats['expl_ver']}  deep={stats['deep_ver']}")
     print(f"   Errors: {stats['errors']}  Not found: {stats['not_found']}")
     return stats
 

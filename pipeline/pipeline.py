@@ -43,27 +43,32 @@ from dataclasses import dataclass, field
 from typing import Optional
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-def _atomic_write(path: Path, content: str) -> None:
+def _atomic_write(path: Path, content: str, retries: int = 8) -> None:
     """
-    Атомарен запис + fsync — оцелява при внезапно изключване на лаптопа.
-    Уникален .tmp per-thread за избягване на PermissionError при concurrent writes.
+    Атомарен запис + fsync. Уникален .tmp per-thread + retry с backoff —
+    оцелява при Windows file locks (antivirus / OneDrive / Search Indexer).
     """
     path.parent.mkdir(parents=True, exist_ok=True)
-    # Уникален tmp за всеки thread — иначе Windows дава PermissionError
-    import threading
     tid = threading.current_thread().ident or 0
-    tmp = path.with_suffix(f"{path.suffix}.{tid}.tmp")
-    with open(tmp, "w", encoding="utf-8") as f:
-        f.write(content)
-        f.flush()
-        try:
-            os.fsync(f.fileno())
-        except (OSError, AttributeError):
-            pass
+    tmp = path.with_suffix(f"{path.suffix}.{tid}.{os.getpid()}.tmp")
     try:
-        tmp.replace(path)
-    except (OSError, PermissionError):
-        path.write_text(content, encoding="utf-8")
+        with open(tmp, "w", encoding="utf-8") as f:
+            f.write(content)
+            f.flush()
+            try:
+                os.fsync(f.fileno())
+            except (OSError, AttributeError):
+                pass
+        for attempt in range(retries):
+            try:
+                tmp.replace(path)
+                return
+            except (OSError, PermissionError):
+                if attempt == retries - 1:
+                    path.write_text(content, encoding="utf-8")
+                    return
+                time.sleep(0.05 * (2 ** attempt))  # 50ms → 6.4s
+    finally:
         try:
             tmp.unlink()
         except Exception:
@@ -73,8 +78,9 @@ def _atomic_write(path: Path, content: str) -> None:
 # ─── Windows UTF-8 fix ───
 if sys.platform == "win32":
     try:
-        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-        sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+        if "pytest" not in sys.modules:
+            sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+            sys.stderr.reconfigure(encoding="utf-8", errors="replace")
     except Exception:
         pass
 
@@ -800,8 +806,99 @@ class Writer:
         if item.verification:
             self._write_verification(folder, item, ts, v)
 
+        # 5. article.json — единен bundle за динамичния сайт
+        self._write_article_json(folder, item, ts)
+
         log.info(f"[{item.id}] Записано: {folder.relative_to(BASE_DIR.parent)} ({word_count} думи)")
         return folder
+
+    def _write_article_json(self, folder: Path, item: QueueItem, ts: str) -> None:
+        """Събира всички версии + deep + metadata в един JSON.
+        Frontend-ът го зарежда с fetch() — без integrate.py."""
+        def _strip_header(raw: str) -> str:
+            # форматът на Writer е: '# Title\n\n**ID:** ...\n---\n\n<content>'
+            m = re.search(r"\n---\n+(.*)", raw, re.DOTALL)
+            return (m.group(1) if m else raw).strip()
+
+        def _clean_markdown(text: str) -> str:
+            """Мимикрия на integrate.py::clean_markdown / backfill_article_json.py.
+            Запазва LaTeX ($...$ / $$...$$), маха markdown маркери.
+            ВАЖНО: ArticleLoader.render подава content на Utils.escapeHtml
+            (без markdown parsing), затова текстът ТРЯБВА да е чист."""
+            latex_blocks = []
+            def _save_latex(m):
+                latex_blocks.append(m.group(0))
+                return f'\x00LTX{len(latex_blocks)-1}\x00'
+            text = re.sub(r'\$\$.+?\$\$', _save_latex, text, flags=re.DOTALL)
+            text = re.sub(r'(?<!\$)\$[^\$\n]+?\$(?!\$)', _save_latex, text)
+            text = re.sub(r'<!--.*?-->', '', text, flags=re.DOTALL)
+            text = re.sub(r'```[a-zA-Z0-9]*\n', '', text)
+            text = re.sub(r'```', '', text)
+            text = re.sub(r'`([^`]+)`', r'\1', text)
+            text = re.sub(r'^#{1,6}\s+', '', text, flags=re.MULTILINE)
+            text = re.sub(r'\*\*\*(.+?)\*\*\*', r'\1', text, flags=re.DOTALL)
+            text = re.sub(r'\*\*(.+?)\*\*',     r'\1', text, flags=re.DOTALL)
+            text = re.sub(r'(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)', r'\1', text, flags=re.DOTALL)
+            text = re.sub(r'__(.+?)__',         r'\1', text, flags=re.DOTALL)
+            text = re.sub(r'(?<!_)_(?!_)(.+?)(?<!_)_(?!_)', r'\1', text, flags=re.DOTALL)
+            text = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', text)
+            text = re.sub(r'^[ \t]*[-*+]\s+', '• ', text, flags=re.MULTILINE)
+            text = re.sub(r'^[-*_]{3,}\s*$', '', text, flags=re.MULTILINE)
+            text = re.sub(r'\n{3,}', '\n\n', text)
+            for i, block in enumerate(latex_blocks):
+                text = text.replace(f'\x00LTX{i}\x00', block)
+            return text.strip()
+
+        def _collect(prefix: str, clean: bool) -> list[dict]:
+            files = []
+            for f in folder.glob(f"{prefix}-v*.md"):
+                m = re.search(rf"{prefix}-v(\d+)\.md$", f.name)
+                if m:
+                    files.append((int(m.group(1)), f))
+            files.sort(key=lambda x: x[0])
+            out = []
+            for v, f in files:
+                try:
+                    content = _strip_header(f.read_text(encoding="utf-8"))
+                    if clean:
+                        content = _clean_markdown(content)
+                    out.append({"v": v, "content": content})
+                except Exception as e:
+                    log.warning(f"[{item.id}] article.json v{v}: {e}")
+            return out
+
+        meta_path = folder / "metadata.json"
+        meta = {}
+        if meta_path.exists():
+            try:
+                meta = json.loads(meta_path.read_text(encoding="utf-8"))
+            except Exception:
+                pass
+
+        # Последна версия от verification-а (ако има)
+        latest_verification = None
+        if item.verification:
+            latest_verification = {
+                "score": item.verification.get("score"),
+                "verdict": item.verification.get("verdict"),
+                "math_errors": item.verification.get("math_errors", []),
+                "issues": item.verification.get("issues", []),
+            }
+
+        bundle = {
+            "id": item.id,
+            "title": meta.get("title") or item.title,
+            "generated_at": ts,
+            "generator_model": meta.get("generator_model"),
+            "verifier_model": meta.get("verifier_model"),
+            "word_count": meta.get("word_count"),
+            "versions": _collect("text", clean=True),    # clean text — escapeHtml
+            "deep_versions": _collect("deep", clean=False),  # raw markdown — md2html
+            "verification": latest_verification,
+        }
+
+        out_path = folder / "article.json"
+        _atomic_write(out_path, json.dumps(bundle, ensure_ascii=False, indent=2))
 
     def _write_verification(self, folder: Path, item: QueueItem, ts: str, v: int):
         vf = item.verification
@@ -898,6 +995,7 @@ class Pipeline:
 
         self._html_cache: Optional[str] = None
         self._steps_ids: Optional[list] = None
+        self._progress_lock = threading.Lock()
         self.progress_file = BASE_DIR / "progress.json"
         self._session_started = datetime.now().isoformat()
 
@@ -927,12 +1025,13 @@ class Pipeline:
             return {}
 
     def _save_progress(self, **updates) -> None:
-        """Атомарно обновява progress.json. Merge-ва с текущия."""
-        data = self._load_progress()
-        data.setdefault("session_started", self._session_started)
-        data["updated_at"] = datetime.now().isoformat()
-        data.update(updates)
-        _atomic_write(self.progress_file, json.dumps(data, indent=2, ensure_ascii=False))
+        """Атомарно обновява progress.json (thread-safe, без lost updates)."""
+        with self._progress_lock:
+            data = self._load_progress()
+            data.setdefault("session_started", self._session_started)
+            data["updated_at"] = datetime.now().isoformat()
+            data.update(updates)
+            _atomic_write(self.progress_file, json.dumps(data, indent=2, ensure_ascii=False))
 
     def _detect_and_recover_interrupted(self) -> list:
         """
@@ -1699,6 +1798,7 @@ class Pipeline:
 
         if budget_hit:
             self.running = False
+
         return processed
 
     def run_forever(self):
@@ -1904,6 +2004,116 @@ def cmd_reset(point_id: Optional[str] = None):
         state_file.unlink()
         print("✓ state.json изтрит")
 
+# ═══════════════════════════════════════════════════════════════
+# OVER-REGENERATION — keep old versions, create new ones
+# ═══════════════════════════════════════════════════════════════
+def cmd_regen(point_ids: list, html_arg: Optional[str] = None) -> None:
+    """
+    Over-regenerate точка(и) без да трие стари версии.
+
+    За всяка точка:
+      1. Backup на state.json (за сигурност)
+      2. Маха записа от state.json (без да пипа файловете в generated/)
+      3. Пуска pipeline-а отново за точката
+      4. Writer.write() създава text-v2.md, deep-v2.md и обновява
+         article.json с versions=[v1, v2] — старата версия остава достъпна.
+
+    Usage:
+        python pipeline.py --regen-point 7.5
+        python pipeline.py --regen-point 7.5,8.1,8.2
+    """
+    if not point_ids:
+        print("✗ Няма точки за регенерация")
+        return
+
+    state_file = BASE_DIR / "state.json"
+    if not state_file.exists():
+        print("✗ Няма state.json — пусни --scan първо")
+        return
+
+    # ─── 0. Backup на state.json ───
+    from datetime import datetime as _dt
+    import shutil
+    bak = state_file.with_suffix(f".json.bak-{_dt.now().strftime('%Y%m%d-%H%M%S')}")
+    try:
+        shutil.copy2(state_file, bak)
+        print(f"💾 Backup: {bak.name}")
+    except Exception as e:
+        print(f"⚠ Backup failed: {e}")
+
+    # ─── 1. Покажи текущите версии преди регенерация ───
+    print()
+    for pid in point_ids:
+        safe = pid.replace(".", "_")
+        folder = BASE_DIR.parent / "generated" / "articles" / safe
+        text_vs = sorted(folder.glob("text-v*.md")) if folder.exists() else []
+        deep_vs = sorted(folder.glob("deep-v*.md")) if folder.exists() else []
+        if text_vs:
+            print(f"  {pid}: преди → {len(text_vs)} text, {len(deep_vs)} deep")
+        else:
+            print(f"  {pid}: преди → (няма статия)")
+
+    # ─── 2. Reset от state.json (без да пипаме файловете) ───
+    data = json.loads(state_file.read_text(encoding="utf-8"))
+    reset, not_found = [], []
+    for pid in point_ids:
+        if pid in data.get("processed", {}):
+            del data["processed"][pid]
+            reset.append(pid)
+        else:
+            not_found.append(pid)
+
+    if reset:
+        state_file.write_text(
+            json.dumps(data, indent=2, ensure_ascii=False),
+            encoding="utf-8",
+        )
+        print(f"🔄 Reset от state.json: {', '.join(reset)}")
+    if not_found:
+        print(f"ℹ  Не са в state.json (първо генериране): {', '.join(not_found)}")
+
+    # ─── 3. Пусни pipeline-а за всяка точка ───
+    print()
+    html_path = find_html_path(html_arg)
+    total_processed = 0
+    total_errors = 0
+
+    for pid in point_ids:
+        print(f"▶ Регенерирам {pid}…")
+        try:
+            p = Pipeline(html_path=html_path, only_id=pid)
+            p._detect_and_recover_interrupted()
+            n = p.run_once(allow_scan=False)
+            total_processed += n
+            if n == 0:
+                total_errors += 1
+
+            # ─── 4. Покажи резултата ───
+            safe = pid.replace(".", "_")
+            folder = BASE_DIR.parent / "generated" / "articles" / safe
+            text_vs = sorted(folder.glob("text-v*.md")) if folder.exists() else []
+            deep_vs = sorted(folder.glob("deep-v*.md")) if folder.exists() else []
+            if text_vs:
+                print(f"  ✓ След → {len(text_vs)} text, {len(deep_vs)} deep "
+                      f"({', '.join(v.name for v in text_vs)})")
+            else:
+                print(f"  ✗ Не са създадени файлове — виж pipeline/logs/")
+        except BudgetExhausted as e:
+            print(f"  ✗ Budget exhausted: {e}")
+            print(f"  ⏸  Спирам — следващите точки няма да се регенерират")
+            return
+        except Exception as e:
+            print(f"  ✗ Грешка: {e}")
+            total_errors += 1
+        print()
+
+    # ─── 5. Summary ───
+    print("═" * 55)
+    print(f"  Готово: {total_processed}/{len(point_ids)} регенерирани"
+          + (f", {total_errors} грешки" if total_errors else ""))
+    print(f"  Backup: {bak.name}")
+    print(f"  Файловете са в: generated/articles/<id>/")
+    print("═" * 55)
 
 def cmd_scan(html_arg: Optional[str] = None):
     if not AUTO_SCAN_AVAILABLE:
@@ -1962,6 +2172,14 @@ def main():
     parser.add_argument("--no-scan", action="store_true", help="Изключи auto-scan")
     parser.add_argument("--no-verify", action="store_true", help="Изключи verification")
     parser.add_argument("--check-config", action="store_true", help="Покажи merged config и излез")
+    parser.add_argument("--budget", type=float, default=None, help="Override daily_budget_usd (напр. --budget 50)")
+    parser.add_argument("--budget-stop", type=float, default=None, help="Override budget_stop_pct (0-1, напр. --budget-stop 0.95)")
+    parser.add_argument(
+    "--regen-point", default=None,
+    help="Over-regenerate: reset from state + run for point(s). "
+         "Keeps old versions (v1, v2, v3…). "
+         "Accepts '7.5' or '7.5,8.1'"
+)
 
     sub = parser.add_subparsers(dest="cmd")
     p_add = sub.add_parser("add", help="Ръчно добави item в queue")
@@ -1978,6 +2196,10 @@ def main():
         CONFIG["auto_scan"] = False
     if args.no_verify:
         CONFIG["enable_verification"] = False
+    if args.budget is not None:
+        CONFIG["daily_budget_usd"] = args.budget
+    if args.budget_stop is not None:
+        CONFIG["budget_stop_pct"] = args.budget_stop
 
     if args.check_config:
         print(json.dumps(CONFIG, indent=2, ensure_ascii=False))
@@ -1989,6 +2211,11 @@ def main():
 
     if args.report:
         cmd_report()
+        return
+
+    if args.regen_point:
+        ids = [x.strip() for x in args.regen_point.split(",") if x.strip()]
+        cmd_regen(ids, html_arg=args.html)
         return
 
     if args.reset_point:

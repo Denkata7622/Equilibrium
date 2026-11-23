@@ -27,6 +27,7 @@ STATE = GEN / "state"
 
 # Всички state файлове — за правилен budget tracking
 STATE_FILES = [
+    "insight_state.json",  # insight cards
     STATE / "chunker_state.json",
     STATE / "state.json",
     STATE / "problem_state.json",

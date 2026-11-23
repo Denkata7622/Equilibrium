@@ -1,0 +1,23 @@
+{
+  "session_started": "2026-10-31T12:35:03.670682",
+  "updated_at": "2026-10-31T15:13:24.223701",
+  "in_flight": [
+    "13.1"
+  ],
+  "step": "retry_1_verifying",
+  "last_completed": {
+    "id": "12.2",
+    "at": "2026-10-31T15:13:18.176231",
+    "score": 10,
+    "verdict": "approve",
+    "word_count": 4048
+  },
+  "current_batch": [
+    "12.3",
+    "13.1",
+    "13.2",
+    "13.3"
+  ],
+  "pending_count": 5,
+  "budget_spent": 2.13217284
+}

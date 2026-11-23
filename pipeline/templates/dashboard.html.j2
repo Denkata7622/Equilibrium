@@ -11,39 +11,21 @@
 <script src="https://cdn.jsdelivr.net/npm/lucide@0.454.0/dist/umd/lucide.min.js" defer></script>
 <style>
 :root {
-  --bg: #0a0b0e;
-  --surface: #0f1115;
-  --surface-2: #14171d;
-  --surface-3: #1a1e26;
-  --border: #1c2029;
-  --border-2: #262b36;
-  --border-3: #343a48;
-  --text: #e8eaed;
-  --text-2: #a8adb8;
-  --text-3: #6e7480;
-  --text-4: #4a505c;
-  --accent: #22c55e;
-  --accent-soft: rgba(34,197,94,0.10);
-  --accent-line: rgba(34,197,94,0.28);
-  --danger: #ef4444;
-  --danger-soft: rgba(239,68,68,0.10);
-  --danger-line: rgba(239,68,68,0.28);
-  --warn: #f59e0b;
-  --warn-soft: rgba(245,158,11,0.10);
-  --warn-line: rgba(245,158,11,0.28);
-  --info: #3b82f6;
-  --info-soft: rgba(59,130,246,0.10);
-  --info-line: rgba(59,130,246,0.28);
+  --bg: #0a0b0e; --surface: #0f1115; --surface-2: #14171d; --surface-3: #1a1e26;
+  --border: #1c2029; --border-2: #262b36; --border-3: #343a48;
+  --text: #e8eaed; --text-2: #a8adb8; --text-3: #6e7480; --text-4: #4a505c;
+  --accent: #22c55e; --accent-soft: rgba(34,197,94,0.10); --accent-line: rgba(34,197,94,0.28);
+  --danger: #ef4444; --danger-soft: rgba(239,68,68,0.10); --danger-line: rgba(239,68,68,0.28);
+  --warn: #f59e0b; --warn-soft: rgba(245,158,11,0.10); --warn-line: rgba(245,158,11,0.28);
+  --info: #3b82f6; --info-soft: rgba(59,130,246,0.10); --info-line: rgba(59,130,246,0.28);
+  --purple: #a855f7; --purple-soft: rgba(168,85,247,0.10); --purple-line: rgba(168,85,247,0.28);
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { color-scheme: dark; }
 body {
-  background: var(--bg);
-  color: var(--text);
+  background: var(--bg); color: var(--text);
   font-family: 'Inter', -apple-system, sans-serif;
-  font-size: 13px;
-  line-height: 1.45;
-  -webkit-font-smoothing: antialiased;
+  font-size: 13px; line-height: 1.45; -webkit-font-smoothing: antialiased;
   min-height: 100vh;
 }
 button, input, select, textarea { font-family: inherit; }
@@ -52,232 +34,129 @@ a { color: inherit; text-decoration: none; }
 .mono { font-family: 'JetBrains Mono', monospace; }
 .grow { flex: 1; min-width: 0; }
 .hide { display: none !important; }
-.sr-only {
-  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
-  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
-}
+.spin { animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+@keyframes shimmer { 0%{opacity:.6} 50%{opacity:1} 100%{opacity:.6} }
 
-/* ─── HEADER ─── */
+/* HEADER */
 .hdr {
-  height: 52px;
-  padding: 0 20px;
-  background: var(--surface);
+  height: 52px; padding: 0 20px; background: var(--surface);
   border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  position: sticky;
-  top: 0;
-  z-index: 40;
+  display: flex; align-items: center; gap: 20px;
+  position: sticky; top: 0; z-index: 40;
 }
-.hdr-brand {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 600;
-  font-size: 13px;
-  letter-spacing: 0.2px;
-  flex-shrink: 0;
-}
+.hdr-brand { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 13px; flex-shrink: 0; }
 .hdr-brand svg { width: 16px; height: 16px; color: var(--accent); stroke-width: 2.5; }
-
-.tabs {
-  display: flex;
-  gap: 2px;
-  flex: 1;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
+.tabs { display: flex; gap: 2px; flex: 1; overflow-x: auto; scrollbar-width: none; }
 .tabs::-webkit-scrollbar { display: none; }
 .tab {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 8px 14px;
-  background: transparent;
-  border: none;
-  border-radius: 5px;
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--text-3);
-  white-space: nowrap;
-  transition: all 0.12s;
-  position: relative;
+  display: flex; align-items: center; gap: 6px;
+  padding: 8px 14px; background: transparent; border: none; border-radius: 5px;
+  font-size: 12px; font-weight: 500; color: var(--text-3);
+  white-space: nowrap; transition: all 0.12s; position: relative;
 }
 .tab:hover { color: var(--text-2); background: var(--surface-2); }
 .tab.active { color: var(--text); background: var(--surface-2); }
 .tab.active::after {
-  content: '';
-  position: absolute;
-  bottom: -1px;
-  left: 12px;
-  right: 12px;
-  height: 2px;
-  background: var(--accent);
-  border-radius: 2px;
+  content: ''; position: absolute; bottom: -1px; left: 12px; right: 12px;
+  height: 2px; background: var(--accent); border-radius: 2px;
 }
 .tab svg { width: 13px; height: 13px; opacity: 0.7; }
 .tab.active svg { opacity: 1; color: var(--accent); }
 .tab-badge {
-  font-size: 10px;
-  font-weight: 600;
-  padding: 1px 5px;
-  background: var(--surface-3);
-  color: var(--text-3);
-  border-radius: 3px;
-  font-family: 'JetBrains Mono', monospace;
-  margin-left: 2px;
+  font-size: 10px; font-weight: 600; padding: 1px 5px;
+  background: var(--surface-3); color: var(--text-3); border-radius: 3px;
+  font-family: 'JetBrains Mono', monospace; margin-left: 2px;
 }
-
-.hdr-right {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex-shrink: 0;
-}
+.tab-badge.warn { background: var(--warn-soft); color: var(--warn); }
+.tab-badge.accent { background: var(--accent-soft); color: var(--accent); }
+.hdr-right { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
 .status {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 4px 9px;
-  background: var(--surface-2);
-  border: 1px solid var(--border-2);
-  border-radius: 5px;
-  font-size: 11px;
-  font-weight: 500;
-  color: var(--text-2);
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 4px 9px; background: var(--surface-2); border: 1px solid var(--border-2);
+  border-radius: 5px; font-size: 11px; font-weight: 500; color: var(--text-2);
 }
-.status .dot {
-  width: 6px; height: 6px;
-  border-radius: 50%;
-  background: var(--text-4);
-}
+.status .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--text-4); }
 .status.running { color: var(--accent); border-color: var(--accent-line); background: var(--accent-soft); }
 .status.running .dot { background: var(--accent); box-shadow: 0 0 6px rgba(34,197,94,0.5); animation: pulse 2s ease-in-out infinite; }
 .status.error { color: var(--danger); border-color: var(--danger-line); background: var(--danger-soft); }
 .status.error .dot { background: var(--danger); }
-@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
-
 .hdr-link {
-  color: var(--text-3);
-  font-size: 11.5px;
-  padding: 5px 10px;
-  border-radius: 4px;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  transition: all 0.12s;
+  color: var(--text-3); font-size: 11.5px; padding: 5px 10px; border-radius: 4px;
+  display: inline-flex; align-items: center; gap: 5px; transition: all 0.12s;
 }
 .hdr-link:hover { color: var(--text); background: var(--surface-2); }
 .hdr-link svg { width: 12px; height: 12px; }
 
-/* ─── MAIN ─── */
-.main {
-  max-width: 1700px;
-  margin: 0 auto;
-  padding: 16px 20px 60px;
-}
+/* MAIN */
+.main { max-width: 1700px; margin: 0 auto; padding: 16px 20px 60px; }
 .tab-panel { display: none; }
 .tab-panel.active { display: block; }
 
-/* ─── KPI ROW ─── */
-.kpis {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-  margin-bottom: 12px;
-}
+/* KPI */
+.kpis { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-bottom: 12px; }
+.kpis.k4 { grid-template-columns: repeat(4, 1fr); }
+.kpis.k3 { grid-template-columns: repeat(3, 1fr); }
 .kpi {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 12px 14px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 6px; padding: 12px 14px;
 }
 .kpi-h {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 10px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.7px;
-  color: var(--text-3);
-  margin-bottom: 6px;
+  display: flex; align-items: center; gap: 5px;
+  font-size: 10px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.7px; color: var(--text-3); margin-bottom: 6px;
 }
 .kpi-h svg { width: 11px; height: 11px; stroke-width: 2.5; }
 .kpi-v {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 22px;
-  font-weight: 500;
-  line-height: 1.1;
-  color: var(--text);
+  font-size: 22px; font-weight: 500; line-height: 1.1; color: var(--text);
 }
 .kpi-v.accent { color: var(--accent); }
 .kpi-v.warn { color: var(--warn); }
 .kpi-v.danger { color: var(--danger); }
-.kpi-s {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 10.5px;
-  color: var(--text-3);
-  margin-top: 3px;
+.kpi-v.info { color: var(--info); }
+.kpi-v.purple { color: var(--purple); }
+.kpi-s { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: var(--text-3); margin-top: 3px; }
+.kpi.skeleton .kpi-v, .kpi.skeleton .kpi-s {
+  color: transparent; background: var(--surface-2); border-radius: 3px;
+  animation: shimmer 1.4s infinite;
 }
 
-/* ─── CARD ─── */
+/* CARD */
 .card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 6px; overflow: hidden; display: flex; flex-direction: column; min-height: 0;
 }
 .card-h {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 14px;
-  border-bottom: 1px solid var(--border);
-  min-height: 42px;
-  flex-shrink: 0;
+  display: flex; align-items: center; gap: 8px;
+  padding: 10px 14px; border-bottom: 1px solid var(--border);
+  min-height: 42px; flex-shrink: 0;
 }
 .card-h > svg { width: 13px; height: 13px; color: var(--text-3); }
 .card-title {
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.7px;
-  color: var(--text-2);
+  font-size: 11px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.7px; color: var(--text-2);
 }
 .card-badge {
-  margin-left: auto;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 10.5px;
-  color: var(--text-3);
-  padding: 2px 7px;
-  background: var(--surface-2);
-  border-radius: 4px;
-  font-weight: 500;
+  margin-left: auto; font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5px; color: var(--text-3); padding: 2px 7px;
+  background: var(--surface-2); border-radius: 4px; font-weight: 500;
 }
+.card-badge.accent { color: var(--accent); background: var(--accent-soft); }
+.card-badge.warn { color: var(--warn); background: var(--warn-soft); }
+.card-badge.danger { color: var(--danger); background: var(--danger-soft); }
+.card-badge.info { color: var(--info); background: var(--info-soft); }
 .card-body { padding: 12px 14px; flex: 1; min-height: 0; overflow: auto; }
 .card-body.flush { padding: 0; }
+.updated { font-family: 'JetBrains Mono', monospace; font-size: 9.5px; color: var(--text-4); margin-left: 6px; }
 
-/* ─── BUTTON ─── */
+/* BUTTON */
 .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  height: 30px;
-  padding: 0 11px;
-  font-size: 11.5px;
-  font-weight: 500;
-  color: var(--text-2);
-  background: var(--surface-2);
-  border: 1px solid var(--border-2);
-  border-radius: 5px;
-  transition: all 0.12s;
-  white-space: nowrap;
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  height: 30px; padding: 0 11px; font-size: 11.5px; font-weight: 500;
+  color: var(--text-2); background: var(--surface-2); border: 1px solid var(--border-2);
+  border-radius: 5px; transition: all 0.12s; white-space: nowrap;
 }
 .btn > svg { width: 12px; height: 12px; flex-shrink: 0; }
 .btn:hover:not(:disabled) { background: var(--surface-3); color: var(--text); border-color: var(--border-3); }
@@ -287,131 +166,96 @@ a { color: inherit; text-decoration: none; }
 .btn.primary:hover:not(:disabled) { background: var(--accent); color: #052e16; }
 .btn.danger { color: var(--danger); border-color: var(--danger-line); background: var(--danger-soft); }
 .btn.danger:hover:not(:disabled) { background: var(--danger); color: #fff; }
+.btn.warn { color: var(--warn); border-color: var(--warn-line); background: var(--warn-soft); }
+.btn.warn:hover:not(:disabled) { background: var(--warn); color: #1a1206; }
+.btn.purple { color: var(--purple); border-color: var(--purple-line); background: var(--purple-soft); }
+.btn.purple:hover:not(:disabled) { background: var(--purple); color: #fff; }
+.btn.info { color: var(--info); border-color: var(--info-line); background: var(--info-soft); }
+.btn.info:hover:not(:disabled) { background: var(--info); color: #fff; }
 .btn.icon { padding: 0; width: 30px; }
+.btn.sm { height: 26px; padding: 0 9px; font-size: 11px; }
+.btn.xs { height: 22px; padding: 0 7px; font-size: 10.5px; }
 .btn.loading { pointer-events: none; opacity: 0.6; }
 .btn.loading > svg { animation: spin 0.8s linear infinite; }
-@keyframes spin { to { transform: rotate(360deg); } }
 
-/* ─── INPUT ─── */
+/* INPUT */
 .input {
-  height: 30px;
-  padding: 0 10px;
-  font-size: 11.5px;
-  color: var(--text);
-  background: var(--surface-2);
-  border: 1px solid var(--border-2);
-  border-radius: 5px;
-  outline: none;
-  transition: border-color 0.12s;
-  width: 100%;
+  height: 30px; padding: 0 10px; font-size: 11.5px; color: var(--text);
+  background: var(--surface-2); border: 1px solid var(--border-2);
+  border-radius: 5px; outline: none; transition: border-color 0.12s; width: 100%;
 }
 .input.mono { font-family: 'JetBrains Mono', monospace; }
 .input:focus { border-color: var(--accent-line); }
 .input::placeholder { color: var(--text-4); }
-
-/* ─── LAYOUT GRIDS ─── */
-.grid {
-  display: grid;
-  gap: 12px;
+.checkbox-label {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 11px; color: var(--text-3); cursor: pointer; user-select: none;
 }
+.checkbox-label input { accent-color: var(--accent); }
+
+/* LAYOUT */
+.grid { display: grid; gap: 12px; }
 .g2 { grid-template-columns: 1fr 1fr; }
 .g3 { grid-template-columns: repeat(3, 1fr); }
 .g1-2 { grid-template-columns: 1fr 2fr; }
 .g2-1 { grid-template-columns: 2fr 1fr; }
+.mb12 { margin-bottom: 12px; }
 
-/* ─── SCORE DIST ─── */
-.dist-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 5px;
+/* ACTION BAR */
+.action-bar {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin-bottom: 12px; padding: 8px 10px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 6px;
 }
+.action-bar .divider { width: 1px; height: 20px; background: var(--border-2); margin: 0 4px; }
+.action-bar .label {
+  font-size: 10px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.6px; color: var(--text-3); margin-right: 4px;
+}
+.action-bar .spacer { flex: 1; }
+
+/* SCORE DIST */
+.dist-item { display: flex; align-items: center; gap: 8px; margin-bottom: 5px; }
 .dist-item:last-child { margin-bottom: 0; }
-.dist-label {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 10.5px;
-  color: var(--text-3);
-  width: 34px;
-}
-.dist-track {
-  flex: 1;
-  height: 16px;
-  background: var(--surface-2);
-  border-radius: 3px;
-  overflow: hidden;
-}
-.dist-fill {
-  height: 100%;
-  background: var(--accent);
-  border-radius: 3px;
-  transition: width 0.3s ease;
-}
+.dist-label { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: var(--text-3); width: 34px; }
+.dist-track { flex: 1; height: 16px; background: var(--surface-2); border-radius: 3px; overflow: hidden; }
+.dist-fill { height: 100%; background: var(--accent); border-radius: 3px; transition: width 0.3s ease; }
 .dist-fill.hi { background: #16a34a; }
 .dist-fill.mid { background: var(--accent); }
 .dist-fill.lo { background: var(--warn); }
 .dist-fill.bad { background: var(--danger); }
-.dist-count {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 10.5px;
-  color: var(--text-3);
-  width: 26px;
-  text-align: right;
-}
+.dist-count { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: var(--text-3); width: 26px; text-align: right; }
 
-/* ─── ACTIVITY LOG (mini) ─── */
+/* ACTIVITY LOG */
 .activity {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 10.5px;
-  line-height: 1.6;
-  max-height: 260px;
-  overflow-y: auto;
+  font-family: 'JetBrains Mono', monospace; font-size: 10.5px; line-height: 1.6;
+  max-height: 260px; overflow-y: auto;
 }
-.act-row {
-  display: flex;
-  gap: 8px;
-  padding: 1px 0;
-  white-space: pre-wrap;
-  word-break: break-all;
-}
+.act-row { display: flex; gap: 8px; padding: 1px 0; white-space: pre-wrap; word-break: break-all; }
 .act-time { color: var(--text-4); flex-shrink: 0; }
+.act-mod { color: var(--purple); flex-shrink: 0; }
 .act-lv { flex-shrink: 0; width: 50px; font-weight: 500; }
 .act-lv.INFO { color: var(--accent); }
 .act-lv.WARNING { color: var(--warn); }
-.act-lv.ERROR { color: var(--danger); }
+.act-lv.ERROR, .act-lv.CRITICAL { color: var(--danger); }
 .act-lv.DEBUG { color: var(--text-4); }
 .act-msg { color: var(--text-2); }
 
-/* ─── TABLE ─── */
-.tbl {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 11.5px;
-}
+/* TABLE */
+.tbl { width: 100%; border-collapse: collapse; font-size: 11.5px; }
 .tbl thead th {
-  text-align: left;
-  padding: 8px 10px;
-  font-size: 10px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.7px;
-  color: var(--text-3);
-  border-bottom: 1px solid var(--border);
-  background: var(--surface-2);
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  white-space: nowrap;
+  text-align: left; padding: 8px 10px;
+  font-size: 10px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.7px; color: var(--text-3);
+  border-bottom: 1px solid var(--border); background: var(--surface-2);
+  position: sticky; top: 0; z-index: 1; white-space: nowrap;
 }
 .tbl thead th.sortable { cursor: pointer; user-select: none; }
 .tbl thead th.sortable:hover { color: var(--text-2); }
 .tbl thead th .sort-ind { color: var(--accent); margin-left: 3px; font-size: 9px; }
 .tbl tbody td {
-  padding: 7px 10px;
-  border-bottom: 1px solid var(--border);
-  color: var(--text-2);
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
-  white-space: nowrap;
+  padding: 7px 10px; border-bottom: 1px solid var(--border); color: var(--text-2);
+  font-family: 'JetBrains Mono', monospace; font-size: 11px; white-space: nowrap;
 }
 .tbl tbody td.text { font-family: 'Inter', sans-serif; font-size: 11.5px; }
 .tbl tbody tr { transition: background 0.08s; }
@@ -419,290 +263,478 @@ a { color: inherit; text-decoration: none; }
 .tbl tbody tr:last-child td { border-bottom: none; }
 
 .score-pill {
-  display: inline-block;
-  padding: 1px 7px;
-  border-radius: 3px;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 10.5px;
-  font-weight: 600;
-  min-width: 34px;
-  text-align: center;
+  display: inline-block; padding: 1px 7px; border-radius: 3px;
+  font-family: 'JetBrains Mono', monospace; font-size: 10.5px; font-weight: 600;
+  min-width: 34px; text-align: center;
 }
-.score-pill.s10 { background: var(--accent-soft); color: var(--accent); border: 1px solid var(--accent-line); }
-.score-pill.s8 { background: var(--accent-soft); color: var(--accent); border: 1px solid var(--accent-line); }
+.score-pill.s10, .score-pill.s8 { background: var(--accent-soft); color: var(--accent); border: 1px solid var(--accent-line); }
 .score-pill.s6 { background: var(--warn-soft); color: var(--warn); border: 1px solid var(--warn-line); }
 .score-pill.s4 { background: var(--danger-soft); color: var(--danger); border: 1px solid var(--danger-line); }
 .score-pill.s0 { background: var(--surface-2); color: var(--text-3); border: 1px solid var(--border-2); }
 
 .verdict-pill {
-  display: inline-block;
-  padding: 1px 7px;
-  border-radius: 3px;
-  font-size: 10px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.4px;
+  display: inline-block; padding: 1px 7px; border-radius: 3px;
+  font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.4px;
 }
-.verdict-pill.approve { background: var(--accent-soft); color: var(--accent); }
-.verdict-pill.revise { background: var(--warn-soft); color: var(--warn); }
-.verdict-pill.reject { background: var(--danger-soft); color: var(--danger); }
-.verdict-pill.error { background: var(--danger-soft); color: var(--danger); }
+.verdict-pill.approve, .verdict-pill.PASS { background: var(--accent-soft); color: var(--accent); }
+.verdict-pill.revise, .verdict-pill.PASS_WITH_WARNINGS { background: var(--warn-soft); color: var(--warn); }
+.verdict-pill.reject, .verdict-pill.error,
+.verdict-pill.FAIL_DUPLICATE, .verdict-pill.FAIL_MISSING, .verdict-pill.FAIL_HALLUCINATED { background: var(--danger-soft); color: var(--danger); }
+.verdict-pill.unknown, .verdict-pill.needs_review, .verdict-pill.exhausted { background: var(--surface-3); color: var(--text-3); }
+.verdict-pill.L0_native { background: var(--accent-soft); color: var(--accent); }
+.verdict-pill.L1_ocr { background: var(--info-soft); color: var(--info); }
+.verdict-pill.L2_vlm { background: var(--purple-soft); color: var(--purple); }
+.verdict-pill.L3_escalation { background: var(--warn-soft); color: var(--warn); }
 
 .row-actions { display: flex; gap: 3px; justify-content: flex-end; }
 .row-action {
-  width: 22px;
-  height: 22px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  border: 1px solid transparent;
-  border-radius: 3px;
-  color: var(--text-4);
-  transition: all 0.1s;
+  width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center;
+  background: transparent; border: 1px solid transparent; border-radius: 3px;
+  color: var(--text-4); transition: all 0.1s;
 }
 .row-action:hover { color: var(--text); background: var(--surface-2); border-color: var(--border-2); }
 .row-action.primary:hover { color: var(--accent); border-color: var(--accent-line); }
 .row-action.danger:hover { color: var(--danger); border-color: var(--danger-line); }
 .row-action svg { width: 12px; height: 12px; }
 
-/* ─── FILTER BAR ─── */
-.filter-bar {
-  display: flex;
-  gap: 6px;
-  margin-bottom: 12px;
-  align-items: center;
-  flex-wrap: wrap;
-}
+/* FILTER BAR */
+.filter-bar { display: flex; gap: 6px; margin-bottom: 12px; align-items: center; flex-wrap: wrap; }
 .filter-bar .input { width: 260px; }
-.chips { display: flex; gap: 3px; }
+.chips { display: flex; gap: 3px; flex-wrap: wrap; }
 .chip {
-  height: 28px;
-  padding: 0 10px;
-  font-size: 11px;
-  font-weight: 500;
-  color: var(--text-3);
-  background: var(--surface-2);
-  border: 1px solid var(--border-2);
-  border-radius: 14px;
-  transition: all 0.12s;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
+  height: 28px; padding: 0 10px; font-size: 11px; font-weight: 500;
+  color: var(--text-3); background: var(--surface-2); border: 1px solid var(--border-2);
+  border-radius: 14px; transition: all 0.12s;
+  display: inline-flex; align-items: center; gap: 5px;
 }
 .chip:hover { color: var(--text-2); border-color: var(--border-3); }
 .chip.active { background: var(--accent-soft); color: var(--accent); border-color: var(--accent-line); }
 .chip-count { font-family: 'JetBrains Mono', monospace; font-size: 10px; opacity: 0.8; }
 
-/* ─── TIMELINE CHART ─── */
-.timeline {
-  display: flex;
-  align-items: flex-end;
-  gap: 3px;
-  height: 120px;
-  padding: 8px 4px;
-  border-bottom: 1px solid var(--border);
-}
+/* TIMELINE */
+.timeline { display: flex; align-items: flex-end; gap: 3px; height: 120px; padding: 8px 4px; border-bottom: 1px solid var(--border); }
 .tl-bar {
-  flex: 1;
-  min-width: 4px;
-  background: var(--accent);
-  border-radius: 2px 2px 0 0;
-  position: relative;
-  transition: all 0.15s;
-  opacity: 0.85;
-  cursor: default;
+  flex: 1; min-width: 4px; background: var(--accent); border-radius: 2px 2px 0 0;
+  position: relative; transition: all 0.15s; opacity: 0.85; cursor: default;
 }
 .tl-bar:hover { opacity: 1; background: #16a34a; }
 .tl-bar.today { background: var(--accent); box-shadow: 0 0 6px var(--accent-soft); opacity: 1; }
 .tl-bar.zero { background: var(--surface-3); opacity: 0.5; }
 .tl-labels {
-  display: flex;
-  gap: 3px;
-  padding: 4px;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 9px;
-  color: var(--text-4);
+  display: flex; gap: 3px; padding: 4px;
+  font-family: 'JetBrains Mono', monospace; font-size: 9px; color: var(--text-4);
 }
 .tl-labels > span { flex: 1; min-width: 4px; text-align: center; }
 
-/* ─── LOG FULL ─── */
-.log-full {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
-  line-height: 1.55;
-  background: #060708;
-  border-radius: 4px;
-  padding: 10px 12px;
-  max-height: calc(100vh - 260px);
-  overflow: auto;
+/* LOG FULL */
+.log-controls {
+  display: flex; align-items: center; gap: 8px;
+  padding: 10px 14px; border-bottom: 1px solid var(--border);
+  background: var(--surface); flex-wrap: wrap;
 }
-.log-row { display: flex; gap: 8px; white-space: pre-wrap; word-break: break-all; padding: 0; }
-.log-row:hover { background: rgba(255,255,255,0.02); }
-.log-t { color: var(--text-4); flex-shrink: 0; }
-.log-lv { flex-shrink: 0; width: 54px; font-weight: 500; }
-.log-lv.INFO { color: var(--accent); }
-.log-lv.WARNING { color: var(--warn); }
-.log-lv.ERROR { color: var(--danger); }
-.log-lv.DEBUG { color: var(--text-4); }
-.log-m { color: var(--text-2); flex: 1; min-width: 0; }
+.log-stats {
+  display: flex; gap: 10px; margin-left: auto;
+  font-family: 'JetBrains Mono', monospace; font-size: 10.5px;
+}
+.log-stat-item { display: flex; align-items: center; gap: 4px; color: var(--text-3); }
+.log-stat-item .num { color: var(--text-2); font-weight: 500; }
+.log-stat-item.INFO .num { color: var(--accent); }
+.log-stat-item.WARNING .num { color: var(--warn); }
+.log-stat-item.ERROR .num { color: var(--danger); }
 
-/* ─── TOOLS ─── */
+.log-full {
+  font-family: 'JetBrains Mono', monospace; font-size: 11px; line-height: 1.55;
+  background: #060708; border-radius: 4px; padding: 10px 12px;
+  max-height: calc(100vh - 320px); overflow: auto;
+  position: relative;
+}
+.log-row {
+  display: flex; gap: 8px; white-space: pre-wrap; word-break: break-all;
+  padding: 1px 0;
+}
+.log-row:hover { background: rgba(255,255,255,0.02); }
+.log-row.marked { background: var(--warn-soft); }
+.log-t { color: var(--text-4); flex-shrink: 0; }
+.log-mod {
+  color: var(--purple); flex-shrink: 0; font-size: 10px;
+  padding: 0 5px; background: var(--purple-soft); border-radius: 3px;
+  height: 16px; display: inline-flex; align-items: center;
+}
+.log-lv {
+  flex-shrink: 0; width: 54px; font-weight: 500;
+  padding: 0 5px; border-radius: 3px; height: 16px;
+  display: inline-flex; align-items: center; font-size: 10px;
+}
+.log-lv.INFO { color: var(--accent); background: var(--accent-soft); }
+.log-lv.WARNING { color: var(--warn); background: var(--warn-soft); }
+.log-lv.ERROR, .log-lv.CRITICAL { color: var(--danger); background: var(--danger-soft); }
+.log-lv.DEBUG { color: var(--text-4); background: var(--surface-2); }
+.log-m { color: var(--text-2); flex: 1; min-width: 0; }
+.log-copy {
+  opacity: 0;
+  background: transparent;
+  border: none;
+  color: var(--text-4);
+  padding: 1px 4px;
+  border-radius: 3px;
+  transition: all 0.12s;
+  flex-shrink: 0;
+}
+.log-row:hover .log-copy { opacity: 1; }
+.log-copy:hover { color: var(--accent); background: var(--surface-2); }
+.log-copy svg { width: 11px; height: 11px; }
+.log-row { position: relative; }
+
+.log-scroll-btn {
+  position: fixed; bottom: 30px; right: 30px; z-index: 50;
+  width: 40px; height: 40px; border-radius: 50%;
+  background: var(--accent); color: #052e16; border: none;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 20px rgba(34,197,94,0.4); cursor: pointer;
+  transition: all 0.15s;
+}
+.log-scroll-btn:hover { transform: translateY(-2px); }
+.log-scroll-btn.hide { display: none; }
+
+/* EXTRACTION TAB */
+.phase-pipeline {
+  display: flex; align-items: stretch; gap: 0;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 6px; padding: 6px; margin-bottom: 12px;
+  overflow-x: auto;
+}
+.phase-step {
+  flex: 1; min-width: 150px; display: flex; align-items: center; gap: 10px;
+  padding: 8px 12px; border-radius: 5px; position: relative;
+  transition: background 0.12s;
+}
+.phase-step:hover { background: var(--surface-2); }
+.phase-step:not(:last-child)::after {
+  content: '›'; position: absolute; right: -8px; top: 50%;
+  transform: translateY(-50%); color: var(--text-4);
+  font-size: 14px; font-family: 'JetBrains Mono', monospace;
+  pointer-events: none;
+}
+.phase-step + .phase-step { margin-left: 8px; }
+.phase-num {
+  width: 26px; height: 26px; display: flex; align-items: center; justify-content: center;
+  border-radius: 50%; font-family: 'JetBrains Mono', monospace;
+  font-size: 11px; font-weight: 600;
+  background: var(--surface-2); border: 1px solid var(--border-2); color: var(--text-3);
+  flex-shrink: 0;
+}
+.phase-step.done .phase-num { background: var(--accent-soft); border-color: var(--accent-line); color: var(--accent); }
+.phase-step.running .phase-num { background: var(--warn-soft); border-color: var(--warn-line); color: var(--warn); animation: pulse 1.6s ease-in-out infinite; }
+.phase-step.error .phase-num { background: var(--danger-soft); border-color: var(--danger-line); color: var(--danger); }
+.phase-body { flex: 1; min-width: 0; }
+.phase-name { font-size: 11.5px; font-weight: 600; color: var(--text); text-transform: capitalize; }
+.phase-meta {
+  font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--text-3);
+  margin-top: 1px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.phase-step.done .phase-name { color: var(--text-2); }
+
+.progress-live {
+  background: linear-gradient(90deg, var(--warn-soft), transparent);
+  border: 1px solid var(--warn-line); border-radius: 6px;
+  padding: 12px 14px; margin-bottom: 12px;
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+}
+.progress-live.idle { background: var(--surface); border-color: var(--border); }
+.progress-live.error { background: linear-gradient(90deg, var(--danger-soft), transparent); border-color: var(--danger-line); }
+.progress-live .pl-icon {
+  width: 32px; height: 32px; border-radius: 6px;
+  background: var(--warn-soft); border: 1px solid var(--warn-line); color: var(--warn);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.progress-live .pl-icon svg { width: 16px; height: 16px; }
+.progress-live.idle .pl-icon { background: var(--surface-2); border-color: var(--border-2); color: var(--text-3); }
+.progress-live.error .pl-icon { background: var(--danger-soft); border-color: var(--danger-line); color: var(--danger); }
+.progress-live .pl-body { flex: 1; min-width: 200px; }
+.progress-live .pl-title {
+  font-size: 12px; font-weight: 600; color: var(--text);
+  display: flex; align-items: center; gap: 8px;
+}
+.progress-live .pl-sub {
+  font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: var(--text-3);
+  margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.progress-bar {
+  width: 100%; height: 6px; background: var(--surface-3);
+  border-radius: 3px; overflow: hidden; margin-top: 6px;
+}
+.progress-fill {
+  height: 100%; background: linear-gradient(90deg, var(--warn), #fbbf24);
+  border-radius: 3px; transition: width 0.4s ease;
+}
+.progress-live.idle .progress-fill { background: var(--accent); }
+
+.breakdown-row {
+  display: flex; align-items: center; gap: 8px;
+  margin-bottom: 6px; font-size: 11px;
+}
+.breakdown-row:last-child { margin-bottom: 0; }
+.breakdown-label {
+  font-family: 'JetBrains Mono', monospace; font-size: 10.5px;
+  color: var(--text-3); width: 130px; flex-shrink: 0;
+}
+.breakdown-track {
+  flex: 1; height: 14px; background: var(--surface-2);
+  border-radius: 3px; overflow: hidden;
+}
+.breakdown-fill {
+  height: 100%; border-radius: 3px; transition: width 0.35s ease;
+}
+.breakdown-fill.pass { background: var(--accent); }
+.breakdown-fill.warn { background: var(--warn); }
+.breakdown-fill.fail { background: var(--danger); }
+.breakdown-fill.unknown { background: var(--text-4); }
+.breakdown-fill.l0 { background: var(--accent); }
+.breakdown-fill.l1 { background: var(--info); }
+.breakdown-fill.l2 { background: var(--purple); }
+.breakdown-fill.l3 { background: var(--warn); }
+.breakdown-fill.exhausted { background: var(--danger); }
+.breakdown-count {
+  font-family: 'JetBrains Mono', monospace; font-size: 10.5px;
+  color: var(--text-2); width: 80px; text-align: right; flex-shrink: 0;
+}
+
+/* ACTION TILES */
+.actions-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.action-tile {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 12px; background: var(--surface-2);
+  border: 1px solid var(--border-2); border-radius: 5px;
+  cursor: pointer; transition: all 0.12s; text-align: left;
+}
+.action-tile:hover { background: var(--surface-3); border-color: var(--border-3); }
+.action-tile:active { transform: translateY(1px); }
+.action-tile:disabled { opacity: 0.4; cursor: not-allowed; }
+.action-tile.loading { pointer-events: none; opacity: 0.6; }
+.action-tile.loading .at-icon svg { animation: spin 0.8s linear infinite; }
+.action-tile .at-icon {
+  width: 28px; height: 28px; background: var(--surface);
+  border: 1px solid var(--border-2); border-radius: 5px; color: var(--text-2);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.action-tile:hover .at-icon { color: var(--accent); border-color: var(--accent-line); }
+.action-tile .at-icon svg { width: 14px; height: 14px; }
+.action-tile .at-body { flex: 1; min-width: 0; }
+.action-tile .at-name { font-size: 12px; font-weight: 600; color: var(--text); margin-bottom: 1px; }
+.action-tile .at-desc { font-size: 10.5px; color: var(--text-3); line-height: 1.3; }
+.action-tile.tile-primary { background: var(--accent-soft); border-color: var(--accent-line); }
+.action-tile.tile-primary:hover { background: rgba(34,197,94,0.18); }
+.action-tile.tile-primary .at-icon { background: var(--accent); border-color: var(--accent); color: #052e16; }
+.action-tile.tile-danger { background: var(--danger-soft); border-color: var(--danger-line); }
+.action-tile.tile-danger .at-icon { color: var(--danger); border-color: var(--danger-line); }
+
+/* MODEL ROW */
+.model-row {
+  display: flex; align-items: center; gap: 10px;
+  padding: 7px 0; border-bottom: 1px solid var(--border);
+}
+.model-row:last-child { border-bottom: none; }
+.model-label {
+  font-size: 10px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.6px; color: var(--text-3); width: 90px; flex-shrink: 0;
+}
+.model-value {
+  font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-2);
+  flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.model-value.primary { color: var(--accent); }
+
+/* PDF AUDIT VISUAL */
+.audit-row-visual {
+  display: flex; align-items: center; gap: 8px;
+  padding: 6px 10px; border-bottom: 1px solid var(--border);
+  transition: background 0.08s; cursor: pointer;
+}
+.audit-row-visual:hover { background: var(--surface-2); }
+.audit-row-visual:last-child { border-bottom: none; }
+.arv-name {
+  flex: 0 0 240px; font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5px; color: var(--text-2);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.arv-group {
+  flex: 0 0 90px; font-family: 'JetBrains Mono', monospace;
+  font-size: 10px; color: var(--purple);
+  padding: 1px 6px; background: var(--purple-soft); border-radius: 3px;
+  text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.arv-pages {
+  flex: 0 0 40px; font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5px; color: var(--text-3); text-align: right;
+}
+.arv-chart { flex: 1; min-width: 80px; height: 16px; display: flex; gap: 2px; }
+.arv-chart .bar {
+  flex: 1; border-radius: 2px; height: 100%;
+  transition: all 0.15s;
+}
+.arv-chart .bar.easy { background: var(--accent); }
+.arv-chart .bar.medium { background: #16a34a; }
+.arv-chart .bar.hard { background: var(--warn); }
+.arv-chart .bar.empty { background: var(--surface-3); }
+.arv-problems {
+  flex: 0 0 50px; font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5px; color: var(--text-2); text-align: right; font-weight: 500;
+}
+.arv-status {
+  flex: 0 0 80px; font-size: 9.5px; font-weight: 600;
+  padding: 2px 6px; border-radius: 3px; text-align: center;
+  text-transform: uppercase; letter-spacing: 0.3px;
+}
+.arv-status.ok { background: var(--accent-soft); color: var(--accent); }
+.arv-status.warn { background: var(--warn-soft); color: var(--warn); }
+.arv-status.empty { background: var(--danger-soft); color: var(--danger); }
+
+/* GROUP HEADER for audit */
+.audit-group-header {
+  display: flex; align-items: center; gap: 8px;
+  padding: 8px 12px; background: var(--surface-2);
+  border-bottom: 1px solid var(--border);
+  position: sticky; top: 0; z-index: 2;
+  font-size: 10.5px; font-weight: 600;
+  color: var(--text-3); text-transform: uppercase; letter-spacing: 0.5px;
+}
+.audit-group-header .count {
+  margin-left: auto; font-family: 'JetBrains Mono', monospace;
+  color: var(--text-2);
+}
+
+/* POINT COVERAGE */
+.point-coverage-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  gap: 4px;
+}
+.pc-cell {
+  padding: 6px 4px; border-radius: 4px;
+  background: var(--surface-2); border: 1px solid var(--border-2);
+  text-align: center; cursor: pointer; transition: all 0.12s;
+}
+.pc-cell:hover { border-color: var(--accent-line); transform: translateY(-1px); }
+.pc-cell.zero { opacity: 0.4; }
+.pc-cell.few { background: var(--warn-soft); border-color: var(--warn-line); }
+.pc-cell.many { background: var(--accent-soft); border-color: var(--accent-line); }
+.pc-id { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; color: var(--text); }
+.pc-count { font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 600; margin-top: 2px; }
+.pc-cell.zero .pc-count { color: var(--text-4); }
+.pc-cell.few .pc-count { color: var(--warn); }
+.pc-cell.many .pc-count { color: var(--accent); }
+
+/* TOOL RESULT */
+.tool-results-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 12px; }
+.tool-result {
+  background: var(--surface); border: 1px solid var(--border-2);
+  border-radius: 6px; overflow: hidden;
+}
+.tool-result-h {
+  padding: 8px 12px; background: var(--surface-2); border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; gap: 8px; font-size: 11px;
+}
+.tool-result-h .status-ok { color: var(--accent); }
+.tool-result-h .status-err { color: var(--danger); }
+.tool-result-h .meta {
+  font-family: 'JetBrains Mono', monospace; font-size: 10px;
+  color: var(--text-3); margin-left: 8px;
+}
+.tool-result-h .close-r {
+  margin-left: auto; background: transparent; border: none;
+  color: var(--text-3); padding: 3px; border-radius: 3px; transition: all 0.1s;
+}
+.tool-result-h .close-r:hover { color: var(--text); background: var(--surface-3); }
+.tool-result-h .close-r svg { width: 14px; height: 14px; }
+.tool-result-b {
+  font-family: 'JetBrains Mono', monospace; font-size: 10.5px; line-height: 1.5;
+  padding: 10px 12px; max-height: 500px; overflow: auto;
+  white-space: pre-wrap; word-break: break-all;
+  color: var(--text-2); background: #06070a;
+}
+.tool-result-b.tall { max-height: 700px; }
+.tool-result-b.structured { white-space: normal; }
+.tool-result-b table {
+  width: 100%; border-collapse: collapse; font-size: 10.5px;
+}
+.tool-result-b table th {
+  text-align: left; padding: 4px 8px; color: var(--text-3);
+  font-size: 9.5px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.4px; border-bottom: 1px solid var(--border);
+}
+.tool-result-b table td {
+  padding: 4px 8px; border-bottom: 1px solid var(--border);
+  color: var(--text-2);
+}
+
+/* EMPTY */
+.empty {
+  padding: 32px 16px; text-align: center;
+  color: var(--text-4); font-size: 12px;
+}
+.empty svg { width: 24px; height: 24px; margin-bottom: 8px; opacity: 0.4; display: block; margin-left: auto; margin-right: auto; }
+.empty-actions { margin-top: 10px; display: flex; gap: 6px; justify-content: center; flex-wrap: wrap; }
+
+.skeleton-row {
+  height: 32px;
+  background: linear-gradient(90deg, var(--surface-2) 0%, var(--surface-3) 50%, var(--surface-2) 100%);
+  background-size: 200% 100%; animation: shimmer 1.4s infinite;
+  border-radius: 3px; margin-bottom: 4px;
+}
+
+/* TOOLS GROUPS */
 .tools-groups {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 12px;
 }
 .tools-group {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  overflow: hidden;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 6px; overflow: hidden;
 }
 .tools-group-h {
-  padding: 10px 14px;
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.7px;
-  color: var(--text-2);
+  padding: 10px 14px; border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; gap: 8px;
+  font-size: 11px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.7px; color: var(--text-2);
 }
 .tools-group-h svg { width: 13px; height: 13px; color: var(--text-3); }
 .tools-list { padding: 6px; }
 .tool-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 8px 10px;
-  border-radius: 5px;
-  cursor: pointer;
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 8px 10px; border-radius: 5px; cursor: pointer;
   transition: background 0.1s;
 }
 .tool-item:hover { background: var(--surface-2); }
+.tool-item.loading { opacity: 0.5; pointer-events: none; }
 .tool-icon {
-  width: 28px;
-  height: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--surface-2);
-  border: 1px solid var(--border-2);
-  border-radius: 5px;
-  color: var(--text-2);
-  flex-shrink: 0;
+  width: 28px; height: 28px; display: flex; align-items: center; justify-content: center;
+  background: var(--surface-2); border: 1px solid var(--border-2);
+  border-radius: 5px; color: var(--text-2); flex-shrink: 0;
 }
 .tool-icon svg { width: 14px; height: 14px; }
 .tool-item:hover .tool-icon { color: var(--accent); border-color: var(--accent-line); }
+.tool-item.loading .tool-icon svg { animation: spin 0.8s linear infinite; }
 .tool-info { flex: 1; min-width: 0; }
 .tool-name {
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--text);
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-bottom: 2px;
+  font-size: 12px; font-weight: 500; color: var(--text);
+  display: flex; align-items: center; gap: 6px; margin-bottom: 2px;
 }
 .tool-desc { font-size: 11px; color: var(--text-3); line-height: 1.4; }
 .tool-cost {
-  font-size: 9.5px;
-  font-weight: 600;
-  padding: 1px 5px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
+  font-size: 9.5px; font-weight: 600; padding: 1px 5px;
+  border-radius: 3px; text-transform: uppercase; letter-spacing: 0.3px;
 }
 .tool-cost.free { background: var(--accent-soft); color: var(--accent); }
 .tool-cost.paid { background: var(--warn-soft); color: var(--warn); }
 
-/* ─── TOOL RESULT PANEL ─── */
-.tool-result {
-  margin-top: 8px;
-  background: var(--surface);
-  border: 1px solid var(--border-2);
-  border-radius: 6px;
-  overflow: hidden;
-}
-.tool-result-h {
-  padding: 8px 12px;
-  background: var(--surface-2);
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 11px;
-}
-.tool-result-h .status-ok { color: var(--accent); }
-.tool-result-h .status-err { color: var(--danger); }
-.tool-result-h .close-r {
-  margin-left: auto;
-  background: transparent;
-  border: none;
-  color: var(--text-3);
-  padding: 3px;
-  border-radius: 3px;
-}
-.tool-result-h .close-r:hover { color: var(--text); background: var(--surface-3); }
-.tool-result-b {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 10.5px;
-  line-height: 1.5;
-  padding: 10px 12px;
-  max-height: 400px;
-  overflow: auto;
-  white-space: pre-wrap;
-  word-break: break-all;
-  color: var(--text-2);
-  background: #06070a;
-}
-
-/* ─── ORCHESTRATOR STRIP ─── */
-.orch {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 10px 14px;
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-.orch-meta {
-  margin-left: auto;
-  display: flex;
-  gap: 16px;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 10.5px;
-  color: var(--text-3);
-}
-.orch-meta strong { color: var(--text-2); font-weight: 500; }
-
-/* ─── TOAST ─── */
+/* TOAST */
 .toast {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  min-width: 260px;
-  max-width: 500px;
-  padding: 11px 14px;
-  background: var(--surface);
-  border: 1px solid var(--border-2);
-  border-left: 3px solid var(--accent);
-  border-radius: 6px;
+  position: fixed; bottom: 20px; right: 20px; min-width: 260px; max-width: 500px;
+  padding: 11px 14px; background: var(--surface); border: 1px solid var(--border-2);
+  border-left: 3px solid var(--accent); border-radius: 6px;
   box-shadow: 0 12px 32px rgba(0,0,0,0.6);
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
-  opacity: 0;
-  transform: translateY(10px);
-  pointer-events: none;
-  transition: all 0.22s ease;
-  z-index: 100;
+  display: flex; gap: 10px; align-items: flex-start;
+  opacity: 0; transform: translateY(10px); pointer-events: none;
+  transition: all 0.22s ease; z-index: 100;
 }
 .toast.show { opacity: 1; transform: translateY(0); pointer-events: auto; }
 .toast.error { border-left-color: var(--danger); }
@@ -712,54 +744,41 @@ a { color: inherit; text-decoration: none; }
 .toast-content { flex: 1; min-width: 0; }
 .toast-title { font-weight: 600; font-size: 12px; margin-bottom: 2px; }
 .toast-text {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 10.5px;
-  color: var(--text-3);
-  white-space: pre-wrap;
-  max-height: 100px;
-  overflow-y: auto;
-  word-break: break-all;
+  font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: var(--text-3);
+  white-space: pre-wrap; max-height: 100px; overflow-y: auto; word-break: break-all;
 }
 
-/* ─── SCROLLBARS ─── */
+/* SCROLLBARS */
 * { scrollbar-width: thin; scrollbar-color: var(--border-2) transparent; }
 *::-webkit-scrollbar { width: 8px; height: 8px; }
 *::-webkit-scrollbar-track { background: transparent; }
 *::-webkit-scrollbar-thumb { background: var(--border-2); border-radius: 4px; }
 *::-webkit-scrollbar-thumb:hover { background: var(--text-4); }
 
-/* ─── EMPTY ─── */
-.empty {
-  padding: 32px 16px;
-  text-align: center;
-  color: var(--text-4);
-  font-size: 12px;
-}
-.empty svg { width: 24px; height: 24px; margin-bottom: 8px; opacity: 0.4; display: block; margin-left: auto; margin-right: auto; }
-
-/* ─── RESPONSIVE ─── */
+/* RESPONSIVE */
 @media (max-width: 1200px) {
   .g3 { grid-template-columns: 1fr 1fr; }
   .g1-2, .g2-1 { grid-template-columns: 1fr; }
+  .kpis.k4 { grid-template-columns: repeat(2, 1fr); }
+  .phase-pipeline { flex-wrap: wrap; }
+  .phase-step { min-width: 140px; }
+  .phase-step:not(:last-child)::after { display: none; }
 }
 @media (max-width: 900px) {
-  .kpis { grid-template-columns: repeat(2, 1fr); }
+  .kpis, .kpis.k4, .kpis.k3 { grid-template-columns: repeat(2, 1fr); }
   .g2 { grid-template-columns: 1fr; }
   .g3 { grid-template-columns: 1fr; }
-  .tabs { font-size: 11px; }
   .tab { padding: 6px 10px; }
   .tab span.tab-label { display: none; }
-  .tab svg { width: 15px; height: 15px; }
   .hdr { padding: 0 12px; gap: 10px; }
   .main { padding: 12px; }
-  .orch-meta { width: 100%; margin-left: 0; margin-top: 6px; }
+  .actions-grid { grid-template-columns: 1fr; }
   .filter-bar .input { width: 100%; }
 }
 </style>
 </head>
 <body>
 
-<!-- ═══ HEADER ═══ -->
 <header class="hdr">
   <div class="hdr-brand">
     <i data-lucide="activity"></i>
@@ -767,76 +786,39 @@ a { color: inherit; text-decoration: none; }
   </div>
 
   <nav class="tabs" role="tablist">
-    <button class="tab active" data-tab="overview" role="tab">
-      <i data-lucide="layout-dashboard"></i>
-      <span class="tab-label">Overview</span>
-    </button>
-    <button class="tab" data-tab="articles" role="tab">
-      <i data-lucide="file-text"></i>
-      <span class="tab-label">Articles</span>
-      <span class="tab-badge" id="tabArticlesBadge">—</span>
-    </button>
-    <button class="tab" data-tab="costs" role="tab">
-      <i data-lucide="dollar-sign"></i>
-      <span class="tab-label">Costs</span>
-    </button>
-    <button class="tab" data-tab="provider" role="tab">
-      <i data-lucide="cloud"></i>
-      <span class="tab-label">Provider</span>
-    </button>
-    <button class="tab" data-tab="logs" role="tab">
-      <i data-lucide="terminal"></i>
-      <span class="tab-label">Logs</span>
-    </button>
-    <button class="tab" data-tab="tools" role="tab">
-      <i data-lucide="wrench"></i>
-      <span class="tab-label">Tools</span>
-    </button>
+    <button class="tab active" data-tab="overview"><i data-lucide="layout-dashboard"></i><span class="tab-label">Overview</span></button>
+    <button class="tab" data-tab="extraction"><i data-lucide="layers"></i><span class="tab-label">Extraction</span><span class="tab-badge" id="tabExtractionBadge">—</span></button>
+    <button class="tab" data-tab="articles"><i data-lucide="file-text"></i><span class="tab-label">Articles</span><span class="tab-badge" id="tabArticlesBadge">—</span></button>
+    <button class="tab" data-tab="costs"><i data-lucide="dollar-sign"></i><span class="tab-label">Costs</span></button>
+    <button class="tab" data-tab="provider"><i data-lucide="cloud"></i><span class="tab-label">Provider</span></button>
+    <button class="tab" data-tab="logs"><i data-lucide="terminal"></i><span class="tab-label">Logs</span><span class="tab-badge" id="tabLogsBadge">—</span></button>
+    <button class="tab" data-tab="tools"><i data-lucide="wrench"></i><span class="tab-label">Tools</span></button>
   </nav>
 
   <div class="hdr-right">
-    <div class="status" id="status">
-      <span class="dot"></span>
-      <span id="statusText">Connecting</span>
-    </div>
-    <a class="hdr-link" href="/" target="_blank">
-      <i data-lucide="arrow-up-right"></i> Site
-    </a>
+    <div class="status" id="status"><span class="dot"></span><span id="statusText">Connecting</span></div>
+    <a class="hdr-link" href="/" target="_blank"><i data-lucide="arrow-up-right"></i> Site</a>
   </div>
 </header>
 
-<!-- ═══ MAIN ═══ -->
 <main class="main">
 
-  <!-- ═══ TAB: OVERVIEW ═══ -->
+  <!-- OVERVIEW -->
   <section class="tab-panel active" id="tab-overview">
-
-    <!-- Orchestrator strip -->
-    <div class="orch">
-      <button class="btn primary" id="btnStart" onclick="onStart(this)">
-        <i data-lucide="play"></i> Start
-      </button>
-      <button class="btn danger" id="btnStop" onclick="onStop(this)" disabled>
-        <i data-lucide="square"></i> Stop
-      </button>
-      <button class="btn" id="btnOnce" onclick="onOnce(this)">
-        <i data-lucide="zap"></i> Run Once
-      </button>
-      <span style="width:1px;height:20px;background:var(--border-2);margin:0 4px;"></span>
+    <div class="orch action-bar">
+      <button class="btn primary" id="btnStart" onclick="onStart(this)"><i data-lucide="play"></i> Start</button>
+      <button class="btn danger" id="btnStop" onclick="onStop(this)" disabled><i data-lucide="square"></i> Stop</button>
+      <button class="btn" id="btnOnce" onclick="onOnce(this)"><i data-lucide="zap"></i> Run Once</button>
+      <span class="divider"></span>
       <input type="text" class="input mono" id="pointInput" placeholder="2.1" style="width:70px;">
-      <button class="btn" id="btnVerify" onclick="onPointTool(this,'verify')">
-        <i data-lucide="shield-check"></i> Verify
-      </button>
-      <button class="btn" id="btnRecover" onclick="onPointTool(this,'recover')">
-        <i data-lucide="rotate-ccw"></i> Recover
-      </button>
-      <div class="orch-meta">
-        <span>PID <strong id="mPid">—</strong></span>
-        <span>UPTIME <strong id="mUptime">—</strong></span>
-      </div>
+      <button class="btn" onclick="onPointTool(this,'verify')"><i data-lucide="shield-check"></i> Verify</button>
+      <button class="btn" onclick="onPointTool(this,'recover')"><i data-lucide="rotate-ccw"></i> Recover</button>
+      <span class="spacer"></span>
+      <span class="mono" style="font-size:10.5px;color:var(--text-3)">PID <strong id="mPid" style="color:var(--text-2)">—</strong></span>
+      <span class="mono" style="font-size:10.5px;color:var(--text-3)">UPTIME <strong id="mUptime" style="color:var(--text-2)">—</strong></span>
+      <span class="mono" style="font-size:10.5px;color:var(--text-3)">BUDGET <strong id="mBudget" style="color:var(--text-2)">—</strong></span>
     </div>
 
-    <!-- KPIs -->
     <div class="kpis">
       <div class="kpi">
         <div class="kpi-h"><i data-lucide="check-circle-2"></i>Done</div>
@@ -865,23 +847,25 @@ a { color: inherit; text-decoration: none; }
       </div>
     </div>
 
-    <!-- Row: score dist + activity -->
-    <div class="grid g2" style="margin-bottom:12px">
+    <div id="extractionPulse"></div>
+
+    <div class="grid g2 mb12">
       <div class="card">
         <div class="card-h">
           <i data-lucide="bar-chart-2"></i>
           <span class="card-title">Score Distribution</span>
+          <span class="updated" id="distUpdated"></span>
           <span class="card-badge" id="distBadge">—</span>
         </div>
         <div class="card-body" id="distBody">
           <div class="empty"><i data-lucide="bar-chart-2"></i>No scores yet</div>
         </div>
       </div>
-
       <div class="card">
         <div class="card-h">
           <i data-lucide="radio"></i>
           <span class="card-title">Live Activity</span>
+          <span class="updated" id="activityUpdated"></span>
           <span class="card-badge" id="activityBadge">—</span>
         </div>
         <div class="card-body" style="padding:8px 12px">
@@ -892,7 +876,6 @@ a { color: inherit; text-decoration: none; }
       </div>
     </div>
 
-    <!-- Row: recent articles + queue preview -->
     <div class="grid g2">
       <div class="card">
         <div class="card-h">
@@ -902,14 +885,11 @@ a { color: inherit; text-decoration: none; }
         </div>
         <div class="card-body flush" style="max-height:280px;overflow:auto">
           <table class="tbl" id="recentTable">
-            <thead>
-              <tr><th>ID</th><th>Title</th><th>Score</th><th>Words</th><th></th></tr>
-            </thead>
+            <thead><tr><th>ID</th><th>Title</th><th>Score</th><th>Words</th><th></th></tr></thead>
             <tbody><tr><td colspan="5" class="empty"><i data-lucide="file-text"></i>No articles yet</td></tr></tbody>
           </table>
         </div>
       </div>
-
       <div class="card">
         <div class="card-h">
           <i data-lucide="list"></i>
@@ -918,9 +898,7 @@ a { color: inherit; text-decoration: none; }
         </div>
         <div class="card-body flush" style="max-height:280px;overflow:auto">
           <table class="tbl" id="queueTable">
-            <thead>
-              <tr><th>ID</th><th>Title</th><th></th></tr>
-            </thead>
+            <thead><tr><th>ID</th><th>Title</th><th></th></tr></thead>
             <tbody><tr><td colspan="3" class="empty"><i data-lucide="list"></i>Queue empty</td></tr></tbody>
           </table>
         </div>
@@ -928,12 +906,183 @@ a { color: inherit; text-decoration: none; }
     </div>
   </section>
 
-  <!-- ═══ TAB: ARTICLES ═══ -->
-  <section class="tab-panel" id="tab-articles">
-    <div class="filter-bar">
-      <div class="input-wrap" style="position:relative;flex:1;max-width:340px">
-        <input type="text" class="input" id="artSearch" placeholder="Search by ID or title…">
+  <!-- EXTRACTION -->
+  <section class="tab-panel" id="tab-extraction">
+    <div class="action-bar">
+      <span class="label">Extraction</span>
+      <button class="btn sm" onclick="runChunkerStats(this)"><i data-lucide="bar-chart-3"></i> Stats</button>
+      <button class="btn sm" onclick="runChunkerAudit(this)"><i data-lucide="scan-line"></i> Audit</button>
+      <span class="divider"></span>
+      <button class="btn sm primary" onclick="onExtract(this)"><i data-lucide="download"></i> Extract</button>
+      <button class="btn sm" onclick="onMerge(this)"><i data-lucide="git-merge"></i> Merge</button>
+      <button class="btn sm" onclick="onClassify(this)"><i data-lucide="brain-circuit"></i> Classify</button>
+      <button class="btn sm" onclick="onAggregate(this)"><i data-lucide="layers"></i> Aggregate</button>
+      <span class="spacer"></span>
+      <button class="btn sm warn" onclick="onFullRefresh(this)"><i data-lucide="refresh-ccw"></i> Full Refresh</button>
+      <button class="btn sm danger" onclick="onResetStage(this)"><i data-lucide="trash-2"></i> Reset Stage</button>
+    </div>
+
+    <div class="phase-pipeline" id="phasePipeline">
+      <div class="phase-step" data-phase="extract">
+        <div class="phase-num">1</div>
+        <div class="phase-body">
+          <div class="phase-name">Extract</div>
+          <div class="phase-meta" id="phaseExtractMeta">—</div>
+        </div>
       </div>
+      <div class="phase-step" data-phase="merge">
+        <div class="phase-num">2</div>
+        <div class="phase-body">
+          <div class="phase-name">Merge</div>
+          <div class="phase-meta" id="phaseMergeMeta">—</div>
+        </div>
+      </div>
+      <div class="phase-step" data-phase="classify">
+        <div class="phase-num">3</div>
+        <div class="phase-body">
+          <div class="phase-name">Classify</div>
+          <div class="phase-meta" id="phaseClassifyMeta">—</div>
+        </div>
+      </div>
+      <div class="phase-step" data-phase="aggregate">
+        <div class="phase-num">4</div>
+        <div class="phase-body">
+          <div class="phase-name">Aggregate</div>
+          <div class="phase-meta" id="phaseAggregateMeta">—</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="progress-live idle" id="progressLive">
+      <div class="pl-icon"><i data-lucide="activity"></i></div>
+      <div class="pl-body">
+        <div class="pl-title" id="plTitle">Extraction idle</div>
+        <div class="pl-sub" id="plSub">No active extraction detected. Click "Stats" to load data.</div>
+        <div class="progress-bar"><div class="progress-fill" id="plFill" style="width:0%"></div></div>
+      </div>
+    </div>
+
+    <div class="kpis k4">
+      <div class="kpi">
+        <div class="kpi-h"><i data-lucide="file-stack"></i>PDFs Processed</div>
+        <div class="kpi-v" id="exPdfs">—</div>
+        <div class="kpi-s" id="exPdfsSub">click "Stats"</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-h"><i data-lucide="sigma"></i>Problems</div>
+        <div class="kpi-v" id="exProblems">—</div>
+        <div class="kpi-s" id="exProblemsSub">extracted</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-h"><i data-lucide="target"></i>Real Problems</div>
+        <div class="kpi-v accent" id="exReal">—</div>
+        <div class="kpi-s" id="exRealSub">across points</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-h"><i data-lucide="circle-dollar-sign"></i>Chunker Cost</div>
+        <div class="kpi-v" id="exBudget">—</div>
+        <div class="kpi-s" id="exBudgetSub">total</div>
+      </div>
+    </div>
+
+    <div class="grid g2 mb12">
+      <div class="card">
+        <div class="card-h">
+          <i data-lucide="shield-check"></i>
+          <span class="card-title">Verdict Breakdown</span>
+          <span class="card-badge" id="verdictBadge">—</span>
+        </div>
+        <div class="card-body" id="verdictBody">
+          <div class="empty"><i data-lucide="shield-check"></i>Click "Stats" to load</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-h">
+          <i data-lucide="layers"></i>
+          <span class="card-title">Extraction Level</span>
+          <span class="card-badge" id="levelBadge">—</span>
+        </div>
+        <div class="card-body" id="levelBody">
+          <div class="empty"><i data-lucide="layers"></i>Click "Stats" to load</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb12">
+      <div class="card-h">
+        <i data-lucide="grid-3x3"></i>
+        <span class="card-title">Point Coverage</span>
+        <span class="card-badge" id="coverageBadge">—</span>
+      </div>
+      <div class="card-body" id="coverageBody">
+        <div class="empty"><i data-lucide="grid-3x3"></i>Click "Stats" to load per-point counts</div>
+      </div>
+    </div>
+
+    <div class="grid g2 mb12">
+      <div class="card">
+        <div class="card-h">
+          <i data-lucide="cpu"></i>
+          <span class="card-title">Model Configuration</span>
+          <span class="card-badge" id="modelBadge">from logs</span>
+        </div>
+        <div class="card-body" id="modelConfigBody">
+          <div class="empty"><i data-lucide="cpu"></i>Parse from logs…</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-h">
+          <i data-lucide="history"></i>
+          <span class="card-title">Recent Tool Results</span>
+          <button class="btn xs" onclick="clearExtractionResults()"><i data-lucide="x"></i> Clear</button>
+        </div>
+        <div class="card-body" style="padding:10px 12px">
+          <div id="extractionToolResults" class="tool-results-list">
+            <div class="empty" style="padding:20px"><i data-lucide="history"></i>No recent runs</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-h">
+        <i data-lucide="table"></i>
+        <span class="card-title">PDF Audit</span>
+        <span class="updated" id="auditUpdated"></span>
+        <span class="card-badge" id="auditBadge">—</span>
+      </div>
+      <div class="filter-bar" style="padding:10px 14px;margin:0;border-bottom:1px solid var(--border)">
+        <input type="text" class="input" id="auditSearch" placeholder="Filter by PDF name…" style="width:220px">
+        <div class="chips" id="auditChips">
+          <button class="chip active" data-audit="all">All</button>
+          <button class="chip" data-audit="ok">OK</button>
+          <button class="chip" data-audit="warn">Warnings</button>
+          <button class="chip" data-audit="empty">Empty</button>
+        </div>
+        <button class="btn sm primary" onclick="runChunkerAudit(this)" style="margin-left:auto"><i data-lucide="refresh-cw"></i> Load</button>
+      </div>
+      <div class="card-body flush" style="max-height:600px;overflow:auto">
+        <div id="auditVisualBody">
+          <div class="empty"><i data-lucide="table"></i>Click "Load" to fetch PDF-level audit</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLES -->
+  <section class="tab-panel" id="tab-articles">
+    <div class="action-bar">
+      <span class="label">Articles</span>
+      <button class="btn sm" onclick="refreshArticles(this)"><i data-lucide="refresh-cw"></i> Refresh</button>
+      <button class="btn sm info" onclick="exportArticles()"><i data-lucide="download"></i> Export JSON</button>
+      <span class="divider"></span>
+      <button class="btn sm warn" onclick="verifyAllRevise(this)"><i data-lucide="shield-check"></i> Verify All Revise</button>
+      <span class="spacer"></span>
+      <span class="mono" style="font-size:10.5px;color:var(--text-3)" id="artCount">—</span>
+    </div>
+
+    <div class="filter-bar">
+      <input type="text" class="input" id="artSearch" placeholder="Search by ID or title…" style="flex:1;max-width:340px">
       <div class="chips" id="artChips">
         <button class="chip active" data-verdict="all">All <span class="chip-count" data-count="all">0</span></button>
         <button class="chip" data-verdict="approve">Approve <span class="chip-count" data-count="approve">0</span></button>
@@ -941,11 +1090,10 @@ a { color: inherit; text-decoration: none; }
         <button class="chip" data-verdict="reject">Reject <span class="chip-count" data-count="reject">0</span></button>
         <button class="chip" data-verdict="error">Error <span class="chip-count" data-count="error">0</span></button>
       </div>
-      <span style="margin-left:auto;font-size:11px;color:var(--text-3);font-family:'JetBrains Mono',monospace;" id="artCount">—</span>
     </div>
 
     <div class="card">
-      <div class="card-body flush" style="max-height:calc(100vh - 200px);overflow:auto">
+      <div class="card-body flush" style="max-height:calc(100vh - 280px);overflow:auto">
         <table class="tbl" id="artTable">
           <thead>
             <tr>
@@ -960,18 +1108,21 @@ a { color: inherit; text-decoration: none; }
               <th style="text-align:right">Actions</th>
             </tr>
           </thead>
-          <tbody id="artBody">
-            <tr><td colspan="9" class="empty"><i data-lucide="file-text"></i>Loading…</td></tr>
-          </tbody>
+          <tbody id="artBody"><tr><td colspan="9" class="empty"><i data-lucide="file-text"></i>Loading…</td></tr></tbody>
         </table>
       </div>
     </div>
   </section>
 
-  <!-- ═══ TAB: COSTS ═══ -->
+  <!-- COSTS -->
   <section class="tab-panel" id="tab-costs">
+    <div class="action-bar">
+      <span class="label">Costs</span>
+      <button class="btn sm" onclick="onRefreshCosts(this)"><i data-lucide="refresh-cw"></i> Refresh</button>
+      <button class="btn sm info" onclick="exportCosts()"><i data-lucide="download"></i> Export CSV</button>
+    </div>
 
-    <div class="kpis" style="grid-template-columns:repeat(3,1fr)">
+    <div class="kpis k3">
       <div class="kpi">
         <div class="kpi-h"><i data-lucide="sun"></i>Today</div>
         <div class="kpi-v" id="cToday">—</div>
@@ -989,7 +1140,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </div>
 
-    <div class="card" style="margin-bottom:12px">
+    <div class="card mb12">
       <div class="card-h">
         <i data-lucide="chart-column"></i>
         <span class="card-title">Daily Spend</span>
@@ -1003,32 +1154,19 @@ a { color: inherit; text-decoration: none; }
 
     <div class="grid g2">
       <div class="card">
-        <div class="card-h">
-          <i data-lucide="cpu"></i>
-          <span class="card-title">By Model</span>
-          <span class="card-badge" id="byModelBadge">—</span>
-        </div>
+        <div class="card-h"><i data-lucide="cpu"></i><span class="card-title">By Model</span><span class="card-badge" id="byModelBadge">—</span></div>
         <div class="card-body flush" style="max-height:320px;overflow:auto">
           <table class="tbl" id="byModelTable">
-            <thead>
-              <tr><th>Model</th><th style="text-align:right">Calls</th><th style="text-align:right">Tokens</th><th style="text-align:right">Cost</th></tr>
-            </thead>
+            <thead><tr><th>Model</th><th style="text-align:right">Calls</th><th style="text-align:right">Tokens</th><th style="text-align:right">Cost</th></tr></thead>
             <tbody><tr><td colspan="4" class="empty">No data</td></tr></tbody>
           </table>
         </div>
       </div>
-
       <div class="card">
-        <div class="card-h">
-          <i data-lucide="tag"></i>
-          <span class="card-title">By Role</span>
-          <span class="card-badge" id="byRoleBadge">—</span>
-        </div>
+        <div class="card-h"><i data-lucide="tag"></i><span class="card-title">By Role</span><span class="card-badge" id="byRoleBadge">—</span></div>
         <div class="card-body flush" style="max-height:320px;overflow:auto">
           <table class="tbl" id="byRoleTable">
-            <thead>
-              <tr><th>Role</th><th style="text-align:right">Calls</th><th style="text-align:right">Tokens</th><th style="text-align:right">Cost</th></tr>
-            </thead>
+            <thead><tr><th>Role</th><th style="text-align:right">Calls</th><th style="text-align:right">Tokens</th><th style="text-align:right">Cost</th></tr></thead>
             <tbody><tr><td colspan="4" class="empty">No data</td></tr></tbody>
           </table>
         </div>
@@ -1036,28 +1174,25 @@ a { color: inherit; text-decoration: none; }
     </div>
 
     <div class="card" style="margin-top:12px">
-      <div class="card-h">
-        <i data-lucide="history"></i>
-        <span class="card-title">Recent Calls</span>
-        <span class="card-badge" id="recentCallsBadge">—</span>
-      </div>
+      <div class="card-h"><i data-lucide="history"></i><span class="card-title">Recent Calls</span><span class="card-badge" id="recentCallsBadge">—</span></div>
       <div class="card-body flush" style="max-height:400px;overflow:auto">
         <table class="tbl" id="recentCallsTable">
-          <thead>
-            <tr><th>Time</th><th>Item</th><th>Role</th><th>Model</th><th style="text-align:right">Tokens</th><th style="text-align:right">Cost</th></tr>
-          </thead>
-          <tbody id="recentCallsBody">
-            <tr><td colspan="6" class="empty">No calls yet</td></tr>
-          </tbody>
+          <thead><tr><th>Time</th><th>Item</th><th>Role</th><th>Model</th><th style="text-align:right">Tokens</th><th style="text-align:right">Cost</th></tr></thead>
+          <tbody id="recentCallsBody"><tr><td colspan="6" class="empty">No calls yet</td></tr></tbody>
         </table>
       </div>
     </div>
   </section>
 
-  <!-- ═══ TAB: PROVIDER ═══ -->
+  <!-- PROVIDER -->
   <section class="tab-panel" id="tab-provider">
+    <div class="action-bar">
+      <span class="label">Provider</span>
+      <button class="btn sm" onclick="refreshProvider(this)"><i data-lucide="refresh-cw"></i> Refresh Combined</button>
+      <button class="btn sm info" onclick="exportProvider()"><i data-lucide="download"></i> Export JSON</button>
+    </div>
 
-    <div class="kpis" style="grid-template-columns:repeat(5,1fr)">
+    <div class="kpis">
       <div class="kpi">
         <div class="kpi-h"><i data-lucide="dollar-sign"></i>Total</div>
         <div class="kpi-v" id="pTotal">—</div>
@@ -1085,7 +1220,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </div>
 
-    <div class="orch" style="margin-bottom:12px;gap:10px">
+    <div class="action-bar" style="gap:10px">
       <i data-lucide="pie-chart" style="width:14px;height:14px;color:var(--text-3)"></i>
       <span style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.7px;color:var(--text-3)">Cost split</span>
       <span class="mono" style="font-size:10.5px;color:var(--text-4)">prompt</span>
@@ -1093,7 +1228,7 @@ a { color: inherit; text-decoration: none; }
       <span style="color:var(--text-4)">+</span>
       <span class="mono" style="font-size:10.5px;color:var(--text-4)">completion</span>
       <span class="mono" style="font-size:12px;color:var(--text)"><strong id="pCostCompletion">—</strong></span>
-      <span style="width:1px;height:14px;background:var(--border-2);margin:0 4px"></span>
+      <span class="divider"></span>
       <span class="mono" style="font-size:10.5px;color:var(--text-4)">reasoning</span>
       <span class="mono" style="font-size:12px;color:var(--accent)"><strong id="pReasoning">—</strong></span>
       <span class="mono" style="font-size:10.5px;color:var(--text-4)">tok</span>
@@ -1103,12 +1238,8 @@ a { color: inherit; text-decoration: none; }
       <span class="mono" style="font-size:10.5px;color:var(--text-4)">tok</span>
     </div>
 
-    <div class="card" style="margin-bottom:12px">
-      <div class="card-h">
-        <i data-lucide="chart-column"></i>
-        <span class="card-title">Provider Daily Spend</span>
-        <span class="card-badge" id="pTimelineBadge">—</span>
-      </div>
+    <div class="card mb12">
+      <div class="card-h"><i data-lucide="chart-column"></i><span class="card-title">Provider Daily Spend</span><span class="card-badge" id="pTimelineBadge">—</span></div>
       <div class="card-body">
         <div class="timeline" id="pTimeline"></div>
         <div class="tl-labels" id="pTimelineLabels"></div>
@@ -1117,40 +1248,19 @@ a { color: inherit; text-decoration: none; }
 
     <div class="grid g2">
       <div class="card">
-        <div class="card-h">
-          <i data-lucide="cpu"></i>
-          <span class="card-title">By Model</span>
-          <span class="card-badge" id="pByModelBadge">—</span>
-        </div>
+        <div class="card-h"><i data-lucide="cpu"></i><span class="card-title">By Model</span><span class="card-badge" id="pByModelBadge">—</span></div>
         <div class="card-body flush" style="max-height:420px;overflow:auto">
           <table class="tbl" id="pByModelTable">
-            <thead><tr>
-              <th>Model</th>
-              <th style="text-align:right">Calls</th>
-              <th style="text-align:right">Tokens</th>
-              <th style="text-align:right">Reasoning</th>
-              <th style="text-align:right">Cost</th>
-            </tr></thead>
+            <thead><tr><th>Model</th><th style="text-align:right">Calls</th><th style="text-align:right">Tokens</th><th style="text-align:right">Reasoning</th><th style="text-align:right">Cost</th></tr></thead>
             <tbody><tr><td colspan="5" class="empty">Loading…</td></tr></tbody>
           </table>
         </div>
       </div>
-
       <div class="card">
-        <div class="card-h">
-          <i data-lucide="calendar-days"></i>
-          <span class="card-title">By Day</span>
-          <span class="card-badge" id="pByDayBadge">—</span>
-        </div>
+        <div class="card-h"><i data-lucide="calendar-days"></i><span class="card-title">By Day</span><span class="card-badge" id="pByDayBadge">—</span></div>
         <div class="card-body flush" style="max-height:420px;overflow:auto">
           <table class="tbl" id="pByDayTable">
-            <thead><tr>
-              <th>Day</th>
-              <th style="text-align:right">Calls</th>
-              <th style="text-align:right">Tokens</th>
-              <th style="text-align:right">Reasoning</th>
-              <th style="text-align:right">Cost</th>
-            </tr></thead>
+            <thead><tr><th>Day</th><th style="text-align:right">Calls</th><th style="text-align:right">Tokens</th><th style="text-align:right">Reasoning</th><th style="text-align:right">Cost</th></tr></thead>
             <tbody><tr><td colspan="5" class="empty">Loading…</td></tr></tbody>
           </table>
         </div>
@@ -1158,190 +1268,185 @@ a { color: inherit; text-decoration: none; }
     </div>
 
     <div class="card" style="margin-top:12px">
-      <div class="card-h">
-        <i data-lucide="tag"></i>
-        <span class="card-title">By Role (live pipeline)</span>
-        <span class="card-badge" id="pByRoleBadge">—</span>
-      </div>
+      <div class="card-h"><i data-lucide="tag"></i><span class="card-title">By Role (live pipeline)</span><span class="card-badge" id="pByRoleBadge">—</span></div>
       <div class="card-body flush" style="max-height:280px;overflow:auto">
         <table class="tbl" id="pByRoleTable">
-          <thead><tr>
-            <th>Role</th>
-            <th style="text-align:right">Calls</th>
-            <th style="text-align:right">Tokens</th>
-            <th style="text-align:right">Reasoning</th>
-            <th style="text-align:right">Cost</th>
-          </tr></thead>
+          <thead><tr><th>Role</th><th style="text-align:right">Calls</th><th style="text-align:right">Tokens</th><th style="text-align:right">Reasoning</th><th style="text-align:right">Cost</th></tr></thead>
           <tbody><tr><td colspan="5" class="empty">Loading…</td></tr></tbody>
         </table>
       </div>
     </div>
   </section>
 
-  <!-- ═══ TAB: LOGS ═══ -->
+  <!-- LOGS -->
   <section class="tab-panel" id="tab-logs">
-    <div class="filter-bar">
-      <div class="input-wrap" style="position:relative;flex:1;max-width:340px">
-        <input type="text" class="input mono" id="logSearch" placeholder="Filter log…">
-      </div>
-      <div class="chips" id="logChips">
-        <button class="chip active" data-lv="all">All</button>
-        <button class="chip" data-lv="INFO">Info</button>
-        <button class="chip" data-lv="WARNING">Warning</button>
-        <button class="chip" data-lv="ERROR">Error</button>
-        <button class="chip" data-lv="DEBUG">Debug</button>
-      </div>
-      <label style="display:flex;align-items:center;gap:6px;font-size:11px;color:var(--text-3);cursor:pointer;">
-        <input type="checkbox" id="logFollow" checked>
-        Follow tail
-      </label>
-      <span style="margin-left:auto;font-size:11px;color:var(--text-3);font-family:'JetBrains Mono',monospace;" id="logCount">—</span>
-    </div>
-
     <div class="card">
+      <div class="log-controls">
+        <input type="text" class="input mono" id="logSearch" placeholder="Filter log…" style="width:240px">
+        <div class="chips" id="logChips">
+          <button class="chip active" data-lv="all">All</button>
+          <button class="chip" data-lv="INFO">Info</button>
+          <button class="chip" data-lv="WARNING">Warning</button>
+          <button class="chip" data-lv="ERROR">Error</button>
+          <button class="chip" data-lv="DEBUG">Debug</button>
+        </div>
+        <div class="chips" id="logSourceChips" style="padding-left:8px;border-left:1px solid var(--border-2)">
+          <button class="chip" data-source="chunker">Chunker</button>
+          <button class="chip" data-source="pipeline">Pipeline</button>
+          <button class="chip" data-source="orchestrator">Orchestrator</button>
+          <button class="chip" data-source="all">All files</button>
+        </div>
+        <div class="chips" id="logModuleChips" style="padding-left:8px;border-left:1px solid var(--border-2)"></div>
+        <label class="checkbox-label">
+          <input type="checkbox" id="logFollow" checked>
+          Follow tail
+        </label>
+        <button class="btn sm" onclick="refreshLog(this)"><i data-lucide="refresh-cw"></i></button>
+        <button class="btn sm" onclick="downloadLog()"><i data-lucide="download"></i></button>
+        <button class="btn sm" onclick="clearLogFilters()"><i data-lucide="filter-x"></i></button>
+        <div class="log-stats" id="logStats"></div>
+      </div>
       <div class="card-body flush">
         <div class="log-full" id="logFull">
           <div class="empty" style="padding:20px">Loading…</div>
         </div>
       </div>
     </div>
+    <button class="log-scroll-btn hide" id="logScrollBtn" onclick="scrollToBottomLog()" title="Scroll to bottom">
+      <i data-lucide="arrow-down"></i>
+    </button>
   </section>
 
-  <!-- ═══ TAB: TOOLS ═══ -->
+  <!-- TOOLS -->
   <section class="tab-panel" id="tab-tools">
-    <div id="toolResults"></div>
+    <div class="action-bar">
+      <span class="label">Tools</span>
+      <span class="mono" style="font-size:10.5px;color:var(--text-3)">Click any tool to run. Results appear below.</span>
+      <span class="spacer"></span>
+      <button class="btn sm" onclick="clearToolResults()"><i data-lucide="x"></i> Clear Results</button>
+    </div>
+
+    <div id="toolResults" class="tool-results-list"></div>
 
     <div class="tools-groups">
 
       <div class="tools-group">
-        <div class="tools-group-h">
-          <i data-lucide="git-branch"></i>
-          <span>Pipeline</span>
-        </div>
+        <div class="tools-group-h"><i data-lucide="git-branch"></i><span>Pipeline</span></div>
         <div class="tools-list">
           <div class="tool-item" onclick="onTool(this, 'scan-queue')">
             <div class="tool-icon"><i data-lucide="search"></i></div>
             <div class="tool-info">
               <div class="tool-name">Scan Queue <span class="tool-cost free">Free</span></div>
-              <div class="tool-desc">Re-scan index.html → queue.jsonl. Finds new topics.</div>
+              <div class="tool-desc">Re-scan index.html → queue.jsonl</div>
             </div>
           </div>
           <div class="tool-item" onclick="onTool(this, 'pipeline-stats')">
             <div class="tool-icon"><i data-lucide="bar-chart-3"></i></div>
             <div class="tool-info">
               <div class="tool-name">Stats <span class="tool-cost free">Free</span></div>
-              <div class="tool-desc">Full stats: queue, done, error, budget, cost.</div>
+              <div class="tool-desc">Queue, done, error, budget, cost</div>
             </div>
           </div>
           <div class="tool-item" onclick="onTool(this, 'pipeline-report')">
             <div class="tool-icon"><i data-lucide="file-text"></i></div>
             <div class="tool-info">
               <div class="tool-name">Report <span class="tool-cost free">Free</span></div>
-              <div class="tool-desc">Article-by-article report with scores.</div>
+              <div class="tool-desc">Article-by-article report with scores</div>
             </div>
           </div>
           <div class="tool-item" onclick="onTool(this, 'rebuild-index')">
             <div class="tool-icon"><i data-lucide="refresh-cw"></i></div>
             <div class="tool-info">
               <div class="tool-name">Rebuild Index <span class="tool-cost free">Free</span></div>
-              <div class="tool-desc">integrate.py — rewrite index.html with articles.</div>
+              <div class="tool-desc">Rewrite index.html with articles</div>
             </div>
           </div>
           <div class="tool-item" onclick="onRefreshCosts(this)">
             <div class="tool-icon"><i data-lucide="dollar-sign"></i></div>
             <div class="tool-info">
               <div class="tool-name">Refresh Costs <span class="tool-cost free">Free</span></div>
-              <div class="tool-desc">cost_aggregate.py — rebuild combined.json from ledger + historical.</div>
+              <div class="tool-desc">Rebuild combined.json from ledger</div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="tools-group">
-        <div class="tools-group-h">
-          <i data-lucide="database"></i>
-          <span>Chunker</span>
-        </div>
+        <div class="tools-group-h"><i data-lucide="database"></i><span>Chunker</span></div>
         <div class="tools-list">
           <div class="tool-item" onclick="onTool(this, 'chunker-audit')">
             <div class="tool-icon"><i data-lucide="scan-line"></i></div>
             <div class="tool-info">
               <div class="tool-name">Audit <span class="tool-cost free">Free</span></div>
-              <div class="tool-desc">Quality audit per PDF: pages, chars, problems.</div>
+              <div class="tool-desc">Quality audit per PDF</div>
             </div>
           </div>
           <div class="tool-item" onclick="onTool(this, 'chunker-stats')">
             <div class="tool-icon"><i data-lucide="bar-chart-3"></i></div>
             <div class="tool-info">
               <div class="tool-name">Stats <span class="tool-cost free">Free</span></div>
-              <div class="tool-desc">Per-phase stats: extracted / merged / classified.</div>
+              <div class="tool-desc">Per-phase: extracted / merged / classified</div>
             </div>
           </div>
           <div class="tool-item" onclick="onTool(this, 'chunker-merge')">
             <div class="tool-icon"><i data-lucide="git-merge"></i></div>
             <div class="tool-info">
               <div class="tool-name">Merge <span class="tool-cost free">Free</span></div>
-              <div class="tool-desc">Combine probs + sol pairs into merged files.</div>
+              <div class="tool-desc">Combine probs + sol pairs</div>
             </div>
           </div>
           <div class="tool-item" onclick="onTool(this, 'chunker-aggregate')">
             <div class="tool-icon"><i data-lucide="layers"></i></div>
             <div class="tool-info">
               <div class="tool-name">Aggregate <span class="tool-cost free">Free</span></div>
-              <div class="tool-desc">Group classified problems → anchors per point.</div>
+              <div class="tool-desc">Group classified problems → anchors</div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="tools-group">
-        <div class="tools-group-h">
-          <i data-lucide="sparkles"></i>
-          <span>Chunker · Paid</span>
-        </div>
+        <div class="tools-group-h"><i data-lucide="sparkles"></i><span>Chunker · Paid</span></div>
         <div class="tools-list">
           <div class="tool-item" onclick="onChunkerExtract(this)">
             <div class="tool-icon"><i data-lucide="download"></i></div>
             <div class="tool-info">
               <div class="tool-name">Extract <span class="tool-cost paid">API</span></div>
-              <div class="tool-desc">Extract problems from PDFs (~$0.02–0.05/PDF).</div>
+              <div class="tool-desc">~$0.02–0.05/PDF</div>
             </div>
           </div>
           <div class="tool-item" onclick="onChunkerClassify(this)">
             <div class="tool-icon"><i data-lucide="brain-circuit"></i></div>
             <div class="tool-info">
               <div class="tool-name">Classify <span class="tool-cost paid">API</span></div>
-              <div class="tool-desc">Classify problems → STEPS points.</div>
+              <div class="tool-desc">Classify → STEPS points</div>
             </div>
           </div>
           <div class="tool-item" onclick="onFullRefresh(this)">
             <div class="tool-icon"><i data-lucide="refresh-ccw"></i></div>
             <div class="tool-info">
               <div class="tool-name">Full Refresh <span class="tool-cost paid">API</span></div>
-              <div class="tool-desc">Chain: merge → classify → aggregate. No extract.</div>
+              <div class="tool-desc">merge → classify → aggregate</div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="tools-group">
-        <div class="tools-group-h">
-          <i data-lucide="shield-check"></i>
-          <span>Maintenance</span>
-        </div>
+        <div class="tools-group-h"><i data-lucide="shield-check"></i><span>Maintenance</span></div>
         <div class="tools-list">
           <div class="tool-item" onclick="onPointToolFromTools(this, 'verify')">
             <div class="tool-icon"><i data-lucide="shield-check"></i></div>
             <div class="tool-info">
               <div class="tool-name">Verify <span class="tool-cost paid">~$0.08</span></div>
-              <div class="tool-desc">Re-run verifier on existing article (no regen).</div>
+              <div class="tool-desc">Re-run verifier on existing article</div>
             </div>
           </div>
           <div class="tool-item" onclick="onPointToolFromTools(this, 'recover')">
             <div class="tool-icon"><i data-lucide="rotate-ccw"></i></div>
             <div class="tool-info">
               <div class="tool-name">Recover <span class="tool-cost free">Free</span></div>
-              <div class="tool-desc">Restore article from temp backup after crash.</div>
+              <div class="tool-desc">Restore article from temp backup</div>
             </div>
           </div>
         </div>
@@ -1352,7 +1457,6 @@ a { color: inherit; text-decoration: none; }
 
 </main>
 
-<!-- TOAST -->
 <div class="toast" id="toast">
   <i data-lucide="check-circle-2"></i>
   <div class="toast-content">
@@ -1367,11 +1471,18 @@ a { color: inherit; text-decoration: none; }
 // ═══════════════════════════════════════════════════════════════
 const $ = id => document.getElementById(id);
 
+let _iconsScheduled = false;
 function icons() {
-  if (window.lucide?.createIcons) {
-    try { window.lucide.createIcons(); } catch (e) {}
-  }
+  if (_iconsScheduled) return;
+  _iconsScheduled = true;
+  queueMicrotask(() => {
+    _iconsScheduled = false;
+    if (window.lucide?.createIcons) {
+      try { window.lucide.createIcons(); } catch (e) {}
+    }
+  });
 }
+
 function esc(s) {
   return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 }
@@ -1403,8 +1514,6 @@ function timeAgo(ts) {
   if (d < 86400000) return Math.floor(d/3600000) + 'h';
   return Math.floor(d/86400000) + 'd';
 }
-
-// Универсален helper: приема ISO низ, Unix секунди или Unix милисекунди → 'YYYY-MM-DD'
 function tsDay(ts) {
   if (!ts) return '';
   if (typeof ts === 'string') {
@@ -1414,14 +1523,233 @@ function tsDay(ts) {
     else return '';
   }
   if (typeof ts === 'number') {
-    // Unix epoch: ако е < 10^11, вероятно секунди; иначе милисекунди
     const ms = ts < 1e11 ? ts * 1000 : ts;
     try { return new Date(ms).toISOString().slice(0, 10); } catch (e) { return ''; }
   }
   return '';
 }
+function fmtTs(ts) {
+  if (!ts) return '';
+  const d = new Date(ts);
+  return d.toLocaleTimeString('bg-BG', { hour: '2-digit', minute: '2-digit' }) + ':' + String(d.getSeconds()).padStart(2, '0');
+}
+function debounce(fn, ms = 150) {
+  let t;
+  return (...args) => { clearTimeout(t); t = setTimeout(() => fn(...args), ms); };
+}
 
-// ─── TOAST ───
+// ═══════════════════════════════════════════════════════════════
+// STRIP PYTHON WARNINGS
+// Removes FutureWarning/DeprecationWarning lines that Python prints
+// to stderr before the actual tool output. Without this, stats/audit
+// parsing sees garbage and fails.
+// ═══════════════════════════════════════════════════════════════
+function stripPythonWarnings(text) {
+  if (!text) return '';
+  return text.split('\n')
+    .filter(line => {
+      if (/\.py:\d+:\s*\w*Warning:/.test(line)) return false;
+      if (/^\s+warnings\.warn\(/.test(line)) return false;
+      if (/^[A-Z]:\\.*\.py:\d+:\s*$/.test(line.trim())) return false;
+      return true;
+    })
+    .join('\n')
+    .trim();
+}
+
+// ═══════════════════════════════════════════════════════════════
+// CRITICAL: LOG LINE PARSER (fixed)
+// Supports:
+//   2026-11-10 10:02:40,908 [PDF_CHUNKER] INFO [context] message
+//   2026-11-10 10:02:40,908 [INFO] message
+//   2026-11-10 10:02:40,908 INFO message
+// ═══════════════════════════════════════════════════════════════
+const LOG_RE = /^(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2}:\d{2}),\d+\s+(?:\[([A-Za-z_][\w.]*)\]\s+)?(INFO|WARNING|ERROR|DEBUG|CRITICAL)\s+([\s\S]*)$/;
+
+function parseLogLine(line) {
+  const m = line.match(LOG_RE);
+  if (!m) return { raw: line, isParsed: false };
+  return {
+    isParsed: true,
+    date: m[1], time: m[2],
+    module: m[3] || null,
+    level: m[4],
+    message: m[5],
+  };
+}
+
+function getLogLevel(line) {
+  const p = parseLogLine(line);
+  return p.isParsed ? p.level : null;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// CRITICAL: CHUNKER STATS PARSER
+// Parses output of `python pdf_chunker.py --stats`
+// ═══════════════════════════════════════════════════════════════
+function parseChunkerStats(rawText) {
+  if (!rawText) return null;
+  const text = stripPythonWarnings(rawText);
+  if (!text) return null;
+  const result = {
+    extracted: { pdfs: 0, problems: 0, partial: 0 },
+    merged: { olympiads: 0, problems: 0 },
+    classified: { olympiads: 0, problems: 0, off: 0 },
+    realProblems: { total: 0, points: 0, byPoint: {} },
+    cost: 0,
+    verdicts: {},
+    levels: {},
+    needsReview: 0,
+    hasAny: false,
+  };
+
+  let m;
+
+  // PHASE 1
+  m = text.match(/PDFs:\s*(\d+)\s*\|\s*problems:\s*(\d+)\s*\|\s*partial:\s*(\d+)/);
+  if (m) {
+    result.extracted.pdfs = +m[1];
+    result.extracted.problems = +m[2];
+    result.extracted.partial = +m[3];
+    result.hasAny = true;
+  }
+
+  // PHASE 2 — careful: it matches "Olympiads: N | problems: M"
+  m = text.match(/Olympiads:\s*(\d+)\s*\|\s*problems:\s*(\d+)/);
+  if (m) {
+    result.merged.olympiads = +m[1];
+    result.merged.problems = +m[2];
+  }
+
+  // PHASE 3 — careful: same "Olympiads: N | problems: M | off: K"
+  m = text.match(/Olympiads:\s*(\d+)\s*\|\s*problems:\s*(\d+)\s*\|\s*off:\s*(\d+)/);
+  if (m) {
+    result.classified.olympiads = +m[1];
+    result.classified.problems = +m[2];
+    result.classified.off = +m[3];
+  }
+
+  // TOTAL
+  m = text.match(/TOTAL:\s*(\d+)\s+real problems across\s+(\d+)\s+points/);
+  if (m) {
+    result.realProblems.total = +m[1];
+    result.realProblems.points = +m[2];
+  }
+
+  // Cost
+  m = text.match(/Cost:\s*\$([\d.]+)/);
+  if (m) result.cost = parseFloat(m[1]);
+
+  // VERDICT BREAKDOWN
+  const vMatch = text.match(/VERDICT BREAKDOWN([\s\S]*?)(?:LEVEL BREAKDOWN|$)/);
+  if (vMatch) {
+    for (const line of vMatch[1].split('\n')) {
+      const mm = line.match(/^\s+([A-Za-z_]+):\s+(\d+)/);
+      if (mm) result.verdicts[mm[1]] = +mm[2];
+    }
+  }
+
+  // LEVEL BREAKDOWN
+  const lMatch = text.match(/LEVEL BREAKDOWN([\s\S]*?)$/);
+  if (lMatch) {
+    for (const line of lMatch[1].split('\n')) {
+      const mm = line.match(/^\s+(L\d_\w+|exhausted|unknown):\s+(\d+)/);
+      if (mm) result.levels[mm[1]] = +mm[2];
+      const nr = line.match(/needs_review:\s*(\d+)/);
+      if (nr) result.needsReview = +nr[1];
+    }
+  }
+
+  // Real problems per point — parse the "PHASE 4" table
+  const p4Match = text.match(/PHASE 4: REAL_PROBLEMS[\s\S]*?(?=\n\s*TOTAL:|$)/);
+  if (p4Match) {
+    for (const line of p4Match[0].split('\n')) {
+      const mm = line.match(/^\s+(R?\.?[\d.]+)\s+(\d+)\s+problems\s+\(easy=\s*(\d+),\s*medium=\s*(\d+),\s*hard=\s*(\d+)\)/);
+      if (mm) {
+        result.realProblems.byPoint[mm[1]] = {
+          total: +mm[2], easy: +mm[3], medium: +mm[4], hard: +mm[5]
+        };
+      }
+    }
+  }
+
+  return result.hasAny ? result : null;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// CRITICAL: PDF AUDIT PARSER
+// Parses output of `python pdf_chunker.py --audit`
+// ═══════════════════════════════════════════════════════════════
+function parseAuditText(text) {
+  if (!text) return [];
+  const lines = text.split('\n');
+  const rows = [];
+  let inTable = false;
+
+  for (const line of lines) {
+    if (/EXTRACTION AUDIT/.test(line)) { inTable = true; continue; }
+    if (!inTable) continue;
+    if (/^\s*$/.test(line)) continue;
+    if (/^─+/.test(line) || /^═+/.test(line)) continue;
+    if (/PDF\s+Pg\s+C\/P/.test(line)) continue;
+    if (/^\s+OK:\s+\d+/.test(line)) continue;
+    if (/^\s+⚠/.test(line) || /^\s+❌/.test(line)) continue;
+    if (/Unprocessed PDFs/.test(line)) continue;
+    if (/^\s+💡/.test(line) || /^\s+\.\\py/.test(line)) break;
+
+    // Data row: PDF (may be truncated), pages, chars/page, problems, P/Pg, Status, State
+    // PDF field may contain spaces; the numeric columns are right-aligned
+    const m = line.match(/^\s{2}(.{3,60}?)\s+(\d+)\s+(\d+)\s+(\d+)\s+([\d.]+)\s+(OK|⚠ LOW|❌ EMPTY|⚠ NO_TEXT|△ OCR\?)\s+(\S+)\s*$/);
+    if (m) {
+      rows.push({
+        pdf: m[1].trim(),
+        pages: +m[2],
+        charsPerPage: +m[3],
+        problems: +m[4],
+        problemsPerPage: parseFloat(m[5]),
+        status: m[6],
+        state: m[7],
+      });
+      continue;
+    }
+
+    // Fallback looser regex if strict fails
+    const ml = line.match(/^\s{2}(.+?)\s{2,}(\d+)\s+(\d+)\s+(\d+)\s+([\d.]+)\s+(.+?)\s+(\S+)\s*$/);
+    if (ml) {
+      rows.push({
+        pdf: ml[1].trim(),
+        pages: +ml[2],
+        charsPerPage: +ml[3],
+        problems: +ml[4],
+        problemsPerPage: parseFloat(ml[5]),
+        status: ml[6].trim(),
+        state: ml[7],
+      });
+    }
+  }
+  return rows;
+}
+
+function groupPdfByOlympiad(pdfName) {
+  // Extract olympiad prefix from filename
+  // OLI-2-Областен кръг-2024-11 кл-probs → "OLI-2 ОБЛАСТЕН 2024"
+  // OLI-3-Национален кръг-1983-9-12 кл-probs → "OLI-3 НАЦИОНАЛЕН 1983"
+  // BMO_1984-2006 → "BMO 1984-2006"
+  // NOM_2015 → "NOM 2015"
+  let m = pdfName.match(/^(OLI-\d+)-(.+?)-(\d{4})/);
+  if (m) {
+    const round = m[2].includes('Областен') ? 'ОБЛАСТЕН' : m[2].includes('Национален') ? 'НАЦИОНАЛЕН' : m[2];
+    return `${m[1]} ${round} ${m[3]}`;
+  }
+  m = pdfName.match(/^([A-Z]+)_?(\d{4}(?:-\d{4})?)/);
+  if (m) return `${m[1]} ${m[2]}`;
+  const first = pdfName.split(/[_\-\s]/)[0];
+  return first || 'other';
+}
+
+// ═══════════════════════════════════════════════════════════════
+// TOAST
+// ═══════════════════════════════════════════════════════════════
 let _toastTimer = null;
 function toast(title, text = '', isError = false, duration = 5000) {
   const el = $('toast');
@@ -1438,9 +1766,8 @@ function toast(title, text = '', isError = false, duration = 5000) {
   _toastTimer = setTimeout(() => el.classList.remove('show'), duration);
 }
 
-// ─── BUTTON LOADING ───
 async function withLoading(el, label, fn) {
-  const btn = el?.closest?.('.btn') || (el?.tagName === 'BUTTON' ? el : null);
+  const btn = el?.closest?.('.btn') || el?.closest?.('.action-tile') || (el?.tagName === 'BUTTON' ? el : null);
   if (!btn) { await fn(); return; }
   const orig = btn.innerHTML;
   btn.classList.add('loading');
@@ -1468,69 +1795,154 @@ const S = {
   queue: { pending: [], total: 0 },
   state: null,
   log: [],
-  // articles tab
+  // articles
   artSearch: '',
   artVerdict: 'all',
   artSort: { key: 'ts', desc: true },
-  // log tab
+  // logs
   logSearch: '',
   logLevel: 'all',
   logFollow: true,
+  logSource: 'chunker',   // chunker | pipeline | orchestrator | all
+  // extraction
+  chunkerStats: null,       // parsed from `--stats`
+  chunkerAudit: [],         // parsed from `--audit`
+  chunkerProgress: null,    // parsed from logs
+  chunkerStatsAt: 0,
+  chunkerAuditAt: 0,
+  // audit table filter
+  auditFilter: 'all',
+  auditSearch: '',
+  // tool history
+  extractionHistory: [],
+  toolHistory: [],
+  // logs
+  logModule: 'all',
+  // timestamps
+  lastFetch: {},
 };
+
+// ═══════════════════════════════════════════════════════════════
+// PERSISTENCE — survive page refresh without re-fetching
+// ═══════════════════════════════════════════════════════════════
+function persistChunker() {
+  try {
+    localStorage.setItem('pipeline-chunker', JSON.stringify({
+      stats: S.chunkerStats, statsAt: S.chunkerStatsAt,
+      audit: S.chunkerAudit, auditAt: S.chunkerAuditAt,
+    }));
+  } catch (e) {}
+}
+
+function loadPersistedChunker() {
+  try {
+    const saved = JSON.parse(localStorage.getItem('pipeline-chunker') || '{}');
+    if (saved.stats) { S.chunkerStats = saved.stats; S.chunkerStatsAt = saved.statsAt || 0; }
+    if (saved.audit) { S.chunkerAudit = saved.audit; S.chunkerAuditAt = saved.auditAt || 0; }
+  } catch (e) {}
+}
+
+// Persisted filters
+try {
+  const saved = JSON.parse(localStorage.getItem('pipeline-filters') || '{}');
+  if (saved.artVerdict) S.artVerdict = saved.artVerdict;
+  if (saved.logLevel) S.logLevel = saved.logLevel;
+  if (saved.logFollow !== undefined) S.logFollow = saved.logFollow;
+  if (saved.logSource) S.logSource = saved.logSource;
+} catch (e) {}
+function saveFilters() {
+  try {
+    localStorage.setItem('pipeline-filters', JSON.stringify({
+      artVerdict: S.artVerdict,
+      logLevel: S.logLevel,
+      logFollow: S.logFollow,
+      logSource: S.logSource,
+    }));
+  } catch (e) {}
+}
 
 // ═══════════════════════════════════════════════════════════════
 // TAB SWITCHING
 // ═══════════════════════════════════════════════════════════════
+const TAB_ORDER = ['overview', 'extraction', 'articles', 'costs', 'provider', 'logs', 'tools'];
+
+function switchTab(tabName) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  const tab = document.querySelector(`.tab[data-tab="${tabName}"]`);
+  if (tab) tab.classList.add('active');
+  const panel = $('tab-' + tabName);
+  if (panel) panel.classList.add('active');
+
+  // Auto-trigger data loads on tab open
+  if (tabName === 'articles' && !S.articles.length) fetchArticles().then(renderArticlesTab);
+  if (tabName === 'extraction') {
+    if (!S.chunkerStats && !S.chunkerStatsAt) {
+      // Auto-run stats on first visit
+      setTimeout(() => autoRunChunkerStats(), 100);
+    } else {
+      renderExtractionTab();
+    }
+  }
+  if (tabName === 'costs') renderCostsTab();
+  if (tabName === 'provider') renderProviderTab();
+  if (tabName === 'logs') renderLogsTab();
+  icons();
+}
+
 document.querySelectorAll('.tab').forEach(tab => {
-  tab.addEventListener('click', () => {
-    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
-    tab.classList.add('active');
-    $('tab-' + tab.dataset.tab).classList.add('active');
-    // Refresh data for the tab
-    if (tab.dataset.tab === 'articles') renderArticlesTab();
-    if (tab.dataset.tab === 'costs') renderCostsTab();
-    if (tab.dataset.tab === 'logs') renderLogsTab();
-    icons();
-  });
+  tab.addEventListener('click', () => switchTab(tab.dataset.tab));
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.target.matches('input, textarea, select')) return;
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  const idx = parseInt(e.key) - 1;
+  if (idx >= 0 && idx < TAB_ORDER.length) {
+    e.preventDefault();
+    switchTab(TAB_ORDER[idx]);
+  }
 });
 
 // ═══════════════════════════════════════════════════════════════
-// FETCHERS
+// FETCHERS (with abort)
 // ═══════════════════════════════════════════════════════════════
-async function fetchAll() {
-  await Promise.all([fetchState(), fetchQueue(), fetchCostsAll(), fetchOrch()]);
-  renderOverview();
-  if (document.querySelector('.tab[data-tab="articles"]').classList.contains('active')) renderArticlesTab();
-  if (document.querySelector('.tab[data-tab="costs"]').classList.contains('active')) renderCostsTab();
-}
+const _aborts = {};
 
-async function fetchState() {
+async function fetchJSON(url, opts = {}) {
+  const key = url.split('?')[0];
+  if (_aborts[key]) _aborts[key].abort();
+  _aborts[key] = new AbortController();
   try {
-    S.state = await fetch('/api/state').then(r => r.json());
-  } catch (e) { console.error('state', e); }
-}
-
-async function fetchQueue() {
-  try {
-    S.queue = await fetch('/api/queue').then(r => r.json());
-  } catch (e) { console.error('queue', e); }
-}
-
-async function fetchCostsAll() {
-  try {
-    S.costs = await fetch('/api/costs/all').then(r => r.json());
-  } catch (e) {
-    // Fallback to recent
-    try {
-      S.costs = await fetch('/api/costs/recent?n=500').then(r => r.json());
-    } catch (e2) { S.costs = []; }
+    const r = await fetch(url, { signal: _aborts[key].signal, ...opts });
+    if (!r.ok) {
+      const txt = await r.text().catch(() => '');
+      throw new Error(`HTTP ${r.status}${txt ? ': ' + txt.slice(0, 100) : ''}`);
+    }
+    return await r.json();
+  } finally {
+    // abort handled on next call
   }
 }
 
+async function fetchState() {
+  try { S.state = await fetchJSON('/api/state'); S.lastFetch.state = Date.now(); }
+  catch (e) { if (e.name !== 'AbortError') console.error('state', e); }
+}
+async function fetchQueue() {
+  try { S.queue = await fetchJSON('/api/queue'); S.lastFetch.queue = Date.now(); }
+  catch (e) { if (e.name !== 'AbortError') console.error('queue', e); }
+}
+async function fetchCostsAll() {
+  try { S.costs = await fetchJSON('/api/costs/all'); S.lastFetch.costs = Date.now(); }
+  catch (e) {
+    try { S.costs = await fetchJSON('/api/costs/recent?n=500'); }
+    catch (e2) { S.costs = []; }
+  }
+}
 async function fetchOrch() {
   try {
-    const d = await fetch('/api/orchestrator/status').then(r => r.json());
+    const d = await fetchJSON('/api/orchestrator/status');
     S.running = d.running;
     const st = $('status');
     st.classList.remove('running', 'error');
@@ -1551,22 +1963,83 @@ async function fetchOrch() {
       S.uptimeBase = null;
     }
   } catch (e) {
-    $('status').classList.add('error');
-    $('statusText').textContent = 'Offline';
+    if (e.name !== 'AbortError') {
+      $('status').classList.add('error');
+      $('statusText').textContent = 'Offline';
+    }
   }
 }
-
 async function fetchArticles() {
+  try { S.articles = await fetchJSON('/api/articles'); S.lastFetch.articles = Date.now(); }
+  catch (e) { if (e.name !== 'AbortError') console.error('articles', e); }
+}
+async function fetchLog(sourceOverride = null) {
+  const src = sourceOverride || S.logSource || 'chunker';
   try {
-    S.articles = await fetch('/api/articles').then(r => r.json());
-  } catch (e) { console.error('articles', e); }
+    const d = await fetchJSON(`/api/logs/tail?lines=500&source=${encodeURIComponent(src)}`);
+    S.log = (d.lines || []).map(l => l.replace(/\r?\n$/, ''));
+    S.lastFetch.log = Date.now();
+    S.logSourceActive = src;
+    S.chunkerProgress = parseExtractionProgress();
+  } catch (e) {
+    if (e.name !== 'AbortError') S.log = [];
+  }
+}
+async function fetchProviderCosts(force = false) {
+  if (!force && S.providerCosts && !Array.isArray(S.providerCosts) && Object.keys(S.providerCosts).length) return;
+  const urls = ['/api/costs/combined', '/generated/costs/combined.json', '/combined.json'];
+  for (const url of urls) {
+    try {
+      const d = await fetchJSON(url);
+      if (d && typeof d === 'object' && !Array.isArray(d)) {
+        S.providerCosts = d;
+        S.lastFetch.providerCosts = Date.now();
+        return;
+      }
+    } catch (e) { /* next */ }
+  }
+  if (!S.providerCosts || Array.isArray(S.providerCosts)) S.providerCosts = {};
 }
 
-async function fetchLog() {
-  try {
-    const d = await fetch('/api/logs/tail?lines=200').then(r => r.json());
-    S.log = d.lines || [];
-  } catch (e) { S.log = []; }
+// ═══════════════════════════════════════════════════════════════
+// EXTRACTION PROGRESS (from logs)
+// ═══════════════════════════════════════════════════════════════
+function parseExtractionProgress() {
+  if (!S.log.length) return null;
+
+  let currentPdf = null;
+  let currentIdx = 0, currentTotal = 0;
+  let segmentsDone = 0, segmentsTotal = 0;
+  let budgetExhausted = false;
+  let lastActivityAt = 0;
+
+  for (let i = S.log.length - 1; i >= 0; i--) {
+    const line = S.log[i];
+    if (/Бюджет достигнат|BudgetExhausted/.test(line)) budgetExhausted = true;
+
+    let m = line.match(/═══\s+(.+?)\s+═══/);
+    if (m && !currentPdf) { currentPdf = m[1]; if (!lastActivityAt) lastActivityAt = i; continue; }
+
+    m = line.match(/\[(\d+)\/(\d+)\]\s+(.+?)\.pdf/);
+    if (m && !currentTotal) { currentTotal = parseInt(m[2]); currentIdx = parseInt(m[1]); continue; }
+
+    m = line.match(/segmented:\s+(\d+)\s+problems from (\d+)\s+segments/);
+    if (m && !segmentsTotal) { segmentsTotal = parseInt(m[2]); segmentsDone = segmentsTotal; continue; }
+
+    if (/seg\s+[\d.]+:\s+\d+\s+problems/.test(line) && !segmentsTotal) { segmentsDone++; continue; }
+
+    if (/verdict=(PASS|PASS_WITH_WARNINGS|FAIL_)/.test(line)) {
+      if (currentPdf && segmentsTotal === 0) segmentsTotal = segmentsDone;
+    }
+  }
+
+  if (!currentPdf && !currentIdx) return null;
+  const active = !!currentPdf && !budgetExhausted && currentIdx > 0;
+
+  return {
+    currentPdf, currentIdx, currentTotal, segmentsDone, segmentsTotal,
+    budgetExhausted, isRunning: active,
+  };
 }
 
 // ═══════════════════════════════════════════════════════════════
@@ -1574,25 +2047,19 @@ async function fetchLog() {
 // ═══════════════════════════════════════════════════════════════
 function renderOverview() {
   if (!S.state) return;
+
   const st = S.state.stats || {};
   const todayKey = new Date().toISOString().slice(0, 10);
-
-  // ── Primary source: combined.json (историческо + live ledger) ──
   const providerCombined = (S.providerCosts && !Array.isArray(S.providerCosts)) ? S.providerCosts : null;
   const liveToday = providerCombined ? (providerCombined.by_day || {})[todayKey] : null;
-
-  // ── Fallback: /api/costs/all (pipeline state.json) — стар източник ──
   const legacyToday = S.costs.filter(c => tsDay(c.ts) === todayKey);
   const legacySpent = legacyToday.reduce((a, c) => a + (c.cost || 0), 0);
-
-  // ── Решение: ако live има данни → ползвай тях; иначе fallback ──
   const todaySpent = (liveToday && liveToday.cost > 0) ? liveToday.cost : legacySpent;
   const todayCalls = (liveToday && liveToday.calls > 0) ? liveToday.calls : legacyToday.length;
 
   $('kDone').textContent = st.done || 0;
   $('kDoneSub').textContent = `of ${S.queue.total || 0} · ${Math.round((st.done || 0) / Math.max(1, S.queue.total || 1) * 100)}%`;
   $('kPending').textContent = S.queue.pending?.length || 0;
-  $('kPendingSub').textContent = 'in queue';
   $('kErrors').textContent = st.error || 0;
   $('kErrorsSub').textContent = st.error ? 'needs attention' : 'all clear';
   $('kScore').textContent = st.scores?.avg || '—';
@@ -1601,19 +2068,12 @@ function renderOverview() {
   const pct = todaySpent / 3;
   $('kSpent').className = 'kpi-v' + (pct >= 0.9 ? ' danger' : pct >= 0.75 ? ' warn' : '');
 
-  // Sub-line: разбивка (live → reasoning/cached, legacy → calls)
   const parts = [`of $3.00`, `${todayCalls} calls`];
-  if (liveToday) {
-    if (liveToday.reasoning_tokens) parts.push(`${bigNum(liveToday.reasoning_tokens)} reasoning`);
-    if (liveToday.cached_tokens)    parts.push(`${bigNum(liveToday.cached_tokens)} cached`);
-    const src = (legacySpent > 0 && Math.abs(legacySpent - todaySpent) > 0.005)
-      ? ' (live)' : '';
-    $('kSpentSub').textContent = parts.join(' · ') + src;
-  } else {
-    $('kSpentSub').textContent = parts.join(' · ') + (legacySpent > 0 ? '' : ' · ledger stale');
-  }
+  if (liveToday?.reasoning_tokens) parts.push(`${bigNum(liveToday.reasoning_tokens)} reasoning`);
+  $('kSpentSub').textContent = parts.join(' · ');
+  $('mBudget').textContent = `${moneyShort(todaySpent)}/3.00`;
 
-  // Score distribution
+  // Score dist
   const dist = st.scores?.distribution || {};
   const keys = Object.keys(dist).map(Number).sort((a, b) => b - a);
   if (!keys.length) {
@@ -1634,15 +2094,10 @@ function renderOverview() {
     }).join('');
     $('distBadge').textContent = `${tot} total`;
   }
+  $('distUpdated').textContent = S.lastFetch.state ? fmtTs(S.lastFetch.state) : '';
 
-  // Recent articles (from articles list, but fetchArticles is called separately)
-  if (!S.articles || !S.articles.length) {
-    fetchArticles().then(() => renderRecentArticles());
-  } else {
-    renderRecentArticles();
-  }
+  renderRecentArticles();
 
-  // Queue preview
   $('queueBadge').textContent = `${S.queue.pending?.length || 0}/${S.queue.total || 0}`;
   if (!S.queue.pending?.length) {
     $('queueTable').querySelector('tbody').innerHTML = '<tr><td colspan="3" class="empty"><i data-lucide="list"></i>Queue empty</td></tr>';
@@ -1656,9 +2111,42 @@ function renderOverview() {
     ).join('');
   }
 
-  // Tab badge
   $('tabArticlesBadge').textContent = st.done || 0;
+  renderExtractionPulse();
   icons();
+}
+
+function renderExtractionPulse() {
+  const p = S.chunkerProgress;
+  const container = $('extractionPulse');
+  if (!container) return;
+  if (!p || (!p.currentPdf && !p.currentTotal)) { container.innerHTML = ''; return; }
+
+  if (p.isRunning) {
+    const pct = p.segmentsTotal > 0 ? Math.round((p.segmentsDone / p.segmentsTotal) * 100) : 0;
+    container.innerHTML = `
+      <div class="progress-live" style="margin-bottom:12px">
+        <div class="pl-icon"><i data-lucide="loader-2" class="spin"></i></div>
+        <div class="pl-body">
+          <div class="pl-title">Extracting: <span class="mono">${esc(p.currentPdf || '?')}</span></div>
+          <div class="pl-sub">${p.currentIdx}/${p.currentTotal} · segments ${p.segmentsDone}/${p.segmentsTotal} · ${pct}%</div>
+          <div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>
+        </div>
+        <button class="btn sm" onclick="switchTab('extraction')">Details →</button>
+      </div>`;
+    icons();
+  } else if (p.budgetExhausted) {
+    container.innerHTML = `
+      <div class="progress-live error" style="margin-bottom:12px">
+        <div class="pl-icon"><i data-lucide="alert-triangle"></i></div>
+        <div class="pl-body">
+          <div class="pl-title">Extraction halted — budget exhausted</div>
+          <div class="pl-sub">Stopped at ${p.currentIdx}/${p.currentTotal}. Resets at midnight UTC.</div>
+        </div>
+        <button class="btn sm" onclick="switchTab('extraction')">Details →</button>
+      </div>`;
+    icons();
+  } else { container.innerHTML = ''; }
 }
 
 function renderRecentArticles() {
@@ -1685,11 +2173,341 @@ function renderRecentArticles() {
 }
 
 // ═══════════════════════════════════════════════════════════════
-// ARTICLES TAB RENDER
+// EXTRACTION RENDER
+// ═══════════════════════════════════════════════════════════════
+function renderExtractionTab() {
+  const stats = S.chunkerStats;
+  const p = S.chunkerProgress;
+  const running = p?.isRunning;
+  const budgetExhausted = p?.budgetExhausted;
+
+  // ─── Phase pipeline ───
+  const phaseData = stats ? {
+    extract: { count: stats.extracted.pdfs, label: `${stats.extracted.pdfs} PDFs · ${bigNum(stats.extracted.problems)} problems` },
+    merge: { count: stats.merged.olympiads, label: stats.merged.olympiads ? `${stats.merged.olympiads} olympiads` : 'not run' },
+    classify: { count: stats.classified.olympiads, label: stats.classified.olympiads ? `${stats.classified.olympiads} items · ${bigNum(stats.classified.problems)} problems` : 'not run' },
+    aggregate: { count: stats.realProblems.total, label: stats.realProblems.points ? `${stats.realProblems.points} points · ${stats.realProblems.total} problems` : 'not run' },
+  } : null;
+
+  document.querySelectorAll('.phase-step').forEach(step => {
+    step.classList.remove('done', 'running', 'error');
+    const phase = step.dataset.phase;
+    if (phase === 'extract' && running) step.classList.add('running');
+    else if (phase === 'extract' && budgetExhausted) step.classList.add('error');
+    else if (phaseData && phaseData[phase]?.count > 0) step.classList.add('done');
+  });
+
+  if (phaseData) {
+    $('phaseExtractMeta').textContent = running ? `Running: ${p.currentIdx}/${p.currentTotal}` : phaseData.extract.label;
+    $('phaseMergeMeta').textContent = phaseData.merge.label;
+    $('phaseClassifyMeta').textContent = phaseData.classify.label;
+    $('phaseAggregateMeta').textContent = phaseData.aggregate.label;
+  } else {
+    ['phaseExtractMeta', 'phaseMergeMeta', 'phaseClassifyMeta', 'phaseAggregateMeta'].forEach(id => {
+      $(id).textContent = running && id === 'phaseExtractMeta' ? `Running: ${p.currentIdx}/${p.currentTotal}` : '—';
+    });
+  }
+
+  // ─── Live progress ───
+  const plEl = $('progressLive');
+  plEl.classList.remove('idle', 'error');
+  if (running) {
+    const pct = p.segmentsTotal > 0 ? Math.round((p.segmentsDone / p.segmentsTotal) * 100) : 0;
+    $('plTitle').innerHTML = `Extracting · <span class="mono" style="color:var(--warn);font-size:11px">${esc(p.currentPdf)}</span>`;
+    $('plSub').textContent = `${p.currentIdx}/${p.currentTotal} · segments ${p.segmentsDone}/${p.segmentsTotal} · ${pct}%`;
+    $('plFill').style.width = pct + '%';
+  } else if (budgetExhausted) {
+    plEl.classList.add('error');
+    $('plTitle').textContent = 'Budget exhausted';
+    $('plSub').textContent = `Stopped at ${p.currentIdx}/${p.currentTotal}. Resets at midnight UTC.`;
+    $('plFill').style.width = '0%';
+  } else {
+    plEl.classList.add('idle');
+    $('plTitle').textContent = stats ? 'Extraction idle' : 'Extraction idle — click "Stats" to load data';
+    $('plSub').textContent = stats
+      ? `Last stats loaded ${fmtTs(S.chunkerStatsAt)}`
+      : 'No active extraction detected in logs.';
+    $('plFill').style.width = '0%';
+  }
+
+  // ─── KPIs ───
+  if (stats) {
+    $('exPdfs').textContent = stats.extracted.pdfs;
+    $('exPdfsSub').textContent = stats.extracted.partial > 0 ? `${stats.extracted.partial} partial` : 'all complete';
+    $('exProblems').textContent = bigNum(stats.extracted.problems);
+    $('exProblemsSub').textContent = stats.extracted.pdfs > 0 ? `avg ${(stats.extracted.problems / stats.extracted.pdfs).toFixed(1)}/PDF` : '—';
+    $('exReal').textContent = stats.realProblems.total;
+    $('exRealSub').textContent = `across ${stats.realProblems.points} points`;
+    $('exBudget').textContent = moneyShort(stats.cost);
+    $('exBudgetSub').textContent = `total chunker cost`;
+    const pct = stats.cost / 3;
+    $('exBudget').className = 'kpi-v' + (pct >= 0.9 ? ' danger' : pct >= 0.75 ? ' warn' : '');
+  } else {
+    ['exPdfs', 'exProblems', 'exReal', 'exBudget'].forEach(id => $(id).textContent = '—');
+    $('exPdfsSub').textContent = 'click "Stats"';
+    $('exProblemsSub').textContent = 'extracted';
+    $('exRealSub').textContent = 'across points';
+    $('exBudgetSub').textContent = 'total';
+  }
+
+  // ─── Verdict breakdown ───
+  const verdicts = stats?.verdicts || {};
+  const totalVerdicts = Object.values(verdicts).reduce((a, b) => a + b, 0);
+  if (!totalVerdicts) {
+    $('verdictBody').innerHTML = `
+      <div class="empty">
+        <i data-lucide="shield-check"></i>
+        <div>No verdict data yet</div>
+        <div class="empty-actions">
+          <button class="btn sm primary" onclick="runChunkerStats(this)">
+            <i data-lucide="bar-chart-3"></i> Load Stats
+          </button>
+          <button class="btn sm" onclick="switchTab('logs')">
+            <i data-lucide="terminal"></i> Open Logs
+          </button>
+        </div>
+      </div>`;
+    $('verdictBadge').textContent = '—';
+  } else {
+    const order = ['PASS', 'PASS_WITH_WARNINGS', 'unknown', 'FAIL_DUPLICATE', 'FAIL_MISSING', 'FAIL_HALLUCINATED'];
+    const colors = { PASS: 'pass', PASS_WITH_WARNINGS: 'warn', unknown: 'unknown', FAIL_DUPLICATE: 'fail', FAIL_MISSING: 'fail', FAIL_HALLUCINATED: 'fail' };
+    const labels = { PASS: 'PASS', PASS_WITH_WARNINGS: 'Warnings', unknown: 'Unknown', FAIL_DUPLICATE: 'Duplicate', FAIL_MISSING: 'Missing', FAIL_HALLUCINATED: 'Hallucinated' };
+    const maxV = Math.max(...Object.values(verdicts), 1);
+    $('verdictBody').innerHTML = order.filter(k => verdicts[k] > 0).map(v =>
+      `<div class="breakdown-row">
+        <span class="breakdown-label">${labels[v] || v}</span>
+        <div class="breakdown-track"><div class="breakdown-fill ${colors[v] || 'unknown'}" style="width:${(verdicts[v] / maxV * 100).toFixed(1)}%"></div></div>
+        <span class="breakdown-count">${verdicts[v]} · ${Math.round(verdicts[v] / totalVerdicts * 100)}%</span>
+      </div>`
+    ).join('');
+    $('verdictBadge').textContent = `${totalVerdicts} sessions`;
+  }
+
+  // ─── Level breakdown ───
+  const levels = stats?.levels || {};
+  const totalLevels = Object.values(levels).reduce((a, b) => a + b, 0);
+  if (!totalLevels) {
+    $('levelBody').innerHTML = '<div class="empty"><i data-lucide="layers"></i>No level data — click "Stats"</div>';
+    $('levelBadge').textContent = '—';
+  } else {
+    const order = ['L0_native', 'L1_ocr', 'L2_vlm', 'L3_escalation', 'exhausted', 'unknown'];
+    const colors = { L0_native: 'l0', L1_ocr: 'l1', L2_vlm: 'l2', L3_escalation: 'l3', exhausted: 'exhausted', unknown: 'unknown' };
+    const labels = { L0_native: 'L0 Native', L1_ocr: 'L1 OCR', L2_vlm: 'L2 VLM', L3_escalation: 'L3 Escalate', exhausted: 'Exhausted', unknown: 'Unknown' };
+    const maxL = Math.max(...Object.values(levels), 1);
+    $('levelBody').innerHTML = order.filter(k => levels[k] > 0).map(lv =>
+      `<div class="breakdown-row">
+        <span class="breakdown-label">${labels[lv] || lv}</span>
+        <div class="breakdown-track"><div class="breakdown-fill ${colors[lv] || 'unknown'}" style="width:${(levels[lv] / maxL * 100).toFixed(1)}%"></div></div>
+        <span class="breakdown-count">${levels[lv]} · ${Math.round(levels[lv] / totalLevels * 100)}%</span>
+      </div>`
+    ).join('');
+    $('levelBadge').textContent = `${totalLevels} PDFs`;
+    if (stats.needsReview > 0) $('levelBadge').textContent += ` · ${stats.needsReview} review`;
+  }
+
+  // ─── Point coverage ───
+  renderPointCoverage();
+
+  // ─── Model config (parse from logs) ───
+  renderModelConfig();
+
+  // ─── Tab badge ───
+  $('tabExtractionBadge').textContent = stats ? stats.extracted.pdfs : '—';
+  if (stats?.needsReview > 0) $('tabExtractionBadge').classList.add('warn');
+  else $('tabExtractionBadge').classList.remove('warn');
+
+  // ─── Recent extraction tool results ───
+  renderExtractionHistory();
+
+  // ─── Audit ───
+  renderAuditVisual();
+
+  icons();
+}
+
+function renderPointCoverage() {
+  const stats = S.chunkerStats;
+  const container = $('coverageBody');
+  if (!stats || !Object.keys(stats.realProblems.byPoint).length) {
+    container.innerHTML = '<div class="empty"><i data-lucide="grid-3x3"></i>Click "Stats" to load per-point counts</div>';
+    $('coverageBadge').textContent = '—';
+    return;
+  }
+  const byPoint = stats.realProblems.byPoint;
+  const ids = Object.keys(byPoint).sort((a, b) => {
+    const [a1, a2] = a.split('.').map(x => parseInt(x) || 0);
+    const [b1, b2] = b.split('.').map(x => parseInt(x) || 0);
+    if (a1 !== b1) return a1 - b1;
+    return a2 - b2;
+  });
+
+  container.innerHTML = `<div class="point-coverage-grid">${ids.map(id => {
+    const p = byPoint[id];
+    const cls = p.total === 0 ? 'zero' : p.total < 3 ? 'few' : 'many';
+    return `<div class="pc-cell ${cls}" title="${id}: ${p.easy} easy, ${p.medium} medium, ${p.hard} hard">
+      <div class="pc-id">${esc(id)}</div>
+      <div class="pc-count">${p.total}</div>
+    </div>`;
+  }).join('')}</div>`;
+
+  $('coverageBadge').textContent = `${ids.length} points · ${stats.realProblems.total} problems`;
+}
+
+function renderModelConfig() {
+  const body = $('modelConfigBody');
+  // Parse from logs
+  let classifyModel = '—', verifierModel = '—';
+  for (let i = S.log.length - 1; i >= 0; i--) {
+    const line = S.log[i];
+    if (classifyModel === '—') {
+      const m = line.match(/Classify model:\s*(\S+)/);
+      if (m) classifyModel = m[1];
+    }
+    if (verifierModel === '—') {
+      const m = line.match(/Verifier model:\s*(\S+)/);
+      if (m) verifierModel = m[1];
+    }
+    if (classifyModel !== '—' && verifierModel !== '—') break;
+  }
+  // Extract (default from code, no log)
+  const extractModel = 'deepseek/deepseek-v4.1-flash';
+  const ocrModel = 'mistral-ocr-latest';
+
+  body.innerHTML = `
+    <div class="model-row"><span class="model-label">Extract</span><span class="model-value primary">${esc(extractModel)}</span></div>
+    <div class="model-row"><span class="model-label">Classify</span><span class="model-value">${esc(classifyModel)}</span></div>
+    <div class="model-row"><span class="model-label">Verifier</span><span class="model-value">${esc(verifierModel)}</span></div>
+    <div class="model-row"><span class="model-label">OCR</span><span class="model-value">${esc(ocrModel)}</span></div>
+    <div class="model-row"><span class="model-label">Budget</span><span class="model-value">$3.00/day · stop @ 90%</span></div>
+  `;
+}
+
+function renderExtractionHistory() {
+  const container = $('extractionToolResults');
+  if (!S.extractionHistory.length) {
+    container.innerHTML = '<div class="empty" style="padding:20px"><i data-lucide="history"></i>No recent runs</div>';
+    return;
+  }
+  container.innerHTML = S.extractionHistory.slice(0, 5).map((r, idx) => {
+    const ok = r.data.status === 'completed';
+    const output = r.data.stdout || r.data.stderr || r.data.error || '(no output)';
+    const short = output.length > 500 ? output.slice(0, 500) + '\n…' : output;
+    return `<div class="tool-result" data-idx="${idx}">
+      <div class="tool-result-h">
+        <i data-lucide="${ok ? 'check-circle-2' : 'alert-circle'}"></i>
+        <span class="${ok ? 'status-ok' : 'status-err'}"><strong>${esc(r.name)}</strong> — ${esc(r.data.status || 'unknown')}</span>
+        <span class="meta">${fmtTs(r.at)}</span>
+        <button class="close-r" onclick="removeExtractionHistory(${idx})"><i data-lucide="x"></i></button>
+      </div>
+      <div class="tool-result-b">${esc(short)}</div>
+    </div>`;
+  }).join('');
+  icons();
+}
+
+function removeExtractionHistory(idx) {
+  S.extractionHistory.splice(idx, 1);
+  renderExtractionHistory();
+}
+
+function clearExtractionResults() {
+  S.extractionHistory = [];
+  renderExtractionHistory();
+}
+
+function clearToolResults() {
+  S.toolHistory = [];
+  const el = $('toolResults');
+  if (el) el.innerHTML = '';
+}
+
+// ═══════════════════════════════════════════════════════════════
+// AUDIT VISUAL (grouped, with charts)
+// ═══════════════════════════════════════════════════════════════
+function renderAuditVisual() {
+  const container = $('auditVisualBody');
+  if (!S.chunkerAudit.length) {
+    container.innerHTML = `
+      <div class="empty">
+        <i data-lucide="table"></i>
+        <div>PDF audit not loaded</div>
+        <div class="empty-actions">
+          <button class="btn sm primary" onclick="runChunkerAudit(this)">
+            <i data-lucide="scan-line"></i> Load Audit
+          </button>
+          <span class="mono" style="font-size:10px;color:var(--text-4);align-self:center">runs <code>pdf_chunker.py --audit</code></span>
+        </div>
+      </div>`;
+    $('auditBadge').textContent = '—';
+    return;
+  }
+
+  const q = S.auditSearch.toLowerCase();
+  let filtered = S.chunkerAudit.filter(row => {
+    if (S.auditFilter === 'ok' && row.status !== 'OK') return false;
+    if (S.auditFilter === 'warn' && !row.status.includes('LOW') && !row.status.includes('NO_TEXT') && !row.status.includes('OCR')) return false;
+    if (S.auditFilter === 'empty' && !row.status.includes('EMPTY')) return false;
+    if (q && !(row.pdf || '').toLowerCase().includes(q)) return false;
+    return true;
+  });
+
+  $('auditBadge').textContent = `${filtered.length}/${S.chunkerAudit.length}`;
+  $('auditUpdated').textContent = S.chunkerAuditAt ? fmtTSafe(S.chunkerAuditAt) : '';
+
+  if (!filtered.length) {
+    container.innerHTML = '<div class="empty">No matching PDFs</div>';
+    return;
+  }
+
+  // Group by olympiad
+  const groups = {};
+  filtered.forEach(row => {
+    const g = groupPdfByOlympiad(row.pdf);
+    if (!groups[g]) groups[g] = [];
+    groups[g].push(row);
+  });
+
+  const groupNames = Object.keys(groups).sort();
+  const maxProb = Math.max(...filtered.map(r => r.problems), 1);
+
+  let html = '';
+  for (const g of groupNames) {
+    const rows = groups[g];
+    const totalProb = rows.reduce((a, r) => a + r.problems, 0);
+    html += `<div class="audit-group-header">
+      <i data-lucide="folder" style="width:12px;height:12px"></i>
+      ${esc(g)}
+      <span class="count">${rows.length} PDFs · ${totalProb} problems</span>
+    </div>`;
+    for (const row of rows) {
+      const statusCls = row.status.includes('EMPTY') ? 'empty' : row.status === 'OK' ? 'ok' : 'warn';
+      const barWidth = Math.max(8, Math.round((row.problems / maxProb) * 100));
+      html += `<div class="audit-row-visual" title="${esc(row.pdf)} · ${row.pages}p · ${row.problems} problems · ${row.status}">
+        <div class="arv-name" title="${esc(row.pdf)}">${esc(row.pdf)}</div>
+        <div class="arv-group">${esc(groupPdfByOlympiad(row.pdf).split(' ').slice(-1)[0] || '—')}</div>
+        <div class="arv-pages">${row.pages}p</div>
+        <div class="arv-chart">
+          <div class="bar ${row.problems === 0 ? 'empty' : 'easy'}" style="max-width:${barWidth}%"></div>
+        </div>
+        <div class="arv-problems">${row.problems}</div>
+        <div class="arv-status ${statusCls}">${esc(row.status)}</div>
+      </div>`;
+    }
+  }
+  container.innerHTML = html;
+  icons();
+}
+
+function fmtTSafe(ts) {
+  try { return new Date(ts).toLocaleTimeString('bg-BG'); } catch { return ''; }
+}
+
+// ═══════════════════════════════════════════════════════════════
+// ARTICLES
 // ═══════════════════════════════════════════════════════════════
 function renderArticlesTab() {
   if (!S.articles.length) {
-    fetchArticles().then(renderArticlesTab);
+    fetchArticles().then(() => renderArticlesTab());
     return;
   }
   const q = S.artSearch.toLowerCase().trim();
@@ -1730,7 +2548,6 @@ function renderArticlesTab() {
     return 0;
   });
 
-  // Sort indicators
   document.querySelectorAll('.sort-ind').forEach(el => el.textContent = '');
   const ind = document.querySelector(`[data-ind="${key}"]`);
   if (ind) ind.textContent = desc ? '↓' : '↑';
@@ -1769,122 +2586,19 @@ function renderArticlesTab() {
 }
 
 // ═══════════════════════════════════════════════════════════════
-// PROVIDER TAB — fetch + render (combined.json от cost_aggregate.py)
-// ═══════════════════════════════════════════════════════════════
-async function fetchProviderCosts(force = false) {
-  if (!force && S.providerCosts && !Array.isArray(S.providerCosts) && Object.keys(S.providerCosts).length) {
-    return;
-  }
-  const tryUrls = ['/api/costs/combined', '/generated/costs/combined.json', '/combined.json'];
-  for (const url of tryUrls) {
-    try {
-      const r = await fetch(url);
-      if (!r.ok) continue;
-      const d = await r.json();
-      if (d && typeof d === 'object' && !Array.isArray(d)) {
-        S.providerCosts = d;
-        return;
-      }
-    } catch (e) { /* next url */ }
-  }
-  if (!S.providerCosts || Array.isArray(S.providerCosts)) {
-    S.providerCosts = {};
-  }
-}
-
-function renderProviderTab() {
-  const data = (S.providerCosts && !Array.isArray(S.providerCosts)) ? S.providerCosts : {};
-  const byModel = data.by_model || {};
-  const byDay   = data.by_day   || {};
-  const byRole  = data.by_role  || {};
-  const totals  = data.totals   || {};
-  const sources = data.sources  || {historical: 0, live: 0, combined: 0};
-
-  const modelEntries = Object.entries(byModel);
-  const dayEntries   = Object.entries(byDay).sort();
-  const roleEntries  = Object.entries(byRole);
-  const dayKeys      = dayEntries.map(e => e[0]);
-
-  // ── KPIs ──
-  $('pTotal').textContent = money(totals.cost || 0);
-  $('pTotalSub').textContent = `${sources.historical || 0} hist · ${sources.live || 0} live`;
-  $('pCalls').textContent = bigNum(totals.calls || 0);
-  $('pCallsSub').textContent = `${modelEntries.length} models`;
-  $('pRange').textContent = dayKeys.length ? `${dayKeys[0]} → ${dayKeys[dayKeys.length-1]}` : '—';
-  $('pRangeSub').textContent = `${dayKeys.length} days`;
-  $('pModels').textContent = modelEntries.length;
-  $('pModelsSub').textContent = moneyShort(totals.cost || 0);
-  $('pReasoningKpi').textContent = bigNum(totals.reasoning_tokens || 0);
-  $('pReasoningSub').textContent = (totals.tokens || 0) > 0
-    ? `${((totals.reasoning_tokens || 0) / totals.tokens * 100).toFixed(1)}% of tokens`
-    : '—';
-
-  // ── Cost split strip ──
-  $('pCostPrompt').textContent = moneyShort(totals.cost_prompt || 0);
-  $('pCostCompletion').textContent = moneyShort(totals.cost_completion || 0);
-  $('pReasoning').textContent = bigNum(totals.reasoning_tokens || 0);
-  $('pCached').textContent = bigNum(totals.cached_tokens || 0);
-
-  // ── By model ──
-  $('pByModelBadge').textContent = moneyShort(totals.cost || 0);
-  document.querySelector('#pByModelTable tbody').innerHTML = modelEntries.map(([m, s]) =>
-    `<tr><td class="mono">${esc(m)}</td>
-      <td class="mono" style="text-align:right">${s.calls}</td>
-      <td class="mono" style="text-align:right">${bigNum(s.tokens)}</td>
-      <td class="mono" style="text-align:right;color:var(--accent)">${s.reasoning_tokens ? bigNum(s.reasoning_tokens) : '—'}</td>
-      <td class="mono" style="text-align:right">${moneyShort(s.cost)}</td>
-    </tr>`).join('') || '<tr><td colspan="5" class="empty">No data</td></tr>';
-
-  // ── By day ──
-  $('pByDayBadge').textContent = `${dayKeys.length} days`;
-  document.querySelector('#pByDayTable tbody').innerHTML = [...dayEntries].reverse().map(([d, s]) =>
-    `<tr><td class="mono">${esc(d)}</td>
-      <td class="mono" style="text-align:right">${s.calls}</td>
-      <td class="mono" style="text-align:right">${bigNum(s.tokens)}</td>
-      <td class="mono" style="text-align:right;color:var(--accent)">${s.reasoning_tokens ? bigNum(s.reasoning_tokens) : '—'}</td>
-      <td class="mono" style="text-align:right">${moneyShort(s.cost)}</td>
-    </tr>`).join('') || '<tr><td colspan="5" class="empty">No data</td></tr>';
-
-  // ── By role ──
-  if ($('pByRoleTable')) {
-    $('pByRoleBadge').textContent = roleEntries.length;
-    document.querySelector('#pByRoleTable tbody').innerHTML = roleEntries.map(([r, s]) =>
-      `<tr><td class="text">${esc(r)}</td>
-        <td class="mono" style="text-align:right">${s.calls}</td>
-        <td class="mono" style="text-align:right">${bigNum(s.tokens)}</td>
-        <td class="mono" style="text-align:right;color:var(--accent)">${s.reasoning_tokens ? bigNum(s.reasoning_tokens) : '—'}</td>
-        <td class="mono" style="text-align:right">${moneyShort(s.cost)}</td>
-      </tr>`).join('') || '<tr><td colspan="5" class="empty">No data</td></tr>';
-  }
-
-  // ── Timeline ──
-  const maxCost = Math.max(...dayEntries.map(e => e[1].cost), 0.001);
-  $('pTimeline').innerHTML = dayEntries.map(([d, s]) => {
-    const h = Math.max(2, Math.round((s.cost / maxCost) * 100));
-    const rs = s.reasoning_tokens ? ` · ${bigNum(s.reasoning_tokens)} reasoning` : '';
-    return `<div class="tl-bar" style="height:${h}%" title="${d}: ${money(s.cost)}${rs}"></div>`;
-  }).join('');
-  $('pTimelineLabels').innerHTML = dayEntries.map(e => `<span>${e[0].slice(5)}</span>`).join('');
-  $('pTimelineBadge').textContent = `${dayKeys.length} days · ${moneyShort(totals.cost || 0)}`;
-  icons();
-}
-
-// ═══════════════════════════════════════════════════════════════
-// COSTS TAB RENDER
+// COSTS
 // ═══════════════════════════════════════════════════════════════
 function renderCostsTab() {
   const now = new Date();
   const today = now.toISOString().slice(0, 10);
   const weekAgo = new Date(now.getTime() - 7 * 86400000).toISOString().slice(0, 10);
 
-  // ── Източник 1: combined.json (preferred — granular, с reasoning) ──
   const combined = (S.providerCosts && !Array.isArray(S.providerCosts)) ? S.providerCosts : null;
-  const cByDay   = combined ? (combined.by_day   || {}) : {};
+  const cByDay = combined ? (combined.by_day || {}) : {};
   const cByModel = combined ? (combined.by_model || {}) : {};
-  const cByRole  = combined ? (combined.by_role  || {}) : {};
-  const cTotals  = combined ? (combined.totals   || {}) : {};
+  const cByRole = combined ? (combined.by_role || {}) : {};
+  const cTotals = combined ? (combined.totals || {}) : {};
 
-  // ── Източник 2: legacy state.json (per-article) — fallback ──
   const legacyByDay = {};
   S.costs.forEach(c => {
     const d = tsDay(c.ts);
@@ -1892,11 +2606,11 @@ function renderCostsTab() {
     if (!legacyByDay[d]) legacyByDay[d] = { calls: 0, tokens: 0, cost: 0 };
     legacyByDay[d].calls++;
     legacyByDay[d].tokens += c.tokens || 0;
-    legacyByDay[d].cost   += c.cost   || 0;
+    legacyByDay[d].cost += c.cost || 0;
   });
 
   const hasCombined = Object.keys(cByDay).length > 0;
-  const hasLegacy   = Object.keys(legacyByDay).length > 0;
+  const hasLegacy = Object.keys(legacyByDay).length > 0;
 
   if (!hasCombined && !hasLegacy) {
     $('cToday').textContent = '$0';
@@ -1911,47 +2625,35 @@ function renderCostsTab() {
     return;
   }
 
-  // Обединяваме by_day: ако денят го има в combined → ползваме него; иначе legacy
   const daySet = new Set([...Object.keys(cByDay), ...Object.keys(legacyByDay)]);
   const merged = {};
   daySet.forEach(d => {
     const c = cByDay[d] || null;
     const l = legacyByDay[d] || null;
-    // Ако combined има по-голяма стойност (по-пълна) → ползваме нея; иначе legacy
-    if (c && c.cost >= (l?.cost || 0)) {
-      merged[d] = c;
-    } else if (l) {
-      merged[d] = l;
-    }
+    if (c && c.cost >= (l?.cost || 0)) merged[d] = c;
+    else if (l) merged[d] = l;
   });
 
-  // KPIs
-  const todayEntry  = merged[today] || { calls: 0, tokens: 0, cost: 0 };
-  const weekTotal   = Object.entries(merged)
+  const todayEntry = merged[today] || { calls: 0, tokens: 0, cost: 0 };
+  const weekTotal = Object.entries(merged)
     .filter(([d]) => d >= weekAgo)
-    .reduce((a, [_, v]) => ({ calls: a.calls + v.calls, tokens: a.tokens + v.tokens, cost: a.cost + v.cost }),
-            { calls: 0, tokens: 0, cost: 0 });
-  const allTotal    = Object.values(merged).reduce(
-    (a, v) => ({ calls: a.calls + v.calls, tokens: a.tokens + v.tokens, cost: a.cost + v.cost }),
-    { calls: 0, tokens: 0, cost: 0 }
-  );
+    .reduce((a, [_, v]) => ({ calls: a.calls + v.calls, tokens: a.tokens + v.tokens, cost: a.cost + v.cost }), { calls: 0, tokens: 0, cost: 0 });
+  const allTotal = Object.values(merged).reduce(
+    (a, v) => ({ calls: a.calls + v.calls, tokens: a.tokens + v.tokens, cost: a.cost + v.cost }), { calls: 0, tokens: 0, cost: 0 });
 
   $('cToday').textContent = moneyShort(todayEntry.cost);
-  $('cTodaySub').textContent = `${todayEntry.calls} calls${todayEntry.reasoning_tokens ? ` · ${bigNum(todayEntry.reasoning_tokens)} reasoning` : ''}`;
+  $('cTodaySub').textContent = `${todayEntry.calls} calls`;
   $('cWeek').textContent = moneyShort(weekTotal.cost);
   $('cWeekSub').textContent = `${weekTotal.calls} calls`;
   $('cAll').textContent = moneyShort(allTotal.cost);
-  $('cAllSub').textContent = `${allTotal.calls} calls${cTotals.reasoning_tokens ? ` · ${bigNum(cTotals.reasoning_tokens)} reasoning` : ''}`;
+  $('cAllSub').textContent = `${allTotal.calls} calls`;
 
-  // Timeline (14 дни)
   const days = {};
   for (let i = 13; i >= 0; i--) {
     const d = new Date(now.getTime() - i * 86400000);
     days[d.toISOString().slice(0, 10)] = 0;
   }
-  Object.entries(merged).forEach(([d, v]) => {
-    if (days[d] !== undefined) days[d] = v.cost;
-  });
+  Object.entries(merged).forEach(([d, v]) => { if (days[d] !== undefined) days[d] = v.cost; });
   const maxCost = Math.max(...Object.values(days), 0.001);
   $('timeline').innerHTML = Object.entries(days).map(([d, v]) => {
     const h = Math.max(2, Math.round((v / maxCost) * 100));
@@ -1961,17 +2663,14 @@ function renderCostsTab() {
   $('tlLabels').innerHTML = Object.keys(days).map(d => `<span>${d.split('-')[2]}</span>`).join('');
   $('timelineBadge').textContent = `${Object.keys(days).length} days`;
 
-  // By model — обединяваме combined с legacy (групирано по модел)
   const modelAgg = {};
-  Object.entries(cByModel).forEach(([m, s]) => {
-    modelAgg[m] = { ...s };
-  });
+  Object.entries(cByModel).forEach(([m, s]) => { modelAgg[m] = { ...s }; });
   S.costs.forEach(c => {
     const m = c.model || 'unknown';
-    if (!modelAgg[m]) modelAgg[m] = { calls: 0, tokens: 0, cost: 0, reasoning_tokens: 0 };
+    if (!modelAgg[m]) modelAgg[m] = { calls: 0, tokens: 0, cost: 0 };
     modelAgg[m].calls++;
     modelAgg[m].tokens += c.tokens || 0;
-    modelAgg[m].cost   += c.cost   || 0;
+    modelAgg[m].cost += c.cost || 0;
   });
   const models = Object.entries(modelAgg).sort((a, b) => b[1].cost - a[1].cost);
   $('byModelBadge').textContent = moneyShort(allTotal.cost);
@@ -1986,7 +2685,6 @@ function renderCostsTab() {
       ).join('')
     : '<tr><td colspan="4" class="empty">No data</td></tr>';
 
-  // By role — само combined има role (legacy няма)
   const roles = Object.entries(cByRole).sort((a, b) => b[1].cost - a[1].cost);
   $('byRoleBadge').textContent = roles.length;
   $('byRoleTable').querySelector('tbody').innerHTML = roles.length
@@ -2000,17 +2698,11 @@ function renderCostsTab() {
       ).join('')
     : '<tr><td colspan="4" class="empty">No data — run cost_aggregate.py</td></tr>';
 
-  // Recent calls — само legacy (per-article). Combined няма per-call records в current format.
-  const recent = [...S.costs]
-    .sort((a, b) => (b.ts || 0) - (a.ts || 0))
-    .slice(0, 100);
+  const recent = [...S.costs].sort((a, b) => (b.ts || 0) - (a.ts || 0)).slice(0, 100);
   $('recentCallsBadge').textContent = `${recent.length}`;
   $('recentCallsBody').innerHTML = recent.length
     ? recent.map(c => {
-        const d = tsDay(c.ts);
-        const t = typeof c.ts === 'number'
-          ? new Date(c.ts * 1000).toTimeString().slice(0, 8)
-          : (c.ts || '').slice(11, 19);
+        const t = typeof c.ts === 'number' ? new Date(c.ts * 1000).toTimeString().slice(0, 8) : (c.ts || '').slice(11, 19);
         return `<tr>
           <td class="mono">${esc(t)}</td>
           <td class="mono">${esc(c.item || c.item_id || '—')}</td>
@@ -2020,48 +2712,219 @@ function renderCostsTab() {
           <td class="mono" style="text-align:right">${moneyShort(c.cost || 0)}</td>
         </tr>`;
       }).join('')
-    : '<tr><td colspan="6" class="empty">No per-call records (state.json has aggregates only)</td></tr>';
+    : '<tr><td colspan="6" class="empty">No per-call records</td></tr>';
 }
 
 // ═══════════════════════════════════════════════════════════════
-// LOGS TAB RENDER
+// PROVIDER
+// ═══════════════════════════════════════════════════════════════
+function renderProviderTab() {
+  const data = (S.providerCosts && !Array.isArray(S.providerCosts)) ? S.providerCosts : {};
+  const byModel = data.by_model || {};
+  const byDay = data.by_day || {};
+  const byRole = data.by_role || {};
+  const totals = data.totals || {};
+  const sources = data.sources || { historical: 0, live: 0, combined: 0 };
+
+  const modelEntries = Object.entries(byModel);
+  const dayEntries = Object.entries(byDay).sort();
+  const roleEntries = Object.entries(byRole);
+  const dayKeys = dayEntries.map(e => e[0]);
+
+  $('pTotal').textContent = money(totals.cost || 0);
+  $('pTotalSub').textContent = `${sources.historical || 0} hist · ${sources.live || 0} live`;
+  $('pCalls').textContent = bigNum(totals.calls || 0);
+  $('pCallsSub').textContent = `${modelEntries.length} models`;
+  $('pRange').textContent = dayKeys.length ? `${dayKeys[0]} → ${dayKeys[dayKeys.length-1]}` : '—';
+  $('pRangeSub').textContent = `${dayKeys.length} days`;
+  $('pModels').textContent = modelEntries.length;
+  $('pModelsSub').textContent = moneyShort(totals.cost || 0);
+  $('pReasoningKpi').textContent = bigNum(totals.reasoning_tokens || 0);
+  $('pReasoningSub').textContent = (totals.tokens || 0) > 0
+    ? `${((totals.reasoning_tokens || 0) / totals.tokens * 100).toFixed(1)}% of tokens` : '—';
+
+  $('pCostPrompt').textContent = moneyShort(totals.cost_prompt || 0);
+  $('pCostCompletion').textContent = moneyShort(totals.cost_completion || 0);
+  $('pReasoning').textContent = bigNum(totals.reasoning_tokens || 0);
+  $('pCached').textContent = bigNum(totals.cached_tokens || 0);
+
+  $('pByModelBadge').textContent = moneyShort(totals.cost || 0);
+  document.querySelector('#pByModelTable tbody').innerHTML = modelEntries.map(([m, s]) =>
+    `<tr><td class="mono">${esc(m)}</td>
+      <td class="mono" style="text-align:right">${s.calls}</td>
+      <td class="mono" style="text-align:right">${bigNum(s.tokens)}</td>
+      <td class="mono" style="text-align:right;color:var(--accent)">${s.reasoning_tokens ? bigNum(s.reasoning_tokens) : '—'}</td>
+      <td class="mono" style="text-align:right">${moneyShort(s.cost)}</td>
+    </tr>`).join('') || '<tr><td colspan="5" class="empty">No data</td></tr>';
+
+  $('pByDayBadge').textContent = `${dayKeys.length} days`;
+  document.querySelector('#pByDayTable tbody').innerHTML = [...dayEntries].reverse().map(([d, s]) =>
+    `<tr><td class="mono">${esc(d)}</td>
+      <td class="mono" style="text-align:right">${s.calls}</td>
+      <td class="mono" style="text-align:right">${bigNum(s.tokens)}</td>
+      <td class="mono" style="text-align:right;color:var(--accent)">${s.reasoning_tokens ? bigNum(s.reasoning_tokens) : '—'}</td>
+      <td class="mono" style="text-align:right">${moneyShort(s.cost)}</td>
+    </tr>`).join('') || '<tr><td colspan="5" class="empty">No data</td></tr>';
+
+  if ($('pByRoleTable')) {
+    $('pByRoleBadge').textContent = roleEntries.length;
+    document.querySelector('#pByRoleTable tbody').innerHTML = roleEntries.map(([r, s]) =>
+      `<tr><td class="text">${esc(r)}</td>
+        <td class="mono" style="text-align:right">${s.calls}</td>
+        <td class="mono" style="text-align:right">${bigNum(s.tokens)}</td>
+        <td class="mono" style="text-align:right;color:var(--accent)">${s.reasoning_tokens ? bigNum(s.reasoning_tokens) : '—'}</td>
+        <td class="mono" style="text-align:right">${moneyShort(s.cost)}</td>
+      </tr>`).join('') || '<tr><td colspan="5" class="empty">No data</td></tr>';
+  }
+
+  const maxCost = Math.max(...dayEntries.map(e => e[1].cost), 0.001);
+  $('pTimeline').innerHTML = dayEntries.map(([d, s]) => {
+    const h = Math.max(2, Math.round((s.cost / maxCost) * 100));
+    const rs = s.reasoning_tokens ? ` · ${bigNum(s.reasoning_tokens)} reasoning` : '';
+    return `<div class="tl-bar" style="height:${h}%" title="${d}: ${money(s.cost)}${rs}"></div>`;
+  }).join('');
+  $('pTimelineLabels').innerHTML = dayEntries.map(e => `<span>${e[0].slice(5)}</span>`).join('');
+  $('pTimelineBadge').textContent = `${dayKeys.length} days · ${moneyShort(totals.cost || 0)}`;
+  icons();
+}
+
+// ═══════════════════════════════════════════════════════════════
+// LOGS (FIXED)
 // ═══════════════════════════════════════════════════════════════
 function renderLogsTab() {
-  const q = S.logSearch.toLowerCase();
+  syncLogSourceChips();
+  const q = S.logSearch.trim().toLowerCase();
   const lv = S.logLevel;
+  const mod = S.logModule;
 
-  const filtered = S.log.filter(line => {
-    if (lv !== 'all' && !line.includes(`[${lv}]`)) return false;
-    if (q && !line.toLowerCase().includes(q)) return false;
+  // Parse all lines once
+  const parsed = S.log.map(line => ({ line, ...parseLogLine(line) }));
+
+  // Compute stats + module list from ALL lines
+  const stats = { INFO: 0, WARNING: 0, ERROR: 0, DEBUG: 0, CRITICAL: 0 };
+  const moduleSet = new Set();
+  parsed.forEach(p => {
+    if (p.isParsed) {
+      if (stats[p.level] !== undefined) stats[p.level]++;
+      if (p.module) moduleSet.add(p.module);
+    }
+  });
+  const modules = [...moduleSet].sort();
+
+  // Update stats bar
+  $('logStats').innerHTML = `
+    <div class="log-stat-item"><span>Total</span><span class="num">${S.log.length}</span></div>
+    <div class="log-stat-item INFO"><span>INFO</span><span class="num">${stats.INFO}</span></div>
+    <div class="log-stat-item WARNING"><span>WARN</span><span class="num">${stats.WARNING}</span></div>
+    <div class="log-stat-item ERROR"><span>ERR</span><span class="num">${stats.ERROR}</span></div>
+  `;
+  const badgeCount = stats.ERROR > 0 ? stats.ERROR : (stats.WARNING > 0 ? stats.WARNING : S.log.length);
+  $('tabLogsBadge').textContent = badgeCount;
+  $('tabLogsBadge').className = 'tab-badge' + (stats.ERROR > 0 ? ' danger' : stats.WARNING > 0 ? ' warn' : '');
+
+  // Update module chips
+  const modChipsEl = $('logModuleChips');
+  if (modChipsEl) {
+    if (!modules.length) {
+      modChipsEl.innerHTML = '';
+    } else {
+      modChipsEl.innerHTML = [
+        `<button class="chip ${mod === 'all' ? 'active' : ''}" data-mod="all">All mods</button>`,
+        ...modules.map(m => `<button class="chip ${mod === m ? 'active' : ''}" data-mod="${esc(m)}">${esc(m)}</button>`),
+      ].join('');
+    }
+  }
+
+  // Filter
+  const filtered = parsed.filter(p => {
+    if (lv !== 'all' && (!p.isParsed || p.level !== lv)) return false;
+    if (mod !== 'all' && (!p.isParsed || p.module !== mod)) return false;
+    if (q) {
+      const hay = p.isParsed ? (p.message || '') : p.line;
+      if (!hay.toLowerCase().includes(q)) return false;
+    }
     return true;
   });
 
-  $('logCount').textContent = `${filtered.length} of ${S.log.length}`;
-
   const el = $('logFull');
   if (!filtered.length) {
-    el.innerHTML = '<div class="empty" style="padding:20px">No matching log lines</div>';
+    el.innerHTML = `<div class="empty" style="padding:20px">No matching lines${S.log.length ? ` (${S.log.length} total, filtered)` : ''}</div>`;
+    updateScrollBtn();
     return;
   }
 
-  const html = filtered.map(line => {
-    const m = line.match(/^(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2}:\d{2}),\d+\s+\[(\w+)\]\s*(.*)$/s);
-    if (!m) return `<div class="log-row"><span class="log-m">${esc(line)}</span></div>`;
-    const [, , time, level, msg] = m;
-    return `<div class="log-row">
-      <span class="log-t">${time}</span>
-      <span class="log-lv ${level}">${level}</span>
-      <span class="log-m">${esc(msg)}</span>
-    </div>`;
-  }).join('');
+  // Search highlight helper
+  const hl = (text) => {
+    const escText = esc(text);
+    if (!q) return escText;
+    const re = new RegExp('(' + q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+    return escText.replace(re, '<mark style="background:var(--warn-soft);color:var(--warn);padding:0 2px;border-radius:2px">$1</mark>');
+  };
+
+  // Cap render to avoid freezing browser with 10k lines
+  const MAX = 3000;
+  const overflow = filtered.length > MAX;
+  const visible = overflow ? filtered.slice(-MAX) : filtered;
+
+  const html = (overflow
+    ? `<div style="padding:6px 10px;font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text-3);background:var(--surface-2);border-radius:3px;margin-bottom:6px">Showing last ${MAX} of ${filtered.length} matching lines</div>`
+    : '') +
+    visible.map((p, idx) => {
+      if (!p.isParsed) {
+        return `<div class="log-row" data-line-idx="${idx}">
+          <span class="log-m">${hl(p.line)}</span>
+          <button class="log-copy" onclick="copyLogLine(${idx})" title="Copy"><i data-lucide="copy"></i></button>
+        </div>`;
+      }
+      return `<div class="log-row" data-line-idx="${idx}">
+        <span class="log-t">${p.time}</span>
+        ${p.module ? `<span class="log-mod">${esc(p.module)}</span>` : ''}
+        <span class="log-lv ${p.level}">${p.level}</span>
+        <span class="log-m">${hl(p.message)}</span>
+        <button class="log-copy" onclick="copyLogLine(${idx})" title="Copy"><i data-lucide="copy"></i></button>
+      </div>`;
+    }).join('');
 
   const wasAtBottom = el.scrollHeight - el.scrollTop - el.clientHeight < 80;
   el.innerHTML = html;
+
+  // Cache filtered for copy handler
+  window._logFilteredCache = visible;
+
   if (S.logFollow && wasAtBottom) el.scrollTop = el.scrollHeight;
+  icons();
+  updateScrollBtn();
+}
+
+function copyLogLine(idx) {
+  const cached = window._logFilteredCache;
+  if (!cached || !cached[idx]) return;
+  const p = cached[idx];
+  const text = p.isParsed
+    ? `${p.date} ${p.time}${p.module ? ' [' + p.module + ']' : ''} ${p.level} ${p.message}`
+    : p.line;
+  navigator.clipboard?.writeText(text).then(
+    () => toast('Copied', 'Log line to clipboard', false, 1500),
+    () => toast('Copy failed', 'Clipboard unavailable', true),
+  );
+}
+
+function updateScrollBtn() {
+  const el = $('logFull');
+  const btn = $('logScrollBtn');
+  if (!el || !btn) return;
+  const atBottom = el.scrollHeight - el.scrollTop - el.clientHeight < 40;
+  btn.classList.toggle('hide', atBottom);
+}
+
+function scrollToBottomLog() {
+  const el = $('logFull');
+  if (el) el.scrollTop = el.scrollHeight;
+  updateScrollBtn();
 }
 
 // ═══════════════════════════════════════════════════════════════
-// OVERVIEW: ACTIVITY LOG
+// ACTIVITY (overview mini log)
 // ═══════════════════════════════════════════════════════════════
 function renderActivity() {
   const recent = S.log.slice(-30).reverse();
@@ -2070,20 +2933,216 @@ function renderActivity() {
     return;
   }
   $('activityBadge').textContent = `${recent.length} entries`;
+  $('activityUpdated').textContent = S.lastFetch.log ? fmtTs(S.lastFetch.log) : '';
   $('activityLog').innerHTML = recent.map(line => {
-    const m = line.match(/^(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2}:\d{2}),\d+\s+\[(\w+)\]\s*(.*)$/s);
-    if (!m) return `<div class="act-row"><span class="act-msg">${esc(line)}</span></div>`;
-    const [, , time, level, msg] = m;
+    const p = parseLogLine(line);
+    if (!p.isParsed) return `<div class="act-row"><span class="act-msg">${esc(line)}</span></div>`;
     return `<div class="act-row">
-      <span class="act-time">${time}</span>
-      <span class="act-lv ${level}">${level}</span>
-      <span class="act-msg">${esc(msg)}</span>
+      <span class="act-time">${p.time}</span>
+      ${p.module ? `<span class="act-mod">${esc(p.module)}</span>` : ''}
+      <span class="act-lv ${p.level}">${p.level}</span>
+      <span class="act-msg">${esc(p.message)}</span>
     </div>`;
   }).join('');
 }
 
 // ═══════════════════════════════════════════════════════════════
-// ACTIONS
+// EXTRACTION ACTIONS
+// ═══════════════════════════════════════════════════════════════
+async function autoRunChunkerStats() {
+  try {
+    const r = await fetch('/api/tools/chunker-stats', { method: 'POST' });
+    if (!r.ok) { renderExtractionTab(); return; }
+    const d = await r.json();
+    const stdout = String(d.stdout || d.output || d.result || d.data || '');
+    const stderr = String(d.stderr || '');
+    // Parse from either — status may be "failed" just because fitz warned
+    const parsed = parseChunkerStats(stdout) || parseChunkerStats(stderr);
+    if (parsed) {
+      S.chunkerStats = parsed;
+      S.chunkerStatsAt = Date.now();
+      persistChunker();
+    }
+    renderExtractionTab();
+  } catch (e) {
+    renderExtractionTab();
+  }
+}
+
+async function runChunkerStats(btn) {
+  await withLoading(btn, 'Loading', async () => {
+    try {
+      const r = await fetch('/api/tools/chunker-stats', { method: 'POST' });
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      const d = await r.json();
+
+      // Server may use different field names — extract from any of them
+      const stdout = String(d.stdout || d.output || d.result || d.data || '');
+      const stderr = String(d.stderr || '');
+
+      // Log for debugging
+      pushExtractionHistory('chunker-stats', { ...d, stdout, stderr });
+
+      // ALWAYS try to parse — the server may mark the call as failed
+      // just because Python printed a FutureWarning to stderr, while
+      // stdout still contains valid stats.
+      const parsed = parseChunkerStats(stdout) || parseChunkerStats(stderr);
+
+      if (parsed) {
+        S.chunkerStats = parsed;
+        S.chunkerStatsAt = Date.now();
+        persistChunker();
+        const msg = `${parsed.extracted.pdfs} PDFs · ${parsed.realProblems.total} real problems`;
+        toast('Stats loaded', msg);
+        renderExtractionTab();
+        return;
+      }
+
+      // Parse failed — show REAL error, not the fitz warning
+      const cleanErr = stripPythonWarnings(stderr || stdout);
+      console.warn('[chunker-stats] parse failed', {
+        status: d.status, returncode: d.returncode,
+        stdoutLen: stdout.length, stderrLen: stderr.length,
+      });
+      const fallback = cleanErr.slice(0, 300) || 'No parsable output from chunker-stats';
+      toast('Stats failed', fallback, true);
+      renderExtractionTab();
+    } catch (e) {
+      pushExtractionHistory('chunker-stats', { status: 'error', error: e.message });
+      toast('Stats error', e.message, true);
+    }
+  });
+}
+
+async function runChunkerAudit(btn) {
+  await withLoading(btn, 'Auditing', async () => {
+    try {
+      const r = await fetch('/api/tools/chunker-audit', { method: 'POST' });
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      const d = await r.json();
+
+      const stdout = String(d.stdout || d.output || d.result || d.data || '');
+      const stderr = String(d.stderr || '');
+
+      pushExtractionHistory('chunker-audit', { ...d, stdout, stderr });
+
+      const rows = parseAuditText(stdout) || parseAuditText(stderr);
+
+      if (rows.length) {
+        S.chunkerAudit = rows;
+        S.chunkerAuditAt = Date.now();
+        persistChunker();
+        renderAuditVisual();
+        toast('Audit loaded', `${rows.length} PDFs`);
+      } else {
+        const cleanErr = stripPythonWarnings(stderr || stdout);
+        console.warn('[chunker-audit] parse failed', {
+          status: d.status, stdoutLen: stdout.length, stderrLen: stderr.length,
+        });
+        toast('Audit empty', cleanErr.slice(0, 300) || 'No PDF rows found in output', true);
+      }
+    } catch (e) {
+      pushExtractionHistory('chunker-audit', { status: 'error', error: e.message });
+      toast('Audit error', e.message, true);
+    }
+  });
+}
+
+async function onExtract(el) {
+  const pdf = prompt('PDF pattern (empty = all):', '');
+  if (pdf === null) return;
+  const lim = prompt('Limit (max PDFs, empty = none):', '');
+  if (lim === null) return;
+  const force = confirm('Force extract? OK = force even if done.');
+  if (!confirm(`EXTRACT uses API credits.\n\nPattern: ${pdf || 'all'}\nLimit: ${lim || 'none'}\nForce: ${force ? 'yes' : 'no'}\n\nContinue?`)) return;
+  await withLoading(el, 'Extracting', async () => {
+    try {
+      const r = await fetch('/api/tools/chunker-extract', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ pdf: pdf.trim() || null, limit: lim ? parseInt(lim) : null, force }),
+      });
+      const d = await r.json();
+      pushExtractionHistory('chunker-extract', d);
+      await fetchLog();
+      await runChunkerStatsQuietly();
+    } catch (e) { toast('Network error', e.message, true); }
+  });
+}
+
+async function onMerge(el) {
+  await withLoading(el, 'Merging', async () => {
+    try {
+      const r = await fetch('/api/tools/chunker-merge', { method: 'POST' });
+      const d = await r.json();
+      pushExtractionHistory('chunker-merge', d);
+      await fetchLog();
+      await runChunkerStatsQuietly();
+    } catch (e) { toast('Network error', e.message, true); }
+  });
+}
+
+async function onClassify(el) {
+  const pdf = prompt('PDF pattern (empty = all):', '');
+  if (pdf === null) return;
+  const force = confirm('Force reclassify? OK = force.');
+  if (!confirm(`CLASSIFY uses API credits.\n\nPattern: ${pdf || 'all'}\nForce: ${force ? 'yes' : 'no'}\n\nContinue?`)) return;
+  await withLoading(el, 'Classifying', async () => {
+    try {
+      const r = await fetch('/api/tools/chunker-classify', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ pdf: pdf.trim() || null, force }),
+      });
+      const d = await r.json();
+      pushExtractionHistory('chunker-classify', d);
+      await fetchLog();
+      await runChunkerStatsQuietly();
+    } catch (e) { toast('Network error', e.message, true); }
+  });
+}
+
+async function onAggregate(el) {
+  await withLoading(el, 'Aggregating', async () => {
+    try {
+      const r = await fetch('/api/tools/chunker-aggregate', { method: 'POST' });
+      const d = await r.json();
+      pushExtractionHistory('chunker-aggregate', d);
+      await fetchLog();
+      await runChunkerStatsQuietly();
+    } catch (e) { toast('Network error', e.message, true); }
+  });
+}
+
+async function runChunkerStatsQuietly() {
+  try {
+    const r = await fetch('/api/tools/chunker-stats', { method: 'POST' });
+    if (!r.ok) return;
+    const d = await r.json();
+    const stdout = String(d.stdout || d.output || d.result || d.data || '');
+    const stderr = String(d.stderr || '');
+    const parsed = parseChunkerStats(stdout) || parseChunkerStats(stderr);
+    if (parsed) {
+      S.chunkerStats = parsed;
+      S.chunkerStatsAt = Date.now();
+      persistChunker();
+      renderExtractionTab();
+    }
+  } catch (e) {}
+}
+
+function pushExtractionHistory(name, data) {
+  S.extractionHistory.unshift({ name, data, at: Date.now() });
+  if (S.extractionHistory.length > 20) S.extractionHistory = S.extractionHistory.slice(0, 20);
+  renderExtractionHistory();
+  // If it was a stats/audit run, refresh tab badge immediately
+  if (name === 'chunker-stats' && S.chunkerStats) {
+    $('tabExtractionBadge').textContent = S.chunkerStats.extracted.pdfs || '—';
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════
+// ORCHESTRATOR ACTIONS
 // ═══════════════════════════════════════════════════════════════
 async function onStart(btn) {
   if (S.running) return;
@@ -2123,7 +3182,7 @@ async function onOnce(btn) {
       const d = await r.json();
       if (d.status === 'completed') toast('Run Once · OK', (d.stdout || '').slice(-400));
       else toast('Run Once · Failed', (d.stderr || d.stdout || '').slice(-400), true);
-      await fetchAll(); await fetchLog(); renderActivity();
+      await refreshLoop(); await fetchLog(); renderActivity();
     } catch (e) { toast('Network error', e.message, true); }
   });
 }
@@ -2147,87 +3206,43 @@ async function runPointAction(el, action, id) {
     try {
       const r = await fetch(`/api/tools/${action}/${encodeURIComponent(id)}`, { method: 'POST' });
       const d = await r.json();
+      pushToolHistory(`${action} ${id}`, d);
       if (d.status === 'completed') toast(`${action} ${id} · OK`, (d.stdout || '').slice(-400));
       else toast(`${action} ${id} · Failed`, (d.stderr || d.stdout || d.error || '').slice(-400), true);
-      await fetchAll(); await fetchLog();
+      await refreshLoop(); await fetchLog();
     } catch (e) { toast('Network error', e.message, true); }
   });
 }
 
-async function quickVerify(id, btn) {
-  await runPointAction(btn, 'verify', id);
-}
+async function quickVerify(id, btn) { await runPointAction(btn, 'verify', id); }
 
 async function quickReset(id, btn) {
   if (!confirm(`Reset ${id}? It will be removed from state.json and re-generated next run.`)) return;
   try {
     const r = await fetch(`/api/orchestrator/reset/${encodeURIComponent(id)}`, { method: 'POST' });
-    if (r.ok) {
-      toast(`${id} reset`);
-      await fetchAll();
-    } else {
-      toast('Reset failed', 'Not found in state', true);
-    }
+    if (r.ok) { toast(`${id} reset`); await refreshLoop(); }
+    else toast('Reset failed', 'Not found in state', true);
   } catch (e) { toast('Network error', e.message, true); }
 }
 
+// ═══════════════════════════════════════════════════════════════
+// TOOLS (with structured output parsing)
+// ═══════════════════════════════════════════════════════════════
 async function onTool(el, name) {
-  const resultContainer = $('toolResults');
   await withLoading(el, 'Running', async () => {
     try {
       const r = await fetch(`/api/tools/${name}`, { method: 'POST' });
       const d = await r.json();
-      showToolResult(resultContainer, name, d);
+      pushToolHistory(name, d);
       await fetchLog();
     } catch (e) {
-      showToolResult(resultContainer, name, { status: 'error', error: e.message });
+      pushToolHistory(name, { status: 'error', error: e.message });
     }
   });
 }
 
-async function onChunkerExtract(el) {
-  const pdf = prompt('PDF pattern\n\nEmpty = all\n"NOM_2015" = one\n"BMO,NOM" = several\n\n:', '');
-  if (pdf === null) return;
-  const lim = prompt('Limit (max PDFs, empty = none):', '');
-  if (lim === null) return;
-  const force = confirm('Force extract? OK = force even if done.');
-  if (!confirm(`EXTRACT uses API credits.\n\nPattern: ${pdf || 'all'}\nLimit: ${lim || 'none'}\nForce: ${force ? 'yes' : 'no'}\n\nContinue?`)) return;
-  await withLoading(el, 'Extracting', async () => {
-    try {
-      const r = await fetch('/api/tools/chunker-extract', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ pdf: pdf.trim() || null, limit: lim ? parseInt(lim) : null, force }),
-      });
-      const d = await r.json();
-      showToolResult($('toolResults'), 'chunker-extract', d);
-      await fetchLog();
-    } catch (e) {
-      showToolResult($('toolResults'), 'chunker-extract', { status: 'error', error: e.message });
-    }
-  });
-}
-
-async function onChunkerClassify(el) {
-  const pdf = prompt('PDF pattern (empty = all):', '');
-  if (pdf === null) return;
-  const force = confirm('Force reclassify? OK = force.');
-  if (!confirm(`CLASSIFY uses API credits.\n\nPattern: ${pdf || 'all'}\nForce: ${force ? 'yes' : 'no'}\n\nContinue?`)) return;
-  await withLoading(el, 'Classifying', async () => {
-    try {
-      const r = await fetch('/api/tools/chunker-classify', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ pdf: pdf.trim() || null, force }),
-      });
-      const d = await r.json();
-      showToolResult($('toolResults'), 'chunker-classify', d);
-      await fetchLog();
-    } catch (e) {
-      showToolResult($('toolResults'), 'chunker-classify', { status: 'error', error: e.message });
-    }
-  });
-}
+async function onChunkerExtract(el) { await onExtract(el); }
+async function onChunkerClassify(el) { await onClassify(el); }
 
 async function onFullRefresh(el) {
   if (!confirm('FULL REFRESH:\n\n1. merge\n2. classify (API cost)\n3. aggregate\n\nNo extract.\n\nContinue?')) return;
@@ -2237,14 +3252,11 @@ async function onFullRefresh(el) {
       const d = await r.json();
       const ok = d.status === 'completed';
       const sum = (d.steps || []).map(s => `${s.name}: ${s.status}`).join('\n');
-      showToolResult($('toolResults'), 'full-refresh', {
-        status: ok ? 'completed' : 'failed',
-        stdout: sum,
-        returncode: ok ? 0 : 1,
-      });
-      await fetchAll(); await fetchLog();
+      pushToolHistory('full-refresh', { ...d, stdout: sum || d.stdout });
+      pushExtractionHistory('full-refresh', { ...d, stdout: sum || d.stdout });
+      await refreshLoop(); await fetchLog();
     } catch (e) {
-      showToolResult($('toolResults'), 'full-refresh', { status: 'error', error: e.message });
+      pushToolHistory('full-refresh', { status: 'error', error: e.message });
     }
   });
 }
@@ -2252,77 +3264,216 @@ async function onFullRefresh(el) {
 async function onRefreshCosts(el) {
   await withLoading(el, 'Refreshing', async () => {
     try {
-      // 1. Опитай server endpoint
       const r = await fetch('/api/costs/refresh', { method: 'POST' });
       let d = null;
-      if (r.ok) {
-        d = await r.json().catch(() => null);
-      }
-      // 2. Ако няма endpoint → просто re-fetch combined.json
+      if (r.ok) d = await r.json().catch(() => null);
       if (!d || !r.ok) {
         await fetchProviderCosts(true);
-        toast('Costs reloaded', 'combined.json re-fetched (no server refresh endpoint)');
+        toast('Costs reloaded', 'combined.json re-fetched');
       } else {
-        toast('Costs refreshed', `${d.entries ?? '?'} entries · $${(d.total ?? 0).toFixed(4)}`);
+        toast('Costs refreshed', `${d.entries ?? '?'} entries`);
       }
-      // 3. Пре-рендерирай всички изгледи
-      renderOverview();
-      renderCostsTab();
-      renderProviderTab();
-    } catch (e) {
-      toast('Refresh failed', e.message, true);
-    }
+      renderOverview(); renderCostsTab(); renderProviderTab();
+    } catch (e) { toast('Refresh failed', e.message, true); }
   });
 }
 
-function showToolResult(container, name, data) {
-  const ok = data.status === 'completed';
-  const cls = ok ? 'status-ok' : 'status-err';
-  const output = data.stdout || data.stderr || data.error || data.reason || '(no output)';
-  const html = `
-    <div class="tool-result" data-tool="${esc(name)}">
+function pushToolHistory(name, data) {
+  S.toolHistory.unshift({ name, data, at: Date.now() });
+  if (S.toolHistory.length > 20) S.toolHistory = S.toolHistory.slice(0, 20);
+  renderToolHistory();
+}
+
+function renderToolHistory() {
+  const container = $('toolResults');
+  if (!container) return;
+  if (!S.toolHistory.length) { container.innerHTML = ''; return; }
+  container.innerHTML = S.toolHistory.slice(0, 10).map((r, idx) => {
+    const ok = r.data.status === 'completed';
+    const output = r.data.stdout || r.data.stderr || r.data.error || '(no output)';
+    const { html, isStructured } = renderToolOutput(r.name, output);
+    return `<div class="tool-result" data-idx="${idx}">
       <div class="tool-result-h">
         <i data-lucide="${ok ? 'check-circle-2' : 'alert-circle'}"></i>
-        <span class="${cls}"><strong>${esc(name)}</strong> — ${esc(data.status)}</span>
-        <button class="close-r" onclick="this.closest('.tool-result').remove()">
-          <i data-lucide="x"></i>
-        </button>
+        <span class="${ok ? 'status-ok' : 'status-err'}"><strong>${esc(r.name)}</strong> — ${esc(r.data.status || 'unknown')}</span>
+        <span class="meta">${fmtTs(r.at)}</span>
+        <button class="close-r" onclick="removeToolHistory(${idx})"><i data-lucide="x"></i></button>
       </div>
-      <div class="tool-result-b">${esc(output)}</div>
-    </div>
-  `;
-  container.insertAdjacentHTML('afterbegin', html);
+      <div class="tool-result-b ${isStructured ? 'structured' : ''}">${html}</div>
+    </div>`;
+  }).join('');
   icons();
-  toast(`${name} · ${data.status}`, ok ? '' : output.slice(0, 200), !ok);
+}
+
+function removeToolHistory(idx) {
+  S.toolHistory.splice(idx, 1);
+  renderToolHistory();
+}
+
+// Render tool output — try to structure known formats
+function renderToolOutput(name, output) {
+  // JSON?
+  const trimmed = (output || '').trim();
+  if (trimmed.startsWith('{') || trimmed.startsWith('[')) {
+    try {
+      const parsed = JSON.parse(trimmed);
+      return { html: `<pre style="margin:0">${esc(JSON.stringify(parsed, null, 2))}</pre>`, isStructured: true };
+    } catch (e) { /* not JSON */ }
+  }
+
+  // Chunker stats — parse into sections
+  if (/PHASE 1: EXTRACTED|VERDICT BREAKDOWN/.test(output)) {
+    const html = output.split('\n').map(line => {
+      if (/^═+$/.test(line.trim()) || /^─+$/.test(line.trim())) {
+        return `<div style="height:1px;background:var(--border);margin:6px 0"></div>`;
+      }
+      if (/PHASE \d|VERDICT|LEVEL BREAKDOWN|TOTAL:|Cost:/.test(line)) {
+        return `<div style="color:var(--accent);font-weight:600;margin-top:4px">${esc(line)}</div>`;
+      }
+      const m = line.match(/^\s+(\S+)\s+(\d+)\s+problems/);
+      if (m) {
+        return `<div style="display:flex;justify-content:space-between;padding:1px 0">
+          <span style="color:var(--text-2)">${esc(m[1])}</span>
+          <span style="color:var(--accent)">${m[2]}</span>
+        </div>`;
+      }
+      return `<div>${esc(line)}</div>`;
+    }).join('');
+    return { html, isStructured: true };
+  }
+
+  return { html: esc(output), isStructured: false };
+}
+
+// ═══════════════════════════════════════════════════════════════
+// LOG ACTIONS
+// ═══════════════════════════════════════════════════════════════
+async function refreshLog(btn) {
+  await withLoading(btn, '', async () => {
+    await fetchLog();
+    renderActivity();
+    renderLogsTab();
+    renderExtractionPulse();
+  });
+}
+
+function downloadLog() {
+  const blob = new Blob([S.log.join('\n')], { type: 'text/plain' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `pipeline-log-${new Date().toISOString().slice(0, 10)}.txt`;
+  a.click();
+  URL.revokeObjectURL(url);
+  toast('Log downloaded', `${S.log.length} lines`);
+}
+
+function clearLogFilters() {
+  S.logSearch = '';
+  S.logLevel = 'all';
+  S.logModule = 'all';
+  const input = $('logSearch');
+  if (input) input.value = '';
+  document.querySelectorAll('#logChips .chip').forEach(c => c.classList.remove('active'));
+  document.querySelector('#logChips .chip[data-lv="all"]')?.classList.add('active');
+  saveFilters();
+  renderLogsTab();
+}
+
+// ═══════════════════════════════════════════════════════════════
+// EXPORTS
+// ═══════════════════════════════════════════════════════════════
+function exportArticles() {
+  const blob = new Blob([JSON.stringify(S.articles, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `articles-${new Date().toISOString().slice(0, 10)}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+  toast('Exported', `${S.articles.length} articles`);
+}
+
+function exportCosts() {
+  const header = 'ts,item,role,model,tokens,cost\n';
+  const rows = S.costs.map(c => {
+    const ts = tsDay(c.ts) ? (typeof c.ts === 'number' ? new Date(c.ts * 1000).toISOString() : c.ts) : '';
+    return [ts, c.item || '', c.role || '', c.model || '', c.tokens || 0, c.cost || 0].map(x => `"${String(x).replace(/"/g, '""')}"`).join(',');
+  }).join('\n');
+  const blob = new Blob([header + rows], { type: 'text/csv' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `costs-${new Date().toISOString().slice(0, 10)}.csv`;
+  a.click();
+  URL.revokeObjectURL(url);
+  toast('Exported', `${S.costs.length} calls`);
+}
+
+function exportProvider() {
+  const blob = new Blob([JSON.stringify(S.providerCosts, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `provider-${new Date().toISOString().slice(0, 10)}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+  toast('Exported', 'Provider combined data');
+}
+
+// ═══════════════════════════════════════════════════════════════
+// REFRESH ACTIONS
+// ═══════════════════════════════════════════════════════════════
+async function refreshArticles(btn) {
+  await withLoading(btn, 'Loading', async () => {
+    await fetchArticles();
+    renderArticlesTab();
+    toast('Refreshed', `${S.articles.length} articles`);
+  });
+}
+
+async function verifyAllRevise(btn) {
+  const toVerify = S.articles.filter(a => a.verdict === 'revise');
+  if (!toVerify.length) { toast('Nothing to verify', 'No "revise" articles'); return; }
+  if (!confirm(`Verify ${toVerify.length} articles with verdict "revise"?\n\nApprox cost: $${(toVerify.length * 0.08).toFixed(2)}`)) return;
+  await withLoading(btn, 'Verifying', async () => {
+    let success = 0;
+    for (const a of toVerify) {
+      try {
+        const r = await fetch(`/api/tools/verify/${encodeURIComponent(a.id)}`, { method: 'POST' });
+        if (r.ok) success++;
+      } catch (e) {}
+    }
+    toast('Verified', `${success}/${toVerify.length} succeeded`);
+    await refreshLoop();
+  });
+}
+
+async function refreshProvider(btn) {
+  await withLoading(btn, 'Loading', async () => {
+    await fetchProviderCosts(true);
+    renderProviderTab();
+    toast('Refreshed', 'Provider data reloaded');
+  });
 }
 
 // ═══════════════════════════════════════════════════════════════
 // EVENT WIRES
 // ═══════════════════════════════════════════════════════════════
-// Overview buttons
 $('btnStart').addEventListener('click', e => onStart(e.currentTarget));
 $('btnStop').addEventListener('click', e => onStop(e.currentTarget));
 $('btnOnce').addEventListener('click', e => onOnce(e.currentTarget));
-$('btnVerify').addEventListener('click', e => onPointTool(e.currentTarget, 'verify'));
-$('btnRecover').addEventListener('click', e => onPointTool(e.currentTarget, 'recover'));
 
-// Articles: search
-$('artSearch').addEventListener('input', e => {
-  S.artSearch = e.target.value;
-  renderArticlesTab();
-});
-
-// Articles: chips
+$('artSearch').addEventListener('input', debounce(e => { S.artSearch = e.target.value; renderArticlesTab(); }, 150));
 $('artChips').addEventListener('click', e => {
   const chip = e.target.closest('.chip');
   if (!chip) return;
   document.querySelectorAll('#artChips .chip').forEach(c => c.classList.remove('active'));
   chip.classList.add('active');
   S.artVerdict = chip.dataset.verdict;
+  saveFilters();
   renderArticlesTab();
 });
-
-// Articles: sort headers
 document.querySelectorAll('#artTable th.sortable').forEach(th => {
   th.addEventListener('click', () => {
     const k = th.dataset.sort;
@@ -2332,61 +3483,132 @@ document.querySelectorAll('#artTable th.sortable').forEach(th => {
   });
 });
 
-// Logs: search
-$('logSearch').addEventListener('input', e => {
-  S.logSearch = e.target.value;
-  renderLogsTab();
-});
-
-// Logs: chips
+$('logSearch').addEventListener('input', debounce(e => { S.logSearch = e.target.value; renderLogsTab(); }, 150));
 $('logChips').addEventListener('click', e => {
   const chip = e.target.closest('.chip');
   if (!chip) return;
   document.querySelectorAll('#logChips .chip').forEach(c => c.classList.remove('active'));
   chip.classList.add('active');
   S.logLevel = chip.dataset.lv;
+  saveFilters();
   renderLogsTab();
 });
-
-// Logs: follow
 $('logFollow').addEventListener('change', e => {
   S.logFollow = e.target.checked;
-  if (S.logFollow) {
-    const el = $('logFull');
-    el.scrollTop = el.scrollHeight;
-  }
+  saveFilters();
+  if (S.logFollow) { const el = $('logFull'); el.scrollTop = el.scrollHeight; updateScrollBtn(); }
 });
+$('logFull').addEventListener('scroll', updateScrollBtn);
+
+// Module chips (delegated — container is repopulated dynamically)
+const _logModuleChipsEl = $('logModuleChips');
+if (_logModuleChipsEl) {
+  _logModuleChipsEl.addEventListener('click', e => {
+    const chip = e.target.closest('.chip');
+    if (!chip) return;
+    S.logModule = chip.dataset.mod;
+    renderLogsTab();
+  });
+}
+
+// Source chips (chunker / pipeline / orchestrator / all)
+const _logSourceChipsEl = $('logSourceChips');
+if (_logSourceChipsEl) {
+  _logSourceChipsEl.addEventListener('click', async e => {
+    const chip = e.target.closest('.chip');
+    if (!chip) return;
+    S.logSource = chip.dataset.source;
+    saveFilters();
+    // reload from selected source
+    const el = $('logFull');
+    if (el) el.innerHTML = '<div class="empty" style="padding:20px">Loading…</div>';
+    await fetchLog(S.logSource);
+    renderLogsTab();
+    renderActivity();
+    renderExtractionPulse();
+  });
+}
+
+// Sync source chips active state on boot
+function syncLogSourceChips() {
+  if (!_logSourceChipsEl) return;
+  _logSourceChipsEl.querySelectorAll('.chip').forEach(c => {
+    c.classList.toggle('active', c.dataset.source === S.logSource);
+  });
+}
+
+$('auditSearch').addEventListener('input', debounce(e => { S.auditSearch = e.target.value; renderAuditVisual(); }, 150));
+$('auditChips').addEventListener('click', e => {
+  const chip = e.target.closest('.chip');
+  if (!chip) return;
+  document.querySelectorAll('#auditChips .chip').forEach(c => c.classList.remove('active'));
+  chip.classList.add('active');
+  S.auditFilter = chip.dataset.audit;
+  renderAuditVisual();
+});
+
+// Apply saved filters
+if (S.artVerdict !== 'all') {
+  const chip = document.querySelector(`#artChips .chip[data-verdict="${S.artVerdict}"]`);
+  if (chip) {
+    document.querySelectorAll('#artChips .chip').forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+  }
+}
+if (S.logLevel !== 'all') {
+  const chip = document.querySelector(`#logChips .chip[data-lv="${S.logLevel}"]`);
+  if (chip) {
+    document.querySelectorAll('#logChips .chip').forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+  }
+}
+$('logFollow').checked = S.logFollow;
 
 // ═══════════════════════════════════════════════════════════════
 // POLLING
 // ═══════════════════════════════════════════════════════════════
 async function refreshLoop() {
   await Promise.all([
-    fetchState(),
-    fetchQueue(),
-    fetchCostsAll(),
-    fetchOrch(),
-    fetchArticles(),
-    fetchProviderCosts(true),   // ← force refresh за live reasoning stats
+    fetchState(), fetchQueue(), fetchCostsAll(), fetchOrch(), fetchArticles(), fetchProviderCosts(true),
   ]);
-  renderOverview();
-  if (document.querySelector('.tab[data-tab="articles"]').classList.contains('active')) renderArticlesTab();
-  if (document.querySelector('.tab[data-tab="costs"]').classList.contains('active')) renderCostsTab();
-  if (document.querySelector('.tab[data-tab="provider"]').classList.contains('active')) renderProviderTab();
+  const activeTab = document.querySelector('.tab.active')?.dataset.tab;
+  if (activeTab === 'overview') renderOverview();
+  if (activeTab === 'extraction') renderExtractionTab();
+  if (activeTab === 'articles') renderArticlesTab();
+  if (activeTab === 'costs') renderCostsTab();
+  if (activeTab === 'provider') renderProviderTab();
 }
 
 async function logLoop() {
+  const prevLogLen = S.log.length;
+  const prevSource = S.logSourceActive || S.logSource;
   await fetchLog();
+  const sourceChanged = prevSource !== S.logSourceActive;
   renderActivity();
-  if (document.querySelector('.tab[data-tab="logs"]').classList.contains('active')) renderLogsTab();
+
+  const activeTab = document.querySelector('.tab.active')?.dataset.tab;
+  if (activeTab === 'logs') {
+    // Skip re-render if log unchanged (avoids losing scroll position)
+    if (S.log.length !== prevLogLen || sourceChanged) renderLogsTab();
+  }
+  if (activeTab === 'overview') renderExtractionPulse();
+  if (activeTab === 'extraction' && S.chunkerProgress?.isRunning) renderExtractionTab();
 }
 
-// Live uptime
 setInterval(() => {
   if (S.running && S.uptimeBase) {
     $('mUptime').textContent = uptime(Math.floor((Date.now() - S.uptimeBase) / 1000));
   }
 }, 1000);
+
+async function pollRefresher() {
+  try { await refreshLoop(); } catch (e) {}
+  setTimeout(pollRefresher, document.hidden ? 15000 : 5000);
+}
+async function pollLogger() {
+  try { await logLoop(); } catch (e) {}
+  setTimeout(pollLogger, document.hidden ? 10000 : 3000);
+}
 
 // ═══════════════════════════════════════════════════════════════
 // BOOT
@@ -2394,11 +3616,12 @@ setInterval(() => {
 function boot() {
   if (!window.lucide) { setTimeout(boot, 100); return; }
   icons();
+  loadPersistedChunker();
+  syncLogSourceChips();
   refreshLoop();
   logLoop();
-  setInterval(refreshLoop, 5000);
-  setInterval(logLoop, 3000);
-  setInterval(icons, 2000);
+  pollRefresher();
+  pollLogger();
 }
 document.addEventListener('DOMContentLoaded', boot);
 </script>

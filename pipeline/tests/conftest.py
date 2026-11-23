@@ -1,4 +1,6 @@
 """Shared pytest config — handles --run-live flag and skips live tests by default."""
+import sys
+
 import pytest
 
 
@@ -22,6 +24,19 @@ def pytest_configure(config):
         "markers",
         "live: calls real AI APIs (cost money, need --run-live)",
     )
+    # ── Windows UTF-8 workaround ──
+    # pipeline.py / integrate.py call sys.stdout.reconfigure(encoding='utf-8')
+    # at import time on Windows. That closes pytest's fd-capture buffer and
+    # produces cascading "I/O operation on closed file" errors on every test.
+    # Neutralize reconfigure for the test session — pytest handles encoding.
+    for name in ("stdout", "stderr"):
+        stream = getattr(sys, name, None)
+        if stream is None or not hasattr(stream, "reconfigure"):
+            continue
+        try:
+            stream.reconfigure = lambda *a, **k: None
+        except (AttributeError, TypeError):
+            pass  # stream type doesn't allow attribute assignment — ignore
 
 
 def pytest_collection_modifyitems(config, items):

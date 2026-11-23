@@ -1,0 +1,460 @@
+2026-10-31 12:35:03,670 [INFO] ════════════════════════════════════════════════════════════
+2026-10-31 12:35:03,670 [INFO] Pipeline стартиран 24/7
+2026-10-31 12:35:03,671 [INFO] Generator:      deepseek/deepseek-r1-0528
+2026-10-31 12:35:03,671 [INFO] Verifier:       deepseek/deepseek-r1-0528
+2026-10-31 12:35:03,672 [INFO] Бюджет/ден:     $3.00
+2026-10-31 12:35:03,672 [INFO] Batch:          4 items
+2026-10-31 12:35:03,672 [INFO] Concurrent:     4
+2026-10-31 12:35:03,673 [INFO] Auto-scan:      ON
+2026-10-31 12:35:03,673 [INFO] HTML:           C:\Users\denis\Downloads\Материали Олимпиада МАТ\index.html
+2026-10-31 12:35:03,673 [INFO] ════════════════════════════════════════════════════════════
+2026-10-31 12:35:03,683 [WARNING] ════════════════════════════════════════════════════════════
+2026-10-31 12:35:03,683 [WARNING] ⚠ Открити 1 прекъснати items от предишна сесия:
+2026-10-31 12:35:03,697 [WARNING]    • 10.13: 1 статии, 0 verify JSON-а
+2026-10-31 12:35:03,697 [WARNING]        → generated\articles\10_13\temp\attempt-01-initial.md
+2026-10-31 12:35:03,697 [WARNING]      💡 За възстановяване без нова генерация:
+2026-10-31 12:35:03,698 [WARNING]         python recover_point.py 10.13
+2026-10-31 12:35:03,702 [WARNING]   Дефинирани като pending → ще опита отново.
+2026-10-31 12:35:03,702 [WARNING] ════════════════════════════════════════════════════════════
+2026-10-31 12:35:03,703 [INFO] 📍 Предишна стъпка при crash: retry_1_verifying
+2026-10-31 12:35:03,703 [INFO] 📋 Предишна сесия: последно завършено 10.12 (2026-10-31T00:26:05.458321, score 9)
+2026-10-31 12:35:03,704 [INFO] 📋 Предишна сесия: обновено 2026-10-31T00:26:05.466288
+2026-10-31 12:35:04,398 [INFO] Batch: 4 items | остават 29 | бюджет $2.48
+2026-10-31 12:35:04,405 [INFO] ▶ [10.13] Областен кръг 2017 – 10 клас (опит 1)
+2026-10-31 12:35:04,412 [INFO] ▶ [10.17] Областен кръг 2019 – 10 клас (опит 1)
+2026-10-31 12:35:04,412 [INFO] ▶ [10.16] Областен кръг 2018 – 11 клас (опит 1)
+2026-10-31 12:35:04,412 [INFO] ▶ [10.18] Областен кръг 2019 – 11 клас (опит 1)
+2026-10-31 12:41:10,634 [INFO] [10.18] 💾 Temp: attempt-01-initial.md (2450w, score ?)
+2026-10-31 12:41:10,634 [WARNING] [10.18] ⚠ Статията е само 2450 думи (цел: 2800-3400)
+2026-10-31 12:41:45,330 [INFO] [10.16] 💾 Temp: attempt-01-initial.md (2405w, score ?)
+2026-10-31 12:41:45,330 [WARNING] [10.16] ⚠ Статията е само 2405 думи (цел: 2800-3400)
+2026-10-31 12:42:29,091 [INFO] [10.17] 💾 Temp: attempt-01-initial.md (2941w, score ?)
+2026-10-31 12:42:29,091 [INFO] [10.17] Статия: 2941 думи
+2026-10-31 12:42:57,398 [INFO] [10.18] 💾 Temp: attempt-01-initial.md (2450w, score 10)
+2026-10-31 12:42:57,411 [INFO] [10.18] Записано: generated\articles\10_18 (2450 думи)
+2026-10-31 12:42:57,412 [INFO] [10.18] 🗑️  Temp изтрит
+2026-10-31 12:42:57,435 [INFO] ✓ [10.18] 473.0s | $0.0326 | 31755 tok | score 10 (approve)
+2026-10-31 12:43:41,783 [INFO] [10.13] 💾 Temp: attempt-01-initial.md (3361w, score ?)
+2026-10-31 12:43:41,783 [INFO] [10.13] Статия: 3361 думи
+2026-10-31 12:44:12,276 [INFO] [10.17] 💾 Temp: attempt-01-initial.md (2941w, score 9)
+2026-10-31 12:44:12,289 [INFO] [10.17] Записано: generated\articles\10_17 (2941 думи)
+2026-10-31 12:44:12,311 [INFO] ✓ [10.17] 547.9s | $0.0372 | 34963 tok | score 9 (approve)
+2026-10-31 12:44:57,062 [INFO] [10.16] 💾 Temp: attempt-01-initial.md (2405w, score 7)
+2026-10-31 12:44:57,075 [INFO] [10.16] Записано: generated\articles\10_16 (2405 думи)
+2026-10-31 12:44:57,095 [INFO] ✓ [10.16] 592.7s | $0.0391 | 35103 tok | score 7 (revise)
+2026-10-31 12:45:23,350 [INFO] [10.13] 💾 Temp: attempt-01-initial.md (3361w, score 8)
+2026-10-31 12:45:23,363 [INFO] [10.13] Записано: generated\articles\10_13 (3361 думи)
+2026-10-31 12:45:23,383 [INFO] ✓ [10.13] 618.9s | $0.0418 | 38550 tok | score 8 (approve)
+2026-10-31 12:45:29,384 [INFO] Batch: 4 items | остават 25 | бюджет $2.33
+2026-10-31 12:45:29,395 [INFO] ▶ [10.19] Областен кръг 2020 – 10 клас (опит 1)
+2026-10-31 12:45:29,401 [INFO] ▶ [10.20] Областен кръг 2020 – 11 клас (опит 1)
+2026-10-31 12:45:29,401 [INFO] ▶ [10.21] Областен кръг 2021 – 10 клас (опит 1)
+2026-10-31 12:45:29,401 [INFO] ▶ [10.22] Областен кръг 2021 – 11 клас (опит 1)
+2026-10-31 12:51:33,900 [INFO] [10.22] 💾 Temp: attempt-01-initial.md (2862w, score ?)
+2026-10-31 12:51:33,901 [INFO] [10.22] Статия: 2862 думи
+2026-10-31 12:51:34,329 [INFO] [10.19] 💾 Temp: attempt-01-initial.md (2813w, score ?)
+2026-10-31 12:51:34,329 [INFO] [10.19] Статия: 2813 думи
+2026-10-31 12:51:49,539 [INFO] [10.21] 💾 Temp: attempt-01-initial.md (3097w, score ?)
+2026-10-31 12:51:49,539 [INFO] [10.21] Статия: 3097 думи
+2026-10-31 12:52:04,141 [INFO] [10.20] 💾 Temp: attempt-01-initial.md (3240w, score ?)
+2026-10-31 12:52:04,142 [INFO] [10.20] Статия: 3240 думи
+2026-10-31 12:52:43,154 [INFO] [10.22] 💾 Temp: attempt-01-initial.md (2862w, score 9)
+2026-10-31 12:52:43,165 [INFO] [10.22] Записано: generated\articles\10_22 (2862 думи)
+2026-10-31 12:52:43,187 [INFO] ✓ [10.22] 433.8s | $0.0335 | 32858 tok | score 9 (approve)
+2026-10-31 12:53:07,168 [INFO] [10.19] 💾 Temp: attempt-01-initial.md (2813w, score 8)
+2026-10-31 12:53:07,181 [INFO] [10.19] Записано: generated\articles\10_19 (2813 думи)
+2026-10-31 12:53:07,206 [INFO] ✓ [10.19] 457.8s | $0.0350 | 33557 tok | score 8 (revise)
+2026-10-31 12:53:47,413 [INFO] [10.21] 💾 Temp: attempt-01-initial.md (3097w, score 9)
+2026-10-31 12:53:47,426 [INFO] [10.21] Записано: generated\articles\10_21 (3097 думи)
+2026-10-31 12:53:47,449 [INFO] ✓ [10.21] 498.0s | $0.0369 | 34792 tok | score 9 (approve)
+2026-10-31 12:54:06,709 [INFO] [10.20] 💾 Temp: attempt-01-initial.md (3240w, score 4)
+2026-10-31 12:54:06,713 [INFO] ↻ [10.20] retry (score 4, IMPROVE) — опит 1/2
+2026-10-31 13:00:04,675 [INFO] [10.20] 💾 Temp: attempt-02-retry-1.md (2765w, score ?)
+2026-10-31 13:01:40,681 [INFO] [10.20] 💾 Temp: attempt-02-retry-1.md (2765w, score 9)
+2026-10-31 13:01:40,685 [INFO] [10.20] Retry accepted: 4→9, 3240→2765w
+2026-10-31 13:01:40,694 [INFO] [10.20] Записано: generated\articles\10_20 (2765 думи)
+2026-10-31 13:01:40,710 [INFO] ✓ [10.20] 971.3s | $0.0777 | 78367 tok | score 9 (approve)
+2026-10-31 13:01:46,711 [INFO] Batch: 4 items | остават 21 | бюджет $2.15
+2026-10-31 13:01:46,729 [INFO] ▶ [10.23] Областен кръг 2022 – 10 клас (опит 1)
+2026-10-31 13:01:46,734 [INFO] ▶ [10.24] Областен кръг 2022 – 11 клас (опит 1)
+2026-10-31 13:01:46,734 [INFO] ▶ [10.25] Областен кръг 2023 – 10 клас (опит 1)
+2026-10-31 13:01:46,734 [INFO] ▶ [10.26] Областен кръг 2023 – 11 клас (опит 1)
+2026-10-31 13:08:47,607 [INFO] [10.26] 💾 Temp: attempt-01-initial.md (2397w, score ?)
+2026-10-31 13:08:47,607 [WARNING] [10.26] ⚠ Статията е само 2397 думи (цел: 2800-3400)
+2026-10-31 13:09:47,278 [INFO] [10.23] 💾 Temp: attempt-01-initial.md (2620w, score ?)
+2026-10-31 13:09:47,278 [INFO] [10.23] Статия: 2620 думи
+2026-10-31 13:10:16,063 [INFO] [10.26] 💾 Temp: attempt-01-initial.md (2397w, score 8)
+2026-10-31 13:10:16,075 [INFO] [10.26] Записано: generated\articles\10_26 (2397 думи)
+2026-10-31 13:10:16,093 [INFO] ✓ [10.26] 509.3s | $0.0333 | 32049 tok | score 8 (approve)
+2026-10-31 13:10:33,819 [INFO] [10.25] 💾 Temp: attempt-01-initial.md (2961w, score ?)
+2026-10-31 13:10:33,819 [INFO] [10.25] Статия: 2961 думи
+2026-10-31 13:12:36,997 [INFO] [10.23] 💾 Temp: attempt-01-initial.md (2620w, score 8)
+2026-10-31 13:12:37,009 [INFO] [10.23] Записано: generated\articles\10_23 (2620 думи)
+2026-10-31 13:12:37,023 [INFO] ✓ [10.23] 650.3s | $0.0402 | 36112 tok | score 8 (approve)
+2026-10-31 13:13:14,895 [INFO] [10.24] 💾 Temp: attempt-01-initial.md (5169w, score ?)
+2026-10-31 13:13:14,895 [WARNING] [10.24] ⚠ Статията е 5169 думи (над 3400)
+2026-10-31 13:13:22,773 [INFO] [10.25] 💾 Temp: attempt-01-initial.md (2961w, score 6)
+2026-10-31 13:13:22,776 [INFO] ↻ [10.25] retry (score 6, IMPROVE) — опит 1/2
+2026-10-31 13:14:23,587 [INFO] [10.24] 💾 Temp: attempt-01-initial.md (5169w, score 3)
+2026-10-31 13:14:23,591 [INFO] ↻ [10.24] retry (score 3, IMPROVE) — опит 1/2
+2026-10-31 13:21:52,095 [INFO] [10.24] 💾 Temp: attempt-02-retry-1.md (2624w, score ?)
+2026-10-31 13:22:12,040 [INFO] [10.25] 💾 Temp: attempt-02-retry-1.md (3135w, score ?)
+2026-10-31 13:23:53,913 [INFO] [10.24] 💾 Temp: attempt-02-retry-1.md (2624w, score 9)
+2026-10-31 13:23:53,917 [INFO] [10.24] Retry accepted: 3→9, 5169→2624w
+2026-10-31 13:23:53,928 [INFO] [10.24] Записано: generated\articles\10_24 (2624 думи)
+2026-10-31 13:23:53,945 [INFO] ✓ [10.24] 1327.2s | $0.0915 | 90187 tok | score 9 (approve)
+2026-10-31 13:24:31,253 [INFO] [10.25] 💾 Temp: attempt-02-retry-1.md (3135w, score 6)
+2026-10-31 13:24:31,256 [INFO] [10.25] Retry accepted: 6→6, 2961→3135w
+2026-10-31 13:24:31,256 [INFO] ↻ [10.25] retry (score 6, IMPROVE) — опит 2/2
+2026-10-31 13:31:46,034 [INFO] [10.25] 💾 Temp: attempt-03-retry-2.md (2770w, score ?)
+2026-10-31 13:33:24,695 [INFO] [10.25] 💾 Temp: attempt-03-retry-2.md (2770w, score 9)
+2026-10-31 13:33:24,699 [INFO] [10.25] Retry accepted: 6→9, 3135→2770w
+2026-10-31 13:33:24,708 [INFO] [10.25] Записано: generated\articles\10_25 (2770 думи)
+2026-10-31 13:33:24,723 [INFO] ✓ [10.25] 1898.0s | $0.1333 | 132613 tok | score 9 (approve)
+2026-10-31 13:33:30,724 [INFO] Batch: 4 items | остават 17 | бюджет $1.85
+2026-10-31 13:33:30,742 [INFO] ▶ [10.27] Областен кръг 2024 – 10 клас (опит 1)
+2026-10-31 13:33:30,747 [INFO] ▶ [10.28] Областен кръг 2024 – 11 клас (опит 1)
+2026-10-31 13:33:30,747 [INFO] ▶ [10.29] Областен кръг 2025 – 10 клас (опит 1)
+2026-10-31 13:33:30,747 [INFO] ▶ [10.30] Областен кръг 2025 – 11 клас (опит 1)
+2026-10-31 13:40:18,030 [INFO] [10.30] 💾 Temp: attempt-01-initial.md (3113w, score ?)
+2026-10-31 13:40:18,030 [INFO] [10.30] Статия: 3113 думи
+2026-10-31 13:41:04,596 [INFO] [10.28] 💾 Temp: attempt-01-initial.md (2903w, score ?)
+2026-10-31 13:41:04,597 [INFO] [10.28] Статия: 2903 думи
+2026-10-31 13:41:05,365 [INFO] [10.27] 💾 Temp: attempt-01-initial.md (3272w, score ?)
+2026-10-31 13:41:05,365 [INFO] [10.27] Статия: 3272 думи
+2026-10-31 13:41:45,990 [INFO] [10.30] 💾 Temp: attempt-01-initial.md (3113w, score 4)
+2026-10-31 13:41:45,993 [INFO] ↻ [10.30] retry (score 4, IMPROVE) — опит 1/2
+2026-10-31 13:43:07,058 [INFO] [10.27] 💾 Temp: attempt-01-initial.md (3272w, score 7)
+2026-10-31 13:43:07,070 [INFO] [10.27] Записано: generated\articles\10_27 (3272 думи)
+2026-10-31 13:43:07,085 [INFO] ✓ [10.27] 576.3s | $0.0383 | 35791 tok | score 7 (revise)
+2026-10-31 13:43:10,083 [INFO] [10.28] 💾 Temp: attempt-01-initial.md (2903w, score 5)
+2026-10-31 13:43:10,086 [INFO] ↻ [10.28] retry (score 5, IMPROVE) — опит 1/2
+2026-10-31 13:44:34,230 [INFO] [10.29] 💾 Temp: attempt-01-initial.md (5888w, score ?)
+2026-10-31 13:44:34,230 [WARNING] [10.29] ⚠ Статията е 5888 думи (над 3400)
+2026-10-31 13:45:39,835 [INFO] [10.29] 💾 Temp: attempt-01-initial.md (5888w, score 9)
+2026-10-31 13:45:39,848 [INFO] [10.29] Записано: generated\articles\10_29 (5888 думи)
+2026-10-31 13:45:39,861 [INFO] ✓ [10.29] 729.1s | $0.0491 | 44443 tok | score 9 (revise)
+2026-10-31 13:47:09,275 [INFO] [10.30] 💾 Temp: attempt-02-retry-1.md (2850w, score ?)
+2026-10-31 13:48:42,284 [INFO] [10.30] 💾 Temp: attempt-02-retry-1.md (2850w, score 10)
+2026-10-31 13:48:42,287 [INFO] [10.30] Retry accepted: 4→10, 3113→2850w
+2026-10-31 13:48:42,296 [INFO] [10.30] Записано: generated\articles\10_30 (2850 думи)
+2026-10-31 13:48:42,299 [INFO] [10.30] 🗑️  Temp изтрит
+2026-10-31 13:48:42,313 [INFO] ✓ [10.30] 911.5s | $0.0690 | 72364 tok | score 10 (approve)
+2026-10-31 13:50:03,340 [INFO] [10.28] 💾 Temp: attempt-02-retry-1.md (2751w, score ?)
+2026-10-31 13:51:35,254 [INFO] [10.28] 💾 Temp: attempt-02-retry-1.md (2751w, score 5)
+2026-10-31 13:51:35,258 [INFO] [10.28] Retry rejected: 5→5, keeping 2903w
+2026-10-31 13:51:35,258 [INFO] ↻ [10.28] retry (score 5, IMPROVE) — опит 2/2
+2026-10-31 13:57:07,517 [INFO] [10.28] 💾 Temp: attempt-03-retry-2.md (2497w, score ?)
+2026-10-31 13:58:48,974 [INFO] [10.28] 💾 Temp: attempt-03-retry-2.md (2497w, score 3)
+2026-10-31 13:58:48,978 [INFO] [10.28] Retry rejected: 5→3, keeping 2903w
+2026-10-31 13:58:48,986 [INFO] [10.28] Записано: generated\articles\10_28 (2903 думи)
+2026-10-31 13:58:49,001 [WARNING] [10.28] score 5 < 7 — записано, но с нисък score (няма auto-retry)
+2026-10-31 13:58:49,001 [INFO] ✓ [10.28] 1518.2s | $0.1170 | 121248 tok | score 5 (revise)
+2026-10-31 13:58:55,003 [INFO] Batch: 4 items | остават 13 | бюджет $1.57
+2026-10-31 13:58:55,017 [INFO] ▶ [10.31] Областен кръг 2026 – 10 клас (опит 1)
+2026-10-31 13:58:55,018 [INFO] ▶ [10.32] Областен кръг 2026 – 11 клас (опит 1)
+2026-10-31 13:58:55,022 [INFO] ▶ [11.1] Лекции на Петър – PAMP 2019 (опит 1)
+2026-10-31 13:58:55,029 [INFO] ▶ [11.2] Тема на седмицата 1–4 (опит 1)
+2026-10-31 13:58:55,047 [ERROR] [11.1] Exception: [Errno 13] Permission denied: 'C:\\Users\\denis\\Downloads\\Материали Олимпиада МАТ\\pipeline\\progress.json'
+Traceback (most recent call last):
+  File "C:\Users\denis\Downloads\Материали Олимпиада МАТ\pipeline\pipeline.py", line 64, in _atomic_write
+    tmp.replace(path)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\pathlib.py", line 1376, in replace
+    os.replace(self, target)
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\denis\\Downloads\\Материали Олимпиада МАТ\\pipeline\\progress.json.2336.tmp' -> 'C:\\Users\\denis\\Downloads\\Материали Олимпиада МАТ\\pipeline\\progress.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\denis\Downloads\Материали Олимпиада МАТ\pipeline\pipeline.py", line 1690, in run_once
+    if fut.result():
+       ^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denis\Downloads\Материали Олимпиада МАТ\pipeline\pipeline.py", line 1580, in process_item
+    self._save_progress(in_flight=[item.id])
+  File "C:\Users\denis\Downloads\Материали Олимпиада МАТ\pipeline\pipeline.py", line 935, in _save_progress
+    _atomic_write(self.progress_file, json.dumps(data, indent=2, ensure_ascii=False))
+  File "C:\Users\denis\Downloads\Материали Олимпиада МАТ\pipeline\pipeline.py", line 66, in _atomic_write
+    path.write_text(content, encoding="utf-8")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\pathlib.py", line 1047, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\denis\\Downloads\\Материали Олимпиада МАТ\\pipeline\\progress.json'
+2026-10-31 14:05:27,922 [INFO] [10.32] 💾 Temp: attempt-01-initial.md (2600w, score ?)
+2026-10-31 14:05:27,922 [INFO] [10.32] Статия: 2600 думи
+2026-10-31 14:06:48,418 [INFO] [10.32] 💾 Temp: attempt-01-initial.md (2600w, score 8)
+2026-10-31 14:06:48,431 [INFO] [10.32] Записано: generated\articles\10_32 (2600 думи)
+2026-10-31 14:06:48,444 [INFO] ✓ [10.32] 473.4s | $0.0323 | 31822 tok | score 8 (approve)
+2026-10-31 14:07:33,116 [INFO] [10.31] 💾 Temp: attempt-01-initial.md (4091w, score ?)
+2026-10-31 14:07:33,116 [WARNING] [10.31] ⚠ Статията е 4091 думи (над 3400)
+2026-10-31 14:09:01,934 [INFO] [10.31] 💾 Temp: attempt-01-initial.md (4091w, score 9)
+2026-10-31 14:09:01,947 [INFO] [10.31] Записано: generated\articles\10_31 (4091 думи)
+2026-10-31 14:09:01,962 [INFO] ✓ [10.31] 606.9s | $0.0407 | 37963 tok | score 9 (approve)
+2026-10-31 14:11:51,565 [INFO] [11.2] 💾 Temp: attempt-01-initial.md (7137w, score ?)
+2026-10-31 14:11:51,565 [WARNING] [11.2] ⚠ Статията е 7137 думи (над 3400)
+2026-10-31 14:13:47,172 [INFO] [11.2] 💾 Temp: attempt-01-initial.md (7137w, score 3)
+2026-10-31 14:13:47,175 [INFO] ↻ [11.2] retry (score 3, IMPROVE) — опит 1/2
+2026-10-31 14:20:24,383 [INFO] [11.2] 💾 Temp: attempt-02-retry-1.md (3373w, score ?)
+2026-10-31 14:21:49,161 [INFO] [11.2] 💾 Temp: attempt-02-retry-1.md (3373w, score 10)
+2026-10-31 14:21:49,165 [INFO] [11.2] Retry accepted: 3→10, 7137→3373w
+2026-10-31 14:21:49,174 [INFO] [11.2] Записано: generated\articles\11_2 (3373 думи)
+2026-10-31 14:21:49,177 [INFO] [11.2] 🗑️  Temp изтрит
+2026-10-31 14:21:49,192 [INFO] ✓ [11.2] 1374.1s | $0.1035 | 102649 tok | score 10 (approve)
+2026-10-31 14:21:55,194 [INFO] Batch: 4 items | остават 9 | бюджет $1.40
+2026-10-31 14:21:55,209 [INFO] ▶ [11.3] Теми с лекции (Tema 1–6) (опит 1)
+2026-10-31 14:21:55,214 [INFO] ▶ [11.4] Допълнителни сборници (опит 1)
+2026-10-31 14:21:55,214 [INFO] ▶ [11.6] Производни и теорема на Рол в олимпиадната алгебра (опит 1)
+2026-10-31 14:21:55,214 [INFO] ▶ [11.5] Линейна алгебра: матрица на Грам и ранг (опит 1)
+2026-10-31 14:22:00,421 [INFO] [11.6] 2 валидни real problems (от 2, показвам 2)
+2026-10-31 14:27:31,682 [INFO] [11.5] 💾 Temp: attempt-01-initial.md (2417w, score ?)
+2026-10-31 14:27:31,682 [WARNING] [11.5] ⚠ Статията е само 2417 думи (цел: 2800-3400)
+2026-10-31 14:28:12,766 [INFO] [11.6] 💾 Temp: attempt-01-initial.md (2721w, score ?)
+2026-10-31 14:28:12,767 [INFO] [11.6] Статия: 2721 думи
+2026-10-31 14:29:00,479 [INFO] [11.4] 💾 Temp: attempt-01-initial.md (3166w, score ?)
+2026-10-31 14:29:00,479 [INFO] [11.4] Статия: 3166 думи
+2026-10-31 14:29:09,941 [INFO] [11.5] 💾 Temp: attempt-01-initial.md (2417w, score 7)
+2026-10-31 14:29:09,953 [INFO] [11.5] Записано: generated\articles\11_5 (2417 думи)
+2026-10-31 14:29:09,974 [INFO] ✓ [11.5] 434.7s | $0.0327 | 31977 tok | score 7 (revise)
+2026-10-31 14:29:22,050 [INFO] [11.6] 💾 Temp: attempt-01-initial.md (2721w, score 10)
+2026-10-31 14:29:22,062 [INFO] [11.6] Записано: generated\articles\11_6 (2721 думи)
+2026-10-31 14:29:22,063 [INFO] [11.6] 🗑️  Temp изтрит
+2026-10-31 14:29:22,087 [INFO] ✓ [11.6] 446.8s | $0.0342 | 34514 tok | score 10 (approve)
+2026-10-31 14:30:08,711 [INFO] [11.4] 💾 Temp: attempt-01-initial.md (3166w, score 9)
+2026-10-31 14:30:08,724 [INFO] [11.4] Записано: generated\articles\11_4 (3166 думи)
+2026-10-31 14:30:08,746 [INFO] ✓ [11.4] 493.5s | $0.0364 | 35021 tok | score 9 (approve)
+2026-10-31 14:30:22,806 [WARNING] [11.3/gen] Network грешка — опит 1: Expecting value: line 339 column 1 (char 1859)
+2026-10-31 14:39:23,134 [INFO] [11.3] 💾 Temp: attempt-01-initial.md (4039w, score ?)
+2026-10-31 14:39:23,135 [WARNING] [11.3] ⚠ Статията е 4039 думи (над 3400)
+2026-10-31 14:40:57,566 [INFO] [11.3] 💾 Temp: attempt-01-initial.md (4039w, score 6)
+2026-10-31 14:40:57,570 [INFO] ↻ [11.3] retry (score 6, IMPROVE) — опит 1/2
+2026-10-31 14:49:22,704 [INFO] [11.3] 💾 Temp: attempt-02-retry-1.md (4136w, score ?)
+2026-10-31 14:50:28,182 [INFO] [11.3] 💾 Temp: attempt-02-retry-1.md (4136w, score 10)
+2026-10-31 14:50:28,186 [INFO] [11.3] Retry accepted: 6→10, 4039→4136w
+2026-10-31 14:50:28,195 [INFO] [11.3] Записано: generated\articles\11_3 (4136 думи)
+2026-10-31 14:50:28,197 [INFO] [11.3] 🗑️  Temp изтрит
+2026-10-31 14:50:28,213 [INFO] ✓ [11.3] 1713.0s | $0.0948 | 92825 tok | score 10 (approve)
+2026-10-31 14:50:34,215 [INFO] Batch: 4 items | остават 5 | бюджет $1.20
+2026-10-31 14:50:34,232 [INFO] ▶ [11.7] Корени на единицата (опит 1)
+2026-10-31 14:50:34,239 [INFO] ▶ [12.1] Комплексни числа в геометрията (опит 1)
+2026-10-31 14:50:34,239 [INFO] ▶ [12.2] Барицентрични координати (опит 1)
+2026-10-31 14:50:34,239 [INFO] ▶ [11.8] Мост: Птолемей - хармонично отношение - симедиани (опит 1)
+2026-10-31 14:50:34,273 [INFO] [11.7] 1 валидни real problems (от 1, показвам 1)
+2026-10-31 14:50:34,273 [INFO] [12.1] 1 валидни real problems (от 1, показвам 1)
+2026-10-31 14:50:34,277 [INFO] [12.2] 4 валидни real problems (от 4, показвам 4)
+2026-10-31 14:57:08,056 [INFO] [11.8] 💾 Temp: attempt-01-initial.md (2584w, score ?)
+2026-10-31 14:57:08,056 [INFO] [11.8] Статия: 2584 думи
+2026-10-31 14:58:05,575 [INFO] [11.7] 💾 Temp: attempt-01-initial.md (2875w, score ?)
+2026-10-31 14:58:05,576 [INFO] [11.7] Статия: 2875 думи
+2026-10-31 14:59:40,162 [INFO] [11.8] 💾 Temp: attempt-01-initial.md (2584w, score 4)
+2026-10-31 14:59:40,166 [INFO] ↻ [11.8] retry (score 4, IMPROVE) — опит 1/2
+2026-10-31 14:59:56,538 [INFO] [12.2] 💾 Temp: attempt-01-initial.md (4122w, score ?)
+2026-10-31 14:59:56,538 [WARNING] [12.2] ⚠ Статията е 4122 думи (над 3400)
+2026-10-31 15:00:16,595 [INFO] [11.7] 💾 Temp: attempt-01-initial.md (2875w, score 5)
+2026-10-31 15:00:16,599 [INFO] ↻ [11.7] retry (score 5, IMPROVE) — опит 1/2
+2026-10-31 15:02:26,893 [INFO] [12.1] 💾 Temp: attempt-01-initial.md (5518w, score ?)
+2026-10-31 15:02:26,893 [WARNING] [12.1] ⚠ Статията е 5518 думи (над 3400)
+2026-10-31 15:02:46,568 [INFO] [12.2] 💾 Temp: attempt-01-initial.md (4122w, score 5)
+2026-10-31 15:02:46,573 [INFO] ↻ [12.2] retry (score 5, IMPROVE) — опит 1/2
+2026-10-31 15:04:21,457 [INFO] [12.1] 💾 Temp: attempt-01-initial.md (5518w, score 7)
+2026-10-31 15:04:21,468 [INFO] [12.1] Записано: generated\articles\12_1 (5518 думи)
+2026-10-31 15:04:21,482 [INFO] ✓ [12.1] 827.2s | $0.0549 | 48434 tok | score 7 (revise)
+2026-10-31 15:07:30,533 [INFO] [11.8] 💾 Temp: attempt-02-retry-1.md (3476w, score ?)
+2026-10-31 15:09:04,270 [INFO] [11.7] 💾 Temp: attempt-02-retry-1.md (3221w, score ?)
+2026-10-31 15:09:41,886 [INFO] [11.8] 💾 Temp: attempt-02-retry-1.md (3476w, score 7)
+2026-10-31 15:09:41,890 [INFO] [11.8] Retry accepted: 4→7, 2584→3476w
+2026-10-31 15:09:41,898 [INFO] [11.8] Записано: generated\articles\11_8 (3476 думи)
+2026-10-31 15:09:41,921 [INFO] ✓ [11.8] 1147.7s | $0.0839 | 81799 tok | score 7 (revise)
+2026-10-31 15:10:22,221 [INFO] [11.7] 💾 Temp: attempt-02-retry-1.md (3221w, score 10)
+2026-10-31 15:10:22,224 [INFO] [11.7] Retry accepted: 5→10, 2875→3221w
+2026-10-31 15:10:22,234 [INFO] [11.7] Записано: generated\articles\11_7 (3221 думи)
+2026-10-31 15:10:22,237 [INFO] [11.7] 🗑️  Temp изтрит
+2026-10-31 15:10:22,258 [INFO] ✓ [11.7] 1188.0s | $0.0892 | 88651 tok | score 10 (approve)
+2026-10-31 15:11:39,181 [INFO] [12.2] 💾 Temp: attempt-02-retry-1.md (4048w, score ?)
+2026-10-31 15:13:18,159 [INFO] [12.2] 💾 Temp: attempt-02-retry-1.md (4048w, score 10)
+2026-10-31 15:13:18,163 [INFO] [12.2] Retry accepted: 5→10, 4122→4048w
+2026-10-31 15:13:18,172 [INFO] [12.2] Записано: generated\articles\12_2 (4048 думи)
+2026-10-31 15:13:18,176 [INFO] [12.2] 🗑️  Temp изтрит
+2026-10-31 15:13:18,190 [INFO] ✓ [12.2] 1363.9s | $0.1031 | 102976 tok | score 10 (approve)
+2026-10-31 15:13:24,190 [INFO] Batch: 4 items | остават 1 | бюджет $0.87
+2026-10-31 15:13:24,208 [INFO] ▶ [12.3] Проективна геометрия и пълни четириъгълници (опит 1)
+2026-10-31 15:13:24,213 [INFO] ▶ [13.1] Теорема на Коши-Девънпорт (опит 1)
+2026-10-31 15:13:24,213 [INFO] ▶ [13.2] Теорема на Ердьош-Гинзбург-Зив (опит 1)
+2026-10-31 15:13:24,213 [INFO] ▶ [13.3] Combinatorial Nullstellensatz (опит 1)
+2026-10-31 15:13:24,234 [ERROR] [13.1] Exception: [Errno 13] Permission denied: 'C:\\Users\\denis\\Downloads\\Материали Олимпиада МАТ\\pipeline\\progress.json'
+Traceback (most recent call last):
+  File "C:\Users\denis\Downloads\Материали Олимпиада МАТ\pipeline\pipeline.py", line 64, in _atomic_write
+    tmp.replace(path)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\pathlib.py", line 1376, in replace
+    os.replace(self, target)
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\denis\\Downloads\\Материали Олимпиада МАТ\\pipeline\\progress.json.11440.tmp' -> 'C:\\Users\\denis\\Downloads\\Материали Олимпиада МАТ\\pipeline\\progress.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\denis\Downloads\Материали Олимпиада МАТ\pipeline\pipeline.py", line 1690, in run_once
+    if fut.result():
+       ^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denis\Downloads\Материали Олимпиада МАТ\pipeline\pipeline.py", line 1580, in process_item
+    self._save_progress(in_flight=[item.id])
+  File "C:\Users\denis\Downloads\Материали Олимпиада МАТ\pipeline\pipeline.py", line 935, in _save_progress
+    _atomic_write(self.progress_file, json.dumps(data, indent=2, ensure_ascii=False))
+  File "C:\Users\denis\Downloads\Материали Олимпиада МАТ\pipeline\pipeline.py", line 66, in _atomic_write
+    path.write_text(content, encoding="utf-8")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\pathlib.py", line 1047, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\denis\\Downloads\\Материали Олимпиада МАТ\\pipeline\\progress.json'
+2026-10-31 15:13:24,246 [INFO] [12.3] 1 валидни real problems (от 1, показвам 1)
+2026-10-31 15:20:10,989 [INFO] [13.2] 💾 Temp: attempt-01-initial.md (2326w, score ?)
+2026-10-31 15:20:10,990 [WARNING] [13.2] ⚠ Статията е само 2326 думи (цел: 2800-3400)
+2026-10-31 15:22:54,725 [INFO] [13.2] 💾 Temp: attempt-01-initial.md (2326w, score 8)
+2026-10-31 15:22:54,737 [INFO] [13.2] Записано: generated\articles\13_2 (2326 думи)
+2026-10-31 15:22:54,751 [INFO] ✓ [13.2] 570.5s | $0.0366 | 33660 tok | score 8 (approve)
+2026-10-31 15:23:35,133 [INFO] [13.3] 💾 Temp: attempt-01-initial.md (3718w, score ?)
+2026-10-31 15:23:35,133 [INFO] [13.3] Статия: 3718 думи
+2026-10-31 15:25:47,972 [INFO] [13.3] 💾 Temp: attempt-01-initial.md (3718w, score 7)
+2026-10-31 15:25:47,984 [INFO] [13.3] Записано: generated\articles\13_3 (3718 думи)
+2026-10-31 15:25:48,000 [INFO] ✓ [13.3] 743.8s | $0.0464 | 41691 tok | score 7 (revise)
+2026-10-31 15:27:05,248 [INFO] [12.3] 💾 Temp: attempt-01-initial.md (6625w, score ?)
+2026-10-31 15:27:05,248 [WARNING] [12.3] ⚠ Статията е 6625 думи (над 3400)
+2026-10-31 15:28:26,711 [INFO] [12.3] 💾 Temp: attempt-01-initial.md (6625w, score 4)
+2026-10-31 15:28:26,715 [INFO] ↻ [12.3] retry (score 4, IMPROVE) — опит 1/2
+2026-10-31 15:32:08,506 [INFO] [12.3] 💾 Temp: attempt-02-retry-1.md (1342w, score ?)
+2026-10-31 15:34:44,835 [INFO] [12.3] 💾 Temp: attempt-02-retry-1.md (1342w, score 5)
+2026-10-31 15:34:44,839 [INFO] [12.3] Retry accepted: 4→5, 6625→1342w
+2026-10-31 15:34:44,840 [INFO] ↻ [12.3] retry (score 5, IMPROVE) — опит 2/2
+2026-10-31 15:43:47,402 [INFO] [12.3] 💾 Temp: attempt-03-retry-2.md (3439w, score ?)
+2026-10-31 15:45:21,975 [INFO] [12.3] 💾 Temp: attempt-03-retry-2.md (3439w, score 8)
+2026-10-31 15:45:21,978 [INFO] [12.3] Retry accepted: 5→8, 1342→3439w
+2026-10-31 15:45:21,988 [INFO] [12.3] Записано: generated\articles\12_3 (3439 думи)
+2026-10-31 15:45:22,003 [INFO] ✓ [12.3] 1917.8s | $0.1383 | 141063 tok | score 8 (approve)
+2026-10-31 15:45:28,003 [INFO] Batch: 1 items | остават 0 | бюджет $0.65
+2026-10-31 15:45:28,022 [INFO] ▶ [13.4] Свободни от суми множества (опит 1)
+2026-10-31 15:45:28,048 [INFO] [13.4] 2 валидни real problems (от 2, показвам 2)
+2026-10-31 15:55:10,232 [INFO] [13.4] 💾 Temp: attempt-01-initial.md (3265w, score ?)
+2026-10-31 15:55:10,232 [INFO] [13.4] Статия: 3265 думи
+2026-10-31 15:57:32,775 [INFO] [13.4] 💾 Temp: attempt-01-initial.md (3265w, score 7)
+2026-10-31 15:57:32,787 [INFO] [13.4] Записано: generated\articles\13_4 (3265 думи)
+2026-10-31 15:57:32,803 [INFO] ✓ [13.4] 724.8s | $0.0457 | 41610 tok | score 7 (revise)
+2026-10-31 15:57:38,805 [INFO] Няма pending items. Чакам нови задачи...
+2026-10-31 17:07:59,463 [INFO] 📍 Предишна стъпка при crash: verifying_initial
+2026-10-31 17:07:59,464 [INFO] 📋 Предишна сесия: последно завършено 13.4 (2026-10-31T15:57:32.787821, score 7)
+2026-10-31 17:07:59,465 [INFO] 📋 Предишна сесия: обновено 2026-10-31T15:57:32.789866
+2026-10-31 17:07:59,466 [INFO] Batch: 1 items | остават 0 | бюджет $0.60
+2026-10-31 17:07:59,475 [INFO] ▶ [11.1] Лекции на Петър – PAMP 2019 (опит 1)
+2026-10-31 17:21:12,727 [WARNING] ════════════════════════════════════════════════════════════
+2026-10-31 17:21:12,727 [WARNING] ⚠ Открити 1 прекъснати items от предишна сесия:
+2026-10-31 17:21:12,728 [WARNING]    • 11.1: 0 статии, 0 verify JSON-а
+2026-10-31 17:21:12,729 [WARNING]      💡 За възстановяване без нова генерация:
+2026-10-31 17:21:12,729 [WARNING]         python recover_point.py 11.1
+2026-10-31 17:21:12,743 [WARNING]   Дефинирани като pending → ще опита отново.
+2026-10-31 17:21:12,744 [WARNING] ════════════════════════════════════════════════════════════
+2026-10-31 17:21:12,745 [INFO] 📍 Предишна стъпка при crash: generating_initial
+2026-10-31 17:21:12,745 [INFO] 📋 Предишна сесия: последно завършено 13.4 (2026-10-31T15:57:32.787821, score 7)
+2026-10-31 17:21:12,745 [INFO] 📋 Предишна сесия: обновено 2026-10-31T17:07:59.589745
+2026-10-31 17:21:12,746 [INFO] Batch: 1 items | остават 0 | бюджет $0.60
+2026-10-31 17:21:12,758 [INFO] ▶ [11.1] Лекции на Петър – PAMP 2019 (опит 1)
+2026-10-31 17:31:00,112 [INFO] [11.1] 💾 Temp: attempt-01-initial.md (4287w, score ?)
+2026-10-31 17:31:00,113 [WARNING] [11.1] ⚠ Статията е 4287 думи (над 3400)
+2026-10-31 17:33:13,746 [INFO] [11.1] 💾 Temp: attempt-01-initial.md (4287w, score 7)
+2026-10-31 17:33:13,823 [INFO] [11.1] Записано: generated\articles\11_1 (4287 думи)
+2026-10-31 17:33:13,850 [INFO] ✓ [11.1] 721.0s | $0.0466 | 41610 tok | score 7 (revise)
+2026-10-31 17:33:13,851 [INFO] ════════════════════════════════════════════════════════════
+2026-10-31 17:33:13,852 [INFO] КРАЙ
+2026-10-31 17:33:13,852 [INFO]   Обработени тази сесия: 1
+2026-10-31 17:33:13,853 [INFO]   Грешки тази сесия:     0
+2026-10-31 17:33:13,853 [INFO]   Общо done:             163
+2026-10-31 17:33:13,853 [INFO]   Общо error:            1
+2026-10-31 17:33:13,855 [INFO]   Днес:                  $2.446 / $3.00
+2026-10-31 17:33:13,855 [INFO]   Всичко похарчено:      $9.788
+2026-10-31 17:33:13,855 [INFO] ════════════════════════════════════════════════════════════
+2026-10-31 22:08:57,697 [INFO] 📍 Предишна стъпка при crash: verifying_initial
+2026-10-31 22:08:57,698 [INFO] 📋 Предишна сесия: последно завършено 11.1 (2026-10-31T17:33:13.824442, score 7)
+2026-10-31 22:08:57,698 [INFO] 📋 Предишна сесия: обновено 2026-10-31T17:33:13.825988
+2026-10-31 22:08:57,699 [INFO] Batch: 1 items | остават 0 | бюджет $0.55
+2026-10-31 22:08:57,704 [WARNING] Бюджет достигнат ($2.446)
+2026-10-31 22:09:44,612 [INFO] 📍 Предишна стъпка при crash: verifying_initial
+2026-10-31 22:09:44,612 [INFO] 📋 Предишна сесия: последно завършено 11.1 (2026-10-31T17:33:13.824442, score 7)
+2026-10-31 22:09:44,612 [INFO] 📋 Предишна сесия: обновено 2026-10-31T22:08:57.700708
+2026-10-31 22:09:44,613 [INFO] Batch: 1 items | остават 0 | бюджет $7.55
+2026-10-31 22:09:44,618 [INFO] ▶ [7.5] Общи техники за ФУ (опит 1)
+2026-10-31 22:09:49,934 [INFO] [7.5] 15 валидни real problems (от 15, показвам 5)
+2026-10-31 22:10:42,006 [WARNING] ════════════════════════════════════════════════════════════
+2026-10-31 22:10:42,007 [WARNING] ⚠ Открити 1 прекъснати items от предишна сесия:
+2026-10-31 22:10:42,019 [WARNING]    • 7.5: 2 статии, 2 verify JSON-а (best score: 9)
+2026-10-31 22:10:42,019 [WARNING]        → generated\articles\7_5\temp\attempt-01-initial.md
+2026-10-31 22:10:42,019 [WARNING]        → generated\articles\7_5\temp\attempt-02-retry-1.md
+2026-10-31 22:10:42,019 [WARNING]      💡 За възстановяване без нова генерация:
+2026-10-31 22:10:42,021 [WARNING]         python recover_point.py 7.5
+2026-10-31 22:10:42,026 [WARNING]   Дефинирани като pending → ще опита отново.
+2026-10-31 22:10:42,027 [WARNING] ════════════════════════════════════════════════════════════
+2026-10-31 22:10:42,027 [INFO] 📍 Предишна стъпка при crash: generating_initial
+2026-10-31 22:10:42,027 [INFO] 📋 Предишна сесия: последно завършено 11.1 (2026-10-31T17:33:13.824442, score 7)
+2026-10-31 22:10:42,028 [INFO] 📋 Предишна сесия: обновено 2026-10-31T22:09:49.984363
+2026-10-31 22:10:42,028 [INFO] Batch: 1 items | остават 0 | бюджет $7.55
+2026-10-31 22:10:42,035 [INFO] ▶ [R.1] Формули за съкратено умножение (опит 1)
+2026-10-31 22:14:53,521 [INFO] [7.5] 💾 Temp: attempt-01-initial.md (2557w, score ?)
+2026-10-31 22:14:53,521 [INFO] [7.5] Статия: 2557 думи
+2026-10-31 22:15:44,045 [INFO] 📍 Предишна стъпка при crash: verifying_initial
+2026-10-31 22:15:44,046 [INFO] 📋 Предишна сесия: последно завършено 11.1 (2026-10-31T17:33:13.824442, score 7)
+2026-10-31 22:15:44,046 [INFO] 📋 Предишна сесия: обновено 2026-10-31T22:14:53.522645
+2026-10-31 22:15:44,047 [INFO] Batch: 1 items | остават 0 | бюджет $7.55
+2026-10-31 22:15:44,059 [INFO] ▶ [R.1] Формули за съкратено умножение (опит 1)
+2026-10-31 22:16:14,797 [INFO] [7.5] 💾 Temp: attempt-01-initial.md (2557w, score 3)
+2026-10-31 22:16:14,801 [INFO] ↻ [7.5] retry (score 3, IMPROVE) — опит 1/2
+2026-10-31 22:18:26,177 [INFO] [R.1] 💾 Temp: attempt-01-initial.md (4012w, score ?)
+2026-10-31 22:18:26,177 [WARNING] [R.1] ⚠ Статията е 4012 думи (над 3400)
+2026-10-31 22:19:04,763 [INFO] [R.1] 💾 Temp: attempt-01-initial.md (4012w, score 8)
+2026-10-31 22:19:04,979 [INFO] [R.1] Записано: generated\articles\R_1 (4012 думи)
+2026-10-31 22:19:05,002 [INFO] ✓ [R.1] 200.7s | $0.0230 | 49421 tok | score 8 (approve)
+2026-10-31 22:22:34,420 [INFO] [7.5] 💾 Temp: attempt-02-retry-1.md (3187w, score ?)
+2026-10-31 22:23:52,950 [INFO] [7.5] 💾 Temp: attempt-02-retry-1.md (3187w, score 10)
+2026-10-31 22:23:52,954 [INFO] [7.5] Retry accepted: 3→10, 2557→3187w
+2026-10-31 22:23:53,033 [INFO] [7.5] Записано: generated\articles\7_5 (3187 думи)
+2026-10-31 22:23:53,036 [INFO] [7.5] 🗑️  Temp изтрит
+2026-10-31 22:23:53,048 [INFO] ✓ [7.5] 848.3s | $0.0858 | 91857 tok | score 10 (approve)
+2026-10-31 22:46:29,248 [INFO] 📍 Предишна стъпка при crash: retry_1_verifying
+2026-10-31 22:46:29,248 [INFO] 📋 Предишна сесия: последно завършено 7.5 (2026-10-31T22:23:53.037204, score 10)
+2026-10-31 22:46:29,249 [INFO] 📋 Предишна сесия: обновено 2026-10-31T22:23:53.038296
+2026-10-31 22:46:29,250 [INFO] Batch: 1 items | остават 0 | бюджет $7.47
+2026-10-31 22:46:29,260 [INFO] ▶ [R.2] Модули и неравенства с модул (опит 1)
+2026-10-31 22:47:46,135 [WARNING] ════════════════════════════════════════════════════════════
+2026-10-31 22:47:46,136 [WARNING] ⚠ Открити 1 прекъснати items от предишна сесия:
+2026-10-31 22:47:46,136 [WARNING]    • R.2: 0 статии, 0 verify JSON-а
+2026-10-31 22:47:46,136 [WARNING]      💡 За възстановяване без нова генерация:
+2026-10-31 22:47:46,137 [WARNING]         python recover_point.py R.2
+2026-10-31 22:47:46,145 [WARNING]   Дефинирани като pending → ще опита отново.
+2026-10-31 22:47:46,146 [WARNING] ════════════════════════════════════════════════════════════
+2026-10-31 22:47:46,146 [INFO] 📍 Предишна стъпка при crash: generating_initial
+2026-10-31 22:47:46,148 [INFO] 📋 Предишна сесия: последно завършено 7.5 (2026-10-31T22:23:53.037204, score 10)
+2026-10-31 22:47:46,148 [INFO] 📋 Предишна сесия: обновено 2026-10-31T22:46:29.552904
+2026-10-31 22:47:46,149 [INFO] Batch: 1 items | остават 0 | бюджет $7.47
+2026-10-31 22:47:46,164 [INFO] ▶ [R.3] Степенуване и логаритми (опит 1)
+2026-10-31 22:47:54,677 [INFO] [R.3] 2 валидни real problems (от 2, показвам 2)
+2026-10-31 22:47:55,698 [WARNING] ⚠ Budget exhausted: [R.3/gen] 402: {"error":"Spending limit reached. Need a higher limit? hey@mahadk.com"}
+2026-10-31 22:49:16,770 [INFO] [R.2] 💾 Temp: attempt-01-initial.md (4260w, score ?)
+2026-10-31 22:49:16,770 [WARNING] [R.2] ⚠ Статията е 4260 думи (над 3400)
+2026-10-31 22:49:49,346 [INFO] [R.2] 💾 Temp: attempt-01-initial.md (4260w, score 8)
+2026-10-31 22:49:49,464 [INFO] [R.2] Записано: generated\articles\R_2 (4260 думи)
+2026-10-31 22:49:49,485 [INFO] ✓ [R.2] 200.1s | $0.0230 | 47300 tok | score 8 (approve)

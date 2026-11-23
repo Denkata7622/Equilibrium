@@ -9,6 +9,10 @@ import threading
 from pathlib import Path
 from datetime import datetime, date
 from flask import Flask, render_template, send_from_directory, abort, jsonify, request
+import requests
+
+API_URL = 'https://ai.hackclub.com/proxy/v1/chat/completions'
+API_KEY = 'REDACTED'
 
 BASE = Path(__file__).parent.resolve()
 SITE_DIR = BASE.parent
@@ -163,6 +167,83 @@ def api_article_version(point_id, version):
     return jsonify({"content": content, "version": version})
 
 
+@app.route("/api/articles/status")
+def api_articles_status():
+    """Lightweight status за ArticleRefresher polling.
+
+    Връща {point_id: {mtime, versions, deep_versions}} за всяка папка,
+    която има article.json. Липсващите точки просто не се появяват —
+    ArticleRefresher ги третира като 'няма статия'.
+    """
+    result = {}
+    if ARTICLES.exists():
+        for d in ARTICLES.iterdir():
+            if not d.is_dir():
+                continue
+            article_json = d / "article.json"
+            if not article_json.exists():
+                continue
+            try:
+                st = article_json.stat()
+                data = json.loads(article_json.read_text(encoding="utf-8"))
+                # d.name е "1_4" → "1.4"; "R_1" → "R.1"
+                pid = d.name.replace("_", ".", 1)
+                result[pid] = {
+                    "mtime": st.st_mtime,
+                    "versions": len(data.get("versions", []) or []),
+                    "deep_versions": len(data.get("deep_versions", []) or []),
+                }
+            except Exception:
+                pass
+    return jsonify(result)
+
+# ═══════════════════════════════════════════════════════════════
+# API: AI CHAT PROXY — препраща към Hack Club AI
+# (еквивалент на ai_proxy.py, но в същия сървър като dashboard-а)
+# ═══════════════════════════════════════════════════════════════
+@app.route("/api/chat", methods=["POST", "OPTIONS"])
+def api_chat():
+    # CORS preflight (за случай, когато frontend-ът е на друг порт)
+    if request.method == "OPTIONS":
+        return "", 204, {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "POST, OPTIONS",
+            "Access-Control-Allow-Headers": "Content-Type, Authorization",
+        }
+
+    ALLOWED_MODELS = {
+        'z-ai/glm-5.3-flash',
+        'deepseek/deepseek-v3.2',
+        'openai/gpt-oss-120b',
+        'openai/gpt-6.1-sol',
+        'openai/gpt-6.1-sol-pro',
+    }
+
+    data = request.get_json(silent=True) or {}
+    req_model = data.get('model', '')
+    if req_model not in ALLOWED_MODELS:
+        return jsonify({"error": f'Model "{req_model}" not allowed'}), 403
+
+    try:
+        r = requests.post(
+            API_URL,
+            headers={
+                'Authorization': f'Bearer {API_KEY}',
+                'Content-Type': 'application/json',
+            },
+            json=data,
+            timeout=300,
+        )
+        return r.content, r.status_code, {"Content-Type": "application/json"}
+    except requests.Timeout:
+        return jsonify({
+            "error": "AI моделът отне твърде дълго (timeout 300s). Опитай с по-кратък въпрос."
+        }), 504
+    except requests.RequestException as e:
+        return jsonify({"error": f"AI API грешка: {e}"}), 502
+    except Exception as e:
+        return jsonify({"error": str(e) or "Unknown error"}), 500
+
 # ═══════════════════════════════════════════════════════════════
 # API: ORCHESTRATOR
 # ═══════════════════════════════════════════════════════════════
@@ -279,20 +360,81 @@ def orch_reset(point_id):
 # ═══════════════════════════════════════════════════════════════
 @app.route("/api/logs/tail")
 def logs_tail():
-    lines = min(int(request.args.get("lines", 200)), 2000)
-    log_file = LOGS_DIR / f"pipeline_{date.today()}.log"
-    if not log_file.exists():
-        return jsonify({"lines": [], "total": 0, "path": str(log_file)})
-    try:
-        with open(log_file, "r", encoding="utf-8", errors="replace") as f:
-            all_lines = f.readlines()
-        return jsonify({
-            "lines": all_lines[-lines:],
-            "total": len(all_lines),
-            "path": str(log_file),
-        })
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
+    """Tail от chunker/pipeline/orchestrator лог.
+
+    ?source=chunker|pipeline|orchestrator|all  (default: chunker)
+    """
+    lines = min(int(request.args.get("lines", 500)), 5000)
+    source = request.args.get("source", "chunker").lower()
+    today = date.today()
+
+    # Разрешени източници → filename pattern
+    sources = {
+        "chunker":      f"chunker_{today}.log",
+        "pipeline":     f"pipeline_{today}.log",
+        "orchestrator": f"orchestrator_{today}.log",
+        "master":       f"master_{today}.log",
+    }
+
+    def _read_one(fname):
+        p = LOGS_DIR / fname
+        if not p.exists():
+            return []
+        try:
+            with open(p, "r", encoding="utf-8", errors="replace") as fh:
+                return fh.readlines()
+        except Exception:
+            return []
+
+    if source == "all":
+        merged = []
+        for fname in sources.values():
+            for line in _read_one(fname):
+                merged.append(line)
+        all_lines = merged
+        files = [str(LOGS_DIR / f) for f in sources.values() if (LOGS_DIR / f).exists()]
+    else:
+        fname = sources.get(source, sources["chunker"])
+        all_lines = _read_one(fname)
+        files = [str(LOGS_DIR / fname)] if (LOGS_DIR / fname).exists() else []
+
+    return jsonify({
+        "lines": all_lines[-lines:],
+        "total": len(all_lines),
+        "source": source,
+        "files": files,
+    })
+
+
+@app.route("/api/logs/list")
+def logs_list():
+    """Списък с налични лог файлове за UI selector."""
+    if not LOGS_DIR.exists():
+        return jsonify({"files": [], "sources": []})
+    files = []
+    sources = set()
+    for f in sorted(LOGS_DIR.glob("*.log"), key=lambda p: p.stat().st_mtime, reverse=True):
+        # chunker_2026-11-10.log → source=chunker, date=2026-11-10
+        name = f.stem
+        if "_" in name:
+            src, _, dt = name.partition("_")
+            sources.add(src)
+            files.append({
+                "name": f.name,
+                "source": src,
+                "date": dt,
+                "size_kb": round(f.stat().st_size / 1024, 1),
+                "mtime": int(f.stat().st_mtime),
+            })
+        else:
+            files.append({
+                "name": f.name,
+                "source": name,
+                "date": "",
+                "size_kb": round(f.stat().st_size / 1024, 1),
+                "mtime": int(f.stat().st_mtime),
+            })
+    return jsonify({"files": files, "sources": sorted(sources)})
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -408,11 +550,22 @@ def _spawn_tool(name: str, cmd: list, timeout: int = 1800):
         )
         stdout = result.stdout if result.stdout is not None else ""
         stderr = result.stderr if result.stderr is not None else ""
+        # Status logic:
+        #   - returncode == 0            → completed
+        #   - returncode != 0 + stdout    → "completed_with_warnings" (data likely valid)
+        #   - returncode != 0 + no stdout → failed
+        if result.returncode == 0:
+            status = "completed"
+        elif stdout.strip():
+            status = "completed_with_warnings"  # stderr had warnings, stdout has data
+        else:
+            status = "failed"
+
         return {
-            "status": "completed" if result.returncode == 0 else "failed",
+            "status": status,
             "returncode": result.returncode,
-            "stdout": stdout[-4000:],
-            "stderr": stderr[-2000:],
+            "stdout": stdout[-8000:],
+            "stderr": stderr[-4000:],
             "name": name,
             "_diag": {
                 "stdout_len": len(stdout),

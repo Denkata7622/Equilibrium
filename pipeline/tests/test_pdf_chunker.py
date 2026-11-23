@@ -426,8 +426,14 @@ class TestChunkerState:
 
     def test_budget_exceeded_threshold(self, tmp_path, monkeypatch):
         monkeypatch.setattr(pdf_chunker, "STATE_FILE", tmp_path / "state.json")
+        # Pin config so the test doesn't drift with config.json changes
+        monkeypatch.setitem(pdf_chunker.CONFIG, "chunker", {
+            **pdf_chunker.CONFIG.get("chunker", {}),
+            "daily_budget_usd": 3.0,
+            "budget_stop_pct": 0.9,
+        })
         state = pdf_chunker.ChunkerState()
-        # Default: budget=3.0, stop=0.9 → threshold 2.7
+        # Threshold = 3.0 * 0.9 = 2.7
         state.data["budget"]["spent_usd"] = 2.5
         assert not state.budget_exceeded()
         state.data["budget"]["spent_usd"] = 2.8
@@ -497,6 +503,337 @@ class TestLoadSteps:
             assert isinstance(data.get("title"), str)
             assert data["title"]
 
+
+# ═══════════════════════════════════════════════════════════════════════
+#  _sanitize_surrogates — почиства lone surrogates (U+D800–U+DFFF)
+# ═══════════════════════════════════════════════════════════════════════
+
+class TestSanitizeSurrogates:
+
+    def test_none_returns_none(self):
+        assert pdf_chunker._sanitize_surrogates(None) is None
+
+    def test_empty_returns_empty(self):
+        assert pdf_chunker._sanitize_surrogates("") == ""
+
+    def test_non_string_returns_as_is(self):
+        assert pdf_chunker._sanitize_surrogates(123) == 123
+
+    def test_clean_cyrillic_unchanged(self):
+        assert pdf_chunker._sanitize_surrogates("Задача 11.1") == "Задача 11.1"
+
+    def test_lone_low_surrogate_replaced(self):
+        result = pdf_chunker._sanitize_surrogates("a\udc80b")
+        assert "\udc80" not in result
+        assert "\uFFFD" in result
+
+    def test_lone_high_surrogate_replaced(self):
+        result = pdf_chunker._sanitize_surrogates("a\ud800b")
+        assert "\ud800" not in result
+
+    def test_multiple_surrogates_all_replaced(self):
+        result = pdf_chunker._sanitize_surrogates("a\ud800b\udc00c")
+        assert "\ud800" not in result
+        assert "\udc00" not in result
+        assert result.count("\uFFFD") == 2
+
+
+# ═══════════════════════════════════════════════════════════════════════
+#  _normalize_problems_list — разгъва nested lists от R1
+# ═══════════════════════════════════════════════════════════════════════
+
+class TestNormalizeProblemsList:
+
+    def test_none_returns_empty(self):
+        assert pdf_chunker._normalize_problems_list(None) == []
+
+    def test_single_dict_wrapped(self):
+        assert pdf_chunker._normalize_problems_list({"a": 1}) == [{"a": 1}]
+
+    def test_flat_list(self):
+        assert pdf_chunker._normalize_problems_list([{"a": 1}, {"b": 2}]) == [
+            {"a": 1}, {"b": 2}]
+
+    def test_nested_list_flattened(self):
+        # R1 връща [[{...}, {...}], [{...}]]
+        result = pdf_chunker._normalize_problems_list([
+            [{"a": 1}, {"b": 2}],
+            [{"c": 3}],
+        ])
+        assert result == [{"a": 1}, {"b": 2}, {"c": 3}]
+
+    def test_deeply_nested_flattened(self):
+        result = pdf_chunker._normalize_problems_list([[[{"a": 1}]]])
+        assert result == [{"a": 1}]
+
+    def test_non_dict_items_filtered(self):
+        result = pdf_chunker._normalize_problems_list(
+            [{"a": 1}, "not dict", 123, None])
+        assert result == [{"a": 1}]
+
+    def test_string_returns_empty(self):
+        assert pdf_chunker._normalize_problems_list("string") == []
+
+
+# ═══════════════════════════════════════════════════════════════════════
+#  _expected_count / _expected_grade — config-driven count rules
+# ═══════════════════════════════════════════════════════════════════════
+
+class TestExpectedCount:
+
+    def test_pre_2013_oblasten_is_6(self):
+        # Config patterns require -probs/-sol suffix
+        expected, tol = pdf_chunker._expected_count(
+            "OLI-2-Областен кръг-2005-11 кл-sol")
+        assert expected == 6
+        assert tol == 0
+
+    def test_post_2013_oblasten_is_4(self):
+        expected, tol = pdf_chunker._expected_count(
+            "OLI-2-Областен кръг-2024-11 кл-probs")
+        assert expected == 4
+        assert tol == 0
+
+    def test_national_9_12_is_6(self):
+        expected, tol = pdf_chunker._expected_count(
+            "OLI-3-Национален кръг-2024-9-12 кл-sol")
+        assert expected == 6
+        assert tol == 1
+
+    def test_book_returns_none(self):
+        expected, _ = pdf_chunker._expected_count("BMO_1984-2006")
+        assert expected is None
+
+    def test_ot_returns_none(self):
+        expected, _ = pdf_chunker._expected_count("OT_2012")
+        assert expected is None
+
+
+class TestExpectedGrade:
+
+    def test_specific_grade(self):
+        assert pdf_chunker._expected_grade(
+            "OLI-2-Областен кръг-2024-11 кл-sol") == 11
+
+    def test_grade_range_none(self):
+        assert pdf_chunker._expected_grade(
+            "OLI-3-Национален кръг-2024-9-12 кл-sol") is None
+
+    def test_book_none(self):
+        assert pdf_chunker._expected_grade("BMO_1984-2006") is None
+
+    def test_ot_none(self):
+        assert pdf_chunker._expected_grade("OT_2012") is None
+
+
+# ═══════════════════════════════════════════════════════════════════════
+#  _filter_by_filename_grade
+# ═══════════════════════════════════════════════════════════════════════
+
+class TestFilterByFilenameGrade:
+
+    def test_grade_range_not_filtered(self):
+        problems = [{"grade": 9, "num": 1}, {"grade": 11, "num": 2}]
+        result = pdf_chunker._filter_by_filename_grade(
+            problems, "OLI-3-Национален кръг-2024-9-12 кл")
+        assert len(result) == 2
+
+    def test_specific_grade_filters(self):
+        problems = [
+            {"grade": 11, "num": 1},
+            {"grade": 12, "num": 2},
+            {"grade": 11, "num": 3},
+        ]
+        result = pdf_chunker._filter_by_filename_grade(
+            problems, "OLI-2-Областен кръг-2024-11 кл")
+        assert len(result) == 2
+        assert all(p["grade"] == 11 for p in result)
+
+    def test_num_prefix_fallback(self):
+        # If grade is None but num is "11.5" → treat as grade 11
+        problems = [
+            {"grade": None, "num": "11.5"},
+            {"grade": None, "num": "12.1"},
+        ]
+        result = pdf_chunker._filter_by_filename_grade(
+            problems, "OLI-2-Областен кръг-2024-11 кл")
+        assert len(result) == 1
+
+    def test_emptied_list_keeps_original(self):
+        # Filter would empty → keep original with warning
+        problems = [{"grade": 12, "num": 1}, {"grade": 12, "num": 2}]
+        result = pdf_chunker._filter_by_filename_grade(
+            problems, "OLI-2-Областен кръг-2024-11 кл")
+        assert len(result) == 2
+
+    def test_no_grade_in_filename(self):
+        problems = [{"grade": 9, "num": 1}, {"grade": 12, "num": 2}]
+        result = pdf_chunker._filter_by_filename_grade(
+            problems, "BMO_1984-2006")
+        assert len(result) == 2
+
+
+# ═══════════════════════════════════════════════════════════════════════
+#  _content_dedupe
+# ═══════════════════════════════════════════════════════════════════════
+
+class TestContentDedupe:
+
+    def test_identical_statements_deduped_prefer_longer_solution(self):
+        problems = [
+            {"statement": "Same statement " + "A" * 50, "solution": "Short"},
+            {"statement": "Same statement " + "A" * 50,
+             "solution": "Longer solution " + "B" * 50},
+        ]
+        result = pdf_chunker._content_dedupe(problems)
+        assert len(result) == 1
+        assert "Longer" in result[0]["solution"]
+
+    def test_different_statements_kept(self):
+        problems = [
+            {"statement": "Statement A " + "X" * 50, "solution": "Sol A"},
+            {"statement": "Statement B " + "Y" * 50, "solution": "Sol B"},
+        ]
+        result = pdf_chunker._content_dedupe(problems)
+        assert len(result) == 2
+
+    def test_uses_source_quote_if_present(self):
+        problems = [
+            {"source_quote": "Same quote " + "Q" * 50,
+             "statement": "stmt1", "solution": "sol1"},
+            {"source_quote": "Same quote " + "Q" * 50,
+             "statement": "stmt2", "solution": "sol2"},
+        ]
+        result = pdf_chunker._content_dedupe(problems)
+        assert len(result) == 1
+
+    def test_empty_key_kept(self):
+        problems = [{"statement": "", "solution": "sol"}]
+        result = pdf_chunker._content_dedupe(problems)
+        assert len(result) == 1
+
+
+# ═══════════════════════════════════════════════════════════════════════
+#  _segment_by_markers
+# ═══════════════════════════════════════════════════════════════════════
+
+class TestSegmentByMarkers:
+
+    def test_zadacha_markers(self):
+        text = """Задача 11.1. First problem statement here
+Solution text.
+
+Задача 11.2. Second problem statement here
+Solution text.
+
+Задача 11.3. Third problem statement here
+Solution text."""
+        segs = pdf_chunker._segment_by_markers(text)
+        assert len(segs) == 3
+        assert segs[0]["num"] == "11.1"
+        assert segs[1]["num"] == "11.2"
+
+    def test_problem_english_markers(self):
+        # Segments need >= 50 chars; make statements longer
+        text = """Problem 1. First problem full statement with enough padding to exceed fifty chars
+Solution text here that adds more length
+
+Problem 2. Second problem full statement with enough padding to exceed fifty chars
+Solution text here that adds more length"""
+        segs = pdf_chunker._segment_by_markers(text)
+        assert len(segs) == 2
+
+    def test_fallback_consecutive_bare_numbers(self):
+        # Fallback: bare "1." "2." "3." "4." consecutive from 1
+        text = """1. First problem full statement text here
+Solution
+
+2. Second problem full statement text here
+Solution
+
+3. Third problem full statement text here
+Solution
+
+4. Fourth problem full statement text here
+Solution"""
+        segs = pdf_chunker._segment_by_markers(text)
+        assert len(segs) >= 4
+
+    def test_no_markers_returns_empty(self):
+        assert pdf_chunker._segment_by_markers("Just random text.") == []
+
+    def test_single_marker_returns_empty(self):
+        assert pdf_chunker._segment_by_markers("Задача 1. Only one marker.") == []
+
+
+# ═══════════════════════════════════════════════════════════════════════
+#  _filter_segments_by_filename_grade
+# ═══════════════════════════════════════════════════════════════════════
+
+class TestFilterSegmentsByFilenameGrade:
+
+    def test_grade_range_no_filter(self):
+        segs = [{"num": "9.1"}, {"num": "11.5"}, {"num": "12.3"}]
+        result = pdf_chunker._filter_segments_by_filename_grade(
+            segs, "OLI-3-Национален кръг-2024-9-12 кл")
+        assert len(result) == 3
+
+    def test_specific_grade_filters(self):
+        segs = [{"num": "11.1"}, {"num": "12.2"}, {"num": "11.3"}]
+        result = pdf_chunker._filter_segments_by_filename_grade(
+            segs, "OLI-2-Областен кръг-2024-11 кл")
+        assert len(result) == 2
+        assert all(s["num"].startswith("11.") for s in result)
+
+    def test_book_no_filter(self):
+        segs = [{"num": "11.1"}, {"num": "12.2"}]
+        result = pdf_chunker._filter_segments_by_filename_grade(
+            segs, "BMO_1984-2006")
+        assert len(result) == 2
+
+    def test_empty_result_keeps_original(self):
+        segs = [{"num": "12.1"}]
+        result = pdf_chunker._filter_segments_by_filename_grade(
+            segs, "OLI-2-Областен кръг-2024-11 кл")
+        assert len(result) == 1
+
+
+# ═══════════════════════════════════════════════════════════════════════
+#  _validate_extraction
+# ═══════════════════════════════════════════════════════════════════════
+
+class TestValidateExtraction:
+
+    def test_valid(self):
+        problems = [{
+            "statement": "Full statement with enough characters " + "A" * 30,
+            "solution": "Full solution with enough characters " + "B" * 30,
+            "source_quote": "Full statement with enough characters " + "A" * 30,
+        }]
+        text = "Full statement with enough characters " + "A" * 30
+        result = pdf_chunker._validate_extraction(problems, text, "BMO_1984-2006")
+        assert result["valid"] is True
+
+    def test_count_exceeds_rule(self):
+        problems = [{"statement": "x" * 30, "solution": "y" * 30,
+                     "source_quote": "x" * 30} for _ in range(5)]
+        text = "x" * 30
+        # Rule matches with -probs suffix; expects 4, got 5
+        result = pdf_chunker._validate_extraction(
+            problems, text, "OLI-2-Областен кръг-2024-11 кл-probs")
+        assert result["valid"] is False
+        assert any("count" in issue for issue in result["issues"])
+
+    def test_quote_not_verbatim(self):
+        problems = [{
+            "statement": "Original " + "A" * 30,
+            "solution": "B" * 40,
+            "source_quote": "This quote is not in source " + "X" * 30,
+        }]
+        text = "Different source text"
+        result = pdf_chunker._validate_extraction(problems, text, "BMO_1984-2006")
+        assert result["valid"] is False
+        assert any("quote_not_verbatim" in issue for issue in result["issues"])
 
 # ═══════════════════════════════════════════════════════════════════════
 #  BudgetExhausted — behavior

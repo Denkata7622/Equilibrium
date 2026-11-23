@@ -337,18 +337,78 @@ def olympiad_key(filename: str) -> str:
 
 
 def extract_steps_from_html(html_path: Path) -> list[dict]:
-    """Извлича всички теми от STEPS масива в index.html."""
-    if not html_path.exists():
-        log.warning(f"HTML не е намерен: {html_path}")
+    """Извлича всички теми от STEPS масива.
+
+    Търси първо ../data/steps.js (новото място), после index.html (legacy).
+    """
+    steps_js = html_path.parent / "data" / "steps.js"
+    candidates = []
+    if steps_js.exists():
+        candidates.append(steps_js)
+    if html_path.exists():
+        candidates.append(html_path)
+
+    if not candidates:
+        log.warning("Нито data/steps.js, нито index.html съществува")
         return []
-    text = html_path.read_text(encoding="utf-8")
-    pattern = re.compile(r'id\s*:\s*"([\d.]+)"\s*,\s*title\s*:\s*"([^"]+)"')
-    steps = []
-    for m in pattern.finditer(text):
-        pid, title = m.group(1), m.group(2)
-        steps.append({"id": pid, "title": title})
-    log.info(f"Заредени {len(steps)} теми от index.html")
-    return steps
+
+    for source_path in candidates:
+        try:
+            text = source_path.read_text(encoding="utf-8")
+        except Exception as e:
+            log.warning(f"Не мога да прочета {source_path}: {e}")
+            continue
+
+        marker = "const STEPS = ["
+        start = text.find(marker)
+        if start == -1:
+            continue
+        start += len("const STEPS = ")
+
+        depth = 0
+        in_str = False
+        quote = None
+        escape = False
+        end = len(text)
+        for i in range(start, len(text)):
+            c = text[i]
+            if escape:
+                escape = False
+                continue
+            if in_str:
+                if c == "\\":
+                    escape = True
+                elif c == quote:
+                    in_str = False
+                continue
+            if c in ('"', "'", "`"):
+                in_str = True
+                quote = c
+                continue
+            if c == "[":
+                depth += 1
+            elif c == "]":
+                depth -= 1
+                if depth == 0:
+                    end = i
+                    break
+
+        steps_str = text[start:end+1]
+        pattern = re.compile(
+            r'id\s*:\s*"([^"]+)"[^{}]*?title\s*:\s*"((?:\\.|[^"\\])*)"'
+        )
+        steps = []
+        for m in pattern.finditer(steps_str):
+            pid = m.group(1)
+            title = m.group(2).replace('\\"', '"').replace("\\'", "'")
+            steps.append({"id": pid, "title": title})
+
+        if steps:
+            log.info(f"Заредени {len(steps)} теми от {source_path.name}")
+            return steps
+
+    log.warning(f"STEPS не е намерен (опита: {[str(p) for p in candidates]})")
+    return []
 
 
 # ═══════════════════════════════════════════════════════════════

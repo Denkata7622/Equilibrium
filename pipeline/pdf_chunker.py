@@ -11,10 +11,11 @@ v3.2:
 - По-мек _topics_match (само очевидно сгрешени)
 - Merge приема sols verbatim при празен probs
 """
-import os, re, sys, json, time, logging, argparse, threading, shutil, hashlib
+import os, re, sys, json, time, logging, argparse, threading, shutil, hashlib, random
 from pathlib import Path
 from datetime import datetime, date
 from typing import Optional
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 
@@ -43,6 +44,8 @@ try:
 except ImportError as e:
     print(f"ЛИПСВА personas.py или липсват роли в него: {e}")
     sys.exit(1)
+
+from extraction_verifier import verify_extraction, VerificationResult
 
 from config import (
     PIPELINE_DIR       as BASE_DIR,
@@ -88,6 +91,21 @@ _ct_init(BASE_DIR.parent / "generated" / "costs" / "ledger.jsonl")
 # ═══════════════════════════════════════════════════════════════
 def safe_name(name: str) -> str:
     return re.sub(r'[<>:"/\\|?*]', "_", name).strip()
+
+
+def _sanitize_surrogates(s):
+    """Replace lone surrogates (U+D800-U+DFFF) with U+FFFD.
+
+    LLMs occasionally output \\udXXX escapes that json.loads accepts as
+    lone surrogates. They're valid Python strings but can't be encoded
+    to UTF-8 (json.dumps ensure_ascii=False → write_text → crash).
+    """
+    if not s or not isinstance(s, str):
+        return s
+    return ''.join(
+        c if not (0xD800 <= ord(c) <= 0xDFFF) else '\uFFFD'
+        for c in s
+    )
 
 
 def format_prompt(template: str, **kwargs) -> str:
@@ -230,6 +248,341 @@ def _topics_match(stmt: str, sol: str) -> bool:
 
 
 # ═══════════════════════════════════════════════════════════════
+# VALIDATION — verbatim quotes + count rules
+# ═══════════════════════════════════════════════════════════════
+def _norm_text(s: str) -> str:
+    return re.sub(r'\s+', ' ', (s or '').strip()).lower()
+
+
+def _validate_quote_verbatim(problem: dict, source_text: str) -> tuple:
+    quote = (problem.get("source_quote") or "").strip()
+    if len(quote) < 30:
+        return False, f"quote_too_short ({len(quote)} chars)"
+    if _norm_text(quote) not in _norm_text(source_text):
+        return False, "quote_not_verbatim"
+    return True, "ok"
+
+
+def _expected_count(pdf_name: str) -> tuple:
+    rules = CONFIG.get("chunker", {}).get("expected_counts", [])
+    for rule in rules:
+        if re.search(rule["pattern"], pdf_name):
+            return rule["expected"], rule.get("tolerance", 1)
+    return None, 0
+
+
+def _validate_count(pdf_name: str, count: int) -> tuple:
+    expected, tol = _expected_count(pdf_name)
+    if expected is None:
+        return True, "no_rule"
+    if count > expected + tol:
+        return False, f"over: {count} > {expected}+{tol}"
+    if count < expected - tol:
+        return False, f"under: {count} < {expected}-{tol}"
+    return True, f"ok: {expected}±{tol}"
+
+
+def _validate_extraction(problems: list, source_text: str, pdf_name: str) -> dict:
+    issues = []
+    count_ok, count_msg = _validate_count(pdf_name, len(problems))
+    if not count_ok:
+        issues.append(f"count: {count_msg}")
+    for i, p in enumerate(problems):
+        ok, msg = _validate_quote_verbatim(p, source_text)
+        if not ok:
+            issues.append(f"problem[{i}]: {msg}")
+    total_len = sum(
+        len((p.get("statement") or "") + (p.get("solution") or ""))
+        for p in problems
+    )
+    if total_len > len(source_text) * 2:
+        issues.append(f"length: {total_len} > 2× source {len(source_text)}")
+    return {
+        "valid": len(issues) == 0,
+        "issues": issues,
+        "count_expected": _expected_count(pdf_name)[0],
+        "count_actual": len(problems),
+    }
+
+
+# ═══════════════════════════════════════════════════════════════
+# GRADE FILTER + CONTENT DEDUPE — anti-hallucination за extract
+# ═══════════════════════════════════════════════════════════════
+def _to_int_or_none(x):
+    try:
+        return int(x) if x is not None else None
+    except (ValueError, TypeError):
+        return None
+
+
+def _filter_by_filename_grade(problems: list, pdf_name: str) -> list:
+    """Ако filename казва '-11 кл', задръж само grade=11.
+
+    ВАЖНО: за grade_range файлове (напр. '9-12 кл') НЕ филтрира —
+    те съдържат задачи за всички класове в диапазона by design.
+    """
+    if re.search(r'-\d{1,2}-\d{1,2}\s*кл', pdf_name):
+        return problems
+
+    m = re.search(r'-(\d{1,2})\s*кл', pdf_name)
+    if not m:
+        return problems
+
+    expected_grade = int(m.group(1))
+    filtered = []
+    for p in problems:
+        p_grade_int = _to_int_or_none(p.get("grade"))
+        if p_grade_int == expected_grade:
+            filtered.append(p)
+            continue
+
+        # num as string: try both "11.2" (split) and "11" (direct)
+        p_num = p.get("num")
+        p_num_int = _to_int_or_none(p_num)
+        if p_num_int == expected_grade:
+            filtered.append(p)
+            continue
+        if isinstance(p_num, str) and "." in p_num:
+            if _to_int_or_none(p_num.split(".", 1)[0]) == expected_grade:
+                filtered.append(p)
+                continue
+
+    if not filtered:
+        log.warning(
+            f"[{pdf_name}] grade filter emptied list "
+            f"(expected grade={expected_grade}, got 0 from {len(problems)}) "
+            f"— keeping original"
+        )
+        return problems
+
+    if len(filtered) < len(problems):
+        log.info(
+            f"[{pdf_name}] grade filter: {len(problems)} → {len(filtered)} "
+            f"(kept grade={expected_grade})"
+        )
+    return filtered
+
+
+def _content_dedupe(problems: list) -> list:
+    """Dedupe по source_quote (fallback: statement).
+
+    При дубликат (>0.9 similarity) пази този с ПО-ДЪЛГОТО решение —
+    често probs версията има празно solution, а sol версията — пълно.
+    """
+    from difflib import SequenceMatcher
+    result = []
+    for p in problems:
+        key = (p.get("source_quote") or p.get("statement") or "").strip()
+        if not key:
+            result.append(p)
+            continue
+
+        dup_idx = -1
+        for i, existing in enumerate(result):
+            eq = (existing.get("source_quote") or existing.get("statement") or "").strip()
+            if not eq:
+                continue
+            if SequenceMatcher(None, key[:200], eq[:200]).ratio() > 0.9:
+                dup_idx = i
+                break
+
+        if dup_idx >= 0:
+            existing = result[dup_idx]
+            old_len = len((existing.get("solution") or "").strip())
+            new_len = len((p.get("solution") or "").strip())
+            if new_len > old_len:
+                result[dup_idx] = p
+        else:
+            result.append(p)
+
+    if len(result) < len(problems):
+        log.info(f"content dedupe: {len(problems)} → {len(result)}")
+    return result
+
+
+# ═══════════════════════════════════════════════════════════════
+# ESCALATION HELPERS
+# ═══════════════════════════════════════════════════════════════
+def _expected_grade(name: str) -> Optional[int]:
+    """Extract expected grade from filename. None for grade_range files."""
+    if re.search(r'-\d{1,2}-\d{1,2}\s*кл', name):
+        return None
+    m = re.search(r'-(\d{1,2})\s*кл', name)
+    return int(m.group(1)) if m else None
+
+
+# ═══════════════════════════════════════════════════════════════
+# PROBLEM LIST NORMALIZATION
+# ═══════════════════════════════════════════════════════════════
+def _normalize_problems_list(raw) -> list:
+    """Normalize model output into a flat list of dicts.
+    
+    Handles: flat list, nested lists, single dict, None, strings.
+    DeepSeek V4.1 Flash occasionally returns {"problems": [[{...}]]}
+    instead of {"problems": [{...}]} — this flattens safely.
+    """
+    if raw is None:
+        return []
+    if isinstance(raw, dict):
+        return [raw]
+    if not isinstance(raw, list):
+        return []
+
+    out = []
+    for item in raw:
+        if isinstance(item, dict):
+            out.append(item)
+        elif isinstance(item, list):
+            out.extend(_normalize_problems_list(item))
+    return out
+
+
+# ═══════════════════════════════════════════════════════════════
+# SEGMENTATION — deterministic split by task markers
+# ═══════════════════════════════════════════════════════════════
+def _segment_by_markers(text: str) -> list:
+    """Split text into task segments by markers. Returns [] if <2 markers.
+
+    Primary: "Задача 11.1.", "Зад. 2", "11.3.", "Problem 4.", "Решение 5."
+    Fallback: bare "N." at line start, filtered to the longest consecutive
+    run starting from 1 (≥4 markers). This handles sol PDFs without explicit
+    labels, and rules out numbered sub-steps inside proofs.
+    """
+    primary = re.compile(
+        r'(?m)^[ \t]*'
+        r'(?:#{1,6}\s*)?'
+        r'(?:\*\*)?'
+        r'(?:'
+        r'(?:Задача|Зад\.?|Problem)\s*(\d+(?:\.\d+)?)\.?'   # group 1
+        r'|(?:Решение|Реш\.?)\s*(\d+(?:\.\d+)?)\.?'         # group 2
+        r'|(\d{1,2}\.\d+)\s*\.?'                             # group 3
+        r')'
+        r'[ \t]*(?:\*\*)?'
+    )
+    matches = list(primary.finditer(text))
+    used_fallback = False
+
+    if len(matches) < 2:
+        fallback = re.compile(
+            r'(?m)^[ \t]*(?:#{1,6}\s*)?(?:\*\*)?\s*(\d{1,2})\.\s+'
+            r'(?=[А-ЯA-Z\u0400-\u04FF(])'
+        )
+        fb_all = list(fallback.finditer(text))
+        if len(fb_all) >= 4:
+            fb_filtered = []
+            next_expected = 1
+            for m in fb_all:
+                num = int(m.group(1))
+                if num == next_expected:
+                    fb_filtered.append(m)
+                    next_expected += 1
+            if len(fb_filtered) >= 4:
+                log.info(
+                    f"segment fallback: {len(fb_all)} bare-N markers, "
+                    f"{len(fb_filtered)} consecutive from 1 → using as segments"
+                )
+                matches = fb_filtered
+                used_fallback = True
+            else:
+                log.info(
+                    f"segment fallback: {len(fb_all)} bare-N markers, "
+                    f"only {len(fb_filtered)} consecutive from 1 — skipping"
+                )
+
+    if len(matches) < 2:
+        return []
+
+    segments = []
+    for i, m in enumerate(matches):
+        start = m.start()
+        end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
+        seg_text = text[start:end].strip()
+        if len(seg_text) < 50:
+            continue
+        if used_fallback:
+            num = m.group(1)
+        else:
+            num = m.group(1) or m.group(2) or m.group(3)
+        segments.append({
+            "num": num,
+            "marker": m.group(0).strip(),
+            "start": start,
+            "end": end,
+            "text": seg_text,
+        })
+
+    # Drop out-of-range grade prefixes ("2.1" from solution subsection)
+    filtered_segments = []
+    for seg in segments:
+        num = seg["num"]
+        if isinstance(num, str) and "." in num:
+            prefix = num.split(".", 1)[0]
+            try:
+                g = int(prefix)
+                if g < 5 or g > 12:
+                    log.info(f"segment skip out-of-range: num={num!r}")
+                    continue
+            except ValueError:
+                pass
+        filtered_segments.append(seg)
+    segments = filtered_segments
+
+    by_num = {}
+    for seg in segments:
+        n = seg["num"]
+        if n not in by_num or len(seg["text"]) > len(by_num[n]["text"]):
+            by_num[n] = seg
+
+    if len(by_num) < len(segments):
+        log.info(
+            f"segment dedupe by num: {len(segments)} → {len(by_num)} "
+            f"(duplicate nums removed)"
+        )
+
+    return list(by_num.values())
+
+
+def _filter_segments_by_filename_grade(segments: list, pdf_name: str) -> list:
+    """Keep only segments matching filename grade (e.g. '-11 кл' → '11.x').
+    
+    Saves LLM calls — no point extracting grade 9/10/12 problems from a
+    grade-11 file. They'd be filtered out anyway by _filter_by_filename_grade.
+    """
+    if re.search(r'-\d{1,2}-\d{1,2}\s*кл', pdf_name):
+        return segments
+
+    m = re.search(r'-(\d{1,2})\s*кл', pdf_name)
+    if not m:
+        return segments
+
+    expected_grade = int(m.group(1))
+    filtered = []
+    for seg in segments:
+        num = seg.get("num", "")
+        if isinstance(num, str) and "." in num:
+            try:
+                if int(num.split(".", 1)[0]) == expected_grade:
+                    filtered.append(seg)
+                    continue
+            except (ValueError, IndexError):
+                pass
+            continue
+        filtered.append(seg)
+
+    if len(filtered) < len(segments):
+        log.info(
+            f"[{pdf_name}] segment grade filter: {len(segments)} → {len(filtered)} "
+            f"(kept grade={expected_grade})"
+        )
+
+    if not filtered:
+        log.warning(f"[{pdf_name}] segment grade filter emptied list — keeping original")
+        return segments
+
+    return filtered
+
+
+# ═══════════════════════════════════════════════════════════════
 # BUDGET EXHAUSTED
 # ═══════════════════════════════════════════════════════════════
 class BudgetExhausted(Exception):
@@ -268,8 +621,10 @@ class AIClient:
                 t0 = time.time()
                 r = requests.post(self.url, headers=self.headers, json=payload, timeout=600)
                 if r.status_code == 429:
-                    log.warning(f"[{item_id}] 429 — чакам 30с")
-                    time.sleep(30); continue
+                    # Jitter prevents all parallel workers from retrying simultaneously
+                    wait = 30 + random.uniform(0, 15)
+                    log.warning(f"[{item_id}] 429 — чакам {wait:.0f}с")
+                    time.sleep(wait); continue
                 if r.status_code == 400 and force_json:
                     log.warning(f"[{item_id}] 400 — махам response_format")
                     payload.pop("response_format", None)
@@ -325,8 +680,12 @@ def _ocr_pdf(pdf_path: Path) -> list:
             pass
 
     import base64
-    if pdf_path.stat().st_size > 30 * 1024 * 1024:
-        log.warning(f"[{pdf_path.name}] >30MB, OCR skip")
+    # Base64 inflates by ~33%, Mistral has ~30MB limit → safe cutoff at 15MB
+    if pdf_path.stat().st_size > 15 * 1024 * 1024:
+        log.warning(
+            f"[{pdf_path.name}] {pdf_path.stat().st_size/1024/1024:.1f}MB "
+            f"> 15MB — OCR skip (payload would exceed Mistral limit)"
+        )
         return []
 
     b64 = base64.b64encode(pdf_path.read_bytes()).decode()
@@ -396,8 +755,10 @@ def _ocr_pdf(pdf_path: Path) -> list:
 # ═══════════════════════════════════════════════════════════════
 # PDF PAGE EXTRACTION
 # ═══════════════════════════════════════════════════════════════
-def extract_pdf_pages(pdf_path: Path) -> list:
-    """Опитва pdfplumber → pypdf → pymupdf → Mistral OCR."""
+def extract_pdf_pages(pdf_path: Path) -> tuple:
+    """Опитва pdfplumber → pypdf → pymupdf → Mistral OCR.
+    Връща (pages, quality) където quality ∈ {native_ok, ocr_ok, ocr_low, empty}.
+    """
     candidates = []
 
     if HAS_PDFPLUMBER:
@@ -447,8 +808,9 @@ def extract_pdf_pages(pdf_path: Path) -> list:
         except Exception as e:
             log.warning(f"[{pdf_path.name}] pymupdf fail: {e}")
 
-    min_chars = CONFIG.get("ocr", {}).get("min_text_chars_for_skip", 500)
+    min_chars = CONFIG.get("ocr", {}).get("min_text_chars_for_skip", 800)
     ocr_enabled = CONFIG.get("ocr", {}).get("enabled", False)
+    force_ocr = CONFIG.get("ocr", {}).get("force_ocr", False)
 
     best_chars = 0
     best_pages = []
@@ -458,23 +820,30 @@ def extract_pdf_pages(pdf_path: Path) -> list:
         log.info(f"[{pdf_path.name}] {method}: {len(best_pages)}p, {best_chars} chars")
 
     chars_per_page = best_chars / len(best_pages) if best_pages else 0
-    if best_chars >= min_chars and chars_per_page >= 100:
-        return best_pages
 
-    log.info(f"[{pdf_path.name}] {best_chars} chars ({chars_per_page:.0f}/p) → OCR fallback")
+    if force_ocr:
+        log.info(f"[{pdf_path.name}] force_ocr=True — skipping native")
+    elif best_chars >= min_chars and chars_per_page >= 100:
+        return best_pages, "native_ok"
+    else:
+        log.info(f"[{pdf_path.name}] {best_chars} chars ({chars_per_page:.0f}/p) → OCR fallback")
 
     if not ocr_enabled:
-        return best_pages
+        return best_pages, ("native_ok" if best_pages else "empty")
 
     ocr_pages = _ocr_pdf(pdf_path)
     if not ocr_pages:
-        return best_pages
+        return best_pages, ("native_low" if best_pages else "empty")
 
     ocr_chars = sum(len(p["text"]) for p in ocr_pages)
+    ocr_chars_per_page = ocr_chars / len(ocr_pages) if ocr_pages else 0
     log.info(f"[{pdf_path.name}] OCR: {ocr_chars} chars (vs Python: {best_chars})")
 
-    return ocr_pages if ocr_chars > best_chars else best_pages
-
+    if ocr_chars > best_chars:
+        if ocr_chars_per_page >= 150:
+            return ocr_pages, "ocr_ok"
+        return ocr_pages, "ocr_low"
+    return best_pages, ("native_low" if best_pages else "empty")
 
 # ═══════════════════════════════════════════════════════════════
 # STATE
@@ -591,7 +960,30 @@ PDF: {pdf_name}
 {text}
 
 ═══ ТВОЯТА ЗАДАЧА ═══
-Извлечи ВСИЧКИ задачи от този текст.
+
+⚠️ СТРИКТНО СЛЕДВАЙ ТЕЗИ 3 СТЪПКИ. НЕ ги прескачай. ⚠️
+
+СТЪПКА 1 — ЕНУМЕРАЦИЯ (преди extraction):
+Прочети текста по-горе и преброй ВСИЧКИ маркери за задачи:
+  • "Задача N." / "Зад. N." / "N." в началото на ред
+  • "Problem N." / "Задача 11.1." / "Задача 12.3."
+Запиши ТОЧНИТЕ номера, които виждаш в списък.
+Ако виждаш "Задача 11.1", "Задача 11.2", "Задача 11.3" → маркерите са [11.1, 11.2, 11.3].
+
+Резултатът от СТЪПКА 1 е поле "enumeration" в JSON-а (виж формата по-долу).
+БЕЗ enumeration не връщай отговор.
+
+СТЪПКА 2 — EXTRACTION:
+За ВСЕКИ номер от списъка в СТЪПКА 1, извлечи съответната задача.
+- Броят на problems в JSON-а ТРЯБВА да е ТОЧНО равен на броя маркери от СТЪПКА 1.
+- НЕ добавяй задачи, които не са в списъка.
+- НЕ пропускай задачи, които са в списъка.
+- Ако за задача N не можеш да прочетеш нищо → пропусни я и я отбележи в "skipped".
+
+СТЪПКА 3 — SELF-CHECK:
+Преди да върнеш JSON, провери:
+- len(problems) == len(enumeration.markers_found) - len(skipped)?
+- Ако НЕ → коригирай.
 
 За всяка задача попълни:
 1. num — номерът ("Зад. 2" → 2). Ако няма → null
@@ -640,27 +1032,62 @@ PDF: {pdf_name}
    - НЕ включвай съдържание, заглавия, автори, индекси — само задачи
 
 6. СТРИКТНО ЗАБРАНЕНО:
-   - НЕ добавяй задачи от твоята памет или knowledge за конкретни години/кръгове
-   - Извличай САМО това, което е ЛИТЕРАЛНО написано в текста по-горе
-   - Ако текстът е частичен или неразбираем → извличай каквото можеш, но НЕ допълвай
-   - Ако в текста има 4 задачи → върни 4 задачи, не 8
-   - Ако не можеш да разчетеш заглавието на задача → "[неразчетено]", но НЕ я подменяй
+
+   ╔══════════════════════════════════════════════════════════════╗
+   ║  ГЛАВНО ПРАВИЛО: ТИ СИ АРХИВИСТ, НЕ МАТЕМАТИК.              ║
+   ║  КОПИРАШ. НЕ ЗНАЕШ. НЕ ПОМНИШ. НЕ ДОПЪЛВАШ.                 ║
+   ╚══════════════════════════════════════════════════════════════╝
+
+   Ако видиш текст "Задача 11.1..." и по-нататък "Задача 11.2..." — това са
+   ДВЕ задачи. Ако текстът свърши след "Задача 11.6..." — има ШЕСТ задачи.
+   Ако си "спомняш", че олимпиадата от 2004 е имала 6 задачи, но виждаш само 4
+   маркера в текста → ИМА 4 ЗАДАЧИ. Текстът печели над паметта ти.
+
+   КОНКРЕТНИ ЗАБРАНИ:
+   - НЕ добавяй задачи, които "си спомняш", че е имало в тази олимпиада.
+   - НЕ допълвай текст, който изглежда "отрязан" — остави "[неразчетено]".
+   - НЕ попълвай формули със стойности, които не са в текста.
+     "x² + " ≠ "x² + 2x + 1". Остави "x² + [краят на формулата липсва]".
+   - НЕ решавай задачи, за да "разбереш" какво има. Копирай текста както е.
+   - Ако текстът съдържа "[неразчетено]" или подобно от OCR — копирай го.
+     Не се опитвай да "поправиш" OCR грешка с твои думи.
+
+   САМОПРОВЕРКА:
+   Преди да върнеш JSON, отвори текста и преброй "Задача N." маркерите.
+   Ако твоят JSON има различен брой problems → грешиш. Коригирай.
+
+═══ ЗАДЪЛЖИТЕЛНО ПОЛЕ: source_quote ═══
+За ВСЯКА задача включи поле "source_quote":
+- ТОЧЕН verbatim цитат от текста по-горе (100-300 символа)
+- Започва от "Задача N" или "N." и включва първите 100-300 символа
+- НЕ превеждай, НЕ преформулирай, НЕ съкращавай с "..."
+- Ако не можеш да цитираш ТОЧНО → НЕ добавяй задачата
 
 ═══ ФОРМАТ (САМО JSON) ═══
 {{
+  "enumeration": {{
+    "markers_found": ["11.1", "11.2", "11.3", "11.4", "11.5", "11.6"],
+    "count": 6
+  }},
+  "skipped": [],
   "problems": [
     {{
-      "num": 2,
-      "year": 2018,
+      "num": 11.1,
+      "year": 2004,
       "grade": 11,
       "round": "oblasten",
       "statement": "Пълен текст...",
       "solution": "Пълно решение..." или null,
       "answer": "x=2" или null,
-      "page": 7
+      "page": 7,
+      "source_quote": "Задача 11.1. Да се намерят всички...",
+      "readability": "ok",
+      "readability_issues": []
     }}
   ]
 }}
+
+readability: "ok" | "partial" | "unreadable"
 
 Ако в текста няма задачи → {{"problems": []}}
 """
@@ -677,23 +1104,45 @@ CLASSIFY_PROMPT = CLASSIFIER_PERSONA + """
 {steps_list}
 
 ═══ ТВОЯТА ЗАДАЧА ═══
-1. Към коя STEPS точка принадлежи? (1 главна)
-2. Каква е трудността? (easy/medium/hard)
-3. Кои техники се използват? (списък, snake_case)
-4. Увереност: exact / partial / multiple / off
+1. Към коя STEPS точка принадлежи? (1 главна) → point_id
+2. Каква е трудността? (easy/medium/hard) → difficulty
+3. Кои техники се използват? (списък, snake_case) → techniques
+4. Увереност: exact / partial / multiple / off → point_confidence
+5. secondary_points: ДОПЪЛНИТЕЛНИ релевантни точки (0-3)
+
+═══ КАК ДА ОЦЕНИШ SECONDARY_POINTS ═══
+
+Скала:
+  0.90-1.00 → точна втора точка, задачата реално принадлежи и там
+  0.75-0.89 → силна релевантност, техниката е централна и за двете
+  0.60-0.74 → полезна, но второстепенна (задачата е ~70% primary)
+  0.40-0.59 → само контекст, НЕ я включвай
+  <0.40     → не е тази тема, НЕ я включвай
+
+ПРАВИЛА:
+- Ако задачата пасва САМО на point_id → secondary_points: []
+- Ако пасва на 2 → 1 secondary
+- Ако пасва на 3+ → max 3 най-силни
+- НЕ халюцинирай — ако не виждаш реална връзка, остави празно
+- Пример: задача за power_of_point, използваща подобни триъгълници →
+    point_id: "1.4"
+    secondary_points: [{"id": "1.6", "confidence": 0.85}]
 
 ═══ ФОРМАТ (САМО JSON) ═══
 {{
   "point_id": "1.4",
   "point_confidence": "exact",
-  "alternative_points": [],
+  "secondary_points": [
+    {{"id": "1.6", "confidence": 0.85}},
+    {{"id": "2.3", "confidence": 0.72}}
+  ],
   "difficulty": "medium",
   "techniques": ["power_of_point", "similar_triangles"],
   "reasoning": "Задачата изисква степен на точка като основна техника."
 }}
 
 Ако не можеш да класифицираш (задача от тематична книга, не олимпиада):
-{{"point_id": null, "point_confidence": "off", "difficulty": null, "techniques": [], "reasoning": "не е олимпиадна задача"}}
+{{"point_id": null, "point_confidence": "off", "secondary_points": [], "difficulty": null, "techniques": [], "reasoning": "не е олимпиадна задача"}}
 """
 
 PAIRED_CLASSIFY_PROMPT = CLASSIFIER_PERSONA + """
@@ -730,9 +1179,29 @@ TASK 1 — СВЪРЗВАНЕ
 
 TASK 2 — КЛАСИФИКАЦИЯ
 За всяка свързана двойка (условие + решение):
-- point_id: коя STEPS точка (1 главна)
+- point_id: коя STEPS точка е PRIMARY (1 главна)
+- point_confidence: exact / partial / multiple / off
+- secondary_points: ДОПЪЛНИТЕЛНИ релевантни точки (0-4), с confidence 0.0-1.0
 - difficulty: easy / medium / hard
 - techniques: списък (snake_case)
+
+═══ КАК ДА ОЦЕНИШ CONFIDENCE ЗА SECONDARY ═══
+
+Използвай ТАЗИ скала:
+  0.90-1.00 → точна втора точка, задачата реално принадлежи и там
+  0.75-0.89 → силна релевантност, техниката е централна и за двете
+  0.60-0.74 → полезна, но второстепенна (задачата е 70% primary, 30% secondary)
+  0.40-0.59 → само контекст, не я включвай (под прага)
+  <0.40     → не е тази тема, НЕ я включвай
+
+ПРАВИЛА:
+- Ако задачата пасва само на 1 точка → secondary_points: []
+- Ако пасва на 2 → сложи 2 (primary + 1 secondary)
+- Ако пасва на 3+ → сложи max 3 най-силни
+- НЕ халюцинирай — ако не виждаш реална връзка, остави празно
+- Пример: задача за power_of_point, използваща подобни триъгълници →
+    point_id: "1.4" (power of point primary)
+    secondary_points: [{"id": "1.6", "confidence": 0.85}] (similar_triangles)
 
 TASK 3 — ORPHAN РЕШЕНИЯ
 За всяко решение без съответстващо условие:
@@ -760,7 +1229,19 @@ TASK 4 — UNMATCHED УСЛОВИЯ
 ═══ ФОРМАТ (САМО JSON) ═══
 {{
   "matched": [
-    {{"stmt_num": 1, "sol_num": 3, "point_id": "1.4", "difficulty": "medium", "techniques": ["..."], "reasoning": "..."}}
+    {
+      "stmt_num": 1,
+      "sol_num": 3,
+      "point_id": "1.4",
+      "point_confidence": "exact",
+      "secondary_points": [
+        {"id": "1.6", "confidence": 0.85},
+        {"id": "2.3", "confidence": 0.72}
+      ],
+      "difficulty": "medium",
+      "techniques": ["..."],
+      "reasoning": "..."
+    }
   ],
   "orphan_sols_with_statement": [
     {{"sol_num": 1, "point_id": "2.3", "difficulty": "medium", "techniques": ["..."], "reasoning": "..."}}
@@ -860,8 +1341,8 @@ class PDFChunker:
         chunker_cfg = CONFIG.get("chunker", {})
         if chunker_cfg.get("extract_model"):
             ext_cfg["model"] = chunker_cfg["extract_model"]
-        ext_cfg["max_tokens"] = 8000
-        ext_cfg["temperature"] = 0.05
+        ext_cfg["max_tokens"] = chunker_cfg.get("extract_max_tokens", 36000)
+        ext_cfg["temperature"] = chunker_cfg.get("extract_temperature", 0.05)
         self.ai_extract = AIClient(ext_cfg, "extract")
 
         # Classify — евтин модел (gpt-oss-120b по подразбиране)
@@ -874,6 +1355,16 @@ class PDFChunker:
         self.ai_classify = AIClient(cls_cfg, "classify")
         self.classify_cost = chunker_cfg.get("classify_cost_per_call_usd", 0.005)
         log.info(f"Classify model: {cls_cfg['model']} (${self.classify_cost}/call)")
+
+        # Verifier
+        ver_cfg = dict(CONFIG.get("verifier", {}))
+        pipe_ver_cfg = CONFIG.get("extraction_pipeline", {}).get("verifier", {})
+        if pipe_ver_cfg.get("model"):
+            ver_cfg["model"] = pipe_ver_cfg["model"]
+        ver_cfg["max_tokens"] = pipe_ver_cfg.get("verifier_max_tokens", 4000)
+        ver_cfg["temperature"] = pipe_ver_cfg.get("verifier_temperature", 0.05)
+        self.ai_verifier = AIClient(ver_cfg, "verifier")
+        log.info(f"Verifier model: {ver_cfg['model']}")
 
     def _write_classified(self, base: str, entries: list, extra: dict = None):
         """Записва classified файл с metadata за модела."""
@@ -941,8 +1432,9 @@ class PDFChunker:
 
         return 8, 1
 
-    def chunk_pdf(self, pdf_path: Path) -> list:
-        pages = extract_pdf_pages(pdf_path)
+    def chunk_pdf(self, pdf_path: Path, pages: Optional[list] = None) -> list:
+        if pages is None:
+            pages, _quality = extract_pdf_pages(pdf_path)
         if not pages:
             log.error(f"[{pdf_path.name}] не прочетох PDF (сканиран?)")
             return []
@@ -972,9 +1464,13 @@ class PDFChunker:
             for p in chunk["pages"]
         )
 
+        # Анонимизирай името — не давай на модела година/кръг/клас в името
+        # (R1 разпознава файлове от training data и "попълва" от паметта си)
+        anonymous_name = f"документ_{chunk['start']}-{chunk['end']}.pdf"
+
         user = format_prompt(
             EXTRACT_PROMPT,
-            pdf_name=pdf_name,
+            pdf_name=anonymous_name,
             page_start=chunk["start"],
             page_end=chunk["end"],
             text=text,
@@ -998,17 +1494,264 @@ class PDFChunker:
             return None
 
         problems = parsed["problems"]
+
+        # Проверка: енумерацията съвпада ли с броя problems?
+        enumeration = parsed.get("enumeration", {})
+        markers = enumeration.get("markers_found", [])
+        skipped = parsed.get("skipped", [])
+
+        expected_count = len(markers) - len(skipped)
+        actual_count = len(problems)
+
+        if markers and actual_count != expected_count:
+            log.error(
+                f"[{pdf_name}] ENUMERATION MISMATCH: "
+                f"markers={len(markers)}, skipped={len(skipped)}, "
+                f"expected={expected_count}, got={actual_count}. "
+                f"REJECTING response."
+            )
+            return None  # ще retry-не
+
+        if not markers:
+            log.warning(f"[{pdf_name}] No enumeration markers found — model didn't follow Step 1")
+
         self.state.add_cost(0.03)  # средна ~cost на gpt-6.1-sol
+
+        # Validation (Phase 1: log only, не блокира)
+        val = _validate_extraction(problems, text, pdf_name)
+        if not val['valid']:
+            log.warning(f"[{pdf_name}] validation: {val['issues']}")
+        else:
+            log.info(f"[{pdf_name}] validation OK ({val['count_actual']} problems)")
+
         log.info(f"[{pdf_name}] chunk {chunk['start']}-{chunk['end']}: {len(problems)} problems ({dur}s)")
         return problems
+
+    def _extract_one_segment(self, pdf_name: str, seg: dict) -> list:
+        """Extract problems from ONE segment. Thread-safe (no shared state)."""
+        from extraction_verifier import _match_quality
+
+        problems_out = []
+        user = format_prompt(
+            EXTRACT_PROMPT,
+            pdf_name=f"сегмент_{seg['num']}",
+            page_start=1,
+            page_end=1,
+            text=seg["text"],
+        )
+        try:
+            raw = self.ai_extract.call(
+                EXTRACT_PROMPT, user, f"{pdf_name}-seg-{seg['num']}"
+            )
+        except BudgetExhausted:
+            raise
+        except Exception as e:
+            log.warning(f"[{pdf_name}] seg {seg['num']} error: {e}")
+            return []
+
+        if not raw:
+            log.warning(f"[{pdf_name}] seg {seg['num']}: no response, retrying")
+            time.sleep(5)
+            try:
+                raw = self.ai_extract.call(
+                    EXTRACT_PROMPT, user, f"{pdf_name}-seg-{seg['num']}-retry"
+                )
+            except BudgetExhausted:
+                raise
+            except Exception as e:
+                log.warning(f"[{pdf_name}] seg {seg['num']} retry error: {e}")
+                raw = None
+
+        if not raw:
+            log.warning(f"[{pdf_name}] seg {seg['num']}: no response after retry")
+            return []
+
+        parsed = parse_json(raw)
+        if not parsed or "problems" not in parsed:
+            log.warning(f"[{pdf_name}] seg {seg['num']}: JSON fail, retrying")
+            time.sleep(3)
+            try:
+                raw = self.ai_extract.call(
+                    EXTRACT_PROMPT, user, f"{pdf_name}-seg-{seg['num']}-retry-json"
+                )
+            except BudgetExhausted:
+                raise
+            except Exception as e:
+                log.warning(f"[{pdf_name}] seg {seg['num']} retry error: {e}")
+                raw = None
+
+            if not raw:
+                log.warning(f"[{pdf_name}] seg {seg['num']}: JSON fail after retry")
+                return []
+
+            parsed = parse_json(raw)
+            if not parsed or "problems" not in parsed:
+                log.warning(f"[{pdf_name}] seg {seg['num']}: JSON fail after retry")
+                return []
+
+        problems_list = _normalize_problems_list(parsed["problems"])
+        if not problems_list:
+            log.warning(
+                f"[{pdf_name}] seg {seg['num']}: no valid dicts after normalize "
+                f"(raw type: {type(parsed['problems']).__name__})"
+            )
+            return []
+
+        # Fix JSON \t escape corruption
+        _TAB_LATEX_FIX = [
+            (r'\t(?=riangle\b)', r'\\t'),
+            (r'\t(?=imes\b)', r'\\t'),
+            (r'\t(?=ext\b)', r'\\t'),
+            (r'\t(?=ext\{)', r'\\t'),
+            (r'\t(?=heta\b)', r'\\t'),
+            (r'\t(?=au\b)', r'\\t'),
+            (r'\t(?=an\b)', r'\\t'),
+            (r'\t(?=anh\b)', r'\\t'),
+            (r'\t(?=o\b)', r'\\t'),
+        ]
+        for p in problems_list:
+            for field in ("statement", "solution"):
+                val = p.get(field) or ""
+                if '\t' in val:
+                    for pat, repl in _TAB_LATEX_FIX:
+                        val = re.sub(pat, repl, val)
+                    p[field] = val
+
+        seg_grade = seg["num"].split(".", 1)[0] if "." in seg["num"] else None
+        seg_grade_int = int(seg_grade) if seg_grade and seg_grade.isdigit() else None
+
+        if seg_grade_int is None:
+            filename_grade = _expected_grade(pdf_name)
+            if filename_grade is not None:
+                seg_grade_int = filename_grade
+
+        num_prefix = seg_grade if seg_grade else (
+            str(seg_grade_int) if seg_grade_int is not None else None
+        )
+
+        for p in problems_list:
+            if "." in seg["num"]:
+                p["num"] = seg["num"]
+            elif num_prefix:
+                p["num"] = f"{num_prefix}.{seg['num']}"
+            else:
+                m_num = p.get("num")
+                p["num"] = str(m_num).strip() if m_num is not None else seg["num"]
+            p["segment_num"] = seg["num"]
+            if seg_grade_int is not None:
+                p["grade"] = seg_grade_int
+                p.pop("grade_range", None)
+
+            for field in ("statement", "solution"):
+                val = (p.get(field) or "").lstrip()
+                val = re.sub(
+                    r'^(?:#+\s*)?(?:\*\*)?\s*'
+                    r'(?:Задача|Зад\.?|Problem)\s*\d+(?:\.\d+)?\.?\s*'
+                    r'(?:\*\*)?\s*',
+                    '', val
+                )
+                val = val.replace('∥', r'\parallel ')
+                val = val.replace('∠', r'\angle ')
+                val = val.replace('△', r'\triangle ')
+                val = val.replace('≤', r'\le ')
+                val = val.replace('≥', r'\ge ')
+                val = re.sub(r'(?<![\\a-zA-Z])(egin|end)\{', r'\\\1{', val)
+                val = re.sub(r'(?<![\\a-zA-Z])imes(?![a-zA-Z])', r'\\times', val)
+                val = re.sub(r'(?<![\\a-zA-Z])rac\{', r'\\frac{', val)
+                val = val.replace('∕', '/')
+                p[field] = val if val else p.get(field)
+
+            for field in ("statement", "solution"):
+                val = p.get(field) or ""
+                val = val.replace('\u2061', '').replace('\u2062', '').replace('\u2063', '')
+                p[field] = val
+
+            quote = (p.get("source_quote") or "").strip()
+            if quote:
+                q = _match_quality(quote, seg["text"])
+                p["_quote_grade"] = q["grade"]
+                if q["grade"] == "ABSENT":
+                    log.warning(
+                        f"[{pdf_name}] seg {seg['num']}: quote ABSENT "
+                        f"(num={p.get('num')}) — keeping with flag"
+                    )
+                    p["_quote_warning"] = "absent"
+            problems_out.append(p)
+
+        log.info(
+            f"[{pdf_name}] seg {seg['num']}: {len(problems_out)} problems "
+            f"(parallel worker done)"
+        )
+        return problems_out
+
+    def _extract_segmented(self, pdf_name: str, segments: list) -> Optional[list]:
+        """Extract problems from each segment — parallel via ThreadPoolExecutor."""
+        if len(segments) > 30:
+            log.warning(f"[{pdf_name}] {len(segments)} segments — too many, skipping")
+            return None
+
+        max_workers = CONFIG.get("chunker", {}).get("extract_max_workers", 6)
+        max_workers = min(max_workers, len(segments))
+        all_problems = []
+
+        if max_workers <= 1:
+            # Sequential fallback (single segment or workers=1)
+            for seg in segments:
+                all_problems.extend(self._extract_one_segment(pdf_name, seg))
+        else:
+            log.info(
+                f"[{pdf_name}] parallel extract: {len(segments)} segments, "
+                f"{max_workers} workers"
+            )
+            with ThreadPoolExecutor(max_workers=max_workers) as ex:
+                futures = {
+                    ex.submit(self._extract_one_segment, pdf_name, seg): seg
+                    for seg in segments
+                }
+                for f in as_completed(futures):
+                    seg = futures[f]
+                    try:
+                        probs = f.result()
+                        all_problems.extend(probs)
+                    except BudgetExhausted:
+                        # Cancel remaining futures so they don't burn API calls
+                        try:
+                            ex.shutdown(wait=False, cancel_futures=True)
+                        except TypeError:
+                            ex.shutdown(wait=False)
+                        raise
+                    except Exception as e:
+                        log.warning(f"[{pdf_name}] seg {seg['num']} thread error: {e}")
+
+        # Sort by segment num for deterministic order (parallel gives unordered)
+        def _sort_key(p):
+            sn = str(p.get('segment_num', ''))
+            try:
+                return (int(sn.split('.')[0]), sn)
+            except (ValueError, IndexError):
+                return (999, sn)
+        all_problems.sort(key=_sort_key)
+
+        if not all_problems:
+            log.error(f"[{pdf_name}] segmented extraction: 0 problems")
+            return None
+
+        log.info(
+            f"[{pdf_name}] segmented: {len(all_problems)} problems "
+            f"from {len(segments)} segments"
+        )
+        return all_problems
 
     def _dedupe_problems(self, problems: list) -> list:
         """Dedupe по (year, grade, num, page). Запазва по-валидната версия."""
         by_key = {}
         for p in problems:
+            grade = p.get('grade') or p.get('grade_range')
+            if isinstance(grade, (list, tuple)):
+                grade = tuple(grade)
             key = (
                 p.get('year'),
-                p.get('grade') or p.get('grade_range'),
+                grade,
                 p.get('num'),
                 p.get('page'),
             )
@@ -1021,6 +1764,482 @@ class PDFChunker:
                 by_key[key] = (score, p)
         return [p for _, p in by_key.values()]
 
+    def _extract_problems(self, text: str, name: str, level: str,
+                          model_override: Optional[str] = None) -> Optional[list]:
+        """Extract problems from text. Optional model override for L3."""
+        client = self.ai_extract
+        if model_override:
+            cfg = {
+                "api_url": CONFIG["generator"]["api_url"],
+                "api_key": CONFIG["generator"]["api_key"],
+                "model": model_override,
+                "max_tokens": 36000,
+                "temperature": 0.05,
+            }
+            client = AIClient(cfg, f"extract-{level}")
+
+        user = format_prompt(
+            EXTRACT_PROMPT,
+            pdf_name=f"документ_{level}",
+            page_start=1,
+            page_end=999,
+            text=text,
+        )
+        raw = client.call(EXTRACT_PROMPT, user, f"{name}-{level}")
+        if not raw:
+            return None
+        parsed = parse_json(raw)
+        if not parsed or "problems" not in parsed:
+            return None
+        problems = _normalize_problems_list(parsed["problems"])
+
+        # For single-grade files (e.g. "11 кл"), force all problems to
+        # filename grade. R1/Sol hallucinate grades from training data;
+        # filename is ground truth. Skip for grade_range files (9-12 кл).
+        filename_grade = _expected_grade(name)
+        if filename_grade is not None:
+            filtered = []
+            for p in problems:
+                n = p.get("num")
+                n_str = str(n).strip() if n is not None else ""
+
+                # Drop problems whose num prefix contradicts filename.
+                # E.g. model returned "9.6" in a "10 кл" file → drop.
+                if n_str and "." in n_str:
+                    prefix = n_str.split(".", 1)[0]
+                    try:
+                        if int(prefix) != filename_grade:
+                            log.info(
+                                f"[{name}] L3: dropping num={n_str} "
+                                f"(prefix {prefix} != grade {filename_grade})"
+                            )
+                            continue
+                    except ValueError:
+                        pass
+
+                p["grade"] = filename_grade
+                p.pop("grade_range", None)
+
+                # L3 doesn't use segmenter → model may return plain "1", "2".
+                # Prefix with filename grade for consistency with L0/L1/L2.
+                if n_str and "." not in n_str and n_str.isdigit():
+                    p["num"] = f"{filename_grade}.{n_str}"
+                filtered.append(p)
+            problems = filtered
+
+        return problems
+
+    def _vlm_transcribe_pdf(self, pdf_path: Path) -> list:
+        """VLM transcription of all pages (L2 fallback)."""
+        vlm_cfg = CONFIG.get("extraction_pipeline", {}).get("vlm", {})
+        if not vlm_cfg.get("enabled"):
+            return []
+        if not HAS_PYMUPDF:
+            log.warning(f"[{pdf_path.name}] VLM skipped — no pymupdf")
+            return []
+
+        import base64
+        dpi = vlm_cfg.get("dpi", 200)
+        pages = []
+        try:
+            import fitz
+            doc = fitz.open(str(pdf_path))
+            for i, page in enumerate(doc, 1):
+                try:
+                    pix = page.get_pixmap(dpi=dpi)
+                    img_bytes = pix.tobytes("png")
+                    b64 = base64.b64encode(img_bytes).decode()
+                    text = self._vlm_call_page(pdf_path.name, i, b64, vlm_cfg)
+                    if text:
+                        pages.append({"page": i, "text": text})
+                except Exception as e:
+                    log.warning(f"[{pdf_path.name}] VLM p{i} fail: {e}")
+            doc.close()
+        except Exception as e:
+            log.error(f"[{pdf_path.name}] VLM open fail: {e}")
+            return []
+
+        if pages:
+            cost = len(pages) * vlm_cfg.get("cost_per_page_usd", 0.005)
+            self.state.add_cost(cost)
+            log.info(f"[{pdf_path.name}] VLM: {len(pages)}p, ${cost:.4f}")
+        return pages
+
+    def _vlm_call_page(self, pdf_name: str, page_num: int, b64: str,
+                       vlm_cfg: dict) -> str:
+        """One VLM call for one page."""
+        import requests as _req
+        try:
+            r = _req.post(
+                vlm_cfg["api_url"],
+                headers={
+                    "Authorization": f"Bearer {vlm_cfg['api_key']}",
+                    "Content-Type": "application/json",
+                },
+                json={
+                    "model": vlm_cfg["model"],
+                    "messages": [{
+                        "role": "user",
+                        "content": [
+                            {"type": "text", "text": (
+                                "Транскрибирай тази страница от олимпиада по математика "
+                                "в Markdown. Запази ВСИЧКИ формули, номера на задачи "
+                                "(Задача 11.1, Зад. 2 и т.н.) и текста. "
+                                "Ако нещо е неразчетимо → [неразчетено]. "
+                                "НЕ добавяй нищо, което не виждаш."
+                            )},
+                            {"type": "image_url",
+                             "image_url": {"url": f"data:image/png;base64,{b64}"}},
+                        ],
+                    }],
+                    "max_tokens": vlm_cfg.get("max_tokens", 4000),
+                    "temperature": 0.05,
+                },
+                timeout=180,
+            )
+        except Exception as e:
+            log.warning(f"[{pdf_name}] VLM p{page_num} error: {e}")
+            return ""
+
+        if not r.ok:
+            log.warning(f"[{pdf_name}] VLM p{page_num}: HTTP {r.status_code}")
+            return ""
+
+        data = r.json()
+        return (data.get("choices", [{}])[0]
+                .get("message", {})
+                .get("content", "")
+                or "").strip()
+
+    def _correct_ocr_text(self, text: str, name: str, source_level: str) -> str:
+        """Cheap OCR correction layer. Fixes obvious typos before extraction.
+
+        Only runs on OCR/VLM text (not native). Uses a cheap non-reasoning
+        model with a strict "copy, don't paraphrase" prompt. Safeguard:
+        if correction changes too much, keep original.
+        """
+        cfg = CONFIG.get("ocr_correction", {})
+        if not cfg.get("enabled", False):
+            return text
+        if len(text.strip()) < 100:
+            return text  # too short to be worth a call
+
+        # Build correction client (cheap model, low max_tokens)
+        corr_cfg = {
+            "api_url": CONFIG["generator"]["api_url"],
+            "api_key": CONFIG["generator"]["api_key"],
+            "model": cfg.get("model", "deepseek/deepseek-v4.1-flash"),
+            "max_tokens": cfg.get("max_tokens", 8000),
+            "temperature": 0.0,
+        }
+        client = AIClient(corr_cfg, "ocr_correct")
+
+        prompt = """Ти си коректор на OCR текст от български олимпиадни задачи.
+
+═══ ПРАВИЛА ═══
+1. КОПИРАЙ текста почти дословно.
+2. Поправи САМО очевидни OCR грешки:
+   - счупени думи ("тригълник" → "триъгълник", "произволна то чка" → "произволна точка")
+   - объркани символи ("2n2" → "2n^2", "l997" → "1997")
+   - слепени редове в средата на изречение
+3. НЕ променяй математически формули, освен ако не са очевидно счупени.
+4. НЕ добавяй, НЕ махай, НЕ преформулирай изречения.
+5. НЕ решавай задачи. НЕ коментирай.
+6. Ако не си сигурен → остави оригинала.
+
+═══ ФОРМАТ ═══
+Върни САМО JSON: {{"corrected": "..."}}
+
+═══ ТЕКСТ ═══
+{text}"""
+
+        user = format_prompt(prompt, text=text[:12000])
+
+        try:
+            raw = client.call(prompt, user, f"{name}-corr-{source_level}")
+        except BudgetExhausted:
+            raise
+        except Exception as e:
+            log.warning(f"[{name}] OCR correction failed: {e}")
+            return text
+
+        if not raw:
+            return text
+ 
+        parsed = parse_json(raw)
+        if not parsed or not parsed.get("corrected"):
+            log.warning(f"[{name}] OCR correction: JSON fail, keeping original")
+            return text
+
+        corrected = parsed["corrected"].strip()
+        if not corrected:
+            return text
+
+        # ── Safeguard ──
+        from difflib import SequenceMatcher
+        ratio = SequenceMatcher(None, text[:2000], corrected[:2000]).ratio()
+        len_ratio = len(corrected) / max(1, len(text))
+
+        min_ratio = cfg.get("min_similarity", 0.85)
+        len_min = cfg.get("min_length_ratio", 0.80)
+        len_max = cfg.get("max_length_ratio", 1.20)
+
+        if ratio < min_ratio:
+            log.warning(
+                f"[{name}] OCR correction rejected: similarity {ratio:.2f} < {min_ratio}"
+            )
+            return text
+        if len_ratio < len_min or len_ratio > len_max:
+            log.warning(
+                f"[{name}] OCR correction rejected: length ratio {len_ratio:.2f} "
+                f"outside [{len_min}, {len_max}]"
+            )
+            return text
+
+        cost = cfg.get("cost_per_call_usd", 0.002)
+        self.state.add_cost(cost)
+        log.info(
+            f"[{name}] OCR correction applied: {len(text)} → {len(corrected)} chars "
+            f"(similarity={ratio:.2f})"
+        )
+        return corrected
+
+    def _extract_by_segments_or_chunks(
+        self, pdf_path: Path, text: str, name: str, pages: list
+    ) -> list:
+        """Extract problems from text. Prefers segmentation, falls back to chunks."""
+        segments = _segment_by_markers(text)
+        if len(segments) >= 2:
+            segments = _filter_segments_by_filename_grade(segments, name)
+            probs = self._extract_segmented(name, segments)
+            if probs:
+                return probs
+
+        # Fallback: chunk-based
+        chunks = self.chunk_pdf(pdf_path, pages=pages)
+        probs = []
+        for chunk in chunks:
+            chunk_probs = self.extract_from_chunk(name, chunk)
+            if chunk_probs:
+                probs.extend(chunk_probs)
+        return probs
+
+    def _extract_with_escalation(
+        self, pdf_path: Path, pages: list, native_text: str, quality: str
+    ) -> tuple:
+        """Try L0→L1→L2→L3 with verification. Returns (problems, level, result)."""
+        name = pdf_path.stem
+        expected, tolerance = _expected_count(name)
+        grade = _expected_grade(name)
+        ver_cfg = CONFIG.get("extraction_pipeline", {}).get("verifier", {})
+        levels_order = CONFIG.get("extraction_pipeline", {}).get(
+            "levels_order", ["L0_native", "L1_ocr", "L2_vlm", "L3_escalation"]
+        )
+
+        sources = {"L0_native": native_text}
+        last_result = None
+        last_problems = []
+
+        for level in levels_order:
+            # Get text source for this level
+            if level == "L1_ocr":
+                # Skip if L0 was already OCR — same text source, correction
+                # rarely fixes a full FAIL_HALLUCINATED. Go straight to VLM.
+                if quality in ("ocr_ok", "ocr_low"):
+                    log.info(
+                        f"[{name}] {level}: skipping (L0 was {quality} — "
+                        f"same text source)"
+                    )
+                    continue
+                if "L1_ocr" not in sources:
+                    ocr_pages = _ocr_pdf(pdf_path)
+                    if not ocr_pages:
+                        log.warning(f"[{name}] {level}: OCR failed, skipping")
+                        continue
+                    sources["L1_ocr"] = "\n\n".join(p["text"] for p in ocr_pages)
+                text = sources["L1_ocr"]
+            elif level == "L2_vlm":
+                if "L2_vlm" not in sources:
+                    vlm_pages = self._vlm_transcribe_pdf(pdf_path)
+                    if not vlm_pages:
+                        log.warning(f"[{name}] {level}: VLM failed, skipping")
+                        continue
+                    sources["L2_vlm"] = "\n\n".join(p["text"] for p in vlm_pages)
+                text = sources["L2_vlm"]
+            elif level == "L3_escalation":
+                # Use SINGLE best source — combining causes duplicate problems
+                # (same task appears in native + VLM, model extracts twice).
+                # Prefer VLM (freshest, model-validated), then OCR, then native.
+                text = ""
+                for src_key in ("L2_vlm", "L1_ocr", "L0_native"):
+                    if sources.get(src_key):
+                        text = sources[src_key]
+                        log.info(
+                            f"[{name}] {level}: using {src_key} "
+                            f"({len(text)} chars, single source)"
+                        )
+                        break
+            else:
+                text = sources["L0_native"]
+
+        # ── OCR correction layer (L0.5) ──
+            # L1/L2: always (OCR/VLM have typos).
+            # L0: only if native text has suspicious patterns — some
+            # PDFs have broken native text (pymupdf/pypdf bugs).
+            run_correction = False
+            if level in ("L1_ocr", "L2_vlm"):
+                run_correction = True
+            elif level == "L0_native":
+                # Suspicious patterns for broken text layer.
+                # Frequency-based: 1 "x4" in 12k chars is not suspicious,
+                # 10+ are. Absolute patterns (cid, ∕) always trigger.
+                suspicious = False
+                reason = ""
+                min_hits = max(3, len(text) // 3000)  # 1 hit per 3k chars
+
+                if text.count('∕') > 0:
+                    suspicious = True; reason = "broken-frac"
+                elif re.search(r'\(cid:\d+\)', text):
+                    suspicious = True; reason = "cid-artifact"
+                # Note: we do NOT trigger on `[a-zA-Z][2-9]` — subscripts
+                # like S2, m7, a1 flatten to that pattern frequently in math
+                # olympiad PDFs and are perfectly readable. Real garbage
+                # is caught by cid, ∕, mixed-script, and `· ` patterns.
+                elif len(re.findall(r'[a-zA-Z]\s*·\s*\d', text)) >= min_hits:
+                    suspicious = True; reason = "garbled-operator"
+                elif len(re.findall(r'[a-zA-Z]\s{3,}imes', text)) >= min_hits:
+                    suspicious = True; reason = "broken-times"
+                elif len(re.findall(r'[а-яА-Я][a-zA-Z]|[a-zA-Z][а-яА-Я]', text)) >= min_hits:
+                    suspicious = True; reason = "mixed-script"
+
+                if suspicious:
+                    log.info(
+                        f"[{name}] {level}: suspicious native ({reason}) "
+                        f"— forcing L1 OCR"
+                    )
+                    # Don't set sources["L1_ocr"] here — let L1 branch do fresh
+                    # OCR. If we set it to "", L1 uses empty text and bails.
+                    continue
+
+            if run_correction:
+                text = self._correct_ocr_text(text, name, level)
+
+            # Skip if source text is too short to be useful
+            if len(text.strip()) < 200:
+                log.warning(
+                    f"[{name}] {level}: source text too short ({len(text)} chars), stopping"
+                )
+                last_result = VerificationResult(
+                    verdict="FAIL_NO_EXTRACTION", expected=expected, actual=0,
+                    escalate_to="none",
+                    reasons=[f"{level}: source text {len(text)} chars < 200"]
+                )
+                return [], level, last_result
+
+            # Extract
+            log.info(f"[{name}] {level}: extracting from {len(text)} chars")
+            try:
+                if level in ("L0_native", "L1_ocr", "L2_vlm"):
+                    problems = self._extract_by_segments_or_chunks(
+                        pdf_path, text, name, pages
+                    )
+                else:  # L3
+                    problems = self._extract_problems(
+                        text, name, "L3", model_override="openai/gpt-6.1-sol"
+                    ) or []
+            except BudgetExhausted:
+                raise
+            except Exception as e:
+                log.error(f"[{name}] {level} extraction failed: {e}")
+                continue
+
+            if not problems:
+                last_result = VerificationResult(
+                    verdict="FAIL_NO_EXTRACTION", expected=expected, actual=0,
+                    escalate_to="none",
+                    reasons=[f"{level}: 0 problems extracted"]
+                )
+                log.warning(f"[{name}] {level}: 0 problems, trying next level")
+                continue
+
+            # Verify
+            result = verify_extraction(
+                problems, text, name, expected, tolerance,
+                expected_grade=grade,
+                ai_client=self.ai_verifier, config=ver_cfg,
+            )
+            verified_count = len(result.verified)
+            log.info(
+                f"[{name}] {level}: verdict={result.verdict} "
+                f"verified={verified_count}/{expected} "
+                f"(total={result.actual}) conf={result.avg_confidence} "
+                f"grades={result.grade_distribution}"
+            )
+
+            # Adjust: if verifier says FAIL_MISSING but the source text
+            # itself has fewer task markers than expected, the expected
+            # count is wrong — the PDF is a mixed-grade compilation.
+            # Trust what's actually IN the text, not filename metadata.
+            if (result.verdict in ("FAIL_MISSING", "FAIL_HALLUCINATED")
+                    and expected is not None
+                    and verified_count > 0
+                    and not result.unreadable):
+                markers_check = _filter_segments_by_filename_grade(
+                    _segment_by_markers(text), name
+                )
+                if markers_check and len(markers_check) < expected - tolerance:
+                    adjusted_floor = len(markers_check) - tolerance
+                    if verified_count >= adjusted_floor:
+                        log.warning(
+                            f"[{name}] {level}: verifier said FAIL_MISSING "
+                            f"({verified_count} < {expected}±{tolerance}), but source "
+                            f"has only {len(markers_check)} matching markers "
+                            f"— accepting PASS_WITH_WARNINGS"
+                        )
+                        result.verdict = "PASS_WITH_WARNINGS"
+                        result.reasons = list(result.reasons or []) + [
+                            f"adjusted: source has {len(markers_check)} markers "
+                            f"(expected was {expected})"
+                        ]
+                elif (not markers_check 
+                        and verified_count > 0
+                        and verified_count >= max(2, expected // 2)
+                        and not result.hallucinated
+                        and not result.unreadable
+                        and result.avg_confidence >= 0.90):
+                    # Segmenter can't find markers (e.g. VLM output that lost
+                    # "Задача N." format). If missing is exactly 1 and conf
+                    # is very high, accept PASS_WITH_WARNINGS — better than
+                    # marking the file as exhausted/FAIL.
+                    log.warning(
+                        f"[{name}] {level}: FAIL_MISSING (1 missing) but segmenter "
+                        f"found no markers, conf={result.avg_confidence:.2f} "
+                        f"— accepting PASS_WITH_WARNINGS"
+                    )
+                    result.verdict = "PASS_WITH_WARNINGS"
+                    result.reasons = list(result.reasons or []) + [
+                        f"segmenter blind spot, 1 missing at conf "
+                        f"{result.avg_confidence:.2f}"
+                    ]
+
+            last_result = result
+            last_problems = problems
+
+            if result.verdict in ("PASS", "PASS_WITH_WARNINGS"):
+                return problems, level, result
+
+            # Log escalation reason
+            log.info(
+                f"[{name}] {level}: failed ({'; '.join(result.reasons)}), "
+                f"trying next level"
+            )
+
+        # All levels exhausted
+        return last_problems, "exhausted", last_result or VerificationResult(
+            verdict="FAIL_ALL_LEVELS", expected=expected, actual=0,
+            escalate_to="human_review"
+        )
+
     def process_pdf(self, pdf_path: Path):
         name = pdf_path.stem
         if self.state.is_extracted(name):
@@ -1028,76 +2247,103 @@ class PDFChunker:
             return
 
         log.info(f"\n═══ {name} ═══")
-        chunks = self.chunk_pdf(pdf_path)
-        if not chunks:
+
+        # 1. Extract pages
+        pages, quality = extract_pdf_pages(pdf_path)
+        if not pages:
+            log.error(f"[{name}] no pages")
+            self.state.mark_extraction_failed(name, 0, 0)
             return
 
-        log.info(f"[{name}] {len(chunks)} chunks, {sum(len(c['pages']) for c in chunks)} pages")
+        native_text = "\n\n".join(
+            f"─── Стр. {p['page']} ───\n{p['text']}" for p in pages
+        )
+        log.info(f"[{name}] quality={quality}, {len(pages)} pages, {len(native_text)} chars")
 
+        # 2. Escalation with verification
+        try:
+            problems, level, verification = self._extract_with_escalation(
+                pdf_path, pages, native_text, quality
+            )
+        except BudgetExhausted:
+            log.error(f"[{name}] BudgetExhausted — stopping")
+            raise
+        except Exception as e:
+            log.exception(f"[{name}] escalation failed: {e}")
+            self.state.mark_extraction_failed(name, 0, 0)
+            return
+
+        if not problems:
+            log.error(f"[{name}] 0 problems after all levels")
+            self.state.mark_extraction_failed(name, 0, 0)
+            state = self.state.data["extracted"].setdefault(name, {})
+            state["verdict"] = verification.verdict
+            state["needs_review"] = True
+            state["reasons"] = verification.reasons
+            self.state.save()
+            return
+
+        # 3. Enrich
+        meta = infer_metadata_from_filename(name)
+        for p in problems:
+            p["pdf"] = name
+            if not p.get("year"):
+                p["year"] = meta["year"]
+            if meta.get("grade") is not None:
+                p["grade"] = meta["grade"]
+                p.pop("grade_range", None)
+            elif not p.get("grade") and not p.get("grade_range"):
+                p["grade"] = meta["grade"]
+                p["grade_range"] = meta["grade_range"]
+            if not p.get("round") or p["round"] == "unknown":
+                p["round"] = meta["round"]
+
+        # 4. Post-process
+        problems = self._dedupe_problems(problems)
+        problems = _filter_by_filename_grade(problems, name)
+        problems = _content_dedupe(problems)
+
+        # Filter out hallucinated problems — but ONLY when the file FAILED.
+        # If verdict is PASS_WITH_WARNINGS, outliers are within tolerance (≤1)
+        # and likely real problems whose quote didn't match verbatim (e.g.
+        # pypdf flattens `∠` to `<)` → `<) BIC`, model returns `\angle BIC`
+        # → `∠bic` after normalize, they don't match). Dropping them loses
+        # real data. Keep them with _quote_warning=absent for review.
+        if verification.hallucinated:
+            hallucinated_nums = {str(p.get("num")) for p in verification.hallucinated}
+            if verification.verdict in ("PASS", "PASS_WITH_WARNINGS"):
+                for p in problems:
+                    if str(p.get("num")) in hallucinated_nums:
+                        p["_quote_warning"] = p.get("_quote_warning") or "absent"
+                        log.info(
+                            f"[{name}] kept num={p.get('num')} with "
+                            f"_quote_warning=absent (verdict={verification.verdict}, "
+                            f"not dropped)"
+                        )
+            else:
+                before = len(problems)
+                problems = [
+                    p for p in problems
+                    if str(p.get("num")) not in hallucinated_nums
+                ]
+                if len(problems) < before:
+                    log.warning(
+                        f"[{name}] dropped {before - len(problems)} hallucinated "
+                        f"from save (verdict={verification.verdict}): "
+                        f"{sorted(hallucinated_nums)}"
+                    )
+
+        # 4b. Sanitize surrogates from LLM output before UTF-8 write.
+        for p in problems:
+            for field in ("statement", "solution", "answer", "source_quote"):
+                if p.get(field):
+                    p[field] = _sanitize_surrogates(p[field])
+
+        # 5. Save
         out_dir = EXTRACTED_DIR / safe_name(name)
         out_dir.mkdir(parents=True, exist_ok=True)
         all_file = out_dir / "all_problems.json"
 
-        all_problems = []
-        if all_file.exists():
-            try:
-                existing = json.loads(all_file.read_text(encoding="utf-8"))
-                all_problems = existing.get("problems", [])
-                log.info(f"[{name}] {len(all_problems)} existing problems")
-            except Exception:
-                pass
-
-        meta = infer_metadata_from_filename(name)
-        success = 0
-        failed = 0
-
-        for i, chunk in enumerate(chunks, 1):
-            if self.state.is_chunk_done(name, i):
-                log.info(f"[{name}] chunk {i} skip")
-                success += 1
-                continue
-
-            if self.state.budget_exceeded():
-                log.warning(f"⚠ Бюджет достигнат. Спирам.")
-                return
-
-            problems = self.extract_from_chunk(name, chunk)
-            if problems is None:
-                failed += 1
-                log.error(f"[{name}] chunk {i} FAILED — ще retry следващия път")
-                continue
-
-            for p in problems:
-                p["pdf"] = name
-                p["chunk"] = i
-                if not p.get("year"):
-                    p["year"] = meta["year"]
-                if not p.get("grade") and not p.get("grade_range"):
-                    p["grade"] = meta["grade"]
-                    p["grade_range"] = meta["grade_range"]
-                if not p.get("round") or p["round"] == "unknown":
-                    p["round"] = meta["round"]
-                all_problems.append(p)
-
-            self.state.mark_chunk_done(name, i, len(problems))
-            success += 1
-
-            all_file.write_text(
-                json.dumps({
-                    "pdf": name,
-                    "extraction_model": self.ai_extract.model,
-                    "extracted_at": datetime.now().isoformat(),
-                    "problems": all_problems,
-                }, ensure_ascii=False, indent=2),
-                encoding="utf-8",
-            )
-
-        if failed > 0:
-            self.state.mark_extraction_failed(name, failed, len(chunks))
-            log.warning(f"[{name}] {failed}/{len(chunks)} chunks failed — status=partial")
-            return
-
-        # 🗂️ Versioning — запази старата версия като -vN
         new_ver = 1
         if all_file.exists():
             try:
@@ -1106,49 +2352,34 @@ class PDFChunker:
                 old_path = out_dir / f"all_problems-v{old_ver}.json"
                 if not old_path.exists():
                     all_file.rename(old_path)
-                    log.info(f"[{name}] Стар файл → all_problems-v{old_ver}.json")
                 new_ver = old_ver + 1
             except Exception as e:
                 log.warning(f"[{name}] versioning fail: {e}")
 
-        all_problems = self._dedupe_problems(all_problems)
-        all_file.write_text(
-            json.dumps({
-                "pdf": name,
-                "version": new_ver,
-                "extraction_model": self.ai_extract.model,
-                "extracted_at": datetime.now().isoformat(),
-                "problems": all_problems,
-            }, ensure_ascii=False, indent=2),
-            encoding="utf-8",
+        all_file.write_text(json.dumps({
+            "pdf": name,
+            "version": new_ver,
+            "extraction_model": self.ai_extract.model,
+            "extraction_level": level,
+            "verification": verification.to_dict(),
+            "extracted_at": datetime.now().isoformat(),
+            "problems": problems,
+        }, ensure_ascii=False, indent=2), encoding="utf-8")
+
+        log.info(
+            f"[{name}] Записан v{new_ver} ({len(problems)} problems, "
+            f"level={level}, verdict={verification.verdict})"
         )
-        log.info(f"[{name}] Записан v{new_ver} ({len(all_problems)} problems)")
 
-        # Quality gate: ако 0 задачи от PDF с много страници → не маркирай done
-        pages_count = sum(len(c['pages']) for c in chunks)
-        ratio = len(all_problems) / pages_count if pages_count else 0
-
-        if pages_count > 5 and len(all_problems) == 0:
-            log.error(
-                f"[{name}] ❌ QUALITY GATE: 0 problems from {pages_count} pages — "
-                f"NOT marking as done (will retry)"
-            )
-            self.state.mark_extraction_failed(name, 0, len(chunks))
-            return
-
-        if pages_count > 5 and ratio < 0.15:
-            log.warning(
-                f"[{name}] ⚠ QUALITY: only {len(all_problems)} problems "
-                f"from {pages_count} pages (ratio={ratio:.2f}) — marking done but flagged"
-            )
-            # Все пак маркирай, но с warning в state
-            pdf_state = self.state.data["extracted"].setdefault(name, {})
-            pdf_state["low_quality"] = True
-            pdf_state["quality_ratio"] = round(ratio, 2)
+        # 6. Mark state
+        self.state.mark_extracted(name, len(problems))
+        if verification.verdict not in ("PASS", "PASS_WITH_WARNINGS"):
+            state = self.state.data["extracted"].setdefault(name, {})
+            state["verdict"] = verification.verdict
+            state["needs_review"] = True
+            state["escalate_to"] = verification.escalate_to
+            state["reasons"] = verification.reasons
             self.state.save()
-
-        self.state.mark_extracted(name, len(all_problems))
-        log.info(f"✓ [{name}] {len(all_problems)} problems (deduped) → {all_file}")
 
     def run_extract(self, limit: Optional[int] = None, pdf_pattern: Optional[str] = None):
         pdfs = self.scan_pdfs()
@@ -1216,6 +2447,9 @@ class PDFChunker:
         def norm_num(n):
             if n is None:
                 return None
+            # Float като 11.1 означава "задача 11.1" → string, не int
+            if isinstance(n, float):
+                return f"{n:g}"  # 11.1 → "11.1", 11.0 → "11"
             try:
                 return int(n)
             except (ValueError, TypeError):
@@ -1496,6 +2730,20 @@ class PDFChunker:
                     unclassified.append(entry)
                     continue
                 by_point.setdefault(pid, []).append(entry)
+                
+                # NEW: add to secondary points if confidence >= 0.7
+                for sec in p.get('secondary_points', []):
+                    sec_id = (sec.get('id') or '').strip()
+                    sec_conf = sec.get('confidence', 0)
+                    if not sec_id or sec_id not in self.steps_info:
+                        continue
+                    if sec_conf < 0.7:
+                        continue
+                    # Add copy with crosslink marker
+                    sec_entry = dict(entry)
+                    sec_entry['_crosslinked_from'] = pid
+                    sec_entry['_crosslink_confidence'] = sec_conf
+                    by_point.setdefault(sec_id, []).append(sec_entry)
 
         for pid, problems in by_point.items():
             problems.sort(key=lambda x: (
@@ -1657,7 +2905,8 @@ class PDFChunker:
                 'page': pr.get('page'),
                 'source': f"{base} · {pr.get('year', '?')}-{matched_grade or '?'} · Зад. {pr.get('num', '?')}",
                 'point_id': m.get('point_id'),
-                'point_confidence': 'exact',
+                'point_confidence': m.get('point_confidence', 'exact'),
+                'secondary_points': m.get('secondary_points', []),
                 'alternative_points': m.get('alternative_points', []),
                 'difficulty': m.get('difficulty'),
                 'techniques': m.get('techniques', []),
@@ -1669,9 +2918,15 @@ class PDFChunker:
                 matched_entry['grade_range'] = list(infer_metadata_from_filename(base)['grade_range'])
             entries.append(matched_entry)
 
-        # Orphan sols with statement
+        # Orphan sols: SKIP for olympiad files (from other years), keep for books
         meta = infer_metadata_from_filename(base)
-        for o in result.get('orphan_sols_with_statement', []):
+        expected_orphan, _ = _expected_count(base)
+        drop_orphans = expected_orphan is not None
+        all_orphans = result.get('orphan_sols_with_statement', [])
+        if drop_orphans and all_orphans:
+            log.info(f"  [{base}] dropping {len(all_orphans)} orphan sols (olympiad rule)")
+        orphan_list = [] if drop_orphans else all_orphans
+        for o in orphan_list:
             an = o.get('sol_num')
             if not isinstance(an, int) or not (1 <= an <= len(sols)): continue
             so = sols[an - 1]
@@ -1689,7 +2944,8 @@ class PDFChunker:
                 'page': so.get('page'),
                 'source': f"{base} · {so.get('year') or meta.get('year') or '?'}-{inferred_grade or '?'} · Зад. {so.get('num', '?')}",
                 'point_id': o.get('point_id'),
-                'point_confidence': 'exact',
+                'point_confidence': o.get('point_confidence', 'exact'),
+                'secondary_points': o.get('secondary_points', []),
                 'difficulty': o.get('difficulty'),
                 'techniques': o.get('techniques', []),
                 'reasoning': o.get('reasoning'),
@@ -1718,7 +2974,8 @@ class PDFChunker:
                 'page': pr.get('page'),
                 'source': _source(pr),
                 'point_id': u.get('point_id'),
-                'point_confidence': 'exact',
+                'point_confidence': u.get('point_confidence', 'exact'),
+                'secondary_points': u.get('secondary_points', []),
                 'difficulty': u.get('difficulty'),
                 'techniques': u.get('techniques', []),
                 'reasoning': u.get('reasoning'),
@@ -1796,6 +3053,7 @@ class PDFChunker:
                 for p in only:
                     cls = self.classify_problem(p)
                     if cls:
+                        # Ensure secondary_points is preserved
                         entries.append({**p, **cls})
                     else:
                         entries.append({**p, 'point_id': None, 'point_confidence': 'failed'})
@@ -1921,6 +3179,36 @@ class PDFChunker:
         print(f"  Cost: ${self.state.data['budget']['spent_usd']:.3f}")
         print("═" * 75)
 
+        # Verdict breakdown
+        print()
+        print("  VERDICT BREAKDOWN")
+        verdict_counts = {}
+        level_counts = {}
+        needs_review = 0
+        for pdf_dir in EXTRACTED_DIR.iterdir():
+            if not pdf_dir.is_dir():
+                continue
+            f = pdf_dir / "all_problems.json"
+            if not f.exists():
+                continue
+            try:
+                data = json.loads(f.read_text(encoding="utf-8"))
+                v = data.get("verification", {}).get("verdict", "unknown")
+                lv = data.get("extraction_level", "unknown")
+                verdict_counts[v] = verdict_counts.get(v, 0) + 1
+                level_counts[lv] = level_counts.get(lv, 0) + 1
+            except Exception:
+                pass
+        st = self.state.data.get("extracted", {})
+        needs_review = sum(1 for v in st.values() if v.get("needs_review"))
+        for v, c in sorted(verdict_counts.items(), key=lambda x: -x[1]):
+            print(f"    {v}: {c}")
+        print()
+        print("  LEVEL BREAKDOWN")
+        for lv, c in sorted(level_counts.items(), key=lambda x: -x[1]):
+            print(f"    {lv}: {c}")
+        print(f"  needs_review: {needs_review}")
+
 
 # ═══════════════════════════════════════════════════════════════
 # CLI
@@ -2036,7 +3324,7 @@ def cmd_audit():
         if pdf_path:
             pages = _get_page_count(pdf_path)
             try:
-                page_data = extract_pdf_pages(pdf_path)
+                page_data, _quality = extract_pdf_pages(pdf_path)
                 chars = sum(len(p.get("text", "")) for p in page_data)
             except Exception:
                 chars = 0
@@ -2134,6 +3422,8 @@ def main():
     ap.add_argument("--pdf", default=None, help="Само PDF-и, съдържащи текста в името")
     ap.add_argument("--force-extract", action="store_true",
                     help="Изтрий state за PDF и пре-извлечи от нулата")
+    ap.add_argument("--force-ocr", action="store_true",
+                    help="Force Mistral OCR независимо от native text")
     ap.add_argument("--audit", action="store_true",
                     help="Покажи quality метрики за всеки PDF")
     ap.add_argument("--stats", action="store_true",
@@ -2141,6 +3431,11 @@ def main():
     ap.add_argument("--reset-stage", choices=["extract", "merge", "classify", "aggregate", "all"],
                     default=None, help="Изчисти само една фаза")
     args = ap.parse_args()
+
+    # --force-ocr override-ва config-а за текущия run
+    if args.force_ocr:
+        CONFIG.setdefault("ocr", {})["force_ocr"] = True
+        print("🔍 Force OCR enabled for this run")
 
     if args.force_extract and args.pdf:
         # Изтрий state за PDF-и, съдържащи pattern

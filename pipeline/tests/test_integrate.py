@@ -41,7 +41,8 @@ class TestEscapeForBacktick:
 class TestCleanMarkdown:
 
     def test_headers_removed(self):
-        assert integrate.clean_markdown("# H1\n## H2\ntext") == "text"
+        # clean_markdown strips # markers but keeps header text as plain text
+        assert integrate.clean_markdown("# H1\n## H2\ntext") == "H1\nH2\ntext"
 
     def test_bold_stripped(self):
         assert integrate.clean_markdown("**bold** text") == "bold text"

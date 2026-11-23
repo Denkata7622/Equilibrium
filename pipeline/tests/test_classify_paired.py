@@ -157,7 +157,9 @@ class TestBuildPairedEntries:
         assert e["grade"] == 11
         assert e["point_id"] == "1.4"
 
-    def test_single_orphan_with_statement(self, bare_chunker):
+    def test_single_orphan_with_statement(self, bare_chunker, monkeypatch):
+        # No expected_counts rule → orphans kept
+        monkeypatch.setattr(pdf_chunker, "_expected_count", lambda x: (None, 0))
         base = "OLI-2-Областен кръг-2024-11 кл"
         sols = [make_problem(1, stmt="orphan stmt long enough here",
                              sol="orphan sol long enough here")]
@@ -171,6 +173,19 @@ class TestBuildPairedEntries:
         assert e["_orphan"] is True
         assert e["_grade_source"] == "filename"
         assert e["grade"] == 11
+
+    def test_orphan_dropped_when_expected_count_rule_matches(self, bare_chunker, monkeypatch):
+        # Rule matches → drop_orphans=True → orphans dropped
+        monkeypatch.setattr(pdf_chunker, "_expected_count", lambda x: (6, 0))
+        base = "OLI-2-Областен кръг-2024-11 кл"
+        sols = [make_problem(1, stmt="orphan stmt long enough here",
+                             sol="orphan sol long enough here")]
+        result = {"orphan_sols_with_statement": [{
+            "sol_num": 1, "point_id": "2.3", "difficulty": "medium",
+            "techniques": [], "reasoning": "test"
+        }]}
+        entries = bare_chunker._build_paired_entries(base, [], sols, result)
+        assert len(entries) == 0  # DROPPED
 
     def test_single_unmatched_prob(self, bare_chunker):
         base = "OLI-2-Областен кръг-2024-11 кл"
@@ -232,7 +247,8 @@ class TestBuildPairedEntries:
         assert e["grade_range"] == [9, 12]
         assert e["_grade_source"] == "grade_range"
 
-    def test_grade_range_applied_to_orphan(self, bare_chunker):
+    def test_grade_range_applied_to_orphan(self, bare_chunker, monkeypatch):
+        monkeypatch.setattr(pdf_chunker, "_expected_count", lambda x: (None, 0))
         base = "OLI-3-Национален кръг-2024-9-12 кл"
         sols = [make_problem(1, grade=None, grade_range=[9, 12],
                              stmt="orphan stmt long enough here",
@@ -248,8 +264,9 @@ class TestBuildPairedEntries:
         assert e["grade_range"] == [9, 12]
         assert e["_grade_source"] == "grade_range"
 
-    def test_full_scenario_matched_orphan_nosol(self, bare_chunker):
-        """Matched + orphan + no_sol в един резултат → 3 entries."""
+    def test_full_scenario_matched_orphan_nosol(self, bare_chunker, monkeypatch):
+        """Matched + orphan + no_sol, без expected_count rule → 3 entries."""
+        monkeypatch.setattr(pdf_chunker, "_expected_count", lambda x: (None, 0))
         base = "OLI-2-Областен кръг-2024-11 кл"
         probs = [
             make_problem(1, stmt="prob1 stmt " + "A"*30),
@@ -277,6 +294,37 @@ class TestBuildPairedEntries:
             for e in entries
         )
         assert tags == ["matched", "no_sol", "orphan"]
+
+    def test_full_scenario_orphan_dropped(self, bare_chunker, monkeypatch):
+        """Същата сцена, но с expected_count rule → orphan dropped."""
+        monkeypatch.setattr(pdf_chunker, "_expected_count", lambda x: (4, 0))
+        base = "OLI-2-Областен кръг-2024-11 кл"
+        probs = [
+            make_problem(1, stmt="prob1 stmt " + "A"*30),
+            make_problem(3, stmt="prob3 stmt " + "C"*30),
+        ]
+        sols = [
+            make_problem(1, sol="sol1 " + "X"*30),
+            make_problem(2, stmt="orphan stmt " + "Y"*30, sol="orphan " + "Z"*30),
+        ]
+        result = {
+            "matched": [{"stmt_num": 1, "sol_num": 1,
+                         "point_id": "1.4", "difficulty": "medium"}],
+            "orphan_sols_with_statement": [{"sol_num": 2, "point_id": "2.3",
+                                            "difficulty": "easy"}],
+            "unmatched_probs": [{"stmt_num": 2, "point_id": "3.1",
+                                 "difficulty": "hard"}],
+        }
+        entries = bare_chunker._build_paired_entries(base, probs, sols, result)
+        assert len(entries) == 2  # matched + no_sol, БЕЗ orphan
+        tags = sorted(
+            (e.get("_paired") and "matched") or
+            (e.get("_orphan") and "orphan") or
+            (e.get("_no_solution") and "no_sol") or "?"
+            for e in entries
+        )
+        assert tags == ["matched", "no_sol"]
+        assert "orphan" not in tags
 
 
 # ═══════════════════════════════════════════════════════════════════════

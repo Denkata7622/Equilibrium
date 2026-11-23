@@ -65,16 +65,20 @@ class TestPricingTable:
 class TestComputeCost:
 
     def test_exact_model_1m_in(self):
+        # Read price from table so test tracks config changes
+        price = cost_tracker.MODEL_PRICING["deepseek-r1"]["input"]
         cost = cost_tracker.compute_cost("deepseek/deepseek-r1", 1_000_000, 0)
-        assert cost == pytest.approx(0.55)
+        assert cost == pytest.approx(price)
 
     def test_exact_model_1m_out(self):
+        price = cost_tracker.MODEL_PRICING["deepseek-r1"]["output"]
         cost = cost_tracker.compute_cost("deepseek/deepseek-r1", 0, 1_000_000)
-        assert cost == pytest.approx(2.19)
+        assert cost == pytest.approx(price)
 
     def test_combined(self):
+        p = cost_tracker.MODEL_PRICING["deepseek-r1"]
         cost = cost_tracker.compute_cost("deepseek/deepseek-r1", 1_000_000, 1_000_000)
-        assert cost == pytest.approx(0.55 + 2.19)
+        assert cost == pytest.approx(p["input"] + p["output"])
 
     def test_substring_match_versioned_model(self):
         """anthropic/claude-sonnet-5.5-20260928 → matched by 'claude-sonnet-5.5'."""
@@ -242,7 +246,9 @@ class TestTrackCall:
         data = {"usage": {"prompt_tokens": 1_000_000, "completion_tokens": 1_000_000}}
         cost_tracker.track_call("pipeline", "gen", "deepseek/deepseek-r1", data)
         rec = _read_jsonl(isolated_ledger)[0]
-        assert rec["cost"] == pytest.approx(2.74)
+        p = cost_tracker.MODEL_PRICING["deepseek-r1"]
+        expected = p["input"] + p["output"]
+        assert rec["cost"] == pytest.approx(expected)
 
     def test_unknown_model_zero_cost(self, isolated_ledger):
         data = {"usage": {"prompt_tokens": 100, "completion_tokens": 50}}

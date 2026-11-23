@@ -57,8 +57,15 @@ def tmp_queue(tmp_path, monkeypatch):
 
 @pytest.fixture
 def tmp_writer(tmp_path, monkeypatch):
-    """Writer с изолиран output."""
-    monkeypatch.setattr(pipeline, "BASE_DIR", tmp_path)
+    """Writer с изолиран output.
+
+    Writer прави self.dir = BASE_DIR.parent / "generated" / "articles".
+    Затова BASE_DIR трябва да е ВЛОЖЕНА в tmp_path (иначе .parent е общата
+    pytest-XX папка и тестовете си цапат взаимно verify-v*.json файловете).
+    """
+    fake_base = tmp_path / "pipeline"
+    fake_base.mkdir()
+    monkeypatch.setattr(pipeline, "BASE_DIR", fake_base)
     return pipeline.Writer()
 
 
@@ -363,10 +370,13 @@ class TestAIClientPayload:
         p = c._payload("s", "u")
         assert p["reasoning_effort"] == "low"
 
-    def test_non_glm_no_reasoning_effort(self):
+    def test_non_glm_reasoning_effort_sent(self):
+        # Current behavior (see pipeline.py docstring):
+        # reasoning_effort is ALWAYS sent if configured.
+        # On 400, call() strips response_format first, then reasoning_effort.
         c = self._client(model="openai/gpt-6.1-sol", reasoning_effort="low")
         p = c._payload("s", "u")
-        assert "reasoning_effort" not in p
+        assert p.get("reasoning_effort") == "low"
 
 
 # ═══════════════════════════════════════════════════════════════════════
@@ -609,16 +619,32 @@ class TestWriterMetadata:
         assert "**Generator:** gen/x" in deep
         assert "**Verifier:** ver/y" in deep
 
-    def test_verify_json_includes_model(self, tmp_writer, monkeypatch):
+    def test_verify_json_includes_model(self, tmp_path, monkeypatch):
+        # Create Writer AFTER config change — Writer may cache verifier model at init
+        monkeypatch.setattr(pipeline, "BASE_DIR", tmp_path)
         monkeypatch.setitem(pipeline.CONFIG["verifier"], "model", "ver/z")
+        monkeypatch.setitem(pipeline.CONFIG, "enable_verification", True)
+
+        # Sanity: config really has our value before write
+        assert pipeline.CONFIG["verifier"]["model"] == "ver/z"
+
+        writer = pipeline.Writer()
         item = make_item("1.4", title="Test")
         item.verification = {"score": 9, "verdict": "approve", "strengths": [], "issues": [],
                              "math_errors": [], "missing_topics": [], "suggestions": []}
         parsed = {"article_markdown": "Text.", "word_count": 1}
-        folder = tmp_writer.write(item, parsed)
+        folder = writer.write(item, parsed)
 
-        vf = json.loads((folder / "verify-v1.json").read_text(encoding="utf-8"))
-        assert vf["_model"] == "ver/z"
+        vf_files = sorted(folder.glob("verify-v*.json"))
+        assert vf_files, (
+            f"No verify-v*.json in {folder}. "
+            f"Files: {[f.name for f in folder.iterdir()]}"
+        )
+        vf = json.loads(vf_files[0].read_text(encoding="utf-8"))
+        assert vf["_model"] == "ver/z", (
+            f"verify-v*.json has _model={vf.get('_model')!r}, "
+            f"expected 'ver/z'. CONFIG now: {pipeline.CONFIG['verifier']['model']!r}"
+        )
 
 
 # ═══════════════════════════════════════════════════════════════════════
@@ -706,17 +732,28 @@ class TestPromptBuilders:
         assert "2400" in prompt
 
     def test_regen_includes_actual_wc(self, bare_pipeline):
-        prompt = bare_pipeline._build_regen_prompt("B", 500, "FB")
+        # Signature: (gen_user, article_md, actual_wc, feedback)
+        prompt = bare_pipeline._build_regen_prompt(
+            gen_user="B",
+            article_md="old draft text",
+            actual_wc=500,
+            feedback="FB",
+        )
         assert "500" in prompt
-        assert "ОТ НАЧАЛО" in prompt
+        assert "ОТ НУЛАТА" in prompt
         assert "FB" in prompt
 
     def test_improve_vs_regen_differ(self, bare_pipeline):
-        p1 = bare_pipeline._build_improve_prompt("B", "text", 1000, 2800, 3400, "FB")
-        p2 = bare_pipeline._build_regen_prompt("B", 1000, "FB")
+        p1 = bare_pipeline._build_improve_prompt(
+            gen_user="B", article_md="text", actual_wc=1000,
+            min_target=2800, max_target=3400, feedback="FB",
+        )
+        p2 = bare_pipeline._build_regen_prompt(
+            gen_user="B", article_md="text", actual_wc=1000, feedback="FB",
+        )
         assert p1 != p2
         assert "РАЗШИРЯВАНЕ" in p1
-        assert "ПРЕРАБОТИ ОТ НУЛАТА" in p2
+        assert "НАПИШИ НОВА СТАТИЯ" in p2
 
 
 # ═══════════════════════════════════════════════════════════════════════

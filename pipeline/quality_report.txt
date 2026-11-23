@@ -1,0 +1,1941 @@
+﻿
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1995-10 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1995-10 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1995-11 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1995-11 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1995-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1995-12 ╨║╨╗-sol
+  problems: 0  |  expected: 6  |  unique nums: 0
+  ΓÜá∩╕Å  MISMATCH: got 0, expected 6
+  null statement: 0/0
+  null solution:  0/0
+  quote grades:  {}
+  readability:   {}
+  nums: []
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1996-10 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1996-10 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1996-11 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1996-11 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1996-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1997-10 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1997-10 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1997-11 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1997-11 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1997-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 5, 'partial': 1}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1997-12 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1998-10 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1998-10 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1998-11 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1998-11 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 5, 'partial': 1}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1998-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1998-12 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1999-10 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1999-10 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 5, 'partial': 1}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1999-11 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1999-11 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 5, 'partial': 1}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1999-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-1999-12 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 5, 'partial': 1}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2000-10 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 5, 'partial': 1}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2000-10 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 4, 'partial': 2}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2000-11 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 5, 'partial': 1}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2000-11 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 4, 'partial': 2}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2000-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 5, 'partial': 1}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2000-12 ╨║╨╗-sol
+  problems: 0  |  expected: 6  |  unique nums: 0
+  ΓÜá∩╕Å  MISMATCH: got 0, expected 6
+  null statement: 0/0
+  null solution:  0/0
+  quote grades:  {}
+  readability:   {}
+  nums: []
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2001-10 ╨║╨╗-probs
+  problems: 0  |  expected: 6  |  unique nums: 0
+  ΓÜá∩╕Å  MISMATCH: got 0, expected 6
+  null statement: 0/0
+  null solution:  0/0
+  quote grades:  {}
+  readability:   {}
+  nums: []
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2001-10 ╨║╨╗-sol
+  problems: 0  |  expected: 6  |  unique nums: 0
+  ΓÜá∩╕Å  MISMATCH: got 0, expected 6
+  null statement: 0/0
+  null solution:  0/0
+  quote grades:  {}
+  readability:   {}
+  nums: []
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2001-11 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 4, 'partial': 2}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2001-11 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 4, 'partial': 2}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2001-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 4, 'partial': 2}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2001-12 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 4, 'partial': 2}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2002-10 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2002-10 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 5, 'partial': 1}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2002-11 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2002-11 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 5, 'partial': 1}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2002-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2002-12 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 5, 'partial': 1}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2003-10 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2003-10 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2003-11 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 5, 'partial': 1}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2003-11 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2003-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2003-12 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2004-10 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'EXACT': 6}
+  readability:   {'partial': 6}
+  nums: ['10.1', '10.2', '10.3', '10.4', '10.5', '10.6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2004-10 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 6/6
+  null solution:  0/6
+  quote grades:  {'EXACT': 3, 'NORMALIZED': 2, 'ABSENT': 1}
+  readability:   {'partial': 6}
+  nums: ['10.1', '10.2', '10.3', '10.4', '10.5', '10.6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2004-11 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'NORMALIZED': 3, 'EXACT': 3}
+  readability:   {'ok': 5, 'partial': 1}
+  nums: ['11.1', '11.2', '11.3', '11.4', '11.5', '11.6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2004-11 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 6/6
+  null solution:  0/6
+  quote grades:  {'EXACT': 2, 'NORMALIZED': 4}
+  readability:   {'partial': 5, 'ok': 1}
+  nums: ['11.1', '11.2', '11.3', '11.4', '11.5', '11.6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2004-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'EXACT': 5, 'NORMALIZED': 1}
+  readability:   {'partial': 4, 'ok': 2}
+  nums: ['12.1', '12.2', '12.3', '12.4', '12.5', '12.6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2004-12 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 6/6
+  null solution:  0/6
+  quote grades:  {'NORMALIZED': 5, 'EXACT': 1}
+  readability:   {'ok': 1, 'partial': 5}
+  nums: ['12.1', '12.2', '12.3', '12.4', '12.5', '12.6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2005-10 ╨║╨╗-sol
+  problems: 10  |  expected: 6  |  unique nums: 10
+  ΓÜá∩╕Å  MISMATCH: got 10, expected 6
+  null statement: 0/10
+  null solution:  10/10
+  quote grades:  {'?': 10}
+  readability:   {'partial': 7, 'unreadable': 2, 'ok': 1}
+  nums: ['10.1', '10.2', '10.3', '10.4', '10.5', '10.6', '11.1', '9.4', '9.5', '9.6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2005-11 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'EXACT': 6}
+  readability:   {'ok': 5, 'partial': 1}
+  nums: ['11.1', '11.2', '11.3', '11.4', '11.5', '11.6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2005-12 ╨║╨╗-probs
+  problems: 0  |  expected: 6  |  unique nums: 0
+  ΓÜá∩╕Å  MISMATCH: got 0, expected 6
+  null statement: 0/0
+  null solution:  0/0
+  quote grades:  {}
+  readability:   {}
+  nums: []
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2005-12 ╨║╨╗-sol
+  problems: 0  |  expected: 6  |  unique nums: 0
+  ΓÜá∩╕Å  MISMATCH: got 0, expected 6
+  null statement: 0/0
+  null solution:  0/0
+  quote grades:  {}
+  readability:   {}
+  nums: []
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2006-10 ╨║╨╗-probs
+  problems: 7  |  expected: 6  |  unique nums: 6
+  ΓÜá∩╕Å  MISMATCH: got 7, expected 6
+  ΓÜá∩╕Å  DUPLICATE nums: 1 dupes
+  null statement: 0/7
+  null solution:  7/7
+  quote grades:  {'?': 7}
+  readability:   {'ok': 6, 'partial': 1}
+  nums: ['1', '2', '3', '4', '5', '6', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2006-10 ╨║╨╗-sol
+  problems: 7  |  expected: 6  |  unique nums: 7
+  ΓÜá∩╕Å  MISMATCH: got 7, expected 6
+  null statement: 0/7
+  null solution:  1/7
+  quote grades:  {'?': 7}
+  readability:   {'ok': 7}
+  nums: ['10.1', '10.2', '10.3', '10.4', '10.5', '10.6', '9.6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2006-11 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2006-12 ╨║╨╗-probs
+  problems: 8  |  expected: 6  |  unique nums: 8
+  ΓÜá∩╕Å  MISMATCH: got 8, expected 6
+  null statement: 0/8
+  null solution:  8/8
+  quote grades:  {'?': 8}
+  readability:   {'ok': 8}
+  nums: ['11.5', '11.6', '12.1', '12.2', '12.3', '12.4', '12.5', '12.6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2006-12 ╨║╨╗-sol
+  problems: 8  |  expected: 6  |  unique nums: 8
+  ΓÜá∩╕Å  MISMATCH: got 8, expected 6
+  null statement: 0/8
+  null solution:  2/8
+  quote grades:  {'?': 8}
+  readability:   {'ok': 8}
+  nums: ['11.5', '11.6', '12.1', '12.2', '12.3', '12.4', '12.5', '12.6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2007-10 ╨║╨╗-probs
+  problems: 7  |  expected: 6  |  unique nums: 6
+  ΓÜá∩╕Å  MISMATCH: got 7, expected 6
+  ΓÜá∩╕Å  DUPLICATE nums: 1 dupes
+  null statement: 0/7
+  null solution:  7/7
+  quote grades:  {'?': 7}
+  readability:   {'ok': 6, 'partial': 1}
+  nums: ['1', '2', '3', '4', '5', '6', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2007-10 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2007-11 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2007-11 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 5, 'partial': 1}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2007-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2007-12 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2008-10 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 4, 'partial': 2}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2008-10 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 4, 'partial': 2}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2008-11 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2008-11 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2008-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2008-12 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 5, 'partial': 1}
+  nums: ['12.1', '12.2', '12.3', '12.4', '12.5', '12.6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2009-10 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 5, 'partial': 1}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2009-10 ╨║╨╗-sol
+  problems: 10  |  expected: 6  |  unique nums: 10
+  ΓÜá∩╕Å  MISMATCH: got 10, expected 6
+  null statement: 0/10
+  null solution:  1/10
+  quote grades:  {'?': 10}
+  readability:   {'ok': 8, 'partial': 2}
+  nums: ['10.1', '10.2', '10.3', '10.4', '10.5', '10.6', '11.1', '11.2', '9.1', '9.6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2009-11 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2009-11 ╨║╨╗-sol
+  problems: 0  |  expected: 6  |  unique nums: 0
+  ΓÜá∩╕Å  MISMATCH: got 0, expected 6
+  null statement: 0/0
+  null solution:  0/0
+  quote grades:  {}
+  readability:   {}
+  nums: []
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2009-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2009-12 ╨║╨╗-sol
+  problems: 7  |  expected: 6  |  unique nums: 7
+  ΓÜá∩╕Å  MISMATCH: got 7, expected 6
+  null statement: 0/7
+  null solution:  1/7
+  quote grades:  {'?': 7}
+  readability:   {'partial': 2, 'ok': 5}
+  nums: ['12.1', '12.3', '12.4', '12.5', '12.6', '9.2', '9.3']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2010-10 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 5, 'partial': 1}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2010-10 ╨║╨╗-sol
+  problems: 12  |  expected: 6  |  unique nums: 12
+  ΓÜá∩╕Å  MISMATCH: got 12, expected 6
+  null statement: 0/12
+  null solution:  3/12
+  quote grades:  {'?': 12}
+  readability:   {'ok': 10, 'partial': 2}
+  nums: ['10.1', '10.2', '10.3', '10.4', '10.5', '10.6', '9.1', '9.2', '9.3', '9.4', '9.5', '9.6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2010-11 ╨║╨╗-probs
+  problems: 4  |  expected: 6  |  unique nums: 4
+  ΓÜá∩╕Å  MISMATCH: got 4, expected 6
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 3, '?': 1}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2010-11 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 5, 'partial': 1}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2010-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 5, 'partial': 1}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2010-12 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 5, 'partial': 1}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2011-10 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2011-10 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2011-11 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2011-11 ╨║╨╗-sol
+  problems: 0  |  expected: 6  |  unique nums: 0
+  ΓÜá∩╕Å  MISMATCH: got 0, expected 6
+  null statement: 0/0
+  null solution:  0/0
+  quote grades:  {}
+  readability:   {}
+  nums: []
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2011-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2011-12 ╨║╨╗-sol
+  problems: 5  |  expected: 6  |  unique nums: 5
+  ΓÜá∩╕Å  MISMATCH: got 5, expected 6
+  null statement: 0/5
+  null solution:  0/5
+  quote grades:  {'?': 5}
+  readability:   {'ok': 4, 'partial': 1}
+  nums: ['12.1', '12.3', '12.4', '12.5', '12.6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2012-10 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2012-10 ╨║╨╗-sol
+  problems: 11  |  expected: 6  |  unique nums: 6
+  ΓÜá∩╕Å  MISMATCH: got 11, expected 6
+  ΓÜá∩╕Å  DUPLICATE nums: 5 dupes
+  null statement: 0/11
+  null solution:  5/11
+  quote grades:  {'?': 11}
+  readability:   {'ok': 11}
+  nums: ['1', '2', '2', '3', '3', '4', '4', '5', '5', '6', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2012-11 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2012-11 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 5, 'partial': 1}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2012-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2012-12 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 4, 'partial': 2}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2013-10 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2013-10 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2013-11 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2013-11 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2013-12 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2013-12 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2014-10 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2014-10 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 3, 'partial': 1}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2014-11 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2014-11 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2014-12 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2014-12 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2015-10 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2015-10 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2015-11 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2015-11 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2015-12 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2015-12 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2016-10 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2016-10 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 3, 'partial': 1}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2016-11 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 2, 'partial': 2}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2016-11 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2016-12 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2016-12 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2017-10 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2017-10 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2017-11 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2017-11 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2017-12 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2017-12 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2018-10 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2018-10 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2018-11 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2018-11 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2018-12 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2018-12 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2019-10 ╨║╨╗-probs
+  problems: 0  |  expected: 4  |  unique nums: 0
+  ΓÜá∩╕Å  MISMATCH: got 0, expected 4
+  null statement: 0/0
+  null solution:  0/0
+  quote grades:  {}
+  readability:   {}
+  nums: []
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2019-10 ╨║╨╗-sol
+  problems: 0  |  expected: 4  |  unique nums: 0
+  ΓÜá∩╕Å  MISMATCH: got 0, expected 4
+  null statement: 0/0
+  null solution:  0/0
+  quote grades:  {}
+  readability:   {}
+  nums: []
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2019-11 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'partial': 1, 'ok': 3}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2019-11 ╨║╨╗-sol
+  problems: 5  |  expected: 4  |  unique nums: 5
+  ΓÜá∩╕Å  MISMATCH: got 5, expected 4
+  null statement: 0/5
+  null solution:  0/5
+  quote grades:  {'?': 5}
+  readability:   {'partial': 2, 'ok': 3}
+  nums: ['11.1', '11.2', '11.3', '11.4', '12.1']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2019-12 ╨║╨╗-probs
+  problems: 0  |  expected: 4  |  unique nums: 0
+  ΓÜá∩╕Å  MISMATCH: got 0, expected 4
+  null statement: 0/0
+  null solution:  0/0
+  quote grades:  {}
+  readability:   {}
+  nums: []
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2019-12 ╨║╨╗-sol
+  problems: 6  |  expected: 4  |  unique nums: 6
+  ΓÜá∩╕Å  MISMATCH: got 6, expected 4
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'partial': 2, 'ok': 4}
+  nums: ['12.1', '12.2', '12.3', '12.4', '8.1', '8.2']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2020-10 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 3, 'partial': 1}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2020-10 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'partial': 2, 'ok': 2}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2020-11 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2020-12 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2020-12 ╨║╨╗-sol
+  problems: 0  |  expected: 4  |  unique nums: 0
+  ΓÜá∩╕Å  MISMATCH: got 0, expected 4
+  null statement: 0/0
+  null solution:  0/0
+  quote grades:  {}
+  readability:   {}
+  nums: []
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2021-10 ╨║╨╗-probs
+  problems: 0  |  expected: 4  |  unique nums: 0
+  ΓÜá∩╕Å  MISMATCH: got 0, expected 4
+  null statement: 0/0
+  null solution:  0/0
+  quote grades:  {}
+  readability:   {}
+  nums: []
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2021-10 ╨║╨╗-sol
+  problems: 2  |  expected: 4  |  unique nums: 1
+  ΓÜá∩╕Å  MISMATCH: got 2, expected 4
+  ΓÜá∩╕Å  DUPLICATE nums: 1 dupes
+  null statement: 0/2
+  null solution:  0/2
+  quote grades:  {'?': 2}
+  readability:   {'partial': 2}
+  nums: ['None', 'None']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2021-11 ╨║╨╗-probs
+  problems: 0  |  expected: 4  |  unique nums: 0
+  ΓÜá∩╕Å  MISMATCH: got 0, expected 4
+  null statement: 0/0
+  null solution:  0/0
+  quote grades:  {}
+  readability:   {}
+  nums: []
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2021-11 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2021-12 ╨║╨╗-probs
+  problems: 14  |  expected: 4  |  unique nums: 14
+  ΓÜá∩╕Å  MISMATCH: got 14, expected 4
+  null statement: 0/14
+  null solution:  14/14
+  quote grades:  {'?': 14}
+  readability:   {'unreadable': 14}
+  nums: ['1', '10', '11', '12', '13', '14', '2', '3', '4', '5', '6', '7', '8', '9']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2021-12 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2022-10 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  2/4
+  quote grades:  {'?': 4}
+  readability:   {'partial': 1, 'ok': 3}
+  nums: ['10.1', '10.2', '10.3', '10.4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2022-10 ╨║╨╗-sol
+  problems: 5  |  expected: 4  |  unique nums: 5
+  ΓÜá∩╕Å  MISMATCH: got 5, expected 4
+  null statement: 0/5
+  null solution:  0/5
+  quote grades:  {'?': 5}
+  readability:   {'ok': 3, 'partial': 2}
+  nums: ['10.1', '10.2', '10.3', '10.4', '11.1']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2022-11 ╨║╨╗-probs
+  problems: 0  |  expected: 4  |  unique nums: 0
+  ΓÜá∩╕Å  MISMATCH: got 0, expected 4
+  null statement: 0/0
+  null solution:  0/0
+  quote grades:  {}
+  readability:   {}
+  nums: []
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2022-11 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2022-12 ╨║╨╗-probs
+  problems: 0  |  expected: 4  |  unique nums: 0
+  ΓÜá∩╕Å  MISMATCH: got 0, expected 4
+  null statement: 0/0
+  null solution:  0/0
+  quote grades:  {}
+  readability:   {}
+  nums: []
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2022-12 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'partial': 2, 'ok': 2}
+  nums: ['12.1', '12.2', '12.3', '12.4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2023-10 ╨║╨╗-probs (1)
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 3, 'partial': 1}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2023-10 ╨║╨╗-sol (1)
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 3, 'partial': 1}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2023-11 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2023-11 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2023-12 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2023-12 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['12.1', '12.2', '12.3', '12.4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2024-10 ╨║╨╗-probs (1)
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'partial': 1, 'ok': 3}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2024-10 ╨║╨╗-sol (1)
+  problems: 8  |  expected: 4  |  unique nums: 8
+  ΓÜá∩╕Å  MISMATCH: got 8, expected 4
+  null statement: 0/8
+  null solution:  0/8
+  quote grades:  {'?': 8}
+  readability:   {'ok': 8}
+  nums: ['10.1', '10.2', '10.3', '10.4', '11.1', '8.1', '8.2', '9.4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2024-11 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2024-11 ╨║╨╗-sol
+  problems: 0  |  expected: 4  |  unique nums: 0
+  ΓÜá∩╕Å  MISMATCH: got 0, expected 4
+  null statement: 0/0
+  null solution:  0/0
+  quote grades:  {}
+  readability:   {}
+  nums: []
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2024-12 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2024-12 ╨║╨╗-sol
+  problems: 7  |  expected: 4  |  unique nums: 7
+  ΓÜá∩╕Å  MISMATCH: got 7, expected 4
+  null statement: 0/7
+  null solution:  0/7
+  quote grades:  {'?': 7}
+  readability:   {'partial': 5, 'ok': 2}
+  nums: ['11.3', '11.4', '12.2', '12.3', '12.4', '8.1', '8.2']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2025-10 ╨║╨╗-probs (1)
+  problems: 0  |  expected: 4  |  unique nums: 0
+  ΓÜá∩╕Å  MISMATCH: got 0, expected 4
+  null statement: 0/0
+  null solution:  0/0
+  quote grades:  {}
+  readability:   {}
+  nums: []
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2025-10 ╨║╨╗-sol (1)
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 3, 'partial': 1}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2025-11 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'partial': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2025-11 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2025-12 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'partial': 3, 'ok': 1}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2025-12 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2026-10 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2026-10 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 3, 'partial': 1}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2026-11 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2026-12 ╨║╨╗-probs
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  4/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-2-╨₧╨▒╨╗╨░╤ü╤é╨╡╨╜ ╨║╤Ç╤è╨│-2026-12 ╨║╨╗-sol
+  problems: 4  |  expected: 4  |  unique nums: 4
+  null statement: 0/4
+  null solution:  0/4
+  quote grades:  {'?': 4}
+  readability:   {'ok': 4}
+  nums: ['1', '2', '3', '4']
+
+======================================================================
+  OLI-3-╨¥╨░╤å╨╕╨╛╨╜╨░╨╗╨╡╨╜ ╨║╤Ç╤è╨│-1983-9-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-3-╨¥╨░╤å╨╕╨╛╨╜╨░╨╗╨╡╨╜ ╨║╤Ç╤è╨│-1983-9-12 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 5, 'partial': 1}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-3-╨¥╨░╤å╨╕╨╛╨╜╨░╨╗╨╡╨╜ ╨║╤Ç╤è╨│-1984-9-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-3-╨¥╨░╤å╨╕╨╛╨╜╨░╨╗╨╡╨╜ ╨║╤Ç╤è╨│-1984-9-12 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-3-╨¥╨░╤å╨╕╨╛╨╜╨░╨╗╨╡╨╜ ╨║╤Ç╤è╨│-1985-9-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-3-╨¥╨░╤å╨╕╨╛╨╜╨░╨╗╨╡╨╜ ╨║╤Ç╤è╨│-1985-9-12 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-3-╨¥╨░╤å╨╕╨╛╨╜╨░╨╗╨╡╨╜ ╨║╤Ç╤è╨│-1986-9-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-3-╨¥╨░╤å╨╕╨╛╨╜╨░╨╗╨╡╨╜ ╨║╤Ç╤è╨│-1986-9-12 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-3-╨¥╨░╤å╨╕╨╛╨╜╨░╨╗╨╡╨╜ ╨║╤Ç╤è╨│-1987-9-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-3-╨¥╨░╤å╨╕╨╛╨╜╨░╨╗╨╡╨╜ ╨║╤Ç╤è╨│-1987-9-12 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-3-╨¥╨░╤å╨╕╨╛╨╜╨░╨╗╨╡╨╜ ╨║╤Ç╤è╨│-1988-9-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-3-╨¥╨░╤å╨╕╨╛╨╜╨░╨╗╨╡╨╜ ╨║╤Ç╤è╨│-1988-9-12 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-3-╨¥╨░╤å╨╕╨╛╨╜╨░╨╗╨╡╨╜ ╨║╤Ç╤è╨│-1989-9-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'partial': 5, 'ok': 1}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-3-╨¥╨░╤å╨╕╨╛╨╜╨░╨╗╨╡╨╜ ╨║╤Ç╤è╨│-1989-9-12 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 2, 'partial': 4}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-3-╨¥╨░╤å╨╕╨╛╨╜╨░╨╗╨╡╨╜ ╨║╤Ç╤è╨│-1990-9-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 5, 'partial': 1}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-3-╨¥╨░╤å╨╕╨╛╨╜╨░╨╗╨╡╨╜ ╨║╤Ç╤è╨│-1990-9-12 ╨║╨╗-sol
+  problems: 0  |  expected: 6  |  unique nums: 0
+  ΓÜá∩╕Å  MISMATCH: got 0, expected 6
+  null statement: 0/0
+  null solution:  0/0
+  quote grades:  {}
+  readability:   {}
+  nums: []
+
+======================================================================
+  OLI-3-╨¥╨░╤å╨╕╨╛╨╜╨░╨╗╨╡╨╜ ╨║╤Ç╤è╨│-1991-9-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 4, 'partial': 2}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-3-╨¥╨░╤å╨╕╨╛╨╜╨░╨╗╨╡╨╜ ╨║╤Ç╤è╨│-1991-9-12 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'partial': 1, 'ok': 5}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-3-╨¥╨░╤å╨╕╨╛╨╜╨░╨╗╨╡╨╜ ╨║╤Ç╤è╨│-1992-9-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-3-╨¥╨░╤å╨╕╨╛╨╜╨░╨╗╨╡╨╜ ╨║╤Ç╤è╨│-1992-9-12 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 5, 'partial': 1}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-3-╨¥╨░╤å╨╕╨╛╨╜╨░╨╗╨╡╨╜ ╨║╤Ç╤è╨│-1993-9-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-3-╨¥╨░╤å╨╕╨╛╨╜╨░╨╗╨╡╨╜ ╨║╤Ç╤è╨│-1993-9-12 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 4, 'partial': 2}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-3-╨¥╨░╤å╨╕╨╛╨╜╨░╨╗╨╡╨╜ ╨║╤Ç╤è╨│-1994-9-12 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-3-╨¥╨░╤å╨╕╨╛╨╜╨░╨╗╨╡╨╜ ╨║╤Ç╤è╨│-1995-9-12 ╨║╨╗-probs
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  6/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
+
+======================================================================
+  OLI-3-╨¥╨░╤å╨╕╨╛╨╜╨░╨╗╨╡╨╜ ╨║╤Ç╤è╨│-1995-9-12 ╨║╨╗-sol
+  problems: 6  |  expected: 6  |  unique nums: 6
+  null statement: 0/6
+  null solution:  0/6
+  quote grades:  {'?': 6}
+  readability:   {'ok': 6}
+  nums: ['1', '2', '3', '4', '5', '6']
