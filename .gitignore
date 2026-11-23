@@ -1,0 +1,9 @@
+config.json
+config.json.bak
+*.bak
+*.bak-*
+__pycache__/
+*.pyc
+*.tmp
+generated/logs/
+generated/cache/
